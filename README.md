@@ -130,6 +130,15 @@ npm run update-patterns
 
 This imports patterns from the webappanalyzer library and merges them with custom higher-ed patterns.
 
+## Documentation
+
+Comprehensive documentation is available in the `docs/` directory:
+
+- **[API Documentation](./docs/API_DOCUMENTATION.md)** - Complete API reference with detailed examples
+- **[Quick Reference](./docs/QUICK_REFERENCE.md)** - Fast lookup for common operations
+- **[Integration Guide](./docs/INTEGRATION_GUIDE.md)** - Integration examples for Express, React, and more
+- **[Contributing Guide](./docs/CONTRIBUTING.md)** - How to contribute to the project
+
 ## API Reference
 
 ### `DeTECHtor` Class
@@ -157,6 +166,8 @@ Closes browser instances and cleans up resources.
 ```javascript
 await detector.shutdown();
 ```
+
+For complete API documentation, see [API_DOCUMENTATION.md](./docs/API_DOCUMENTATION.md).
 
 ## Development
 
