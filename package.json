@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "SpeedyU's open-source technology detection engine for identifying web technologies, with specialized focus on higher education systems",
   "main": "src/detechtor.js",
+  "types": "index.d.ts",
   "bin": {
     "detechtor": "./cli.js"
   },
