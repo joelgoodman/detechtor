@@ -1,0 +1,396 @@
+{
+  "Slate": {
+    "categories": ["CRM"],
+    "html": [
+      "slate\\.technolutions\\.com",
+      "class=\"slate-",
+      "id=\"slate-",
+      "data-slate-",
+      "technolutions"
+    ],
+    "scripts": ["slate\\.js", "technolutions"],
+    "meta": {
+      "application-name": "Slate"
+    },
+    "headers": {
+      "x-slate-instance": ".*"
+    },
+    "higher_ed": true,
+    "description": "Student recruitment and admissions CRM"
+  },
+  
+  "OmniCMS": {
+    "categories": ["CMS"],
+    "html": [
+      "omni-cms",
+      "omnicms",
+      "data-omni-",
+      "omnicms\\.omniupdate\\.com"
+    ],
+    "scripts": ["omnicms", "omni\\.js", "omniupdate"],
+    "headers": {
+      "X-Powered-By": "OmniCMS"
+    },
+    "higher_ed": true,
+    "description": "Higher education content management system"
+  },
+  
+  "Ellucian Banner": {
+    "categories": ["SIS"],
+    "html": [
+      "banner\\.js",
+      "ellucian",
+      "bwckgens\\.p_proc_term_date",
+      "bwskfreg\\.P_AltPin",
+      "bwckschd\\.p_disp_dyn_ctlg"
+    ],
+    "scripts": ["banner", "ellucian", "bwck"],
+    "meta": {
+      "generator": "Banner"
+    },
+    "higher_ed": true,
+    "description": "Student information system"
+  },
+  
+  "Ellucian Colleague": {
+    "categories": ["SIS"],
+    "html": [
+      "colleague",
+      "ellucian.*colleague",
+      "datatel"
+    ],
+    "scripts": ["colleague", "datatel"],
+    "higher_ed": true,
+    "description": "Student information system"
+  },
+  
+  "Campus Management": {
+    "categories": ["SIS"], 
+    "html": [
+      "campusm\\.com",
+      "campus-management",
+      "cmnet",
+      "campusmgmt"
+    ],
+    "scripts": ["campusm", "cmnet"],
+    "higher_ed": true,
+    "description": "Campus management system"
+  },
+  
+  "Blackboard Learn": {
+    "categories": ["LMS"],
+    "html": [
+      "blackboard\\.com",
+      "bblearn",
+      "ultra-ui",
+      "bb-base-",
+      "blackboard.*learn"
+    ],
+    "scripts": [
+      "blackboard",
+      "bblearn",
+      "ultra",
+      "bb-base"
+    ],
+    "meta": {
+      "generator": "Blackboard"
+    },
+    "higher_ed": true,
+    "description": "Learning management system"
+  },
+  
+  "Canvas LMS": {
+    "categories": ["LMS"],
+    "html": [
+      "canvas-lms",
+      "instructure\\.com",
+      "canvas_course_id",
+      "ENV.*COURSE"
+    ],
+    "scripts": [
+      "canvas",
+      "instructure"
+    ],
+    "headers": {
+      "X-Canvas-Request-Context-Id": ".*",
+      "X-Canvas-User-Id": ".*"
+    },
+    "higher_ed": true,
+    "description": "Canvas learning management system"
+  },
+  
+  "Moodle": {
+    "categories": ["LMS"],
+    "html": [
+      "moodle",
+      "class=\".*moodle",
+      "Moodle.*course"
+    ],
+    "scripts": ["moodle"],
+    "meta": {
+      "generator": "Moodle"
+    },
+    "higher_ed": true,
+    "description": "Open-source learning platform"
+  },
+  
+  "D2L Brightspace": {
+    "categories": ["LMS"],
+    "html": [
+      "d2l\\.com",
+      "brightspace",
+      "desire2learn",
+      "d2lbook"
+    ],
+    "scripts": ["d2l", "brightspace"],
+    "higher_ed": true,
+    "description": "Desire2Learn Brightspace LMS"
+  },
+  
+  "Sakai": {
+    "categories": ["LMS"],
+    "html": [
+      "sakai-project",
+      "sakaiproject",
+      "/portal/site/"
+    ],
+    "scripts": ["sakai"],
+    "higher_ed": true,
+    "description": "Open-source collaboration and learning environment"
+  },
+  
+  "PeopleSoft Campus Solutions": {
+    "categories": ["SIS"],
+    "html": [
+      "peoplesoft",
+      "campus.*solutions",
+      "PS_TOKEN"
+    ],
+    "scripts": ["peoplesoft", "pscs"],
+    "higher_ed": true,
+    "description": "Student information system"
+  },
+  
+  "Jenzabar": {
+    "categories": ["SIS"],
+    "html": [
+      "jenzabar",
+      "jics",
+      "CampusWeb"
+    ],
+    "scripts": ["jenzabar", "jics"],
+    "higher_ed": true,
+    "description": "Student information system"
+  },
+  
+  "PowerCampus": {
+    "categories": ["SIS"],
+    "html": [
+      "powercampus",
+      "eCollege"
+    ],
+    "scripts": ["powercampus"],
+    "higher_ed": true,
+    "description": "Student information system"
+  },
+  
+  "Navigate": {
+    "categories": ["Student Success"],
+    "html": [
+      "navigate.*eab",
+      "student.*success.*collaborative"
+    ],
+    "scripts": ["navigate", "eab"],
+    "higher_ed": true,
+    "description": "Student success and advising platform"
+  },
+  
+  "Starfish": {
+    "categories": ["Student Success"],
+    "html": [
+      "starfish",
+      "starfishsolutions"
+    ],
+    "scripts": ["starfish"],
+    "higher_ed": true,
+    "description": "Student success and retention platform"
+  },
+  
+  "Drupal": {
+    "categories": ["CMS"],
+    "html": [
+      "Drupal\\.settings",
+      "sites/all/themes",
+      "/misc/drupal\\.js"
+    ],
+    "scripts": ["misc/drupal\\.js", "sites/default/files"],
+    "meta": {
+      "generator": "Drupal"
+    },
+    "headers": {
+      "X-Drupal-Cache": ".*",
+      "X-Generator": "Drupal"
+    },
+    "higher_ed": false,
+    "description": "Open-source content management system"
+  },
+  
+  "WordPress": {
+    "categories": ["CMS"],
+    "html": [
+      "wp-content",
+      "wordpress",
+      "/wp-includes/"
+    ],
+    "scripts": ["wp-content", "wp-includes"],
+    "meta": {
+      "generator": "WordPress"
+    },
+    "higher_ed": false,
+    "description": "Popular content management system"
+  },
+  
+  "TerminalFour": {
+    "categories": ["CMS"],
+    "html": [
+      "terminalfour",
+      "t4-content",
+      "terminalone"
+    ],
+    "scripts": ["terminalfour", "t4"],
+    "higher_ed": true,
+    "description": "Web content management system for higher education"
+  },
+  
+  "Cascade CMS": {
+    "categories": ["CMS"],
+    "html": [
+      "cascade.*cms",
+      "hannon.*hill"
+    ],
+    "scripts": ["cascade"],
+    "higher_ed": true,
+    "description": "Web content management system"
+  },
+  
+  "Modern Campus CMS": {
+    "categories": ["CMS"],
+    "html": [
+      "moderncampus",
+      "omniupdate.*modern"
+    ],
+    "scripts": ["moderncampus"],
+    "higher_ed": true,
+    "description": "Higher education web content management"
+  },
+  
+  "Google Analytics": {
+    "categories": ["Analytics"],
+    "html": [
+      "google-analytics\\.com/analytics\\.js",
+      "gtag\\(",
+      "ga\\("
+    ],
+    "scripts": [
+      "google-analytics\\.com",
+      "googletagmanager\\.com/gtag",
+      "gtag/js"
+    ],
+    "higher_ed": false,
+    "description": "Web analytics service"
+  },
+  
+  "Google Tag Manager": {
+    "categories": ["Analytics"],
+    "html": [
+      "googletagmanager\\.com",
+      "GTM-"
+    ],
+    "scripts": ["googletagmanager\\.com"],
+    "higher_ed": false,
+    "description": "Tag management system"
+  },
+  
+  "Salesforce": {
+    "categories": ["CRM"],
+    "html": [
+      "salesforce",
+      "force\\.com"
+    ],
+    "scripts": ["salesforce", "force\\.com"],
+    "higher_ed": false,
+    "description": "Customer relationship management platform"
+  },
+  
+  "HubSpot": {
+    "categories": ["CRM", "Marketing"],
+    "html": [
+      "hubspot",
+      "hs-analytics",
+      "_hsq"
+    ],
+    "scripts": ["hubspot", "hs-analytics"],
+    "higher_ed": false,
+    "description": "Inbound marketing and CRM platform"
+  },
+  
+  "jQuery": {
+    "categories": ["JavaScript Library"],
+    "html": [
+      "jquery",
+      "\\$\\("
+    ],
+    "scripts": ["jquery"],
+    "higher_ed": false,
+    "description": "JavaScript library"
+  },
+  
+  "Bootstrap": {
+    "categories": ["CSS Framework"],
+    "html": [
+      "bootstrap",
+      "class=\".*btn-",
+      "class=\".*col-",
+      "class=\".*row"
+    ],
+    "scripts": ["bootstrap"],
+    "higher_ed": false,
+    "description": "Front-end CSS framework"
+  },
+  
+  "React": {
+    "categories": ["JavaScript Framework"],
+    "html": [
+      "react",
+      "data-reactroot",
+      "data-react-class"
+    ],
+    "scripts": ["react"],
+    "higher_ed": false,
+    "description": "JavaScript library for building user interfaces"
+  },
+  
+  "Vue.js": {
+    "categories": ["JavaScript Framework"],
+    "html": [
+      "vue\\.js",
+      "data-v-",
+      "v-cloak"
+    ],
+    "scripts": ["vue"],
+    "higher_ed": false,
+    "description": "Progressive JavaScript framework"
+  },
+  
+  "Angular": {
+    "categories": ["JavaScript Framework"],
+    "html": [
+      "ng-app",
+      "angular",
+      "data-ng-"
+    ],
+    "scripts": ["angular"],
+    "higher_ed": false,
+    "description": "TypeScript-based web application framework"
+  }
+}

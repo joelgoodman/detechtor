@@ -1,0 +1,54 @@
+{
+  "WordPress": {
+    "categories": ["CMS"],
+    "html": [
+      "wp-content",
+      "wp-includes",
+      "wp-json",
+      "class=\"wp-",
+      "id=\"wp-"
+    ],
+    "scripts": ["wp-content", "wp-includes"],
+    "meta": {
+      "generator": "WordPress"
+    },
+    "description": "WordPress content management system"
+  },
+  
+  "Apache": {
+    "categories": ["Web Server"],
+    "headers": {
+      "server": "Apache"
+    },
+    "description": "Apache HTTP Server"
+  },
+  
+  "Google Analytics": {
+    "categories": ["Analytics"],
+    "html": [
+      "google-analytics",
+      "googletagmanager",
+      "ga\\('create'"
+    ],
+    "scripts": [
+      "google-analytics",
+      "googletagmanager"
+    ],
+    "js": {
+      "ga": true,
+      "gtag": true
+    },
+    "description": "Google Analytics tracking"
+  },
+  
+  "jQuery": {
+    "categories": ["JavaScript Framework"],
+    "html": ["jquery"],
+    "scripts": ["jquery"],
+    "js": {
+      "jQuery": true,
+      "$": true
+    },
+    "description": "jQuery JavaScript library"
+  }
+}

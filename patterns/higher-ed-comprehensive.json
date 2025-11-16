@@ -1,0 +1,543 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "description": "Comprehensive higher education technology detection patterns",
+    "compatible_with": "webappanalyzer format",
+    "last_updated": "2024-10-15",
+    "categories_note": "Uses webappanalyzer category IDs where available"
+  },
+
+  "Ellucian Banner": {
+    "cats": [53],
+    "description": "Ellucian Banner is a comprehensive student information system used by higher education institutions.",
+    "html": [
+      "bwckgens\\.p_proc_term_date",
+      "bwskfreg\\.P_AltPin",
+      "bwckschd\\.p_disp_dyn_ctlg",
+      "bwckctlg\\.p_disp_course_detail",
+      "banner.*student.*system"
+    ],
+    "scriptSrc": [
+      "banner",
+      "bwck",
+      "ellucian.*banner"
+    ],
+    "js": {
+      "Banner": "",
+      "BWCK": ""
+    },
+    "meta": {
+      "generator": "Banner"
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.ellucian.com/solutions/ellucian-banner"
+  },
+
+  "Ellucian Colleague": {
+    "cats": [53],
+    "description": "Ellucian Colleague student information system, formerly Datatel Colleague.",
+    "html": [
+      "colleague",
+      "ellucian.*colleague",
+      "datatel",
+      "colleague.*ui"
+    ],
+    "scriptSrc": [
+      "colleague",
+      "datatel"
+    ],
+    "js": {
+      "Colleague": "",
+      "DatatelUI": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.ellucian.com/solutions/ellucian-colleague"
+  },
+
+  "PeopleSoft Campus Solutions": {
+    "cats": [53],
+    "description": "Oracle PeopleSoft Campus Solutions student information system.",
+    "html": [
+      "peoplesoft",
+      "campus.*solutions",
+      "PS_TOKEN",
+      "PSPRODNAME.*Campus"
+    ],
+    "scriptSrc": [
+      "peoplesoft",
+      "pscs"
+    ],
+    "js": {
+      "PeopleSoft": "",
+      "PS": ""
+    },
+    "cookies": {
+      "PS_TOKEN": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.oracle.com/applications/peoplesoft/"
+  },
+
+  "Jenzabar": {
+    "cats": [53],
+    "description": "Jenzabar student information system and ERP solution for higher education.",
+    "html": [
+      "jenzabar",
+      "jics",
+      "CampusWeb",
+      "jenzabar.*ics"
+    ],
+    "scriptSrc": [
+      "jenzabar",
+      "jics"
+    ],
+    "js": {
+      "Jenzabar": "",
+      "JICS": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.jenzabar.com"
+  },
+
+  "PowerCampus": {
+    "cats": [53],
+    "description": "PowerCampus student information system.",
+    "html": [
+      "powercampus",
+      "eCollege",
+      "power.*campus"
+    ],
+    "scriptSrc": [
+      "powercampus"
+    ],
+    "js": {
+      "PowerCampus": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.powercampus.net"
+  },
+
+  "Blackboard Learn": {
+    "cats": [21],
+    "description": "Blackboard Learn learning management system.",
+    "html": [
+      "blackboard\\.com",
+      "bblearn",
+      "ultra-ui",
+      "bb-base-",
+      "blackboard.*learn"
+    ],
+    "scriptSrc": [
+      "blackboard",
+      "bblearn",
+      "ultra",
+      "bb-base"
+    ],
+    "js": {
+      "Blackboard": "",
+      "bbNG": "",
+      "page.bbNG": ""
+    },
+    "cookies": {
+      "JSESSIONID": "",
+      "BbRouter": ""
+    },
+    "meta": {
+      "generator": "Blackboard"
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.blackboard.com/teaching-learning/learning-management"
+  },
+
+  "D2L Brightspace": {
+    "cats": [21],
+    "description": "D2L Brightspace learning management system.",
+    "html": [
+      "d2l\\.com",
+      "brightspace",
+      "desire2learn",
+      "d2lbook",
+      "d2l.*brightspace"
+    ],
+    "scriptSrc": [
+      "d2l",
+      "brightspace"
+    ],
+    "js": {
+      "D2L": "",
+      "d2l": ""
+    },
+    "headers": {
+      "x-d2l-version": ".*"
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.d2l.com/brightspace/"
+  },
+
+  "Sakai": {
+    "cats": [21],
+    "description": "Sakai open-source collaboration and learning environment.",
+    "html": [
+      "sakai-project",
+      "sakaiproject",
+      "\\/portal\\/site\\/",
+      "sakai.*collaboration"
+    ],
+    "scriptSrc": [
+      "sakai"
+    ],
+    "js": {
+      "sakai": "",
+      "Sakai": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.sakaiproject.org"
+  },
+
+  "Modern Campus CMS": {
+    "cats": [1],
+    "description": "Modern Campus CMS (formerly OmniCMS) content management system for higher education.",
+    "html": [
+      "omni-cms",
+      "omnicms",
+      "data-omni-",
+      "omnicms\\.omniupdate\\.com",
+      "modern.*campus",
+      "moderncampus\\.com",
+      "omniupdate.*modern"
+    ],
+    "scriptSrc": [
+      "omnicms",
+      "omni\\.js",
+      "omniupdate",
+      "moderncampus",
+      "modern.*campus"
+    ],
+    "headers": {
+      "X-Powered-By": "OmniCMS"
+    },
+    "js": {
+      "OmniCMS": "",
+      "omni": "",
+      "ModernCampus": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://moderncampus.com/solutions/cms/"
+  },
+
+  "TerminalFour": {
+    "cats": [1],
+    "description": "TerminalFour content management system for higher education.",
+    "html": [
+      "terminalfour",
+      "t4",
+      "terminal.*four",
+      "t4.*cms"
+    ],
+    "scriptSrc": [
+      "terminalfour",
+      "t4"
+    ],
+    "js": {
+      "TerminalFour": "",
+      "T4": ""
+    },
+    "meta": {
+      "generator": "TerminalFour"
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.terminalfour.com"
+  },
+
+
+  "Shibboleth": {
+    "cats": [98],
+    "description": "Shibboleth single sign-on system commonly used in higher education.",
+    "html": [
+      "shibboleth",
+      "shibd",
+      "shib.*session"
+    ],
+    "scriptSrc": [
+      "shibboleth"
+    ],
+    "headers": {
+      "shib-session-id": ".*",
+      "shib-identity-provider": ".*"
+    },
+    "js": {
+      "Shibboleth": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://shibboleth.net"
+  },
+
+  "CAS": {
+    "cats": [98],
+    "description": "Central Authentication Service (CAS) single sign-on protocol.",
+    "html": [
+      "cas.*login",
+      "central.*authentication.*service",
+      "cas.*server"
+    ],
+    "scriptSrc": [
+      "cas"
+    ],
+    "js": {
+      "CAS": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://apereo.github.io/cas/"
+  },
+
+  "EAB Navigate": {
+    "cats": [53],
+    "description": "EAB Navigate student success platform for higher education.",
+    "html": [
+      "navigate.*eab",
+      "eab.*navigate",
+      "student.*success.*platform"
+    ],
+    "scriptSrc": [
+      "navigate",
+      "eab.*navigate"
+    ],
+    "js": {
+      "Navigate": "",
+      "EAB": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://eab.com/technology/navigate/"
+  },
+
+  "Starfish": {
+    "cats": [53],
+    "description": "Starfish student success platform by Hobsons.",
+    "html": [
+      "starfish",
+      "hobsons.*starfish",
+      "student.*early.*alert"
+    ],
+    "scriptSrc": [
+      "starfish"
+    ],
+    "js": {
+      "Starfish": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.hobsons.com/solutions/student-success/starfish/"
+  },
+
+  "Kaltura": {
+    "cats": [14],
+    "description": "Kaltura video platform commonly used in higher education.",
+    "html": [
+      "kaltura",
+      "kwidget",
+      "kaltura.*player"
+    ],
+    "scriptSrc": [
+      "kaltura",
+      "kwidget"
+    ],
+    "js": {
+      "kaltura": "",
+      "kWidget": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://corp.kaltura.com"
+  },
+
+  "Panopto": {
+    "cats": [14],
+    "description": "Panopto video platform for higher education lecture capture.",
+    "html": [
+      "panopto",
+      "panopto.*viewer",
+      "lecture.*capture"
+    ],
+    "scriptSrc": [
+      "panopto"
+    ],
+    "js": {
+      "Panopto": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.panopto.com"
+  },
+
+  "Ex Libris Alma": {
+    "cats": [53],
+    "description": "Ex Libris Alma library management system.",
+    "html": [
+      "exlibrisgroup",
+      "alma.*exlibris",
+      "library.*management.*system"
+    ],
+    "scriptSrc": [
+      "exlibris",
+      "alma"
+    ],
+    "js": {
+      "ExLibris": "",
+      "Alma": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://exlibrisgroup.com/products/alma-library-services-platform/"
+  },
+
+  "Ex Libris Primo": {
+    "cats": [53],
+    "description": "Ex Libris Primo library discovery service.",
+    "html": [
+      "primo.*exlibris",
+      "discovery.*service",
+      "primo.*ve"
+    ],
+    "scriptSrc": [
+      "primo",
+      "exlibris.*primo"
+    ],
+    "js": {
+      "Primo": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://exlibrisgroup.com/products/primo-discovery-service/"
+  },
+
+  "TouchNet": {
+    "cats": [6],
+    "description": "TouchNet payment processing system for higher education.",
+    "html": [
+      "touchnet",
+      "upay",
+      "ucommerce"
+    ],
+    "scriptSrc": [
+      "touchnet",
+      "upay"
+    ],
+    "js": {
+      "TouchNet": "",
+      "uPay": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.touchnet.com"
+  },
+
+  "Blackboard Transact": {
+    "cats": [6],
+    "description": "Blackboard Transact campus card and payment system.",
+    "html": [
+      "blackboard.*transact",
+      "bb.*transact",
+      "campus.*card"
+    ],
+    "scriptSrc": [
+      "transact",
+      "bb.*transact"
+    ],
+    "js": {
+      "Transact": "",
+      "BBTransact": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.blackboard.com/campus-solutions/campus-card"
+  },
+
+  "CBORD": {
+    "cats": [6],
+    "description": "CBORD campus card and food service management system.",
+    "html": [
+      "cbord",
+      "get.*system",
+      "campus.*dining"
+    ],
+    "scriptSrc": [
+      "cbord"
+    ],
+    "js": {
+      "CBORD": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.cbord.com"
+  },
+
+  "25Live": {
+    "cats": [53],
+    "description": "25Live event and space management system for higher education.",
+    "html": [
+      "25live",
+      "collegenet.*25live",
+      "event.*management"
+    ],
+    "scriptSrc": [
+      "25live"
+    ],
+    "js": {
+      "TwentyFiveLive": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.collegenet.com/products/25live"
+  },
+
+  "EMS": {
+    "cats": [53],
+    "description": "EMS event management system for higher education.",
+    "html": [
+      "dea.*ems",
+      "event.*management.*system",
+      "ems.*software"
+    ],
+    "scriptSrc": [
+      "ems"
+    ],
+    "js": {
+      "EMS": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.emssoftware.com"
+  },
+
+  "Localist": {
+    "cats": [53],
+    "description": "Localist event calendar platform for higher education.",
+    "html": [
+      "localist",
+      "event.*calendar",
+      "campus.*events"
+    ],
+    "scriptSrc": [
+      "localist"
+    ],
+    "js": {
+      "Localist": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://localist.com"
+  }
+}

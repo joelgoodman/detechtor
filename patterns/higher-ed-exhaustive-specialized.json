@@ -1,0 +1,668 @@
+{
+  "_metadata": {
+    "version": "2.0.0", 
+    "description": "Exhaustive higher education technology patterns - Specialized Platforms",
+    "part": "2 of 4",
+    "last_updated": "2024-10-15"
+  },
+
+  "OCLC WorldShare": {
+    "cats": [53],
+    "description": "OCLC WorldShare library management platform",
+    "html": ["worldshare", "oclc.*worldshare"],
+    "scriptSrc": ["worldshare", "oclc"],
+    "js": {"WorldShare": "", "OCLC": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.oclc.org/en/worldshare-management-services.html"
+  },
+
+  "SirsiDynix Symphony": {
+    "cats": [53],
+    "description": "SirsiDynix Symphony integrated library system",
+    "html": ["sirsidynix", "symphony.*ils"],
+    "scriptSrc": ["sirsidynix", "symphony"],
+    "js": {"SirsiDynix": "", "Symphony": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.sirsidynix.com/products/symphony"
+  },
+
+  "Innovative Interfaces Sierra": {
+    "cats": [53],
+    "description": "Innovative Interfaces Sierra ILS",
+    "html": ["sierra.*ils", "iii.*sierra"],
+    "scriptSrc": ["sierra", "iii"],
+    "js": {"Sierra": "", "III": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.iii.com/products/sierra-ils/"
+  },
+
+  "Koha ILS": {
+    "cats": [53],
+    "description": "Koha open source integrated library system",
+    "html": ["koha.*ils", "koha.*opac"],
+    "scriptSrc": ["koha"],
+    "js": {"Koha": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://koha-community.org"
+  },
+
+  "Ex Libris Alma": {
+    "cats": [53],
+    "description": "Ex Libris Alma library services platform",
+    "html": ["alma.*exlibris", "exlibris.*alma"],
+    "scriptSrc": ["alma", "exlibris"],
+    "js": {"Alma": "", "ExLibris": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://exlibrisgroup.com/products/alma-library-services-platform/"
+  },
+
+  "Ex Libris Primo": {
+    "cats": [53],
+    "description": "Ex Libris Primo discovery service",
+    "html": ["primo.*exlibris", "exlibris.*primo"],
+    "scriptSrc": ["primo", "exlibris"],
+    "js": {"Primo": "", "PrimoVE": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://exlibrisgroup.com/products/primo-discovery-service/"
+  },
+
+  "FOLIO LSP": {
+    "cats": [53],
+    "description": "FOLIO open source library services platform",
+    "html": ["folio.*library", "folio.*lsp"],
+    "scriptSrc": ["folio"],
+    "js": {"FOLIO": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.folio.org"
+  },
+
+  "Polaris ILS": {
+    "cats": [53],
+    "description": "Innovative Polaris integrated library system",
+    "html": ["polaris.*ils", "polaris.*library"],
+    "scriptSrc": ["polaris"],
+    "js": {"Polaris": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.iii.com/products/polaris/"
+  },
+
+  "Ex Libris Voyager": {
+    "cats": [53],
+    "description": "Ex Libris Voyager integrated library system (legacy)",
+    "html": ["voyager.*exlibris", "exlibris.*voyager"],
+    "scriptSrc": ["voyager", "exlibris"],
+    "js": {"Voyager": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://exlibrisgroup.com/products/voyager-ils/"
+  },
+
+  "LibGuides": {
+    "cats": [53],
+    "description": "Springshare LibGuides research guide platform",
+    "html": ["libguides", "springshare.*libguides"],
+    "scriptSrc": ["libguides", "springshare"],
+    "js": {"LibGuides": "", "SpringShare": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://springshare.com/libguides/"
+  },
+
+  "LibCal": {
+    "cats": [53],
+    "description": "Springshare LibCal calendar and booking system",
+    "html": ["libcal", "springshare.*libcal"],
+    "scriptSrc": ["libcal"],
+    "js": {"LibCal": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://springshare.com/libcal/"
+  },
+
+  "LibAnswers": {
+    "cats": [53],
+    "description": "Springshare LibAnswers reference platform",
+    "html": ["libanswers", "springshare.*libanswers"],
+    "scriptSrc": ["libanswers"],
+    "js": {"LibAnswers": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://springshare.com/libanswers/"
+  },
+
+  "Summon": {
+    "cats": [53],
+    "description": "ProQuest Summon discovery service",
+    "html": ["summon.*discovery", "proquest.*summon"],
+    "scriptSrc": ["summon"],
+    "js": {"Summon": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.proquest.com/products-services/summon.html"
+  },
+
+  "EBSCO Discovery Service": {
+    "cats": [53],
+    "description": "EBSCO Discovery Service (EDS)",
+    "html": ["ebsco.*discovery", "eds.*ebsco"],
+    "scriptSrc": ["ebsco.*eds", "discovery.*ebsco"],
+    "js": {"EBSCODiscovery": "", "EDS": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.ebsco.com/products/ebsco-discovery-service"
+  },
+
+  "WorldCat Discovery": {
+    "cats": [53],
+    "description": "OCLC WorldCat Discovery service",
+    "html": ["worldcat.*discovery", "oclc.*discovery"],
+    "scriptSrc": ["worldcat", "discovery.*oclc"],
+    "js": {"WorldCatDiscovery": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.oclc.org/en/worldcat-discovery.html"
+  },
+
+  "Turnitin": {
+    "cats": [53],
+    "description": "Turnitin plagiarism detection service",
+    "html": ["turnitin"],
+    "scriptSrc": ["turnitin"],
+    "js": {"Turnitin": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.turnitin.com"
+  },
+
+  "SafeAssign": {
+    "cats": [53],
+    "description": "Blackboard SafeAssign plagiarism prevention",
+    "html": ["safeassign", "blackboard.*safeassign"],
+    "scriptSrc": ["safeassign"],
+    "js": {"SafeAssign": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.blackboard.com/teaching-learning/learning-management/blackboard-learn/safeassign"
+  },
+
+  "Unicheck": {
+    "cats": [53],
+    "description": "Unicheck plagiarism checker",
+    "html": ["unicheck"],
+    "scriptSrc": ["unicheck"],
+    "js": {"Unicheck": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://unicheck.com"
+  },
+
+  "VeriCite": {
+    "cats": [53],
+    "description": "VeriCite plagiarism detection",
+    "html": ["vericite"],
+    "scriptSrc": ["vericite"],
+    "js": {"VeriCite": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.vericite.com"
+  },
+
+  "Respondus LockDown Browser": {
+    "cats": [53],
+    "description": "Respondus LockDown Browser for secure testing",
+    "html": ["respondus.*lockdown", "lockdown.*browser"],
+    "scriptSrc": ["respondus", "lockdown"],
+    "js": {"Respondus": "", "LockDownBrowser": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://web.respondus.com/he/lockdownbrowser/"
+  },
+
+  "ProctorU": {
+    "cats": [53],
+    "description": "ProctorU online proctoring service",
+    "html": ["proctoru"],
+    "scriptSrc": ["proctoru"],
+    "js": {"ProctorU": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.proctoru.com"
+  },
+
+  "Honorlock": {
+    "cats": [53],
+    "description": "Honorlock online proctoring platform",
+    "html": ["honorlock"],
+    "scriptSrc": ["honorlock"],
+    "js": {"Honorlock": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://honorlock.com"
+  },
+
+  "ExamSoft": {
+    "cats": [53],
+    "description": "ExamSoft digital assessment platform",
+    "html": ["examsoft"],
+    "scriptSrc": ["examsoft"],
+    "js": {"ExamSoft": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://examsoft.com"
+  },
+
+  "Proctorio": {
+    "cats": [53],
+    "description": "Proctorio automated proctoring solution",
+    "html": ["proctorio"],
+    "scriptSrc": ["proctorio"],
+    "js": {"Proctorio": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://proctorio.com"
+  },
+
+  "GradesFirst": {
+    "cats": [53],
+    "description": "GradesFirst student success platform",
+    "html": ["gradesfirst"],
+    "scriptSrc": ["gradesfirst"],
+    "js": {"GradesFirst": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.gradesfirst.com"
+  },
+
+  "Civitas Learning": {
+    "cats": [53],
+    "description": "Civitas Learning student success platform",
+    "html": ["civitas.*learning", "civitaslearning"],
+    "scriptSrc": ["civitas"],
+    "js": {"CivitasLearning": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.civitaslearning.com"
+  },
+
+  "Hobsons Connect": {
+    "cats": [53],
+    "description": "Hobsons Connect student success platform",
+    "html": ["hobsons.*connect"],
+    "scriptSrc": ["hobsons.*connect"],
+    "js": {"HobsonsConnect": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.hobsons.com"
+  },
+
+  "AdAstra": {
+    "cats": [53],
+    "description": "Ad Astra course scheduling and optimization",
+    "html": ["adastra", "ad.*astra"],
+    "scriptSrc": ["adastra"],
+    "js": {"AdAstra": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.adastrainfo.com"
+  },
+
+  "CollegeNET 25Live": {
+    "cats": [53],
+    "description": "CollegeNET 25Live resource scheduling",
+    "html": ["25live", "collegenet.*25live"],
+    "scriptSrc": ["25live"],
+    "js": {"TwentyFiveLive": "", "CollegeNET": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.collegenet.com/products/25live"
+  },
+
+  "Infosilem": {
+    "cats": [53],
+    "description": "Infosilem higher education solutions",
+    "html": ["infosilem"],
+    "scriptSrc": ["infosilem"],
+    "js": {"Infosilem": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.infosilem.com"
+  },
+
+  "Evisions": {
+    "cats": [53],
+    "description": "Evisions higher education analytics",
+    "html": ["evisions"],
+    "scriptSrc": ["evisions"],
+    "js": {"Evisions": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://evisions.com"
+  },
+
+  "Qualtrics CoreXM": {
+    "cats": [53],
+    "description": "Qualtrics experience management platform",
+    "html": ["qualtrics"],
+    "scriptSrc": ["qualtrics"],
+    "js": {"Qualtrics": "", "QSI": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.qualtrics.com/core-xm/"
+  },
+
+  "Campus Labs": {
+    "cats": [53],
+    "description": "Campus Labs assessment and planning platform",
+    "html": ["campus.*labs", "campuslabs"],
+    "scriptSrc": ["campuslabs"],
+    "js": {"CampusLabs": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.campuslabs.com"
+  },
+
+  "HelioCampus": {
+    "cats": [53],
+    "description": "HelioCampus higher education analytics",
+    "html": ["heliocampus"],
+    "scriptSrc": ["heliocampus"],
+    "js": {"HelioCampus": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.heliocampus.com"
+  },
+
+  "Liaison CAS": {
+    "cats": [53],
+    "description": "Liaison Centralized Application Service",
+    "html": ["liaison.*cas", "liaisoncas"],
+    "scriptSrc": ["liaison"],
+    "js": {"LiaisonCAS": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.liaisonedu.com"
+  },
+
+  "Common Application": {
+    "cats": [53],
+    "description": "Common Application admissions platform",
+    "html": ["commonapp", "common.*application"],
+    "scriptSrc": ["commonapp"],
+    "js": {"CommonApp": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.commonapp.org"
+  },
+
+  "Coalition Application": {
+    "cats": [53],
+    "description": "Coalition for College application system",
+    "html": ["coalition.*application", "coalitionforcollegeaccess"],
+    "scriptSrc": ["coalition"],
+    "js": {"Coalition": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.coalitionforcollegeaccess.org"
+  },
+
+  "ApplyTexas": {
+    "cats": [53],
+    "description": "ApplyTexas state application system",
+    "html": ["applytexas"],
+    "scriptSrc": ["applytexas"],
+    "js": {"ApplyTexas": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.applytexas.org"
+  },
+
+  "National Student Clearinghouse": {
+    "cats": [53],
+    "description": "National Student Clearinghouse services",
+    "html": ["studentclearinghouse", "nsc.*org"],
+    "scriptSrc": ["studentclearinghouse", "nsc"],
+    "js": {"NSC": "", "StudentClearinghouse": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.studentclearinghouse.org"
+  },
+
+  "Parchment": {
+    "cats": [53],
+    "description": "Parchment credential management platform",
+    "html": ["parchment"],
+    "scriptSrc": ["parchment"],
+    "js": {"Parchment": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.parchment.com"
+  },
+
+  "Rave Mobile Safety": {
+    "cats": [53],
+    "description": "Rave emergency communication platform",
+    "html": ["rave.*mobile.*safety", "getrave"],
+    "scriptSrc": ["rave", "getrave"],
+    "js": {"Rave": "", "RaveMobile": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.ravemobilesafety.com"
+  },
+
+  "Everbridge": {
+    "cats": [53],
+    "description": "Everbridge emergency notification system",
+    "html": ["everbridge"],
+    "scriptSrc": ["everbridge"],
+    "js": {"Everbridge": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.everbridge.com"
+  },
+
+  "AlertMedia": {
+    "cats": [53],
+    "description": "AlertMedia emergency communication platform",
+    "html": ["alertmedia"],
+    "scriptSrc": ["alertmedia"],
+    "js": {"AlertMedia": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.alertmedia.com"
+  },
+
+  "LiveSafe": {
+    "cats": [53],
+    "description": "LiveSafe campus safety platform",
+    "html": ["livesafe"],
+    "scriptSrc": ["livesafe"],
+    "js": {"LiveSafe": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.livesafemobile.com"
+  },
+
+  "AppArmor": {
+    "cats": [53],
+    "description": "AppArmor campus safety application",
+    "html": ["apparmor"],
+    "scriptSrc": ["apparmor"],
+    "js": {"AppArmor": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.apparmor.com"
+  },
+
+  "Ready Education": {
+    "cats": [53],
+    "description": "Ready Education mobile campus platform",
+    "html": ["ready.*education", "readyeducation"],
+    "scriptSrc": ["ready.*education"],
+    "js": {"ReadyEducation": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://readyeducation.com"
+  },
+
+  "Acalog": {
+    "cats": [53],
+    "description": "Acalog academic catalog management system",
+    "html": ["acalog"],
+    "scriptSrc": ["acalog"],
+    "js": {"Acalog": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.digarc.com/acalog"
+  },
+
+  "CourseLeaf": {
+    "cats": [53],
+    "description": "CourseLeaf curriculum and catalog management",
+    "html": ["courseleaf"],
+    "scriptSrc": ["courseleaf"],
+    "js": {"CourseLeaf": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.leepfrog.com"
+  },
+
+  "Curriculog": {
+    "cats": [53],
+    "description": "Curriculog curriculum management system",
+    "html": ["curriculog"],
+    "scriptSrc": ["curriculog"],
+    "js": {"Curriculog": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.curriculog.com"
+  },
+
+  "CurricUNET": {
+    "cats": [53],
+    "description": "CurricUNET curriculum management platform",
+    "html": ["curricunet"],
+    "scriptSrc": ["curricunet"],
+    "js": {"CurricUNET": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.governet.net/curricunet"
+  },
+
+  "ScholarSite": {
+    "cats": [53],
+    "description": "ScholarSite academic catalog and curriculum system",
+    "html": ["scholarsite"],
+    "scriptSrc": ["scholarsite"],
+    "js": {"ScholarSite": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.scholarsite.com"
+  },
+
+  "Kuali Curriculum Management": {
+    "cats": [53],
+    "description": "Kuali curriculum and catalog management",
+    "html": ["kuali.*curriculum", "kuali.*cm"],
+    "scriptSrc": ["kuali.*curriculum"],
+    "js": {"KualiCM": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.kuali.co/products/kuali-cm"
+  },
+
+  "Starfish Retention Solutions": {
+    "cats": [53],
+    "description": "Starfish early alert and student success platform",
+    "html": ["starfish.*retention", "starfish.*solutions"],
+    "scriptSrc": ["starfish"],
+    "js": {"Starfish": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.starfishsolutions.com"
+  },
+
+  "EAB Navigate": {
+    "cats": [53],
+    "description": "EAB Navigate student success management platform",
+    "html": ["eab.*navigate", "navigate.*eab"],
+    "scriptSrc": ["navigate", "eab"],
+    "js": {"Navigate": "", "EAB": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://eab.com/technology/navigate/"
+  },
+
+  "DegreeWorks": {
+    "cats": [53],
+    "description": "DegreeWorks degree audit and planning system",
+    "html": ["degreeworks", "degree.*works"],
+    "scriptSrc": ["degreeworks"],
+    "js": {"DegreeWorks": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.ellucian.com/solutions/ellucian-degreeworks"
+  },
+
+  "AdvisorTrac": {
+    "cats": [53],
+    "description": "AdvisorTrac academic advising and student tracking",
+    "html": ["advisortrac", "advisor.*trac"],
+    "scriptSrc": ["advisortrac"],
+    "js": {"AdvisorTrac": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.advisortrac.com"
+  },
+
+  "GradesFirst": {
+    "cats": [53],
+    "description": "GradesFirst student success and tutoring management",
+    "html": ["gradesfirst", "grades.*first"],
+    "scriptSrc": ["gradesfirst"],
+    "js": {"GradesFirst": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.gradesfirst.com"
+  },
+
+  "Kognito": {
+    "cats": [53],
+    "description": "Kognito conversation training platform for student support",
+    "html": ["kognito"],
+    "scriptSrc": ["kognito"],
+    "js": {"Kognito": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://kognito.com"
+  },
+
+  "Civitas Learning": {
+    "cats": [53],
+    "description": "Civitas Learning student success analytics platform",
+    "html": ["civitas.*learning", "civitaslearning"],
+    "scriptSrc": ["civitas"],
+    "js": {"CivitasLearning": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.civitaslearning.com"
+  },
+
+  "Mindmax": {
+    "cats": [53],
+    "description": "Mindmax student engagement and retention platform",
+    "html": ["mindmax"],
+    "scriptSrc": ["mindmax"],
+    "js": {"Mindmax": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.mindmax.com"
+  }
+}

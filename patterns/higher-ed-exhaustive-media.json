@@ -1,0 +1,349 @@
+{
+  "_metadata": {
+    "version": "2.0.0",
+    "description": "Exhaustive higher education technology patterns - Media & Creative Platforms", 
+    "part": "3 of 4",
+    "last_updated": "2024-10-15"
+  },
+
+  "Echo360": {
+    "cats": [14],
+    "description": "Echo360 lecture capture and video platform",
+    "html": ["echo360", "echo.*classroom"],
+    "scriptSrc": ["echo360"],
+    "js": {"Echo360": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://echo360.com"
+  },
+
+  "YuJa": {
+    "cats": [14],
+    "description": "YuJa video platform for education",
+    "html": ["yuja", "yuja.*enterprise"],
+    "scriptSrc": ["yuja"],
+    "js": {"YuJa": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.yuja.com"
+  },
+
+  "MediaSite": {
+    "cats": [14],
+    "description": "Sonic Foundry MediaSite video platform",
+    "html": ["mediasite", "sonicfoundry.*mediasite"],
+    "scriptSrc": ["mediasite"],
+    "js": {"MediaSite": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.sonicfoundry.com/mediasite/"
+  },
+
+  "Ensemble Video": {
+    "cats": [14],
+    "description": "Ensemble Video streaming platform",
+    "html": ["ensemble.*video", "ensemblevideo"],
+    "scriptSrc": ["ensemble"],
+    "js": {"EnsembleVideo": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.ensemblevideo.com"
+  },
+
+  "JW Player": {
+    "cats": [14],
+    "description": "JW Player video hosting platform",
+    "html": ["jwplayer", "jw.*player"],
+    "scriptSrc": ["jwplayer"],
+    "js": {"jwplayer": "", "JWPlayer": ""},
+    "higher_ed": true,
+    "confidence": 70,
+    "website": "https://www.jwplayer.com"
+  },
+
+  "Brightcove": {
+    "cats": [14],
+    "description": "Brightcove video cloud platform", 
+    "html": ["brightcove"],
+    "scriptSrc": ["brightcove"],
+    "js": {"brightcove": "", "Brightcove": ""},
+    "higher_ed": true,
+    "confidence": 75,
+    "website": "https://www.brightcove.com"
+  },
+
+  "Wistia": {
+    "cats": [14],
+    "description": "Wistia video hosting platform",
+    "html": ["wistia"],
+    "scriptSrc": ["wistia"],
+    "js": {"Wistia": "", "_wq": ""},
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://wistia.com"
+  },
+
+  "YouTube": {
+    "cats": [14],
+    "description": "YouTube video platform",
+    "html": ["youtube", "youtube-player", "yt-player"],
+    "scriptSrc": ["youtube", "ytimg", "googlevideo"],
+    "js": {"YT": "", "ytplayer": "", "onYouTubeIframeAPIReady": ""},
+    "higher_ed": false,
+    "confidence": 95,
+    "website": "https://youtube.com"
+  },
+
+  "Vimeo": {
+    "cats": [14],
+    "description": "Vimeo video platform",
+    "html": ["vimeo", "vimeo-player"],
+    "scriptSrc": ["vimeo", "vimeocdn"],
+    "js": {"Vimeo": "", "VimeoPlayer": ""},
+    "higher_ed": false,
+    "confidence": 92,
+    "website": "https://vimeo.com"
+  },
+
+  "VidGrid": {
+    "cats": [14],
+    "description": "VidGrid video communication platform",
+    "html": ["vidgrid"],
+    "scriptSrc": ["vidgrid"],
+    "js": {"VidGrid": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.vidgrid.com"
+  },
+
+  "Flipgrid": {
+    "cats": [14],
+    "description": "Microsoft Flipgrid video discussion platform",
+    "html": ["flipgrid", "flip.*grid"],
+    "scriptSrc": ["flipgrid"],
+    "js": {"Flipgrid": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://info.flipgrid.com"
+  },
+
+  "Screencast-O-Matic": {
+    "cats": [14],
+    "description": "Screencast-O-Matic screen recording platform",
+    "html": ["screencast.*o.*matic", "screencastomatic"],
+    "scriptSrc": ["screencast"],
+    "js": {"ScreencastOMatic": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://screencast-o-matic.com"
+  },
+
+  "Adobe Creative Cloud": {
+    "cats": [14],
+    "description": "Adobe Creative Cloud for education",
+    "html": ["adobe.*creative.*cloud", "creative.*adobe"],
+    "scriptSrc": ["adobe.*creative", "creative.*cloud"],
+    "js": {"AdobeCC": "", "CreativeCloud": ""},
+    "higher_ed": true,
+    "confidence": 70,
+    "website": "https://www.adobe.com/creativecloud/education.html"
+  },
+
+  "Canva for Education": {
+    "cats": [14],
+    "description": "Canva design platform for education",
+    "html": ["canva.*education", "canva.*for.*schools"],
+    "scriptSrc": ["canva"],
+    "js": {"Canva": ""},
+    "higher_ed": true,
+    "confidence": 75,
+    "website": "https://www.canva.com/education/"
+  },
+
+  "Figma for Education": {
+    "cats": [14],
+    "description": "Figma design platform for education",
+    "html": ["figma.*education"],
+    "scriptSrc": ["figma"],
+    "js": {"Figma": ""},
+    "higher_ed": true,
+    "confidence": 72,
+    "website": "https://www.figma.com/education/"
+  },
+
+  "Bynder": {
+    "cats": [53],
+    "description": "Bynder digital asset management platform",
+    "html": ["bynder"],
+    "scriptSrc": ["bynder"],
+    "js": {"Bynder": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.bynder.com"
+  },
+
+  "Widen Collective": {
+    "cats": [53],
+    "description": "Widen Collective digital asset management",
+    "html": ["widen.*collective", "widencollective"],
+    "scriptSrc": ["widen"],
+    "js": {"Widen": "", "WidenCollective": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.widen.com"
+  },
+
+  "Adobe Experience Manager Assets": {
+    "cats": [53],
+    "description": "Adobe Experience Manager digital asset management",
+    "html": ["aem.*assets", "adobe.*experience.*manager"],
+    "scriptSrc": ["aem", "experience.*manager"],
+    "js": {"AEM": "", "ExperienceManager": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html"
+  },
+
+  "Brandfolder": {
+    "cats": [53],
+    "description": "Brandfolder digital asset management platform",
+    "html": ["brandfolder"],
+    "scriptSrc": ["brandfolder"],
+    "js": {"Brandfolder": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://brandfolder.com"
+  },
+
+  "Canto": {
+    "cats": [53],
+    "description": "Canto digital asset management platform",
+    "html": ["canto.*dam", "cantotechture"],
+    "scriptSrc": ["canto"],
+    "js": {"Canto": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.canto.com"
+  },
+
+  "Four Winds Interactive": {
+    "cats": [53],
+    "description": "Four Winds Interactive digital signage",
+    "html": ["fourwinds.*interactive", "4wi.*digital"],
+    "scriptSrc": ["fourwinds", "4wi"],
+    "js": {"FourWinds": "", "FWI": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.fourwindsinteractive.com"
+  },
+
+  "Scala Digital Signage": {
+    "cats": [53],
+    "description": "Scala digital signage platform",
+    "html": ["scala.*digital", "scala.*signage"],
+    "scriptSrc": ["scala"],
+    "js": {"Scala": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.scala.com"
+  },
+
+  "BrightSign": {
+    "cats": [53],
+    "description": "BrightSign digital signage players",
+    "html": ["brightsign"],
+    "scriptSrc": ["brightsign"],
+    "js": {"BrightSign": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.brightsign.biz"
+  },
+
+  "Rise Vision": {
+    "cats": [53],
+    "description": "Rise Vision digital signage platform",
+    "html": ["rise.*vision", "risevision"],
+    "scriptSrc": ["risevision"],
+    "js": {"RiseVision": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.risevision.com"
+  },
+
+  "ScreenCloud": {
+    "cats": [53],
+    "description": "ScreenCloud digital signage platform",
+    "html": ["screencloud"],
+    "scriptSrc": ["screencloud"],
+    "js": {"ScreenCloud": ""},
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://screencloud.com"
+  },
+
+  "NoviSign": {
+    "cats": [53],
+    "description": "NoviSign digital signage platform",
+    "html": ["novisign"],
+    "scriptSrc": ["novisign"],
+    "js": {"NoviSign": ""},
+    "higher_ed": true,
+    "confidence": 75,
+    "website": "https://www.novisign.com"
+  },
+
+  "Concept3D": {
+    "cats": [53],
+    "description": "Concept3D interactive mapping and virtual tours",
+    "html": ["concept3d"],
+    "scriptSrc": ["concept3d"],
+    "js": {"Concept3D": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://concept3d.com"
+  },
+
+  "MapYourTag": {
+    "cats": [53],
+    "description": "MapYourTag wayfinding and mapping platform",
+    "html": ["mapyourtag"],
+    "scriptSrc": ["mapyourtag"],
+    "js": {"MapYourTag": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://mapyourtag.com"
+  },
+
+  "Jibestream": {
+    "cats": [53],
+    "description": "Jibestream indoor mapping platform",
+    "html": ["jibestream"],
+    "scriptSrc": ["jibestream"],
+    "js": {"Jibestream": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://jibestream.com"
+  },
+
+  "Mappedin": {
+    "cats": [53],
+    "description": "Mappedin indoor mapping platform",
+    "html": ["mappedin"],
+    "scriptSrc": ["mappedin"],
+    "js": {"Mappedin": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.mappedin.com"
+  },
+
+  "GIS Cloud": {
+    "cats": [53],
+    "description": "GIS Cloud mapping platform",
+    "html": ["gis.*cloud", "giscloud"],
+    "scriptSrc": ["giscloud"],
+    "js": {"GISCloud": ""},
+    "higher_ed": true,
+    "confidence": 75,
+    "website": "https://www.giscloud.com"
+  }
+}

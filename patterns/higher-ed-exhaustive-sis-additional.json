@@ -1,0 +1,304 @@
+{
+  "_metadata": {
+    "version": "2.0.0",
+    "description": "Additional Student Information Systems - Missing Major Players",
+    "part": "SIS Extension",
+    "last_updated": "2024-10-15"
+  },
+
+  "CampusVue": {
+    "cats": [53],
+    "description": "CampusVue student information system by SCT (now Ellucian)",
+    "html": [
+      "campusvue",
+      "sct.*campusvue",
+      "campus.*vue"
+    ],
+    "scriptSrc": ["campusvue", "sct"],
+    "js": {"CampusVue": "", "SCT": ""},
+    "headers": {"x-campusvue-version": ".*"},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.ellucian.com"
+  },
+
+  "CampusLogic": {
+    "cats": [53],
+    "description": "CampusLogic student financial aid and SIS platform",
+    "html": [
+      "campuslogic",
+      "campus.*logic"
+    ],
+    "scriptSrc": ["campuslogic"],
+    "js": {"CampusLogic": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.campuslogic.com"
+  },
+
+  "Regent Education": {
+    "cats": [53],
+    "description": "Regent Education student information system",
+    "html": [
+      "regent.*education",
+      "regenteducation"
+    ],
+    "scriptSrc": ["regent.*education"],
+    "js": {"RegentEducation": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.regenteducation.com"
+  },
+
+  "Smart Catalog": {
+    "cats": [53],
+    "description": "Smart Catalog curriculum and catalog management system",
+    "html": [
+      "smart.*catalog",
+      "smartcatalog",
+      "myedu.*catalog"
+    ],
+    "scriptSrc": ["smartcatalog", "smart.*catalog"],
+    "js": {"SmartCatalog": "", "MyEdu": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.smartcatalog.co"
+  },
+
+  "Skyward Student Management": {
+    "cats": [53],
+    "description": "Skyward student management system extending to higher education",
+    "html": [
+      "skyward.*student",
+      "skyward.*sms",
+      "skyward\\.com"
+    ],
+    "scriptSrc": ["skyward"],
+    "js": {"Skyward": "", "SkywardSMS": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.skyward.com"
+  },
+
+  "Focus School Software": {
+    "cats": [53],
+    "description": "Focus School Software student information system",
+    "html": [
+      "focus.*school.*software",
+      "focusschoolsoftware",
+      "focus.*sis"
+    ],
+    "scriptSrc": ["focus.*school", "focussis"],
+    "js": {"FocusSchool": "", "FocusSIS": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.focusschoolsoftware.com"
+  },
+
+  "Veracross": {
+    "cats": [53],
+    "description": "Veracross independent school management system",
+    "html": [
+      "veracross",
+      "vera.*cross"
+    ],
+    "scriptSrc": ["veracross"],
+    "js": {"Veracross": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.veracross.com"
+  },
+
+  "RenWeb": {
+    "cats": [53],
+    "description": "RenWeb school management system by FACTS",
+    "html": [
+      "renweb",
+      "ren.*web",
+      "facts.*renweb"
+    ],
+    "scriptSrc": ["renweb", "facts"],
+    "js": {"RenWeb": "", "FACTS": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.factsmgt.com"
+  },
+
+  "FACTS SIS": {
+    "cats": [53],
+    "description": "FACTS Student Information System",
+    "html": [
+      "facts.*sis",
+      "factsmgt",
+      "facts.*student"
+    ],
+    "scriptSrc": ["facts.*sis", "factsmgt"],
+    "js": {"FACTSSIS": "", "FactsMgt": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.factsmgt.com/products/sis"
+  },
+
+  "Gradelink": {
+    "cats": [53],
+    "description": "Gradelink student information system",
+    "html": [
+      "gradelink",
+      "grade.*link"
+    ],
+    "scriptSrc": ["gradelink"],
+    "js": {"Gradelink": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.gradelink.com"
+  },
+
+  "QuickSchools": {
+    "cats": [53],
+    "description": "QuickSchools cloud-based student information system",
+    "html": [
+      "quickschools",
+      "quick.*schools"
+    ],
+    "scriptSrc": ["quickschools"],
+    "js": {"QuickSchools": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.quickschools.com"
+  },
+
+  "SITS": {
+    "cats": [53],
+    "description": "SITS Student Records System (UK/Ireland)",
+    "html": [
+      "sits.*student",
+      "sits.*records",
+      "tribal.*sits"
+    ],
+    "scriptSrc": ["sits", "tribal.*sits"],
+    "js": {"SITS": "", "TribalSITS": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.tribalgroup.com/solutions/student-management/sits"
+  },
+
+  "Campus Management Suite": {
+    "cats": [53],
+    "description": "Campus Management Suite (Australia/New Zealand)",
+    "html": [
+      "campus.*management.*suite",
+      "cms.*australia",
+      "callista.*software"
+    ],
+    "scriptSrc": ["callista", "cms.*au"],
+    "js": {"CallistaCMS": "", "CampusManagementSuite": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.callista.com"
+  },
+
+  "StudIS": {
+    "cats": [53],
+    "description": "StudIS European student information system",
+    "html": [
+      "studis",
+      "stud.*is",
+      "european.*sis"
+    ],
+    "scriptSrc": ["studis"],
+    "js": {"StudIS": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.studis.eu"
+  },
+
+  "SIMS": {
+    "cats": [53],
+    "description": "SIMS education management system (UK)",
+    "html": [
+      "sims.*education",
+      "capita.*sims",
+      "sims.*student"
+    ],
+    "scriptSrc": ["sims", "capita.*sims"],
+    "js": {"SIMS": "", "CapitaSIMS": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.capita-sims.co.uk"
+  },
+
+  "Tribal Student Management": {
+    "cats": [53],
+    "description": "Tribal Student Management System (UK Higher Education)",
+    "html": [
+      "tribal.*student.*management",
+      "tribal.*education",
+      "ebs.*tribal"
+    ],
+    "scriptSrc": ["tribal.*student", "ebs.*tribal"],
+    "js": {"TribalSM": "", "EBSTribal": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.tribalgroup.com"
+  },
+
+  "PowerSchool SIS": {
+    "cats": [53],
+    "description": "PowerSchool Student Information System",
+    "html": [
+      "powerschool.*sis",
+      "powerschool.*student",
+      "ps.*powerschool"
+    ],
+    "scriptSrc": ["powerschool.*sis", "ps.*powerschool"],
+    "js": {"PowerSchoolSIS": "", "PowerSchool": ""},
+    "cookies": {"PS_TOKEN": "", "PowerSchool_Session": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.powerschool.com"
+  },
+
+  "Synergy Student Information System": {
+    "cats": [53],
+    "description": "Synergy SIS by EduPoint Educational Systems",
+    "html": [
+      "synergy.*sis",
+      "edupoint.*synergy",
+      "synergy.*student"
+    ],
+    "scriptSrc": ["synergy.*sis", "edupoint"],
+    "js": {"SynergySIS": "", "EduPoint": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.edupoint.com"
+  },
+
+  "SchoolAdmin": {
+    "cats": [53],
+    "description": "SchoolAdmin student information system",
+    "html": [
+      "schooladmin",
+      "school.*admin"
+    ],
+    "scriptSrc": ["schooladmin"],
+    "js": {"SchoolAdmin": ""},
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.schooladmin.com"
+  },
+
+  "Rediker Software": {
+    "cats": [53],
+    "description": "Rediker AdminPlus student information system",
+    "html": [
+      "rediker.*software",
+      "adminplus",
+      "admin.*plus"
+    ],
+    "scriptSrc": ["rediker", "adminplus"],
+    "js": {"Rediker": "", "AdminPlus": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.rediker.com"
+  }
+}

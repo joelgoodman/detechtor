@@ -1,0 +1,318 @@
+{
+  "TouchNet": {
+    "categories": ["Payment Processor"],
+    "html": [
+      "tnet-",
+      "touchnet",
+      "marketplace\\.touchnet\\.com",
+      "secure\\.touchnet\\.net",
+      "class=\"tnet",
+      "id=\"tnet"
+    ],
+    "scripts": ["touchnet", "tnet"],
+    "headers": {
+      "server": "TouchNet"
+    },
+    "higher_ed": true,
+    "description": "Higher education payment processing system"
+  },
+
+  "Transact Campus": {
+    "categories": ["Payment Processor"],
+    "html": [
+      "transact-campus",
+      "transact\\.com",
+      "campus\\.transact\\.com",
+      "class=\"transact",
+      "data-transact"
+    ],
+    "scripts": ["transact", "transact-campus"],
+    "meta": {
+      "generator": "Transact"
+    },
+    "higher_ed": true,
+    "description": "Campus payment and credential management"
+  },
+
+  "CBORD": {
+    "categories": ["Payment Processor", "Campus Card"],
+    "html": [
+      "cbord",
+      "getcbord",
+      "cs\\.cbord\\.com",
+      "mycard\\.cbord\\.com",
+      "class=\"cbord"
+    ],
+    "scripts": ["cbord"],
+    "higher_ed": true,
+    "description": "Campus card and food service management"
+  },
+
+  "Google Analytics 4": {
+    "categories": ["Analytics"],
+    "html": [
+      "gtag\\('config', 'G-[A-Z0-9]+",
+      "googletagmanager\\.com\\/gtag\\/js",
+      "GA4",
+      "gtag\\('js'"
+    ],
+    "scripts": [
+      "googletagmanager\\.com\\/gtag\\/js",
+      "google-analytics\\.com\\/analytics\\.js"
+    ],
+    "js": {
+      "gtag": true,
+      "ga": true
+    },
+    "description": "Google Analytics 4 tracking"
+  },
+
+  "Adobe Analytics": {
+    "categories": ["Analytics"],
+    "html": [
+      "omniture",
+      "s_code\\.js",
+      "visitor\\.api\\.js",
+      "appmeasurement\\.js"
+    ],
+    "scripts": [
+      "omniture",
+      "adobedtm\\.com",
+      "sc\\.adobedtm\\.com"
+    ],
+    "js": {
+      "s_gi": true,
+      "s": true
+    },
+    "description": "Adobe Analytics (formerly Omniture)"
+  },
+
+  "Kaltura": {
+    "categories": ["Video Platform"],
+    "html": [
+      "kaltura",
+      "kwidget",
+      "cdnapi\\.kaltura\\.com",
+      "html5player\\.kaltura\\.com"
+    ],
+    "scripts": ["kaltura", "kwidget"],
+    "js": {
+      "kWidget": true,
+      "kaltura": true
+    },
+    "higher_ed": true,
+    "description": "Video management and streaming platform"
+  },
+
+  "Panopto": {
+    "categories": ["Video Platform"],
+    "html": [
+      "panopto",
+      "panopto\\.com",
+      "hosted\\.panopto\\.com",
+      "class=\"panopto"
+    ],
+    "scripts": ["panopto"],
+    "js": {
+      "Panopto": true
+    },
+    "higher_ed": true,
+    "description": "Lecture capture and video management"
+  },
+
+  "Mediasite": {
+    "categories": ["Video Platform"],
+    "html": [
+      "mediasite",
+      "mediasite\\.com",
+      "mediasite\\.cloud",
+      "class=\"mediasite"
+    ],
+    "scripts": ["mediasite"],
+    "higher_ed": true,
+    "description": "Enterprise video platform and lecture capture"
+  },
+
+  "Shibboleth": {
+    "categories": ["Authentication"],
+    "html": [
+      "shibboleth",
+      "idp\\.shibboleth\\.org",
+      "Shibboleth\\.sso",
+      "class=\"shibboleth"
+    ],
+    "scripts": ["shibboleth"],
+    "headers": {
+      "shib-session-id": ".*"
+    },
+    "js": {
+      "Shibboleth": true
+    },
+    "higher_ed": true,
+    "description": "Single sign-on authentication system"
+  },
+
+  "CAS": {
+    "categories": ["Authentication"],
+    "html": [
+      "cas\\.",
+      "/cas/",
+      "central authentication service",
+      "class=\"cas"
+    ],
+    "scripts": ["cas"],
+    "js": {
+      "CAS": true
+    },
+    "higher_ed": true,
+    "description": "Central Authentication Service"
+  },
+
+  "SAML": {
+    "categories": ["Authentication"],
+    "html": [
+      "saml",
+      "saml2",
+      "SAMLRequest",
+      "SAMLResponse"
+    ],
+    "headers": {
+      "saml": ".*"
+    },
+    "higher_ed": true,
+    "description": "Security Assertion Markup Language authentication"
+  },
+
+  "Workday Student": {
+    "categories": ["SIS"],
+    "html": [
+      "workday",
+      "workday\\.com",
+      "wd5\\.myworkday\\.com",
+      "class=\"wd-"
+    ],
+    "scripts": ["workday"],
+    "js": {
+      "Workday": true
+    },
+    "higher_ed": true,
+    "description": "Cloud-based student information system"
+  },
+
+  "Anthology Student": {
+    "categories": ["SIS"],
+    "html": [
+      "anthology",
+      "anthology\\.com",
+      "campus\\.anthology\\.com",
+      "class=\"anthology"
+    ],
+    "scripts": ["anthology"],
+    "higher_ed": true,
+    "description": "Student information system (formerly CampusNexus)"
+  },
+
+  "Unit4 Student Management": {
+    "categories": ["SIS"],
+    "html": [
+      "unit4",
+      "unit4\\.com",
+      "studentmanagement\\.unit4\\.com",
+      "class=\"unit4"
+    ],
+    "scripts": ["unit4"],
+    "higher_ed": true,
+    "description": "Cloud-based student management system"
+  },
+
+  "Salesforce Education Cloud": {
+    "categories": ["CRM"],
+    "html": [
+      "salesforce",
+      "force\\.com",
+      "educationcloud\\.salesforce\\.com",
+      "class=\"salesforce"
+    ],
+    "scripts": ["salesforce", "force"],
+    "js": {
+      "sforce": true
+    },
+    "higher_ed": true,
+    "description": "Salesforce CRM for higher education"
+  },
+
+  "HubSpot for Education": {
+    "categories": ["CRM"],
+    "html": [
+      "hubspot",
+      "hubspot\\.com",
+      "hs-script",
+      "class=\"hs-"
+    ],
+    "scripts": ["hubspot"],
+    "js": {
+      "hbspt": true,
+      "_hsq": true
+    },
+    "higher_ed": true,
+    "description": "HubSpot CRM optimized for education"
+  },
+
+  "EAB Navigate": {
+    "categories": ["Student Success"],
+    "html": [
+      "eab\\.com",
+      "navigate\\.eab\\.com",
+      "class=\"eab",
+      "data-eab"
+    ],
+    "scripts": ["eab", "navigate"],
+    "js": {
+      "EAB": true,
+      "Navigate": true
+    },
+    "higher_ed": true,
+    "description": "Student success and advising platform"
+  },
+
+  "Starfish": {
+    "categories": ["Student Success"],
+    "html": [
+      "starfishsolutions",
+      "starfish\\.starfishsolutions\\.com",
+      "class=\"starfish"
+    ],
+    "scripts": ["starfish"],
+    "js": {
+      "Starfish": true
+    },
+    "higher_ed": true,
+    "description": "Student success platform"
+  },
+
+  "Localist": {
+    "categories": ["Event Management"],
+    "html": [
+      "localist",
+      "localist\\.com",
+      "events\\.localist\\.com",
+      "class=\"localist"
+    ],
+    "scripts": ["localist"],
+    "higher_ed": true,
+    "description": "Event management platform"
+  },
+
+  "TwentyFiveLive": {
+    "categories": ["Event Management"],
+    "html": [
+      "25live",
+      "twentyfivelive",
+      "25live\\.college\\.edu",
+      "class=\"25live"
+    ],
+    "scripts": ["25live", "twentyfivelive"],
+    "higher_ed": true,
+    "description": "Campus event scheduling system"
+  }
+}

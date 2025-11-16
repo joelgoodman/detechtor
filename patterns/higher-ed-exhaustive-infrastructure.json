@@ -1,0 +1,569 @@
+{
+  "_metadata": {
+    "version": "2.0.0", 
+    "description": "Exhaustive higher education technology patterns - Infrastructure & Analytics Systems",
+    "part": "4 of 4",
+    "last_updated": "2024-10-15"
+  },
+
+  "Shibboleth": {
+    "cats": [53],
+    "description": "Shibboleth SAML-based single sign-on system",
+    "html": ["shibboleth"],
+    "scriptSrc": ["shibboleth"],
+    "js": {"Shibboleth": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.shibboleth.net"
+  },
+
+  "CAS Central Authentication Service": {
+    "cats": [53],
+    "description": "Apereo CAS single sign-on protocol",
+    "html": ["cas.*sso", "central.*authentication"],
+    "scriptSrc": ["cas"],
+    "js": {"CAS": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.apereo.org/projects/cas"
+  },
+
+  "InCommon Federation": {
+    "cats": [53],
+    "description": "InCommon federated identity management",
+    "html": ["incommon"],
+    "scriptSrc": ["incommon"],
+    "js": {"InCommon": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.incommon.org"
+  },
+
+  "Okta": {
+    "cats": [53],
+    "description": "Okta identity and access management platform",
+    "html": ["okta"],
+    "scriptSrc": ["okta"],
+    "js": {"Okta": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.okta.com"
+  },
+
+  "Azure Active Directory": {
+    "cats": [53],
+    "description": "Microsoft Azure Active Directory",
+    "html": ["azure.*active.*directory", "aad.*microsoft"],
+    "scriptSrc": ["azure.*ad", "aad"],
+    "js": {"AzureAD": "", "AAD": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://azure.microsoft.com/en-us/products/active-directory/"
+  },
+
+  "Ping Identity": {
+    "cats": [53],
+    "description": "Ping Identity access management platform",
+    "html": ["pingidentity", "ping.*identity"],
+    "scriptSrc": ["pingidentity"],
+    "js": {"PingIdentity": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.pingidentity.com"
+  },
+
+  "OneLogin": {
+    "cats": [53],
+    "description": "OneLogin identity and access management",
+    "html": ["onelogin"],
+    "scriptSrc": ["onelogin"],
+    "js": {"OneLogin": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.onelogin.com"
+  },
+
+  "Duo Security": {
+    "cats": [53],
+    "description": "Duo Security multi-factor authentication",
+    "html": ["duo.*security", "duosecurity"],
+    "scriptSrc": ["duo"],
+    "js": {"Duo": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://duo.com"
+  },
+
+  "RSA SecurID": {
+    "cats": [53],
+    "description": "RSA SecurID multi-factor authentication",
+    "html": ["rsa.*securid", "securid"],
+    "scriptSrc": ["rsa", "securid"],
+    "js": {"RSA": "", "SecurID": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.rsa.com/products/rsa-securid-suite/"
+  },
+
+  "Symantec VIP": {
+    "cats": [53],
+    "description": "Symantec VIP multi-factor authentication",
+    "html": ["symantec.*vip", "vip.*symantec"],
+    "scriptSrc": ["symantec.*vip"],
+    "js": {"SymantecVIP": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.broadcom.com/products/cyber-security/identity/vip-access-manager"
+  },
+
+  "Tableau": {
+    "cats": [53],
+    "description": "Tableau data visualization and analytics platform",
+    "html": ["tableau"],
+    "scriptSrc": ["tableau"],
+    "js": {"Tableau": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.tableau.com"
+  },
+
+  "Microsoft Power BI": {
+    "cats": [53],
+    "description": "Microsoft Power BI business intelligence platform",
+    "html": ["powerbi", "power.*bi"],
+    "scriptSrc": ["powerbi"],
+    "js": {"PowerBI": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://powerbi.microsoft.com"
+  },
+
+  "QlikView": {
+    "cats": [53],
+    "description": "QlikView business intelligence platform",
+    "html": ["qlikview"],
+    "scriptSrc": ["qlikview"],
+    "js": {"QlikView": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.qlik.com/us/products/qlikview"
+  },
+
+  "Cognos": {
+    "cats": [53],
+    "description": "IBM Cognos business intelligence suite",
+    "html": ["cognos", "ibm.*cognos"],
+    "scriptSrc": ["cognos"],
+    "js": {"Cognos": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.ibm.com/products/cognos-analytics"
+  },
+
+  "Argos": {
+    "cats": [53],
+    "description": "Argos higher education reporting platform",
+    "html": ["argos.*reporting", "evisions.*argos"],
+    "scriptSrc": ["argos"],
+    "js": {"Argos": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.evisions.com/products/argos/"
+  },
+
+  "Informer": {
+    "cats": [53],
+    "description": "Entrinsik Informer reporting and analytics platform",
+    "html": ["informer.*entrinsik", "entrinsik"],
+    "scriptSrc": ["informer", "entrinsik"],
+    "js": {"Informer": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.entrinsik.com/informer/"
+  },
+
+  "Pentaho": {
+    "cats": [53],
+    "description": "Pentaho business intelligence platform",
+    "html": ["pentaho"],
+    "scriptSrc": ["pentaho"],
+    "js": {"Pentaho": ""},
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.hitachivantara.com/en-us/products/pentaho-platform.html"
+  },
+
+  "SAS": {
+    "cats": [53],
+    "description": "SAS statistical analysis and business intelligence",
+    "html": ["sas.*institute", "sas.*analytics"],
+    "scriptSrc": ["sas"],
+    "js": {"SAS": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.sas.com"
+  },
+
+  "SPSS": {
+    "cats": [53],
+    "description": "IBM SPSS statistical analysis software",
+    "html": ["spss", "ibm.*spss"],
+    "scriptSrc": ["spss"],
+    "js": {"SPSS": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.ibm.com/products/spss-statistics"
+  },
+
+  "R Shiny": {
+    "cats": [53],
+    "description": "R Shiny web application framework for analytics",
+    "html": ["shiny.*r", "r.*shiny"],
+    "scriptSrc": ["shiny"],
+    "js": {"Shiny": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://shiny.rstudio.com"
+  },
+
+  "Jupyter Notebook": {
+    "cats": [53],
+    "description": "Jupyter Notebook interactive computing platform",
+    "html": ["jupyter", "notebook.*jupyter"],
+    "scriptSrc": ["jupyter"],
+    "js": {"Jupyter": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://jupyter.org"
+  },
+
+  "Zoom": {
+    "cats": [53],
+    "description": "Zoom video conferencing platform",
+    "html": ["zoom.*us", "zoom.*meeting"],
+    "scriptSrc": ["zoom"],
+    "js": {"Zoom": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://zoom.us"
+  },
+
+  "Microsoft Teams": {
+    "cats": [53],
+    "description": "Microsoft Teams collaboration platform",
+    "html": ["teams.*microsoft", "microsoft.*teams"],
+    "scriptSrc": ["teams"],
+    "js": {"MicrosoftTeams": "", "Teams": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"
+  },
+
+  "Cisco Webex": {
+    "cats": [53],
+    "description": "Cisco Webex video conferencing and collaboration",
+    "html": ["webex", "cisco.*webex"],
+    "scriptSrc": ["webex"],
+    "js": {"Webex": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.webex.com"
+  },
+
+  "Google Workspace": {
+    "cats": [53],
+    "description": "Google Workspace (formerly G Suite) collaboration platform",
+    "html": ["workspace.*google", "gsuite", "g.*suite"],
+    "scriptSrc": ["workspace", "gsuite"],
+    "js": {"GoogleWorkspace": "", "GSuite": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://workspace.google.com"
+  },
+
+  "Slack": {
+    "cats": [53],
+    "description": "Slack team collaboration platform",
+    "html": ["slack"],
+    "scriptSrc": ["slack"],
+    "js": {"Slack": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://slack.com"
+  },
+
+  "Discord": {
+    "cats": [53],
+    "description": "Discord communication platform",
+    "html": ["discord"],
+    "scriptSrc": ["discord"],
+    "js": {"Discord": ""},
+    "higher_ed": true,
+    "confidence": 75,
+    "website": "https://discord.com"
+  },
+
+  "Yammer": {
+    "cats": [53],
+    "description": "Microsoft Yammer enterprise social networking",
+    "html": ["yammer", "microsoft.*yammer"],
+    "scriptSrc": ["yammer"],
+    "js": {"Yammer": ""},
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.yammer.com"
+  },
+
+  "GroupMe": {
+    "cats": [53],
+    "description": "GroupMe group messaging platform",
+    "html": ["groupme"],
+    "scriptSrc": ["groupme"],
+    "js": {"GroupMe": ""},
+    "higher_ed": true,
+    "confidence": 70,
+    "website": "https://groupme.com"
+  },
+
+  "Microsoft Exchange": {
+    "cats": [53],
+    "description": "Microsoft Exchange email server",
+    "html": ["exchange.*microsoft", "outlook.*web.*access"],
+    "scriptSrc": ["exchange", "owa"],
+    "js": {"Exchange": "", "OWA": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.microsoft.com/en-us/microsoft-365/exchange/email"
+  },
+
+  "Gmail": {
+    "cats": [53],
+    "description": "Google Gmail email service",
+    "html": ["gmail", "google.*mail"],
+    "scriptSrc": ["gmail"],
+    "js": {"Gmail": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://gmail.com"
+  },
+
+  "Zimbra": {
+    "cats": [53],
+    "description": "Zimbra email and collaboration platform",
+    "html": ["zimbra"],
+    "scriptSrc": ["zimbra"],
+    "js": {"Zimbra": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.zimbra.com"
+  },
+
+  "Postfix": {
+    "cats": [53],
+    "description": "Postfix mail transfer agent",
+    "html": ["postfix"],
+    "scriptSrc": ["postfix"],
+    "js": {"Postfix": ""},
+    "higher_ed": true,
+    "confidence": 75,
+    "website": "http://www.postfix.org"
+  },
+
+  "Elasticsearch": {
+    "cats": [29],
+    "description": "Elasticsearch distributed search and analytics engine",
+    "html": ["elasticsearch"],
+    "scriptSrc": ["elasticsearch", "elastic"],
+    "js": {"elasticsearch": "", "elastic": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.elastic.co/elasticsearch/"
+  },
+
+  "Apache Solr": {
+    "cats": [29],
+    "description": "Apache Solr open source search platform",
+    "html": ["solr", "apache.*solr"],
+    "scriptSrc": ["solr"],
+    "js": {"Solr": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://solr.apache.org"
+  },
+
+  "Algolia": {
+    "cats": [29],
+    "description": "Algolia hosted search API",
+    "html": ["algolia"],
+    "scriptSrc": ["algolia", "algoliasearch"],
+    "js": {"algoliasearch": "", "algolia": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.algolia.com"
+  },
+
+  "Swiftype": {
+    "cats": [29],
+    "description": "Swiftype site search (now Elastic Site Search)",
+    "html": ["swiftype"],
+    "scriptSrc": ["swiftype"],
+    "js": {"_st": "", "swiftype": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.elastic.co/enterprise-search/"
+  },
+
+  "Google Custom Search": {
+    "cats": [29],
+    "description": "Google Custom Search Engine",
+    "html": ["google.*custom.*search", "google.*site.*search"],
+    "scriptSrc": ["google.*search", "cse.*google"],
+    "js": {"google": "", "__gcse": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://cse.google.com"
+  },
+
+  "Azure Cognitive Search": {
+    "cats": [29],
+    "description": "Microsoft Azure Cognitive Search",
+    "html": ["azure.*search", "cognitive.*search"],
+    "scriptSrc": ["azure.*search"],
+    "js": {"AzureSearch": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://azure.microsoft.com/en-us/products/search/"
+  },
+
+  "Funnelback": {
+    "cats": [29],
+    "description": "Funnelback enterprise search platform (Squiz Search)",
+    "html": ["funnelback", "squiz.*search"],
+    "scriptSrc": ["funnelback", "squiz.*search"],
+    "js": {"Funnelback": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.funnelback.com"
+  },
+
+  "AddSearch": {
+    "cats": [29],
+    "description": "AddSearch hosted site search service",
+    "html": ["addsearch"],
+    "scriptSrc": ["addsearch"],
+    "js": {"addsearch": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.addsearch.com"
+  },
+
+  "Element451 Search": {
+    "cats": [29],
+    "description": "Element451 website search product",
+    "html": ["element451.*search", "e451.*search"],
+    "scriptSrc": ["element451.*search"],
+    "js": {"Element451Search": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://element451.com"
+  },
+
+  "Meilisearch": {
+    "cats": [29],
+    "description": "Meilisearch open source search engine",
+    "html": ["meilisearch", "meili"],
+    "scriptSrc": ["meilisearch", "meili"],
+    "js": {"MeiliSearch": "", "meilisearch": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.meilisearch.com"
+  },
+
+  "Typesense": {
+    "cats": [29],
+    "description": "Typesense open source search engine",
+    "html": ["typesense"],
+    "scriptSrc": ["typesense"],
+    "js": {"typesense": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://typesense.org"
+  },
+
+  "Coveo": {
+    "cats": [29],
+    "description": "Coveo enterprise search platform",
+    "html": ["coveo"],
+    "scriptSrc": ["coveo"],
+    "js": {"Coveo": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.coveo.com"
+  },
+
+  "OpenSearch": {
+    "cats": [29],
+    "description": "OpenSearch distributed search and analytics suite",
+    "html": ["opensearch"],
+    "scriptSrc": ["opensearch"],
+    "js": {"opensearch": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://opensearch.org"
+  },
+
+  "Sajari": {
+    "cats": [29],
+    "description": "Sajari search and matching platform",
+    "html": ["sajari"],
+    "scriptSrc": ["sajari"],
+    "js": {"sajari": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.sajari.com"
+  },
+
+  "SearchBlox": {
+    "cats": [29],
+    "description": "SearchBlox enterprise search platform",
+    "html": ["searchblox"],
+    "scriptSrc": ["searchblox"],
+    "js": {"SearchBlox": ""},
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.searchblox.com"
+  },
+
+  "Cludo": {
+    "cats": [29],
+    "description": "Cludo intelligent site search",
+    "html": ["cludo"],
+    "scriptSrc": ["cludo"],
+    "js": {"cludo": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.cludo.com"
+  },
+
+  "Site Search 360": {
+    "cats": [29],
+    "description": "Site Search 360 hosted search solution",
+    "html": ["sitesearch360", "site.*search.*360"],
+    "scriptSrc": ["sitesearch360"],
+    "js": {"ss360": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.sitesearch360.com"
+  },
+
+  "Lucidworks Fusion": {
+    "cats": [29],
+    "description": "Lucidworks Fusion search platform",
+    "html": ["lucidworks", "fusion.*search"],
+    "scriptSrc": ["lucidworks", "fusion"],
+    "js": {"Lucidworks": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://lucidworks.com"
+  }
+}

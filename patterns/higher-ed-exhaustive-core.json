@@ -1,0 +1,542 @@
+{
+  "_metadata": {
+    "version": "2.0.0",
+    "description": "Exhaustive higher education technology patterns - Core Academic Systems",
+    "part": "1 of 4",
+    "last_updated": "2024-10-15"
+  },
+
+  "Workday Student": {
+    "cats": [53],
+    "description": "Workday Student Information System",
+    "html": [
+      "workday.*student",
+      "workdayhcm",
+      "wd-.*student"
+    ],
+    "scriptSrc": ["workday", "wd-app"],
+    "js": {"Workday": "", "WD": ""},
+    "headers": {"x-workday-client": ".*"},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.workday.com/en-us/products/student/overview.html"
+  },
+
+  "Anthology Student": {
+    "cats": [53],
+    "description": "Anthology Student (formerly Campus Management)",
+    "html": [
+      "anthology.*student",
+      "campusnexus",
+      "campus.*management"
+    ],
+    "scriptSrc": ["anthology", "campusnexus"],
+    "js": {"Anthology": "", "CampusNexus": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.anthology.com/products/student"
+  },
+
+  "Unit4 Student Management": {
+    "cats": [53],
+    "description": "Unit4 Student Management (formerly CODA)",
+    "html": [
+      "unit4.*student",
+      "coda.*student",
+      "tribal.*student"
+    ],
+    "scriptSrc": ["unit4", "coda", "tribal"],
+    "js": {"Unit4": "", "CODA": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.unit4.com/solutions/education"
+  },
+
+  "Populi": {
+    "cats": [53],
+    "description": "Populi college management system",
+    "html": [
+      "populi.*college",
+      "populiweb\\.com"
+    ],
+    "scriptSrc": ["populi"],
+    "js": {"Populi": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://populi.co"
+  },
+
+  "Infinite Campus": {
+    "cats": [53],
+    "description": "Infinite Campus student information system",
+    "html": [
+      "infinite.*campus",
+      "infinitecampus\\.com"
+    ],
+    "scriptSrc": ["infinitecampus"],
+    "js": {"InfiniteCampus": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.infinitecampus.com"
+  },
+
+  "Brightspace Core": {
+    "cats": [21],
+    "description": "D2L Brightspace Core platform",
+    "html": [
+      "brightspace.*core",
+      "d2l.*core",
+      "valence.*api"
+    ],
+    "scriptSrc": ["brightspace.*core", "d2l.*core"],
+    "js": {"BrightspaceCore": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.d2l.com/brightspace/core/"
+  },
+
+  "Google Classroom": {
+    "cats": [21],
+    "description": "Google Classroom learning management system",
+    "html": [
+      "classroom\\.google\\.com",
+      "google.*classroom"
+    ],
+    "scriptSrc": ["classroom.*google", "google.*classroom"],
+    "js": {"GoogleClassroom": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://classroom.google.com"
+  },
+
+  "Schoology": {
+    "cats": [21],
+    "description": "PowerSchool Learning (formerly Schoology)",
+    "html": [
+      "schoology",
+      "powerschool.*learning"
+    ],
+    "scriptSrc": ["schoology"],
+    "js": {"Schoology": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.schoology.com"
+  },
+
+  "Microsoft Teams for Education": {
+    "cats": [21],
+    "description": "Microsoft Teams Education platform",
+    "html": [
+      "teams.*education",
+      "office365.*education",
+      "microsoft.*education"
+    ],
+    "scriptSrc": ["teams.*education", "office365.*edu"],
+    "js": {"TeamsEducation": "", "O365Education": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.microsoft.com/en-us/education/products/teams"
+  },
+
+  "Edmodo": {
+    "cats": [21],
+    "description": "Edmodo education technology platform",
+    "html": ["edmodo"],
+    "scriptSrc": ["edmodo"],
+    "js": {"Edmodo": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://new.edmodo.com"
+  },
+
+  "Open edX": {
+    "cats": [21],
+    "description": "Open edX learning management system",
+    "html": [
+      "open.*edx",
+      "edx.*platform",
+      "lms\\.edx"
+    ],
+    "scriptSrc": ["edx", "openedx"],
+    "js": {"edX": "", "OpenEdX": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://open.edx.org"
+  },
+
+  "Coursera for Campus": {
+    "cats": [21],
+    "description": "Coursera institutional platform",
+    "html": [
+      "coursera.*campus",
+      "coursera.*institutional"
+    ],
+    "scriptSrc": ["coursera.*campus"],
+    "js": {"CourseraCampus": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.coursera.org/campus"
+  },
+
+  "FutureLearn": {
+    "cats": [21],
+    "description": "FutureLearn online learning platform",
+    "html": ["futurelearn"],
+    "scriptSrc": ["futurelearn"],
+    "js": {"FutureLearn": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.futurelearn.com"
+  },
+
+  "Instructure Canvas Catalog": {
+    "cats": [21],
+    "description": "Canvas Catalog for continuing education",
+    "html": [
+      "canvas.*catalog",
+      "catalog\\.instructure"
+    ],
+    "scriptSrc": ["canvas.*catalog"],
+    "js": {"CanvasCatalog": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.instructure.com/canvas/catalog"
+  },
+
+  "Absorb LMS": {
+    "cats": [21],
+    "description": "Absorb learning management system",
+    "html": ["absorblms", "absorb.*lms"],
+    "scriptSrc": ["absorb"],
+    "js": {"AbsorbLMS": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.absorblms.com"
+  },
+
+  "TalentLMS": {
+    "cats": [21],
+    "description": "TalentLMS learning management system",
+    "html": ["talentlms"],
+    "scriptSrc": ["talentlms"],
+    "js": {"TalentLMS": ""},
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.talentlms.com"
+  },
+
+  "LearnDash": {
+    "cats": [21],
+    "description": "LearnDash WordPress LMS plugin",
+    "html": [
+      "learndash",
+      "ld.*course"
+    ],
+    "scriptSrc": ["learndash"],
+    "js": {"LearnDash": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.learndash.com"
+  },
+
+  "Totara Learn": {
+    "cats": [21],
+    "description": "Totara Learn enterprise LMS",
+    "html": ["totara", "totaralms"],
+    "scriptSrc": ["totara"],
+    "js": {"Totara": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.totaralearning.com"
+  },
+
+  "Docebo": {
+    "cats": [21],
+    "description": "Docebo learning management system",
+    "html": ["docebo"],
+    "scriptSrc": ["docebo"],
+    "js": {"Docebo": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.docebo.com"
+  },
+
+  "Cornerstone OnDemand": {
+    "cats": [21],
+    "description": "Cornerstone OnDemand learning platform",
+    "html": [
+      "cornerstone.*ondemand",
+      "csod\\.com"
+    ],
+    "scriptSrc": ["cornerstone", "csod"],
+    "js": {"Cornerstone": "", "CSOD": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.cornerstoneondemand.com"
+  },
+
+  "Drupal": {
+    "cats": [1],
+    "description": "Drupal open-source content management system",
+    "html": [
+      "drupal",
+      "sites/all/themes",
+      "sites/default/files",
+      "misc/drupal\\.js"
+    ],
+    "scriptSrc": ["misc/drupal\\.js", "sites/default/files"],
+    "js": {"Drupal": "", "drupalSettings": ""},
+    "meta": {"generator": "Drupal"},
+    "headers": {"X-Drupal-Cache": ".*", "X-Generator": "Drupal"},
+    "higher_ed": false,
+    "confidence": 85,
+    "website": "https://www.drupal.org"
+  },
+
+  "WordPress": {
+    "cats": [1],
+    "description": "WordPress content management system",
+    "html": [
+      "wp-content",
+      "wp-includes",
+      "wordpress"
+    ],
+    "scriptSrc": ["wp-content", "wp-includes"],
+    "js": {"wp": ""},
+    "meta": {"generator": "WordPress"},
+    "higher_ed": false,
+    "confidence": 85,
+    "website": "https://wordpress.org"
+  },
+
+  "Sitecore": {
+    "cats": [1],
+    "description": "Sitecore digital experience platform",
+    "html": [
+      "sitecore",
+      "/sitecore/",
+      "sc_analytics",
+      "_scid"
+    ],
+    "scriptSrc": ["sitecore", "sc_analytics"],
+    "js": {"_scq": "", "_sc": "", "Sitecore": ""},
+    "cookies": {"SC_ANALYTICS_GLOBAL_COOKIE": "", "sc.UserId": ""},
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.sitecore.com"
+  },
+
+  "Adobe Experience Manager": {
+    "cats": [1],
+    "description": "Adobe Experience Manager content management system",
+    "html": [
+      "aem",
+      "adobe.*experience.*manager",
+      "/etc/designs/",
+      "cq-",
+      "granite"
+    ],
+    "scriptSrc": ["granite", "aem", "etc/designs"],
+    "js": {"Granite": "", "CQ": "", "AEM": ""},
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://business.adobe.com/products/experience-manager/"
+  },
+
+  "Squiz DXP": {
+    "cats": [1],
+    "description": "Squiz DXP digital experience platform (formerly Matrix)",
+    "html": [
+      "squiz.*dxp",
+      "squiz.*matrix",
+      "mysource.*matrix",
+      "matrix.*asset",
+      "__data_asset_path",
+      "squiz.*cms"
+    ],
+    "scriptSrc": ["squiz", "matrix", "dxp"],
+    "js": {"Matrix": "", "Squiz": ""},
+    "higher_ed": false,
+    "confidence": 92,
+    "website": "https://www.squiz.net"
+  },
+
+  "Umbraco": {
+    "cats": [1],
+    "description": "Umbraco open-source .NET CMS",
+    "html": [
+      "umbraco",
+      "umbraco.*cms",
+      "/umbraco/"
+    ],
+    "scriptSrc": ["umbraco"],
+    "js": {"Umbraco": ""},
+    "meta": {"generator": "Umbraco"},
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://umbraco.com"
+  },
+
+  "TYPO3": {
+    "cats": [1],
+    "description": "TYPO3 enterprise content management system",
+    "html": [
+      "typo3",
+      "typo3temp",
+      "t3-",
+      "TYPO3.*CMS"
+    ],
+    "scriptSrc": ["typo3", "typo3temp"],
+    "js": {"TYPO3": ""},
+    "meta": {"generator": "TYPO3"},
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://typo3.org"
+  },
+
+  "Kentico": {
+    "cats": [1],
+    "description": "Kentico digital experience platform",
+    "html": [
+      "kentico",
+      "cmspageplaceholder",
+      "cmspage"
+    ],
+    "scriptSrc": ["kentico"],
+    "js": {"Kentico": ""},
+    "meta": {"generator": "Kentico"},
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://www.kentico.com"
+  },
+
+  "Joomla": {
+    "cats": [1],
+    "description": "Joomla content management system",
+    "html": [
+      "joomla",
+      "com_content",
+      "option=com_",
+      "joomla.*site"
+    ],
+    "scriptSrc": ["joomla", "com_content"],
+    "js": {"Joomla": ""},
+    "meta": {"generator": "Joomla"},
+    "higher_ed": false,
+    "confidence": 85,
+    "website": "https://www.joomla.org"
+  },
+
+  "Contentful": {
+    "cats": [1],
+    "description": "Contentful headless content management system",
+    "html": ["contentful"],
+    "scriptSrc": ["contentful", "ctfassets"],
+    "js": {"contentful": ""},
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.contentful.com"
+  },
+
+  "Strapi": {
+    "cats": [1],
+    "description": "Strapi headless CMS",
+    "html": ["strapi"],
+    "scriptSrc": ["strapi"],
+    "js": {"strapi": ""},
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://strapi.io"
+  },
+
+  "Ghost": {
+    "cats": [1],
+    "description": "Ghost publishing platform",
+    "html": [
+      "ghost",
+      "ghost.*version",
+      "powered.*by.*ghost"
+    ],
+    "scriptSrc": ["ghost"],
+    "js": {"ghost": ""},
+    "meta": {"generator": "Ghost"},
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://ghost.org"
+  },
+
+  "Cascade CMS": {
+    "cats": [1],
+    "description": "Hannon Hill Cascade CMS for higher education",
+    "html": [
+      "cascade.*cms",
+      "hannon.*hill",
+      "cascade.*server",
+      "_cascade",
+      "cascade_",
+      "cs.*asset.*path",
+      "data-cascade",
+      "format.*asset.*path"
+    ],
+    "scriptSrc": ["cascade", "hannon.*hill"],
+    "js": {"Cascade": "", "CascadeCMS": ""},
+    "meta": {"generator": "Cascade"},
+    "headers": {"X-Cascade-Site": ".*"},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.hannonhill.com/products/cascade-cms/index.html"
+  },
+
+  "Ingeniux CMS": {
+    "cats": [1],
+    "description": "Ingeniux content management system",
+    "html": ["ingeniux", "ingeniux.*cms"],
+    "scriptSrc": ["ingeniux"],
+    "js": {"Ingeniux": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.ingeniux.com"
+  },
+
+  "Finalsite": {
+    "cats": [1],
+    "description": "Finalsite school website platform",
+    "html": [
+      "finalsite",
+      "finalsite\\.com"
+    ],
+    "scriptSrc": ["finalsite"],
+    "js": {"Finalsite": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.finalsite.com"
+  },
+
+  "SchoolMessenger": {
+    "cats": [1],
+    "description": "SchoolMessenger (West Unified Communications)",
+    "html": [
+      "schoolmessenger",
+      "west.*unified"
+    ],
+    "scriptSrc": ["schoolmessenger"],
+    "js": {"SchoolMessenger": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.schoolmessenger.com"
+  },
+
+  "Blackboard Web Community Manager": {
+    "cats": [1],
+    "description": "Blackboard Web Community Manager CMS",
+    "html": [
+      "blackboard.*web.*community",
+      "bb.*wcm"
+    ],
+    "scriptSrc": ["bb.*wcm"],
+    "js": {"BlackboardWCM": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.blackboard.com"
+  }
+}

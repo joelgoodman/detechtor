@@ -1,0 +1,338 @@
+{
+  "_metadata": {
+    "version": "2.0.0", 
+    "description": "Exhaustive higher education technology patterns - Business & Administrative Systems",
+    "part": "3 of 4",
+    "last_updated": "2024-10-15"
+  },
+
+  "Oracle PeopleSoft": {
+    "cats": [53],
+    "description": "Oracle PeopleSoft enterprise resource planning system",
+    "html": ["peoplesoft", "oracle.*peoplesoft"],
+    "scriptSrc": ["peoplesoft", "oracle.*ps"],
+    "js": {"PeopleSoft": "", "Oracle": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.oracle.com/applications/peoplesoft/"
+  },
+
+  "Workday": {
+    "cats": [53],
+    "description": "Workday cloud-based enterprise management suite",
+    "html": ["workday"],
+    "scriptSrc": ["workday"],
+    "js": {"Workday": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.workday.com"
+  },
+
+  "SAP ERP": {
+    "cats": [53],
+    "description": "SAP enterprise resource planning system",
+    "html": ["sap.*erp", "sap.*gui"],
+    "scriptSrc": ["sap"],
+    "js": {"SAP": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.sap.com"
+  },
+
+  "Ellucian Banner": {
+    "cats": [53],
+    "description": "Ellucian Banner ERP system for higher education",
+    "html": ["banner.*ellucian", "ellucian.*banner"],
+    "scriptSrc": ["banner", "ellucian"],
+    "js": {"Banner": "", "Ellucian": ""},
+    "higher_ed": true,
+    "confidence": 98,
+    "website": "https://www.ellucian.com/solutions/ellucian-banner"
+  },
+
+  "Ellucian Colleague": {
+    "cats": [53],
+    "description": "Ellucian Colleague student information system",
+    "html": ["colleague.*ellucian", "ellucian.*colleague"],
+    "scriptSrc": ["colleague", "ellucian"],
+    "js": {"Colleague": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.ellucian.com/solutions/ellucian-colleague"
+  },
+
+  "Jenzabar EX": {
+    "cats": [53],
+    "description": "Jenzabar EX enterprise resource planning system",
+    "html": ["jenzabar.*ex", "jenzabar"],
+    "scriptSrc": ["jenzabar"],
+    "js": {"Jenzabar": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.jenzabar.com/products/jenzabar-ex"
+  },
+
+  "Campus Management CampusNexus": {
+    "cats": [53],
+    "description": "CampusNexus student information system",
+    "html": ["campusnexus", "campus.*nexus"],
+    "scriptSrc": ["campusnexus"],
+    "js": {"CampusNexus": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.campusmanagement.com/higher-education-software/campusnexus-student/"
+  },
+
+  "Unit4 Student Management": {
+    "cats": [53],
+    "description": "Unit4 student information and finance system",
+    "html": ["unit4.*student", "unit4.*finance"],
+    "scriptSrc": ["unit4"],
+    "js": {"Unit4": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.unit4.com/solutions/education"
+  },
+
+  "PowerCAMPUS": {
+    "cats": [53],
+    "description": "PowerCAMPUS student information system",
+    "html": ["powercampus"],
+    "scriptSrc": ["powercampus"],
+    "js": {"PowerCAMPUS": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.powerschool.com/solutions/products/powercampus/"
+  },
+
+  "Kuali Financial System": {
+    "cats": [53],
+    "description": "Kuali Financial System (KFS)",
+    "html": ["kuali.*financial", "kuali.*kfs"],
+    "scriptSrc": ["kuali.*kfs"],
+    "js": {"KualiFS": "", "KFS": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.kuali.co/products/kuali-financial-system"
+  },
+
+  "Kuali Coeus": {
+    "cats": [53],
+    "description": "Kuali Coeus research administration system",
+    "html": ["kuali.*coeus", "kuali.*research"],
+    "scriptSrc": ["kuali.*coeus"],
+    "js": {"KualiCoeus": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.kuali.co/products/kuali-research"
+  },
+
+  "InfoEd": {
+    "cats": [53],
+    "description": "InfoEd research administration platform",
+    "html": ["infoed"],
+    "scriptSrc": ["infoed"],
+    "js": {"InfoEd": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.infoedglobal.com"
+  },
+
+  "FAST Financial Aid": {
+    "cats": [53],
+    "description": "FAST financial aid management system",
+    "html": ["fast.*financial.*aid", "getfast"],
+    "scriptSrc": ["fast.*aid"],
+    "js": {"FAST": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.getfast.com"
+  },
+
+  "PowerFAIDS": {
+    "cats": [53],
+    "description": "PowerFAIDS financial aid management system",
+    "html": ["powerfaids"],
+    "scriptSrc": ["powerfaids"],
+    "js": {"PowerFAIDS": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.powerschool.com/solutions/products/powerfaids/"
+  },
+
+  "CampusLogic": {
+    "cats": [53],
+    "description": "CampusLogic student financial success platform",
+    "html": ["campuslogic"],
+    "scriptSrc": ["campuslogic"],
+    "js": {"CampusLogic": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://campuslogic.com"
+  },
+
+  "AwardSpring": {
+    "cats": [53],
+    "description": "AwardSpring scholarship management platform",
+    "html": ["awardspring"],
+    "scriptSrc": ["awardspring"],
+    "js": {"AwardSpring": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.awardspring.com"
+  },
+
+  "Academic Works": {
+    "cats": [53],
+    "description": "Academic Works scholarship management system",
+    "html": ["academic.*works", "academicworks"],
+    "scriptSrc": ["academicworks"],
+    "js": {"AcademicWorks": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.academicworks.com"
+  },
+
+  "TouchNet": {
+    "cats": [53],
+    "description": "TouchNet payment processing and student commerce",
+    "html": ["touchnet"],
+    "scriptSrc": ["touchnet"],
+    "js": {"TouchNet": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.touchnet.com"
+  },
+
+  "Transact Campus": {
+    "cats": [53],
+    "description": "Transact Campus integrated campus commerce platform",
+    "html": ["transact.*campus", "transactcampus"],
+    "scriptSrc": ["transact"],
+    "js": {"Transact": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.transactcampus.com"
+  },
+
+  "Blackbaud": {
+    "cats": [53],
+    "description": "Blackbaud fundraising and advancement platform",
+    "html": ["blackbaud"],
+    "scriptSrc": ["blackbaud"],
+    "js": {"Blackbaud": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.blackbaud.com"
+  },
+
+  "Raiser's Edge": {
+    "cats": [53],
+    "description": "Raiser's Edge donor management system",
+    "html": ["raiser.*edge", "raisers.*edge"],
+    "scriptSrc": ["raisers.*edge"],
+    "js": {"RaisersEdge": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.blackbaud.com/products/blackbaud-raisers-edge-nxt"
+  },
+
+  "AdvancementForm": {
+    "cats": [53],
+    "description": "AdvancementForm online giving platform",
+    "html": ["advancementform"],
+    "scriptSrc": ["advancementform"],
+    "js": {"AdvancementForm": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.advancementform.com"
+  },
+
+  "iModules": {
+    "cats": [53],
+    "description": "iModules alumni engagement platform",
+    "html": ["imodules"],
+    "scriptSrc": ["imodules"],
+    "js": {"iModules": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.imodules.com"
+  },
+
+  "Graduway": {
+    "cats": [53],
+    "description": "Graduway alumni networking platform",
+    "html": ["graduway"],
+    "scriptSrc": ["graduway"],
+    "js": {"Graduway": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://graduway.com"
+  },
+
+  "Almabase": {
+    "cats": [53],
+    "description": "Almabase alumni engagement and fundraising platform",
+    "html": ["almabase"],
+    "scriptSrc": ["almabase"],
+    "js": {"Almabase": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.almabase.com"
+  },
+
+  "Technolutions Slate": {
+    "cats": [53],
+    "description": "Technolutions Slate admissions CRM platform",
+    "html": ["slate.*technolutions", "technolutions.*slate"],
+    "scriptSrc": ["slate", "technolutions"],
+    "js": {"Slate": "", "Technolutions": ""},
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://technolutions.com/slate"
+  },
+
+  "Salesforce Education Cloud": {
+    "cats": [53],
+    "description": "Salesforce Education Cloud CRM",
+    "html": ["salesforce.*education", "education.*cloud"],
+    "scriptSrc": ["salesforce.*education"],
+    "js": {"SalesforceEducation": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.salesforce.com/products/education/"
+  },
+
+  "Element451": {
+    "cats": [53],
+    "description": "Element451 student engagement and CRM platform",
+    "html": ["element451"],
+    "scriptSrc": ["element451"],
+    "js": {"Element451": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://element451.com"
+  },
+
+  "Encoura": {
+    "cats": [53],
+    "description": "Encoura (formerly Noel-Levitz) enrollment management platform",
+    "html": ["encoura", "noel.*levitz"],
+    "scriptSrc": ["encoura"],
+    "js": {"Encoura": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://encoura.org"
+  },
+
+  "Destiny One": {
+    "cats": [53],
+    "description": "Destiny One student recruitment platform",
+    "html": ["destiny.*one", "destinyone"],
+    "scriptSrc": ["destiny.*one"],
+    "js": {"DestinyOne": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.destinysolutions.com"
+  }
+}

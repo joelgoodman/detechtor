@@ -1,0 +1,56 @@
+{
+  "Apache": {
+    "categories": ["Web Server"],
+    "headers": {
+      "server": "Apache"
+    },
+    "description": "Apache HTTP Server"
+  },
+  
+  "Nginx": {
+    "categories": ["Web Server"],
+    "headers": {
+      "server": "nginx"
+    },
+    "description": "High-performance web server"
+  },
+  
+  "CloudFlare": {
+    "categories": ["CDN"],
+    "headers": {
+      "server": "cloudflare",
+      "cf-ray": ".*"
+    },
+    "description": "Content delivery network"
+  },
+  
+  "PHP": {
+    "categories": ["Programming Language"],
+    "headers": {
+      "x-powered-by": "PHP"
+    },
+    "html": ["php"],
+    "description": "Server-side scripting language"
+  },
+  
+  "IIS": {
+    "categories": ["Web Server"],
+    "headers": {
+      "server": "Microsoft-IIS"
+    },
+    "description": "Microsoft Internet Information Services"
+  },
+  
+  "ASP.NET": {
+    "categories": ["Web Framework"],
+    "headers": {
+      "x-aspnet-version": ".*",
+      "x-powered-by": "ASP.NET"
+    },
+    "html": [
+      "__doPostBack",
+      "aspnet_client"
+    ],
+    "description": "Microsoft ASP.NET framework"
+  }
+}

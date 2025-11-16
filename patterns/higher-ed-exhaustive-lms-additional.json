@@ -1,0 +1,365 @@
+{
+  "_metadata": {
+    "version": "2.0.0",
+    "description": "Additional Learning Management Systems - Missing Major Players",
+    "part": "LMS Extension",
+    "last_updated": "2024-10-15"
+  },
+
+  "Brightspace Portfolio": {
+    "cats": [21],
+    "description": "D2L Brightspace Portfolio for competency-based education",
+    "html": [
+      "brightspace.*portfolio",
+      "d2l.*portfolio",
+      "competency.*brightspace"
+    ],
+    "scriptSrc": ["brightspace.*portfolio", "d2l.*portfolio"],
+    "js": {"BrightspacePortfolio": "", "D2LPortfolio": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.d2l.com/brightspace/portfolio/"
+  },
+
+  "Blackboard Ultra": {
+    "cats": [21],
+    "description": "Blackboard Learn Ultra modern interface",
+    "html": [
+      "blackboard.*ultra",
+      "ultra.*experience",
+      "bb.*ultra"
+    ],
+    "scriptSrc": ["blackboard.*ultra", "bb.*ultra"],
+    "js": {"BlackboardUltra": "", "UltraExperience": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.blackboard.com/teaching-learning/learning-management/blackboard-learn/ultra-experience"
+  },
+
+  "Blackboard Collaborate": {
+    "cats": [21],
+    "description": "Blackboard Collaborate virtual classroom platform",
+    "html": [
+      "blackboard.*collaborate",
+      "bb.*collaborate",
+      "collaborate.*ultra"
+    ],
+    "scriptSrc": ["collaborate", "bb.*collaborate"],
+    "js": {"Collaborate": "", "BBCollaborate": ""},
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.blackboard.com/teaching-learning/collaboration-web-conferencing/blackboard-collaborate"
+  },
+
+  "McGraw-Hill Connect": {
+    "cats": [21],
+    "description": "McGraw-Hill Connect learning platform",
+    "html": [
+      "mcgraw.*hill.*connect",
+      "mhhe.*connect",
+      "connect.*mheducation"
+    ],
+    "scriptSrc": ["connect.*mhhe", "mheducation", "mcgraw.*connect"],
+    "js": {"MHConnect": "", "McGrawHillConnect": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://connect.mheducation.com"
+  },
+
+  "Pearson MyLab": {
+    "cats": [21],
+    "description": "Pearson MyLab learning platform",
+    "html": [
+      "pearson.*mylab",
+      "mylab.*pearson",
+      "mastering.*pearson"
+    ],
+    "scriptSrc": ["mylab", "pearson.*mylab", "mastering"],
+    "js": {"MyLab": "", "PearsonMyLab": "", "Mastering": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.pearsonmylabandmastering.com"
+  },
+
+  "Cengage WebAssign": {
+    "cats": [21],
+    "description": "Cengage WebAssign online homework platform",
+    "html": [
+      "webassign",
+      "cengage.*webassign",
+      "web.*assign"
+    ],
+    "scriptSrc": ["webassign", "cengage"],
+    "js": {"WebAssign": "", "CengageWebAssign": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.webassign.net"
+  },
+
+  "WileyPLUS": {
+    "cats": [21],
+    "description": "Wiley WileyPLUS learning platform",
+    "html": [
+      "wileyplus",
+      "wiley.*plus",
+      "plus\\.wiley"
+    ],
+    "scriptSrc": ["wileyplus", "wiley.*plus"],
+    "js": {"WileyPLUS": "", "WileyPlus": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.wileyplus.com"
+  },
+
+  "Top Hat": {
+    "cats": [21],
+    "description": "Top Hat interactive learning platform",
+    "html": [
+      "tophat",
+      "top.*hat",
+      "tophatlecture"
+    ],
+    "scriptSrc": ["tophat", "top.*hat"],
+    "js": {"TopHat": "", "TopHatLecture": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://tophat.com"
+  },
+
+  "iClicker": {
+    "cats": [21],
+    "description": "iClicker student response system",
+    "html": [
+      "iclicker",
+      "i.*clicker",
+      "reef.*iclicker"
+    ],
+    "scriptSrc": ["iclicker", "reef"],
+    "js": {"iClicker": "", "REEF": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.iclicker.com"
+  },
+
+  "Nearpod": {
+    "cats": [21],
+    "description": "Nearpod interactive lesson platform",
+    "html": [
+      "nearpod",
+      "near.*pod"
+    ],
+    "scriptSrc": ["nearpod"],
+    "js": {"Nearpod": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://nearpod.com"
+  },
+
+  "Padlet": {
+    "cats": [21],
+    "description": "Padlet collaborative digital canvas platform",
+    "html": ["padlet"],
+    "scriptSrc": ["padlet"],
+    "js": {"Padlet": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://padlet.com"
+  },
+
+  "Kahoot!": {
+    "cats": [21],
+    "description": "Kahoot! game-based learning platform",
+    "html": ["kahoot"],
+    "scriptSrc": ["kahoot"],
+    "js": {"Kahoot": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://kahoot.com"
+  },
+
+  "Mentimeter": {
+    "cats": [21],
+    "description": "Mentimeter interactive presentation platform",
+    "html": ["mentimeter", "menti\\.com"],
+    "scriptSrc": ["mentimeter"],
+    "js": {"Mentimeter": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.mentimeter.com"
+  },
+
+  "Poll Everywhere": {
+    "cats": [21],
+    "description": "Poll Everywhere audience response system",
+    "html": [
+      "poll.*everywhere",
+      "polleverywhere"
+    ],
+    "scriptSrc": ["polleverywhere", "poll.*everywhere"],
+    "js": {"PollEverywhere": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.polleverywhere.com"
+  },
+
+  "Perusall": {
+    "cats": [21],
+    "description": "Perusall social reading platform",
+    "html": ["perusall"],
+    "scriptSrc": ["perusall"],
+    "js": {"Perusall": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://perusall.com"
+  },
+
+  "VitalSource Bookshelf": {
+    "cats": [21],
+    "description": "VitalSource digital textbook platform",
+    "html": [
+      "vitalsource",
+      "bookshelf.*vitalsource",
+      "digital.*textbook"
+    ],
+    "scriptSrc": ["vitalsource", "bookshelf"],
+    "js": {"VitalSource": "", "Bookshelf": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.vitalsource.com"
+  },
+
+  "McGraw-Hill ALEKS": {
+    "cats": [21],
+    "description": "ALEKS adaptive learning platform by McGraw-Hill",
+    "html": [
+      "aleks",
+      "mcgraw.*aleks",
+      "adaptive.*learning"
+    ],
+    "scriptSrc": ["aleks"],
+    "js": {"ALEKS": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.aleks.com"
+  },
+
+  "Cengage MindTap": {
+    "cats": [21],
+    "description": "Cengage MindTap digital learning platform",
+    "html": [
+      "mindtap",
+      "cengage.*mindtap",
+      "mind.*tap"
+    ],
+    "scriptSrc": ["mindtap", "cengage.*mindtap"],
+    "js": {"MindTap": "", "CengageMindTap": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.cengage.com/mindtap/"
+  },
+
+  "Macmillan Achieve": {
+    "cats": [21],
+    "description": "Macmillan Learning Achieve platform",
+    "html": [
+      "macmillan.*achieve",
+      "achieve.*macmillan",
+      "macmillanlearning"
+    ],
+    "scriptSrc": ["achieve", "macmillan"],
+    "js": {"MacmillanAchieve": "", "Achieve": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.macmillanlearning.com/college/us/digital/achieve"
+  },
+
+  "Norton Illumine": {
+    "cats": [21],
+    "description": "W. W. Norton Illumine ebook platform",
+    "html": [
+      "norton.*illumine",
+      "illumine.*norton",
+      "wwnorton"
+    ],
+    "scriptSrc": ["illumine", "norton"],
+    "js": {"Illumine": "", "NortonIllumine": ""},
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://digital.wwnorton.com/illumine"
+  },
+
+  "Oxford Learning Link": {
+    "cats": [21],
+    "description": "Oxford University Press Learning Link platform",
+    "html": [
+      "oxford.*learning.*link",
+      "oup.*learning",
+      "learninglink.*oup"
+    ],
+    "scriptSrc": ["learninglink", "oup"],
+    "js": {"OxfordLearningLink": "", "OUPLearning": ""},
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://learninglink.oup.com"
+  },
+
+  "Cambridge Core": {
+    "cats": [21],
+    "description": "Cambridge University Press digital platform",
+    "html": [
+      "cambridge.*core",
+      "cambridge\\.org",
+      "cup.*cambridge"
+    ],
+    "scriptSrc": ["cambridge.*core"],
+    "js": {"CambridgeCore": ""},
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.cambridge.org/core"
+  },
+
+  "Revel": {
+    "cats": [21],
+    "description": "Pearson Revel digital learning platform",
+    "html": [
+      "revel.*pearson",
+      "pearson.*revel",
+      "revel\\.pearson"
+    ],
+    "scriptSrc": ["revel"],
+    "js": {"Revel": "", "PearsonRevel": ""},
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.pearsonhighered.com/revel/"
+  },
+
+  "MyMathLab": {
+    "cats": [21],
+    "description": "Pearson MyMathLab mathematics learning platform",
+    "html": [
+      "mymathlab",
+      "my.*math.*lab",
+      "pearson.*mathlab"
+    ],
+    "scriptSrc": ["mymathlab", "mathlab"],
+    "js": {"MyMathLab": ""},
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.mymathlab.com"
+  },
+
+  "MATLAB Grader": {
+    "cats": [21],
+    "description": "MATLAB Grader for online coding assignments",
+    "html": [
+      "matlab.*grader",
+      "mathworks.*grader",
+      "grader.*matlab"
+    ],
+    "scriptSrc": ["matlab.*grader", "mathworks"],
+    "js": {"MATLABGrader": "", "MathWorksGrader": ""},
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://grader.mathworks.com"
+  }
+}

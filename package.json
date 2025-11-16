@@ -1,0 +1,52 @@
+{
+  "name": "@speedyu/detechtor",
+  "version": "1.0.0",
+  "description": "SpeedyU's open-source technology detection engine for identifying web technologies, with specialized focus on higher education systems",
+  "main": "src/detechtor.js",
+  "bin": {
+    "detechtor": "./cli.js"
+  },
+  "scripts": {
+    "test": "node scripts/test-patterns.js",
+    "scan": "node cli.js",
+    "update-patterns": "node scripts/import-webappanalyzer.js",
+    "patterns-report": "node -e \"console.log(JSON.stringify(require('./patterns/import-report.json'), null, 2))\""
+  },
+  "keywords": [
+    "technology-detection",
+    "web-scraping",
+    "higher-education",
+    "puppeteer",
+    "cms-detection",
+    "lms-detection",
+    "sis-detection"
+  ],
+  "author": "SpeedyU Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/speedyu/detechtor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/speedyu/detechtor/issues"
+  },
+  "homepage": "https://github.com/speedyu/detechtor#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "fs-extra": "^11.1.1",
+    "puppeteer": "^24.25.0",
+    "yargs": "^17.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "cli.js",
+    "src/**/*.js",
+    "scripts/**/*.js",
+    "patterns/**/*.json",
+    "patterns/**/*.md",
+    "README.md",
+    "LICENSE"
+  ]
+}
