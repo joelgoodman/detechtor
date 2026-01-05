@@ -1,7 +1,7 @@
 // WebAppAnalyzer category ID to name mapping
 const categoryMapping = {
   1: 'CMS',
-  2: 'CMS', // WordPress, Drupal etc
+  2: 'Message Boards', // Originally CMS but includes forums and social platforms
   3: 'Message Boards',
   4: 'Wiki',
   5: 'LMS',

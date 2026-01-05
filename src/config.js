@@ -17,7 +17,8 @@ module.exports = {
   // Pattern configuration
   patternPaths: [
     '../patterns/webappanalyzer-merged.json', // Comprehensive patterns including all CMSes + our higher-ed focus
-    '../patterns/enhanced-payment-analytics.json' // Enhanced payment, analytics, and video platforms
+    '../patterns/enhanced-payment-analytics.json', // Enhanced payment, analytics, and video platforms
+    '../patterns/fediverse-social-patterns.json' // Override for Fediverse/social networking platforms
   ],
 
   // Output configuration

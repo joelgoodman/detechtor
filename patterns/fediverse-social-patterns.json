@@ -1,0 +1,104 @@
+{
+  "Mastodon": {
+    "categories": ["Social Network", "Fediverse"],
+    "cookies": {
+      "_mastodon_session": ""
+    },
+    "description": "Mastodon is a free and open-source self-hosted social networking service that uses ActivityPub protocol.",
+    "headers": {
+      "Server": "^Mastodon$"
+    },
+    "higher_ed": false,
+    "website": "https://joinmastodon.org"
+  },
+  "Pleroma": {
+    "categories": ["Social Network", "Fediverse"],
+    "dom": {
+      "noscript": "^To use Pleroma, please enable JavaScript\\.$"
+    },
+    "description": "Pleroma is a free, federated social networking server built on open protocols (ActivityPub).",
+    "higher_ed": false,
+    "website": "https://pleroma.social/"
+  },
+  "PeerTube": {
+    "categories": ["Video Platform", "Fediverse"],
+    "description": "PeerTube is a free and open-source, decentralized, federated video platform powered by ActivityPub and WebTorrent.",
+    "meta": {
+      "og:platform": "^PeerTube$"
+    },
+    "higher_ed": false,
+    "website": "https://joinpeertube.org/"
+  },
+  "Misskey": {
+    "categories": ["Social Network", "Fediverse"],
+    "description": "Misskey is an open-source, decentralized social network platform that uses ActivityPub.",
+    "html": [
+      "misskey",
+      "mk-app"
+    ],
+    "scripts": ["misskey"],
+    "higher_ed": false,
+    "website": "https://misskey-hub.net/"
+  },
+  "Pixelfed": {
+    "categories": ["Social Network", "Fediverse"],
+    "description": "Pixelfed is a free and open-source image sharing platform, similar to Instagram but federated via ActivityPub.",
+    "html": [
+      "pixelfed"
+    ],
+    "meta": {
+      "og:site_name": "Pixelfed"
+    },
+    "higher_ed": false,
+    "website": "https://pixelfed.org/"
+  },
+  "Lemmy": {
+    "categories": ["Social Network", "Fediverse"],
+    "description": "Lemmy is a federated link aggregator and forum platform, similar to Reddit but using ActivityPub.",
+    "html": [
+      "lemmy"
+    ],
+    "meta": {
+      "application-name": "Lemmy"
+    },
+    "higher_ed": false,
+    "website": "https://join-lemmy.org/"
+  },
+  "Friendica": {
+    "categories": ["Social Network", "Fediverse"],
+    "description": "Friendica is a free and open-source distributed social network that uses ActivityPub and other protocols.",
+    "html": [
+      "friendica"
+    ],
+    "meta": {
+      "generator": "Friendica"
+    },
+    "higher_ed": false,
+    "website": "https://friendi.ca/"
+  },
+  "Diaspora": {
+    "categories": ["Social Network", "Fediverse"],
+    "description": "Diaspora is a nonprofit, user-owned, distributed social network.",
+    "html": [
+      "diaspora"
+    ],
+    "meta": {
+      "generator": "diaspora"
+    },
+    "higher_ed": false,
+    "website": "https://diasporafoundation.org/"
+  },
+  "GNU Social": {
+    "categories": ["Social Network", "Fediverse"],
+    "description": "GNU Social is a free and open-source microblogging server that uses OStatus and ActivityPub protocols.",
+    "html": [
+      "gnu-social",
+      "gnusocial"
+    ],
+    "meta": {
+      "generator": "GNU social"
+    },
+    "higher_ed": false,
+    "website": "https://www.gnusocial.rocks/"
+  }
+}

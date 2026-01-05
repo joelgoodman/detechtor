@@ -317,7 +317,7 @@ class DeTECHtor {
       console.log(`Debug: Running inference on ${technologies.length} technologies`);
       const cmsTechs = technologies.filter(t => 
         Array.isArray(t.categories) && 
-        t.categories.some(c => mapCategory(c).toLowerCase().includes('cms'))
+        t.categories.some(c => c.toLowerCase().includes('cms'))
       );
       console.log(`Debug: Found ${cmsTechs.length} CMS technologies:`, cmsTechs.map(t => t.name));
     }
@@ -334,11 +334,10 @@ class DeTECHtor {
     };
     
     for (const tech of technologies) {
-      // Map categories using our helper function
-      let categories = [];
-      if (Array.isArray(tech.categories)) {
-        categories = tech.categories.map(c => mapCategory(c).toLowerCase());
-      }
+      // Categories are already normalized as strings from evaluatePattern
+      const categories = Array.isArray(tech.categories) 
+        ? tech.categories.map(c => c.toLowerCase()) 
+        : [];
       
       if (categories.includes('cms')) {
         stack.cms = tech.name;
@@ -834,10 +833,18 @@ class DeTECHtor {
       }
     }
     
+    // Normalize categories to always be strings
+    let categories = pattern.categories || pattern.cats || ['Unknown'];
+    if (Array.isArray(categories)) {
+      categories = categories.map(c => mapCategory(c));
+    } else {
+      categories = ['Unknown'];
+    }
+    
     return {
       name,
       confidence: Math.min(confidence, 100),
-      categories: pattern.categories || pattern.cats || ['Unknown'],
+      categories: categories,
       evidence: config.includeEvidence ? matchEvidence : [],
       version: this.extractVersion({name: name}, evidence),
       isHigherEd: pattern.higher_ed || false,
