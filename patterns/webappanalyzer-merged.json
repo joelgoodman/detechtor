@@ -111379,20 +111379,16 @@
     "description": "TerminalFour content management system for higher education.",
     "html": [
       "terminalfour",
-      "t4",
-      "terminal.*four",
-      "t4.*cms"
+      "/terminalfour/"
     ],
     "scriptSrc": [
-      "terminalfour",
-      "t4"
+      "terminalfour"
     ],
     "js": {
-      "TerminalFour": "",
-      "T4": ""
+      "TerminalFour": ""
     },
     "meta": {
-      "generator": "TerminalFour"
+      "generator": "T4|TerminalFour"
     },
     "higher_ed": true,
     "confidence": 88,
