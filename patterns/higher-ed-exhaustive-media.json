@@ -196,8 +196,8 @@
   "Adobe Experience Manager Assets": {
     "cats": [53],
     "description": "Adobe Experience Manager digital asset management",
-    "html": ["aem.*assets", "adobe.*experience.*manager"],
-    "scriptSrc": ["aem", "experience.*manager"],
+    "html": ["aem-assets", "adobe.*experience.*manager.*assets"],
+    "scriptSrc": ["aem-core", "experience.*manager"],
     "js": {"AEM": "", "ExperienceManager": ""},
     "higher_ed": true,
     "confidence": 85,
@@ -229,8 +229,8 @@
   "Four Winds Interactive": {
     "cats": [53],
     "description": "Four Winds Interactive digital signage",
-    "html": ["fourwinds.*interactive", "4wi.*digital"],
-    "scriptSrc": ["fourwinds", "4wi"],
+    "html": ["fourwinds.*interactive", "fourwindsinteractive"],
+    "scriptSrc": ["fourwinds", "fourwindsinteractive"],
     "js": {"FourWinds": "", "FWI": ""},
     "higher_ed": true,
     "confidence": 88,

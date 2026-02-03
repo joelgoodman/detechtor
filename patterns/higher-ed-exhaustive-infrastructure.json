@@ -20,8 +20,8 @@
   "CAS Central Authentication Service": {
     "cats": [53],
     "description": "Apereo CAS single sign-on protocol",
-    "html": ["cas.*sso", "central.*authentication"],
-    "scriptSrc": ["cas"],
+    "html": ["/cas/login", "central.*authentication", "apereo.*cas"],
+    "scriptSrc": ["apereo.*cas"],
     "js": {"CAS": ""},
     "higher_ed": true,
     "confidence": 90,
@@ -53,9 +53,9 @@
   "Azure Active Directory": {
     "cats": [53],
     "description": "Microsoft Azure Active Directory",
-    "html": ["azure.*active.*directory", "aad.*microsoft"],
-    "scriptSrc": ["azure.*ad", "aad"],
-    "js": {"AzureAD": "", "AAD": ""},
+    "html": ["azure.*active.*directory", "login\\.microsoftonline\\.com"],
+    "scriptSrc": ["azure.*ad", "microsoftonline"],
+    "js": {"AzureAD": ""},
     "higher_ed": true,
     "confidence": 90,
     "website": "https://azure.microsoft.com/en-us/products/active-directory/"
@@ -86,8 +86,8 @@
   "Duo Security": {
     "cats": [53],
     "description": "Duo Security multi-factor authentication",
-    "html": ["duo.*security", "duosecurity"],
-    "scriptSrc": ["duo"],
+    "html": ["duo.*security", "duosecurity", "duo\\.com"],
+    "scriptSrc": ["duosecurity", "duo\\.com"],
     "js": {"Duo": ""},
     "higher_ed": true,
     "confidence": 90,
@@ -98,8 +98,8 @@
     "cats": [53],
     "description": "RSA SecurID multi-factor authentication",
     "html": ["rsa.*securid", "securid"],
-    "scriptSrc": ["rsa", "securid"],
-    "js": {"RSA": "", "SecurID": ""},
+    "scriptSrc": ["rsa\\.com", "securid"],
+    "js": {"SecurID": ""},
     "higher_ed": true,
     "confidence": 85,
     "website": "https://www.rsa.com/products/rsa-securid-suite/"
@@ -196,8 +196,8 @@
   "SAS": {
     "cats": [53],
     "description": "SAS statistical analysis and business intelligence",
-    "html": ["sas.*institute", "sas.*analytics"],
-    "scriptSrc": ["sas"],
+    "html": ["sas.*institute", "sas\\.com"],
+    "scriptSrc": ["sas\\.com", "sas-institute"],
     "js": {"SAS": ""},
     "higher_ed": true,
     "confidence": 85,
@@ -328,9 +328,9 @@
   "Microsoft Exchange": {
     "cats": [53],
     "description": "Microsoft Exchange email server",
-    "html": ["exchange.*microsoft", "outlook.*web.*access"],
-    "scriptSrc": ["exchange", "owa"],
-    "js": {"Exchange": "", "OWA": ""},
+    "html": ["exchange.*microsoft", "outlook.*web.*access", "/owa/"],
+    "scriptSrc": ["exchange\\.microsoft", "outlook\\.office"],
+    "js": {"Exchange": ""},
     "higher_ed": true,
     "confidence": 88,
     "website": "https://www.microsoft.com/en-us/microsoft-365/exchange/email"

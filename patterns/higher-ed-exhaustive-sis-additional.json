@@ -14,7 +14,7 @@
       "sct.*campusvue",
       "campus.*vue"
     ],
-    "scriptSrc": ["campusvue", "sct"],
+    "scriptSrc": ["campusvue", "sct.*campus"],
     "js": {"CampusVue": "", "SCT": ""},
     "headers": {"x-campusvue-version": ".*"},
     "higher_ed": true,

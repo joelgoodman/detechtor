@@ -38,15 +38,19 @@
   "Ellucian Banner": {
     "categories": ["SIS"],
     "html": [
-      "banner\\.js",
-      "ellucian",
+      "ellucian.*banner",
       "bwckgens\\.p_proc_term_date",
       "bwskfreg\\.P_AltPin",
-      "bwckschd\\.p_disp_dyn_ctlg"
+      "bwckschd\\.p_disp_dyn_ctlg",
+      "bwckctlg\\.p_disp_course_detail"
     ],
-    "scripts": ["banner", "ellucian", "bwck"],
+    "scripts": ["ellucian.*banner", "bwck"],
     "meta": {
       "generator": "Banner"
+    },
+    "js": {
+      "Banner": "",
+      "BWCK": ""
     },
     "higher_ed": true,
     "description": "Student information system"
@@ -55,11 +59,16 @@
   "Ellucian Colleague": {
     "categories": ["SIS"],
     "html": [
-      "colleague",
-      "ellucian.*colleague",
-      "datatel"
+      "ellucian[^>]*colleague",
+      "datatel[^>]*colleague",
+      "/colleague/",
+      "class=\"colleague-"
     ],
-    "scripts": ["colleague", "datatel"],
+    "scripts": ["ellucian.*colleague", "datatel"],
+    "js": {
+      "Colleague": "",
+      "DatatelUI": ""
+    },
     "higher_ed": true,
     "description": "Student information system"
   },
@@ -82,18 +91,22 @@
     "html": [
       "blackboard\\.com",
       "bblearn",
-      "ultra-ui",
       "bb-base-",
       "blackboard.*learn"
     ],
     "scripts": [
       "blackboard",
-      "bblearn",
-      "ultra",
-      "bb-base"
+      "bblearn"
     ],
     "meta": {
       "generator": "Blackboard"
+    },
+    "js": {
+      "Blackboard": "",
+      "bbNG": ""
+    },
+    "cookies": {
+      "BbRouter": ""
     },
     "higher_ed": true,
     "description": "Learning management system"
@@ -105,15 +118,20 @@
       "canvas-lms",
       "instructure\\.com",
       "canvas_course_id",
-      "ENV.*COURSE"
+      "ENV.*COURSE",
+      "webpackChunkcanvas_lms"
     ],
     "scripts": [
-      "canvas",
-      "instructure"
+      "instructure",
+      "canvas-lms",
+      "canvas_public"
     ],
     "headers": {
       "X-Canvas-Request-Context-Id": ".*",
       "X-Canvas-User-Id": ".*"
+    },
+    "js": {
+      "ENV": ""
     },
     "higher_ed": true,
     "description": "Canvas learning management system"
@@ -122,13 +140,18 @@
   "Moodle": {
     "categories": ["LMS"],
     "html": [
-      "moodle",
-      "class=\".*moodle",
-      "Moodle.*course"
+      "moodle\\.org",
+      "class=\"moodle-",
+      "id=\"moodle-",
+      "/mod/assign/",
+      "/course/view\\.php"
     ],
-    "scripts": ["moodle"],
+    "scripts": ["moodle\\.org", "moodlelib"],
     "meta": {
       "generator": "Moodle"
+    },
+    "js": {
+      "Moodle": ""
     },
     "higher_ed": true,
     "description": "Open-source learning platform"
@@ -142,7 +165,11 @@
       "desire2learn",
       "d2lbook"
     ],
-    "scripts": ["d2l", "brightspace"],
+    "scripts": ["d2l\\.com", "brightspace"],
+    "js": {
+      "D2L": "",
+      "Brightspace": ""
+    },
     "higher_ed": true,
     "description": "Desire2Learn Brightspace LMS"
   },
@@ -154,7 +181,11 @@
       "sakaiproject",
       "/portal/site/"
     ],
-    "scripts": ["sakai"],
+    "scripts": ["sakaiproject", "sakai-portal"],
+    "js": {
+      "sakai": "",
+      "Sakai": ""
+    },
     "higher_ed": true,
     "description": "Open-source collaboration and learning environment"
   },
@@ -194,13 +225,19 @@
     "description": "Student information system"
   },
   
-  "Navigate": {
+  "EAB Navigate": {
     "categories": ["Student Success"],
     "html": [
       "navigate.*eab",
+      "eab.*navigate",
+      "eab\\.com",
       "student.*success.*collaborative"
     ],
-    "scripts": ["navigate", "eab"],
+    "scripts": ["eab.*navigate", "navigate.*eab"],
+    "js": {
+      "Navigate": "",
+      "EAB": ""
+    },
     "higher_ed": true,
     "description": "Student success and advising platform"
   },
@@ -208,10 +245,14 @@
   "Starfish": {
     "categories": ["Student Success"],
     "html": [
-      "starfish",
-      "starfishsolutions"
+      "starfishsolutions",
+      "hobsons.*starfish",
+      "starfish\\.hobsons"
     ],
-    "scripts": ["starfish"],
+    "scripts": ["starfishsolutions"],
+    "js": {
+      "Starfish": ""
+    },
     "higher_ed": true,
     "description": "Student success and retention platform"
   },
@@ -254,10 +295,16 @@
     "categories": ["CMS"],
     "html": [
       "terminalfour",
-      "t4-content",
-      "terminalone"
+      "/terminalfour/",
+      "t4-content"
     ],
-    "scripts": ["terminalfour", "t4"],
+    "scripts": ["terminalfour"],
+    "meta": {
+      "generator": "T4|TerminalFour"
+    },
+    "js": {
+      "TerminalFour": ""
+    },
     "higher_ed": true,
     "description": "Web content management system for higher education"
   },
@@ -266,9 +313,13 @@
     "categories": ["CMS"],
     "html": [
       "cascade.*cms",
-      "hannon.*hill"
+      "hannon.*hill",
+      "hannonhill\\.com"
     ],
-    "scripts": ["cascade"],
+    "scripts": ["hannonhill", "cascade-cms"],
+    "js": {
+      "CascadeCMS": ""
+    },
     "higher_ed": true,
     "description": "Web content management system"
   },
@@ -314,10 +365,15 @@
   "Salesforce": {
     "categories": ["CRM"],
     "html": [
-      "salesforce",
-      "force\\.com"
+      "salesforce\\.com",
+      "force\\.com",
+      "lightning-"
     ],
-    "scripts": ["salesforce", "force\\.com"],
+    "scripts": ["salesforce", "force\\.com", "lightning"],
+    "js": {
+      "sforce": "",
+      "Salesforce": ""
+    },
     "higher_ed": false,
     "description": "Customer relationship management platform"
   },
@@ -336,11 +392,10 @@
   
   "jQuery": {
     "categories": ["JavaScript Library"],
-    "html": [
-      "jquery",
-      "\\$\\("
-    ],
-    "scripts": ["jquery"],
+    "scripts": ["jquery(?:\\.min)?\\.js", "code\\.jquery\\.com"],
+    "js": {
+      "jQuery": ""
+    },
     "higher_ed": false,
     "description": "JavaScript library"
   },
@@ -348,12 +403,10 @@
   "Bootstrap": {
     "categories": ["CSS Framework"],
     "html": [
-      "bootstrap",
-      "class=\".*btn-",
-      "class=\".*col-",
-      "class=\".*row"
+      "getbootstrap\\.com",
+      "cdn.*bootstrap"
     ],
-    "scripts": ["bootstrap"],
+    "scripts": ["bootstrap(?:\\.bundle)?(?:\\.min)?\\.js"],
     "higher_ed": false,
     "description": "Front-end CSS framework"
   },
@@ -361,11 +414,15 @@
   "React": {
     "categories": ["JavaScript Framework"],
     "html": [
-      "react",
       "data-reactroot",
-      "data-react-class"
+      "data-react-class",
+      "_reactRootContainer"
     ],
-    "scripts": ["react"],
+    "scripts": ["react(?:\\.production|\\.development)?(?:\\.min)?\\.js", "unpkg\\.com/react"],
+    "js": {
+      "React": "",
+      "__REACT_DEVTOOLS_GLOBAL_HOOK__": ""
+    },
     "higher_ed": false,
     "description": "JavaScript library for building user interfaces"
   },
@@ -373,11 +430,14 @@
   "Vue.js": {
     "categories": ["JavaScript Framework"],
     "html": [
-      "vue\\.js",
-      "data-v-",
+      "data-v-[a-f0-9]",
       "v-cloak"
     ],
-    "scripts": ["vue"],
+    "scripts": ["vue(?:\\.min)?\\.js", "unpkg\\.com/vue", "cdn\\.jsdelivr\\.net.*vue"],
+    "js": {
+      "Vue": "",
+      "__VUE__": ""
+    },
     "higher_ed": false,
     "description": "Progressive JavaScript framework"
   },
@@ -386,10 +446,15 @@
     "categories": ["JavaScript Framework"],
     "html": [
       "ng-app",
-      "angular",
-      "data-ng-"
+      "ng-controller",
+      "data-ng-",
+      "ng-version"
     ],
-    "scripts": ["angular"],
+    "scripts": ["angular(?:\\.min)?\\.js", "unpkg\\.com.*angular"],
+    "js": {
+      "angular": "",
+      "ng": ""
+    },
     "higher_ed": false,
     "description": "TypeScript-based web application framework"
   }

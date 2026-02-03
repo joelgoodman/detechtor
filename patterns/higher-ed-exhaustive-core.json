@@ -157,7 +157,7 @@
       "edx.*platform",
       "lms\\.edx"
     ],
-    "scriptSrc": ["edx", "openedx"],
+    "scriptSrc": ["openedx", "edx\\.org"],
     "js": {"edX": "", "OpenEdX": ""},
     "higher_ed": true,
     "confidence": 92,
@@ -330,13 +330,12 @@
     "cats": [1],
     "description": "Adobe Experience Manager content management system",
     "html": [
-      "aem",
       "adobe.*experience.*manager",
       "/etc/designs/",
-      "cq-",
-      "granite"
+      "/content/dam/",
+      "aem-core-"
     ],
-    "scriptSrc": ["granite", "aem", "etc/designs"],
+    "scriptSrc": ["granite", "etc/designs", "aem-core"],
     "js": {"Granite": "", "CQ": "", "AEM": ""},
     "higher_ed": false,
     "confidence": 88,
@@ -350,11 +349,10 @@
       "squiz.*dxp",
       "squiz.*matrix",
       "mysource.*matrix",
-      "matrix.*asset",
       "__data_asset_path",
       "squiz.*cms"
     ],
-    "scriptSrc": ["squiz", "matrix", "dxp"],
+    "scriptSrc": ["squiz", "mysource.*matrix"],
     "js": {"Matrix": "", "Squiz": ""},
     "higher_ed": false,
     "confidence": 92,
@@ -383,7 +381,7 @@
     "html": [
       "typo3",
       "typo3temp",
-      "t3-",
+      "typo3conf",
       "TYPO3.*CMS"
     ],
     "scriptSrc": ["typo3", "typo3temp"],
@@ -471,14 +469,12 @@
     "html": [
       "cascade.*cms",
       "hannon.*hill",
-      "cascade.*server",
+      "hannonhill",
       "_cascade",
       "cascade_",
-      "cs.*asset.*path",
-      "data-cascade",
-      "format.*asset.*path"
+      "data-cascade"
     ],
-    "scriptSrc": ["cascade", "hannon.*hill"],
+    "scriptSrc": ["hannonhill", "cascade-cms"],
     "js": {"Cascade": "", "CascadeCMS": ""},
     "meta": {"generator": "Cascade"},
     "headers": {"X-Cascade-Site": ".*"},

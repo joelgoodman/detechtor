@@ -111,6 +111,42 @@ Key settings in `src/config.js`:
 3. Set `higher_ed: true` for university-specific systems
 4. Include multiple detection methods (html, scripts, headers) for reliability
 5. Run `npm test` to validate patterns
+6. Run `npm run test:audit` to check for pattern quality issues
+
+## Pattern Quality Rules
+
+**See full guidelines at:** `docs/PATTERN_GUIDELINES.md`
+
+### Quick Reference - Patterns to AVOID
+
+| Anti-Pattern | Example | Why Bad |
+|--------------|---------|---------|
+| Single English words | `"colleague"`, `"banner"` | Matches natural text |
+| Short strings (<4 chars) | `"t4"`, `"PS"`, `"bb"` | Matches hashes, IDs |
+| Generic CSS classes | `class=".*btn-"` | Matches Bootstrap everywhere |
+| Single-letter JS objects | `"s"`, `"ga"` | Too common in minified code |
+| Broad wildcards | `".*canvas.*"` | Matches unrelated content |
+
+### Pattern Quality Tiers
+
+| Tier | Confidence | Examples |
+|------|------------|----------|
+| A (80-100) | Unique identifiers | `X-Canvas-User-Id` header, `generator="WordPress"` |
+| B (40-60) | Product-specific paths | `/terminalfour/`, `instructure.com` |
+| C (10-30) | Generic (needs corroboration) | Product names in content |
+
+### Testing Commands
+
+```bash
+# Check patterns for quality issues
+npm run test:audit
+
+# Run regression tests against known sites
+npm run test:regression
+
+# Dry run - just show what would be tested
+npm run test:regression:dry
+```
 
 ## Environment Variables
 

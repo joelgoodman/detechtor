@@ -25,6 +25,8 @@ node test-patterns.js
 
 ### Adding New Technology Patterns
 
+**Read the full guidelines:** `docs/PATTERN_GUIDELINES.md`
+
 1. Edit `patterns/higher-ed-patterns.json`
 2. Add your pattern following the existing format:
    ```json
@@ -40,8 +42,22 @@ node test-patterns.js
      }
    }
    ```
-3. Test your pattern: `node cli.js --url "https://example.com" --verbose`
-4. Submit a pull request
+3. Run quality checks: `npm run test:audit`
+4. Test your pattern: `node cli.js --url "https://example.com" --verbose`
+5. Submit a pull request
+
+### Pattern Contribution Checklist
+
+Before submitting patterns, verify:
+
+- [ ] **No single common English words** as standalone patterns (e.g., "banner", "colleague")
+- [ ] **No strings shorter than 4 characters** (e.g., "t4", "PS", "bb")
+- [ ] **No single-letter JS object names** (e.g., "s", "ga", "$")
+- [ ] **No overly broad regex** (e.g., `.*word.*` without anchors)
+- [ ] **At least one Tier A or Tier B pattern** for reliable detection
+- [ ] **Tested against false positive sites** (sites that don't use the technology)
+- [ ] **Tested against true positive sites** (sites that do use the technology)
+- [ ] **Pattern audit passes:** `npm run test:audit`
 
 ### Code Style
 

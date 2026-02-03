@@ -15,10 +15,9 @@
       "bwskfreg\\.P_AltPin",
       "bwckschd\\.p_disp_dyn_ctlg",
       "bwckctlg\\.p_disp_course_detail",
-      "banner.*student.*system"
+      "ellucian.*banner"
     ],
     "scriptSrc": [
-      "banner",
       "bwck",
       "ellucian.*banner"
     ],
@@ -38,13 +37,13 @@
     "cats": [53],
     "description": "Ellucian Colleague student information system, formerly Datatel Colleague.",
     "html": [
-      "colleague",
-      "ellucian.*colleague",
-      "datatel",
-      "colleague.*ui"
+      "ellucian[^>]*colleague",
+      "datatel[^>]*colleague",
+      "/colleague/",
+      "class=\"colleague-"
     ],
     "scriptSrc": [
-      "colleague",
+      "ellucian.*colleague",
       "datatel"
     ],
     "js": {
@@ -70,8 +69,7 @@
       "pscs"
     ],
     "js": {
-      "PeopleSoft": "",
-      "PS": ""
+      "PeopleSoft": ""
     },
     "cookies": {
       "PS_TOKEN": ""
@@ -128,23 +126,18 @@
     "html": [
       "blackboard\\.com",
       "bblearn",
-      "ultra-ui",
       "bb-base-",
       "blackboard.*learn"
     ],
     "scriptSrc": [
       "blackboard",
-      "bblearn",
-      "ultra",
-      "bb-base"
+      "bblearn"
     ],
     "js": {
       "Blackboard": "",
-      "bbNG": "",
-      "page.bbNG": ""
+      "bbNG": ""
     },
     "cookies": {
-      "JSESSIONID": "",
       "BbRouter": ""
     },
     "meta": {
@@ -166,12 +159,12 @@
       "d2l.*brightspace"
     ],
     "scriptSrc": [
-      "d2l",
+      "d2l\\.com",
       "brightspace"
     ],
     "js": {
       "D2L": "",
-      "d2l": ""
+      "Brightspace": ""
     },
     "headers": {
       "x-d2l-version": ".*"
@@ -191,7 +184,8 @@
       "sakai.*collaboration"
     ],
     "scriptSrc": [
-      "sakai"
+      "sakaiproject",
+      "sakai-portal"
     ],
     "js": {
       "sakai": "",
@@ -283,12 +277,12 @@
     "cats": [98],
     "description": "Central Authentication Service (CAS) single sign-on protocol.",
     "html": [
-      "cas.*login",
+      "/cas/login",
       "central.*authentication.*service",
-      "cas.*server"
+      "apereo.*cas"
     ],
     "scriptSrc": [
-      "cas"
+      "apereo.*cas"
     ],
     "js": {
       "CAS": ""
@@ -304,11 +298,12 @@
     "html": [
       "navigate.*eab",
       "eab.*navigate",
+      "eab\\.com",
       "student.*success.*platform"
     ],
     "scriptSrc": [
-      "navigate",
-      "eab.*navigate"
+      "eab.*navigate",
+      "navigate.*eab"
     ],
     "js": {
       "Navigate": "",
@@ -323,12 +318,12 @@
     "cats": [53],
     "description": "Starfish student success platform by Hobsons.",
     "html": [
-      "starfish",
+      "starfishsolutions",
       "hobsons.*starfish",
-      "student.*early.*alert"
+      "starfish\\.hobsons"
     ],
     "scriptSrc": [
-      "starfish"
+      "starfishsolutions"
     ],
     "js": {
       "Starfish": ""
@@ -384,11 +379,11 @@
     "html": [
       "exlibrisgroup",
       "alma.*exlibris",
-      "library.*management.*system"
+      "exlibris.*alma"
     ],
     "scriptSrc": [
-      "exlibris",
-      "alma"
+      "exlibrisgroup",
+      "exlibris.*alma"
     ],
     "js": {
       "ExLibris": "",
@@ -404,12 +399,12 @@
     "description": "Ex Libris Primo library discovery service.",
     "html": [
       "primo.*exlibris",
-      "discovery.*service",
+      "exlibris.*primo",
       "primo.*ve"
     ],
     "scriptSrc": [
-      "primo",
-      "exlibris.*primo"
+      "exlibris.*primo",
+      "primo\\.exlibris"
     ],
     "js": {
       "Primo": ""
@@ -504,11 +499,11 @@
     "description": "EMS event management system for higher education.",
     "html": [
       "dea.*ems",
-      "event.*management.*system",
+      "emssoftware",
       "ems.*software"
     ],
     "scriptSrc": [
-      "ems"
+      "emssoftware"
     ],
     "js": {
       "EMS": ""

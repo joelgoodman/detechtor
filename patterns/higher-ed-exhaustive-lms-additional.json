@@ -293,10 +293,10 @@
     "description": "Oxford University Press Learning Link platform",
     "html": [
       "oxford.*learning.*link",
-      "oup.*learning",
+      "oup\\.com",
       "learninglink.*oup"
     ],
-    "scriptSrc": ["learninglink", "oup"],
+    "scriptSrc": ["learninglink\\.oup", "oup\\.com"],
     "js": {"OxfordLearningLink": "", "OUPLearning": ""},
     "higher_ed": true,
     "confidence": 80,

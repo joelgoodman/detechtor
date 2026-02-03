@@ -9,6 +9,9 @@
   },
   "scripts": {
     "test": "node scripts/test-patterns.js",
+    "test:audit": "node scripts/audit-patterns.js",
+    "test:regression": "node scripts/regression-test.js",
+    "test:regression:dry": "node scripts/regression-test.js --dry-run",
     "scan": "node cli.js",
     "update-patterns": "node scripts/import-webappanalyzer.js",
     "patterns-report": "node -e \"console.log(JSON.stringify(require('./patterns/import-report.json'), null, 2))\""
