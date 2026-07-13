@@ -4,7 +4,17 @@
     "description": "Consolidated higher-ed patterns: Auth, payments, video, CRM, search, communications, research tools",
     "generated": "2026-04-21",
     "source": "Merged from 9 higher-ed-*.json + enhanced-payment-analytics.json",
-    "tech_count": 112
+    "tech_count": 113
+  },
+  "SearchStax": {
+    "cats": [29],
+    "description": "SearchStax managed site search (hosted Solr/OpenSearch), loaded from static.searchstax.com. Signature data-mined from BuiltWith-labeled sites (UNI-141).",
+    "html": ["searchstax\\.com"],
+    "scripts": ["searchstax\\.com"],
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.searchstax.com",
+    "_validation": "BuiltWith-positive home-HTML recall ~90%, FP ~1% (dedicated domain)"
   },
   "25Live": {
     "cats": [
