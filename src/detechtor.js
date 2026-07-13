@@ -7,10 +7,18 @@ const config = require('./config');
 const { mapCategory } = require('./category-mapping');
 
 class DeTECHtor {
-  constructor() {
+  constructor(options = {}) {
     this.patterns = this.loadPatterns();
     this.browser = null;
     this.startTime = null;
+    // UNI-140: when enabled, observe runtime network requests (page.on('request'))
+    // and expose the set of hostnames as evidence.networkHosts, so async/bundled
+    // vendors that never leave a static HTML host (Algolia {appId}-dsn.algolia.net,
+    // Swiftype api.swiftype.com, Salesforce, Google CSE) can be matched via a
+    // `network` pattern field. Off by default (adds a settle wait + listener).
+    this.captureNetwork = options.captureNetwork || false;
+    // Extra idle time after navigation for late XHR/fetch to fire (only when capturing).
+    this.networkSettleMs = options.networkSettleMs || 2000;
   }
   
   loadPatterns() {
@@ -157,6 +165,16 @@ class DeTECHtor {
   }
   
   async scanSinglePage(page, url, isAdditionalPage = false) {
+    // UNI-140: collect runtime request hostnames when network capture is enabled.
+    // page.on('request') observes every request without enabling interception (so
+    // no request.continue() is required) — cheap and complete from navigation start.
+    const networkHosts = new Set();
+    if (this.captureNetwork) {
+      page.on('request', req => {
+        try { networkHosts.add(new URL(req.url()).hostname); } catch { /* ignore */ }
+      });
+    }
+
     // Stealth setup to hide automation detection
     await page.setUserAgent(config.userAgent);
     
@@ -219,9 +237,15 @@ class DeTECHtor {
       throw new Error(`Excluded path detected: ${urlPath}`);
     }
     
+    // Let late async XHR/fetch fire so runtime vendor hosts are captured (UNI-140).
+    if (this.captureNetwork && this.networkSettleMs > 0) {
+      await new Promise(resolve => setTimeout(resolve, this.networkSettleMs));
+    }
+
     // Collect evidence from page
     const evidence = await this.collectEvidence(page, response);
-    
+    evidence.networkHosts = this.captureNetwork ? [...networkHosts] : [];
+
     // Match against patterns
     const detected = this.matchPatterns(evidence);
     
@@ -229,6 +253,7 @@ class DeTECHtor {
       url: url,
       finalUrl: response.url(),
       technologies: detected,
+      networkHosts: evidence.networkHosts,
       meta: {
         responseCode: response.status()
       }
@@ -423,6 +448,7 @@ class DeTECHtor {
       cookies: [],
       dom: {},
       apiEndpoints: [],
+      networkHosts: [],
       versionInfo: {}
     };
     
@@ -762,6 +788,28 @@ class DeTECHtor {
       }
     }
     
+    // Network host matching (UNI-140). Regex-tested against the hostnames of runtime
+    // requests (evidence.networkHosts, populated only when --capture-network is set).
+    // This is the only evidence type that sees async/bundled vendors whose API host
+    // never appears in static HTML (Algolia, Swiftype, Salesforce, Google CSE). A live
+    // request to a dedicated vendor host is strong evidence (+70).
+    const networkPatterns = pattern.network || [];
+    if (Array.isArray(networkPatterns) && Array.isArray(evidence.networkHosts) && evidence.networkHosts.length) {
+      for (const networkPattern of networkPatterns) {
+        try {
+          const regex = new RegExp(networkPattern, 'i');
+          if (evidence.networkHosts.some(h => regex.test(h))) {
+            confidence += 70;
+            matchEvidence.push(`Network: ${networkPattern}`);
+          }
+        } catch (regexError) {
+          if (config.verbose) {
+            console.warn(`Invalid network regex for ${name}: ${networkPattern}`);
+          }
+        }
+      }
+    }
+
     // Header matching
     if (pattern.headers && typeof pattern.headers === 'object') {
       for (const [headerName, headerPattern] of Object.entries(pattern.headers)) {

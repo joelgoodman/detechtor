@@ -214,13 +214,19 @@
       "algolia",
       "algoliasearch"
     ],
+    "network": [
+      "algolia\\.net",
+      "algolianet\\.com",
+      "algolia\\.io"
+    ],
     "js": {
       "algoliasearch": "",
       "algolia": ""
     },
     "higher_ed": true,
     "confidence": 95,
-    "website": "https://www.algolia.com"
+    "website": "https://www.algolia.com",
+    "_validation": "UNI-140: runtime API hosts ({appId}-dsn.algolia.net / *.algolianet.com / insights.algolia.io) are XHR-only and never in static HTML — require --capture-network. Static-HTML recall was ~21% (pilot); network field is the primary evidence path for Algolia."
   },
   "Almabase": {
     "cats": [
@@ -2011,13 +2017,18 @@
     "scripts": [
       "swiftype"
     ],
+    "network": [
+      "swiftype\\.com",
+      "swiftypecdn\\.com"
+    ],
     "js": {
       "_st": "",
       "swiftype": ""
     },
     "higher_ed": true,
     "confidence": 90,
-    "website": "https://www.elastic.co/enterprise-search/"
+    "website": "https://www.elastic.co/enterprise-search/",
+    "_validation": "UNI-140: runtime hosts api.swiftype.com / s.swiftypecdn.com are XHR/CDN calls; require --capture-network for reliable detection."
   },
   "TouchNet": {
     "cats": [

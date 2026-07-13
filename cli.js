@@ -34,13 +34,18 @@ const argv = yargs
     type: 'number',
     default: 30
   })
+  .option('capture-network', {
+    describe: 'Observe runtime request hosts (evidence.networkHosts) to detect async/bundled vendors (Algolia, Swiftype, etc.). Adds a settle wait per page.',
+    type: 'boolean',
+    default: false
+  })
   .help()
   .example('$0 --url https://mit.edu', 'Scan MIT website for technologies')
   .example('$0 --url https://harvard.edu --output results.json --verbose', 'Scan Harvard with verbose output and save to file')
   .argv;
 
 async function main() {
-  const detector = new DeTECHtor();
+  const detector = new DeTECHtor({ captureNetwork: argv['capture-network'] });
 
   // Override config with CLI options
   const config = require('./src/config');
