@@ -1,0 +1,49 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "description": "Accessibility overlays and web-governance/QA tools. Signatures data-mined from the HTML of BuiltWith-labeled sites (UNI-141): scripts patterns match the vendor's loader host, deduced empirically (not hand-guessed). Overlays (UserWay/accessiBe) are candidate NEGATIVE signals — presence is a risk flag, not a plus (UNI-137).",
+    "generated": "2026-07-13",
+    "source": "data-mined from Supabase scan_pages.content vs BuiltWith labels (deduce->validate harness)",
+    "tech_count": 4
+  },
+  "UserWay": {
+    "cats": [111],
+    "description": "UserWay accessibility overlay widget, injected via cdn.userway.org. Accessibility overlays are widely regarded as not delivering real WCAG compliance and are frequent ADA-lawsuit targets — treat presence as a risk signal (UNI-137).",
+    "html": ["userway\\.org"],
+    "scripts": ["userway\\.org"],
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://userway.org",
+    "signal_polarity": "negative",
+    "_validation": "BuiltWith-positive home-HTML recall ~62%, FP ~0.3% (dedicated domain)"
+  },
+  "accessiBe": {
+    "cats": [111],
+    "description": "accessiBe accessibility overlay, loaded from acsbapp.com / accessibe.com. Overlay — candidate negative signal (UNI-137).",
+    "html": ["acsbapp\\.com", "accessibe\\.com"],
+    "scripts": ["acsbapp\\.com", "accessibe\\.com"],
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://accessibe.com",
+    "signal_polarity": "negative",
+    "_validation": "BuiltWith-positive home-HTML recall ~68%, FP ~2% (dedicated domain)"
+  },
+  "Monsido": {
+    "cats": [111],
+    "description": "Monsido web accessibility + quality-assurance monitoring, loaded from app-script.monsido.com.",
+    "html": ["monsido\\.com"],
+    "scripts": ["monsido\\.com"],
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://monsido.com"
+  },
+  "Siteimprove": {
+    "cats": [111],
+    "description": "Siteimprove accessibility / SEO / quality-assurance governance platform; the analytics beacon loads from siteimproveanalytics.com.",
+    "html": ["siteimproveanalytics\\.com", "siteimprove\\.com"],
+    "scripts": ["siteimproveanalytics\\.com", "siteimprove\\.com"],
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://siteimprove.com"
+  }
+}

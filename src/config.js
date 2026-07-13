@@ -62,7 +62,8 @@ module.exports = {
     '../patterns/higher-ed-cms.json',                    // Higher-ed CMSes (TerminalFour, Cascade, Modern Campus, etc.)
     '../patterns/higher-ed-lms.json',                    // LMSes + assessment tools (Canvas, Blackboard, Turnitin, etc.)
     '../patterns/higher-ed-sis.json',                    // Student info / ERP / financial aid (Banner, Colleague, Workday, etc.)
-    '../patterns/higher-ed-infra.json'                   // Auth, library, CRM, events, payments, video, search, safety
+    '../patterns/higher-ed-infra.json',                  // Auth, library, CRM, events, payments, video, search, safety
+    '../patterns/higher-ed-accessibility.json'           // Accessibility overlays / QA (UserWay, accessiBe, Monsido, Siteimprove) — data-mined (UNI-141)
   ],
 
   // Output configuration
