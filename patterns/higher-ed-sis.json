@@ -1,0 +1,1098 @@
+{
+  "_metadata": {
+    "version": "3.0.0",
+    "description": "Consolidated higher-ed patterns: Student information systems, ERP, financial aid, admissions",
+    "generated": "2026-04-21",
+    "source": "Merged from 9 higher-ed-*.json + enhanced-payment-analytics.json",
+    "tech_count": 50
+  },
+  "Acalog": {
+    "cats": [
+      53
+    ],
+    "description": "Acalog academic catalog management system",
+    "html": [
+      "acalog"
+    ],
+    "scripts": [
+      "acalog"
+    ],
+    "js": {
+      "Acalog": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.digarc.com/acalog"
+  },
+  "Anthology Student": {
+    "cats": [
+      53
+    ],
+    "description": "Student information system (formerly CampusNexus)",
+    "html": [
+      "campusm\\.com",
+      "campus-management",
+      "cmnet",
+      "campusmgmt",
+      "anthology.*student",
+      "campusnexus",
+      "campus.*nexus",
+      "anthology",
+      "anthology\\.com",
+      "campus\\.anthology\\.com",
+      "class=\"anthology"
+    ],
+    "scripts": [
+      "campusm",
+      "cmnet",
+      "anthology",
+      "campusnexus"
+    ],
+    "js": {
+      "Anthology": "",
+      "CampusNexus": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.anthology.com/products/student",
+    "_legacy_names": [
+      "Campus Management",
+      "Campus Management CampusNexus"
+    ]
+  },
+  "ApplyTexas": {
+    "cats": [
+      53
+    ],
+    "description": "ApplyTexas state application system",
+    "html": [
+      "applytexas"
+    ],
+    "scripts": [
+      "applytexas"
+    ],
+    "js": {
+      "ApplyTexas": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.applytexas.org"
+  },
+  "AwardSpring": {
+    "cats": [
+      53
+    ],
+    "description": "AwardSpring scholarship management platform",
+    "html": [
+      "awardspring"
+    ],
+    "scripts": [
+      "awardspring"
+    ],
+    "js": {
+      "AwardSpring": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.awardspring.com"
+  },
+  "Campus Management Suite": {
+    "cats": [
+      53
+    ],
+    "description": "Campus Management Suite (Australia/New Zealand)",
+    "html": [
+      "campus.*management.*suite",
+      "cms.*australia",
+      "callista.*software"
+    ],
+    "scripts": [
+      "callista",
+      "cms.*au"
+    ],
+    "js": {
+      "CallistaCMS": "",
+      "CampusManagementSuite": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.callista.com"
+  },
+  "CampusLogic": {
+    "cats": [
+      53
+    ],
+    "description": "CampusLogic student financial aid and SIS platform",
+    "html": [
+      "campuslogic",
+      "campus.*logic"
+    ],
+    "scripts": [
+      "campuslogic"
+    ],
+    "js": {
+      "CampusLogic": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.campuslogic.com"
+  },
+  "CampusVue": {
+    "cats": [
+      53
+    ],
+    "description": "CampusVue student information system by SCT (now Ellucian)",
+    "html": [
+      "campusvue",
+      "sct.*campusvue",
+      "campus.*vue"
+    ],
+    "scripts": [
+      "campusvue",
+      "sct.*campus"
+    ],
+    "js": {
+      "CampusVue": "",
+      "SCT": ""
+    },
+    "headers": {
+      "x-campusvue-version": ".*"
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.ellucian.com"
+  },
+  "Coalition Application": {
+    "cats": [
+      53
+    ],
+    "description": "Coalition for College application system",
+    "html": [
+      "coalition.*application",
+      "coalitionforcollegeaccess"
+    ],
+    "scripts": [
+      "coalition"
+    ],
+    "js": {
+      "Coalition": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.coalitionforcollegeaccess.org"
+  },
+  "Common Application": {
+    "cats": [
+      53
+    ],
+    "description": "Common Application admissions platform",
+    "html": [
+      "commonapp",
+      "common.*application"
+    ],
+    "scripts": [
+      "commonapp"
+    ],
+    "js": {
+      "CommonApp": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.commonapp.org"
+  },
+  "CourseLeaf": {
+    "cats": [
+      53
+    ],
+    "description": "CourseLeaf curriculum and catalog management",
+    "html": [
+      "courseleaf"
+    ],
+    "scripts": [
+      "courseleaf"
+    ],
+    "js": {
+      "CourseLeaf": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.leepfrog.com"
+  },
+  "CurricUNET": {
+    "cats": [
+      53
+    ],
+    "description": "CurricUNET curriculum management platform",
+    "html": [
+      "curricunet"
+    ],
+    "scripts": [
+      "curricunet"
+    ],
+    "js": {
+      "CurricUNET": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.governet.net/curricunet"
+  },
+  "Curriculog": {
+    "cats": [
+      53
+    ],
+    "description": "Curriculog curriculum management system",
+    "html": [
+      "curriculog"
+    ],
+    "scripts": [
+      "curriculog"
+    ],
+    "js": {
+      "Curriculog": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.curriculog.com"
+  },
+  "DegreeWorks": {
+    "cats": [
+      53
+    ],
+    "description": "DegreeWorks degree audit and planning system",
+    "html": [
+      "degreeworks",
+      "degree.*works"
+    ],
+    "scripts": [
+      "degreeworks"
+    ],
+    "js": {
+      "DegreeWorks": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.ellucian.com/solutions/ellucian-degreeworks"
+  },
+  "Ellucian Banner": {
+    "cats": [
+      53
+    ],
+    "description": "Ellucian Banner is a comprehensive student information system used by higher education institutions.",
+    "html": [
+      "ellucian.*banner",
+      "bwckgens\\.p_proc_term_date",
+      "bwskfreg\\.P_AltPin",
+      "bwckschd\\.p_disp_dyn_ctlg",
+      "bwckctlg\\.p_disp_course_detail",
+      "banner.*ellucian"
+    ],
+    "scripts": [
+      "ellucian.*banner",
+      "bwck",
+      "sct.*banner",
+      "sungard.*banner"
+    ],
+    "js": {
+      "Banner": "",
+      "BWCK": "",
+      "Ellucian": ""
+    },
+    "meta": {
+      "generator": "Banner"
+    },
+    "higher_ed": true,
+    "confidence": 98,
+    "website": "https://www.ellucian.com/solutions/ellucian-banner",
+    "_legacy_names": [
+      "SCT Banner",
+      "SunGard Banner"
+    ]
+  },
+  "Ellucian Colleague": {
+    "cats": [
+      53
+    ],
+    "description": "Ellucian Colleague student information system, formerly Datatel Colleague.",
+    "html": [
+      "ellucian[^>]*colleague",
+      "datatel[^>]*colleague",
+      "/colleague/",
+      "class=\"colleague-",
+      "colleague.*ellucian",
+      "ellucian.*colleague"
+    ],
+    "scripts": [
+      "ellucian.*colleague",
+      "datatel"
+    ],
+    "js": {
+      "Colleague": "",
+      "DatatelUI": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.ellucian.com/solutions/ellucian-colleague",
+    "_legacy_names": [
+      "Datatel Colleague"
+    ]
+  },
+  "Evisions": {
+    "cats": [
+      53
+    ],
+    "description": "Evisions higher education analytics",
+    "html": [
+      "evisions"
+    ],
+    "scripts": [
+      "evisions"
+    ],
+    "js": {
+      "Evisions": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://evisions.com"
+  },
+  "FACTS SIS": {
+    "cats": [
+      53
+    ],
+    "description": "FACTS Student Information System",
+    "html": [
+      "facts.*sis",
+      "factsmgt",
+      "facts.*student"
+    ],
+    "scripts": [
+      "facts.*sis",
+      "factsmgt"
+    ],
+    "js": {
+      "FACTSSIS": "",
+      "FactsMgt": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.factsmgt.com/products/sis"
+  },
+  "FAST Financial Aid": {
+    "cats": [
+      53
+    ],
+    "description": "FAST financial aid management system",
+    "html": [
+      "fast.*financial.*aid",
+      "getfast"
+    ],
+    "scripts": [
+      "fast.*aid"
+    ],
+    "js": {
+      "FAST": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.getfast.com"
+  },
+  "Focus School Software": {
+    "cats": [
+      53
+    ],
+    "description": "Focus School Software student information system",
+    "html": [
+      "focus.*school.*software",
+      "focusschoolsoftware",
+      "focus.*sis"
+    ],
+    "scripts": [
+      "focus.*school",
+      "focussis"
+    ],
+    "js": {
+      "FocusSchool": "",
+      "FocusSIS": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.focusschoolsoftware.com"
+  },
+  "Gradelink": {
+    "cats": [
+      53
+    ],
+    "description": "Gradelink student information system",
+    "html": [
+      "gradelink",
+      "grade.*link"
+    ],
+    "scripts": [
+      "gradelink"
+    ],
+    "js": {
+      "Gradelink": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.gradelink.com"
+  },
+  "Infinite Campus": {
+    "cats": [
+      53
+    ],
+    "description": "Infinite Campus student information system",
+    "html": [
+      "infinite.*campus",
+      "infinitecampus\\.com"
+    ],
+    "scripts": [
+      "infinitecampus"
+    ],
+    "js": {
+      "InfiniteCampus": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.infinitecampus.com"
+  },
+  "InfoEd": {
+    "cats": [
+      53
+    ],
+    "description": "InfoEd research administration platform",
+    "html": [
+      "infoed"
+    ],
+    "scripts": [
+      "infoed"
+    ],
+    "js": {
+      "InfoEd": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.infoedglobal.com"
+  },
+  "Jenzabar": {
+    "cats": [
+      53
+    ],
+    "description": "Jenzabar student information system and ERP solution for higher education.",
+    "html": [
+      "jenzabar",
+      "jics",
+      "CampusWeb",
+      "jenzabar.*ics",
+      "jenzabar.*ex",
+      "/ICS",
+      "/ICS/",
+      "\\.edu/ICS"
+    ],
+    "scripts": [
+      "jenzabar",
+      "jics",
+      "jenzabar\\.com"
+    ],
+    "js": {
+      "Jenzabar": "",
+      "JICS": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.jenzabar.com",
+    "_legacy_names": [
+      "Jenzabar EX"
+    ]
+  },
+  "Kuali Coeus": {
+    "cats": [
+      53
+    ],
+    "description": "Kuali Coeus research administration system",
+    "html": [
+      "kuali.*coeus",
+      "kuali.*research"
+    ],
+    "scripts": [
+      "kuali.*coeus"
+    ],
+    "js": {
+      "KualiCoeus": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.kuali.co/products/kuali-research"
+  },
+  "Kuali Curriculum Management": {
+    "cats": [
+      53
+    ],
+    "description": "Kuali curriculum and catalog management",
+    "html": [
+      "kuali.*curriculum",
+      "kuali.*cm"
+    ],
+    "scripts": [
+      "kuali.*curriculum"
+    ],
+    "js": {
+      "KualiCM": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.kuali.co/products/kuali-cm"
+  },
+  "Kuali Financial System": {
+    "cats": [
+      53
+    ],
+    "description": "Kuali Financial System (KFS)",
+    "html": [
+      "kuali.*financial",
+      "kuali.*kfs"
+    ],
+    "scripts": [
+      "kuali.*kfs"
+    ],
+    "js": {
+      "KualiFS": "",
+      "KFS": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.kuali.co/products/kuali-financial-system"
+  },
+  "Liaison CAS": {
+    "cats": [
+      53
+    ],
+    "description": "Liaison Centralized Application Service",
+    "html": [
+      "liaison.*cas",
+      "liaisoncas"
+    ],
+    "scripts": [
+      "liaison"
+    ],
+    "js": {
+      "LiaisonCAS": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.liaisonedu.com"
+  },
+  "National Student Clearinghouse": {
+    "cats": [
+      53
+    ],
+    "description": "National Student Clearinghouse services",
+    "html": [
+      "studentclearinghouse",
+      "nsc\\.org"
+    ],
+    "scripts": [
+      "studentclearinghouse"
+    ],
+    "js": {
+      "StudentClearinghouse": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.studentclearinghouse.org"
+  },
+  "Oracle PeopleSoft Campus Solutions": {
+    "cats": [
+      53
+    ],
+    "description": "Oracle PeopleSoft Campus Solutions student information system.",
+    "html": [
+      "peoplesoft",
+      "campus.*solutions",
+      "PS_TOKEN",
+      "PSPRODNAME.*Campus",
+      "oracle.*peoplesoft",
+      "/psc/",
+      "/psp/",
+      "\\?cmd=login"
+    ],
+    "scripts": [
+      "peoplesoft",
+      "pscs",
+      "oracle.*ps"
+    ],
+    "js": {
+      "PeopleSoft": "",
+      "Oracle": ""
+    },
+    "cookies": {
+      "PS_TOKEN": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.oracle.com/applications/peoplesoft/",
+    "_legacy_names": [
+      "Oracle PeopleSoft",
+      "PeopleSoft Campus Solutions"
+    ]
+  },
+  "Parchment": {
+    "cats": [
+      53
+    ],
+    "description": "Parchment credential management platform",
+    "html": [
+      "parchment"
+    ],
+    "scripts": [
+      "parchment"
+    ],
+    "js": {
+      "Parchment": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.parchment.com"
+  },
+  "Populi": {
+    "cats": [
+      53
+    ],
+    "description": "Populi college management system",
+    "html": [
+      "populi.*college",
+      "populiweb\\.com"
+    ],
+    "scripts": [
+      "populi"
+    ],
+    "js": {
+      "Populi": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://populi.co"
+  },
+  "PowerCampus": {
+    "cats": [
+      53
+    ],
+    "description": "PowerCampus student information system.",
+    "html": [
+      "powercampus",
+      "eCollege",
+      "power.*campus"
+    ],
+    "scripts": [
+      "powercampus"
+    ],
+    "js": {
+      "PowerCampus": "",
+      "PowerCAMPUS": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.powercampus.net",
+    "_legacy_names": [
+      "PowerCAMPUS"
+    ]
+  },
+  "PowerFAIDS": {
+    "cats": [
+      53
+    ],
+    "description": "PowerFAIDS financial aid management system",
+    "html": [
+      "powerfaids"
+    ],
+    "scripts": [
+      "powerfaids"
+    ],
+    "js": {
+      "PowerFAIDS": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.powerschool.com/solutions/products/powerfaids/"
+  },
+  "PowerSchool SIS": {
+    "cats": [
+      53
+    ],
+    "description": "PowerSchool Student Information System",
+    "html": [
+      "powerschool.*sis",
+      "powerschool.*student",
+      "ps.*powerschool"
+    ],
+    "scripts": [
+      "powerschool.*sis",
+      "ps.*powerschool"
+    ],
+    "js": {
+      "PowerSchoolSIS": "",
+      "PowerSchool": ""
+    },
+    "cookies": {
+      "PS_TOKEN": "",
+      "PowerSchool_Session": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.powerschool.com"
+  },
+  "QuickSchools": {
+    "cats": [
+      53
+    ],
+    "description": "QuickSchools cloud-based student information system",
+    "html": [
+      "quickschools",
+      "quick.*schools"
+    ],
+    "scripts": [
+      "quickschools"
+    ],
+    "js": {
+      "QuickSchools": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.quickschools.com"
+  },
+  "Rediker Software": {
+    "cats": [
+      53
+    ],
+    "description": "Rediker AdminPlus student information system",
+    "html": [
+      "rediker.*software",
+      "adminplus",
+      "admin.*plus"
+    ],
+    "scripts": [
+      "rediker",
+      "adminplus"
+    ],
+    "js": {
+      "Rediker": "",
+      "AdminPlus": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.rediker.com"
+  },
+  "Regent Education": {
+    "cats": [
+      53
+    ],
+    "description": "Regent Education student information system",
+    "html": [
+      "regent.*education",
+      "regenteducation"
+    ],
+    "scripts": [
+      "regent.*education"
+    ],
+    "js": {
+      "RegentEducation": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.regenteducation.com"
+  },
+  "RenWeb": {
+    "cats": [
+      53
+    ],
+    "description": "RenWeb school management system by FACTS",
+    "html": [
+      "renweb",
+      "ren.*web",
+      "facts.*renweb"
+    ],
+    "scripts": [
+      "renweb",
+      "facts"
+    ],
+    "js": {
+      "RenWeb": "",
+      "FACTS": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.factsmgt.com"
+  },
+  "SIMS": {
+    "cats": [
+      53
+    ],
+    "description": "SIMS education management system (UK)",
+    "html": [
+      "sims.*education",
+      "capita.*sims",
+      "sims.*student"
+    ],
+    "scripts": [
+      "sims",
+      "capita.*sims"
+    ],
+    "js": {
+      "SIMS": "",
+      "CapitaSIMS": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.capita-sims.co.uk"
+  },
+  "SITS": {
+    "cats": [
+      53
+    ],
+    "description": "Tribal SITS:Vision student records system (UK/Ireland). Login pages use /urd/sits.urd/run/ URL structure.",
+    "html": [
+      "sits\\.urd",
+      "/urd/sits\\.urd/run/",
+      "sits.*student",
+      "sits.*records",
+      "tribal.*sits"
+    ],
+    "scripts": [
+      "sits",
+      "tribal.*sits"
+    ],
+    "js": {
+      "SITS": "",
+      "TribalSITS": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.tribalgroup.com/solutions/student-management/sits",
+    "_legacy_names": [
+      "SITS:Vision",
+      "Tribal SITS",
+      "ebs*SITS"
+    ]
+  },
+  "ScholarSite": {
+    "cats": [
+      53
+    ],
+    "description": "ScholarSite academic catalog and curriculum system",
+    "html": [
+      "scholarsite"
+    ],
+    "scripts": [
+      "scholarsite"
+    ],
+    "js": {
+      "ScholarSite": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.scholarsite.com"
+  },
+  "SchoolAdmin": {
+    "cats": [
+      53
+    ],
+    "description": "SchoolAdmin student information system",
+    "html": [
+      "schooladmin",
+      "school.*admin"
+    ],
+    "scripts": [
+      "schooladmin"
+    ],
+    "js": {
+      "SchoolAdmin": ""
+    },
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.schooladmin.com"
+  },
+  "Skyward Student Management": {
+    "cats": [
+      53
+    ],
+    "description": "Skyward student management system extending to higher education",
+    "html": [
+      "skyward.*student",
+      "skyward.*sms",
+      "skyward\\.com"
+    ],
+    "scripts": [
+      "skyward"
+    ],
+    "js": {
+      "Skyward": "",
+      "SkywardSMS": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.skyward.com"
+  },
+  "Smart Catalog": {
+    "cats": [
+      53
+    ],
+    "description": "Smart Catalog curriculum and catalog management system",
+    "html": [
+      "smart.*catalog",
+      "smartcatalog",
+      "myedu.*catalog"
+    ],
+    "scripts": [
+      "smartcatalog",
+      "smart.*catalog"
+    ],
+    "js": {
+      "SmartCatalog": "",
+      "MyEdu": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.smartcatalog.co"
+  },
+  "StudIS": {
+    "cats": [
+      53
+    ],
+    "description": "StudIS European student information system",
+    "html": [
+      "studis",
+      "stud.*is",
+      "european.*sis"
+    ],
+    "scripts": [
+      "studis"
+    ],
+    "js": {
+      "StudIS": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.studis.eu"
+  },
+  "Synergy Student Information System": {
+    "cats": [
+      53
+    ],
+    "description": "Synergy SIS by EduPoint Educational Systems",
+    "html": [
+      "synergy.*sis",
+      "edupoint.*synergy",
+      "synergy.*student"
+    ],
+    "scripts": [
+      "synergy.*sis",
+      "edupoint"
+    ],
+    "js": {
+      "SynergySIS": "",
+      "EduPoint": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.edupoint.com"
+  },
+  "Tribal Student Management": {
+    "cats": [
+      53
+    ],
+    "description": "Tribal Student Management System (UK Higher Education)",
+    "html": [
+      "tribal.*student.*management",
+      "tribal.*education",
+      "ebs.*tribal"
+    ],
+    "scripts": [
+      "tribal.*student",
+      "ebs.*tribal"
+    ],
+    "js": {
+      "TribalSM": "",
+      "EBSTribal": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.tribalgroup.com"
+  },
+  "Unit4 Student Management": {
+    "cats": [
+      53
+    ],
+    "description": "Unit4 student information and finance system",
+    "html": [
+      "unit4.*student",
+      "coda.*student",
+      "tribal.*student",
+      "unit4.*finance",
+      "unit4",
+      "unit4\\.com",
+      "studentmanagement\\.unit4\\.com",
+      "class=\"unit4"
+    ],
+    "scripts": [
+      "unit4",
+      "coda",
+      "tribal"
+    ],
+    "js": {
+      "Unit4": "",
+      "CODA": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.unit4.com/solutions/education"
+  },
+  "Veracross": {
+    "cats": [
+      53
+    ],
+    "description": "Veracross independent school management system",
+    "html": [
+      "veracross",
+      "vera.*cross"
+    ],
+    "scripts": [
+      "veracross"
+    ],
+    "js": {
+      "Veracross": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.veracross.com"
+  },
+  "Workday Student": {
+    "cats": [
+      53
+    ],
+    "description": "Workday cloud-based enterprise management suite",
+    "html": [
+      "workday.*student",
+      "workdayhcm",
+      "wd-.*student",
+      "workday",
+      "workday\\.com",
+      "wd5\\.myworkday\\.com",
+      "class=\"wd-"
+    ],
+    "scripts": [
+      "workday",
+      "wd-app"
+    ],
+    "js": {
+      "Workday": ""
+    },
+    "headers": {
+      "x-workday-client": ".*"
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.workday.com/en-us/products/student/overview.html",
+    "_legacy_names": [
+      "Workday"
+    ]
+  }
+}

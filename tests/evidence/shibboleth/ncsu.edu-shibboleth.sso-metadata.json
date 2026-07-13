@@ -1,0 +1,175 @@
+{
+  "technology": "Shibboleth",
+  "url": "https://ncsu.edu/Shibboleth.sso/Metadata",
+  "final_url": "https://www.ncsu.edu/Shibboleth.sso/Metadata",
+  "captured_at": "2026-04-21T19:28:24.356Z",
+  "response_status": 202,
+  "html_file": "tests/evidence/shibboleth/ncsu.edu-shibboleth.sso-metadata.html",
+  "evidence": {
+    "headers": {
+      "access-control-allow-methods": "OPTIONS,GET,POST",
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "x-amzn-waf-action",
+      "access-control-max-age": "86400",
+      "cache-control": "no-store, max-age=0",
+      "content-length": "2435",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:28:23 GMT",
+      "server": "CloudFront",
+      "via": "1.1 36ee37bcea8d655b347e1d302e73f3e8.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "teQeYfSRl7pbh1PjODVi7a8HRhQGUQWeSncVTl1PkBp_RN0l7yeHvQ==",
+      "x-amz-cf-pop": "ATL58-P11",
+      "x-amzn-waf-action": "challenge",
+      "x-cache": "Error from cloudfront"
+    },
+    "scripts": [
+      {
+        "src": "https://1526fd36cab8.73685e66.us-east-1.token.awswaf.com/1526fd36cab8/f1ddc8a9b028/2659a5290239/challenge.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1"
+    },
+    "cookies": [],
+    "dom": {
+      "title": "",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title></title>\n    <style>\n        body {\n            font-family: \"Arial\";\n        }\n    </style>\n    <script type=\"text/javascript\">\n    window.awsWafCookieDomainList = [];\n    window.gokuProps = {\n\"key\":\"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AEEbClFslU0NSIcZHJN9kzkAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMJllCsZi0FSqdGAo5AgEQgDuo7e7/4HWt+c9E7j7dVRk5i1MKKUd/0vDaU3sS11ne+92aYEVVYyaaS2x5Au1WwgTKWJgCoNHHN3+4Zw==\",\n          \"iv\":\"D57MzgFNQgAAADcc\",\n          \"context\":\"oPVCq6Wj4HDzslFexC4xkY+z0xHgv1ESfuBOFRiS5WHKCEdR4jhgjluxv3QZqODEXsZ5JRe/KY0tdYr6VJBh5F9WSRbrq8IR58/F7Ax21gTX5aa/+uBltO3qh6gbafK6vvDsdZC9QXt4S0SEhyJdgHUG9XFzPdm6010jV5fqCmBBM2bVXG/frAoNveQ43mf8sbXtUSJ0FYBZoUwsJriptjr8Kk22FbY1qOMCk2Eaxoft+ngrmwM7c6YUPzjEs6PWGOyD8kHSGPESxNajRwDlM7xQfNK4vmS29O1XvL7gnyjcDHPhlOVQr0IBFW7P5gKlErr/WWPpG+IGxMKPg8SGW32Q75DoJ5FOEu3i0bSOVa9hblC4+C5Qi5aLjm4NJQFysx+fCrrPIUPrg2QtkXO0QnmghA3XNyKcXl2D7PJD0m1e/doNxNaQ1zXlbK/7i6F6xnRRpUvT9MQ1C4tGeX1nPABv9jc2J9pipCGC6NsBGG1DxaGNePuuvNdUrbQQYpXQPFY28pjcHlD6LuBNIGfHX3f2ijaK2o78pLueRAxNpJltl//x4L5yR9I1uZjJB0mdfc99e7uA0YLT436intwLm0t5Q/CyX3iU7kALr0Gsm+yq8mLF4QKlGK1hM4SjJiSvLFtnUVF2441EQUxM1gFt/4dc3B7Pd4U+WiWMvkbCJafwhODWCCbbnx003zM5+8af66WAkaCaipguV4RLwj+aE75edne2eXcUGSk+QTTwwyKNnRW31E0SqOA3zj9lyuxiRS352GdVfqvB2f1q8vnfnH74X+Dss15FAF2nxY1NnLRRK/SdzIE=\"\n};\n    </script>\n    <script src=\"https://1526fd36cab8.73685e66.us-east-1.token.awswaf.com/1526fd36cab8/f1ddc8a9b028/2659a5290239/challenge.js\"></script>\n",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://ncsu.edu/wp-login.php",
+      "status": 301,
+      "redirect_to": "https://www.ncsu.edu/wp-login.php"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://ncsu.edu/wp-json/wp/v2/",
+      "status": 301,
+      "redirect_to": "https://www.ncsu.edu/wp-json/wp/v2/"
+    },
+    "/wp-content/": {
+      "url": "https://ncsu.edu/wp-content/",
+      "status": 301,
+      "redirect_to": "https://www.ncsu.edu/wp-content/"
+    },
+    "/user/login": {
+      "url": "https://ncsu.edu/user/login",
+      "status": 301,
+      "redirect_to": "https://www.ncsu.edu/user/login"
+    },
+    "/core/install.php": {
+      "url": "https://ncsu.edu/core/install.php",
+      "status": 301,
+      "redirect_to": "https://www.ncsu.edu/core/install.php"
+    },
+    "/cas/login": {
+      "url": "https://ncsu.edu/cas/login",
+      "status": 301,
+      "redirect_to": "https://www.ncsu.edu/cas/login"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://ncsu.edu/Shibboleth.sso/Metadata",
+      "status": 301,
+      "redirect_to": "https://www.ncsu.edu/Shibboleth.sso/Metadata"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Amazon CloudFront",
+      "confidence": 100,
+      "evidence": [
+        "Header: Via=\\(CloudFront\\)$",
+        "Header: X-Amz-Cf-Id="
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Duo Security",
+      "confidence": 30,
+      "evidence": [
+        "JS: Duo (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": false
+}

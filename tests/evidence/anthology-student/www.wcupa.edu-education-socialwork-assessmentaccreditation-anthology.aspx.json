@@ -1,0 +1,439 @@
+{
+  "technology": "Anthology Student",
+  "url": "https://www.wcupa.edu/education-socialWork/assessmentAccreditation/anthology.aspx",
+  "final_url": "https://www.wcupa.edu/education-socialWork/assessmentAccreditation/anthology.aspx",
+  "captured_at": "2026-04-21T19:33:58.399Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/anthology-student/www.wcupa.edu-education-socialwork-assessmentaccreditation-anthology.aspx.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "private",
+      "content-encoding": "gzip",
+      "content-length": "11425",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:32:41 GMT",
+      "server": "Microsoft-IIS/10.0",
+      "set-cookie": "BIGipServerWCUWEB_pool=67312272.20480.0000; path=/; Httponly; Secure",
+      "vary": "Accept-Encoding",
+      "x-aspnet-version": "4.0.30319",
+      "x-frame-options": "SAMEORIGIN",
+      "x-powered-by": "ASP.NET"
+    },
+    "scripts": [
+      {
+        "src": "https://siteimproveanalytics.com/js/siteanalyze_58600.js",
+        "version": null
+      },
+      {
+        "src": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-BFTGVVG4VH&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-MQL94F",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-BFTGVVG4VH",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=DC-15744651",
+        "version": null
+      },
+      {
+        "src": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/994868605/?random=1776800034132&cv=11&fst=1776800034132&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45je64h1v895062589za200zb9230623130zd9230623130xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938466~115938468~117266401&u_w=800&u_h=600&url=https%3A%2F%2Fwww.wcupa.edu%2Feducation-socialWork%2FassessmentAccreditation%2Fanthology.aspx&rcb=0&frm=0&tiba=Anthology%20-%20WCU%20of%20PA&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1237391766.1776800034&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4",
+        "version": null
+      },
+      {
+        "src": "https://px.premion.com/pixel.js?pxid=680b967ca8e493ba9486b031&pid=wpmt",
+        "version": null
+      },
+      {
+        "src": "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.wcupa.edu/_resources/js/direct-edit.js",
+        "version": null
+      },
+      {
+        "src": "https://www.wcupa.edu/_resources/includes/brand/js/core.js?v=12112025103448",
+        "version": null
+      },
+      {
+        "src": "https://www.wcupa.edu/education-socialWork/assessmentAccreditation/includes/sitejavascript.js?v=05102023032708",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "The College of Education and Social Work (CESW) uses TK20 by Watermark as a comprehensive online data management system for assessments of student learning outcomes and field placements. Tk20 by Watermark establishes electronic documentation for continuous improvement of our programs and accreditation. Students will use this system to complete key unit and program course assignments, field applications, field experience binders, surveys, and portfolios.",
+      "msapplication-tilecolor": "#2d0f46",
+      "msapplication-tileimage": "/_resources/favicon/ieTile.png",
+      "author": "LROBINSON2@wcupa.edu"
+    },
+    "cookies": [
+      {
+        "name": "_ga_BFTGVVG4VH",
+        "value": "GS2.1.s1776800034$o1$g0$t1776800034$j60$l0$h0",
+        "domain": ".wcupa.edu"
+      },
+      {
+        "name": "BIGipServerWCUWEB_pool",
+        "value": "67312272.20480.0000",
+        "domain": "www.wcupa.edu"
+      },
+      {
+        "name": "_gcl_au",
+        "value": "1.1.1237391766.1776800034",
+        "domain": ".wcupa.edu"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.1.1002733014.1776800034",
+        "domain": ".wcupa.edu"
+      }
+    ],
+    "dom": {
+      "title": "Anthology - WCU of PA",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n      <title>Anthology - WCU of PA</title>\n      <meta charset=\"utf-8\">\n      <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n      <meta name=\"Description\" content=\"The College of Education and Social Work (CESW) uses TK20 by Watermark as a comprehensive online data management system for assessments of student learning outcomes and field placements. Tk20 by Watermark establishes electronic documentation for continuous improvement of our programs and accreditation. Students will use this system to complete key unit and program course assignments, field applications, field experience binders, surveys, and portfolios.\">\n      <link rel=\"stylesheet\" href=\"/_resources/css/custom-resources.css\" type=\"text/css\">\n      \n<!-- headcode -->\n<!-- Google Tag Manager -->\n\n<script async=\"\" src=\"https://connect.facebook.net/en_US/fbevents.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/destination?id=AW-16631986917&amp;cx=c&amp;gtm=4e64h1h1\"></script><script type=\"text/javascript\" async=\"\" src=\"https://sc-static.net/scevent.min.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/destination?id=AW-456914274&amp;cx=c&amp;gtm=4e64h1h1\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.google-analytics.com/analytics.js\"></script><script type=\"text/javascript\" async=\"\" src=\"//siteimproveanalytics.com/js/siteanalyze_58600.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://snap.licdn.com/li.lms-analytics/insight.min.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-BFTGVVG4VH&amp;cx=c&amp;gtm=4e64h1\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-MQL94F\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-MQL94F');</script>\n\n<!-- End Google Tag Manager -->\n\n<!-- Google tag (gtag.js) -->\n<script async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-BFTGVVG4VH\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-BFTGVVG4VH');\n</script>\n \n<!-- Google tag (gtag.js) -->\n<script async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=DC-15744651\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'DC-15744651');\n</script>\n\n<link rel=\"icon\" href=\"/_resources/favicon/favicon-new.ico\" sizes=\"any\">\n<link rel=\"icon\" href=\"/_resources/favicon/icon.svg\" type=\"image/svg+xml\">\n<link rel=\"apple-touch-icon\" href=\"/_resources/favicon/apple-touch-icon.png\">\n<link rel=\"manifest\" href=\"/_resources/includes/brand/manifest.webmanifest\">\n\n<!-- IE 10 Pinned Tile -->\n<meta name=\"msapplication-TileColor\" content=\"#2d0f46\">\n<meta name=\"msapplication-TileImage\" content=\"/_resources/favicon/ieTile.png\">\n\n<!-- Myriad Pro -->\n<link rel=\"stylesheet\" href=\"https://use.typekit.net/evy1qab.css\">\n      <meta property=\"author\" content=\"LROBINSON2@wcupa.edu\">\n      <link rel=\"stylesheet\" href=\"includes/custom.css?v=08192024084028\" type=\"text/css\">\n\t\t\t<link rel=\"stylesheet\" href=\"/_resources/includes/brand/css/custom.css?v=04092026023603\" type=\"text/css\">\n      <link rel=\"canonical\" href=\"https://www.wcupa.edu/education-socialWork/assessmentAccreditation/anthology.aspx\">\n      <link rel=\"stylesheet\" href=\"/_resources/css/oustyles.css\">\n   <script type=\"text/javascript\" async=\"\" src=\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/994868605/?random=1776800034132&amp;cv=11&amp;fst=1776800034132&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45je64h1v895062589za200zb9230623130zd9230623130xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115938466~115938468~117266401&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.wcupa.edu%2Feducation-socialWork%2FassessmentAccreditation%2Fanthology.aspx&amp;rcb=0&amp;frm=0&amp;tiba=Anthology%20-%20WCU%20of%20PA&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1237391766.1776800034&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=&amp;uapv=&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4\"></script><style type=\"text/css\">.fancybox-margin{margin-right:0px;}</style><script src=\"https://app.heyhalda.com/widgets/smart-forms/clzt1q0kr0josaureb7avebbw.js?r=p81efm\" async=\"\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.6.0"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.wcupa.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en\">\r\n\t<head><title>\r\n\tPage Not Found (404) - WCU of PA\r\n</title><meta charset=\"utf-8\" /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n\t\t<!-- Google Tag Manager -->\r\n\t\t<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n\t\tnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src="
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.wcupa.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en\">\r\n\t<head><title>\r\n\tPage Not Found (404) - WCU of PA\r\n</title><meta charset=\"utf-8\" /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n\t\t<!-- Google Tag Manager -->\r\n\t\t<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n\t\tnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src="
+    },
+    "/wp-content/": {
+      "url": "https://www.wcupa.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en\">\r\n\t<head><title>\r\n\tPage Not Found (404) - WCU of PA\r\n</title><meta charset=\"utf-8\" /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n\t\t<!-- Google Tag Manager -->\r\n\t\t<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n\t\tnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src="
+    },
+    "/user/login": {
+      "url": "https://www.wcupa.edu/user/login",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en\">\r\n\t<head><title>\r\n\tPage Not Found (404) - WCU of PA\r\n</title><meta charset=\"utf-8\" /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n\t\t<!-- Google Tag Manager -->\r\n\t\t<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n\t\tnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src="
+    },
+    "/core/install.php": {
+      "url": "https://www.wcupa.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en\">\r\n\t<head><title>\r\n\tPage Not Found (404) - WCU of PA\r\n</title><meta charset=\"utf-8\" /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n\t\t<!-- Google Tag Manager -->\r\n\t\t<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n\t\tnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src="
+    },
+    "/cas/login": {
+      "url": "https://www.wcupa.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en\">\r\n\t<head><title>\r\n\tPage Not Found (404) - WCU of PA\r\n</title><meta charset=\"utf-8\" /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n\t\t<!-- Google Tag Manager -->\r\n\t\t<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n\t\tnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src="
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.wcupa.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en\">\r\n\t<head><title>\r\n\tPage Not Found (404) - WCU of PA\r\n</title><meta charset=\"utf-8\" /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n\t\t<!-- Google Tag Manager -->\r\n\t\t<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n\t\tnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src="
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "ASP.NET",
+      "confidence": 100,
+      "evidence": [
+        "Header: x-aspnet-version=.*",
+        "Header: x-powered-by=ASP.NET"
+      ]
+    },
+    {
+      "name": "Anthology Student",
+      "confidence": 100,
+      "evidence": [
+        "HTML: anthology",
+        "HTML: class=\"anthology",
+        "JS: Anthology (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: gtag\\('config', 'G-[A-Z0-9]+",
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "HTML: gtag\\('js'",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 80,
+      "evidence": [
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "IIS",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Microsoft-IIS"
+      ]
+    },
+    {
+      "name": "Microsoft ASP.NET",
+      "confidence": 80,
+      "evidence": [
+        "Header: X-Powered-By=^ASP\\.NET"
+      ]
+    },
+    {
+      "name": "EAB Navigate",
+      "confidence": 80,
+      "evidence": [
+        "HTML: campus.eab.com",
+        "HTML: eab.*navigate"
+      ]
+    },
+    {
+      "name": "TouchNet",
+      "confidence": 80,
+      "evidence": [
+        "HTML: touchnet",
+        "HTML: secure\\.touchnet\\.net"
+      ]
+    },
+    {
+      "name": "Campus Labs",
+      "confidence": 80,
+      "evidence": [
+        "HTML: campus.*labs",
+        "HTML: campuslabs"
+      ]
+    },
+    {
+      "name": "Anthology Engage",
+      "confidence": 80,
+      "evidence": [
+        "HTML: campus.*labs",
+        "HTML: campuslabs"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 70,
+      "evidence": [
+        "HTML: youtube",
+        "JS: YT (HTML)"
+      ]
+    },
+    {
+      "name": "Linkedin Insight Tag",
+      "confidence": 60,
+      "evidence": [
+        "JS: _linkedin_data_partner_id (HTML)",
+        "JS: _linkedin_partner_id (HTML)"
+      ]
+    },
+    {
+      "name": "Adobe Fonts",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: gtag\\("
+      ]
+    },
+    {
+      "name": "Google Workspace",
+      "confidence": 40,
+      "evidence": [
+        "HTML: g.*suite"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "LearnDash",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ld.*course"
+      ]
+    },
+    {
+      "name": "Typekit",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Funnelback",
+      "confidence": 40,
+      "evidence": [
+        "HTML: funnelback"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "Econda",
+      "confidence": 30,
+      "evidence": [
+        "JS: econda (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Mollie",
+      "confidence": 30,
+      "evidence": [
+        "JS: Mollie (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "D2L Brightspace",
+      "confidence": 30,
+      "evidence": [
+        "JS: D2L (HTML)"
+      ]
+    },
+    {
+      "name": "Modern Campus CMS",
+      "confidence": 30,
+      "evidence": [
+        "JS: omni (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

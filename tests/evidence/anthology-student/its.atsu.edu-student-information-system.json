@@ -1,0 +1,824 @@
+{
+  "technology": "Anthology Student",
+  "url": "https://its.atsu.edu/student-information-system",
+  "final_url": "https://its.atsu.edu/student-information-system",
+  "captured_at": "2026-04-21T19:34:03.778Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/anthology-student/its.atsu.edu-student-information-system.html",
+  "evidence": {
+    "headers": {
+      "content-encoding": "gzip",
+      "content-length": "29234",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:33:53 GMT",
+      "link": "<https://its.atsu.edu/wp-json/>; rel=\"https://api.w.org/\", <https://its.atsu.edu/wp-json/wp/v2/posts/190>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://its.atsu.edu/?p=190>; rel=shortlink, <https://its.atsu.edu/wp-content/themes/its-v2/assets/images/its-hero.webp>; rel=\"preload\"; fetchpriority=\"high\"; as=\"image\"; media=\"screen and (width <= 480px)\", <https://its.atsu.edu/wp-content/themes/its-v2/assets/images/its-hero.webp>; rel=\"preload\"; fetchpriority=\"high\"; as=\"image\"; media=\"screen and (600px < width)\"",
+      "server": "Apache",
+      "server-timing": "wp-before-template;dur=554.99",
+      "upgrade": "h2",
+      "vary": "Accept-Encoding"
+    },
+    "scripts": [
+      {
+        "src": "https://s.swiftypecdn.com/install/v2/st.js",
+        "version": null
+      },
+      {
+        "src": "https://www.clarity.ms/tag/ky9no7qq6j",
+        "version": null
+      },
+      {
+        "src": "https://its.atsu.edu/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "version": "3.7.1"
+      },
+      {
+        "src": "https://its.atsu.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "version": "3.4.1"
+      },
+      {
+        "src": "https://www.bugherd.com/sidebarv2.js?apikey=x9kxkqckzwuklqtfwa1kjg",
+        "version": null
+      },
+      {
+        "src": "https://dtn7rvxwwlhud.cloudfront.net/amazon-connect-chat-interface-client.js",
+        "version": null
+      },
+      {
+        "src": "https://its.atsu.edu/wp-includes/js/wp-emoji-release.min.js?ver=bc5567404475a34e9eab5b7a956d2834",
+        "version": "bc5567404475a34e9eab5b7a956d2834"
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-013P85MD1K",
+        "version": null
+      },
+      {
+        "src": "https://its.atsu.edu/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=b0f909c3ec791c383210",
+        "version": "b0f909c3ec791c383210"
+      },
+      {
+        "src": "https://its.atsu.edu/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+        "version": "dd5603f07f9220ed27f1"
+      },
+      {
+        "src": "https://its.atsu.edu/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+        "version": "c26c3dc7bed366793375"
+      },
+      {
+        "src": "https://its.atsu.edu/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5",
+        "version": "6.1.5"
+      },
+      {
+        "src": "https://its.atsu.edu/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5",
+        "version": "6.1.5"
+      },
+      {
+        "src": "https://its.atsu.edu/wp-content/themes/its-v2/js/scripts.js?ver=1.0.2",
+        "version": "1.0.2"
+      },
+      {
+        "src": "https://kit.fontawesome.com/040e261490.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1",
+      "robots": "max-image-preview:large",
+      "generator": "image-prioritizer 1.0.0-beta3",
+      "msapplication-tileimage": "https://its.atsu.edu/wp-content/uploads/2025/01/atsu-favicon-2-300x300.png"
+    },
+    "cookies": [
+      {
+        "name": "_ga",
+        "value": "GA1.1.1629171563.1776800035",
+        "domain": ".atsu.edu"
+      },
+      {
+        "name": "_ga_013P85MD1K",
+        "value": "GS2.1.s1776800034$o1$g0$t1776800034$j60$l0$h514489295",
+        "domain": ".atsu.edu"
+      }
+    ],
+    "dom": {
+      "title": "Student Information System – Information Technology Services at A.T. Still University",
+      "bodyClasses": "wp-singular post-template-default single single-post postid-190 single-format-standard wp-embed-responsive wp-theme-its-v2",
+      "bodyId": "",
+      "headContent": "\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"robots\" content=\"max-image-preview:large\">\n<title>Student Information System – Information Technology Services at A.T. Still University</title>\n<link rel=\"dns-prefetch\" href=\"//kit.fontawesome.com\">\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Information Technology Services at A.T. Still University » Feed\" href=\"https://its.atsu.edu/feed\">\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Information Technology Services at A.T. Still University » Comments Feed\" href=\"https://its.atsu.edu/comments/feed\">\n<link rel=\"alternate\" title=\"oEmbed (JSON)\" type=\"application/json+oembed\" href=\"https://its.atsu.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fits.atsu.edu%2Fstudent-information-system\">\n<link rel=\"alternate\" title=\"oEmbed (XML)\" type=\"text/xml+oembed\" href=\"https://its.atsu.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fits.atsu.edu%2Fstudent-information-system&amp;format=xml\">\n<style id=\"wp-img-auto-sizes-contain-inline-css\">\nimg:is([sizes=auto i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px}\n/*# sourceURL=wp-img-auto-sizes-contain-inline-css */\n</style>\n<style id=\"wp-block-heading-inline-css\">\nh1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/heading/style.min.css */\n</style>\n<style id=\"itsv2-heading-style-one-inline-css\">\n.is-style-its-heading-style-1 {\n  font-size: 0.9rem;\n  font-weight: 600;\n  line-height: 1.5rem;\n  text-transform: uppercase;\n  border-bottom: 3px solid #5abcf6;\n}\n\n/*# sourceURL=https://its.atsu.edu/wp-content/themes/its-v2/assets/blocks/heading-style-one.css */\n</style>\n<style id=\"wp-block-group-inline-css\">\n.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/group/style.min.css */\n</style>\n<style id=\"itsv2-group-link-box-style-one-inline-css\">\n.wp-block-group.is-style-its-link-box-style-1 {\n  background-color: #fff;\n  -webkit-box-pack: justify;\n  -ms-flex-pack: justify;\n  justify-content: space-between;\n  min-height: 100px;\n  border: 1px solid var(--wp--preset--color--atsu-mid-blue);\n  border-right-width: 5px;\n  border-bottom-width: 5px;\n  border-radius: 10px;\n  padding: var(--wp--preset--spacing--small);\n  position: relative;\n}\n\n.wp-block-group.is-style-its-link-box-style-1 a {\n  color: var(--wp--preset--color--atsu-mid-blue);\n  text-decoration: none;\n}\n\n.wp-block-group.is-style-its-link-box-style-1 h3 {\n  color: var(--wp--preset--color--atsu-mid-blue);\n  font-size: 1.1rem;\n  line-height: 1.5rem;\n}\n\n.wp-block-group.is-style-its-link-box-style-1:hover {\n  border-color: color-mix(in sRGB, var(--wp--preset--color--atsu-mid-blue) 70%, black 30%);\n}\n\n.wp-block-group.is-style-its-link-box-style-1:hover h3 a {\n  color: color-mix(in sRGB, var(--wp--preset--color--atsu-mid-blue) 70%, black 30%) !important;\n}\n\n.wp-block-group.is-style-its-link-box-style-1 a::after {\n  content: \" \";\n  position: absolute;\n  cursor: pointer;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n@media screen and (min-width: 500px) {\n  .wp-block-group.is-style-its-link-box-style-1 {\n    min-height: 200px;\n  }\n}\n\n/*# sourceURL=https://its.atsu.edu/wp-content/themes/its-v2/assets/blocks/link-box-style-one.css */\n</style>\n<style id=\"wp-block-search-inline-css\">\n.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{height:1.25em;min-height:24px;min-width:24px;width:1.25em;fill:currentColor;vertical-align:text-bottom}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__button{box-sizing:border-box;display:flex;flex-shrink:0;justify-content:center;margin-left:0;max-width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{min-width:0!important;transition-property:width}.wp-block-search.wp-block-search__button-only .wp-block-search__input{flex-basis:100%;transition-duration:.3s}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden,.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper{overflow:hidden}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__input{border-left-width:0!important;border-right-width:0!important;flex-basis:0;flex-grow:0;margin:0;min-width:0!important;padding-left:0!important;padding-right:0!important;width:0!important}:where(.wp-block-search__input){appearance:none;border:1px solid #949494;flex-grow:1;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin-left:0;margin-right:0;min-width:3rem;padding:8px;text-decoration:unset!important;text-transform:inherit}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){background-color:#fff;border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:none}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}.wp-block-search.aligncenter .wp-block-search__inside-wrapper{margin:auto}.wp-block[data-align=right] .wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{float:right}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/search/style.min.css */\n</style>\n<style id=\"wp-block-button-inline-css\">\n.wp-block-button__link{align-content:center;box-sizing:border-box;cursor:pointer;display:inline-block;height:100%;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}:root :where(.wp-block-button .wp-block-button__link.is-style-outline),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link){border:2px solid;padding:.667em 1.333em}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)){color:currentColor}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)){background-color:initial;background-image:none}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/button/style.min.css */\n</style>\n<style id=\"itsv2-primary-button-inline-css\">\n.wp-block-button.is-style-primary-its-btn a,\n.wp-block-button.is-style-primary-its-btn div {\n  background-color: var(--wp--preset--color--atsu-light-blue);\n  border-radius: 10px;\n  color: var(--wp--preset--color--atsu-dark-blue);\n  font-weight: 400;\n}\n\n.wp-block-button.is-style-primary-its-btn a:hover,\n.wp-block-button.is-style-primary-its-btn div:hover {\n  background-color: color-mix(in sRGB, var(--wp--preset--color--atsu-light-blue) 80%, white 20%);\n}\n\n/*# sourceURL=https://its.atsu.edu/wp-content/themes/its-v2/assets/blocks/primary-button.css */\n</style>\n<style id=\"itsv2-btn-style-one-inline-css\">\n.wp-block-button.is-style-btn-style-one a,\n.wp-block-button.is-style-btn-style-one div {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n  -ms-flex-pack: justify;\n  justify-content: space-between;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  border-bottom: 1px solid #ddd;\n  border-radius: 0;\n  background-color: inherit;\n  padding: 0.5rem 0;\n  color: var(--wp--custom--color--atsu-link-blue);\n  font-weight: 400;\n}\n\n.wp-block-button.is-style-btn-style-one a:hover,\n.wp-block-button.is-style-btn-style-one div:hover {\n  text-decoration: none;\n  color: color-mix(in sRGB, var(--wp--custom--color--atsu-link-blue) 50%, black 50%);\n}\n\n.wp-block-button.is-style-btn-style-one:last-of-type a,\n.wp-block-button.is-style-btn-style-one:last-of-type div {\n  border-bottom: none;\n}\n\n/*# sourceURL=https://its.atsu.edu/wp-content/themes/its-v2/assets/blocks/btn-style-one.css */\n</style>\n<style id=\"wp-block-buttons-inline-css\">\n.wp-block-buttons{box-sizing:border-box}.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons .wp-block-button__link{width:100%}.wp-block-button.aligncenter{text-align:center}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/buttons/style.min.css */\n</style>\n<link rel=\"stylesheet\" id=\"wp-block-cover-css\" href=\"https://its.atsu.edu/wp-includes/blocks/cover/style.min.css?ver=bc5567404475a34e9eab5b7a956d2834\" media=\"all\">\n<style id=\"wp-block-navigation-link-inline-css\">\n.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{outline:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/navigation-link/style.min.css */\n</style>\n<style id=\"wp-block-navigation-inline-css\">\n.wp-block-navigation{position:relative}.wp-block-navigation ul{margin-bottom:0;margin-left:0;margin-top:0;padding-left:0}.wp-block-navigation ul,.wp-block-navigation ul li{list-style:none;padding:0}.wp-block-navigation .wp-block-navigation-item{align-items:center;background-color:inherit;display:flex;position:relative}.wp-block-navigation .wp-block-navigation-item .wp-block-navigation__submenu-container:empty{display:none}.wp-block-navigation .wp-block-navigation-item__content{display:block;z-index:1}.wp-block-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content{color:inherit}.wp-block-navigation.has-text-decoration-underline .wp-block-navigation-item__content,.wp-block-navigation.has-text-decoration-underline .wp-block-navigation-item__content:active,.wp-block-navigation.has-text-decoration-underline .wp-block-navigation-item__content:focus{text-decoration:underline}.wp-block-navigation.has-text-decoration-line-through .wp-block-navigation-item__content,.wp-block-navigation.has-text-decoration-line-through .wp-block-navigation-item__content:active,.wp-block-navigation.has-text-decoration-line-through .wp-block-navigation-item__content:focus{text-decoration:line-through}.wp-block-navigation :where(a),.wp-block-navigation :where(a:active),.wp-block-navigation :where(a:focus){text-decoration:none}.wp-block-navigation .wp-block-navigation__submenu-icon{align-self:center;background-color:inherit;border:none;color:currentColor;display:inline-block;font-size:inherit;height:.6em;line-height:0;margin-left:.25em;padding:0;width:.6em}.wp-block-navigation .wp-block-navigation__submenu-icon svg{display:inline-block;stroke:currentColor;height:inherit;margin-top:.075em;width:inherit}.wp-block-navigation{--navigation-layout-justification-setting:flex-start;--navigation-layout-direction:row;--navigation-layout-wrap:wrap;--navigation-layout-justify:flex-start;--navigation-layout-align:center}.wp-block-navigation.is-vertical{--navigation-layout-direction:column;--navigation-layout-justify:initial;--navigation-layout-align:flex-start}.wp-block-navigation.no-wrap{--navigation-layout-wrap:nowrap}.wp-block-navigation.items-justified-center{--navigation-layout-justification-setting:center;--navigation-layout-justify:center}.wp-block-navigation.items-justified-center.is-vertical{--navigation-layout-align:center}.wp-block-navigation.items-justified-right{--navigation-layout-justification-setting:flex-end;--navigation-layout-justify:flex-end}.wp-block-navigation.items-justified-right.is-vertical{--navigation-layout-align:flex-end}.wp-block-navigation.items-justified-space-between{--navigation-layout-justification-setting:space-between;--navigation-layout-justify:space-between}.wp-block-navigation .has-child .wp-block-navigation__submenu-container{align-items:normal;background-color:inherit;color:inherit;display:flex;flex-direction:column;opacity:0;position:absolute;z-index:2}@media not (prefers-reduced-motion){.wp-block-navigation .has-child .wp-block-navigation__submenu-container{transition:opacity .1s linear}}.wp-block-navigation .has-child .wp-block-navigation__submenu-container{height:0;overflow:hidden;visibility:hidden;width:0}.wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content{display:flex;flex-grow:1;padding:.5em 1em}.wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content .wp-block-navigation__submenu-icon{margin-left:auto;margin-right:0}.wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation-item__content{margin:0}.wp-block-navigation .has-child .wp-block-navigation__submenu-container{left:-1px;top:100%}@media (min-width:782px){.wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container{left:100%;top:-1px}.wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container:before{background:#0000;content:\"\";display:block;height:100%;position:absolute;right:100%;width:.5em}.wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon{margin-right:.25em}.wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon svg{transform:rotate(-90deg)}}.wp-block-navigation .has-child .wp-block-navigation-submenu__toggle[aria-expanded=true]~.wp-block-navigation__submenu-container,.wp-block-navigation .has-child:not(.open-on-click):hover>.wp-block-navigation__submenu-container,.wp-block-navigation .has-child:not(.open-on-click):not(.open-on-hover-click):focus-within>.wp-block-navigation__submenu-container{height:auto;min-width:200px;opacity:1;overflow:visible;visibility:visible;width:auto}.wp-block-navigation.has-background .has-child .wp-block-navigation__submenu-container{left:0;top:100%}@media (min-width:782px){.wp-block-navigation.has-background .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container{left:100%;top:0}}.wp-block-navigation-submenu{display:flex;position:relative}.wp-block-navigation-submenu .wp-block-navigation__submenu-icon svg{stroke:currentColor}button.wp-block-navigation-item__content{background-color:initial;border:none;color:currentColor;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-align:left;text-transform:inherit}.wp-block-navigation-submenu__toggle{cursor:pointer}.wp-block-navigation-submenu__toggle[aria-expanded=true]+.wp-block-navigation__submenu-icon>svg,.wp-block-navigation-submenu__toggle[aria-expanded=true]>svg{transform:rotate(180deg)}.wp-block-navigation-item.open-on-click .wp-block-navigation-submenu__toggle{padding-left:0;padding-right:.85em}.wp-block-navigation-item.open-on-click .wp-block-navigation-submenu__toggle+.wp-block-navigation__submenu-icon{margin-left:-.6em;pointer-events:none}.wp-block-navigation-item.open-on-click button.wp-block-navigation-item__content:not(.wp-block-navigation-submenu__toggle){padding:0}.wp-block-navigation .wp-block-page-list,.wp-block-navigation__container,.wp-block-navigation__responsive-close,.wp-block-navigation__responsive-container,.wp-block-navigation__responsive-container-content,.wp-block-navigation__responsive-dialog{gap:inherit}:where(.wp-block-navigation.has-background .wp-block-navigation-item a:not(.wp-element-button)),:where(.wp-block-navigation.has-background .wp-block-navigation-submenu a:not(.wp-element-button)){padding:.5em 1em}:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item a:not(.wp-element-button)),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-submenu a:not(.wp-element-button)),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-submenu button.wp-block-navigation-item__content),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-pages-list__item button.wp-block-navigation-item__content){padding:.5em 1em}.wp-block-navigation.items-justified-right .wp-block-navigation__container .has-child .wp-block-navigation__submenu-container,.wp-block-navigation.items-justified-right .wp-block-page-list>.has-child .wp-block-navigation__submenu-container,.wp-block-navigation.items-justified-space-between .wp-block-page-list>.has-child:last-child .wp-block-navigation__submenu-container,.wp-block-navigation.items-justified-space-between>.wp-block-navigation__container>.has-child:last-child .wp-block-navigation__submenu-container{left:auto;right:0}.wp-block-navigation.items-justified-right .wp-block-navigation__container .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container,.wp-block-navigation.items-justified-right .wp-block-page-list>.has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container,.wp-block-navigation.items-justified-space-between .wp-block-page-list>.has-child:last-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container,.wp-block-navigation.items-justified-space-between>.wp-block-navigation__container>.has-child:last-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container{left:-1px;right:-1px}@media (min-width:782px){.wp-block-navigation.items-justified-right .wp-block-navigation__container .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container,.wp-block-navigation.items-justified-right .wp-block-page-list>.has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container,.wp-block-navigation.items-justified-space-between .wp-block-page-list>.has-child:last-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container,.wp-block-navigation.items-justified-space-between>.wp-block-navigation__container>.has-child:last-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container{left:auto;right:100%}}.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container{background-color:#fff;border:1px solid #00000026}.wp-block-navigation.has-background .wp-block-navigation__submenu-container{background-color:inherit}.wp-block-navigation:not(.has-text-color) .wp-block-navigation__submenu-container{color:#000}.wp-block-navigation__container{align-items:var(--navigation-layout-align,initial);display:flex;flex-direction:var(--navigation-layout-direction,initial);flex-wrap:var(--navigation-layout-wrap,wrap);justify-content:var(--navigation-layout-justify,initial);list-style:none;margin:0;padding-left:0}.wp-block-navigation__container .is-responsive{display:none}.wp-block-navigation__container:only-child,.wp-block-page-list:only-child{flex-grow:1}@keyframes overlay-menu__fade-in-animation{0%{opacity:0;transform:translateY(.5em)}to{opacity:1;transform:translateY(0)}}.wp-block-navigation__responsive-container{bottom:0;display:none;left:0;position:fixed;right:0;top:0}.wp-block-navigation__responsive-container :where(.wp-block-navigation-item a){color:inherit}.wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content{align-items:var(--navigation-layout-align,initial);display:flex;flex-direction:var(--navigation-layout-direction,initial);flex-wrap:var(--navigation-layout-wrap,wrap);justify-content:var(--navigation-layout-justify,initial)}.wp-block-navigation__responsive-container:not(.is-menu-open.is-menu-open){background-color:inherit!important;color:inherit!important}.wp-block-navigation__responsive-container.is-menu-open{background-color:inherit;display:flex;flex-direction:column}@media not (prefers-reduced-motion){.wp-block-navigation__responsive-container.is-menu-open{animation:overlay-menu__fade-in-animation .1s ease-out;animation-fill-mode:forwards}}.wp-block-navigation__responsive-container.is-menu-open{overflow:auto;padding:clamp(1rem,var(--wp--style--root--padding-top),20rem) clamp(1rem,var(--wp--style--root--padding-right),20rem) clamp(1rem,var(--wp--style--root--padding-bottom),20rem) clamp(1rem,var(--wp--style--root--padding-left),20rem);z-index:100000}.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content{align-items:var(--navigation-layout-justification-setting,inherit);display:flex;flex-direction:column;flex-wrap:nowrap;overflow:visible;padding-top:calc(2rem + 24px)}.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content,.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container,.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-page-list{justify-content:flex-start}.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-icon{display:none}.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container{border:none;height:auto;min-width:200px;opacity:1;overflow:initial;padding-left:2rem;padding-right:2rem;position:static;visibility:visible;width:auto}.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container,.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container{gap:inherit}.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container{padding-top:var(--wp--style--block-gap,2em)}.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item__content{padding:0}.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item,.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container,.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-page-list{align-items:var(--navigation-layout-justification-setting,initial);display:flex;flex-direction:column}.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item,.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item .wp-block-navigation__submenu-container,.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container,.wp-block-navigation__responsive-container.is-menu-open .wp-block-page-list{background:#0000!important;color:inherit!important}.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container{left:auto;right:auto}@media (min-width:600px){.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open){background-color:inherit;display:block;position:relative;width:100%;z-index:auto}.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) .wp-block-navigation__responsive-container-close{display:none}.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container{left:0}}.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open{background-color:#fff}.wp-block-navigation:not(.has-text-color) .wp-block-navigation__responsive-container.is-menu-open{color:#000}.wp-block-navigation__toggle_button_label{font-size:1rem;font-weight:700}.wp-block-navigation__responsive-container-close,.wp-block-navigation__responsive-container-open{background:#0000;border:none;color:currentColor;cursor:pointer;margin:0;padding:0;text-transform:inherit;vertical-align:middle}.wp-block-navigation__responsive-container-close svg,.wp-block-navigation__responsive-container-open svg{fill:currentColor;display:block;height:24px;pointer-events:none;width:24px}.wp-block-navigation__responsive-container-open{display:flex}.wp-block-navigation__responsive-container-open.wp-block-navigation__responsive-container-open.wp-block-navigation__responsive-container-open{font-family:inherit;font-size:inherit;font-weight:inherit}@media (min-width:600px){.wp-block-navigation__responsive-container-open:not(.always-shown){display:none}}.wp-block-navigation__responsive-container-close{position:absolute;right:0;top:0;z-index:2}.wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close{font-family:inherit;font-size:inherit;font-weight:inherit}.wp-block-navigation__responsive-close{width:100%}.has-modal-open .wp-block-navigation__responsive-close{margin-left:auto;margin-right:auto;max-width:var(--wp--style--global--wide-size,100%)}.wp-block-navigation__responsive-close:focus{outline:none}.is-menu-open .wp-block-navigation__responsive-close,.is-menu-open .wp-block-navigation__responsive-container-content,.is-menu-open .wp-block-navigation__responsive-dialog{box-sizing:border-box}.wp-block-navigation__responsive-dialog{position:relative}.has-modal-open .admin-bar .is-menu-open .wp-block-navigation__responsive-dialog{margin-top:46px}@media (min-width:782px){.has-modal-open .admin-bar .is-menu-open .wp-block-navigation__responsive-dialog{margin-top:32px}}html.has-modal-open{overflow:hidden}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/navigation/style.min.css */\n</style>\n<style id=\"wp-block-post-title-inline-css\">\n.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/post-title/style.min.css */\n</style>\n<style id=\"wp-block-paragraph-inline-css\">\n.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*=\"writing-mode:vertical-lr\"],p.has-text-align-right[style*=\"writing-mode:vertical-rl\"]{rotate:180deg}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/paragraph/style.min.css */\n</style>\n<style id=\"wp-block-list-inline-css\">\nol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/list/style.min.css */\n</style>\n<style id=\"wp-block-post-content-inline-css\">\n.wp-block-post-content{display:flow-root}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/post-content/style.min.css */\n</style>\n<style id=\"wp-block-spacer-inline-css\">\n.wp-block-spacer{clear:both}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/spacer/style.min.css */\n</style>\n<style id=\"wp-block-post-terms-inline-css\">\n.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/post-terms/style.min.css */\n</style>\n<style id=\"wp-block-post-template-inline-css\">\n.wp-block-post-template{box-sizing:border-box;list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}.wp-block-post-template.is-flex-container{display:flex;flex-direction:row;flex-wrap:wrap;gap:1.25em}.wp-block-post-template.is-flex-container>li{margin:0;width:100%}@media (min-width:600px){.wp-block-post-template.is-flex-container.is-flex-container.columns-2>li{width:calc(50% - .625em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-3>li{width:calc(33.33333% - .83333em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-4>li{width:calc(25% - .9375em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-5>li{width:calc(20% - 1em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-6>li{width:calc(16.66667% - 1.04167em)}}@media (max-width:600px){.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid{grid-template-columns:1fr}}.wp-block-post-template-is-layout-constrained>li>.alignright,.wp-block-post-template-is-layout-flow>li>.alignright{float:right;margin-inline-end:0;margin-inline-start:2em}.wp-block-post-template-is-layout-constrained>li>.alignleft,.wp-block-post-template-is-layout-flow>li>.alignleft{float:left;margin-inline-end:2em;margin-inline-start:0}.wp-block-post-template-is-layout-constrained>li>.aligncenter,.wp-block-post-template-is-layout-flow>li>.aligncenter{margin-inline-end:auto;margin-inline-start:auto}\n/*# sourceURL=https://its.atsu.edu/wp-includes/blocks/post-template/style.min.css */\n</style>\n<style id=\"wp-emoji-styles-inline-css\">\n\n\timg.wp-smiley, img.emoji {\n\t\tdisplay: inline !important;\n\t\tborder: none !important;\n\t\tbox-shadow: none !important;\n\t\theight: 1em !important;\n\t\twidth: 1em !important;\n\t\tmargin: 0 0.07em !important;\n\t\tvertical-align: -0.1em !important;\n\t\tbackground: none !important;\n\t\tpadding: 0 !important;\n\t}\n/*# sourceURL=wp-emoji-styles-inline-css */\n</style>\n<style id=\"wp-block-library-inline-css\">\n:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}\n/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */\n</style>\n<link rel=\"stylesheet\" id=\"dashicons-css\" href=\"https://its.atsu.edu/wp-includes/css/dashicons.min.css?ver=bc5567404475a34e9eab5b7a956d2834\" media=\"all\">\n<style id=\"global-styles-inline-css\">\n:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--atsu-dark-blue: #172940;--wp--preset--color--atsu-mid-blue: #3487B7;--wp--preset--color--atsu-light-blue: #63bef2;--wp--preset--color--gray-300: #f0f0f3;--wp--preset--color--gray-100: #f3f3f3;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: clamp(.9rem, 0.9rem + ((1vw - 0.2rem) * 0.273), 1.05rem);--wp--preset--font-size--medium: clamp(1.365rem, 1.365rem + ((1vw - 0.2rem) * 0.609), 1.7rem);--wp--preset--font-size--large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 1.818), 2.75rem);--wp--preset--font-size--x-large: clamp(2.425rem, 2.425rem + ((1vw - 0.2rem) * 1.955), 3.5rem);--wp--preset--font-size--x-small: clamp(.825rem, 0.825rem + ((1vw - 0.2rem) * 0.227), .95rem);--wp--preset--font-size--base: 1rem;--wp--preset--font-size--xx-large: clamp(3.25rem, 3.25rem + ((1vw - 0.2rem) * 2.069), 4.3875rem);--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--spacing--small: clamp(.5rem, 2.5vw, 1rem);--wp--preset--spacing--medium: clamp(1.5rem, 4vw, 2rem);--wp--preset--spacing--large: clamp(2rem, 5vw, 3rem);--wp--preset--spacing--x-large: clamp(3rem, 7vw, 5rem);--wp--preset--spacing--xx-large: clamp(4rem, 9vw, 7rem);--wp--preset--spacing--xxx-large: clamp(5rem, 12vw, 9rem);--wp--preset--spacing--xxxx-large: clamp(6rem, 14vw, 13rem);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);--wp--preset--shadow--its-natural: 0 4px 8px rgba(0, 0, 0, 0.1);--wp--custom--color--atsu-link-blue: #00508d;--wp--custom--line-height--body: 1.5;--wp--custom--line-height--loose: 2;--wp--custom--line-height--none: 1;--wp--custom--line-height--relaxed: 1.625;--wp--custom--line-height--snug: 1.2;--wp--custom--line-height--tight: 1.1;}:root { --wp--style--global--content-size: 750px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.5rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.5rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.5rem;}:root :where(.is-layout-grid){gap: 1.5rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{font-family: var(--wp--preset--font-family--roboto);font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.227), 1rem);font-style: normal;font-weight: 300;line-height: 1.5;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: 1.5rem;--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: 1.5rem;}a:where(:not(.wp-element-button)){color: var(--wp--custom--color--atsu-link-blue);text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-family: var(--wp--preset--font-family--montserrat);font-style: normal;font-weight: 500;}h1{color: #303234;font-size: clamp(1.403rem, 1.403rem + ((1vw - 0.2rem) * 1.631), 2.3rem);font-style: normal;font-weight: 500;letter-spacing: -0.02em;line-height: 1.1;padding-bottom: 1rem;}h2{color: #303234;font-family: var(--wp--preset--font-family--montserrat);font-size: clamp(0.979rem, 0.979rem + ((1vw - 0.2rem) * 0.929), 1.49rem);font-style: normal;font-weight: 500;letter-spacing: -0.02em;line-height: 1.1;}h3{color: #303234;font-family: var(--wp--preset--font-family--montserrat);font-size: clamp(0.984rem, 0.984rem + ((1vw - 0.2rem) * 0.938), 1.5rem);font-style: normal;font-weight: 500;letter-spacing: -0.02em;line-height: 1.1;}h4{color: #303234;font-family: var(--wp--preset--font-family--montserrat);font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.682), 1.25rem);font-style: normal;font-weight: 500;letter-spacing: -0.02em;line-height: 1.1;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: var(--wp--preset--font-family--roboto);font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.227), 1rem);font-style: normal;font-weight: 300;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-atsu-dark-blue-color{color: var(--wp--preset--color--atsu-dark-blue) !important;}.has-atsu-mid-blue-color{color: var(--wp--preset--color--atsu-mid-blue) !important;}.has-atsu-light-blue-color{color: var(--wp--preset--color--atsu-light-blue) !important;}.has-gray-300-color{color: var(--wp--preset--color--gray-300) !important;}.has-gray-100-color{color: var(--wp--preset--color--gray-100) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-atsu-dark-blue-background-color{background-color: var(--wp--preset--color--atsu-dark-blue) !important;}.has-atsu-mid-blue-background-color{background-color: var(--wp--preset--color--atsu-mid-blue) !important;}.has-atsu-light-blue-background-color{background-color: var(--wp--preset--color--atsu-light-blue) !important;}.has-gray-300-background-color{background-color: var(--wp--preset--color--gray-300) !important;}.has-gray-100-background-color{background-color: var(--wp--preset--color--gray-100) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-atsu-dark-blue-border-color{border-color: var(--wp--preset--color--atsu-dark-blue) !important;}.has-atsu-mid-blue-border-color{border-color: var(--wp--preset--color--atsu-mid-blue) !important;}.has-atsu-light-blue-border-color{border-color: var(--wp--preset--color--atsu-light-blue) !important;}.has-gray-300-border-color{border-color: var(--wp--preset--color--gray-300) !important;}.has-gray-100-border-color{border-color: var(--wp--preset--color--gray-100) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-x-small-font-size{font-size: var(--wp--preset--font-size--x-small) !important;}.has-base-font-size{font-size: var(--wp--preset--font-size--base) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}\n:root :where(.wp-block-navigation a:where(:not(.wp-element-button))){padding-top: 1rem;padding-right: 1rem;padding-bottom: 1rem;padding-left: 1rem;}\n:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){background-color: var(--wp--preset--color--atsu-light-blue);color: var(--wp--preset--color--atsu-dark-blue) !important;}\n:root :where(.wp-block-search){border-radius: 3px;}:root :where(.wp-block-search.wp-block-search__button ){border-radius: 5px;}\n/*# sourceURL=global-styles-inline-css */\n</style>\n<style id=\"core-block-supports-inline-css\">\n.wp-container-core-group-is-layout-8db5ca72 > .alignfull{margin-right:calc(var(--wp--preset--spacing--small) * -1);margin-left:calc(var(--wp--preset--spacing--small) * -1);}.wp-elements-9b36bd82271995e9b001d04bad0aa680 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--atsu-dark-blue);}.wp-container-core-buttons-is-layout-a53380d3{gap:0 0.5em;}.wp-container-content-9dbf05af{flex-basis:400px;}.wp-container-core-group-is-layout-d0f55fc6{flex-direction:column;align-items:flex-start;}.wp-container-core-group-is-layout-e757fba5{justify-content:space-between;}.wp-container-core-group-is-layout-4383d167 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:1200px;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-group-is-layout-4383d167 > .alignwide{max-width:1200px;}.wp-container-core-group-is-layout-4383d167 .alignfull{max-width:none;}.wp-container-core-navigation-is-layout-a89b3969{justify-content:center;}\n/*# sourceURL=core-block-supports-inline-css */\n</style>\n<style id=\"wp-block-template-skip-link-inline-css\">\n\n\t\t.skip-link.screen-reader-text {\n\t\t\tborder: 0;\n\t\t\tclip-path: inset(50%);\n\t\t\theight: 1px;\n\t\t\tmargin: -1px;\n\t\t\toverflow: hidden;\n\t\t\tpadding: 0;\n\t\t\tposition: absolute !important;\n\t\t\twidth: 1px;\n\t\t\tword-wrap: normal !important;\n\t\t}\n\n\t\t.skip-link.screen-reader-text:focus {\n\t\t\tbackground-color: #eee;\n\t\t\tclip-path: none;\n\t\t\tcolor: #444;\n\t\t\tdisplay: block;\n\t\t\tfont-size: 1em;\n\t\t\theight: auto;\n\t\t\tleft: 5px;\n\t\t\tline-height: normal;\n\t\t\tpadding: 15px 23px 14px;\n\t\t\ttext-decoration: none;\n\t\t\ttop: 5px;\n\t\t\twidth: auto;\n\t\t\tz-index: 100000;\n\t\t}\n/*# sourceURL=wp-block-template-skip-link-inline-css */\n</style>\n<link rel=\"stylesheet\" id=\"contact-form-7-css\" href=\"https://its.atsu.edu/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.5\" media=\"all\">\n<style id=\"dominant-color-styles-inline-css\">\nimg[data-dominant-color]:not(.has-transparency) { background-color: var(--dominant-color); }\n/*# sourceURL=dominant-color-styles-inline-css */\n</style>\n<link rel=\"stylesheet\" id=\"its-styles-css\" href=\"https://its.atsu.edu/wp-content/themes/its-v2/style.css?ver=1.1.7\" media=\"all\">\n<link rel=\"stylesheet\" id=\"archive-grid-block-css\" href=\"https://its.atsu.edu/wp-content/themes/its-v2/assets/archive-grid-block.css?ver=1.0.0\" media=\"all\">\n<script async=\"\" src=\"https://scripts.clarity.ms/0.8.59/clarity.js\"></script><script async=\"\" src=\"//s.swiftypecdn.com/install/v2/st.js\"></script><script async=\"\" src=\"https://www.clarity.ms/tag/ky9no7qq6j\"></script><script id=\"jquery-core-js-extra\">\nvar aagb_local_object = {\"ajax_url\":\"https://its.atsu.edu/wp-admin/admin-ajax.php\",\"nonce\":\"3b29e76798\",\"licensing\":\"\",\"assets\":\"https://its.atsu.edu/wp-content/plugins/advanced-accordion-block/assets/\"};\n//# sourceURL=jquery-core-js-extra\n</script>\n<script src=\"https://its.atsu.edu/wp-includes/js/jquery/jquery.min.js?ver=3.7.1\" id=\"jquery-core-js\"></script>\n<script src=\"https://its.atsu.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1\" id=\"jquery-migrate-js\"></script>\n<link rel=\"https://api.w.org/\" href=\"https://its.atsu.edu/wp-json/\"><link rel=\"alternate\" title=\"JSON\" type=\"application/json\" href=\"https://its.atsu.edu/wp-json/wp/v2/posts/190\"><link rel=\"EditURI\" type=\"application/rsd+xml\" title=\"RSD\" href=\"https://its.atsu.edu/xmlrpc.php?rsd\">\n<link rel=\"canonical\" href=\"https://its.atsu.edu/student-information-system\">\n<script type=\"text/javascript\" src=\"https://www.bugherd.com/sidebarv2.js?apikey=x9kxkqckzwuklqtfwa1kjg\" async=\"true\"></script><meta name=\"generator\" content=\"dominant-color-images 1.2.1\">\n<meta name=\"generator\" content=\"performance-lab 4.1.0; plugins: dominant-color-images, image-prioritizer, speculation-rules, webp-uploads\">\n<meta name=\"generator\" content=\"webp-uploads 2.6.1\">\n\n  <script type=\"text/javascript\">\n    (function(c, l, a, r, i, t, y) {\n      c[a] = c[a] || function() {\n        (c[a].q = c[a].q || []).push(arguments)\n      };\n      t = l.createElement(r);\n      t.async = 1;\n      t.src = \"https://www.clarity.ms/tag/\" + i;\n      y = l.getElementsByTagName(r)[0];\n      y.parentNode.insertBefore(t, y);\n    })(window, document, \"clarity\", \"script\", \"ky9no7qq6j\");\n  </script>\n\n<meta name=\"generator\" content=\"speculation-rules 1.6.0\">\n<script type=\"importmap\" id=\"wp-importmap\">\n{\"imports\":{\"@wordpress/interactivity\":\"https://its.atsu.edu/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=66c613f68580994bb00a\"}}\n</script>\n<link rel=\"modulepreload\" href=\"https://its.atsu.edu/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=66c613f68580994bb00a\" id=\"@wordpress/interactivity-js-modulepreload\" fetchpriority=\"low\">\n<meta data-od-replaced-content=\"optimization-detective 1.0.0-beta5\" name=\"generator\" content=\"optimization-detective 1.0.0-beta5; url_metric_groups={0:populated, 480:empty, 600:populated, 782:complete}\">\n<meta name=\"generator\" content=\"image-prioritizer 1.0.0-beta3\">\n<style class=\"wp-fonts-local\">\n@font-face{font-family:Roboto;font-style:normal;font-weight:300;font-display:fallback;src:url('https://its.atsu.edu/wp-content/uploads/fonts/KFOlCnqEu92Fr1MmSU5vBh05IsDqlA.woff2') format('woff2');}\n@font-face{font-family:Roboto;font-style:normal;font-weight:500;font-display:fallback;src:url('https://its.atsu.edu/wp-content/uploads/fonts/KFOlCnqEu92Fr1MmEU9vBh05IsDqlA.woff2') format('woff2');}\n@font-face{font-family:Montserrat;font-style:normal;font-weight:500;font-display:fallback;src:url('https://its.atsu.edu/wp-content/uploads/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew7Y3tcoqK5.woff2') format('woff2');}\n@font-face{font-family:Montserrat;font-style:normal;font-weight:300;font-display:fallback;src:url('https://its.atsu.edu/wp-content/uploads/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew7Y3tcoqK5.woff2') format('woff2');}\n</style>\n<link rel=\"icon\" href=\"https://its.atsu.edu/wp-content/uploads/2025/01/atsu-favicon-2-150x150.png\" sizes=\"32x32\">\n<link rel=\"icon\" href=\"https://its.atsu.edu/wp-content/uploads/2025/01/atsu-favicon-2-300x300.png\" sizes=\"192x192\">\n<link rel=\"apple-touch-icon\" href=\"https://its.atsu.edu/wp-content/uploads/2025/01/atsu-favicon-2-300x300.png\">\n<meta name=\"msapplication-TileImage\" content=\"https://its.atsu.edu/wp-content/uploads/2025/01/atsu-favicon-2-300x300.png\">\n<link data-od-added-tag=\"\" rel=\"preload\" fetchpriority=\"high\" as=\"image\" href=\"https://its.atsu.edu/wp-content/themes/its-v2/assets/images/its-hero.webp\" media=\"screen and (width &lt;= 480px)\">\n<link data-od-added-tag=\"\" rel=\"preload\" fetchpriority=\"high\" as=\"image\" href=\"https://its.atsu.edu/wp-content/themes/its-v2/assets/images/its-hero.webp\" media=\"screen and (600px &lt; width)\">\n<script src=\"https://dtn7rvxwwlhud.cloudfront.net/amazon-connect-chat-interface-client.js\" async=\"\" id=\"9708f925-5e4c-4b08-8523-30f57a552635\"></script><script src=\"https://its.atsu.edu/wp-includes/js/wp-emoji-release.min.js?ver=bc5567404475a34e9eab5b7a956d2834\" defer=\"\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": true,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.7.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://its.atsu.edu/wp-login.php",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n\t<html lang=\"en-US\">\n\t<head>\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\t<title>Log In &lsaquo; Information Technology Services at A.T. Still University &#8212; WordPress</title>\n\t    <style>\n       .login-action-lostpassword #login_error{\n           display: none;\n       }\n    </style>\n    <meta name='robots' content='max-image-preview:large, noindex, noarchive' />\n<script src=\"https://its.atsu.edu/wp-includes/js/jquery/jquery.min.js?ver=3.7.1\" id=\"jquery-core-js"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://its.atsu.edu/wp-json/wp/v2/",
+      "status": 200,
+      "body_excerpt": "{\"namespace\":\"wp\\/v2\",\"routes\":{\"\\/wp\\/v2\":{\"namespace\":\"wp\\/v2\",\"methods\":[\"GET\"],\"endpoints\":[{\"methods\":[\"GET\"],\"args\":{\"namespace\":{\"default\":\"wp\\/v2\",\"required\":false},\"context\":{\"default\":\"view\",\"required\":false}}}],\"_links\":{\"self\":[{\"href\":\"https:\\/\\/its.atsu.edu\\/wp-json\\/wp\\/v2\"}]}},\"\\/wp\\/v2\\/posts\":{\"namespace\":\"wp\\/v2\",\"methods\":[\"GET\",\"POST\"],\"endpoints\":[{\"methods\":[\"GET\"],\"allow_batch\":{\"v1\":true},\"args\":{\"context\":{\"description\":\"Scope under which the request is made; determines fields pres"
+    },
+    "/wp-content/": {
+      "url": "https://its.atsu.edu/wp-content/",
+      "status": 200
+    },
+    "/user/login": {
+      "url": "https://its.atsu.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<meta name='robots' content='max-image-preview:large' />\n<title>Page not found &#8211; Information Technology Services at A.T. Still University</title>\n<link rel='dns-prefetch' href='//kit.fontawesome.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Information Technology Services at A.T. Still University &raquo; Feed\" href=\"https://its.atsu.edu/feed\" />"
+    },
+    "/core/install.php": {
+      "url": "https://its.atsu.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<meta name='robots' content='max-image-preview:large' />\n<title>Page not found &#8211; Information Technology Services at A.T. Still University</title>\n<link rel='dns-prefetch' href='//kit.fontawesome.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Information Technology Services at A.T. Still University &raquo; Feed\" href=\"https://its.atsu.edu/feed\" />"
+    },
+    "/cas/login": {
+      "url": "https://its.atsu.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<meta name='robots' content='max-image-preview:large' />\n<title>Page not found &#8211; Information Technology Services at A.T. Still University</title>\n<link rel='dns-prefetch' href='//kit.fontawesome.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Information Technology Services at A.T. Still University &raquo; Feed\" href=\"https://its.atsu.edu/feed\" />"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://its.atsu.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<meta name='robots' content='max-image-preview:large' />\n<title>Page not found &#8211; Information Technology Services at A.T. Still University</title>\n<link rel='dns-prefetch' href='//kit.fontawesome.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Information Technology Services at A.T. Still University &raquo; Feed\" href=\"https://its.atsu.edu/feed\" />"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 100,
+      "evidence": [
+        "HTML: swiftype",
+        "JS: _st (HTML)",
+        "JS: swiftype (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 100,
+      "evidence": [
+        "HTML: wp-content",
+        "HTML: wp-includes",
+        "HTML: wordpress",
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Anthology Student",
+      "confidence": 100,
+      "evidence": [
+        "HTML: anthology.*student",
+        "HTML: anthology",
+        "JS: Anthology (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: gtag\\('config', 'G-[A-Z0-9]+",
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "HTML: gtag\\('js'",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Anthology Engage",
+      "confidence": 100,
+      "evidence": [
+        "HTML: campuslabs\\.com/engage",
+        "HTML: campus.*labs",
+        "HTML: campuslabs"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "Campus Labs",
+      "confidence": 80,
+      "evidence": [
+        "HTML: campus.*labs",
+        "HTML: campuslabs"
+      ]
+    },
+    {
+      "name": "Blackboard Ultra",
+      "confidence": 80,
+      "evidence": [
+        "HTML: blackboard.*ultra",
+        "HTML: bb.*ultra"
+      ]
+    },
+    {
+      "name": "Algolia",
+      "confidence": 70,
+      "evidence": [
+        "HTML: algolia",
+        "JS: algolia (HTML)"
+      ]
+    },
+    {
+      "name": "Ghost",
+      "confidence": 70,
+      "evidence": [
+        "HTML: ghost",
+        "JS: ghost (HTML)"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 70,
+      "evidence": [
+        "HTML: youtube",
+        "JS: YT (HTML)"
+      ]
+    },
+    {
+      "name": "Duo Security",
+      "confidence": 70,
+      "evidence": [
+        "HTML: duo.*security",
+        "JS: Duo (HTML)"
+      ]
+    },
+    {
+      "name": "Salesforce Education Cloud",
+      "confidence": 70,
+      "evidence": [
+        "HTML: salesforce",
+        "JS: sforce (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 60,
+      "evidence": [
+        "JS: llc (HTML)",
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Angular",
+      "confidence": 40,
+      "evidence": [
+        "HTML: angular"
+      ]
+    },
+    {
+      "name": "Anthology Encompass",
+      "confidence": 40,
+      "evidence": [
+        "HTML: imodules"
+      ]
+    },
+    {
+      "name": "Canvas LMS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ENV.*COURSE"
+      ]
+    },
+    {
+      "name": "Drupal",
+      "confidence": 40,
+      "evidence": [
+        "HTML: drupal"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: gtag\\("
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 40,
+      "evidence": [
+        "HTML: googletagmanager\\.com"
+      ]
+    },
+    {
+      "name": "HubSpot",
+      "confidence": 40,
+      "evidence": [
+        "HTML: hubspot"
+      ]
+    },
+    {
+      "name": "Joomla",
+      "confidence": 40,
+      "evidence": [
+        "HTML: joomla"
+      ]
+    },
+    {
+      "name": "LearnDash",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ld.*course"
+      ]
+    },
+    {
+      "name": "Microsoft Power BI",
+      "confidence": 40,
+      "evidence": [
+        "HTML: power.*bi"
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": 40,
+      "evidence": [
+        "HTML: react"
+      ]
+    },
+    {
+      "name": "Salesforce",
+      "confidence": 40,
+      "evidence": [
+        "HTML: salesforce"
+      ]
+    },
+    {
+      "name": "Site Search 360",
+      "confidence": 40,
+      "evidence": [
+        "HTML: site.*search.*360"
+      ]
+    },
+    {
+      "name": "Umbraco",
+      "confidence": 40,
+      "evidence": [
+        "HTML: umbraco"
+      ]
+    },
+    {
+      "name": "Vimeo",
+      "confidence": 40,
+      "evidence": [
+        "HTML: vimeo"
+      ]
+    },
+    {
+      "name": "EMS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: dea.*ems"
+      ]
+    },
+    {
+      "name": "TYPO3",
+      "confidence": 40,
+      "evidence": [
+        "HTML: typo3"
+      ]
+    },
+    {
+      "name": "Rave Mobile Safety",
+      "confidence": 40,
+      "evidence": [
+        "HTML: rave.*mobile.*safety"
+      ]
+    },
+    {
+      "name": "Flipgrid",
+      "confidence": 40,
+      "evidence": [
+        "HTML: flip.*grid"
+      ]
+    },
+    {
+      "name": "Scala Digital Signage",
+      "confidence": 40,
+      "evidence": [
+        "HTML: scala.*digital"
+      ]
+    },
+    {
+      "name": "Rise Vision",
+      "confidence": 40,
+      "evidence": [
+        "HTML: rise.*vision"
+      ]
+    },
+    {
+      "name": "GIS Cloud",
+      "confidence": 40,
+      "evidence": [
+        "HTML: gis.*cloud"
+      ]
+    },
+    {
+      "name": "Veracross",
+      "confidence": 40,
+      "evidence": [
+        "HTML: vera.*cross"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "SchoolAdmin",
+      "confidence": 40,
+      "evidence": [
+        "HTML: school.*admin"
+      ]
+    },
+    {
+      "name": "Rediker Software",
+      "confidence": 40,
+      "evidence": [
+        "HTML: admin.*plus"
+      ]
+    },
+    {
+      "name": "Top Hat",
+      "confidence": 40,
+      "evidence": [
+        "HTML: top.*hat"
+      ]
+    },
+    {
+      "name": "Nearpod",
+      "confidence": 40,
+      "evidence": [
+        "HTML: near.*pod"
+      ]
+    },
+    {
+      "name": "Padlet",
+      "confidence": 40,
+      "evidence": [
+        "HTML: padlet"
+      ]
+    },
+    {
+      "name": "Cengage MindTap",
+      "confidence": 40,
+      "evidence": [
+        "HTML: mind.*tap"
+      ]
+    },
+    {
+      "name": "Pixelfed",
+      "confidence": 40,
+      "evidence": [
+        "HTML: pixelfed"
+      ]
+    },
+    {
+      "name": "Diaspora",
+      "confidence": 40,
+      "evidence": [
+        "HTML: diaspora"
+      ]
+    },
+    {
+      "name": "Encoura",
+      "confidence": 40,
+      "evidence": [
+        "HTML: encoura"
+      ]
+    },
+    {
+      "name": "HubSpot for Education",
+      "confidence": 40,
+      "evidence": [
+        "HTML: hubspot"
+      ]
+    },
+    {
+      "name": "Adobe Muse",
+      "confidence": 30,
+      "evidence": [
+        "JS: Muse (HTML)"
+      ]
+    },
+    {
+      "name": "AitThemes",
+      "confidence": 30,
+      "evidence": [
+        "JS: ait (HTML)"
+      ]
+    },
+    {
+      "name": "AngularJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: angular (HTML)"
+      ]
+    },
+    {
+      "name": "Atlassian Bitbucket",
+      "confidence": 30,
+      "evidence": [
+        "JS: bitbucket (HTML)"
+      ]
+    },
+    {
+      "name": "BDOW",
+      "confidence": 30,
+      "evidence": [
+        "JS: sumo (HTML)"
+      ]
+    },
+    {
+      "name": "Cabin",
+      "confidence": 30,
+      "evidence": [
+        "JS: cabin (HTML)"
+      ]
+    },
+    {
+      "name": "Chai",
+      "confidence": 30,
+      "evidence": [
+        "JS: chai (HTML)"
+      ]
+    },
+    {
+      "name": "Contact Form 7",
+      "confidence": 30,
+      "evidence": [
+        "JS: wpcf7 (HTML)"
+      ]
+    },
+    {
+      "name": "Crazy Egg",
+      "confidence": 30,
+      "evidence": [
+        "JS: CE2 (HTML)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "Econda",
+      "confidence": 30,
+      "evidence": [
+        "JS: econda (HTML)"
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ext (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Lychee",
+      "confidence": 30,
+      "evidence": [
+        "JS: lychee (HTML)"
+      ]
+    },
+    {
+      "name": "Marked",
+      "confidence": 30,
+      "evidence": [
+        "JS: marked (HTML)"
+      ]
+    },
+    {
+      "name": "Microsoft Clarity",
+      "confidence": 30,
+      "evidence": [
+        "JS: clarity (HTML)"
+      ]
+    },
+    {
+      "name": "Octorate",
+      "confidence": 30,
+      "evidence": [
+        "JS: octorate (HTML)"
+      ]
+    },
+    {
+      "name": "Paper.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: paper (HTML)"
+      ]
+    },
+    {
+      "name": "PayPal",
+      "confidence": 30,
+      "evidence": [
+        "JS: paypal (HTML)"
+      ]
+    },
+    {
+      "name": "Reddit",
+      "confidence": 30,
+      "evidence": [
+        "JS: reddit (HTML)"
+      ]
+    },
+    {
+      "name": "Resova",
+      "confidence": 30,
+      "evidence": [
+        "JS: baseUrl (HTML)"
+      ]
+    },
+    {
+      "name": "Sumo",
+      "confidence": 30,
+      "evidence": [
+        "JS: sumo (HTML)"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": 30,
+      "evidence": [
+        "JS: tailwind (HTML)"
+      ]
+    },
+    {
+      "name": "Twitter Emoji (Twemoji)",
+      "confidence": 30,
+      "evidence": [
+        "JS: twemoji (HTML)"
+      ]
+    },
+    {
+      "name": "Twitter Flight",
+      "confidence": 30,
+      "evidence": [
+        "JS: flight (HTML)"
+      ]
+    },
+    {
+      "name": "Vaadin",
+      "confidence": 30,
+      "evidence": [
+        "JS: vaadin (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WPForms",
+      "confidence": 30,
+      "evidence": [
+        "JS: wpforms (HTML)"
+      ]
+    },
+    {
+      "name": "web-vitals",
+      "confidence": 30,
+      "evidence": [
+        "JS: webVitals (HTML)"
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 30,
+      "evidence": [
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Workday Student",
+      "confidence": 30,
+      "evidence": [
+        "JS: WD (HTML)"
+      ]
+    },
+    {
+      "name": "Canva for Education",
+      "confidence": 30,
+      "evidence": [
+        "JS: Canva (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

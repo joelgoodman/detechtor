@@ -1,0 +1,448 @@
+{
+  "technology": "TerminalFour",
+  "url": "https://www.exeter.ac.uk/",
+  "final_url": "https://www.exeter.ac.uk/",
+  "captured_at": "2026-04-21T19:35:39.270Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/terminalfour/www.exeter.ac.uk.html",
+  "evidence": {
+    "headers": {
+      "age": "1080",
+      "cache-control": "max-age=43200",
+      "content-encoding": "gzip",
+      "content-length": "16541",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:17:27 GMT",
+      "expires": "Wed, 22 Apr 2026 07:17:27 GMT",
+      "last-modified": "Mon, 30 Mar 2026 00:00:00 GMT",
+      "server": "Apache",
+      "set-cookie": "AWSALB=mpfS/PsyptGTeshoEkqnbfAPXOeUsBHUaXARbpQtyxeUXAzckUJm+p6ftnxdIvg7ZEgGaEEzyro1qXLzkdwz+kZsBE2HQv58hsbkUfN5rD5n6BihoQv2uJK/AYTL; Expires=Tue, 28 Apr 2026 19:17:27 GMT; Path=/\nAWSALBCORS=mpfS/PsyptGTeshoEkqnbfAPXOeUsBHUaXARbpQtyxeUXAzckUJm+p6ftnxdIvg7ZEgGaEEzyro1qXLzkdwz+kZsBE2HQv58hsbkUfN5rD5n6BihoQv2uJK/AYTL; Expires=Tue, 28 Apr 2026 19:17:27 GMT; Path=/; SameSite=None; Secure",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "vary": "Accept-Encoding",
+      "via": "1.1 6407b86e5baafe7d37861f17c38bd09c.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "NgCqUX2O5TIfqlhaQIjzcW3uMtFILc4LSo5mZkMY9KjLmpk8djmGxg==",
+      "x-amz-cf-pop": "ATL58-P2",
+      "x-cache": "Hit from cloudfront",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "scripts": [
+      {
+        "src": "https://scripts.clarity.ms/0.8.59/clarity.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-S2L9JPLZ1E&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-D45K1N753J&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js?did=018f0f08-7a00-777b-a253-5f005e0da423",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-K4NS9FB",
+        "version": null
+      },
+      {
+        "src": "https://www.exeter.ac.uk/v8media/global/js/lite-yt-embed.js",
+        "version": null
+      },
+      {
+        "src": "https://try.abtasty.com/25815a6dd8d07c10e8a6399806c4f922.js",
+        "version": null
+      },
+      {
+        "src": "https://www.clarity.ms/tag/b1x90xb8m9",
+        "version": null
+      },
+      {
+        "src": "https://www.exeter.ac.uk/v8media/global/js/jquery-2.2.4.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.exeter.ac.uk/v8media/global/js/bootstrap-3-4-1.min.js",
+        "version": null
+      },
+      {
+        "src": "https://app-script.monsido.com/v2/monsido-script.js",
+        "version": null
+      },
+      {
+        "src": "https://extend.vimeocdn.com/ga4/203557565.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1",
+      "author": "University of Exeter",
+      "description": "A world-leading UK university, part of the prestigious Russell Group, offering outstanding research and teaching across three campuses in the South West.",
+      "robots": "index,follow",
+      "og:title": "University of Exeter",
+      "og:description": "A world-leading UK university, part of the prestigious Russell Group, offering outstanding research and teaching across three campuses in the South West.",
+      "og:image": "https://www.exeter.ac.uk/v8media/global/images/opengraph-logo.jpg",
+      "og:type": "website",
+      "og:locale": "en_GB",
+      "og:site_name": "University of Exeter",
+      "twitter:title": "University of Exeter",
+      "twitter:description": "A world-leading UK university, part of the prestigious Russell Group, offering outstanding research and teaching across three campuses in the South West.",
+      "twitter:card": "summary",
+      "twitter:site": "@uniofexeter",
+      "twitter:image": "https://www.exeter.ac.uk/v8media/global/images/opengraph-logo.jpg",
+      "twitter:image:alt": "The University of Exeter logo"
+    },
+    "cookies": [
+      {
+        "name": "AWSALBCORS",
+        "value": "mTielU5afTIh1ZlYJCjd1iKKT+UtNrN/IV45C0ATZ8/pCQeJRGfqBlF2CK06WuI5",
+        "domain": "www.exeter.ac.uk"
+      },
+      {
+        "name": "_a_id",
+        "value": "1776800127584.fusnpcre",
+        "domain": ".exeter.ac.uk"
+      },
+      {
+        "name": "ABTastySession",
+        "value": "mrasn=&lp=https%253A%252F%252Fwww.exeter.ac.uk%252F",
+        "domain": ".exeter.ac.uk"
+      },
+      {
+        "name": "ABTasty",
+        "value": "uid=hh8bd0758tmdsmvm&fst=1776800127556&pst=-1&cst=1776800127556&",
+        "domain": ".exeter.ac.uk"
+      },
+      {
+        "name": "AWSALB",
+        "value": "mTielU5afTIh1ZlYJCjd1iKKT+UtNrN/IV45C0ATZ8/pCQeJRGfqBlF2CK06WuI5",
+        "domain": "www.exeter.ac.uk"
+      }
+    ],
+    "dom": {
+      "title": "University of Exeter | A Top Worldwide University",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n<title>University of Exeter | A Top Worldwide University</title>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"author\" content=\"University of Exeter\">\n<!-- navigation object : Monsido deep linking nav object --><meta name=\"pageid\" value=\"236\">  \n<link rel=\"canonical\" href=\"https://www.exeter.ac.uk/\">\n<meta name=\"description\" content=\"A world-leading UK university, part of the prestigious Russell Group, offering outstanding research and teaching across three campuses in the South West.\">\n<meta name=\"robots\" content=\"index,follow\">\n<meta property=\"og:title\" content=\"University of Exeter\">\n<meta property=\"og:description\" content=\"A world-leading UK university, part of the prestigious Russell Group, offering outstanding research and teaching across three campuses in the South West.\">\n<meta property=\"og:image\" content=\"https://www.exeter.ac.uk/v8media/global/images/opengraph-logo.jpg\">\n\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:locale\" content=\"en_GB\">\n<meta property=\"og:site_name\" content=\"University of Exeter\">\n<meta name=\"twitter:title\" content=\"University of Exeter\">\n<meta name=\"twitter:description\" content=\"A world-leading UK university, part of the prestigious Russell Group, offering outstanding research and teaching across three campuses in the South West.\">\n<meta name=\"twitter:card\" content=\"summary\">\n<meta name=\"twitter:site\" content=\"@uniofexeter\">\n<meta name=\"twitter:image\" content=\"https://www.exeter.ac.uk/v8media/global/images/opengraph-logo.jpg\">\n<meta name=\"twitter:image:alt\" content=\"The University of Exeter logo\">\n<link rel=\"preconnect\" href=\"https://www.googletagmanager.com\"><link rel=\"preconnect\" href=\"https://cdn-ukwest.onetrust.com\"><link rel=\"preconnect\" href=\"https://try.abtasty.com\">\n<link rel=\"preload\" href=\"/v8media/global/css/fonts/outfit-v11-latin_latin-ext-regular.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n<link rel=\"preload\" href=\"/v8media/global/css/fonts/outfit-v11-latin_latin-ext-700.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n<link rel=\"preload\" href=\"/v8media/global/css/fonts/fa-brands-400.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n<link rel=\"preload\" href=\"/v8media/global/css/fonts/fa-regular-400.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n<link rel=\"preload\" href=\"/v8media/global/css/fonts/fa-solid-900.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n<link rel=\"shortcut icon\" href=\"/v8media/global/images/favicon.ico\">\n<style>\n@font-face{font-display:swap;font-family:'Outfit';font-style:normal;font-weight:400;src:url('/v8media/global/css/fonts/outfit-v11-latin_latin-ext-regular.woff2') format('woff2')}\n@font-face{font-display:swap;font-family:'Outfit';font-style:normal;font-weight:700;src:url('/v8media/global/css/fonts/outfit-v11-latin_latin-ext-700.woff2') format('woff2')}\n@font-face{font-display:swap;font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:400;src:url('/v8media/global/css/fonts/fa-brands-400.woff2') format('woff2')}\n@font-face{font-display:swap;font-family:'Font Awesome 5 Free';font-style:normal;font-weight:400;src:url('/v8media/global/css/fonts/fa-regular-400.woff2') format('woff2')}\n@font-face{font-display:swap;font-family:'Font Awesome 5 Free';font-style:normal;font-weight:900;src:url('/v8media/global/css/fonts/fa-solid-900.woff2') format('woff2')}\n</style>\n<link rel=\"stylesheet\" href=\"/v8media/global/css/global-stylesheet-v1.2.2.css\" type=\"text/css\" media=\"screen\">\n<script async=\"\" src=\"https://scripts.clarity.ms/0.8.59/clarity.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-S2L9JPLZ1E&amp;cx=c&amp;gtm=4e64h1\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-D45K1N753J&amp;cx=c&amp;gtm=4e64h1\"></script><script type=\"text/javascript\" async=\"\" src=\"https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js?did=018f0f08-7a00-777b-a253-5f005e0da423\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-K4NS9FB\"></script><script defer=\"\" src=\"/v8media/global/js/lite-yt-embed.js\" type=\"text/javascript\"></script>\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"WebSite\",\n      \"name\": \"University of Exeter\",\n      \"alternateName\": \"Exeter University\",\n      \"url\": \"https://www.exeter.ac.uk/\",\n      \"potentialAction\": {\n        \"@type\": \"SearchAction\",\n        \"target\": \"https://search.exeter.ac.uk/s/search.html?collection=uoe~sp-search&search_param=all&query={search_term_string}\",\n        \"query-input\": \"required name=search_term_string\"\n      }\n    },\n    {\n      \"@type\": \"CollegeOrUniversity\",\n      \"url\": \"https://www.exeter.ac.uk/\",\n      \"name\": \"University of Exeter\",\n      \"logo\": \"https://www.exeter.ac.uk/v8media/global/images/UOE-green.svg\",\n      \"description\": \"The University of Exeter combines world-class research with excellent student satisfaction, from our campuses in the South West of England, in Exeter and Cornwall.\",\n      \"address\":[{\"@type\":\"PostalAddress\",\"name\":\"Streatham Campus\",\"streetAddress\":\"Stocker Road\",\"addressLocality\":\"Exeter\",\"addressRegion\":\"Devon\",\"postalCode\":\"EX4 4PY\",\"addressCountry\":\"GB\"},{\"@type\":\"PostalAddress\",\"name\":\"St Luke's Campus\",\"streetAddress\":\"Heavitree Road\",\"addressLocality\":\"Exeter\",\"addressRegion\":\"Devon\",\"postalCode\":\"EX2 4TH\",\"addressCountry\":\"GB\"},{\"@type\":\"PostalAddress\",\"name\":\"Penryn Campus\",\"streetAddress\":\"Penryn Campus, Treliever Road\",\"addressLocality\":\"Penryn\",\"addressRegion\":\"Cornwall\",\"postalCode\":\"TR10 9FE\",\"addressCountry\":\"GB\"},{\"@type\":\"PostalAddress\",\"name\":\"Truro Campus\",\"streetAddress\":\"Knowledge Spa, Royal Cornwall Hospital\",\"addressLocality\":\"Truro\",\"addressRegion\":\"Cornwall\",\"postalCode\":\"TR1 3HD\",\"addressCountry\":\"GB\"}],\n      \"contactPoint\": [\n        {\n          \"@type\": \"ContactPoint\",\n          \"telephone\": \"+44 (0) 1392 661000\",\n          \"contactType\": \"customer service\"\n        }\n      ],\n      \"sameAs\": [ \"https://www.facebook.com/exeteruni\", \"https://twitter.com/uniofexeter\", \"https://www.youtube.com/user/universityofexeter\", \"https://www.linkedin.com/school/university-of-exeter\", \"https://www.instagram.com/uniofexeter/\", \"https://bsky.app/profile/exeter.ac.uk\", \"https://www.tiktok.com/@uniofexeter\", \"https://www.threads.com/@uniofexeter\", \"https://www.weibo.com/exeteruni\", \"https://en.wikipedia.org/wiki/University_of_Exeter\", \"https://www.ucas.com/explore/unis/91fd2fa0/university-of-exeter\", \"https://www.russellgroup.ac.uk/our-universities/university-exeter\", \"https://www.topuniversities.com/universities/university-exeter\", \"https://www.thecompleteuniversityguide.co.uk/universities/university-of-exeter\", \"https://www.timeshighereducation.com/world-university-rankings/university-exeter\" ]\n    },\n    {\n      \"@type\": \"WebPage\",\n      \"name\": \"University of Exeter | A Top Worldwide University\",\n      \"url\": \"https://www.exeter.ac.uk/\",\n      \"dateModified\": \"2026-03-30\",\n      \"lastReviewed\": \"2026-03-30\",\n      \"mainEntity\": {\n        \"@type\": \"CollegeOrUniversity\",\n        \"name\": \"University of Exeter\",\n        \"url\": \"https://www.exeter.ac.uk/\"\n      }\n    }\n  ]\n}\n</script>\n\n\n<!--/robots.txt-->\n<style>\n.full-width-section { margin-bottom:0px!important; }\n.full-width-section.kpis a{color:#fff;text-decoration:underline}\n.full-width-section.kpis a:hover{color:#00dca5 !important;}\na {text-decoration: unset; text-underline-position: unset; }\np {margin-bottom: 10px; }\n#hero {background-size: cover;background-position: top;padding-top: 30px;padding-bottom: 0px;}\n#hero .call-to-action {display: inline-block;padding: 10px 30px;}\n#hero .col-md-8 h1 {\nfont-size: 38px;\n    color: #fff;\n    text-shadow: 1px 1px 1px #000;\n    -moz-text-shadow: 1px 1px 1px #000;\n    margin-top: 0px;\npadding: 15px; \nfont-weight: bold;\n    background-color: rgba(109, 142, 43, 0.6); /* background: #1d4e8a8c; */\nmargin-bottom: 0;\ndisplay: inline-block;\n}\n#hero .col-md-8 h2{\nfont-size: 28px;\n    line-height: 34px;\n    color: #fff;\n    text-shadow: 1px 1px 1px #000;\n    -moz-text-shadow: 1px 1px 1px #000;\n    margin-bottom: 20px;\nbackground: #0000007d; \n    padding: 20px;\nfont-weight: normal;\n}\n#main-container{margin-top:0}\n#call-to-actions {color:#fff;}\n.call-to-action.button{border-radius: 30px;}\n#call-to-actions .container {margin-top: -20px; margin-bottom: -20px;}\n#call-to-actions h2 {color:#fff;}\n#course-search {padding: 50px 20px 50px 15px;}\n#course-search .input-group {margin: 20px 0;}\n#course-search .fa-search {font-size: 24px;}\n\n#course-search h2 {color: #00dea5;}\n#open-days{padding: 50px  15px 50px 20px; text-align: center;background: #002727;}\n#open-days .title{font-size: 18px;}\n\n#feature {background-size: cover;color: #fff;min-height: 400px;}\n#feature p {\n\tfont-size: 25px;\n\tfont-weight: bold;\n        line-height: 35px;\n\ttext-shadow: 0 1px 2px rgba(0,0,0,.6);\n\t-moz-text-shadow: 0 1px 2px rgba(0,0,0,.6);\n\tdisplay: inline-block;\n\tbackground: #0000007d;\n\tpadding: 5px 15px 5px 15px;\n}\n#feature h2 {\n\tfont-size: 34px;\n\tfont-weight: bold;\n        line-height: 38px;\n        margin-bottom: 20px;\n\ttext-shadow: 0 1px 2px rgba(0,0,0,.6);\n\t-moz-text-shadow: 0 1px 2px rgba(0,0,0,.6);\n\tdisplay: inline-block;\n\tbackground: #0000007d;\n\tpadding: 5px 15px 5px 15px;\n}\n#feature h2, #feature a {color: #ffffff;}\n#feature a {text-decoration: unset; text-underline-position: unset; color: #e4d695!important;}\n#feature a:hover {color: #e4d695; border-bottom: 1px solid #e4d695;}\n#feature2, #feature-era {\n\tbackground-size: cover;\n\tcolor: #dfddde;\n\tmin-height: 400px;\n        margin-bottom: 1px;\n}\n#feature2 p, #feature-era p {\n\tfont-size: 25px;\n\tfont-weight: bold;\n        line-height: 35px;\n\ttext-shadow: 0 1px 2px rgba(0,0,0,.6);\n\t-moz-text-shadow: 0 1px 2px rgba(0,0,0,.6);\n\tdisplay: inline-block;\n\tbackground: #0000007d;\n\tpadding: 5px 15px 5px 15px;\n}\n\n#feature2 h2, #feature-era h2 {\n\tfont-size: 34px;\n\tfont-weight: bold;\n        line-height: 38px;\n        margin-bottom: 20px;\n\ttext-shadow: 0 1px 2px rgba(0,0,0,.6);\n\t-moz-text-shadow: 0 1px 2px rgba(0,0,0,.6);\n\tdisplay: inline-block;\n\tbackground: #0000007d;\n\tpadding: 5px 15px 5px 15px;\n}\n#feature2 h2, #feature a, #feature-era h2, #feature-era a {color: #ffffff;}\n#feature2 a, #feature-era a {text-decoration: unset; text-underline-position: unset; color: #0dbcf6;}\n#feature2 a:hover, #feature-era a:hover {color: #0dbcf6;border-bottom: 1px solid #0dbcf6;}\n#feature3 {\n\tbackground-size: cover;\n\tcolor: #dfddde;\n\tmin-height: 400px;\n        margin-bottom: 1px;\n}\n#feature3 p {\n\tfont-size: 25px;\n\tfont-weight: bold;\n        line-height: 35px;\n\ttext-shadow: 0 1px 2px rgba(0,0,0,.6);\n\t-moz-text-shadow: 0 1px 2px rgba(0,0,0,.6);\n\tdisplay: inline-block;\n\tbackground: #0000007d;\n\tpadding: 5px 15px 5px 15px;\n}\n#feature3 h2 {\n\tfont-size: 34px;\n\tfont-weight: bold;\n        line-height: 38px;\n        margin-bottom: 20px;\n\ttext-shadow: 0 1px 2px rgba(0,0,0,.6);\n\t-moz-text-shadow: 0 1px 2px rgba(0,0,0,.6);\n\tdisplay: inline-block;\n\tbackground: #0000007d;\n\tpadding: 5px 15px 5px 15px;\n}\n#feature3 h2, #feature a {color: #ffffff;}\n#feature3 a {text-decoration: unset; text-underline-position: unset; color: #0dbcf6;}\n#feature3 a:hover {color: #0dbcf6;border-bottom: 1px solid #0dbcf6;}\n\n#footer {margin-top: 0px; }\n.kpis .feature-box-set{display: flex;}\n.kpis .feature-box-set img{margin:0px auto}\n.kpis .feature-box-set div{display: flex;justify-content: center;flex-direction: column;text-align: center;}\n.kpis .feature-box-set h3{color:#007ab5; }\n#news h2, #events h2 {color: #000;} \n#news h2 a, #events h2 a {font-size:17px; }\n\n\n#feature2 .col-lg-8, #feature .col-lg-8, #feature-era .col-lg-8{background: #ffffffb3;border-radius: 45px;padding-top: 30px;}\n#feature3 .col-lg-8, #feature .col-lg-8{background: #ffffffb3;border-radius: 45px;padding-top: 30px;}\n#feature .col-lg-8{padding-left: 30px;}\n#feature2 .col-lg-8, #feature-era .col-lg-8{padding-right: 30px;}\n#feature3 .col-lg-8{padding-right: 30px;}\n#footer-bot-links a{font-size:15px;}\n#homepage-news #news{padding: 0 30px;}\n#homepage-news h2{color: #003b3c;}\n#homepage-news{background:#f4fcfa;padding-top: 50px !important;padding-bottom: 50px !important;}\n#homepage-news h2 a{color: #007d69;}\n#homepage-news h2 a::after {\n    font-family: 'Font Awesome\\ 5 Free' !important;\n    content: ' \\f105' !important;\n    margin-left: 10px !important;\n    font-size: 14px;\n    font-weight: bold;\n}\n\n/* Custom, iPhone Retina */ \n@media only screen and (min-width : 320px) {\n\t/*#hero h1{font-size: 38px;margin-top: 0px; margin-bottom: 20px;}\n\t#hero h2{font-size: 20px;line-height: 25px;}*/\n\t#course-search button {margin-top: 20px;}\n\t#call-to-actions{background: #061f3d}\n}\n/* Small Devices, Tablets */\n@media only screen and (min-width : 768px) {\n\t#course-search button{margin-top: unset;}\n}\n/* Medium Devices, Desktops */\n@media only screen and (min-width : 1200px) {\n\t#call-to-actions{background: linear-gradient(to right, #727f87 , #727f87 75%, #061f3d 25%, #061f3d);}\n}\n\n@media only screen and (max-width : 768px) {.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {margin-left: 0;}}\n</style>\n<link rel=\"preload\" href=\"https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/32478-1440x400.webp\" as=\"image\">\n<style>\n@media only screen and (max-width : 1150px) {\n#hero img{display:none}\n#hero{\nbackground-image: url(https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/32478-1440x400.webp);\n    min-height: 450px;\n    background-size: cover;\n    background-color: black;\n    background-position: top right;\n    padding-top: 30px;\n    padding-bottom: 0px;\n}\n#hero h1{margin-top:20px;}\n}\n#hero {background-color: black;}\n#hero .button {\n    color: #003b3c !important;\n    background-color: #00dea5;\n}\n#hero .call-to-action:focus, #hero .call-to-action:hover {\n    color: #fff !important;\n    background: #00c592;\n}\n#hero h1{\n    font-size: 17px;\n}\n#hero h2{\nborder-bottom: unset;\nfont-size: clamp(2rem, 4vw, 5rem);\n    line-height: 1.2;\n    font-weight: 700;\n}\n#hero p.text{}\n#hero span {\n    padding: 15px;\n    text-shadow: unset;\n    -moz-text-shadow: unset;\n    color: #fff;\n    margin-top: 0px;\n    padding: 15px;\n    font-weight: 700;\n    background-color: rgb(0 60 60 / 73%);\n    margin-bottom: 0;\n    display: inline-block;\n}\n#hero .call-to-action {display: inline-block;padding: 10px 30px;}\n#hero .col-md-8{margin: 60px 0;}\n#main-container{margin-bottom: -2px;}\n#call-to-actions{background: #003b3c;}\n#feature h2, #feature p, #feature2 h2, #feature2 p, #feature-era h2, #feature-era p{\ntext-shadow: unset;\n    -moz-text-shadow: unset;\n    display: inline-block;\n    background: unset;\n\tcolor:#003b3c;\n\tfont-weight: unset;\n}\n#feature .button, #feature2 .button, #feature-era .button {\n    color: #00dea5 !important;\n    background-color: #003b3c;\n\tdisplay: inline-block;\n    padding-left: 20px;\n    padding-right: 20px;\n\t}\n#feature .button:hover, #feature2 .button:hover, #feature-era .button:hover {color: #fff !important;background: #00c592;}\n#feature h2, #feature2 h2, #feature-era h2{font-size: 50px;line-height: 1.2;font-weight: unset;}\n#feature p {font-weight: unset;line-height: 1.5;}\n#feature span, #feature2 span, #feature-era span{color: unset;}\n#feature a:hover, #feature2 a:hover{border-bottom: 1px solid #00dea5;}\t\n/*\n@media only screen and (min-width : 1200px) {\n\t#feature {\nbackground: url(https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/AMR-banner.jpg) no-repeat;\n\t    background-size: 695px;\n\t}\n\t#feature2 {\n\t\tbackground: url(https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/legal-ethics-banner.jpg) no-repeat;\n\t\tbackground-size: 695px;\n\t\tbackground-position: right;\npadding: 0 !important;\n\t}\n#feature-era {\n\t\tbackground: url(https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/homepage-banner-QS-ranking.jpg) no-repeat;\n\t\tbackground-size: 695px;\n\t\tbackground-position: right;\npadding: 0 !important;\n\t}\n}\n*/\nsection.full-width-section.kpis{background:#003c3c;padding-top: 90px !important;padding-bottom: 70px !important;}\n.kpis .feature-box-set h3, .kpis .feature-box-set sup,.kpis .feature-box-set a:focus, .kpis .feature-box-set a:hover {color: #fff;}\n.kpis .feature-box-set h3{text-align:left;font-size: unset;}\n.kpis .feature-box-set {display: unset;}\n.kpis .feature-box-set div {padding: 0 30px 0 30px;}\n#full-width-testimonials .testimonial .quote {font-size: 25px;}\n#full-width-testimonials .carousel-indicators .active, .carousel-indicators li:hover {background-color: #00dda5;}\n#full-width-testimonials .carousel-indicators li {border: 2px solid #fff;}\n#full-width-testimonials .testimonial .quote {font-weight: unset;color:#fff}\n#full-width-testimonials .testimonial .name{font-weight:bold}\n#full-width-testimonials .testimonial .name, #full-width-testimonials .testimonial .job {color:#00dda5}\n#testimonial-carousel{border-bottom: solid #00d49d 5px;}\n#footer-map {margin-top: -38px;}\n@media only screen and (max-width : 768px) {\n/*section.full-width-section h2{font-size: 30px !important;}*/\n#feature .pull-right{float:unset !important}\n}\n</style>\n<link rel=\"preload\" href=\"https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/homepage-banner-SOMO2.webp\" as=\"image\">\n<link rel=\"preload\" href=\"https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/MOU-signing-1920x514.webp\" as=\"image\">\n<style>\n.full-width-section{border-bottom: 1px solid #003c3c;}\n.homepage-full-width-section{\n    padding-top: 0 !important;\n    padding-bottom: 0 !important;\n}\n.homepage-full-width-section h3, .full-width-section h2 {\n    font-size: clamp(2rem, 4vw, 5rem);\n    line-height: 1.2;\n    font-weight: 700;\n    color: #003b3c;\n}\n\n.homepage-full-width-section h2{\ncolor:  #007d69;\nborder-bottom: 1px solid #007d69;\nfont-size: clamp(1.8rem, 4vw, 2.5rem);\n    margin-top: clamp(1.8rem, 4vw, 2rem);\n}\n\n.homepage-full-width-section .image-text-wrapper {\n  display: grid;\n  position: relative;\n}\n\n.homepage-full-width-section .header-image {\n  width: 100%;\n  height: auto;\n  grid-area: 1 / 1;\n}\n\n.homepage-full-width-section .text-content {\n  grid-area: 1 / 1;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  color: #003b3c;\n  padding-left:15%;\n}\n\n.homepage-full-width-section.image-left .text-content{\n\tpadding-left:unset;\n\tleft: 33.33333333%;\n}\n\n\n.homepage-full-width-section .button {\n    color: #00dea5 !important;\n    background-color: #003b3c;\n    display: inline-block;\n    padding-left: 20px;\n    padding-right: 20px;\n\ttext-align: center;\n    font-weight: 400;\n\tmargin-bottom: 20px;\n\tborder-radius: 30px;\n}\n\n.homepage-full-width-section .button:hover {\n    color: #fff !important;\n    background: #00c592;\n}\n\n@media (max-width: 768px) {\n  .homepage-full-width-section .text-content {\n    padding: 20px 15px;\n  }\n}\n\n\n</style>\n\n<link rel=\"preload\" href=\"https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/homepage-banner-Woman-in-science.webp\" as=\"image\">\n<link rel=\"preload\" href=\"https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/homepage-banner-QS-ranking.webp\" as=\"image\">\n<style>\n#display-feed-panels .panel-body .post-title{font-weight:700}#display-feed-panels .panel-body img{margin-bottom:10px}#display-feed-panels .panel-body a{text-decoration:none}#display-feed-panels .panel-body:hover{background:#caefe5;font-weight:unset}\n</style><link rel=\"preload\" href=\"https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/TEF-2023-banner.webp\" as=\"image\">\n<style>\n\t\t.carousel-indicators:focus, .carousel-indicators:focus-within{\n\t\t\toutline: thin dotted;\n    outline-offset: 0px;\n\t\t}\n .carousel-pause-buttons{\n  \tposition: absolute;\n    bottom: 20px;\n\tleft:20px;\n    z-index: 1;\n\t}\n\t@media only screen and (max-width : 480px) {\n\t#full-width-testimonials .carousel-indicators {\n    left: 45%;\n}\n\t}\n\n#full-width-testimonials .testimonial{margin-top:1px;margin-bottom:1px;}\n#full-width-testimonials #testimonial-carousel .col-md-6-quote{padding: 20px 20px 20px 40px}\n\n\n\n#full-width-testimonials{padding-top: 0 !important;}\n#full-width-testimonials #testimonial-carousel .col-md-6-quote{min-height:540px;padding-top: 40px;}\n#full-width-testimonials .carousel-indicators {\n    bottom: 5px;\n    position: absolute;\n    margin-left: unset;\n    width: unset;\n    margin: unset;\n}\n #full-width-testimonials .img {height:100%;background-size: cover;background-repeat: no-repeat;background-position: top left;}\n.testimonial{margin-bottom:20px;background-color: #003c3c;}\n.testimonial .left-col{padding: 20px 20px 20px 40px}\n.testimonial .quote{color: #002727;}\n.testimonial .name{color: #002727;margin-bottom:0}\n\n#full-width-testimonials {padding-top: 0;padding-bottom: 0;}\n#full-width-testimonials .container-fluid, #full-width-testimonials .col-md-12{padding-right: 0;padding-left: 0;}\n#full-width-testimonials .carousel {margin-bottom: 0;}\n#full-width-testimonials .carousel-indicators {bottom: 20px;}\n\n#full-width-testimonials .btn-default {\n    color: #003c3c;\n    background-color: #01d09a;\n    border-color: #01d09a;\n}\n\n\n\n/* Handle full width testimonials */\n@media (max-width: 1740px) {\n\t#full-width-testimonials .testimonial .col-md-6-quote .col-md-8{width: 100% !important;}\n}\n.col-md-10.col-md-6-quote{display: flex;align-items: center;flex-direction: row-reverse;flex-wrap: nowrap;}\n\n#full-width-testimonials .testimonial .name{font-weight:unset}\n\n.col-md-8.pull-right {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  height: 100%;\n}\n\n\n#full-width-testimonials p{font-size: clamp(2rem, 3vw, 2.5rem);}\n@media (max-width: 768px) {\n  .testimonial .row {\n    display: unset;\n\t}\n\t#full-width-testimonials #testimonial-carousel .col-md-6-quote {\n    min-height: unset;\n\tpadding-top: unset;\n\tmargin-bottom:20px\n\t}\n}\n</style>\n\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-K4NS9FB');</script>\n<script src=\"//try.abtasty.com/25815a6dd8d07c10e8a6399806c4f922.js\"></script>\n<script>\nvar saveUTMtoCookie=function(){var e=location.href.substring(location.href.indexOf(\"?\")+1).split(\"&\"),t={};if(e.length>0){for(var o=0;o<e.length;o++)t[e[o].split(\"=\")[0]]=e[o].split(\"=\")[1];for(var a in t)window.localStorage?localStorage.setItem(a,t[a]):document.cookie=a+\"=\"+t[a]+\";max-age=86400;path=/\"}};window.addEventListener(\"load\",saveUTMtoCookie);\n</script>\n<script type=\"text/javascript\" id=\"abtasty-initiator\" data-abtasty-path=\"//try.abtasty.com\">/* Created: 2026/04/21 08:03:37 UTC version: next */(()=>{\"use strict\";var e={4721(e,a,t){t.d(a,{Is:()=>u,K6:()=>f,Mz:()=>g,eX:()=>n,fS:()=>c,fh:()=>s,ih:()=>l,l$:()=>i,nc:()=>m,tv:()=>o,vw:()=>r,xu:()=>d});const n=\"https://try.abtasty.com\",o=\"abtasty_resetActionTracking\",r=\"targetPages\",i=\"qaParameters\",c=\"audience\",s=\"segment\",d=\"segmentMode\",l=\"trigger\",g=\"triggerMode\",u=\"$^\",f=16,m=1e3},648(e,a,t){t.d(a,{FF:()=>f,NI:()=>m,Nw:()=>d,SW:()=>u,fH:()=>b,vV:()=>p});const n=\"info::\",o=\"error::\",r=\"warning::\",i=\"verbose::\",c=\"success::\",s={allowed:document.cookie.indexOf(\"abTastyDebug=\")>=0};function d(){s.allowed=!0}function l(){const e=!window.abTastyStopLog;return(s.allowed||window.abTastyDebug)&&e}function g(e,a,t,...n){l()&&a(`%c [AB Tasty Debug mode] %c ${e}`,\"background: #222; color: #bada55; padding: 3px; border-radius: 5px 0px 0px 5px;\",`${t} padding: 3px; border-radius: 0px 5px 5px 0px;`,...n)}function u(...e){g(c,console.info,\"background: green; color: white;\",...e)}function f(...e){g(r,console.warn,\"background: orange; color: white;\",...e)}function m(...e){g(i,console.debug,\"background: pink; color: white;\",...e)}function p(...e){g(o,console.error,\"background: red; color: white;\",...e)}function b(...e){g(n,console.info,\"background: blue; color: white;\",...e)}},3847(e,a,t){t.d(a,{De:()=>d,bR:()=>s,x:()=>c});var n=t(4721),o=t(81),r=t(648);const i=(()=>{const e={origin:\"\"};return(a=!1)=>{if(!a&&\"\"!==e.origin)return e.origin;try{return e.origin=s()||document.currentScript?.getAttribute(\"src\")?.replace(/\\/[^\\/]+\\.js$/,\"\")||n.eX,e.origin}catch(e){return(0,r.FF)(\"Error getting tag origin. Fallback to default origin.\",e.message),n.eX}}})(),c=(e=!1)=>i(e).replace(\"/25815a6dd8d07c10e8a6399806c4f922\",\"\").replace(`/${o.$f.SHARED}`,\"\"),s=()=>{const e=document.querySelector(\"#abtasty-initiator\")?.getAttribute(\"data-abtasty-path\");return e||null},d=(e=!1)=>{const a=c(e);try{return new URL(a,window.location.href).origin}catch(e){(0,r.FF)(`Error getting tag origin. Fallback to manual origin getter from tagPath: ${a}.`,e.message);const t=a.match(/^((?:[a-z+]+:)?\\/\\/[^\\/]+).*/i);return t?t[1]:window.location.origin}}},6361(e,a,t){t.d(a,{_:()=>o});var n=t(648);async function o(e){try{return await e()}catch(a){try{return(0,n.FF)(\"Chunk failed to be loaded asynchronously. Retrying...\",a),await e()}catch(e){throw(0,n.vV)(\"Chunk failed to be loaded asynchronously. Retry failed.\",e),e}}}},9403(e,a,t){t.d(a,{$:()=>s,L:()=>d});var n=t(81);const o=async(e,a,t)=>{try{const n=await caches.open(e);return await(t?n.put(a,t):n.add(a)),!0}catch(e){return!1}},r=\"abtasty-tag-cache\",i=/\\.js$/,c={hasRefreshed:!1,callbacks:[]},s=e=>(e&&c.callbacks.push(e),c.hasRefreshed),d=async e=>{const a=`${e}/25815a6dd8d07c10e8a6399806c4f922`,t=`${a}/${n.o3.manifest}.json`,s=await(async e=>caches.match(e))(t);if(s){const d=await fetch(t,{priority:\"low\"}),l=d.clone(),g=await d.json(),u=await s.json();if(g&&u&&!((e,a)=>JSON.stringify(e)===JSON.stringify(a))(g,u)){const s=Date.now();await Promise.allSettled([o(r,t,l),o(r,`${a}/${n.o3.initiator}.js`),o(r,\"/abt-cache-timestamp-update\",new Response(`${s}`))]),c.hasRefreshed=!0,c.callbacks.forEach(e=>e(!0));Object.keys(g).filter(e=>i.test(g[e])&&(!u[e]||g[e]!==u[e])).forEach(a=>{const t=document.createElement(\"link\");t.rel=\"prefetch\",t.as=\"script\",t.href=`${e}/${g[a]}`,t.onload=()=>t.remove(),document.head.appendChild(t)})}}else await o(r,t)}},81(e,a){var t,n,o,r,i;a.Q$=a.Y0=a.$f=a.o3=void 0,function(e){e.analytics=\"analytics\",e.identifier=\"index\",e.initiator=\"initiator\",e.ferWebSdk=\"ferWebSdk\",e.manifest=\"manifest\",e.commons=\"commons\",e.main=\"main\",e.modificationEngine=\"me\",e.jquery=\"jquery\",e.recos=\"recos\",e.recosConfig=\"config\",e.crossDomainIframe=\"cross-domain-iframe\",e.fakeAd1=\"-banner-ad.abt\",e.fakeAd2=\"banner-ads-abt\",e.fakeAd3=\"static-ad-abt\"}(t||(a.o3=t={})),function(e){e.IDENTIFIER=\"identifier\",e.INITIATOR=\"initiator\",e.CLIENT=\"client\",e.JSON=\"json\",e.MANIFEST=\"manifest\",e.SHARED=\"shared\"}(n||(a.$f=n={})),a.Y0={javascript:\".js\",typescript:\".ts\",gzip:\".gz\",json:\".json\",map:\".map\",html:\".html\"},function(e){e.accountJs=\"accountJs\",e.consentJs=\"consentJs\",e.fragmentJs=\"fragment-\",e.customAnalytics=\"custom-analytics-\",e.campaignJs=\"campaign-js-\",e.variationJs=\"variation-js-\",e.scopeJs=\"scope-js-\",e.triggerJs=\"trigger-js-\",e.componentJs=\"component-js-\",e.integration=\"integration-\",e.widgetConfigJs=\"widget-config-js-\",e.recosCustom=\"custom\"}(o||(a.Q$=o={})),function(e){e.Account=\"globalAccountCode\",e.Consent=\"consentCustomCode\",e.Fragment=\"globalFragmentCode\",e.Widget=\"widgetCode\",e.Variation=\"variationModificationCode\",e.Campaign=\"campaignGlobalCode\",e.Scope=\"campaignScopeCode\",e.Trigger=\"campaignTriggerCode\",e.Analytics=\"campaignCustomIntegration\",e.Component=\"campaignComponentCode\",e.Integration=\"integrationCode\",e.WidgetConfig=\"widgetConfigCode\",e.Recos=\"recosConfig\"}(r||(r={})),function(e){e.widgets=\"widgets\",e.recos=\"recos\"}(i||(i={})),t.crossDomainIframe,a.Y0.html,t.fakeAd1,a.Y0.javascript,t.fakeAd2,a.Y0.javascript,t.fakeAd3,a.Y0.javascript}},a={};function t(n){var o=a[n];if(void 0!==o)return o.exports;var r=a[n]={exports:{}};return e[n](r,r.exports,t),r.exports}t.m=e,t.H={},t.G=e=>{Object.keys(t.H).map(a=>{t.H[a](e)})},t.d=(e,a)=>{for(var n in a)t.o(a,n)&&!t.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:a[n]})},t.f={},t.e=(e,a)=>Promise.all(Object.keys(t.f).reduce((n,o)=>(t.f[o](e,n,a),n),[])),t.u=e=>223===e?\"shared/commons.32b0810ba1fc402d09de.js\":792===e?\"25815a6dd8d07c10e8a6399806c4f922/main.259ac94de0fe3b10fc58.js\":153===e?\"shared/analytics.a89c163c443e657a7975.js\":693===e?\"shared/me.33f22740c02e4f510378.js\":825===e?\"25815a6dd8d07c10e8a6399806c4f922/abtasty-element-visibility-latest-index-async-js.904ffdadcb046f5f714f.js\":55===e?\"25815a6dd8d07c10e8a6399806c4f922/abtasty-nps-1-5-index-async-js.409cb203666efab9b261.js\":885===e?\"25815a6dd8d07c10e8a6399806c4f922/variation-js-2003969-6295715-async-js.333115be3446f8879b20.js\":void 0,t.o=(e,a)=>Object.prototype.hasOwnProperty.call(e,a),(()=>{var e={},a=\"tag:\";t.l=(n,o,r,i,c)=>{if(e[n])e[n].push(o);else{var s,d;if(void 0!==r)for(var l=document.getElementsByTagName(\"script\"),g=0;g<l.length;g++){var u=l[g];if(u.getAttribute(\"src\")==n||u.getAttribute(\"data-webpack\")==a+r){s=u;break}}s||(d=!0,(s=document.createElement(\"script\")).charset=\"utf-8\",t.nc&&s.setAttribute(\"nonce\",t.nc),s.setAttribute(\"data-webpack\",a+r),c&&s.setAttribute(\"fetchpriority\",c),s.src=n),e[n]=[o];var f=(a,t)=>{s.onerror=s.onload=null,clearTimeout(m);var o=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),o&&o.forEach(e=>e(t)),a)return a(t)},m=setTimeout(f.bind(null,void 0,{type:\"timeout\",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),d&&document.head.appendChild(s)}}})(),t.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},t.p=\"\",(()=>{var e={190:0};t.f.j=(a,n,o)=>{var r=t.o(e,a)?e[a]:void 0;if(0!==r)if(r)n.push(r[2]);else{var i=new Promise((t,n)=>r=e[a]=[t,n]);n.push(r[2]=i);var c=t.p+t.u(a),s=new Error;t.l(c,n=>{if(t.o(e,a)&&(0!==(r=e[a])&&(e[a]=void 0),r)){var o=n&&(\"load\"===n.type?\"missing\":n.type),i=n&&n.target&&n.target.src;s.message=\"Loading chunk \"+a+\" failed.\\n(\"+o+\": \"+i+\")\",s.name=\"ChunkLoadError\",s.type=o,s.request=i,r[1](s)}},\"chunk-\"+a,a,o)}},t.H.j=a=>{if(!t.o(e,a)||void 0===e[a]){e[a]=null;var n=document.createElement(\"link\");n.charset=\"utf-8\",t.nc&&n.setAttribute(\"nonce\",t.nc),n.rel=\"preload\",n.as=\"script\",n.href=t.p+t.u(a),document.head.appendChild(n)}};var a=(a,n)=>{var o,r,[i,c,s]=n,d=0;if(i.some(a=>0!==e[a])){for(o in c)t.o(c,o)&&(t.m[o]=c[o]);if(s)s(t)}for(a&&a(n);d<i.length;d++)r=i[d],t.o(e,r)&&e[r]&&e[r][0](),e[r]=0},n=globalThis.webpackChunktag=globalThis.webpackChunktag||[];n.forEach(a.bind(null,0)),n.push=a.bind(null,n.push.bind(n))})(),(()=>{var e={792:[693]};t.f.preload=a=>{var n=e[a];Array.isArray(n)&&n.map(t.G)}})();var n=t(9403),o=t(6361),r=t(648),i=t(3847),c=t(4721);(async function(){const e=(0,i.bR)()||c.eX;t.p=`${e}/`;const a=()=>Promise.all([t.e(223,\"high\"),t.e(792,\"high\")]).then(t.bind(t,602));try{(await(0,o._)(a)).mainTag(\"2026/04/21 08:03:37 UTC\"),window.caches&&await(0,n.L)(e)}catch(t){window.caches&&await(0,n.L)(e);(await(0,o._)(a)).mainTag(\"2026/04/21 08:03:37 UTC\")}})().catch(e=>{(0,r.vV)(\"AB Tasty's Tag can't be loaded. Caused by:\",e)})})();</script><link charset=\"utf-8\" rel=\"preload\" as=\"script\" href=\"//try.abtasty.com/shared/me.33f22740c02e4f510378.js\"><script type=\"text/javascript\" src=\"https://www.clarity.ms/tag/b1x90xb8m9\" async=\"1\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "2.2.4"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.exeter.ac.uk/wp-login.php",
+      "status": 404,
+      "body_excerpt": "\r\n              <!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n<meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"author\" content=\"University of Exeter\"><title>404 error page | Page not found! | University of Exeter</title><meta property=\"og:title\" content=\"404 error page | Page not found! | University of Exeter\"><meta property=\"og:image\" content=\"https://www.exeter.ac.uk/v8media/global/images/opengraph-logo.jpg\"><meta property=\"og:type\" content=\"website\"><meta"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.exeter.ac.uk/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "\r\n              <!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n<meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"author\" content=\"University of Exeter\"><title>404 error page | Page not found! | University of Exeter</title><meta property=\"og:title\" content=\"404 error page | Page not found! | University of Exeter\"><meta property=\"og:image\" content=\"https://www.exeter.ac.uk/v8media/global/images/opengraph-logo.jpg\"><meta property=\"og:type\" content=\"website\"><meta"
+    },
+    "/wp-content/": {
+      "url": "https://www.exeter.ac.uk/wp-content/",
+      "status": 404,
+      "body_excerpt": "\r\n              <!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n<meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"author\" content=\"University of Exeter\"><title>404 error page | Page not found! | University of Exeter</title><meta property=\"og:title\" content=\"404 error page | Page not found! | University of Exeter\"><meta property=\"og:image\" content=\"https://www.exeter.ac.uk/v8media/global/images/opengraph-logo.jpg\"><meta property=\"og:type\" content=\"website\"><meta"
+    },
+    "/user/login": {
+      "url": "https://www.exeter.ac.uk/user/login",
+      "status": "timeout"
+    },
+    "/core/install.php": {
+      "url": "https://www.exeter.ac.uk/core/install.php",
+      "status": 404,
+      "body_excerpt": "\r\n              <!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n<meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"author\" content=\"University of Exeter\"><title>404 error page | Page not found! | University of Exeter</title><meta property=\"og:title\" content=\"404 error page | Page not found! | University of Exeter\"><meta property=\"og:image\" content=\"https://www.exeter.ac.uk/v8media/global/images/opengraph-logo.jpg\"><meta property=\"og:type\" content=\"website\"><meta"
+    },
+    "/cas/login": {
+      "url": "https://www.exeter.ac.uk/cas/login",
+      "status": 404,
+      "body_excerpt": "\r\n              <!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n<meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"author\" content=\"University of Exeter\"><title>404 error page | Page not found! | University of Exeter</title><meta property=\"og:title\" content=\"404 error page | Page not found! | University of Exeter\"><meta property=\"og:image\" content=\"https://www.exeter.ac.uk/v8media/global/images/opengraph-logo.jpg\"><meta property=\"og:type\" content=\"website\"><meta"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.exeter.ac.uk/Shibboleth.sso/Metadata",
+      "status": 200,
+      "body_excerpt": "<!--\nThis is example metadata only. Do *NOT* supply it as is without review,\nand do *NOT* provide it in real time to your partners.\n -->\n<md:EntityDescriptor xmlns:md=\"urn:oasis:names:tc:SAML:2.0:metadata\" ID=\"_1deae6b4f7ed3acdd348b3f18dbe558093ade98d\" entityID=\"https://www.exeter.ac.uk/shibboleth\">\n\n  <md:Extensions xmlns:alg=\"urn:oasis:names:tc:SAML:metadata:algsupport\">\n    <alg:DigestMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#sha512\"/>\n    <alg:DigestMethod Algorithm=\"http://www.w3.org/2001/04/x"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Amazon ALB",
+      "confidence": 100,
+      "evidence": [
+        "Cookie: AWSALB",
+        "Cookie: AWSALBCORS"
+      ]
+    },
+    {
+      "name": "Amazon CloudFront",
+      "confidence": 100,
+      "evidence": [
+        "Header: Via=\\(CloudFront\\)$",
+        "Header: X-Amz-Cf-Id="
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "SITS",
+      "confidence": 80,
+      "evidence": [
+        "HTML: sits\\.urd",
+        "HTML: /urd/sits\\.urd/run/"
+      ]
+    },
+    {
+      "name": "Canvas LMS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ENV.*COURSE"
+      ]
+    },
+    {
+      "name": "LearnDash",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ld.*course"
+      ]
+    },
+    {
+      "name": "Vimeo",
+      "confidence": 40,
+      "evidence": [
+        "HTML: vimeo"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Encoura",
+      "confidence": 40,
+      "evidence": [
+        "HTML: encoura"
+      ]
+    },
+    {
+      "name": "AitThemes",
+      "confidence": 30,
+      "evidence": [
+        "JS: ait (HTML)"
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ext (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Max Mega Menu",
+      "confidence": 30,
+      "evidence": [
+        "JS: megamenu (HTML)"
+      ]
+    },
+    {
+      "name": "Microsoft Clarity",
+      "confidence": 30,
+      "evidence": [
+        "JS: clarity (HTML)"
+      ]
+    },
+    {
+      "name": "Monsido",
+      "confidence": 30,
+      "evidence": [
+        "JS: _monsido (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "Webpack",
+      "confidence": 30,
+      "evidence": [
+        "JS: webpackChunk (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 30,
+      "evidence": [
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": false
+}

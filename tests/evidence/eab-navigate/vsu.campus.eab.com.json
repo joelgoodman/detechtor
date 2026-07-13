@@ -1,0 +1,271 @@
+{
+  "technology": "EAB Navigate",
+  "url": "https://vsu.campus.eab.com/",
+  "final_url": "https://adfs.vsu.edu/adfs/ls/?SAMLRequest=fZLPb4IwFMfv%2FhWEuxSqojRi4uaymTglynbYZSn0OUmgdX2t2Z8%2FijOZBz2%2B9vsj75M3Rd7URza35iC38G0BTc%2FzfppaIuu%2BUt9qyRTHCpnkDSAzJdvNX1eMBiE7amVUqWr%2FynTfwxFBm0pJZ1ouUn%2Bzflptnpfrzz1EEw5xAuNBNIpGVAgxLmKxj4qo4CEdJBwmw5gmzvgOGtuM1G8j3ex5mVanSoBet42pfzDmiIyQQllZgg6AF0Gpmq4T0cJSouHStP6Qxv1w2KdRHiVsMGJh8uFUixZFJbnpSi5pXOwxOKENQNhuIDUSp87%2BQDxUUlTy6z6B4ixC9pLnWT%2Fb7HIXMb9weVQSbQN6B%2FpUlfC2Xd1chyAq4pBTwkv0Zx2IqXtg3ZZ6dsM4Jf9Fvd55vj6E2S8%3D&RelayState=https%3A%2F%2Fbouncer.eab.com&Signature=mWuQbRJoF3OzkqNgyHsaoPKK767BO4dMnAmaxeMuuw4v4vlh5DJUlw0WxVELz4wpGnbljmC6yCwARX4FnJYfPfw9bWuaubfhF3sW3LEwXdlRS23OLzDJdDQOfOEK0Wvu%2F2z5maGIkquvJvv6Z4wbmS4yvI1G5Nv5QsbiHJ9WL7%2BtbeEEWbChMNSqhF21zEoO3MYZdopK9sqIZZYBhFeE4Zbg8M2yeHypLR08Lf%2BmeXZGce5TcsnSwULz8rQCTZ99dinQP2Ca0%2BOtQPyoZ0pcF1U4OoSly4FbJV1SuuJDOaK%2Bc9V9MmkU%2BBThP5l2Mj62EX%2F9rRphRwL0qfVfgCjGOA%3D%3D&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256",
+  "captured_at": "2026-04-21T19:35:10.589Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/eab-navigate/vsu.campus.eab.com.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "no-cache,no-store",
+      "content-length": "24256",
+      "content-security-policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data:;",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:35:09 GMT",
+      "expires": "-1",
+      "include-referred-token-binding-id": "true",
+      "pragma": "no-cache",
+      "server": "Microsoft-HTTPAPI/2.0 Microsoft-HTTPAPI/2.0",
+      "strict-transport-security": "max-age = 31536000",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-xss-protection": "1; mode=block"
+    },
+    "scripts": [
+      {
+        "src": "https://adfs.vsu.edu/adfs/portal/script/jquery-3.min.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=1920px; initial-scale=1.0; maximum-scale=1.0",
+      "mswebdialog-title": "Connecting to Virginia State University"
+    },
+    "cookies": [
+      {
+        "name": "_ga_KHW695FWY7",
+        "value": "GS2.1.s1776800109$o1$g0$t1776800109$j60$l0$h0",
+        "domain": ".vsu.edu"
+      },
+      {
+        "name": "_gcl_au",
+        "value": "1.1.1116763404.1776800109",
+        "domain": ".vsu.edu"
+      },
+      {
+        "name": "_ga_YXYN05RL85",
+        "value": "GS2.1.s1776800109$o1$g0$t1776800109$j60$l0$h0",
+        "domain": ".vsu.edu"
+      },
+      {
+        "name": "_gat_UA-27343982-1",
+        "value": "1",
+        "domain": ".vsu.edu"
+      },
+      {
+        "name": "_ga_8WLNE8GV1M",
+        "value": "GS2.1.s1776800109$o1$g0$t1776800109$j60$l0$h0",
+        "domain": ".vsu.edu"
+      },
+      {
+        "name": "_gat_gtag_UA_27343982_1",
+        "value": "1",
+        "domain": ".vsu.edu"
+      },
+      {
+        "name": "_gid",
+        "value": "GA1.2.473124264.1776800109",
+        "domain": ".vsu.edu"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.2.1010001866.1776800109",
+        "domain": ".vsu.edu"
+      },
+      {
+        "name": "_ga_HTT5XCD5VH",
+        "value": "GS2.1.s1776800109$o1$g0$t1776800109$j60$l0$h0",
+        "domain": ".vsu.edu"
+      }
+    ],
+    "dom": {
+      "title": "Home Realm Discovery",
+      "bodyClasses": "body",
+      "bodyId": "",
+      "headContent": "\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta name=\"viewport\" content=\"width=1920px; initial-scale=1.0; maximum-scale=1.0\">\n        <meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\">\n        <meta http-equiv=\"cache-control\" content=\"no-cache,no-store\">\n        <meta http-equiv=\"pragma\" content=\"no-cache\">\n        <meta http-equiv=\"expires\" content=\"-1\">\n        <meta name=\"mswebdialog-title\" content=\"Connecting to Virginia State University\">\n\n        <title>Home Realm Discovery</title>\n        <script type=\"text/javascript\">\n//<![CDATA[\nfunction HRDErrors(){this.invalidSuffix = 'We do not recognize this organizational account. Enter your organizational account again or contact your administrator for more information.';}\n//]]>\n</script>\n\n<script type=\"text/javascript\">\n//<![CDATA[\n// Copyright (c) Microsoft Corporation.  All rights reserved.\nfunction InputUtil(errTextElementID, errDisplayElementID) {\n\n    if (!errTextElementID)  errTextElementID = 'errorText'; \n    if (!errDisplayElementID)  errDisplayElementID = 'error'; \n\n    this.hasFocus = false;\n    this.errLabel = document.getElementById(errTextElementID);\n    this.errDisplay = document.getElementById(errDisplayElementID);\n};\nInputUtil.prototype.canDisplayError = function () {\n    return this.errLabel && this.errDisplay;\n}\nInputUtil.prototype.checkError = function () {\n    if (!this.canDisplayError){\n        throw new Error ('Error element not present');\n    }\n    if (this.errLabel && this.errLabel.innerHTML) {\n        this.errDisplay.style.display = '';        \n        var cause = this.errLabel.getAttribute('for');\n        if (cause) {\n            var causeNode = document.getElementById(cause);\n            if (causeNode && causeNode.value) {\n                causeNode.focus();\n                this.hasFocus = true;\n            }\n        }\n    }\n    else {\n        this.errDisplay.style.display = 'none';\n    }\n};\nInputUtil.prototype.setInitialFocus = function (input) {\n    if (this.hasFocus) return;\n    var node = document.getElementById(input);\n    if (node) {\n        if ((/^\\s*$/).test(node.value)) {\n            node.focus();\n            this.hasFocus = true;\n        }\n    }\n};\nInputUtil.prototype.setError = function (input, errorMsg) {\n    if (!this.canDisplayError) {\n        throw new Error('Error element not present');\n    }\n    input.focus();\n\n    if (errorMsg) {\n        this.errLabel.innerHTML = errorMsg;\n    }\n    this.errLabel.setAttribute('for', input.id);\n    this.errDisplay.style.display = '';\n};\nInputUtil.makePlaceholder = function (input) {\n    var ua = navigator.userAgent;\n\n    if (ua != null && \n        (ua.match(/MSIE 9.0/) != null || \n         ua.match(/MSIE 8.0/) != null ||\n         ua.match(/MSIE 7.0/) != null)) {\n        var node = document.getElementById(input);\n        if (node) {\n            var placeholder = node.getAttribute(\"placeholder\");\n            if (placeholder != null && placeholder != '') {\n                var label = document.createElement('input');\n                label.type = \"text\";\n                label.value = placeholder;\n                label.readOnly = true;\n                label.style.position = 'absolute';\n                label.style.borderColor = 'transparent';\n                label.className = node.className + ' hint';\n                label.tabIndex = -1;\n                label.onfocus = function () { this.nextSibling.focus(); };\n\n                node.style.position = 'relative';\n                node.parentNode.style.position = 'relative';\n                node.parentNode.insertBefore(label, node);\n                node.onkeyup = function () { InputUtil.showHint(this); };\n                node.onblur = function () { InputUtil.showHint(this); };\n                node.style.background = 'transparent';\n\n                node.setAttribute(\"placeholder\", \"\");\n                InputUtil.showHint(node);\n            }\n        }\n    }\n};\nInputUtil.focus = function (inputField) {\n    var node = document.getElementById(inputField);\n    if (node) node.focus();\n};\nInputUtil.hasClass = function(node, clsName) {\n    return node.className.match(new RegExp('(\\\\s|^)' + clsName + '(\\\\s|$)'));\n};\nInputUtil.addClass = function(node, clsName) {\n    if (!this.hasClass(node, clsName)) node.className += \" \" + clsName;\n};\nInputUtil.removeClass = function(node, clsName) {\n    if (this.hasClass(node, clsName)) {\n        var reg = new RegExp('(\\\\s|^)' + clsName + '(\\\\s|$)');\n        node.className = node.className.replace(reg, ' ');\n    }\n};\nInputUtil.showHint = function (node, gotFocus) {\n    if (node.value && node.value != '') {\n        node.previousSibling.style.display = 'none';\n    }\n    else {\n        node.previousSibling.style.display = '';\n    }\n};\nInputUtil.updatePlaceholder = function (input, placeholderText) {\n    var node = document.getElementById(input);\n    if (node) {\n        var ua = navigator.userAgent;\n        if (ua != null &&\n            (ua.match(/MSIE 9.0/) != null ||\n            ua.match(/MSIE 8.0/) != null ||\n            ua.match(/MSIE 7.0/) != null)) {\n            var label = node.previousSibling;\n            if (label != null) {\n                label.value = placeholderText;\n            }\n        }\n        else {\n            node.placeholder = placeholderText;\n        }\n    }\n};\n\n//]]>\n</script>\n\n\n        \n        <link rel=\"stylesheet\" type=\"text/css\" href=\"/adfs/portal/css/style.css?id=D74D4D6943F32AE6F7F11D14D601DBB0E1A58919176EE512150366B6279AAF99\">\n    <script type=\"text/javascript\" src=\"/adfs/portal/script/jquery-3.min.js\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://vsu.campus.eab.com/wp-login.php",
+      "status": 406,
+      "body_excerpt": "<html>\r\n<head><title>406 Not Acceptable</title></head>\r\n<body>\r\n<center><h1>406 Not Acceptable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://vsu.campus.eab.com/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n       \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />\n  <title>Student Support System</title>\n\t<style type=\"text/css\">\n\t\tbody { background-color: #efefef; color: #666; text-align: center; font-family: arial, sans-serif; }\n\t\tdiv.dialog {\n\t\t\twidth: 25em;\n\t\t\tpadding: 0 4em;\n\t\t\tmargin: 4em a"
+    },
+    "/wp-content/": {
+      "url": "https://vsu.campus.eab.com/wp-content/",
+      "status": 406,
+      "body_excerpt": "<html>\r\n<head><title>406 Not Acceptable</title></head>\r\n<body>\r\n<center><h1>406 Not Acceptable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    "/user/login": {
+      "url": "https://vsu.campus.eab.com/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n       \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />\n  <title>Student Support System</title>\n\t<style type=\"text/css\">\n\t\tbody { background-color: #efefef; color: #666; text-align: center; font-family: arial, sans-serif; }\n\t\tdiv.dialog {\n\t\t\twidth: 25em;\n\t\t\tpadding: 0 4em;\n\t\t\tmargin: 4em a"
+    },
+    "/core/install.php": {
+      "url": "https://vsu.campus.eab.com/core/install.php",
+      "status": 406,
+      "body_excerpt": "<html>\r\n<head><title>406 Not Acceptable</title></head>\r\n<body>\r\n<center><h1>406 Not Acceptable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    "/cas/login": {
+      "url": "https://vsu.campus.eab.com/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n       \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />\n  <title>Student Support System</title>\n\t<style type=\"text/css\">\n\t\tbody { background-color: #efefef; color: #666; text-align: center; font-family: arial, sans-serif; }\n\t\tdiv.dialog {\n\t\t\twidth: 25em;\n\t\t\tpadding: 0 4em;\n\t\t\tmargin: 4em a"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://vsu.campus.eab.com/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n       \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />\n  <title>Student Support System</title>\n\t<style type=\"text/css\">\n\t\tbody { background-color: #efefef; color: #666; text-align: center; font-family: arial, sans-serif; }\n\t\tdiv.dialog {\n\t\t\twidth: 25em;\n\t\t\tpadding: 0 4em;\n\t\t\tmargin: 4em a"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "SAML",
+      "confidence": 80,
+      "evidence": [
+        "HTML: saml",
+        "HTML: SAMLRequest"
+      ]
+    },
+    {
+      "name": "EAB Navigate",
+      "confidence": 40,
+      "evidence": [
+        "HTML: bouncer.eab.com"
+      ]
+    },
+    {
+      "name": "Adobe Experience Manager",
+      "confidence": 30,
+      "evidence": [
+        "JS: CQ (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: llc (HTML)"
+      ]
+    },
+    {
+      "name": "Open edX",
+      "confidence": 30,
+      "evidence": [
+        "JS: edX (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 30,
+      "evidence": [
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Workday Student",
+      "confidence": 30,
+      "evidence": [
+        "JS: WD (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

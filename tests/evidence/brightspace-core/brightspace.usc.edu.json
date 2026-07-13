@@ -1,0 +1,69 @@
+{
+  "technology": "Brightspace Core",
+  "url": "https://brightspace.usc.edu/",
+  "final_url": "https://login.usc.edu/login/login?spEntityID=https://2c451d9d-9cf4-4e8b-958d-6ee62f71be93.tenants.brightspace.com/samlLogin&service=login&goto=https://login.usc.edu:443/sso/saml2/continue/metaAlias/USCRealm/idp?secondVisitUrl%3D/sso/SSORedirect/metaAlias/USCRealm/idp?ReqID%253Dsamlrequest_0c82f2b9a3b64492a6f8ae2b9c035c22&AMAuthCookie=",
+  "captured_at": "2026-04-21T19:33:45.635Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/brightspace-core/brightspace.usc.edu.html",
+  "evidence": {
+    "headers": {
+      "content-language": "en-US",
+      "content-type": "text/html;charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:33:45 GMT",
+      "server": "I am a teapot",
+      "set-cookie": "AWSALB=p0iptqjsXJuyZsV7jCuy2xJSnA1d9QrmdD/YEgln3WuTa11JWNxJdbmln81N9T5bQUFdRVhy1Pqd54RZ815owewfY8L5/WALqmgdxaNi9WYH7WmQHCeaD37LsGAZ; Expires=Tue, 28 Apr 2026 19:33:45 GMT; Path=/\nAWSALBCORS=p0iptqjsXJuyZsV7jCuy2xJSnA1d9QrmdD/YEgln3WuTa11JWNxJdbmln81N9T5bQUFdRVhy1Pqd54RZ815owewfY8L5/WALqmgdxaNi9WYH7WmQHCeaD37LsGAZ; Expires=Tue, 28 Apr 2026 19:33:45 GMT; Path=/; SameSite=None; Secure\nJSESSIONID=51C23E71FD4B75E7515BD0AE86949CC4; Path=/login; Secure; HttpOnly\nnextGenAccess=c2VydmljZT1sb2dpbj9odHRwczovL2xvZ2luLnVzYy5lZHU6NDQzL3Nzby9zYW1sMi9jb250aW51ZS9tZXRhQWxpYXMvVVNDUmVhbG0vaWRwP3NlY29uZFZpc2l0VXJsPS9zc28vU1NPUmVkaXJlY3QvbWV0YUFsaWFzL1VTQ1JlYWxtL2lkcD9SZXFJRCUzRHNhbWxyZXF1ZXN0XzBjODJmMmI5YTNiNjQ0OTJhNmY4YWUyYjljMDM1YzIy; Max-Age=1200; Expires=Tue, 21-Apr-2026 19:53:45 GMT; Path=/; Secure; HttpOnly\nphgnwbfwrgk=aHR0cHM6Ly8yYzQ1MWQ5ZC05Y2Y0LTRlOGItOTU4ZC02ZWU2MmY3MWJlOTMudGVuYW50cy5icmlnaHRzcGFjZS5jb20vc2FtbExvZ2lu; Max-Age=1200; Expires=Tue, 21-Apr-2026 19:53:45 GMT; Path=/; Secure; HttpOnly"
+    },
+    "scripts": [],
+    "meta": {},
+    "cookies": [],
+    "dom": {},
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://brightspace.usc.edu/wp-login.php",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fwp%2Dlogin%2Ephp",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fwp%2Dlogin%2Ephp\">here</a>.</body>\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://brightspace.usc.edu/wp-json/wp/v2/",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fwp%2Djson%2Fwp%2Fv2%2F",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fwp%2Djson%2Fwp%2Fv2%2F\">here</a>.</body>\n"
+    },
+    "/wp-content/": {
+      "url": "https://brightspace.usc.edu/wp-content/",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fwp%2Dcontent%2F",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fwp%2Dcontent%2F\">here</a>.</body>\n"
+    },
+    "/user/login": {
+      "url": "https://brightspace.usc.edu/user/login",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fuser%2Flogin",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fuser%2Flogin\">here</a>.</body>\n"
+    },
+    "/core/install.php": {
+      "url": "https://brightspace.usc.edu/core/install.php",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fcore%2Finstall%2Ephp",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fcore%2Finstall%2Ephp\">here</a>.</body>\n"
+    },
+    "/cas/login": {
+      "url": "https://brightspace.usc.edu/cas/login",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fcas%2Flogin",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2Fcas%2Flogin\">here</a>.</body>\n"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://brightspace.usc.edu/Shibboleth.sso/Metadata",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2FShibboleth%2Esso%2FMetadata",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fbrightspace%2Eusc%2Eedu%3A80%2FShibboleth%2Esso%2FMetadata\">here</a>.</body>\n"
+    }
+  },
+  "matched_patterns": [],
+  "target_tech_matched": false
+}

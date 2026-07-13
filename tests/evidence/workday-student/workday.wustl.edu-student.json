@@ -1,0 +1,71 @@
+{
+  "technology": "Workday Student",
+  "url": "https://workday.wustl.edu/student/",
+  "final_url": "https://login.wustl.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1",
+  "captured_at": "2026-04-21T19:34:38.077Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/workday-student/workday.wustl.edu-student.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "no-store",
+      "content-length": "2848",
+      "content-security-policy": "frame-ancestors 'none'; base-uri 'none';",
+      "content-type": "text/html;charset=utf-8",
+      "strict-transport-security": "max-age=31536000",
+      "x-frame-options": "DENY"
+    },
+    "scripts": [],
+    "meta": {},
+    "cookies": [],
+    "dom": {},
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://workday.wustl.edu/wp-login.php",
+      "status": 301,
+      "redirect_to": "/wp/wp-login.php"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://workday.wustl.edu/wp-json/wp/v2/",
+      "status": 302,
+      "redirect_to": "https://workday.wustl.edu/wp/wp-login.php?redirect_to=https%3A%2F%2Fworkday.wustl.edu%2Fwp-json%2Fwp%2Fv2%2F&reauth=1"
+    },
+    "/wp-content/": {
+      "url": "https://workday.wustl.edu/wp-content/",
+      "status": 301,
+      "redirect_to": "https://workday.wustl.edu/app/"
+    },
+    "/user/login": {
+      "url": "https://workday.wustl.edu/user/login",
+      "status": 302,
+      "redirect_to": "https://workday.wustl.edu/wp/wp-login.php?redirect_to=https%3A%2F%2Fworkday.wustl.edu%2Fuser%2Flogin&reauth=1"
+    },
+    "/core/install.php": {
+      "url": "https://workday.wustl.edu/core/install.php",
+      "status": 302,
+      "redirect_to": "https://workday.wustl.edu/wp/wp-login.php?redirect_to=https%3A%2F%2Fworkday.wustl.edu%2Fcore%2Finstall.php&reauth=1"
+    },
+    "/cas/login": {
+      "url": "https://workday.wustl.edu/cas/login",
+      "status": 302,
+      "redirect_to": "https://workday.wustl.edu/wp/wp-login.php?redirect_to=https%3A%2F%2Fworkday.wustl.edu%2Fcas%2Flogin&reauth=1"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://workday.wustl.edu/Shibboleth.sso/Metadata",
+      "status": 302,
+      "redirect_to": "https://workday.wustl.edu/wp/wp-login.php?redirect_to=https%3A%2F%2Fworkday.wustl.edu%2FShibboleth.sso%2FMetadata&reauth=1"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    }
+  ],
+  "target_tech_matched": false
+}

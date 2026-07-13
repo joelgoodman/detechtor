@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>CAS - Central Authentication Service Login</title>
+    
+        <link rel="stylesheet" type="text/css" href="/cas/webjars/normalize.css/8.0.1/normalize-112272e51c80ffe5bd01becd2ce7d656.css"><link rel="stylesheet" type="text/css" href="/cas/webjars/bootstrap/5.3.8/css/bootstrap-grid.min-895b9494c7178ac12ad9c56d81305665.css"><link rel="stylesheet" type="text/css" href="/cas/webjars/material-components-web/14.0.0/dist/material-components-web.min-9da9033e8d04504fe54b3dbb1298fd78.css"><link rel="stylesheet" type="text/css" href="/cas/webjars/mdi__font/7.4.47/css/materialdesignicons.min-2c83c4bce691e18f82409f87b2bf84e4.css"><link rel="stylesheet" type="text/css" href="/cas/webjars/datatables/2.3.2/css/dataTables.dataTables-86c98d6ce5aa289ccf4492ac3a785fad.css"><link rel="stylesheet" type="text/css" href="/cas/themes/usc/css/usc-a2bd264d261ed251d367b7c698625bca.css"><link rel="shortcut icon" href="/cas/themes/usc/images/favicon-3eb7ae5f4e4ac9a107247f696e1dc0c6.ico"></head>
+
+<body class="login mdc-typography">
+    <script type="text/javascript" src="/cas/webjars/jquery/3.7.1/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+<script type="text/javascript" src="/cas/webjars/datatables/2.3.2/js/dataTables-8e31487c41abe2938c55b5dcde42a604.js"></script>
+<script type="text/javascript" src="/cas/webjars/clientjs/0.2.1/dist/client.min-5b6a46b3fb2ab9307d013def98fd7289.js"></script>
+
+<script type="text/javascript" src="/cas/webjars/material-components-web/14.0.0/dist/material-components-web.min-3c99031127092dd1984f2e3aa6aeed8b.js"></script>
+<script type="text/javascript" src="/cas/js/cas-cd46228f2a9b608731f0c9dacfb9758c.js"></script>
+<script type="text/javascript" src="/cas/js/material-b55ff53584b5e775934a54f8a5dd3ba8.js"></script>
+<script type="text/javascript" src="/cas/js/custom-63dd40a49197131d92472a1288f662f6.js"></script>
+<script>
+    if (typeof resourceLoadedSuccessfully === "function") {
+        resourceLoadedSuccessfully();
+    }
+    let trackGeoLocation = false;
+</script>
+
+<div>
+<!--USC: 1.0 REMOVE BEGIN--><!--
+    <style th:inline="css">
+        .bgimage {
+            background-image: url(/cas/images/background-553db102696ee497e02b357414b118e6.jpg);
+        }
+    </style>
+--><!--USC: 1.0 REMOVE END--><header id="app-bar" class="mdc-top-app-bar mdc-top-app-bar--fixed mdc-elevation--z4 shadow-sm" role="banner">
+        <!-- USC: 1.0 DELETE BEGIN --><!--<nav class="mdc-top-app-bar__row navbar navbar-dark bg-dark">--><!-- USC: 1.0 DELETE END --><!-- USC: 1.0 ADD BEGIN --><nav class="mdc-top-app-bar__row navbar navbar-dark bg-dark" style="margin-top:10px;margin-bottom:10px;">
+	<!-- USC: 1.0 ADD END --><div class="container-fluid container-fluid d-flex align-items-center justify-content-between">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    </section>
+                <section class="mdc-top-app-bar__section">
+                    <div class="cas-brand mx-auto">
+                        <h1 class="visually-hidden">CAS</h1>
+                        <a href="/cas/">
+                            <img id="cas-logo" class="cas-logo" alt="CAS" src="/cas/images/USC_Web_linear-4472546db2ad0a6cf8ca04113c60b310.png"></a>
+                    </div>
+                </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                    
+
+                    </section>
+            </div>
+        </nav>
+    </header>
+
+    <div id="logindrawer">
+        </div>
+
+    <script>let countMessages = 0;</script>
+    <div class="mdc-dialog cas-notification-dialog modal" id="cas-notification-dialog" role="alertdialog" aria-modal="true" aria-labelledby="notif-dialog-title" aria-describedby="notif-dialog-content">
+        <div class="mdc-dialog__container modal-dialog">
+            <div class="mdc-dialog__surface modal-content">
+                <div class="mdc-dialog__content modal-body" id="notif-dialog-content">
+                    <div id="cookiesSupportedDiv" class="cas-notification-message mdc-typography--body1" style="display: none">
+                        <h3 class="mdc-typography--headline6 mdi mdi-alert-circle fas fa-exclamation-circle">Cookies Disabled</h3>
+                        <p class="text-wrap small">Your browser does not support cookies. The browser's ability to store or read cookies is essential for single sign-on to work. Please consult your browser settings and ensure cookie support is turned on.</p>
+                    </div>
+
+                </div>
+                <footer class="mdc-dialog__actions modal-footer">
+                    <button type="button" class="mdc-button mdc-button--raised mdc-dialog__button btn btn-primary" data-mdc-dialog-action="accept" data-mdc-dialog-button-default="" data-bs-dismiss="modal">
+                        <span class="mdc-button__label">OK</span>
+                    </button>
+                </footer>
+            </div>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+    </div>
+
+    <script type="text/javascript">
+        function supportsCookies() {
+            try {
+                document.cookie = 'testcookie=1';
+                const ret = document.cookie.indexOf('testcookie=') !== -1;
+                document.cookie = 'testcookie=1; expires=Thu, 01-Jan-1970 00:00:01 GMT';
+                return ret;
+            } catch (e) {
+                console.log(e);
+                return false;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!supportsCookies()) {
+                countMessages++;
+                window.jQuery('#cookiesSupportedDiv').show();
+            }
+
+            if (countMessages === 0) {
+                window.jQuery('#notifications-count').remove();
+                window.jQuery('#cas-notifications-menu').remove();
+            } else {
+                window.jQuery('#notifications-count').text(`(${countMessages})`)
+            }
+        });
+    </script>
+</div>
+
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="fade-in mdc-drawer-app-content mdc-top-app-bar--fixed-adjust d-flex justify-content-center bgimage">
+        <main id="main-content" class="container-lg py-4" role="main">
+            <div id="content" class="d-flex justify-content-center">
+   <div class="d-flex justify-content-center flex-md-row flex-column mdc-card mdc-card-content card flex-grow-1">
+
+        <section id="loginForm" class="login-section login-form card-body">
+            <div class="d-flex flex-column justify-content-between m-auto">
+
+        <div>
+            <!-- USC: 1.0 ADD BEGIN --><h1 style="text-align: center;font-weight:normal;margin-bottom:20px;">USC Central Authentication Service (CAS)</h1>
+	    <!-- USC: 1.0 ADD END --></div>
+
+	<!-- USC: 1.0 ADD BEGIN --><div class="banner" style="border-color: #73000A; background-color:rgb(248, 215, 218); display:none; width: 680px; padding: 10px; text-align: center; margin: 0 90px 10px 90px; border-width: 3px">
+	<h3>Outage Notice</h3>
+        <span>
+		<p style="color: #73000A; font-weight: bold;" id="msg">DegreeWorks will be unavailable from Saturday, April 18, at 6 a.m. until Sunday, April 19, at 6 p.m. due to planned system maintenance.</p>
+	</span>
+</div>
+	
+	<!-- USC: 1.0 ADD END --><div class="form-wrapper">
+
+            <form method="post" id="fm1" action="login" onsubmit="loginFormSubmission();">
+                <div id="login-form-controls">
+                    <h2 class="text-center">
+                        <i class="mdi mdi-login fas fa-shield-alt" aria-hidden="true"></i>
+                        <span>Login Credentials Required</span>
+                    </h2>
+
+                    <section class="cas-field form-group my-3" id="usernameSection">
+                        <label for="username" class="mdc-text-field mdc-text-field--outlined control-label w-100">
+                            <span class="mdc-notched-outline mdc-notched-outline--upgraded">
+                                <span class="mdc-notched-outline__leading"></span>
+                                <span class="mdc-notched-outline__notch">
+                                    <span class="mdc-floating-label" style="transition-duration: 0s;"><span class="accesskey">L</span>ogin Credential</span>
+                                </span>
+                                <span class="mdc-notched-outline__trailing"></span>
+                            </span>
+			    <!-- USC: 1.0 DELETE BEGIN --><!--
+                            <input class="mdc-text-field__input form-control" id="username"
+                                   type="text"
+                                   th:readonly="!${#cas.isLoginFormUsernameInputVisible(#vars)}"
+                                   th:field="*{username}"
+                                   th:accesskey="#{screen.welcome.label.netid.accesskey}"
+                                   autocapitalize="none"
+                                   spellcheck="false"
+                                   aria-describedby="usernameValidationMessage"
+                                   autocomplete="username" required/>
+			    --><!-- USC: 1.0 DELETE END --><!-- USC: 1.0 ADD BEGIN --><input class="mdc-text-field__input form-control" id="username" type="text" accesskey="u" autocapitalize="none" spellcheck="false" aria-describedby="usernameValidationMessage" autocomplete="username" name="username" value=""><!-- USC: 1.0 ADD END --></label>
+
+                        <div class="mdc-text-field-helper-line invalid-feedback">
+                            <div class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                                <span id="usernameValidationMessage"></span>
+                            </div>
+                        </div>
+
+                        <script type="text/javascript">
+                            /*<![CDATA[*/
+                            let username = "";
+                            let disabled = false;
+
+                            if (username != null && username !== "") {
+                                $("#username").val(username);
+                                if (disabled) {
+                                    $("#usernameSection").hide();
+                                }
+                            }
+                            /*]]>*/
+                        </script>
+                    </section>
+
+                    <section class="cas-field form-group my-3 mdc-input-group form-group" id="passwordSection">
+                        <div class="mdc-input-group-field mdc-input-group-field-append">
+                            <label for="password" class="mdc-text-field caps-check mdc-text-field--outlined control-label mdc-text-field--with-trailing-icon w-100">
+                                    <span class="mdc-notched-outline mdc-notched-outline--upgraded">
+                                        <span class="mdc-notched-outline__leading"></span>
+                                        <span class="mdc-notched-outline__notch">
+                                            <span class="mdc-floating-label" style="transition-duration: 0s;"><span class="accesskey">P</span>assword</span>
+                                        </span>
+                                        <span class="mdc-notched-outline__trailing"></span>
+                                    </span>
+				<!-- USC: 1.0 DELETE BEGIN --><!--
+                                <input class="mdc-text-field__input form-control pwd"
+                                       type="password"
+                                       id="password"
+				       required
+                                       th:accesskey="#{screen.welcome.label.password.accesskey}"
+                                       th:field="*{password}"
+                                       aria-describedby="passwordValidationMessage"
+                                       autocomplete="current-password"/>
+				--><!-- USC: 1.0 DELETE END --><!-- USC: 1.0 ADD BEGIN --><input class="mdc-text-field__input form-control pwd" type="password" id="password" accesskey="p" aria-describedby="passwordValidationMessage" autocomplete="current-password" name="password" value=""><!-- USC: 1.0 ADD END --><button class="reveal-password mdc-button mdc-button--unelevated mdc-input-group-append mdc-icon-button btn btn-primary" type="button" title="Toggle password" aria-pressed="false">
+                                    <i class="mdi mdi-eye reveal-password-icon fas fa-eye" aria-hidden="true"></i>
+                                    <span class="sr-only">Show password</span>
+                                </button>
+                            </label>
+                            <div class="mdc-text-field-helper-line invalid-feedback">
+                                <div class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                                    <span id="passwordValidationMessage"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mdc-text-field-helper-line invalid-feedback caps-warn">
+                            <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg text-danger">
+                                <span>CAPSLOCK key is turned on!</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cas-field form-group my-3">
+                        </section>
+
+                    <section class="cas-field">
+                        <input type="hidden" name="execution" value="6a67124d-c7f3-45d1-8fec-5b4685905148_ZXlKaGJHY2lPaUpJVXpVeE1pSXNJblI1Y0NJNklrcFhWQ0lzSW10cFpDSTZJbUptTkRnNU5EZGlMV1l6T1dZdE5HWTFaaTFpWm1SaUxXWmpaR05qWVRsak9XTmtNeUo5Ljlvd0RCUTdiblhuZkl6UmtQNFlGem5MRGJWTm5rOUVSNERBQURlN2lxRF91UlZhZ083dTVhdFU5XzlEOEptZWRmTDhpOGxDVkhVMjA0M1NVY2NXSWJOMzhrb3VkeHZ5MUkzYzdEa1RfRzY0THJTdVhYeVRWblFtY0ZiaVNwRmh5RmZzZm95czZZUUk1RE9Zd2NURDU4RUdmZ0lHODJuVHFxYVUxNjJmMl9Dd0thSW9xREVWRTFnemtXLWRmUmtzdkoxSUVoZzBGT0NNbF9QWUIyRUtBTmJCbDVQeER4LXRaVWZxdVlocmtpNTBYb0I3TWNOblg1VUF1amhpT2hSZkRlNXFKV3lXZEd1b0NXalhvUW1QaE9xcDVLV1lhNmttX3ExTVU1bk9zNVZGWlN5eVh2QnBQcnhVQ0syRHd4YUNSMlJhUUgzWjdmbHNlOHRrTmZfZDdmNVdXMDVUc1hDd2RBSFZYRHozUzJjUEZCbjNSS0FGbW1pb2hmcEhXUGRyMjVHOXZhcTRVNEtsMkZWOVFXdWNWRDlRWEhwU3J3aXNBVXE5dkFVanhSMXJEcXpuVGM0MU15RTJlaWhVVENOaExNenFBVXJ6ellUS1o5ejZuM2xTNHNjSXc5V2xLMUkzYjIzeVlQWnpoYVV0WFRaYWNfME9GQXQzeS1ob1RYVHVuMlFGQksyTHdTaWRMdHluNG8zbmJ1c081UmdoQS1PUHM5QlZGSjV5NTVhYW94S29FbFZVLTVWYmFwUXRoOWw3aTItMFNmS3BPeGRFZ1llY1RFYzR5MzVsLWdwbUdONXlSNWo1SzV4LWV3NWlwOTdxS3dQWS1fY05iZ3MwTFJUY2J4RWp6NmJwczVVMkVvQzNXWEFMeHd6Qm1oOFdOd3RuclRrQUQ2ajNhemdwSWVhbU53Znktc21zQnpqaVdZU3ZVM0RvVUY0M1dwY3NNTldJMWZqWm5Ga3lXb2VRLUd0SXQ1S0N0WDluUWg1UkU2M0pHc3dUem9VTHlwSWN1Q0xZYk12QUlxRlV4MHMySzN5RGwyVkRqa00wVWlOTThDNEREdzRoeXpsVG1GemI0WTRQMFBSbkVLTDdRMWE3RFdQSHgwcC1ESXlDME1zRDNhQVFoSVpBVDFmaUlRTm9Db0VrVFVNZndLYUU4UXhHQ3JYb002WVN3c1FRbVhpM1hWb1l2TUVXOXFWQWZHVU5DVXR5YldZTU5NbXkxSUtHX2NVeXl5VHRsbzhtZU1YMHJlbzJXaTlodWd5eHlpRzUwM1FDS3ZtcEJ2UzVSc2cxUm1aa0Rwa1N4dm43b1ozZW1ScFIxc2hCS2FjWEhFbkxTV3pmWFhycXlta1dwMUdRbGdkNEEwMl83T1Z3Z25KQjNtV2lEblVoLUxmelNLODNuankzX29pMm5acHJBYTVmQTdRMXc5ZkdySm9WU0wyVDY5U3JTNUlRY1V4RUZNTjlLWFBpOVExeDAtczlVc2VTRDRFdGthZ3Ftb0FfYVVwWVVyTUhWMk9paDBDUEhXdFlkODRnMmw4c0pHTFdyaTJfUHB4VjM2OFd3M0swV2xxSmctQ0FFQ2d6RXJEUy1GdkNQWWlwdGpvaGZyRElYUUVNblJESEhlWE1kOFhIdmkzbFpJQy1FZ05JTFhEN3J6R0ZQNVIxdEZCZGtlcjFSRFdHOHdHUGtReDZRVlVPNkg2OHhTRXhFbG5sVnU0TWhFSlF0cmxMY2xjY2VKMnRkNU1FcE5ydVdjaVJTYk5PbWRmUmFvcFZxaDRkczNoYnVjSy10LU53bFc5Z19DNDk0V0lMbENlbFc2U0hieFdXTEMzZG02SXlCOGdqN0lMbjg5dy10czJNUHBQcmtDX3UxX0xGbktCbXZfQnBidGcyUHNUZTFZbW81ZEdYVHlsMDJlUlBENzNDd09QSDFEdkpVNjZwX2dPd2hmNDVoSENNdllYNUdWVmh6ZkFGODhfTEthczM5YThxbmxwczlCZjk1QkRYczhibE1RNVFjUUFWOUJIakZlRlBBNEFuNFF0WTlDZ0JyWDhoRVZRclJEUWlLNFozOURETEpJOVFtQTA3bVl0bEZlWHN4QVZ6b3hUYVFxNXZKMjZCY3h1T3RlMzFwZXRBRkNfb2x0WGVYaUVELWgzbTQ2aGlaNWlkYjFUbEF6X1pVN0NMbXRyZHV5SDRucnFCMTNfZU5UZF9ibi1WeklaYk84ZjVEeGttby5vUU5zTGQ2VTd1R3d3RGQ0ekV4R2JxZGpTZC1jaWhBQ1Uza0xETG16UERaRFNyWFBsaGV4cVkxbTRkS2MtRzk3ZWJRTFJpNkFjdVNBaFIyLThxb1pudw=="><input type="hidden" name="_eventId" value="submit"><input type="hidden" name="geolocation"><input type="hidden" name="deviceFingerprint" value="6878929"><script type="text/javascript">
+                            let client = new ClientJS();
+                            let fingerprint = client.getFingerprint();
+                            $("[name=\"deviceFingerprint\"]").val(fingerprint);
+                        </script>
+                    </section>
+
+                    <button class="mdc-button mdc-button--raised btn btn-primary btn-primary flex-shrink-0" name="submitBtn" id="submitBtn" accesskey="l" type="submit">
+            <i class="mdi fas mdi-login fa-shield-alt" aria-hidden="true"></i>
+            <span class="mdc-button__label">Login</span>
+        </button>
+
+        </div>
+            </form>
+
+            <hr class="my-4"><div>
+                </div>
+
+            <script type="text/javascript">
+                /*<![CDATA[*/
+                var i = "One moment please..."
+                var j = "Login"
+                    /*]]>*/
+                    $(window).on("pageshow", function () {
+                        $(":submit").prop("disabled", false);
+                        $(":submit").attr("value", j);
+                    });
+                $(document).ready(function () {
+                    $("#fm1").submit(function () {
+                        $(":submit").attr("disabled", true);
+                        $(":submit").attr("value", i);
+                        return true;
+                    });
+                });
+            </script>
+        </div>
+
+        <div>
+            <div id="sidebar">
+            <div class="sidebar-content">
+
+		<!-- USC: 1.0 DELETE BEGIN --><!--
+                <p id="securityNotice" th:utext="#{screen.welcome.security}">For security reasons, please <a href="logout">log out</a> and
+                    exit your web browser when you are done accessing services that require authentication!</p>
+		--><!-- USC: 1.0 DELETE END --><!-- USC: 1.0 ADD BEGIN --><h2 style="text-align: center;"><strong>Trouble logging in?</strong></h2>
+              <span style="color: #73000a;"><strong>Students, faculty, staff and affiliates:</strong></span>
+              <ul>
+                      <li>Use your <strong> <a href="https://scprod.service-now.com/kb_view.do?sysparm_article=KB0010883" style="text-decoration: underline;" target="_blank">network username</a></strong>.</li>
+                      <li>This is the first portion of your official university email address (before @mailbox.sc.edu or @email.sc.edu).</li>
+              </ul>
+              <span style="color: #73000a;"><strong>Applicants for admission, financial aid or students NOT currently enrolled:</strong></span>
+              <ul>
+                      <li>Use your  <strong><a href="https://scprod.service-now.com/kb_view.do?sysparm_article=KB0010882" style="text-decoration: underline;" target="_blank">VIPID.</a></strong></li>
+                      <li>This is the eight-digit number you were assigned when applying for admission or for financial aid.</li>
+              </ul>
+
+              <p><strong><span style="color: #73000a;">Continuing education students, non-USC users and non-traditional learning management system users </span></strong> should use their <strong><a href="https://sc.edu/auxiliaryid/" style="text-decoration: underline;" target="_blank">Blackboard Auxiliary ID.</a></strong></p>
+
+              <p>For security reasons, please log out and exit your web browser when you are finished accessing services that require authentication.</p>
+
+              <h2 style="text-align: center;"><strong>Access denied?</strong></h2>
+
+              <p>If you receive an ACCESS DENIED message, please visit <strong> <a href="https://myaccount.sc.edu" style="text-decoration: underline;" target="_blank">myaccount.sc.edu</a></strong> and click the Account Settings field to setup multifactor authentication.Step-by-step help to set up multifactor authentication can be found on <strong><a href="https://sc.edu/about/offices_and_divisions/division_of_information_technology/security/sc_technologies/mfa/index.php" style="text-decoration: underline;" target="_blank">DoIT’s website.</a></strong></p>
+	      <!-- USC: 1.0 ADD END --></div>
+        </div>
+        </div>
+    </div>
+        </section>
+        </div>
+</div>
+        </main>
+    </div>
+
+    <footer class="py-3 d-flex justify-content-center align-items-center cas-footer" id="casFooter" role="contentinfo">
+
+<!--USC: 1.0 DELETE BEGIN--><!--
+    <span id="copyright" th:utext="#{copyright}" class="me-2 d-inline-block">Copyright Apereo, Inc</span>
+    <span id="poweredBy" class="px-3 d-inline-block">
+        <span th:utext="#{poweredBy}">Powered by</span>
+        <a href="https://github.com/apereo/cas">Apereo CAS</a>
+    </span>
+--><!--USC: 1.0 DELETE END--><!--USC: 1.0 ADD BEGIN --><p align="center">For support, please contact the IT Service Desk at 803-777-1800</p>
+<!--USC: 1.0 ADD END --></footer>
+
+
+
+
+</body></html>

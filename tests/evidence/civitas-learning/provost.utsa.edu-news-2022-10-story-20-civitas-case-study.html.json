@@ -1,0 +1,286 @@
+{
+  "technology": "Civitas Learning",
+  "url": "https://provost.utsa.edu/news/2022/10/story/20-civitas-case-study.html",
+  "final_url": "https://provost.utsa.edu/news/2022/10/story/20-civitas-case-study.html",
+  "captured_at": "2026-04-21T19:35:08.427Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/civitas-learning/provost.utsa.edu-news-2022-10-story-20-civitas-case-study.html.html",
+  "evidence": {
+    "headers": {
+      "content-length": "20409",
+      "content-type": "text/html",
+      "date": "Tue, 21 Apr 2026 19:35:06 GMT",
+      "server": "Microsoft-IIS/10.0",
+      "x-powered-by": "ASP.NET"
+    },
+    "scripts": [
+      {
+        "src": "https://use.typekit.net/zhc2lla.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-T84MCX2",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-TMNVDW",
+        "version": null
+      },
+      {
+        "src": "https://www.utsa.edu/_files/js/wss.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://provost.utsa.edu/_files/js/global-092017.min.js",
+        "version": null
+      },
+      {
+        "src": "https://kit.fontawesome.com/e0ba4ccb6e.js",
+        "version": null
+      },
+      {
+        "src": "https://provost.utsa.edu/js/news.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "og:title": "UTSA achieves 16% retention lift with data-activated student support ecosystem",
+      "og:description": "Civitas Learning published a case study on UTSA's success increasing student retention and graduation rates.",
+      "og:article:published_time": "Thu Oct 20 10:00:00 CDT 2022",
+      "og:image": "https://provost.utsa.edu/news/2022/images/civitas-learning-340.png",
+      "og:image:height": "280",
+      "og:image:width": "340",
+      "id": "bfb95ea981736a2d0da7630639cacb24",
+      "viewport": "width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    },
+    "cookies": [],
+    "dom": {
+      "title": "Civitas Case Study: UTSA achieves 16% retention lift with data-activated student support ecosystem | Academic Affairs News | UTSA",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": " <!-- Google Tag Manager original --><script src=\"https://use.typekit.net/zhc2lla.js\" async=\"\"></script><script async=\"\" src=\"//www.googletagmanager.com/gtm.js?id=GTM-T84MCX2\"></script><script async=\"\" src=\"//www.googletagmanager.com/gtm.js?id=GTM-TMNVDW\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TMNVDW');</script><!-- End Google Tag Manager original-->  <!-- Google Tag Manager new --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T84MCX2');</script><!-- End Google Tag Manager new --> \n        <meta content=\"IE=9; IE=8; IE=7; IE=EDGE\" http-equiv=\"X-UA-Compatible\">\n        <meta content=\"text/html;charset=UTF-8\" http-equiv=\"Content-Type\">\n        <meta charset=\"utf-8\">\n           \n<meta content=\"UTSA achieves 16% retention lift with data-activated student support ecosystem\" property=\"og:title\">\n    <meta content=\"Civitas Learning published a case study on UTSA's success increasing student retention and graduation rates.\" property=\"og:description\">\n        <meta content=\"Thu Oct 20 10:00:00 CDT 2022\" property=\"og:article:published_time\">\n\n<meta content=\"\" property=\"keywords\">\n        <meta content=\"https://provost.utsa.edu/news/2022/images/civitas-learning-340.png\" property=\"og:image\">\n    <meta content=\"280\" property=\"og:image:height\">\n    <meta content=\"340\" property=\"og:image:width\">\n<meta content=\"bfb95ea981736a2d0da7630639cacb24\" name=\"id\">\n        <title>\n            Civitas Case Study: UTSA achieves 16% retention lift with data-activated student support ecosystem | Academic Affairs News | UTSA\n        </title>\n        \n\n\t\n\t<meta charset=\"UTF-8\">\n\t<meta content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\" name=\"viewport\">\n\t<meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\">\n\t\n\t<link href=\"/_files/css/global.min-072020.css\" rel=\"stylesheet\"><link rel=\"preload\" href=\"/_files/components/font-awesome/fonts/fa-brands-400.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"\"><link rel=\"preload\" href=\"/_files/components/font-awesome/fonts/fa-solid-900.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"\"><link rel=\"preload\" href=\"/_files/components/font-awesome/fonts/fa-regular-400.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"\">\n    \n\n\n\n\n\n\n        \n\t<link href=\"../../../../css/seed.css\" rel=\"stylesheet\">\n\t<link as=\"style\" href=\"../../../../css/print.css\" onload=\"this.onload=null;this.rel='stylesheet'\" rel=\"stylesheet\">\n\t<noscript>\n\t\t<link href=\"../../../../css/print.css\" media=\"print\" rel=\"stylesheet\"/>\n\t</noscript>\n\n        \n    ",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.5.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://provost.utsa.edu/wp-login.php",
+      "status": 200,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta content=\"IE=9; IE=8; IE=7; IE=EDGE\" http-equiv=\"X-UA-Compatible\"/>\r\n\t\t<meta content=\"text/html;charset=UTF-8\" http-equiv=\"Content-Type\"/>\r\n\t\t<meta charset=\"utf-8\"/>\r\n\t\t\r\n\t\t<title>\r\n\t\t\t404 - PAGE NOT FOUND | UTSA\r\n\r\n\t\t\r\n\t\t</title>\r\n\t\t\r\n\r\n\t\r\n\t<meta charset=\"UTF-8\"/>\r\n\t<meta content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\" name=\"viewport\"/>\r\n\t<meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\"/>\r\n\t\n\t<link href=\"/_files/css/global.min-072020"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://provost.utsa.edu/wp-json/wp/v2/",
+      "status": 200,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta content=\"IE=9; IE=8; IE=7; IE=EDGE\" http-equiv=\"X-UA-Compatible\"/>\r\n\t\t<meta content=\"text/html;charset=UTF-8\" http-equiv=\"Content-Type\"/>\r\n\t\t<meta charset=\"utf-8\"/>\r\n\t\t\r\n\t\t<title>\r\n\t\t\t404 - PAGE NOT FOUND | UTSA\r\n\r\n\t\t\r\n\t\t</title>\r\n\t\t\r\n\r\n\t\r\n\t<meta charset=\"UTF-8\"/>\r\n\t<meta content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\" name=\"viewport\"/>\r\n\t<meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\"/>\r\n\t\n\t<link href=\"/_files/css/global.min-072020"
+    },
+    "/wp-content/": {
+      "url": "https://provost.utsa.edu/wp-content/",
+      "status": 200,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta content=\"IE=9; IE=8; IE=7; IE=EDGE\" http-equiv=\"X-UA-Compatible\"/>\r\n\t\t<meta content=\"text/html;charset=UTF-8\" http-equiv=\"Content-Type\"/>\r\n\t\t<meta charset=\"utf-8\"/>\r\n\t\t\r\n\t\t<title>\r\n\t\t\t404 - PAGE NOT FOUND | UTSA\r\n\r\n\t\t\r\n\t\t</title>\r\n\t\t\r\n\r\n\t\r\n\t<meta charset=\"UTF-8\"/>\r\n\t<meta content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\" name=\"viewport\"/>\r\n\t<meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\"/>\r\n\t\n\t<link href=\"/_files/css/global.min-072020"
+    },
+    "/user/login": {
+      "url": "https://provost.utsa.edu/user/login",
+      "status": 200,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta content=\"IE=9; IE=8; IE=7; IE=EDGE\" http-equiv=\"X-UA-Compatible\"/>\r\n\t\t<meta content=\"text/html;charset=UTF-8\" http-equiv=\"Content-Type\"/>\r\n\t\t<meta charset=\"utf-8\"/>\r\n\t\t\r\n\t\t<title>\r\n\t\t\t404 - PAGE NOT FOUND | UTSA\r\n\r\n\t\t\r\n\t\t</title>\r\n\t\t\r\n\r\n\t\r\n\t<meta charset=\"UTF-8\"/>\r\n\t<meta content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\" name=\"viewport\"/>\r\n\t<meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\"/>\r\n\t\n\t<link href=\"/_files/css/global.min-072020"
+    },
+    "/core/install.php": {
+      "url": "https://provost.utsa.edu/core/install.php",
+      "status": 200,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta content=\"IE=9; IE=8; IE=7; IE=EDGE\" http-equiv=\"X-UA-Compatible\"/>\r\n\t\t<meta content=\"text/html;charset=UTF-8\" http-equiv=\"Content-Type\"/>\r\n\t\t<meta charset=\"utf-8\"/>\r\n\t\t\r\n\t\t<title>\r\n\t\t\t404 - PAGE NOT FOUND | UTSA\r\n\r\n\t\t\r\n\t\t</title>\r\n\t\t\r\n\r\n\t\r\n\t<meta charset=\"UTF-8\"/>\r\n\t<meta content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\" name=\"viewport\"/>\r\n\t<meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\"/>\r\n\t\n\t<link href=\"/_files/css/global.min-072020"
+    },
+    "/cas/login": {
+      "url": "https://provost.utsa.edu/cas/login",
+      "status": 200,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta content=\"IE=9; IE=8; IE=7; IE=EDGE\" http-equiv=\"X-UA-Compatible\"/>\r\n\t\t<meta content=\"text/html;charset=UTF-8\" http-equiv=\"Content-Type\"/>\r\n\t\t<meta charset=\"utf-8\"/>\r\n\t\t\r\n\t\t<title>\r\n\t\t\t404 - PAGE NOT FOUND | UTSA\r\n\r\n\t\t\r\n\t\t</title>\r\n\t\t\r\n\r\n\t\r\n\t<meta charset=\"UTF-8\"/>\r\n\t<meta content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\" name=\"viewport\"/>\r\n\t<meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\"/>\r\n\t\n\t<link href=\"/_files/css/global.min-072020"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://provost.utsa.edu/Shibboleth.sso/Metadata",
+      "status": 200,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta content=\"IE=9; IE=8; IE=7; IE=EDGE\" http-equiv=\"X-UA-Compatible\"/>\r\n\t\t<meta content=\"text/html;charset=UTF-8\" http-equiv=\"Content-Type\"/>\r\n\t\t<meta charset=\"utf-8\"/>\r\n\t\t\r\n\t\t<title>\r\n\t\t\t404 - PAGE NOT FOUND | UTSA\r\n\r\n\t\t\r\n\t\t</title>\r\n\t\t\r\n\r\n\t\r\n\t<meta charset=\"UTF-8\"/>\r\n\t<meta content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\" name=\"viewport\"/>\r\n\t<meta content=\"ie=edge\" http-equiv=\"x-ua-compatible\"/>\r\n\t\n\t<link href=\"/_files/css/global.min-072020"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "IIS",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Microsoft-IIS"
+      ]
+    },
+    {
+      "name": "Microsoft ASP.NET",
+      "confidence": 80,
+      "evidence": [
+        "Header: X-Powered-By=^ASP\\.NET"
+      ]
+    },
+    {
+      "name": "ASP.NET",
+      "confidence": 80,
+      "evidence": [
+        "Header: x-powered-by=ASP.NET"
+      ]
+    },
+    {
+      "name": "Civitas Learning",
+      "confidence": 80,
+      "evidence": [
+        "HTML: civitas.*learning",
+        "HTML: civitaslearning"
+      ]
+    },
+    {
+      "name": "Adobe Fonts",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "Google Workspace",
+      "confidence": 40,
+      "evidence": [
+        "HTML: g.*suite"
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "Typekit",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "Econda",
+      "confidence": 30,
+      "evidence": [
+        "JS: econda (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Ellucian Banner",
+      "confidence": 30,
+      "evidence": [
+        "JS: Banner (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 30,
+      "evidence": [
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

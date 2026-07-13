@@ -1,0 +1,500 @@
+{
+  "technology": "Jenzabar",
+  "url": "https://my.greenville.edu",
+  "final_url": "https://my.greenville.edu/ics",
+  "captured_at": "2026-04-21T19:34:16.289Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/jenzabar/my.greenville.edu.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "private",
+      "content-length": "32242",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:34:12 GMT",
+      "server": "Microsoft-IIS/10.0",
+      "service-worker-allowed": "/",
+      "set-cookie": "ASP.NET_SessionId=pr45efz5itdqdj3z3hxwq0mh; path=/; secure; HttpOnly; SameSite=Lax\n.sessionheartbeat=0; expires=Sun, 22-Mar-2026 19:34:12 GMT; path=/; secure; HttpOnly"
+    },
+    "scripts": [
+      {
+        "src": "https://www.google-analytics.com/analytics.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-T6B45B944X&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=AW-847910505&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=UA-2348897-1&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://www.google-analytics.com/analytics.js",
+        "version": null
+      },
+      {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js",
+        "version": null
+      },
+      {
+        "src": "https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js",
+        "version": null
+      },
+      {
+        "src": "https://my.greenville.edu/ICS/portlets/cus/ics/BCProxyLogin/Scripts/ProxyLogin.js",
+        "version": null
+      },
+      {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/signalr.js/2.4.0/jquery.signalR.min.js?v=2024.2.0.4",
+        "version": null
+      },
+      {
+        "src": "https://my.greenville.edu/ICS/signalr/hubs?v=2024.2.0.4",
+        "version": null
+      },
+      {
+        "src": "https://my.greenville.edu/ICS/UI/Common/Scripts/tinymce/plugins/moxiemanager/js/moxman.loader.min.js?v=2024.2.0.4",
+        "version": null
+      },
+      {
+        "src": "https://my.greenville.edu/ICS/UI/Common/Scripts/jcsfl.js",
+        "version": null
+      },
+      {
+        "src": "https://my.greenville.edu/ICS/UI/Common/Scripts/site-bundle.js?v=G8t2ipwn4sgFF3kB4JWJ8BDMWqRQj2xmQmT7y6KxXNk1",
+        "version": null
+      },
+      {
+        "src": "https://my.greenville.edu/ICS/UI/Common/Scripts/SignalRManager.js?v=2024.2.0.4",
+        "version": null
+      },
+      {
+        "src": "https://my.greenville.edu/ICS/UI/Common/Scripts/LayoutManager.js?v=2024.2.0.4",
+        "version": null
+      },
+      {
+        "src": "https://my.greenville.edu/ICS/UI/Common/Scripts/Globalization.js.aspx?id=8659790fcae44454aaf16f2d28a1f36b",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=UA-1544454-1",
+        "version": null
+      },
+      {
+        "src": "https://my.greenville.edu/ICSFileServer/Themes/myGU2022/js/javascript.js?v=1",
+        "version": null
+      },
+      {
+        "src": "https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js",
+        "version": null
+      },
+      {
+        "src": "https://s3.amazonaws.com/assets.freshdesk.com/widget/html2canvas.js?ver=2",
+        "version": "2"
+      },
+      {
+        "src": "https://my.greenville.edu/ICS/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1LXeIrCAf1xzCRAnkew7Da2V8QU5uKSfGBYMKTK5JBCfYF08x682qv-l_ktNasbeBTMq-d44kSAu82XArxSLy9l6nZBWfNNyuAj0DLjWBVk5f0&t=245582f9",
+        "version": null
+      },
+      {
+        "src": "https://my.greenville.edu/ICS/UI/Common/Scripts/jquery.lightbox.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    },
+    "cookies": [
+      {
+        "name": "_ga",
+        "value": "GA1.2.191297180.1776800055",
+        "domain": ".greenville.edu"
+      },
+      {
+        "name": ".sessionheartbeat",
+        "value": "4/21/2026 2:54:13 PM",
+        "domain": "my.greenville.edu"
+      },
+      {
+        "name": "_gat_gtag_UA_2348897_1",
+        "value": "1",
+        "domain": ".greenville.edu"
+      },
+      {
+        "name": "_gid",
+        "value": "GA1.2.1688126925.1776800055",
+        "domain": ".greenville.edu"
+      },
+      {
+        "name": "_gcl_au",
+        "value": "1.1.879409357.1776800056",
+        "domain": ".greenville.edu"
+      },
+      {
+        "name": "ASP.NET_SessionId",
+        "value": "pr45efz5itdqdj3z3hxwq0mh",
+        "domain": "my.greenville.edu"
+      },
+      {
+        "name": "_gat_gtag_UA_1544454_1",
+        "value": "1",
+        "domain": ".greenville.edu"
+      }
+    ],
+    "dom": {
+      "title": "Welcome to my.Greenville! - Main View | Home | Portal",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=EDGE\"><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=5.0\"><title>\n\tWelcome to my.Greenville! - Main View | Home | Portal\n</title><base href=\"https://my.greenville.edu/ICS/\">\n<script type=\"text/javascript\" async=\"\" src=\"https://www.google-analytics.com/analytics.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-T6B45B944X&amp;cx=c&amp;gtm=4e64h1\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=AW-847910505&amp;cx=c&amp;gtm=4e64h1\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=UA-2348897-1&amp;cx=c&amp;gtm=4e64h1\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.google-analytics.com/analytics.js\"></script><script type=\"text/javascript\">\n    window.jenzabar = {};\n    jenzabar.userSettings = {\n        culture:    'en-US',\n        language:   'en',\n        dateFormat: 'm/d/yy'\n    };\n    window.userSettings = jenzabar.userSettings;\n\n    jenzabar.jicsVersion = {\n        text: {\n\t        version: '?v=' + '2024.2.0.4'\n        }\n    }\n    jenzabar.siteSettings = {\n        textEditorSettings: {\n            customAudioMinutesLimit: 5,\n            customVideoMinutesLimit: 5\n        },\n        text: {\n            more: 'More'\n        }\n    };\n</script>\n\n<!-- BEGIN Html Head Elements -->\n<script type=\"text/javascript\" src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js\"></script>\n<script type=\"text/javascript\" src=\"//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js\"></script>\n<script src=\"//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js\" integrity=\"sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd\" crossorigin=\"anonymous\"></script>\n<script type=\"text/javascript\" src=\"//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js\"></script>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/ICS/UI/Common/Styles/jQuery/jquery-ui.custom.css\">\n<link href=\"//fonts.googleapis.com/css?family=Open+Sans:400,600,700\" rel=\"stylesheet\" type=\"text/css\">\n<link href=\"//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css\" rel=\"stylesheet\" type=\"text/css\">\n<link rel=\"stylesheet\" href=\"//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\" integrity=\"sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu\" crossorigin=\"anonymous\">\n<script type=\"text/javascript\" src=\"portlets/cus/ics/BCProxyLogin/Scripts/ProxyLogin.js\"></script>\n\t\t\t<link type=\"text/css\" rel=\"stylesheet\" href=\"portlets/cus/ics/BCProxyLogin/Styles/ProxyLoginStyles.css\">\n<script type=\"text/javascript\" src=\"//cdnjs.cloudflare.com/ajax/libs/signalr.js/2.4.0/jquery.signalR.min.js?v=2024.2.0.4\"></script>\n<script type=\"text/javascript\" src=\"/ICS/signalr/hubs?v=2024.2.0.4\"></script>\n<script type=\"text/javascript\" src=\"/ICS/UI/Common/Scripts/tinymce/plugins/moxiemanager/js/moxman.loader.min.js?v=2024.2.0.4\"></script>\n<!-- END Html Head Elements -->\n\n<link href=\"/ICS/UI/Common/Styles/css/site-bundle.css?v=zWsuAXRi2STtsssWM609bnyMnq9gGYfnKtwjufy33Ho1\" rel=\"stylesheet\">\n\n\n\n<link rel=\"stylesheet\" type=\"text/css\" media=\"print\" href=\"/ICS/UI/Common/Styles/print.css\">\n\n\n<script type=\"text/javascript\" src=\"/ICS/UI/Common/Scripts/jcsfl.js\"></script>\n<script src=\"/ICS/UI/Common/Scripts/site-bundle.js?v=G8t2ipwn4sgFF3kB4JWJ8BDMWqRQj2xmQmT7y6KxXNk1\"></script>\n\n\n<!-- BEGIN Html Head Elements After JICS JS Framework -->\n<script type=\"text/javascript\" src=\"/ICS/UI/Common/Scripts/SignalRManager.js?v=2024.2.0.4\"></script>\n<script type=\"text/javascript\" src=\"/ICS/UI/Common/Scripts/LayoutManager.js?v=2024.2.0.4\"></script>\n<!-- END Html Head Elements After JICS JS Framework -->\n\n<script type=\"text/javascript\" src=\"/ICS/UI/Common/Scripts/Globalization.js.aspx?id=8659790fcae44454aaf16f2d28a1f36b\"></script>\n<!--[if IE]>\n<style type=\"text/css\" media=\"all\">@import url( UI/Common/Styles/IEOnly.css );</style>\n<script type=\"text/javascript\" language=\"JavaScript\" src=\"UI/Common/Scripts/IEOnly.js\"></SCRIPT>\n<![endif]-->\n<script type=\"text/javascript\">\n    window.Portal =\n    {\n        url: 'https://my.greenville.edu/ICS/',\n        uid: null,\n    };\n</script>\n\n\n<script type=\"text/javascript\">\n    $.extend(window.Portal,{\n        timeout: 20,\n        SessionMonitor: JCSL.JICS.get_session_monitor()\n        \n    });\n</script>\n\n<script type=\"text/javascript\">\n    jQuery(function () {\n        jenzabar.framework.timeoutWarning.create(true);\n    });\n</script>\n<script type=\"text/javascript\" language=\"javascript\">\n\n    $.connection.portalHub.client.sendLoginWarning = function (userId) {\n        let id = \"b0b00000-c542-4d2a-86e6-55ebbbcd85da\";\n        if (id === userId) {\n            alert(\"Your username has been used to authenticate in another browser.  If you are not responsible for this login, your account may be compromised!  Contact an administrator for assistance.\");\n        }\n    }\n\n</script><link rel=\"stylesheet\" type=\"text/css\" href=\"/ICSFileServer/Themes/myGU2022/style.css?v=1&amp;u=04%2f21%2f2026+14%3a34%3a12\">\n\n<style id=\"customCssImport_custom\" type=\"text/css\" media=\"all\">\n\t@import url( /ICS/StaticPages/GetFile.aspx?target=be7884da-8f42-4016-b362-9c70b7f95a83);\n</style>\n<link rel=\"Shortcut Icon\" href=\"favicon.ico\" type=\"image/x-icon\">\n\n<style id=\"customHead_custom\" type=\"text/css\" media=\"all\">@import url( /ICS/ClientConfig/HtmlContent/custom-bundle.css?v=);</style>\n\n<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=UA-1544454-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-1544454-1'); //greenville.edu aggregate\n   gtag('config', 'UA-2348897-1'); //my.greenville.edu only\n  gtag('config', 'AW-847910505');\n\n</script>\n\n<!-- ga tracking code -->\n<script type=\"text/javascript\">\n/* replaced 10-27-17 with gtag.js\n  var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-2348897-1']);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n  })();\n*/\n</script>\n\n<script>\n\t/* replaced 10-27-17 with gtag.js\n\t<!-- ga tag tracking code -->\n  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n\n  ga('create', 'UA-1544454-1', 'greenville.edu' , {'allowLinker': true});\n  ga('require', 'linker');\n  ga('linker:autoLink', ['gogreenvillecollege.org','wgrn.net','emapnation.com','greenvillecollegegear.com','blackroom-records.com']);\n  ga('send', 'pageview');\n\t*/\n</script>\n\n<script type=\"text/javascript\" src=\"/ICSFileServer/Themes/myGU2022/js/javascript.js?v=1\"></script>\n\n<script type=\"text/javascript\" src=\"https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js\"></script>\n<script type=\"text/javascript\">\n\tFreshWidget.init(\"\", {\"queryString\": \"&widgetType=popup&submitThanks=Thank+you+for+submitting+your+request.+One+of+our+staff+will+be+in+touch+soon.\", \"utf8\": \"âœ“\", \"widgetType\": \"popup\", \"buttonType\": \"text\", \"buttonText\": \"Campus Services Support\", \"buttonColor\": \"#f1f1f1\", \"buttonBg\": \"#2370B3\", \"alignment\": \"2\", \"offset\": \"400px\", \"submitThanks\": \"Thank you for submitting your request. One of our staff will be in touch soon.\", \"formHeight\": \"500px\", \"url\": \"https://campusservices.greenville.edu\"} ); \n</script><script type=\"text/javascript\" src=\"https://s3.amazonaws.com/assets.freshdesk.com/widget/html2canvas.js?ver=2\"></script><link rel=\"stylesheet\" type=\"text/css\" href=\"https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.css?ver=2\"><script type=\"text/javascript\" async=\"\" src=\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/847910505/?random=1776800055510&amp;cv=11&amp;fst=1776800055510&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be64h1v873236229za200xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115938466~115938468~117266401&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fmy.greenville.edu%2Fics&amp;rcb=6&amp;frm=0&amp;tiba=Welcome%20to%20my.Greenville!%20-%20Main%20View%20%7C%20Home%20%7C%20Portal&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=879409357.1776800056&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.6.4",
+      "bootstrap": "3.4.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://my.greenville.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://my.greenville.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/wp-content/": {
+      "url": "https://my.greenville.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/user/login": {
+      "url": "https://my.greenville.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/core/install.php": {
+      "url": "https://my.greenville.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/cas/login": {
+      "url": "https://my.greenville.edu/cas/login",
+      "status": 301,
+      "redirect_to": "https://my.greenville.edu/cas/login/",
+      "body_excerpt": "<head><title>Document Moved</title></head>\n<body><h1>Object Moved</h1>This document may be found <a HREF=\"https://my.greenville.edu/cas/login/\">here</a></body>"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://my.greenville.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 100,
+      "evidence": [
+        "HTML: google-analytics\\.com/analytics\\.js",
+        "HTML: gtag\\(",
+        "HTML: ga\\("
+      ]
+    },
+    {
+      "name": "Jenzabar",
+      "confidence": 100,
+      "evidence": [
+        "HTML: jenzabar",
+        "HTML: jics",
+        "HTML: jenzabar.*ics",
+        "HTML: jenzabar.*ex",
+        "HTML: /ICS",
+        "HTML: /ICS/",
+        "HTML: \\.edu/ICS",
+        "JS: Jenzabar (HTML)",
+        "JS: JICS (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "HTML: gtag\\('js'",
+        "JS: gtag (HTML)",
+        "JS: GoogleAnalyticsObject (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "IIS",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Microsoft-IIS"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 70,
+      "evidence": [
+        "HTML: campus.*solutions",
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Canvas LMS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ENV.*COURSE"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 40,
+      "evidence": [
+        "HTML: googletagmanager\\.com"
+      ]
+    },
+    {
+      "name": "Microsoft ASP.NET",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <input[^>]+name=\"__VIEWSTATE"
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "ASP.NET",
+      "confidence": 40,
+      "evidence": [
+        "HTML: __doPostBack"
+      ]
+    },
+    {
+      "name": "PowerCampus",
+      "confidence": 40,
+      "evidence": [
+        "HTML: eCollege"
+      ]
+    },
+    {
+      "name": "Localist",
+      "confidence": 40,
+      "evidence": [
+        "HTML: event.*calendar"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "FAST Financial Aid",
+      "confidence": 40,
+      "evidence": [
+        "HTML: fast.*financial.*aid"
+      ]
+    },
+    {
+      "name": "Oracle PeopleSoft Campus Solutions",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*solutions"
+      ]
+    },
+    {
+      "name": "SAML",
+      "confidence": 40,
+      "evidence": [
+        "HTML: saml"
+      ]
+    },
+    {
+      "name": "Adobe Experience Manager",
+      "confidence": 30,
+      "evidence": [
+        "JS: CQ (HTML)"
+      ]
+    },
+    {
+      "name": "AitThemes",
+      "confidence": 30,
+      "evidence": [
+        "JS: ait (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "mOxie",
+      "confidence": 30,
+      "evidence": [
+        "JS: moxie (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Sitecore",
+      "confidence": 30,
+      "evidence": [
+        "JS: _sc (HTML)"
+      ]
+    },
+    {
+      "name": "TinyMCE",
+      "confidence": 30,
+      "evidence": [
+        "JS: tinymce (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "D2L Brightspace",
+      "confidence": 30,
+      "evidence": [
+        "JS: D2L (HTML)"
+      ]
+    },
+    {
+      "name": "Workday Student",
+      "confidence": 30,
+      "evidence": [
+        "JS: WD (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

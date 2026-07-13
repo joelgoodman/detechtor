@@ -1,4 +1,6 @@
 const puppeteer = require('puppeteer');
+const https     = require('https');
+const http      = require('http');
 const fs = require('fs-extra');
 const path = require('path');
 const config = require('./config');
@@ -99,6 +101,28 @@ class DeTECHtor {
         }
       }
       
+      // Probe derived subdomains/paths (catalog, events, apply, etc.)
+      // Each is checked with a lightweight HTTP request first; only resolved
+      // URLs get a full Puppeteer evidence pass.
+      const derivedResults = await this.scanDerivedProbes(url);
+      allDetected = [...allDetected, ...derivedResults];
+
+      // Probe admin/API paths that are never linked from public pages
+      const probeEvidence = await this.probePaths(url);
+      if (probeEvidence.length > 0) {
+        const probeDetected = this.matchPatterns({
+          html: probeEvidence.map(p => p.body).join('\n'),
+          headers: probeEvidence.reduce((acc, p) => Object.assign(acc, p.headers), {}),
+          scripts: [],
+          meta: {},
+          cookies: [],
+          dom: { jsObjects: {} },
+          apiEndpoints: probeEvidence.filter(p => p.status === 200).map(p => p.path),
+          versionInfo: {},
+        });
+        allDetected = [...allDetected, ...probeDetected];
+      }
+
       // Deduplicate and merge results
       const mergedTechnologies = this.mergeTechnologies(allDetected);
       const inferredStack = this.inferTechnologyStack(mergedTechnologies);
@@ -722,7 +746,10 @@ class DeTECHtor {
       for (const scriptPattern of scriptPatterns) {
         try {
           const regex = new RegExp(scriptPattern, 'i');
-          const match = evidence.scripts.some(src => regex.test(src));
+          // evidence.scripts is an array of { src, version } objects (see collectEvidence);
+          // test the regex against the src STRING, not the object (which stringifies to
+          // "[object Object]" and never matches). Tolerate a plain-string element too. UNI-139.
+          const match = evidence.scripts.some(s => regex.test(typeof s === 'string' ? s : (s && s.src) || ''));
           if (match) {
             confidence += 60;
             matchEvidence.push(`Script: ${scriptPattern}`);
@@ -791,20 +818,18 @@ class DeTECHtor {
       }
     }
     
-    // JavaScript object detection (webappanalyzer format)
+    // JavaScript object detection (webappanalyzer format).
+    // RUNTIME PRESENCE ONLY: a JS global actually existing in the live page is real
+    // evidence (+80). We deliberately do NOT fall back to an HTML substring search on
+    // the object's name — that produced the false-positive flood, because bare tokens
+    // (`s`->Adobe Analytics, `va`->Vercel, `wp`, `ga`, `PS`, `Banner`) appear as
+    // substrings in nearly every page's HTML. A name is not evidence; presence is. UNI-139.
     if (pattern.js && typeof pattern.js === 'object') {
       for (const jsObject of Object.keys(pattern.js)) {
         try {
-          // Check if JS object exists in DOM evidence
-          const jsExists = evidence.dom.jsObjects && evidence.dom.jsObjects[jsObject];
-          if (jsExists) {
+          if (evidence.dom.jsObjects && evidence.dom.jsObjects[jsObject]) {
             confidence += 80;
             matchEvidence.push(`JS: ${jsObject}`);
-          }
-          // Fallback to HTML content search
-          else if (evidence.html.includes(jsObject)) {
-            confidence += 30;
-            matchEvidence.push(`JS: ${jsObject} (HTML)`);
           }
         } catch (error) {
           if (config.verbose) {
@@ -893,6 +918,117 @@ class DeTECHtor {
     return version;
   }
   
+  // For each derived probe prefix, construct a subdomain URL and a path URL,
+  // do a quick HTTP check on both, and run a full Puppeteer scan on whichever
+  // resolves first. Skips if the resolved URL is the same domain already scanned.
+  async scanDerivedProbes(siteUrl) {
+    if (!config.derivedProbes || config.derivedProbes.length === 0) return [];
+
+    let parsed;
+    try { parsed = new URL(siteUrl); } catch { return []; }
+
+    // Extract root domain (strip www. prefix)
+    const hostname  = parsed.hostname.replace(/^www\./, '');
+    const protocol  = parsed.protocol;
+    const allDetected = [];
+
+    for (const prefix of config.derivedProbes) {
+      const candidates = [
+        `${protocol}//${prefix}.${hostname}/`,
+        `${protocol}//${parsed.hostname}/${prefix}/`,
+      ];
+
+      for (const candidate of candidates) {
+        // Skip if it's just the site we already scanned
+        if (candidate === siteUrl || candidate === siteUrl + '/') continue;
+
+        // Lightweight check first — don't spin up Puppeteer for a 404
+        const reachable = await new Promise(resolve => {
+          const mod = candidate.startsWith('https') ? https : http;
+          const req = mod.get(candidate, { rejectUnauthorized: false,
+            headers: { 'User-Agent': config.userAgent } }, res => {
+            resolve(res.statusCode < 400 || res.statusCode === 401 || res.statusCode === 403);
+          });
+          req.on('error', () => resolve(false));
+          req.setTimeout(5000, () => { req.destroy(); resolve(false); });
+        });
+
+        if (!reachable) continue;
+
+        if (config.verbose) {
+          console.log(`  derived probe resolved: ${candidate}`);
+        }
+
+        try {
+          const page = await this.browser.newPage();
+          const result = await this.scanSinglePage(page, candidate, true);
+          allDetected.push(...result.technologies);
+          await page.close();
+        } catch {
+          // Probe failed (auth wall, timeout, etc.) — skip silently
+        }
+
+        break; // Found one that works for this prefix — don't try the path variant
+      }
+    }
+
+    return allDetected;
+  }
+
+  // Probe paths are fetched directly (no browser) to detect admin/API endpoints
+  // that are never linked from public pages (headless CMS backends, SSO portals, REST APIs).
+  async probePaths(siteUrl) {
+    if (!config.probePaths || config.probePaths.length === 0) return [];
+
+    let origin;
+    try {
+      origin = new URL(siteUrl).origin;
+    } catch {
+      return [];
+    }
+
+    const results = [];
+
+    for (const probePath of config.probePaths) {
+      const target = origin + probePath;
+      try {
+        const result = await new Promise((resolve) => {
+          const mod = target.startsWith('https') ? https : http;
+          const timer = setTimeout(() => resolve(null), 6000);
+          const req = mod.get(target, {
+            headers: { 'User-Agent': config.userAgent },
+            rejectUnauthorized: false,
+          }, res => {
+            clearTimeout(timer);
+            let body = '';
+            res.on('data', chunk => { if (body.length < 8192) body += chunk; });
+            res.on('end', () => resolve({
+              path: probePath,
+              url: target,
+              status: res.statusCode,
+              headers: res.headers,
+              body,
+            }));
+          });
+          req.on('error', () => { clearTimeout(timer); resolve(null); });
+          req.setTimeout(6000, () => { req.destroy(); clearTimeout(timer); resolve(null); });
+        });
+
+        // A 200 or redirect is useful evidence; 404/403 is noise
+        if (result && (result.status === 200 || result.status === 301 || result.status === 302)) {
+          results.push(result);
+          if (config.verbose) {
+            console.log(`  probe ${target} → ${result.status}`);
+          }
+        }
+      } catch {
+        // Ignore probe errors — these are best-effort
+      }
+    }
+
+    return results;
+  }
+
   async shutdown() {
     if (this.browser) {
       await this.browser.close();

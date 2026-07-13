@@ -1,0 +1,110 @@
+{
+  "technology": "TouchNet",
+  "url": "https://secure.touchnet.net/C20099_tsa/web/",
+  "final_url": "https://secure.touchnet.net/C20099_tsa/web/",
+  "captured_at": "2026-04-21T19:36:18.725Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/touchnet/secure.touchnet.net-c20099-tsa-web.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "no-cache",
+      "connection": "Keep-Alive",
+      "content-encoding": "gzip",
+      "content-length": "503",
+      "content-type": "text/html;charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:36:18 GMT",
+      "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "keep-alive": "timeout=5, max=100",
+      "pragma": "no-cache",
+      "server": "TouchNet",
+      "set-cookie": "JSESSIONID=084DA0F6EE485526589B6E2A32B202F3.sl2f1ln1; Max-Age=900; Expires=Tue, 21 Apr 2026 19:51:18 GMT; Path=/C20099_tsa/; Secure; HttpOnly",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "vary": "Accept-Encoding"
+    },
+    "scripts": [],
+    "meta": {},
+    "cookies": [],
+    "dom": {},
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://secure.touchnet.net/wp-login.php",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /><title>ERROR: HTTP 403</title><link href=\"/errors/e.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" /></head><body><div class=\"error\"><div class=\"errorContent\"><h1>ERROR: HTTP 403</h1><p>Your browser either requested a resource that is access-restricted, or has sent inval"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://secure.touchnet.net/wp-json/wp/v2/",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /><title>ERROR: HTTP 403</title><link href=\"/errors/e.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" /></head><body><div class=\"error\"><div class=\"errorContent\"><h1>ERROR: HTTP 403</h1><p>Your browser either requested a resource that is access-restricted, or has sent inval"
+    },
+    "/wp-content/": {
+      "url": "https://secure.touchnet.net/wp-content/",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /><title>ERROR: HTTP 403</title><link href=\"/errors/e.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" /></head><body><div class=\"error\"><div class=\"errorContent\"><h1>ERROR: HTTP 403</h1><p>Your browser either requested a resource that is access-restricted, or has sent inval"
+    },
+    "/user/login": {
+      "url": "https://secure.touchnet.net/user/login",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /><title>ERROR: HTTP 403</title><link href=\"/errors/e.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" /></head><body><div class=\"error\"><div class=\"errorContent\"><h1>ERROR: HTTP 403</h1><p>Your browser either requested a resource that is access-restricted, or has sent inval"
+    },
+    "/core/install.php": {
+      "url": "https://secure.touchnet.net/core/install.php",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /><title>ERROR: HTTP 403</title><link href=\"/errors/e.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" /></head><body><div class=\"error\"><div class=\"errorContent\"><h1>ERROR: HTTP 403</h1><p>Your browser either requested a resource that is access-restricted, or has sent inval"
+    },
+    "/cas/login": {
+      "url": "https://secure.touchnet.net/cas/login",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /><title>ERROR: HTTP 403</title><link href=\"/errors/e.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" /></head><body><div class=\"error\"><div class=\"errorContent\"><h1>ERROR: HTTP 403</h1><p>Your browser either requested a resource that is access-restricted, or has sent inval"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://secure.touchnet.net/Shibboleth.sso/Metadata",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /><title>ERROR: HTTP 403</title><link href=\"/errors/e.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" /></head><body><div class=\"error\"><div class=\"errorContent\"><h1>ERROR: HTTP 403</h1><p>Your browser either requested a resource that is access-restricted, or has sent inval"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "TouchNet",
+      "confidence": 100,
+      "evidence": [
+        "HTML: touchnet",
+        "HTML: secure\\.touchnet\\.net",
+        "HTML: /C\\d+_tsa/",
+        "Header: server=TouchNet"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

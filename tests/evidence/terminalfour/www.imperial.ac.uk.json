@@ -1,0 +1,422 @@
+{
+  "technology": "TerminalFour",
+  "url": "https://www.imperial.ac.uk/",
+  "final_url": "https://www.imperial.ac.uk/",
+  "captured_at": "2026-04-21T19:27:50.837Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/terminalfour/www.imperial.ac.uk.html",
+  "evidence": {
+    "headers": {
+      "age": "155",
+      "cache-control": "max-age=300",
+      "content-encoding": "gzip",
+      "content-length": "9764",
+      "content-security-policy": "frame-ancestors 'self' *.imperial.ac.uk *.ic.ac.uk",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:27:46 GMT",
+      "expires": "Tue, 21 Apr 2026 19:30:12 GMT",
+      "http_x_icbs_proxy": "True",
+      "permissions-policy": "geolocation=(), microphone=(), camera=()",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "Microsoft-IIS/10.0",
+      "set-cookie": "AWSALBTG=GucHPgxoniRPNy9QL9uDD2+rdtipaGIF9tOmxbUIOdW78L+Akzx+X3bBvjsWCelndcC3fvZT4aATSDslOadWehnHJG8vexgmN2P8gIzzVYwGlKRd+7gK21IjuYv8hXRRzfMX2p+KvOUXOciRNwyDgBPPA31TNu9mE4V756F/KF39gEq5Ano=; Expires=Tue, 28 Apr 2026 19:25:12 GMT; Path=/\nAWSALBTGCORS=GucHPgxoniRPNy9QL9uDD2+rdtipaGIF9tOmxbUIOdW78L+Akzx+X3bBvjsWCelndcC3fvZT4aATSDslOadWehnHJG8vexgmN2P8gIzzVYwGlKRd+7gK21IjuYv8hXRRzfMX2p+KvOUXOciRNwyDgBPPA31TNu9mE4V756F/KF39gEq5Ano=; Expires=Tue, 28 Apr 2026 19:25:12 GMT; Path=/; SameSite=None; Secure\nAWSALB=SzhKvnFi0c19Eb7p5UZVrq0BMnncDXuGC6hP8NYvottHfjbC8/kpj4HGBgRd2ARo8r1agUc7R2Ew1qnHXlp8TYBISZ5KyaSqrF8pWk3FscH7RoSKTgzANvkGT1+j; Expires=Tue, 28 Apr 2026 19:25:12 GMT; Path=/\nAWSALBCORS=SzhKvnFi0c19Eb7p5UZVrq0BMnncDXuGC6hP8NYvottHfjbC8/kpj4HGBgRd2ARo8r1agUc7R2Ew1qnHXlp8TYBISZ5KyaSqrF8pWk3FscH7RoSKTgzANvkGT1+j; Expires=Tue, 28 Apr 2026 19:25:12 GMT; Path=/; SameSite=None; Secure",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "vary": "Accept-Encoding",
+      "via": "1.1 2eaa79fbb5efbb9ba1be5c5f5e4bd52e.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "xWZQS7T4Dgm34hoF0uiFtyAbLwMj4jZMeMxihCp8KOmGV0ENLcflWQ==",
+      "x-amz-cf-pop": "LHR95-P2",
+      "x-cache": "Hit from cloudfront",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-powered-by": "ARR/3.0"
+    },
+    "scripts": [
+      {
+        "src": "https://browser.sentry-cdn.com/8.33.0/bundle.min.js",
+        "version": null
+      },
+      {
+        "src": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-LME5ZDDFS0&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=AW-17946844669&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=AW-11002703160&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-NDH95W87",
+        "version": null
+      },
+      {
+        "src": "https://cdn-ukwest.onetrust.com/consent/6d9efb9d-b605-406f-b8b3-c9644859d064/OtAutoBlock.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js",
+        "version": null
+      },
+      {
+        "src": "https://www.imperial.ac.uk/assets/website/js/lib/jquery3.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn-ukwest.onetrust.com/scripttemplates/202511.1.0/otBannerSdk.js",
+        "version": null
+      },
+      {
+        "src": "https://www.imperial.ac.uk/assets/website/js/build/application.2.3.5.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.imperial.ac.uk/assets/website/js/require/vendor/jquery3-migrate.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "sectiontype": "website",
+      "twitter:dnt": "on",
+      "twitter:card": "summary",
+      "twitter:site": "@imperialcollege",
+      "twitter:title": "Home",
+      "twitter:description": "Imperial College London is a world-leading university for science, technology, engineering, medicine and business (STEMB). Across our London campuses, and throughout our international network, we use science to tackle global challenges.",
+      "twitter:image": "https://www.imperial.ac.uk/T4Assets/favicon-196x196.png",
+      "fb:app_id": "674884772674087",
+      "og:title": "Home",
+      "og:type": "website",
+      "og:image": "https://www.imperial.ac.uk/T4Assets/favicon-196x196.png",
+      "og:image:type": "image/png",
+      "og:image:secure_url": "https://www.imperial.ac.uk/T4Assets/favicon-196x196.png",
+      "og:image:width": "200",
+      "og:image:height": "200",
+      "og:url": "https://www.imperial.ac.uk/",
+      "og:description": "Imperial College London is a world-leading university for science, technology, engineering, medicine and business (STEMB). Across our London campuses, and throughout our international network, we use science to tackle global challenges.",
+      "og:locale": "en_GB",
+      "og:site_name": "Imperial College London",
+      "description": "Imperial College London is a world-leading university for science, technology, engineering, medicine and business (STEMB). Across our London campuses, and throughout our international network, we use science to tackle global challenges.",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "msapplication-tilecolor": "#C8D8E4",
+      "msapplication-tileimage": "/assets/website/images/favicon/favicon-144.png",
+      "msapplication-config": "/assets/website/images/favicon/browserconfig.xml",
+      "searchlanding": "true",
+      "lastmodified": "2026-04-21T14:41:11Z"
+    },
+    "cookies": [
+      {
+        "name": "AWSALBCORS",
+        "value": "SzhKvnFi0c19Eb7p5UZVrq0BMnncDXuGC6hP8NYvottHfjbC8/kpj4HGBgRd2ARo",
+        "domain": "www.imperial.ac.uk"
+      },
+      {
+        "name": "AWSALBTGCORS",
+        "value": "GucHPgxoniRPNy9QL9uDD2+rdtipaGIF9tOmxbUIOdW78L+Akzx+X3bBvjsWCeln",
+        "domain": "www.imperial.ac.uk"
+      },
+      {
+        "name": "AWSALBTG",
+        "value": "GucHPgxoniRPNy9QL9uDD2+rdtipaGIF9tOmxbUIOdW78L+Akzx+X3bBvjsWCeln",
+        "domain": "www.imperial.ac.uk"
+      },
+      {
+        "name": "AWSALB",
+        "value": "SzhKvnFi0c19Eb7p5UZVrq0BMnncDXuGC6hP8NYvottHfjbC8/kpj4HGBgRd2ARo",
+        "domain": "www.imperial.ac.uk"
+      },
+      {
+        "name": "ARRAffinity-WindowsWF",
+        "value": "d6e6e96ebcdd349813f8057b0f5c9f9fbf0a639fcf1f050151cc07a5067f134c",
+        "domain": ".www.imperial.ac.uk"
+      },
+      {
+        "name": "OptanonConsent",
+        "value": "isGpcEnabled=0&datestamp=Tue+Apr+21+2026+14%3A27%3A48+GMT-0500+(",
+        "domain": ".imperial.ac.uk"
+      }
+    ],
+    "dom": {
+      "title": "Imperial College London",
+      "bodyClasses": "theme-8",
+      "bodyId": "",
+      "headContent": "\n    <title>Imperial College London</title>\n\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <!-- OneTrust Cookies Consent Notice start for imperial.ac.uk -->\n<script src=\"https://browser.sentry-cdn.com/8.33.0/bundle.min.js\" crossorigin=\"anonymous\"></script><script type=\"text/plain\" async=\"\" src=\"https://snap.licdn.com/li.lms-analytics/insight.min.js\" class=\"optanon-category-C0004 \"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-LME5ZDDFS0&amp;cx=c&amp;gtm=4e64h1\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=AW-17946844669&amp;cx=c&amp;gtm=4e64h1\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=AW-11002703160&amp;cx=c&amp;gtm=4e64h1\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-NDH95W87\"></script><script type=\"text/javascript\" src=\"https://cdn-ukwest.onetrust.com/consent/6d9efb9d-b605-406f-b8b3-c9644859d064/OtAutoBlock.js\"></script><script src=\"https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js\" type=\"text/javascript\" charset=\"UTF-8\" data-domain-script=\"6d9efb9d-b605-406f-b8b3-c9644859d064\"></script>\n<script type=\"text/javascript\">function OptanonWrapper() { }</script>\n<!-- OneTrust Cookies Consent Notice end for imperial.ac.uk -->\n  \t<link rel=\"preconnect\" href=\"https://pxl01-imperialacuk.terminalfour.net\">\n    <link rel=\"dns-prefetch\" href=\"https://pxl01-imperialacuk.terminalfour.net\">\n\n    <!-- Search metadata tags -->\n<meta name=\"SectionType\" content=\"website\">\n<!-- twitter metadata tags -->\n<meta name=\"twitter:dnt\" content=\"on\">\n<meta name=\"twitter:card\" content=\"summary\">\n<meta name=\"twitter:site\" content=\"@imperialcollege\">\n<meta name=\"twitter:title\" content=\"Home\">\n<meta name=\"twitter:description\" content=\"Imperial College London is a world-leading university for science, technology, engineering, medicine and business (STEMB). Across our London campuses, and throughout our international network, we use science to tackle global challenges.\">\n<meta name=\"twitter:image\" content=\"https://www.imperial.ac.uk/T4Assets/favicon-196x196.png\">\n<meta name=\"fb:app_id\" content=\"674884772674087\">\n<meta property=\"og:title\" content=\"Home\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:image\" content=\"https://www.imperial.ac.uk/T4Assets/favicon-196x196.png\">\n<meta property=\"og:image:type\" content=\"image/png\">\n<meta property=\"og:image:secure_url\" content=\"https://www.imperial.ac.uk/T4Assets/favicon-196x196.png\">\n<meta property=\"og:image:width\" content=\"200\"><meta property=\"og:image:height\" content=\"200\"><meta property=\"og:url\" content=\"https://www.imperial.ac.uk/\">\n<meta property=\"og:description\" content=\"Imperial College London is a world-leading university for science, technology, engineering, medicine and business (STEMB). Across our London campuses, and throughout our international network, we use science to tackle global challenges.\">\n<meta property=\"og:locale\" content=\"en_GB\">\n<meta property=\"og:site_name\" content=\"Imperial College London\">\n\n    <meta name=\"description\" content=\"Imperial College London is a world-leading university for science, technology, engineering, medicine and business (STEMB). Across our London campuses, and throughout our international network, we use science to tackle global challenges.\">\n\n    <meta name=\"keywords\" content=\"\">\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    <!-- assets */ -->\n<link rel=\"preload\" href=\"/assets/website/fonts/icons/fonts/imperial-icons.woff?vrmf2d\" as=\"font\" type=\"font/woff\" crossorigin=\"\">\n<link rel=\"preload\" href=\"/assets/website/fonts/imperial-sans/ImperialText-VF.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"\">\n<link href=\"/assets/website/stylesheets/css/screen.2.3.5.css\" media=\"all\" rel=\"stylesheet\" type=\"text/css\">\n<link href=\"/assets/website/stylesheets/css/print.2.3.5.css\" media=\"print\" rel=\"stylesheet\" type=\"text/css\">\n\n<link rel=\"icon\" type=\"image/svg+xml\" href=\"/assets/website/images/favicon/favicon.svg\">\n<link rel=\"alternate icon\" href=\"/assets/website/images/favicon/favicon.ico\">\n<link rel=\"icon\" href=\"/assets/website/images/favicon/favicon-32.png\" sizes=\"32x32\">\n<link rel=\"icon\" href=\"/assets/website/images/favicon/favicon-57.png\" sizes=\"57x57\">\n<link rel=\"icon\" href=\"/assets/website/images/favicon/favicon-76.png\" sizes=\"76x76\">\n<link rel=\"icon\" href=\"/assets/website/images/favicon/favicon-96.png\" sizes=\"96x96\">\n<link rel=\"icon\" href=\"/assets/website/images/favicon/favicon-128.png\" sizes=\"128x128\">\n<link rel=\"icon\" href=\"/assets/website/images/favicon/favicon-192.png\" sizes=\"192x192\">\n<link rel=\"icon\" href=\"/assets/website/images/favicon/favicon-228.png\" sizes=\"228x228\">\n<link rel=\"shortcut icon\" href=\"/assets/website/images/favicon/favicon-196.png\" sizes=\"196x196\">\n<link rel=\"apple-touch-icon\" href=\"/assets/website/images/favicon/favicon-120.png\" sizes=\"120x120\">\n<link rel=\"apple-touch-icon\" href=\"/assets/website/images/favicon/favicon-152.png\" sizes=\"152x152\">\n<link rel=\"apple-touch-icon\" href=\"/assets/website/images/favicon/favicon-180.png\" sizes=\"180x180\">\n<meta name=\"msapplication-TileColor\" content=\"#C8D8E4\">\n<meta name=\"msapplication-TileImage\" content=\"/assets/website/images/favicon/favicon-144.png\">\n<meta name=\"msapplication-config\" content=\"/assets/website/images/favicon/browserconfig.xml\">\n\n<script src=\"/assets/website/js/lib/jquery3.min.js\" id=\"jquery3\"></script><script src=\"https://cdn-ukwest.onetrust.com/scripttemplates/202511.1.0/otBannerSdk.js\" async=\"\" type=\"text/javascript\"></script>\n\n<script defer=\"\" src=\"/assets/website/js/build/application.2.3.5.min.js\" type=\"text/javascript\"></script>\n\n<script defer=\"\" src=\"//cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js\"></script>  <!-- gsap.min.js -->\n     \n    <link rel=\"canonical\" href=\"https://www.imperial.ac.uk/\">\n    <style type=\"text/css\">\n.flexible-hero+.container.landing {\n    margin-top: calc(var(--fc-xl-min) / 16 * 1rem + (var(--fc-xl-max) - var(--fc-xl-min)) * var(--fluid-bp));\n}\n</style><style type=\"text/css\">\n.module.module--pad-s.reverse.flow-s.lg-4.md-6 {\nmax-width: 75% !important;\n}\n@media screen and (min-width: 768px) {\n     .module.module--pad-s.reverse.flow-s.lg-4.md-6 {\n      max-width: 50% !important;\n      }\n}\nh1.step-3 {\n    font-size: calc(var(--f-5-min) / 16 * 1rem + (var(--f-5-max) - var(--f-5-min)) * var(--fluid-bp));\n}\n\n@media screen and (min-width: 1025px) {\n    .content-overlap__image {\n      z-index: 2;\n      display: block;\n      position: relative;\n      background-color: #fff;\n      padding: calc(var(--fc-m-min) / 16 * 1rem + (var(--fc-m-max) - var(--fc-m-min)) * var(--fluid-bp)) 0;\n    }\n\n  .content-overlap__image picture {\n      display: block;\n      width: calc(100% + var(--fc-m-min) / 16 * 1rem * 2 + (var(--fc-m-max) - var(--fc-m-min)) * var(--fluid-bp) * 2);\n      margin-left: calc(var(--fc-m-min) / 16 * 1rem * -1 + (var(--fc-m-max) - var(--fc-m-min)) * var(--fluid-bp) * -1);\n    }\n  }\n</style>\n \n\n      <meta name=\"SearchLanding\" content=\"true\">\n      <meta name=\"LastModified\" content=\"2026-04-21T14:41:11Z\">\n<script src=\"/assets/website/js/require/vendor/jquery3-migrate.js\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.7.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.imperial.ac.uk/wp-login.php",
+      "status": 404,
+      "body_excerpt": "File not found.\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.imperial.ac.uk/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en-GB\">\r\n\r\n<head>\r\n    <title>404 - Not found | Error Pages | Imperial College London</title>\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <!-- OneTrust Cookies Consent Notice start for imperial.ac.uk -->\n<script type=\"text/javascript\" src=\"https://cdn-ukwest.onetrust.com/consent/6d9efb9d-b605-406f-b8b3-c9644859d064/OtAutoBlock.js\" ></script><script src=\"https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.j"
+    },
+    "/wp-content/": {
+      "url": "https://www.imperial.ac.uk/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en-GB\">\r\n\r\n<head>\r\n    <title>404 - Not found | Error Pages | Imperial College London</title>\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <!-- OneTrust Cookies Consent Notice start for imperial.ac.uk -->\n<script type=\"text/javascript\" src=\"https://cdn-ukwest.onetrust.com/consent/6d9efb9d-b605-406f-b8b3-c9644859d064/OtAutoBlock.js\" ></script><script src=\"https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.j"
+    },
+    "/user/login": {
+      "url": "https://www.imperial.ac.uk/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en-GB\">\r\n\r\n<head>\r\n    <title>404 - Not found | Error Pages | Imperial College London</title>\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <!-- OneTrust Cookies Consent Notice start for imperial.ac.uk -->\n<script type=\"text/javascript\" src=\"https://cdn-ukwest.onetrust.com/consent/6d9efb9d-b605-406f-b8b3-c9644859d064/OtAutoBlock.js\" ></script><script src=\"https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.j"
+    },
+    "/core/install.php": {
+      "url": "https://www.imperial.ac.uk/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en-GB\">\r\n\r\n<head>\r\n    <title>404 - Not found | Error Pages | Imperial College London</title>\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <!-- OneTrust Cookies Consent Notice start for imperial.ac.uk -->\n<script type=\"text/javascript\" src=\"https://cdn-ukwest.onetrust.com/consent/6d9efb9d-b605-406f-b8b3-c9644859d064/OtAutoBlock.js\" ></script><script src=\"https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.j"
+    },
+    "/cas/login": {
+      "url": "https://www.imperial.ac.uk/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html class=\"no-js\" lang=\"en-GB\">\r\n\r\n<head>\r\n    <title>404 - Not found | Error Pages | Imperial College London</title>\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <!-- OneTrust Cookies Consent Notice start for imperial.ac.uk -->\n<script type=\"text/javascript\" src=\"https://cdn-ukwest.onetrust.com/consent/6d9efb9d-b605-406f-b8b3-c9644859d064/OtAutoBlock.js\" ></script><script src=\"https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.j"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.imperial.ac.uk/Shibboleth.sso/Metadata",
+      "status": 200,
+      "body_excerpt": "<!--\nThis is example metadata only. Do *NOT* supply it as is without review,\nand do *NOT* provide it in real time to your partners.\n -->\n<md:EntityDescriptor xmlns:md=\"urn:oasis:names:tc:SAML:2.0:metadata\" ID=\"_0524f0c89efade403322dcce77ac990f09bcef48\" entityID=\"https://www.imperial.ac.uk/shibboleth\">\n\n  <md:Extensions xmlns:alg=\"urn:oasis:names:tc:SAML:metadata:algsupport\">\n    <alg:DigestMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#sha512\"/>\n    <alg:DigestMethod Algorithm=\"http://www.w3.org/2001/04"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Amazon ALB",
+      "confidence": 100,
+      "evidence": [
+        "Cookie: AWSALB",
+        "Cookie: AWSALBCORS"
+      ]
+    },
+    {
+      "name": "Amazon CloudFront",
+      "confidence": 100,
+      "evidence": [
+        "Header: Via=\\(CloudFront\\)$",
+        "Header: X-Amz-Cf-Id="
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 80,
+      "evidence": [
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "IIS",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Microsoft-IIS"
+      ]
+    },
+    {
+      "name": "TerminalFour",
+      "confidence": 80,
+      "evidence": [
+        "HTML: terminalfour",
+        "HTML: /terminalfour/"
+      ]
+    },
+    {
+      "name": "OneTrust",
+      "confidence": 70,
+      "evidence": [
+        "Cookie: OptanonConsent"
+      ]
+    },
+    {
+      "name": "Linkedin Insight Tag",
+      "confidence": 60,
+      "evidence": [
+        "JS: _linkedin_data_partner_id (HTML)",
+        "JS: _linkedin_partner_id (HTML)"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "LearnDash",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ld.*course"
+      ]
+    },
+    {
+      "name": "Linkedin Ads",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <img [^>]*src=\"[^/]*//[^/]*px\\.ads\\.linkedin\\.com"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Exhibit",
+      "confidence": 30,
+      "evidence": [
+        "JS: Exhibit (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Ellucian Banner",
+      "confidence": 30,
+      "evidence": [
+        "JS: Banner (HTML)"
+      ]
+    },
+    {
+      "name": "Blackboard Learn",
+      "confidence": 30,
+      "evidence": [
+        "JS: Blackboard (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

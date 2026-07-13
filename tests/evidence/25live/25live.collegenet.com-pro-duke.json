@@ -1,0 +1,1269 @@
+{
+  "technology": "25Live",
+  "url": "https://25live.collegenet.com/pro/duke#!/home/dash",
+  "final_url": "https://25live.collegenet.com/pro/duke#!/home/dash",
+  "captured_at": "2026-04-21T19:34:43.735Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/25live/25live.collegenet.com-pro-duke.html",
+  "evidence": {
+    "headers": {
+      "accept-ranges": "none",
+      "content-encoding": "gzip",
+      "content-security-policy": "frame-ancestors 'self'",
+      "content-type": "text/html",
+      "date": "Tue, 21 Apr 2026 19:34:37 GMT",
+      "etag": "\"1776380118:dtagent10335260306043831almY\"",
+      "last-modified": "Thu, 16 Apr 2026 22:55:17 GMT",
+      "server": "Apache",
+      "server-timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"-1358438477\"",
+      "set-cookie": "Blaze=aefRTUUnTtrk6LLF8PgoUwA1rw0; Domain=collegenet.com; Path=/\ndtCookie=v_4_srv_3_sn_3A0FDFBDE8B90F1723E2DC1880EA2898_perc_100000_ol_0_mul_1_app-3A1163e2691a52ad25_0; Path=/; Domain=.collegenet.com",
+      "strict-transport-security": "max-age=7776000",
+      "vary": "Accept-Encoding",
+      "x-content-security-policy": "frame-ancestors 'self'",
+      "x-oneagent-js-injection": "true",
+      "x-ruxit-js-agent": "true"
+    },
+    "scripts": [
+      {
+        "src": "https://25live.collegenet.com/ruxitagentjs_ICANVfqru_10335260306043831.js",
+        "version": null
+      },
+      {
+        "src": "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js",
+        "version": null
+      },
+      {
+        "src": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js",
+        "version": null
+      },
+      {
+        "src": "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.71.vendor-69403744.703d7f6f34725452.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.96.main-6de74b38.df038e06e25ce242.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.200.main-0a7be0a7.f7261d7ef01537d7.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.223.main-cb4b6c68.8b4e4ed10fe4756e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.227.main-7bcb7605.ead5a6302b1ed874.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.230.vendor-bc050c32.a3332d76daa6d679.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.280.main-061d0567.72071372712d581e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.305.main-6506cc94.e39359f6aeede06a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.317.main-d13afbeb.feb230035e6fcad6.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.415.vendor-4091b6ed.70abf1e674714ee4.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.499.main-3f71bc3a.8205e4f4b29856db.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.513.main-3222ad88.fdf5138a4e9e7783.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.567.main-b1e54e5e.82274a292ba8eb45.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.592.vendor-e8f05d10.1bcefbea71e18c80.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.617.vendor-32ff26c5.bc042b8dabc8bd8c.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.644.main-597393e6.222d9551967ac025.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.650.main-cc565bc8.5662e627e0e6cef7.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.757.main-f2870a19.18e0a26145cbd46c.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.774.main-71e54184.6e9cc2f0ed31f727.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.854.main-5626f3f1.b83e417678f1f860.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.871.vendor-24600fdc.4b5941c246a51738.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.895.main-11d76af2.53df6b96397401c2.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.906.main-0817a87a.f7aa2b0b9369b078.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.928.main-0a166681.ada0461caef75809.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.941.main-71db1391.bf7a71b8b8989e60.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.992.vendor-1e16864c.5eef9369a6ac70f4.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1111.main-306d5d28.31bccd04bef108d7.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1146.vendor-0e15027d.fcb91434a41578e1.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1175.vendor-b160bec6.74e33cc33f3d7d78.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1184.main-78cb62c2.8fbb1a8656c0de82.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1209.main-5affcb89.b61828769541911a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1236.vendor-55facd4b.3c18696fe52a2747.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1237.main-192f95d8.e316f8ea5a34358a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1252.main-27176bca.6a2b809f1a8a4621.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1279.vendor-818a3d71.46caae5936981cef.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1298.main-d2b54389.10b28614d088a8e0.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1462.main-381ffe7e.946ccb0c7e60e97f.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1469.main-0553d333.8d79a155e66892f0.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1476.vendor-f90ff265.bbb7eb183955b598.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1508.vendor-686bff35.ddcbdc97ddb266e1.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1528.vendor-1e3a8bfd.bef8d6c9e82e0c30.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1657.main-af10317c.7fee73dc6d55ba7e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1699.main-da70daa8.fab1750f058d57e0.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1750.main-95c2f44d.1abef579476777f7.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1765.main-949860b8.70a93af3340d608f.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1775.vendor-cdf74cb4.31b40ea17e1c8262.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1785.main-b9354050.fcd1ac198ad37fea.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1801.main-87779c96.9df84445fc9a2596.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1839.main-43e21e82.385c2629ab846f45.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.1910.main-5d62e5aa.17a58270f9460c92.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2007.vendor-06aa8243.042bbb9920c7e73f.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2090.main-e9a26095.06c9580cb325a9e6.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2146.main-dc978615.c705e3ca578e4ee2.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2161.main-83720400.4264391e0be43ec8.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2186.main-a6e675c6.8a45a15383b218f3.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2241.vendor-bfb5b7a2.8a9030363e244801.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2277.main-925d9e97.85976344c6af8bf4.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2280.main-532bdf3b.5e97a3881390e8af.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2289.vendor-af2090be.da823e2ac5741b3b.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2316.vendor-d7ce4c2d.4e6f9b5b774d3563.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2353.main-1d7f0b55.1352ddd7107e26a0.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2374.vendor-bc4083c3.b5f8fcd9a857ec0e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2559.main-65eb6cc8.52f9059fb5c40ad7.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2694.main-78192eed.3c7eef676ba3bcb9.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2713.main-52b9ef3f.a6a3d72cafc70435.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2714.vendor-6ac3f6b7.2067b594345ab2ca.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2721.main-10ef2835.f16813c750d91121.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2747.main-36cdd628.bcf3d4c769898d59.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2834.main-9f5c196b.30ad056fa82a63ee.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2925.main-f8039f80.a7bc44b92c2f99da.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.2958.main-e002429c.16ee2e8cbcb87cff.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3000.main-758567da.54dbf8886ca5e9c8.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3143.main-be6373ee.3d7aa390c58e20b6.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3161.main-04967b42.9ab1fed51961ae41.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3194.main-54bb5bf3.0f3711a1f902538b.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3207.vendor-9386b7e9.ed391febf005e4c8.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3250.main-308b3c68.09f3a4467d4025c1.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3254.main-fb44f045.98b1a75724f7b9f4.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3302.main-2fbb5dec.006163e1a112898e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3317.vendor-430d683c.a127c41d5e689f06.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3336.main-145276c9.6321b1936c3afc7c.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3360.main-57f81c9d.903f48df7aba05c0.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3365.main-eeb2a55c.a4bcc442318fb34e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3379.main-87ef8f51.aab94c4b7ea794ef.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3388.main-f2ce9521.7e4710cf5aa23c96.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3422.main-1efd86a6.d2e40939c78fd781.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3450.vendor-0ff46c1f.c86fc6543a54b08a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3501.main-f1614dd8.3d81e14ac11f1ae9.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3521.main-6db4a12d.736a9306f5996d82.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3618.main-60c62938.c6030b8deea981a2.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3725.main-14149d94.43e82c3bdc5dd2f5.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3770.main-e4133aa7.f4bafc1a522d4ed8.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3800.main-08d8383a.0f1a78e446eea5d3.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3877.vendor-2fa7956c.94782e6d4217193e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3879.main-2c10f62b.f4e465bf89de7956.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3888.main-d84af723.9ba62b58d5b14b7e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3914.main-3a5ccab5.665819dc8d7298d0.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3934.main-d3569c2c.6e67af6940e0ab1c.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.3983.main-5a556817.d1f9ded6154406b6.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4051.main-a955c7d8.f62d26cdd431caec.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4089.main-a93a28b6.6e669e22f19b39b9.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4119.main-a3ed4ce5.82e1772a52aaab98.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4201.main-72922ec8.5d335ab41ff016f5.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4281.main-b969f500.cf0be02c2cd9f843.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4324.vendor-d4217246.cbfe60f850759e31.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4389.main-ed5abb9b.2c73b9696da04bf4.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4446.main-eb6bf321.1acb0a0cb1c2bdf3.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4560.main-7c141aee.60b07e099d00f701.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4617.main-6fac19e9.51970308946fddd6.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4650.vendor-edefa0e2.53a333ea4fa83839.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4656.vendor-1dfd8ab8.ef968a67ebd487de.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4748.main-a5a218f3.4e1922d75917fdb5.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4756.main-d54aa6c5.9aca96dafe1dfd4b.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4785.main-e12035bb.e667b8d1ea5c46a7.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4826.main-25a43bbf.5ba9c10f7e5c9eeb.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4907.main-07bbc6b4.ef22e3e0a73da652.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4974.main-6171bb80.3545a3a583e184e7.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.4994.vendor-3639063d.b9f1a04a79423273.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5093.vendor-4e2fb6b0.ba3b3c313838d6fd.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5100.main-7e7b3047.936d35af76951d8c.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5166.main-5b99e102.ddc821634e78f948.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5260.vendor-a8920f19.a38888fe918a0b0a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5269.main-0fd49e31.469123bdff7d9ced.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5429.main-963603d1.6f020ac6e208ad7e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5526.main-b470637d.a528ef20dbea9019.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5647.vendor-af7c5944.2fe193c1e6f8603c.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5710.main-96193359.9d8793a3e6443236.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5810.vendor-cfbf2917.235557eee6d27312.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5829.main-d4d5f6a6.135143c43f30e5ec.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.5849.vendor-e87cc58b.cc75324de3ee3d95.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6062.main-8c8fb2a1.d7342268e26be40e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6076.main-a4fbebb9.aece1a2eafd5bb2c.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6158.vendor-48734727.3b70a3cdc7818176.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6173.main-bdd8c86e.97f11d341ea96923.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6236.vendor-6ff68f48.a095b5daf50f5ac9.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6249.vendor-36e9fff8.49628a3d94e5ebe3.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6274.vendor-3145e27e.8c8162105a496e5a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6382.vendor-28bfde25.92559311910fae34.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6432.vendor-b57f5fac.a313447a7d72e3d3.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6456.vendor-5add3539.086698b929ef3e38.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6522.vendor-3e2fe043.f86095e36a23c1d1.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6530.vendor-18d7030c.79af91df1d10e703.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6565.main-acc3c76b.eebbecc9f652c3d8.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6573.main-a457e4d4.a0982ac53569be21.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6634.vendor-c53f1112.c80d631eb4346ba3.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6662.main-852ef01d.a538319f3fce25d4.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6743.main-551da2b8.f71160613f01da67.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6757.main-40a9733a.0a5c03737ca26727.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6827.main-747b69ba.127f67ec793fe22d.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6847.main-c2904e21.f6f87c00d700280e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6866.main-d552bea3.09a14130c72cb3c0.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6889.main-5d6c3edf.2d16d58d57c623f5.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6902.main-09172202.26c8c877ef5d16df.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6963.main-5469bc47.a14b968a4c2d7959.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.6975.main-f55211e9.c4ea75d8d953e8be.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7032.vendor-04c1b3cf.b2e4c0e735f86417.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7087.vendor-6b817f9d.ee684fa61764fb20.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7116.main-ef8cc671.47d61c9585116047.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7128.vendor-c0d76f48.d8f63992023f7e32.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7245.main-43829420.d5faf8a891cb63d4.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7322.main-3d5e33e1.a3dabcf5aeb2cdd1.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7338.main-43040237.745f9066bda564ff.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7406.vendor-98185b45.d4e46da1c2d9943d.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7419.vendor-b8e726d7.ad02605ddf5f5ed5.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7528.main-bcb5f395.adb5f2cf4ff66a93.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7538.vendor-89d5c698.490dfb8175cd2824.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7571.main-2abc2846.578cddb8ba6bf4ee.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7612.main-f7265cff.30c17e61cfccab97.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7669.main-885db724.a35ef0a0a10b5f7a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7681.vendor-199b0f51.2a08708d0f554b49.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7710.main-887819d8.5298ca5366945310.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7753.main-439bcc66.f83af57dde9a2522.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7781.vendor-4ff468b3.3095c092f98d8ead.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7794.main-a44e4319.f42a1d34b2fca436.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7827.vendor-c4344193.81f0f2738d99b4b6.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7912.main-371fc4cb.9166e4fc072e2bd7.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7917.vendor-02ec2db9.c928554e2b5bf7de.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.7972.main-b694e01b.b219508ffd30505f.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8092.main-6972ac0a.a65501c1866b513a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8159.vendor-072d41bc.610c0ca257df5a33.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8201.vendor-18cea793.94457e3d672a860d.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8211.vendor-b4c87ae9.e8ede7d9dee0d3eb.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8307.main-0468c55c.803ffbed42f959e3.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8333.main-240933ef.a7742bb97276ca8e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8342.main-b0199426.ba013402d677e7d8.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8401.main-39dec2ae.062c70c29de7f6b4.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8461.main-a740419b.15c4bc99b6d36810.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8471.main-89c7dbed.9dd26ac52c80453e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8579.vendor-47257c03.a562cd80f496396e.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8663.main-b0ddc409.7fbaee965238e7c3.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8717.vendor-fe51513a.729a566a13ee9173.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8763.main-7f3cd35c.fb681575c0ad7fac.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8773.main-e80baec2.9fb20566a384b74a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8816.vendor-3d068283.148b62b107c4a96c.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8824.main-d2393d77.c7292da68e75d0ff.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8894.main-facc4ac6.db67fba08040bfe6.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8906.vendor-377fed06.9ff9d5cf44505e62.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8919.main-02982720.3db2790982522575.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.8960.main-fdb3f54e.c48ac6b513106e63.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9071.main-572814cb.afff75e06b06ddd5.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9121.runtime.1b592e13c3da5d0a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9225.main-2ebbb0e6.3cf485035cbe321d.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9286.main-20b4b05b.3d32b3985e19ebe1.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9337.main-1113195c.273eff2e2d27fb7a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9345.main-59f64c74.065b013451b00730.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9389.main-8f11da5f.cb81c5b96cb94aaf.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9391.vendor-324bb00b.d3b2282fe7dae5f1.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9399.main-c995b954.10928abf3592f401.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9401.vendor-9e15e6db.a99f1c1557fc75cf.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9422.vendor-e9bb27a0.6a3bd5c13082e1a9.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9448.vendor-4ba2cfa9.e8d80726a892d7a6.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9495.main-2b288981.4fa31635cce1c0a5.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9574.vendor-0ee8b09c.1a6325df348275ff.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9631.main-1c100cea.d87a2f86a18606bb.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9699.vendor-99d6dee7.8bc171479c534a8a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9724.main-a2fa8e4f.f383537e3fc94d61.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9751.vendor-47b79f5a.6a28709e6024472a.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9842.vendor-824218d3.b9c710e7b3514bc4.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9858.main-3c9c805b.85dd3a3f4fc078ee.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9920.main-ba56c6ca.170d5f1c65ae563d.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9944.main-b3fba483.507f351ac2c94aca.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9987.main-6cdc5f1b.71bbefc5a2e2f3fc.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/aot/pro.9998.main-78934fc1.13a89c5afe1d2eaa.bundle.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/es-polyfills/webcomponentsjs/webcomponents-loader.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00000.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00001.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00002.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00003.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00004.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00005.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00006.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00007.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00008.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00009.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00010.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00011.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00012.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00013.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00014.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00015.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00016.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00017.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00018.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/js-compiled-00019.js?version=1776378450415",
+        "version": null
+      },
+      {
+        "src": "https://25live.collegenet.com/pro/resources/typescript/assets/js-compiled/bootstrap.js?version=1776378450415",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "apple-mobile-web-app-capable": "yes",
+      "apple-mobile-web-app-status-barstyle": "black-translucent",
+      "description": "25Live is designed for scheduling professionals and functional experts responsible for class and event scheduling, data management, and/or administration tasks.",
+      "og:locale": "en_US",
+      "”og:description”": "25Live is designed for scheduling professionals and functional experts responsible for class and event scheduling, data management, and/or administration tasks.",
+      "”og:title”": "25Live",
+      "”og:type”": "”website”",
+      "og:site_name": "25Live"
+    },
+    "cookies": [
+      {
+        "name": "BIGipServerp-java.25live-web.collegenet.com",
+        "value": "187172618.36895.0000",
+        "domain": "25live.collegenet.com"
+      },
+      {
+        "name": "dtCookie",
+        "value": "v_4_srv_3_sn_3A0FDFBDE8B90F1723E2DC1880EA2898_perc_100000_ol_0_m",
+        "domain": ".collegenet.com"
+      },
+      {
+        "name": "Blaze",
+        "value": "aefRTUUnTtrk6LLF8PgoUwA1rw0",
+        "domain": ".collegenet.com"
+      },
+      {
+        "name": "WSSESSIONID",
+        "value": "4F85A0589B47CFFDFA3A417B538A3DFA",
+        "domain": ".collegenet.com"
+      }
+    ],
+    "dom": {
+      "title": "Dashboard",
+      "bodyClasses": "s25-ng",
+      "bodyId": "s25",
+      "headContent": "<style type=\"text/css\">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type=\"text/css\">.uib-time input{width:50px !important;}</style><style type=\"text/css\">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type=\"text/css\">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px;}</style><style type=\"text/css\">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type=\"text/css\">.fa-svg-icon{display:inline-block;vertical-align:middle;min-width:1em;min-height:1em;height:100%;position:relative;top:-1px;}.fa-svg-icon svg{position:absolute;top:0;left:0;width:100%;height:100%;}.fa-svg-icon svg g,.fa-svg-icon svg path{fill:currentColor;}</style><style type=\"text/css\">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type=\"text/css\">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style>@charset \"UTF-8\";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>\n    <title>Dashboard</title>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"Cache-Control\" content=\"no-cache\">\n    <meta http-equiv=\"Pragma\" content=\"no-cache\">\n    <meta http-equiv=\"Expires\" content=\"-1\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n    <meta name=\"apple-mobile-web-app-status-barstyle\" content=\"black-translucent\">\n    <meta name=\"description\" content=\"25Live is designed for scheduling professionals and functional experts responsible for class and event scheduling, data management, and/or administration tasks.\">\n    <meta property=\"og:locale\" content=\"en_US\">\n    <meta property=\"”og:description”\" content=\"25Live is designed for scheduling professionals and functional experts responsible for class and event scheduling, data management, and/or administration tasks.\">\n    <meta property=\"”og:title”\" content=\"25Live\">\n    <meta property=\"”og:type”\" content=\"”website”\">\n    <meta property=\"og:site_name\" content=\"25Live\">\n\n    <script type=\"text/javascript\" src=\"/ruxitagentjs_ICANVfqru_10335260306043831.js\" data-dtconfig=\"rid=RID_1064420933|rpid=-1358438477|domain=collegenet.com|reportUrl=/rb_bf51916wzk|app=1163e2691a52ad25|cuc=jvxq9jse|owasp=1|mel=100000|featureHash=ICANVfqru|dpvc=1|lastModification=1776701094975|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICANVfqru_10335260306043831.js\"></script><link rel=\"preconnect\" href=\"https://ajax.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://cdn.jsdelivr.net\">\n\n    <!-- common-css-start --><link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\">\n\n<!-- css-lib-start --><link rel=\"stylesheet\" href=\"resources/typescript/assets/css-compiled/lib-00000.css?version=1776378450415\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><link rel=\"stylesheet\" href=\"resources/typescript/assets/css-compiled/lib-00001.css?version=1776378450415\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><!-- css-lib-end -->\n\n<!-- css-app-start --><link rel=\"stylesheet\" href=\"resources/typescript/assets/css-compiled/app-00000.css?version=1776378450415\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><link rel=\"stylesheet\" href=\"resources/typescript/assets/css-compiled/app-00001.css?version=1776378450415\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><link rel=\"stylesheet\" href=\"resources/typescript/assets/css-compiled/app-00002.css?version=1776378450415\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><link rel=\"stylesheet\" href=\"resources/typescript/assets/css-compiled/app-00003.css?version=1776378450415\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><link rel=\"stylesheet\" href=\"resources/typescript/assets/css-compiled/app-00004.css?version=1776378450415\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><!-- css-app-end -->\n<!-- common-css-end -->\n\n    <link rel=\"shortcut icon\" type=\"image/vnd.microsoft.icon\" href=\"resources/gfx/25live.ico\">\n    <link rel=\"apple-touch-icon\" href=\"resources/gfx/apple-touch-icon.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"resources/gfx/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"resources/gfx/favicon-16x16.png\">\n",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.7.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://25live.collegenet.com/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n<script type=\"text/javascript\" src=\"/ruxitagentjs_ICANVfqru_10335260306043831.js\" data-dtconfig=\"rid=RID_1974260819|rpid=517339448|domain=collegenet.com|reportUrl=/rb_bf51916wzk|app=1163e2691a52ad25|cuc=jvxq9jse|owasp=1|mel=100000|featureHash=ICANVfqru|dpvc=1|lastModification=1776701094975|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICANVfqru_10335260306043831.j"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://25live.collegenet.com/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n<script type=\"text/javascript\" src=\"/ruxitagentjs_ICANVfqru_10335260306043831.js\" data-dtconfig=\"rid=RID_195643042|rpid=719865099|domain=collegenet.com|reportUrl=/rb_bf51916wzk|app=1163e2691a52ad25|cuc=jvxq9jse|owasp=1|mel=100000|featureHash=ICANVfqru|dpvc=1|lastModification=1776701094975|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICANVfqru_10335260306043831.js"
+    },
+    "/wp-content/": {
+      "url": "https://25live.collegenet.com/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n<script type=\"text/javascript\" src=\"/ruxitagentjs_ICANVfqru_10335260306043831.js\" data-dtconfig=\"rid=RID_1515531110|rpid=-793357262|domain=collegenet.com|reportUrl=/rb_bf51916wzk|app=1163e2691a52ad25|cuc=jvxq9jse|owasp=1|mel=100000|featureHash=ICANVfqru|dpvc=1|lastModification=1776701094975|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICANVfqru_10335260306043831."
+    },
+    "/user/login": {
+      "url": "https://25live.collegenet.com/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n<script type=\"text/javascript\" src=\"/ruxitagentjs_ICANVfqru_10335260306043831.js\" data-dtconfig=\"rid=RID_1766033581|rpid=-1844580813|domain=collegenet.com|reportUrl=/rb_bf51916wzk|app=1163e2691a52ad25|cuc=jvxq9jse|owasp=1|mel=100000|featureHash=ICANVfqru|dpvc=1|lastModification=1776701094975|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICANVfqru_10335260306043831"
+    },
+    "/core/install.php": {
+      "url": "https://25live.collegenet.com/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n<script type=\"text/javascript\" src=\"/ruxitagentjs_ICANVfqru_10335260306043831.js\" data-dtconfig=\"rid=RID_2006547933|rpid=891341720|domain=collegenet.com|reportUrl=/rb_bf51916wzk|app=1163e2691a52ad25|cuc=jvxq9jse|owasp=1|mel=100000|featureHash=ICANVfqru|dpvc=1|lastModification=1776701094975|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICANVfqru_10335260306043831.j"
+    },
+    "/cas/login": {
+      "url": "https://25live.collegenet.com/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n<script type=\"text/javascript\" src=\"/ruxitagentjs_ICANVfqru_10335260306043831.js\" data-dtconfig=\"rid=RID_458599009|rpid=1504114242|domain=collegenet.com|reportUrl=/rb_bf51916wzk|app=1163e2691a52ad25|cuc=jvxq9jse|owasp=1|mel=100000|featureHash=ICANVfqru|dpvc=1|lastModification=1776701094975|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICANVfqru_10335260306043831.j"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://25live.collegenet.com/Shibboleth.sso/Metadata",
+      "status": 200,
+      "body_excerpt": "<!--\nThis is example metadata only. Do *NOT* supply it as is without review,\nand do *NOT* provide it in real time to your partners.\n -->\n<md:EntityDescriptor xmlns:md=\"urn:oasis:names:tc:SAML:2.0:metadata\" ID=\"_16b617c414a1ed37c84a3ea8004d6c94d8ca5516\" entityID=\"https://corp.collegenet.com/shibboleth-sp/\">\n\n  <md:Extensions xmlns:alg=\"urn:oasis:names:tc:SAML:metadata:algsupport\">\n    <alg:DigestMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#sha512\"/>\n    <alg:DigestMethod Algorithm=\"http://www.w3.org/20"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "25Live",
+      "confidence": 100,
+      "evidence": [
+        "HTML: 25live",
+        "HTML: event.*management",
+        "JS: CollegeNET (HTML)"
+      ]
+    },
+    {
+      "name": "Angular",
+      "confidence": 80,
+      "evidence": [
+        "HTML: angular",
+        "HTML: data-ng-"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "CollegeNET 25Live",
+      "confidence": 70,
+      "evidence": [
+        "HTML: 25live",
+        "JS: CollegeNET (HTML)"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 40,
+      "evidence": [
+        "HTML: bootstrap"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "AngularJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: angular (HTML)"
+      ]
+    },
+    {
+      "name": "Resova",
+      "confidence": 30,
+      "evidence": [
+        "JS: baseUrl (HTML)"
+      ]
+    },
+    {
+      "name": "Twitter typeahead.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: typeahead (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

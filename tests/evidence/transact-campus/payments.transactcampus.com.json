@@ -1,0 +1,289 @@
+{
+  "technology": "Transact Campus",
+  "url": "https://payments.transactcampus.com",
+  "final_url": "https://payments.transactcampus.com/cashnetg/paymentportal/login.aspx",
+  "captured_at": "2026-04-21T19:35:26.268Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/transact-campus/payments.transactcampus.com.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "private",
+      "connection": "keep-alive",
+      "content-length": "16704",
+      "content-security-policy": "frame-ancestors 'self'",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:35:24 GMT",
+      "p3p": "CP=\"NOI DSP COR NID NOR\"",
+      "set-cookie": "ApplicationGatewayAffinity=3ae54a51523da92742bfa955932c0db9; Path=/; Secure\nASP.NET_SessionId=x0qyaxfcpq5drbndnocv1yzm; path=/; HttpOnly; SameSite=Lax; Secure",
+      "strict-transport-security": "max-age=31536000",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "scripts": [
+      {
+        "src": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+        "version": null
+      },
+      {
+        "src": "https://payments.transactcampus.com/cashnetg/paymentportal/Bootstrap/js/bootstrap.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-J5C6NB30L1",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1"
+    },
+    "cookies": [
+      {
+        "name": "_ga",
+        "value": "GA1.1.1257106774.1776800125",
+        "domain": ".transactcampus.com"
+      },
+      {
+        "name": "ASP.NET_SessionId",
+        "value": "x0qyaxfcpq5drbndnocv1yzm",
+        "domain": "payments.transactcampus.com"
+      },
+      {
+        "name": "_ga_J5C6NB30L1",
+        "value": "GS2.1.s1776800125$o1$g0$t1776800125$j60$l0$h0",
+        "domain": ".transactcampus.com"
+      },
+      {
+        "name": "ApplicationGatewayAffinity",
+        "value": "125f0a710771a16aad16d31b7d3b5d17",
+        "domain": "payments.transactcampus.com"
+      }
+    ],
+    "dom": {
+      "title": "Payment Portal",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "<title>\n\tPayment Portal\n</title><meta charset=\"utf-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->\n    <!-- Bootstrap -->\n    <link href=\"Bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n    <!-- Include all compiled plugins (below), or include individual files as needed -->\n    <script src=\"Bootstrap/js/bootstrap.min.js\"></script>\n    <style>\n        form {\n            background-color: #424e68;\n        }\n\n        input[type=text], input[type=password] {\n            width: 100%;\n            padding: 0px 20px;\n            margin: 8px 0;\n            display: inline-block;\n            border: 1px solid #ccc;\n            box-sizing: border-box;\n        }\n\n        .container {\n            padding: 16px;\n        }\n\n        html, body, form {\n            height: 100%;\n            min-height: 100%;\n            width: 100%;\n            min-width: 100%;\n            margin: 0;\n            padding: 0;\n        }\n\n        .cn_icons_CN_Logo_White {\n            width: 250px;\n            height: 70px;\n            margin-top: 5px;\n        }\n\n        .Payment-Portal {\n            height: 29px;\n            font-size: 24px;\n            text-align: center;\n            color: #ffffff;\n        }\n\n        .header1-blue {\n            font-family: Verdana;\n            font-size: 18px;\n            color: #424e68;\n            padding-bottom: 10px;\n        }\n\n        .panel-border {\n            border-radius: 8px;\n            border: solid 1px #979797;\n            max-width: 900px;\n            position: center;\n        }\n\n        .messagealert {\n            width: 100%;\n            /*position: fixed;\n            top: 0px;\n            z-index: 100000;*/\n            padding: 0;\n            font-size: 15px;\n        }\n\n        .btn-default {\n            width: 180px;\n            height: 26px;\n            border-radius: 4px;\n  background-color: #424e68;\n  border: solid 0 #424e68;\n            color:white;\n            padding: 3px 12px;\n        }\n\n         label {\n            font-family: Verdana;\n            font-size: 13px;\n            font-weight:100;\n            line-height: 1.38;\n            color: #000000;\n        }\n\n        .alert {\n            padding: 10px;\n        }\n\n        .container {    \n            background-color: #424e68;\n         }\n\n        .btn-link {\n            font-weight: 400;\n            color: #337ab7;\n            border-radius: 0;\n            padding: 0px;\n        }\n\n    </style>\n    <script type=\"text/javascript\">\n        function ShowMessage(message, messagetype, container) {\n            var cssclass;\n            switch (messagetype) {\n                case 'Success':\n                    cssclass = 'alert-success'\n                    $(\"#alert_container\").empty();\n                    $(\"#alert_container\").hide;\n                    break;\n                case 'Error':\n                    cssclass = 'alert-danger'\n                    $(\"#alert_container\").show();\n                    $('#' + container + '').append('<div id=\"alert_div\" style=\"margin: 0 0.5%; -webkit-box-shadow: 3px 4px 6px #999;\" class=\"alert fade in ' + cssclass + '\"><span>' + message + '</span></div>');\n                    break;\n                case 'Warning':\n                    cssclass = 'alert-warning'\n                    $('#' + container + '').append('<div id=\"alert_div\" style=\"margin: 0 0.5%; -webkit-box-shadow: 3px 4px 6px #999;\" class=\"alert fade in ' + cssclass + '\"><span>' + message + '</span></div>');\n                    break;\n                default:\n                    cssclass = 'alert-info'\n                    $('#' + container + '').append('<div id=\"alert_div\" style=\"margin: 0 0.5%; -webkit-box-shadow: 3px 4px 6px #999;\" class=\"alert fade in ' + cssclass + '\"><span>' + message + '</span></div>');\n            }\n            //$('#alert_container').append('<div id=\"alert_div\" style=\"margin: 0 0.5%; -webkit-box-shadow: 3px 4px 6px #999;\" class=\"alert fade in ' + cssclass + '\"><span>' + message + '</span></div>');\n            \n        }\n    </script>\n<script async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID\"></script><script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){window.dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'GA_MEASUREMENT_ID');\n</script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.3.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://payments.transactcampus.com/wp-login.php",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\r\n<HTML>\r\n\t<HEAD>\r\n\t\t<title>Transact Payments</title>\r\n\t\t<meta content=\"Microsoft Visual Studio .NET 7.1\" name=\"GENERATOR\">\r\n\t\t<meta content=\"Visual Basic .NET 7.1\" name=\"CODE_LANGUAGE\">\r\n\t\t<meta content=\"JavaScript\" name=\"vs_defaultClientScript\">\r\n\t\t<meta content=\"http://schemas.microsoft.com/intellisense/ie5\" name=\"vs_targetSchema\">\r\n\t</HEAD>\r\n\t<body MS_POSITIONING=\"FlowLayout\">\r\n\t\t<form method=\"post\" action=\"./wp-login.php?404%3bhttp%3a%2f%2"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://payments.transactcampus.com/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\r\n<HTML>\r\n\t<HEAD>\r\n\t\t<title>Transact Payments</title>\r\n\t\t<meta content=\"Microsoft Visual Studio .NET 7.1\" name=\"GENERATOR\">\r\n\t\t<meta content=\"Visual Basic .NET 7.1\" name=\"CODE_LANGUAGE\">\r\n\t\t<meta content=\"JavaScript\" name=\"vs_defaultClientScript\">\r\n\t\t<meta content=\"http://schemas.microsoft.com/intellisense/ie5\" name=\"vs_targetSchema\">\r\n\t</HEAD>\r\n\t<body MS_POSITIONING=\"FlowLayout\">\r\n\t\t<form method=\"post\" action=\"./?404%3bhttp%3a%2f%2fpayments.tr"
+    },
+    "/wp-content/": {
+      "url": "https://payments.transactcampus.com/wp-content/",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\r\n<HTML>\r\n\t<HEAD>\r\n\t\t<title>Transact Payments</title>\r\n\t\t<meta content=\"Microsoft Visual Studio .NET 7.1\" name=\"GENERATOR\">\r\n\t\t<meta content=\"Visual Basic .NET 7.1\" name=\"CODE_LANGUAGE\">\r\n\t\t<meta content=\"JavaScript\" name=\"vs_defaultClientScript\">\r\n\t\t<meta content=\"http://schemas.microsoft.com/intellisense/ie5\" name=\"vs_targetSchema\">\r\n\t</HEAD>\r\n\t<body MS_POSITIONING=\"FlowLayout\">\r\n\t\t<form method=\"post\" action=\"./?404%3bhttp%3a%2f%2fpayments.tr"
+    },
+    "/user/login": {
+      "url": "https://payments.transactcampus.com/user/login",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\r\n<HTML>\r\n\t<HEAD>\r\n\t\t<title>Transact Payments</title>\r\n\t\t<meta content=\"Microsoft Visual Studio .NET 7.1\" name=\"GENERATOR\">\r\n\t\t<meta content=\"Visual Basic .NET 7.1\" name=\"CODE_LANGUAGE\">\r\n\t\t<meta content=\"JavaScript\" name=\"vs_defaultClientScript\">\r\n\t\t<meta content=\"http://schemas.microsoft.com/intellisense/ie5\" name=\"vs_targetSchema\">\r\n\t</HEAD>\r\n\t<body MS_POSITIONING=\"FlowLayout\">\r\n\t\t<form method=\"post\" action=\"./login?404%3bhttp%3a%2f%2fpaymen"
+    },
+    "/core/install.php": {
+      "url": "https://payments.transactcampus.com/core/install.php",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\r\n<HTML>\r\n\t<HEAD>\r\n\t\t<title>Transact Payments</title>\r\n\t\t<meta content=\"Microsoft Visual Studio .NET 7.1\" name=\"GENERATOR\">\r\n\t\t<meta content=\"Visual Basic .NET 7.1\" name=\"CODE_LANGUAGE\">\r\n\t\t<meta content=\"JavaScript\" name=\"vs_defaultClientScript\">\r\n\t\t<meta content=\"http://schemas.microsoft.com/intellisense/ie5\" name=\"vs_targetSchema\">\r\n\t</HEAD>\r\n\t<body MS_POSITIONING=\"FlowLayout\">\r\n\t\t<form method=\"post\" action=\"./install.php?404%3bhttp%3a%2f%2f"
+    },
+    "/cas/login": {
+      "url": "https://payments.transactcampus.com/cas/login",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\r\n<HTML>\r\n\t<HEAD>\r\n\t\t<title>Transact Payments</title>\r\n\t\t<meta content=\"Microsoft Visual Studio .NET 7.1\" name=\"GENERATOR\">\r\n\t\t<meta content=\"Visual Basic .NET 7.1\" name=\"CODE_LANGUAGE\">\r\n\t\t<meta content=\"JavaScript\" name=\"vs_defaultClientScript\">\r\n\t\t<meta content=\"http://schemas.microsoft.com/intellisense/ie5\" name=\"vs_targetSchema\">\r\n\t</HEAD>\r\n\t<body MS_POSITIONING=\"FlowLayout\">\r\n\t\t<form method=\"post\" action=\"./login?404%3bhttp%3a%2f%2fpaymen"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://payments.transactcampus.com/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\r\n<HTML>\r\n\t<HEAD>\r\n\t\t<title>Transact Payments</title>\r\n\t\t<meta content=\"Microsoft Visual Studio .NET 7.1\" name=\"GENERATOR\">\r\n\t\t<meta content=\"Visual Basic .NET 7.1\" name=\"CODE_LANGUAGE\">\r\n\t\t<meta content=\"JavaScript\" name=\"vs_defaultClientScript\">\r\n\t\t<meta content=\"http://schemas.microsoft.com/intellisense/ie5\" name=\"vs_targetSchema\">\r\n\t</HEAD>\r\n\t<body MS_POSITIONING=\"FlowLayout\">\r\n\t\t<form method=\"post\" action=\"./Metadata?404%3bhttp%3a%2f%2fpay"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: gtag\\('config', 'G-[A-Z0-9]+",
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "HTML: gtag\\('js'",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: gtag\\("
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 40,
+      "evidence": [
+        "HTML: googletagmanager\\.com"
+      ]
+    },
+    {
+      "name": "Microsoft ASP.NET",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <input[^>]+name=\"__VIEWSTATE"
+      ]
+    },
+    {
+      "name": "TouchNet",
+      "confidence": 40,
+      "evidence": [
+        "HTML: upay"
+      ]
+    },
+    {
+      "name": "Enyo",
+      "confidence": 30,
+      "evidence": [
+        "JS: enyo (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "CAS",
+      "confidence": 30,
+      "evidence": [
+        "JS: CAS (HTML)"
+      ]
+    },
+    {
+      "name": "Blackboard Transact",
+      "confidence": 30,
+      "evidence": [
+        "JS: Transact (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    },
+    {
+      "name": "Transact Campus",
+      "confidence": 30,
+      "evidence": [
+        "JS: Transact (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

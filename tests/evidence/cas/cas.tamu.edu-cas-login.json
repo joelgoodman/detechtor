@@ -1,0 +1,237 @@
+{
+  "technology": "CAS",
+  "url": "https://cas.tamu.edu/cas/login",
+  "final_url": "https://cas.tamu.edu/cas/login",
+  "captured_at": "2026-04-21T19:34:59.330Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/cas/cas.tamu.edu-cas-login.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "max-age=0, no-cache, no-store, must-revalidate, private",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-length": "2496",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:34:58 GMT",
+      "expires": "Tue, 21 Apr 2026 19:34:58 GMT",
+      "server": "nginx/1.20.1",
+      "set-cookie": "csrftoken=mNWbAwAUzE4xebLdR8dv6IpV5ip9NyqF; expires=Tue, 20 Apr 2027 19:34:58 GMT; Max-Age=31449600; Path=/; SameSite=Lax\nsessionid=wdfb1s188x1vki247ibn9xby7pubvpe0; HttpOnly; Path=/; SameSite=Lax; Secure",
+      "strict-transport-security": "max-age=157680000",
+      "vary": "Cookie",
+      "x-frame-options": "SAMEORIGIN",
+      "ntcoent-length": "8071"
+    },
+    "scripts": [
+      {
+        "src": "https://cas.tamu.edu/cas/media/js/jquery.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cas.tamu.edu/cas/media/js/foundation6.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cas.tamu.edu/cas/media/js/modernizer.js",
+        "version": null
+      },
+      {
+        "src": "https://cas.tamu.edu/cas/media/js/hideShowPassword.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cas.tamu.edu/cas/media/js/cas.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "title": "Central Authentication Service | Texas A&M University",
+      "author": "Computing & Information Services, Texas\n    A&M University",
+      "keywords": "CAS, NetID, Central Authentication Service",
+      "description": "You have requested access to a site that\n    requires TAMU NetID authentication. The Texas A&M Central\n    Authentication Service allows for a single sign-on that will be valid on\n    any web site utilizing the CAS service.",
+      "dc.title": "Central Authentication Service",
+      "dc.subject.keyword": "CAS, NetID, Central Authentication Service,\n    Texas, A&M, University, Education, Graduate",
+      "dc.description": "You have requested access to a site that\n    requires TAMU NetID authentication. The Texas A&M Central\n    Authentication Service allows for a single sign-on that will be valid on\n    any web site utilizing the CAS service.",
+      "dc.subject": "Education",
+      "dc.type": "Reference Resources",
+      "dc.language": "english",
+      "dc.date": "2006-07-12",
+      "dc.creator": "Computing & Information Services",
+      "dc.format.mime ": "text/html",
+      "dc.format.sysreq ": "Internet browser",
+      "dc.identifier": "https://netid.tamu.edu/cas/",
+      "dc.publisher": "Computing & Information Services",
+      "dc.relation": "http://www.tamu.edu/",
+      "dc.coverage": "Texas",
+      "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    },
+    "cookies": [
+      {
+        "name": "sessionid",
+        "value": "wdfb1s188x1vki247ibn9xby7pubvpe0",
+        "domain": "cas.tamu.edu"
+      },
+      {
+        "name": "csrftoken",
+        "value": "mNWbAwAUzE4xebLdR8dv6IpV5ip9NyqF",
+        "domain": "cas.tamu.edu"
+      }
+    ],
+    "dom": {
+      "title": "Central Authentication Service",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n    <title>Central Authentication Service</title>\n\n    <meta name=\"title\" content=\"Central Authentication Service | Texas A&amp;M University\">\n\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n\n    <meta name=\"author\" content=\"Computing &amp; Information Services, Texas\n    A&amp;M University\">\n    <meta name=\"keywords\" content=\"CAS, NetID, Central Authentication Service\">\n    <meta name=\"description\" content=\"You have requested access to a site that\n    requires TAMU NetID authentication. The Texas A&amp;M Central\n    Authentication Service allows for a single sign-on that will be valid on\n    any web site utilizing the CAS service.\">\n\n    <meta name=\"DC.Title\" content=\"Central Authentication Service\">\n    <meta name=\"Author\" content=\"Computing &amp; Information Services, Texas\n    A&amp;M University\">\n    <meta name=\"DC.Subject.Keyword\" content=\"CAS, NetID, Central Authentication Service,\n    Texas, A&amp;M, University, Education, Graduate\">\n    <meta name=\"DC.Description\" content=\"You have requested access to a site that\n    requires TAMU NetID authentication. The Texas A&amp;M Central\n    Authentication Service allows for a single sign-on that will be valid on\n    any web site utilizing the CAS service.\">\n\n    <meta name=\"DC.Subject\" content=\"Education\">\n    <meta name=\"DC.Type\" content=\"Reference Resources\">\n\n    <meta name=\"DC.Language\" content=\"english\">\n    <meta name=\"DC.Date\" content=\"2006-07-12\">\n\n    <!-- Meta tags from old site -->\n    <meta name=\"DC.Creator\" content=\"Computing &amp; Information Services\">\n    <meta name=\"DC.Format.MIME \" content=\"text/html\">\n\n    <meta name=\"DC.Format.SysReq \" content=\"Internet browser\">\n    <meta name=\"DC.Identifier\" content=\"https://netid.tamu.edu/cas/\">\n    <meta name=\"DC.Publisher\" content=\"Computing &amp; Information Services\">\n    <meta name=\"DC.Relation\" content=\"http://www.tamu.edu/\">\n    <meta name=\"DC.Coverage\" content=\"Texas\">\n    <!-- End meta tags from old site -->\n\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0\" name=\"viewport\">\n    <meta class=\"foundation-mq\">\n    <!--[if gte IE 6]><style type=\"text/css\" media=\"screen\">@import \"/cas/media/styles/ie_cas.css\";</style>\n    <![endif]-->\n\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/cas/media/css/style-cas.css\" media=\"screen\">\n    <!--<link rel=\"stylesheet\" type=\"text/css\" href=\"/cas/media/css/prism.css?v=5ce14d\" media=\"screen\" />-->\n    <link href=\"/cas/media/it.tamu.edu/base.css\" rel=\"stylesheet\" type=\"text/css\">\n    <link href=\"/cas/media/it.tamu.edu/footer.css\" rel=\"stylesheet\" type=\"text/css\">\n    <link href=\"/cas/media/it.tamu.edu/fonts.css\" rel=\"stylesheet\" type=\"text/css\">\n    <link href=\"/cas/media/it.tamu.edu/header.css\" rel=\"stylesheet\" type=\"text/css\">\n",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.6.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://cas.tamu.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n\n\n<html lang=\"en\">\n\n<head>\n    <title>Central Authentication Service</title>\n\n    <meta name=\"title\" content=\"Central Authentication Service | Texas A&M University\"/>\n\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n\n    <meta name=\"author\" content=\"Computing &amp; Information Services, Texas\n    A&amp;M University\"/>\n    <meta name=\"keywords\" content=\"CAS, NetID, Central Authentication Service\"/>\n    <meta name=\"description\" content=\"You have requested access to a s"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://cas.tamu.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n\n\n<html lang=\"en\">\n\n<head>\n    <title>Central Authentication Service</title>\n\n    <meta name=\"title\" content=\"Central Authentication Service | Texas A&M University\"/>\n\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n\n    <meta name=\"author\" content=\"Computing &amp; Information Services, Texas\n    A&amp;M University\"/>\n    <meta name=\"keywords\" content=\"CAS, NetID, Central Authentication Service\"/>\n    <meta name=\"description\" content=\"You have requested access to a s"
+    },
+    "/wp-content/": {
+      "url": "https://cas.tamu.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n\n\n<html lang=\"en\">\n\n<head>\n    <title>Central Authentication Service</title>\n\n    <meta name=\"title\" content=\"Central Authentication Service | Texas A&M University\"/>\n\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n\n    <meta name=\"author\" content=\"Computing &amp; Information Services, Texas\n    A&amp;M University\"/>\n    <meta name=\"keywords\" content=\"CAS, NetID, Central Authentication Service\"/>\n    <meta name=\"description\" content=\"You have requested access to a s"
+    },
+    "/user/login": {
+      "url": "https://cas.tamu.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n\n\n<html lang=\"en\">\n\n<head>\n    <title>Central Authentication Service</title>\n\n    <meta name=\"title\" content=\"Central Authentication Service | Texas A&M University\"/>\n\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n\n    <meta name=\"author\" content=\"Computing &amp; Information Services, Texas\n    A&amp;M University\"/>\n    <meta name=\"keywords\" content=\"CAS, NetID, Central Authentication Service\"/>\n    <meta name=\"description\" content=\"You have requested access to a s"
+    },
+    "/core/install.php": {
+      "url": "https://cas.tamu.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n\n\n<html lang=\"en\">\n\n<head>\n    <title>Central Authentication Service</title>\n\n    <meta name=\"title\" content=\"Central Authentication Service | Texas A&M University\"/>\n\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n\n    <meta name=\"author\" content=\"Computing &amp; Information Services, Texas\n    A&amp;M University\"/>\n    <meta name=\"keywords\" content=\"CAS, NetID, Central Authentication Service\"/>\n    <meta name=\"description\" content=\"You have requested access to a s"
+    },
+    "/cas/login": {
+      "url": "https://cas.tamu.edu/cas/login",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n\n\n<html lang=\"en\">\n\n<head>\n    <title>Central Authentication Service</title>\n\n    <meta name=\"title\" content=\"Central Authentication Service | Texas A&M University\"/>\n\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n\n    <meta name=\"author\" content=\"Computing &amp; Information Services, Texas\n    A&amp;M University\"/>\n    <meta name=\"keywords\" content=\"CAS, NetID, Central Authentication Service\"/>\n    <meta name=\"description\" content=\"You have requested access to a s"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://cas.tamu.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n\n\n<html lang=\"en\">\n\n<head>\n    <title>Central Authentication Service</title>\n\n    <meta name=\"title\" content=\"Central Authentication Service | Texas A&M University\"/>\n\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n\n    <meta name=\"author\" content=\"Computing &amp; Information Services, Texas\n    A&amp;M University\"/>\n    <meta name=\"keywords\" content=\"CAS, NetID, Central Authentication Service\"/>\n    <meta name=\"description\" content=\"You have requested access to a s"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "CAS",
+      "confidence": 100,
+      "evidence": [
+        "HTML: central.*authentication.*service",
+        "HTML: central.*authentication",
+        "HTML: central authentication service",
+        "JS: CAS (HTML)"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Nginx",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=nginx"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

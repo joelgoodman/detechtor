@@ -1,0 +1,170 @@
+{
+  "_metadata": {
+    "version": "3.0.0",
+    "description": "Consolidated higher-ed patterns: Content management systems (higher-ed specific)",
+    "generated": "2026-04-21",
+    "source": "Merged from 9 higher-ed-*.json + enhanced-payment-analytics.json",
+    "tech_count": 7
+  },
+  "Blackboard Web Community Manager": {
+    "cats": [
+      1
+    ],
+    "description": "Blackboard Web Community Manager CMS",
+    "html": [
+      "blackboard.*web.*community",
+      "bb.*wcm"
+    ],
+    "scripts": [
+      "bb.*wcm"
+    ],
+    "js": {
+      "BlackboardWCM": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.blackboard.com"
+  },
+  "Cascade CMS": {
+    "cats": [
+      1
+    ],
+    "description": "Hannon Hill Cascade CMS for higher education. Cascade is a decoupled CMS that publishes static HTML \u2014 no runtime traces appear in standard deployments. Detection is only possible when in-context editing (ICE) is enabled (data-cascade attributes) or if templates reference hannonhill.com assets. Confidence is low by design; treat any match as requiring manual verification.",
+    "html": [
+      "hannonhill.com",
+      "data-cascade-"
+    ],
+    "scripts": [
+      "hannonhill.com"
+    ],
+    "headers": {
+      "X-Cascade-Site": ".*"
+    },
+    "higher_ed": true,
+    "confidence": 30,
+    "website": "https://www.hannonhill.com/products/cascade-cms/index.html",
+    "_detection_note": "Decoupled CMS \u2014 frontend detection unreliable. Matches should be manually verified. No JS globals, meta generator, or path fragments exist in published output."
+  },
+  "Finalsite": {
+    "cats": [
+      1
+    ],
+    "description": "Finalsite school website platform",
+    "html": [
+      "finalsite",
+      "finalsite\\.com"
+    ],
+    "scripts": [
+      "finalsite"
+    ],
+    "js": {
+      "Finalsite": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.finalsite.com"
+  },
+  "Ingeniux CMS": {
+    "cats": [
+      1
+    ],
+    "description": "Ingeniux content management system",
+    "html": [
+      "ingeniux",
+      "ingeniux.*cms"
+    ],
+    "scripts": [
+      "ingeniux"
+    ],
+    "js": {
+      "Ingeniux": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.ingeniux.com"
+  },
+  "Modern Campus CMS": {
+    "cats": [
+      1
+    ],
+    "description": "Modern Campus CMS (formerly OU Campus / OmniCMS by OmniUpdate) content management system for higher education.",
+    "html": [
+      "omni-cms",
+      "omnicms",
+      "data-omni-",
+      "omnicms\\.omniupdate\\.com",
+      "moderncampus",
+      "omniupdate.*modern",
+      "modern.*campus",
+      "moderncampus\\.com"
+    ],
+    "scripts": [
+      "omnicms",
+      "omni\\.js",
+      "omniupdate",
+      "moderncampus",
+      "modern.*campus"
+    ],
+    "js": {
+      "OmniCMS": "",
+      "omni": "",
+      "ModernCampus": ""
+    },
+    "headers": {
+      "X-Powered-By": "OmniCMS"
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://moderncampus.com/solutions/cms/",
+    "_legacy_names": [
+      "OmniCMS",
+      "OmniUpdate",
+      "OU Campus"
+    ]
+  },
+  "SchoolMessenger": {
+    "cats": [
+      1
+    ],
+    "description": "SchoolMessenger (West Unified Communications)",
+    "html": [
+      "schoolmessenger",
+      "west.*unified"
+    ],
+    "scripts": [
+      "schoolmessenger"
+    ],
+    "js": {
+      "SchoolMessenger": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.schoolmessenger.com"
+  },
+  "TerminalFour": {
+    "cats": [
+      1
+    ],
+    "description": "TerminalFour content management system for higher education.",
+    "html": [
+      "terminalfour",
+      "/terminalfour/",
+      "t4-content",
+      "t4-tag",
+      "data-t4-"
+    ],
+    "scripts": [
+      "terminalfour"
+    ],
+    "js": {
+      "TerminalFour": ""
+    },
+    "meta": {
+      "generator": "T4|TerminalFour",
+      "content management system": "TerminalFOUR|TerminalFour|T4"
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.terminalfour.com"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "technology": "Instructure Canvas Catalog",
+  "url": "https://catalog.uncg.edu",
+  "final_url": "https://catalog.uncg.edu/",
+  "captured_at": "2026-04-21T19:25:43.536Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/instructure-canvas-catalog/catalog.uncg.edu.html",
+  "evidence": {
+    "headers": {
+      "accept-ranges": "bytes",
+      "connection": "Keep-Alive",
+      "content-length": "13797",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:25:42 GMT",
+      "etag": "\"35e5-64ff9fc44a5ca\"",
+      "keep-alive": "timeout=5, max=100",
+      "last-modified": "Tue, 21 Apr 2026 15:22:38 GMT",
+      "server": "Apache",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1"
+    },
+    "scripts": [
+      {
+        "src": "https://catalog.uncg.edu/js/jquery.js",
+        "version": null
+      },
+      {
+        "src": "https://catalog.uncg.edu/js/lfjs.js",
+        "version": null
+      },
+      {
+        "src": "https://catalog.uncg.edu/js/lfjs_any.js",
+        "version": null
+      },
+      {
+        "src": "https://catalog.uncg.edu/js/courseleaf.js",
+        "version": null
+      },
+      {
+        "src": "https://catalog.uncg.edu/js/custom.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    },
+    "cookies": [],
+    "dom": {
+      "title": "University Catalog < UNC Greensboro",
+      "bodyClasses": "homepage",
+      "bodyId": "",
+      "headContent": "\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">\n<title>University Catalog &lt; UNC Greensboro</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n<link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"/search/opensearch.xml\" title=\"Catalog\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\">\n<link href=\"/favicon.ico\" rel=\"shortcut icon\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/reset.css\">\n<link href=\"https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i\" rel=\"stylesheet\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"fonts/glyphicons/glyphicons.css\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/fonts/font-awesome/font-awesome.min.css\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/courseleaf.css\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/screen.css\" media=\"screen\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/custom.css\" media=\"screen\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/home.css\" media=\"screen\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/print.css\" media=\"print\">\n<script type=\"text/javascript\" src=\"/js/jquery.js\"></script>\n<script type=\"text/javascript\" src=\"/js/lfjs.js\"></script>\n<script type=\"text/javascript\" src=\"/js/lfjs_any.js\"></script>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/js/lfjs.css\">\n<script type=\"text/javascript\" src=\"/js/courseleaf.js\"></script>\n<script type=\"text/javascript\" src=\"/js/custom.js\"></script>\n\n\n\n",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.6.4"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://catalog.uncg.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "\n\n<!doctype html>\n<html class=\"no-js\" xml:lang=\"en\" lang=\"en\" dir=\"ltr\">\n<head>\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<title>Page Not Found &lt; UNC Greensboro</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<link rel=\"search\" type=\"application/opensearchdescription+xml\"\n\t\t\thref=\"/search/opensearch.xml\" title=\"Catalog\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\" />\n<link href=\"/favicon.ico\" rel=\"shortcut icon\" />"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://catalog.uncg.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "\n\n<!doctype html>\n<html class=\"no-js\" xml:lang=\"en\" lang=\"en\" dir=\"ltr\">\n<head>\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<title>Page Not Found &lt; UNC Greensboro</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<link rel=\"search\" type=\"application/opensearchdescription+xml\"\n\t\t\thref=\"/search/opensearch.xml\" title=\"Catalog\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\" />\n<link href=\"/favicon.ico\" rel=\"shortcut icon\" />"
+    },
+    "/wp-content/": {
+      "url": "https://catalog.uncg.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "\n\n<!doctype html>\n<html class=\"no-js\" xml:lang=\"en\" lang=\"en\" dir=\"ltr\">\n<head>\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<title>Page Not Found &lt; UNC Greensboro</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<link rel=\"search\" type=\"application/opensearchdescription+xml\"\n\t\t\thref=\"/search/opensearch.xml\" title=\"Catalog\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\" />\n<link href=\"/favicon.ico\" rel=\"shortcut icon\" />"
+    },
+    "/user/login": {
+      "url": "https://catalog.uncg.edu/user/login",
+      "status": 404,
+      "body_excerpt": "\n\n<!doctype html>\n<html class=\"no-js\" xml:lang=\"en\" lang=\"en\" dir=\"ltr\">\n<head>\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<title>Page Not Found &lt; UNC Greensboro</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<link rel=\"search\" type=\"application/opensearchdescription+xml\"\n\t\t\thref=\"/search/opensearch.xml\" title=\"Catalog\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\" />\n<link href=\"/favicon.ico\" rel=\"shortcut icon\" />"
+    },
+    "/core/install.php": {
+      "url": "https://catalog.uncg.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "\n\n<!doctype html>\n<html class=\"no-js\" xml:lang=\"en\" lang=\"en\" dir=\"ltr\">\n<head>\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<title>Page Not Found &lt; UNC Greensboro</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<link rel=\"search\" type=\"application/opensearchdescription+xml\"\n\t\t\thref=\"/search/opensearch.xml\" title=\"Catalog\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\" />\n<link href=\"/favicon.ico\" rel=\"shortcut icon\" />"
+    },
+    "/cas/login": {
+      "url": "https://catalog.uncg.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "\n\n<!doctype html>\n<html class=\"no-js\" xml:lang=\"en\" lang=\"en\" dir=\"ltr\">\n<head>\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<title>Page Not Found &lt; UNC Greensboro</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<link rel=\"search\" type=\"application/opensearchdescription+xml\"\n\t\t\thref=\"/search/opensearch.xml\" title=\"Catalog\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\" />\n<link href=\"/favicon.ico\" rel=\"shortcut icon\" />"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://catalog.uncg.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "\n\n<!doctype html>\n<html class=\"no-js\" xml:lang=\"en\" lang=\"en\" dir=\"ltr\">\n<head>\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<title>Page Not Found &lt; UNC Greensboro</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<link rel=\"search\" type=\"application/opensearchdescription+xml\"\n\t\t\thref=\"/search/opensearch.xml\" title=\"Catalog\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\" />\n<link href=\"/favicon.ico\" rel=\"shortcut icon\" />"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 70,
+      "evidence": [
+        "HTML: youtube",
+        "JS: YT (HTML)"
+      ]
+    },
+    {
+      "name": "Glyphicons",
+      "confidence": 40,
+      "evidence": [
+        "HTML: (?:<link[^>]* href=[^>]+glyphicons(?:\\.min)?\\.css|<img[^>]* src=[^>]+glyphicons)"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "CourseLeaf",
+      "confidence": 40,
+      "evidence": [
+        "HTML: courseleaf"
+      ]
+    },
+    {
+      "name": "QuickSchools",
+      "confidence": 40,
+      "evidence": [
+        "HTML: quick.*schools"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": false
+}

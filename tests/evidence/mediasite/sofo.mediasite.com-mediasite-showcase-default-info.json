@@ -1,0 +1,242 @@
+{
+  "technology": "Mediasite",
+  "url": "https://sofo.mediasite.com/Mediasite/Showcase/default/Info",
+  "final_url": "https://sofo.mediasite.com/Mediasite/Showcase/default/Info",
+  "captured_at": "2026-04-21T19:35:22.807Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/mediasite/sofo.mediasite.com-mediasite-showcase-default-info.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "private",
+      "content-encoding": "gzip",
+      "content-length": "4947",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:35:22 GMT",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "",
+      "set-cookie": "AWSALB=7VQyjY3/WjeKIGKwTxwk2cRH66+sijY3C58xu/NFV7z8UV8ADGtrja5BKOFKnEC10PI/i5FqJV6TKlabjfBSk28fh0Jj+jdxM5+yLczndLFMe16B7pa7BCSqm6HK; Expires=Tue, 28 Apr 2026 19:35:21 GMT; Path=/\nAWSALBCORS=7VQyjY3/WjeKIGKwTxwk2cRH66+sijY3C58xu/NFV7z8UV8ADGtrja5BKOFKnEC10PI/i5FqJV6TKlabjfBSk28fh0Jj+jdxM5+yLczndLFMe16B7pa7BCSqm6HK; Expires=Tue, 28 Apr 2026 19:35:21 GMT; Path=/; SameSite=None; Secure",
+      "strict-transport-security": "max-age=31536000",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-ua-compatible": "IE=edge",
+      "x-xss-protection": "1; mode=block"
+    },
+    "scripts": [],
+    "meta": {},
+    "cookies": [
+      {
+        "name": "AWSALB",
+        "value": "7VQyjY3/WjeKIGKwTxwk2cRH66+sijY3C58xu/NFV7z8UV8ADGtrja5BKOFKnEC1",
+        "domain": "sofo.mediasite.com"
+      },
+      {
+        "name": "AWSALBCORS",
+        "value": "7VQyjY3/WjeKIGKwTxwk2cRH66+sijY3C58xu/NFV7z8UV8ADGtrja5BKOFKnEC1",
+        "domain": "sofo.mediasite.com"
+      }
+    ],
+    "dom": {
+      "title": "Mediasite Showcase",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "<title>\n\tMediasite Showcase\n</title>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://sofo.mediasite.com/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://sofo.mediasite.com/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/wp-content/": {
+      "url": "https://sofo.mediasite.com/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/user/login": {
+      "url": "https://sofo.mediasite.com/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/core/install.php": {
+      "url": "https://sofo.mediasite.com/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/cas/login": {
+      "url": "https://sofo.mediasite.com/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://sofo.mediasite.com/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Amazon ALB",
+      "confidence": 100,
+      "evidence": [
+        "Cookie: AWSALB",
+        "Cookie: AWSALBCORS"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Mediasite",
+      "confidence": 80,
+      "evidence": [
+        "HTML: mediasite",
+        "HTML: mediasite\\.com"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "Modern Campus CMS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: modern.*campus"
+      ]
+    },
+    {
+      "name": "Panopto",
+      "confidence": 40,
+      "evidence": [
+        "HTML: lecture.*capture"
+      ]
+    },
+    {
+      "name": "25Live",
+      "confidence": 40,
+      "evidence": [
+        "HTML: event.*management"
+      ]
+    },
+    {
+      "name": "Localist",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*events"
+      ]
+    },
+    {
+      "name": "Anthology Student",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*management"
+      ]
+    },
+    {
+      "name": "MediaSite",
+      "confidence": 40,
+      "evidence": [
+        "HTML: mediasite"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Top Hat",
+      "confidence": 40,
+      "evidence": [
+        "HTML: top.*hat"
+      ]
+    },
+    {
+      "name": "Boost.ai",
+      "confidence": 30,
+      "evidence": [
+        "JS: boost (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

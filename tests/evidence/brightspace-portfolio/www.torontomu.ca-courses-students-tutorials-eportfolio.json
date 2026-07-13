@@ -1,0 +1,533 @@
+{
+  "technology": "Brightspace Portfolio",
+  "url": "https://www.torontomu.ca/courses/students/tutorials/eportfolio/",
+  "final_url": "https://www.torontomu.ca/courses/students/tutorials/eportfolio/",
+  "captured_at": "2026-04-21T19:33:49.146Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/brightspace-portfolio/www.torontomu.ca-courses-students-tutorials-eportfolio.html",
+  "evidence": {
+    "headers": {
+      "accept-ranges": "none",
+      "cache-control": "max-age=300",
+      "content-encoding": "gzip",
+      "content-length": "10715",
+      "content-type": "text/html;charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:33:45 GMT",
+      "expires": "Tue, 21 Apr 2026 19:38:45 GMT",
+      "permissions-policy": "geolocation=(),microphone=(),camera=()",
+      "server": "Apache/2.4.37 (Red Hat Enterprise Linux)",
+      "strict-transport-security": "max-age=31536000",
+      "vary": "Accept-Encoding"
+    },
+    "scripts": [
+      {
+        "src": "https://analytics.tiktok.com/i18n/pixel/static/identify_5cff1caf.js",
+        "version": null
+      },
+      {
+        "src": "https://analytics.tiktok.com/i18n/pixel/static/main.MWE0ZWQ3ZWQwOA.js",
+        "version": null
+      },
+      {
+        "src": "https://scripts.clarity.ms/0.8.59/clarity.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/destination?id=AW-951156628&cx=c&gtm=4e64k0h2",
+        "version": null
+      },
+      {
+        "src": "https://sc-static.net/scevent.min.js",
+        "version": null
+      },
+      {
+        "src": "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C0HFL9SP76SVVJ0USP90&lib=ttq",
+        "version": null
+      },
+      {
+        "src": "https://www.clarity.ms/tag/3w1vqq08x4",
+        "version": null
+      },
+      {
+        "src": "https://tags.srv.stackadapt.com/events.js",
+        "version": null
+      },
+      {
+        "src": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+        "version": null
+      },
+      {
+        "src": "https://connect.facebook.net/signals/config/1113113388739561?v=2.9.303&r=stable&domain=www.torontomu.ca&hme=97937018cefade17726f0472876fc101316b2ce9008a35a6a5a7977d7436151a&ex_m=104%2C205%2C154%2C22%2C72%2C73%2C145%2C68%2C67%2C11%2C162%2C90%2C16%2C138%2C127%2C39%2C75%2C78%2C134%2C159%2C164%2C8%2C4%2C5%2C7%2C6%2C3%2C91%2C101%2C165%2C170%2C219%2C62%2C186%2C187%2C55%2C276%2C30%2C74%2C231%2C230%2C229%2C23%2C33%2C103%2C61%2C10%2C63%2C97%2C98%2C99%2C105%2C130%2C31%2C29%2C132%2C133%2C129%2C128%2C155%2C76%2C158%2C156%2C157%2C50%2C60%2C123%2C15%2C161%2C45%2C263%2C264%2C262%2C26%2C27%2C28%2C48%2C146%2C77%2C112%2C18%2C20%2C44%2C40%2C42%2C41%2C83%2C92%2C96%2C110%2C144%2C147%2C46%2C111%2C24%2C21%2C119%2C69%2C36%2C149%2C148%2C150%2C141%2C139%2C25%2C35%2C59%2C109%2C160%2C70%2C17%2C152%2C114%2C81%2C66%2C19%2C85%2C86%2C116%2C84%2C136%2C135%2C34%2C278%2C293%2C212%2C201%2C202%2C200%2C296%2C288%2C52%2C213%2C107%2C131%2C80%2C121%2C54%2C47%2C49%2C113%2C120%2C126%2C58%2C64%2C151%2C115%2C37%2C32%2C53%2C56%2C100%2C163%2C1%2C124%2C14%2C122%2C12%2C2%2C57%2C93%2C65%2C118%2C89%2C88%2C166%2C167%2C94%2C95%2C9%2C125%2C102%2C51%2C142%2C87%2C79%2C71%2C117%2C106%2C43%2C143%2C0%2C82%2C137%2C140%2C153%2C38%2C108%2C13%2C168",
+        "version": null
+      },
+      {
+        "src": "https://connect.facebook.net/en_US/fbevents.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-JF95D7W5DY&cx=c&gtm=4e64k0h2",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=AW-977082572&cx=c&gtm=4e64k0h2",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-MJMHPZ",
+        "version": null
+      },
+      {
+        "src": "https://code.jquery.com/jquery-3.6.3.min.js",
+        "version": null
+      },
+      {
+        "src": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/977082572/?random=1776800025764&cv=11&fst=1776800025764&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be64k0h2v9236322861z86758720za20gzb6758720zd6758720xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616985~115938466~115938468~117266401~117384405&u_w=800&u_h=600&url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&rcb=0&frm=0&tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1666116545.1776800026&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4",
+        "version": null
+      },
+      {
+        "src": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/16578988128/?random=1776800025772&cv=11&fst=1776800025772&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be64k0h2v9236322861z86758720za20gzb6758720zd6758720xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616985~115938466~115938468~117266401~117384405&u_w=800&u_h=600&url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&rcb=0&frm=0&tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1666116545.1776800026&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4",
+        "version": null
+      },
+      {
+        "src": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/950932189/?random=1776800025847&cv=11&fst=1776800025847&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45je64k0h2v881130735z86758720za20gzb6758720zd6758720xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938466~115938468~117266401~117384405~118463261&u_w=800&u_h=600&url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&rcb=19&frm=0&tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1666116545.1776800026&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4",
+        "version": null
+      },
+      {
+        "src": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/989285611/?random=1776800025852&cv=11&fst=1776800025852&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45je64k0h2v881130735z86758720za20gzb6758720zd6758720xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938466~115938468~117266401~117384405~118463261&u_w=800&u_h=600&url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&rcb=19&frm=0&tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1666116545.1776800026&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4",
+        "version": null
+      },
+      {
+        "src": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11010857863/?random=1776800025854&cv=11&fst=1776800025854&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45je64k0h2v881130735z86758720za20gzb6758720zd6758720xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938466~115938468~117266401~117384405~118463261&u_w=800&u_h=600&url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&rcb=19&frm=0&tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1666116545.1776800026&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4",
+        "version": null
+      },
+      {
+        "src": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/653757172/?random=1776800025857&cv=11&fst=1776800025857&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45je64k0h2v881130735z86758720za20gzb6758720zd6758720xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938466~115938468~117266401~117384405~118463261&u_w=800&u_h=600&url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&rcb=19&frm=0&tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1666116545.1776800026&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4",
+        "version": null
+      },
+      {
+        "src": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/951156628/?random=1776800026947&cv=11&fst=1776800026947&bg=ffffff&guid=ON&async=1&gtm=45be64k0h2v9250108744z86758720za20gzb6758720zd6758720xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938466~115938468~117266401&u_w=800&u_h=600&url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&rcb=4&frm=0&tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1666116545.1776800026&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&_tu=CA&rfmt=3&fmt=4",
+        "version": null
+      },
+      {
+        "src": "https://www.torontomu.ca/etc.clientlibs/ryecms/static/clientlib-all.d5c7f6d300bb6c82b54f0506b9296deb.js",
+        "version": null
+      },
+      {
+        "src": "https://www.torontomu.ca/etc.clientlibs/ryecms/static/customStyles/default.d41d8cd98f00b204e9800998ecf8427e.js",
+        "version": null
+      },
+      {
+        "src": "https://torontomu.apparmor.com/Notifications/Feeds/Javascript/?AlertID=76",
+        "version": null
+      },
+      {
+        "src": "https://torontomu.apparmor.com/Notifications/Feeds/Javascript/?AlertID=77",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:type": "website",
+      "og:site_name": "Toronto Metropolitan University (TMU)",
+      "og:url": "https://www.torontomu.ca/courses/students/tutorials/eportfolio/",
+      "og:title": "Use the D2L ePortfolio",
+      "og:description": "In this tutorial, learn how to use the D2L ePortfolio in your class to collect reflections, files and links, as well as share items with groups in your class.",
+      "twitter:card": "summary_large_image",
+      "twitter:site": "@TorontoMet",
+      "twitter:title": "Use the D2L ePortfolio",
+      "twitter:description": "In this tutorial, learn how to use the D2L ePortfolio in your class to collect reflections, files and links, as well as share items with groups in your class.",
+      "keywords": "eportfolio, reflection, file, link, share, save, group, class",
+      "description": "In this tutorial, learn how to use the D2L ePortfolio in your class to collect reflections, files and links, as well as share items with groups in your class."
+    },
+    "cookies": [
+      {
+        "name": "_ttp",
+        "value": "01KPRRHMAXFZBKBGSAXGBMZ0RG_.tt.1",
+        "domain": ".torontomu.ca"
+      },
+      {
+        "name": "ttcsid",
+        "value": "1776800026974::J6PMDQfcIMhCpow9udYj.1.1776800027181.0::1.-1883.0",
+        "domain": ".torontomu.ca"
+      },
+      {
+        "name": "ttcsid_C0HFL9SP76SVVJ0USP90",
+        "value": "1776800026974::dPURX5-0ipB1rmPh76sZ.1.1776800027182.0",
+        "domain": ".torontomu.ca"
+      },
+      {
+        "name": "_clck",
+        "value": "1sev1a2%5E2%5Eg5e%5E0%5E2302",
+        "domain": ".torontomu.ca"
+      },
+      {
+        "name": "sa-user-id-v3",
+        "value": "s%253AAQAKIEv4YxBWL87nukcHFP3nrLtrAYhQnBDIVv7XT1ncxpMYEAQYAyCaop",
+        "domain": "www.torontomu.ca"
+      },
+      {
+        "name": "_tt_enable_cookie",
+        "value": "1",
+        "domain": ".torontomu.ca"
+      },
+      {
+        "name": "sa-user-id",
+        "value": "s%253A0-c0c2e6df-2f87-575c-531a-fcb1110f95b3.Q6q22vQf%252BqTVE0%",
+        "domain": "www.torontomu.ca"
+      },
+      {
+        "name": "_gcl_au",
+        "value": "1.1.1666116545.1776800026",
+        "domain": ".torontomu.ca"
+      },
+      {
+        "name": "sa-user-id-v2",
+        "value": "s%253AwMLm3y-HV1xTGvyxEQ-Vs4g6DPc.WFWaPLIJaf28Be4atHfnfhuOn9Nz8K",
+        "domain": "www.torontomu.ca"
+      },
+      {
+        "name": "sa-user-id-v4",
+        "value": "s%253A.o6W7wkJsHSTU4%252BLlDruZ%252FwNjVcUZZMvakQpSatDoAgo",
+        "domain": "www.torontomu.ca"
+      },
+      {
+        "name": "_scid_r",
+        "value": "j-x8CZchsbKZnwjBIVaAVq7xOI5V59Rf",
+        "domain": ".torontomu.ca"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.1.66572137.1776800026",
+        "domain": ".torontomu.ca"
+      },
+      {
+        "name": "_scid",
+        "value": "j-x8CZchsbKZnwjBIVaAVq7xOI5V59Rf",
+        "domain": ".torontomu.ca"
+      },
+      {
+        "name": "_fbp",
+        "value": "fb.1.1776800026909.413569774454329651",
+        "domain": ".torontomu.ca"
+      },
+      {
+        "name": "_clsk",
+        "value": "181cbxi%5E1776800027340%5E1%5E1%5Eb.clarity.ms%2Fcollect",
+        "domain": ".torontomu.ca"
+      },
+      {
+        "name": "_ga_JF95D7W5DY",
+        "value": "GS2.1.s1776800025$o1$g0$t1776800025$j60$l0$h0",
+        "domain": ".torontomu.ca"
+      }
+    ],
+    "dom": {
+      "title": "Use the D2L ePortfolio - Educational Technology - Toronto Metropolitan University (TMU)",
+      "bodyClasses": "headers-replica background-FFFFFF  ",
+      "bodyId": "",
+      "headContent": "\n    <link rel=\"icon\" href=\"/content/dam/tmu_favicon.ico\" type=\"image/x-icon\">\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:site_name\" content=\"Toronto Metropolitan University (TMU)\">\n    <meta property=\"og:url\" content=\"https://www.torontomu.ca/courses/students/tutorials/eportfolio/\">\n    \n    <meta property=\"og:title\" content=\"Use the D2L ePortfolio\">\n    \n    \n    <meta property=\"og:description\" content=\"In this tutorial, learn how to use the D2L ePortfolio in your class to collect reflections, files and links, as well as share items with groups in your class.\">\n    \n    \n    <meta name=\"twitter:card\" content=\"summary_large_image\">\n    <meta name=\"twitter:url\" value=\"https://www.torontomu.ca/courses/students/tutorials/eportfolio/\">\n    \n    <meta name=\"twitter:site\" content=\"@TorontoMet\">\n    \n    \n    <meta name=\"twitter:title\" content=\"Use the D2L ePortfolio\">\n    \n    \n    <meta name=\"twitter:description\" content=\"In this tutorial, learn how to use the D2L ePortfolio in your class to collect reflections, files and links, as well as share items with groups in your class.\">\n    \n    \n\n    <title>Use the D2L ePortfolio - Educational Technology - Toronto Metropolitan University (TMU)\n    </title>\n    \n    <meta name=\"keywords\" content=\"eportfolio, reflection, file, link, share, save, group, class\">\n    \n    \n    <meta name=\"description\" content=\"In this tutorial, learn how to use the D2L ePortfolio in your class to collect reflections, files and links, as well as share items with groups in your class.\">\n    \n    \n    \n\n    \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    <!-- Google Tag Manager -->\n<script type=\"text/javascript\" async=\"\" src=\"https://analytics.tiktok.com/i18n/pixel/static/identify_5cff1caf.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://analytics.tiktok.com/i18n/pixel/static/main.MWE0ZWQ3ZWQwOA.js\" data-id=\"C0HFL9SP76SVVJ0USP90\"></script><script async=\"\" src=\"https://scripts.clarity.ms/0.8.59/clarity.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/destination?id=AW-951156628&amp;cx=c&amp;gtm=4e64k0h2\"></script><script async=\"\" src=\"https://sc-static.net/scevent.min.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C0HFL9SP76SVVJ0USP90&amp;lib=ttq\"></script><script async=\"\" src=\"https://www.clarity.ms/tag/3w1vqq08x4\"></script><script src=\"https://tags.srv.stackadapt.com/events.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://snap.licdn.com/li.lms-analytics/insight.min.js\"></script><script src=\"https://connect.facebook.net/signals/config/1113113388739561?v=2.9.303&amp;r=stable&amp;domain=www.torontomu.ca&amp;hme=97937018cefade17726f0472876fc101316b2ce9008a35a6a5a7977d7436151a&amp;ex_m=104%2C205%2C154%2C22%2C72%2C73%2C145%2C68%2C67%2C11%2C162%2C90%2C16%2C138%2C127%2C39%2C75%2C78%2C134%2C159%2C164%2C8%2C4%2C5%2C7%2C6%2C3%2C91%2C101%2C165%2C170%2C219%2C62%2C186%2C187%2C55%2C276%2C30%2C74%2C231%2C230%2C229%2C23%2C33%2C103%2C61%2C10%2C63%2C97%2C98%2C99%2C105%2C130%2C31%2C29%2C132%2C133%2C129%2C128%2C155%2C76%2C158%2C156%2C157%2C50%2C60%2C123%2C15%2C161%2C45%2C263%2C264%2C262%2C26%2C27%2C28%2C48%2C146%2C77%2C112%2C18%2C20%2C44%2C40%2C42%2C41%2C83%2C92%2C96%2C110%2C144%2C147%2C46%2C111%2C24%2C21%2C119%2C69%2C36%2C149%2C148%2C150%2C141%2C139%2C25%2C35%2C59%2C109%2C160%2C70%2C17%2C152%2C114%2C81%2C66%2C19%2C85%2C86%2C116%2C84%2C136%2C135%2C34%2C278%2C293%2C212%2C201%2C202%2C200%2C296%2C288%2C52%2C213%2C107%2C131%2C80%2C121%2C54%2C47%2C49%2C113%2C120%2C126%2C58%2C64%2C151%2C115%2C37%2C32%2C53%2C56%2C100%2C163%2C1%2C124%2C14%2C122%2C12%2C2%2C57%2C93%2C65%2C118%2C89%2C88%2C166%2C167%2C94%2C95%2C9%2C125%2C102%2C51%2C142%2C87%2C79%2C71%2C117%2C106%2C43%2C143%2C0%2C82%2C137%2C140%2C153%2C38%2C108%2C13%2C168\" async=\"\"></script><script async=\"\" src=\"https://connect.facebook.net/en_US/fbevents.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-JF95D7W5DY&amp;cx=c&amp;gtm=4e64k0h2\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=AW-977082572&amp;cx=c&amp;gtm=4e64k0h2\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-MJMHPZ\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-MJMHPZ');</script>\n<!-- End Google Tag Manager -->\n    \n    \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<script>\nlet cqMode = \"DISABLED\";\nlet cqTemplate = \"general\";\nlet runMode = \"publish\";\n</script>\n<script src=\"https://code.jquery.com/jquery-3.6.3.min.js\"></script>\n\n\n    \n\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<script type=\"text/javascript\" async=\"\" src=\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/977082572/?random=1776800025764&amp;cv=11&amp;fst=1776800025764&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be64k0h2v9236322861z86758720za20gzb6758720zd6758720xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115616985~115938466~115938468~117266401~117384405&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&amp;rcb=0&amp;frm=0&amp;tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1666116545.1776800026&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=&amp;uapv=&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4\"></script><script type=\"text/javascript\" async=\"\" src=\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/16578988128/?random=1776800025772&amp;cv=11&amp;fst=1776800025772&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be64k0h2v9236322861z86758720za20gzb6758720zd6758720xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115616985~115938466~115938468~117266401~117384405&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&amp;rcb=0&amp;frm=0&amp;tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1666116545.1776800026&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=&amp;uapv=&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4\"></script><script type=\"text/javascript\" async=\"\" src=\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/950932189/?random=1776800025847&amp;cv=11&amp;fst=1776800025847&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45je64k0h2v881130735z86758720za20gzb6758720zd6758720xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115938466~115938468~117266401~117384405~118463261&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&amp;rcb=19&amp;frm=0&amp;tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1666116545.1776800026&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=&amp;uapv=&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4\"></script><script type=\"text/javascript\" async=\"\" src=\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/989285611/?random=1776800025852&amp;cv=11&amp;fst=1776800025852&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45je64k0h2v881130735z86758720za20gzb6758720zd6758720xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115938466~115938468~117266401~117384405~118463261&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&amp;rcb=19&amp;frm=0&amp;tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1666116545.1776800026&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=&amp;uapv=&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4\"></script><script type=\"text/javascript\" async=\"\" src=\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11010857863/?random=1776800025854&amp;cv=11&amp;fst=1776800025854&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45je64k0h2v881130735z86758720za20gzb6758720zd6758720xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115938466~115938468~117266401~117384405~118463261&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&amp;rcb=19&amp;frm=0&amp;tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1666116545.1776800026&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=&amp;uapv=&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4\"></script><script type=\"text/javascript\" async=\"\" src=\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/653757172/?random=1776800025857&amp;cv=11&amp;fst=1776800025857&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45je64k0h2v881130735z86758720za20gzb6758720zd6758720xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115938466~115938468~117266401~117384405~118463261&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&amp;rcb=19&amp;frm=0&amp;tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1666116545.1776800026&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=&amp;uapv=&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4\"></script><link id=\"sa-css\" rel=\"stylesheet\" type=\"text/css\" href=\"https://tags.srv.stackadapt.com/sa.css\" media=\"all\"><script type=\"text/javascript\" async=\"\" src=\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/951156628/?random=1776800026947&amp;cv=11&amp;fst=1776800026947&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be64k0h2v9250108744z86758720za20gzb6758720zd6758720xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115616986~115938466~115938468~117266401&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.torontomu.ca%2Fcourses%2Fstudents%2Ftutorials%2Feportfolio%2F&amp;rcb=4&amp;frm=0&amp;tiba=Use%20the%20D2L%20ePortfolio%20-%20Educational%20Technology%20-%20Toronto%20Metropolitan%20University%20(TMU)&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1666116545.1776800026&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=&amp;uapv=&amp;uaw=0&amp;_tu=CA&amp;rfmt=3&amp;fmt=4\"></script><style>\n\t\t\t\tbutton.gifa11y-btn, \n\t\t\t\tspan.gifa11y-warning {\n\t\t\t\t\tall: unset;\n\t\t\t\t\tbox-sizing: border-box !important;\n\t\t\t\t}\n\t\t\t\tbutton.gifa11y-btn {\n\t\t\t\t\tbackground: #004C9B !important;\n\t\t\t\t\tcolor: white !important;\n\t\t\t\t\tborder-radius: 50% !important;\n\t\t\t\t\tbox-shadow: 0 0 16px 0 #0000004f !important;\n\t\t\t\t\tborder: 2px solid white !important;\n\t\t\t\t\tcursor: pointer !important;\n\t\t\t\t\tdisplay: block !important;\n\t\t\t\t\tline-height: normal !important;\n\t\t\t\t\theight: 36px !important;\n\t\t\t\t\twidth: 36px !important;\n\t\t\t\t\ttext-align: center !important;\n\t\t\t\t\tmargin: 12px !important;\n\t\t\t\t\tpadding: 4px !important;\n\t\t\t\t\tposition: absolute !important;\n\t\t\t\t\ttransition: all .2s ease-in-out !important;\n\t\t\t\t\tz-index: 500 !important;\n\t\t\t\t}\n\t\t\t\tbutton.gifa11y-btn:hover, button.gifa11y-btn:focus {\n\t\t\t\t\tbackground: #002D72 !important;\n\t\t\t\t}\n\t\t\t\tbutton.gifa11y-btn:focus {\n\t\t\t\t\tbox-shadow: 0 0 0 5px #00e7ffad !important;\n\t\t\t\t\toutline: 3px solid transparent;\n\t\t\t\t}\n\t\t\t\t.gifa11y-btn > svg {\n\t\t\t\t\tflex-shrink: 0 !important;\n\t\t\t\t\tposition: relative !important;\n\t\t\t\t\theight: 24px !important;\n\t\t\t\t\twidth: 24px !important;\n\t\t\t\t\t-webkit-transform: translate(0px,0px) !important;\n\t\t\t\t}\n\t\t\t\t/* Increase target size of button. */\n\t\t\t\tbutton.gifa11y-btn:before {\n\t\t\t\t\tcontent: \"\" !important;\n\t\t\t\t\tinset: -8.5px !important;\n\t\t\t\t\tmin-height: 50px !important;\n\t\t\t\t\tmin-width: 50px !important;\n\t\t\t\t\tposition: absolute !important;\n\t\t\t\t}\n\t\t\t\tcanvas.gifa11y-canvas {\n\t\t\t\t\tobject-fit: contain !important;\n\t\t\t\t\tmax-width: 100%;\n\t\t\t\t}\n\t\t\t\t.thumbnail > canvas, .thumbnail a > canvas {\n\t\t\t\t\tmargin-left: auto;\n\t\t\t\t\tmargin-right: auto;\n\t\t\t\t}\n\t\t\t\t</style>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.6.3"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.torontomu.ca/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html lang=\"en\">\r\n<head>\r\n    <link rel=\"icon\" href=\"/content/dam/tmu_favicon.ico\" type=\"image/x-icon\"/>\r\n    \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.torontomu.ca/wp-json/wp/v2/",
+      "status": 302,
+      "redirect_to": "https://www.torontomu.ca/content/ryerson/wp.json/wp/v2.html"
+    },
+    "/wp-content/": {
+      "url": "https://www.torontomu.ca/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html lang=\"en\">\r\n<head>\r\n    <link rel=\"icon\" href=\"/content/dam/tmu_favicon.ico\" type=\"image/x-icon\"/>\r\n    \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-"
+    },
+    "/user/login": {
+      "url": "https://www.torontomu.ca/user/login",
+      "status": 301,
+      "redirect_to": "https://www.torontomu.ca/user/login/",
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>301 Moved Permanently</title>\n</head><body>\n<h1>Moved Permanently</h1>\n<p>The document has moved <a href=\"https://www.torontomu.ca/user/login/\">here</a>.</p>\n</body></html>\n"
+    },
+    "/core/install.php": {
+      "url": "https://www.torontomu.ca/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html lang=\"en\">\r\n<head>\r\n    <link rel=\"icon\" href=\"/content/dam/tmu_favicon.ico\" type=\"image/x-icon\"/>\r\n    \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-"
+    },
+    "/cas/login": {
+      "url": "https://www.torontomu.ca/cas/login",
+      "status": 301,
+      "redirect_to": "https://www.torontomu.ca/cas/login/",
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>301 Moved Permanently</title>\n</head><body>\n<h1>Moved Permanently</h1>\n<p>The document has moved <a href=\"https://www.torontomu.ca/cas/login/\">here</a>.</p>\n</body></html>\n"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.torontomu.ca/Shibboleth.sso/Metadata",
+      "status": 301,
+      "redirect_to": "https://www.torontomu.ca/Shibboleth.sso/Metadata/",
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>301 Moved Permanently</title>\n</head><body>\n<h1>Moved Permanently</h1>\n<p>The document has moved <a href=\"https://www.torontomu.ca/Shibboleth.sso/Metadata/\">here</a>.</p>\n</body></html>\n"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "D2L Brightspace",
+      "confidence": 100,
+      "evidence": [
+        "HTML: brightspace",
+        "HTML: d2l.*brightspace",
+        "JS: D2L (HTML)",
+        "JS: Brightspace (HTML)"
+      ]
+    },
+    {
+      "name": "Respondus LockDown Browser",
+      "confidence": 100,
+      "evidence": [
+        "HTML: respondus.*lockdown",
+        "HTML: lockdown.*browser",
+        "JS: Respondus (HTML)"
+      ]
+    },
+    {
+      "name": "iClicker",
+      "confidence": 100,
+      "evidence": [
+        "HTML: iclicker",
+        "HTML: i.*clicker",
+        "JS: iClicker (HTML)"
+      ]
+    },
+    {
+      "name": "Poll Everywhere",
+      "confidence": 100,
+      "evidence": [
+        "HTML: poll.*everywhere",
+        "HTML: polleverywhere",
+        "JS: PollEverywhere (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "Google Workspace",
+      "confidence": 80,
+      "evidence": [
+        "HTML: gsuite",
+        "HTML: g.*suite"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Red Hat",
+      "confidence": 80,
+      "evidence": [
+        "Header: Server=Red Hat"
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "Turnitin",
+      "confidence": 70,
+      "evidence": [
+        "HTML: turnitin",
+        "JS: Turnitin (HTML)"
+      ]
+    },
+    {
+      "name": "AppArmor",
+      "confidence": 70,
+      "evidence": [
+        "HTML: apparmor",
+        "JS: AppArmor (HTML)"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Brightspace Portfolio",
+      "confidence": 40,
+      "evidence": [
+        "HTML: d2l.*portfolio"
+      ]
+    },
+    {
+      "name": "Facebook Pixel",
+      "confidence": 30,
+      "evidence": [
+        "JS: _fbq (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Microsoft Clarity",
+      "confidence": 30,
+      "evidence": [
+        "JS: clarity (HTML)"
+      ]
+    },
+    {
+      "name": "Paper.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: paper (HTML)"
+      ]
+    },
+    {
+      "name": "TikTok Pixel",
+      "confidence": 30,
+      "evidence": [
+        "JS: TiktokAnalyticsObject (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

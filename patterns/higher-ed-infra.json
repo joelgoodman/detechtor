@@ -1,0 +1,2340 @@
+{
+  "_metadata": {
+    "version": "3.0.0",
+    "description": "Consolidated higher-ed patterns: Auth, payments, video, CRM, search, communications, research tools",
+    "generated": "2026-04-21",
+    "source": "Merged from 9 higher-ed-*.json + enhanced-payment-analytics.json",
+    "tech_count": 112
+  },
+  "25Live": {
+    "cats": [
+      53
+    ],
+    "description": "25Live event and space management system for higher education.",
+    "html": [
+      "25live",
+      "collegenet.*25live",
+      "event.*management",
+      "twentyfivelive",
+      "25live\\.collegenet\\.com",
+      "class=\"25live"
+    ],
+    "scripts": [
+      "25live",
+      "twentyfivelive"
+    ],
+    "js": {
+      "TwentyFiveLive": "",
+      "CollegeNET": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.collegenet.com/products/25live",
+    "_legacy_names": [
+      "CollegeNET 25Live",
+      "TwentyFiveLive"
+    ]
+  },
+  "Academic Works": {
+    "cats": [
+      53
+    ],
+    "description": "Academic Works scholarship management platform (acquired by Blackbaud, now marketed as Blackbaud Award Management). Deployed instances still use academicworks.com subdomains.",
+    "html": [
+      "academic.*works",
+      "academicworks",
+      "academicworks.com"
+    ],
+    "scripts": [
+      "academicworks"
+    ],
+    "js": {
+      "AcademicWorks": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.academicworks.com",
+    "_legacy_names": [
+      "Blackbaud Award Management"
+    ]
+  },
+  "AdAstra": {
+    "cats": [
+      53
+    ],
+    "description": "Ad Astra course scheduling and optimization",
+    "html": [
+      "adastra",
+      "ad.*astra"
+    ],
+    "scripts": [
+      "adastra"
+    ],
+    "js": {
+      "AdAstra": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.adastrainfo.com"
+  },
+  "AddSearch": {
+    "cats": [
+      29
+    ],
+    "description": "AddSearch hosted site search service",
+    "html": [
+      "addsearch"
+    ],
+    "scripts": [
+      "addsearch"
+    ],
+    "js": {
+      "addsearch": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.addsearch.com"
+  },
+  "Adobe Creative Cloud": {
+    "cats": [
+      14
+    ],
+    "description": "Adobe Creative Cloud for education",
+    "html": [
+      "adobe.*creative.*cloud",
+      "creative.*adobe"
+    ],
+    "scripts": [
+      "adobe.*creative",
+      "creative.*cloud"
+    ],
+    "js": {
+      "AdobeCC": "",
+      "CreativeCloud": ""
+    },
+    "higher_ed": true,
+    "confidence": 70,
+    "website": "https://www.adobe.com/creativecloud/education.html"
+  },
+  "Adobe Experience Manager Assets": {
+    "cats": [
+      53
+    ],
+    "description": "Adobe Experience Manager digital asset management",
+    "html": [
+      "aem-assets",
+      "adobe.*experience.*manager.*assets"
+    ],
+    "scripts": [
+      "aem-core",
+      "experience.*manager"
+    ],
+    "js": {
+      "AEM": "",
+      "ExperienceManager": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html"
+  },
+  "AdvancementForm": {
+    "cats": [
+      53
+    ],
+    "description": "AdvancementForm online giving platform",
+    "html": [
+      "advancementform"
+    ],
+    "scripts": [
+      "advancementform"
+    ],
+    "js": {
+      "AdvancementForm": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.advancementform.com"
+  },
+  "AdvisorTrac": {
+    "cats": [
+      53
+    ],
+    "description": "AdvisorTrac academic advising and student tracking",
+    "html": [
+      "advisortrac",
+      "advisor.*trac"
+    ],
+    "scripts": [
+      "advisortrac"
+    ],
+    "js": {
+      "AdvisorTrac": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.advisortrac.com"
+  },
+  "AlertMedia": {
+    "cats": [
+      53
+    ],
+    "description": "AlertMedia emergency communication platform",
+    "html": [
+      "alertmedia"
+    ],
+    "scripts": [
+      "alertmedia"
+    ],
+    "js": {
+      "AlertMedia": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.alertmedia.com"
+  },
+  "Algolia": {
+    "cats": [
+      29
+    ],
+    "description": "Algolia hosted search API",
+    "html": [
+      "algolia"
+    ],
+    "scripts": [
+      "algolia",
+      "algoliasearch"
+    ],
+    "js": {
+      "algoliasearch": "",
+      "algolia": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.algolia.com"
+  },
+  "Almabase": {
+    "cats": [
+      53
+    ],
+    "description": "Almabase alumni engagement and fundraising platform",
+    "html": [
+      "almabase"
+    ],
+    "scripts": [
+      "almabase"
+    ],
+    "js": {
+      "Almabase": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.almabase.com"
+  },
+  "AppArmor": {
+    "cats": [
+      53
+    ],
+    "description": "AppArmor campus safety application",
+    "html": [
+      "apparmor"
+    ],
+    "scripts": [
+      "apparmor"
+    ],
+    "js": {
+      "AppArmor": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.apparmor.com"
+  },
+  "Argos": {
+    "cats": [
+      53
+    ],
+    "description": "Argos higher education reporting platform",
+    "html": [
+      "argos.*reporting",
+      "evisions.*argos"
+    ],
+    "scripts": [
+      "argos"
+    ],
+    "js": {
+      "Argos": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.evisions.com/products/argos/"
+  },
+  "Azure Cognitive Search": {
+    "cats": [
+      29
+    ],
+    "description": "Microsoft Azure Cognitive Search",
+    "html": [
+      "azure.*search",
+      "cognitive.*search"
+    ],
+    "scripts": [
+      "azure.*search"
+    ],
+    "js": {
+      "AzureSearch": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://azure.microsoft.com/en-us/products/search/"
+  },
+  "Blackbaud": {
+    "cats": [
+      53
+    ],
+    "description": "Blackbaud fundraising and advancement platform",
+    "html": [
+      "blackbaud"
+    ],
+    "scripts": [
+      "blackbaud"
+    ],
+    "js": {
+      "Blackbaud": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.blackbaud.com"
+  },
+  "Brandfolder": {
+    "cats": [
+      53
+    ],
+    "description": "Brandfolder digital asset management platform",
+    "html": [
+      "brandfolder"
+    ],
+    "scripts": [
+      "brandfolder"
+    ],
+    "js": {
+      "Brandfolder": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://brandfolder.com"
+  },
+  "BrightSign": {
+    "cats": [
+      53
+    ],
+    "description": "BrightSign digital signage players",
+    "html": [
+      "brightsign"
+    ],
+    "scripts": [
+      "brightsign"
+    ],
+    "js": {
+      "BrightSign": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.brightsign.biz"
+  },
+  "Brightcove": {
+    "cats": [
+      14
+    ],
+    "description": "Brightcove video cloud platform",
+    "html": [
+      "brightcove"
+    ],
+    "scripts": [
+      "brightcove"
+    ],
+    "js": {
+      "brightcove": "",
+      "Brightcove": ""
+    },
+    "higher_ed": true,
+    "confidence": 75,
+    "website": "https://www.brightcove.com"
+  },
+  "Bynder": {
+    "cats": [
+      53
+    ],
+    "description": "Bynder digital asset management platform",
+    "html": [
+      "bynder"
+    ],
+    "scripts": [
+      "bynder"
+    ],
+    "js": {
+      "Bynder": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.bynder.com"
+  },
+  "CAS": {
+    "cats": [
+      53,
+      98
+    ],
+    "description": "Central Authentication Service (CAS) single sign-on protocol.",
+    "html": [
+      "/cas/login",
+      "central.*authentication.*service",
+      "apereo.*cas",
+      "central.*authentication",
+      "central authentication service"
+    ],
+    "scripts": [
+      "apereo.*cas"
+    ],
+    "js": {
+      "CAS": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://apereo.github.io/cas/",
+    "_legacy_names": [
+      "CAS Central Authentication Service"
+    ]
+  },
+  "CBORD": {
+    "cats": [
+      6
+    ],
+    "description": "CBORD campus card, dining, and access control system (now part of Illumia, formerly CBORD Inc.).",
+    "html": [
+      "get\\.cbord\\.com",
+      "cbord",
+      "campus.*dining",
+      "getcbord",
+      "cs\\.cbord\\.com",
+      "mycard\\.cbord\\.com",
+      "class=\"cbord"
+    ],
+    "scripts": [
+      "cbord"
+    ],
+    "js": {
+      "CBORD": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.cbord.com",
+    "_legacy_names": [
+      "CBORD Inc.",
+      "Illumia CBORD"
+    ]
+  },
+  "Canto": {
+    "cats": [
+      53
+    ],
+    "description": "Canto digital asset management platform",
+    "html": [
+      "canto.*dam",
+      "cantotechture"
+    ],
+    "scripts": [
+      "canto"
+    ],
+    "js": {
+      "Canto": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.canto.com"
+  },
+  "Canva for Education": {
+    "cats": [
+      14
+    ],
+    "description": "Canva design platform for education",
+    "html": [
+      "canva.*education",
+      "canva.*for.*schools"
+    ],
+    "scripts": [
+      "canva"
+    ],
+    "js": {
+      "Canva": ""
+    },
+    "higher_ed": true,
+    "confidence": 75,
+    "website": "https://www.canva.com/education/"
+  },
+  "Civitas Learning": {
+    "cats": [
+      53
+    ],
+    "description": "Civitas Learning student success analytics platform",
+    "html": [
+      "civitas.*learning",
+      "civitaslearning"
+    ],
+    "scripts": [
+      "civitas"
+    ],
+    "js": {
+      "CivitasLearning": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.civitaslearning.com"
+  },
+  "Cludo": {
+    "cats": [
+      29
+    ],
+    "description": "Cludo intelligent site search",
+    "html": [
+      "cludo"
+    ],
+    "scripts": [
+      "cludo"
+    ],
+    "js": {
+      "cludo": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.cludo.com"
+  },
+  "Concept3D": {
+    "cats": [
+      53
+    ],
+    "description": "Concept3D interactive mapping and virtual tours",
+    "html": [
+      "concept3d"
+    ],
+    "scripts": [
+      "concept3d"
+    ],
+    "js": {
+      "Concept3D": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://concept3d.com"
+  },
+  "Coveo": {
+    "cats": [
+      29
+    ],
+    "description": "Coveo enterprise search platform",
+    "html": [
+      "coveo"
+    ],
+    "scripts": [
+      "coveo"
+    ],
+    "js": {
+      "Coveo": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.coveo.com"
+  },
+  "Destiny One": {
+    "cats": [
+      53
+    ],
+    "description": "Destiny One student recruitment platform",
+    "html": [
+      "destiny.*one",
+      "destinyone"
+    ],
+    "scripts": [
+      "destiny.*one"
+    ],
+    "js": {
+      "DestinyOne": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.destinysolutions.com"
+  },
+  "Duo Security": {
+    "cats": [
+      53
+    ],
+    "description": "Duo Security multi-factor authentication",
+    "html": [
+      "duo.*security",
+      "duosecurity",
+      "duo\\.com"
+    ],
+    "scripts": [
+      "duosecurity",
+      "duo\\.com"
+    ],
+    "js": {
+      "Duo": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://duo.com"
+  },
+  "EAB Navigate": {
+    "cats": [
+      53
+    ],
+    "description": "EAB Navigate (formerly SSC Campus / Student Success Collaborative) student success platform for enrolled students. Portal hosted at institution-specific *.campus.eab.com subdomains; linked from public institutional pages.",
+    "html": [
+      "campus.eab.com",
+      "bouncer.eab.com",
+      "eab.*navigate",
+      "navigate.*eab"
+    ],
+    "scripts": [
+      "campus.eab.com",
+      "bouncer.eab.com"
+    ],
+    "cookies": {
+      "_campus_session": ""
+    },
+    "js": {
+      "EAB": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://eab.com/technology/navigate/",
+    "_legacy_names": [
+      "SSC Campus",
+      "Student Success Collaborative"
+    ]
+  },
+  "EBSCO Discovery Service": {
+    "cats": [
+      53
+    ],
+    "description": "EBSCO Discovery Service (EDS)",
+    "html": [
+      "ebsco.*discovery",
+      "eds.*ebsco"
+    ],
+    "scripts": [
+      "ebsco.*eds",
+      "discovery.*ebsco"
+    ],
+    "js": {
+      "EBSCODiscovery": "",
+      "EDS": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.ebsco.com/products/ebsco-discovery-service"
+  },
+  "EMS": {
+    "cats": [
+      53
+    ],
+    "description": "EMS event management system for higher education.",
+    "html": [
+      "dea.*ems",
+      "emssoftware",
+      "ems.*software"
+    ],
+    "scripts": [
+      "emssoftware"
+    ],
+    "js": {
+      "EMS": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.emssoftware.com"
+  },
+  "Echo360": {
+    "cats": [
+      14
+    ],
+    "description": "Echo360 lecture capture and video platform",
+    "html": [
+      "echo360",
+      "echo.*classroom"
+    ],
+    "scripts": [
+      "echo360"
+    ],
+    "js": {
+      "Echo360": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://echo360.com"
+  },
+  "Elasticsearch": {
+    "cats": [
+      29
+    ],
+    "description": "Elasticsearch distributed search and analytics engine",
+    "html": [
+      "elasticsearch"
+    ],
+    "scripts": [
+      "elasticsearch",
+      "elastic"
+    ],
+    "js": {
+      "elasticsearch": "",
+      "elastic": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.elastic.co/elasticsearch/"
+  },
+  "Element451": {
+    "cats": [
+      53
+    ],
+    "description": "Element451 student engagement and admissions CRM platform. Embedded via institution-specific shell.451.io subdomain and Shell451 JS global.",
+    "html": [
+      "element451",
+      "shell.451.io",
+      "id=\"shell451\""
+    ],
+    "scripts": [
+      "shell.451.io",
+      "element451"
+    ],
+    "js": {
+      "Shell451": "",
+      "Element451": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://element451.com"
+  },
+  "Element451 Search": {
+    "cats": [
+      29
+    ],
+    "description": "Element451 Bolt AI search product. Detected via Shell451.BoltDiscovery JS object.",
+    "html": [
+      "BoltDiscovery",
+      "bolt.*discovery"
+    ],
+    "scripts": [],
+    "js": {
+      "BoltDiscovery": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://element451.com"
+  },
+  "Encoura": {
+    "cats": [
+      53
+    ],
+    "description": "Encoura (formerly Noel-Levitz) enrollment management platform",
+    "html": [
+      "encoura",
+      "noel.*levitz"
+    ],
+    "scripts": [
+      "encoura"
+    ],
+    "js": {
+      "Encoura": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://encoura.org"
+  },
+  "Ensemble Video": {
+    "cats": [
+      14
+    ],
+    "description": "Ensemble Video streaming platform",
+    "html": [
+      "ensemble.*video",
+      "ensemblevideo"
+    ],
+    "scripts": [
+      "ensemble"
+    ],
+    "js": {
+      "EnsembleVideo": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.ensemblevideo.com"
+  },
+  "Everbridge": {
+    "cats": [
+      53
+    ],
+    "description": "Everbridge emergency notification system",
+    "html": [
+      "everbridge"
+    ],
+    "scripts": [
+      "everbridge"
+    ],
+    "js": {
+      "Everbridge": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.everbridge.com"
+  },
+  "Ex Libris Alma": {
+    "cats": [
+      53
+    ],
+    "description": "Ex Libris Alma library management system.",
+    "html": [
+      "exlibrisgroup",
+      "alma.*exlibris",
+      "exlibris.*alma"
+    ],
+    "scripts": [
+      "exlibrisgroup",
+      "exlibris.*alma"
+    ],
+    "js": {
+      "ExLibris": "",
+      "Alma": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://exlibrisgroup.com/products/alma-library-services-platform/"
+  },
+  "Ex Libris Primo": {
+    "cats": [
+      53
+    ],
+    "description": "Ex Libris Primo library discovery service. Primo VE uses /primo-explore/ URL paths; Classic Primo uses /primo/ paths.",
+    "html": [
+      "primo.*exlibris",
+      "exlibris.*primo",
+      "primo.*ve",
+      "/primo-explore/",
+      "primo.exlibrisgroup.com"
+    ],
+    "scripts": [
+      "exlibris.*primo",
+      "primo\\.exlibris",
+      "primo.exlibrisgroup.com"
+    ],
+    "js": {
+      "Primo": "",
+      "PrimoVE": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://exlibrisgroup.com/products/primo-discovery-service/"
+  },
+  "Ex Libris Voyager": {
+    "cats": [
+      53
+    ],
+    "description": "Ex Libris Voyager integrated library system (legacy)",
+    "html": [
+      "voyager.*exlibris",
+      "exlibris.*voyager"
+    ],
+    "scripts": [
+      "voyager",
+      "exlibris"
+    ],
+    "js": {
+      "Voyager": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://exlibrisgroup.com/products/voyager-ils/"
+  },
+  "FOLIO LSP": {
+    "cats": [
+      53
+    ],
+    "description": "FOLIO open source library services platform",
+    "html": [
+      "folio.*library",
+      "folio.*lsp"
+    ],
+    "scripts": [
+      "folio"
+    ],
+    "js": {
+      "FOLIO": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.folio.org"
+  },
+  "Figma for Education": {
+    "cats": [
+      14
+    ],
+    "description": "Figma design platform for education",
+    "html": [
+      "figma.*education"
+    ],
+    "scripts": [
+      "figma"
+    ],
+    "js": {
+      "Figma": ""
+    },
+    "higher_ed": true,
+    "confidence": 72,
+    "website": "https://www.figma.com/education/"
+  },
+  "Flipgrid": {
+    "cats": [
+      14
+    ],
+    "description": "Microsoft Flipgrid video discussion platform",
+    "html": [
+      "flipgrid",
+      "flip.*grid"
+    ],
+    "scripts": [
+      "flipgrid"
+    ],
+    "js": {
+      "Flipgrid": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://info.flipgrid.com"
+  },
+  "Four Winds Interactive": {
+    "cats": [
+      53
+    ],
+    "description": "Four Winds Interactive digital signage",
+    "html": [
+      "fourwinds.*interactive",
+      "fourwindsinteractive"
+    ],
+    "scripts": [
+      "fourwinds",
+      "fourwindsinteractive"
+    ],
+    "js": {
+      "FourWinds": "",
+      "FWI": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.fourwindsinteractive.com"
+  },
+  "Funnelback": {
+    "cats": [
+      29
+    ],
+    "description": "Funnelback enterprise search platform (Squiz Search)",
+    "html": [
+      "funnelback",
+      "squiz.*search"
+    ],
+    "scripts": [
+      "funnelback",
+      "squiz.*search"
+    ],
+    "js": {
+      "Funnelback": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.funnelback.com"
+  },
+  "GIS Cloud": {
+    "cats": [
+      53
+    ],
+    "description": "GIS Cloud mapping platform",
+    "html": [
+      "gis.*cloud",
+      "giscloud"
+    ],
+    "scripts": [
+      "giscloud"
+    ],
+    "js": {
+      "GISCloud": ""
+    },
+    "higher_ed": true,
+    "confidence": 75,
+    "website": "https://www.giscloud.com"
+  },
+  "Google Custom Search": {
+    "cats": [
+      29
+    ],
+    "description": "Google Custom Search Engine",
+    "html": [
+      "google.*custom.*search",
+      "google.*site.*search"
+    ],
+    "scripts": [
+      "google.*search",
+      "cse.*google"
+    ],
+    "js": {
+      "google": "",
+      "__gcse": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://cse.google.com"
+  },
+  "Google Workspace": {
+    "cats": [
+      53
+    ],
+    "description": "Google Workspace (formerly G Suite) collaboration platform",
+    "html": [
+      "workspace.*google",
+      "gsuite",
+      "g.*suite"
+    ],
+    "scripts": [
+      "workspace",
+      "gsuite"
+    ],
+    "js": {
+      "GoogleWorkspace": "",
+      "GSuite": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://workspace.google.com"
+  },
+  "GradesFirst": {
+    "cats": [
+      53
+    ],
+    "description": "GradesFirst student success and tutoring management",
+    "html": [
+      "gradesfirst",
+      "grades.*first"
+    ],
+    "scripts": [
+      "gradesfirst"
+    ],
+    "js": {
+      "GradesFirst": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.gradesfirst.com"
+  },
+  "Graduway": {
+    "cats": [
+      53
+    ],
+    "description": "Graduway alumni networking platform",
+    "html": [
+      "graduway"
+    ],
+    "scripts": [
+      "graduway"
+    ],
+    "js": {
+      "Graduway": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://graduway.com"
+  },
+  "HelioCampus": {
+    "cats": [
+      53
+    ],
+    "description": "HelioCampus higher education analytics",
+    "html": [
+      "heliocampus"
+    ],
+    "scripts": [
+      "heliocampus"
+    ],
+    "js": {
+      "HelioCampus": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.heliocampus.com"
+  },
+  "Hobsons Connect": {
+    "cats": [
+      53
+    ],
+    "description": "Hobsons Connect student success platform",
+    "html": [
+      "hobsons.*connect"
+    ],
+    "scripts": [
+      "hobsons.*connect"
+    ],
+    "js": {
+      "HobsonsConnect": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.hobsons.com"
+  },
+  "HubSpot for Education": {
+    "cats": [
+      32,
+      52
+    ],
+    "description": "HubSpot CRM optimized for education",
+    "html": [
+      "hubspot",
+      "hs-analytics",
+      "_hsq",
+      "hubspot\\.com",
+      "hs-script",
+      "class=\"hs-"
+    ],
+    "scripts": [
+      "hubspot",
+      "hs-analytics"
+    ],
+    "js": {
+      "hbspt": "",
+      "_hsq": ""
+    },
+    "higher_ed": true,
+    "_legacy_names": [
+      "HubSpot"
+    ]
+  },
+  "InCommon Federation": {
+    "cats": [
+      53
+    ],
+    "description": "InCommon federated identity management",
+    "html": [
+      "incommon"
+    ],
+    "scripts": [
+      "incommon"
+    ],
+    "js": {
+      "InCommon": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.incommon.org"
+  },
+  "Informer": {
+    "cats": [
+      53
+    ],
+    "description": "Entrinsik Informer reporting and analytics platform",
+    "html": [
+      "informer.*entrinsik",
+      "entrinsik"
+    ],
+    "scripts": [
+      "informer",
+      "entrinsik"
+    ],
+    "js": {
+      "Informer": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.entrinsik.com/informer/"
+  },
+  "Infosilem": {
+    "cats": [
+      53
+    ],
+    "description": "Infosilem higher education solutions",
+    "html": [
+      "infosilem"
+    ],
+    "scripts": [
+      "infosilem"
+    ],
+    "js": {
+      "Infosilem": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.infosilem.com"
+  },
+  "Innovative Interfaces Sierra": {
+    "cats": [
+      53
+    ],
+    "description": "Innovative Interfaces Sierra ILS",
+    "html": [
+      "sierra.*ils",
+      "iii\\.com.*sierra"
+    ],
+    "scripts": [
+      "sierra-ils",
+      "iii\\.com"
+    ],
+    "js": {
+      "Sierra": "",
+      "III": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.iii.com/products/sierra-ils/"
+  },
+  "JW Player": {
+    "cats": [
+      14
+    ],
+    "description": "JW Player video hosting platform",
+    "html": [
+      "jwplayer",
+      "jw.*player"
+    ],
+    "scripts": [
+      "jwplayer"
+    ],
+    "js": {
+      "jwplayer": "",
+      "JWPlayer": ""
+    },
+    "higher_ed": true,
+    "confidence": 70,
+    "website": "https://www.jwplayer.com"
+  },
+  "Jibestream": {
+    "cats": [
+      53
+    ],
+    "description": "Jibestream indoor mapping platform",
+    "html": [
+      "jibestream"
+    ],
+    "scripts": [
+      "jibestream"
+    ],
+    "js": {
+      "Jibestream": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://jibestream.com"
+  },
+  "Kaltura": {
+    "cats": [
+      14
+    ],
+    "description": "Kaltura video platform commonly used in higher education.",
+    "html": [
+      "kaltura",
+      "kwidget",
+      "kaltura.*player",
+      "cdnapi\\.kaltura\\.com",
+      "html5player\\.kaltura\\.com",
+      "cdnapisec.kaltura.com"
+    ],
+    "scripts": [
+      "kaltura",
+      "kwidget",
+      "cdnapisec.kaltura.com"
+    ],
+    "js": {
+      "kWidget": "",
+      "KalturaPlayer": "",
+      "kaltura": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://corp.kaltura.com"
+  },
+  "Kognito": {
+    "cats": [
+      53
+    ],
+    "description": "Kognito conversation training platform for student support",
+    "html": [
+      "kognito"
+    ],
+    "scripts": [
+      "kognito"
+    ],
+    "js": {
+      "Kognito": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://kognito.com"
+  },
+  "Koha ILS": {
+    "cats": [
+      53
+    ],
+    "description": "Koha open source integrated library system",
+    "html": [
+      "koha.*ils",
+      "koha.*opac"
+    ],
+    "scripts": [
+      "koha"
+    ],
+    "js": {
+      "Koha": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://koha-community.org"
+  },
+  "LibAnswers": {
+    "cats": [
+      53
+    ],
+    "description": "Springshare LibAnswers reference platform",
+    "html": [
+      "libanswers",
+      "springshare.*libanswers"
+    ],
+    "scripts": [
+      "libanswers"
+    ],
+    "js": {
+      "LibAnswers": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://springshare.com/libanswers/"
+  },
+  "LibCal": {
+    "cats": [
+      53
+    ],
+    "description": "Springshare LibCal calendar and booking system",
+    "html": [
+      "libcal",
+      "springshare.*libcal"
+    ],
+    "scripts": [
+      "libcal"
+    ],
+    "js": {
+      "LibCal": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://springshare.com/libcal/"
+  },
+  "LibGuides": {
+    "cats": [
+      53
+    ],
+    "description": "Springshare LibGuides research guide platform",
+    "html": [
+      "libguides",
+      "springshare.*libguides"
+    ],
+    "scripts": [
+      "libguides",
+      "springshare"
+    ],
+    "js": {
+      "LibGuides": "",
+      "SpringShare": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://springshare.com/libguides/"
+  },
+  "LiveSafe": {
+    "cats": [
+      53
+    ],
+    "description": "LiveSafe campus safety platform",
+    "html": [
+      "livesafe"
+    ],
+    "scripts": [
+      "livesafe"
+    ],
+    "js": {
+      "LiveSafe": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.livesafemobile.com"
+  },
+  "Localist": {
+    "cats": [
+      53
+    ],
+    "description": "Localist event calendar platform for higher education.",
+    "html": [
+      "localist",
+      "event.*calendar",
+      "localist\\.com",
+      "events\\.localist\\.com",
+      "class=\"localist"
+    ],
+    "scripts": [
+      "localist"
+    ],
+    "js": {
+      "Localist": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://localist.com"
+  },
+  "Lucidworks Fusion": {
+    "cats": [
+      29
+    ],
+    "description": "Lucidworks Fusion search platform",
+    "html": [
+      "lucidworks",
+      "fusion.*search"
+    ],
+    "scripts": [
+      "lucidworks",
+      "fusion"
+    ],
+    "js": {
+      "Lucidworks": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://lucidworks.com"
+  },
+  "MapYourTag": {
+    "cats": [
+      53
+    ],
+    "description": "MapYourTag wayfinding and mapping platform",
+    "html": [
+      "mapyourtag"
+    ],
+    "scripts": [
+      "mapyourtag"
+    ],
+    "js": {
+      "MapYourTag": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://mapyourtag.com"
+  },
+  "Mappedin": {
+    "cats": [
+      53
+    ],
+    "description": "Mappedin indoor mapping platform",
+    "html": [
+      "mappedin"
+    ],
+    "scripts": [
+      "mappedin"
+    ],
+    "js": {
+      "Mappedin": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.mappedin.com"
+  },
+  "Mediasite": {
+    "cats": [
+      14
+    ],
+    "description": "Enterprise video platform and lecture capture",
+    "html": [
+      "mediasite",
+      "sonicfoundry.*mediasite",
+      "mediasite\\.com",
+      "mediasite\\.cloud",
+      "class=\"mediasite"
+    ],
+    "scripts": [
+      "mediasite"
+    ],
+    "js": {
+      "MediaSite": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.sonicfoundry.com/mediasite/",
+    "_legacy_names": [
+      "MediaSite"
+    ]
+  },
+  "Meilisearch": {
+    "cats": [
+      29
+    ],
+    "description": "Meilisearch open source search engine",
+    "html": [
+      "meilisearch",
+      "meili"
+    ],
+    "scripts": [
+      "meilisearch",
+      "meili"
+    ],
+    "js": {
+      "MeiliSearch": "",
+      "meilisearch": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.meilisearch.com"
+  },
+  "Microsoft Power BI": {
+    "cats": [
+      53
+    ],
+    "description": "Microsoft Power BI business intelligence platform",
+    "html": [
+      "powerbi",
+      "power.*bi"
+    ],
+    "scripts": [
+      "powerbi"
+    ],
+    "js": {
+      "PowerBI": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://powerbi.microsoft.com"
+  },
+  "Mindmax": {
+    "cats": [
+      53
+    ],
+    "description": "Mindmax student engagement and retention platform",
+    "html": [
+      "mindmax"
+    ],
+    "scripts": [
+      "mindmax"
+    ],
+    "js": {
+      "Mindmax": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.mindmax.com"
+  },
+  "NoviSign": {
+    "cats": [
+      53
+    ],
+    "description": "NoviSign digital signage platform",
+    "html": [
+      "novisign"
+    ],
+    "scripts": [
+      "novisign"
+    ],
+    "js": {
+      "NoviSign": ""
+    },
+    "higher_ed": true,
+    "confidence": 75,
+    "website": "https://www.novisign.com"
+  },
+  "OCLC WorldShare": {
+    "cats": [
+      53
+    ],
+    "description": "OCLC WorldShare library management platform",
+    "html": [
+      "worldshare",
+      "oclc.*worldshare"
+    ],
+    "scripts": [
+      "worldshare",
+      "oclc"
+    ],
+    "js": {
+      "WorldShare": "",
+      "OCLC": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.oclc.org/en/worldshare-management-services.html"
+  },
+  "Okta": {
+    "cats": [
+      53
+    ],
+    "description": "Okta identity and access management platform",
+    "html": [
+      "okta"
+    ],
+    "scripts": [
+      "okta"
+    ],
+    "js": {
+      "Okta": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.okta.com"
+  },
+  "Panopto": {
+    "cats": [
+      14
+    ],
+    "description": "Panopto video platform for higher education lecture capture.",
+    "html": [
+      "panopto",
+      "panopto.*viewer",
+      "panopto\\.com",
+      "hosted\\.panopto\\.com",
+      "class=\"panopto"
+    ],
+    "scripts": [
+      "hosted\\.panopto\\.com",
+      "panopto"
+    ],
+    "js": {
+      "Panopto": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.panopto.com"
+  },
+  "Polaris ILS": {
+    "cats": [
+      53
+    ],
+    "description": "Innovative Polaris integrated library system",
+    "html": [
+      "polaris.*ils",
+      "polaris.*library"
+    ],
+    "scripts": [
+      "polaris"
+    ],
+    "js": {
+      "Polaris": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.iii.com/products/polaris/"
+  },
+  "Raiser's Edge": {
+    "cats": [
+      53
+    ],
+    "description": "Raiser's Edge donor management system",
+    "html": [
+      "raiser.*edge",
+      "raisers.*edge"
+    ],
+    "scripts": [
+      "raisers.*edge"
+    ],
+    "js": {
+      "RaisersEdge": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.blackbaud.com/products/blackbaud-raisers-edge-nxt"
+  },
+  "Rave Mobile Safety": {
+    "cats": [
+      53
+    ],
+    "description": "Rave emergency communication platform",
+    "html": [
+      "rave.*mobile.*safety",
+      "getrave"
+    ],
+    "scripts": [
+      "rave",
+      "getrave"
+    ],
+    "js": {
+      "Rave": "",
+      "RaveMobile": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.ravemobilesafety.com"
+  },
+  "Ready Education": {
+    "cats": [
+      53
+    ],
+    "description": "Ready Education mobile campus platform",
+    "html": [
+      "ready.*education",
+      "readyeducation"
+    ],
+    "scripts": [
+      "ready.*education"
+    ],
+    "js": {
+      "ReadyEducation": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://readyeducation.com"
+  },
+  "Rise Vision": {
+    "cats": [
+      53
+    ],
+    "description": "Rise Vision digital signage platform",
+    "html": [
+      "rise.*vision",
+      "risevision"
+    ],
+    "scripts": [
+      "risevision"
+    ],
+    "js": {
+      "RiseVision": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.risevision.com"
+  },
+  "SAML": {
+    "description": "Security Assertion Markup Language authentication",
+    "html": [
+      "saml",
+      "saml2",
+      "SAMLRequest",
+      "SAMLResponse"
+    ],
+    "headers": {
+      "saml": ".*"
+    },
+    "higher_ed": true
+  },
+  "Sajari": {
+    "cats": [
+      29
+    ],
+    "description": "Sajari search and matching platform",
+    "html": [
+      "sajari"
+    ],
+    "scripts": [
+      "sajari"
+    ],
+    "js": {
+      "sajari": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.sajari.com"
+  },
+  "Salesforce Education Cloud": {
+    "cats": [
+      52,
+      53
+    ],
+    "description": "Customer relationship management platform",
+    "html": [
+      "salesforce\\.com",
+      "force\\.com",
+      "lightning-",
+      "salesforce.*education",
+      "education.*cloud",
+      "salesforce",
+      "educationcloud\\.salesforce\\.com",
+      "class=\"salesforce"
+    ],
+    "scripts": [
+      "salesforce",
+      "force\\.com",
+      "lightning",
+      "salesforce.*education",
+      "force"
+    ],
+    "js": {
+      "sforce": "",
+      "Salesforce": "",
+      "SalesforceEducation": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.salesforce.com/products/education/",
+    "_legacy_names": [
+      "Salesforce"
+    ]
+  },
+  "Scala Digital Signage": {
+    "cats": [
+      53
+    ],
+    "description": "Scala digital signage platform",
+    "html": [
+      "scala.*digital",
+      "scala.*signage"
+    ],
+    "scripts": [
+      "scala"
+    ],
+    "js": {
+      "Scala": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.scala.com"
+  },
+  "ScreenCloud": {
+    "cats": [
+      53
+    ],
+    "description": "ScreenCloud digital signage platform",
+    "html": [
+      "screencloud"
+    ],
+    "scripts": [
+      "screencloud"
+    ],
+    "js": {
+      "ScreenCloud": ""
+    },
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://screencloud.com"
+  },
+  "Screencast-O-Matic": {
+    "cats": [
+      14
+    ],
+    "description": "Screencast-O-Matic screen recording platform",
+    "html": [
+      "screencast.*o.*matic",
+      "screencastomatic"
+    ],
+    "scripts": [
+      "screencast"
+    ],
+    "js": {
+      "ScreencastOMatic": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://screencast-o-matic.com"
+  },
+  "SearchBlox": {
+    "cats": [
+      29
+    ],
+    "description": "SearchBlox enterprise search platform",
+    "html": [
+      "searchblox"
+    ],
+    "scripts": [
+      "searchblox"
+    ],
+    "js": {
+      "SearchBlox": ""
+    },
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.searchblox.com"
+  },
+  "Shibboleth": {
+    "cats": [
+      53,
+      98
+    ],
+    "description": "Shibboleth single sign-on system commonly used in higher education.",
+    "html": [
+      "shibboleth",
+      "shibd",
+      "shib.*session",
+      "idp\\.shibboleth\\.org",
+      "Shibboleth\\.sso",
+      "class=\"shibboleth"
+    ],
+    "scripts": [
+      "shibboleth"
+    ],
+    "js": {
+      "Shibboleth": ""
+    },
+    "headers": {
+      "shib-session-id": ".*",
+      "shib-identity-provider": ".*"
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://shibboleth.net"
+  },
+  "SirsiDynix Symphony": {
+    "cats": [
+      53
+    ],
+    "description": "SirsiDynix Symphony integrated library system",
+    "html": [
+      "sirsidynix",
+      "symphony.*ils"
+    ],
+    "scripts": [
+      "sirsidynix",
+      "symphony"
+    ],
+    "js": {
+      "SirsiDynix": "",
+      "Symphony": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.sirsidynix.com/products/symphony"
+  },
+  "Site Search 360": {
+    "cats": [
+      29
+    ],
+    "description": "Site Search 360 hosted search solution",
+    "html": [
+      "sitesearch360",
+      "site.*search.*360"
+    ],
+    "scripts": [
+      "sitesearch360"
+    ],
+    "js": {
+      "ss360": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.sitesearch360.com"
+  },
+  "Slate": {
+    "cats": [
+      52,
+      53
+    ],
+    "description": "Technolutions Slate admissions CRM platform. Detectable via hosted application portals and via the Slate ping tracking service (mx.technolutions.net) embedded on institutional marketing sites.",
+    "html": [
+      "slate\\.technolutions\\.com",
+      "class=\"slate-",
+      "id=\"slate-",
+      "data-slate-",
+      "technolutions",
+      "slate.*technolutions",
+      "technolutions.*slate",
+      "window[.ping_",
+      "mx.technolutions.net"
+    ],
+    "scripts": [
+      "slate\\.js",
+      "technolutions",
+      "slate",
+      "mx.technolutions.net",
+      "/ping?id="
+    ],
+    "js": {
+      "Slate": "",
+      "Technolutions": ""
+    },
+    "meta": {
+      "application-name": "Slate"
+    },
+    "headers": {
+      "x-slate-instance": ".*"
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://technolutions.com/slate",
+    "_legacy_names": [
+      "Technolutions Slate"
+    ]
+  },
+  "Starfish": {
+    "cats": [
+      53
+    ],
+    "description": "EAB Starfish student success and retention platform (formerly Hobsons Starfish)",
+    "html": [
+      "starfishsolutions",
+      "hobsons.*starfish",
+      "starfish\\.hobsons",
+      "starfish\\.starfishsolutions\\.com",
+      "starfish.*retention"
+    ],
+    "scripts": [
+      "starfishsolutions"
+    ],
+    "js": {
+      "Starfish": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.hobsons.com/solutions/student-success/starfish/",
+    "_legacy_names": [
+      "Starfish Retention Solutions"
+    ]
+  },
+  "Summon": {
+    "cats": [
+      53
+    ],
+    "description": "ProQuest Summon discovery service",
+    "html": [
+      "summon.*discovery",
+      "proquest.*summon"
+    ],
+    "scripts": [
+      "summon"
+    ],
+    "js": {
+      "Summon": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.proquest.com/products-services/summon.html"
+  },
+  "Swiftype": {
+    "cats": [
+      29
+    ],
+    "description": "Swiftype site search (now Elastic Site Search)",
+    "html": [
+      "swiftype"
+    ],
+    "scripts": [
+      "swiftype"
+    ],
+    "js": {
+      "_st": "",
+      "swiftype": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.elastic.co/enterprise-search/"
+  },
+  "TouchNet": {
+    "cats": [
+      6,
+      53
+    ],
+    "description": "TouchNet payment processing system for higher education.",
+    "html": [
+      "secure\\.touchnet\\.com",
+      "touchnet",
+      "upay",
+      "ucommerce",
+      "tnet-",
+      "marketplace\\.touchnet\\.com",
+      "secure\\.touchnet\\.net",
+      "class=\"tnet",
+      "id=\"tnet",
+      "/C\\d+_tsa/"
+    ],
+    "scripts": [
+      "touchnet",
+      "upay",
+      "tnet"
+    ],
+    "js": {
+      "TouchNet": ""
+    },
+    "headers": {
+      "server": "TouchNet"
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.touchnet.com"
+  },
+  "Transact Campus": {
+    "cats": [
+      6,
+      53
+    ],
+    "description": "Transact Campus card, mobile ordering, and payment solutions (now part of Illumia; formerly Blackboard Transact).",
+    "html": [
+      "transactcampus\\.com",
+      "blackboard.*transact",
+      "bb.*transact",
+      "transactcampus",
+      "transact-campus",
+      "transact\\.com",
+      "campus\\.transact\\.com",
+      "class=\"transact",
+      "data-transact"
+    ],
+    "scripts": [
+      "transactcampus\\.com",
+      "transact",
+      "bb.*transact",
+      "transact-campus"
+    ],
+    "js": {
+      "Transact": "",
+      "BBTransact": ""
+    },
+    "meta": {
+      "generator": "Transact"
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.blackboard.com/campus-solutions/campus-card",
+    "_legacy_names": [
+      "Blackboard Transact",
+      "Heartland Campus Solutions eAccounts",
+      "Illumia"
+    ]
+  },
+  "VidGrid": {
+    "cats": [
+      14
+    ],
+    "description": "VidGrid video communication platform",
+    "html": [
+      "vidgrid"
+    ],
+    "scripts": [
+      "vidgrid"
+    ],
+    "js": {
+      "VidGrid": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.vidgrid.com"
+  },
+  "Vimeo": {
+    "cats": [
+      14
+    ],
+    "description": "Vimeo video platform",
+    "html": [
+      "vimeo",
+      "vimeo-player"
+    ],
+    "scripts": [
+      "vimeo",
+      "vimeocdn"
+    ],
+    "js": {
+      "Vimeo": "",
+      "VimeoPlayer": ""
+    },
+    "higher_ed": false,
+    "confidence": 92,
+    "website": "https://vimeo.com"
+  },
+  "Widen Collective": {
+    "cats": [
+      53
+    ],
+    "description": "Widen Collective digital asset management",
+    "html": [
+      "widen.*collective",
+      "widencollective"
+    ],
+    "scripts": [
+      "widen"
+    ],
+    "js": {
+      "Widen": "",
+      "WidenCollective": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.widen.com"
+  },
+  "Wistia": {
+    "cats": [
+      14
+    ],
+    "description": "Wistia video hosting platform",
+    "html": [
+      "wistia"
+    ],
+    "scripts": [
+      "wistia"
+    ],
+    "js": {
+      "Wistia": "",
+      "_wq": ""
+    },
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://wistia.com"
+  },
+  "WorldCat Discovery": {
+    "cats": [
+      53
+    ],
+    "description": "OCLC WorldCat Discovery service",
+    "html": [
+      "worldcat.*discovery",
+      "oclc.*discovery"
+    ],
+    "scripts": [
+      "worldcat",
+      "discovery.*oclc"
+    ],
+    "js": {
+      "WorldCatDiscovery": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.oclc.org/en/worldcat-discovery.html"
+  },
+  "YouTube": {
+    "cats": [
+      14
+    ],
+    "description": "YouTube video platform",
+    "html": [
+      "youtube",
+      "youtube-player",
+      "yt-player"
+    ],
+    "scripts": [
+      "youtube",
+      "ytimg",
+      "googlevideo"
+    ],
+    "js": {
+      "YT": "",
+      "ytplayer": "",
+      "onYouTubeIframeAPIReady": ""
+    },
+    "higher_ed": false,
+    "confidence": 95,
+    "website": "https://youtube.com"
+  },
+  "YuJa": {
+    "cats": [
+      14
+    ],
+    "description": "YuJa video platform for education",
+    "html": [
+      "yuja",
+      "yuja.*enterprise"
+    ],
+    "scripts": [
+      "yuja"
+    ],
+    "js": {
+      "YuJa": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.yuja.com"
+  },
+  "Zimbra": {
+    "cats": [
+      53
+    ],
+    "description": "Zimbra email and collaboration platform",
+    "html": [
+      "zimbra"
+    ],
+    "scripts": [
+      "zimbra"
+    ],
+    "js": {
+      "Zimbra": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.zimbra.com"
+  },
+  "Anthology Engage": {
+    "cats": [
+      53
+    ],
+    "description": "Anthology Engage student engagement and co-curricular management platform (formerly Campus Labs Engage).",
+    "html": [
+      "campuslabs\\.com/engage",
+      "campus.*labs",
+      "campuslabs",
+      "anthology.*engage",
+      "engage.anthology"
+    ],
+    "scripts": [
+      "campuslabs\\.com/engage",
+      "campuslabs",
+      "anthology.*engage"
+    ],
+    "js": {
+      "CampusLabs": "",
+      "AnthologyEngage": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.anthology.com/products/lifecycle-engagement/student-success/anthology-engage",
+    "_legacy_names": [
+      "Campus Labs",
+      "Campus Labs Engage",
+      "CollegiateLink"
+    ],
+    "headers": {
+      "X-Powered-By": "Campus_Labs_USRP"
+    }
+  },
+  "Anthology Encompass": {
+    "cats": [
+      53
+    ],
+    "description": "Anthology Encompass alumni engagement and advancement platform (formerly iModules).",
+    "html": [
+      "imodules",
+      "anthology.*encompass",
+      "encompass.anthology"
+    ],
+    "scripts": [
+      "imodules",
+      "anthology.*encompass"
+    ],
+    "js": {
+      "iModules": "",
+      "AnthologyEncompass": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.anthology.com/products/lifecycle-engagement/alumni-and-advancement/anthology-encompass",
+    "_legacy_names": [
+      "iModules",
+      "Anthology Reach"
+    ]
+  },
+  "Qualtrics": {
+    "cats": [
+      10,
+      53
+    ],
+    "description": "Qualtrics survey and experience management platform, widely used in higher education for course evaluations, institutional research, and student surveys.",
+    "html": [
+      "qualtrics.com",
+      "jfe/form/",
+      "QSI.API",
+      "qualtrics.*survey",
+      "zn[a-z0-9]+.siteintercept.qualtrics.com"
+    ],
+    "scripts": [
+      "qualtrics.com",
+      "siteintercept.qualtrics.com",
+      "survey.qualtrics.com"
+    ],
+    "js": {
+      "QSI": "",
+      "Qualtrics": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.qualtrics.com",
+    "_legacy_names": [
+      "Qualtrics CoreXM"
+    ]
+  }
+}

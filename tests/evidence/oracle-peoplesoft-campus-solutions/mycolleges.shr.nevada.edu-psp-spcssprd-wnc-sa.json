@@ -1,0 +1,232 @@
+{
+  "technology": "Oracle PeopleSoft Campus Solutions",
+  "url": "https://mycolleges.shr.nevada.edu/psp/spcssprd/WNC/SA/?cmd=login&languageCd=ENG",
+  "final_url": "https://mycolleges.shr.nevada.edu/psp/spcssprd/WNC/SA/?cmd=login&languageCd=ENG&",
+  "captured_at": "2026-04-21T19:34:19.160Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/oracle-peoplesoft-campus-solutions/mycolleges.shr.nevada.edu-psp-spcssprd-wnc-sa.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "no-cache\nno-store",
+      "content-encoding": "gzip",
+      "content-length": "4959",
+      "content-type": "text/html; CHARSET=utf-8",
+      "date": "Tue, 21 Apr 2026 19:34:17 GMT",
+      "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+      "origin-agent-cluster": "?0",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "respondingwithsignonpage": "true",
+      "set-cookie": "lcsrftoken=TCIvv81irO8F3K1Y1auGan/clqgW0/C4DrxS6s8QnpE=; domain=.nevada.edu; path=/; Samesite=Strict; secure; HttpOnly\nPS_TOKEN=; domain=.nevada.edu; expires=Thu, 01-Jan-1970 01:00:00 GMT; path=/; Samesite=Strict; secure; HttpOnly\nwabash1-8000-PORTAL-PSJSESSIONID=bn2xiUnEJ5EEWgqFTHpdv8UegfAmglmL!-715682811; Path=/; SameSite=None; Secure; HttpOnly",
+      "x-frame-options": "SAMEORIGIN",
+      "x-oracle-dms-ecid": "3b4efe7c-7e3e-44b7-9f7a-68008cd6704d-000954f4",
+      "x-oracle-dms-rid": "0"
+    },
+    "scripts": [
+      {
+        "src": "https://mycolleges.shr.nevada.edu/spcssprd/signin.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes",
+      "apple-mobile-web-app-capable": "yes",
+      "mobile-web-app-capable": "yes"
+    },
+    "cookies": [
+      {
+        "name": "wabash1-8000-PORTAL-PSJSESSIONID",
+        "value": "bn2xiUnEJ5EEWgqFTHpdv8UegfAmglmL!-715682811",
+        "domain": "mycolleges.shr.nevada.edu"
+      },
+      {
+        "name": "MCPSrvrID-SG-mycolleges.shr",
+        "value": "CKOJMFIG",
+        "domain": ".mycolleges.shr.nevada.edu"
+      },
+      {
+        "name": "lcsrftoken",
+        "value": "TCIvv81irO8F3K1Y1auGan/clqgW0/C4DrxS6s8QnpE=",
+        "domain": ".nevada.edu"
+      }
+    ],
+    "dom": {
+      "title": "Oracle PeopleSoft Sign-in",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n<title>Oracle PeopleSoft Sign-in</title>\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">    \n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes\">  \n<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n<meta name=\"mobile-web-app-capable\" content=\"yes\">\n<script language=\"JavaScript\">\n    var sDomain = \".nevada.edu\";\n    try {\n        document.domain = \".nevada.edu\";\n    }\n    catch (err) {; }\n</script>\n\n<script type=\"text/javascript\">\nif (self === top) {\n    var fb = document.getElementById(\"ptfb\");\n    fb.parentNode.removeChild(fb);\n} else {\n    try { \n        top.location = self.location;\n    } catch(ex) {}\n}\n</script>\n<link type=\"text/css\" href=\"/spcssprd/pt_custom_props.css\" rel=\"stylesheet\">\n\n<!-- \n\tRemoved delivered stylesheet link\n\tavasudeva 20210325\n-->\n<!--\n\t<link  type=\"text/css\" href=\"/spcssprd/signin.css\" rel=\"stylesheet\">\n-->\n<!-- \n\tEnd Change\n-->\n\n<!--\n\tMod to swap stylesheets and add custom password links\n\tavasudeva 20210325\n-->\n\t<link id=\"pagestyle\" type=\"text/css\" href=\"/spcssprd/wnc_signin.css\" rel=\"stylesheet\">\n\t\n\t<script language=\"JavaScript\">\n\t\n\t\tvar page_url = location.href;\n\t\tvar line1 = \" \";\n\t\tvar line2 = \" \";\n\t\tvar image1 = \" \";\n\t\t<!-- PNG 8173 - avasudeva - 11/25/2024 - add info for myTMCC login on Signin page - Start\n\t\t-->\n\t\tvar line3 = \" \";\n\t\tvar line4 = \" \";\n\t\t<!-- PNG 8173 - avasudeva - 11/25/2024 - add info for myTMCC login on Signin page - End\n\t\t-->\n\t\tfunction swapStyleSheet(sheet)\n\t\t{\n\t\t\tdocument.getElementById(\"pagestyle\").setAttribute(\"href\", sheet);\n\t\t}\n\t\t\n\t\tfunction checkSite(site)\n\t\t{\n\t\t\treturn page_url.search(site);\n\t\t}\t\n\t\t\t\n\t\tif (checkSite(\"/CSN/\") > -1)\n\t\t\t{ \n\t\t\t\tswapStyleSheet(\"/spcssprd/csn_signin.css\"); \n\t\t\t\tline1 = \"<a href='https://at.csn.edu/csn-password-admin'>Forgot your password?</a><br>\";\n\t\t\t\timage1 = \"<h1><img src='/spcssprd/images/csn_logo.png' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='MyCSN' ></h1>\";\n\t\t\t}\n\t\t\telse\n\t\t\t\t{\n\t\t\t\tif (checkSite(\"/GBC/\") > -1)\n\t\t\t\t\t{\n\t\t\t\t\t\tswapStyleSheet(\"/spcssprd/gbc_signin.css\");\n\t\t\t\t\t\tline1 = \"<a href='https://www.gbcnv.edu/passwords/'>Forgot your username?</a><br>\";\n\t\t\t\t\t\t<!-- PNG 3358 - avasudeva - 01/25/2023 - remove GBC Change Password Tile - Start \n\t\t\t\t\t\t-->\n\t\t\t\t\t\t/*\n\t\t\t\t\t\tline2 = \"<a href='/psc/spcssprd/GBC/SA/c/MAINTAIN_SECURITY.EMAIL_PSWD.GBL?Page=EMAIL_PSWD&Action=U'>Forgot your password?</a><br>\";\n\t\t\t\t\t\t*/\n\t\t\t\t\t\t<!-- PNG 3358 - avasudeva - 01/25/2023 - remove GBC Change Password Tile - End\n\t\t\t\t\t\t-->\n\t\t\t\t\t\timage1 = \"<h1><img src='/spcssprd/images/gbc_logo.png' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='MyGBC' ></h1>\";\n\t\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t\t{\n\t\t\t\t\tif (checkSite(\"/NSC/\") > -1)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tswapStyleSheet(\"/spcssprd/nsc_signin.css\");\n\t\t\t\t\t\t\tline1 = \"<a href='https://my.nsc.edu/web/mycampus/reset-password'>Forgot your password?</a><br>\";\n\t\t\t\t\t\t\tline2 = \"<a href='https://my.nsc.edu/web/mycampus/5'>Need Help?</a><br>\";\n\t\t\t\t\t\t\timage1 = \"<h1><img src='/spcssprd/images/nsc_logo.png' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='MyNSC' ></h1>\";\n\t\t\t\t\t\t}\n\t\t\t\t\telse\n\t\t\t\t\t\t{\n\t\t\t\t\t\tif (checkSite(\"/TMC/\") > -1)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tswapStyleSheet(\"/spcssprd/tmcc_signin.css\");\n\t\t\t\t\t\t\t\tline1 = \"<a href='https://www.tmcc.edu/information-technology/students/self-service'>Forgot username or password?</a><br>\";\n\t\t\t\t\t\t\t\timage1 = \"<h1><img src='/spcssprd/images/tmcc_logo.png' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='MyTMCC' ></h1>\";\n\t\t\t\t\t\t\t\t<!-- PNG 8173 - avasudeva - 11/25/2024 - add info for myTMCC login on Signin page - Start\n\t\t\t\t\t\t\t\t-->\n\t\t\t\t\t\t\t\tline3 = \"<p style='color:white'>To sign in to MyTMCC, please enter your TMCC Username and Password</p><br>\";\n\t\t\t\t\t\t\t\tline4 = \"<br><p style='color:white'><b>Note:</b> Students are responsible for dropping classes they do not intend to complete.</p><br>\";\n\t\t\t\t\t\t\t\t<!-- PNG 8173 - avasudeva - 11/25/2024 - add info for myTMCC login on Signin page - End\n\t\t\t\t\t\t\t\t-->\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\telse\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif (checkSite(\"/WNC/\") > -1)\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\tswapStyleSheet(\"/spcssprd/wnc_signin.css\");\n\t\t\t\t\t\t\t\t\tline1 = \"<a href='https://www.wnc.edu/help/'>Can't Login?</a><br>\";\n\t\t\t\t\t\t\t\t\timage1 = \"<h1><img src='/spcssprd/images/wnc_logo.png' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='MyWNC' ></h1>\";\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\telse\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\tswapStyleSheet(\"/spcssprd/signin.css\");\n\t\t\t\t\t\t\t\t\timage1 = \"<h1 aria-label='Oracle PeopleSoft Sign-in'><img src='/spcssprd/images/OracleLogo_Black.svg' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='SCS' ><span class='ps_logo-PS'> PeopleSoft</span></h1>\";\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t} \t\n\t\t\t\t\t}\t\n\t\t\t\t}\n\t</script>\n<!--\n\tEnd Mod\n-->\n\n<!-- PNG 11412(PRD \"Sign Out\" not going to institutional page) 20251112 avasudeva - fixing Cookie issue - Start Change -->\n<!-- ===== function deleteCookieAllScopes - to delete cookie across common scopes & paths ===== -->\n<script type=\"text/javascript\">\nfunction deleteCookieAllScopes(name) {\n  var exp   = \"expires=Thu, 01 Jan 1970 00:00:00 GMT\";\n  var domains = [location.hostname, \".shr.nevada.edu\", \".scsr.nevada.edu\", \".nevada.edu\"];\n  var paths   = [\"/\", \"/psp\", \"/psc\"];\n\n  // domain-scoped deletions\n  for (var d = 0; d < domains.length; d++) {\n    for (var p = 0; p < paths.length; p++) {\n      document.cookie = name + \"=; path=\" + paths[p] + \"; \" + exp + \"; domain=\" + domains[d];\n    }\n  }\n  // host-only deletions (no domain attribute)\n  for (var p2 = 0; p2 < paths.length; p2++) {\n    document.cookie = name + \"=; path=\" + paths[p2] + \"; \" + exp;\n  }\n}\n</script>\n<!-- ===== End function deleteCookieAllScopes ===== -->\n<!-- PNG 11412(PRD \"Sign Out\" not going to institutional page) 20251112 avasudeva - fixing Cookie issue - End Change -->\n\t\n<script type=\"text/javascript\" src=\"/spcssprd/signin.js\"></script>\n\n",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://mycolleges.shr.nevada.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://mycolleges.shr.nevada.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/wp-content/": {
+      "url": "https://mycolleges.shr.nevada.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/user/login": {
+      "url": "https://mycolleges.shr.nevada.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/core/install.php": {
+      "url": "https://mycolleges.shr.nevada.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/cas/login": {
+      "url": "https://mycolleges.shr.nevada.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://mycolleges.shr.nevada.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 100,
+      "evidence": [
+        "HTML: peoplesoft",
+        "JS: PeopleSoft (HTML)",
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Oracle PeopleSoft Campus Solutions",
+      "confidence": 100,
+      "evidence": [
+        "HTML: peoplesoft",
+        "HTML: oracle.*peoplesoft",
+        "HTML: /psc/",
+        "JS: PeopleSoft (HTML)",
+        "JS: Oracle (HTML)"
+      ]
+    },
+    {
+      "name": "Oracle Dynamic Monitoring Service",
+      "confidence": 80,
+      "evidence": [
+        "Header: x-oracle-dms-ecid="
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 40,
+      "evidence": [
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Adition",
+      "confidence": 30,
+      "evidence": [
+        "JS: adition (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Workday Student",
+      "confidence": 30,
+      "evidence": [
+        "JS: WD (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

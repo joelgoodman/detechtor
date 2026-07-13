@@ -1,0 +1,1073 @@
+<!DOCTYPE html><html dir="ltr" lang="en"><!-- Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved. --><!--
+* ***************************************************************
+*  This software and related documentation are provided under a
+*  license agreement containing restrictions on use and
+*  disclosure and are protected by intellectual property
+*  laws. Except as expressly permitted in your license agreement
+*  or allowed by law, you may not use, copy, reproduce,
+*  translate, broadcast, modify, license, transmit, distribute,
+*  exhibit, perform, publish or display any part, in any form or
+*  by any means. Reverse engineering, disassembly, or
+*  decompilation of this software, unless required by law for
+*  interoperability, is prohibited.
+*  The information contained herein is subject to change without
+*  notice and is not warranted to be error-free. If you find any
+*  errors, please report them to us in writing.
+*
+*  Copyright (C) 1988, 2022, Oracle and/or its affiliates.
+*  All Rights Reserved.
+* ***************************************************************
+--><head>
+    <title>Oracle PeopleSoft Sign-in</title>
+    <!-- UHS mod begin CSR003278 - 10/29/2021 - Chang Jin Lee - Added UH favicon links -->
+    <link rel="apple-touch-icon" href="https://www.uh.edu/pslinks/LOGO_FAVICON.png">
+    <link rel="icon" href="https://www.uh.edu/pslinks/LOGO_FAVICON.png">
+    <!-- UHS mod end CSR003278 -->
+
+    <!-- UHS Mod CS-CR002393 - 10/7/2020 -->
+    <!-- Added new meta tags 'Description','Keywords', 'Author' and ' Refresh' -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="Description" content="The University of Houston System">
+    <meta http-equiv="Keywords" content="University of Houston System, Houston, Clear Lake, Victoria, Sugar Land, Cinco Ranch, Texas, Education, Universities, Colleges, Learning, Leading">
+    <meta http-equiv="Author" content="The State of Texas and The University of Houston System">
+    <meta http-equiv="refresh" content="1800">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/latest/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- UHS MOD BEGIN CS-004673 - Chang Jin Lee - 9/15/2023 - change office365uh.js location -->
+    <!-- script src="https://www.uh.edu/pslinks/office365uh.js"-->
+    <script src="https://www.uh.edu/pslinks/CSOpenID/MicrosoftAzure/office365uh.js"></script>
+    <!-- UHS MOD END CS-004673 - Chang Jin Lee - 9/15/2023 - change office365uh.js location -->
+
+    <!-- UHS MOD BEGIN CS-CR003533 - William Childres - 12/21/2022 - Added pw limiter script-->
+    <!-- UHS Mod Begin - CR005349 - S.Zang - 4/10/2025 - PT 8.60.19 retrofit removed this script since 8.60 suppports up to 64 chars-->
+    <!-- <script src="https://www.uh.edu/pslinks/uhlogin_pw_length_limiter.js"></script> -->
+    <!-- UHS Mod End - CR005349 - S.Zang - 4/10/2025 -->
+    <!-- UHS MOD END CS-CR003533 - William Childres - 12/21/2022 -->
+
+    <script language="JavaScript">
+      <!-- UHS Mod CS-CR002393 End -->
+      var sDomain = ".uh.edu";
+      try {
+        document.domain = ".uh.edu";
+      }
+      catch (err) { ; }
+    </script>
+    <!-- Google Analytics Javascript by Praveen Mala (12/7/2011).  Refer to CSR-10497 for Google Account Details:
+     Google Analytics allows us to capture site usage metrics. Start-->
+    <!--script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24527395-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script-->
+    <script type="text/javascript">
+      function loadScript(url, callback) {
+        var script = document.createElement("script")
+        script.type = "text/javascript";
+
+        if (script.readyState) {  //IE
+          script.onreadystatechange = function () {
+            if (script.readyState == "loaded" ||
+              script.readyState == "complete") {
+              script.onreadystatechange = null;
+              callback();
+            }
+          };
+        } else {  //Others
+          script.onload = function () {
+            callback();
+          };
+        }
+
+        script.src = url;
+        document.getElementsByTagName("head")[0].appendChild(script);
+      }
+
+      loadScript("https://www.googletagmanager.com/gtag/js?id=G-BHRJRRM0T1", function () {
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BHRJRRM0T1');
+      });
+    </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-BHRJRRM0T1"></script>
+
+
+    <!-- UHS MOD Begin CS-CR003819 - Chang Jin Lee - 9/19/2022 - add function to disable/enable openid for HR/FS and delegate access -->
+    <script>
+      function disableOpenID() {
+        const slct = document.getElementById("slct");
+        slct.options.length = 1; // keep placeholder only
+
+        const opt = document.createElement("option");
+        opt.textContent = "Sign in with Microsoft (Unavailable)";
+        opt.value = "";
+        opt.selected = true;
+        slct.add(opt);
+
+        slct.disabled = true;
+
+        document.getElementById("campusToggle").disabled = true;
+        document.getElementById("campusMenu").style.display = "none";
+
+      }
+
+      function enableOpenID() {
+        const slct = document.getElementById("slct");
+        // keep placeholder only
+        slct.options.length = 1;
+
+        const campuses = [
+          ["main", "Main"],
+          ["clearlake", "Clear Lake"],
+          ["downtown", "Downtown"],
+          ["victoria", "Victoria"],
+        ];
+
+        campuses.forEach(([val, txt]) => {
+          const opt = document.createElement("option");
+          opt.value = val;
+          opt.textContent = txt;
+          slct.add(opt);
+        });
+
+        slct.disabled = false;
+
+        document.getElementById("campusToggle").disabled = false;
+
+      }
+    </script>
+    <!-- UHS MOD END CS-CR003819 - Chang Jin Lee - 9/19/2022 -->
+    <!-- The following scripts includes University Marketings Google Analytics code.
+Javascript by Rainer Schuhsler, jrschuhs@Central.UH.EDU -->
+    <script src="https://www.uh.edu/scripts/ga.js"></script>
+
+
+    
+<script type="text/javascript">
+if (self === top) {
+    var fb = document.getElementById("ptfb");
+    fb.parentNode.removeChild(fb);
+} else {
+    try { 
+        top.location = self.location;
+    } catch(ex) {}
+}
+</script>
+      <link type="text/css" href="/saprd/pt_custom_props.css" rel="stylesheet">
+      <!-- UHS Mod CS-CR002393 - 10/7/2020 -->
+      <!-- Added new links to js and css files- hardcodedLinks.js, uhssignin.js and uhssigning.css -->
+      <link type="text/css" href="/saprd/uhssignin.css" rel="stylesheet">
+      <!-- Added icon links for reset password and userid -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="https://www.uh.edu/pslinks/hardcodedLinksv2.js"></script>
+      <script type="text/javascript" src="/saprd/uhssignin.js"></script>
+      <!-- UHS Mod CS-CR002393 End -->
+      <!-- UHS Mod CS-CR002393 - Local references for debugging
+  <link type="text/css" href="./uhssignin.css" rel="stylesheet">
+  <script type="text/javascript" src="./uhssignin.js"></script>
+    -->
+
+      <!-- UHS Mod Begin CSR003037 - 11/1/2021 - Chang Jin Lee - added css for openid button -->
+      <style type="text/css">
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          appearance: none;
+          outline: 0;
+          background: #c72429;
+          background-image: none;
+        }
+
+        .select {
+          position: relative;
+          display: inline-block;
+          width: 100%;
+          height: 2.60em;
+          line-height: 2.60;
+          background: #D3D3D3;
+          overflow: hidden;
+          border-radius: .25em;
+          text-align-last: center;
+
+        }
+
+        select {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0 0 0 .5em;
+          color: #fff;
+          cursor: pointer;
+          font-size: 1em;
+          font-weight: bold;
+
+        }
+
+        select::-ms-expand {
+          display: none;
+        }
+
+        .select::after {
+          content: '\25BC';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          padding: 0 1em;
+          background: #9c031e;
+          pointer-events: none;
+        }
+
+        .select:hover::after {
+          color: #F39C12;
+        }
+
+
+        /*<!-- For different browsers -->*/
+        .select::after {
+          -webkit-transition: .25s all ease;
+          -o-transition: .25s all ease;
+          transition: .25s all ease;
+        }
+
+        /*VisualRefresh*/
+        a,
+        a:link,
+        .ps-link,
+        .ps-link:link {
+          color: #000000;
+        }
+
+        h2 {
+          width: 100%;
+          /* UHS Mod Begin Josh Lewis Help Desk request 9/08/2025  */
+          font-family: 'Crimson Text';
+          /* UHS Mod End Josh Lewis Help Desk request 9/08/2025  */
+          font-size: 15px;
+          text-align: center;
+          border-bottom: 1px solid #000;
+          line-height: 0.1em;
+          margin: 10px 0 20px;
+        }
+
+        h2 span {
+          background: #fff;
+          padding: 0 10px;
+          /* UHS Mod Begin Josh Lewis Help Desk request 9/08/2025  */
+          font-family: 'Crimson Text';
+          /* UHS Mod End Josh Lewis Help Desk request 9/08/2025  */
+        }
+        /* UHS Mod Begin Josh Lewis Help Desk request 9/08/2025  */
+        h2 span .span-text {
+          color: blue;
+        }
+
+        h2 span a {
+          font-style: italic;
+          font-family: 'Crimson Text';
+          text-decoration: none;
+          color: blue;
+        }
+
+        summary {
+          list-style: none;
+        }
+
+        #other-signin {
+          position: relative;
+        }
+        /* UHS Mod End Josh Lewis Help Desk request 9/08/2025  */
+
+        .oidc-button {
+          background: #E33535;
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #79cc9c), color-stop(100%, #E33535));
+          border: #E33535;
+          background: #E33535;
+        }
+
+        .oidc-button:hover,
+        .oidc-button:focus {
+          background: #E33535;
+          border-color: #111;
+        }
+
+        .ss:a {
+          color: #fafafa;
+        }
+
+        #need-help {
+          padding: 20px 0 0 0;
+        }
+        /* BEGIN UHS Mod Angel Gonzalez DUO Authentication. 10/23/2024 */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .modal-content {
+          background-color: #f0f0f0;
+          margin: 10% auto;
+          padding: 30px;
+          border: 2px solid red;
+          border-radius: 8px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+          width: 300px;
+          text-align: center;
+          transition: all 0.3s ease;
+        }
+        /* END UHS Mod Angel Gonzalez DUO Authentication. 10/23/2024 */
+
+        /* UHS Mod Begin Josh Lewis Help Desk request 9/08/2025  */
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          color: #0077cc;
+          text-decoration: none;
+        }
+
+        .tooltip .tooltip-text {
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(5px);
+          /* start slightly lower */
+          min-width: 200px;
+          max-width: 30vw;
+          background-color: rgba(240, 240, 240, 0);
+          /* semi-transparent dark */
+          color: #121111;
+          text-align: left;
+          padding: 8px 12px;
+          border-radius: 8px;
+          backdrop-filter: blur(4px);
+          position: absolute;
+          top: 125%;
+          left: 100%;
+          margin-top: 2px;
+          margin-left: 8px;
+          z-index: 1;
+          display: block;
+          line-height: 1.4;
+          font-size: 14px;
+          transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .tooltip:hover .tooltip-text {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        /* Overlay/backdrop that catches outside clicks */
+        #helpModal {
+          position: fixed;
+          inset: 0;                 
+          display: none;
+          background: rgba(0,0,0,0);
+          z-index: 1000;            
+        }
+
+        .helpModal p {
+          padding-top: 12px
+        }
+
+        #helpModal.show .helpModalContent {
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 1;
+        }
+
+        .help-container {
+          display: flex;
+          flex-direction: column;   
+          justify-content: center;  
+          align-items: center;      
+          text-align: center;       
+          gap: 1em;                 
+          height: 100%;
+        }
+
+        /* The centered dialog box */
+        #helpModalContent {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-height: 80vh;
+          overflow: auto;
+          width: clamp(320px, 40vw, 560px);
+          margin: 0;
+          background: var(--pt-page-background-color, #fff);
+          border:1px solid var(--pt-border-contrast-color, #ced4da);
+          border-radius: 0 0 3px 3px; 
+          border-radius: 0.25em;
+          box-shadow: 0 8px 20px 0 var(--pt-modal-shadow-color, rgba(29,39,51,0.10));
+          padding-bottom: 1em;
+        }
+
+        .close-btn {
+          position: absolute;
+          top: 10px;
+          right: 12px;
+          font-size: 22px;
+          line-height: 1;
+          cursor: pointer;
+          color: #666;
+          border: none;
+          background: transparent;
+        }
+
+        .close-btn:hover {
+          color: #000;
+        }
+        
+        .link-container {
+          display: none;
+        }
+
+        .help-links {
+          list-style-type: none;
+          padding: 12px 16px; 
+          margin: 0;
+        }
+
+        .help-links li {
+          margin: 8px 0;
+          /* space between links */
+        }
+
+        .help-links a {
+          text-decoration: none;
+          /* remove underline */
+          color: #0077cc;
+          /* link color */
+          font-weight: bold;
+        }
+
+        .help-links a:hover {
+          text-decoration: underline;
+          /* show underline on hover */
+        }
+        #appselect label {
+          cursor: pointer;
+        }
+
+        .modal-content,
+        #helpModalContent a,
+        #helpModalContent p,
+        .tooltip .tooltip-text {
+          font-family: 'Crimson Text';
+        }
+        /* UHS Mod End Josh Lewis Help Desk request 9/08/2025  */
+        /* UHS Mod Begin CR005781 2/11/2016 Josh Lewis - Add functionality to the Microsoft button, new functionality supports one click and drop down selection */
+        .ms-row {
+          display: flex;
+          align-items: stretch;
+          position: relative;   /* .ms-label can be positioned vs the whole row */
+        }
+
+        /* Main Microsoft button */
+        .ms-row .oidc-button {
+          flex: 1 1 auto;
+          margin: 0;
+          border-radius: 0.25em 0 0 0.25em;
+          position: relative;
+          cursor: pointer;
+        }
+
+        /* Arrow chunk wrapper on the right */
+        .ms-row .select {
+          flex: 0 0 auto;      /* width based on its own contents */
+          width: auto;         /* override the global width:100% */
+          margin: 0;
+          background: #E33535; /* match the main button background */
+          border-radius: 0 .25em .25em 0;  /* rounded only on the right */
+          overflow: hidden;    /* hide pushed-out label text */
+          text-align-last: right;
+        }
+        .ms-row .select { 
+          position: static;
+          overflow: visible; 
+          z-index: 9999;       /* ensure it floats above other elements */
+        }
+        /* The <select> inside: small, just for the caret */
+        .ms-row .select select {
+          width: 2.5em;        /* small chunk */
+          padding: 0;
+          margin: 0;
+          border: none;
+          background: #E33535;  /* use the wrapper's red */
+          text-indent: 9999px;      /* push "Choose campus���" off-screen */
+          white-space: nowrap;
+          cursor: pointer;
+        }
+
+        .ms-row .select select option {
+          text-align: right;        /* alignment inside the popup list */
+        }
+
+        .ms-row .ms-label {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          color: #fff; 
+          font-weight: bold;
+          font-size: 1em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          pointer-events: none;   /* clicks go ���through��� to the button / select */
+        }
+        /* draw a caret without needing text */
+        .campus-caret{
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 8px solid currentColor;
+        }
+        /* In the Microsoft row, DO NOT draw the old select caret */
+        .ms-row .select::after { content: none; }
+
+        /* Make your caret button fill the right ���chunk��� */
+        .ms-row .select .campus-toggle{
+          width: 3.0em;
+          height: 100%;
+          padding: 0;
+          margin: 0;
+          border: none;
+          background: #9c031e;
+          border-radius: 0 3px 3px 0;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        /* gold on hover OR while menu is open */
+        .ms-row .select #campusToggle.campus-toggle:hover,
+        .ms-row .select #campusToggle.campus-toggle[aria-expanded="true"]{
+          color: #F39C12;
+        }
+
+        /* gold ONLY on hover, or while menu is open */
+        .ms-row .oidc-button:hover ~ .ms-label,
+        .ms-row .oidc-button:focus-visible ~ .ms-label {
+          color: #F39C12;
+        }
+
+        /* keep a visible keyboard outline */
+        .ms-row .oidc-button:focus { outline: none; }
+        .ms-row .oidc-button:focus-visible{
+          outline: 2px solid #F39C12;
+          outline-offset: -2px;
+        }
+
+
+        /* keep keyboard accessibility without changing caret color */
+        .ms-row .select #campusToggle.campus-toggle:focus{
+          outline: none;
+        }
+
+        .ms-row .select #campusToggle.campus-toggle:focus-visible{
+          outline: 2px solid #F39C12;
+          outline-offset: -2px;
+        }
+
+        /* Dropdown menu */
+        .ms-row .select .campus-menu{
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 100%;
+          /*margin-top: 6px;*/
+
+          width: 100%;
+          box-sizing: border-box;
+
+          z-index: 10000;
+          background: #E33535;
+          border: 1px solid #9c031e;
+          border-radius: 8px 8px 8px 8px;
+          padding: 6px;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+        }
+
+        /* Menu buttons */
+        .ms-row .select .campus-item{
+          width: 100%;
+          text-align: right;
+          padding: 10px 12px;
+          border: 0;
+          background: transparent;
+          cursor: pointer;
+          border-radius: 6px;
+          font-weight: bold;
+        }
+
+        /* --- Dropdown menu styling to match your red theme --- */
+        .ms-row .select .campus-menu{
+          background: #E33535;         /* UH red */
+          border: 1px solid #9c031e;   /* darker red border */
+          box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+          padding: 6px;              
+          border-radius: 0 0 8px 8px; /* feels like it ���drops��� from the button */
+        }
+
+        /* menu items */
+        .ms-row .select .campus-item{
+          background: transparent;
+          color: #fff;
+          font-family: 'Crimson Text';
+        }
+
+        /* hover/focus for menu items */
+        .ms-row .select .campus-item:hover,
+        .ms-row .select .campus-item:focus{
+          background: #9c031e;         /* darker red highlight */
+          color: #F39C12;              /* gold text on hover */
+        }
+        /* UHS Mod End CR005781 2/11/2016 Josh Lewis */
+      </style>
+      <!-- UHS Mod End CSR003037 - 11/1/2021 - Chang Jin Lee -->
+
+  </head>
+
+  <body onload="ptSignon().login();">
+    <div id="pswrapper">
+      <!-- UHS Mod CS-CR002393 - 10/7/2020 - Made changes to delivered signin.js to be able to redirect to different environments like CS, UH or UHV (More details in signin.js file) -->
+      <form id="login" name="login" method="post" action="?&amp;cmd=login&amp;languageCd=ENG" autocomplete="off">
+        <input type="hidden" id="lcsrf_token" name="lcsrf_token" value="fluMDY4lgR5dN7O7PGyoKVaHKWJZgiF6ErhrdVYaU9w=">
+        <input type="hidden" id="timezoneOffset" name="timezoneOffset" value="0">
+        <input type="hidden" id="ptmode" name="ptmode" value="f">
+        <input type="hidden" id="ptlangcd" name="ptlangcd" value="ENG">
+        <input type="hidden" id="ptinstalledlang" name="ptinstalledlang" value="ENG">
+        <div class="signonMain">
+          <!-- UHS Mod CS-CR002393 - 10/7/2020 -->
+          <!-- Changed Image/Header path to have UHS Logo -->
+          <!--<h1 dir="ltr" aria-label="Oracle PeopleSoft Sign-in"><img src="/saprd/images/OracleLogo_Black.svg" class="ps-staticimg" alt="" title="" ><span class="ps_logo-PS"> PeopleSoft</span></h1>-->
+          <h1><img src="/saprd/images/uhs-wordmark.png" class="ps-staticimg" alt="Oracle PeopleSoft Sign-in" title="Oracle PeopleSoft Sign-in"></h1>
+          <!-- UHS Mod CS-CR002393 End -->
+          <div class="ps_signinentry">
+            <!-- UHS Mod Begin Josh Lewis Help Desk request 9/08/2025 -->
+            <div class="ps_box-button"><!-- The screen reader toggle is more accessible when it is the first input on the form -->
+                <input type="checkbox" name="accessible" id="accessible">
+                <label for="accessible">Enable Screen Reader Mode</label>
+            </div>
+            <!-- UHS Mod End Josh Lewis Help Desk request 9/08/2025 -->
+            <div id="ptloginerrorcont" class="ps_login_error">
+              <div class="ps_login_error_inner" id="ps_login_error_inner" tabindex="-1" role="heading" aria-level="2">
+                <a id="error_link" name="error_link" tabindex="-1"><img src="/saprd/images/PT_LOGIN_ERROR.svg" alt="Error"></a>
+                <div class="psloginerror" id="discovery_error" name="discovery_error"></div>
+                <span class="psloginerror" id="login_error" name="login_error"></span>
+              </div>
+              <div class="ps_box-control psloginerror" id="browsercheck_error" name="browsercheck_error" aria-live="assertive" role="alert"></div>
+            </div>
+            <!-- UHS Mod CS-CR002393 - 10/7/2020 -->
+            <!-- Added App Icons to select institutions -->
+            <div id="appselectbox" class="column">
+              <div id="appselect" class="icon_descr">
+                <!-- UHS MOD Begin CS-CR003819 - Chang Jin Lee - 9/19/2022 - add onclick on radio button to disable/enable openid for HR/FS and delegate access -->
+                <input type="radio" name="appselected" id="myuh" value="myuh" checked="checked" onclick="enableOpenID()" required="">
+                <label for="myuh"><img src="/saprd/images/app_myuh.jpg" width="80" height="80" alt="MyUH" class="appImage" tabindex="0"></label>
+
+                <input type="radio" name="appselected" id="uhcleservices" value="uhcleservices" onclick="enableOpenID()" required="">
+                <label for="uhcleservices"><img src="/saprd/images/app_uhcl.jpg" width="80" height="80" alt="UHCL E-Services" class="appImage" tabindex="0"></label>
+
+                <input type="radio" name="appselected" id="myuhv" value="myuhv" onclick="enableOpenID()" required="">
+                <label for="myuhv"><img src="/saprd/images/app_amv.png" width="80" height="80" alt="MyUHV" class="appImage" tabindex="0"></label>
+
+                <input type="radio" name="appselected" id="myuhd" value="myuhd" onclick="enableOpenID()" required="">
+                <label for="myuhd"><img src="/saprd/images/app_myuhd.jpg" width="80" height="80" alt="MyUHD" class="appImage" tabindex="0"></label>
+
+                <input type="radio" name="appselected" id="pshr" value="pshr" onclick="disableOpenID()" required="">
+                <label for="pshr"><img src="/saprd/images/app_hr.jpg" width="80" height="80" alt="Human Resources" class="appImage" tabindex="0"></label>
+
+                <input type="radio" name="appselected" id="psfinance" value="psfinance" onclick="disableOpenID()" required="">
+                <label for="psfinance"><img src="/saprd/images/app_finance.gif" width="80" height="80" alt="Finance" class="appImage" tabindex="0"></label>
+
+                <input type="radio" name="appselected" id="pscs" value="pscs" onclick="enableOpenID()" required="">
+                <label for="pscs"><img src="/saprd/images/app_cs.png" width="80" height="80" alt="Campus Solutions" class="appImage" tabindex="0"></label>
+
+                <!--UHS Mod END CR002139 - 8/3/2020 - Chang Jin Lee - Added delegate access -->
+                <input type="radio" name="appselected" id="psda" value="psda" onclick="disableOpenID()" required="">
+                <label for="psda"><img src="/saprd/images/app_da.png" width="80" height="80" alt="Delegate Access" class="appImage" tabindex="0"></label>
+                <!-- UHS MOD END CS-CR003819 - Chang Jin Lee - 9/19/2022 -->
+
+              </div>
+            </div>
+            <!-- UHS Mod CS-CR002393 End-->
+
+            <!-- UHS Mod CSR003037 - 11/1/2021 - Chang Jin Lee - added openid dropdown button -->
+
+            <div class="ms-row">
+              <button type="button" id="msSignInBtn" class="oidc-button" aria-label="Sign in with Microsoft">
+              </button>
+              <span class="ms-label">Sign in with Microsoft (School Account)</span>
+              <div class="select">
+                <!-- keep slct for compatibility (openIDC/enableOpenID/disableOpenID) -->
+                <select name="slct" id="slct" onchange="openIDC()" aria-hidden="true" tabindex="-1" style="display:none;">
+                  <option value="" selected="selected" hidden="hidden">Choose campus���</option>
+                  <option value="main">Main</option>
+                  <option value="clearlake">Clear Lake</option>
+                  <option value="downtown">Downtown</option>
+                  <option value="victoria">Victoria</option>
+                </select>
+
+                <!-- your caret button stays -->
+                <button type="button" id="campusToggle" class="campus-toggle" aria-label="Choose campus" aria-haspopup="true" aria-expanded="false" aria-controls="campusMenu">
+                  <span class="campus-caret" aria-hidden="true"></span>
+                </button>
+
+                <!-- new: hidden list of campus buttons -->
+                <div id="campusMenu" class="campus-menu" role="menu" aria-label="Choose campus" style="display:none;">
+                  <button type="button" class="campus-item" role="menuitem" data-campus="main">Main</button>
+                  <button type="button" class="campus-item" role="menuitem" data-campus="clearlake">Clear Lake</button>
+                  <button type="button" class="campus-item" role="menuitem" data-campus="downtown">Downtown</button>
+                  <button type="button" class="campus-item" role="menuitem" data-campus="victoria">Victoria</button>
+                </div>
+              </div>
+
+            </div>
+            <br>
+
+            <!-- UHS Mod Begin Josh Lewis Help Desk request 9/08/2025 -->
+            <!-- <h2><span>or</span></h2> -->
+            <!-- UHS Mod CSR003037 - 11/1/2021 - Chang Jin Lee - added css for openid button -->
+            <h2><span class="span-text">No Microsoft account? <a href="#" class="tooltip" onclick="openOtherSignIn()">Click here <span class="tooltip-text"><p>Users who do not have an active Microsoft account appointed by the University. (Example: applicants, former students, former employees, and delegates)</p></span></a></span></h2>
+            <!--<div id="hidden-spacer" style="display: block;"><br></div>-- When the sign on element is collapses this line seperates they two hyperlinks. -->
+            <div id="other-signin" style="display: none;">
+
+              <div class="collapsible-content"></div>
+              <div>
+              <!-- UHS Mod End Josh Lewis Help Desk request 9/08/2025 -->
+                <span class="ps_label-show" id="ptLabelUserid"><label for="userid">User ID</label></span>
+              </div>
+              <div class="ps_box-control">
+                <input type="text" id="userid" name="userid" placeholder="User ID" value="" title="User ID" autocomplete="username">
+              </div>
+              <div>
+                <span class="ps_label-show" id="ptLabelPassword"><label for="pwd">Password</label></span>
+              </div>
+              <div class="ps_box-control">
+                <input type="password" id="pwd" name="pwd" title="Password" autocomplete="current-password">
+              </div>
+              <div>
+
+                <!--UHS CSR 11359 6/26/2013 Naveen Narang
+          Using the variable instead of hardcoding the url-->
+                <!-- UHS Mod CS-CR002393 - 10/7/2020 -->
+                <!-- Made changes to accomodate sepearation of js and css files - added a <p> element which calls a function to add reset links to page -->
+                <!-- UHS Mod Begin CRXXXXXX - 2/3/2022 - remove forgot userid/password link -->
+                <p class="smalltext" id="ResetLinks"><a href="https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/c/MAINTAIN_SECURITY.EMAIL_PSWD.GBL">Forgot Password?</a> | <a href="https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/c/UHS_SI_CUSTOM.UHS_GET_EMPLID.GBL">Forgot User ID?</a>
+                </p>
+                <!-- UHS Mod End CRXXXXXX - 2/3/2022 -->
+                <!-- Changes End -->
+                <!--UHS CSR 11359 ends-->
+
+
+                <!-- UHS Mod CS-CR002393 - 10/7/2020 -->
+                <!-- Removing the select laguage drop down		  
+               <span class="ps_label-show" id="ptLabelSelect"><label for="ptlangsel">Select a Language</label></span>
+           </div>
+            <div id="ps_select_parent" >
+              <div id= "ps_select_box" class="ps_box-control">            
+                <select id="ptlangsel" name="ptlangsel"  title="Select a Language" class="ps_select" onChange="ptSignon().changeLangFunc(this, event)" autocomplete="language">
+                  <option value="ENG" title="English">English</option>
+                  <option value="UKE" title="UK English">UK English</option>
+                  <option value="ESP" title="Spanish">Espa&ntilde;ol</option>
+                  <option value="DAN" title="Danish">Dansk</option>
+                  <option value="GER" title="German">Deutsch</option>
+                  <option value="FRA" title="French">Fran&ccedil;ais</option>
+                  <option value="CFR" title="Canadian French">Fran&ccedil;ais&nbsp;du&nbsp;Canada</option>
+                  <option value="ITA" title="Italian">Italiano</option>
+                  <option value="HUN" title="Hungarian">Magyar</option>
+                  <option value="DUT" title="Dutch">Nederlands</option>
+                  <option value="NOR" title="Norwegian">Norsk</option>
+                  <option value="POL" title="Polish">Polski</option>
+                  <option value="POR" title="Portuguese">Portugu&ecirc;s</option>
+                  <option value="ROM" title="Romanian">Rom&#x00E2;n&#x0103;</option>
+                  <option value="FIN" title="Finnish">Suomi</option>
+                  <option value="SVE" title="Swedish">Svenska</option>
+                  <option value="TUR" title="Turkish">T&#x00FC;rk&#x00E7;e</option>
+                  <option value="CZE" title="Czech">&#x010C;e&#x0161;tina</option>
+                  <option value="JPN" title="Japanese">&#x65E5;&#x672C;&#x8A9E;</option>
+                  <option value="KOR" title="Korean">&#xD55C;&#xAD6D;&#xC5B4;</option>
+                  <option value="RUS" title="Russian">&#x0420;&#x0443;&#x0441;&#x0441;&#x043A;&#x0438;&#x0439;</option>
+                  <option value="THA" title="Thai">&#x0E20;&#x0E32;&#x0E29;&#x0E32;&#x0E44;&#x0E17;&#x0E22;</option>
+                  <option value="ZHS" title="Simplified Chinese">&#x7B80;&#x4F53;&#x4E2D;&#x6587;</option>
+                  <option value="ZHT" title="Traditional Chinese">&#x7E41;&#x9AD4;&#x4E2D;&#x6587;</option>
+                  <option value="ARA" title="Arabic">&#x0627;&#x0644;&#x0639;&#x0631;&#x0628;&#x064A;&#x0629;</option>
+                  <option value="VIE" title="Vietnamese">Ti&#7869;ng Vi&#7879;t</option>
+                  <option value="BUL" title="Bulgarian">&#x0431;&#x044a;&#x043b;&#x0433;&#x0430;&#x0440;&#x0441;&#x043a;&#x0438;</option>
+                  <option value="CRO" title="Croatian">hrvatski</option>
+                  <option value="GRK" title="Greek">&#x0395;&#x03bb;&#x03bb;&#x03b7;&#x03bd;&#x03b9;&#x03ba;&#x03ac;</option>
+                  <option value="HEB" title="Hebrew">&#x05e2;&#x05d1;&#x05e8;&#x05d9;&#x05ea;</option>
+                  <option value="MAY" title="Bahasa Malay">Bahasa Melayu</option>
+                  <option value="SER" title="Serbian">&#x0441;&#x0440;&#x043f;&#x0441;&#x043a;&#x0438;</option>
+                  <option value="SLK" title="Slovak">sloven&#x010d;ina</option>
+                  <option value="SLV" title="Slovenian">sloven&#x0161;&#x010d;ina</option>
+                </select>
+              </div>     
+            </div>
+						        -->
+                <!-- UHS Mod CS-CR002393 End-->
+                <div class="ps_box-button">
+                  <input name="Submit" type="submit" class="ps-button" value="Sign In" aria-label="To enable screen reader mode, please check the checkbox &quot;Enable Screen Reader Mode&quot; before you sign in. Sign In">
+                </div>
+
+                <!-- UHS MOD BEGIN CS-CR004939 - Chang Jin Lee - 6/17/2024 - Added campusSlct variable to identify which icons are selected for openid -->
+                <input type="hidden" id="campusSlct" name="campusSlct" value="">
+                <!-- UHS MOD END CS-CR004939 - Chang Jin Lee - 6/17/2024  -->
+              </div>
+            </div>
+
+            <div id="need-help"><span class="span-text"><a href="#" class="tooltip" onclick="getUserHelp()">Need help?</a></span></div>
+          </div>
+          <!-- UHS Mod CS-CR002393 - 10/7/2020 -->
+          <!-- Removed the delivered footer and 'Set Trace Flags' option
+          <div class="ps_box-link">
+              <span class="ps-link"></span>
+          </div>
+      </div>  
+	 <footer id="ptfooter" class="ps_footer_text ">Copyright &copy; 2000, 2022, Oracle and/or its affiliates. </footer> 
+	 		  	         -->
+          <!-- UHS Mod CS-CR002393 End -->
+        </div>
+        <!-- UHS Mod Begin Josh Lewis Help Desk request 9/08/2025 -->
+        <div id="helpModal" class="helpModal" style="display: none;">
+          <div id="helpModalContent" class="helpModalContent">
+            <span class="close-btn" id="helpClose" onclick="helpClose()">×</span>
+            <div class="help-container">
+              <p><strong>Help &amp; Resources</strong></p>
+              <div class="link-container" id="myuh-helplinks" style="display: block;">
+                <ul class="help-links">
+                  <li><a href="https://gethelp.uh.edu/kb/3800" target="_blank">Latest updates to myUH</a></li>
+                  <li><a href="https://gethelp.uh.edu/kb/3801" target="_blank">How do I sign in to myUH now?</a></li>
+                  <li><a href="https://gethelp.uh.edu/kb/3802" target="_blank">What if I do not have a Microsoft 365 email account to access myUH?</a></li>
+                  <li><a href="https://gethelp.uh.edu/kb/3803" target="_blank">Why did the login for myUH method change?</a></li>
+                  <li><a href="https://gethelp.uh.edu/kb/3804" target="_blank">Where can I get help with Microsoft 365 login issues for myUH?</a></li>
+                </ul>
+              </div>
+              <div class="link-container" id="myuhd-helplinks" style="display: none;">
+                <ul class="help-links">
+                  <li><a href="https://www.uhd.edu/computing/uss/it-service-desk.aspx" target="_blank">UHD IT Service Desk</a></li>
+                </ul>
+              </div>
+              <div class="link-container" id="myuhv-helplinks" style="display: none;">
+                <ul class="help-links">
+                  <li><a href="https://www.tamuv.edu/information-technology/support/" target="_blank">Texas A&amp;M University Victoria Help Desk</a></li>
+                </ul>
+              </div>
+              <div class="link-container" id="uhcleservices-helplinks" style="display: none;">
+                <ul class="help-links">
+                  <li><a href="https://www.uhcl.edu/computing/self-help/" target="_blank">UHCL IT Self Help</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- UHS Mod End Josh Lewis Help Desk request 9/08/2025 -->
+
+        <!-- UHS Mod Begin - CR005349 - Josh L - 5/20/2025 - Modal to instruct user to check for DUO push notification. -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <p><strong>University of Houston System</strong></p>
+            <p><strong>DUO Authentication</strong></p>
+            <p><strong>Check phone for DUO Push.</strong></p>
+          </div>
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const loginForm   = document.getElementById("login");
+            const submitButton = loginForm.querySelector('input[name="Submit"]');
+            const modal       = document.getElementById("modal");
+            const userID      = document.getElementById("userid");
+            let modalTimeout;
+
+            // Existing submit / DUO logic
+            submitButton.addEventListener('click', function (event) {
+              event.preventDefault();
+              if (/^(?:\d{7}|P\d{6})$/.test(userID.value)) {
+                loginForm.submit();
+              } else {
+                modalTimeout = setTimeout(function () {
+                  modal.style.display = 'block';
+                }, 1500);
+                loginForm.submit();
+              }
+            });
+
+            // Tile -> campus mapping
+            const radioToOption = {
+              myuh:          'main',
+              uhcleservices: 'clearlake',
+              myuhd:         'downtown',
+              myuhv:         'victoria'
+            };
+
+            // Keep your help-link logic, but NOTHING here calls openIDC()
+            $('input[name="appselected"]').on('change', function() {
+              $('.link-container').hide();
+              const defaultToUH = ['psda', 'pscs', 'psfinance', 'pshr'];
+              const prefix = (defaultToUH.includes(this.id)) ? "myuh" : this.id;
+              $('#' + prefix + '-helplinks').show();
+            });
+
+            // Initialize help links for the default-checked tile
+            $('input[name="appselected"]:checked').trigger('change');
+
+            // New: main Microsoft button behavior
+            const msBtn       = document.getElementById('msSignInBtn');
+            const slct        = document.getElementById('slct');
+            const campusToggle = document.getElementById('campusToggle');
+            const campusMenu   = document.getElementById('campusMenu');
+
+            function openCampusMenu() {
+              if (!campusMenu) return;
+              campusMenu.style.display = 'block';
+              if (campusToggle) campusToggle.setAttribute('aria-expanded', 'true');
+            }
+
+            function closeCampusMenu() {
+              if (!campusMenu) return;
+              campusMenu.style.display = 'none';
+              if (campusToggle) campusToggle.setAttribute('aria-expanded', 'false');
+            }
+
+            function campusMenuIsOpen() {
+              return campusMenu && campusMenu.style.display === 'block';
+            }
+
+            // caret toggles the menu
+            if (campusToggle && campusMenu) {
+              campusToggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (slct && slct.disabled) return;
+                campusMenuIsOpen() ? closeCampusMenu() : openCampusMenu();
+              });
+
+              // click a campus button -> set slct -> openIDC()
+              campusMenu.addEventListener('click', function (e) {
+                const btn = e.target.closest ? e.target.closest('.campus-item') : e.target;
+                if (!btn || !btn.getAttribute) return;
+
+                const campusVal = btn.getAttribute('data-campus');
+                if (!campusVal) return;
+
+                slct.value = campusVal;
+                closeCampusMenu();
+                openIDC(); // matches old onchange behavior
+              });
+
+              // close menu on outside click
+              document.addEventListener('click', function (e) {
+                if (!campusMenuIsOpen()) return;
+                if (e.target === campusToggle || campusMenu.contains(e.target)) return;
+                if (e.target === msBtn || msBtn.contains(e.target)) return;   // <-- ADD THIS
+                closeCampusMenu();
+              });
+
+              // close on Esc
+              document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeCampusMenu();
+              });
+            }
+
+            if (msBtn && slct) {
+              msBtn.addEventListener('click', function (e) {
+                // If HR/Finance/Delegate disabled OpenID, do nothing
+                if (slct.disabled) return;
+
+                const checked = document.querySelector('#appselect input[name="appselected"]:checked');
+                const checkedId = checked ? checked.id : null;
+
+                // If Campus Solutions tile is selected, force user to pick from the menu (no shortcut)
+                if (checkedId === 'pscs') {
+                  slct.value = "";
+                  e.preventDefault();
+                  e.stopPropagation();
+                  openCampusMenu();
+                  if (campusToggle) campusToggle.focus();
+                  return;
+
+                }
+
+                // Existing shortcut mapping
+                const campus = checkedId ? radioToOption[checkedId] : null;
+                if (campus) slct.value = campus;
+
+                if (slct.value) {
+                  openIDC();
+                } else {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    openCampusMenu();
+                }
+              });
+            }
+
+          });
+        </script>
+
+
+        <!-- UHS Mod Begin Josh Lewis Help Desk request 9/08/2025 -->
+        <script>
+          const helpOverlay = document.getElementById('helpModal');
+          const helpModalContent = document.getElementById('helpModalContent');
+           // If the click target is the overlay itself, close the modal
+          helpOverlay.addEventListener('click', (e) => {
+            if (e.target === helpOverlay) {
+              helpOverlay.style.display = 'none';
+            }
+          });
+          // Optional: prevent any bubbling from clicks inside the content
+          helpModalContent.addEventListener('click', (e) => e.stopPropagation());
+          function openOtherSignIn() {
+            const element = document.querySelector('#other-signin');
+            //const spacerElement = document.querySelector('#hidden-spacer')
+            element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+            //spacerElement.style.display = (element.style.display === 'none') ? 'block' : 'none'
+            return false;
+          }
+          function getUserHelp() {
+            const element = document.querySelector('#helpModal');
+            element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+            return false;
+          }
+          function helpClose() {
+            document.getElementById('helpModal').style.display = 'none';
+          }
+        </script>
+        <!-- UHS Mod End Josh Lewis Help Desk request 9/08/2025 -->
+        <!-- UHS Mod Begin - CR005349 - Josh L - 5/20/2025 - Modal to instruct user to check for DUO push notification. -->
+    </form></div>
+
+    
+    
+  
+
+</body></html>

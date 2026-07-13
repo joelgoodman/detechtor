@@ -1,0 +1,577 @@
+<!DOCTYPE html><html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js cssanimations csstransitions" lang="en" style=""><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-itunes-app" content="app-id=844091049">
+    <meta name="google-play-app" content="app-id=com.cbord.get"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../scripts/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="../scripts/jquery-ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="scripts/jquery.infieldlabel.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.select_skin.min.js"></script>
+    <script type="text/javascript" src="scripts/global_full.js"></script>
+    <script type="text/javascript" src="scripts/jquery.smartbanner.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/jquery.smartbanner.css"> 
+    <script type="text/javascript" src="../scripts/soa_ajax.js"></script>
+    <script type="text/javascript" src="js/vendors/modernizr/modernizr.custom.js"></script>
+    <script type="text/javascript" src="scripts/cropper.js"></script>
+    <link href="styles/cropper.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../scripts/jquery-ui/jquery-ui.css">
+    <!--<link rel="stylesheet" type="text/css" href="styles/smoothness/jquery-ui-1.9.2.custom.css" />-->
+
+ <!-- slider -->
+    <script type="text/javascript" src="scripts/modernizr.custom.28468.js"></script>
+    <script type="text/javascript" src="scripts/jquery.cslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/global_full.css?d=1774560208"> 
+    <link rel="stylesheet" type="text/css" href="styles/print.css" media="print">
+<!-- FontAwesome -->
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+    <link rel="shortcut icon" href="../favicon.ico?v=2">
+    <link rel="stylesheet" type="text/css" href="styles/icomoon.css">
+    <link rel="apple-touch-icon" href="../apple-touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../apple-touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../apple-touch-icon-iphone4.png">
+<!--[if IE 9]><html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if lte IE 9]><!--><!--<![endif]-->
+<!--[if IE]><style> :last-child.navbar-nav.navbar-right { margin-right: 0px;}</style><![endif]-->
+<script type="text/javascript" src="scripts/placeholdr.js"></script>
+<script type="text/javascript">
+if (/*@cc_on!@*/false && document.documentMode === 10) {
+    document.documentElement.className+=' ie10';
+}</script>
+    	                <title>GET - Login - Kent State University</title>
+            <link rel="stylesheet" type="text/css" href="css/frontend.css">
+    <style type="text/css">
+	.btn-success:not(:disabled), #shoppingCartForm input[type="submit"]:not(:disabled)
+                            { 
+                                background: #879637 !important;
+                                background-color: #879637 !important;
+                                color: #fff !important;
+                            }
+
+body
+{ 
+background: #eaab00 !important;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover, .panel-primary>.panel-heading
+                        { 
+                            background-color: #002664 !important;
+                            border-color: #002664 !important;
+
+                        }
+
+.btn-default
+                            {
+                                background-color: #879637 !important;
+                                color: #fff !important;
+                            }
+
+.navbar-inverse,:root .status_header .step, .login
+{ 
+ background-color: #002664!important;
+}
+
+.step a
+{
+color: #fff !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover  
+{
+background-color: #eaab00 !important;
+}
+
+.table > thead > tr > th
+{
+background-color: #002664 !important;
+
+}	</style> 
+</head>
+<body class="login">
+<script type="text/javascript">
+    function ensureDialogCloseSrOnlyText() {
+        $('.ui-dialog-titlebar-close').each(function() {
+            var $closeButton = $(this);
+            if ($closeButton.find('.sr-only').length === 0) {
+                $closeButton.append('<span class="sr-only">Close</span>');
+            }
+        });
+    }
+
+    function openAddressPopup(event) {
+        if (event) {
+            event.preventDefault();
+        }
+        if (!$('#address_popup').hasClass('ui-dialog-content')) {
+            return false;
+        }
+
+        if ($('#address_popup').dialog('isOpen')) {
+            $('#address_popup').dialog('close');
+        } else {
+            $('#address_popup').dialog('open');
+        }
+        return false;
+    }
+
+    $(document).ready(
+            function() {
+                $('#address_popup').dialog({
+                    autoOpen: false,
+                    closeText: 'hide'
+                });
+
+                ensureDialogCloseSrOnlyText();
+
+                $('#select_module').change(
+                        $('#select_module').val(),
+                        function(eventObject) {
+
+                            eventObject.preventDefault();
+                            switch ($(this).val())
+                            {
+                                case 'get_funds':
+                                    window.location.href = 'funds_home.php';
+                                    break;
+                                case 'get_food':
+                                    window.location.href = 'food_home.php';
+                                    break;
+                                case 'get_venues':
+                                    window.location.href = 'merchants.php';
+                                    break;
+                                case 'get_deals':
+                                    window.location.href = 'deals.php';
+                                    break;
+                                default:
+                                    $(this).val(eventObject.data);
+                                    break;
+                            }
+                        }
+                );             
+                $(document).on("address_set", function(event, address) {
+                    $('#show_addresses').html("<i class='fa fa-map-marker'></i> " + address.addressName);
+                });
+
+                $(document).on('click', '#show_addresses', openAddressPopup);
+            }
+    )
+</script>
+    
+<style type="text/css">
+    #address_popup .address-type-label {
+        display: block;
+        margin-bottom: 6px;
+        color: inherit;
+        font-size: inherit;
+        font-weight: normal;
+        letter-spacing: normal;
+        text-transform: none;
+    }
+</style>
+
+<script type="text/javascript">
+    function syncSelectedAddressText() {
+        var selectedAddressText = $('#address_popup_select_address_id').find(':selected').data('address_text');
+        $('#address_popup_address_text').html(selectedAddressText || '');
+    }
+
+    $(document).ready(function () {
+        $('#address_popup').dialog({
+            autoOpen: false,
+            modal: true,
+            width: 'auto',
+            draggable: false,
+            resizable: false,
+            open: function (event, ui) {
+                $("#address_popup_top").hide();
+                $('#address_popup form').each(function () {
+                    this.reset();
+                    $(this).validate().resetForm();
+                });
+                soaAjaxPost("address_save.php",
+                        {"function": "list_addresses_html", "formToken": "69e7d1644cd0f0.07246454"},
+                "html",
+                        function (data) {
+                            $('#address_popup_select_address_id').html(data);
+                            if ($('#address_popup_select_address_id option')[0]) {
+                                $("#address_popup_top").show();
+                                $('#address_popup_select_address_id').trigger("change");
+                            }
+                            else
+                                $("#address_popup_top").hide();
+
+                        }
+                );
+                showOrHideOnCampusFields();
+
+            }
+        });
+        $("#address_popup_add_off_campus_form").validate({
+            rules: {
+                                nickname: {required: true},
+                                line1: {required: true},
+                city: {required: true},
+                state: {required: true}
+            }
+        });
+        $("#address_popup_add_on_campus_form").validate({
+            rules: {
+                buildingaddress: {required: true},
+                room: {required: true}
+            }
+        });
+        $('#address_popup_new_address form').submit(function (eventData) {
+            if (!eventData.isDefaultPrevented())
+            {
+                $('#address_popup :input[type=submit]').attr("disabled", "true");
+                soaAjaxPost("address_save.php", $(this).serialize(), "json",
+                        function (data) {
+                            $('#address_popup :input[type=submit]').attr("disabled", false);
+                            if (data.error == null) {
+                                $(document).trigger("address_set", data);
+                                $('#address_popup').dialog("close");
+                                window.location.reload();
+                            }
+                        }
+                );
+            }
+            return false;
+        });
+        $('#address_popup_select_address_form').submit(function (eventData) {
+            //if (!eventData.isDefaultPrevented())
+            {
+                $('#address_popup :input[type=submit]').attr("disabled", "true");
+                soaAjaxPost("address_save.php", $(this).serialize(), "json",
+                        function (data) {
+                            $('#address_popup :input[type=submit]').attr("disabled", false);
+                            if (data.error == null) {
+                                $(document).trigger("address_set", data);
+                                $('#address_popup').dialog("close");
+                            }
+                        }
+                );
+            }
+            return false;
+        });
+
+        $(document).on('change', '#address_popup_select_address_id', syncSelectedAddressText);
+    });
+
+    function showOrHideOnCampusFields() {
+        $('#address_popup_add_on_campus_form').toggle($('#address_popup_address_type_on_campus').prop('checked') == true);
+        $('#address_popup_add_off_campus_form').toggle($('#address_popup_address_type_off_campus').prop('checked') == true);
+    }
+</script>
+
+    <div id="header">
+        <div id="title-only" class="navbar-inverse cbord_student" style=""><h3>Kent State University FLASHcard Portal</h3>
+            <p>FLASHcard Management, Web Deposits &amp; More!</p></div>
+
+    </div>
+    <span class="welcome"><i class="fa fa-user" aria-hidden="true" role="img"></i>
+    Hello,     </span>
+
+        <div id="content" class="container-lg frontend pb-1">
+        <div id="content_title" class="page-header">
+			<img class="img-responsive" style="margin-bottom: 5px;" alt="Kent State University" src="https://du1ux2871uqvu.cloudfront.net/sites/default/files/Kent-State-Logo-Blue_0.svg"><h2 class="right_header" style=""></h2>		</div>
+            <div id="prelogin"> 
+            <div><p><span style="font-size: 11.0pt; line-height: 107.0%; font-family: Calibri , sans-serif;">Due to a recent update to our system, please re-enter any stored credit card that you had previously saved. We apologize for this inconvenience and appreciate your understanding.</span></p></div>
+            <h3>Login Using FlashLine Credentials:</h3>
+	   
+            <p><a href="login.php">Click here to login</a></p>
+
+                                <div class="parents_guardians">
+                        <h3>Parents, Guardians or Other Guests Web Deposit:</h3>
+                        <p><a href="guest_deposit.php">Click Here to Deposit into a FLASHcard Account</a></p>
+                    </div>
+            
+            <div class="how_does">
+                <h3>How does the FLASHcard work?</h3>
+                    <p>The FLASHcard is your Kent State University ID card and more. Your card will let you take materials out of the Kent State libraries, access services such as Student Recreation &amp; Wellness Center and athletic events, and purchase goods and services both on and off campus. If you have a food plan, you will use your FLASHcard to purchase meals in our dining halls.  You may also deposit money on your FLASHcard and create a debit account. This plan, now known as FLASHcash will allow you to make purchases both on and off campus wherever the FLASHcard is accepted. Financial Aid may be deposited to your FLASHcash account! Avoid credit card fees, and still keep the safety and convenience of paying with a card. Visit the Bursar at 138 Schwartz Center.</p>
+                    <p><a href="about.php">Learn more about the FLASHcard Portal here.</a></p>
+            </div>
+        </div>
+        <div class="prelogin">
+            
+<div class="footer">
+	<div class="col-lg-12 margin-bottom">
+	 <p class="text-center">
+                <a href="about.php">FLASHcard Help</a> |
+		<a href="terms.php">Terms of Use</a> |
+		<a href="terms.php#privacy_policy">Privacy Policy</a>
+		 </p>
+                <!-- <img src="images/fb.png" style="position:absolute;right:0" alt="facebook"/> -->
+	</div>
+</div>
+    <script type="text/javascript">
+        $(function () { $.smartbanner({title:'GET' }) })
+    </script>
+<script type="text/javascript">
+    function disableSubmit(event){if (!event.isDefaultPrevented()){$("form").submit(function(){return false;});$("form").unbind("submit", disableSubmit);}}
+    $(document).ready(function () {
+        $("form").submit(disableSubmit);
+    });
+</script>
+<!--Scripts--> 
+
+<!--BS-->
+<script type="text/javascript" src="js/vendors/popper/popper.min.js"></script> 
+<script type="text/javascript" src="js/vendors/bootstrap/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script> 
+
+
+
+<!--Forms--> 
+<script type="text/javascript" src="js/vendors/forms/jquery.form.min.js"></script> 
+<script type="text/javascript" src="js/vendors/forms/jquery.maskedinput.min.js"></script> 
+
+
+<!--Main Script--> 
+<script type="text/javascript" src="js/frontend.js"></script>
+    
+        </div>
+    </div>
+  
+
+
+<div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front" aria-describedby="address_popup" aria-labelledby="ui-id-1" style="position: absolute; height: auto; width: auto; top: 181.32px; left: 813.679px; display: none;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-dialog-titlebar-close"><span class="sr-only">Close</span></button></div><div id="address_popup" style="width: auto; min-height: 93.4375px; max-height: none; height: auto;" class="ui-dialog-content ui-widget-content">
+   <div class="col-md-12 col-lg-12">
+        <div id="address_popup_top">
+        <div class="h4">Choose a Stored Address</div>
+        <form class="cbo-form" method="post" id="address_popup_select_address_form">
+            <fieldset>
+                <legend class="sr-only">Choose a Stored Address</legend>
+                <input type="hidden" name="formToken" value="69e7d1644cd0f0.07246454">
+                <input type="hidden" name="function" value="setcurrentaddress">
+                <label for="address_popup_select_address_id">Address:</label>
+                <div class="select">
+                    <select id="address_popup_select_address_id" name="addressID">
+                    </select><i></i>
+                </div>
+                <br>
+                <input type="submit" class="btn btn-default" name="set_address_id" value="Use This Address">
+            </fieldset>
+                    </form>
+        <div id="address_popup_seperator">
+            <hr>
+            <div id="address_popup_seperator_text">Or</div>
+            <hr>
+        </div>
+
+    </div>
+     
+    <div id="address_popup_new_address">
+                    <div class="h4">Add a New Address</div>
+                <form class="cbo-form col-md-12" action="" id="address_radio">
+            <fieldset id="address_popup_address_type" class="address_type inline-group">
+                <legend class="sr-only">Address Type</legend>
+                <input type="hidden" name="formToken" value="69e7d1644cd0f0.07246454">
+                <span class="address-type-label">Address Type:</span>
+                                    <label class="radio" for="address_popup_address_type_off_campus">Off Campus<input id="address_popup_address_type_off_campus" checked="" name="address_type" type="radio" onchange="showOrHideOnCampusFields()" value="off_campus"><i></i></label>
+                    <label class="radio" for="address_popup_address_type_on_campus">On Campus<input id="address_popup_address_type_on_campus" name="address_type" type="radio" onchange="showOrHideOnCampusFields()" value="on_campus"><i></i></label>
+                            </fieldset>
+        </form>
+            <div class="row">
+            <form class="cbo-form col-md-12" method="post" id="address_popup_add_on_campus_form" novalidate="novalidate" style="display: none;">
+                <fieldset>
+                    <legend class="sr-only">On Campus</legend>
+                    <input type="hidden" name="function" value="addresssave">
+                    <input type="hidden" name="formToken" value="69e7d1644cd0f0.07246454">
+                    <label for="address_popup_add_on_campus_form_building">Building:</label>
+                    <div class="select">
+                        <select name="buildingaddress" id="address_popup_add_on_campus_form_building">
+                            <option value="">Building</option>
+                                                        <option value="c669e7ef-24c9-4b77-9ac5-a93af47283db">Kent Student Center</option>
+                                                        <option value="d686c7d7-f8df-43fa-bb8e-ae6c135744a1">Main Library</option>
+                                                    </select><i></i>
+                            </div><br>
+                    <label for="address_popup_add_on_campus_form_room">Room:</label>
+                    <div class="input">
+                        <input placeholder="" type="text" id="address_popup_add_on_campus_form_room" name="room" class="text"></div>
+                    <br><br>
+                    <input name="add_address" type="submit" class="btn btn-default" value="Add">
+
+                </fieldset>
+            </form>
+            </div>
+        <div class="row">
+        <form class="cbo-form col-md-12" method="post" id="address_popup_add_off_campus_form" novalidate="novalidate">
+            <fieldset>
+                <legend class="sr-only">Off Campus</legend>
+                <input type="hidden" name="function" value="addresssave">
+                <input type="hidden" name="formToken" value="69e7d1644cd0f0.07246454">
+                                <label for="address_popup_add_off_campus_form_nickname">Description (i.e. Home):</label>
+                <div class="input">
+                    <input placeholder="" type="text" id="address_popup_add_off_campus_form_nickname" name="nickname" class="text">
+                </div>
+                                <label for="address_popup_add_off_campus_form_line1">Address Line 1:</label>
+                <div class="input">
+                    <input placeholder="" type="text" id="address_popup_add_off_campus_form_line1" name="line1" class="text">
+                </div>
+                <label for="address_popup_add_off_campus_form_line2">Address Line 2:</label>
+                <div class="input">
+                    <input placeholder="" type="text" id="address_popup_add_off_campus_form_line2" name="line2" class="text">
+                </div>
+                <label for="address_popup_add_off_campus_form_city">City:</label>
+                <div class="input">
+                    <input placeholder="" type="text" id="address_popup_add_off_campus_form_city" name="city" class="text">
+                </div>
+                <label for="address_popup_add_off_campus_form_state">State:</label>
+                <div class="select">
+                    <select id="address_popup_add_off_campus_form_state" name="state">
+                        <option value="0">State</option>
+                        <option value="">Choose</option>
+                                                    <option value="AL">
+                            Alabama                            </option>
+                            <option value="AK">
+                            Alaska                            </option>
+                            <option value="AB">
+                            Alberta                            </option>
+                            <option value="AS">
+                            American Somoa                            </option>
+                            <option value="AZ">
+                            Arizona                            </option>
+                            <option value="AR">
+                            Arkansas                            </option>
+                            <option value="BC">
+                            British Columbia                            </option>
+                            <option value="CA">
+                            California                            </option>
+                            <option value="CO">
+                            Colorado                            </option>
+                            <option value="CT">
+                            Connecticut                            </option>
+                            <option value="DE">
+                            Delaware                            </option>
+                            <option value="DC">
+                            District Of Columbia                            </option>
+                            <option value="FL">
+                            Florida                            </option>
+                            <option value="GA">
+                            Georgia                            </option>
+                            <option value="HI">
+                            Hawaii                            </option>
+                            <option value="ID">
+                            Idaho                            </option>
+                            <option value="IL">
+                            Illinois                            </option>
+                            <option value="IN">
+                            Indiana                            </option>
+                            <option value="IA">
+                            Iowa                            </option>
+                            <option value="KS">
+                            Kansas                            </option>
+                            <option value="KY">
+                            Kentucky                            </option>
+                            <option value="LA">
+                            Louisiana                            </option>
+                            <option value="ME">
+                            Maine                            </option>
+                            <option value="MB">
+                            Manitoba                            </option>
+                            <option value="MH">
+                            Marshall Islands                            </option>
+                            <option value="MD">
+                            Maryland                            </option>
+                            <option value="MA">
+                            Massachusetts                            </option>
+                            <option value="MI">
+                            Michigan                            </option>
+                            <option value="MN">
+                            Minnesota                            </option>
+                            <option value="MS">
+                            Mississippi                            </option>
+                            <option value="MO">
+                            Missouri                            </option>
+                            <option value="MT">
+                            Montana                            </option>
+                            <option value="NE">
+                            Nebraska                            </option>
+                            <option value="NV">
+                            Nevada                            </option>
+                            <option value="NB">
+                            New Brunswick                            </option>
+                            <option value="NH">
+                            New Hampshire                            </option>
+                            <option value="NJ">
+                            New Jersey                            </option>
+                            <option value="NM">
+                            New Mexico                            </option>
+                            <option value="NY">
+                            New York                            </option>
+                            <option value="NL">
+                            Newfoundland and Labrador                            </option>
+                            <option value="NC">
+                            North Carolina                            </option>
+                            <option value="ND">
+                            North Dakota                            </option>
+                            <option value="MP">
+                            Northern Mariana Islands                            </option>
+                            <option value="NT">
+                            Northwest Territories                            </option>
+                            <option value="NS">
+                            Nova Scotia                            </option>
+                            <option value="NU">
+                            Nunavut                            </option>
+                            <option value="OH">
+                            Ohio                            </option>
+                            <option value="OK">
+                            Oklahoma                            </option>
+                            <option value="ON">
+                            Ontario                            </option>
+                            <option value="OR">
+                            Oregon                            </option>
+                            <option value="PW">
+                            Palau                            </option>
+                            <option value="PA">
+                            Pennsylvania                            </option>
+                            <option value="PE">
+                            Prince Edward Island                            </option>
+                            <option value="PR">
+                            Puerto Rico                            </option>
+                            <option value="QC">
+                            Quebec                            </option>
+                            <option value="RI">
+                            Rhode Island                            </option>
+                            <option value="SK">
+                            Saskatchewan                            </option>
+                            <option value="SC">
+                            South Carolina                            </option>
+                            <option value="SD">
+                            South Dakota                            </option>
+                            <option value="TN">
+                            Tennessee                            </option>
+                            <option value="TX">
+                            Texas                            </option>
+                            <option value="UT">
+                            Utah                            </option>
+                            <option value="VT">
+                            Vermont                            </option>
+                            <option value="VI">
+                            Virgin Islands                            </option>
+                            <option value="VA">
+                            Virginia                            </option>
+                            <option value="WA">
+                            Washington                            </option>
+                            <option value="WV">
+                            West Virginia                            </option>
+                            <option value="WI">
+                            Wisconsin                            </option>
+                            <option value="WY">
+                            Wyoming                            </option>
+                            <option value="YT">
+                            Yukon                            </option>
+                    </select><i></i>
+                </div>
+                <br>
+                <input name="add_address" type="submit" class="btn btn-default" value="Add">
+
+            </fieldset>
+        </form>
+        </div>
+    </div>
+   </div>
+
+</div></div></body></html>

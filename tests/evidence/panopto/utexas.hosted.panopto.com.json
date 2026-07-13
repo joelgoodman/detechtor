@@ -1,0 +1,389 @@
+{
+  "technology": "Panopto",
+  "url": "https://utexas.hosted.panopto.com/",
+  "final_url": "https://utexas.hosted.panopto.com/Panopto/Pages/Home.aspx",
+  "captured_at": "2026-04-21T19:36:09.744Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/panopto/utexas.hosted.panopto.com.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "private, no-store",
+      "content-length": "116874",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:36:04 GMT",
+      "p3p": "CP=\"Some Browsers Require This In Order to Set Third Party Cookies\"",
+      "strict-transport-security": "max-age=31536000"
+    },
+    "scripts": [],
+    "meta": {},
+    "cookies": [],
+    "dom": {},
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://utexas.hosted.panopto.com/wp-login.php",
+      "status": 403
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://utexas.hosted.panopto.com/wp-json/wp/v2/",
+      "status": 403
+    },
+    "/wp-content/": {
+      "url": "https://utexas.hosted.panopto.com/wp-content/",
+      "status": 403
+    },
+    "/user/login": {
+      "url": "https://utexas.hosted.panopto.com/user/login",
+      "status": 403
+    },
+    "/core/install.php": {
+      "url": "https://utexas.hosted.panopto.com/core/install.php",
+      "status": 403
+    },
+    "/cas/login": {
+      "url": "https://utexas.hosted.panopto.com/cas/login",
+      "status": 403
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://utexas.hosted.panopto.com/Shibboleth.sso/Metadata",
+      "status": 403
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Panopto",
+      "confidence": 100,
+      "evidence": [
+        "HTML: panopto",
+        "HTML: panopto.*viewer",
+        "HTML: panopto\\.com",
+        "HTML: hosted\\.panopto\\.com",
+        "JS: Panopto (HTML)"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 80,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "Adobe Experience Manager",
+      "confidence": 70,
+      "evidence": [
+        "HTML: aem",
+        "JS: CQ (HTML)"
+      ]
+    },
+    {
+      "name": "Canvas LMS",
+      "confidence": 70,
+      "evidence": [
+        "HTML: instructure\\.com",
+        "JS: ENV (HTML)"
+      ]
+    },
+    {
+      "name": "Ghost",
+      "confidence": 70,
+      "evidence": [
+        "HTML: ghost",
+        "JS: ghost (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 60,
+      "evidence": [
+        "JS: llc (HTML)",
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: google-analytics\\.com/analytics\\.js"
+      ]
+    },
+    {
+      "name": "Google Workspace",
+      "confidence": 40,
+      "evidence": [
+        "HTML: g.*suite"
+      ]
+    },
+    {
+      "name": "Microsoft ASP.NET",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <input[^>]+name=\"__VIEWSTATE"
+      ]
+    },
+    {
+      "name": "Microsoft Power BI",
+      "confidence": 40,
+      "evidence": [
+        "HTML: power.*bi"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": 40,
+      "evidence": [
+        "HTML: react"
+      ]
+    },
+    {
+      "name": "ASP.NET",
+      "confidence": 40,
+      "evidence": [
+        "HTML: __doPostBack"
+      ]
+    },
+    {
+      "name": "PowerCampus",
+      "confidence": 40,
+      "evidence": [
+        "HTML: power.*campus"
+      ]
+    },
+    {
+      "name": "Blackboard Web Community Manager",
+      "confidence": 40,
+      "evidence": [
+        "HTML: bb.*wcm"
+      ]
+    },
+    {
+      "name": "Evisions",
+      "confidence": 40,
+      "evidence": [
+        "HTML: evisions"
+      ]
+    },
+    {
+      "name": "Rise Vision",
+      "confidence": 40,
+      "evidence": [
+        "HTML: rise.*vision"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "Cengage WebAssign",
+      "confidence": 40,
+      "evidence": [
+        "HTML: web.*assign"
+      ]
+    },
+    {
+      "name": "Encoura",
+      "confidence": 40,
+      "evidence": [
+        "HTML: encoura"
+      ]
+    },
+    {
+      "name": "Transact Campus",
+      "confidence": 40,
+      "evidence": [
+        "HTML: transact.*campus"
+      ]
+    },
+    {
+      "name": "AitThemes",
+      "confidence": 30,
+      "evidence": [
+        "JS: ait (HTML)"
+      ]
+    },
+    {
+      "name": "Convert",
+      "confidence": 30,
+      "evidence": [
+        "JS: convert (HTML)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "Divi",
+      "confidence": 30,
+      "evidence": [
+        "JS: DIVI (HTML)"
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ext (HTML)"
+      ]
+    },
+    {
+      "name": "Extend",
+      "confidence": 30,
+      "evidence": [
+        "JS: Extend (HTML)"
+      ]
+    },
+    {
+      "name": "Fera",
+      "confidence": 30,
+      "evidence": [
+        "JS: fera (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Marked",
+      "confidence": 30,
+      "evidence": [
+        "JS: marked (HTML)"
+      ]
+    },
+    {
+      "name": "Resova",
+      "confidence": 30,
+      "evidence": [
+        "JS: baseUrl (HTML)"
+      ]
+    },
+    {
+      "name": "Spin.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: Spinner (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "VWO",
+      "confidence": 30,
+      "evidence": [
+        "JS: VWO (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 30,
+      "evidence": [
+        "JS: YT (HTML)"
+      ]
+    },
+    {
+      "name": "Ellucian Banner",
+      "confidence": 30,
+      "evidence": [
+        "JS: Banner (HTML)"
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 30,
+      "evidence": [
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "CAS",
+      "confidence": 30,
+      "evidence": [
+        "JS: CAS (HTML)"
+      ]
+    },
+    {
+      "name": "EAB Navigate",
+      "confidence": 30,
+      "evidence": [
+        "JS: EAB (HTML)"
+      ]
+    },
+    {
+      "name": "Workday Student",
+      "confidence": 30,
+      "evidence": [
+        "JS: WD (HTML)"
+      ]
+    },
+    {
+      "name": "Innovative Interfaces Sierra",
+      "confidence": 30,
+      "evidence": [
+        "JS: III (HTML)"
+      ]
+    },
+    {
+      "name": "Canva for Education",
+      "confidence": 30,
+      "evidence": [
+        "JS: Canva (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

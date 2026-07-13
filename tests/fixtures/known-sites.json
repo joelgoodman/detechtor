@@ -1,0 +1,137 @@
+{
+  "_metadata": {
+    "description": "Test fixtures for pattern false positive and true positive testing",
+    "last_updated": "2024-10-15",
+    "usage": "npm run test:regression"
+  },
+
+  "false_positive_tests": [
+    {
+      "url": "https://www1.lehigh.edu",
+      "description": "Drupal site that was incorrectly matching TerminalFour due to 't4' hash in CSS",
+      "expected": ["Drupal"],
+      "must_not_match": ["TerminalFour"],
+      "notes": "This was the original false positive that triggered the pattern audit"
+    },
+    {
+      "url": "https://www.example.com",
+      "description": "Generic site - should not match higher-ed specific technologies",
+      "expected": [],
+      "must_not_match": ["Ellucian Banner", "Ellucian Colleague", "Canvas LMS", "Blackboard Learn", "TerminalFour"]
+    }
+  ],
+
+  "true_positive_tests": [
+    {
+      "url": "https://www.scu.edu",
+      "description": "Known TerminalFour CMS user",
+      "expected": ["TerminalFour"],
+      "min_confidence": 80,
+      "notes": "Santa Clara University uses TerminalFour"
+    },
+    {
+      "url": "https://www.drupal.org",
+      "description": "Drupal's official site",
+      "expected": ["Drupal"],
+      "min_confidence": 80
+    },
+    {
+      "url": "https://www.instructure.com",
+      "description": "Canvas LMS vendor site",
+      "expected": ["Canvas LMS"],
+      "min_confidence": 60,
+      "notes": "Instructure is the company behind Canvas"
+    }
+  ],
+
+  "technology_tests": {
+    "LMS": [
+      {
+        "technology": "Canvas LMS",
+        "test_urls": [
+          "https://canvas.instructure.com"
+        ],
+        "detection_patterns": [
+          "instructure.com in URL or scripts",
+          "X-Canvas-User-Id header",
+          "canvas-lms in HTML"
+        ]
+      },
+      {
+        "technology": "Blackboard Learn",
+        "test_urls": [],
+        "detection_patterns": [
+          "blackboard.com in URL",
+          "bblearn in scripts",
+          "BbRouter cookie"
+        ]
+      },
+      {
+        "technology": "Moodle",
+        "test_urls": [
+          "https://moodle.org"
+        ],
+        "detection_patterns": [
+          "moodle.org in URL",
+          "/mod/assign/ path",
+          "Moodle meta generator"
+        ]
+      }
+    ],
+    "CMS": [
+      {
+        "technology": "WordPress",
+        "test_urls": [
+          "https://wordpress.org"
+        ],
+        "detection_patterns": [
+          "wp-content path",
+          "wp-includes path",
+          "WordPress meta generator"
+        ]
+      },
+      {
+        "technology": "Drupal",
+        "test_urls": [
+          "https://www.drupal.org"
+        ],
+        "detection_patterns": [
+          "Drupal.settings JS",
+          "sites/all/themes path",
+          "X-Drupal-Cache header"
+        ]
+      },
+      {
+        "technology": "TerminalFour",
+        "test_urls": [
+          "https://www.scu.edu"
+        ],
+        "detection_patterns": [
+          "terminalfour in script src",
+          "/terminalfour/ path",
+          "T4 or TerminalFour meta generator"
+        ]
+      }
+    ],
+    "SIS": [
+      {
+        "technology": "Ellucian Banner",
+        "test_urls": [],
+        "detection_patterns": [
+          "bwck* module names",
+          "ellucian.*banner in scripts",
+          "Banner JS object"
+        ]
+      },
+      {
+        "technology": "PeopleSoft Campus Solutions",
+        "test_urls": [],
+        "detection_patterns": [
+          "PS_TOKEN cookie",
+          "PeopleSoft JS object",
+          "PSPRODNAME in HTML"
+        ]
+      }
+    ]
+  }
+}

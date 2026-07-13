@@ -1,0 +1,76 @@
+{
+  "Google Analytics 4": {
+    "categories": [
+      "Analytics"
+    ],
+    "html": [
+      "gtag\\('config', 'G-[A-Z0-9]+",
+      "googletagmanager\\.com\\/gtag\\/js",
+      "gtag\\('js'"
+    ],
+    "scripts": [
+      "googletagmanager\\.com\\/gtag\\/js",
+      "google-analytics\\.com\\/analytics\\.js"
+    ],
+    "js": {
+      "gtag": true,
+      "GoogleAnalyticsObject": true,
+      "dataLayer": true
+    },
+    "description": "Google Analytics 4 tracking"
+  },
+  "Adobe Analytics": {
+    "categories": [
+      "Analytics"
+    ],
+    "html": [
+      "omniture",
+      "s_code\\.js",
+      "visitor\\.api\\.js",
+      "appmeasurement\\.js"
+    ],
+    "scripts": [
+      "omniture",
+      "adobedtm\\.com",
+      "sc\\.adobedtm\\.com",
+      "appmeasurement"
+    ],
+    "js": {
+      "s_gi": true,
+      "s_account": true,
+      "AppMeasurement": true
+    },
+    "description": "Adobe Analytics (formerly Omniture)"
+  },
+  "_metadata": {
+    "version": "2.0.0",
+    "description": "General analytics/marketing patterns not covered by WebAppAnalyzer base",
+    "generated": "2026-04-21",
+    "notes": "Higher-ed specific patterns moved to higher-ed-*.json files"
+  },
+  "Matomo": {
+    "cats": [
+      10
+    ],
+    "description": "Matomo (formerly Piwik) open-source web analytics. Self-hosted; detectable via script path and _paq JS array.",
+    "html": [
+      "matomo.js",
+      "piwik.js",
+      "_paq.push",
+      "/matomo/",
+      "/piwik/"
+    ],
+    "scripts": [
+      "matomo.js",
+      "piwik.js",
+      "/matomo/",
+      "/piwik/"
+    ],
+    "js": {
+      "_paq": "",
+      "Matomo": ""
+    },
+    "confidence": 90,
+    "website": "https://matomo.org"
+  }
+}
