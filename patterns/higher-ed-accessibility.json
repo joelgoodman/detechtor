@@ -4,7 +4,18 @@
     "description": "Accessibility overlays and web-governance/QA tools. Signatures data-mined from the HTML of BuiltWith-labeled sites (UNI-141): scripts patterns match the vendor's loader host, deduced empirically (not hand-guessed). Overlays (UserWay/accessiBe) are candidate NEGATIVE signals — presence is a risk flag, not a plus (UNI-137).",
     "generated": "2026-07-13",
     "source": "data-mined from Supabase scan_pages.content vs BuiltWith labels (deduce->validate harness)",
-    "tech_count": 4
+    "tech_count": 5
+  },
+  "AudioEye": {
+    "cats": [111],
+    "description": "AudioEye accessibility overlay/remediation widget, loaded from audioeye.com / cdn.audioeye.com. Overlay-class tool — candidate NEGATIVE signal (UNI-137): automated overlays are frequent ADA-lawsuit targets and do not guarantee real WCAG conformance.",
+    "html": ["audioeye\\.com"],
+    "scripts": ["audioeye\\.com", "audioeye"],
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.audioeye.com",
+    "signal_polarity": "negative",
+    "_validation": "Data-mined vs BuiltWith (UNI-141, 2026-07-13): audioeye.com home/canonical HTML recall 68% (bare 'audioeye' 72%), ~1% neg (dedicated domain; neg hits are BuiltWith misses)."
   },
   "UserWay": {
     "cats": [111],
