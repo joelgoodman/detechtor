@@ -197,7 +197,7 @@
     "html": [
       "mindtap",
       "cengage.*mindtap",
-      "mind.*tap"
+      "mindtap"
     ],
     "scripts": [
       "mindtap",
@@ -639,7 +639,7 @@
     "description": "Pearson MyMathLab mathematics learning platform",
     "html": [
       "mymathlab",
-      "my.*math.*lab",
+      "mymathlab",
       "pearson.*mathlab"
     ],
     "scripts": [
@@ -660,7 +660,7 @@
     "description": "Nearpod interactive lesson platform",
     "html": [
       "nearpod",
-      "near.*pod"
+      "nearpod"
     ],
     "scripts": [
       "nearpod"
@@ -700,7 +700,7 @@
     ],
     "description": "Open edX learning management system",
     "html": [
-      "open.*edx",
+      "openedx",
       "edx.*platform",
       "lms\\.edx"
     ],
@@ -986,12 +986,12 @@
     "description": "Top Hat interactive learning platform",
     "html": [
       "tophat",
-      "top.*hat",
+      "tophat",
       "tophatlecture"
     ],
     "scripts": [
       "tophat",
-      "top.*hat"
+      "tophat"
     ],
     "js": {
       "TopHat": "",

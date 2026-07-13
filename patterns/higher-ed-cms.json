@@ -13,10 +13,10 @@
     "description": "Blackboard Web Community Manager CMS",
     "html": [
       "blackboard.*web.*community",
-      "bb.*wcm"
+      "bb[-_/]?wcm"
     ],
     "scripts": [
-      "bb.*wcm"
+      "bb[-_/]?wcm"
     ],
     "js": {
       "BlackboardWCM": ""
@@ -29,7 +29,7 @@
     "cats": [
       1
     ],
-    "description": "Hannon Hill Cascade CMS for higher education. Cascade is a decoupled CMS that publishes static HTML \u2014 no runtime traces appear in standard deployments. Detection is only possible when in-context editing (ICE) is enabled (data-cascade attributes) or if templates reference hannonhill.com assets. Confidence is low by design; treat any match as requiring manual verification.",
+    "description": "Hannon Hill Cascade CMS for higher education. Cascade is a decoupled CMS that publishes static HTML — no runtime traces appear in standard deployments. Detection is only possible when in-context editing (ICE) is enabled (data-cascade attributes) or if templates reference hannonhill.com assets. Confidence is low by design; treat any match as requiring manual verification.",
     "html": [
       "hannonhill.com",
       "data-cascade-"
@@ -43,7 +43,7 @@
     "higher_ed": true,
     "confidence": 30,
     "website": "https://www.hannonhill.com/products/cascade-cms/index.html",
-    "_detection_note": "Decoupled CMS \u2014 frontend detection unreliable. Matches should be manually verified. No JS globals, meta generator, or path fragments exist in published output."
+    "_detection_note": "Decoupled CMS — frontend detection unreliable. Matches should be manually verified. No JS globals, meta generator, or path fragments exist in published output."
   },
   "Finalsite": {
     "cats": [

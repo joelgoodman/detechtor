@@ -283,7 +283,7 @@
     ],
     "description": "AMP, originally created by Google, is an open-source HTML framework developed by the AMP open-source Project. AMP is designed to help webpages load faster.",
     "html": [
-      "<html[^>]* (?:amp|\u26a1)[^-]",
+      "<html[^>]* (?:amp|⚡)[^-]",
       "<link rel=\"amphtml\""
     ],
     "icon": "Accelerated-Mobile-Pages.svg",
@@ -2277,10 +2277,8 @@
     ],
     "description": "Adobe Experience Manager content management system",
     "html": [
-      "aem",
       "adobe.*experience.*manager",
       "/etc/designs/",
-      "cq-",
       "granite"
     ],
     "scriptSrc": [
@@ -5581,7 +5579,7 @@
     "description": "Apereo CAS is an open and well-documented authentication protocol. The primary implementation of the protocol is an open-source Java server component by the same name hosted here, with support for a plethora of additional authentication protocols and features.",
     "dom": {
       "head > title": {
-        "text": "CAS \u2013 (?:Central Authentication Service|Service Central d'Authentification)"
+        "text": "CAS – (?:Central Authentication Service|Service Central d'Authentification)"
       }
     },
     "icon": "Apereo.svg",
@@ -6437,7 +6435,7 @@
       "arcid": "",
       "aspan_s": ""
     },
-    "description": "ArcSpan is an audience monetization DMP platform enabling direct sold and programmatic deal results for the world\u2019s finest publishers and retail media networks.",
+    "description": "ArcSpan is an audience monetization DMP platform enabling direct sold and programmatic deal results for the world’s finest publishers and retail media networks.",
     "icon": "ArcSpan.svg",
     "js": {
       "aspan": "",
@@ -7143,7 +7141,7 @@
     "cats": [
       29
     ],
-    "description": "Athena Search is a customizable autocomplete, feature-rich dashboard, smart predictions, real-time reports search engine developed from scratch by Syncit Group\u2019s.",
+    "description": "Athena Search is a customizable autocomplete, feature-rich dashboard, smart predictions, real-time reports search engine developed from scratch by Syncit Group’s.",
     "dom": [
       "link[href*='athena/autocomplete/css/autocomplete.css']"
     ],
@@ -8609,7 +8607,7 @@
     "cats": [
       25
     ],
-    "description": "Anime.js (/\u02c8\u00e6n.\u0259.me\u026a/) is a lightweight JavaScript animation library with a simple, yet powerful API.It works with CSS properties, SVG, DOM attributes and JavaScript Objects.",
+    "description": "Anime.js (/ˈæn.ə.meɪ/) is a lightweight JavaScript animation library with a simple, yet powerful API.It works with CSS properties, SVG, DOM attributes and JavaScript Objects.",
     "icon": "anime.js.svg",
     "js": {
       "anime.version": "^([\\d\\.]+)$\\;version:\\1"
@@ -9044,11 +9042,11 @@
     "saas": true,
     "website": "https://bahooosh.com"
   },
-  "Baidu Analytics (\u767e\u5ea6\u7edf\u8ba1)": {
+  "Baidu Analytics (百度统计)": {
     "cats": [
       10
     ],
-    "description": "Baidu Analytics (\u767e\u5ea6\u7edf\u8ba1) is a free tool for tracking and reporting traffic data of users visiting your site.",
+    "description": "Baidu Analytics (百度统计) is a free tool for tracking and reporting traffic data of users visiting your site.",
     "icon": "Baidu Tongji.png",
     "scriptSrc": [
       "hm\\.baidu\\.com/hm?\\.js"
@@ -9362,7 +9360,7 @@
     "cats": [
       36
     ],
-    "description": "Basis Technologies, formerly \u2018Centro,\u2019 provides cloud-based workflow automation and business intelligence software for marketing.",
+    "description": "Basis Technologies, formerly ‘Centro,’ provides cloud-based workflow automation and business intelligence software for marketing.",
     "icon": "Basis.svg",
     "scriptSrc": [
       "cdn01\\.basis\\.net"
@@ -11152,7 +11150,7 @@
     "cats": [
       88
     ],
-    "description": "Bluehost is a large web host known for its WordPress expertise, variety of \u201cone-stop-shop\u201d services, and bargain prices.",
+    "description": "Bluehost is a large web host known for its WordPress expertise, variety of “one-stop-shop” services, and bargain prices.",
     "dns": {
       "NS": [
         "\\.bluehost\\.com"
@@ -14599,7 +14597,7 @@
       "cakephp": ""
     },
     "cpe": "cpe:2.3:a:cakephp:cakephp:*:*:*:*:*:*:*:*",
-    "description": "CakePHP is an open-source web framework. It follows the model\u2013view\u2013controller (MVC) approach and is written in PHP.",
+    "description": "CakePHP is an open-source web framework. It follows the model–view–controller (MVC) approach and is written in PHP.",
     "icon": "CakePHP.svg",
     "implies": [
       "PHP"
@@ -16055,11 +16053,11 @@
     "saas": true,
     "website": "https://cevoid.com"
   },
-  "Cfix\u00e9": {
+  "Cfixé": {
     "cats": [
       72
     ],
-    "description": "Cfix\u00e9 is a scheduling platform that enables online booking for everyday services and allows professionals to embed a scheduling widget directly on their website.",
+    "description": "Cfixé is a scheduling platform that enables online booking for everyday services and allows professionals to embed a scheduling widget directly on their website.",
     "pricing": [
       "low",
       "recurring"
@@ -18779,7 +18777,7 @@
     "cats": [
       92
     ],
-    "description": "Cloudflare Zaraz gives you complete control over third-party tools and services for your website, and allows you to offload them to Cloudflare\u2019s edge, improving the speed and security of your website.",
+    "description": "Cloudflare Zaraz gives you complete control over third-party tools and services for your website, and allows you to offload them to Cloudflare’s edge, improving the speed and security of your website.",
     "icon": "CloudFlare.svg",
     "js": {
       "zaraz": "",
@@ -19083,7 +19081,7 @@
     "cats": [
       21
     ],
-    "description": "Coachy is a platform for creating and selling online courses with integrated payment systems and GDPR-compliant data storage\u200b.",
+    "description": "Coachy is a platform for creating and selling online courses with integrated payment systems and GDPR-compliant data storage​.",
     "dom": [
       "iframe[src*='embed.coachy.net/']"
     ],
@@ -19306,7 +19304,7 @@
       16,
       56
     ],
-    "description": "Coinhive Captcha provides captcha service that is simple to integrate, where your users\u2019 devices need to solve a number of hashes, adjustable by you, in order to login or post a comment to your site.",
+    "description": "Coinhive Captcha provides captcha service that is simple to integrate, where your users’ devices need to solve a number of hashes, adjustable by you, in order to login or post a comment to your site.",
     "dom": [
       "div.coinhive-captcha"
     ],
@@ -19397,17 +19395,17 @@
     ],
     "website": "https://colibriwp.com"
   },
-  "Colis Priv\u00e9": {
+  "Colis Privé": {
     "cats": [
       99
     ],
-    "description": "Colis Priv\u00e9 is a private parcel delivery service provider specialised in last-mile delivery.",
+    "description": "Colis Privé is a private parcel delivery service provider specialised in last-mile delivery.",
     "icon": "Colis Prive.svg",
     "requiresCategory": [
       6
     ],
     "text": [
-      "\\bColis Priv[e\u00e9]\\b"
+      "\\bColis Priv[eé]\\b"
     ],
     "website": "https://www.colisprive.fr"
   },
@@ -26521,7 +26519,7 @@
     "cookies": {
       "Dynamicweb": ""
     },
-    "description": "Dynamicweb is a all-in-one platform for content management, ecommerce, digital marketing\u200b, product information management (PIM) and integration.",
+    "description": "Dynamicweb is a all-in-one platform for content management, ecommerce, digital marketing​, product information management (PIM) and integration.",
     "dom": [
       "input[value='dynamicweb.com']"
     ],
@@ -26918,7 +26916,7 @@
     "cats": [
       53
     ],
-    "description": "EZLynx is a cloud-based software offering real-time comparative insurance rating, integrating with over 330 carriers for automated quoting and policy management\u200b.",
+    "description": "EZLynx is a cloud-based software offering real-time comparative insurance rating, integrating with over 330 carriers for automated quoting and policy management​.",
     "icon": "EZLynx.svg",
     "meta": {
       "author": "^EZLynx$"
@@ -27390,7 +27388,7 @@
     "cats": [
       32
     ],
-    "description": "Ecal is a marketing software platform that enables the delivery of calendar-based tickets and events directly into users\u2019 personal calendars.",
+    "description": "Ecal is a marketing software platform that enables the delivery of calendar-based tickets and events directly into users’ personal calendars.",
     "icon": "Ecal.svg",
     "pricing": [
       "freemium",
@@ -29418,7 +29416,7 @@
     ],
     "icon": "Essent.png",
     "meta": {
-      "GENERATOR": "^Essent\u00ae SiteBuilder Pro$"
+      "GENERATOR": "^Essent® SiteBuilder Pro$"
     },
     "pricing": [
       "low",
@@ -30413,7 +30411,7 @@
       71,
       94
     ],
-    "description": "eBay Partner Network is an online referral program where eBay pays commissions to referrers on sales generated by customers they\u2019ve referred.",
+    "description": "eBay Partner Network is an online referral program where eBay pays commissions to referrers on sales generated by customers they’ve referred.",
     "icon": "eBay.svg",
     "scriptSrc": [
       "epnt\\.ebay\\.com/"
@@ -33756,7 +33754,7 @@
       "RSS"
     ],
     "meta": {
-      "author": "Forgejo \u2013 Beyond coding\\. We forge\\."
+      "author": "Forgejo – Beyond coding\\. We forge\\."
     },
     "oss": true,
     "saas": true,
@@ -34231,7 +34229,7 @@
     "cats": [
       6
     ],
-    "description": "Foxy\u2019s hosted cart & payment page allow you to sell anything, using your existing website or platform.",
+    "description": "Foxy’s hosted cart & payment page allow you to sell anything, using your existing website or platform.",
     "icon": "foxyio.svg",
     "pricing": [
       "payg",
@@ -34756,7 +34754,7 @@
     "cats": [
       16
     ],
-    "description": "Friendly Captcha is a proof-of-work based solution in which the user\u2019s device does all the work.",
+    "description": "Friendly Captcha is a proof-of-work based solution in which the user’s device does all the work.",
     "dom": [
       "div.frc-captcha"
     ],
@@ -36925,7 +36923,7 @@
     "cpe": "cpe:2.3:a:gitea:gitea:*:*:*:*:*:*:*:*",
     "description": "Gitea is an open-source forge software package for hosting software development version control using Git as well as other collaborative features like bug tracking, wikis and code review. It supports self-hosting but also provides a free public first-party instance hosted on DiDi's cloud.",
     "html": [
-      "<div class=\"ui left\">\\n\\s+\u00a9 Gitea Version: ([\\d.]+)\\;version:\\1"
+      "<div class=\"ui left\">\\n\\s+© Gitea Version: ([\\d.]+)\\;version:\\1"
     ],
     "icon": "gitea.svg",
     "implies": [
@@ -38056,7 +38054,7 @@
     "cpe": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
     "description": "Gogs is a self-hosted Git service written in Go.",
     "html": [
-      "<div class=\"ui left\">\\n\\s+\u00a9 \\d{4} Gogs Version: ([\\d.]+) Page:\\;version:\\1",
+      "<div class=\"ui left\">\\n\\s+© \\d{4} Gogs Version: ([\\d.]+) Page:\\;version:\\1",
       "<button class=\"ui basic clone button\" id=\"repo-clone-ssh\" data-link=\"gogs@"
     ],
     "icon": "gogs.svg",
@@ -38244,8 +38242,7 @@
     ],
     "html": [
       "google-analytics\\.com/analytics\\.js",
-      "gtag\\(",
-      "ga\\("
+      "gtag\\("
     ],
     "scripts": [
       "google-analytics\\.com",
@@ -38441,7 +38438,7 @@
     "cats": [
       35
     ],
-    "description": "Google Maps is a web mapping service. It offers satellite imagery, aerial photography, street maps, 360\u00b0 interactive panoramic views of streets, real-time traffic conditions, and route planning for traveling by foot, car, bicycle and air, or public transportation.",
+    "description": "Google Maps is a web mapping service. It offers satellite imagery, aerial photography, street maps, 360° interactive panoramic views of streets, real-time traffic conditions, and route planning for traveling by foot, car, bicycle and air, or public transportation.",
     "dom": [
       "iframe[src*='google.com/maps']"
     ],
@@ -45123,7 +45120,7 @@
     "cats": [
       1
     ],
-    "description": "It\u2019seeze is a website design platform with a custom CMS for seamless site updates and management.",
+    "description": "It’seeze is a website design platform with a custom CMS for seamless site updates and management.",
     "dom": [
       "footer > div[id*='itseezeFooter']"
     ],
@@ -46363,7 +46360,7 @@
     "cats": [
       87
     ],
-    "description": "Jetpack Boost \u2013 Website Speed, Performance and Critical CSS.",
+    "description": "Jetpack Boost – Website Speed, Performance and Critical CSS.",
     "dom": [
       "style[id='jetpack-boost-critical-css']"
     ],
@@ -47160,8 +47157,7 @@
       "JavaScript Library"
     ],
     "html": [
-      "jquery",
-      "\\$\\("
+      "jquery"
     ],
     "scripts": [
       "jquery"
@@ -49537,7 +49533,7 @@
       27
     ],
     "cpe": "cpe:2.3:a:jetbrains:kotlin:*:*:*:*:*:*:*:*",
-    "description": "Kotlin is a general purpose, free, open-source, statically typed \u201cpragmatic\u201d programming language initially designed for the JVM (Java Virtual Machine) and Android that combines object-oriented and functional programming features.",
+    "description": "Kotlin is a general purpose, free, open-source, statically typed “pragmatic” programming language initially designed for the JVM (Java Virtual Machine) and Android that combines object-oriented and functional programming features.",
     "icon": "Kotlin.svg",
     "oss": true,
     "website": "https://kotlinlang.org"
@@ -49804,7 +49800,7 @@
     "cats": [
       6
     ],
-    "description": "k-eCommerce is mdf commerce\u2019s platform for SMBs, providing all-in-one ecommerce and digital payment solutions integrated to Microsoft Dynamics and SAP Business One. ",
+    "description": "k-eCommerce is mdf commerce’s platform for SMBs, providing all-in-one ecommerce and digital payment solutions integrated to Microsoft Dynamics and SAP Business One. ",
     "dom": [
       "a[href*='.k-ecommerce.com/'][target='_blank']"
     ],
@@ -51221,7 +51217,7 @@
     "cats": [
       68
     ],
-    "description": "Level Access, formerly eSSENTIAL Accessibility, is a leading digital accessibility solutions provider offering tools and services to ensure compliance with standards such as ADA, Section 508, and WCAG\u200b ",
+    "description": "Level Access, formerly eSSENTIAL Accessibility, is a leading digital accessibility solutions provider offering tools and services to ensure compliance with standards such as ADA, Section 508, and WCAG​ ",
     "dom": [
       " a[href*='.essentialaccessibility.com'] > img, a[href*='.levelaccess.com'] > img"
     ],
@@ -53345,7 +53341,7 @@
     ],
     "website": "https://www.luckyorange.com"
   },
-  "Luigi\u2019s Box": {
+  "Luigi’s Box": {
     "cats": [
       10,
       29
@@ -56366,7 +56362,7 @@
     "cats": [
       1
     ],
-    "description": "Megagroup CMS.S3 management system is provided not as a \u201cboxed product\u201d, but as a separate service, that is, it works using SaaS technology. This means that you manage your site directly through your browser using an intuitive interface.",
+    "description": "Megagroup CMS.S3 management system is provided not as a “boxed product”, but as a separate service, that is, it works using SaaS technology. This means that you manage your site directly through your browser using an intuitive interface.",
     "icon": "Megagroup.svg",
     "js": {
       "megacounter_key": ""
@@ -58632,7 +58628,7 @@
     "cats": [
       87
     ],
-    "description": "Moneris is Canada\u2019s leading processor of Debit and credit card payments. This WooCommerce extension automatically adds moneris payment gateway to your woocommerce website and allows you to keep the customer on your site for the checkout process.",
+    "description": "Moneris is Canada’s leading processor of Debit and credit card payments. This WooCommerce extension automatically adds moneris payment gateway to your woocommerce website and allows you to keep the customer on your site for the checkout process.",
     "icon": "Moneris.svg",
     "implies": [
       "Moneris",
@@ -61136,7 +61132,7 @@
     "cats": [
       87
     ],
-    "description": "Newspack is an open-source publishing platform built on WordPress for small to medium sized news organizations. It is an \u201copinionated\u201d platform that stakes out clear, best-practice positions on technology, design, and business practice for news publishers.",
+    "description": "Newspack is an open-source publishing platform built on WordPress for small to medium sized news organizations. It is an “opinionated” platform that stakes out clear, best-practice positions on technology, design, and business practice for news publishers.",
     "dom": [
       "a.imprint[href*='newspack.pub']"
     ],
@@ -61370,7 +61366,7 @@
     "cats": [
       36
     ],
-    "description": "Nextdoor Ads is an easy-to-use expansion of Nextdoor\u2019s proprietary self-serve campaign management platform, designed to help small and medium-sized businesses (SMBs) advertise on Nextdoor.",
+    "description": "Nextdoor Ads is an easy-to-use expansion of Nextdoor’s proprietary self-serve campaign management platform, designed to help small and medium-sized businesses (SMBs) advertise on Nextdoor.",
     "icon": "Nextdoor Ads.png",
     "scriptSrc": [
       "ads\\.nextdoor\\.com/"
@@ -62288,7 +62284,7 @@
       "Nop.customer": ""
     },
     "cpe": "cpe:2.3:a:nopcommerce:nopcommerce:*:*:*:*:*:*:*:*",
-    "description": "nopCommerce is an open-source ecommerce solution based on Microsoft's ASP\u200b.NET Core framework and MS SQL Server 2012 (or higher) backend database.",
+    "description": "nopCommerce is an open-source ecommerce solution based on Microsoft's ASP​.NET Core framework and MS SQL Server 2012 (or higher) backend database.",
     "html": [
       "(?:<!--Powered by nopCommerce|Powered by: <a[^>]+nopcommerce)"
     ],
@@ -63835,7 +63831,6 @@
     ],
     "description": "Open edX learning management system",
     "html": [
-      "open.*edx",
       "edx.*platform",
       "lms\\.edx"
     ],
@@ -64162,7 +64157,7 @@
     "cats": [
       1
     ],
-    "description": "OpenText Web is a web content management platform that supports hybrid headless environments, allowing developers to use preferred tools and enabling marketers to author, test, and publish content seamlessly, with a focus on performance, scalability, and compliance\u200b.",
+    "description": "OpenText Web is a web content management platform that supports hybrid headless environments, allowing developers to use preferred tools and enabling marketers to author, test, and publish content seamlessly, with a focus on performance, scalability, and compliance​.",
     "html": [
       "<!--[^>]+published by Open Text Web Solutions"
     ],
@@ -65138,7 +65133,7 @@
     "cats": [
       99
     ],
-    "description": "\u00d6sterreichische Post is an Austrian logistics and postal services provider.",
+    "description": "Österreichische Post is an Austrian logistics and postal services provider.",
     "icon": "Post AG.svg",
     "requiresCategory": [
       6
@@ -65146,7 +65141,7 @@
     "text": [
       "\\bpost\\.at\\b",
       "\\bPost AG\\b",
-      "\\b[\u00d6O]sterreichische Post\\b"
+      "\\b[ÖO]sterreichische Post\\b"
     ],
     "website": "https://www.post.at"
   },
@@ -65611,9 +65606,6 @@
     "headers": {
       "x-powered-by": "PHP"
     },
-    "html": [
-      "php"
-    ],
     "description": "Server-side scripting language"
   },
   "PHP-Nuke": {
@@ -65621,7 +65613,7 @@
       1
     ],
     "cpe": "cpe:2.3:a:phpnuke:php-nuke:*:*:*:*:*:*:*:*",
-    "description": "PHP-Nuke is a free, web-based content management system for creating community portals and managing news, originally developed by Francisco Burzi using PHP and MySQL\u200b.",
+    "description": "PHP-Nuke is a free, web-based content management system for creating community portals and managing news, originally developed by Francisco Burzi using PHP and MySQL​.",
     "html": [
       "<[^>]+Powered by PHP-Nuke"
     ],
@@ -70542,7 +70534,7 @@
     "cats": [
       100
     ],
-    "description": "PreProduct is a tool that enables businesses to boost sales and manage demand through Shopify\u2019s pre-order system.",
+    "description": "PreProduct is a tool that enables businesses to boost sales and manage demand through Shopify’s pre-order system.",
     "icon": "PreProduct.svg",
     "js": {
       "PPshowPreProduct": ""
@@ -71888,7 +71880,7 @@
     "cats": [
       30
     ],
-    "description": "Proton Mail is the world\u2019s largest secure email service with over 70 million users. Available on Web, iOS, Android, and desktop. Protected by Swiss privacy law.",
+    "description": "Proton Mail is the world’s largest secure email service with over 70 million users. Available on Web, iOS, Android, and desktop. Protected by Swiss privacy law.",
     "dns": {
       "MX": [
         "\\.protonmail\\.ch"
@@ -74513,7 +74505,7 @@
     "cats": [
       19
     ],
-    "description": "RSS is a family of web feed formats used to publish frequently updated works\u2014such as blog entries, news headlines, audio, and video\u2014in a standardized format.",
+    "description": "RSS is a family of web feed formats used to publish frequently updated works—such as blog entries, news headlines, audio, and video—in a standardized format.",
     "dom": {
       "link[type*='application']": {
         "attributes": {
@@ -75095,7 +75087,7 @@
     "cats": [
       36
     ],
-    "description": "Raptive is a company formed from the merger of CafeMedia, AdThrive, and CafeMedia Ad Management, focusing on supporting digital creators and publishers\u200b.",
+    "description": "Raptive is a company formed from the merger of CafeMedia, AdThrive, and CafeMedia Ad Management, focusing on supporting digital creators and publishers​.",
     "icon": "Raptive.svg",
     "js": {
       "adthrive": "",
@@ -75388,12 +75380,8 @@
       "JavaScript Framework"
     ],
     "html": [
-      "react",
       "data-reactroot",
       "data-react-class"
-    ],
-    "scripts": [
-      "react"
     ],
     "higher_ed": false,
     "description": "JavaScript library for building user interfaces"
@@ -76081,7 +76069,7 @@
       34
     ],
     "cpe": "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
-    "description": "Redis is an in-memory data structure project implementing a distributed, in-memory key\u2013value database with optional durability. Redis supports different kinds of abstract data structures, such as strings, lists, maps, sets, sorted sets, HyperLogLogs, bitmaps, streams, and spatial indexes.",
+    "description": "Redis is an in-memory data structure project implementing a distributed, in-memory key–value database with optional durability. Redis supports different kinds of abstract data structures, such as strings, lists, maps, sets, sorted sets, HyperLogLogs, bitmaps, streams, and spatial indexes.",
     "icon": "Redis.svg",
     "website": "https://redis.io"
   },
@@ -78691,7 +78679,7 @@
     "cats": [
       19
     ],
-    "description": "Rspack is a JavaScript bundler written in Rust, offering faster build times and compatibility with the Webpack ecosystem\u200b.",
+    "description": "Rspack is a JavaScript bundler written in Rust, offering faster build times and compatibility with the Webpack ecosystem​.",
     "icon": "Rspack.svg",
     "implies": [
       "Rust"
@@ -78703,7 +78691,7 @@
     "cats": [
       57
     ],
-    "description": "Rspress is a static site generator built on Rspack, offering features like MDX support, full-text search, internationalization, and customizable themes\u200b.",
+    "description": "Rspress is a static site generator built on Rspack, offering features like MDX support, full-text search, internationalization, and customizable themes​.",
     "icon": "Rspress.svg",
     "implies": [
       "Rspack"
@@ -81234,7 +81222,7 @@
     "cats": [
       67
     ],
-    "description": "Seers is a privacy and consent management platform that helps businesses comply with data protection regulations like GDPR, CCPA, and LGPD by providing tools for cookie consent, data anonymization, and GDPR training\u200b.",
+    "description": "Seers is a privacy and consent management platform that helps businesses comply with data protection regulations like GDPR, CCPA, and LGPD by providing tools for cookie consent, data anonymization, and GDPR training​.",
     "icon": "seersco.svg",
     "js": {
       "cb_banner_cpra_file_name": "\\.seersco\\.com/",
@@ -84703,7 +84691,7 @@
     "cats": [
       100
     ],
-    "description": "Simplio Upsells \u0441reate more revenue with promotions and post purchase upsells.",
+    "description": "Simplio Upsells сreate more revenue with promotions and post purchase upsells.",
     "icon": "Simplio Upsells.svg",
     "implies": [
       "Shopify"
@@ -84798,11 +84786,11 @@
     ],
     "website": "https://www.simplycast.com"
   },
-  "Simpl\u00e9bo": {
+  "Simplébo": {
     "cats": [
       1
     ],
-    "description": "Simpl\u00e9bo is a French company that provides website creation and management services, including tools for building, hosting, and optimizing websites and ecommerce platforms.",
+    "description": "Simplébo is a French company that provides website creation and management services, including tools for building, hosting, and optimizing websites and ecommerce platforms.",
     "headers": {
       "X-ServedBy": "simplebo"
     },
@@ -87117,7 +87105,7 @@
     "description": "SoftTr is a company that provides software solutions for ecommerce, web hosting, and domain registration services.",
     "icon": "softtr.svg",
     "meta": {
-      "author": "SoftTr E-Ticaret Sitesi Yaz\u0131l\u0131m\u0131"
+      "author": "SoftTr E-Ticaret Sitesi Yazılımı"
     },
     "website": "https://www.softtr.com"
   },
@@ -88611,7 +88599,7 @@
     "cats": [
       66
     ],
-    "description": "Sprig is a free plugin for Craft CMS that allows you to create reactive components from Twig templates \u200bor PHP classes.",
+    "description": "Sprig is a free plugin for Craft CMS that allows you to create reactive components from Twig templates ​or PHP classes.",
     "dom": [
       "form[sprig], button[sprig], input[sprig], div.sprig-component"
     ],
@@ -89093,7 +89081,7 @@
       53,
       41
     ],
-    "description": "Squire is a business management platform for barbershops, offering appointment scheduling, payment processing, and customer relationship management tools\u200b.",
+    "description": "Squire is a business management platform for barbershops, offering appointment scheduling, payment processing, and customer relationship management tools​.",
     "icon": "Squire.svg",
     "js": {
       "SquireWidget": "",
@@ -93786,7 +93774,7 @@
     },
     "website": "https://telescopeapp.org"
   },
-  "Tencent Analytics (\u817e\u8baf\u5206\u6790)": {
+  "Tencent Analytics (腾讯分析)": {
     "cats": [
       10
     ],
@@ -101766,7 +101754,7 @@
     "cats": [
       12
     ],
-    "description": "Vike is a framework that enhances Vite applications with server-side rendering (SSR) and static site generation (SSG) capabilities, allowing for flexible integration and progressive enhancement\u200b.",
+    "description": "Vike is a framework that enhances Vite applications with server-side rendering (SSR) and static site generation (SSG) capabilities, allowing for flexible integration and progressive enhancement​.",
     "dom": [
       "script#vike_pageContext"
     ],
@@ -102799,9 +102787,6 @@
       "vue\\.js",
       "data-v-",
       "v-cloak"
-    ],
-    "scripts": [
-      "vue"
     ],
     "higher_ed": false,
     "description": "Progressive JavaScript framework"
@@ -105084,7 +105069,7 @@
       "XSLT"
     ],
     "meta": {
-      "generator": "^Weblication\u00ae CMS$"
+      "generator": "^Weblication® CMS$"
     },
     "pricing": [
       "recurring",
@@ -106651,7 +106636,7 @@
     "cats": [
       87
     ],
-    "description": "WooCommerce Stripe Payment Gateway plugin extends WooCommerce allowing you to take payments directly on your store via Stripe\u2019s API.",
+    "description": "WooCommerce Stripe Payment Gateway plugin extends WooCommerce allowing you to take payments directly on your store via Stripe’s API.",
     "dom": [
       "link[href*='/wp-content/plugins/woocommerce-gateway-stripe/']"
     ],
@@ -107179,7 +107164,7 @@
       5,
       76
     ],
-    "description": "Worldz calculates the economic value of a user\u2019s social popularity (qualitatively and quantitatively). In proportion to this value, it provides a personalised discount, which can be applied in exchange for a social sharing by the user on their Instagram or Facebook profile.",
+    "description": "Worldz calculates the economic value of a user’s social popularity (qualitatively and quantitatively). In proportion to this value, it provides a personalised discount, which can be applied in exchange for a social sharing by the user on their Instagram or Facebook profile.",
     "icon": "Worldz.svg",
     "pricing": [
       "mid",
@@ -107732,7 +107717,7 @@
       "html[id*='XenForo'], html[id*='XF']"
     ],
     "html": [
-      "(?:jQuery\\.extend\\(true, XenForo|<a[^>]+>Forum software by XenForo\u2122|<!--XF:branding|<html[^>]+id=\"XenForo\")",
+      "(?:jQuery\\.extend\\(true, XenForo|<a[^>]+>Forum software by XenForo™|<!--XF:branding|<html[^>]+id=\"XenForo\")",
       "<html id=\"XF\" "
     ],
     "icon": "XenForo.svg",
@@ -108007,7 +107992,7 @@
     "cats": [
       25
     ],
-    "description": "Xzero JS is a JavaScript library (ES6 module) for displaying 3D models, scenes and 360\u00b0 panoramas on the web.",
+    "description": "Xzero JS is a JavaScript library (ES6 module) for displaying 3D models, scenes and 360° panoramas on the web.",
     "icon": "XzeroJS.svg",
     "pricing": [
       "freemium"
@@ -108408,7 +108393,7 @@
       22
     ],
     "cpe": "cpe:2.3:a:yaws:yaws:*:*:*:*:*:*:*:*",
-    "description": "Yaws (Yet Another Web Server) is an open-source web server designed to deliver dynamic content efficiently. It was developed by Claes (klacke) Wikstr\u00f6m and is written in Erlang, a functional programming language.",
+    "description": "Yaws (Yet Another Web Server) is an open-source web server designed to deliver dynamic content efficiently. It was developed by Claes (klacke) Wikström and is written in Erlang, a functional programming language.",
     "headers": {
       "Server": "Yaws(?: ([\\d.]+))?\\;version:\\1"
     },
@@ -108460,7 +108445,7 @@
       6
     ],
     "cpe": "cpe:2.3:a:open-classifieds:open_classifieds:*:*:*:*:*:*:*:*",
-    "description": "Yclas is a platform that allows users to create and manage customizable online classified ads websites, available as both a hosted service and an open-source self-hosted solution\u200b .",
+    "description": "Yclas is a platform that allows users to create and manage customizable online classified ads websites, available as both a hosted service and an open-source self-hosted solution​ .",
     "icon": "Yclas.svg",
     "meta": {
       "author": "open-classifieds\\.com",
@@ -108555,7 +108540,7 @@
       32,
       75
     ],
-    "description": "Yeps is a minimalist bar that can be added to the top or bottom of your website to collect visitor\u2019s emails and promote content.",
+    "description": "Yeps is a minimalist bar that can be added to the top or bottom of your website to collect visitor’s emails and promote content.",
     "icon": "Yeps.svg",
     "js": {
       "Yeps": ""
@@ -109273,7 +109258,7 @@
       87,
       76
     ],
-    "description": "Zakeke Interactive Product Designer lets customers personalise any product and visualise how they\u2019ll look before checking out.",
+    "description": "Zakeke Interactive Product Designer lets customers personalise any product and visualise how they’ll look before checking out.",
     "icon": "Zakeke.png",
     "implies": [
       "Zakeke"
@@ -111335,8 +111320,7 @@
       "student.*success.*collaborative"
     ],
     "scripts": [
-      "navigate",
-      "eab"
+      "navigate"
     ],
     "higher_ed": true,
     "description": "Student success and advising platform"
@@ -111431,7 +111415,8 @@
     "version": "2.0.0",
     "description": "Additional Learning Management Systems - Missing Major Players",
     "part": "LMS Extension",
-    "last_updated": "2024-10-15"
+    "last_updated": "2024-10-15",
+    "_uni142": "specificity-linted 2026-07-13: stripped 24 low-specificity html/scripts field value(s), 4 field(s) emptied; no techs dropped"
   },
   "Shibboleth": {
     "cats": [
@@ -111650,7 +111635,6 @@
     ],
     "description": "EMS event management system for higher education.",
     "html": [
-      "dea.*ems",
       "event.*management.*system",
       "ems.*software"
     ],
@@ -111799,7 +111783,6 @@
     "description": "D2L Brightspace Core platform",
     "html": [
       "brightspace.*core",
-      "d2l.*core",
       "valence.*api"
     ],
     "scriptSrc": [
@@ -112077,7 +112060,6 @@
     "html": [
       "typo3",
       "typo3temp",
-      "t3-",
       "TYPO3.*CMS"
     ],
     "scriptSrc": [
@@ -112161,8 +112143,7 @@
     ],
     "description": "Blackboard Web Community Manager CMS",
     "html": [
-      "blackboard.*web.*community",
-      "bb.*wcm"
+      "blackboard.*web.*community"
     ],
     "scriptSrc": [
       "bb.*wcm"
@@ -112242,10 +112223,6 @@
       53
     ],
     "description": "Koha open source integrated library system",
-    "html": [
-      "koha.*ils",
-      "koha.*opac"
-    ],
     "scriptSrc": [
       "koha"
     ],
@@ -112867,8 +112844,7 @@
     ],
     "description": "National Student Clearinghouse services",
     "html": [
-      "studentclearinghouse",
-      "nsc.*org"
+      "studentclearinghouse"
     ],
     "scriptSrc": [
       "studentclearinghouse",
@@ -113314,8 +113290,7 @@
     ],
     "description": "Microsoft Flipgrid video discussion platform",
     "html": [
-      "flipgrid",
-      "flip.*grid"
+      "flipgrid"
     ],
     "scriptSrc": [
       "flipgrid"
@@ -113785,7 +113760,6 @@
     "description": "RenWeb school management system by FACTS",
     "html": [
       "renweb",
-      "ren.*web",
       "facts.*renweb"
     ],
     "scriptSrc": [
@@ -113911,7 +113885,6 @@
     "description": "StudIS European student information system",
     "html": [
       "studis",
-      "stud.*is",
       "european.*sis"
     ],
     "scriptSrc": [
@@ -114221,7 +114194,6 @@
     "description": "Top Hat interactive learning platform",
     "html": [
       "tophat",
-      "top.*hat",
       "tophatlecture"
     ],
     "scriptSrc": [
@@ -114264,8 +114236,7 @@
     ],
     "description": "Nearpod interactive lesson platform",
     "html": [
-      "nearpod",
-      "near.*pod"
+      "nearpod"
     ],
     "scriptSrc": [
       "nearpod"
@@ -114419,8 +114390,7 @@
     "description": "Cengage MindTap digital learning platform",
     "html": [
       "mindtap",
-      "cengage.*mindtap",
-      "mind.*tap"
+      "cengage.*mindtap"
     ],
     "scriptSrc": [
       "mindtap",
@@ -114527,7 +114497,6 @@
     "description": "Pearson MyMathLab mathematics learning platform",
     "html": [
       "mymathlab",
-      "my.*math.*lab",
       "pearson.*mathlab"
     ],
     "scriptSrc": [

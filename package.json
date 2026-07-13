@@ -8,7 +8,9 @@
     "detechtor": "./cli.js"
   },
   "scripts": {
-    "test": "node scripts/test-patterns.js",
+    "test": "node scripts/lint-patterns.js --fail-curated && node scripts/test-patterns.js",
+    "lint:patterns": "node scripts/lint-patterns.js",
+    "lint:patterns:gate": "node scripts/lint-patterns.js --fail-curated",
     "test:audit": "node scripts/audit-patterns.js",
     "test:regression": "node scripts/regression-test.js",
     "test:regression:dry": "node scripts/regression-test.js --dry-run",
