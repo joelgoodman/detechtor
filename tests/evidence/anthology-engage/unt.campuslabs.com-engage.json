@@ -1,0 +1,353 @@
+{
+  "technology": "Anthology Engage",
+  "url": "https://unt.campuslabs.com/engage/",
+  "final_url": "https://unt.campuslabs.com/engage/",
+  "captured_at": "2026-04-21T19:35:03.157Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/anthology-engage/unt.campuslabs.com-engage.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "no-cache, no-store",
+      "content-length": "8295",
+      "content-security-policy": "frame-ancestors 'self';",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:35:01 GMT",
+      "pragma": "no-cache",
+      "request-context": "appId=cid-v1:85710323-a3e3-4fe7-a1f3-5db4b33ce79e",
+      "set-cookie": ".AspNetCore.Antiforgery.Pnjfq5WAl6o=CfDJ8Az9GcAD4TpIm2NmyW6ywWGTOVAkrztwJKUd_0yKEBoH2not_CVHEpF__xS-8mw_jY7IvlatGinx1Q51ex5vGm0EgS-VYVKFLXqO7beOnSedNhoVoDFJLwWrLic5GD-8-X2sh7pqFazZZmuCnyJq3GM; path=/engage; secure; samesite=none; httponly",
+      "strict-transport-security": "max-age=31536000",
+      "x-frame-options": "SAMEORIGIN",
+      "x-powered-by": "Campus_Labs_USRP\nCampus_Labs_USRP"
+    },
+    "scripts": [
+      {
+        "src": "https://www.clarity.ms/s/0.8.59/clarity.js",
+        "version": null
+      },
+      {
+        "src": "https://www.clarity.ms/tag/3xldl8atnn",
+        "version": null
+      },
+      {
+        "src": "https://www.clarity.ms/tag/3xldl8atnn",
+        "version": null
+      },
+      {
+        "src": "https://cdn.jsdelivr.net/npm/systemjs/dist/system.min.js",
+        "version": null
+      },
+      {
+        "src": "https://js.monitor.azure.com/scripts/b/ai.2.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-exports.min.js",
+        "version": null
+      },
+      {
+        "src": "https://unt.campuslabs.com/engage/globalcontext",
+        "version": null
+      },
+      {
+        "src": "https://unt.campuslabs.com/engage/topbar/context?path=%2F",
+        "version": null
+      },
+      {
+        "src": "https://seinfrastatic.blob.core.windows.net/analytics/js/analytics.js",
+        "version": null
+      },
+      {
+        "src": "https://static.campuslabsengage.com/discovery/2026.4.16.11+8d27357be7fcf7b1661cfdd7f6c56cc3e2ee30aa/client.js",
+        "version": null
+      },
+      {
+        "src": "https://seinfrastatic.blob.core.windows.net/comp-events-nx/latest/explore-events/standalone/main.js.gz?cache=1776800102336",
+        "version": null
+      },
+      {
+        "src": "https://unt.campuslabs.com/engage/topbar/standalone",
+        "version": null
+      },
+      {
+        "src": "https://seinfrastatic.blob.core.windows.net/comp-feedbacker/latest/feedbacker-standalone/main.esm.js.gz?cache=1776800102528",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1",
+      "description": "Discover unique opportunities at UNT Student Activities OrgSync! Find and attend events, browse and join organizations, and showcase your involvement.",
+      "msapplication-config": "/engage/icons/browserconfig.xml?v=zXryopmz8G",
+      "theme-color": "#ffffff"
+    },
+    "cookies": [
+      {
+        "name": ".AspNetCore.Antiforgery.Pnjfq5WAl6o",
+        "value": "CfDJ8Az9GcAD4TpIm2NmyW6ywWGTOVAkrztwJKUd_0yKEBoH2not_CVHEpF__xS-",
+        "domain": "unt.campuslabs.com"
+      },
+      {
+        "name": "_clck",
+        "value": "13gh3sq%5E2%5Eg5e%5E0%5E2302",
+        "domain": ".campuslabs.com"
+      }
+    ],
+    "dom": {
+      "title": "Explore - UNT Student Activities OrgSync",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/engage/icons/apple-touch-icon.png?v=zXryopmz8G\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/engage/icons/favicon-32x32.png?v=zXryopmz8G\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/engage/icons/favicon-16x16.png?v=zXryopmz8G\">\n    <link rel=\"manifest\" href=\"/engage/icons/manifest.json?v=zXryopmz8G\">\n    <link rel=\"mask-icon\" href=\"/engage/icons/safari-pinned-tab.svg?v=zXryopmz8G\" color=\"#5bbad5\">\n    <link rel=\"shortcut icon\" href=\"/engage/icons/favicon.ico?v=zXryopmz8G\">\n    <meta name=\"description\" content=\"Discover unique opportunities at UNT Student Activities OrgSync! Find and attend events, browse and join organizations, and showcase your involvement.\">\n    <meta name=\"msapplication-config\" content=\"/engage/icons/browserconfig.xml?v=zXryopmz8G\">\n    <meta name=\"theme-color\" content=\"#ffffff\">\n\n    <title>Explore - UNT Student Activities OrgSync</title>\n\n    \n\n<script async=\"\" src=\"https://www.clarity.ms/s/0.8.59/clarity.js\"></script><script async=\"\" src=\"https://www.clarity.ms/tag/3xldl8atnn\"></script><script async=\"\" src=\"https://www.clarity.ms/tag/3xldl8atnn\"></script><script type=\"text/javascript\">!function(T,l,y){var S=T.location,k=\"script\",D=\"instrumentationKey\",C=\"ingestionendpoint\",I=\"disableExceptionTracking\",E=\"ai.device.\",b=\"toLowerCase\",w=\"crossOrigin\",N=\"POST\",e=\"appInsightsSDK\",t=y.name||\"appInsights\";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:\"5\",version:2,config:d};function v(e,t){var n={},a=\"Browser\";return n[E+\"id\"]=a[b](),n[E+\"type\"]=a,n[\"ai.operation.name\"]=S&&S.pathname||\"_unknown_\",n[\"ai.internal.sdkVersion\"]=\"javascript:snippet_\"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=\"\"+e;return 1===t.length&&(t=\"0\"+t),t}return e.getUTCFullYear()+\"-\"+t(1+e.getUTCMonth())+\"-\"+t(e.getUTCDate())+\"T\"+t(e.getUTCHours())+\":\"+t(e.getUTCMinutes())+\":\"+t(e.getUTCSeconds())+\".\"+((e.getUTCMilliseconds()/1e3).toFixed(3)+\"\").slice(2,5)+\"Z\"}(),iKey:e,name:\"Microsoft.ApplicationInsights.\"+e.replace(/-/g,\"\")+\".\"+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(\";\"),a=0;a<n.length;a++){var i=n[a].split(\"=\");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]=\"https://\"+(o?o+\".\":\"\")+\"dc.\"+(r||\"services.visualstudio.com\")}return e}(),c=s[D]||d[D]||\"\",u=s[C],p=u?u+\"/v2/track\":d.endpointUrl,(l=[]).push((n=\"SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)\",a=t,i=p,(o=(r=v(c,\"Exception\")).data).baseType=\"ExceptionData\",o.baseData.exceptions=[{typeName:\"SDKLoadFailed\",message:n.replace(/\\./g,\"-\"),hasFullStack:!1,stack:n+\"\\nSnippet failed to load [\"+a+\"] -- Telemetry is disabled\\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\\nHost: \"+(S&&S.pathname||\"_unknown_\")+\"\\nEndpoint: \"+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,\"Message\"),r=i.data;r.baseType=\"MessageData\";var o=r.baseData;return o.message='AI (Internal): 99 message:\"'+(\"SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (\"+n+\")\").replace(/\\\"/g,\"\")+'\"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:\"cors\"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader(\"Content-type\",\"application/json\"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&\"\"!==e||\"undefined\"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){\"loaded\"!==n.readyState&&\"complete\"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName(\"head\")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n=\"track\",r=\"TrackPage\",o=\"TrackEvent\";t([n+\"Event\",n+\"PageView\",n+\"Exception\",n+\"Trace\",n+\"DependencyData\",n+\"Metric\",n+\"PageViewPerformance\",\"start\"+r,\"stop\"+r,\"start\"+o,\"stop\"+o,\"addTelemetryInitializer\",\"setAuthenticatedUserContext\",\"clearAuthenticatedUserContext\",\"flush\"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c=\"onerror\";t([\"_\"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m[\"_\"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{\nsrc: \"https://js.monitor.azure.com/scripts/b/ai.2.min.js\", // The SDK URL Source\ncrossOrigin: \"anonymous\", \ncfg: { // Application Insights Configuration\n    instrumentationKey: '52218977-e6e6-461a-9579-7a3e21973b4b'\n}});</script>\n    <link defer=\"\" rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css\">\n    <link defer=\"\" rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\">\n    <link defer=\"\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700,700i\">\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/react-select@1.2.1/dist/react-select.css\">\n    <link rel=\"stylesheet\" href=\"https://static.campuslabsengage.com/discovery/2026.4.16.11+8d27357be7fcf7b1661cfdd7f6c56cc3e2ee30aa/client.css\">\n    <script src=\"https://cdn.jsdelivr.net/npm/systemjs/dist/system.min.js\"></script><script src=\"https://js.monitor.azure.com/scripts/b/ai.2.min.js\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.min.js\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-exports.min.js\"></script>\n    <script type=\"text/javascript\">\n        (function (c, l, a, r, i, t, y) {\n            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };\n            t = l.createElement(r); t.async = 1; t.src = \"https://www.clarity.ms/tag/\" + i;\n            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);\n        })(window, document, \"clarity\", \"script\", \"3xldl8atnn\");\n    </script>\n    \n    \n        <script src=\"/engage/globalcontext\"></script>\n        <script src=\"/engage/topbar/context?path=%2F\"></script>\n    \n<style data-jss=\"\" data-meta=\"MuiPaper\">\n.MuiPaper-root {\n  color: rgba(0, 0, 0, 0.87);\n  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\n  background-color: #fff;\n}\n.MuiPaper-rounded {\n  border-radius: 4px;\n}\n.MuiPaper-outlined {\n  border: 1px solid rgba(0, 0, 0, 0.12);\n}\n.MuiPaper-elevation0 {\n  box-shadow: none;\n}\n.MuiPaper-elevation1 {\n  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation2 {\n  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation3 {\n  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation4 {\n  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation5 {\n  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation6 {\n  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation7 {\n  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation8 {\n  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation9 {\n  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation10 {\n  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation11 {\n  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation12 {\n  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation13 {\n  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation14 {\n  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation15 {\n  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation16 {\n  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation17 {\n  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation18 {\n  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation19 {\n  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation20 {\n  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation21 {\n  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation22 {\n  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation23 {\n  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);\n}\n.MuiPaper-elevation24 {\n  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);\n}\n</style><style data-jss=\"\" data-meta=\"MuiCardContent\">\n.MuiCardContent-root {\n  padding: 16px;\n}\n.MuiCardContent-root:last-child {\n  padding-bottom: 24px;\n}\n</style><style data-jss=\"\" data-meta=\"MuiCard\">\n.MuiCard-root {\n  overflow: hidden;\n}\n</style><style data-jss=\"\" data-meta=\"MuiSnackbar\">\n.MuiSnackbar-root {\n  left: 8px;\n  right: 8px;\n  display: flex;\n  z-index: 1400;\n  position: fixed;\n  align-items: center;\n  justify-content: center;\n}\n.MuiSnackbar-anchorOriginTopCenter {\n  top: 8px;\n}\n@media (min-width:600px) {\n  .MuiSnackbar-anchorOriginTopCenter {\n    top: 24px;\n    left: 50%;\n    right: auto;\n    transform: translateX(-50%);\n  }\n}\n.MuiSnackbar-anchorOriginBottomCenter {\n  bottom: 8px;\n}\n@media (min-width:600px) {\n  .MuiSnackbar-anchorOriginBottomCenter {\n    left: 50%;\n    right: auto;\n    bottom: 24px;\n    transform: translateX(-50%);\n  }\n}\n.MuiSnackbar-anchorOriginTopRight {\n  top: 8px;\n  justify-content: flex-end;\n}\n@media (min-width:600px) {\n  .MuiSnackbar-anchorOriginTopRight {\n    top: 24px;\n    left: auto;\n    right: 24px;\n  }\n}\n.MuiSnackbar-anchorOriginBottomRight {\n  bottom: 8px;\n  justify-content: flex-end;\n}\n@media (min-width:600px) {\n  .MuiSnackbar-anchorOriginBottomRight {\n    left: auto;\n    right: 24px;\n    bottom: 24px;\n  }\n}\n.MuiSnackbar-anchorOriginTopLeft {\n  top: 8px;\n  justify-content: flex-start;\n}\n@media (min-width:600px) {\n  .MuiSnackbar-anchorOriginTopLeft {\n    top: 24px;\n    left: 24px;\n    right: auto;\n  }\n}\n.MuiSnackbar-anchorOriginBottomLeft {\n  bottom: 8px;\n  justify-content: flex-start;\n}\n@media (min-width:600px) {\n  .MuiSnackbar-anchorOriginBottomLeft {\n    left: 24px;\n    right: auto;\n    bottom: 24px;\n  }\n}\n</style><script src=\"https://seinfrastatic.blob.core.windows.net/analytics/js/analytics.js\" async=\"\" crossorigin=\"\"></script><style data-jss=\"\" data-meta=\"makeStyles\">\nhtml {\n  font-size: initial !important;\n  background-color: initial !important;\n}\nbody {\n  color: #424242;\n  font-size: 16px;\n  transition: padding-top 300ms cubic-bezier(0, 0, 0.2, 1) 0ms;\n  font-family: \"Source Sans Pro\", sans-serif;\n  background-color: #f2f2f2;\n}\n:focus {\n  outline: 2px auto #212121 !important;\n  outline-offset: 2px !important;\n}\n#react-app, #root, #app-content, #mainContent {\n  min-height: 0;\n  background-color: #f2f2f2;\n}\n</style><style data-jss=\"\" data-meta=\"makeStyles\">\n</style><style data-emotion=\"css\" data-s=\"\"></style>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://unt.campuslabs.com/wp-login.php",
+      "status": 404,
+      "body_excerpt": "The resource you are looking for has been removed, had its name changed, or is temporarily unavailable."
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://unt.campuslabs.com/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "The resource you are looking for has been removed, had its name changed, or is temporarily unavailable."
+    },
+    "/wp-content/": {
+      "url": "https://unt.campuslabs.com/wp-content/",
+      "status": 404,
+      "body_excerpt": "The resource you are looking for has been removed, had its name changed, or is temporarily unavailable."
+    },
+    "/user/login": {
+      "url": "https://unt.campuslabs.com/user/login",
+      "status": 404,
+      "body_excerpt": "The resource you are looking for has been removed, had its name changed, or is temporarily unavailable."
+    },
+    "/core/install.php": {
+      "url": "https://unt.campuslabs.com/core/install.php",
+      "status": 404,
+      "body_excerpt": "The resource you are looking for has been removed, had its name changed, or is temporarily unavailable."
+    },
+    "/cas/login": {
+      "url": "https://unt.campuslabs.com/cas/login",
+      "status": 404,
+      "body_excerpt": "The resource you are looking for has been removed, had its name changed, or is temporarily unavailable."
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://unt.campuslabs.com/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "The resource you are looking for has been removed, had its name changed, or is temporarily unavailable."
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Anthology Engage",
+      "confidence": 100,
+      "evidence": [
+        "HTML: campus.*labs",
+        "HTML: campuslabs",
+        "Header: X-Powered-By=Campus_Labs_USRP"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 80,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Microsoft ASP.NET",
+      "confidence": 80,
+      "evidence": [
+        "Header: set-cookie=\\.AspNetCore"
+      ]
+    },
+    {
+      "name": "Campus Labs",
+      "confidence": 80,
+      "evidence": [
+        "HTML: campus.*labs",
+        "HTML: campuslabs"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": 40,
+      "evidence": [
+        "HTML: react"
+      ]
+    },
+    {
+      "name": "Blackboard Transact",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*card"
+      ]
+    },
+    {
+      "name": "Localist",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*events"
+      ]
+    },
+    {
+      "name": "Focus School Software",
+      "confidence": 40,
+      "evidence": [
+        "HTML: focus.*sis"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Transact Campus",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*card"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "LaunchDarkly",
+      "confidence": 30,
+      "evidence": [
+        "JS: launchDarkly (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Microsoft Application Insights",
+      "confidence": 30,
+      "evidence": [
+        "JS: appInsightsSDK (HTML)"
+      ]
+    },
+    {
+      "name": "Microsoft Clarity",
+      "confidence": 30,
+      "evidence": [
+        "JS: clarity (HTML)"
+      ]
+    },
+    {
+      "name": "Resova",
+      "confidence": 30,
+      "evidence": [
+        "JS: baseUrl (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

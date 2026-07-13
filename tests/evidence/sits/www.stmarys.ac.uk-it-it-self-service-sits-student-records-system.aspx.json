@@ -1,0 +1,439 @@
+{
+  "technology": "SITS",
+  "url": "https://www.stmarys.ac.uk/it/it-self-service/sits-student-records-system.aspx",
+  "final_url": "https://www.stmarys.ac.uk/it/it-self-service/sits-student-records-system.aspx",
+  "captured_at": "2026-04-21T19:35:53.970Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/sits/www.stmarys.ac.uk-it-it-self-service-sits-student-records-system.aspx.html",
+  "evidence": {
+    "headers": {
+      "accept-ranges": "bytes",
+      "alt-svc": "h3=\":443\";ma=60;",
+      "cache-control": "no-cache, no-store",
+      "content-encoding": "gzip",
+      "content-length": "13439",
+      "content-security-policy-report-only": "default-src 'self'; script-src 'report-sample' 'self' 'unsafe-inline' 'unsafe-eval' https://static.zdassets.com https://geolocation.onetrust.com https://region1.google-analytics.com https://v2.zopim.com https://ajax.googleapis.com https://analytics.silktide.com https://analytics.tiktok.com https://api.reciteme.com/asset/js https://stmarysuniversity.formstack.com https://app.geckoform.com https://cdn-ukwest.onetrust.com https://cdn.populo-services.com https://connect.facebook.net https://embed.geckochat.io https://googleads.g.doubleclick.net https://l.getsitecontrol.com https://sc-static.net/scevent.min.js https://script.hotjar.com https://static.hotjar.com https://tr.snapchat.com https://www.googletagmanager.com https://cdn.populo-services.com https://www.gstatic.com; style-src 'report-sample' 'self' 'unsafe-inline' https://fonts.geckoform.com https://fonts.gstatic.com/ https://embed.geckochat.io https://fonts.googleapis.com; object-src 'none'; base-uri 'self'; connect-src 'self' https://cms-stmarys.cloud.contensis.com https://surveystats.hotjar.io https://googleads.g.doubleclick.net https://capigateway.adaptworldwide.com wss://widget-mediator.zopim.com https://router-euwest2.geckochat.io https://stats.g.doubleclick.net https://www.google.com https://privacyportal-uk.onetrust.com https://region1.google-analytics.com https://geolocation.onetrust.com https://pagead2.googlesyndication.com https://a.eu.silktide.com https://analytics.tiktok.com https://api.geckochat.io https://cdn-ukwest.onetrust.com https://ekr.zdassets.com https://l.getsitecontrol.com https://region1.analytics.google.com https://tr.snapchat.com https://tr6.snapchat.com https://www.google.co.uk https://www.google.com https://www.googleadservices.com; font-src 'self' https://script.hotjar.com https://fonts.geckoform.com https://embed.geckochat.io https://fonts.gstatic.com/; frame-src 'self' https://app.geckoform.com https://td.doubleclick.net https://tr.snapchat.com https://www.youtube.com; img-src 'self' data: https://survey-images.hotjar.com https://img.youtube.com https://www.googletagmanager.com https://widget-assets.geckochat.io https://www.facebook.com https://cdn-ukwest.onetrust.com https://i.ytimg.com https://populo.populo-services.com https://www.google.co.uk https://www.google.com; manifest-src 'self'; media-src 'self' https://audio.geckochat.io; worker-src 'none';",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 18:33:05 GMT",
+      "expires": "-1",
+      "pragma": "no-cache",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "request-handler-metrics": "routeInfoFetch: 3 ms (), generalRequestFetch: 132 ms, fallbackRequest 0 ms",
+      "strict-transport-security": "max-age=15768000",
+      "surrogate-control": "max-age=3600",
+      "vary": "Accept-Encoding",
+      "x-age": "3759",
+      "x-backend-ttl": "3600.000",
+      "x-cache-aspx": "true",
+      "x-contensis-viewer-groups": "0",
+      "x-content-type-options": "nosniff",
+      "x-depends": "1021 1016 8592 4261 6181 33938 4258 7975 7972 26284",
+      "x-geoip-country-code": "US",
+      "x-grace": "72h",
+      "x-host": "live-stmarys.cloud.contensis.com",
+      "x-is-iis-fallback": "true",
+      "x-node": "81211",
+      "x-origin-server": "backend-coordinator",
+      "x-server-name": "z-stmarys-CACHE1",
+      "x-varnish": "140235319 138995592",
+      "x-varnish-authentication": "skip"
+    },
+    "scripts": [
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=AW-985688519&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-T3E3587Y6E&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://v2.zopim.com/?4lAMn7Se2uAOl4OoOsyldC0Uf6pzxXa2",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-55MS8KJ",
+        "version": null
+      },
+      {
+        "src": "https://static.hotjar.com/c/hotjar-3076796.js?sv=6",
+        "version": null
+      },
+      {
+        "src": "https://www.stmarys.ac.uk/site-elements/js/vendor/modernizr.custom.js",
+        "version": null
+      },
+      {
+        "src": "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
+        "version": null
+      },
+      {
+        "src": "https://script.hotjar.com/modules.6a0f3932cb1341a35c18.js",
+        "version": null
+      },
+      {
+        "src": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/985688519/?random=1776800146422&cv=11&fst=1776800146422&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be64h1v9181462713z876277140za20gzb76277140zd76277140xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938468~117266400~118128922&u_w=800&u_h=600&url=https%3A%2F%2Fwww.stmarys.ac.uk%2Fit%2Fit-self-service%2Fsits-student-records-system.aspx&rcb=1&frm=0&tiba=SITS%20(Student%20Records%20System)&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=546153062.1776800146&uaa=&uab=&uafvl=&uamb=0&uam=&uap=&uapv=&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4",
+        "version": null
+      },
+      {
+        "src": "https://v2.zopim.com/w?4lAMn7Se2uAOl4OoOsyldC0Uf6pzxXa2",
+        "version": null
+      },
+      {
+        "src": "https://www.stmarys.ac.uk/site-elements/js/vendor/flickity.min.js?version=34602&build=171172",
+        "version": null
+      },
+      {
+        "src": "https://www.stmarys.ac.uk/site-elements/js/script.js?version=79150&build=171172",
+        "version": null
+      },
+      {
+        "src": "https://www.stmarys.ac.uk/site-elements/js/accordion.js",
+        "version": null
+      },
+      {
+        "src": "https://www.stmarys.ac.uk/application-process/phone-number-replace.js",
+        "version": null
+      },
+      {
+        "src": "https://api.reciteme.com/asset/js?key=f25e61b7d1f2247ffb6d0939a18654a72fe89e7e",
+        "version": null
+      },
+      {
+        "src": "https://analytics.silktide.com/cd4e37b3f0524d4ba37f983b9ba2de67.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "facebook-domain-verification": "ppgowqk38uturfdzsus9oi80hd190z",
+      "generator": "Contensis CMS Version 17.0",
+      "description": "SITS (Student Records System)",
+      "keywords": "sits,student records,registry,srs",
+      "searchshortcut": "sits,student records,registry,srs",
+      "application-name": " ",
+      "msapplication-tilecolor": "#FFFFFF",
+      "msapplication-tileimage": "/site-elements/img/favicons/mstile-144x144.png",
+      "msapplication-square70x70logo": "/site-elements/img/favicons/mstile-70x70.png",
+      "msapplication-square150x150logo": "/site-elements/img/favicons/mstile-150x150.png",
+      "gecko_domain_verification": "21VD00twq3qviy00a6sq8u7quu"
+    },
+    "cookies": [
+      {
+        "name": "_hjSessionUser_3076796",
+        "value": "eyJpZCI6IjQyMTZhYmYzLTE0YTQtNWU3OS05MjhjLTRhZDEzZmVkYjViMCIsImNy",
+        "domain": ".stmarys.ac.uk"
+      },
+      {
+        "name": "_ga_T3E3587Y6E",
+        "value": "GS2.1.s1776800146$o1$g0$t1776800146$j60$l0$h3809988",
+        "domain": ".stmarys.ac.uk"
+      },
+      {
+        "name": "_gcl_au",
+        "value": "1.1.546153062.1776800146",
+        "domain": ".stmarys.ac.uk"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.1.1598714543.1776800146",
+        "domain": ".stmarys.ac.uk"
+      },
+      {
+        "name": "_hjSession_3076796",
+        "value": "eyJpZCI6IjhkN2JiZWRlLTU2NzYtNGVjOS1iYjljLTU2NjZhZDc5NGM0YiIsImMi",
+        "domain": ".stmarys.ac.uk"
+      }
+    ],
+    "dom": {
+      "title": "SITS (Student Records System)",
+      "bodyClasses": "desktop",
+      "bodyId": "",
+      "headContent": "\n\n\t\t<script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=AW-985688519&amp;cx=c&amp;gtm=4e64h1\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-T3E3587Y6E&amp;cx=c&amp;gtm=4e64h1\"></script><script async=\"\" charset=\"utf-8\" src=\"https://v2.zopim.com/?4lAMn7Se2uAOl4OoOsyldC0Uf6pzxXa2\" type=\"text/javascript\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-55MS8KJ\"></script><script>\n\t\t\twindow.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} \ngtag('consent', 'default', {  // Deny consent for ad_storage   'ad_storage': 'denied',  // Deny consent for analytics_storage  'analytics_storage': 'denied'})\n\t\t</script>\n\n\t\t<script>\n\t\t\t(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-55MS8KJ');\n\t\t</script>\n\n\t\t<!-- Hotjar Tracking Code for https://www.stmarys.ac.uk/ -->\n\t\t<script>\n\t\t\t(function(h,o,t,j,a,r){\n        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};\n        h._hjSettings={hjid:3076796,hjsv:6};\n        a=o.getElementsByTagName('head')[0];\n        r=o.createElement('script');r.async=1;\n        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;\n        a.appendChild(r);\n    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');\n\t\t</script><script async=\"\" src=\"https://static.hotjar.com/c/hotjar-3076796.js?sv=6\"></script>\n\n\n\n\n\n\n\t\t<meta charset=\"utf-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>\n\tSITS (Student Records System)\n</title><meta name=\"facebook-domain-verification\" content=\"ppgowqk38uturfdzsus9oi80hd190z\">\n    \n    \n    \n\n    <meta name=\"GENERATOR\" content=\"Contensis CMS Version 17.0\">\n<meta name=\"Description\" content=\"SITS (Student Records System)\">\n<meta name=\"keywords\" content=\"sits,student records,registry,srs\">\n<meta name=\"searchShortcut\" content=\"sits,student records,registry,srs\">\n\n\n<link href=\"//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:400,400i,700\" rel=\"stylesheet\" defer=\"defer\"><link href=\"/site-elements/css/100-style.css?version=107805\" rel=\"stylesheet\" type=\"text/css\">\n<link href=\"/site-elements/css/accordion.css?version=67217\" rel=\"stylesheet\" type=\"text/css\">\n<link href=\"/site-elements/css/print.css?version=42710\" rel=\"stylesheet\" type=\"text/css\">\n<link href=\"/site-elements/css/styles-2019.css?version=104822\" rel=\"stylesheet\" type=\"text/css\">\n<link href=\"/site-elements/css/table.css?version=75882\" rel=\"stylesheet\" type=\"text/css\">\n<link href=\"https://www.stmarys.ac.uk/it/it-self-service/sits-student-records-system.aspx\" rel=\"canonical\">\n<link href=\"https://www.stmarys.ac.uk/it/it-self-service/sits-student-records-system.aspx\" rel=\"canonical\">\n<!--\nControlID:Ctrl975ac4eadfb547b28077ef518841343e of type CMS_API.WebUI.WebControls.RazorView has set the maximum duration to 3600 seconds\nControlID:Ctrl3a367af8a0124c76a20305fd27e5da07 of type CMS_API.WebUI.WebControls.RazorView has set the maximum duration to 3600 seconds\nControlID:Ctrlc089d54043d241179a237b27507f533e of type CMS_API.WebUI.WebControls.RazorView has set the maximum duration to 3600 seconds\nControlID:Ctrlfbe28d4aafc146df9064e94269bdd1ea of type CMS_API.WebUI.WebControls.RazorView has set the maximum duration to 3600 seconds\nControlID:Ctrle7ef8d3ad1ce4aa789aef6d4d7ce7da4 of type CMS_API.WebUI.WebControls.RazorView has set the maximum duration to 3600 seconds\nControlID:Ctrlc727c70677234824ba6fa1c52ed6b09e of type CMS_API.WebUI.WebControls.RazorView has set the maximum duration to 3600 seconds\nControlID:Ctrl08a2ea2f3fca41d2bab2ae4b35a35f6d of type CMS_API.WebUI.WebControls.RazorView has set the maximum duration to 3600 seconds\nControlID:Ctrl2cb2a7ad4e154073b4d1f3beee4f4af3 of type CMS_API.WebUI.WebControls.RazorView has set the maximum duration to 3600 seconds\nControlID:Ctrl684dde2dbe98473d9478c8aa92e57af7 of type CMS_API.WebUI.WebControls.RazorView has set the maximum duration to 3600 seconds\nControlID:__Page of type ASP.it_it_self_service_sits_student_records_system_aspx has set the maximum duration to 3600 seconds\nCache Enabled using rule ControlID:Ctrl975ac4eadfb547b28077ef518841343e of type CMS_API.WebUI.WebControls.RazorView has set the maximum duration to 3600 seconds\nCache Page Render Time 21/04/2026 19:33:06\n\n--><link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"/site-elements/img/favicons/apple-touch-icon-57x57.png\"><link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"/site-elements/img/favicons/apple-touch-icon-114x114.png\"><link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"/site-elements/img/favicons/apple-touch-icon-72x72.png\"><link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"/site-elements/img/favicons/apple-touch-icon-144x144.png\"><link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"/site-elements/img/favicons/apple-touch-icon-60x60.png\"><link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"/site-elements/img/favicons/apple-touch-icon-120x120.png\"><link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"/site-elements/img/favicons/apple-touch-icon-76x76.png\"><link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"/site-elements/img/favicons/apple-touch-icon-152x152.png\"><link rel=\"icon\" type=\"image/png\" href=\"/site-elements/img/favicons/favicon-32x32.png\" sizes=\"32x32\"><link rel=\"icon\" type=\"image/png\" href=\"/site-elements/img/favicons/favicon-16x16.png\" sizes=\"16x16\"><meta name=\"application-name\" content=\"&nbsp;\"><meta name=\"msapplication-TileColor\" content=\"#FFFFFF\"><meta name=\"msapplication-TileImage\" content=\"/site-elements/img/favicons/mstile-144x144.png\"><meta name=\"msapplication-square70x70logo\" content=\"/site-elements/img/favicons/mstile-70x70.png\"><meta name=\"msapplication-square150x150logo\" content=\"/site-elements/img/favicons/mstile-150x150.png\"><meta name=\"gecko_domain_verification\" content=\"21VD00twq3qviy00a6sq8u7quu\">\n\t\t<script src=\"/site-elements/js/vendor/modernizr.custom.js\" defer=\"defer\">\n\n\t\t</script>\n\t\t<!--[if IE 9]>\n          <link rel=\"stylesheet\" href=\"/site-elements/css/fallbacks/ie9.css\" type=\"text/css\" media=\"screen\" />\n      <![endif]-->\n\t\t<!--[if lt IE 9]>\n          <link rel=\"stylesheet\" href=\"/site-elements/css/fallbacks/ie8.css\" type=\"text/css\" media=\"screen\" />\n          <script src=\"/site-elements/js/vendor/respond.min.js\" rel=\"javascript\"></script>\n          <script src=\"/site-elements/js/vendor/rem.min.js\" rel=\"javascript\"></script>\n      <![endif]-->\n\t\t<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\">\n\n\t\t</script>\n\t\t<script type=\"application/ld+json\">\n\t\t\t{\n  \"@context\": \"http://schema.org\",\n  \"@type\": \"WebSite\",\n  \"url\": \"https://www.stmarys.ac.uk/\",\n  \"potentialAction\": {\n    \"@type\": \"SearchAction\",\n    \"target\": \"https://www.stmarys.ac.uk/search-results.aspx?q={search_term_string}\",\n    \"query-input\": \"required name=search_term_string\"\n  }\n}\n\t\t</script>\n\n\n\t\t<script>\n\t\t\tfunction onSnapchatPageShow() {\n    //execute suitable tracking call, see example below\n    console.log(\"Fire to Third Party Tracker\");\n}\n\t\t</script>\n\t\t<script>\n\t\t\tfunction onSnapchatPageHide() {\n    //execute function for page hide, example below \n    console.log(\"Fire to Third Party Tracker\");\n}\n\t\t</script>\n\n\t\t<!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css\" />\n\t\t<script src=\"https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js\"></script>\n\t\t<script>\n\t\t\twindow.addEventListener(\"load\", function(){window.wpcc.init({\"colors\":{\"popup\":{\"background\":\"rgb(0 59 92)\",\"text\":\"#ffffff\",\"border\":\"#555555\"},\"button\":{\"background\":\"#006ba8\",\"text\":\"#ffffff\"}},\"position\":\"bottom\",\"margin\":\"none\",\"transparency\":\"5\",\"content\":{\"href\":\"https://www.stmarys.ac.uk/site-info/legal.aspx\",\"message\":\"This website uses cookies to ensure we offer you the best possible experience on our website. By continuing to use our site, you agree to our cookie policy.\",\"button\":\"Continue\"}})});\n\t\t</script>-->\n\n\t\t<!--Start of Zendesk Chat Script-->\n\t\t<script type=\"text/javascript\">\n\t\t\twindow.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=\nd.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.\n_.push(o)};z._=[];z.set._=[];$.async=1;$.setAttribute(\"charset\",\"utf-8\");\n$.src=\"https://v2.zopim.com/?4lAMn7Se2uAOl4OoOsyldC0Uf6pzxXa2\";z.t=+new Date;$.\ntype=\"text/javascript\";e.parentNode.insertBefore($,e)})(document,\"script\");\n\n\t\t</script>\n\t\t<!--End of Zendesk Chat Script-->\n\t<script async=\"\" src=\"https://script.hotjar.com/modules.6a0f3932cb1341a35c18.js\" charset=\"utf-8\"></script><script type=\"text/javascript\" async=\"\" src=\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/985688519/?random=1776800146422&amp;cv=11&amp;fst=1776800146422&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be64h1v9181462713z876277140za20gzb76277140zd76277140xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115616986~115938465~115938468~117266400~118128922&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.stmarys.ac.uk%2Fit%2Fit-self-service%2Fsits-student-records-system.aspx&amp;rcb=1&amp;frm=0&amp;tiba=SITS%20(Student%20Records%20System)&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=546153062.1776800146&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=&amp;uapv=&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4\"></script><script type=\"text/javascript\" src=\"https://v2.zopim.com/w?4lAMn7Se2uAOl4OoOsyldC0Uf6pzxXa2\"></script><style media=\"print\" class=\"jx_ui_StyleSheet\" __jx__id=\"___$_2\" type=\"text/css\">.zopim { display: none !important }</style>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "1.11.3"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.stmarys.ac.uk/wp-login.php",
+      "status": 301,
+      "redirect_to": "/wp-login.aspx"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.stmarys.ac.uk/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "\r\n\r\n<!DOCTYPE html>\r\n<!--[if IE 8 ]>    <html lang=\"en\" class=\"no-js ie8\"> <![endif]-->\r\n<!--[if IE 9 ]>    <html lang=\"en\" class=\"no-js ie9\"> <![endif]-->\r\n<!--[if (gt IE 9)|!(IE)]><!-->\r\n<html lang=\"en\">\r\n<!--<![endif]-->\r\n\r\n<head>\r\n\t<script>\r\n\t\t(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\nj=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=\r\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.p"
+    },
+    "/wp-content/": {
+      "url": "https://www.stmarys.ac.uk/wp-content/",
+      "status": 404,
+      "body_excerpt": "\r\n\r\n<!DOCTYPE html>\r\n<!--[if IE 8 ]>    <html lang=\"en\" class=\"no-js ie8\"> <![endif]-->\r\n<!--[if IE 9 ]>    <html lang=\"en\" class=\"no-js ie9\"> <![endif]-->\r\n<!--[if (gt IE 9)|!(IE)]><!-->\r\n<html lang=\"en\">\r\n<!--<![endif]-->\r\n\r\n<head>\r\n\t<script>\r\n\t\t(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\nj=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=\r\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.p"
+    },
+    "/user/login": {
+      "url": "https://www.stmarys.ac.uk/user/login",
+      "status": 404,
+      "body_excerpt": "\r\n\r\n<!DOCTYPE html>\r\n<!--[if IE 8 ]>    <html lang=\"en\" class=\"no-js ie8\"> <![endif]-->\r\n<!--[if IE 9 ]>    <html lang=\"en\" class=\"no-js ie9\"> <![endif]-->\r\n<!--[if (gt IE 9)|!(IE)]><!-->\r\n<html lang=\"en\">\r\n<!--<![endif]-->\r\n\r\n<head>\r\n\t<script>\r\n\t\t(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\nj=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=\r\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.p"
+    },
+    "/core/install.php": {
+      "url": "https://www.stmarys.ac.uk/core/install.php",
+      "status": 301,
+      "redirect_to": "/core/install.aspx"
+    },
+    "/cas/login": {
+      "url": "https://www.stmarys.ac.uk/cas/login",
+      "status": 404,
+      "body_excerpt": "\r\n\r\n<!DOCTYPE html>\r\n<!--[if IE 8 ]>    <html lang=\"en\" class=\"no-js ie8\"> <![endif]-->\r\n<!--[if IE 9 ]>    <html lang=\"en\" class=\"no-js ie9\"> <![endif]-->\r\n<!--[if (gt IE 9)|!(IE)]><!-->\r\n<html lang=\"en\">\r\n<!--<![endif]-->\r\n\r\n<head>\r\n\t<script>\r\n\t\t(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\nj=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=\r\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.p"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.stmarys.ac.uk/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "\r\n\r\n<!DOCTYPE html>\r\n<!--[if IE 8 ]>    <html lang=\"en\" class=\"no-js ie8\"> <![endif]-->\r\n<!--[if IE 9 ]>    <html lang=\"en\" class=\"no-js ie9\"> <![endif]-->\r\n<!--[if (gt IE 9)|!(IE)]><!-->\r\n<html lang=\"en\">\r\n<!--<![endif]-->\r\n\r\n<head>\r\n\t<script>\r\n\t\t(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\nj=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=\r\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.p"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Microsoft Power BI",
+      "confidence": 100,
+      "evidence": [
+        "HTML: powerbi",
+        "HTML: power.*bi",
+        "JS: PowerBI (HTML)"
+      ]
+    },
+    {
+      "name": "Panopto",
+      "confidence": 100,
+      "evidence": [
+        "HTML: panopto",
+        "HTML: panopto.*viewer",
+        "JS: Panopto (HTML)"
+      ]
+    },
+    {
+      "name": "SITS",
+      "confidence": 100,
+      "evidence": [
+        "HTML: sits.*student",
+        "HTML: sits.*records",
+        "JS: SITS (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "JS: gtag (HTML)",
+        "JS: GoogleAnalyticsObject (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "HTTP/3",
+      "confidence": 80,
+      "evidence": [
+        "Header: Alt-Svc=h3"
+      ]
+    },
+    {
+      "name": "Varnish",
+      "confidence": 80,
+      "evidence": [
+        "Header: X-Varnish="
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 40,
+      "evidence": [
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: gtag\\("
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "Microsoft ASP.NET",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <input[^>]+name=\"__VIEWSTATE"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "ZURB Foundation",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <div [^>]*class=\"[^\"]*(?:small|medium|large)-\\d{1,2} columns"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Econda",
+      "confidence": 30,
+      "evidence": [
+        "JS: econda (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Moodle",
+      "confidence": 30,
+      "evidence": [
+        "JS: Moodle (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Zendesk",
+      "confidence": 30,
+      "evidence": [
+        "JS: Zendesk (HTML)"
+      ]
+    },
+    {
+      "name": "Widen Collective",
+      "confidence": 30,
+      "evidence": [
+        "JS: Widen (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

@@ -1,0 +1,156 @@
+{
+  "technology": "Instructure Canvas Catalog",
+  "url": "https://catalog.instructure.com/browse/canvas",
+  "final_url": "https://catalog.instructure.com/browse/canvas",
+  "captured_at": "2026-04-21T19:33:51.641Z",
+  "response_status": 404,
+  "html_file": "tests/evidence/instructure-canvas-catalog/catalog.instructure.com-browse-canvas.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "no-cache",
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:33:51 GMT",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "nginx + Phusion Passenger(R)",
+      "status": "404 Not Found",
+      "strict-transport-security": "max-age=63072000; includeSubDomains\nmax-age=31536000; includeSubDomains; preload",
+      "x-content-type-options": "nosniff",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "49c767b533aeed98ee89e790d2d6f802",
+      "x-runtime": "0.015278",
+      "x-xss-protection": "1; mode=block"
+    },
+    "scripts": [],
+    "meta": {
+      "viewport": "width=device-width,initial-scale=1"
+    },
+    "cookies": [],
+    "dom": {
+      "title": "The page you were looking for doesn't exist (404)",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n    <title>The page you were looking for doesn't exist (404)</title>\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"preconnect\" href=\"https://fonts.bunny.net\">\n    <link href=\"https://fonts.bunny.net/css?family=lato:400,400i,700\" rel=\"stylesheet\">\n    <style>\n      html,\n      body {\n        height: 100%;\n        margin: 0;\n        padding: 0;\n      }\n      body {\n        display: grid;\n        align-items: center;\n        margin: 0 12px;\n        background-color: #fff;\n        color: #2d3b45;\n        text-align: center;\n        font-family: Lato, arial, sans-serif;\n      }\n      svg {\n        margin: 24px 0 40px;\n      }\n      h1 {\n        margin-bottom: 12px;\n        font-weight: 700;\n        font-size: 22px;\n        line-height: 28px;\n      }\n      p {\n        margin: 0 0 12px;\n        font-size: 16px;\n        line-height: 24px;\n      }\n      a {\n        position: relative;\n        display: inline-flex;\n        margin: 40px 0 24px;\n        padding: 7px 10px;\n        border: 1px solid rgba(45, 59, 69, 0.2);\n        border-radius: 4px;\n        background-color: #0374b5;\n        color: #fff;\n        font-size: 16px;\n        line-height: 24px;\n        text-decoration: none;\n        transition: background 0.2s ease 0s, transform 0.2s ease 0s;\n      }\n      a:hover {\n        background-color: rgb(2, 84, 131);\n      }\n      a:active {\n        background-color: rgb(2, 84, 131);\n        box-shadow: rgb(1 52 81) 0px 0px 0.1875rem 0.0625rem inset;\n      }\n      a:focus {\n        outline: none;\n      }\n      a::before {\n        pointer-events: none;\n        content: \"\";\n        position: absolute;\n        border-style: solid;\n        border-width: 0.125rem;\n        border-color: rgb(3, 116, 181);\n        opacity: 0;\n        border-radius: calc(0.4375rem);\n        inset: calc(-0.3125rem);\n        transition: all 0.2s ease 0s;\n        transform: scale(0.95);\n      }\n      a:focus::before {\n        opacity: 1;\n        transform: scale(1);\n      }\n    </style>\n  ",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://catalog.instructure.com/wp-login.php",
+      "status": 403,
+      "body_excerpt": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://catalog.instructure.com/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>The page you were looking for doesn't exist (404)</title>\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"preconnect\" href=\"https://fonts.bunny.net\" />\n    <link\n      href=\"https://fonts.bunny.net/css?family=lato:400,400i,700\"\n      rel=\"stylesheet\"\n    />\n    <style>\n      html,\n      body {\n        height: 100%;\n        margin: 0;\n        padding: 0;\n      }\n      body {\n        display: grid;\n        align-items: center;\n "
+    },
+    "/wp-content/": {
+      "url": "https://catalog.instructure.com/wp-content/",
+      "status": 403,
+      "body_excerpt": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+    },
+    "/user/login": {
+      "url": "https://catalog.instructure.com/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>The page you were looking for doesn't exist (404)</title>\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"preconnect\" href=\"https://fonts.bunny.net\" />\n    <link\n      href=\"https://fonts.bunny.net/css?family=lato:400,400i,700\"\n      rel=\"stylesheet\"\n    />\n    <style>\n      html,\n      body {\n        height: 100%;\n        margin: 0;\n        padding: 0;\n      }\n      body {\n        display: grid;\n        align-items: center;\n "
+    },
+    "/core/install.php": {
+      "url": "https://catalog.instructure.com/core/install.php",
+      "status": 403,
+      "body_excerpt": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+    },
+    "/cas/login": {
+      "url": "https://catalog.instructure.com/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>The page you were looking for doesn't exist (404)</title>\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"preconnect\" href=\"https://fonts.bunny.net\" />\n    <link\n      href=\"https://fonts.bunny.net/css?family=lato:400,400i,700\"\n      rel=\"stylesheet\"\n    />\n    <style>\n      html,\n      body {\n        height: 100%;\n        margin: 0;\n        padding: 0;\n      }\n      body {\n        display: grid;\n        align-items: center;\n "
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://catalog.instructure.com/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>The page you were looking for doesn't exist (404)</title>\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"preconnect\" href=\"https://fonts.bunny.net\" />\n    <link\n      href=\"https://fonts.bunny.net/css?family=lato:400,400i,700\"\n      rel=\"stylesheet\"\n    />\n    <style>\n      html,\n      body {\n        height: 100%;\n        margin: 0;\n        padding: 0;\n      }\n      body {\n        display: grid;\n        align-items: center;\n "
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Nginx",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=nginx"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": false
+}

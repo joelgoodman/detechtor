@@ -14,23 +14,28 @@ function testPatternLoading() {
   console.log(`📊 Total patterns loaded: ${Object.keys(patterns).length}`);
   console.log(`📁 Pattern files configured: ${config.patternPaths.join(', ')}`);
 
-  // Check for higher education systems
+  // Check for higher education systems (post-rebrand canonical names)
   const higherEdSystems = [
     'Ellucian Banner',
     'Ellucian Colleague',
-    'PeopleSoft Campus Solutions',
+    'Oracle PeopleSoft Campus Solutions',
     'Blackboard Learn',
     'D2L Brightspace',
     'Canvas LMS',
     'Moodle',
-    'OmniCMS',
+    'Modern Campus CMS',
     'TerminalFour',
     'Shibboleth',
     'CAS',
     'Kaltura',
     'Panopto',
     'Slate',
-    'TouchNet'
+    'TouchNet',
+    'Workday Student',
+    'Anthology Student',
+    'Duo Security',
+    'Turnitin',
+    '25Live'
   ];
 
   console.log('\n🎓 Higher Education Systems:');

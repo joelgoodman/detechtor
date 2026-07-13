@@ -1,0 +1,393 @@
+{
+  "technology": "Ellucian Colleague",
+  "url": "https://www.lclark.edu/information_technology/information_systems/datatel/documentation/",
+  "final_url": "https://www.lclark.edu/information_technology/information_systems/datatel/documentation/",
+  "captured_at": "2026-04-21T19:34:13.359Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/ellucian-colleague/www.lclark.edu-information-technology-information-systems-datatel-documentation.html",
+  "evidence": {
+    "headers": {
+      "access-control-allow-headers": "X-Requested-With",
+      "access-control-allow-origin": "*",
+      "access-control-max-age": "1000",
+      "cache-control": "public, max-age=259200",
+      "content-encoding": "gzip",
+      "content-length": "8452",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:34:11 GMT",
+      "etag": "\"88b449a1e7259a06839acc4f9708e0d4-gzip\"",
+      "expires": "Fri, 24 Apr 2026 19:34:11 GMT",
+      "last-modified": "Mon, 20 Apr 2026 18:04:19 GMT",
+      "server": "Apache",
+      "set-cookie": "AWSALB=wl2JewhiaI1xUwmaVQHxWgIg84ffgn8u+PWx8rYAQnTU/AmT1Aj9wQoQpDY8chG0nDyQCqoASZh7daYv9+SgseKQiGDjzs25qsv0ZjCF49brDk8m/KKUycCSt8HH; Expires=Tue, 28 Apr 2026 19:34:11 GMT; Path=/\nAWSALBCORS=wl2JewhiaI1xUwmaVQHxWgIg84ffgn8u+PWx8rYAQnTU/AmT1Aj9wQoQpDY8chG0nDyQCqoASZh7daYv9+SgseKQiGDjzs25qsv0ZjCF49brDk8m/KKUycCSt8HH; Expires=Tue, 28 Apr 2026 19:34:11 GMT; Path=/; SameSite=None; Secure",
+      "vary": "Cookie,Accept-Encoding",
+      "via": "1.1 fc32c335a68c8a217d99404e8c67e722.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "Vm37hnY8TfUHdo20G0wIU7gHC_LVMGtPKNMOnvNDFhrmTY2ZqCyl-A==",
+      "x-amz-cf-pop": "ATL58-P9",
+      "x-cache": "Miss from cloudfront",
+      "x-content-type-options": "nosniff",
+      "x-smart-cache": "cached",
+      "x-smart-cache-bot": "1",
+      "x-smart-cache-id": "1aed15eee83fed1d91337867a6a0c436.ssl",
+      "x-smart-cache-ttl": "167408"
+    },
+    "scripts": [
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-GJZ5",
+        "version": null
+      },
+      {
+        "src": "https://www.youtube.com/iframe_api",
+        "version": null
+      },
+      {
+        "src": "https://apply.lclark.edu/ping",
+        "version": null
+      },
+      {
+        "src": "https://mx.technolutions.net/ping?id=9baa3bb2-b005-6fd3-94c8-4427891c0adf&sid=9ySQYaliffHWdeXQ59y_fFoVRjuMobVHHeYTjhh2lePTCRWT0fOhiY7fjLWBHT29bWo6feK0AGJ7EYzP5Y6L0Sw9TeTR0ssHujushL14sgiJ1d6WuLDp1HVD-FVjILLQ&hid=9235a84f-0425-10cb-e77d-26cfb259e685",
+        "version": null
+      },
+      {
+        "src": "https://apolloevents.rvaed.com/apolloevents.js",
+        "version": null
+      },
+      {
+        "src": "https://www.lclark.edu/live/resource/js/livewhale/thirdparty/frontend.min.rev.1769197940.js",
+        "version": null
+      },
+      {
+        "src": "https://www.lclark.edu/live/resource/js/%5Clivewhale%5Cscripts%5Clwui%5Cjquery.lw-overlay.js/%5Clivewhale%5Cscripts%5Clwui%5Cjquery.lw-notify.js/%5Clivewhale%5Cscripts%5Clwui%5Cjquery.lw-randomize.js/%5Clivewhale%5Cscripts%5Clwui%5Cjquery.lw-paginate.js/%5Clivewhale%5Cscripts%5Ccommon.rev.1769197940.js",
+        "version": null
+      },
+      {
+        "src": "https://www.lclark.edu/live/resource/js/%5Clivewhale%5Ctheme%5Ccore%5Cscripts%5Cfrontend.js/%5Clivewhale%5Ctheme%5Ccore%5Cscripts%5Cquickaccess.rev.1769197940.js",
+        "version": null
+      },
+      {
+        "src": "https://www.lclark.edu/live/resource/js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C0-beautiful-tables.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C0-bootstrap.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C0-dotdotdot.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C0-flickity.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C0-jquery.jpanelmenu.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C0-skip-links.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C0-swiper.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C1-newsroom.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C1-sticky-element.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C1-ww-filter-ajax.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C1-ww-filter.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C2026.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C9-functions.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5C99-lwc-slideshow-debug.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5Cgoogle-search.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5Cjquery.countdown.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5Cprivate.welcome.js/%5C_i%5Cthemes%5Cglobal%5Cscripts%5Cyoutube.rev.1774980366.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1",
+      "generator": "LiveWhale",
+      "og:title": "Ellucian Documentation (Colleague and Self Service)",
+      "og:type": "website",
+      "og:url": "https://www.lclark.edu/information_technology/information_systems/datatel/documentation/",
+      "pagename": "Ellucian Documentation (Colleague and Self Service)",
+      "twitter:card": "summary",
+      "twitter:title": "Ellucian Documentation (Colleague and Self Service)",
+      "lw-template-updated": "12/21/2023 10:02am PST"
+    },
+    "cookies": [
+      {
+        "name": "AWSALBCORS",
+        "value": "wl2JewhiaI1xUwmaVQHxWgIg84ffgn8u+PWx8rYAQnTU/AmT1Aj9wQoQpDY8chG0",
+        "domain": "www.lclark.edu"
+      },
+      {
+        "name": "AWSALB",
+        "value": "wl2JewhiaI1xUwmaVQHxWgIg84ffgn8u+PWx8rYAQnTU/AmT1Aj9wQoQpDY8chG0",
+        "domain": "www.lclark.edu"
+      }
+    ],
+    "dom": {
+      "title": "Ellucian Documentation (Colleague and Self Service) • Information Technology • Lewis & Clark",
+      "bodyClasses": "office-page office-inner disable_story_categories page_intro_hidden left-column_hidden right-column_hidden sub-content_hidden body_information_technology group_information_technology group_name_inst_it",
+      "bodyId": "",
+      "headContent": "\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"generator\" content=\"LiveWhale\">\n\t<meta property=\"og:title\" content=\"Ellucian Documentation (Colleague and Self Service)\">\n\t<meta property=\"og:type\" content=\"website\">\n\t<meta property=\"og:url\" content=\"https://www.lclark.edu/information_technology/information_systems/datatel/documentation/\">\n\t<meta name=\"pagename\" content=\"Ellucian Documentation (Colleague and Self Service)\">\n\t<meta name=\"twitter:card\" content=\"summary\">\n\t<meta name=\"twitter:title\" content=\"Ellucian Documentation (Colleague and Self Service)\">\n\t<meta name=\"lw-template-updated\" content=\"12/21/2023 10:02am PST\">\n\t<title>Ellucian Documentation (Colleague and Self Service)   • Information Technology  • Lewis &amp; Clark</title>\n\t<script async=\"\" src=\"//www.googletagmanager.com/gtm.js?id=GTM-GJZ5\"></script><script src=\"https://www.youtube.com/iframe_api\"></script><script>\n\t/*<![CDATA[*/\n\tvar livewhale={\"liveurl_dir\":\"\\/live\",\"host\":\"www.lclark.edu\",\"page\":\"\\/information_technology\\/information_systems\\/datatel\\/documentation\\/index.php\",\"request\":\"\\/information_technology\\/information_systems\\/datatel\\/documentation\\/\",\"ajax_timeout\":30,\"client_name\":\"Lewis &amp; Clark\",\"cookie_host\":\".lclark.edu\",\"cookie_prefix\":\"lw_b8b941d3_\",\"date_format_us\":\"m\\/d\\/Y\",\"date_format_euro\":\"d-m-Y\",\"time_format_us\":\"g:ia\",\"time_format_euro\":\"H:i\",\"timezone_format\":\"us\",\"has_ssl\":\"true\",\"has_webp\":true,\"group_id\":\"8\",\"group_title\":\"Information Technology\",\"group_title_real\":\"Information Technology\",\"group_fullname\":\"Inst: IT\",\"group_fullname_real\":\"Inst: IT\",\"group_twitter_name\":\"\",\"group_facebook_name\":\"\",\"group_instagram_name\":\"\",\"group_directory\":\"\\/information_technology\\/\",\"qa_revision\":1768611812,\"theme\":\"core\"};\n\t/*]]>*/\n\t</script>\n\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/live/resource/css/%5Clivewhale%5Ctheme%5Ccore%5Cstyles%5Ccommon.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Cwidgets.css/%5Clivewhale%5Ctheme%5Ccore%5Cstyles%5Cfrontend.rev.1775680265.css\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/live/resource/css/%5Clivewhale%5Cstyles%5Clwui%5Clw-overlay.css/%5Clivewhale%5Cstyles%5Clwui%5Clw-notify.rev.1769197940.css\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/live/resource/css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5C0-beautiful-tables.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5C0-flickity.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5C0-skip-links.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5C0-swiper.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5C1-gridstyles.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5C1-images.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5C1-infinity-gallery.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5C2026-footer.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5C2026-institutional-header.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5C2026-patches.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Cfaculty-highlights.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Clegacy-chronicle.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Clegacy-infobox-black.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Clegacy-infobox.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Clegacy-law-courses.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Clegacy-navigation-buttons.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Clegacy-screens.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Clivewhale.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Cmagazine.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Cnavigation-tabs.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Cnewsroom.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Cprofiles-generic-body.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Cshadowbox.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Csticky-element.css/%5C_i%5Cthemes%5Cglobal%5Cstyles%5Cyoutube.rev.1770174629.css\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"https://use.typekit.net/wnu3znp.css\"> \n\n<!--Call to Slate-->\n<script async=\"async\" src=\"https://apply.lclark.edu/ping\">\n/*<![CDATA[*/\n/**/\n/*]]>*/\n</script>\n<link rel=\"canonical\" href=\"https://www.lclark.edu/information_technology/information_systems/datatel/documentation/\">\n\t<!--[if lt IE 9]><script src=\"/live/resource/js/livewhale/thirdparty/html5shiv.rev.1392857541.js\"></script><![endif]-->\n<script async=\"\" src=\"https://mx.technolutions.net/ping?id=9baa3bb2-b005-6fd3-94c8-4427891c0adf&amp;sid=9ySQYaliffHWdeXQ59y_fFoVRjuMobVHHeYTjhh2lePTCRWT0fOhiY7fjLWBHT29bWo6feK0AGJ7EYzP5Y6L0Sw9TeTR0ssHujushL14sgiJ1d6WuLDp1HVD-FVjILLQ&amp;hid=9235a84f-0425-10cb-e77d-26cfb259e685\"></script><style id=\"fit-vids-style\">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.6.0"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.lclark.edu/wp-login.php",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<HTML><HEAD><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=iso-8859-1\">\n<TITLE>ERROR: The request could not be satisfied</TITLE>\n</HEAD><BODY>\n<H1>403 ERROR</H1>\n<H2>The request could not be satisfied.</H2>\n<HR noshade size=\"1px\">\nRequest blocked.\nWe can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or c"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.lclark.edu/wp-json/wp/v2/",
+      "status": 403
+    },
+    "/wp-content/": {
+      "url": "https://www.lclark.edu/wp-content/",
+      "status": 403
+    },
+    "/user/login": {
+      "url": "https://www.lclark.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en\">\n\n  <head>\n\t<meta charset=\"utf-8\"/>\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>\n\t<meta name=\"generator\" content=\"LiveWhale\"/>\n\t<meta name=\"pagename\" content=\"404 Page\"/>\n\t<title>404 Page Not Found</title>\n\t<script>\n\t/*<![CDATA[*/\n\tvar livewhale={\"liveurl_dir\":\"\\/live\",\"host\":\"www.lclark.edu\",\"page\":\"\\/_ingredients\\/templates\\/details\\/404.php\",\"request\":\"\\/user\\/login\",\"ajax_timeout\":30,\"client_name\":\"Lewis &amp; Clark\",\"cookie_host\":\".lclark.edu\",\""
+    },
+    "/core/install.php": {
+      "url": "https://www.lclark.edu/core/install.php",
+      "status": 404
+    },
+    "/cas/login": {
+      "url": "https://www.lclark.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en\">\n\n  <head>\n\t<meta charset=\"utf-8\"/>\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>\n\t<meta name=\"generator\" content=\"LiveWhale\"/>\n\t<meta name=\"pagename\" content=\"404 Page\"/>\n\t<title>404 Page Not Found</title>\n\t<script>\n\t/*<![CDATA[*/\n\tvar livewhale={\"liveurl_dir\":\"\\/live\",\"host\":\"www.lclark.edu\",\"page\":\"\\/_ingredients\\/templates\\/details\\/404.php\",\"request\":\"\\/cas\\/login\",\"ajax_timeout\":30,\"client_name\":\"Lewis &amp; Clark\",\"cookie_host\":\".lclark.edu\",\"c"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.lclark.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en\">\n\n  <head>\n\t<meta charset=\"utf-8\"/>\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>\n\t<meta name=\"generator\" content=\"LiveWhale\"/>\n\t<meta name=\"pagename\" content=\"404 Page\"/>\n\t<title>404 Page Not Found</title>\n\t<script>\n\t/*<![CDATA[*/\n\tvar livewhale={\"liveurl_dir\":\"\\/live\",\"host\":\"www.lclark.edu\",\"page\":\"\\/_ingredients\\/templates\\/details\\/404.php\",\"request\":\"\\/Shibboleth.sso\\/Metadata\",\"ajax_timeout\":30,\"client_name\":\"Lewis &amp; Clark\",\"cookie_host\":\"."
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Amazon ALB",
+      "confidence": 100,
+      "evidence": [
+        "Cookie: AWSALB",
+        "Cookie: AWSALBCORS"
+      ]
+    },
+    {
+      "name": "Amazon CloudFront",
+      "confidence": 100,
+      "evidence": [
+        "Header: Via=\\(CloudFront\\)$",
+        "Header: X-Amz-Cf-Id="
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Slate",
+      "confidence": 100,
+      "evidence": [
+        "HTML: technolutions",
+        "HTML: mx.technolutions.net",
+        "JS: Slate (HTML)"
+      ]
+    },
+    {
+      "name": "Ellucian Colleague",
+      "confidence": 100,
+      "evidence": [
+        "HTML: ellucian[^>]*colleague",
+        "HTML: ellucian.*colleague",
+        "JS: Colleague (HTML)"
+      ]
+    },
+    {
+      "name": "Workday Student",
+      "confidence": 100,
+      "evidence": [
+        "HTML: workday",
+        "HTML: workday\\.com",
+        "HTML: wd5\\.myworkday\\.com",
+        "JS: Workday (HTML)"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 70,
+      "evidence": [
+        "HTML: youtube",
+        "JS: YT (HTML)"
+      ]
+    },
+    {
+      "name": "Adobe Fonts",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "Typekit",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Moodle",
+      "confidence": 30,
+      "evidence": [
+        "JS: Moodle (HTML)"
+      ]
+    },
+    {
+      "name": "Quicklink",
+      "confidence": 30,
+      "evidence": [
+        "JS: quicklink (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Ellucian Banner",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ellucian (HTML)"
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 30,
+      "evidence": [
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 30,
+      "evidence": [
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    },
+    {
+      "name": "Informer",
+      "confidence": 30,
+      "evidence": [
+        "JS: Informer (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

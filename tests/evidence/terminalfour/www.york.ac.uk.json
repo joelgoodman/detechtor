@@ -1,0 +1,366 @@
+{
+  "technology": "TerminalFour",
+  "url": "https://www.york.ac.uk/",
+  "final_url": "https://www.york.ac.uk/",
+  "captured_at": "2026-04-21T19:27:45.815Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/terminalfour/www.york.ac.uk.html",
+  "evidence": {
+    "headers": {
+      "accept-ranges": "bytes",
+      "age": "92",
+      "cache-control": "max-age=300",
+      "cf-cache-status": "HIT",
+      "cf-ray": "9efec9629fc8de68-ATL",
+      "content-encoding": "gzip",
+      "content-length": "10803",
+      "content-security-policy": "upgrade-insecure-requests",
+      "content-type": "text/html",
+      "date": "Tue, 21 Apr 2026 19:27:32 GMT",
+      "expires": "Tue, 21 Apr 2026 19:30:59 GMT",
+      "last-modified": "Tue, 21 Apr 2026 19:26:40 GMT",
+      "server": "cloudflare",
+      "strict-transport-security": "max-age=15768000",
+      "vary": "Accept-Encoding",
+      "x-frame-options": "DENY"
+    },
+    "scripts": [
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-WXLX54",
+        "version": null
+      },
+      {
+        "src": "https://www.york.ac.uk/static/2/js/components/nav_mobile.js",
+        "version": null
+      },
+      {
+        "src": "https://www.york.ac.uk/static/2/js/components/submenu.js",
+        "version": null
+      },
+      {
+        "src": "https://www.york.ac.uk/static/2/js/components/tabs.js",
+        "version": null
+      },
+      {
+        "src": "https://www.york.ac.uk/static/2/js/components/course_search.js",
+        "version": null
+      },
+      {
+        "src": "https://www.york.ac.uk/static/2/js/icons.js",
+        "version": null
+      },
+      {
+        "src": "https://www.york.ac.uk/static/2/js/loader.js",
+        "version": null
+      },
+      {
+        "src": "https://www.york.ac.uk/static/globalalert/globalalert.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1",
+      "author": "University of York",
+      "description": "Outstanding teaching and research in a beautiful and historic city. York is a member of the prestigious Russell Group of research-intensive UK universities.",
+      "keywords": "student life, city, campus, York, city of York, York campus",
+      "og:title": "University of York",
+      "og:type": "website",
+      "og:url": "https://www.york.ac.uk/",
+      "og:image": "https://www.york.ac.uk/static/data/homepage/images/campus-city/city-600px.jpg",
+      "og:description": "Outstanding teaching and research in a beautiful and historic city. York is a member of the prestigious Russell Group of research-intensive UK universities.",
+      "twitter:card": "summary_large_image",
+      "twitter:site": "@uniofyork",
+      "twitter:title": "University of York",
+      "twitter:description": "Outstanding teaching and research in a beautiful and historic city. York is a member of the prestigious Russell Group of research-intensive UK universities.",
+      "twitter:creator": "@uniofyork",
+      "twitter:image": "https://www.york.ac.uk/static/data/homepage/images/campus-city/city-600px.jpg",
+      "facebook-domain-verification": "uf3s98mj9xwlp16owabrbjgay5fn3a"
+    },
+    "cookies": [],
+    "dom": {
+      "title": "University of York",
+      "bodyClasses": "",
+      "bodyId": "homepage",
+      "headContent": "\n\t\t\t<meta charset=\"utf-8\">\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t\t<meta name=\"author\" content=\"University of York\">\n\t\n\t\t\t<title>University of York</title>\n\t\t\t<meta name=\"description\" content=\"Outstanding teaching and research in a beautiful and historic city. York is a member of the prestigious Russell Group of research-intensive UK universities.\">\n\t\t\t<meta name=\"keywords\" content=\"student life, city, campus, York, city of York, York campus\">\n\t\n\t\t\t<!-- Static asset preloading -->\n\t\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Regular-Web.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n\t\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Semibold-Web.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n\t\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/YorkGrot_SemiBoldCondensed_v2.10.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n\t\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/js/loader.js\" as=\"script\" type=\"text/javascript\">\n\t\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/js/icons.js\" as=\"script\" type=\"text/javascript\">\n\t\n\t\t\t<!-- DPLv2 stylesheets -->\n\t\t\t<link rel=\"stylesheet\" href=\"https://www.york.ac.uk/static/2/fonts/bundle.css\">\n\t\t\t<link rel=\"stylesheet\" href=\"https://www.york.ac.uk/static/2/css/base.css\">\n\t\t\t<link rel=\"stylesheet\" media=\"screen\" href=\"https://www.york.ac.uk/static/2/css/themes/uoy.theme.css\">\n\t\n\t\t\t<!-- Favicons -->\n\t\t\t<link rel=\"icon\" href=\"https://www.york.ac.uk/static/2/images/favicons/favicon.ico\" sizes=\"32x32\">\n\t\t\t<link rel=\"icon\" href=\"https://www.york.ac.uk/static/2/images/favicons/favicon.svg\" type=\"image/svg+xml\">\n\t\t\t<link rel=\"apple-touch-icon\" href=\"https://www.york.ac.uk/static/2/images/favicons/favicon_180.png\">\n\t\n\t\t\t<!-- Webmanifest (icons only) -->\n\t\t\t<link rel=\"manifest\" href=\"https://www.york.ac.uk/static/2/manifest.json\">\n\t\n\t\t\t<!-- Opensearch.xml -->\n\t\t\t<link rel=\"search\" type=\"application/opensearchdescription+xml\" title=\"University of York\" href=\"https://www.york.ac.uk/static/2/opensearch.xml\">\n\t\n\t\t\t<meta property=\"og:title\" content=\"University of York\">\n\t\t\t<meta property=\"og:type\" content=\"website\">\n\t\t\t<meta property=\"og:url\" content=\"https://www.york.ac.uk/\">\n\t\t\t<meta property=\"og:image\" content=\"https://www.york.ac.uk/static/data/homepage/images/campus-city/city-600px.jpg\">\n\t\t\t<meta property=\"og:description\" content=\"Outstanding teaching and research in a beautiful and historic city. York is a member of the prestigious Russell Group of research-intensive UK universities.\">\n\t\t\t<meta name=\"twitter:card\" content=\"summary_large_image\">\n\t\t\t<meta name=\"twitter:site\" content=\"@uniofyork\">\n\t\t\t<meta name=\"twitter:title\" content=\"University of York\">\n\t\t\t<meta name=\"twitter:description\" content=\"Outstanding teaching and research in a beautiful and historic city. York is a member of the prestigious Russell Group of research-intensive UK universities.\">\n\t\t\t<meta name=\"twitter:creator\" content=\"@uniofyork\">\n\t\t\t<meta name=\"twitter:image\" content=\"https://www.york.ac.uk/static/data/homepage/images/campus-city/city-600px.jpg\">\n\t\t\t<link rel=\"openorg\" href=\"https://www.york.ac.uk/.well-known/profile.rdf\">\n\t\n\t\t\t<link rel=\"search\" type=\"application/opensearchdescription+xml\" title=\"University of York\" href=\"https://www.york.ac.uk/static/2/opensearch.xml\">\n\t\t\t<meta name=\"facebook-domain-verification\" content=\"uf3s98mj9xwlp16owabrbjgay5fn3a\">\n\t\n\t\t\t<!-- Google Tag Manager -->\n\t\t\t<!-- Contact communications-support@york.ac.uk for advice on adding Google Analytics tracking to other University of York subdomains / web applications.  -->\n\t\t\t<script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-WXLX54\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n\t\t\tnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n\t\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n\t\t\t'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n\t\t\t})(window,document,'script','dataLayer','GTM-WXLX54');</script>\n\t\t\t<!-- End Google Tag Manager -->\n\t\n\t\t\t<!-- Start VWO Async SmartCode -->\n\t\t\t<link rel=\"preconnect\" href=\"https://dev.visualwebsiteoptimizer.com\">\n\t\t\t<script type=\"text/javascript\" id=\"vwoCode\">\n\t\t\twindow._vwo_code || (function() {\n\t\t\tvar account_id=890923,\n\t\t\tversion=2.1,\n\t\t\tsettings_tolerance=2000,\n\t\t\thide_element='body',\n\t\t\thide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;',\n\t\t\t/* DO NOT EDIT BELOW THIS LINE */\n\t\t\tf=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){if(performance.getEntriesByName('first-contentful-paint')[0]){return''}return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){if(!f){f=true;var t=d.getElementById('_vis_opt_path_hides');if(t)t.parentNode.removeChild(t);if(e)(new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e}},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript';if(e.src){t.src=e.src}else{t.text=e.text}d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){var i=this.getSettings(),n=d.createElement('script'),r=this;t=t||{};if(i){n.textContent=i;d.getElementsByTagName('head')[0].appendChild(n);if(!w.VWO||VWO.caE){stT.removeItem(cK);r.load(e)}}else{var o=new XMLHttpRequest;o.open('GET',e,true);o.withCredentials=!t.dSC;o.responseType=t.responseType||'text';o.onload=function(){if(t.onloadCb){return t.onloadCb(o,e)}if(o.status===200||o.status===304){_vwo_code.addScript({text:o.responseText})}else{_vwo_code.finish('&e=loading_failure:'+e)}};o.onerror=function(){if(t.onerrorCb){return t.onerrorCb(e)}_vwo_code.finish('&e=loading_failure:'+e)};o.send()}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t;if(this.hide_element()!=='body'){t=d.createElement('style');var i=this.hide_element(),n=i?i+this.hide_element_style():'',r=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');v&&t.setAttribute('nonce',v.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=n;else t.appendChild(d.createTextNode(n));r.appendChild(t)}else{t=d.getElementsByTagName('head')[0];var n=d.createElement('div');n.style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;';n.setAttribute('id','_vis_opt_path_hides');n.classList.add('_vis_hide_layer');t.parentNode.insertBefore(n,t.nextSibling)}var o=window._vis_opt_url||d.URL,s='https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(o)+'&vn='+version;if(w.location.search.indexOf('_vwo_xhr')!==-1){this.addScript({src:s})}else{this.load(s+'&x=true')}}};w._vwo_code=code;code.init();})();\n\t\t\t</script>\n\t\t\t<!-- End VWO Async SmartCode -->\n\t\n<script src=\"https://www.york.ac.uk/static/2/js/components/nav_mobile.js\" async=\"\"></script><script src=\"https://www.york.ac.uk/static/2/js/components/submenu.js\" async=\"\"></script><script src=\"https://www.york.ac.uk/static/2/js/components/tabs.js\" async=\"\"></script><script src=\"https://www.york.ac.uk/static/2/js/components/course_search.js\" async=\"\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.york.ac.uk/wp-login.php",
+      "status": 403,
+      "body_excerpt": "<!doctype html>\r\n<html lang=\"en-GB\">\r\n<head>\r\n\r\n<meta charset=\"utf-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n<meta name=\"author\" content=\"University of York\">\r\n\r\n<title>403, University of York</title>\r\n\r\n\r\n\r\n\r\n\r\n\t\t<!-- Static asset preloading -->\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Regular-Web.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Semibold-Web"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.york.ac.uk/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!doctype html>\r\n<html lang=\"en-GB\">\r\n<head>\r\n\r\n<meta charset=\"utf-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n<meta name=\"author\" content=\"University of York\">\r\n\r\n<title>404, University of York</title>\r\n\r\n\r\n\r\n\r\n\r\n\t\t<!-- Static asset preloading -->\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Regular-Web.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Semibold-Web"
+    },
+    "/wp-content/": {
+      "url": "https://www.york.ac.uk/wp-content/",
+      "status": "timeout"
+    },
+    "/user/login": {
+      "url": "https://www.york.ac.uk/user/login",
+      "status": 404,
+      "body_excerpt": "<!doctype html>\r\n<html lang=\"en-GB\">\r\n<head>\r\n\r\n<meta charset=\"utf-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n<meta name=\"author\" content=\"University of York\">\r\n\r\n<title>404, University of York</title>\r\n\r\n\r\n\r\n\r\n\r\n\t\t<!-- Static asset preloading -->\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Regular-Web.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Semibold-Web"
+    },
+    "/core/install.php": {
+      "url": "https://www.york.ac.uk/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!doctype html>\r\n<html lang=\"en-GB\">\r\n<head>\r\n\r\n<meta charset=\"utf-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n<meta name=\"author\" content=\"University of York\">\r\n\r\n<title>404, University of York</title>\r\n\r\n\r\n\r\n\r\n\r\n\t\t<!-- Static asset preloading -->\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Regular-Web.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Semibold-Web"
+    },
+    "/cas/login": {
+      "url": "https://www.york.ac.uk/cas/login",
+      "status": 404,
+      "body_excerpt": "<!doctype html>\r\n<html lang=\"en-GB\">\r\n<head>\r\n\r\n<meta charset=\"utf-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n<meta name=\"author\" content=\"University of York\">\r\n\r\n<title>404, University of York</title>\r\n\r\n\r\n\r\n\r\n\r\n\t\t<!-- Static asset preloading -->\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Regular-Web.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Semibold-Web"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.york.ac.uk/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!doctype html>\r\n<html lang=\"en-GB\">\r\n<head>\r\n\r\n<meta charset=\"utf-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n<meta name=\"author\" content=\"University of York\">\r\n\r\n<title>404, University of York</title>\r\n\r\n\r\n\r\n\r\n\r\n\t\t<!-- Static asset preloading -->\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Regular-Web.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n\t\t<link rel=\"preload\" href=\"https://www.york.ac.uk/static/2/fonts/Graphik-Semibold-Web"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Cloudflare",
+      "confidence": 100,
+      "evidence": [
+        "Header: Server=^cloudflare$",
+        "Header: cf-cache-status=",
+        "Header: cf-ray="
+      ]
+    },
+    {
+      "name": "VWO",
+      "confidence": 100,
+      "evidence": [
+        "JS: VWO (HTML)",
+        "JS: __vwo (HTML)",
+        "JS: _vwo_code (HTML)",
+        "JS: _vwo_settings_timer (HTML)"
+      ]
+    },
+    {
+      "name": "CloudFlare",
+      "confidence": 100,
+      "evidence": [
+        "Header: server=cloudflare",
+        "Header: cf-ray=.*"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Contentful",
+      "confidence": 70,
+      "evidence": [
+        "HTML: contentful",
+        "JS: contentful (HTML)"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 40,
+      "evidence": [
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "LearnDash",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ld.*course"
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Boost.ai",
+      "confidence": 30,
+      "evidence": [
+        "JS: boost (HTML)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Paper.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: paper (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "CAS",
+      "confidence": 30,
+      "evidence": [
+        "JS: CAS (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 30,
+      "evidence": [
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": false
+}

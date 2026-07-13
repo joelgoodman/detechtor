@@ -1,0 +1,181 @@
+{
+  "technology": "Panopto",
+  "url": "https://psu.hosted.panopto.com/",
+  "final_url": "https://psu.hosted.panopto.com/",
+  "captured_at": "2026-04-21T19:36:11.790Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/panopto/psu.hosted.panopto.com.html",
+  "evidence": {
+    "headers": {
+      "age": "474",
+      "content-encoding": "gzip",
+      "content-type": "text/html",
+      "date": "Tue, 21 Apr 2026 19:28:17 GMT",
+      "etag": "W/\"2a68846d3f3033d5b6c7fda847dbc804\"",
+      "last-modified": "Fri, 20 Jan 2017 21:29:03 GMT",
+      "server": "AmazonS3",
+      "vary": "Accept-Encoding",
+      "via": "1.1 dbbcd335d42d23e2187ef94110127416.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "-LRrLQTpyyca6oVuLBdbNA3fZEklY279wbLK4UkLscrhxWRWLD-zyw==",
+      "x-amz-cf-pop": "ATL58-P6",
+      "x-amz-meta-cb-modifiedtime": "Fri, 20 Jan 2017 21:25:10 GMT",
+      "x-cache": "Hit from cloudfront"
+    },
+    "scripts": [],
+    "meta": {},
+    "cookies": [
+      {
+        "name": "_ga_Z38CD3Q3FT",
+        "value": "GS2.2.s1776800165$o1$g0$t1776800165$j60$l0$h0",
+        "domain": ".panopto.com"
+      },
+      {
+        "name": "_gid",
+        "value": "GA1.2.1537812071.1776800165",
+        "domain": ".panopto.com"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.2.1584650275.1776800165",
+        "domain": ".panopto.com"
+      },
+      {
+        "name": "_gat_customerTracker",
+        "value": "1",
+        "domain": ".panopto.com"
+      },
+      {
+        "name": "_ga_GZF03LV9RZ",
+        "value": "GS2.2.s1776800165$o1$g0$t1776800165$j60$l0$h0",
+        "domain": ".panopto.com"
+      }
+    ],
+    "dom": {
+      "title": "Your Panopto site is no longer active",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n    <title>Your Panopto site is no longer active</title>\n    <link href=\"/styles/reset.css\" rel=\"stylesheet\" type=\"text/css\">\n    <link href=\"/styles/styles.css\" rel=\"stylesheet\" type=\"text/css\">\n",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://psu.hosted.panopto.com/wp-login.php",
+      "status": 403,
+      "body_excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message></Error>"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://psu.hosted.panopto.com/wp-json/wp/v2/",
+      "status": 403,
+      "body_excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message></Error>"
+    },
+    "/wp-content/": {
+      "url": "https://psu.hosted.panopto.com/wp-content/",
+      "status": 403,
+      "body_excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message></Error>"
+    },
+    "/user/login": {
+      "url": "https://psu.hosted.panopto.com/user/login",
+      "status": 403,
+      "body_excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message></Error>"
+    },
+    "/core/install.php": {
+      "url": "https://psu.hosted.panopto.com/core/install.php",
+      "status": 403,
+      "body_excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message></Error>"
+    },
+    "/cas/login": {
+      "url": "https://psu.hosted.panopto.com/cas/login",
+      "status": 403,
+      "body_excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message></Error>"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://psu.hosted.panopto.com/Shibboleth.sso/Metadata",
+      "status": 403,
+      "body_excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message></Error>"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Amazon CloudFront",
+      "confidence": 100,
+      "evidence": [
+        "Header: Via=\\(CloudFront\\)$",
+        "Header: X-Amz-Cf-Id="
+      ]
+    },
+    {
+      "name": "Panopto",
+      "confidence": 100,
+      "evidence": [
+        "HTML: panopto",
+        "HTML: panopto\\.com",
+        "JS: Panopto (HTML)"
+      ]
+    },
+    {
+      "name": "Amazon S3",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=^AmazonS3$"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

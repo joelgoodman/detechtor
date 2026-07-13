@@ -1,0 +1,232 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+	Payment Portal
+</title><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Bootstrap -->
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        form {
+            background-color: #424e68;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 0px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        html, body, form {
+            height: 100%;
+            min-height: 100%;
+            width: 100%;
+            min-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cn_icons_CN_Logo_White {
+            width: 250px;
+            height: 70px;
+            margin-top: 5px;
+        }
+
+        .Payment-Portal {
+            height: 29px;
+            font-size: 24px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .header1-blue {
+            font-family: Verdana;
+            font-size: 18px;
+            color: #424e68;
+            padding-bottom: 10px;
+        }
+
+        .panel-border {
+            border-radius: 8px;
+            border: solid 1px #979797;
+            max-width: 900px;
+            position: center;
+        }
+
+        .messagealert {
+            width: 100%;
+            /*position: fixed;
+            top: 0px;
+            z-index: 100000;*/
+            padding: 0;
+            font-size: 15px;
+        }
+
+        .btn-default {
+            width: 180px;
+            height: 26px;
+            border-radius: 4px;
+  background-color: #424e68;
+  border: solid 0 #424e68;
+            color:white;
+            padding: 3px 12px;
+        }
+
+         label {
+            font-family: Verdana;
+            font-size: 13px;
+            font-weight:100;
+            line-height: 1.38;
+            color: #000000;
+        }
+
+        .alert {
+            padding: 10px;
+        }
+
+        .container {    
+            background-color: #424e68;
+         }
+
+        .btn-link {
+            font-weight: 400;
+            color: #337ab7;
+            border-radius: 0;
+            padding: 0px;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function ShowMessage(message, messagetype, container) {
+            var cssclass;
+            switch (messagetype) {
+                case 'Success':
+                    cssclass = 'alert-success'
+                    $("#alert_container").empty();
+                    $("#alert_container").hide;
+                    break;
+                case 'Error':
+                    cssclass = 'alert-danger'
+                    $("#alert_container").show();
+                    $('#' + container + '').append('<div id="alert_div" style="margin: 0 0.5%; -webkit-box-shadow: 3px 4px 6px #999;" class="alert fade in ' + cssclass + '"><span>' + message + '</span></div>');
+                    break;
+                case 'Warning':
+                    cssclass = 'alert-warning'
+                    $('#' + container + '').append('<div id="alert_div" style="margin: 0 0.5%; -webkit-box-shadow: 3px 4px 6px #999;" class="alert fade in ' + cssclass + '"><span>' + message + '</span></div>');
+                    break;
+                default:
+                    cssclass = 'alert-info'
+                    $('#' + container + '').append('<div id="alert_div" style="margin: 0 0.5%; -webkit-box-shadow: 3px 4px 6px #999;" class="alert fade in ' + cssclass + '"><span>' + message + '</span></div>');
+            }
+            //$('#alert_container').append('<div id="alert_div" style="margin: 0 0.5%; -webkit-box-shadow: 3px 4px 6px #999;" class="alert fade in ' + cssclass + '"><span>' + message + '</span></div>');
+            
+        }
+    </script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script></head>
+
+
+<body>
+    <form name="form1" method="post" action="./login.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTQ0MDIxMTYzD2QWAgIDD2QWAgIBD2QWBgIBD2QWAgIJDw9kFgIeB29uQ2xpY2sFfmphdmFzY3JpcHQ6IHZpZXdfd2luZG93PXdpbmRvdy5vcGVuKCdodHRwczovL3BheW1lbnRzLnRyYW5zYWN0Y2FtcHVzLmNvbS9jYXNobmV0Zy9zZWxmc2VydmUvdXBpLmh0bWwnLCAnX2JsYW5rJyk7cmV0dXJuIGZhbHNlO2QCAw8QDxYGHg5EYXRhVmFsdWVGaWVsZAUOZGlyZWN0b3J5X25hbWUeDURhdGFUZXh0RmllbGQFC2NsaWVudF9uYW1lHgtfIURhdGFCb3VuZGdkEBUnBlNlbGVjdC5BbGJhbnkgQ29sbGVnZSBvZiBQaGFybWFjeSBhbmQgSGVhbHRoIFNjaWVuY2VzEkFkZWxwaGkgVW5pdmVyc2l0eRhBbGFiYW1hIFN0YXRlIFVuaXZlcnNpdHkRQWxiYW55IExhdyBTY2hvb2wWQWxiYW55IE1lZGljYWwgQ29sbGVnZRxEZW1vIERhdGFiYXNlIC0gTGV2ZWwgQWNjZXNzHkRlbW8gU2Nob29sICAtIEdlb3JnZSBUaGFyYWthbh5EZW1vIFNjaG9vbCAgLSBHZW9yZ2UgVGhhcmFrYW4TVHJhbnNhY3QgVW5pdmVyc2l0eRFUQyBVbml2ZXJzaXR5IEExNBJDYXNobmV0IFVuaXZlcnNpdHkNVEMgVW5pdmVyc2l0eRZUcmFuc2FjdCBVbml2ZXJzaXR5IEE1EFRDIFVuaXZlcnNpdHkgQTcbQ29hc3RsaW5lIENvbW11bml0eSBDb2xsZWdlEENva2VyIFVuaXZlcnNpdHkNQ29sYnkgQ29sbGVnZRJEaWxsYXJkIFVuaXZlcnNpdHkTR29sZGVuIFdlc3QgQ29sbGVnZQ5LZW55b24gQ29sbGVnZRFMb3Vpc2lhbmEgQ29sbGVnZSBMdXplcm5lIENvdW50eSBDb21tdW5pdHkgQ29sbGVnZRdNaXNlcmljb3JkaWEgVW5pdmVyc2l0eRlNb250c2VycmF0IENvbGxlZ2Ugb2YgQXJ0F01vcmdhbiBTdGF0ZSBVbml2ZXJzaXR5IE1vdW50IFZlcm5vbiBOYXphcmVuZSBVbml2ZXJzaXR5GE5vcmZvbGsgU3RhdGUgVW5pdmVyc2l0eRRPcmFuZ2UgQ29hc3QgQ29sbGVnZR5QcmluY2V0b24gVGhlb2xvZ2ljYWwgU2VtaW5hcnkgUmFyaXRhbiBWYWxsZXkgQ29tbXVuaXR5IENvbGxlZ2UiUmluZ2xpbmcgQ29sbGVnZSBvZiBBcnQgYW5kIERlc2lnbhdTYWludCBNaWNoYWVsJ3MgQ29sbGVnZR9Tb3V0aCBDYXJvbGluYSBTdGF0ZSBVbml2ZXJzaXR5EFR1ZnRzIFVuaXZlcnNpdHkuVW5pdmVyc2l0eSBvZiBTdCBBdWd1c3RpbmUgZm9yIEhlYWx0aCBTY2llbmNlcxBXZXNsZXlhbiBDb2xsZWdlJVdlc3Rtb3JlbGFuZCBDb3VudHkgQ29tbXVuaXR5IENvbGxlZ2UPV29mZm9yZCBDb2xsZWdlFScGU2VsZWN0MkFDUEhTUEFZICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMkFERUxQSElGU1BQUEFZICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMmFsYXN1cGF5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMmFsYmFueWxhd3BheSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMkFsYmFueW1jcGF5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMkNDQ0RFTU9fTEFQQVkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMmNjY2RlbW80cnBheSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMkNDQ0RFTU80UlNBTyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMkNDQ0RFTU9BUEkxX1BBWSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMkNDQ0RFTU9BUEkxNF9QQVkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMkNDQ0RFTU9BUEkyX1BBWSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMkNDQ0RFTU9BUEkzX1BBWSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMkNDQ0RFTU9BUEk1X1BBWSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMkNDQ0RFTU9BUEk3X1BBWSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMmNvYXN0bGluZXBheSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMmNva2VycGF5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMmNvbGJ5cGF5MiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMmRpbGxhcmRwYXkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMkdPTERFTldFU1RDT0xMUEFZICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMmtlbnlvbnBheSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMmxhY29sbGVnZXBheSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMmx1emVybmVwYXkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMk1JU0VSSUNPUkRJQVBBWSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMm1vbnRzZXJyYXRwYXkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMm1vcmdhbnBheSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMm12bnVwYXkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMm5zdXBheSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMk9DQ3BheSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMnB0c2VtcGF5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMlJBUklUQU5WQUxQQVkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMnJpbmdsaW5ncGF5bWVudHBsYW5zICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMlNhaW50TWljaGFlbHNQYXkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMnNjc3VwYXkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMnR1ZnRzZnNwcCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMlVTQXBheSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMldFU0xFWUFOQ09MTEVHRSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMndlc3Rtb3JlbGFuZHBheSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMndvZmZvcmRwYXkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgFCsDJ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBZmQCBQ8WAh4HVmlzaWJsZWgWAgIBDxYEHglpbm5lcmh0bWxlHgRocmVmZGRkQLwBvkUZ0gajMOLc8VbZy7U2D4Y=">
+
+<script asyc="" src="https://www.googletagmanager.com/gtag/js?id=G-J5C6NB30L1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){window.dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-J5C6NB30L1');</script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F13CB078">
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdACj+Ku0IfMarGIY+FSz2KTSHmFicUanlRpMINMpvXQ+4kg9tjuFEPsb6UOwimPyP0V7hpnm54S0TYeO8ZCoC1pZWOEzXhNzkDgQDpFsZtK8MlcVHmgbfgO3GQTGztQw33Jignnlb5aQ8/5RvAggOMZJQrohL/JslhTrHVrwiAAmHExkqZJuCa/EDQNXl+9GHmB1N8dnRH41JvNlBekOojLIKEeOcOTT0+g4HF/2y40xph8jpmFFwtjRZsdYUE/52lET4JgcNfN9eb5tDzQJUAnMs8UyjCYv6B/55JbXm8SxzbwILchjR/b4pO7j/rjwUJa5tnfuwpoD7IBIgyIEnLCnrDiGDWfEF6DtT20hqN2WxC4dCfZ4npq8LhmeQFChTO25nQ4XtrH3h30aedRMgWH5zyu2sq0cyTM6Gu3jYp+8qlsqNX9aKPB2HiDQUBT5q2Gj7gXFu2ioj/jaDM7CD3Mn7YIgFbdu4CwFcScqBpas9K5tP863Zc9KrQX4TPRrYXcku6hrz/bHBZwPdrurBSqtE5IZM5C1x/Q1040x2G/ZhL0QLK9dQhcAwQI2p6JLhmmhHitYxFjghZAb3gQVk2ql3Jb8BkmQYIbcaK17k32ePij3bSa3BZQYjyOVWSFnYEIjKINb9Aqj4/y7fLLNIngQz2NhecpaE8Bfud5ClIlPFbmEJUMAHBP0lW1Ay1F7PVt/O/9881QMiCJEpLMs1JwFB5yJLrFfpF9lsJwC+/pNYr1IjP4F/Lr0bo48pe9RO/UwDfgth6tX8F9yYsqS/TMHKImb91vz0J0p/dte89lCOk+FR5+4pV5lxAY9jk2NVTp46Dx718PeTawss4uIsVRlTYLWYIda4cplZd0RCfKaNfXR3y84=">
+        <div class="container">
+            <div class="row">
+                <img src="../image/paymentportal/CASHNet_logo_white.png" class="img-responsive center-block cn_icons_CN_Logo_White">
+            </div>
+            <div class="row">
+                <label class="Payment-Portal center-block">Payment Portal</label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8">
+                    <div class="panel panel-default panel-border">
+                        <div class="panel-body">
+                            <div id="divLogin" class="row">
+                               <!-- -->
+                                <div class="col-sm-12" style="border-left: 1px solid #ccc;min-height:300px;">
+                                    <label class="header1-blue"></label><br>
+                                    <label>Select a school to sign up for installment payment plans for students enrolled in any of our participating schools.</label><br>
+                                    <br>
+                                    <label style="padding-bottom:5px;">School Name</label><br>
+                                    <select name="ddSchoolList" id="ddSchoolList" class="form-control">
+	<option selected="selected" value="Select">Select</option>
+	<option value="ACPHSPAY                                          ">Albany College of Pharmacy and Health Sciences</option>
+	<option value="ADELPHIFSPPPAY                                    ">Adelphi University</option>
+	<option value="alasupay                                          ">Alabama State University</option>
+	<option value="albanylawpay                                      ">Albany Law School</option>
+	<option value="Albanymcpay                                       ">Albany Medical College</option>
+	<option value="CCCDEMO_LAPAY                                     ">Demo Database - Level Access</option>
+	<option value="cccdemo4rpay                                      ">Demo School  - George Tharakan</option>
+	<option value="CCCDEMO4RSAO                                      ">Demo School  - George Tharakan</option>
+	<option value="CCCDEMOAPI1_PAY                                   ">Transact University</option>
+	<option value="CCCDEMOAPI14_PAY                                  ">TC University A14</option>
+	<option value="CCCDEMOAPI2_PAY                                   ">Cashnet University</option>
+	<option value="CCCDEMOAPI3_PAY                                   ">TC University</option>
+	<option value="CCCDEMOAPI5_PAY                                   ">Transact University A5</option>
+	<option value="CCCDEMOAPI7_PAY                                   ">TC University A7</option>
+	<option value="coastlinepay                                      ">Coastline Community College</option>
+	<option value="cokerpay                                          ">Coker University</option>
+	<option value="colbypay2                                         ">Colby College</option>
+	<option value="dillardpay                                        ">Dillard University</option>
+	<option value="GOLDENWESTCOLLPAY                                 ">Golden West College</option>
+	<option value="kenyonpay                                         ">Kenyon College</option>
+	<option value="lacollegepay                                      ">Louisiana College</option>
+	<option value="luzernepay                                        ">Luzerne County Community College</option>
+	<option value="MISERICORDIAPAY                                   ">Misericordia University</option>
+	<option value="montserratpay                                     ">Montserrat College of Art</option>
+	<option value="morganpay                                         ">Morgan State University</option>
+	<option value="mvnupay                                           ">Mount Vernon Nazarene University</option>
+	<option value="nsupay                                            ">Norfolk State University</option>
+	<option value="OCCpay                                            ">Orange Coast College</option>
+	<option value="ptsempay                                          ">Princeton Theological Seminary</option>
+	<option value="RARITANVALPAY                                     ">Raritan Valley Community College</option>
+	<option value="ringlingpaymentplans                              ">Ringling College of Art and Design</option>
+	<option value="SaintMichaelsPay                                  ">Saint Michael's College</option>
+	<option value="scsupay                                           ">South Carolina State University</option>
+	<option value="tuftsfspp                                         ">Tufts University</option>
+	<option value="USApay                                            ">University of St Augustine for Health Sciences</option>
+	<option value="WESLEYANCOLLEGE                                   ">Wesleyan College</option>
+	<option value="westmorelandpay                                   ">Westmoreland County Community College</option>
+	<option value="woffordpay                                        ">Wofford College</option>
+
+</select>
+                                    <br>
+                                    <div class="messagealert" id="alert_right_container">
+                                    </div>
+                                    <br>
+                                    
+                                </div>                                
+                            </div>
+                                                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">                    
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+</body></html>

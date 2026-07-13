@@ -1,0 +1,466 @@
+{
+  "technology": "Populi",
+  "url": "https://dunwoodie.edu/populi-student-information-and-learning-management-system",
+  "final_url": "https://dunwoodie.edu/populi-student-information-and-learning-management-system",
+  "captured_at": "2026-04-21T19:34:21.626Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/populi/dunwoodie.edu-populi-student-information-and-learning-management-system.html",
+  "evidence": {
+    "headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "max-age=21600",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9efed3516ff23afd-ATL",
+      "content-encoding": "br",
+      "content-type": "text/html;charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:34:19 GMT",
+      "last-modified": "Tue, 21 Apr 2026 09:44:20 GMT",
+      "server": "cloudflare",
+      "set-cookie": "__cf_bm=7r_yRM0KdDdVv9aiYA9lJ9xqIbHwbQkvmQCxqWCeZog-1776800059.101517-1.0.1.1-eY5QDf6HoC5bd5bOpyuF7iUVKU0eHHgHBQUzpd9rsh7q_DiVKCM3yULW1IElQmmRci8M32ShhbmKoYDqrYVOdqfzYK_w1VYssatyZCsRzwwOOEbY2clZSWcyVOSHRIp1; HttpOnly; Secure; Path=/; Domain=dunwoodie.edu; Expires=Tue, 21 Apr 2026 20:04:19 GMT",
+      "strict-transport-security": "max-age=604800;",
+      "vary": "Accept-Encoding",
+      "x-amz-expiration": "expiry-date=\"Mon, 19 Oct 2026 00:00:00 GMT\", rule-id=\"ec-prod-site-cache-lifecycle\"",
+      "x-amz-id-2": "fiSHUdIlfJ5oOXhHbONj05i8C2RLTbPkL3eiwFA2LzOCZFPxJh0cFOmIjRnzMZUCLsuFM1haVR0=",
+      "x-amz-request-id": "PR30XJ5WA99QEG9S",
+      "x-amz-server-side-encryption": "AES256",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "scripts": [
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/scripts/jquery.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/scripts/jquery-ui-1.13.2.custom.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/scripts/jquery.ui.touch-punch.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/scripts/modernizer.custom.2.7.1.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/scripts/hammer.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/scripts/photorotator.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/lightbox/dist/photoswipe-init.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/lightbox/dist/photoswipe.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/lightbox/dist/photoswipe-ui-default.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/focuspoint/jquery.focuspoint.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/scripts/jquery.textfill.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/scripts/production.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/scripts/csrf.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.ecatholic.com/1775595218/scripts/quick_modal.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-KF3KW1SXSP",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width",
+      "description": "Log in to the Populi portal for Saint Joseph’s Seminary in Yonkers, NY. Register for courses, access grades, and manage records.",
+      "twitter:card": "summary",
+      "fb:app_id": "187131075036737",
+      "og:site_name": "St. Joseph's Seminary & College",
+      "og:url": "https://dunwoodie.edu/populi-student-information-and-learning-management-system",
+      "og:title": "Populi Student Information and Learning Management System",
+      "og:description": "Log in to the Populi portal for Saint Joseph’s Seminary in Yonkers, NY. Register for courses, access grades, and manage records.",
+      "google-site-verification": "9VWwPaFREO0WFjuUusN6hqZKhIohP61mQarD2dIZzl8",
+      "_csrf": "PZrMgKveRFGrw1BJBus2Jsc8blFTjyZxBYKt4YVIUavFeKGZBaj0tZvscmmG8Wh6MMYCFKIEQ2lhuhFcMLTI1bEtMJmjSZOh",
+      "_csrf_header": "X-CSRF-TOKEN",
+      "_csrf_parametername": "_csrf"
+    },
+    "cookies": [
+      {
+        "name": "_ga_KF3KW1SXSP",
+        "value": "GS2.1.s1776800060$o1$g0$t1776800060$j60$l0$h0",
+        "domain": ".dunwoodie.edu"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "AXzVuJQFZ.DqEDCqoULjnXxClT2VMGZALgPyFCaUDQk-1776800060.7881293-1",
+        "domain": ".dunwoodie.edu"
+      },
+      {
+        "name": "JSESSIONID",
+        "value": "9FFC36A5833F4707877BADDF43C60824",
+        "domain": "dunwoodie.edu"
+      },
+      {
+        "name": "cf_clearance",
+        "value": "o6DKMPG_z.iS9JHQkFylL9ii_70eal_jAFDIqe2aWZQ-1776800060-1.2.1.1-j",
+        "domain": ".dunwoodie.edu"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.1.157118118.1776800061",
+        "domain": ".dunwoodie.edu"
+      }
+    ],
+    "dom": {
+      "title": "Populi Student Information and Learning Management System - St. Joseph's Seminary & College - Yonkers, NY",
+      "bodyClasses": "ecatholic pageTypeInterior ",
+      "bodyId": "",
+      "headContent": "\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width\">\n\n\n\t\n\t\t<title>\n\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\tPopuli Student Information and Learning Management System - St. Joseph's Seminary &amp; College - Yonkers, NY\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t</title>\n\t\t\n\t\t\n\t\t\t\n\t\t\t\t<meta name=\"description\" content=\"Log in to the Populi portal for Saint Joseph’s Seminary in Yonkers, NY. Register for courses, access grades, and manage records.\">\n\t\t\t\n\t\t\n\t\t<link href=\"https://dunwoodie.edu/populi-student-information-and-learning-management-system\" rel=\"canonical\">\n\t\t\n\t\t\t<link href=\"/newsRSS\" rel=\"alternate\" type=\"application/rss+xml\" title=\"All news for Populi Student Information and Learning Management System - St. Joseph's Seminary &amp; College - Yonkers, NY\">\n\t\t\t<link href=\"/newsRSS?format=atom\" rel=\"alternate\" type=\"application/atom+xml\" title=\"All news for Populi Student Information and Learning Management System - St. Joseph's Seminary &amp; College - Yonkers, NY (Atom)\">\n\t\t\t\n\t\t\t\t<link href=\"/newsRSS?page=425257\" rel=\"alternate\" type=\"application/rss+xml\" title=\"News for Populi Student Information and Learning Management System\">\n\t\t\t\t<link href=\"/newsRSS?page=425257&amp;format=atom\" rel=\"alternate\" type=\"application/atom+xml\" title=\"News for Populi Student Information and Learning Management System (Atom)\">\n\t\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\n\t\t<meta name=\"twitter:card\" content=\"summary\">\n\t\t<meta property=\"fb:app_id\" content=\"187131075036737\">\n\t\t<meta property=\"og:site_name\" content=\"St. Joseph's Seminary &amp; College\">\n\t\t<meta property=\"og:url\" content=\"https://dunwoodie.edu/populi-student-information-and-learning-management-system\">\n\t\t<meta property=\"og:title\" content=\"Populi Student Information and Learning Management System\">\n\t\t\n\t\t\t<meta property=\"og:description\" content=\"Log in to the Populi portal for Saint Joseph’s Seminary in Yonkers, NY. Register for courses, access grades, and manage records.\">\n\t\t\n\t\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\n<link rel=\"shortcut icon\" href=\"https://files.ecatholic.com/16540/favicon.ico?t=1750189037000\">\n<script src=\"https://cdn.ecatholic.com/1775595218/scripts/jquery.min.js\" type=\"text/javascript\"></script>\n<script>\nvar $ec = jQuery.noConflict();\nvar $ = $ec;  // Reassigns the $ to jQuery, but can be overwritten if another version of jQuery is loaded\n</script>\n<script defer=\"\" src=\"https://cdn.ecatholic.com/1775595218/scripts/jquery-ui-1.13.2.custom.min.js\" type=\"text/javascript\"></script>\n<script defer=\"\" src=\"https://cdn.ecatholic.com/1775595218/scripts/jquery.ui.touch-punch.min.js\" type=\"text/javascript\"></script>\n<script defer=\"\" src=\"https://cdn.ecatholic.com/1775595218/scripts/modernizer.custom.2.7.1.js\" type=\"text/javascript\"></script>\n<link rel=\"stylesheet\" href=\"https://cdn.ecatholic.com/1775595218/css/jquery-ui-1.13.2/jquery-ui.min.css\" type=\"text/css\" media=\"all\" onload=\"this.media='all'\">\n<link rel=\"stylesheet\" href=\"https://cdn.ecatholic.com/1775595218/css/jquery-ui-1.13.2/jquery-ui.structure.min.css\" type=\"text/css\" media=\"all\" onload=\"this.media='all'\">\n<link rel=\"stylesheet\" href=\"https://cdn.ecatholic.com/1775595218/css/jquery-ui-1.13.2/jquery-ui.theme.min.css\" type=\"text/css\" media=\"all\" onload=\"this.media='all'\">\n\n\t\n\t\n\t\n\t\n\t\t<link rel=\"stylesheet\" data-themename=\"Base\" href=\"https://files.ecatholic.com/16540/theme.css?t=1772560844000\" type=\"text/css\">\n\t\n\n<script defer=\"\" type=\"text/javascript\" src=\"https://cdn.ecatholic.com/1775595218/scripts/hammer.min.js\"></script>\n<script defer=\"\" type=\"text/javascript\" src=\"https://cdn.ecatholic.com/1775595218/scripts/photorotator.js\"></script>\n<script type=\"text/javascript\" src=\"https://cdn.ecatholic.com/1775595218/lightbox/dist/photoswipe-init.js\"></script>\n<script defer=\"\" type=\"text/javascript\" src=\"https://cdn.ecatholic.com/1775595218/lightbox/dist/photoswipe.js\"></script>\n<script defer=\"\" type=\"text/javascript\" src=\"https://cdn.ecatholic.com/1775595218/lightbox/dist/photoswipe-ui-default.js\"></script>\n<link rel=\"stylesheet\" href=\"https://cdn.ecatholic.com/1775595218/lightbox/dist/photoswipe.css\" type=\"text/css\" media=\"all\" onload=\"this.media='all'\">\n<link rel=\"stylesheet\" href=\"https://cdn.ecatholic.com/1775595218/lightbox/dist/default-skin/default-skin.css\" type=\"text/css\" media=\"all\" onload=\"this.media='all'\">\n<script defer=\"\" type=\"text/javascript\" src=\"https://cdn.ecatholic.com/1775595218/focuspoint/jquery.focuspoint.js\"></script>\n<script defer=\"\" type=\"text/javascript\" src=\"https://cdn.ecatholic.com/1775595218/scripts/jquery.textfill.min.js\"></script>\n<script type=\"text/javascript\" src=\"https://cdn.ecatholic.com/1775595218/scripts/production.js\"></script>\n\n\n\n\n\n\n<script defer=\"\" type=\"text/javascript\" src=\"https://cdn.ecatholic.com/1775595218/scripts/csrf.js\"></script>\n<script defer=\"\" type=\"text/javascript\" src=\"https://cdn.ecatholic.com/1775595218/scripts/quick_modal.js\"></script>\n\n\t<link href=\"https://cdn.ecatholic.com/1775595218/froala/css/froala_style.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" onload=\"this.media='all'\">\n\t<link href=\"https://cdn.ecatholic.com/1775595218/froala-custom/froala_editor_ec_custom.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" onload=\"this.media='all'\">\n\n\n\n\n\n\n\t<!-- Google tag (gtag.js) -->\n<script async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-KF3KW1SXSP\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-KF3KW1SXSP');\n</script>\n<script>\n$ec(window).on(\"load\", function () {\n    setTimeout(function () {\n      prod.setFooterHeight();\n      prod.sizeCore();\n    }, 1000);\n});\n</script>\n\t<meta name=\"google-site-verification\" content=\"9VWwPaFREO0WFjuUusN6hqZKhIohP61mQarD2dIZzl8\">\n\t\n\t\t\n\t\n\n\n<style>#background:after{height:509.344px}</style><meta name=\"_csrf\" content=\"PZrMgKveRFGrw1BJBus2Jsc8blFTjyZxBYKt4YVIUavFeKGZBaj0tZvscmmG8Wh6MMYCFKIEQ2lhuhFcMLTI1bEtMJmjSZOh\"><meta name=\"_csrf_header\" content=\"X-CSRF-TOKEN\"><meta name=\"_csrf_parameterName\" content=\"_csrf\">",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.5.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://dunwoodie.edu/wp-login.php",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE="
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://dunwoodie.edu/wp-json/wp/v2/",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-wvvvoDG0PhVzf1NgF5L6A9&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    },
+    "/wp-content/": {
+      "url": "https://dunwoodie.edu/wp-content/",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-Y3d1hvgwJlIyXd5qXXHWlm&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    },
+    "/user/login": {
+      "url": "https://dunwoodie.edu/user/login",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-aNceP2kdbywiHRwFFN0AOr&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    },
+    "/core/install.php": {
+      "url": "https://dunwoodie.edu/core/install.php",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE="
+    },
+    "/cas/login": {
+      "url": "https://dunwoodie.edu/cas/login",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-HwWbyjWsDbYEga0alOHxy3&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://dunwoodie.edu/Shibboleth.sso/Metadata",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-JMjACUkQs1S1VKpTitoAey&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Amazon Web Services",
+      "confidence": 100,
+      "evidence": [
+        "Header: x-amz-id-2=",
+        "Header: x-amz-request-id="
+      ]
+    },
+    {
+      "name": "Cloudflare",
+      "confidence": 100,
+      "evidence": [
+        "Header: Server=^cloudflare$",
+        "Header: cf-cache-status=",
+        "Header: cf-ray="
+      ]
+    },
+    {
+      "name": "CloudFlare",
+      "confidence": 100,
+      "evidence": [
+        "Header: server=cloudflare",
+        "Header: cf-ray=.*"
+      ]
+    },
+    {
+      "name": "Populi",
+      "confidence": 100,
+      "evidence": [
+        "HTML: populi.*college",
+        "HTML: populiweb\\.com",
+        "JS: Populi (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: gtag\\('config', 'G-[A-Z0-9]+",
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "HTML: gtag\\('js'",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "HTTP/3",
+      "confidence": 80,
+      "evidence": [
+        "Header: Alt-Svc=h3"
+      ]
+    },
+    {
+      "name": "Cloudflare Bot Management",
+      "confidence": 70,
+      "evidence": [
+        "Cookie: __cf_bm"
+      ]
+    },
+    {
+      "name": "Java",
+      "confidence": 70,
+      "evidence": [
+        "Cookie: JSESSIONID"
+      ]
+    },
+    {
+      "name": "Vimeo",
+      "confidence": 70,
+      "evidence": [
+        "HTML: vimeo",
+        "JS: Vimeo (HTML)"
+      ]
+    },
+    {
+      "name": "EBSCO Discovery Service",
+      "confidence": 70,
+      "evidence": [
+        "HTML: eds.*ebsco",
+        "JS: EDS (HTML)"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 40,
+      "evidence": [
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: gtag\\("
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 40,
+      "evidence": [
+        "HTML: googletagmanager\\.com"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "25Live",
+      "confidence": 40,
+      "evidence": [
+        "HTML: event.*management"
+      ]
+    },
+    {
+      "name": "Focus School Software",
+      "confidence": 40,
+      "evidence": [
+        "HTML: focus.*sis"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Canto",
+      "confidence": 30,
+      "evidence": [
+        "JS: Canto (HTML)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ext (HTML)"
+      ]
+    },
+    {
+      "name": "Four",
+      "confidence": 30,
+      "evidence": [
+        "JS: Four (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 30,
+      "evidence": [
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

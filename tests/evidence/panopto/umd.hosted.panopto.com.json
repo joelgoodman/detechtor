@@ -1,0 +1,64 @@
+{
+  "technology": "Panopto",
+  "url": "https://umd.hosted.panopto.com/",
+  "final_url": "https://umd.hosted.panopto.com/Panopto/Pages/Home.aspx",
+  "captured_at": "2026-04-21T19:36:11.486Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/panopto/umd.hosted.panopto.com.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "private, no-store",
+      "content-length": "81658",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:36:10 GMT",
+      "p3p": "CP=\"Some Browsers Require This In Order to Set Third Party Cookies\"",
+      "strict-transport-security": "max-age=31536000"
+    },
+    "scripts": [],
+    "meta": {},
+    "cookies": [],
+    "dom": {},
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://umd.hosted.panopto.com/wp-login.php",
+      "status": 403
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://umd.hosted.panopto.com/wp-json/wp/v2/",
+      "status": 403
+    },
+    "/wp-content/": {
+      "url": "https://umd.hosted.panopto.com/wp-content/",
+      "status": 403
+    },
+    "/user/login": {
+      "url": "https://umd.hosted.panopto.com/user/login",
+      "status": 403
+    },
+    "/core/install.php": {
+      "url": "https://umd.hosted.panopto.com/core/install.php",
+      "status": 403
+    },
+    "/cas/login": {
+      "url": "https://umd.hosted.panopto.com/cas/login",
+      "status": 403
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://umd.hosted.panopto.com/Shibboleth.sso/Metadata",
+      "status": 403
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    }
+  ],
+  "target_tech_matched": false
+}

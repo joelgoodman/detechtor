@@ -1,0 +1,201 @@
+{
+  "technology": "Shibboleth",
+  "url": "https://shibboleth.umich.edu/idp/profile/SAML2/Redirect/SSO",
+  "final_url": "https://shibboleth.umich.edu/idp/profile/SAML2/Redirect/SSO",
+  "captured_at": "2026-04-21T19:36:15.604Z",
+  "response_status": 500,
+  "html_file": "tests/evidence/shibboleth/shibboleth.umich.edu-idp-profile-saml2-redirect-sso.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "no-store",
+      "content-security-policy": "frame-ancestors 'self' https://*.umich.edu https://*.umdearborn.edu https://*.umflint.edu https://*.instructure.com https://*.mdcreporting.org https://mdcreporting.org;",
+      "content-security-policy-report-only": "frame-ancestors 'none';               report-to csp-strict;               report-uri https://shibboleth.umich.edu/cgi-bin/csp_report?variant=strict\nframe-ancestors 'self' https://*.umich.edu https://*.umdearborn.edu https://*.umflint.edu                             https://*.instructure.com https://*.mdcreporting.org https://mdcreporting.org;               report-to csp-target;               report-uri https://shibboleth.umich.edu/cgi-bin/csp_report?variant=target",
+      "content-type": "text/html;charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:36:15 GMT",
+      "report-to": "{\"group\":\"csp-strict\",\"max_age\":10886400,\"endpoints\":[{\"url\":\"https://shibboleth.umich.edu/cgi-bin/csp_report?variant=strict\"}]}\n{\"group\":\"csp-target\",\"max_age\":10886400,\"endpoints\":[{\"url\":\"https://shibboleth.umich.edu/cgi-bin/csp_report?variant=target\"}]}",
+      "server": "Apache",
+      "strict-transport-security": "max-age=0\nmax-age=0",
+      "transfer-encoding": "chunked",
+      "x-cnection": "close",
+      "x-frame-options": "DENY"
+    },
+    "scripts": [],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+      "robots": "noindex"
+    },
+    "cookies": [
+      {
+        "name": "__Host-JSESSIONID",
+        "value": "DE548BF9580CA359AE8B347AB67FC760",
+        "domain": "shibboleth.umich.edu"
+      },
+      {
+        "name": "BIGipServer~IAM-PROD-MACC~SHIBBOLETH_HTTPS",
+        "value": "935842701.47873.0000",
+        "domain": "shibboleth.umich.edu"
+      }
+    ],
+    "dom": {
+      "title": "U-M Weblogin - Unexpected Error",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=5.0\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n        <meta name=\"robots\" content=\"noindex\">\n\n        <link rel=\"shortcut icon\" href=\"/images/favicon.ico\">\n        <link rel=\"stylesheet\" href=\"/css/weblogin.min.css?v=1776370044\">\n\n        <!--[if lt IE 9]>\n        <script src=\"/js/html5shiv.min.js?v=1776370044\"></script>\n        <script src=\"/js/respond.min.js?v=1776370044\"></script>\n        <![endif]-->\n    <title>U-M Weblogin - Unexpected Error</title>\n  ",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://shibboleth.umich.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://shibboleth.umich.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/wp-content/": {
+      "url": "https://shibboleth.umich.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/user/login": {
+      "url": "https://shibboleth.umich.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/core/install.php": {
+      "url": "https://shibboleth.umich.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/cas/login": {
+      "url": "https://shibboleth.umich.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://shibboleth.umich.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 80,
+      "evidence": [
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "Shibboleth",
+      "confidence": 70,
+      "evidence": [
+        "HTML: shibboleth",
+        "JS: Shibboleth (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Blackboard Transact",
+      "confidence": 30,
+      "evidence": [
+        "JS: Transact (HTML)"
+      ]
+    },
+    {
+      "name": "Transact Campus",
+      "confidence": 30,
+      "evidence": [
+        "JS: Transact (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

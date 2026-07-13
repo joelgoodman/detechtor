@@ -1,0 +1,610 @@
+{
+  "technology": "CAS",
+  "url": "https://www.cuit.columbia.edu/cas-authentication",
+  "final_url": "https://www.cuit.columbia.edu/cas-authentication",
+  "captured_at": "2026-04-21T19:35:00.756Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/cas/www.cuit.columbia.edu-cas-authentication.html",
+  "evidence": {
+    "headers": {
+      "age": "0",
+      "cache-control": "no-store,no-cache,private",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9efed44a2f338a0a-ATL",
+      "content-encoding": "gzip",
+      "content-language": "en",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:34:59 GMT",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Tue, 21 Apr 2026 18:43:11 GMT",
+      "server": "cloudflare",
+      "set-cookie": "isColumbiaSites=true; expires=Mon, 14 Sep 2026 18:43:13 GMT; Max-Age=12611294; path=/; secure; httponly; samesite=lax\n__cf_bm=mvRx7rm6cwD3mjw4kSJqHBR_CXqPnwshoUywIzI0dGs-1776800098.904431-1.0.1.1-onX7StJtB8cGU9XU0.ubWdo15M.cqvAxJI1.rAyHfd.VYmZzyK6AYmk2Ip7ZsRffhqRabLjBZDGwC03EDHsP8aHtwy3cDKpvdc.Z7gckl.mdHxAwC1Yv8TgzqweGUlCH; HttpOnly; Secure; Path=/; Domain=columbia.edu; Expires=Tue, 21 Apr 2026 20:04:59 GMT\n_cfuvid=jokJIteP_59bLdqhqRKEMT42jEfDUKOUWghcWotDnh0-1776800098.904431-1.0.1.1-zgZQtVRTUlOdUQdw0GxNLY3tqj7p2wWFoc3pzEbqE34; HttpOnly; SameSite=None; Secure; Path=/; Domain=columbia.edu",
+      "strict-transport-security": "max-age=14400; preload",
+      "vary": "X-Bin,Accept-Encoding",
+      "x-adv-varnish": "Cache-enabled",
+      "x-cache-control": "max-age=21600, public",
+      "x-content-type-options": "nosniff",
+      "x-deflate-key": "b91f02cf5af93c1c9141ba365d5852c9d12df6fd39f8b5d9c3b80dc1bc1428e1",
+      "x-drupal-cache": "HIT",
+      "x-drupal-dynamic-cache": "MISS",
+      "x-frame-options": "SAMEORIGIN",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "x-grace": "21600.000",
+      "x-tag": "1k2y 1k7c 1k74 1k7x 1k9m 1k7k 1k6x 1kdf 1k8q 1kbb 1k8e 1k7p 1k6a 1k8f 1k8c 1k7l 1k7v 1k8f 1k7p 2x 2j 1clu 4e 2h3hv 1k68 2h3ho 2h3hn 1k6t 2h3hu 2h3ht 2h3hm 2h3hl 2h3hk 2h3hj 2h3hi 2h3hh 2h3hg 2h3hf 1k5q 16pp 2h3he 16po 2h3hd 16pr 2h3hc 2h3hb 16ps 2h3hq 2h3hz 2h3hy 2h3ir 2h3iq 2h3it 2h3hx 2h3hw 2h3iv 1bl 1k3w 2p 1k96 2q1j 1k57 1c2k 1clb 1chy 1cle 1chz 1chw 1chx 1clf 1c6n 1c48 1c9 1c6g 1c2k 1cpj 1cgs 1c6i 1c2m 1c2j 1c5o 1c6f 1cdm 1c2d 1cgd 1ccu 1cfp 1cob 1cla 1clq 1c7 1c95 1c7g 1ccp 1cco 1ciw 1c7l 1c7z 1clv 1ccj 1c7h 2l 1k3n 4z 1k6v",
+      "x-ttl": "43200",
+      "x-varnish-cache": "MISS"
+    },
+    "scripts": [
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-526MFZQ",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-W1QZFY2E7L&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://www.google-analytics.com/analytics.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=UA-3128191-1",
+        "version": null
+      },
+      {
+        "src": "https://www.cuit.columbia.edu/sites/www.cuit.columbia.edu/files/google_tag/primary/google_tag.script.js?tdsiw2",
+        "version": null
+      },
+      {
+        "src": "https://use.typekit.net/rke7urc.js",
+        "version": null
+      },
+      {
+        "src": "https://www.cuit.columbia.edu/sites/www.cuit.columbia.edu/files/js/js_pAMVkp8DLCRbm4S6MDiKtTWijjGb8BrM1lgB2NtS2cg.js?scope=header&delta=0&language=en&theme=cu_admin1&include=eJxtzU0OxCAIhuELtWN6IoNKLRMEo7jo7fuTWZnZsHjeLyGoWrcG1WXWALx2O5kkL3F4SIVk-4UXGJu5934iE4o9GqCjtwMLbg5i1JZIZQ7fvu73K2xzMAiMOyGnp5TBRnW0qvciDDMV95-XrJoZPQjwaRS7m-ECcApV_Q",
+        "version": null
+      },
+      {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.cuit.columbia.edu/sites/www.cuit.columbia.edu/files/js/js_Rt0msNWKTXcx3TP4JcM6T9YGkB1TodxIPGdGd07KxHE.js?scope=header&delta=2&language=en&theme=cu_admin1&include=eJxtzU0OxCAIhuELtWN6IoNKLRMEo7jo7fuTWZnZsHjeLyGoWrcG1WXWALx2O5kkL3F4SIVk-4UXGJu5934iE4o9GqCjtwMLbg5i1JZIZQ7fvu73K2xzMAiMOyGnp5TBRnW0qvciDDMV95-XrJoZPQjwaRS7m-ECcApV_Q",
+        "version": null
+      },
+      {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.cuit.columbia.edu/sites/www.cuit.columbia.edu/files/js/js_Xr__UcJvUeOds6SL8-GGo-AOtcAcetJCbh2X2zD5rYI.js?scope=header&delta=4&language=en&theme=cu_admin1&include=eJxtzU0OxCAIhuELtWN6IoNKLRMEo7jo7fuTWZnZsHjeLyGoWrcG1WXWALx2O5kkL3F4SIVk-4UXGJu5934iE4o9GqCjtwMLbg5i1JZIZQ7fvu73K2xzMAiMOyGnp5TBRnW0qvciDDMV95-XrJoZPQjwaRS7m-ECcApV_Q",
+        "version": null
+      },
+      {
+        "src": "https://code.jquery.com/ui/1.12.1/jquery-ui.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.cuit.columbia.edu/sites/www.cuit.columbia.edu/files/js/js_lIpCQQVFXYqJoAvJbveeo-nnK4FmD4Bfy7OYgxLeFSc.js?scope=header&delta=6&language=en&theme=cu_admin1&include=eJxtzU0OxCAIhuELtWN6IoNKLRMEo7jo7fuTWZnZsHjeLyGoWrcG1WXWALx2O5kkL3F4SIVk-4UXGJu5934iE4o9GqCjtwMLbg5i1JZIZQ7fvu73K2xzMAiMOyGnp5TBRnW0qvciDDMV95-XrJoZPQjwaRS7m-ECcApV_Q",
+        "version": null
+      },
+      {
+        "src": "https://www.cuit.columbia.edu/sites/www.cuit.columbia.edu/files/js/js_LyQTB60vh9-Mw8n8iUF8G5NrTz4iHbXlR8P435UNYPk.js?scope=footer&delta=0&language=en&theme=cu_admin1&include=eJxtzU0OxCAIhuELtWN6IoNKLRMEo7jo7fuTWZnZsHjeLyGoWrcG1WXWALx2O5kkL3F4SIVk-4UXGJu5934iE4o9GqCjtwMLbg5i1JZIZQ7fvu73K2xzMAiMOyGnp5TBRnW0qvciDDMV95-XrJoZPQjwaRS7m-ECcApV_Q",
+        "version": null
+      }
+    ],
+    "meta": {
+      "description": "CAS authentication CAS login page CAS customization CAS registration CAS configuration MFA authentication",
+      "generator": "Drupal 10 (https://www.drupal.org)",
+      "mobileoptimized": "width",
+      "handheldfriendly": "true",
+      "viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover"
+    },
+    "cookies": [
+      {
+        "name": "__cf_bm",
+        "value": "H74btrhpylqfZ1cJEOOV95z1_Q2zwAKTPZS3mk9CH3g-1776800099.9904685-1",
+        "domain": ".columbia.edu"
+      },
+      {
+        "name": "BIGipServer~CUIT~csites-origin-prod.cc.columbia.edu-128.59.105.139.443-pool",
+        "value": "!OYcgzWAkgk14XALFPpCb/saATiaYiuM0lN1IfveJfSmBDH03rNm4KNH1AYinQHa",
+        "domain": "www.cuit.columbia.edu"
+      },
+      {
+        "name": "isColumbiaSites",
+        "value": "true",
+        "domain": "www.cuit.columbia.edu"
+      },
+      {
+        "name": "_cfuvid",
+        "value": "jokJIteP_59bLdqhqRKEMT42jEfDUKOUWghcWotDnh0-1776800098.904431-1.",
+        "domain": ".columbia.edu"
+      },
+      {
+        "name": "_ga_W1QZFY2E7L",
+        "value": "GS2.1.s1776800099$o1$g0$t1776800099$j60$l0$h1632644300",
+        "domain": ".columbia.edu"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.1.1180092673.1776800100",
+        "domain": ".columbia.edu"
+      }
+    ],
+    "dom": {
+      "title": "CAS Authentication | Columbia University Information Technology",
+      "bodyClasses": "layout-no-sidebars page-node-1332 cu-profile-admin node-cu_page path-node page-node-type-cu-page ng-scope break992 banner-loaded",
+      "bodyId": "",
+      "headContent": "<style type=\"text/css\">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type=\"text/css\">.uib-time input{width:50px;}</style><style type=\"text/css\">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type=\"text/css\">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type=\"text/css\">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type=\"text/css\">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type=\"text/css\">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style>@charset \"UTF-8\";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>\n    <meta charset=\"utf-8\">\n<script src=\"https://www.googletagmanager.com/gtm.js?id=GTM-526MFZQ\" async=\"\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-W1QZFY2E7L&amp;cx=c&amp;gtm=4e64h1\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.google-analytics.com/analytics.js\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=UA-3128191-1\"></script>\n<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag(\"js\", new Date());gtag(\"set\", \"developer_id.dMDhkMT\", true);gtag(\"config\", \"UA-3128191-1\", {\"groups\":\"default\",\"anonymize_ip\":true,\"page_placeholder\":\"PLACEHOLDER_page_path\",\"allow_ad_personalization_signals\":false});gtag(\"config\", \"G-W1QZFY2E7L\", {\"groups\":\"default\",\"page_placeholder\":\"PLACEHOLDER_page_location\",\"allow_ad_personalization_signals\":false});</script>\n<meta name=\"description\" content=\"CAS authentication CAS login page CAS customization CAS registration CAS configuration MFA authentication\">\n<meta name=\"Generator\" content=\"Drupal 10 (https://www.drupal.org)\">\n<meta name=\"MobileOptimized\" content=\"width\">\n<meta name=\"HandheldFriendly\" content=\"true\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, viewport-fit=cover\">\n<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n<link rel=\"icon\" href=\"/themes/custom/columbia/favicon-crown.png\" type=\"image/png\">\n<link rel=\"canonical\" href=\"https://www.cuit.columbia.edu/cas-authentication\">\n<link rel=\"shortlink\" href=\"https://www.cuit.columbia.edu/node/1332\">\n<script src=\"/sites/www.cuit.columbia.edu/files/google_tag/primary/google_tag.script.js?tdsiw2\" defer=\"\"></script>\n\n\n\n      <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\n    <title>CAS Authentication | Columbia University Information Technology</title>\n\n    <script src=\"https://use.typekit.net/rke7urc.js\"></script>\n    <style type=\"text/css\">.tk-proxima-nova{font-family:\"proxima-nova\",sans-serif;}.tk-adobe-garamond-pro{font-family:\"adobe-garamond-pro\",sans-serif;}.tk-trajan-pro-3{font-family:\"trajan-pro-3\",sans-serif;}</style><style type=\"text/css\">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n7&v=3) format(\"woff2\"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n7&v=3) format(\"woff\"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n7&v=3) format(\"opentype\");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/154cda/00000000000000007735e601/30/l?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n1&v=3) format(\"woff2\"),url(https://use.typekit.net/af/154cda/00000000000000007735e601/30/d?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n1&v=3) format(\"woff\"),url(https://use.typekit.net/af/154cda/00000000000000007735e601/30/a?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n1&v=3) format(\"opentype\");font-weight:100;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n6&v=3) format(\"woff2\"),url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n6&v=3) format(\"woff\"),url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n6&v=3) format(\"opentype\");font-weight:600;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n4&v=3) format(\"woff2\"),url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n4&v=3) format(\"woff\"),url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n4&v=3) format(\"opentype\");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/l?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=i4&v=3) format(\"woff2\"),url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/d?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=i4&v=3) format(\"woff\"),url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/a?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=i4&v=3) format(\"opentype\");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/l?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n3&v=3) format(\"woff2\"),url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/d?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n3&v=3) format(\"woff\"),url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/a?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n3&v=3) format(\"opentype\");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/23e139/00000000000000007735e605/30/l?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n5&v=3) format(\"woff2\"),url(https://use.typekit.net/af/23e139/00000000000000007735e605/30/d?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n5&v=3) format(\"woff\"),url(https://use.typekit.net/af/23e139/00000000000000007735e605/30/a?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n5&v=3) format(\"opentype\");font-weight:500;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:adobe-garamond-pro;src:url(https://use.typekit.net/af/5cace6/00000000000000003b9b00c2/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=i4&v=3) format(\"woff2\"),url(https://use.typekit.net/af/5cace6/00000000000000003b9b00c2/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=i4&v=3) format(\"woff\"),url(https://use.typekit.net/af/5cace6/00000000000000003b9b00c2/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=i4&v=3) format(\"opentype\");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:adobe-garamond-pro;src:url(https://use.typekit.net/af/2011b6/00000000000000003b9b00c1/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format(\"woff2\"),url(https://use.typekit.net/af/2011b6/00000000000000003b9b00c1/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format(\"woff\"),url(https://use.typekit.net/af/2011b6/00000000000000003b9b00c1/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format(\"opentype\");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:trajan-pro-3;src:url(https://use.typekit.net/af/6799c3/000000000000000000012e92/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format(\"woff2\"),url(https://use.typekit.net/af/6799c3/000000000000000000012e92/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format(\"woff\"),url(https://use.typekit.net/af/6799c3/000000000000000000012e92/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format(\"opentype\");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: false });}catch(e){}</script>\n\n    <link rel=\"stylesheet\" media=\"all\" href=\"/sites/www.cuit.columbia.edu/files/css/css_O7RaYlgZfcma0kIHLx89b_aofPbBZFxAoQl2p41S0Cs.css?delta=0&amp;language=en&amp;theme=cu_admin1&amp;include=eJxNjV0KgDAMgy80NzyRdK5sk-6Htnvw9uoQ9CWQLyTxrakoQ3eRmgdaRE_KNZp9bBBKrusbTEDI6qbanTJWtZqw4JN5ENym-zf-9JAlIQRk04Eh3p9JXODRgexH7Kh9eMqSMBg5RbG4Z-UCiOFA9g\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/sites/www.cuit.columbia.edu/files/css/css_KgTNfCh8ZplNluBTDO5xK96uO_4rcwBU4z5YAgBTpN8.css?delta=1&amp;language=en&amp;theme=cu_admin1&amp;include=eJxNjV0KgDAMgy80NzyRdK5sk-6Htnvw9uoQ9CWQLyTxrakoQ3eRmgdaRE_KNZp9bBBKrusbTEDI6qbanTJWtZqw4JN5ENym-zf-9JAlIQRk04Eh3p9JXODRgexH7Kh9eMqSMBg5RbG4Z-UCiOFA9g\">\n<link rel=\"stylesheet\" media=\"print\" href=\"/sites/www.cuit.columbia.edu/files/css/css_53LVGfeaNUJE68L2vroRf6vy96PmSjLWU5CBRsPcENE.css?delta=2&amp;language=en&amp;theme=cu_admin1&amp;include=eJxNjV0KgDAMgy80NzyRdK5sk-6Htnvw9uoQ9CWQLyTxrakoQ3eRmgdaRE_KNZp9bBBKrusbTEDI6qbanTJWtZqw4JN5ENym-zf-9JAlIQRk04Eh3p9JXODRgexH7Kh9eMqSMBg5RbG4Z-UCiOFA9g\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/sites/www.cuit.columbia.edu/files/css/css_8QJzYBVTgT37Ob2Fv5_egfW2LjQaaOHtL1pw2fmOBAI.css?delta=3&amp;language=en&amp;theme=cu_admin1&amp;include=eJxNjV0KgDAMgy80NzyRdK5sk-6Htnvw9uoQ9CWQLyTxrakoQ3eRmgdaRE_KNZp9bBBKrusbTEDI6qbanTJWtZqw4JN5ENym-zf-9JAlIQRk04Eh3p9JXODRgexH7Kh9eMqSMBg5RbG4Z-UCiOFA9g\">\n<link rel=\"stylesheet\" media=\"print\" href=\"/sites/www.cuit.columbia.edu/files/css/css_sfAT2Rdjw9MYJIJhG0WGzoqk6o9-frGoiuIsTKxL_QM.css?delta=4&amp;language=en&amp;theme=cu_admin1&amp;include=eJxNjV0KgDAMgy80NzyRdK5sk-6Htnvw9uoQ9CWQLyTxrakoQ3eRmgdaRE_KNZp9bBBKrusbTEDI6qbanTJWtZqw4JN5ENym-zf-9JAlIQRk04Eh3p9JXODRgexH7Kh9eMqSMBg5RbG4Z-UCiOFA9g\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/sites/www.cuit.columbia.edu/files/css/css_EzN16KMwWDf7VVZMHVBguuq43vC37PsrMaJWjdmnM9o.css?delta=5&amp;language=en&amp;theme=cu_admin1&amp;include=eJxNjV0KgDAMgy80NzyRdK5sk-6Htnvw9uoQ9CWQLyTxrakoQ3eRmgdaRE_KNZp9bBBKrusbTEDI6qbanTJWtZqw4JN5ENym-zf-9JAlIQRk04Eh3p9JXODRgexH7Kh9eMqSMBg5RbG4Z-UCiOFA9g\">\n<link rel=\"stylesheet\" media=\"all\" href=\"https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/sites/www.cuit.columbia.edu/files/css/css_adTN_KsMxeIffcMhTiHA-NLsqZJ5slhMrGh3BtbVc28.css?delta=7&amp;language=en&amp;theme=cu_admin1&amp;include=eJxNjV0KgDAMgy80NzyRdK5sk-6Htnvw9uoQ9CWQLyTxrakoQ3eRmgdaRE_KNZp9bBBKrusbTEDI6qbanTJWtZqw4JN5ENym-zf-9JAlIQRk04Eh3p9JXODRgexH7Kh9eMqSMBg5RbG4Z-UCiOFA9g\">\n\n\n    <script type=\"application/json\" data-drupal-selector=\"drupal-settings-json\">{\"path\":{\"baseUrl\":\"\\/\",\"pathPrefix\":\"\",\"currentPath\":\"node\\/1332\",\"currentPathIsAdmin\":false,\"isFront\":false,\"currentLanguage\":\"en\"},\"pluralDelimiter\":\"\\u0003\",\"suppressDeprecationErrors\":true,\"google_analytics\":{\"account\":\"UA-3128191-1\",\"trackOutbound\":true,\"trackMailto\":true,\"trackTel\":true,\"trackDownload\":true,\"trackDownloadExtensions\":\"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip\"},\"search_network\":\"default\",\"page_type\":\"cu_page\",\"cu_alert\":{\"master\":\"preparedness.columbia.edu\"},\"user\":{\"uid\":0,\"permissionsHash\":\"16fd87116201e431ec13dc325d171410e052b6c95740a3c12f44e3178ad63dd7\"}}</script>\n<script src=\"/sites/www.cuit.columbia.edu/files/js/js_pAMVkp8DLCRbm4S6MDiKtTWijjGb8BrM1lgB2NtS2cg.js?scope=header&amp;delta=0&amp;language=en&amp;theme=cu_admin1&amp;include=eJxtzU0OxCAIhuELtWN6IoNKLRMEo7jo7fuTWZnZsHjeLyGoWrcG1WXWALx2O5kkL3F4SIVk-4UXGJu5934iE4o9GqCjtwMLbg5i1JZIZQ7fvu73K2xzMAiMOyGnp5TBRnW0qvciDDMV95-XrJoZPQjwaRS7m-ECcApV_Q\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js\"></script>\n<script src=\"/sites/www.cuit.columbia.edu/files/js/js_Rt0msNWKTXcx3TP4JcM6T9YGkB1TodxIPGdGd07KxHE.js?scope=header&amp;delta=2&amp;language=en&amp;theme=cu_admin1&amp;include=eJxtzU0OxCAIhuELtWN6IoNKLRMEo7jo7fuTWZnZsHjeLyGoWrcG1WXWALx2O5kkL3F4SIVk-4UXGJu5934iE4o9GqCjtwMLbg5i1JZIZQ7fvu73K2xzMAiMOyGnp5TBRnW0qvciDDMV95-XrJoZPQjwaRS7m-ECcApV_Q\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data.min.js\"></script>\n<script src=\"/sites/www.cuit.columbia.edu/files/js/js_Xr__UcJvUeOds6SL8-GGo-AOtcAcetJCbh2X2zD5rYI.js?scope=header&amp;delta=4&amp;language=en&amp;theme=cu_admin1&amp;include=eJxtzU0OxCAIhuELtWN6IoNKLRMEo7jo7fuTWZnZsHjeLyGoWrcG1WXWALx2O5kkL3F4SIVk-4UXGJu5934iE4o9GqCjtwMLbg5i1JZIZQ7fvu73K2xzMAiMOyGnp5TBRnW0qvciDDMV95-XrJoZPQjwaRS7m-ECcApV_Q\"></script>\n<script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.min.js\"></script>\n<script src=\"/sites/www.cuit.columbia.edu/files/js/js_lIpCQQVFXYqJoAvJbveeo-nnK4FmD4Bfy7OYgxLeFSc.js?scope=header&amp;delta=6&amp;language=en&amp;theme=cu_admin1&amp;include=eJxtzU0OxCAIhuELtWN6IoNKLRMEo7jo7fuTWZnZsHjeLyGoWrcG1WXWALx2O5kkL3F4SIVk-4UXGJu5934iE4o9GqCjtwMLbg5i1JZIZQ7fvu73K2xzMAiMOyGnp5TBRnW0qvciDDMV95-XrJoZPQjwaRS7m-ECcApV_Q\"></script>\n\n      <style id=\"fit-vids-style\">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.7.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.cuit.columbia.edu/wp-login.php",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-V7uVWUO7qFI9riF6uXG6Ew&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.cuit.columbia.edu/wp-json/wp/v2/",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-LBmYmsS0FatYF4BEngyeU4&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    },
+    "/wp-content/": {
+      "url": "https://www.cuit.columbia.edu/wp-content/",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-5qMcYm0NnPECWSEMNImIr5&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    },
+    "/user/login": {
+      "url": "https://www.cuit.columbia.edu/user/login",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-GoRPqSMqTmOcKLqwIj0EMO&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    },
+    "/core/install.php": {
+      "url": "https://www.cuit.columbia.edu/core/install.php",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-XglENncySUTSAFoiDu2nMb&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    },
+    "/cas/login": {
+      "url": "https://www.cuit.columbia.edu/cas/login",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-tFexKXXPgpZi3ZgYGplbab&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.cuit.columbia.edu/Shibboleth.sso/Metadata",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-c7OKzxcAEMgzn1PkSGR4Ro&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Angular",
+      "confidence": 100,
+      "evidence": [
+        "HTML: ng-app",
+        "HTML: angular",
+        "HTML: data-ng-"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Cloudflare",
+      "confidence": 100,
+      "evidence": [
+        "Header: Server=^cloudflare$",
+        "Header: cf-cache-status=",
+        "Header: cf-ray="
+      ]
+    },
+    {
+      "name": "Drupal",
+      "confidence": 100,
+      "evidence": [
+        "HTML: drupal",
+        "Header: X-Drupal-Cache=.*",
+        "Header: X-Generator=Drupal",
+        "Meta: generator=Drupal",
+        "JS: Drupal (HTML)"
+      ]
+    },
+    {
+      "name": "CloudFlare",
+      "confidence": 100,
+      "evidence": [
+        "Header: server=cloudflare",
+        "Header: cf-ray=.*"
+      ]
+    },
+    {
+      "name": "CAS",
+      "confidence": 100,
+      "evidence": [
+        "HTML: /cas/login",
+        "HTML: central.*authentication.*service",
+        "HTML: apereo.*cas",
+        "HTML: central.*authentication",
+        "HTML: central authentication service",
+        "JS: CAS (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 80,
+      "evidence": [
+        "HTML: google-analytics\\.com/analytics\\.js",
+        "HTML: gtag\\("
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Varnish",
+      "confidence": 80,
+      "evidence": [
+        "Header: X-Varnish-Cache="
+      ]
+    },
+    {
+      "name": "AngularJS",
+      "confidence": 70,
+      "evidence": [
+        "HTML: <(?:div|html)[^>]+ng-app=",
+        "JS: angular (HTML)"
+      ]
+    },
+    {
+      "name": "Cloudflare Bot Management",
+      "confidence": 70,
+      "evidence": [
+        "Cookie: __cf_bm"
+      ]
+    },
+    {
+      "name": "Shibboleth",
+      "confidence": 70,
+      "evidence": [
+        "HTML: shibboleth",
+        "JS: Shibboleth (HTML)"
+      ]
+    },
+    {
+      "name": "Panopto",
+      "confidence": 70,
+      "evidence": [
+        "HTML: panopto",
+        "JS: Panopto (HTML)"
+      ]
+    },
+    {
+      "name": "Turnitin",
+      "confidence": 70,
+      "evidence": [
+        "HTML: turnitin",
+        "JS: Turnitin (HTML)"
+      ]
+    },
+    {
+      "name": "Qualtrics CoreXM",
+      "confidence": 70,
+      "evidence": [
+        "HTML: qualtrics",
+        "JS: Qualtrics (HTML)"
+      ]
+    },
+    {
+      "name": "InfoEd",
+      "confidence": 70,
+      "evidence": [
+        "HTML: infoed",
+        "JS: InfoEd (HTML)"
+      ]
+    },
+    {
+      "name": "Duo Security",
+      "confidence": 70,
+      "evidence": [
+        "HTML: duo.*security",
+        "JS: Duo (HTML)"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "LearnDash",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ld.*course"
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "Blackboard Transact",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*card"
+      ]
+    },
+    {
+      "name": "CBORD",
+      "confidence": 40,
+      "evidence": [
+        "HTML: get.*system"
+      ]
+    },
+    {
+      "name": "EMS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ems.*software"
+      ]
+    },
+    {
+      "name": "Localist",
+      "confidence": 40,
+      "evidence": [
+        "HTML: event.*calendar"
+      ]
+    },
+    {
+      "name": "Anthology Student",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*management"
+      ]
+    },
+    {
+      "name": "Evisions",
+      "confidence": 40,
+      "evidence": [
+        "HTML: evisions"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "SAML",
+      "confidence": 40,
+      "evidence": [
+        "HTML: saml"
+      ]
+    },
+    {
+      "name": "Transact Campus",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*card"
+      ]
+    },
+    {
+      "name": "Adobe Experience Manager",
+      "confidence": 30,
+      "evidence": [
+        "JS: CQ (HTML)"
+      ]
+    },
+    {
+      "name": "Chart.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: Chart (HTML)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ext (HTML)"
+      ]
+    },
+    {
+      "name": "Fera",
+      "confidence": 30,
+      "evidence": [
+        "JS: fera (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Moment.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: moment (HTML)"
+      ]
+    },
+    {
+      "name": "Noticeable",
+      "confidence": 30,
+      "evidence": [
+        "JS: noticeable (HTML)"
+      ]
+    },
+    {
+      "name": "Qualtrics",
+      "confidence": 30,
+      "evidence": [
+        "JS: Qualtrics (HTML)"
+      ]
+    },
+    {
+      "name": "Resova",
+      "confidence": 30,
+      "evidence": [
+        "JS: baseUrl (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Twitter typeahead.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: typeahead (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Workday Student",
+      "confidence": 30,
+      "evidence": [
+        "JS: WD (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

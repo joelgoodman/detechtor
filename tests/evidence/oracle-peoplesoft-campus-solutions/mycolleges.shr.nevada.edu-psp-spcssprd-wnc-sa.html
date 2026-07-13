@@ -1,0 +1,384 @@
+<!DOCTYPE html><html dir="ltr" lang="en"><!-- Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved. --><!--
+* ***************************************************************
+*  This software and related documentation are provided under a
+*  license agreement containing restrictions on use and
+*  disclosure and are protected by intellectual property
+*  laws. Except as expressly permitted in your license agreement
+*  or allowed by law, you may not use, copy, reproduce,
+*  translate, broadcast, modify, license, transmit, distribute,
+*  exhibit, perform, publish or display any part, in any form or
+*  by any means. Reverse engineering, disassembly, or
+*  decompilation of this software, unless required by law for
+*  interoperability, is prohibited.
+*  The information contained herein is subject to change without
+*  notice and is not warranted to be error-free. If you find any
+*  errors, please report them to us in writing.
+*
+*  Copyright (C) 1988, 2024, Oracle and/or its affiliates.
+*  All Rights Reserved.
+* ***************************************************************
+--><!-- 
+	Modified by Nevada System of Higher Education
+	System Computing Services
+	Last change: 20251125
+--><head>
+<title>Oracle PeopleSoft Sign-in</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes">  
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<script language="JavaScript">
+    var sDomain = ".nevada.edu";
+    try {
+        document.domain = ".nevada.edu";
+    }
+    catch (err) {; }
+</script>
+
+<script type="text/javascript">
+if (self === top) {
+    var fb = document.getElementById("ptfb");
+    fb.parentNode.removeChild(fb);
+} else {
+    try { 
+        top.location = self.location;
+    } catch(ex) {}
+}
+</script>
+<link type="text/css" href="/spcssprd/pt_custom_props.css" rel="stylesheet">
+
+<!-- 
+	Removed delivered stylesheet link
+	avasudeva 20210325
+-->
+<!--
+	<link  type="text/css" href="/spcssprd/signin.css" rel="stylesheet">
+-->
+<!-- 
+	End Change
+-->
+
+<!--
+	Mod to swap stylesheets and add custom password links
+	avasudeva 20210325
+-->
+	<link id="pagestyle" type="text/css" href="/spcssprd/wnc_signin.css" rel="stylesheet">
+	
+	<script language="JavaScript">
+	
+		var page_url = location.href;
+		var line1 = " ";
+		var line2 = " ";
+		var image1 = " ";
+		<!-- PNG 8173 - avasudeva - 11/25/2024 - add info for myTMCC login on Signin page - Start
+		-->
+		var line3 = " ";
+		var line4 = " ";
+		<!-- PNG 8173 - avasudeva - 11/25/2024 - add info for myTMCC login on Signin page - End
+		-->
+		function swapStyleSheet(sheet)
+		{
+			document.getElementById("pagestyle").setAttribute("href", sheet);
+		}
+		
+		function checkSite(site)
+		{
+			return page_url.search(site);
+		}	
+			
+		if (checkSite("/CSN/") > -1)
+			{ 
+				swapStyleSheet("/spcssprd/csn_signin.css"); 
+				line1 = "<a href='https://at.csn.edu/csn-password-admin'>Forgot your password?</a><br>";
+				image1 = "<h1><img src='/spcssprd/images/csn_logo.png' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='MyCSN' ></h1>";
+			}
+			else
+				{
+				if (checkSite("/GBC/") > -1)
+					{
+						swapStyleSheet("/spcssprd/gbc_signin.css");
+						line1 = "<a href='https://www.gbcnv.edu/passwords/'>Forgot your username?</a><br>";
+						<!-- PNG 3358 - avasudeva - 01/25/2023 - remove GBC Change Password Tile - Start 
+						-->
+						/*
+						line2 = "<a href='/psc/spcssprd/GBC/SA/c/MAINTAIN_SECURITY.EMAIL_PSWD.GBL?Page=EMAIL_PSWD&Action=U'>Forgot your password?</a><br>";
+						*/
+						<!-- PNG 3358 - avasudeva - 01/25/2023 - remove GBC Change Password Tile - End
+						-->
+						image1 = "<h1><img src='/spcssprd/images/gbc_logo.png' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='MyGBC' ></h1>";
+					}
+				else
+					{
+					if (checkSite("/NSC/") > -1)
+						{
+							swapStyleSheet("/spcssprd/nsc_signin.css");
+							line1 = "<a href='https://my.nsc.edu/web/mycampus/reset-password'>Forgot your password?</a><br>";
+							line2 = "<a href='https://my.nsc.edu/web/mycampus/5'>Need Help?</a><br>";
+							image1 = "<h1><img src='/spcssprd/images/nsc_logo.png' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='MyNSC' ></h1>";
+						}
+					else
+						{
+						if (checkSite("/TMC/") > -1)
+							{
+								swapStyleSheet("/spcssprd/tmcc_signin.css");
+								line1 = "<a href='https://www.tmcc.edu/information-technology/students/self-service'>Forgot username or password?</a><br>";
+								image1 = "<h1><img src='/spcssprd/images/tmcc_logo.png' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='MyTMCC' ></h1>";
+								<!-- PNG 8173 - avasudeva - 11/25/2024 - add info for myTMCC login on Signin page - Start
+								-->
+								line3 = "<p style='color:white'>To sign in to MyTMCC, please enter your TMCC Username and Password</p><br>";
+								line4 = "<br><p style='color:white'><b>Note:</b> Students are responsible for dropping classes they do not intend to complete.</p><br>";
+								<!-- PNG 8173 - avasudeva - 11/25/2024 - add info for myTMCC login on Signin page - End
+								-->
+							}
+						else
+							{
+							if (checkSite("/WNC/") > -1)
+								{
+									swapStyleSheet("/spcssprd/wnc_signin.css");
+									line1 = "<a href='https://www.wnc.edu/help/'>Can't Login?</a><br>";
+									image1 = "<h1><img src='/spcssprd/images/wnc_logo.png' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='MyWNC' ></h1>";
+								}
+							else
+								{
+									swapStyleSheet("/spcssprd/signin.css");
+									image1 = "<h1 aria-label='Oracle PeopleSoft Sign-in'><img src='/spcssprd/images/OracleLogo_Black.svg' class='ps-staticimg' alt='Oracle PeopleSoft Sign-in' title='SCS' ><span class='ps_logo-PS'> PeopleSoft</span></h1>";
+								}
+							}
+						} 	
+					}	
+				}
+	</script>
+<!--
+	End Mod
+-->
+
+<!-- PNG 11412(PRD "Sign Out" not going to institutional page) 20251112 avasudeva - fixing Cookie issue - Start Change -->
+<!-- ===== function deleteCookieAllScopes - to delete cookie across common scopes & paths ===== -->
+<script type="text/javascript">
+function deleteCookieAllScopes(name) {
+  var exp   = "expires=Thu, 01 Jan 1970 00:00:00 GMT";
+  var domains = [location.hostname, ".shr.nevada.edu", ".scsr.nevada.edu", ".nevada.edu"];
+  var paths   = ["/", "/psp", "/psc"];
+
+  // domain-scoped deletions
+  for (var d = 0; d < domains.length; d++) {
+    for (var p = 0; p < paths.length; p++) {
+      document.cookie = name + "=; path=" + paths[p] + "; " + exp + "; domain=" + domains[d];
+    }
+  }
+  // host-only deletions (no domain attribute)
+  for (var p2 = 0; p2 < paths.length; p2++) {
+    document.cookie = name + "=; path=" + paths[p2] + "; " + exp;
+  }
+}
+</script>
+<!-- ===== End function deleteCookieAllScopes ===== -->
+<!-- PNG 11412(PRD "Sign Out" not going to institutional page) 20251112 avasudeva - fixing Cookie issue - End Change -->
+	
+<script type="text/javascript" src="/spcssprd/signin.js"></script>
+
+</head>
+<body onload="ptSignon().login();">
+<div id="pswrapper">
+  <form id="login" name="login" method="post" action="?&amp;cmd=login&amp;languageCd=ENG" autocomplete="off">
+      <input type="hidden" id="lcsrf_token" name="lcsrf_token" value="TCIvv81irO8F3K1Y1auGan/clqgW0/C4DrxS6s8QnpE=">
+      <input type="hidden" id="timezoneOffset" name="timezoneOffset" value="0">
+      <input type="hidden" id="ptmode" name="ptmode" value="f">
+      <input type="hidden" id="ptlangcd" name="ptlangcd" value="ENG">
+      <input type="hidden" id="ptinstalledlang" name="ptinstalledlang" value="ENG">
+      <div class="signonMain">
+			<!-- 
+				Removed delivered header
+				avasudeva 20210325
+			-->
+			<!--
+			   <h1 dir="ltr" aria-label="Oracle PeopleSoft Sign-in"><img src="/spcssprd/images/OracleLogo_Black.svg" class="ps-staticimg" alt="" title="" ><span class="ps_logo-PS"> PeopleSoft</span></h1>
+			-->
+			<!--
+				End Change
+			-->
+			<!-- 
+				Added code to show Custom Header
+				avasudeva 20210325
+			-->
+			<script language="JavaScript">
+				document.write(image1);
+				<!-- PNG 8173 - avasudeva - 11/25/2024 - add info for myTMCC login on Signin page - Start
+				-->
+				document.write(line3);
+				document.write(line4);
+				<!-- PNG 8173 - avasudeva - 11/25/2024 - add info for myTMCC login on Signin page - End
+				-->
+			</script><h1><img src="/spcssprd/images/wnc_logo.png" class="ps-staticimg" alt="Oracle PeopleSoft Sign-in" title="MyWNC"></h1>  
+			<!--
+				End Change
+			-->			
+          <div class="ps_signinentry">            
+            <div id="ptloginerrorcont" class="ps_login_error">
+              <div class="ps_login_error_inner" id="ps_login_error_inner" tabindex="-1" role="heading" aria-level="2">
+		        <a id="error_link" name="error_link" tabindex="-1"><img src="/spcssprd/images/PT_LOGIN_ERROR.svg" alt="Error"></a>
+                <div class="psloginerror" id="discovery_error" name="discovery_error"></div>
+                <span class="psloginerror" id="login_error" name="login_error"></span>                     
+		   </div>
+		   <div class="ps_box-control psloginerror" id="browsercheck_error" name="browsercheck_error" aria-live="assertive" role="alert"></div>
+            </div>	       
+           <div> 
+               <span class="ps_label-show" id="ptLabelUserid"><label for="userid">User ID</label></span>
+           </div>
+            <div class="ps_box-control">
+               <input type="text" id="userid" name="userid" value="" title="User ID" autocomplete="username">
+            </div>
+           <div>
+               <span class="ps_label-show" id="ptLabelPassword"><label for="pwd">Password</label></span>
+           </div>
+            <div class="ps_box-control">
+               <input type="password" id="pwd" name="pwd" title="Password" autocomplete="current-password">
+            </div>
+			<!-- 
+				Removed language selection
+				avasudeva 20210325
+			-->
+			<!--
+			<div>
+               <span class="ps_label-show" id="ptLabelSelect"><label for="ptlangsel">Select a Language</label></span>
+           </div>
+            <div id="ps_select_parent" >
+              <div id= "ps_select_box" class="ps_box-control">            
+                <select id="ptlangsel" name="ptlangsel"  title="Select a Language" class="ps_select" onChange="ptSignon().changeLangFunc(this, event)" autocomplete="language">
+                  <option value="ENG" title="English">English</option>
+                  <option value="UKE" title="UK English">UK English</option>
+                  <option value="ESP" title="Spanish">Espa&ntilde;ol</option>
+                  <option value="DAN" title="Danish">Dansk</option>
+                  <option value="GER" title="German">Deutsch</option>
+                  <option value="FRA" title="French">Fran&ccedil;ais</option>
+                  <option value="CFR" title="Canadian French">Fran&ccedil;ais&nbsp;du&nbsp;Canada</option>
+                  <option value="ITA" title="Italian">Italiano</option>
+                  <option value="HUN" title="Hungarian">Magyar</option>
+                  <option value="DUT" title="Dutch">Nederlands</option>
+                  <option value="NOR" title="Norwegian">Norsk</option>
+                  <option value="POL" title="Polish">Polski</option>
+                  <option value="POR" title="Portuguese">Portugu&ecirc;s</option>
+                  <option value="ROM" title="Romanian">Rom&#x00E2;n&#x0103;</option>
+                  <option value="FIN" title="Finnish">Suomi</option>
+                  <option value="SVE" title="Swedish">Svenska</option>
+                  <option value="TUR" title="Turkish">T&#x00FC;rk&#x00E7;e</option>
+                  <option value="CZE" title="Czech">&#x010C;e&#x0161;tina</option>
+                  <option value="JPN" title="Japanese">&#x65E5;&#x672C;&#x8A9E;</option>
+                  <option value="KOR" title="Korean">&#xD55C;&#xAD6D;&#xC5B4;</option>
+                  <option value="RUS" title="Russian">&#x0420;&#x0443;&#x0441;&#x0441;&#x043A;&#x0438;&#x0439;</option>
+                  <option value="THA" title="Thai">&#x0E20;&#x0E32;&#x0E29;&#x0E32;&#x0E44;&#x0E17;&#x0E22;</option>
+                  <option value="ZHS" title="Simplified Chinese">&#x7B80;&#x4F53;&#x4E2D;&#x6587;</option>
+                  <option value="ZHT" title="Traditional Chinese">&#x7E41;&#x9AD4;&#x4E2D;&#x6587;</option>
+                  <option value="ARA" title="Arabic">&#x0627;&#x0644;&#x0639;&#x0631;&#x0628;&#x064A;&#x0629;</option>
+                  <option value="VIE" title="Vietnamese">Ti&#7869;ng Vi&#7879;t</option>
+                  <option value="BUL" title="Bulgarian">&#x0431;&#x044a;&#x043b;&#x0433;&#x0430;&#x0440;&#x0441;&#x043a;&#x0438;</option>
+                  <option value="CRO" title="Croatian">hrvatski</option>
+                  <option value="GRK" title="Greek">&#x0395;&#x03bb;&#x03bb;&#x03b7;&#x03bd;&#x03b9;&#x03ba;&#x03ac;</option>
+                  <option value="HEB" title="Hebrew">&#x05e2;&#x05d1;&#x05e8;&#x05d9;&#x05ea;</option>
+                  <option value="MAY" title="Bahasa Malay">Bahasa Melayu</option>
+                  <option value="SER" title="Serbian">&#x0441;&#x0440;&#x043f;&#x0441;&#x043a;&#x0438;</option>
+                  <option value="SLK" title="Slovak">sloven&#x010d;ina</option>
+                  <option value="SLV" title="Slovenian">sloven&#x0161;&#x010d;ina</option>
+                </select>
+              </div>     
+            </div>
+			-->
+			<!--
+				End Change
+			-->
+			
+			<!-- 
+				Inserted custom link lines
+				avasudeva 20210325
+			-->
+				<div>
+					<script language="JavaScript">
+					
+						var redirect_url = " ";
+						var site_name = " ";
+						
+						/*
+							Insert Custom code for Redirect to subsite after signout
+							avasudeva 20211001
+						*/
+						function getCookie_Site_Name(cname) 
+						{
+						  let name = cname + "=";
+						  let decodedCookie = decodeURIComponent(document.cookie);
+						  let ca = decodedCookie.split(';');
+						  for(let i = 0; i < ca.length; i++) {
+							let c = ca[i];
+							while (c.charAt(0) == ' ') {
+							  c = c.substring(1);
+							}
+							if (c.indexOf(name) == 0) {
+							  return c.substring(name.length, c.length);
+							}
+						  }
+						  return "";
+						}
+
+						site_name = getCookie_Site_Name("NSHE_Site_Name");
+						
+						if (site_name == "CSN" || site_name == "GBC" || site_name == "NSC" || site_name == "TMC" || site_name == "WNC")
+						{
+							<!-- PNG 11412(PRD "Sign Out" not going to institutional page) 20251112 avasudeva - fixing Cookie issue - start Change -->
+							/* calling function deleteCookieAllScopes to remove cookie across common domains & paths (no duplicates) */
+							deleteCookieAllScopes("NSHE_Site_Name");
+							<!-- PNG 11412(PRD "Sign Out" not going to institutional page) 20251112 avasudeva - fixing Cookie issue - end Change -->
+
+							page_url = location.href;
+							if (page_url.search("EMPLOYEE") !== -1) 
+							{
+								redirect_url = page_url.replace("EMPLOYEE",site_name);
+								window.location.replace(redirect_url);
+							}
+						}
+						/*
+							End Change
+						*/
+						document.write(line1);
+						document.write(line2);
+					</script><a href="https://www.wnc.edu/help/">Can't Login?</a><br> 
+				</div>
+				<br>
+			<!--
+				End Change
+			-->
+					
+            <div class="ps_box-button">
+                <input name="Submit" type="submit" class="ps-button" value="Sign In" aria-label="To enable screen reader mode, please check the checkbox &quot;Enable Screen Reader Mode&quot; before you sign in. Sign In">
+            </div>
+            <div class="ps_box-button">
+                <input type="checkbox" name="accessible" id="accessible">
+               	<label for="accessible">Enable Screen Reader Mode</label>
+           	</div>          
+          </div>
+        <!-- 
+			Removed delivered trace link
+			avasudeva 20210325
+		-->	
+		<!--
+			<div class="ps_box-link">
+				<span class="ps-link"></span>
+			</div>
+		-->
+		<!--
+			End Change
+		-->
+      </div>
+	<!-- 
+		Removed delivered footer link
+		avasudeva 20210325
+	-->	  
+	<!--
+		<footer id="ptfooter" class="ps_footer_text ">Copyright &copy; 2000, 2024, Oracle and/or its affiliates. </footer> 
+	-->
+	<!--
+		End Change
+	-->
+  </form> 
+</div>
+
+</body></html>

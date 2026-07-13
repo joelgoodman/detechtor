@@ -1,0 +1,394 @@
+{
+  "technology": "Ex Libris Alma",
+  "url": "https://mit.primo.exlibrisgroup.com/discovery/search?vid=01MIT_INST:MIT",
+  "final_url": "https://mit.primo.exlibrisgroup.com/discovery/search?vid=01MIT_INST:MIT",
+  "captured_at": "2026-04-21T19:35:19.554Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/ex-libris-alma/mit.primo.exlibrisgroup.com-discovery-search.html",
+  "evidence": {
+    "headers": {
+      "accept-ranges": "bytes",
+      "cache-control": "max-age=0",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-security-policy": "object-src blob: 'self' *.exlibrisgroup.com *.exlibrisgroup.com.cn www.google-analytics.com stats.g.doubleclick.net s3.amazonaws.com www.youtube.com youtube.com *.contentdm.oclc.org iiif.nlm.nih.gov ;worker-src blob: 'self' *.exlibrisgroup.com *.exlibrisgroup.com.cn www.google-analytics.com stats.g.doubleclick.net s3.amazonaws.com www.youtube.com youtube.com artic.contentdm.oclc.org ;upgrade-insecure-requests; report-uri /infra/CSPReportEndpoint.jsp; report-to csp-report-endpoint;",
+      "content-type": "text/html",
+      "date": "Tue, 21 Apr 2026 19:35:16 GMT",
+      "etag": "W/\"4784-1776604658000\"",
+      "expires": "Tue, 21 Apr 2026 19:35:16 GMT",
+      "keep-alive": "timeout=20",
+      "last-modified": "Sun, 19 Apr 2026 13:17:38 GMT",
+      "report-to": "{\"max_age\":10886400,\"endpoints\":[{\"url\":\"https://na06.alma.exlibrisgroup.com/infra/CSPReportEndpoint.jsp\"}],\"group\":\"csp-report-endpoint\"}",
+      "set-cookie": "JSESSIONID=622DAF56947E908E2E6CCFA6484DE0B8.apd01.na06.prod.alma.dc01.hosted.exlibrisgroup.com:1801; Path=/; HttpOnly; SameSite=None; Secure\n__Secure-UqZBpD3n3naPU20-9Fvn5i-TQ-tFoshbYtbA9YCEpg3UXgo_=v1T+oKgw__gby; Expires=Fri, 18-Apr-2036 19:35:16 GMT; Path=/; Secure; SameSite=None",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "transfer-encoding": "chunked",
+      "x-content-type-options": "nosniff",
+      "x-request-id": "Pb3pLRa6PF",
+      "p3p": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+      "vary": "accept-encoding"
+    },
+    "scripts": [
+      {
+        "src": "https://matomo.libraries.mit.edu/js/container_SF5ZTPZP.js",
+        "version": null
+      },
+      {
+        "src": "https://s3.amazonaws.com/browzine-adapters/primo/browzine-primo-adapter.js",
+        "version": null
+      },
+      {
+        "src": "https://mit.primo.exlibrisgroup.com/discovery/lib/citeproc.js?version=22f63e4b92",
+        "version": null
+      },
+      {
+        "src": "https://mit.primo.exlibrisgroup.com/discovery/lib/angular.js?version=4b036d9fe7",
+        "version": null
+      },
+      {
+        "src": "https://mit.primo.exlibrisgroup.com/discovery/lib/bootstrap_bundle.js?version=7202bfd402&version=e6495ee0e5",
+        "version": null
+      },
+      {
+        "src": "https://mit.primo.exlibrisgroup.com/discovery/lib/bundle.js?version=7202bfd402",
+        "version": null
+      },
+      {
+        "src": "https://mit.primo.exlibrisgroup.com/discovery/custom/01MIT_INST-MIT/js/custom.js",
+        "version": null
+      },
+      {
+        "src": "https://mit.primo.exlibrisgroup.com/discovery/lib/bower_components/pdfjs-viewer/newPdfjs/web/viewer.js",
+        "version": null
+      },
+      {
+        "src": "https://mit.primo.exlibrisgroup.com/discovery/lib/bower_components/epub-foliate-viewer/reader.js",
+        "version": null
+      },
+      {
+        "src": "https://mit.primo.exlibrisgroup.com/discovery/lib/bower_components/video.js/dist/video.js",
+        "version": null
+      },
+      {
+        "src": "https://mit.primo.exlibrisgroup.com/discovery/lib/bower_components/openseadragon/openseadragon.js",
+        "version": null
+      },
+      {
+        "src": "https://mit.primo.exlibrisgroup.com/discovery/lib/webcomponent/polyfills.js?version=928e5591a0",
+        "version": null
+      },
+      {
+        "src": "https://mit.primo.exlibrisgroup.com/discovery/lib/webcomponent/main.js?version=5a3c954ddb",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "initial-scale=1,width=device-width,shrink-to-fit=no",
+      "og:image": "https://mit.primo.exlibrisgroup.com/discovery/custom/thumbnails/thumbnail_01MIT_INST-MIT.png",
+      "og:type": "website",
+      "og:url": "https://mit.primo.exlibrisgroup.com",
+      "robots": "noindex"
+    },
+    "cookies": [
+      {
+        "name": "_ga",
+        "value": "GA1.1.697585229.1776800118",
+        "domain": ".exlibrisgroup.com"
+      },
+      {
+        "name": "__Secure-UqZBpD3n3naPU20-9Fvn5i-TQ-tFoshbYtbA9YCEpg3UXgo_",
+        "value": "v1T+oKgw__gby",
+        "domain": "mit.primo.exlibrisgroup.com"
+      },
+      {
+        "name": "JSESSIONID",
+        "value": "622DAF56947E908E2E6CCFA6484DE0B8.apd01.na06.prod.alma.dc01.hoste",
+        "domain": "mit.primo.exlibrisgroup.com"
+      },
+      {
+        "name": "institute",
+        "value": "01MIT_INST",
+        "domain": "mit.primo.exlibrisgroup.com"
+      },
+      {
+        "name": "urm_se",
+        "value": "1776803718598",
+        "domain": "mit.primo.exlibrisgroup.com"
+      },
+      {
+        "name": "urm_st",
+        "value": "1776800118598",
+        "domain": "mit.primo.exlibrisgroup.com"
+      },
+      {
+        "name": "_ga_WP819E1Q5M",
+        "value": "GS2.1.s1776800117$o1$g0$t1776800117$j60$l0$h0",
+        "domain": ".exlibrisgroup.com"
+      }
+    ],
+    "dom": {
+      "title": "",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "<style class=\"vjs-styles-defaults\">\n      .video-js {\n        width: 300px;\n        height: 150px;\n      }\n\n      .vjs-fluid:not(.vjs-audio-only-mode) {\n        padding-top: 56.25%\n      }\n    </style><style>@charset \"UTF-8\";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"initial-scale=1,width=device-width,shrink-to-fit=no\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta name=\"description\" content=\"\"><meta name=\"keywords\" content=\"\"><meta id=\"ogTitle\" property=\"og:title\" content=\"\"><meta id=\"ogDescription\" property=\"og:description\" content=\"\"><meta id=\"ogImage\" property=\"og:image\" content=\"https://mit.primo.exlibrisgroup.com/discovery/custom/thumbnails/thumbnail_01MIT_INST-MIT.png\"><meta id=\"ogType\" property=\"og:type\" content=\"website\"><meta id=\"ogURL\" property=\"og:url\" content=\"https://mit.primo.exlibrisgroup.com\"><meta name=\"robots\" content=\"noindex\"><base href=\"/discovery/\"><title id=\"primoExploreTitle\"></title><link id=\"sharedCustomerFavIcon\" rel=\"apple-touch-icon-precomposed\" href=\"\"><link id=\"viewCustomerFavIcon\" rel=\"icon\" href=\"custom/01MIT_INST-MIT/img/favicon.ico\"><link id=\"viewHomeScreenCustomerIconAndroid\" rel=\"icon\" href=\"\"><link id=\"viewHomeScreenCustomerIconIos\" rel=\"apple-touch-icon\" href=\"\"><link id=\"canonicalFullDisplay\" rel=\"canonical\" href=\"\"><link rel=\"apple-touch-icon-precomposed\" href=\"\"><link rel=\"icon\" href=\"\"><link href=\"fonts/source-sans-pro-2.020R-ro-1.075R-it/source-sans-pro.css?version=d4ab211e8f&amp;family=Source+Sans+Pro:400,300,600,700,400italic\" rel=\"stylesheet\" type=\"text/css\"><link href=\"lib/vendor.css?version=a2e36546a1\" rel=\"stylesheet\"><link href=\"lib/app.css?version=f95ba0f32f\" rel=\"stylesheet\"><link rel=\"stylesheet\" type=\"text/css\" href=\"lib/app-colors.css?version=32d57a2995\"><link rel=\"stylesheet\" type=\"text/css\" href=\"custom/01MIT_INST-MIT/css/custom1.css\"><script async=\"\" src=\"https://matomo.libraries.mit.edu/js/container_SF5ZTPZP.js\"></script><script src=\"https://s3.amazonaws.com/browzine-adapters/primo/browzine-primo-adapter.js\"></script><style type=\"text/css\" data-href=\"app.css?version=f95ba0f32f\">/* perfect-scrollbar v0.6.11 */\n.ps-container {\n  -ms-touch-action: none;\n  touch-action: none;\n  overflow: hidden !important;\n  -ms-overflow-style: none;\n}\n@supports (-ms-overflow-style: none) {\n  .ps-container {\n    overflow: auto !important;\n  }\n}\n@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {\n  .ps-container {\n    overflow: auto !important;\n  }\n}\n.ps-container.ps-active-x>.ps-scrollbar-x-rail,\n.ps-container.ps-active-y>.ps-scrollbar-y-rail {\n  display: block;\n  background-color: transparent;\n}\n.ps-container.ps-in-scrolling {\n  pointer-events: none;\n}\n.ps-container.ps-in-scrolling.ps-x>.ps-scrollbar-x-rail {\n  background-color: #eee;\n  opacity: 0.9;\n}\n.ps-container.ps-in-scrolling.ps-x>.ps-scrollbar-x-rail>.ps-scrollbar-x {\n  background-color: #999;\n}\n.ps-container.ps-in-scrolling.ps-y>.ps-scrollbar-y-rail {\n  background-color: #eee;\n  opacity: 0.9;\n}\n.ps-container.ps-in-scrolling.ps-y>.ps-scrollbar-y-rail>.ps-scrollbar-y {\n  background-color: #999;\n}\n.ps-container>.ps-scrollbar-x-rail {\n  display: none;\n  position: absolute;\n  -webkit-border-radius: 4px;\n  -moz-border-radius: 4px;\n  border-radius: 4px;\n  opacity: 0;\n  -webkit-transition: background-color .2s linear, opacity .2s linear;\n  -moz-transition: background-color .2s linear, opacity .2s linear;\n  -o-transition: background-color .2s linear, opacity .2s linear;\n  transition: background-color .2s linear, opacity .2s linear;\n  bottom: 3px;\n  height: 8px;\n}\n.ps-container>.ps-scrollbar-x-rail>.ps-scrollbar-x {\n  position: absolute;\n  background-color: #aaa;\n  -webkit-border-radius: 4px;\n  -moz-border-radius: 4px;\n  border-radius: 4px;\n  -webkit-transition: background-color .2s linear;\n  -moz-transition: background-color .2s linear;\n  -o-transition: background-color .2s linear;\n  transition: background-color .2s linear;\n  bottom: 0;\n  height: 8px;\n}\n.ps-container>.ps-scrollbar-y-rail {\n  display: none;\n  position: absolute;\n  -webkit-border-radius: 4px;\n  -moz-border-radius: 4px;\n  border-radius: 4px;\n  opacity: 0;\n  -webkit-transition: background-color .2s linear, opacity .2s linear;\n  -moz-transition: background-color .2s linear, opacity .2s linear;\n  -o-transition: background-color .2s linear, opacity .2s linear;\n  transition: background-color .2s linear, opacity .2s linear;\n  right: 3px;\n  width: 8px;\n}\n.ps-container>.ps-scrollbar-y-rail>.ps-scrollbar-y {\n  position: absolute;\n  background-color: #aaa;\n  -webkit-border-radius: 4px;\n  -moz-border-radius: 4px;\n  border-radius: 4px;\n  -webkit-transition: background-color .2s linear;\n  -moz-transition: background-color .2s linear;\n  -o-transition: background-color .2s linear;\n  transition: background-color .2s linear;\n  right: 0;\n  width: 8px;\n}\n.ps-container:hover.ps-in-scrolling {\n  pointer-events: none;\n}\n.ps-container:hover.ps-in-scrolling.ps-x>.ps-scrollbar-x-rail {\n  background-color: #eee;\n  opacity: 0.9;\n}\n.ps-container:hover.ps-in-scrolling.ps-x>.ps-scrollbar-x-rail>.ps-scrollbar-x {\n  background-color: #999;\n}\n.ps-container:hover.ps-in-scrolling.ps-y>.ps-scrollbar-y-rail {\n  background-color: #eee;\n  opacity: 0.9;\n}\n.ps-container:hover.ps-in-scrolling.ps-y>.ps-scrollbar-y-rail>.ps-scrollbar-y {\n  background-color: #999;\n}\n.ps-container:hover>.ps-scrollbar-x-rail,\n.ps-container:hover>.ps-scrollbar-y-rail {\n  opacity: 0.6;\n}\n.ps-container:hover>.ps-scrollbar-x-rail:hover {\n  background-color: #eee;\n  opacity: 0.9;\n}\n.ps-container:hover>.ps-scrollbar-x-rail:hover>.ps-scrollbar-x {\n  background-color: #999;\n}\n.ps-container:hover>.ps-scrollbar-y-rail:hover {\n  background-color: #eee;\n  opacity: 0.9;\n}\n.ps-container:hover>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y {\n  background-color: #999;\n}\n</style><style>.ngf-hide{display:none !important}</style><link rel=\"stylesheet\" type=\"text/css\" href=\"lib/bower_components/pdfjs-viewer/newPdfjs/web/viewer.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"lib/bower_components/epub-foliate-viewer/reader.css\">",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://mit.primo.exlibrisgroup.com/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<html>\r\n<head>\r\n<title>Exlibris Alma - Error report</title>\r\n<style>\r\n<!--\r\nH1 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 22px;\r\n}\r\n\r\nH2 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 16px;\r\n}\r\n\r\nH3 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 14px;\r\n}\r\n\r\nBODY {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: black;\r\n\tbackground-color: "
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://mit.primo.exlibrisgroup.com/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<html>\r\n<head>\r\n<title>Exlibris Alma - Error report</title>\r\n<style>\r\n<!--\r\nH1 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 22px;\r\n}\r\n\r\nH2 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 16px;\r\n}\r\n\r\nH3 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 14px;\r\n}\r\n\r\nBODY {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: black;\r\n\tbackground-color: "
+    },
+    "/wp-content/": {
+      "url": "https://mit.primo.exlibrisgroup.com/wp-content/",
+      "status": 404,
+      "body_excerpt": "<html>\r\n<head>\r\n<title>Exlibris Alma - Error report</title>\r\n<style>\r\n<!--\r\nH1 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 22px;\r\n}\r\n\r\nH2 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 16px;\r\n}\r\n\r\nH3 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 14px;\r\n}\r\n\r\nBODY {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: black;\r\n\tbackground-color: "
+    },
+    "/user/login": {
+      "url": "https://mit.primo.exlibrisgroup.com/user/login",
+      "status": 404,
+      "body_excerpt": "<html>\r\n<head>\r\n<title>Exlibris Alma - Error report</title>\r\n<style>\r\n<!--\r\nH1 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 22px;\r\n}\r\n\r\nH2 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 16px;\r\n}\r\n\r\nH3 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 14px;\r\n}\r\n\r\nBODY {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: black;\r\n\tbackground-color: "
+    },
+    "/core/install.php": {
+      "url": "https://mit.primo.exlibrisgroup.com/core/install.php",
+      "status": 404,
+      "body_excerpt": "<html>\r\n<head>\r\n<title>Exlibris Alma - Error report</title>\r\n<style>\r\n<!--\r\nH1 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 22px;\r\n}\r\n\r\nH2 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 16px;\r\n}\r\n\r\nH3 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 14px;\r\n}\r\n\r\nBODY {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: black;\r\n\tbackground-color: "
+    },
+    "/cas/login": {
+      "url": "https://mit.primo.exlibrisgroup.com/cas/login",
+      "status": 404,
+      "body_excerpt": "<html>\r\n<head>\r\n<title>Exlibris Alma - Error report</title>\r\n<style>\r\n<!--\r\nH1 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 22px;\r\n}\r\n\r\nH2 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 16px;\r\n}\r\n\r\nH3 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 14px;\r\n}\r\n\r\nBODY {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: black;\r\n\tbackground-color: "
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://mit.primo.exlibrisgroup.com/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<html>\r\n<head>\r\n<title>Exlibris Alma - Error report</title>\r\n<style>\r\n<!--\r\nH1 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 22px;\r\n}\r\n\r\nH2 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 16px;\r\n}\r\n\r\nH3 {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: white;\r\n\tbackground-color: #525D76;\r\n\tfont-size: 14px;\r\n}\r\n\r\nBODY {\r\n\tfont-family: Tahoma, Arial, sans-serif;\r\n\tcolor: black;\r\n\tbackground-color: "
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Ex Libris Primo",
+      "confidence": 100,
+      "evidence": [
+        "HTML: primo.*exlibris",
+        "HTML: exlibris.*primo",
+        "HTML: primo.*ve",
+        "HTML: primo.exlibrisgroup.com"
+      ]
+    },
+    {
+      "name": "Amazon S3",
+      "confidence": 80,
+      "evidence": [
+        "Header: Content-Security-Policy=s3[^ ]*amazonaws\\.com"
+      ]
+    },
+    {
+      "name": "Angular",
+      "confidence": 80,
+      "evidence": [
+        "HTML: angular",
+        "HTML: data-ng-"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Java",
+      "confidence": 70,
+      "evidence": [
+        "Cookie: JSESSIONID"
+      ]
+    },
+    {
+      "name": "Ex Libris Alma",
+      "confidence": 70,
+      "evidence": [
+        "HTML: exlibrisgroup",
+        "JS: Alma (HTML)"
+      ]
+    },
+    {
+      "name": "Summon",
+      "confidence": 70,
+      "evidence": [
+        "HTML: summon.*discovery",
+        "JS: Summon (HTML)"
+      ]
+    },
+    {
+      "name": "LearnDash",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ld.*course"
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "LibGuides",
+      "confidence": 40,
+      "evidence": [
+        "HTML: libguides"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "Oxford Learning Link",
+      "confidence": 40,
+      "evidence": [
+        "HTML: oup\\.com"
+      ]
+    },
+    {
+      "name": "AngularJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: angular (HTML)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ext (HTML)"
+      ]
+    },
+    {
+      "name": "Extend",
+      "confidence": 30,
+      "evidence": [
+        "JS: Extend (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Paper.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: paper (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

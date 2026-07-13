@@ -1,0 +1,482 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="X-UA-Compatible" content="IE=EDGE"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"><title>
+	Welcome to my.Greenville! - Main View | Home | Portal
+</title><base href="https://my.greenville.edu/ICS/">
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-T6B45B944X&amp;cx=c&amp;gtm=4e64h1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-847910505&amp;cx=c&amp;gtm=4e64h1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-2348897-1&amp;cx=c&amp;gtm=4e64h1"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+    window.jenzabar = {};
+    jenzabar.userSettings = {
+        culture:    'en-US',
+        language:   'en',
+        dateFormat: 'm/d/yy'
+    };
+    window.userSettings = jenzabar.userSettings;
+
+    jenzabar.jicsVersion = {
+        text: {
+	        version: '?v=' + '2024.2.0.4'
+        }
+    }
+    jenzabar.siteSettings = {
+        textEditorSettings: {
+            customAudioMinutesLimit: 5,
+            customVideoMinutesLimit: 5
+        },
+        text: {
+            more: 'More'
+        }
+    };
+</script>
+
+<!-- BEGIN Html Head Elements -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/ICS/UI/Common/Styles/jQuery/jquery-ui.custom.css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<script type="text/javascript" src="portlets/cus/ics/BCProxyLogin/Scripts/ProxyLogin.js"></script>
+			<link type="text/css" rel="stylesheet" href="portlets/cus/ics/BCProxyLogin/Styles/ProxyLoginStyles.css">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/signalr.js/2.4.0/jquery.signalR.min.js?v=2024.2.0.4"></script>
+<script type="text/javascript" src="/ICS/signalr/hubs?v=2024.2.0.4"></script>
+<script type="text/javascript" src="/ICS/UI/Common/Scripts/tinymce/plugins/moxiemanager/js/moxman.loader.min.js?v=2024.2.0.4"></script>
+<!-- END Html Head Elements -->
+
+<link href="/ICS/UI/Common/Styles/css/site-bundle.css?v=zWsuAXRi2STtsssWM609bnyMnq9gGYfnKtwjufy33Ho1" rel="stylesheet">
+
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/ICS/UI/Common/Styles/print.css">
+
+
+<script type="text/javascript" src="/ICS/UI/Common/Scripts/jcsfl.js"></script>
+<script src="/ICS/UI/Common/Scripts/site-bundle.js?v=G8t2ipwn4sgFF3kB4JWJ8BDMWqRQj2xmQmT7y6KxXNk1"></script>
+
+
+<!-- BEGIN Html Head Elements After JICS JS Framework -->
+<script type="text/javascript" src="/ICS/UI/Common/Scripts/SignalRManager.js?v=2024.2.0.4"></script>
+<script type="text/javascript" src="/ICS/UI/Common/Scripts/LayoutManager.js?v=2024.2.0.4"></script>
+<!-- END Html Head Elements After JICS JS Framework -->
+
+<script type="text/javascript" src="/ICS/UI/Common/Scripts/Globalization.js.aspx?id=8659790fcae44454aaf16f2d28a1f36b"></script>
+<!--[if IE]>
+<style type="text/css" media="all">@import url( UI/Common/Styles/IEOnly.css );</style>
+<script type="text/javascript" language="JavaScript" src="UI/Common/Scripts/IEOnly.js"></SCRIPT>
+<![endif]-->
+<script type="text/javascript">
+    window.Portal =
+    {
+        url: 'https://my.greenville.edu/ICS/',
+        uid: null,
+    };
+</script>
+
+
+<script type="text/javascript">
+    $.extend(window.Portal,{
+        timeout: 20,
+        SessionMonitor: JCSL.JICS.get_session_monitor()
+        
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery(function () {
+        jenzabar.framework.timeoutWarning.create(true);
+    });
+</script>
+<script type="text/javascript" language="javascript">
+
+    $.connection.portalHub.client.sendLoginWarning = function (userId) {
+        let id = "b0b00000-c542-4d2a-86e6-55ebbbcd85da";
+        if (id === userId) {
+            alert("Your username has been used to authenticate in another browser.  If you are not responsible for this login, your account may be compromised!  Contact an administrator for assistance.");
+        }
+    }
+
+</script><link rel="stylesheet" type="text/css" href="/ICSFileServer/Themes/myGU2022/style.css?v=1&amp;u=04%2f21%2f2026+14%3a34%3a12">
+
+<style id="customCssImport_custom" type="text/css" media="all">
+	@import url( /ICS/StaticPages/GetFile.aspx?target=be7884da-8f42-4016-b362-9c70b7f95a83);
+</style>
+<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+
+<style id="customHead_custom" type="text/css" media="all">@import url( /ICS/ClientConfig/HtmlContent/custom-bundle.css?v=);</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1544454-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1544454-1'); //greenville.edu aggregate
+   gtag('config', 'UA-2348897-1'); //my.greenville.edu only
+  gtag('config', 'AW-847910505');
+
+</script>
+
+<!-- ga tracking code -->
+<script type="text/javascript">
+/* replaced 10-27-17 with gtag.js
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2348897-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+*/
+</script>
+
+<script>
+	/* replaced 10-27-17 with gtag.js
+	<!-- ga tag tracking code -->
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1544454-1', 'greenville.edu' , {'allowLinker': true});
+  ga('require', 'linker');
+  ga('linker:autoLink', ['gogreenvillecollege.org','wgrn.net','emapnation.com','greenvillecollegegear.com','blackroom-records.com']);
+  ga('send', 'pageview');
+	*/
+</script>
+
+<script type="text/javascript" src="/ICSFileServer/Themes/myGU2022/js/javascript.js?v=1"></script>
+
+<script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
+<script type="text/javascript">
+	FreshWidget.init("", {"queryString": "&widgetType=popup&submitThanks=Thank+you+for+submitting+your+request.+One+of+our+staff+will+be+in+touch+soon.", "utf8": "âœ“", "widgetType": "popup", "buttonType": "text", "buttonText": "Campus Services Support", "buttonColor": "#f1f1f1", "buttonBg": "#2370B3", "alignment": "2", "offset": "400px", "submitThanks": "Thank you for submitting your request. One of our staff will be in touch soon.", "formHeight": "500px", "url": "https://campusservices.greenville.edu"} ); 
+</script><script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/html2canvas.js?ver=2"></script><link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.css?ver=2"></head>
+<body onload="doLoad();">
+	<div id="siteWrapper" class="custom-grid">
+		<form name="MAINFORM" method="post" action="/ics" id="MAINFORM" enctype="multipart/form-data" autocomplete="off">
+<input type="hidden" name="_scriptManager_HiddenField" id="_scriptManager_HiddenField" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+
+
+<script type="text/javascript">
+//<![CDATA[
+$(function() {jenzabar.framework.login.initializeForPossibleRedirect({continueButton: $('#siteNavBar_welcomeBackBarLoggedOut_JicsLoginRedirectContinue'),userNameSection: $('.init-user-username-section'),standardLoginFields: $('.init-user-password-section, .forgot-password-link, .init-user-login-btn'),userNameField: $('#userName'),passwordField: $('#password'),userLoginSection: $('#user-login-section'),simpleLoginButton: $('#jics-login-redirect-simple-button'),showStandardFieldsSection: $('#jics-login-show-standard-fields-section'),showStandardFieldsButton: $('#jics-login-show-standard-fields-button'),simpleLogin: $('.js-simple-login') },{"pleaseWaitForRedirect":"Please wait...","redirectModalTitle":"Login","checkingUserNameAccessibility":"Please wait for the login process to continue.","errorOccurred":"An unexpected error occurred during login. Try again, or contact an administrator for assistance."},{"authenticationMethodId":"cb5b96bb-b316-4e7a-a815-961bf6b52c48","isLoginDisplayedInline":false,"isRedirectedForLogin":true,"loginUrl":"/ICS/StaticPages/SAML/ServiceProvider/Request.aspx?RelayState=%2fics&methodId=cb5b96bb-b316-4e7a-a815-961bf6b52c48"});});(function( pi, $) {pi.PageID = '';pi.DisplayName = '';pi.PageURL = '';pi.IsCustomizing ='';pi.IsShowingPortlet = '';}(window.PageInfo = window.PageInfo || {}, PageInfo));try {window.PageInfo.PageID = '5e68db08-21ea-4ba8-be3e-254ecb08a8e5';window.PageInfo.DisplayName = 'Home';window.PageInfo.PageURL = '/ICS/Portal_Homepage.jnz';window.PageInfo.IsCustomizing ='False';window.PageInfo.IsShowingPortlet = 'False';window.PageInfo.IsReadOnly = 'False';}catch(ex){ console.error(ex);}//]]>
+</script>
+
+<script src="/ICS/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1LXeIrCAf1xzCRAnkew7Da2V8QU5uKSfGBYMKTK5JBCfYF08x682qv-l_ktNasbeBTMq-d44kSAu82XArxSLy9l6nZBWfNNyuAj0DLjWBVk5f0&amp;t=245582f9" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="38ABEAAB">
+			
+			<input name="___BrowserRefresh" type="hidden" id="___BrowserRefresh" value="be8d5d35-2403-406d-bdfd-590893da3eaf">
+			
+			<header>
+				<a href="#content" class="skip-navigation sr-only-focusable">Skip to content</a>
+				
+
+<div class="site-header-container">
+    <div class="mobile-fixed-container"></div>
+    <div id="sitemasthead">
+        <div>
+            
+                <button id="main-nav-btn" class="btn btn-no-bg-hover-color-content-one glyphicons glyphicons-menu-hamburger main-nav-btn" type="button" data-toggle="collapse" data-target="#hamburger-menu-section" aria-expanded="false" aria-controls="hamburger-menu-section"><span class="sr-only">main navigation</span></button>
+                
+<div id="welcomeBackBar" class="main-nav-submenu-container">
+	<div id="siteNavBar_welcomeBackBarLoggedOut_welcomeBackBarLoggedOut">
+		<button id="siteNavBar_welcomeBackBarLoggedOut_loginToggle" class="btn login-btn" type="button" data-toggle="collapse" data-target="#user-login-section" aria-expanded="false" aria-controls="user-login-section"><span>Login</span></button>
+		<div id="user-login-section" aria-label="Login" class="collapse user-login form-inline narrow-width">
+			<div class="input-group init-user-username-section" style="display: none;">
+				<span class="input-group-addon glyphicons glyphicons-user"></span>
+				<label id="siteNavBar_welcomeBackBarLoggedOut_UserNameLabel" for="userName" class="sr-only">Username</label>
+				<input type="text" name="userName" id="userName" placeholder="Username" class="form-control user-name" autocomplete="username" value="" style="display: none;">
+			</div>
+			<div class="input-group init-user-password-section" style="display: none;">
+				<span class="input-group-addon glyphicons glyphicons-asterisk"></span>
+				<label id="siteNavBar_welcomeBackBarLoggedOut_PasswordLabel" for="password" class="sr-only">Password</label>
+				<input type="password" name="password" id="password" placeholder="Password" class="form-control user-password" autocomplete="off">
+			</div>
+			<input type="submit" name="siteNavBar$welcomeBackBarLoggedOut$ButtonLogin" value="Login" id="siteNavBar_welcomeBackBarLoggedOut_ButtonLogin" class="btn btn-sm btn-block btn-primary init-user-login-btn" style="display: none;">
+			<button id="siteNavBar_welcomeBackBarLoggedOut_JicsLoginRedirectContinue" type="button" class="btn btn-sm btn-block btn-primary init-user-login-continue-btn" style="display: none;">Continue</button>
+			<div id="siteNavBar_welcomeBackBarLoggedOut_JicsSimpleLogin">
+				<div id="siteNavBar_welcomeBackBarLoggedOut_JicsLoginRedirectSimple">
+					<div id="jics-login-redirect-simple" class="jics-login-redirect-simple">
+						<button id="jics-login-redirect-simple-button" type="button" class="btn btn-sm btn-block btn-primary init-user-login-continue-btn jics-login-redirect-simple-button">
+							Login
+						</button>
+					</div>
+					<div id="siteNavBar_welcomeBackBarLoggedOut_AlternativeLogin">
+						<div id="jics-login-show-standard-fields-section" class="jics-login-show-standard-fields-section">
+							<span id="jics-login-show-standard-fields-text" class="jics-login-show-standard-fields-text">
+								Need to login via a different method? 
+							</span>
+							<button id="jics-login-show-standard-fields-button" type="button" class="btn link-btn color-content-one jics-login-show-standard-fields-button" aria-labelledby="jics-login-show-standard-fields-text jics-login-show-standard-fields-button">
+								Login Here
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		<span id="custom-reset-password-link" style="display: block;  padding-bottom: 10px;"><a href="https://my.greenville.edu/apps/reset/" target="_blank" style="display: inline; font-size: 12px; margin-left: 0px;color: #f6f6f6;">Reset Password</a> </span></div>
+	</div>
+</div><button id="siteNavBar_searchBox_SearchButton" class="btn btn-no-bg-hover-color-content-one glyphicons glyphicons-search search-btn" type="button" data-toggle="collapse" data-target="#search-section" aria-expanded="false" aria-controls="search-section">
+		<span class="sr-only">
+			Search
+		</span>
+	</button><div id="siteNavBar_searchBox_searchPanel" class="search-panel">
+	
+    <div id="siteNavBar_searchBox_divSideBarContainer">
+        <div id="search-section" aria-label="Search" class="search-section collapse popover fade bottom">
+            <div class="arrow" style="left: 90%;"></div>
+            <div class="popover-content form-wrapper">
+                <div class="form-group"> 
+                    <label for="siteNavBar_searchBox_tbSearch" id="siteNavBar_searchBox_lblForSearch" class="sr-only">Search</label>
+                    <input name="siteNavBar$searchBox$tbSearch" type="text" id="siteNavBar_searchBox_tbSearch" class="search-input global-search-input form-control ui-autocomplete-input" placeholder="Search..." onfocus="return searchBox.cleardefault();" onblur="return searchBox.restoredefault();" autocomplete="off">
+               </div>
+                <a onclick="return searchBox.validate();" id="siteNavBar_searchBox_lbSearch" class="btn btn-sm btn-block btn-primary init-search-btn" role="button" href="javascript:__doPostBack('siteNavBar$searchBox$lbSearch','')">Search</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<iframe src="/ICS/StaticPages/SAML/ServiceProvider/Request.aspx?RelayState=%2fics&amp;methodId=cb5b96bb-b316-4e7a-a815-961bf6b52c48" id="siteNavBar_welcomeBackBarLoggedOut_AutoLoginFrame" style="display:none" width="1" height="1"></iframe>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+	    if (searchBox !== null && searchBox !== undefined) {
+		    searchBox.searchPanel = 'siteNavBar_searchBox_searchPanel';
+		    searchBox.textBox = 'siteNavBar_searchBox_tbSearch';
+		    searchBox.button = 'siteNavBar_searchBox_lbSearch';
+		    searchBox.userId = "b0b00000-c542-4d2a-86e6-55ebbbcd85da";
+		    searchBox.autoCompleteSelect = function(event, ui) {
+			    $("#" + searchBox.textBox).val(ui.item.value);
+			    __doPostBack('siteNavBar$searchBox$lbSearch','');
+		    };
+		    searchBox.initAutoComplete();
+		    $('#siteNavBar_searchBox_lbSearch').keypress(function(e) {
+			    var key = e.which;
+			    if (key === 32 || key === 13) {
+				    if (searchBox.searchClick()) {
+					    window.location.href = this.href;
+				    }
+				    return false;
+			    }
+		    });
+
+		    // Hack needed to comply with A11y
+		    $('#siteNavBar_searchBox_searchPanel').removeAttr('onkeypress');
+		    $('#siteNavBar_searchBox_tbSearch').keypress(function (e) {
+			    return WebForm_FireDefaultButton(e, searchBox.button);
+		    });
+	    }
+    });
+ </script>
+
+<span role="search">
+	
+</span>
+
+<div id="searchAutoCompleteResults" class="searchAutoComplete"> <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" unselectable="on" style="display: none;"></ul></div>
+
+<!--
+<h1 id="logo-heading">
+<a class="site-logo-link" href=".">
+	<img class="site-logo" src="/ICS/UI/Common/Images/Logo/logo.png" alt="logo"/>
+</a>
+</h1>
+
+-->
+<div id="masthead">
+    <h1>
+        <a href=".">
+            <span>my</span>.Greenville
+        </a>
+    </h1>
+    <!-- Add an image like so if you desire
+    <img src="./../../UI/Themes/Pacifica/images/logo_white.png" alt="Jenzabar University"/>
+    -->
+</div>
+<script>
+	$(function () {
+		$('#top-nav-bar').attr("aria-label", "Site tabs");
+	});
+</script>
+<nav id="top-nav-bar" class="top-nav-bar navbar navbar-default navbar-fixed-top" aria-label="Site tabs">
+	<div class="nav-container">
+		<div id="header-tabs" class="link-scroll vertical-menu super-menu">
+			<div class="collapse h-menu" id="hamburger-menu-section">
+				
+						<ul id="main-nav" class="nav navbar-nav no-margin super-nav">
+					
+						<li class="tabs tab_Home firstTab selected lastTab">
+							<a href="/ICS/">
+								Home
+							</a>
+						</li>
+					
+						</ul>
+					
+			</div>
+		</div>
+	</div>
+</nav>
+
+        </div>
+    </div>
+</div>
+			</header>
+			
+<div id="mainCrumbs" class="main-crumbs" role="navigation" aria-label="Site breadcrumb">
+	<span class="breadcrumbs-title text-bold">You are here:</span>
+	<span class="crumbs">
+		<ul id="youAreHere" class="breadcrumbs-container">
+			 <li><a href="/ICS/">Home</a></li>  <li><a href="/ICS/Portal_Homepage.jnz" aria-current="page">Home</a></li> 
+			
+		</ul>
+	</span>
+</div>
+
+			
+			
+			<div id="mainLayout" class="main-layout">
+				<div class="container-fluid">
+					<div class="row">
+						
+						<nav aria-label="Site pages">
+							<div id="sideBar" aria-label="Sidebar links" class="col-md-2 mobile-padding-horizontal-none sidebar mobile-hide">
+								<div id="sidebar-slide-menu-container" class="slide-menu-right">
+									
+									<div id="thisContext" class="side-section"><span class="sidebar-link-title"><a href="/ICS/" accesskey="">Portal</a></span><div class="navbar navbar-default"><ul id="contextPages" class="nav nav-pills nav-stacked"><li class="slide-menu-toggle-btns-wrapper"><ul id="slide-menu-toggle-btns" class="nav nav-pills nav-stacked slide-menu-toggle-btns"><li class="active"><a id="menu-links-tab" data-toggle="tab" href="#menu-links" aria-expanded="true" aria-controls="menu-links">Menu</a></li><li><a id="quick-links-tab" data-toggle="tab" href="#quick-links" aria-expanded="false" aria-controls="quick-links">Quick Links</a></li></ul></li><li id="menu-links" class="menu-links tab-pane fade in active"><ul id="this-context-pages" class="nav nav-pills nav-stacked" aria-label="Page menu "><li class="current-page"><a href="/ICS/Portal_Homepage.jnz">Home</a></li><li><a href="/ICS/Course_Listing.jnz">Course Listing</a></li></ul></li><li id="quick-links" class="quick-links tab-pane fade"><span class="sidebar-link-title">Quick Links</span><ul id="quick-links-menu" class="nav nav-pills nav-stacked"><li class="sidebar-quick-link"><a class="anchor-contains-icon" href="http://www.greenville.edu/student_dashboard" title="Student Dashboard">Student Dashboard<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" target="_blank" href="http://learning.greenville.edu/" title="Learning@Greenville (D2L)">Learning@Greenville (D2L)<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" href="https://accounts.google.com" title="Student Web Mail">Student Web Mail<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" target="_blank" href="https://login.microsoftonline.com/" title="Employee Web Mail">Employee Web Mail<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" target="_blank" href="https://my.greenville.edu/apps" title="Employee Web Apps">Employee Web Apps<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" href="http://www.greenville.edu" title="Greenville.edu">Greenville.edu<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" target="_blank" href="https://www.greenville.edu/events-calendar" title="GU Event Calendar">GU Event Calendar<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" href="http://www.greenville.edu/library/" title="GU Library">GU Library<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" href="https://my.greenville.edu/ICS/Course_Listing.jnz" title="Course Listing">Course Listing<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" href="https://my.greenville.edu/apps/fasttrack/" title="GU Fast Track">GU Fast Track<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" target="_blank" href="https://cm.maxient.com/reportingform.php?GreenvilleCollege" title="Incident Reporting Form">Incident Reporting Form<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" href="https://my.greenville.edu/" title="&lt;h3 id='quickLinksSupportHead'&gt;Support Sites&lt;/h2&gt;"><h3 id="quickLinksSupportHead">Support Sites</h3><span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" href="http://campusservices.greenville.edu/" title="Campus Services">Campus Services<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" target="_blank" href="https://itsupport.greenville.edu" title="IT Support Portal">IT Support Portal<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li><li class="sidebar-quick-link"><a class="anchor-contains-icon" target="_blank" href="https://fa.greenville.edu/" title="Financial Aid Hub">Financial Aid Hub<span class="glyphicons glyphicons-link sidebar-icon-link"></span></a></li></ul></li></ul></div></div>
+									
+									
+									<div class="sideBarFoot containerFoot"></div>
+								</div>
+								<button id="sidebar-slide-menu-button" class="slide-menu-btn nsn is-closed" type="button" aria-expanded="false">
+									<span class="sidebar-slide-btn-icon glyphicons glyphicons-chevron-right">
+										<span class="sr-only">Sidebar</span>
+									</span>
+								</button>
+							</div>
+						</nav>
+						
+						<div id="portlets" role="main" class="col-md-10 mobile-padding-horizontal-none">
+							
+							
+
+<script type="text/javascript">
+    $( document ).ready(function() {
+        $(`[id*="pageOpenMoxieManager"]`).click(function () {
+            // Below we check every 200ms if the MoxieManager dialog is opened yet, then move keyboard focus if it is.
+            // We have to do this check because MoxieManager removed the 'onopen' option from the moxman.browse() function...
+            let intervalIndex = 0;
+            let interval = setInterval(function () {
+                let createButton = $($(`.moxman-reset .moxman-i-create`)[0].parentElement.parentElement);
+                if (createButton.length === 1) {
+                    createButton.focus();
+                    clearInterval(interval);
+                } else if (createButton.length === 0 && intervalIndex === 20000) { // We will stop trying to shift focus after 20 seconds.
+                    console.log("Error: Keyboard focus could not be shifted to the MoxieManager window");
+                    clearInterval(interval);
+                }
+                intervalIndex = intervalIndex + 200;
+            }, 200);
+        });
+    });
+</script>
+
+<div id="PageBar_pageTitle" class="page-title page-title-bar">
+    <h2><a href="/ICS/" id="contextName">Portal</a></h2>
+</div>
+<div id="PageBar_pageTitleButtons" class="page-title-btn">
+    
+    
+    <button id="PageBar_btnPrintView" class="btn btn-no-bg-hover-color-content-one glyphicons glyphicons-print" type="button" onclick="window.print(); return false;">
+        <span class="sr-only">Send to Printer</span>
+    </button>
+    <a href="https://jenzabarhelp.jenzabar.com/ews/help/JICS/Base/released/en/free-form-content.html" id="PageBar_helpButton" tabindex="0" class="btn btn-no-bg-hover-color-content-one glyphicons glyphicons-question-sign" role="button" title="Help" target="blank">
+        <span class="sr-only">Help</span>
+    </a>
+</div>
+
+
+							
+							<span id="content" tabindex="-1"></span>
+							<div id="portlet-grid" class="portlet-grid one_column"><div class="row"><div class="portlet-column col-md-12"><div id="pg0_CustomContentPortlet" class="portlet singlePortlet pt_CustomContentPortlet pi_Welcome_to_my_Greenville_" style="z-index:1;"><div class="portlet-padding">
+<script language="javascript">
+<!--
+    function ConfirmDelete(msg) {
+        return confirm(msg);
+    }
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" property="stylesheet" href="/ICS/UI/Common/Styles/lightbox.css">
+<script src="/ICS/UI/Common/Scripts/jquery.lightbox.js"></script>
+<script>
+    $(document).ready(function() { LoadLightboxValues();});    
+	function LoadLightboxValues() 
+	{
+	    $(".lightbox").lightbox(
+	        {
+	            fileLoadingImage: '/ICS/UI/Common/Images/PortletImages/Lightbox/loading.gif',
+	            fileBottomNavCloseImage: '/ICS/UI/Common/Images/PortletImages/Lightbox/closelabel.gif'
+	        });
+	}
+ 
+</script>
+
+
+
+
+        <div class="pSection ccSection text-word-wrap-break-word"><div align="left"><div class="wysiwygtext"><h2>&nbsp;<a href="/ICS/Students/">Students</a></h2>
+<p>&nbsp;Log in to view your records, financial, and campus information, as well as schedule courses and more!&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt;"><strong>COVID-19 SAFETY AND PREVENTION</strong></span></p>
+<p>The official student guidelines manual for safety and prevention against COVID-19 can be found <a href="https://campusservices.greenville.edu/en/support/solutions/articles/12000073172-covid-19-safety-and-prevention-student-guidelines" target="_blank" rel="noopener">here</a> on our Campus Services knowledgebase.</p>
+<p>&nbsp;</p>
+<h2><a href="/ICS/Faculty__Staff/">Faculty &amp; Staff</a></h2>
+<p>Log in for important community information, to manage your courses grades, and more!&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p>Campus Services Login Change:</p>
+<p>Due to a software update, the Campus Services support login page will look different.&nbsp;</p>
+<p><img src="/ICS/icsfs/mm/screen_shot_2021-08-31_at_11.26.32_am.png?target=2824598b-f620-4cca-be5a-7dd2dd595f37" alt="" width="550" height="410"></p>
+<h2><a href="http://www.greenville.edu/admissions">Future/Prospective Students</a></h2>
+<p><a href="http://www.greenville.edu/apply">Apply today!</a></p></div></div></div>
+        
+        <div style="clear:both"></div>
+    
+</div></div>
+</div></div></div>
+							<div class="portletsFoot containerFoot"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid footer-wrapper primary">
+				<div class="row no-margin-r no-margin-l">
+					<div class="col-md-12"><footer><div id="foot" class="footer-links"><a target="_blank" href="https://www.greenville.edu/contact/">Contact us</a><a target="_blank" href="https://my.greenville.edu/apps/reset/">Reset Password</a><span id="copyright">  Powered by Jenzabar. v2024.2</span></div></footer></div>
+				</div>
+			</div>
+			
+		
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("_scriptManager_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+</form>
+	</div>
+<script type="text/javascript">
+	$(function() {
+		$("#youAreHere a:last").attr("aria-current", "page");
+
+		jenzabar.framework.accessibleSidebarMenu.init();
+		jenzabar.framework.accessibleSearchMenu.init();
+		jenzabar.framework.accessibleLoginMenu.init();
+		jenzabar.framework.accessibleHamburgerMenu.init();
+	});
+</script>
+
+
+<div class="freshwidget-button fd-btn-right" style="display:none; top: 520px;"><a href="https://dynamiccampus.topdesk.net/solutions/forms/4676f3af-e273-46f0-b768-ddc47eb0217b?token=364a7a58-12a6-42f4-b149-5336af124008" target="_blank" class="freshwidget-theme" style="color: rgb(241, 241, 241); border-color: rgb(241, 241, 241); background-color: #2370B3;">IT Support</a></div><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div id="overlay" style="display: none;"></div><div id="lightbox" style="display: none;"><div id="outerImageContainer" style="width: 250px; height: 250px;"><div id="imageContainer"><img id="lightboxImage" alt="Lightbox Image"><div id="hoverNav"><a href="javascript://" id="prevLink"><span class="sr-only">Previous image</span></a><a href="javascript://" id="nextLink"><span class="sr-only">Next image</span></a></div><div id="loading"><a href="javascript://" id="loadingLink"><img src="/ICS/UI/Common/Images/PortletImages/Lightbox/loading.gif" alt="Loading image"></a></div></div></div><div id="imageDataContainer" class="clearfix" style="width: 250px;"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><a href="javascript://" id="bottomNavClose" title="close image gallery"><img src="/ICS/UI/Common/Images/PortletImages/Lightbox/closelabel.gif" alt="Close image"></a></div></div></div></div></body></html>

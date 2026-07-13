@@ -1,0 +1,108 @@
+{
+  "technology": "Qualtrics",
+  "url": "https://umich.qualtrics.com/",
+  "final_url": "https://shibboleth.umich.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1",
+  "captured_at": "2026-04-21T19:36:14.584Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/qualtrics/umich.qualtrics.com.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "no-store",
+      "connection": "Keep-Alive",
+      "content-encoding": "gzip",
+      "content-length": "1331",
+      "content-security-policy": "frame-ancestors 'self' https://*.umich.edu https://*.umdearborn.edu https://*.umflint.edu https://*.instructure.com https://*.mdcreporting.org https://mdcreporting.org;",
+      "content-security-policy-report-only": "frame-ancestors 'none';               report-to csp-strict;               report-uri https://shibboleth.umich.edu/cgi-bin/csp_report?variant=strict\nframe-ancestors 'self' https://*.umich.edu https://*.umdearborn.edu https://*.umflint.edu                             https://*.instructure.com https://*.mdcreporting.org https://mdcreporting.org;               report-to csp-target;               report-uri https://shibboleth.umich.edu/cgi-bin/csp_report?variant=target",
+      "content-type": "text/html;charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:36:13 GMT",
+      "keep-alive": "timeout=5, max=91",
+      "report-to": "{\"group\":\"csp-strict\",\"max_age\":10886400,\"endpoints\":[{\"url\":\"https://shibboleth.umich.edu/cgi-bin/csp_report?variant=strict\"}]}\n{\"group\":\"csp-target\",\"max_age\":10886400,\"endpoints\":[{\"url\":\"https://shibboleth.umich.edu/cgi-bin/csp_report?variant=target\"}]}",
+      "server": "Apache",
+      "strict-transport-security": "max-age=0\nmax-age=0",
+      "vary": "Accept-Encoding",
+      "x-frame-options": "DENY"
+    },
+    "scripts": [],
+    "meta": {},
+    "cookies": [],
+    "dom": {},
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://umich.qualtrics.com/wp-login.php",
+      "status": 404
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://umich.qualtrics.com/wp-json/wp/v2/",
+      "status": 404
+    },
+    "/wp-content/": {
+      "url": "https://umich.qualtrics.com/wp-content/",
+      "status": 404
+    },
+    "/user/login": {
+      "url": "https://umich.qualtrics.com/user/login",
+      "status": 404
+    },
+    "/core/install.php": {
+      "url": "https://umich.qualtrics.com/core/install.php",
+      "status": 404
+    },
+    "/cas/login": {
+      "url": "https://umich.qualtrics.com/cas/login",
+      "status": 404
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://umich.qualtrics.com/Shibboleth.sso/Metadata",
+      "status": 404
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "SAML",
+      "confidence": 80,
+      "evidence": [
+        "HTML: saml",
+        "HTML: saml2"
+      ]
+    },
+    {
+      "name": "Shibboleth",
+      "confidence": 40,
+      "evidence": [
+        "HTML: shib.*session"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": false
+}

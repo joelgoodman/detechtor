@@ -1,0 +1,198 @@
+{
+  "technology": "Instructure Canvas Catalog",
+  "url": "https://oithost.utk.edu/canvas-catalog/html/",
+  "final_url": "https://oithost.utk.edu/canvas-catalog/html/",
+  "captured_at": "2026-04-21T19:41:02.611Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/instructure-canvas-catalog/oithost.utk.edu-canvas-catalog-html.html",
+  "evidence": {
+    "headers": {
+      "accept-ranges": "bytes",
+      "connection": "Keep-Alive",
+      "content-length": "1942",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:41:02 GMT",
+      "etag": "\"796-5e92edf605f12\"",
+      "keep-alive": "timeout=5, max=100",
+      "last-modified": "Wed, 21 Sep 2022 12:13:28 GMT",
+      "server": "Apache/2.4.62 (Red Hat Enterprise Linux) OpenSSL/3.5.1",
+      "set-cookie": "NSC_qvcmbnq_ttm_wt=ffffffffa32cf09445525d5f4f58455e445a4a42378b;expires=Tue, 21-Apr-2026 19:46:02 GMT;path=/;secure;httponly;SameSite=None",
+      "vary": "User-Agent"
+    },
+    "scripts": [],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1"
+    },
+    "cookies": [
+      {
+        "name": "NSC_qvcmbnq_ttm_wt",
+        "value": "ffffffffa32cf09445525d5f4f58455e445a4a42378b",
+        "domain": "oithost.utk.edu"
+      }
+    ],
+    "dom": {
+      "title": "UT Canvas Catalog Login",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n<meta charset=\"UTF-8\">\n<meta content=\"width=device-width, initial-scale=1\" name=\"viewport\">\n\t<link rel=\"shortcut icon\" type=\"image/png\" href=\"https://brand.utk.edu/wp-content/themes/ut-thehill/images/interface/favicon.gif\">\n<title>UT Canvas Catalog Login</title>\n<link href=\"styles.css\" rel=\"stylesheet\" type=\"text/css\">\n",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://oithost.utk.edu/wp-login.php",
+      "status": 403,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>403 Forbidden</title>\n</head><body>\n<h1>Forbidden</h1>\n<p>You don't have permission to access this resource.</p>\n</body></html>\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://oithost.utk.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/wp-content/": {
+      "url": "https://oithost.utk.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/user/login": {
+      "url": "https://oithost.utk.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/core/install.php": {
+      "url": "https://oithost.utk.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/cas/login": {
+      "url": "https://oithost.utk.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://oithost.utk.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Instructure Canvas Catalog",
+      "confidence": 100,
+      "evidence": [
+        "HTML: \\.catalog\\.canvaslms\\.com",
+        "HTML: catalog\\.canvaslms\\.com",
+        "HTML: canvas.*catalog",
+        "HTML: /canvas-catalog/"
+      ]
+    },
+    {
+      "name": "Red Hat",
+      "confidence": 80,
+      "evidence": [
+        "Header: Server=Red Hat"
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 70,
+      "evidence": [
+        "HTML: wp-content",
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Canva for Education",
+      "confidence": 70,
+      "evidence": [
+        "HTML: canva.*education",
+        "JS: Canva (HTML)"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 40,
+      "evidence": [
+        "HTML: class=\".*btn-"
+      ]
+    },
+    {
+      "name": "Canvas LMS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: instructure\\.com"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

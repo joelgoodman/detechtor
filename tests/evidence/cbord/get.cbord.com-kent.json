@@ -1,0 +1,364 @@
+{
+  "technology": "CBORD",
+  "url": "https://get.cbord.com/kent/",
+  "final_url": "https://get.cbord.com/kent/full/prelogin.php",
+  "captured_at": "2026-04-21T19:35:01.027Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/cbord/get.cbord.com-kent.html",
+  "evidence": {
+    "headers": {
+      "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept",
+      "access-control-allow-methods": "POST, GET, OPTIONS",
+      "access-control-allow-origin": "*",
+      "access-control-max-age": "60",
+      "cache-control": "private, no-store, max-age=0, s-maxage=0",
+      "content-encoding": "gzip",
+      "content-length": "5802",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:35:00 GMT",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "pragma": "no-cache",
+      "server": "nginx",
+      "strict-transport-security": "max-age=31557600",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY"
+    },
+    "scripts": [
+      {
+        "src": "https://get.cbord.com/kent/scripts/jquery-3.6.4.min.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/scripts/jquery-ui/jquery-ui.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/scripts/jquery.infieldlabel.min.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/scripts/jquery.validate.min.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/scripts/jquery.select_skin.min.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/scripts/global_full.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/scripts/jquery.smartbanner.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/scripts/soa_ajax.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/js/vendors/modernizr/modernizr.custom.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/scripts/cropper.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/scripts/modernizr.custom.28468.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/scripts/jquery.cslider.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/scripts/placeholdr.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/js/vendors/popper/popper.min.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/js/vendors/bootstrap/bootstrap.min.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/js/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/js/vendors/forms/jquery.form.min.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/js/vendors/forms/jquery.maskedinput.min.js",
+        "version": null
+      },
+      {
+        "src": "https://get.cbord.com/kent/full/js/frontend.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "apple-itunes-app": "app-id=844091049",
+      "google-play-app": "app-id=com.cbord.get",
+      "viewport": "width=device-width, initial-scale=1.0"
+    },
+    "cookies": [
+      {
+        "name": "PHPSESSID",
+        "value": "8ufd6kusol8vrr3lk8gek84lq9",
+        "domain": "get.cbord.com"
+      },
+      {
+        "name": "AWSELB",
+        "value": "95F71BEB1851E28EB0CC1461768351FDE0992944B04563E2DB9AC74E99477A55",
+        "domain": "get.cbord.com"
+      },
+      {
+        "name": "AWSELBCORS",
+        "value": "95F71BEB1851E28EB0CC1461768351FDE0992944B04563E2DB9AC74E99477A55",
+        "domain": "get.cbord.com"
+      }
+    ],
+    "dom": {
+      "title": "GET - Login - Kent State University",
+      "bodyClasses": "login",
+      "bodyId": "",
+      "headContent": "\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"apple-itunes-app\" content=\"app-id=844091049\">\n    <meta name=\"google-play-app\" content=\"app-id=com.cbord.get\"> \n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <script type=\"text/javascript\" src=\"../scripts/jquery-3.6.4.min.js\"></script>\n    <script type=\"text/javascript\" src=\"../scripts/jquery-ui/jquery-ui.js\"></script>\n    <script type=\"text/javascript\" src=\"scripts/jquery.infieldlabel.min.js\"></script>\n    <script type=\"text/javascript\" src=\"scripts/jquery.validate.min.js\"></script>\n    <script type=\"text/javascript\" src=\"scripts/jquery.select_skin.min.js\"></script>\n    <script type=\"text/javascript\" src=\"scripts/global_full.js\"></script>\n    <script type=\"text/javascript\" src=\"scripts/jquery.smartbanner.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles/jquery.smartbanner.css\"> \n    <script type=\"text/javascript\" src=\"../scripts/soa_ajax.js\"></script>\n    <script type=\"text/javascript\" src=\"js/vendors/modernizr/modernizr.custom.js\"></script>\n    <script type=\"text/javascript\" src=\"scripts/cropper.js\"></script>\n    <link href=\"styles/cropper.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"../scripts/jquery-ui/jquery-ui.css\">\n    <!--<link rel=\"stylesheet\" type=\"text/css\" href=\"styles/smoothness/jquery-ui-1.9.2.custom.css\" />-->\n\n <!-- slider -->\n    <script type=\"text/javascript\" src=\"scripts/modernizr.custom.28468.js\"></script>\n    <script type=\"text/javascript\" src=\"scripts/jquery.cslider.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles/global_full.css?d=1774560208\"> \n    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles/print.css\" media=\"print\">\n<!-- FontAwesome -->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles/font-awesome.min.css\">\n    <link rel=\"shortcut icon\" href=\"../favicon.ico?v=2\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles/icomoon.css\">\n    <link rel=\"apple-touch-icon\" href=\"../apple-touch-icon-iphone.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"../apple-touch-icon-ipad.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"../apple-touch-icon-iphone4.png\">\n<!--[if IE 9]><html class=\"no-js lt-ie10\" lang=\"en\"> <![endif]-->\n<!--[if lte IE 9]><!--><!--<![endif]-->\n<!--[if IE]><style> :last-child.navbar-nav.navbar-right { margin-right: 0px;}</style><![endif]-->\n<script type=\"text/javascript\" src=\"scripts/placeholdr.js\"></script>\n<script type=\"text/javascript\">\nif (/*@cc_on!@*/false && document.documentMode === 10) {\n    document.documentElement.className+=' ie10';\n}</script>\n    \t                <title>GET - Login - Kent State University</title>\n            <link rel=\"stylesheet\" type=\"text/css\" href=\"css/frontend.css\">\n    <style type=\"text/css\">\n\t.btn-success:not(:disabled), #shoppingCartForm input[type=\"submit\"]:not(:disabled)\n                            { \n                                background: #879637 !important;\n                                background-color: #879637 !important;\n                                color: #fff !important;\n                            }\n\nbody\n{ \nbackground: #eaab00 !important;\n}\n\n.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover, .panel-primary>.panel-heading\n                        { \n                            background-color: #002664 !important;\n                            border-color: #002664 !important;\n\n                        }\n\n.btn-default\n                            {\n                                background-color: #879637 !important;\n                                color: #fff !important;\n                            }\n\n.navbar-inverse,:root .status_header .step, .login\n{ \n background-color: #002664!important;\n}\n\n.step a\n{\ncolor: #fff !important;\n}\n\n.navbar-inverse .navbar-nav > li > a:hover  \n{\nbackground-color: #eaab00 !important;\n}\n\n.table > thead > tr > th\n{\nbackground-color: #002664 !important;\n\n}\t</style> \n",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.6.4"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://get.cbord.com/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://get.cbord.com/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/wp-content/": {
+      "url": "https://get.cbord.com/wp-content/",
+      "status": 302,
+      "redirect_to": "full/index.php"
+    },
+    "/user/login": {
+      "url": "https://get.cbord.com/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/core/install.php": {
+      "url": "https://get.cbord.com/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/cas/login": {
+      "url": "https://get.cbord.com/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://get.cbord.com/Shibboleth.sso/Metadata",
+      "status": 200,
+      "body_excerpt": "<!--\nThis is example metadata only. Do *NOT* supply it as is without review,\nand do *NOT* provide it in real time to your partners.\n -->\n<md:EntityDescriptor xmlns:md=\"urn:oasis:names:tc:SAML:2.0:metadata\" ID=\"_e66b37f5ac5f7371c720dcaf29821be64a3bc8ed\" entityID=\"https://get.cbord.com/Shibboleth.sso\">\n\n  <md:Extensions xmlns:alg=\"urn:oasis:names:tc:SAML:metadata:algsupport\">\n    <alg:DigestMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#sha512\"/>\n    <alg:DigestMethod Algorithm=\"http://www.w3.org/2001/04/"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "Nginx",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=nginx"
+      ]
+    },
+    {
+      "name": "CBORD",
+      "confidence": 80,
+      "evidence": [
+        "HTML: cbord",
+        "HTML: campus.*dining"
+      ]
+    },
+    {
+      "name": "Amazon ELB",
+      "confidence": 70,
+      "evidence": [
+        "Cookie: AWSELB"
+      ]
+    },
+    {
+      "name": "Drupal",
+      "confidence": 40,
+      "evidence": [
+        "HTML: sites/default/files"
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "Blackboard Transact",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*card"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Transact Campus",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*card"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 30,
+      "evidence": [
+        "JS: YT (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

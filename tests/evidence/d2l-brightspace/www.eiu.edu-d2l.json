@@ -1,0 +1,398 @@
+{
+  "technology": "D2L Brightspace",
+  "url": "https://www.eiu.edu/d2l/",
+  "final_url": "https://www.eiu.edu/d2l/",
+  "captured_at": "2026-04-21T19:33:51.876Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/d2l-brightspace/www.eiu.edu-d2l.html",
+  "evidence": {
+    "headers": {
+      "connection": "Upgrade, Keep-Alive",
+      "content-security-policy": "frame-ancestors 'self' https://online.eiu.edu;",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:33:50 GMT",
+      "keep-alive": "timeout=5, max=100",
+      "server": "Apache",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "transfer-encoding": "chunked",
+      "upgrade": "h2",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "scripts": [
+      {
+        "src": "https://scripts.clarity.ms/0.8.59/clarity.js",
+        "version": null
+      },
+      {
+        "src": "https://www.clarity.ms/tag/fiur46ziil?ref=gtm2",
+        "version": null
+      },
+      {
+        "src": "https://connect.facebook.net/signals/config/928887457142545?v=2.9.303&r=stable&domain=www.eiu.edu&hme=97937018cefade17726f0472876fc101316b2ce9008a35a6a5a7977d7436151a&ex_m=104%2C205%2C154%2C22%2C72%2C73%2C145%2C68%2C67%2C11%2C162%2C90%2C16%2C138%2C127%2C39%2C75%2C78%2C134%2C159%2C164%2C8%2C4%2C5%2C7%2C6%2C3%2C91%2C101%2C165%2C170%2C219%2C62%2C186%2C187%2C55%2C276%2C30%2C74%2C231%2C230%2C229%2C23%2C33%2C103%2C61%2C10%2C63%2C97%2C98%2C99%2C105%2C130%2C31%2C29%2C132%2C133%2C129%2C128%2C155%2C76%2C158%2C156%2C157%2C50%2C60%2C123%2C15%2C161%2C45%2C263%2C264%2C262%2C26%2C27%2C28%2C48%2C146%2C77%2C112%2C18%2C20%2C44%2C40%2C42%2C41%2C83%2C92%2C96%2C110%2C144%2C147%2C46%2C111%2C24%2C21%2C119%2C69%2C36%2C149%2C148%2C150%2C141%2C139%2C25%2C35%2C59%2C109%2C160%2C70%2C17%2C152%2C114%2C81%2C66%2C19%2C85%2C86%2C116%2C84%2C136%2C135%2C34%2C278%2C293%2C212%2C201%2C202%2C200%2C296%2C288%2C52%2C213%2C107%2C131%2C80%2C121%2C54%2C47%2C49%2C113%2C120%2C126%2C58%2C64%2C151%2C115%2C37%2C32%2C53%2C56%2C100%2C163%2C1%2C124%2C14%2C122%2C12%2C2%2C57%2C93%2C65%2C118%2C89%2C88%2C166%2C167%2C94%2C95%2C9%2C125%2C102%2C51%2C142%2C87%2C79%2C71%2C117%2C106%2C43%2C143%2C0%2C82%2C137%2C140%2C153%2C38%2C108%2C13%2C168",
+        "version": null
+      },
+      {
+        "src": "https://connect.facebook.net/en_US/fbevents.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-0ZG1Q1V36Z&cx=c&gtm=4e64h1",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-TLPT2M",
+        "version": null
+      },
+      {
+        "src": "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.eiu.edu/_eiu15/js/production_v2.min.js?v=1.8",
+        "version": null
+      },
+      {
+        "src": "https://dk5d4tajy4btb.cloudfront.net/edsights-web-chatbot.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.rlets.com/capture_configs/268/16c/7a6/be8472da452f3a7fd12aded.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "description": "EIU's learning management system is currently powered and hosted by Brightspace by D2L. ",
+      "author": "Eastern Illinois University",
+      "viewport": "width=device-width, initial-scale=1",
+      "msvalidate.01": "AFF7CB252CEFDF595B7C669BF46EC5EA",
+      "history-image": "/_eiu15/images/universal/history_images/about.jpg"
+    },
+    "cookies": [
+      {
+        "name": "_ga",
+        "value": "GA1.1.1931560061.1776800030",
+        "domain": ".eiu.edu"
+      },
+      {
+        "name": "_ga_0ZG1Q1V36Z",
+        "value": "GS2.1.s1776800030$o1$g0$t1776800030$j60$l0$h0",
+        "domain": ".eiu.edu"
+      },
+      {
+        "name": "_fbp",
+        "value": "fb.1.1776800030355.710396611145502739",
+        "domain": ".eiu.edu"
+      }
+    ],
+    "dom": {
+      "title": "Eastern Illinois University :: D2L Brightspace™",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n   <meta charset=\"utf-8\">\n  \t<title>Eastern Illinois University :: D2L Brightspace™</title>\t\n\t<meta name=\"description\" content=\"EIU's learning management system is currently powered and hosted by Brightspace by D2L. \">\n\t<meta name=\"author\" content=\"Eastern Illinois University\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"msvalidate.01\" content=\"AFF7CB252CEFDF595B7C669BF46EC5EA\">\n\n<!-- Google Tag Manager -->\n<script async=\"\" src=\"https://scripts.clarity.ms/0.8.59/clarity.js\"></script><script async=\"\" src=\"https://www.clarity.ms/tag/fiur46ziil?ref=gtm2\"></script><script src=\"https://connect.facebook.net/signals/config/928887457142545?v=2.9.303&amp;r=stable&amp;domain=www.eiu.edu&amp;hme=97937018cefade17726f0472876fc101316b2ce9008a35a6a5a7977d7436151a&amp;ex_m=104%2C205%2C154%2C22%2C72%2C73%2C145%2C68%2C67%2C11%2C162%2C90%2C16%2C138%2C127%2C39%2C75%2C78%2C134%2C159%2C164%2C8%2C4%2C5%2C7%2C6%2C3%2C91%2C101%2C165%2C170%2C219%2C62%2C186%2C187%2C55%2C276%2C30%2C74%2C231%2C230%2C229%2C23%2C33%2C103%2C61%2C10%2C63%2C97%2C98%2C99%2C105%2C130%2C31%2C29%2C132%2C133%2C129%2C128%2C155%2C76%2C158%2C156%2C157%2C50%2C60%2C123%2C15%2C161%2C45%2C263%2C264%2C262%2C26%2C27%2C28%2C48%2C146%2C77%2C112%2C18%2C20%2C44%2C40%2C42%2C41%2C83%2C92%2C96%2C110%2C144%2C147%2C46%2C111%2C24%2C21%2C119%2C69%2C36%2C149%2C148%2C150%2C141%2C139%2C25%2C35%2C59%2C109%2C160%2C70%2C17%2C152%2C114%2C81%2C66%2C19%2C85%2C86%2C116%2C84%2C136%2C135%2C34%2C278%2C293%2C212%2C201%2C202%2C200%2C296%2C288%2C52%2C213%2C107%2C131%2C80%2C121%2C54%2C47%2C49%2C113%2C120%2C126%2C58%2C64%2C151%2C115%2C37%2C32%2C53%2C56%2C100%2C163%2C1%2C124%2C14%2C122%2C12%2C2%2C57%2C93%2C65%2C118%2C89%2C88%2C166%2C167%2C94%2C95%2C9%2C125%2C102%2C51%2C142%2C87%2C79%2C71%2C117%2C106%2C43%2C143%2C0%2C82%2C137%2C140%2C153%2C38%2C108%2C13%2C168\" async=\"\"></script><script async=\"\" src=\"https://connect.facebook.net/en_US/fbevents.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-0ZG1Q1V36Z&amp;cx=c&amp;gtm=4e64h1\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-TLPT2M\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-TLPT2M');</script>\n<!-- End Google Tag Manager --><meta name=\"history-image\" content=\"/_eiu15/images/universal/history_images/about.jpg\">\n\n<style data-tippy-stylesheet=\"\">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:\"\";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><link rel=\"preload\" href=\"/_eiu15/fonts/untitled-font-3.woff\" as=\"font\" crossorigin=\"\">\n<link rel=\"preload\" href=\"/_eiu15/fonts/fontawesome-webfont.woff2?v=4.4.0\" as=\"font\" crossorigin=\"\">\n<link rel=\"stylesheet\" href=\"https://use.typekit.net/dlk2wag.css\">\t<link rel=\"stylesheet\" href=\"https://www.eiu.edu/_eiu15/css/eiu_secondary.css?v=1.1\" media=\"screen\">\n\t<link rel=\"stylesheet\" href=\"local.css\" media=\"screen\">\n\t<link rel=\"canonical\" href=\"https://www.eiu.edu/d2l/\">\n\t\n\t\n\n\n<style>.edsights-web-chatbot-container__announcer[data-v-7ae42705]{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}\n</style><style>.sc-header[data-v-854cd07b]{min-height:75px;border-top-left-radius:9px;border-top-right-radius:9px;padding:10px;box-shadow:0 1px 4px #0003;position:relative;box-sizing:border-box;display:flex}.sc-header--img[data-v-854cd07b]{border-radius:50%;align-self:center;padding:10px}.sc-header--title[data-v-854cd07b]{align-self:center;padding:10px;flex:1;-webkit-user-select:none;user-select:none;font-size:20px}.sc-header--title.enabled[data-v-854cd07b]{cursor:pointer;border-radius:5px}.sc-header--title.enabled[data-v-854cd07b]:hover{box-shadow:0 2px 5px #0000011a}.sc-header--close-button[data-v-854cd07b]{width:40px;align-self:center;height:40px;margin-right:10px;box-sizing:border-box;cursor:pointer;border-radius:5px;margin-left:auto}.sc-header--close-button[data-v-854cd07b]:hover{box-shadow:0 2px 5px #0000011a}.sc-header--close-button img[data-v-854cd07b]{width:100%;height:100%;padding:12px;box-sizing:border-box}@media (max-width: 450px){.sc-header[data-v-854cd07b]{border-radius:0}}svg[data-v-540c88f5]{display:inline-block;vertical-align:baseline;margin-bottom:-2px}.sc-message--text[data-v-91ca3162]{padding:5px 20px;border-radius:6px;font-weight:300;line-height:1.4;position:relative;-webkit-font-smoothing:subpixel-antialiased}.sc-message--text .sc-message--text-content[data-v-91ca3162]{font-size:var(--message-font-size, 14px);line-height:1.4;margin:14px 0;white-space:pre-wrap;width:auto!important}.sc-message--text:hover .sc-message--toolbox[data-v-91ca3162]{left:-20px;opacity:1}.sc-message--text .sc-message--toolbox[data-v-91ca3162]{transition:left .2s ease-out 0s;white-space:normal;opacity:0;position:absolute;left:0;width:25px;top:0}.sc-message--text .sc-message--toolbox button[data-v-91ca3162]{background:none;border:none;padding:0;margin:0;outline:none;width:100%;text-align:center;cursor:pointer}.sc-message--text .sc-message--toolbox button[data-v-91ca3162]:focus{outline:none}.sc-message--text .sc-message--toolbox[data-v-91ca3162] svg{margin-left:5px}.sc-message--text code[data-v-91ca3162]{font-family:Courier New,Courier,monospace!important}.sc-message--content.sent .sc-message--text[data-v-91ca3162]{color:#fff;background-color:#4e8cff;max-width:calc(100% - 120px);word-wrap:break-word}.sc-message--content.received .sc-message--text[data-v-91ca3162]{color:#263238!important;background-color:#f4f7f9;margin-right:40px}[data-v-91ca3162] a.chatLink{word-break:break-word}.sc-message--file[data-v-87c6d65a]{border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;-webkit-font-smoothing:subpixel-antialiased}.sc-message--content.sent .sc-message--file[data-v-87c6d65a]{word-wrap:break-word}.sc-message--file-icon[data-v-87c6d65a]{text-align:center;margin:15px auto 0}.sc-image[data-v-87c6d65a]{max-width:100%;min-width:100%}.sc-message--file-text[data-v-87c6d65a]{padding:17px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;white-space:pre-wrap;-webkit-font-smoothing:subpixel-antialiased}.sc-message--file-name[data-v-87c6d65a]{color:#fff;padding-left:15px;padding-right:15px;padding-top:0;font-size:x-small;text-align:center}.sc-message--file-name a[data-v-87c6d65a]{text-decoration:none;color:#ece7e7}.sc-message--file-name a[data-v-87c6d65a]:hover{color:#fff}.sc-message--content.sent .sc-message--file-text[data-v-87c6d65a]{color:#fff;background-color:#4e8cff;word-wrap:break-word}.sc-message--content.received .sc-message--file[data-v-87c6d65a]{color:#263238!important;background-color:#f4f7f9;margin-right:40px}.sc-message--content.received .sc-message--file-name[data-v-87c6d65a]{color:#000}.sc-message--content.received .sc-message--file a[data-v-87c6d65a]{color:#2b2828b3}.sc-message--content.received .sc-message--file a[data-v-87c6d65a]:hover{color:#0c0c0c}.sc-message--emoji[data-v-07da5fcc]{font-size:40px}.sc-typing-indicator[data-v-1d37f1ed]{text-align:center;padding:17px 20px;border-radius:6px}.sc-typing-indicator span[data-v-1d37f1ed]{display:inline-block;background-color:#b6b5ba;width:10px;height:10px;border-radius:100%;margin-right:3px;animation:bob-1d37f1ed 2s infinite}.sc-typing-indicator span[data-v-1d37f1ed]:nth-child(1){animation-delay:-1s}.sc-typing-indicator span[data-v-1d37f1ed]:nth-child(2){animation-delay:-.85s}.sc-typing-indicator span[data-v-1d37f1ed]:nth-child(3){animation-delay:-.7s}@keyframes bob-1d37f1ed{10%{transform:translateY(-10px);background-color:#9e9da2}50%{transform:translateY(0);background-color:#b6b5ba}}.sc-message--system[data-v-a0304aec]{padding:8px 20px;border-radius:6px;font-weight:300;font-size:12px;line-height:1.2;white-space:pre-wrap;-webkit-font-smoothing:subpixel-antialiased;font-style:italic;opacity:.55}.sc-message--meta[data-v-a0304aec]{font-size:xx-small;margin-bottom:0;margin-top:5px;opacity:.5;text-align:center}.sc-message{width:300px;margin:auto;padding-bottom:10px;display:flex}.sc-message .sc-message--edited{opacity:.7;word-wrap:normal;font-size:xx-small;text-align:center}.sc-message--content{width:100%;display:flex}.sc-message--content.sent{justify-content:flex-end}.sc-message--content.system{justify-content:center}.sc-message--content.sent .sc-message--avatar{display:none}.sc-message--avatar{background-repeat:no-repeat;background-size:100%;background-position:center;border-radius:50%;align-self:center;margin-right:15px}.sc-message--meta{font-size:xx-small;margin-bottom:0;color:#fff;text-align:center}@media (max-width: 450px){.sc-message{width:80%}}.sc-message--text{padding:5px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;position:relative;-webkit-font-smoothing:subpixel-antialiased}.sc-message--text .sc-message--text-body .sc-message--text-content{white-space:pre-wrap}.sc-message--text:hover .sc-message--toolbox{left:-20px;opacity:1}.sc-message--text.confirm-delete:hover .sc-message--toolbox{left:-90px}.sc-message--text.confirm-delete .sc-message--toolbox{width:auto}.sc-message--text .sc-message--toolbox{transition:left .2s ease-out 0s;white-space:normal;opacity:0;position:absolute;left:0;width:25px;top:0}.sc-message--text .sc-message--toolbox button{background:none;border:none;padding:0;margin:0;outline:none;width:100%;text-align:center;cursor:pointer}.sc-message--text .sc-message--toolbox button:focus{outline:none}.sc-message--content.sent .sc-message--text{color:#fff!important;background-color:#4e8cff;max-width:calc(100% - 120px);word-wrap:break-word}.sc-message--text code{font-family:Courier New,Courier,monospace!important}.sc-message--content.received .sc-message--text{color:#263238!important;background-color:#f4f7f9;margin-right:40px}.sc-message-list[data-v-671a46ff]{height:80%;overflow-y:auto;background-size:100%;padding:40px 0}.sc-message-list[data-v-671a46ff][data-v-671a46ff]:focus{outline:2px solid var(--focus-color);border-radius:2px}.sc-emoji-picker[data-v-2dfd36d6]{position:absolute;bottom:50px;right:0;width:330px;max-height:215px;box-shadow:0 7px 40px 2px #9495964d;background:#fff;border-radius:10px;outline:none}.sc-emoji-picker[data-v-2dfd36d6]:after{content:\"\";width:14px;height:14px;background:#fff;position:absolute;bottom:-6px;right:55px;transform:rotate(45deg);border-radius:2px}.sc-emoji-picker--content[data-v-2dfd36d6]{padding:10px;overflow:auto;width:100%;max-height:195px;margin-top:7px;box-sizing:border-box}.sc-emoji-picker--category[data-v-2dfd36d6]{display:flex;flex-direction:row;flex-wrap:wrap}.sc-emoji-picker--category-title[data-v-2dfd36d6]{min-width:100%;color:#b8c3ca;font-weight:200;font-size:13px;margin:5px;letter-spacing:1px}.sc-emoji-picker--emoji[data-v-2dfd36d6]{margin:5px;width:30px;line-height:30px;text-align:center;cursor:pointer;vertical-align:middle;font-size:28px;transition:transform 60ms ease-out}.sc-emoji-picker--emoji[data-v-2dfd36d6]:hover{transform:scale(1.4)}.sc-user-input--emoji-icon-wrapper[data-v-fa74da40]{background:none;border:none;padding:0;margin:0;outline:none}.sc-user-input--emoji-icon-wrapper[data-v-fa74da40]:focus{outline:none}.sc-user-input--emoji-icon[data-v-fa74da40]{height:18px;cursor:pointer;align-self:center}.sc-user-input--emoji-icon-wrapper:focus .sc-user-input--emoji-icon path[data-v-fa74da40],.sc-user-input--emoji-icon-wrapper:focus .sc-user-input--emoji-icon circle[data-v-fa74da40],.sc-user-input--emoji-icon.active path[data-v-fa74da40],.sc-user-input--emoji-icon.active circle[data-v-fa74da40],.sc-user-input--emoji-icon:hover path[data-v-fa74da40],.sc-user-input--emoji-icon:hover circle[data-v-fa74da40]{filter:contrast(15%)}#file-input[data-v-98b38a0f]{cursor:pointer}.sc-user-input--file-icon-wrapper[data-v-98b38a0f]{background:none;border:none;padding:0;margin:0;outline:none;cursor:pointer}.sc-user-input--file-icon[data-v-98b38a0f]{height:20px;width:20px;align-self:center;outline:none}.sc-user-input--file-icon:hover path[data-v-98b38a0f]{filter:contrast(15%)}.sc-user-input--button-icon-wrapper[data-v-53cd3858]{background:none;border:none;padding:0;margin:0;outline:none;cursor:pointer}.sc-user-input--button-icon-wrapper[data-v-53cd3858][data-v-53cd3858]:focus{outline:2px solid var(--focus-color);border-radius:2px}.sc-suggestions-row[data-v-394487ee]{text-align:center;background:inherit}.sc-suggestions-row .sc-suggestions-element[data-v-394487ee]{margin:3px;padding:5px 10px;border:1px solid;border-radius:15px;font-size:14px;background:inherit;cursor:pointer;background-color:transparent}.sc-user-input{min-height:55px;margin:0;position:relative;bottom:0;display:flex;background-color:#f4f7f9;border-bottom-left-radius:10px;border-bottom-right-radius:10px;transition:background-color .2s ease,box-shadow .2s ease}.sc-user-input--text{width:300px;resize:none;border:none;outline:none;border-bottom-left-radius:10px;box-sizing:border-box;padding:18px;font-size:16px;font-weight:400;line-height:1.33;white-space:pre-wrap;word-wrap:break-word;color:#565867;-webkit-font-smoothing:antialiased;max-height:200px;overflow:scroll;bottom:0;overflow-x:hidden;overflow-y:auto}.sc-user-input--text:empty:before{content:attr(placeholder);display:block;filter:contrast(15%);outline:none;cursor:text}.sc-user-input--buttons{width:100px;position:absolute;right:30px;height:100%;display:flex;justify-content:flex-end}.sc-user-input--button:first-of-type{width:40px}.sc-user-input--button{width:30px;height:55px;margin-left:2px;margin-right:2px;display:flex;flex-direction:column;justify-content:center}.sc-user-input.active{box-shadow:none;background-color:#fff;box-shadow:0 -5px 20px #96a5be33}.sc-user-input--button label{position:relative;height:24px;padding-left:3px;cursor:pointer}.sc-user-input--button label:hover path{fill:#565867}.sc-user-input--button input{position:absolute;left:0;top:0;width:100%;z-index:99999;height:100%;opacity:0;cursor:pointer;overflow:hidden}.file-container{background-color:#f4f7f9;border-top-left-radius:10px;padding:5px 20px;color:#565867}.delete-file-message{font-style:normal;float:right;cursor:pointer;color:#c8cad0}.delete-file-message:hover{color:#5d5e6d}.icon-file-message{margin-right:5px}.user-list[data-v-ee16303d]{height:100%;overflow:auto;padding-left:5px;padding-top:8px}.img-msg[data-v-ee16303d]{border-radius:50%;width:50px;margin-right:5px}.user-element[data-v-ee16303d]{font-size:20px;vertical-align:middle}.sc-chat-window[data-v-b54aa4ba]{width:370px;height:calc(100% - 120px);max-height:590px;position:fixed;box-sizing:border-box;box-shadow:0 7px 40px 2px #9495961a;background:#fff;display:flex;flex-direction:column;justify-content:space-between;border-radius:10px;animation:fadeIn-b54aa4ba;animation-duration:.3s;animation-timing-function:ease-in-out}.sc-chat-window.position-bottom-right[data-v-b54aa4ba]{bottom:100px;right:25px}.sc-chat-window.position-bottom-left[data-v-b54aa4ba]{bottom:100px;left:25px}.sc-chat-window.position-top-right[data-v-b54aa4ba]{top:100px;right:25px}.sc-chat-window.position-top-left[data-v-b54aa4ba]{top:100px;left:25px}.sc-chat-window.closed[data-v-b54aa4ba]{opacity:0;display:none;bottom:90px}@keyframes fadeIn-b54aa4ba{0%{display:none;opacity:0}to{display:flex;opacity:1}}.sc-message--me[data-v-b54aa4ba]{text-align:right}.sc-message--them[data-v-b54aa4ba]{text-align:left}@media (max-width: 450px){.sc-chat-window[data-v-b54aa4ba]{width:100%;height:100%;max-height:100%;right:0;bottom:0;border-radius:0}.sc-chat-window.position-bottom-left[data-v-b54aa4ba],.sc-chat-window.position-bottom-right[data-v-b54aa4ba],.sc-chat-window.position-top-left[data-v-b54aa4ba],.sc-chat-window.position-top-right[data-v-b54aa4ba]{left:0;right:0;bottom:0;top:0}.sc-chat-window[data-v-b54aa4ba]{transition:.1s ease-in-out}.sc-chat-window.closed[data-v-b54aa4ba]{bottom:0}}.chat-trigger-icon[data-v-17c97db7]{cursor:pointer;width:60px;height:60px;background-position:center;background-repeat:no-repeat;border-radius:50%;box-shadow:none;display:flex;justify-content:center;align-items:center}.chat-trigger-icon[data-v-17c97db7]:before{content:\"\";position:relative;display:block;width:60px;height:60px;border-radius:50%}.chat-trigger-icon .sc-open-icon[data-v-17c97db7],.chat-trigger-icon .sc-closed-icon[data-v-17c97db7]{width:60px;height:60px}.chat-trigger-icon .sc-closed-icon[data-v-17c97db7],.chat-trigger-icon .sc-open-icon[data-v-17c97db7]{padding:20px;box-sizing:border-box}.chat-trigger-icon.opened[data-v-17c97db7]:before{box-shadow:0 0 400px 250px #94959633}.chat-trigger-icon[data-v-17c97db7]:hover{box-shadow:0 0 27px 1.5px #0003}.sc-new-messsages-count[data-v-17c97db7]{position:absolute;top:-3px;right:-3px;display:flex;justify-content:center;flex-direction:column;border-radius:50%;width:22px;height:22px;background:#ff4646;color:#fff;text-align:center;margin:auto;font-size:12px;font-weight:500}.chat-trigger-greeting[data-v-587ab626]{display:flex;align-items:center;margin:0 8px}.chat-trigger-greeting .profile-image-container[data-v-587ab626]{cursor:pointer;padding:0;margin:0;background:none;display:block}.chat-trigger-greeting .profile-image-container .profile-image[data-v-587ab626]{background-repeat:no-repeat;background-size:100%;background-position:center;border-radius:50%;margin-left:10px;margin-right:10px}.chat-trigger-greeting .chat-trigger-greeting-message[data-v-587ab626]{position:relative;font-size:12px;background-color:#fff;padding:10px;border:1px solid white;border-radius:3px;box-shadow:0 0 10px #0003}.chat-trigger-greeting .chat-trigger-greeting-message .dismiss[data-v-587ab626]{cursor:pointer;border:none;padding:0;display:flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:12px;position:absolute;background-color:#4e5d77;opacity:.8;top:-10px;right:-10px;color:#fff}.chat-trigger-greeting .chat-trigger-greeting-message .dismiss img[data-v-587ab626]{width:10px;height:10px}.chat-trigger-greeting .chat-trigger-greeting-message .dismiss[data-v-587ab626]:hover{opacity:1}.chat-trigger-greeting .chat-trigger-greeting-message .greeting-text[data-v-587ab626]{cursor:pointer;background:none;border:none;padding:0;font:inherit;color:inherit;text-align:left}.chat-trigger-greeting .chat-trigger-greeting-message .greeting-text[data-v-587ab626]:focus{outline:2px solid var(--focus-color);border-radius:2px}.chat-trigger-greeting.position-bottom-right[data-v-587ab626],.chat-trigger-greeting.position-top-right[data-v-587ab626]{flex-direction:row}.chat-trigger-greeting.position-bottom-left[data-v-587ab626],.chat-trigger-greeting.position-top-left[data-v-587ab626]{flex-direction:row-reverse}.chat-trigger[data-v-7ec8a4be]{display:flex;align-items:center;justify-content:center;gap:10px}.chat-trigger[data-v-7ec8a4be].position-bottom-right[data-v-7ec8a4be],.chat-trigger[data-v-7ec8a4be].position-top-right[data-v-7ec8a4be]{flex-direction:row}.chat-trigger[data-v-7ec8a4be].position-bottom-left[data-v-7ec8a4be],.chat-trigger[data-v-7ec8a4be].position-top-left[data-v-7ec8a4be]{flex-direction:row-reverse}.chat-launcher[data-v-139eeea7]{position:fixed;z-index:999999999}.chat-launcher[data-v-139eeea7] *{font-family:sans-serif!important}.chat-launcher.position-top-left[data-v-139eeea7]{top:25px;left:25px}.chat-launcher.position-top-right[data-v-139eeea7]{top:25px;right:25px}.chat-launcher.position-bottom-left[data-v-139eeea7]{bottom:25px;left:25px}.chat-launcher.position-bottom-right[data-v-139eeea7]{bottom:25px;right:25px}.chat-launcher[data-v-139eeea7] .sc-message--content.sent p.sc-message--text-content,.chat-launcher[data-v-139eeea7] .sc-message--content.sent p.sc-message--text-content a{color:#fff!important}</style><style>#rl-email-container{display:block;height:100%;left:0;position:fixed;top:0;width:100%;z-index:99998}#rl-email{background-color:#fff;border:30px solid #fff;border-radius:5px;font-family:Arial,sans-serif;font-size:16px;margin:30px auto;position:relative;width:400px;z-index:99999}#rl-email .rl-email-company-name{font-size:12px;font-weight:700;letter-spacing:5px;margin:0 0 1em 0;text-align:center;text-transform:uppercase}#rl-email input,#rl-email textarea{color:#222;font-family:Arial,sans-serif;font-size:18px;padding:5px 5px 4px;line-height:normal;border-width:1px;border-color:gray}#rl-email textarea{height:3em;margin:0 0 1.5em 2px}#rl-email label{color:#444;display:block;font-family:Arial,sans-serif;font-size:16px;text-align:left;width:100%;left:auto;position:static}#rl-email label.error .rl-email-required{color:#b94a48}#rl-email label.error input,#rl-email label.error textarea{background-color:#fff8e1}#rl-email label#rl-do-not-email-label{text-align:justify;font-size:12px;margin:-1.5em 0 1.5em 2px;clear:both}#rl-email .rl-email-required{color:#999;margin-left:.5em;font-weight:700;font-size:12px;text-transform:uppercase}#rl-email .rl-email-field{display:block;width:96%}#rl-email .rl-button{display:inline-block;border-radius:3px;cursor:pointer;font-family:arial;font-size:15px;font-weight:700;margin:3px;padding:6px 24px;text-decoration:none}#rl-email .rl-button[type=submit]{-moz-box-shadow:inset 0 1px 0 0 #54a3f7;-webkit-box-shadow:inset 0 1px 0 0 #54a3f7;box-shadow:inset 0 1px 0 0 #54a3f7;background:-webkit-gradient(linear,left top,left bottom,color-stop(.05,#007dc1),color-stop(1,#0061a7));background:-moz-linear-gradient(top,#007dc1 5%,#0061a7 100%);background:-webkit-linear-gradient(top,#007dc1 5%,#0061a7 100%);background:-o-linear-gradient(top,#007dc1 5%,#0061a7 100%);background:-ms-linear-gradient(top,#007dc1 5%,#0061a7 100%);background:linear-gradient(to bottom,#007dc1 5%,#0061a7 100%);background-color:#007dc1;border:1px solid #124d77;color:#fff;text-shadow:0 1px 0 #154682}#rl-email .rl-button:hover[type=submit]{background:-webkit-gradient(linear,left top,left bottom,color-stop(.05,#0061a7),color-stop(1,#007dc1));background:-moz-linear-gradient(top,#0061a7 5%,#007dc1 100%);background:-webkit-linear-gradient(top,#0061a7 5%,#007dc1 100%);background:-o-linear-gradient(top,#0061a7 5%,#007dc1 100%);background:-ms-linear-gradient(top,#0061a7 5%,#007dc1 100%);background:linear-gradient(to bottom,#0061a7 5%,#007dc1 100%);background-color:#0061a7}#rl-email .rl-button[type=button]{-moz-box-shadow:inset 0 1px 0 0 #fff;-webkit-box-shadow:inset 0 1px 0 0 #fff;box-shadow:inset 0 1px 0 0 #fff;background:-webkit-gradient(linear,left top,left bottom,color-stop(.05,#fff),color-stop(1,#e3e0e3));background:-moz-linear-gradient(top,#fff 5%,#e3e0e3 100%);background:-webkit-linear-gradient(top,#fff 5%,#e3e0e3 100%);background:-o-linear-gradient(top,#fff 5%,#e3e0e3 100%);background:-ms-linear-gradient(top,#fff 5%,#e3e0e3 100%);background:linear-gradient(to bottom,#fff 5%,#e3e0e3 100%);background-color:#fff;border:1px solid #ccc;color:#666;text-shadow:0 1px 0 #fff}#rl-email .rl-button:hover[type=button]{background:-webkit-gradient(linear,left top,left bottom,color-stop(.05,#e3e0e3),color-stop(1,#fff));background:-moz-linear-gradient(top,#e3e0e3 5%,#fff 100%);background:-webkit-linear-gradient(top,#e3e0e3 5%,#fff 100%);background:-o-linear-gradient(top,#e3e0e3 5%,#fff 100%);background:-ms-linear-gradient(top,#e3e0e3 5%,#fff 100%);background:linear-gradient(to bottom,#e3e0e3 5%,#fff 100%);background-color:#e3e0e3}#rl-email-container .rl-email-overlay-win{background-color:#000;height:100%;left:0;opacity:.8;position:absolute;top:0;width:100%;z-index:9998}@media only screen and (max-width:480px){#rl-email-container .rl-email-overlay-win{background-color:#fff;opacity:1}#rl-email{border:10px solid #fff;border-radius:0;left:0;margin-left:0;margin-top:0;top:0;width:90%}}#rl-privacy-notice-container{z-index:99999;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;color:#333!important;position:relative}#rl-privacy-notice-top{position:absolute}#rl-privacy-text-container{padding:10px 20px;margin:0 auto}#rl-privacy-text{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;line-height:1.3;font-size:14px}#rl-privacy-text a{color:inherit!important;text-decoration:underline!important}button#rl-privacy-accept,button#rl-privacy-decline{background:#5688ea!important;position:absolute;line-height:1.1;margin:5px 10px;cursor:pointer;padding:8px 18px;border-radius:3px;border:1px solid #416dc4}button#rl-privacy-accept{right:10px;bottom:5px}button#rl-privacy-decline{left:10px;bottom:5px}.rl-accept-text,.rl-decline-text{font-size:15px;color:#fff!important;font-weight:700;letter-spacing:0}.rl-dismiss-text{display:flex;align-items:center}.rl-dismiss{padding-left:10px;font-style:bold;font-size:1.5em}.rl-privacy-wrapper{position:fixed;bottom:0;margin-bottom:8px;margin-right:8px}.rl-privacy-notice{background-color:#fff!important;opacity:1;top:0;left:0;right:0;border-bottom:1px solid #ddd;box-shadow:0 1px 8px rgba(0,0,0,.17);padding-bottom:45px}</style><iframe id=\"rl-iframe-clean-json\" style=\"display: none;\" title=\"No Readable Content\" aria-hidden=\"true\"></iframe><iframe src=\"https://26816c7a-6be8-472d-a452-f3a7fd12aded.rlets.com/static/storage.html\" id=\"capture_storage_26816c7a-6be8-472d-a452-f3a7fd12aded\" title=\"No Readable Content\" aria-hidden=\"true\" style=\"display: none;\"></iframe>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "1.12.4"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.eiu.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<html><head><title>404 Unknown error</title></head><body>Unknown error 404</body>\r\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.eiu.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!doctype html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>Eastern Illinois University :: Error404</title>\n    <meta name=\"description\" content=\"Error404.\"/>\n    <meta name=\"author\" content=\"Eastern Illinois University\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"msvalidate.01\" content=\"AFF7CB252CEFDF595B7C669BF46EC5EA\" />\n\n<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event"
+    },
+    "/wp-content/": {
+      "url": "https://www.eiu.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "<html><head><title>404 Unknown error</title></head><body>Unknown error 404</body>\r\n"
+    },
+    "/user/login": {
+      "url": "https://www.eiu.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!doctype html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>Eastern Illinois University :: Error404</title>\n    <meta name=\"description\" content=\"Error404.\"/>\n    <meta name=\"author\" content=\"Eastern Illinois University\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"msvalidate.01\" content=\"AFF7CB252CEFDF595B7C669BF46EC5EA\" />\n\n<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event"
+    },
+    "/core/install.php": {
+      "url": "https://www.eiu.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!doctype html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>Eastern Illinois University :: Error404</title>\n    <meta name=\"description\" content=\"Error404.\"/>\n    <meta name=\"author\" content=\"Eastern Illinois University\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"msvalidate.01\" content=\"AFF7CB252CEFDF595B7C669BF46EC5EA\" />\n\n<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event"
+    },
+    "/cas/login": {
+      "url": "https://www.eiu.edu/cas/login",
+      "status": 301,
+      "redirect_to": "https://www.eiu.edu/clas/login",
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>301 Moved Permanently</title>\n</head><body>\n<h1>Moved Permanently</h1>\n<p>The document has moved <a href=\"https://www.eiu.edu/clas/login\">here</a>.</p>\n</body></html>\n"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.eiu.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!doctype html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>Eastern Illinois University :: Error404</title>\n    <meta name=\"description\" content=\"Error404.\"/>\n    <meta name=\"author\" content=\"Eastern Illinois University\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"msvalidate.01\" content=\"AFF7CB252CEFDF595B7C669BF46EC5EA\" />\n\n<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "D2L Brightspace",
+      "confidence": 100,
+      "evidence": [
+        "HTML: brightspace",
+        "HTML: d2l.*brightspace",
+        "JS: D2L (HTML)",
+        "JS: Brightspace (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 80,
+      "evidence": [
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "Adobe Fonts",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "Typekit",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "Vimeo",
+      "confidence": 40,
+      "evidence": [
+        "HTML: vimeo"
+      ]
+    },
+    {
+      "name": "Vue.js",
+      "confidence": 40,
+      "evidence": [
+        "HTML: data-v-"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Top Hat",
+      "confidence": 40,
+      "evidence": [
+        "HTML: top.*hat"
+      ]
+    },
+    {
+      "name": "SAML",
+      "confidence": 40,
+      "evidence": [
+        "HTML: saml"
+      ]
+    },
+    {
+      "name": "Econda",
+      "confidence": 30,
+      "evidence": [
+        "JS: econda (HTML)"
+      ]
+    },
+    {
+      "name": "Facebook Pixel",
+      "confidence": 30,
+      "evidence": [
+        "JS: _fbq (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Microsoft Clarity",
+      "confidence": 30,
+      "evidence": [
+        "JS: clarity (HTML)"
+      ]
+    },
+    {
+      "name": "reCAPTCHA",
+      "confidence": 30,
+      "evidence": [
+        "JS: recaptcha (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Ellucian Banner",
+      "confidence": 30,
+      "evidence": [
+        "JS: Banner (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

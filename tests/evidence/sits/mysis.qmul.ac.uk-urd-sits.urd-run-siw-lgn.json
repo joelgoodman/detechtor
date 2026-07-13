@@ -1,0 +1,385 @@
+{
+  "technology": "SITS",
+  "url": "https://mysis.qmul.ac.uk/urd/sits.urd/run/siw_lgn",
+  "final_url": "https://mysis.qmul.ac.uk/urd/sits.urd/run/siw_lgn",
+  "captured_at": "2026-04-21T19:35:44.957Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/sits/mysis.qmul.ac.uk-urd-sits.urd-run-siw-lgn.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "private,no-cache,no-store,must-revalidate",
+      "connection": "Keep-Alive",
+      "content-type": "text/html;charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:35:42 GMT",
+      "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "keep-alive": "timeout=5, max=100",
+      "pragma": "no-cache",
+      "referrer-policy": "strict-origin",
+      "server": "Apache",
+      "server-timing": "dtTrId;desc=\"62fadbe85cb7a03ee8c494a3eacf82d1\", dtSInfo;desc=\"0\"\ndtRpid;desc=\"-429171326\"",
+      "set-cookie": "JSESSIONID=3FCF40E9EB0ED70EF4E78D11D56BA93E; Path=/urd; Secure; HttpOnly;HttpOnly;Secure\nEVISIONLOGINLANG=; Secure; HttpOnly;HttpOnly;Secure\nEVISIONLOGINHTV=; Secure; HttpOnly;HttpOnly;Secure\nEVISIONID_TEST=COOKIE_TEST; Secure; HttpOnly;HttpOnly;Secure\nSITSFORMVERIFICATION=XFXXWFV1JVBNGVCEVM0CPWA6WQ0RFLBUOBCK; Secure; HttpOnly;HttpOnly;Secure\nSESSIONSALT=YOSYOOC5G6VUNTAZCMX08ORYPVD9B62OXP3D; Secure; HttpOnly;HttpOnly;Secure\ndtCookie=v_4_srv_10_sn_A5E2E78BB9A1FDBF4B4EAE21AABF30C7_perc_100000_ol_0_mul_1_app-3A197aef20829e73c2_1; Path=/; Domain=.qmul.ac.uk",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "transfer-encoding": "chunked",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN\ndeny",
+      "x-oneagent-js-injection": "true",
+      "x-robots-tag": "noindex,nofollow",
+      "x-xss-protection": "1; mode=block"
+    },
+    "scripts": [
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-KQZ3W5",
+        "version": null
+      },
+      {
+        "src": "https://mysis.qmul.ac.uk/urd/ruxitagentjs_ICA7NVfqrux_10335260306043831.js",
+        "version": null
+      },
+      {
+        "src": "https://mysis.qmul.ac.uk/urd/sits.urd/plugins/javascript/jquery.js?v=1001.1",
+        "version": null
+      },
+      {
+        "src": "https://mysis.qmul.ac.uk/urd/sits.urd/plugins/javascript/jquery-ui.js?v=960.1",
+        "version": null
+      },
+      {
+        "src": "https://mysis.qmul.ac.uk/urd/sits.urd/plugins/javascript/sv.min.js?v=990.1",
+        "version": null
+      },
+      {
+        "src": "https://mysis.qmul.ac.uk/urd/sits.urd/javascript/settings.js?v=920.1",
+        "version": null
+      },
+      {
+        "src": "https://mysis.qmul.ac.uk/urd/sits.urd/javascript/sits_ajax.js?v=1002.1",
+        "version": null
+      },
+      {
+        "src": "https://mysis.qmul.ac.uk/urd/sits.urd/plugins/javascript/tablesaw/tablesaw.min.js?v=1002.1",
+        "version": null
+      },
+      {
+        "src": "https://mysis.qmul.ac.uk/urd/sits.urd/plugins/javascript/datatables/media/js/jquery.dataTables.min.js?v=1002.1",
+        "version": null
+      },
+      {
+        "src": "https://mysis.qmul.ac.uk/urd/sits.urd/plugins/javascript/datatables/media/js/dataTables.tribal.min.js?v=1002.1",
+        "version": null
+      },
+      {
+        "src": "https://mysis.qmul.ac.uk/urd/sits.urd/javascript/siw_lgn.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=UA-116230872-1",
+        "version": null
+      },
+      {
+        "src": "https://mysis.qmul.ac.uk/urd/sits.urd/javascript/qmul-custom-login.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1",
+      "format-detection": "telephone=no",
+      "robots": "noindex, nofollow"
+    },
+    "cookies": [
+      {
+        "name": "SITSFORMVERIFICATION",
+        "value": "XFXXWFV1JVBNGVCEVM0CPWA6WQ0RFLBUOBCK",
+        "domain": "mysis.qmul.ac.uk"
+      },
+      {
+        "name": "EVISIONLOGINHTV",
+        "value": "",
+        "domain": "mysis.qmul.ac.uk"
+      },
+      {
+        "name": "EVISIONLOGINLANG",
+        "value": "",
+        "domain": "mysis.qmul.ac.uk"
+      },
+      {
+        "name": "EVISIONID_TEST",
+        "value": "COOKIE_TEST",
+        "domain": "mysis.qmul.ac.uk"
+      },
+      {
+        "name": "JSESSIONID",
+        "value": "3FCF40E9EB0ED70EF4E78D11D56BA93E",
+        "domain": "mysis.qmul.ac.uk"
+      },
+      {
+        "name": "dtCookie",
+        "value": "v_4_srv_10_sn_A5E2E78BB9A1FDBF4B4EAE21AABF30C7_perc_100000_ol_0_",
+        "domain": ".qmul.ac.uk"
+      },
+      {
+        "name": "SESSIONSALT",
+        "value": "YOSYOOC5G6VUNTAZCMX08ORYPVD9B62OXP3D",
+        "domain": "mysis.qmul.ac.uk"
+      },
+      {
+        "name": "rxVisitor",
+        "value": "17768001423142LCL33CK24J1Q1C23CPLQ61A4G1UF14L",
+        "domain": ".qmul.ac.uk"
+      },
+      {
+        "name": "rxvt",
+        "value": "1776801943727|1776800142315",
+        "domain": ".qmul.ac.uk"
+      },
+      {
+        "name": "dtSa",
+        "value": "-",
+        "domain": ".qmul.ac.uk"
+      },
+      {
+        "name": "dtPC",
+        "value": "10$200142314_522h2vQLBUOECCUELMHFTVNORUWCMKMMCJDPKM-0e0",
+        "domain": ".qmul.ac.uk"
+      }
+    ],
+    "dom": {
+      "title": "Log in to the portal",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"format-detection\" content=\"telephone=no\">\n\t<meta name=\"robots\" content=\"noindex, nofollow\">\n    <!-- body-start.hts -->\n    <title>Log in to the portal</title>\n\n    <script type=\"text/javascript\" async=\"\" src=\"https://www.google-analytics.com/analytics.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-Z8TEK0STLD&amp;cx=c&amp;gtm=4e64h1\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-KQZ3W5\"></script><script type=\"text/javascript\" src=\"/urd/ruxitagentjs_ICA7NVfqrux_10335260306043831.js\" data-dtconfig=\"app=197aef20829e73c2|srre=https%3A%2F%2Fpx.ads.linkedin.com%2Fwa%2F|owasp=1|featureHash=ICA7NVfqrux|rdnt=1|uxrgce=1|cuc=wwsfiovv|mel=100000|expw=1|dpvc=1|lastModification=1776688162947|tp=500,50,0|srbbv=2|agentUri=/urd/ruxitagentjs_ICA7NVfqrux_10335260306043831.js|reportUrl=/urd/rb_bf91175sbx|rid=RID_1171699866|rpid=-429171326|domain=qmul.ac.uk\"></script><link rel=\"stylesheet\" href=\"../css/sits.css\">\n    <link rel=\"stylesheet\" href=\"../css/sv.css\">\n    <link rel=\"stylesheet\" href=\"../plugins/css/ui/sits-ui.css\">\n\n\t<!-- Google Tag Manager MM 20-March-2024 -->\n\t<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQZ3W5');</script>\n\t<!-- End Google Tag Manager -->\n\n    <script src=\"../plugins/javascript/jquery.js?v=1001.1\"></script>\n    <script src=\"../plugins/javascript/jquery-ui.js?v=960.1\"></script>\n\n    <script src=\"../plugins/javascript/sv.min.js?v=990.1\"></script>\n\n    <script src=\"../javascript/settings.js?v=920.1\"></script>\n    <script src=\"../javascript/sits_ajax.js?v=1002.1\"></script>\n\n    <script src=\"../plugins/javascript/tablesaw/tablesaw.min.js?v=1002.1\"></script>\n    <script src=\"../plugins/javascript/datatables/media/js/jquery.dataTables.min.js?v=1002.1\"></script>\n    <script src=\"../plugins/javascript/datatables/media/js/dataTables.tribal.min.js?v=1002.1\"></script>\n\t\n     \n    <script>\n    if (self===top) { // we are not in a frame remove the style tag\n      var antiClickjack = document.getElementById(\"antiClickjack\");\n      antiClickjack.parentNode.removeChild(antiClickjack);\n\t}else{// we are in a frame set outermost document/frame to be same as frame location\n       top.location = self.location;\n    }\n    </script>\n    <script>\n\t  function uSubmit(){} //include dummy function to prevent errors when submitting\n\t</script>\n  ",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.6.3"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://mysis.qmul.ac.uk/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://mysis.qmul.ac.uk/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/wp-content/": {
+      "url": "https://mysis.qmul.ac.uk/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/user/login": {
+      "url": "https://mysis.qmul.ac.uk/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/core/install.php": {
+      "url": "https://mysis.qmul.ac.uk/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/cas/login": {
+      "url": "https://mysis.qmul.ac.uk/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://mysis.qmul.ac.uk/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "HTML: gtag\\('js'",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "SITS",
+      "confidence": 80,
+      "evidence": [
+        "HTML: sits\\.urd",
+        "HTML: /urd/sits\\.urd/run/"
+      ]
+    },
+    {
+      "name": "Java",
+      "confidence": 70,
+      "evidence": [
+        "Cookie: JSESSIONID"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: gtag\\("
+      ]
+    },
+    {
+      "name": "Adobe Experience Manager",
+      "confidence": 30,
+      "evidence": [
+        "JS: CQ (HTML)"
+      ]
+    },
+    {
+      "name": "Canvas LMS",
+      "confidence": 30,
+      "evidence": [
+        "JS: ENV (HTML)"
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ext (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Sitecore",
+      "confidence": 30,
+      "evidence": [
+        "JS: _sc (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "EMS",
+      "confidence": 30,
+      "evidence": [
+        "JS: EMS (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

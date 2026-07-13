@@ -1,0 +1,1143 @@
+{
+  "_metadata": {
+    "version": "3.0.0",
+    "description": "Consolidated higher-ed patterns: Learning management systems and academic platforms",
+    "generated": "2026-04-21",
+    "source": "Merged from 9 higher-ed-*.json + enhanced-payment-analytics.json",
+    "tech_count": 54
+  },
+  "Absorb LMS": {
+    "cats": [
+      21
+    ],
+    "description": "Absorb learning management system",
+    "html": [
+      "absorblms",
+      "absorb.*lms"
+    ],
+    "scripts": [
+      "absorb"
+    ],
+    "js": {
+      "AbsorbLMS": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.absorblms.com"
+  },
+  "Blackboard Collaborate": {
+    "cats": [
+      21
+    ],
+    "description": "Blackboard Collaborate virtual classroom platform",
+    "html": [
+      "blackboard.*collaborate",
+      "bb.*collaborate",
+      "collaborate.*ultra"
+    ],
+    "scripts": [
+      "collaborate",
+      "bb.*collaborate"
+    ],
+    "js": {
+      "Collaborate": "",
+      "BBCollaborate": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.blackboard.com/teaching-learning/collaboration-web-conferencing/blackboard-collaborate"
+  },
+  "Blackboard Learn": {
+    "cats": [
+      21
+    ],
+    "description": "Blackboard Learn LMS. Original deployment uses /webapps/blackboard/ and /bbcswebdav/ paths; Ultra UI uses /ultra/ paths.",
+    "html": [
+      "blackboard\\.com",
+      "bblearn",
+      "bb-base-",
+      "blackboard.*learn",
+      "/ultra/",
+      "/webapps/blackboard/",
+      "/bbcswebdav/",
+      "bbcswebdav"
+    ],
+    "scripts": [
+      "blackboard",
+      "bblearn"
+    ],
+    "js": {
+      "Blackboard": "",
+      "bbNG": ""
+    },
+    "meta": {
+      "generator": "Blackboard"
+    },
+    "cookies": {
+      "BbRouter": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.blackboard.com/teaching-learning/learning-management"
+  },
+  "Blackboard Ultra": {
+    "cats": [
+      21
+    ],
+    "description": "Blackboard Learn Ultra modern interface",
+    "html": [
+      "blackboard.*ultra",
+      "ultra.*experience",
+      "bb.*ultra"
+    ],
+    "scripts": [
+      "blackboard.*ultra",
+      "bb.*ultra"
+    ],
+    "js": {
+      "BlackboardUltra": "",
+      "UltraExperience": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.blackboard.com/teaching-learning/learning-management/blackboard-learn/ultra-experience"
+  },
+  "Brightspace Core": {
+    "cats": [
+      21
+    ],
+    "description": "D2L Brightspace Core platform",
+    "html": [
+      "brightspace.*core",
+      "valence.*api"
+    ],
+    "scripts": [
+      "brightspace.*core"
+    ],
+    "js": {
+      "BrightspaceCore": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.d2l.com/brightspace/core/"
+  },
+  "Brightspace Portfolio": {
+    "cats": [
+      21
+    ],
+    "description": "D2L Brightspace Portfolio for competency-based education",
+    "html": [
+      "brightspace.*portfolio",
+      "d2l.*portfolio",
+      "competency.*brightspace"
+    ],
+    "scripts": [
+      "brightspace.*portfolio",
+      "d2l.*portfolio"
+    ],
+    "js": {
+      "BrightspacePortfolio": "",
+      "D2LPortfolio": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.d2l.com/brightspace/portfolio/"
+  },
+  "Cambridge Core": {
+    "cats": [
+      21
+    ],
+    "description": "Cambridge University Press digital platform",
+    "html": [
+      "cambridge.*core",
+      "cambridge\\.org",
+      "cup.*cambridge"
+    ],
+    "scripts": [
+      "cambridge.*core"
+    ],
+    "js": {
+      "CambridgeCore": ""
+    },
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.cambridge.org/core"
+  },
+  "Canvas LMS": {
+    "cats": [
+      21
+    ],
+    "description": "Canvas learning management system",
+    "html": [
+      "canvas-lms",
+      "instructure\\.com",
+      "canvas_course_id",
+      "ENV.*COURSE",
+      "webpackChunkcanvas_lms"
+    ],
+    "scripts": [
+      "instructure",
+      "canvas-lms",
+      "canvas_public"
+    ],
+    "js": {
+      "ENV": ""
+    },
+    "headers": {
+      "X-Canvas-Request-Context-Id": ".*",
+      "X-Canvas-User-Id": ".*"
+    },
+    "higher_ed": true
+  },
+  "Cengage MindTap": {
+    "cats": [
+      21
+    ],
+    "description": "Cengage MindTap digital learning platform",
+    "html": [
+      "mindtap",
+      "cengage.*mindtap",
+      "mind.*tap"
+    ],
+    "scripts": [
+      "mindtap",
+      "cengage.*mindtap"
+    ],
+    "js": {
+      "MindTap": "",
+      "CengageMindTap": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.cengage.com/mindtap/"
+  },
+  "Cengage WebAssign": {
+    "cats": [
+      21
+    ],
+    "description": "Cengage WebAssign online homework platform",
+    "html": [
+      "webassign",
+      "cengage.*webassign",
+      "web.*assign"
+    ],
+    "scripts": [
+      "webassign",
+      "cengage"
+    ],
+    "js": {
+      "WebAssign": "",
+      "CengageWebAssign": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.webassign.net"
+  },
+  "Cornerstone OnDemand": {
+    "cats": [
+      21
+    ],
+    "description": "Cornerstone OnDemand learning platform",
+    "html": [
+      "cornerstone.*ondemand",
+      "csod\\.com"
+    ],
+    "scripts": [
+      "cornerstone",
+      "csod"
+    ],
+    "js": {
+      "Cornerstone": "",
+      "CSOD": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.cornerstoneondemand.com"
+  },
+  "Coursera for Campus": {
+    "cats": [
+      21
+    ],
+    "description": "Coursera institutional platform",
+    "html": [
+      "coursera.*campus",
+      "coursera.*institutional"
+    ],
+    "scripts": [
+      "coursera.*campus"
+    ],
+    "js": {
+      "CourseraCampus": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.coursera.org/campus"
+  },
+  "D2L Brightspace": {
+    "cats": [
+      21
+    ],
+    "description": "D2L Brightspace learning management system (formerly Desire2Learn).",
+    "html": [
+      "d2l\\.com",
+      "brightspace",
+      "desire2learn",
+      "d2lbook",
+      "d2l.*brightspace"
+    ],
+    "scripts": [
+      "d2l\\.com",
+      "brightspace",
+      "valence",
+      "desire2learn"
+    ],
+    "js": {
+      "D2L": "",
+      "Brightspace": "",
+      "Valence": ""
+    },
+    "headers": {
+      "x-d2l-version": ".*"
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.d2l.com/brightspace/",
+    "_legacy_names": [
+      "Desire2Learn"
+    ]
+  },
+  "Docebo": {
+    "cats": [
+      21
+    ],
+    "description": "Docebo learning management system",
+    "html": [
+      "docebo"
+    ],
+    "scripts": [
+      "docebo"
+    ],
+    "js": {
+      "Docebo": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.docebo.com"
+  },
+  "Edmodo": {
+    "cats": [
+      21
+    ],
+    "description": "Edmodo education technology platform",
+    "html": [
+      "edmodo"
+    ],
+    "scripts": [
+      "edmodo"
+    ],
+    "js": {
+      "Edmodo": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://new.edmodo.com"
+  },
+  "ExamSoft": {
+    "cats": [
+      53
+    ],
+    "description": "ExamSoft digital assessment platform",
+    "html": [
+      "examsoft"
+    ],
+    "scripts": [
+      "examsoft"
+    ],
+    "js": {
+      "ExamSoft": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://examsoft.com"
+  },
+  "FutureLearn": {
+    "cats": [
+      21
+    ],
+    "description": "FutureLearn online learning platform",
+    "html": [
+      "futurelearn"
+    ],
+    "scripts": [
+      "futurelearn"
+    ],
+    "js": {
+      "FutureLearn": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.futurelearn.com"
+  },
+  "Google Classroom": {
+    "cats": [
+      21
+    ],
+    "description": "Google Classroom learning management system",
+    "html": [
+      "classroom\\.google\\.com",
+      "google.*classroom"
+    ],
+    "scripts": [
+      "classroom.*google",
+      "google.*classroom"
+    ],
+    "js": {
+      "GoogleClassroom": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://classroom.google.com"
+  },
+  "Honorlock": {
+    "cats": [
+      53
+    ],
+    "description": "Honorlock online proctoring platform",
+    "html": [
+      "honorlock"
+    ],
+    "scripts": [
+      "honorlock"
+    ],
+    "js": {
+      "Honorlock": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://honorlock.com"
+  },
+  "Instructure Canvas Catalog": {
+    "cats": [
+      21
+    ],
+    "description": "Canvas Catalog for continuing education and workforce development. Deployed at catalog.instructure.com/{institution} or catalog.{institution}.edu.",
+    "html": [
+      "\\.catalog\\.canvaslms\\.com",
+      "catalog\\.canvaslms\\.com",
+      "canvas.*catalog",
+      "catalog\\.instructure",
+      "/canvas-catalog/",
+      "catalog\\.instructure\\.com"
+    ],
+    "scripts": [
+      "\\.catalog\\.canvaslms\\.com",
+      "catalog\\.canvaslms\\.com",
+      "canvas.*catalog",
+      "/canvas-catalog/",
+      "catalog\\.instructure\\.com"
+    ],
+    "js": {
+      "CanvasCatalog": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.instructure.com/canvas/catalog"
+  },
+  "Kahoot!": {
+    "cats": [
+      21
+    ],
+    "description": "Kahoot! game-based learning platform",
+    "html": [
+      "kahoot"
+    ],
+    "scripts": [
+      "kahoot"
+    ],
+    "js": {
+      "Kahoot": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://kahoot.com"
+  },
+  "LearnDash": {
+    "cats": [
+      21
+    ],
+    "description": "LearnDash WordPress LMS plugin",
+    "html": [
+      "learndash",
+      "ld.*course"
+    ],
+    "scripts": [
+      "learndash"
+    ],
+    "js": {
+      "LearnDash": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.learndash.com"
+  },
+  "MATLAB Grader": {
+    "cats": [
+      21
+    ],
+    "description": "MATLAB Grader for online coding assignments",
+    "html": [
+      "matlab.*grader",
+      "mathworks.*grader",
+      "grader.*matlab"
+    ],
+    "scripts": [
+      "matlab.*grader",
+      "mathworks"
+    ],
+    "js": {
+      "MATLABGrader": "",
+      "MathWorksGrader": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://grader.mathworks.com"
+  },
+  "Macmillan Achieve": {
+    "cats": [
+      21
+    ],
+    "description": "Macmillan Learning Achieve platform",
+    "html": [
+      "macmillan.*achieve",
+      "achieve.*macmillan",
+      "macmillanlearning"
+    ],
+    "scripts": [
+      "achieve",
+      "macmillan"
+    ],
+    "js": {
+      "MacmillanAchieve": "",
+      "Achieve": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.macmillanlearning.com/college/us/digital/achieve"
+  },
+  "McGraw-Hill ALEKS": {
+    "cats": [
+      21
+    ],
+    "description": "ALEKS adaptive learning platform by McGraw-Hill",
+    "html": [
+      "aleks",
+      "mcgraw.*aleks",
+      "adaptive.*learning"
+    ],
+    "scripts": [
+      "aleks"
+    ],
+    "js": {
+      "ALEKS": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.aleks.com"
+  },
+  "McGraw-Hill Connect": {
+    "cats": [
+      21
+    ],
+    "description": "McGraw-Hill Connect learning platform",
+    "html": [
+      "mcgraw.*hill.*connect",
+      "mhhe.*connect",
+      "connect.*mheducation"
+    ],
+    "scripts": [
+      "connect.*mhhe",
+      "mheducation",
+      "mcgraw.*connect"
+    ],
+    "js": {
+      "MHConnect": "",
+      "McGrawHillConnect": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://connect.mheducation.com"
+  },
+  "Mentimeter": {
+    "cats": [
+      21
+    ],
+    "description": "Mentimeter interactive presentation platform",
+    "html": [
+      "mentimeter",
+      "menti\\.com"
+    ],
+    "scripts": [
+      "mentimeter"
+    ],
+    "js": {
+      "Mentimeter": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.mentimeter.com"
+  },
+  "Microsoft Teams for Education": {
+    "cats": [
+      21
+    ],
+    "description": "Microsoft Teams Education platform",
+    "html": [
+      "teams.*education",
+      "office365.*education",
+      "microsoft.*education"
+    ],
+    "scripts": [
+      "teams.*education",
+      "office365.*edu"
+    ],
+    "js": {
+      "TeamsEducation": "",
+      "O365Education": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.microsoft.com/en-us/education/products/teams"
+  },
+  "Moodle": {
+    "cats": [
+      21
+    ],
+    "description": "Open-source learning platform",
+    "html": [
+      "moodle\\.org",
+      "class=\"moodle-",
+      "id=\"moodle-",
+      "/mod/assign/",
+      "/course/view\\.php"
+    ],
+    "scripts": [
+      "moodle\\.org",
+      "moodlelib"
+    ],
+    "js": {
+      "Moodle": ""
+    },
+    "meta": {
+      "generator": "Moodle"
+    },
+    "higher_ed": true
+  },
+  "MyMathLab": {
+    "cats": [
+      21
+    ],
+    "description": "Pearson MyMathLab mathematics learning platform",
+    "html": [
+      "mymathlab",
+      "my.*math.*lab",
+      "pearson.*mathlab"
+    ],
+    "scripts": [
+      "mymathlab",
+      "mathlab"
+    ],
+    "js": {
+      "MyMathLab": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.mymathlab.com"
+  },
+  "Nearpod": {
+    "cats": [
+      21
+    ],
+    "description": "Nearpod interactive lesson platform",
+    "html": [
+      "nearpod",
+      "near.*pod"
+    ],
+    "scripts": [
+      "nearpod"
+    ],
+    "js": {
+      "Nearpod": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://nearpod.com"
+  },
+  "Norton Illumine": {
+    "cats": [
+      21
+    ],
+    "description": "W. W. Norton Illumine ebook platform",
+    "html": [
+      "norton.*illumine",
+      "illumine.*norton",
+      "wwnorton"
+    ],
+    "scripts": [
+      "illumine",
+      "norton"
+    ],
+    "js": {
+      "Illumine": "",
+      "NortonIllumine": ""
+    },
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://digital.wwnorton.com/illumine"
+  },
+  "Open edX": {
+    "cats": [
+      21
+    ],
+    "description": "Open edX learning management system",
+    "html": [
+      "open.*edx",
+      "edx.*platform",
+      "lms\\.edx"
+    ],
+    "scripts": [
+      "openedx",
+      "edx\\.org"
+    ],
+    "js": {
+      "edX": "",
+      "OpenEdX": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://open.edx.org"
+  },
+  "Oxford Learning Link": {
+    "cats": [
+      21
+    ],
+    "description": "Oxford University Press Learning Link platform",
+    "html": [
+      "oxford.*learning.*link",
+      "oup\\.com",
+      "learninglink.*oup"
+    ],
+    "scripts": [
+      "learninglink\\.oup",
+      "oup\\.com"
+    ],
+    "js": {
+      "OxfordLearningLink": "",
+      "OUPLearning": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://learninglink.oup.com"
+  },
+  "Padlet": {
+    "cats": [
+      21
+    ],
+    "description": "Padlet collaborative digital canvas platform",
+    "html": [
+      "padlet"
+    ],
+    "scripts": [
+      "padlet"
+    ],
+    "js": {
+      "Padlet": ""
+    },
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://padlet.com"
+  },
+  "Pearson MyLab": {
+    "cats": [
+      21
+    ],
+    "description": "Pearson MyLab learning platform",
+    "html": [
+      "pearson.*mylab",
+      "mylab.*pearson",
+      "mastering.*pearson"
+    ],
+    "scripts": [
+      "mylab",
+      "pearson.*mylab",
+      "mastering"
+    ],
+    "js": {
+      "MyLab": "",
+      "PearsonMyLab": "",
+      "Mastering": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.pearsonmylabandmastering.com"
+  },
+  "Perusall": {
+    "cats": [
+      21
+    ],
+    "description": "Perusall social reading platform",
+    "html": [
+      "perusall"
+    ],
+    "scripts": [
+      "perusall"
+    ],
+    "js": {
+      "Perusall": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://perusall.com"
+  },
+  "Poll Everywhere": {
+    "cats": [
+      21
+    ],
+    "description": "Poll Everywhere audience response system",
+    "html": [
+      "poll.*everywhere",
+      "polleverywhere"
+    ],
+    "scripts": [
+      "polleverywhere",
+      "poll.*everywhere"
+    ],
+    "js": {
+      "PollEverywhere": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.polleverywhere.com"
+  },
+  "ProctorU": {
+    "cats": [
+      53
+    ],
+    "description": "ProctorU online proctoring service",
+    "html": [
+      "proctoru"
+    ],
+    "scripts": [
+      "proctoru"
+    ],
+    "js": {
+      "ProctorU": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.proctoru.com"
+  },
+  "Proctorio": {
+    "cats": [
+      53
+    ],
+    "description": "Proctorio automated proctoring solution",
+    "html": [
+      "proctorio"
+    ],
+    "scripts": [
+      "proctorio"
+    ],
+    "js": {
+      "Proctorio": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://proctorio.com"
+  },
+  "Respondus LockDown Browser": {
+    "cats": [
+      53
+    ],
+    "description": "Respondus LockDown Browser for secure testing",
+    "html": [
+      "respondus.*lockdown",
+      "lockdown.*browser"
+    ],
+    "scripts": [
+      "respondus",
+      "lockdown"
+    ],
+    "js": {
+      "Respondus": "",
+      "LockDownBrowser": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://web.respondus.com/he/lockdownbrowser/"
+  },
+  "Revel": {
+    "cats": [
+      21
+    ],
+    "description": "Pearson Revel digital learning platform",
+    "html": [
+      "revel.*pearson",
+      "pearson.*revel",
+      "revel\\.pearson"
+    ],
+    "scripts": [
+      "revel"
+    ],
+    "js": {
+      "Revel": "",
+      "PearsonRevel": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.pearsonhighered.com/revel/"
+  },
+  "SafeAssign": {
+    "cats": [
+      53
+    ],
+    "description": "Blackboard SafeAssign plagiarism prevention",
+    "html": [
+      "safeassign",
+      "blackboard.*safeassign"
+    ],
+    "scripts": [
+      "safeassign"
+    ],
+    "js": {
+      "SafeAssign": ""
+    },
+    "higher_ed": true,
+    "confidence": 92,
+    "website": "https://www.blackboard.com/teaching-learning/learning-management/blackboard-learn/safeassign"
+  },
+  "Sakai": {
+    "cats": [
+      21
+    ],
+    "description": "Sakai open-source collaboration and learning environment.",
+    "html": [
+      "sakai-project",
+      "sakaiproject",
+      "/portal/site/",
+      "\\/portal\\/site\\/",
+      "sakai.*collaboration"
+    ],
+    "scripts": [
+      "sakaiproject",
+      "sakai-portal"
+    ],
+    "js": {
+      "sakai": "",
+      "Sakai": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.sakaiproject.org"
+  },
+  "Schoology": {
+    "cats": [
+      21
+    ],
+    "description": "Schoology LMS (acquired by PowerSchool in 2019, maintains Schoology branding).",
+    "html": [
+      "schoology",
+      "powerschool.*learning"
+    ],
+    "scripts": [
+      "schoology"
+    ],
+    "js": {
+      "Schoology": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.schoology.com",
+    "_legacy_names": [
+      "PowerSchool Schoology"
+    ]
+  },
+  "TalentLMS": {
+    "cats": [
+      21
+    ],
+    "description": "TalentLMS learning management system",
+    "html": [
+      "talentlms"
+    ],
+    "scripts": [
+      "talentlms"
+    ],
+    "js": {
+      "TalentLMS": ""
+    },
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.talentlms.com"
+  },
+  "Top Hat": {
+    "cats": [
+      21
+    ],
+    "description": "Top Hat interactive learning platform",
+    "html": [
+      "tophat",
+      "top.*hat",
+      "tophatlecture"
+    ],
+    "scripts": [
+      "tophat",
+      "top.*hat"
+    ],
+    "js": {
+      "TopHat": "",
+      "TopHatLecture": ""
+    },
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://tophat.com"
+  },
+  "Totara Learn": {
+    "cats": [
+      21
+    ],
+    "description": "Totara Learn enterprise LMS",
+    "html": [
+      "totara",
+      "totaralms"
+    ],
+    "scripts": [
+      "totara"
+    ],
+    "js": {
+      "Totara": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.totaralearning.com"
+  },
+  "Turnitin": {
+    "cats": [
+      53
+    ],
+    "description": "Turnitin plagiarism detection service",
+    "html": [
+      "turnitin"
+    ],
+    "scripts": [
+      "turnitin"
+    ],
+    "js": {
+      "Turnitin": ""
+    },
+    "higher_ed": true,
+    "confidence": 95,
+    "website": "https://www.turnitin.com"
+  },
+  "Unicheck": {
+    "cats": [
+      53
+    ],
+    "description": "Unicheck plagiarism checker",
+    "html": [
+      "unicheck"
+    ],
+    "scripts": [
+      "unicheck"
+    ],
+    "js": {
+      "Unicheck": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://unicheck.com"
+  },
+  "VeriCite": {
+    "cats": [
+      53
+    ],
+    "description": "VeriCite plagiarism detection",
+    "html": [
+      "vericite"
+    ],
+    "scripts": [
+      "vericite"
+    ],
+    "js": {
+      "VeriCite": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.vericite.com"
+  },
+  "VitalSource Bookshelf": {
+    "cats": [
+      21
+    ],
+    "description": "VitalSource digital textbook platform",
+    "html": [
+      "vitalsource",
+      "bookshelf.*vitalsource",
+      "digital.*textbook"
+    ],
+    "scripts": [
+      "vitalsource",
+      "bookshelf"
+    ],
+    "js": {
+      "VitalSource": "",
+      "Bookshelf": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.vitalsource.com"
+  },
+  "WileyPLUS": {
+    "cats": [
+      21
+    ],
+    "description": "Wiley WileyPLUS learning platform",
+    "html": [
+      "wileyplus",
+      "wiley.*plus",
+      "plus\\.wiley"
+    ],
+    "scripts": [
+      "wileyplus",
+      "wiley.*plus"
+    ],
+    "js": {
+      "WileyPLUS": "",
+      "WileyPlus": ""
+    },
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.wileyplus.com"
+  },
+  "iClicker": {
+    "cats": [
+      21
+    ],
+    "description": "iClicker student response system",
+    "html": [
+      "iclicker",
+      "i.*clicker",
+      "reef.*iclicker"
+    ],
+    "scripts": [
+      "iclicker",
+      "reef"
+    ],
+    "js": {
+      "iClicker": "",
+      "REEF": ""
+    },
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.iclicker.com"
+  }
+}

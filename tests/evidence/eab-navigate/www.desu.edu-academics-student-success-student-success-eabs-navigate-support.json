@@ -1,0 +1,415 @@
+{
+  "technology": "EAB Navigate",
+  "url": "https://www.desu.edu/academics/student-success/student-success-eabs-navigate-support/",
+  "final_url": "https://www.desu.edu/academics/student-success/student-success-eabs-navigate-support",
+  "captured_at": "2026-04-21T19:35:13.693Z",
+  "response_status": 404,
+  "html_file": "tests/evidence/eab-navigate/www.desu.edu-academics-student-success-student-success-eabs-navigate-support.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "public, max-age=21600",
+      "connection": "Keep-Alive",
+      "content-encoding": "gzip",
+      "content-language": "en",
+      "content-security-policy": "frame-ancestors 'self' desu.edu *.desu.edu *.localhost",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:35:11 GMT",
+      "etag": "\"1776800111-1\"",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "keep-alive": "timeout=5, max=99",
+      "last-modified": "Tue, 21 Apr 2026 19:35:11 GMT",
+      "link": "<https://www.desu.edu/>; rel=\"canonical\",<https://www.desu.edu/>; rel=\"shortlink\"",
+      "permissions-policy": "interest-cohort=()",
+      "server": "Apache",
+      "transfer-encoding": "chunked",
+      "vary": "Cookie,Accept-Encoding,User-Agent",
+      "x-content-type-options": "nosniff",
+      "x-drupal-cache": "MISS",
+      "x-frame-options": "SameOrigin",
+      "x-generator": "Drupal 7 (http://drupal.org)",
+      "x-ua-compatible": "IE=edge,chrome=IE9"
+    },
+    "scripts": [
+      {
+        "src": "https://www.desu.edu/sites/flagship/files/js/js_uRCjUH1nf-b0kvBB1NZD5NFhEC1sf4b1IZSqjeXedX4.js",
+        "version": null
+      },
+      {
+        "src": "https://www.desu.edu/sites/flagship/files/js/js_E6hkOnlXFd0Wa9vrsAERssgSHwO4vHalY1GQKAYSwpI.js",
+        "version": null
+      },
+      {
+        "src": "https://www.desu.edu/sites/flagship/files/js/js_eU5hJHgUiIIHoM-9I4lDJhKQg7bDZQfMFtb-UTY6O6w.js",
+        "version": null
+      },
+      {
+        "src": "https://www.desu.edu/sites/flagship/files/js/js_W4VO5n2TPxFfETmtJFhDD5BI7sG_2KHuC99u6RL4LTg.js",
+        "version": null
+      },
+      {
+        "src": "https://www.desu.edu/sites/flagship/files/js/js_7Ukqb3ierdBEL0eowfOKzTkNu-Le97OPm-UqTS5NENU.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "handheldfriendly": "true",
+      "mobileoptimized": "width",
+      "viewport": "width=device-width",
+      "generator": "Drupal 7 (http://drupal.org)",
+      "og:site_name": "Delaware State",
+      "og:type": "website",
+      "og:url": "https://www.desu.edu/",
+      "og:title": "Delaware State",
+      "twitter:card": "summary_large_image",
+      "twitter:url": "https://www.desu.edu/academics/student-success/student-success-eabs-navigate-support",
+      "twitter:title": "Page not found",
+      "dcterms.title": "Delaware State",
+      "dcterms.type": "Text",
+      "dcterms.format": "text/html",
+      "dcterms.identifier": "https://www.desu.edu/",
+      "msapplication-config": "/sites/all/themes/custom/dsu2016/images/favicon/browserconfig.xml",
+      "theme-color": "#ffffff",
+      "google-site-verification": "GHpPww0hfN8PNDuoJ3DHHaoIGN3AKgn8Yv7yNs0RALk"
+    },
+    "cookies": [
+      {
+        "name": "has_js",
+        "value": "1",
+        "domain": "www.desu.edu"
+      }
+    ],
+    "dom": {
+      "title": "Page not found | Delaware State",
+      "bodyClasses": "html not-front not-logged-in page-academics page-academics-student-success page-academics-student-success-student-success-eabs-navigate-support section-academics",
+      "bodyId": "",
+      "headContent": "\n  <meta charset=\"utf-8\">\n<link rel=\"profile\" href=\"http://www.w3.org/1999/xhtml/vocab\">\n<meta name=\"HandheldFriendly\" content=\"true\">\n<meta name=\"MobileOptimized\" content=\"width\">\n<meta http-equiv=\"cleartype\" content=\"on\">\n<meta name=\"viewport\" content=\"width=device-width\">\n<meta name=\"generator\" content=\"Drupal 7 (http://drupal.org)\">\n<link rel=\"canonical\" href=\"https://www.desu.edu/\">\n<link rel=\"shortlink\" href=\"https://www.desu.edu/\">\n<meta property=\"og:site_name\" content=\"Delaware State\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:url\" content=\"https://www.desu.edu/\">\n<meta property=\"og:title\" content=\"Delaware State\">\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:url\" content=\"https://www.desu.edu/academics/student-success/student-success-eabs-navigate-support\">\n<meta name=\"twitter:title\" content=\"Page not found\">\n<meta name=\"dcterms.title\" content=\"Delaware State\">\n<meta name=\"dcterms.type\" content=\"Text\">\n<meta name=\"dcterms.format\" content=\"text/html\">\n<meta name=\"dcterms.identifier\" content=\"https://www.desu.edu/\">\n \n  <title>Page not found | Delaware State</title>\n\t<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/sites/all/themes/custom/dsu2016/images/favicon/apple-touch-icon.png\">\n\t<link rel=\"icon\" type=\"image/png\" href=\"/sites/all/themes/custom/dsu2016/images/favicon/favicon-32x32.png\" sizes=\"32x32\">\n\t<link rel=\"icon\" type=\"image/png\" href=\"/sites/all/themes/custom/dsu2016/images/favicon/favicon-194x194.png\" sizes=\"194x194\">\n\t<link rel=\"icon\" type=\"image/png\" href=\"/sites/all/themes/custom/dsu2016/images/favicon/android-chrome-192x192.png\" sizes=\"192x192\">\n\t<link rel=\"icon\" type=\"image/png\" href=\"/sites/all/themes/custom/dsu2016/images/favicon/favicon-16x16.png\" sizes=\"16x16\">\n\t<link rel=\"manifest\" href=\"/sites/all/themes/custom/dsu2016/images/favicon/manifest.json\">\n\t<link rel=\"mask-icon\" href=\"/sites/all/themes/custom/dsu2016/images/favicon/safari-pinned-tab.svg\" color=\"#5bbad5\">\n\t<link rel=\"shortcut icon\" href=\"/sites/all/themes/custom/dsu2016/images/favicon/favicon.ico\">\n\t<meta name=\"msapplication-config\" content=\"/sites/all/themes/custom/dsu2016/images/favicon/browserconfig.xml\">\n\t<meta name=\"theme-color\" content=\"#ffffff\">\n  <link type=\"text/css\" rel=\"stylesheet\" href=\"https://www.desu.edu/sites/flagship/files/css/css_RT8W8M_qDmiytN9t2TzKwIvEnEy_Aamw-JWmtonZ_8I.css\" media=\"all\">\n<link type=\"text/css\" rel=\"stylesheet\" href=\"https://www.desu.edu/sites/flagship/files/css/css_wog-X4tOHmbiWTAbHKJeMJ30Z1Ng2jkue0Wn41H6zIQ.css\" media=\"all\">\n<link type=\"text/css\" rel=\"stylesheet\" href=\"https://www.desu.edu/sites/flagship/files/css/css_cGzUwn4zSLA-AUDcda3NNp6DseoPgvKLjlydq5FiUKA.css\" media=\"all\">\n\n<!--[if lte IE 8]>\n<link type=\"text/css\" rel=\"stylesheet\" href=\"https://www.desu.edu/sites/flagship/files/css/css_XEZzzfv9xh3LnB_hJXCYYJBqEYEdAyh0F99LlMGbiNI.css\" media=\"all\" />\n<![endif]-->\n  <script src=\"https://www.desu.edu/sites/flagship/files/js/js_uRCjUH1nf-b0kvBB1NZD5NFhEC1sf4b1IZSqjeXedX4.js\"></script>\n<script>document.createElement( \"picture\" );</script>\n<script src=\"https://www.desu.edu/sites/flagship/files/js/js_E6hkOnlXFd0Wa9vrsAERssgSHwO4vHalY1GQKAYSwpI.js\"></script>\n<script src=\"https://www.desu.edu/sites/flagship/files/js/js_eU5hJHgUiIIHoM-9I4lDJhKQg7bDZQfMFtb-UTY6O6w.js\"></script>\n<script src=\"https://www.desu.edu/sites/flagship/files/js/js_W4VO5n2TPxFfETmtJFhDD5BI7sG_2KHuC99u6RL4LTg.js\"></script>\n<script>jQuery.extend(Drupal.settings, {\"basePath\":\"\\/\",\"pathPrefix\":\"\",\"video_filter\":{\"url\":{\"ckeditor\":\"\\/video_filter\\/dashboard\\/ckeditor\"},\"instructions_url\":\"\\/video_filter\\/instructions\",\"modulepath\":\"sites\\/all\\/modules\\/contrib\\/video_filter\"},\"googleCSE\":{\"cx\":\"000407771330948470178:hvnevsb24ws\",\"language\":\"\",\"resultsWidth\":600,\"domain\":\"www.google.com\",\"showWaterMark\":0},\"picture\":{\"mappings\":[[\"100% Wide\",\"srcset_100_wide\"],[\"75% Wide\",\"srcset_75_wide\"],[\"50% Wide\",\"srcset_50_wide\"],[\"25% Wide\",\"srcset_25_wide\"],[\"Not Set\",\"not_set\"]],\"label\":\"Image size (required)\"},\"extlink\":{\"extTarget\":\"_blank\",\"extClass\":0,\"extLabel\":\"(link is external)\",\"extImgClass\":0,\"extSubdomains\":1,\"extExclude\":\"\",\"extInclude\":\"\",\"extCssExclude\":\"\",\"extCssExplicit\":\"\",\"extAlert\":0,\"extAlertText\":\"This link will take you to an external web site.\",\"mailtoClass\":0,\"mailtoLabel\":\"(link sends e-mail)\"},\"currentPath\":\"academics\\/student-success\\/student-success-eabs-navigate-support\",\"currentPathIsAdmin\":false});</script>\n  <meta name=\"google-site-verification\" content=\"GHpPww0hfN8PNDuoJ3DHHaoIGN3AKgn8Yv7yNs0RALk\">\n<style id=\"bbbx-a11y-fix\" type=\"text/css\"></style>",
+      "hasElements": {
+        "drupalSettings": true,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "1.10.2"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.desu.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n  <!--[if IEMobile 7]><html class=\"no-js ie iem7\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if lte IE 6]><html class=\"no-js ie lt-ie9 lt-ie8 lt-ie7\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if (IE 7)&(!IEMobile)]><html class=\"no-js ie lt-ie9 lt-ie8\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if IE 8]><html class=\"no-js ie lt-ie9\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class=\"no-js ie\" lang=\"en\" dir=\"ltr\" prefix=\"og: http://ogp.me/ns# article: http://ogp.me/ns/"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.desu.edu/wp-json/wp/v2/",
+      "status": 301,
+      "redirect_to": "https://www.desu.edu/wp-json/wp/v2"
+    },
+    "/wp-content/": {
+      "url": "https://www.desu.edu/wp-content/",
+      "status": 301,
+      "redirect_to": "https://www.desu.edu/wp-content"
+    },
+    "/user/login": {
+      "url": "https://www.desu.edu/user/login",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n  <!--[if IEMobile 7]><html class=\"no-js ie iem7\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if lte IE 6]><html class=\"no-js ie lt-ie9 lt-ie8 lt-ie7\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if (IE 7)&(!IEMobile)]><html class=\"no-js ie lt-ie9 lt-ie8\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if IE 8]><html class=\"no-js ie lt-ie9\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class=\"no-js ie\" lang=\"en\" dir=\"ltr\" prefix=\"og: http://ogp.me/ns# article: http://ogp.me/ns/"
+    },
+    "/core/install.php": {
+      "url": "https://www.desu.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n  <!--[if IEMobile 7]><html class=\"no-js ie iem7\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if lte IE 6]><html class=\"no-js ie lt-ie9 lt-ie8 lt-ie7\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if (IE 7)&(!IEMobile)]><html class=\"no-js ie lt-ie9 lt-ie8\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if IE 8]><html class=\"no-js ie lt-ie9\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class=\"no-js ie\" lang=\"en\" dir=\"ltr\" prefix=\"og: http://ogp.me/ns# article: http://ogp.me/ns/"
+    },
+    "/cas/login": {
+      "url": "https://www.desu.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n  <!--[if IEMobile 7]><html class=\"no-js ie iem7\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if lte IE 6]><html class=\"no-js ie lt-ie9 lt-ie8 lt-ie7\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if (IE 7)&(!IEMobile)]><html class=\"no-js ie lt-ie9 lt-ie8\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if IE 8]><html class=\"no-js ie lt-ie9\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class=\"no-js ie\" lang=\"en\" dir=\"ltr\" prefix=\"og: http://ogp.me/ns# article: http://ogp.me/ns/"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.desu.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n  <!--[if IEMobile 7]><html class=\"no-js ie iem7\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if lte IE 6]><html class=\"no-js ie lt-ie9 lt-ie8 lt-ie7\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if (IE 7)&(!IEMobile)]><html class=\"no-js ie lt-ie9 lt-ie8\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if IE 8]><html class=\"no-js ie lt-ie9\" lang=\"en\" dir=\"ltr\"><![endif]-->\n  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class=\"no-js ie\" lang=\"en\" dir=\"ltr\" prefix=\"og: http://ogp.me/ns# article: http://ogp.me/ns/"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Drupal",
+      "confidence": 100,
+      "evidence": [
+        "HTML: drupal",
+        "HTML: sites/all/themes",
+        "Header: X-Drupal-Cache=.*",
+        "Header: X-Generator=Drupal",
+        "Meta: generator=Drupal",
+        "JS: Drupal (HTML)"
+      ]
+    },
+    {
+      "name": "EAB Navigate",
+      "confidence": 100,
+      "evidence": [
+        "HTML: eab.*navigate",
+        "HTML: navigate.*eab",
+        "JS: EAB (HTML)"
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "Localist",
+      "confidence": 80,
+      "evidence": [
+        "HTML: event.*calendar",
+        "HTML: campus.*events"
+      ]
+    },
+    {
+      "name": "Ready Education",
+      "confidence": 80,
+      "evidence": [
+        "HTML: ready.*education",
+        "HTML: readyeducation"
+      ]
+    },
+    {
+      "name": "Blackboard Learn",
+      "confidence": 70,
+      "evidence": [
+        "HTML: blackboard\\.com",
+        "JS: Blackboard (HTML)"
+      ]
+    },
+    {
+      "name": "McGraw-Hill ALEKS",
+      "confidence": 70,
+      "evidence": [
+        "HTML: aleks",
+        "JS: ALEKS (HTML)"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 40,
+      "evidence": [
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "Navigate",
+      "confidence": 40,
+      "evidence": [
+        "HTML: navigate.*eab"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Academic Works",
+      "confidence": 40,
+      "evidence": [
+        "HTML: academic.*works"
+      ]
+    },
+    {
+      "name": "Cabin",
+      "confidence": 30,
+      "evidence": [
+        "JS: cabin (HTML)"
+      ]
+    },
+    {
+      "name": "Chai",
+      "confidence": 30,
+      "evidence": [
+        "JS: chai (HTML)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "Econda",
+      "confidence": 30,
+      "evidence": [
+        "JS: econda (HTML)"
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ext (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Open edX",
+      "confidence": 30,
+      "evidence": [
+        "JS: edX (HTML)"
+      ]
+    },
+    {
+      "name": "Paper.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: paper (HTML)"
+      ]
+    },
+    {
+      "name": "Twitter Flight",
+      "confidence": 30,
+      "evidence": [
+        "JS: flight (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Ellucian Banner",
+      "confidence": 30,
+      "evidence": [
+        "JS: Banner (HTML)"
+      ]
+    },
+    {
+      "name": "Squiz DXP",
+      "confidence": 30,
+      "evidence": [
+        "JS: Matrix (HTML)"
+      ]
+    },
+    {
+      "name": "Innovative Interfaces Sierra",
+      "confidence": 30,
+      "evidence": [
+        "JS: III (HTML)"
+      ]
+    },
+    {
+      "name": "Coalition Application",
+      "confidence": 30,
+      "evidence": [
+        "JS: Coalition (HTML)"
+      ]
+    },
+    {
+      "name": "Duo Security",
+      "confidence": 30,
+      "evidence": [
+        "JS: Duo (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

@@ -14,7 +14,12 @@
     "test:regression:dry": "node scripts/regression-test.js --dry-run",
     "scan": "node cli.js",
     "update-patterns": "node scripts/import-webappanalyzer.js",
-    "patterns-report": "node -e \"console.log(JSON.stringify(require('./patterns/import-report.json'), null, 2))\""
+    "patterns-report": "node -e \"console.log(JSON.stringify(require('./patterns/import-report.json'), null, 2))\"",
+    "capture-evidence": "node scripts/capture-evidence.js",
+    "capture-evidence:dry": "node scripts/capture-evidence.js --dry-run",
+    "validate-patterns": "node scripts/validate-patterns.js",
+    "validate-patterns:force": "node scripts/validate-patterns.js --force",
+    "validate-patterns:report": "node scripts/validate-patterns.js --report-only"
   },
   "keywords": [
     "technology-detection",

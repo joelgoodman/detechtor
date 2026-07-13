@@ -1,0 +1,309 @@
+{
+  "technology": "Oracle PeopleSoft Campus Solutions",
+  "url": "https://saprd.my.uh.edu/psp/saprd/UHM_SITE/SA/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?cmd=login",
+  "final_url": "https://saprd.my.uh.edu/psp/saprd/UHM_SITE/SA/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?cmd=login&languageCd=ENG&",
+  "captured_at": "2026-04-21T19:34:18.456Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/oracle-peoplesoft-campus-solutions/saprd.my.uh.edu-psp-saprd-uhm-site-sa-c-sa-learner-services.sss-student-center.gbl.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "no-cache\nno-store",
+      "content-encoding": "gzip",
+      "content-length": "12183",
+      "content-type": "text/html; CHARSET=utf-8",
+      "date": "Tue, 21 Apr 2026 19:34:17 GMT",
+      "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+      "origin-agent-cluster": "?0",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "respondingwithsignonpage": "true",
+      "set-cookie": "SAPRD-PORTAL-PSJSESSIONID=ihWxiUjVE1WM5abLEZTh4gGcFRbHTR40!1911295919; domain=.uh.edu; SameSite=None; Secure; path=/; HttpOnly\nlcsrftoken=fluMDY4lgR5dN7O7PGyoKVaHKWJZgiF6ErhrdVYaU9w=; domain=.uh.edu; SameSite=None; Secure; path=/; Samesite=Strict; secure; HttpOnly\nPS_TOKEN=; domain=.uh.edu; expires=Thu, 01-Jan-1970 01:00:00 GMT; SameSite=None; Secure; path=/; Samesite=Strict; secure; HttpOnly",
+      "x-frame-options": "SAMEORIGIN",
+      "x-oracle-dms-ecid": "fcdae294-0915-4f77-bad0-9c080e55b1f4-01194f82",
+      "x-oracle-dms-rid": "0",
+      "ntcoent-length": "46605"
+    },
+    "scripts": [
+      {
+        "src": "https://code.jquery.com/jquery-3.6.1.min.js",
+        "version": null
+      },
+      {
+        "src": "https://stackpath.bootstrapcdn.com/bootstrap/latest/js/bootstrap.bundle.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.uh.edu/pslinks/CSOpenID/MicrosoftAzure/office365uh.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-BHRJRRM0T1",
+        "version": null
+      },
+      {
+        "src": "https://www.uh.edu/scripts/ga.js",
+        "version": null
+      },
+      {
+        "src": "https://www.uh.edu/pslinks/hardcodedLinksv2.js",
+        "version": null
+      },
+      {
+        "src": "https://saprd.my.uh.edu/saprd/uhssignin.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes",
+      "apple-mobile-web-app-capable": "yes",
+      "mobile-web-app-capable": "yes"
+    },
+    "cookies": [
+      {
+        "name": "SAPRD-PORTAL-PSJSESSIONID",
+        "value": "ihWxiUjVE1WM5abLEZTh4gGcFRbHTR40!1911295919",
+        "domain": ".uh.edu"
+      },
+      {
+        "name": "PG_SAPRD",
+        "value": "ffffffffc3a0129645525d5f4f58455e445a4a421480",
+        "domain": ".uh.edu"
+      },
+      {
+        "name": "lcsrftoken",
+        "value": "fluMDY4lgR5dN7O7PGyoKVaHKWJZgiF6ErhrdVYaU9w=",
+        "domain": ".uh.edu"
+      }
+    ],
+    "dom": {
+      "title": "Oracle PeopleSoft Sign-in",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n    <title>Oracle PeopleSoft Sign-in</title>\n    <!-- UHS mod begin CSR003278 - 10/29/2021 - Chang Jin Lee - Added UH favicon links -->\n    <link rel=\"apple-touch-icon\" href=\"https://www.uh.edu/pslinks/LOGO_FAVICON.png\">\n    <link rel=\"icon\" href=\"https://www.uh.edu/pslinks/LOGO_FAVICON.png\">\n    <!-- UHS mod end CSR003278 -->\n\n    <!-- UHS Mod CS-CR002393 - 10/7/2020 -->\n    <!-- Added new meta tags 'Description','Keywords', 'Author' and ' Refresh' -->\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes\">\n    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n    <meta name=\"mobile-web-app-capable\" content=\"yes\">\n    <meta http-equiv=\"Description\" content=\"The University of Houston System\">\n    <meta http-equiv=\"Keywords\" content=\"University of Houston System, Houston, Clear Lake, Victoria, Sugar Land, Cinco Ranch, Texas, Education, Universities, Colleges, Learning, Leading\">\n    <meta http-equiv=\"Author\" content=\"The State of Texas and The University of Houston System\">\n    <meta http-equiv=\"refresh\" content=\"1800\">\n    <script src=\"https://code.jquery.com/jquery-3.6.1.min.js\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/latest/js/bootstrap.bundle.min.js\" crossorigin=\"anonymous\"></script>\n    <!-- UHS MOD BEGIN CS-004673 - Chang Jin Lee - 9/15/2023 - change office365uh.js location -->\n    <!-- script src=\"https://www.uh.edu/pslinks/office365uh.js\"-->\n    <script src=\"https://www.uh.edu/pslinks/CSOpenID/MicrosoftAzure/office365uh.js\"></script>\n    <!-- UHS MOD END CS-004673 - Chang Jin Lee - 9/15/2023 - change office365uh.js location -->\n\n    <!-- UHS MOD BEGIN CS-CR003533 - William Childres - 12/21/2022 - Added pw limiter script-->\n    <!-- UHS Mod Begin - CR005349 - S.Zang - 4/10/2025 - PT 8.60.19 retrofit removed this script since 8.60 suppports up to 64 chars-->\n    <!-- <script src=\"https://www.uh.edu/pslinks/uhlogin_pw_length_limiter.js\"></script> -->\n    <!-- UHS Mod End - CR005349 - S.Zang - 4/10/2025 -->\n    <!-- UHS MOD END CS-CR003533 - William Childres - 12/21/2022 -->\n\n    <script language=\"JavaScript\">\n      <!-- UHS Mod CS-CR002393 End -->\n      var sDomain = \".uh.edu\";\n      try {\n        document.domain = \".uh.edu\";\n      }\n      catch (err) { ; }\n    </script>\n    <!-- Google Analytics Javascript by Praveen Mala (12/7/2011).  Refer to CSR-10497 for Google Account Details:\n     Google Analytics allows us to capture site usage metrics. Start-->\n    <!--script type=\"text/javascript\">\n\n  var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-24527395-1']);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n  })();\n</script-->\n    <script type=\"text/javascript\">\n      function loadScript(url, callback) {\n        var script = document.createElement(\"script\")\n        script.type = \"text/javascript\";\n\n        if (script.readyState) {  //IE\n          script.onreadystatechange = function () {\n            if (script.readyState == \"loaded\" ||\n              script.readyState == \"complete\") {\n              script.onreadystatechange = null;\n              callback();\n            }\n          };\n        } else {  //Others\n          script.onload = function () {\n            callback();\n          };\n        }\n\n        script.src = url;\n        document.getElementsByTagName(\"head\")[0].appendChild(script);\n      }\n\n      loadScript(\"https://www.googletagmanager.com/gtag/js?id=G-BHRJRRM0T1\", function () {\n\n        window.dataLayer = window.dataLayer || [];\n        function gtag() { dataLayer.push(arguments); }\n        gtag('js', new Date());\n\n        gtag('config', 'G-BHRJRRM0T1');\n      });\n    </script><script type=\"text/javascript\" src=\"https://www.googletagmanager.com/gtag/js?id=G-BHRJRRM0T1\"></script>\n\n\n    <!-- UHS MOD Begin CS-CR003819 - Chang Jin Lee - 9/19/2022 - add function to disable/enable openid for HR/FS and delegate access -->\n    <script>\n      function disableOpenID() {\n        const slct = document.getElementById(\"slct\");\n        slct.options.length = 1; // keep placeholder only\n\n        const opt = document.createElement(\"option\");\n        opt.textContent = \"Sign in with Microsoft (Unavailable)\";\n        opt.value = \"\";\n        opt.selected = true;\n        slct.add(opt);\n\n        slct.disabled = true;\n\n        document.getElementById(\"campusToggle\").disabled = true;\n        document.getElementById(\"campusMenu\").style.display = \"none\";\n\n      }\n\n      function enableOpenID() {\n        const slct = document.getElementById(\"slct\");\n        // keep placeholder only\n        slct.options.length = 1;\n\n        const campuses = [\n          [\"main\", \"Main\"],\n          [\"clearlake\", \"Clear Lake\"],\n          [\"downtown\", \"Downtown\"],\n          [\"victoria\", \"Victoria\"],\n        ];\n\n        campuses.forEach(([val, txt]) => {\n          const opt = document.createElement(\"option\");\n          opt.value = val;\n          opt.textContent = txt;\n          slct.add(opt);\n        });\n\n        slct.disabled = false;\n\n        document.getElementById(\"campusToggle\").disabled = false;\n\n      }\n    </script>\n    <!-- UHS MOD END CS-CR003819 - Chang Jin Lee - 9/19/2022 -->\n    <!-- The following scripts includes University Marketings Google Analytics code.\nJavascript by Rainer Schuhsler, jrschuhs@Central.UH.EDU -->\n    <script src=\"https://www.uh.edu/scripts/ga.js\"></script>\n\n\n    \n<script type=\"text/javascript\">\nif (self === top) {\n    var fb = document.getElementById(\"ptfb\");\n    fb.parentNode.removeChild(fb);\n} else {\n    try { \n        top.location = self.location;\n    } catch(ex) {}\n}\n</script>\n      <link type=\"text/css\" href=\"/saprd/pt_custom_props.css\" rel=\"stylesheet\">\n      <!-- UHS Mod CS-CR002393 - 10/7/2020 -->\n      <!-- Added new links to js and css files- hardcodedLinks.js, uhssignin.js and uhssigning.css -->\n      <link type=\"text/css\" href=\"/saprd/uhssignin.css\" rel=\"stylesheet\">\n      <!-- Added icon links for reset password and userid -->\n      <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n      <script type=\"text/javascript\" src=\"https://www.uh.edu/pslinks/hardcodedLinksv2.js\"></script>\n      <script type=\"text/javascript\" src=\"/saprd/uhssignin.js\"></script>\n      <!-- UHS Mod CS-CR002393 End -->\n      <!-- UHS Mod CS-CR002393 - Local references for debugging\n  <link type=\"text/css\" href=\"./uhssignin.css\" rel=\"stylesheet\">\n  <script type=\"text/javascript\" src=\"./uhssignin.js\"></script>\n    -->\n\n      <!-- UHS Mod Begin CSR003037 - 11/1/2021 - Chang Jin Lee - added css for openid button -->\n      <style type=\"text/css\">\n        select {\n          -webkit-appearance: none;\n          -moz-appearance: none;\n          -ms-appearance: none;\n          appearance: none;\n          outline: 0;\n          background: #c72429;\n          background-image: none;\n        }\n\n        .select {\n          position: relative;\n          display: inline-block;\n          width: 100%;\n          height: 2.60em;\n          line-height: 2.60;\n          background: #D3D3D3;\n          overflow: hidden;\n          border-radius: .25em;\n          text-align-last: center;\n\n        }\n\n        select {\n          width: 100%;\n          height: 100%;\n          margin: 0;\n          padding: 0 0 0 .5em;\n          color: #fff;\n          cursor: pointer;\n          font-size: 1em;\n          font-weight: bold;\n\n        }\n\n        select::-ms-expand {\n          display: none;\n        }\n\n        .select::after {\n          content: '\\25BC';\n          position: absolute;\n          top: 0;\n          right: 0;\n          bottom: 0;\n          padding: 0 1em;\n          background: #9c031e;\n          pointer-events: none;\n        }\n\n        .select:hover::after {\n          color: #F39C12;\n        }\n\n\n        /*<!-- For different browsers -->*/\n        .select::after {\n          -webkit-transition: .25s all ease;\n          -o-transition: .25s all ease;\n          transition: .25s all ease;\n        }\n\n        /*VisualRefresh*/\n        a,\n        a:link,\n        .ps-link,\n        .ps-link:link {\n          color: #000000;\n        }\n\n        h2 {\n          width: 100%;\n          /* UHS Mod Begin Josh Lewis Help Desk request 9/08/2025  */\n          font-family: 'Crimson Text';\n          /* UHS Mod End Josh Lewis Help Desk request 9/08/2025  */\n          font-size: 15px;\n          text-align: center;\n          border-bottom: 1px solid #000;\n          line-height: 0.1em;\n          margin: 10px 0 20px;\n        }\n\n        h2 span {\n          background: #fff;\n          padding: 0 10px;\n          /* UHS Mod Begin Josh Lewis Help Desk request 9/08/2025  */\n          font-family: 'Crimson Text';\n          /* UHS Mod End Josh Lewis Help Desk request 9/08/2025  */\n        }\n        /* UHS Mod Begin Josh Lewis Help Desk request 9/08/2025  */\n        h2 span .span-text {\n          color: blue;\n        }\n\n        h2 span a {\n          font-style: italic;\n          font-family: 'Crimson Text';\n          text-decoration: none;\n          color: blue;\n        }\n\n        summary {\n          list-style: none;\n        }\n\n        #other-signin {\n          position: relative;\n        }\n        /* UHS Mod End Josh Lewis Help Desk request 9/08/2025  */\n\n        .oidc-button {\n          background: #E33535;\n          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #79cc9c), color-stop(100%, #E33535));\n          border: #E33535;\n          background: #E33535;\n        }\n\n        .oidc-button:hover,\n        .oidc-button:focus {\n          background: #E33535;\n          border-color: #111;\n        }\n\n        .ss:a {\n          color: #fafafa;\n        }\n\n        #need-help {\n          padding: 20px 0 0 0;\n        }\n        /* BEGIN UHS Mod Angel Gonzalez DUO Authentication. 10/23/2024 */\n        .modal {\n          display: none;\n          position: fixed;\n          z-index: 1;\n          left: 0;\n          top: 0;\n          width: 100%;\n          height: 100%;\n          background-color: rgba(0, 0, 0, 0.6);\n        }\n\n        .modal-content {\n          background-color: #f0f0f0;\n          margin: 10% auto;\n          padding: 30px;\n          border: 2px solid red;\n          border-radius: 8px;\n          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);\n          width: 300px;\n          text-align: center;\n          transition: all 0.3s ease;\n        }\n        /* END UHS Mod Angel Gonzalez DUO Authentication. 10/23/2024 */\n\n        /* UHS Mod Begin Josh Lewis Help Desk request 9/08/2025  */\n        .tooltip {\n          position: relative;\n          display: inline-block;\n          cursor: pointer;\n          color: #0077cc;\n          text-decoration: none;\n        }\n\n        .tooltip .tooltip-text {\n          visibility: hidden;\n          opacity: 0;\n          transform: translateY(5px);\n          /* start slightly lower */\n          min-width: 200px;\n          max-width: 30vw;\n          background-color: rgba(240, 240, 240, 0);\n          /* semi-transparent dark */\n          color: #121111;\n          text-align: left;\n          padding: 8px 12px;\n          border-radius: 8px;\n          backdrop-filter: blur(4px);\n          position: absolute;\n          top: 125%;\n          left: 100%;\n          margin-top: 2px;\n          margin-left: 8px;\n          z-index: 1;\n          display: block;\n          line-height: 1.4;\n          font-size: 14px;\n          transition: opacity 0.3s ease, transform 0.3s ease;\n        }\n\n        .tooltip:hover .tooltip-text {\n          visibility: visible;\n          opacity: 1;\n          transform: translateY(0);\n        }\n\n        /* Overlay/backdrop that catches outside clicks */\n        #helpModal {\n          position: fixed;\n          inset: 0;                 \n          display: none;\n          background: rgba(0,0,0,0);\n          z-index: 1000;            \n        }\n\n        .helpModal p {\n          padding-top: 12px\n        }\n\n        #helpModal.show .helpModalContent {\n          transform: translate(-50%, -50%) scale(1);\n          opacity: 1;\n        }\n\n        .help-container {\n          display: flex;\n          flex-direction: column;   \n          justify-content: center;  \n          align-items: center;      \n          text-align: center;       \n          gap: 1em;                 \n          height: 100%;\n        }\n\n        /* The centered dialog box */\n        #helpModalContent {\n          position: absolute;\n          top: 50%;\n          left: 50%;\n          transform: translate(-50%, -50%);\n          max-height: 80vh;\n          overflow: auto;\n          width: clamp(320px, 40vw, 560px);\n          margin: 0;\n          background: var(--pt-page-background-color, #fff);\n          border:1px solid var(--pt-border-contrast-color, #ced4da);\n          border-radius: 0 0 3px 3px; \n          border-radius: 0.25em;\n          box-shadow: 0 8px 20px 0 var(--pt-modal-shadow-color, rgba(29,39,51,0.10));\n          padding-bottom: 1em;\n        }\n\n        .close-btn {\n          position: absolute;\n          top: 10px;\n          right: 12px;\n          font-size: 22px;\n          line-height: 1;\n          cursor: pointer;\n          color: #666;\n          border: none;\n          background: transparent;\n        }\n\n        .close-btn:hover {\n          color: #000;\n        }\n        \n        .link-container {\n          display: none;\n        }\n\n        .help-links {\n          list-style-type: none;\n          padding: 12px 16px; \n          margin: 0;\n        }\n\n        .help-links li {\n          margin: 8px 0;\n          /* space between links */\n        }\n\n        .help-links a {\n          text-decoration: none;\n          /* remove underline */\n          color: #0077cc;\n          /* link color */\n          font-weight: bold;\n        }\n\n        .help-links a:hover {\n          text-decoration: underline;\n          /* show underline on hover */\n        }\n        #appselect label {\n          cursor: pointer;\n        }\n\n        .modal-content,\n        #helpModalContent a,\n        #helpModalContent p,\n        .tooltip .tooltip-text {\n          font-family: 'Crimson Text';\n        }\n        /* UHS Mod End Josh Lewis Help Desk request 9/08/2025  */\n        /* UHS Mod Begin CR005781 2/11/2016 Josh Lewis - Add functionality to the Microsoft button, new functionality supports one click and drop down selection */\n        .ms-row {\n          display: flex;\n          align-items: stretch;\n          position: relative;   /* .ms-label can be positioned vs the whole row */\n        }\n\n        /* Main Microsoft button */\n        .ms-row .oidc-button {\n          flex: 1 1 auto;\n          margin: 0;\n          border-radius: 0.25em 0 0 0.25em;\n          position: relative;\n          cursor: pointer;\n        }\n\n        /* Arrow chunk wrapper on the right */\n        .ms-row .select {\n          flex: 0 0 auto;      /* width based on its own contents */\n          width: auto;         /* override the global width:100% */\n          margin: 0;\n          background: #E33535; /* match the main button background */\n          border-radius: 0 .25em .25em 0;  /* rounded only on the right */\n          overflow: hidden;    /* hide pushed-out label text */\n          text-align-last: right;\n        }\n        .ms-row .select { \n          position: static;\n          overflow: visible; \n          z-index: 9999;       /* ensure it floats above other elements */\n        }\n        /* The <select> inside: small, just for the caret */\n        .ms-row .select select {\n          width: 2.5em;        /* small chunk */\n          padding: 0;\n          margin: 0;\n          border: none;\n          background: #E33535;  /* use the wrapper's red */\n          text-indent: 9999px;      /* push \"Choose campus���\" off-screen */\n          white-space: nowrap;\n          cursor: pointer;\n        }\n\n        .ms-row .select select option {\n          text-align: right;        /* alignment inside the popup list */\n        }\n\n        .ms-row .ms-label {\n          position: absolute;\n          left: 0;\n          right: 0;\n          top: 0;\n          bottom: 0;\n          color: #fff; \n          font-weight: bold;\n          font-size: 1em;\n          display: flex;\n          align-items: center;\n          justify-content: center;\n\n          pointer-events: none;   /* clicks go ���through��� to the button / select */\n        }\n        /* draw a caret without needing text */\n        .campus-caret{\n          display: inline-block;\n          width: 0;\n          height: 0;\n          border-left: 8px solid transparent;\n          border-right: 8px solid transparent;\n          border-top: 8px solid currentColor;\n        }\n        /* In the Microsoft row, DO NOT draw the old select caret */\n        .ms-row .select::after { content: none; }\n\n        /* Make your caret button fill the right ���chunk��� */\n        .ms-row .select .campus-toggle{\n          width: 3.0em;\n          height: 100%;\n          padding: 0;\n          margin: 0;\n          border: none;\n          background: #9c031e;\n          border-radius: 0 3px 3px 0;\n          cursor: pointer;\n          display: flex;\n          align-items: center;\n          justify-content: center;\n        }\n\n        /* gold on hover OR while menu is open */\n        .ms-row .select #campusToggle.campus-toggle:hover,\n        .ms-row .select #campusToggle.campus-toggle[aria-expanded=\"true\"]{\n          color: #F39C12;\n        }\n\n        /* gold ONLY on hover, or while menu is open */\n        .ms-row .oidc-button:hover ~ .ms-label,\n        .ms-row .oidc-button:focus-visible ~ .ms-label {\n          color: #F39C12;\n        }\n\n        /* keep a visible keyboard outline */\n        .ms-row .oidc-button:focus { outline: none; }\n        .ms-row .oidc-button:focus-visible{\n          outline: 2px solid #F39C12;\n          outline-offset: -2px;\n        }\n\n\n        /* keep keyboard accessibility without changing caret color */\n        .ms-row .select #campusToggle.campus-toggle:focus{\n          outline: none;\n        }\n\n        .ms-row .select #campusToggle.campus-toggle:focus-visible{\n          outline: 2px solid #F39C12;\n          outline-offset: -2px;\n        }\n\n        /* Dropdown menu */\n        .ms-row .select .campus-menu{\n          position: absolute;\n          left: 0;\n          right: 0;\n          top: 100%;\n          /*margin-top: 6px;*/\n\n          width: 100%;\n          box-sizing: border-box;\n\n          z-index: 10000;\n          background: #E33535;\n          border: 1px solid #9c031e;\n          border-radius: 8px 8px 8px 8px;\n          padding: 6px;\n          box-shadow: 0 8px 20px rgba(0,0,0,0.18);\n        }\n\n        /* Menu buttons */\n        .ms-row .select .campus-item{\n          width: 100%;\n          text-align: right;\n          padding: 10px 12px;\n          border: 0;\n          background: transparent;\n          cursor: pointer;\n          border-radius: 6px;\n          font-weight: bold;\n        }\n\n        /* --- Dropdown menu styling to match your red theme --- */\n        .ms-row .select .campus-menu{\n          background: #E33535;         /* UH red */\n          border: 1px solid #9c031e;   /* darker red border */\n          box-shadow: 0 8px 20px rgba(0,0,0,0.18);\n          padding: 6px;              \n          border-radius: 0 0 8px 8px; /* feels like it ���drops��� from the button */\n        }\n\n        /* menu items */\n        .ms-row .select .campus-item{\n          background: transparent;\n          color: #fff;\n          font-family: 'Crimson Text';\n        }\n\n        /* hover/focus for menu items */\n        .ms-row .select .campus-item:hover,\n        .ms-row .select .campus-item:focus{\n          background: #9c031e;         /* darker red highlight */\n          color: #F39C12;              /* gold text on hover */\n        }\n        /* UHS Mod End CR005781 2/11/2016 Josh Lewis */\n      </style>\n      <!-- UHS Mod End CSR003037 - 11/1/2021 - Chang Jin Lee -->\n\n  ",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.6.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://saprd.my.uh.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://saprd.my.uh.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/wp-content/": {
+      "url": "https://saprd.my.uh.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/user/login": {
+      "url": "https://saprd.my.uh.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/core/install.php": {
+      "url": "https://saprd.my.uh.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/cas/login": {
+      "url": "https://saprd.my.uh.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://saprd.my.uh.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Draft//EN\">\n<HTML>\n<HEAD>\n<TITLE>Error 404--Not Found</TITLE>\n</HEAD>\n<BODY bgcolor=\"white\">\n<FONT FACE=Helvetica><BR CLEAR=all>\n<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>\n<FONT FACE=\"Helvetica\" COLOR=\"black\" SIZE=\"3\"><H2>Error 404--Not Found</H2>\n</FONT></TD></TR>\n</TABLE>\n<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE=\"Courier New\"><FONT FACE=\"Helvetica\" SIZE=\"3\"><H3>From RFC 2068 <i>Hypertext Transfer "
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 100,
+      "evidence": [
+        "HTML: peoplesoft",
+        "HTML: campus.*solutions",
+        "JS: PeopleSoft (HTML)",
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: gtag\\('config', 'G-[A-Z0-9]+",
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "HTML: gtag\\('js'",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Oracle PeopleSoft Campus Solutions",
+      "confidence": 100,
+      "evidence": [
+        "HTML: peoplesoft",
+        "HTML: campus.*solutions",
+        "HTML: oracle.*peoplesoft",
+        "HTML: /psc/",
+        "JS: PeopleSoft (HTML)",
+        "JS: Oracle (HTML)"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 80,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "Oracle Dynamic Monitoring Service",
+      "confidence": 80,
+      "evidence": [
+        "Header: x-oracle-dms-ecid="
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: gtag\\("
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 40,
+      "evidence": [
+        "HTML: googletagmanager\\.com"
+      ]
+    },
+    {
+      "name": "Adition",
+      "confidence": 30,
+      "evidence": [
+        "JS: adition (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Workday Student",
+      "confidence": 30,
+      "evidence": [
+        "JS: WD (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

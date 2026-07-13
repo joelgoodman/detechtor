@@ -1,0 +1,485 @@
+{
+  "technology": "Jenzabar",
+  "url": "https://my.tiu.edu/ICS",
+  "final_url": "https://my.tiu.edu/ICS",
+  "captured_at": "2026-04-21T19:34:16.337Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/jenzabar/my.tiu.edu-ics.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "private",
+      "content-length": "55925",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:34:14 GMT",
+      "server": "Microsoft-IIS/10.0",
+      "service-worker-allowed": "/",
+      "set-cookie": "ASP.NET_SessionId=spyewnzs3yteqspn2gkyr11b; path=/; secure; HttpOnly; SameSite=Lax; SameSite=none; Secure=true\n.sessionheartbeat=0; expires=Sun, 22-Mar-2026 19:34:14 GMT; path=/; secure; HttpOnly; SameSite=none; Secure=true",
+      "x-aspnet-version": "4.0.30319",
+      "x-powered-by": "ASP.NET"
+    },
+    "scripts": [
+      {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js",
+        "version": null
+      },
+      {
+        "src": "https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.3.0",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICS/portlets/cus/ics/BCProxyLogin/Scripts/ProxyLogin.js",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICS/UI/Common/Scripts/tinymce/plugins/moxiemanager/js/moxman.loader.min.js?v=2023.2%20Patch_8",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICS/UI/Common/Scripts/jcsfl.js",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICS/UI/Common/Scripts/site-bundle.js?v=pIP_zynZ4CkiB5-ayGDE2Xek3gUfLpXefud64rJ3x_Q1",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICS/UI/Common/Scripts/LayoutManager.js?v=2023.2%20Patch_8",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICS/UI/Common/Scripts/Globalization.js.aspx?id=8659790fcae44454aaf16f2d28a1f36b",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICSFileServer/Themes/trinity_responsive/js/javascript.js?v=16",
+        "version": null
+      },
+      {
+        "src": "https://cdn.livechatinc.com/tracking.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.livechatinc.com/tracking.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.livechatinc.com/tracking.js",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICS/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1LYxVfT18tiodYa7peV34ILgRMbYg9L0G95F_gXh-W1dlo9wD9kx8OkHmZEDGAfzU79VWzCfRl07MWpNi7asS6PeCoRtt0PjRCtMeg848tn1l0&t=245582f9",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICS/UI/Common/Scripts/jquery.lightbox.js",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICS/UI/Common/Scripts/jquery.lightbox.js",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICS/UI/Common/Scripts/jquery.lightbox.js",
+        "version": null
+      },
+      {
+        "src": "https://my.tiu.edu/ICS/UI/Common/Scripts/jquery.lightbox.js",
+        "version": null
+      },
+      {
+        "src": "https://rss.bloople.net/?url=https%3A%2F%2Fwww.tiu.edu%2Fdivinity%2Fstories%2Ffeed&limit=3&showicon=true&showempty=true&type=js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    },
+    "cookies": [
+      {
+        "name": ".sessionheartbeat",
+        "value": "4/21/2026 4:34:15 PM",
+        "domain": "my.tiu.edu"
+      },
+      {
+        "name": "ASP.NET_SessionId",
+        "value": "spyewnzs3yteqspn2gkyr11b",
+        "domain": "my.tiu.edu"
+      }
+    ],
+    "dom": {
+      "title": "Home | Home",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=EDGE\"><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=5.0\"><title>\n\tHome | Home\n</title><base href=\"https://my.tiu.edu/ICS/\">\n<script type=\"text/javascript\">\n    window.jenzabar = {};\n    jenzabar.userSettings = {\n        culture:    'en-US',\n        language:   'en',\n        dateFormat: 'm/d/yy'\n    };\n    window.userSettings = jenzabar.userSettings;\n\n    jenzabar.jicsVersion = {\n        text: {\n\t        version: '?v=' + '2023.2 Patch_8'\n        }\n    }\n    jenzabar.siteSettings = {\n        textEditorSettings: {\n            customAudioMinutesLimit: 5,\n            customVideoMinutesLimit: 5\n        },\n        text: {\n            more: 'More'\n        }\n    };\n</script>\n\n<!-- BEGIN Html Head Elements -->\n<script type=\"text/javascript\" src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js\"></script>\n<script type=\"text/javascript\" src=\"//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js\"></script>\n<script src=\"//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js\" integrity=\"sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd\" crossorigin=\"anonymous\"></script>\n<script type=\"text/javascript\" src=\"//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js\"></script>\n<script type=\"text/javascript\" src=\"//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js\"></script><style type=\"text/css\">/* Chart.js */\n@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>\n  <script type=\"text/javascript\" src=\"//cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.3.0\"></script>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/ICS/UI/Common/Styles/jQuery/jquery-ui.custom.css\">\n<link href=\"//fonts.googleapis.com/css?family=Open+Sans:400,600,700\" rel=\"stylesheet\" type=\"text/css\">\n<link href=\"//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css\" rel=\"stylesheet\" type=\"text/css\">\n<link rel=\"stylesheet\" href=\"//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\" integrity=\"sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu\" crossorigin=\"anonymous\">\n<script type=\"text/javascript\" src=\"portlets/cus/ics/BCProxyLogin/Scripts/ProxyLogin.js\"></script>\n\t\t\t<link type=\"text/css\" rel=\"stylesheet\" href=\"portlets/cus/ics/BCProxyLogin/Styles/ProxyLoginStyles.css\">\n<script type=\"text/javascript\" src=\"/ICS/UI/Common/Scripts/tinymce/plugins/moxiemanager/js/moxman.loader.min.js?v=2023.2 Patch_8\"></script>\n<!-- END Html Head Elements -->\n\n<link href=\"/ICS/UI/Common/Styles/css/site-bundle.css?v=rr2wyykcWrJjEtjMwW9G5Y6ODju4hRSFkNWtrohO5Ag1\" rel=\"stylesheet\">\n\n\n\n<link rel=\"stylesheet\" type=\"text/css\" media=\"print\" href=\"/ICS/UI/Common/Styles/print.css\">\n\n\n<script type=\"text/javascript\" src=\"/ICS/UI/Common/Scripts/jcsfl.js\"></script>\n<script src=\"/ICS/UI/Common/Scripts/site-bundle.js?v=pIP_zynZ4CkiB5-ayGDE2Xek3gUfLpXefud64rJ3x_Q1\"></script>\n\n\n<!-- BEGIN Html Head Elements After JICS JS Framework -->\n<script type=\"text/javascript\" src=\"/ICS/UI/Common/Scripts/LayoutManager.js?v=2023.2 Patch_8\"></script>\n<!-- END Html Head Elements After JICS JS Framework -->\n\n<script type=\"text/javascript\" src=\"/ICS/UI/Common/Scripts/Globalization.js.aspx?id=8659790fcae44454aaf16f2d28a1f36b\"></script>\n<!--[if IE]>\n<style type=\"text/css\" media=\"all\">@import url( UI/Common/Styles/IEOnly.css );</style>\n<script type=\"text/javascript\" language=\"JavaScript\" src=\"UI/Common/Scripts/IEOnly.js\"></SCRIPT>\n<![endif]-->\n<script type=\"text/javascript\">\n    window.Portal =\n    {\n        url: 'https://my.tiu.edu/ICS/',\n        uid: null,\n    };\n</script>\n\n\n<script type=\"text/javascript\">\n    $.extend(window.Portal,{\n        timeout: 120,\n        SessionMonitor: JCSL.JICS.get_session_monitor()\n        \n    });\n</script>\n\n<script type=\"text/javascript\">\n    jQuery(function () {\n        jenzabar.framework.timeoutWarning.create(true);\n    });\n</script><link rel=\"stylesheet\" type=\"text/css\" href=\"/ICSFileServer/Themes/trinity_responsive/style.css?v=16&amp;u=04%2f21%2f2026+14%3a34%3a14\">\n<script type=\"text/javascript\" src=\"/ICSFileServer/Themes/trinity_responsive/js/javascript.js?v=16\"></script>\n\n\n<link rel=\"Shortcut Icon\" href=\"clientconfig/htmlcontent/favicon.ico\" type=\"image/x-icon\">\n<script async=\"\" type=\"text/javascript\" src=\"https://cdn.livechatinc.com/tracking.js\"></script><script async=\"\" type=\"text/javascript\" src=\"https://cdn.livechatinc.com/tracking.js\"></script><script async=\"\" type=\"text/javascript\" src=\"https://cdn.livechatinc.com/tracking.js\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.6.4",
+      "bootstrap": "3.4.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://my.tiu.edu/wp-login.php",
+      "status": 302,
+      "redirect_to": "https://my.tiu.edu/ics",
+      "body_excerpt": "<head><title>Document Moved</title></head>\n<body><h1>Object Moved</h1>This document may be found <a HREF=\"https://my.tiu.edu/ics\">here</a></body>"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://my.tiu.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/wp-content/": {
+      "url": "https://my.tiu.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/user/login": {
+      "url": "https://my.tiu.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/core/install.php": {
+      "url": "https://my.tiu.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/cas/login": {
+      "url": "https://my.tiu.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://my.tiu.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-si"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Microsoft ASP.NET",
+      "confidence": 100,
+      "evidence": [
+        "HTML: <input[^>]+name=\"__VIEWSTATE",
+        "Header: X-Powered-By=^ASP\\.NET"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 100,
+      "evidence": [
+        "HTML: youtube",
+        "JS: YT (HTML)",
+        "JS: ytplayer (HTML)"
+      ]
+    },
+    {
+      "name": "ASP.NET",
+      "confidence": 100,
+      "evidence": [
+        "HTML: __doPostBack",
+        "Header: x-aspnet-version=.*",
+        "Header: x-powered-by=ASP.NET"
+      ]
+    },
+    {
+      "name": "Jenzabar",
+      "confidence": 100,
+      "evidence": [
+        "HTML: jenzabar",
+        "HTML: jics",
+        "HTML: jenzabar.*ics",
+        "HTML: jenzabar.*ex",
+        "HTML: /ICS",
+        "HTML: /ICS/",
+        "HTML: \\.edu/ICS",
+        "JS: Jenzabar (HTML)",
+        "JS: JICS (HTML)"
+      ]
+    },
+    {
+      "name": "IIS",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Microsoft-IIS"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "CBORD",
+      "confidence": 80,
+      "evidence": [
+        "HTML: get.*system",
+        "HTML: campus.*dining"
+      ]
+    },
+    {
+      "name": "Localist",
+      "confidence": 80,
+      "evidence": [
+        "HTML: event.*calendar",
+        "HTML: campus.*events"
+      ]
+    },
+    {
+      "name": "Adobe Experience Manager",
+      "confidence": 70,
+      "evidence": [
+        "HTML: aem",
+        "JS: CQ (HTML)"
+      ]
+    },
+    {
+      "name": "Rave Mobile Safety",
+      "confidence": 70,
+      "evidence": [
+        "HTML: getrave",
+        "JS: Rave (HTML)"
+      ]
+    },
+    {
+      "name": "25Live",
+      "confidence": 40,
+      "evidence": [
+        "HTML: event.*management"
+      ]
+    },
+    {
+      "name": "Anthology Student",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*management"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "Top Hat",
+      "confidence": 40,
+      "evidence": [
+        "HTML: top.*hat"
+      ]
+    },
+    {
+      "name": "SAML",
+      "confidence": 40,
+      "evidence": [
+        "HTML: saml"
+      ]
+    },
+    {
+      "name": "AitThemes",
+      "confidence": 30,
+      "evidence": [
+        "JS: ait (HTML)"
+      ]
+    },
+    {
+      "name": "Chart.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: Chart (HTML)"
+      ]
+    },
+    {
+      "name": "LiveChat",
+      "confidence": 30,
+      "evidence": [
+        "JS: LiveChatWidget (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "mOxie",
+      "confidence": 30,
+      "evidence": [
+        "JS: moxie (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Sitecore",
+      "confidence": 30,
+      "evidence": [
+        "JS: _sc (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "TinyMCE",
+      "confidence": 30,
+      "evidence": [
+        "JS: tinymce (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 30,
+      "evidence": [
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Workday Student",
+      "confidence": 30,
+      "evidence": [
+        "JS: WD (HTML)"
+      ]
+    },
+    {
+      "name": "EBSCO Discovery Service",
+      "confidence": 30,
+      "evidence": [
+        "JS: EDS (HTML)"
+      ]
+    },
+    {
+      "name": "Canva for Education",
+      "confidence": 30,
+      "evidence": [
+        "JS: Canva (HTML)"
+      ]
+    },
+    {
+      "name": "Four Winds Interactive",
+      "confidence": 30,
+      "evidence": [
+        "JS: FWI (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

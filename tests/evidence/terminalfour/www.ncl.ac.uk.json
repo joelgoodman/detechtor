@@ -1,0 +1,472 @@
+{
+  "technology": "TerminalFour",
+  "url": "https://www.ncl.ac.uk/",
+  "final_url": "https://www.ncl.ac.uk/",
+  "captured_at": "2026-04-21T19:35:47.026Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/terminalfour/www.ncl.ac.uk.html",
+  "evidence": {
+    "headers": {
+      "connection": "Keep-Alive",
+      "content-encoding": "gzip",
+      "content-length": "24014",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:35:40 GMT",
+      "keep-alive": "timeout=5, max=100",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "Apache",
+      "strict-transport-security": "max-age=31536000",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff"
+    },
+    "scripts": [
+      {
+        "src": "https://www.youtube.com/iframe_api?apiKey=AIzaSyAAH_WLyeIGyalKrINKwCCXzIWhQDbno_g",
+        "version": null
+      },
+      {
+        "src": "https://metrics.ncl.ac.uk/gtm.js?id=GTM-5HH99Z",
+        "version": null
+      },
+      {
+        "src": "https://consent.cookiebot.com/1ebf835b-c525-4423-9bd4-669b6cf0b7cd/cc.js?renew=false&referer=www.ncl.ac.uk&dnt=false&init=false",
+        "version": null
+      },
+      {
+        "src": "https://consent.cookiebot.com/uc.js",
+        "version": null
+      },
+      {
+        "src": "https://code.jquery.com/jquery-3.7.1.min.js",
+        "version": null
+      },
+      {
+        "src": "https://js.hs-scripts.com/5025575.js",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/dist/lib/codeSplitting.min.js",
+        "version": null
+      },
+      {
+        "src": "https://s.ytimg.com/yts/jsbin/www-widgetapi-vflmgpyWO/www-widgetapi.js",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/ncuvision__pagination.js",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/dist/lib/ncuvision__fitvids.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/dist/lib/ncuvision__slick.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/dist/lib/ncuvision__fuse.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/dist/lib/ncuvision__niceselect.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/dist/lib/ncuvision__requestAnimationFrame.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/dist/lib/ncuvision__fastclick.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/dist/lib/ncuvision__actual.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/dist/lib/ncuvision__dataLayerEvents.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/dist/main/bundle.main-min.js?v=f320929",
+        "version": null
+      },
+      {
+        "src": "https://www.ncl.ac.uk/webtemplate/js/ncuvision__courseNavDisplay.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "description": "Discover Newcastle University, one of the UK’s top rated research universities and a founding member of the Russell group, located in a vibrant and inclusive student city.",
+      "og:type": "article",
+      "twitter:description": "Discover Newcastle University, one of the UK’s top rated research universities and a founding member of the Russell group, located in a vibrant and inclusive student city.",
+      "twitter:title": "Newcastle University | World Top 140 Research-led UK University",
+      "twitter:url": "https://www.ncl.ac.uk/",
+      "twitter:site": "Newcastle University",
+      "twitter:card": "summary_large_image",
+      "twitter:image": "https://pxl-nclacuk.terminalfour.net/prod01/channel_3/mediav8/logos/uni-logo-twitter.jpg",
+      "og:url": "https://www.ncl.ac.uk/",
+      "og:title": "Newcastle University | World Top 140 Research-led UK University",
+      "og:description": "Discover Newcastle University, one of the UK’s top rated research universities and a founding member of the Russell group, located in a vibrant and inclusive student city.",
+      "og:image": "https://pxl-nclacuk.terminalfour.net/prod01/channel_3/mediav8/logos/uni-logo-twitter.jpg",
+      "viewport": "width=device-width, initial-scale=1",
+      "content management system": "TerminalFOUR"
+    },
+    "cookies": [],
+    "dom": {
+      "title": "Newcastle University | World Top 140 Research-led UK University | Newcastle University",
+      "bodyClasses": "js",
+      "bodyId": "htmlbody",
+      "headContent": "\n<script src=\"https://www.youtube.com/iframe_api?apiKey=AIzaSyAAH_WLyeIGyalKrINKwCCXzIWhQDbno_g\"></script><script async=\"\" src=\"https://metrics.ncl.ac.uk/gtm.js?id=GTM-5HH99Z\"></script><script type=\"text/javascript\" charset=\"UTF-8\" async=\"\" src=\"https://consent.cookiebot.com/1ebf835b-c525-4423-9bd4-669b6cf0b7cd/cc.js?renew=false&amp;referer=www.ncl.ac.uk&amp;dnt=false&amp;init=false\"></script><script data-cookieconsent=\"ignore\">\n    window.dataLayer = window.dataLayer || [];\n    function gtag() {\n        dataLayer.push(arguments);\n    }\n    gtag(\"consent\", \"default\", {\n        ad_personalization: \"denied\",\n        ad_storage: \"denied\",\n        ad_user_data: \"denied\",\n        analytics_storage: \"denied\",\n        functionality_storage: \"denied\",\n        personalization_storage: \"denied\",\n        security_storage: \"granted\",\n        wait_for_update: 500,\n    });\n    gtag(\"set\", \"ads_data_redaction\", true);\n    gtag(\"set\", \"url_passthrough\", true);\n</script>\n\t<!-- Cookie banner display -->\n\t<script id=\"Cookiebot\" src=\"https://consent.cookiebot.com/uc.js\" data-cbid=\"1ebf835b-c525-4423-9bd4-669b6cf0b7cd\" type=\"text/javascript\" async=\"\"></script>\n    <title>Newcastle University | World Top 140 Research-led UK University | Newcastle University</title><!-- <title>The things we do here make a difference out there | Newcastle University</title> -->\n\n    <meta charset=\"utf-8\">\n\n    <meta name=\"description\" content=\"Discover Newcastle University, one of the UK’s top rated research universities and a founding member of the Russell group, located in a vibrant and inclusive student city.\">\n<!-- social media OG tags -->\n<meta property=\"og:type\" content=\"article\">\n<!-- Twitter -->\n<meta name=\"twitter:description\" content=\"Discover Newcastle University, one of the UK’s top rated research universities and a founding member of the Russell group, located in a vibrant and inclusive student city.\">\n<meta name=\"twitter:title\" content=\"Newcastle University | World Top 140 Research-led UK University\">\n<meta name=\"twitter:url\" content=\"https://www.ncl.ac.uk/\">\n<meta name=\"twitter:site\" content=\"Newcastle University\">\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:image\" content=\"https://pxl-nclacuk.terminalfour.net/prod01/channel_3/mediav8/logos/uni-logo-twitter.jpg\">\n\n<!-- facebook -->\n<meta property=\"og:url\" content=\"https://www.ncl.ac.uk/\">\n<meta name=\"og:title\" content=\"Newcastle University | World Top 140 Research-led UK University\">\n<meta name=\"og:description\" content=\"Discover Newcastle University, one of the UK’s top rated research universities and a founding member of the Russell group, located in a vibrant and inclusive student city.\">\n<meta name=\"og:image\" content=\"https://pxl-nclacuk.terminalfour.net/prod01/channel_3/mediav8/logos/uni-logo-twitter.jpg\">\n\n\n    \n    \n    \n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">    \n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"content management system\" content=\"TerminalFOUR\">\n\t\t\n    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->\n    \n    <link rel=\"preload\" href=\"/webtemplate/fonts/bariol_regular.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"\">\n    <link rel=\"preload\" href=\"/webtemplate/fonts/derailed-bold-webfont.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"\">\n    <link rel=\"preload\" href=\"/webtemplate/fonts/derailed-extrabold-webfont.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"\">\n    <link rel=\"preload\" href=\"/webtemplate/fonts/derailed-semibold-webfont.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"\">\n    <link rel=\"preload\" href=\"/webtemplate/fonts/fa/fa-solid-900.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"\">\n    <link rel=\"preload\" href=\"/webtemplate/fonts/derailed-regular-webfont.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"\">\n    \n    <!-- Zephyr Section style includes -->\n     <link type=\"text/css\" rel=\"stylesheet\" href=\"/webtemplate/css/sites/brand-hub/main.css\">\n\n\n    \n    <style>\n    .ctaHome {\n    \tdisplay: none;\n    }\n    .navigation .active {\n      font-weight: bold;\n    }\n    </style>\n    \n  \t<!--<script src=\"//www.ncl.ac.uk/code/jquery/jquery-1.10.2.min.js\"></script>-->\n  \t<script src=\"https://code.jquery.com/jquery-3.7.1.min.js\" integrity=\"sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=\" crossorigin=\"anonymous\"></script><style type=\"text/css\" id=\"CookieConsentStateDisplayStyles\">.cookieconsent-optin-preferences,.cookieconsent-optin-statistics,.cookieconsent-optin-marketing,.cookieconsent-optin{display:none;}.cookieconsent-optout-preferences,.cookieconsent-optout-statistics,.cookieconsent-optout-marketing,.cookieconsent-optout{display:block;display:initial;}</style>\n\n    <!-- TC0: Include Analytics Tracking Code -->\n    <!-- Google Tag Manager -->\n<script type=\"text/javascript\">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://metrics.ncl.ac.uk/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-5HH99Z');</script>\n<!-- End Google Tag Manager. -->\n\n    \n    <!-- SH6: Include Within Head Tag Area -->\n    <!-- Start of HubSpot Embed Code -->\n<script type=\"text/plain\" data-cookieconsent=\"Marketing\" id=\"hs-script-loader\" async=\"\" defer=\"\" src=\"//js.hs-scripts.com/5025575.js\"></script>\n<!-- End of HubSpot Embed Code -->\n\n\t\t\n  \t<!-- Navigation Colour Overrides -->\n    <style>:root {}</style>\n  \n    <!-- Code splitting file for loading necessary only scripts per page -->\n  \t<script src=\"/webtemplate/js/dist/lib/codeSplitting.min.js\"></script>\n  \n",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.7.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.ncl.ac.uk/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html id=\"nav-close\" lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n<head>\r\n<!-- Google Consent Mode v2 -->\r\n<script data-cookieconsent=\"ignore\">\r\n    window.dataLayer = window.dataLayer || [];\r\n    function gtag() {\r\n        dataLayer.push(arguments);\r\n    }\r\n    gtag(\"consent\", \"default\", {\r\n        ad_personalization: \"denied\",\r\n        ad_storage: \"denied\",\r\n        ad_user_data: \"denied\",\r\n        analytics_storage: \"denied\",\r\n        functionality_storage: \"denied\",\r"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.ncl.ac.uk/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html id=\"nav-close\" lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n<head>\r\n<!-- Google Consent Mode v2 -->\r\n<script data-cookieconsent=\"ignore\">\r\n    window.dataLayer = window.dataLayer || [];\r\n    function gtag() {\r\n        dataLayer.push(arguments);\r\n    }\r\n    gtag(\"consent\", \"default\", {\r\n        ad_personalization: \"denied\",\r\n        ad_storage: \"denied\",\r\n        ad_user_data: \"denied\",\r\n        analytics_storage: \"denied\",\r\n        functionality_storage: \"denied\",\r"
+    },
+    "/wp-content/": {
+      "url": "https://www.ncl.ac.uk/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html id=\"nav-close\" lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n<head>\r\n<!-- Google Consent Mode v2 -->\r\n<script data-cookieconsent=\"ignore\">\r\n    window.dataLayer = window.dataLayer || [];\r\n    function gtag() {\r\n        dataLayer.push(arguments);\r\n    }\r\n    gtag(\"consent\", \"default\", {\r\n        ad_personalization: \"denied\",\r\n        ad_storage: \"denied\",\r\n        ad_user_data: \"denied\",\r\n        analytics_storage: \"denied\",\r\n        functionality_storage: \"denied\",\r"
+    },
+    "/user/login": {
+      "url": "https://www.ncl.ac.uk/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html id=\"nav-close\" lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n<head>\r\n<!-- Google Consent Mode v2 -->\r\n<script data-cookieconsent=\"ignore\">\r\n    window.dataLayer = window.dataLayer || [];\r\n    function gtag() {\r\n        dataLayer.push(arguments);\r\n    }\r\n    gtag(\"consent\", \"default\", {\r\n        ad_personalization: \"denied\",\r\n        ad_storage: \"denied\",\r\n        ad_user_data: \"denied\",\r\n        analytics_storage: \"denied\",\r\n        functionality_storage: \"denied\",\r"
+    },
+    "/core/install.php": {
+      "url": "https://www.ncl.ac.uk/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html id=\"nav-close\" lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n<head>\r\n<!-- Google Consent Mode v2 -->\r\n<script data-cookieconsent=\"ignore\">\r\n    window.dataLayer = window.dataLayer || [];\r\n    function gtag() {\r\n        dataLayer.push(arguments);\r\n    }\r\n    gtag(\"consent\", \"default\", {\r\n        ad_personalization: \"denied\",\r\n        ad_storage: \"denied\",\r\n        ad_user_data: \"denied\",\r\n        analytics_storage: \"denied\",\r\n        functionality_storage: \"denied\",\r"
+    },
+    "/cas/login": {
+      "url": "https://www.ncl.ac.uk/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html id=\"nav-close\" lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n<head>\r\n<!-- Google Consent Mode v2 -->\r\n<script data-cookieconsent=\"ignore\">\r\n    window.dataLayer = window.dataLayer || [];\r\n    function gtag() {\r\n        dataLayer.push(arguments);\r\n    }\r\n    gtag(\"consent\", \"default\", {\r\n        ad_personalization: \"denied\",\r\n        ad_storage: \"denied\",\r\n        ad_user_data: \"denied\",\r\n        analytics_storage: \"denied\",\r\n        functionality_storage: \"denied\",\r"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.ncl.ac.uk/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\r\n<html id=\"nav-close\" lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n<head>\r\n<!-- Google Consent Mode v2 -->\r\n<script data-cookieconsent=\"ignore\">\r\n    window.dataLayer = window.dataLayer || [];\r\n    function gtag() {\r\n        dataLayer.push(arguments);\r\n    }\r\n    gtag(\"consent\", \"default\", {\r\n        ad_personalization: \"denied\",\r\n        ad_storage: \"denied\",\r\n        ad_user_data: \"denied\",\r\n        analytics_storage: \"denied\",\r\n        functionality_storage: \"denied\",\r"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "HubSpot for Education",
+      "confidence": 80,
+      "evidence": [
+        "HTML: hubspot",
+        "HTML: hs-script"
+      ]
+    },
+    {
+      "name": "Ghost",
+      "confidence": 70,
+      "evidence": [
+        "HTML: ghost",
+        "JS: ghost (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 60,
+      "evidence": [
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Angular",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ng-app"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 40,
+      "evidence": [
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Canvas LMS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ENV.*COURSE"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: gtag\\("
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 40,
+      "evidence": [
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "HubSpot",
+      "confidence": 40,
+      "evidence": [
+        "HTML: hubspot"
+      ]
+    },
+    {
+      "name": "LearnDash",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ld.*course"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*solutions"
+      ]
+    },
+    {
+      "name": "Localist",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*events"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "TerminalFour",
+      "confidence": 40,
+      "evidence": [
+        "HTML: terminalfour"
+      ]
+    },
+    {
+      "name": "Oracle PeopleSoft Campus Solutions",
+      "confidence": 40,
+      "evidence": [
+        "HTML: campus.*solutions"
+      ]
+    },
+    {
+      "name": "Advanced Custom Fields",
+      "confidence": 30,
+      "evidence": [
+        "JS: acf (HTML)"
+      ]
+    },
+    {
+      "name": "AitThemes",
+      "confidence": 30,
+      "evidence": [
+        "JS: ait (HTML)"
+      ]
+    },
+    {
+      "name": "Boost.ai",
+      "confidence": 30,
+      "evidence": [
+        "JS: boost (HTML)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "Econda",
+      "confidence": 30,
+      "evidence": [
+        "JS: econda (HTML)"
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ext (HTML)"
+      ]
+    },
+    {
+      "name": "Extend",
+      "confidence": 30,
+      "evidence": [
+        "JS: Extend (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Tender Support",
+      "confidence": 30,
+      "evidence": [
+        "JS: Tender (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Ellucian Banner",
+      "confidence": 30,
+      "evidence": [
+        "JS: Banner (HTML)"
+      ]
+    },
+    {
+      "name": "CAS",
+      "confidence": 30,
+      "evidence": [
+        "JS: CAS (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

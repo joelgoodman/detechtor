@@ -239,18 +239,13 @@ class PatternAuditor {
   run() {
     const patternsDir = path.join(__dirname, '..', 'patterns');
 
-    // Pattern files to audit (in priority order)
+    // Pattern files to audit (consolidated higher-ed + general extensions)
     const patternFiles = [
-      'higher-ed-patterns.json',
-      'higher-ed-comprehensive.json',
-      'enhanced-payment-analytics.json',
-      'higher-ed-exhaustive-core.json',
-      'higher-ed-exhaustive-sis-additional.json',
-      'higher-ed-exhaustive-lms-additional.json',
-      'higher-ed-exhaustive-business.json',
-      'higher-ed-exhaustive-specialized.json',
-      'higher-ed-exhaustive-infrastructure.json',
-      'higher-ed-exhaustive-media.json'
+      'higher-ed-sis.json',
+      'higher-ed-lms.json',
+      'higher-ed-cms.json',
+      'higher-ed-infra.json',
+      'general-analytics-extensions.json'
     ];
 
     console.log('Auditing pattern files...\n');

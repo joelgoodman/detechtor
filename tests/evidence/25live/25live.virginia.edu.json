@@ -1,0 +1,464 @@
+{
+  "technology": "25Live",
+  "url": "https://25live.virginia.edu/",
+  "final_url": "https://25live.virginia.edu/",
+  "captured_at": "2026-04-21T19:34:49.922Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/25live/25live.virginia.edu.html",
+  "evidence": {
+    "headers": {
+      "age": "657987",
+      "cache-control": "max-age=2764800, public",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9efed3f10a237df6-ATL",
+      "content-encoding": "gzip",
+      "content-language": "en",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:34:44 GMT",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Tue, 14 Apr 2026 04:48:13 GMT",
+      "server": "cloudflare",
+      "set-cookie": "__cf_bm=xkVyxlzoN0xFI2wVUCGbNiFH0ZYZ4kjL.fxL9by4I9Y-1776800084.642825-1.0.1.1-.k7uHcBcp.FZ7QJPkjXAOEsipiPu1ConY4QOQOxx432zP7uAO513maKxEJjgaWA6TrxhH3vO_luOWFtOFuyDa2HpCQontZW5d.JZETkn8DzKups7ptEpUrgc_kB49n12; HttpOnly; Secure; Path=/; Domain=virginia.edu; Expires=Tue, 21 Apr 2026 20:04:44 GMT",
+      "vary": "Cookie,X-Consumer-ID,Accept-Encoding",
+      "via": "varnish",
+      "x-ah-environment": "prod",
+      "x-cache": "HIT",
+      "x-cache-hits": "2764",
+      "x-consumer-id": "1850a84d-a9a8-4f13-8da1-6e6d691a84ac",
+      "x-content-type-options": "nosniff",
+      "x-drupal-cache": "MISS",
+      "x-drupal-dynamic-cache": "MISS",
+      "x-frame-options": "SAMEORIGIN",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "x-request-id": "v-2534c6c0-37bd-11f1-81fd-b3394b2479fe"
+    },
+    "scripts": [
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-TXKCMV2",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/sites/25live/files/google_tag/google_tag/acsf_gtm/google_tag.script.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/dist/scripts/js/vendor/modernizr.min.js?v=3.11.7",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-2BEW9WSBY9",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/node_modules/simplestatemanager/dist/ssm.min.js",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/core/assets/vendor/jquery/jquery.min.js?v=3.7.1",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/core/assets/vendor/once/once.min.js?v=1.0.1",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/core/misc/drupalSettingsLoader.js?v=10.6.4",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/core/misc/drupal.js?v=10.6.4",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/core/misc/drupal.init.js?v=10.6.4",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/modules/contrib/ckeditor_accordion/js/accordion.frontend.min.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/dist/scripts/js/script.min.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/dist/scripts/js/de-simple-menu.min.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/dist/scripts/js/tab-site-nav-identifier.min.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/dist/scripts/js/menu--handler.min.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/dist/scripts/js/table-wrap.min.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/dist/scripts/js/ui-togglers.min.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/dist/scripts/js/accordion--handler.min.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/dist/scripts/js/iframe-ratio--handler.min.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/dist/scripts/js/accessibility-modifications.min.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/themes/custom/de_theme/dist/scripts/js/title-handling.min.js?tdguz0",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/libraries/mmenu/dist/mmenu.js?v=10.6.4",
+        "version": null
+      },
+      {
+        "src": "https://25live.virginia.edu/modules/contrib/responsive_menu/js/responsive_menu.config.js?v=10.6.4",
+        "version": null
+      }
+    ],
+    "meta": {
+      "generator": "Drupal 10 (https://www.drupal.org)",
+      "mobileoptimized": "width",
+      "handheldfriendly": "true",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "theme-color": "#ffffff"
+    },
+    "cookies": [
+      {
+        "name": "__cf_bm",
+        "value": "xkVyxlzoN0xFI2wVUCGbNiFH0ZYZ4kjL.fxL9by4I9Y-1776800084.642825-1.",
+        "domain": ".virginia.edu"
+      }
+    ],
+    "dom": {
+      "title": "Homepage | 25Live Information Portal",
+      "bodyClasses": "no_sidebars path-frontpage node--type-landing-page-ct mm-wrapper",
+      "bodyId": "",
+      "headContent": "\n    <meta charset=\"utf-8\">\n<link rel=\"canonical\" href=\"https://25live.virginia.edu/\">\n<link rel=\"shortlink\" href=\"https://25live.virginia.edu/\">\n<meta name=\"Generator\" content=\"Drupal 10 (https://www.drupal.org)\">\n<meta name=\"MobileOptimized\" content=\"width\">\n<meta name=\"HandheldFriendly\" content=\"true\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link rel=\"icon\" href=\"/themes/custom/de_theme/favicon.ico\" type=\"image/vnd.microsoft.icon\">\n<script src=\"https://www.googletagmanager.com/gtm.js?id=GTM-TXKCMV2\" async=\"\"></script><script src=\"/sites/25live/files/google_tag/google_tag/acsf_gtm/google_tag.script.js?tdguz0\" defer=\"\"></script>\n\n    <title>Homepage | 25Live Information Portal</title>\n\n    <link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/align.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/fieldgroup.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/container-inline.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/clearfix.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/details.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/hidden.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/item-list.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/js.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/nowrap.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/position-container.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/reset-appearance.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/resize.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/system-status-counter.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/system-status-report-counters.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/system-status-report-general-info.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/tablesort.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/views/css/views.module.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/modules/contrib/ckeditor_accordion/css/accordion.frontend.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/sites/25live/files/css/responsive_menu_breakpoint.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/libraries/mmenu/dist/mmenu.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/modules/contrib/responsive_menu/css/responsive_menu.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/themes/custom/de_theme/dist/css/print.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/themes/custom/de_theme/dist/css/de_theme.css?tdguz0\">\n<link rel=\"stylesheet\" media=\"all\" href=\"https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i&amp;display=swap\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/themes/custom/de_theme/src/fonts/material-outlined/material-icons.min.css?tdguz0\">\n\n    <script src=\"/themes/custom/de_theme/dist/scripts/js/vendor/modernizr.min.js?v=3.11.7\"></script>\n\n\n    <link rel=\"apple-touch-icon-precomposed\" href=\"/themes/custom/de_theme/src/img/favicons/touch-icon-57.png\">\n\n    <link rel=\"apple-touch-icon-precomposed\" href=\"/themes/custom/de_theme/src/img/favicons/touch-icon-72.png\" sizes=\"72x72\">\n\n    <link rel=\"apple-touch-icon-precomposed\" href=\"/themes/custom/de_theme/src/img/favicons/touch-icon-76.png\" sizes=\"76x76\">\n\n    <link rel=\"apple-touch-icon-precomposed\" href=\"/themes/custom/de_theme/src/img/favicons/touch-icon-114.png\" sizes=\"114x114\">\n\n    <link rel=\"apple-touch-icon-precomposed\" href=\"/themes/custom/de_theme/src/img/favicons/touch-icon-120.png\" sizes=\"120x120\">\n\n    <link rel=\"apple-touch-icon-precomposed\" href=\"/themes/custom/de_theme/src/img/favicons/touch-icon-144.png\" sizes=\"144x144\">\n\n    <link rel=\"apple-touch-icon-precomposed\" href=\"/themes/custom/de_theme/src/img/favicons//touch-icon-152.png\" sizes=\"152x152\">\n\n    <link rel=\"apple-touch-icon-precomposed\" href=\"/themes/custom/de_theme/src/img/favicons/touch-icon-180.png\" sizes=\"180x180\">\n\n    <meta name=\"theme-color\" content=\"#ffffff\">\n\n\n  ",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.7.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://25live.virginia.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\" />\n<link rel=\"shortlink\" href=\"https://25live.virginia.edu/\" />\n<link rel=\"canonical\" href=\"https://25live.virginia.edu/\" />\n<meta name=\"Generator\" content=\"Drupal 10 (https://www.drupal.org)\" />\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<link rel=\"icon\" href=\"/themes/custom/de_theme/favicon.ico\" type=\"i"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://25live.virginia.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\" />\n<link rel=\"shortlink\" href=\"https://25live.virginia.edu/\" />\n<link rel=\"canonical\" href=\"https://25live.virginia.edu/\" />\n<meta name=\"Generator\" content=\"Drupal 10 (https://www.drupal.org)\" />\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<link rel=\"icon\" href=\"/themes/custom/de_theme/favicon.ico\" type=\"i"
+    },
+    "/wp-content/": {
+      "url": "https://25live.virginia.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\" />\n<link rel=\"canonical\" href=\"https://25live.virginia.edu/\" />\n<link rel=\"shortlink\" href=\"https://25live.virginia.edu/\" />\n<meta name=\"Generator\" content=\"Drupal 10 (https://www.drupal.org)\" />\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<link rel=\"icon\" href=\"/themes/custom/de_theme/favicon.ico\" type=\"i"
+    },
+    "/user/login": {
+      "url": "https://25live.virginia.edu/user/login",
+      "status": 200,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\" />\n<link rel=\"canonical\" href=\"https://25live.virginia.edu/user/login\" />\n<meta name=\"Generator\" content=\"Drupal 10 (https://www.drupal.org)\" />\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<link rel=\"icon\" href=\"/themes/custom/de_theme/favicon.ico\" type=\"image/vnd.microsoft.icon\" />\n<script src=\"/sites/25l"
+    },
+    "/core/install.php": {
+      "url": "https://25live.virginia.edu/core/install.php",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\" />\n<meta name=\"Generator\" content=\"Drupal 10 (https://www.drupal.org)\" />\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<link rel=\"icon\" href=\"/profiles/contrib/lightning/favicon.ico\" type=\"image/vnd.microsoft.icon\" />\n\n    <title>| UVA Department</title>\n    "
+    },
+    "/cas/login": {
+      "url": "https://25live.virginia.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\" />\n<link rel=\"shortlink\" href=\"https://25live.virginia.edu/\" />\n<link rel=\"canonical\" href=\"https://25live.virginia.edu/\" />\n<meta name=\"Generator\" content=\"Drupal 10 (https://www.drupal.org)\" />\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<link rel=\"icon\" href=\"/themes/custom/de_theme/favicon.ico\" type=\"i"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://25live.virginia.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "\n\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\" />\n<link rel=\"shortlink\" href=\"https://25live.virginia.edu/\" />\n<link rel=\"canonical\" href=\"https://25live.virginia.edu/\" />\n<meta name=\"Generator\" content=\"Drupal 10 (https://www.drupal.org)\" />\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<link rel=\"icon\" href=\"/themes/custom/de_theme/favicon.ico\" type=\"i"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Cloudflare",
+      "confidence": 100,
+      "evidence": [
+        "Header: Server=^cloudflare$",
+        "Header: cf-cache-status=",
+        "Header: cf-ray="
+      ]
+    },
+    {
+      "name": "Drupal",
+      "confidence": 100,
+      "evidence": [
+        "HTML: drupal",
+        "HTML: misc/drupal\\.js",
+        "Header: X-Drupal-Cache=.*",
+        "Header: X-Generator=Drupal",
+        "Meta: generator=Drupal",
+        "JS: Drupal (HTML)",
+        "JS: drupalSettings (HTML)"
+      ]
+    },
+    {
+      "name": "CloudFlare",
+      "confidence": 100,
+      "evidence": [
+        "Header: server=cloudflare",
+        "Header: cf-ray=.*"
+      ]
+    },
+    {
+      "name": "25Live",
+      "confidence": 100,
+      "evidence": [
+        "HTML: 25live",
+        "HTML: collegenet.*25live",
+        "HTML: event.*management"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: gtag\\('config', 'G-[A-Z0-9]+",
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "HTML: gtag\\('js'",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "CollegeNET 25Live",
+      "confidence": 80,
+      "evidence": [
+        "HTML: 25live",
+        "HTML: collegenet.*25live"
+      ]
+    },
+    {
+      "name": "Cloudflare Bot Management",
+      "confidence": 70,
+      "evidence": [
+        "Cookie: __cf_bm"
+      ]
+    },
+    {
+      "name": "Adobe Experience Manager",
+      "confidence": 40,
+      "evidence": [
+        "HTML: aem"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: gtag\\("
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "LearnDash",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ld.*course"
+      ]
+    },
+    {
+      "name": "CBORD",
+      "confidence": 40,
+      "evidence": [
+        "HTML: get.*system"
+      ]
+    },
+    {
+      "name": "Localist",
+      "confidence": 40,
+      "evidence": [
+        "HTML: event.*calendar"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Cengage WebAssign",
+      "confidence": 40,
+      "evidence": [
+        "HTML: web.*assign"
+      ]
+    },
+    {
+      "name": "Advanced Custom Fields",
+      "confidence": 30,
+      "evidence": [
+        "JS: acf (HTML)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Resova",
+      "confidence": 30,
+      "evidence": [
+        "JS: baseUrl (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "slideout",
+      "confidence": 30,
+      "evidence": [
+        "JS: slideout (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

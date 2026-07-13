@@ -1,0 +1,224 @@
+technology,file,legacy_names,vendor_website,vendor_demo_url,vendor_docs_url,customer_url_1,customer_url_2,customer_url_3,unverifiable_public,priority,notes
+Blackboard Web Community Manager,higher-ed-cms.json,,https://www.blackboard.com,,,,,,,medium,
+Cascade CMS,higher-ed-cms.json,,https://www.hannonhill.com/products/cascade-cms/index.html,,https://www.hannonhill.com/products/cascade-cms/,,,,,medium,
+Finalsite,higher-ed-cms.json,,https://www.finalsite.com,,,,,,,medium,
+Ingeniux CMS,higher-ed-cms.json,,https://www.ingeniux.com,,,,,,,medium,
+Modern Campus CMS,higher-ed-cms.json,OmniCMS,https://moderncampus.com/solutions/cms/,https://moderncampus.com/request-demo.html,https://moderncampus.com/products/cms/services.html,https://ou-campus.sdsu.edu/,https://www.alaska.edu/oucampus-training/resources/,,,high,"SDSU (ou-campus subdomain is live OU Campus deployment), Univ of Alaska confirmed"
+SchoolMessenger,higher-ed-cms.json,,https://www.schoolmessenger.com,,,,,,,medium,
+TerminalFour,higher-ed-cms.json,,https://www.terminalfour.com,,https://docs.terminalfour.com,https://www.ncl.ac.uk/,https://www.qmul.ac.uk/,https://www.exeter.ac.uk/,,medium,T4 decoupled — signals not guaranteed on homepage. Newcastle fires; QMUL and Exeter are known T4 sites. Scan inner content pages for data-t4- attributes.
+Absorb LMS,higher-ed-lms.json,,https://www.absorblms.com,,,,,,,medium,
+Blackboard Collaborate,higher-ed-lms.json,,https://www.blackboard.com/teaching-learning/collaboration-web-conferencing/blackboard-collaborate,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Blackboard Learn,higher-ed-lms.json,,https://www.blackboard.com/teaching-learning/learning-management,,https://docs.anthology.com,,,,,low,
+Blackboard Ultra,higher-ed-lms.json,,https://www.blackboard.com/teaching-learning/learning-management/blackboard-learn/ultra-experience,,,,,,,medium,
+Brightspace Core,higher-ed-lms.json,,https://www.d2l.com/brightspace/core/,https://www.d2l.com/brightspace/,https://docs.valence.desire2learn.com/,https://purdue.brightspace.com/,https://brightspace.usc.edu/,,,high,"Targets Valence API surface (brightspace.*core, valence.*api). Same instances as D2L Brightspace but looking for API-layer signals."
+Brightspace Portfolio,higher-ed-lms.json,,https://www.d2l.com/brightspace/portfolio/,,https://community.d2l.com/brightspace/kb/articles/23416-about-brightspace-eportfolio,https://www.torontomu.ca/courses/students/tutorials/eportfolio/,https://www.uakron.edu/learn/ols/brightspace/eportfolio,,,high,Toronto Metropolitan Univ and Univ of Akron confirmed; ePortfolio module within Brightspace
+Cambridge Core,higher-ed-lms.json,,https://www.cambridge.org/core,,,,,,,medium,
+Canvas LMS,higher-ed-lms.json,,,,https://canvas.instructure.com/doc/api/,,,,,low,
+Cengage MindTap,higher-ed-lms.json,,https://www.cengage.com/mindtap/,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Cengage WebAssign,higher-ed-lms.json,,https://www.webassign.net,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Cornerstone OnDemand,higher-ed-lms.json,,https://www.cornerstoneondemand.com,,,,,,,medium,
+Coursera for Campus,higher-ed-lms.json,,https://www.coursera.org/campus,,,,,,,medium,
+D2L Brightspace,higher-ed-lms.json,,https://www.d2l.com/brightspace/,https://www.d2l.com/brightspace/,https://docs.valence.desire2learn.com/,https://purdue.brightspace.com/,https://brightspace.usc.edu/,https://www.eiu.edu/d2l/,,high,"Purdue, USC, Eastern Illinois; brightspace.* subdomains are live deployment URLs"
+Docebo,higher-ed-lms.json,,https://www.docebo.com,,,,,,,medium,
+Edmodo,higher-ed-lms.json,,https://new.edmodo.com,,,,,,,medium,
+ExamSoft,higher-ed-lms.json,,https://examsoft.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+FutureLearn,higher-ed-lms.json,,https://www.futurelearn.com,,,,,,,medium,
+Google Classroom,higher-ed-lms.json,,https://classroom.google.com,,,,,,,low,
+Honorlock,higher-ed-lms.json,,https://honorlock.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Instructure Canvas Catalog,higher-ed-lms.json,,https://www.instructure.com/canvas/catalog,https://www.instructure.com/try-canvas,https://www.instructure.com/higher-education/products/canvas/canvas-catalog,https://ut.pdx.catalog.canvaslms.com,https://oithost.utk.edu/canvas-catalog/html/,,,high,Portland State confirmed at *.catalog.canvaslms.com — subdomain pattern is Tier A. UTK /canvas-catalog/ path also confirmed.
+Kahoot!,higher-ed-lms.json,,https://kahoot.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+LearnDash,higher-ed-lms.json,,https://www.learndash.com,,,,,,,medium,
+MATLAB Grader,higher-ed-lms.json,,https://grader.mathworks.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Macmillan Achieve,higher-ed-lms.json,,https://www.macmillanlearning.com/college/us/digital/achieve,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+McGraw-Hill ALEKS,higher-ed-lms.json,,https://www.aleks.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+McGraw-Hill Connect,higher-ed-lms.json,,https://connect.mheducation.com,,,https://connect.mheducation.com/,,,true,medium,"Central portal, not per-institution; observable via links on course material pages and LMS integrations. No institution-specific subdomains."
+Mentimeter,higher-ed-lms.json,,https://www.mentimeter.com,,,,,,,medium,
+Microsoft Teams for Education,higher-ed-lms.json,,https://www.microsoft.com/en-us/education/products/teams,,,,,,,low,
+Moodle,higher-ed-lms.json,,,,https://docs.moodle.org,,,,,low,
+MyMathLab,higher-ed-lms.json,,https://www.mymathlab.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Nearpod,higher-ed-lms.json,,https://nearpod.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Norton Illumine,higher-ed-lms.json,,https://digital.wwnorton.com/illumine,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Open edX,higher-ed-lms.json,,https://open.edx.org,,,,,,,medium,
+Oxford Learning Link,higher-ed-lms.json,,https://learninglink.oup.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Padlet,higher-ed-lms.json,,https://padlet.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Pearson MyLab,higher-ed-lms.json,,https://www.pearsonmylabandmastering.com,,,https://mlm.pearson.com/,,,true,medium,Central portal at mlm.pearson.com; observable via course page links and LMS integrations. No per-institution deployments.
+Perusall,higher-ed-lms.json,,https://perusall.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Poll Everywhere,higher-ed-lms.json,,https://www.polleverywhere.com,,,,,,,medium,
+ProctorU,higher-ed-lms.json,,https://www.proctoru.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Proctorio,higher-ed-lms.json,,https://proctorio.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Respondus LockDown Browser,higher-ed-lms.json,,https://web.respondus.com/he/lockdownbrowser/,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Revel,higher-ed-lms.json,,https://www.pearsonhighered.com/revel/,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+SafeAssign,higher-ed-lms.json,,https://www.blackboard.com/teaching-learning/learning-management/blackboard-learn/safeassign,,,,,,,medium,
+Sakai,higher-ed-lms.json,,https://www.sakaiproject.org,,,https://content.sakai.rutgers.edu/,,,,medium,Rutgers still runs Sakai for research/project sites post-Canvas migration; sakai.{institution}.edu or courses.{institution}.edu pattern
+Schoology,higher-ed-lms.json,,https://www.schoology.com,,,,,,,medium,
+TalentLMS,higher-ed-lms.json,,https://www.talentlms.com,,,,,,,medium,
+Top Hat,higher-ed-lms.json,,https://tophat.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+Totara Learn,higher-ed-lms.json,,https://www.totaralearning.com,,,,,,,medium,
+Turnitin,higher-ed-lms.json,,https://www.turnitin.com,,https://help.turnitin.com,,,,,medium,
+Unicheck,higher-ed-lms.json,,https://unicheck.com,,,,,,,medium,
+VeriCite,higher-ed-lms.json,,https://www.vericite.com,,,,,,,medium,
+VitalSource Bookshelf,higher-ed-lms.json,,https://www.vitalsource.com,,,,,,true,medium,Accessed via LMS integration; no public-facing URL. Detectable only from scraped navigation links.
+WileyPLUS,higher-ed-lms.json,,https://www.wileyplus.com,,,,,,,medium,
+iClicker,higher-ed-lms.json,,https://www.iclicker.com,,,,,,,medium,
+Acalog,higher-ed-sis.json,,https://www.digarc.com/acalog,,,,,,,medium,
+Anthology Student,higher-ed-sis.json,Campus Management;Campus Management CampusNexus,https://www.anthology.com/products/student,https://www.anthology.com/contact-us/demo/student,https://help.anthology.com/Content/DocSets/CNSDocSet.htm,https://its.atsu.edu/student-information-system,https://www.wcupa.edu/education-socialWork/assessmentAccreditation/anthology.aspx,https://teachered.uni.edu/student-resources/anthology-faqs,,high,"Deployed at A.T. Still Univ, West Chester Univ, Univ of Northern Iowa; vendor case study"
+ApplyTexas,higher-ed-sis.json,,https://www.applytexas.org,,,,,,,medium,
+AwardSpring,higher-ed-sis.json,,https://www.awardspring.com,https://www.awardspring.com/,https://www.awardspring.com/scholarship-management,https://www.usi.edu/admissions/scholarships/awardspring-scholarships,,,,high,Deployed at Univ of Southern Indiana; vendor case study
+Campus Management Suite,higher-ed-sis.json,,https://www.callista.com,https://www.anthology.com/contact-us/demo/student,https://help.anthology.com/Content/DocSets/CNSDocSet.htm,https://rccd.edu/project-nexus/implement.html,,,true,high,"Legacy product, now Anthology Student; RCCD Project Nexus reference"
+CampusLogic,higher-ed-sis.json,,https://www.campuslogic.com,,https://campuslogic.com/,https://www.pvamu.edu/faid/resources/campuslogic/,,,true,high,"Student-facing portals are behind auth; 100+ customers (PVAMU, CA community colleges, USG) but no public-facing observable instance confirmed"
+CampusVue,higher-ed-sis.json,,https://www.ellucian.com,https://www.anthology.com/contact-us/demo/student,https://help.anthology.com/Content/DocSets/CNSDocSet.htm,,,,true,high,Legacy Campus Management product integrated into Anthology Student
+Coalition Application,higher-ed-sis.json,,https://www.coalitionforcollegeaccess.org,,,,,,,medium,
+Common Application,higher-ed-sis.json,,https://www.commonapp.org,,,,,,,medium,
+CourseLeaf,higher-ed-sis.json,,https://www.leepfrog.com,,,,,,,medium,
+CurricUNET,higher-ed-sis.json,,https://www.governet.net/curricunet,,,,,,,medium,
+Curriculog,higher-ed-sis.json,,https://www.curriculog.com,,,,,,,medium,
+DegreeWorks,higher-ed-sis.json,,https://www.ellucian.com/solutions/ellucian-degreeworks,,,,,,,medium,
+Ellucian Banner,higher-ed-sis.json,,https://www.ellucian.com/solutions/ellucian-banner,,https://support.ellucian.com,,,,,low,
+Ellucian Colleague,higher-ed-sis.json,,https://www.ellucian.com/solutions/ellucian-colleague,,https://www.ellucian.com/customer-center,https://itshelp.aurora.edu/hc/en-us/articles/360041289793-Colleague-Access-and-Resources,https://www.lclark.edu/information_technology/information_systems/datatel/documentation/,https://is.kzoo.edu/personalcomputing/software/colleague/,,high,"Aurora Univ, Lewis & Clark College, Kalamazoo College; datatel URL at L&C confirms legacy identifier"
+Evisions,higher-ed-sis.json,,https://evisions.com,,,,,,,medium,
+FACTS SIS,higher-ed-sis.json,,https://www.factsmgt.com/products/sis,,,,,,,medium,
+FAST Financial Aid,higher-ed-sis.json,,https://www.getfast.com,,,,,,,medium,
+Focus School Software,higher-ed-sis.json,,https://www.focusschoolsoftware.com,,,,,,,medium,
+Gradelink,higher-ed-sis.json,,https://www.gradelink.com,,,,,,,medium,
+Infinite Campus,higher-ed-sis.json,,https://www.infinitecampus.com,,,,,,,medium,
+InfoEd,higher-ed-sis.json,,https://www.infoedglobal.com,,,,,,,medium,
+Jenzabar,higher-ed-sis.json,Jenzabar EX,https://www.jenzabar.com,https://elearning.sandbox.jenzabar.com/ics,https://jenzabar.com/support,https://my.greenville.edu,https://my.tiu.edu/ICS,,,high,*.edu/ICS path pattern is a strong Jenzabar JICS indicator; Greenville College and Trinity International University confirmed
+Kuali Coeus,higher-ed-sis.json,,https://www.kuali.co/products/kuali-research,,,,,,,medium,
+Kuali Curriculum Management,higher-ed-sis.json,,https://www.kuali.co/products/kuali-cm,,,,,,,medium,
+Kuali Financial System,higher-ed-sis.json,,https://www.kuali.co/products/kuali-financial-system,,,,,,,medium,
+Liaison CAS,higher-ed-sis.json,,https://www.liaisonedu.com,,,,,,,medium,
+National Student Clearinghouse,higher-ed-sis.json,,https://www.studentclearinghouse.org,,,,,,,medium,
+Oracle PeopleSoft Campus Solutions,higher-ed-sis.json,Oracle PeopleSoft;PeopleSoft Campus Solutions,https://www.oracle.com/applications/peoplesoft/,,https://docs.oracle.com/en/applications/peoplesoft/campus-solutions/index.html,https://saprd.my.uh.edu/psp/saprd/UHM_SITE/SA/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?cmd=login,https://mycolleges.shr.nevada.edu/psp/spcssprd/WNC/SA/?cmd=login&languageCd=ENG,,,high,/psp/ and /psc/ URL paths are distinctive PeopleSoft identifiers; UH and Nevada system confirmed live
+Parchment,higher-ed-sis.json,,https://www.parchment.com,,,,,,,medium,
+Populi,higher-ed-sis.json,,https://populi.co,https://populi.co/,https://support.populiweb.com/hc/en-us/,https://dunwoodie.edu/populi-student-information-and-learning-management-system,https://cesl.arizona.edu/student-services/populi-login,https://www.seminary.edu/students/populi/,,high,"St. Joseph's Seminary, Univ of Arizona CESL, TEDS; vendor reference"
+PowerCampus,higher-ed-sis.json,PowerCAMPUS,https://www.powercampus.net,https://www.ellucian.com/emea-ap/solutions/ellucian-powercampus,,,,,true,high,Legacy SunGard product under Ellucian; being phased out; no public customer URLs
+PowerFAIDS,higher-ed-sis.json,,https://www.powerschool.com/solutions/products/powerfaids/,,,,,,,medium,
+PowerSchool SIS,higher-ed-sis.json,,https://www.powerschool.com,,,,,,,medium,
+QuickSchools,higher-ed-sis.json,,https://www.quickschools.com,,,,,,,medium,
+Rediker Software,higher-ed-sis.json,,https://www.rediker.com,https://www.rediker.com/new-adminplus,,,,,true,high,Primarily K-12; no public .edu higher-ed customer URLs found
+Regent Education,higher-ed-sis.json,,https://www.regenteducation.com,https://www.regenteducation.com/request-a-demo,,,,,true,high,No public .edu customer URLs found; on-demand demo available
+RenWeb,higher-ed-sis.json,,https://www.factsmgt.com,,,,,,,medium,
+SIMS,higher-ed-sis.json,,https://www.capita-sims.co.uk,,,,,,,medium,
+SITS,higher-ed-sis.json,,https://www.tribalgroup.com/solutions/student-management/sits,,,https://mysis.qmul.ac.uk/urd/sits.urd/run/siw_lgn,https://www.stmarys.ac.uk/it/it-self-service/sits-student-records-system.aspx,,,medium,/urd/sits.urd/run/ URL path is Tier A — very specific to SITS:Vision; QMUL confirmed live instance
+ScholarSite,higher-ed-sis.json,,https://www.scholarsite.com,,,,,,,medium,
+SchoolAdmin,higher-ed-sis.json,,https://www.schooladmin.com,,,,,,,medium,
+Skyward Student Management,higher-ed-sis.json,,https://www.skyward.com,,,,,,,medium,
+Smart Catalog,higher-ed-sis.json,,https://www.smartcatalog.co,,,,,,,medium,
+StudIS,higher-ed-sis.json,,https://www.studis.eu,,,,,,,medium,
+Synergy Student Information System,higher-ed-sis.json,,https://www.edupoint.com,,,,,,,medium,
+Tribal Student Management,higher-ed-sis.json,,https://www.tribalgroup.com,https://www.tribalgroup.com/solutions/student-information-systems/sits-vision,https://www.tribalgroup.com/solutions/student-information-systems/sits-vision,,,,true,high,UK-focused SITS:Vision; ~60% UK HE market share; specific public .edu URLs not found
+Unit4 Student Management,higher-ed-sis.json,Thesis (2021 spinoff),https://www.unit4.com/solutions/education,https://sm-dbs.thesiscloud.com/U4SM/Account/Login,,https://sm-unf.thesiscloud.com/u4sm,,,,medium,"Unit4 Student Mgt spun off as ""Thesis"" in 2021; deployed at *.thesiscloud.com with /U4SM/ paths. Primarily UK/Canadian higher ed."
+Veracross,higher-ed-sis.json,,https://www.veracross.com,,,,,,true,high,Almost exclusively K-12 (independent schools); not relevant to higher-ed scanning scope
+Workday Student,higher-ed-sis.json,Workday,https://www.workday.com/en-us/products/student/overview.html,https://forms.workday.com/en-us/quick-demos/new-workday-student-experience-demo/form.html,https://www.workday.com/en-us/products/student/overview.html,https://tech.rochester.edu/services/urstudent/,https://sis.uark.edu/workday-student/,https://workday.wustl.edu/student/,,high,"Univ of Rochester, Univ of Arkansas, Washington Univ in St. Louis; confirmed"
+25Live,higher-ed-infra.json,CollegeNET 25Live;TwentyFiveLive,https://www.collegenet.com/products/25live,https://collegenet.com/scheduling/25live,https://collegenet.com/scheduling/25live,https://25live.collegenet.com/pro/duke#!/home/dash,https://25live.collegenet.com/pro/stanford#!/home/dash,https://25live.virginia.edu/,,high,25live.collegenet.com/pro/{institution} is the canonical hosted URL pattern; Virginia self-hosts
+Academic Works,higher-ed-infra.json,,https://www.academicworks.com,,https://www.blackbaud.com/products/award-scholarship-management,https://utah.academicworks.com/,https://sbspathways.umass.edu/resources/scholarships-academic-works/,https://ua.academicworks.com/,,high,"Now Blackbaud Award Management; Utah, UMass, Univ of Alabama confirmed; academicworks.com subdomains are live"
+AdAstra,higher-ed-infra.json,,https://www.adastrainfo.com,,,,,,,medium,
+AddSearch,higher-ed-infra.json,,https://www.addsearch.com,,,,,,,medium,
+Adobe Creative Cloud,higher-ed-infra.json,,https://www.adobe.com/creativecloud/education.html,,,,,,,low,
+Adobe Experience Manager Assets,higher-ed-infra.json,,https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html,,,,,,,low,
+AdvancementForm,higher-ed-infra.json,,https://www.advancementform.com,,,,,,,medium,
+AdvisorTrac,higher-ed-infra.json,,https://www.advisortrac.com,,,,,,,medium,
+AlertMedia,higher-ed-infra.json,,https://www.alertmedia.com,,,,,,,medium,
+Algolia,higher-ed-infra.json,,https://www.algolia.com,,,,,,,medium,
+Almabase,higher-ed-infra.json,,https://www.almabase.com,,https://www.almabase.com/blog/alumni-engagement-strategy,https://www.almabase.com/case-studies/how-alumni-spotlights-helps-nicholls-state-university-build-a-stronger-brand-and-grow-alumni-engagement,,,,high,250+ institutions; Nicholls State confirmed via vendor case study
+AppArmor,higher-ed-infra.json,,https://www.apparmor.com,,,,,,,medium,
+Argos,higher-ed-infra.json,,https://www.evisions.com/products/argos/,,,,,,,medium,
+Azure Cognitive Search,higher-ed-infra.json,,https://azure.microsoft.com/en-us/products/search/,,,,,,,medium,
+Blackbaud,higher-ed-infra.json,,https://www.blackbaud.com,,,,,,,medium,
+Brandfolder,higher-ed-infra.json,,https://brandfolder.com,,,,,,,medium,
+BrightSign,higher-ed-infra.json,,https://www.brightsign.biz,,,,,,,medium,
+Brightcove,higher-ed-infra.json,,https://www.brightcove.com,,,,,,,medium,
+Bynder,higher-ed-infra.json,,https://www.bynder.com,,,,,,,medium,
+CAS,higher-ed-infra.json,CAS Central Authentication Service,https://apereo.github.io/cas/,https://github.com/apereo/cas,https://apereo.github.io/cas/,https://cas.auth.sc.edu/,https://cas.tamu.edu/cas/login,https://www.cuit.columbia.edu/cas-authentication,,high,"Open-source; SC, TAMU, Columbia confirmed; login pages are live deployment evidence"
+CBORD,higher-ed-infra.json,,https://www.cbord.com,https://www.cbord.com/industries/higher-education/solutions,,https://get.cbord.com/kent/,https://get.cbord.com/cbu/,,,high,get.cbord.com/{institution}/ root redirects to live portal; specific page paths may go stale. Use root domain pattern.
+Anthology Engage,higher-ed-infra.json,,https://www.campuslabs.com,,https://support.anthology.com/s/article/360059905492-Anthology-Campus-Labs-Engage-For-Administrators,https://unt.campuslabs.com/engage/,https://iowa.campuslabs.com/engage/,,,high,X-Powered-By: Campus_Labs_USRP header observable even without login; *.campuslabs.com/engage/ pattern confirmed
+Canto,higher-ed-infra.json,,https://www.canto.com,,,,,,,medium,
+Canva for Education,higher-ed-infra.json,,https://www.canva.com/education/,,,,,,,medium,
+Civitas Learning,higher-ed-infra.json,,https://www.civitaslearning.com,,https://www.civitaslearning.com/platform/,https://www.civitaslearning.com/customer-success-stories/slippery-rock-university/,https://provost.utsa.edu/news/2022/10/story/20-civitas-case-study.html,,,high,"Slippery Rock Univ, UTSA confirmed via case studies and university press"
+Cludo,higher-ed-infra.json,,https://www.cludo.com,,,,,,,medium,
+Concept3D,higher-ed-infra.json,,https://concept3d.com,,,,,,,medium,
+Coveo,higher-ed-infra.json,,https://www.coveo.com,,,,,,,medium,
+Destiny One,higher-ed-infra.json,,https://www.destinysolutions.com,,,,,,,medium,
+Duo Security,higher-ed-infra.json,,https://duo.com,,https://duo.com/docs,,,,,medium,
+EAB Navigate,higher-ed-infra.json,,https://eab.com/technology/navigate/,https://pages.eab.com/navigateproductpage.html,https://eab.com/solutions/navigate360/,https://vsu.campus.eab.com/,https://www.vsu.edu/ace/eab-navigate-info.php,https://www.desu.edu/academics/student-success/student-success-eabs-navigate-support/,,high,VSU portal at vsu.campus.eab.com; public info page links to portal; _campus_session cookie is detection signal
+EBSCO Discovery Service,higher-ed-infra.json,,https://www.ebsco.com/products/ebsco-discovery-service,,,,,,,medium,
+EMS,higher-ed-infra.json,,https://www.emssoftware.com,,,,,,,medium,
+Echo360,higher-ed-infra.json,,https://echo360.com,,,,,,,medium,
+Elasticsearch,higher-ed-infra.json,,https://www.elastic.co/elasticsearch/,,,,,,,medium,
+Element451,higher-ed-infra.json,,https://element451.com,https://element451.com/demo,https://element451.com/,https://www.tstc.edu,,,,high,TSTC loads shell.451.io dynamically on scroll; Shell451 and BoltDiscovery JS globals present
+Element451 Search,higher-ed-infra.json,,https://element451.com,,,https://www.tstc.edu,,,,high,BoltDiscovery fired on tstc.edu — Shell451.BoltDiscovery is the detection signal
+Encoura,higher-ed-infra.json,,https://encoura.org,,,,,,,medium,
+Ensemble Video,higher-ed-infra.json,,https://www.ensemblevideo.com,,,,,,,medium,
+Everbridge,higher-ed-infra.json,,https://www.everbridge.com,,,,,,,medium,
+Ex Libris Alma,higher-ed-infra.json,,https://exlibrisgroup.com/products/alma-library-services-platform/,https://exlibrisgroup.com/products/demo-center/,https://knowledge.exlibrisgroup.com/Alma/Product_Documentation/,https://mit.primo.exlibrisgroup.com/discovery/search?vid=01MIT_INST:MIT,https://bu.primo.exlibrisgroup.com/discovery/search?vid=01BOSU_INST:BU,,,high,Alma is backend-only; public-facing signals come from the Primo discovery layer. Patterns target /alma/ API refs and exlibrisgroup.com domains in Primo HTML.
+Ex Libris Primo,higher-ed-infra.json,,https://exlibrisgroup.com/products/primo-discovery-service/,https://exlibrisgroup.com/products/demo-center/,https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/,https://mit.primo.exlibrisgroup.com/discovery/search?vid=01MIT_INST:MIT,https://bu.primo.exlibrisgroup.com/discovery/search?vid=01BOSU_INST:BU,https://search.lib.utexas.edu/discovery/search?vid=01UTAU_INST:SEARCH,,high,{institution}.primo.exlibrisgroup.com is the Primo VE hosted pattern; also custom domains like search.lib.{institution}.edu
+Ex Libris Voyager,higher-ed-infra.json,,https://exlibrisgroup.com/products/voyager-ils/,,,,,,,medium,
+FOLIO LSP,higher-ed-infra.json,,https://www.folio.org,,,,,,,medium,
+Figma for Education,higher-ed-infra.json,,https://www.figma.com/education/,,,,,,,medium,
+Flipgrid,higher-ed-infra.json,,https://info.flipgrid.com,,,,,,,medium,
+Four Winds Interactive,higher-ed-infra.json,,https://www.fourwindsinteractive.com,,,,,,,medium,
+Funnelback,higher-ed-infra.json,,https://www.funnelback.com,,,,,,,medium,
+GIS Cloud,higher-ed-infra.json,,https://www.giscloud.com,,,,,,,medium,
+Google Custom Search,higher-ed-infra.json,,https://cse.google.com,,,,,,,medium,
+Google Workspace,higher-ed-infra.json,,https://workspace.google.com,,,,,,,low,
+GradesFirst,higher-ed-infra.json,,https://www.gradesfirst.com,,,,,,,medium,
+Graduway,higher-ed-infra.json,,https://graduway.com,,,,,,,medium,
+HelioCampus,higher-ed-infra.json,,https://www.heliocampus.com,,https://www.heliocampus.com/data-analytics-platform,,,,true,high,150+ partner institutions; client portal is gated; no public .edu deployment URLs found
+Hobsons Connect,higher-ed-infra.json,,https://www.hobsons.com,,,,,,,medium,
+HubSpot for Education,higher-ed-infra.json,HubSpot,,https://offers.hubspot.com/demo,https://academy.hubspot.com/education-partner-program,,,,true,high,1555+ education partner institutions; usage not visible on public .edu pages
+InCommon Federation,higher-ed-infra.json,,https://www.incommon.org,,,,,,,medium,
+Informer,higher-ed-infra.json,,https://www.entrinsik.com/informer/,,,,,,,medium,
+Infosilem,higher-ed-infra.json,,https://www.infosilem.com,,,,,,,medium,
+Innovative Interfaces Sierra,higher-ed-infra.json,,https://www.iii.com/products/sierra-ils/,,,,,,,medium,
+JW Player,higher-ed-infra.json,,https://www.jwplayer.com,,,,,,,medium,
+Jibestream,higher-ed-infra.json,,https://jibestream.com,,,,,,,medium,
+Kaltura,higher-ed-infra.json,,https://corp.kaltura.com,,https://developer.kaltura.com,https://iu.mediaspace.kaltura.com/,https://psu.mediaspace.kaltura.com/,https://rutgers.mediaspace.kaltura.com/,,medium,{institution}.mediaspace.kaltura.com is the public MediaSpace portal pattern; also embedded as player on course pages
+Kognito,higher-ed-infra.json,,https://kognito.com,,,,,,,medium,
+Koha ILS,higher-ed-infra.json,,https://koha-community.org,,,,,,,medium,
+LibAnswers,higher-ed-infra.json,,https://springshare.com/libanswers/,,,,,,,medium,
+LibCal,higher-ed-infra.json,,https://springshare.com/libcal/,,,,,,,medium,
+LibGuides,higher-ed-infra.json,,https://springshare.com/libguides/,,,,,,,medium,
+LiveSafe,higher-ed-infra.json,,https://www.livesafemobile.com,,,,,,,medium,
+Localist,higher-ed-infra.json,,https://localist.com,https://localistuniversity.enterprise.localist.com/,,https://localistuniversity.enterprise.localist.com/,,,,medium,Events calendar; customer instances at events.{institution}.edu or {institution}.enterprise.localist.com; Concept3D product
+Lucidworks Fusion,higher-ed-infra.json,,https://lucidworks.com,,,,,,,medium,
+MapYourTag,higher-ed-infra.json,,https://mapyourtag.com,,,,,,,medium,
+Mappedin,higher-ed-infra.json,,https://www.mappedin.com,,,,,,,medium,
+Mediasite,higher-ed-infra.json,MediaSite,https://www.sonicfoundry.com/mediasite/,https://sofo.mediasite.com/Mediasite/Showcase/default/Info,https://www.enghousevideo.com/corporate-learning,https://sofo.mediasite.com/Mediasite/Showcase/default/Info,,,,high,Public showcase portal; customer instances at mediasite.{institution}.edu or {institution}.mediasite.com
+Meilisearch,higher-ed-infra.json,,https://www.meilisearch.com,,,,,,,medium,
+Microsoft Power BI,higher-ed-infra.json,,https://powerbi.microsoft.com,,,,,,,medium,
+Mindmax,higher-ed-infra.json,,https://www.mindmax.com,,,,,,true,high,Acquired by Noodle Partners in 2025; OPM vendor; no public .edu deployment URLs found
+NoviSign,higher-ed-infra.json,,https://www.novisign.com,,,,,,,medium,
+OCLC WorldShare,higher-ed-infra.json,,https://www.oclc.org/en/worldshare-management-services.html,,,,,,,medium,
+Okta,higher-ed-infra.json,,https://www.okta.com,,,,,,,low,
+Panopto,higher-ed-infra.json,,https://www.panopto.com,,https://support.panopto.com,https://utexas.hosted.panopto.com/,https://psu.hosted.panopto.com/,https://umd.hosted.panopto.com/,,medium,{institution}.hosted.panopto.com is the canonical hosted pattern; some instances allow public video access
+Polaris ILS,higher-ed-infra.json,,https://www.iii.com/products/polaris/,,,,,,,medium,
+Qualtrics,higher-ed-infra.json,,https://www.qualtrics.com/core-xm/,,,https://qualtrics.msu.edu/,https://rit.qualtrics.com/,,,medium,umich.qualtrics.com requires institutional SSO; qualtrics.msu.edu and rit.qualtrics.com are accessible portals. Embedded survey forms on public pages also detectable.
+Raiser's Edge,higher-ed-infra.json,,https://www.blackbaud.com/products/blackbaud-raisers-edge-nxt,,,,,,,medium,
+Rave Mobile Safety,higher-ed-infra.json,,https://www.ravemobilesafety.com,,,,,,,medium,
+Ready Education,higher-ed-infra.json,,https://readyeducation.com,,,,,,,medium,
+Rise Vision,higher-ed-infra.json,,https://www.risevision.com,,,,,,,medium,
+SAML,higher-ed-infra.json,,,,,,,,,medium,
+Sajari,higher-ed-infra.json,,https://www.sajari.com,,,,,,,medium,
+Salesforce Education Cloud,higher-ed-infra.json,Salesforce,https://www.salesforce.com/products/education/,https://www.salesforce.com/form/sfdo/edu/education-cloud-demo/,https://developer.salesforce.com/developer-centers/education-cloud,,,,true,high,Customer instances at *.my.salesforce.com — behind Salesforce org login; no public-facing observable signals without auth
+Scala Digital Signage,higher-ed-infra.json,,https://www.scala.com,,,,,,,medium,
+ScreenCloud,higher-ed-infra.json,,https://screencloud.com,,,,,,,medium,
+Screencast-O-Matic,higher-ed-infra.json,,https://screencast-o-matic.com,,,,,,,medium,
+SearchBlox,higher-ed-infra.json,,https://www.searchblox.com,,,,,,,medium,
+Shibboleth,higher-ed-infra.json,,https://shibboleth.net,,https://shibboleth.atlassian.net,https://shibboleth.umich.edu/idp/profile/SAML2/Redirect/SSO,https://idp.ucsd.edu/idp/profile/SAML2/Redirect/SSO,,,medium,IdP SSO endpoints are publicly accessible and return Shibboleth-specific content. /Shibboleth.sso/Metadata probe path handles SP-side detection.
+SirsiDynix Symphony,higher-ed-infra.json,,https://www.sirsidynix.com/products/symphony,,,,,,,medium,
+Site Search 360,higher-ed-infra.json,,https://www.sitesearch360.com,,,,,,,medium,
+Slate,higher-ed-infra.json,Technolutions Slate,https://technolutions.com/slate,https://technolutions.com/slate-demo-experience,https://knowledge.technolutions.net/,https://engage.lmu.edu/apply/,https://apply.northwestern.edu/,,,high,apply.baylor.edu confirmed Drupal — removed. Northwestern and LMU confirmed Slate. mx.technolutions.net ping fires on application pages.
+Starfish,higher-ed-infra.json,Starfish Retention Solutions,https://www.hobsons.com/solutions/student-success/starfish/,https://pages.eab.com/starfish-demo-request.html,https://eab.com/solutions/starfish/,,,,true,high,EAB Starfish portals are behind institutional SSO; no public-facing observable trace. Detectable only via institutional IT pages mentioning it.
+Summon,higher-ed-infra.json,,https://www.proquest.com/products-services/summon.html,,,,,,,medium,
+Swiftype,higher-ed-infra.json,,https://www.elastic.co/enterprise-search/,,,,,,,medium,
+TouchNet,higher-ed-infra.json,,https://www.touchnet.com,,,https://secure.touchnet.com/C20788_tsa/web/,https://secure.touchnet.net/C20099_tsa/web/,,,medium,/C{digits}_tsa/web/ path pattern is distinctive; both secure.touchnet.com and .net in use
+Transact Campus,higher-ed-infra.json,Blackboard Transact,https://www.blackboard.com/campus-solutions/campus-card,https://transactpulse.transactcampus.com/,https://www.transactcampus.com/solutions/integrated-payments,https://payments.transactcampus.com,,,,high,"Transact-hosted payment portals; now rebranding as Illumia. Legacy: Blackboard Transact, Heartland eAccounts"
+VidGrid,higher-ed-infra.json,,https://www.vidgrid.com,,,,,,,medium,
+Vimeo,higher-ed-infra.json,,https://vimeo.com,,,,,,,low,
+Widen Collective,higher-ed-infra.json,,https://www.widen.com,,,,,,,medium,
+Wistia,higher-ed-infra.json,,https://wistia.com,,https://wistia.com/support,,,,,medium,
+WorldCat Discovery,higher-ed-infra.json,,https://www.oclc.org/en/worldcat-discovery.html,,,,,,,medium,
+YouTube,higher-ed-infra.json,,https://youtube.com,,,,,,,low,
+YuJa,higher-ed-infra.json,,https://www.yuja.com,,,,,,,medium,
+Zimbra,higher-ed-infra.json,,https://www.zimbra.com,,,,,,,medium,
+Anthology Encompass,higher-ed-infra.json,,https://www.imodules.com,,,,,,,medium,

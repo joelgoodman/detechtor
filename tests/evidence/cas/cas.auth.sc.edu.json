@@ -1,0 +1,348 @@
+{
+  "technology": "CAS",
+  "url": "https://cas.auth.sc.edu/",
+  "final_url": "https://cas.auth.sc.edu/cas/login",
+  "captured_at": "2026-04-21T19:34:58.258Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/cas/cas.auth.sc.edu.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "max-age=0, no-store, no-cache, must-revalidate",
+      "connection": "Keep-Alive",
+      "content-language": "en",
+      "content-security-policy": "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google.com; object-src 'none'; worker-src 'self' blob: 'unsafe-inline';",
+      "content-type": "text/html;charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:34:57 GMT",
+      "expires": "Thu, 1 Jan 1970 00:00:00 GMT",
+      "keep-alive": "timeout=5, max=99",
+      "pragma": "no-cache",
+      "server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k",
+      "set-cookie": "org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE=en; Path=/; Secure; HttpOnly; SameSite=Lax\nROUTEID=.CASWEB3; path=/\nWEBPATH=.CASPROXY; path=/",
+      "strict-transport-security": "max-age=15768000 ; includeSubDomains",
+      "transfer-encoding": "chunked",
+      "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-requestid": "c8140eb4-a215-425f-b86e-687fe0d50614",
+      "x-xss-protection": "1; mode=block"
+    },
+    "scripts": [
+      {
+        "src": "https://cas.auth.sc.edu/cas/webjars/jquery/3.7.1/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js",
+        "version": null
+      },
+      {
+        "src": "https://cas.auth.sc.edu/cas/webjars/datatables/2.3.2/js/dataTables-8e31487c41abe2938c55b5dcde42a604.js",
+        "version": null
+      },
+      {
+        "src": "https://cas.auth.sc.edu/cas/webjars/clientjs/0.2.1/dist/client.min-5b6a46b3fb2ab9307d013def98fd7289.js",
+        "version": null
+      },
+      {
+        "src": "https://cas.auth.sc.edu/cas/webjars/material-components-web/14.0.0/dist/material-components-web.min-3c99031127092dd1984f2e3aa6aeed8b.js",
+        "version": null
+      },
+      {
+        "src": "https://cas.auth.sc.edu/cas/js/cas-cd46228f2a9b608731f0c9dacfb9758c.js",
+        "version": null
+      },
+      {
+        "src": "https://cas.auth.sc.edu/cas/js/material-b55ff53584b5e775934a54f8a5dd3ba8.js",
+        "version": null
+      },
+      {
+        "src": "https://cas.auth.sc.edu/cas/js/custom-63dd40a49197131d92472a1288f662f6.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no"
+    },
+    "cookies": [
+      {
+        "name": "WEBPATH",
+        "value": ".CASPROXY",
+        "domain": "cas.auth.sc.edu"
+      },
+      {
+        "name": "org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE",
+        "value": "en",
+        "domain": "cas.auth.sc.edu"
+      },
+      {
+        "name": "ROUTEID",
+        "value": ".CASWEB3",
+        "domain": "cas.auth.sc.edu"
+      }
+    ],
+    "dom": {
+      "title": "CAS - Central Authentication Service Login",
+      "bodyClasses": "login mdc-typography",
+      "bodyId": "",
+      "headContent": "\n    <meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><title>CAS - Central Authentication Service Login</title>\n    \n        <link rel=\"stylesheet\" type=\"text/css\" href=\"/cas/webjars/normalize.css/8.0.1/normalize-112272e51c80ffe5bd01becd2ce7d656.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"/cas/webjars/bootstrap/5.3.8/css/bootstrap-grid.min-895b9494c7178ac12ad9c56d81305665.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"/cas/webjars/material-components-web/14.0.0/dist/material-components-web.min-9da9033e8d04504fe54b3dbb1298fd78.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"/cas/webjars/mdi__font/7.4.47/css/materialdesignicons.min-2c83c4bce691e18f82409f87b2bf84e4.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"/cas/webjars/datatables/2.3.2/css/dataTables.dataTables-86c98d6ce5aa289ccf4492ac3a785fad.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"/cas/themes/usc/css/usc-a2bd264d261ed251d367b7c698625bca.css\"><link rel=\"shortcut icon\" href=\"/cas/themes/usc/images/favicon-3eb7ae5f4e4ac9a107247f696e1dc0c6.ico\">",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.7.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://cas.auth.sc.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not "
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://cas.auth.sc.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not "
+    },
+    "/wp-content/": {
+      "url": "https://cas.auth.sc.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not "
+    },
+    "/user/login": {
+      "url": "https://cas.auth.sc.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not "
+    },
+    "/core/install.php": {
+      "url": "https://cas.auth.sc.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not "
+    },
+    "/cas/login": {
+      "url": "https://cas.auth.sc.edu/cas/login",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html><html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\" /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" /><title>CAS - Central Authentication Service Login</title>\n    \n        <link rel=\"stylesheet\" type=\"text/css\" href=\"/cas/webjars/normalize.css/8.0.1/normalize-112272e51c80ffe5bd01becd2ce7d656.css\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"/cas/webjars/bootstrap/5.3.8/css/bootstrap-grid.min-895b9"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://cas.auth.sc.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not "
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "CAS",
+      "confidence": 100,
+      "evidence": [
+        "HTML: central.*authentication.*service",
+        "HTML: apereo.*cas",
+        "HTML: central.*authentication",
+        "HTML: central authentication service",
+        "JS: CAS (HTML)"
+      ]
+    },
+    {
+      "name": "DegreeWorks",
+      "confidence": 100,
+      "evidence": [
+        "HTML: degreeworks",
+        "HTML: degree.*works",
+        "JS: DegreeWorks (HTML)"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "Red Hat",
+      "confidence": 80,
+      "evidence": [
+        "Header: Server=Red Hat"
+      ]
+    },
+    {
+      "name": "Apache",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Apache"
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "Adition",
+      "confidence": 30,
+      "evidence": [
+        "JS: adition (HTML)"
+      ]
+    },
+    {
+      "name": "Advanced Custom Fields",
+      "confidence": 30,
+      "evidence": [
+        "JS: acf (HTML)"
+      ]
+    },
+    {
+      "name": "ClientJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: ClientJS (HTML)"
+      ]
+    },
+    {
+      "name": "FingerprintJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Fingerprint (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: llc (HTML)"
+      ]
+    },
+    {
+      "name": "Moment.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: moment (HTML)"
+      ]
+    },
+    {
+      "name": "Sitecore",
+      "confidence": 30,
+      "evidence": [
+        "JS: _sc (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 30,
+      "evidence": [
+        "JS: YT (HTML)"
+      ]
+    },
+    {
+      "name": "Blackboard Learn",
+      "confidence": 30,
+      "evidence": [
+        "JS: Blackboard (HTML)"
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 30,
+      "evidence": [
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Workday Student",
+      "confidence": 30,
+      "evidence": [
+        "JS: WD (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

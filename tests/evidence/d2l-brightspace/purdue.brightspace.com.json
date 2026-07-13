@@ -1,0 +1,347 @@
+{
+  "technology": "D2L Brightspace",
+  "url": "https://purdue.brightspace.com/",
+  "final_url": "https://purdue.brightspace.com/d2l/login",
+  "captured_at": "2026-04-21T19:33:48.742Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/d2l-brightspace/purdue.brightspace.com.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "no-cache, no-store",
+      "content-encoding": "gzip",
+      "content-length": "13465",
+      "content-security-policy": "frame-ancestors 'self' https://s.brightspace.com https://*.ally.ac https://leaplti.desire2learn.com/ https://leaplti-fr.brightspace.com/ https://tryleap.brightspace.com/ https://leaplti-es.desire2learn.com/ https://leaplti-ptbr.desire2learn.com/ https://leaplti-us.brightspace.com/ https://leaplti-apac.brightspace.com/ https://leaplti-emea.brightspace.com/ https://leapqa.net https://leaplti-ap.brightspace.com https://login.microsoftonline.com/ https://login.live.com/ https://cdn.lcs.brightspace.com/ https://leaplti-in.brightspace.com; report-uri https://logger.us-east-1.logging.brightspace.com/log/csp/MPJajtr_6V_BLRSx44IoJAAAAZ2xcLtI",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:33:48 GMT",
+      "expires": "-1",
+      "link": "<https://s.brightspace.com>; rel=preconnect",
+      "pragma": "no-cache",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "strict-transport-security": "max-age=63113904",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-request-id": "e909c29f-c67d-4362-a74b-8f49eff335b3",
+      "x-xss-protection": "0"
+    },
+    "scripts": [
+      {
+        "src": "https://purdue.brightspace.com/d2l/lp/auth/static/Loader.js",
+        "version": null
+      },
+      {
+        "src": "https://s.brightspace.com/lib/jqueryui/1.13.2/jquery-ui.min.js",
+        "version": null
+      },
+      {
+        "src": "https://s.brightspace.com/lib/bsi/2026.3.234/unbundled/bsi-unbundled.js",
+        "version": null
+      },
+      {
+        "src": "https://s.brightspace.com/lib/jquery/3.7.1/jquery.min.js",
+        "version": null
+      },
+      {
+        "src": "https://s.brightspace.com/lib/jqueryui/1.13.2/jquery-ui.min.js",
+        "version": null
+      },
+      {
+        "src": "https://s.brightspace.com/lib/bsi/2026.3.234/bsi.js",
+        "version": null
+      },
+      {
+        "src": "https://s.brightspace.com/lib/elastic-apm-rum/5.14.0/elastic-apm-rum.umd.min.js",
+        "version": null
+      },
+      {
+        "src": "https://s.brightspace.com/apps/brightspace/20.26.3.26124/web-packages/D2L.LP.Web.Desktop.js",
+        "version": null
+      },
+      {
+        "src": "https://purdue.brightspace.com/d2l/portal/js/desktop?v=20.26.3.26124",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0"
+    },
+    "cookies": [],
+    "dom": {
+      "title": "Login - Purdue University System",
+      "bodyClasses": "d2l-body d2l-typography vui-typography daylight d2l-body-unresolved d2l-body-flex",
+      "bodyId": "",
+      "headContent": "\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t<title>Login - Purdue University System</title>\n\t\t<link rel=\"preconnect\" href=\"https://s.brightspace.com/lib/bsi/2026.3.234/\" crossorigin=\"\">\n\t\t<link rel=\"dns-prefetch\" href=\"https://s.brightspace.com/lib/bsi/2026.3.234/\">\n\t\t<link rel=\"modulepreload\" href=\"https://s.brightspace.com/lib/bsi/2026.3.234/unbundled/bsi-unbundled.js\" as=\"script\" crossorigin=\"anonymous\">\n\t\t<link rel=\"modulepreload\" href=\"https://s.brightspace.com/lib/bsi/2026.3.234/unbundled/navigation.js\" as=\"script\" crossorigin=\"anonymous\">\n\t\t<link rel=\"modulepreload\" href=\"https://s.brightspace.com/lib/bsi/2026.3.234/unbundled/navigation-main-header.js\" as=\"script\" crossorigin=\"anonymous\">\n\t\t<link rel=\"modulepreload\" href=\"https://s.brightspace.com/lib/bsi/2026.3.234/unbundled/navigation-link-image.js\" as=\"script\" crossorigin=\"anonymous\">\n\t\t<link rel=\"modulepreload\" href=\"https://s.brightspace.com/lib/bsi/2026.3.234/unbundled/html-block.js\" as=\"script\" crossorigin=\"anonymous\">\n\t\t<link rel=\"modulepreload\" href=\"https://s.brightspace.com/lib/bsi/2026.3.234/unbundled/collapsible-panel.js\" as=\"script\" crossorigin=\"anonymous\">\n\t\t<script src=\"/d2l/lp/auth/static/Loader.js\"></script><script src=\"https://s.brightspace.com/lib/jqueryui/1.13.2/jquery-ui.min.js\"></script><script>\n\t\t(function(){var client;var errors = [];window.addEventListener('d2l-logging-loaded', function(e) {client = e.detail.createClient('uncaught-errors', { shouldThrottle: true });if (errors.length > 0) {client.legacyErrorBatch(errors);}});var handleError = function(data) {if (!data.message) return;if (data.error && data.error.stack && (data.error.stack.includes('/content/') || data.error.stack.includes('/shared/'))) return;if (client) {client.legacyError(data.message, data.source, data.lineno, data.colno, data.error);} else {errors.push(data);}};window.addEventListener('error', function(e) {handleError({ message: e.message, source: e.source, lineno: e.lineno, colno: e.colno, error: e.error });});window.addEventListener('unhandledrejection', function(e) {handleError({message: e.reason ? (e.reason.message ? e.reason.message : e.reason) : '',error: e.reason});});})();\n\t\t(function(){try { localStorage.setItem('XSRF.Token','');} catch(e) {}})();\n\t\t(function(){if(window['FontFace'] === undefined) { window.d2lFontsLoaded = true; return; }window.d2lFontsLoaded = false;Promise.all(['400','700'].map(function(w) {return new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.6.1/assets/Lato-' + w + '.woff2) format(\"woff2\")', {style:'normal',weight: w}).load();})).then(function() {window.d2lFontsLoaded = true;if(window['D2L'] && window.D2L['FontsLoaded']) { window.D2L.FontsLoaded(); }});})();\n\t\t(function(){\n\t\t\t\tD2L = window.D2L || {}; D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};\n\t\t\t\tD2L.LP.Web.UI.Flags = {\n\t\t\t\t\tListedFlags: {\"ACC-5-dashboard\":false,\"award-enable-copy-workflow\":false,\"awards-increase-string-fields-length\":true,\"LURV-6105-update-public-awards-fields\":true,\"awards-summary-date-localization-fix\":true,\"create-space-experimental-brightspace-object-types\":false,\"MAV-5508-welcome-widget-create-new\":true,\"ipsis-sourcesystem-migration\":true,\"ipsis-provider-oldstandardcsv\":false,\"ipsis-oneroster-csv-powerschool\":false,\"ipsis-oneroster-full-sync-implicit-unenrollments\":false,\"ipsis-esb-lis\":false,\"f17778-oneroster-psur\":false,\"f19471-gg4l-oneroster-grades-passback\":true,\"hyrl-1999-oneroster-rest-1p2\":false,\"hyrl-2561-ipsis-lms-invoke-aws-lambdas\":true,\"hyrl-2962-cancel-batch\":false,\"hyrl-3638-user-default-inactive-option\":true,\"hyrl-3587-hylia-data-pond\":false,\"F16988-add-to-calendar\":true,\"advanced-assessments-groups\":true,\"PHNX-2361-lti-activity-usage\":false,\"nim-3228-ce-multi-eval-tab-skeleton-fix\":true,\"nim-5386-modify-activity-display-return-to\":true,\"nim-5487-fix-assigned-actor-counts\":true,\"nim-5395-update-org-unit-id-on-activity-iteration\":true,\"nim-5243-consolidate-evaluator-and-publisher-patch-actions\":true,\"nim-5229-add-targeted-class-to-explicit-evaluation-subentities\":true,\"PHNX-3264-unavailable-content-visibility-setting\":true,\"F18735-lti-special-access-ui-feature-flag\":false,\"F19162-enable-content-face-releaseconditions\":true,\"F21912-enable-content-face-competencies\":true,\"F19163-enable-content-face-standards\":true,\"IDCS-15-edit-content-file-descriptions\":true,\"IDCS-17-edit-weblink-descriptions\":true,\"PHNX-1554-enable-refactored-completion-summary\":true,\"PHNX-2629-access-unlimited-depth\":true,\"IDCS-283-edit-lti-descriptions\":true,\"EP-1169-use-content-search\":true,\"EP-1097-edit-scorm-descriptions\":true,\"EP-1432-enable-description-scrolling-hovering\":true,\"EP-1580-enable-url-updating-in-lessons-next-prev\":true,\"PHNX-2357-user-guided-grade-associations\":true,\"PHNX-2649-lessons-course-overview\":true,\"PHNX-3198-respect-availability-window\":true,\"PHNX-3065-lessons-quicklink-current-window-navigation\":true,\"PHNX-2766-lazy-load-content\":true,\"PHNX-2988-lessons-full-date-tooltip-and-aria\":true,\"PHNX-3063-support-availability-types\":true,\"PHNX-4040-improved-file-topic-uploader\":false,\"PHNX-3190-valence-get-user-topic-completions-ignores-classlist-presence\":true,\"EP-1454-enable-module-level-outcome-alignment\":false,\"MAV-5811-practice-subpath-course-import\":false,\"usa-1243-discussions-due-date\":true,\"lti-asset-processor-groups\":false,\"FED-3067-Annual-Consumption\":true,\"cpd-add-record-from-award\":true,\"cpd-utc-dates\":true,\"cpd-default-attachments\":true,\"cpd-save-targets-dialog\":true,\"LURV-6016-CPD-Submission-Alert\":true,\"nim-3661-new-alerts-on-incorrect-file-extenstion-assignment-submission\":true,\"fed-54-in-progress\":false,\"FED-4668-lift-outcomes\":true,\"FED-4649-content-gen-import-expand\":true,\"FED-4285-content-templates\":true,\"HAI-1593-content-picker-quiz\":true,\"HAI-1591-content-picker-ideas\":true,\"HAI-1592-content-picker-summary\":true,\"HAI-1821-content-picker-lss\":true,\"HAI-596-Interventions\":true,\"HAI-2303-lcg-bulk-template\":false,\"FED-6732-quiz-custom-instructions\":false,\"FED-6876-idea-custom-instructions\":false,\"rpc-recalculate-all-users-fix\":true,\"oad-include-asn\":true,\"EP-1443-enable-lightcast-skills\":false,\"rename-programs-to-outcome-sets\":true,\"outcome-sets-organization\":true,\"outcomes-set-course-dataset\":true,\"outcomes-set-org-dataset\":true,\"EP-1420-enable-createspace-picker\":false,\"outcome-sets-scales\":false,\"de44716-lti-iframe-resize-limit\":false,\"lti-apps\":false,\"uce-eula-dialog\":true,\"BORG-4318-hide-quiz-question-points\":true,\"BORG-5230-zero-point-questions\":true,\"BORG-6211-jobify-survey-export\":true,\"BORG-5429-Hotspot-Question-Type\":false,\"BORG-3975-quizzing-h5p-improvements\":false,\"BORG-5624-question-pools-validate-numquestions\":true,\"BORG-5894-Incorrect-Filter-and-Feedback-Field-Update\":false,\"EP-1126-edit-lor-descriptions\":true,\"FED-2493-Docs-PDF\":true,\"HAI-2170-study-notebook\":false,\"shield-14201-update-prismjs-1-30\":false,\"MAV-5203-createspace-h5p-library\":false,\"GAUD-7472-dropdown-popover\":true,\"GAUD-7355-tooltip-popover\":true,\"GAUD-7146-tabs-new-structure\":true,\"GAUD-8351-dialog-resize-telemetry\":true,\"PHNX-3234-dialog-alignment-fix\":true,\"legacy-fullscreen-dialog-handle-fix\":true,\"GAUD-8228-8186-improved-table-col-sync\":true,\"lurv-6209-user-merge\":true,\"rubrics-clear-selections-option-and-menu-improvements\":true,\"unique-reoffer-code\":true,\"MAV-5177-source-courses-in-createspace\":false,\"MAV-4591-welcome-window-no-context-override\":false,\"MAV-5258-mpw-profile-dropdown\":true,\"shield-4811-enter-grades-scrolling-fix\":false,\"PHNX-4309-iframe-modal-dialog-zindex-fix\":true,\"workforce-learning-groups\":false,\"scheduled-learning\":false},\n\t\t\t\t\tFlag: function(feature, defaultValue) {\n\t\t\t\t\t\tconst featureValue = D2L.LP.Web.UI.Flags.ListedFlags[feature];\n\t\t\t\t\t\treturn featureValue !== undefined ? featureValue : defaultValue;\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t})();\n\t\t</script>\n\t\t<link rel=\"icon\" href=\"/d2l/lp/web/faviconView?variant=0&amp;version=1\">\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"https://s.brightspace.com/lib/bsi/2026.3.234/bsi.css\">\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"https://s.brightspace.com/lib/reset-css/1.1.0/reset.css\">\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"https://s.brightspace.com/apps/brightspace/20.26.3.26124/web-packages/D2L.LP.Web.Desktop.css\">\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"https://s.brightspace.com/apps/brightspace/20.26.3.26124/web-packages/D2L.LP.Auth.Web.Desktop.css\">\n\t\t<style>\n\t\t\thtml { font-size:20px; }\n\t\t\thtml { --d2l-branding-primary-color: #000000; }\n\t\t\t.d2l_1_0_702 {margin-bottom:30px;}\n\t\t\t.d2l_1_1_447 {margin:20px 0px 0px 0px;}\n\t\t\t.d2l_1_2_218 {margin:10px 0px;}\n\t\t\t.d2l_1_6_667 {text-align:left;}\n\t\t\t.d2l_1_7_623 {margin:1em 0em 0em 0em;}\n\t\t\t.d2l_1_8_44 {margin:0em;}\n\t\t\t.d2l_1_9_937 {padding:5px;}\n\t\t\t.d2l_1_10_843 {margin-bottom:1em;}\n\t\t\t.d2l_1_11_778 {background-color:#fefcef;}\n\t\t\t.d2l_1_12_579 {border:1px solid #faecbb;border-radius:4px;}\n\t\t\t.d2l_1_13_321 {background-position:left top;}\n\t\t\t.d2l_1_14_334 {background-image:url('/d2l/img/0/SystemCheck.Main.itemWarning.png?v=20.26.3.26124');background-size: 18px;}\n\t\t\t.d2l_1_15_256 {padding-left:29px;}\n\t\t\t.d2l_1_16_450 {min-height:16px;}\n\t\t\t.d2l_1_17_296 {margin-top:5px;}\n\t\t\t.d2l_1_18_38 {float:right;}\n\t\t</style>\n\t\t<script>(function() {})();</script><style id=\"d2l-colors\">\n\t\thtml {\n\t\t\t/* basic grays (lightest to darkest) */\n\t\t\t--d2l-color-regolith: #f9fbff;\n\t\t\t--d2l-color-sylvite: #f1f5fb;\n\t\t\t--d2l-color-gypsum: #e3e9f1;\n\t\t\t--d2l-color-mica: #cdd5dc;\n\t\t\t--d2l-color-corundum: #b1b9be;\n\t\t\t--d2l-color-chromite: #90989d;\n\t\t\t--d2l-color-galena: #6e7477;\n\t\t\t--d2l-color-tungsten: #494c4e;\n\t\t\t--d2l-color-ferrite: #202122;\n\n\t\t\t/* zircon */\n\t\t\t--d2l-color-zircon-plus-2: #e0feff;\n\t\t\t--d2l-color-zircon-plus-1: #00d2ed;\n\t\t\t--d2l-color-zircon: #008eab;\n\t\t\t--d2l-color-zircon-minus-1: #035670;\n\n\t\t\t/* celestine */\n\t\t\t--d2l-color-celestine-plus-2: #e8f8ff;\n\t\t\t--d2l-color-celestine-plus-1: #29a6ff;\n\t\t\t--d2l-color-celestine: #006fbf;\n\t\t\t--d2l-color-celestine-minus-1: #004489;\n\n\t\t\t/* amethyst */\n\t\t\t--d2l-color-amethyst-plus-2: #f2f0ff;\n\t\t\t--d2l-color-amethyst-plus-1: #8982ff;\n\t\t\t--d2l-color-amethyst: #6038ff;\n\t\t\t--d2l-color-amethyst-minus-1: #4500db;\n\n\t\t\t/* fluorite */\n\t\t\t--d2l-color-fluorite-plus-2: #f9ebff;\n\t\t\t--d2l-color-fluorite-plus-1: #ce68fa;\n\t\t\t--d2l-color-fluorite: #9d1fd4;\n\t\t\t--d2l-color-fluorite-minus-1: #6900a0;\n\n\t\t\t/* tourmaline */\n\t\t\t--d2l-color-tourmaline-plus-2: #ffebf6;\n\t\t\t--d2l-color-tourmaline-plus-1: #fd4e9d;\n\t\t\t--d2l-color-tourmaline: #d40067;\n\t\t\t--d2l-color-tourmaline-minus-1: #990056;\n\n\t\t\t/* cinnabar */\n\t\t\t--d2l-color-cinnabar-plus-2: #ffede8;\n\t\t\t--d2l-color-cinnabar-plus-1: #ff575a;\n\t\t\t--d2l-color-cinnabar: #cd2026;\n\t\t\t--d2l-color-cinnabar-minus-1: #990006;\n\n\t\t\t/* carnelian */\n\t\t\t--d2l-color-carnelian-plus-1: #fff3e0;\n\t\t\t--d2l-color-carnelian: #e87511;\n\t\t\t--d2l-color-carnelian-minus-1: #ba4700;\n\t\t\t--d2l-color-carnelian-minus-2: #7d2600;\n\n\t\t\t/* citrine */\n\t\t\t--d2l-color-citrine-plus-1: #fff9d6;\n\t\t\t--d2l-color-citrine: #ffba59;\n\t\t\t--d2l-color-citrine-minus-1: #c47400;\n\t\t\t--d2l-color-citrine-minus-2: #7a4300;\n\n\t\t\t/* peridot */\n\t\t\t--d2l-color-peridot-plus-1: #efffd9;\n\t\t\t--d2l-color-peridot: #8ad934;\n\t\t\t--d2l-color-peridot-minus-1: #4a8f00;\n\t\t\t--d2l-color-peridot-minus-2: #2f5e00;\n\n\t\t\t/* olivine */\n\t\t\t--d2l-color-olivine-plus-1: #e7ffe3;\n\t\t\t--d2l-color-olivine: #46a661;\n\t\t\t--d2l-color-olivine-minus-1: #027a21;\n\t\t\t--d2l-color-olivine-minus-2: #005614;\n\n\t\t\t/* malachite */\n\t\t\t--d2l-color-malachite-plus-1: #e3fff5;\n\t\t\t--d2l-color-malachite: #2de2c0;\n\t\t\t--d2l-color-malachite-minus-1: #00a490;\n\t\t\t--d2l-color-malachite-minus-2: #00635e;\n\n\t\t\t/* primary accent */\n\t\t\t--d2l-color-primary-accent-action: var(--d2l-color-celestine);\n\t\t\t--d2l-color-primary-accent-indicator: var(--d2l-color-carnelian);\n\n\t\t\t/* feedback */\n\t\t\t--d2l-color-feedback-error: var(--d2l-color-cinnabar);\n\t\t\t--d2l-color-feedback-warning: var(--d2l-color-carnelian);\n\t\t\t--d2l-color-feedback-success: var(--d2l-color-olivine);\n\t\t\t--d2l-color-feedback-action: var(--d2l-color-celestine);\n\t\t}\n\n\t\t/* semantic palette */\n\t\thtml {\n\t\t\t\n\t\t\t--d2l-color-background-base: var(--d2l-color-sylvite);\n\t\t\t--d2l-color-background-default: #ffffff;\n\t\t\t--d2l-color-border-medium: var(--d2l-color-mica);\n\t\t\t--d2l-color-font-base: var(--d2l-color-ferrite);\n\t\n\t\t}\n\t\thtml[data-theme=\"dark\"] {\n\t\t\t\n\t\t\t--d2l-color-background-base: #000000;\n\t\t\t--d2l-color-background-default: #18191a; /* new color */\n\t\t\t--d2l-color-border-medium: var(--d2l-color-tungsten);\n\t\t\t--d2l-color-font-base: var(--d2l-color-regolith);\n\t\n\t\t}\n\t\t@media (prefers-color-scheme: dark) {\n\t\t\thtml[data-theme=\"os\"] {\n\t\t\t\t\n\t\t\t--d2l-color-background-base: #000000;\n\t\t\t--d2l-color-background-default: #18191a; /* new color */\n\t\t\t--d2l-color-border-medium: var(--d2l-color-tungsten);\n\t\t\t--d2l-color-font-base: var(--d2l-color-regolith);\n\t\n\t\t\t}\n\t\t}\n\t</style><script src=\"https://s.brightspace.com/lib/bsi/2026.3.234/unbundled/navigation-link-image.js\" type=\"module\"></script><script src=\"https://s.brightspace.com/lib/bsi/2026.3.234/unbundled/html-block.js\" type=\"module\"></script><script src=\"https://s.brightspace.com/lib/bsi/2026.3.234/unbundled/collapsible-panel.js\" type=\"module\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": true,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.7.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://purdue.brightspace.com/wp-login.php",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fwp%2Dlogin%2Ephp",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fwp%2Dlogin%2Ephp\">here</a>.</body>\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://purdue.brightspace.com/wp-json/wp/v2/",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fwp%2Djson%2Fwp%2Fv2%2F",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fwp%2Djson%2Fwp%2Fv2%2F\">here</a>.</body>\n"
+    },
+    "/wp-content/": {
+      "url": "https://purdue.brightspace.com/wp-content/",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fwp%2Dcontent%2F",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fwp%2Dcontent%2F\">here</a>.</body>\n"
+    },
+    "/user/login": {
+      "url": "https://purdue.brightspace.com/user/login",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fuser%2Flogin",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fuser%2Flogin\">here</a>.</body>\n"
+    },
+    "/core/install.php": {
+      "url": "https://purdue.brightspace.com/core/install.php",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fcore%2Finstall%2Ephp",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fcore%2Finstall%2Ephp\">here</a>.</body>\n"
+    },
+    "/cas/login": {
+      "url": "https://purdue.brightspace.com/cas/login",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fcas%2Flogin",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2Fcas%2Flogin\">here</a>.</body>\n"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://purdue.brightspace.com/Shibboleth.sso/Metadata",
+      "status": 302,
+      "redirect_to": "/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2FShibboleth%2Esso%2FMetadata",
+      "body_excerpt": "<head><title>Object moved</title></head>\n<body><h1>Object Moved</h1>This object may be found <a HREF=\"/d2l/error/404/log?targetUrl=http%3A%2F%2Fpurdue%2Ebrightspace%2Ecom%3A80%2FShibboleth%2Esso%2FMetadata\">here</a>.</body>\n"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "D2L Brightspace",
+      "confidence": 100,
+      "evidence": [
+        "HTML: d2l\\.com",
+        "HTML: brightspace",
+        "HTML: d2l.*brightspace",
+        "JS: D2L",
+        "JS: Brightspace (HTML)"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "PowerSchool SIS",
+      "confidence": 80,
+      "evidence": [
+        "HTML: powerschool.*sis",
+        "HTML: ps.*powerschool"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 40,
+      "evidence": [
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "LearnDash",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ld.*course"
+      ]
+    },
+    {
+      "name": "Microsoft Power BI",
+      "confidence": 40,
+      "evidence": [
+        "HTML: power.*bi"
+      ]
+    },
+    {
+      "name": "Shibboleth",
+      "confidence": 40,
+      "evidence": [
+        "HTML: shibboleth"
+      ]
+    },
+    {
+      "name": "CBORD",
+      "confidence": 40,
+      "evidence": [
+        "HTML: get.*system"
+      ]
+    },
+    {
+      "name": "Schoology",
+      "confidence": 40,
+      "evidence": [
+        "HTML: powerschool.*learning"
+      ]
+    },
+    {
+      "name": "Gradelink",
+      "confidence": 40,
+      "evidence": [
+        "HTML: grade.*link"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Cengage WebAssign",
+      "confidence": 40,
+      "evidence": [
+        "HTML: web.*assign"
+      ]
+    },
+    {
+      "name": "SAML",
+      "confidence": 40,
+      "evidence": [
+        "HTML: saml"
+      ]
+    },
+    {
+      "name": "Elastic APM",
+      "confidence": 30,
+      "evidence": [
+        "JS: elasticApm (HTML)"
+      ]
+    },
+    {
+      "name": "Elasticsearch",
+      "confidence": 30,
+      "evidence": [
+        "JS: elastic (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Quicklink",
+      "confidence": 30,
+      "evidence": [
+        "JS: quicklink (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

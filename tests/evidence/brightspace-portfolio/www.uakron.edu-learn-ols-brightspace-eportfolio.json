@@ -1,0 +1,376 @@
+{
+  "technology": "Brightspace Portfolio",
+  "url": "https://www.uakron.edu/learn/ols/brightspace/eportfolio",
+  "final_url": "https://www.uakron.edu/learn/ols/brightspace/eportfolio",
+  "captured_at": "2026-04-21T19:33:47.707Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/brightspace-portfolio/www.uakron.edu-learn-ols-brightspace-eportfolio.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "public, max-age=600",
+      "cdn-cache": "MISS",
+      "cdn-cachedat": "04/21/2026 19:33:46",
+      "cdn-edgestorageid": "940",
+      "cdn-proxyver": "1.50",
+      "cdn-pullzone": "4188006",
+      "cdn-requestcountrycode": "US",
+      "cdn-requestid": "48a1b344d2c794370966f945e1b3d0e9",
+      "cdn-requestpullcode": "200",
+      "cdn-requestpullsuccess": "True",
+      "cdn-requesttime": "0",
+      "cdn-status": "200",
+      "content-encoding": "gzip",
+      "content-type": "text/html;charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:33:46 GMT",
+      "server": "BunnyCDN-IL1-1346",
+      "set-cookie": "bunny_shield_id_8563=dbd1f9458ab642b7a5a843ba9f535ed3; path=/; secure; httponly",
+      "strict-transport-security": "max-age=3600;includeSubDomains",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-dot-server": "dotcms-uakron-prod-1-0|5820f3808a",
+      "x-dotratelimit-toks-max": "8157/10000",
+      "x-dotrequest-cost": "22.00",
+      "x-frame-options": "SAMEORIGIN"
+    },
+    "scripts": [
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-MWBLG4",
+        "version": null
+      },
+      {
+        "src": "https://kit.fontawesome.com/e019ba79b5.js",
+        "version": null
+      },
+      {
+        "src": "https://www.uakron.edu/global/application/velocity/shared/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.uakron.edu/global/application/velocity/shared/js/vendor/jquery-1.9.1.min.js",
+        "version": null
+      },
+      {
+        "src": "https://code.jquery.com/jquery-3.6.0.min.js",
+        "version": null
+      },
+      {
+        "src": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/946624197/?random=1776800026784&cv=9&fst=1776800026784&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=375603261%2C466465926%2C512247839%2C658953495&u_h=600&u_w=800&ig=1&data=edu_pid%3DREPLACE_WITH_VALUE%3Bedu_plocid%3DREPLACE_WITH_VALUE%3Bedu_pagetype%3DREPLACE_WITH_VALUE%3Bedu_totalvalue%3DREPLACE_WITH_VALUE&frm=0&url=https%3A%2F%2Fwww.uakron.edu%2Flearn%2Fols%2Fbrightspace%2Feportfolio&tiba=Brightspace%20ePortfolio%20%3A%20The%20University%20of%20Akron&hn=www.googleadservices.com&rfmt=3&fmt=4",
+        "version": null
+      },
+      {
+        "src": "https://www.uakron.edu/application/themes/1UAblue/assets/js/1uablue.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js",
+        "version": null
+      },
+      {
+        "src": "https://www.uakron.edu/application/themes/uakron/js/jquery-migrate-1.2.1.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.uakron.edu/application/themes/uakron/js/bootstrap.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.uakron.edu/application/themes/uakron/js/parsley.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.uakron.edu/application/themes/uakron/js/jquery.blockui.js",
+        "version": null
+      },
+      {
+        "src": "https://www.uakron.edu/application/themes/uakron/js/jquery.scrollTo.min.js",
+        "version": null
+      },
+      {
+        "src": "https://www.youvisit.com/tour/Embed/js2",
+        "version": null
+      },
+      {
+        "src": "https://www.uakron.edu/application/themes/uakron/js/main.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googleadservices.com/pagead/conversion.js",
+        "version": null
+      },
+      {
+        "src": "https://www.youvisit.com/tour/Embed/js2",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+      "fb:pages": "87506681775",
+      "msapplication-tilecolor": "#da532c",
+      "theme-color": "#ffffff"
+    },
+    "cookies": [
+      {
+        "name": "bunny_shield_id_8563",
+        "value": "dbd1f9458ab642b7a5a843ba9f535ed3",
+        "domain": "www.uakron.edu"
+      }
+    ],
+    "dom": {
+      "title": "Brightspace ePortfolio : The University of Akron",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n            <meta name=\"description\" content=\"\">\n        \n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    \t\t\t\t<title>Brightspace ePortfolio : The University of Akron</title>\n\t\t    \n    <style>\n        body {\n            padding-top: 60px;\n            padding-bottom: 40px;\n        }\n    </style>\n        <!-- Meta tags all pages -->\n<!-- Google Tag Manager -->\n<script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-MWBLG4\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-MWBLG4');</script>\n<!-- End Google Tag Manager -->\n<meta property=\"fb:pages\" content=\"87506681775\">\n<!-- Meta tags all pages -->\n<!-- Favicons -->\n<link rel=\"icon\" type=\"image/png\" href=\"/favicons/favicon.png\">\n<link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"/favicons/apple-icon-57x57.png\">\n<link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"/favicons/apple-icon-60x60.png\">\n<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"/favicons/apple-icon-72x72.png\">\n<link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"/favicons/apple-icon-76x76.png\">\n<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"/favicons/apple-icon-114x114.png\">\n<link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"/favicons/apple-icon-120x120.png\">\n<link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"/favicons/apple-icon-144x144.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"/favicons/apple-icon-152x152.png\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/favicons/apple-icon-180x180.png\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/favicons/apple-touch-icon.png\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicons/favicon-16x16.png\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicons/favicon-32x32.png\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"48x48\" href=\"/favicons/favicon-48x48.png\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/favicons/android-chrome-192x192.png\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/favicons/android-icon-192x192.png\">\n<link rel=\"manifest\" href=\"/favicons/site.webmanifest\">\n<link rel=\"mask-icon\" href=\"/favicons/safari-pinned-tab.svg\" color=\"#0a1f41\">\n<meta name=\"msapplication-TileColor\" content=\"#da532c\">\n<meta name=\"theme-color\" content=\"#ffffff\">\n<!-- Favicons -->\n<!-- Adobe Fonts -->\n<link rel=\"stylesheet\" href=\"https://use.typekit.net/lcj0rpo.css\">\n<!-- Adobe Fonts -->\n<!-- Fonts -->\n<!--Font Awsome -->\n<script src=\"https://kit.fontawesome.com/e019ba79b5.js\" crossorigin=\"anonymous\" defer=\"\"></script>\n<!--Font Awsome -->\n<!--<link rel=\"stylesheet\" href=\"/global/application/velocity/shared/css/bootstrap.min.css\" />\n<link rel=\"stylesheet\" href=\"/DOTLESS/application/themes/uakron/less/bootstrap.css\" />\n<link rel=\"stylesheet\" href=\"/application/themes/css/master.css\" />-->\n<!--[if lt IE 10]>\n<link rel=\"stylesheet\" href=\"/global/application/velocity/shared/css/ie.css\" />\n<![endif]-->\n<!-- Responsive template config custom css -->\n<!-- Responsive template config custom js -->\n<script src=\"/global/application/velocity/shared/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js\"></script>\n<script src=\"/global/application/velocity/shared/js/vendor/jquery-1.9.1.min.js\"></script>\n<!-- Page Meta Data -->\n    <!-- Page Meta Data -->\n<!-- Fonts -->\n<!-- Needed for Safari Browsers to display logo text -->\n<link href=\"https://fonts.googleapis.com/css?family=Nunito:400,700\" rel=\"stylesheet\">\n\n<link rel=\"preload\" as=\"stylesheet\" href=\"/application/themes/uakron-2/css/print.css\" media=\"print\">\n<!-- BS Styles -->\n<link rel=\"preload\" href=\"/global/application/velocity/shared/fonts/OpenSans-Regular.ttf\" as=\"font\" type=\"font/ttf\" crossorigin=\"anonymous\">\n<link rel=\"preload\" href=\"/global/application/velocity/shared/fonts/OpenSans-Bold.ttf\" as=\"font\" type=\"font/ttf\" crossorigin=\"anonymous\">\n<link rel=\"preload\" href=\"/global/application/velocity/shared/fonts/Oswald-Regular.ttf\" as=\"font\" type=\"font/ttf\" crossorigin=\"anonymous\">\n<link rel=\"preload\" href=\"/application/themes/css/fa/webfonts/fa-solid-900.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n<link rel=\"preload\" href=\"/application/themes/css/fa/webfonts/fa-brands-400.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\">\n<!--<link rel=\"preload\" as=\"script\" href=\"/application/themes/uakron-2/js/jquery.min.js\"> -->\n<link rel=\"preload stylesheet\" as=\"style\" href=\"/application/themes/uakron-2/css/bootstrap/css/bootstrap.min.css\">\n<link rel=\"preload stylesheet\" as=\"style\" href=\"/application/themes/css/new-bs.css\">\n<link rel=\"preload stylesheet\" as=\"style\" href=\"/application/themes/uakron-2/css/master-ua2.css\">\n\n<!-- BS Styles -->\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <link rel=\"icon\" type=\"image/png\" href=\"https://www.uakron.edu/favicons/favicon.png\">\n    <!-- Bootstrap CSS -->\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <!-- Preconnect to Fonts domains Perfomance Reason-->\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin=\"\">\n    <link rel=\"preload\" as=\"style\" href=\"//use.typekit.net/bjv0umo.css\">\n    <link rel=\"stylesheet\" href=\"//use.typekit.net/bjv0umo.css\" media=\"all\" onload=\"this.media='all'\">\n    <noscript>\n        <link rel=\"stylesheet\" href=\"//use.typekit.net/bjv0umo.css\">\n    </noscript>\n    <link rel=\"stylesheet\" href=\"https://use.typekit.net/tyc3nqd.css\" media=\"all\" onload=\"this.media='all'\">\n    <noscript>\n        <link rel=\"stylesheet\" href=\"https://use.typekit.net/tyc3nqd.css\">\n    </noscript>\n    <link rel=\"preload\" href=\"/application/themes/1UAblue/assets/css/fontawesome/css/all.css\" as=\"style\">\n    <link rel=\"stylesheet\" href=\"/application/themes/1UAblue/assets/css/fontawesome/css/all.css\">\n    <link rel=\"preload\" href=\"/application/themes/1UAblue/assets/css/1uablue.css\" as=\"style\">\n    <link rel=\"stylesheet\" href=\"/application/themes/1UAblue/assets/css/1uablue.css\">\n       <link rel=\"preload\" href=\"/application/themes/1UAblue/assets/css/1uablue-widgets.css\" as=\"style\">\n    <link rel=\"stylesheet\" href=\"/application/themes/1UAblue/assets/css/1uablue-widgets.css\">\n        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css\">\n    <!-- Add jQuery from a CDN -->\n    <script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"></script>\n\n\n<script type=\"text/javascript\" async=\"\" src=\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/946624197/?random=1776800026784&amp;cv=9&amp;fst=1776800026784&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=375603261%2C466465926%2C512247839%2C658953495&amp;u_h=600&amp;u_w=800&amp;ig=1&amp;data=edu_pid%3DREPLACE_WITH_VALUE%3Bedu_plocid%3DREPLACE_WITH_VALUE%3Bedu_pagetype%3DREPLACE_WITH_VALUE%3Bedu_totalvalue%3DREPLACE_WITH_VALUE&amp;frm=0&amp;url=https%3A%2F%2Fwww.uakron.edu%2Flearn%2Fols%2Fbrightspace%2Feportfolio&amp;tiba=Brightspace%20ePortfolio%20%3A%20The%20University%20of%20Akron&amp;hn=www.googleadservices.com&amp;rfmt=3&amp;fmt=4\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.6.0"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.uakron.edu/wp-login.php",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Establishing a secure connection ...</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.8\">\n    <link href=\"https://fonts.bunny.net/css?family=Inter:300,400,500,700\" rel=\"stylesheet\">\n\n    <link href=\"/.bunny-shield/assets/challenge-styles.css\" rel=\"stylesheet\" />\n\n    <script src=\"/.bunny-shield/assets/shield-challenge.js\"></script>\n</head>\n<body data-pow=\"230179bbdd22ba63b9e82eb30a7278ad3dcd675f8685195c2840fbd00e17fb46#bc63a151a4aa42c2a4"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.uakron.edu/wp-json/wp/v2/",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Establishing a secure connection ...</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.8\">\n    <link href=\"https://fonts.bunny.net/css?family=Inter:300,400,500,700\" rel=\"stylesheet\">\n\n    <link href=\"/.bunny-shield/assets/challenge-styles.css\" rel=\"stylesheet\" />\n\n    <script src=\"/.bunny-shield/assets/shield-challenge.js\"></script>\n</head>\n<body data-pow=\"8491425efba0f328477a052825b25d35d3efa2dcb1a7d10a1d7e1fa98b7ed06a#028937d6ad168b9657"
+    },
+    "/wp-content/": {
+      "url": "https://www.uakron.edu/wp-content/",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Establishing a secure connection ...</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.8\">\n    <link href=\"https://fonts.bunny.net/css?family=Inter:300,400,500,700\" rel=\"stylesheet\">\n\n    <link href=\"/.bunny-shield/assets/challenge-styles.css\" rel=\"stylesheet\" />\n\n    <script src=\"/.bunny-shield/assets/shield-challenge.js\"></script>\n</head>\n<body data-pow=\"e1706ee8d351d734c5ecc22a0eb68535124e0f050dde0f7bab28e54cba6522f9#4e269ad6563b61ba7a"
+    },
+    "/user/login": {
+      "url": "https://www.uakron.edu/user/login",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Establishing a secure connection ...</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.8\">\n    <link href=\"https://fonts.bunny.net/css?family=Inter:300,400,500,700\" rel=\"stylesheet\">\n\n    <link href=\"/.bunny-shield/assets/challenge-styles.css\" rel=\"stylesheet\" />\n\n    <script src=\"/.bunny-shield/assets/shield-challenge.js\"></script>\n</head>\n<body data-pow=\"ab9b1de13a86e4b4f8cc6a798cb75af688ee8fdb5619a72aca029b48bafd3897#5653dbc99a6cad313f"
+    },
+    "/core/install.php": {
+      "url": "https://www.uakron.edu/core/install.php",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Establishing a secure connection ...</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.8\">\n    <link href=\"https://fonts.bunny.net/css?family=Inter:300,400,500,700\" rel=\"stylesheet\">\n\n    <link href=\"/.bunny-shield/assets/challenge-styles.css\" rel=\"stylesheet\" />\n\n    <script src=\"/.bunny-shield/assets/shield-challenge.js\"></script>\n</head>\n<body data-pow=\"17e63b75487665cd8a9728b824025e16020ec815924b7ad84d2ff281eb10233f#20bd28c597c03e403a"
+    },
+    "/cas/login": {
+      "url": "https://www.uakron.edu/cas/login",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Establishing a secure connection ...</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.8\">\n    <link href=\"https://fonts.bunny.net/css?family=Inter:300,400,500,700\" rel=\"stylesheet\">\n\n    <link href=\"/.bunny-shield/assets/challenge-styles.css\" rel=\"stylesheet\" />\n\n    <script src=\"/.bunny-shield/assets/shield-challenge.js\"></script>\n</head>\n<body data-pow=\"637ac084762b11357fbb4b49bea29c85a00ae7e79239ead7ec0c4bada5eeac1c#20984bd4e7829b4a8f"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.uakron.edu/Shibboleth.sso/Metadata",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Establishing a secure connection ...</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.8\">\n    <link href=\"https://fonts.bunny.net/css?family=Inter:300,400,500,700\" rel=\"stylesheet\">\n\n    <link href=\"/.bunny-shield/assets/challenge-styles.css\" rel=\"stylesheet\" />\n\n    <script src=\"/.bunny-shield/assets/shield-challenge.js\"></script>\n</head>\n<body data-pow=\"c3da7fcc1ca2fd287bb90130488c345164782f8d2fdf396a7ff4f779de64efe7#993f33a2345a11e05d"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "D2L Brightspace",
+      "confidence": 100,
+      "evidence": [
+        "HTML: brightspace",
+        "HTML: d2l.*brightspace",
+        "JS: Brightspace (HTML)"
+      ]
+    },
+    {
+      "name": "Bunny",
+      "confidence": 80,
+      "evidence": [
+        "Header: Server=^BunnyCDN"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 80,
+      "evidence": [
+        "HTML: jquery",
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "Brightspace Portfolio",
+      "confidence": 80,
+      "evidence": [
+        "HTML: brightspace.*portfolio",
+        "HTML: d2l.*portfolio"
+      ]
+    },
+    {
+      "name": "Adobe Fonts",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ga\\("
+      ]
+    },
+    {
+      "name": "Typekit",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ext (HTML)"
+      ]
+    },
+    {
+      "name": "Extend",
+      "confidence": 30,
+      "evidence": [
+        "JS: Extend (HTML)"
+      ]
+    },
+    {
+      "name": "Parsley.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: parsley (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 30,
+      "evidence": [
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

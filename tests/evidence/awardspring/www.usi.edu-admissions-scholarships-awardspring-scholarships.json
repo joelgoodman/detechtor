@@ -1,0 +1,393 @@
+{
+  "technology": "AwardSpring",
+  "url": "https://www.usi.edu/admissions/scholarships/awardspring-scholarships",
+  "final_url": "https://www.usi.edu/admissions/scholarships/awardspring-scholarships",
+  "captured_at": "2026-04-21T19:34:05.761Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/awardspring/www.usi.edu-admissions-scholarships-awardspring-scholarships.html",
+  "evidence": {
+    "headers": {
+      "content-encoding": "gzip",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:34:03 GMT",
+      "request-context": "appId=cid-v1:0d289393-91c6-4554-8283-094c55836b85",
+      "server": "Microsoft-IIS/10.0",
+      "set-cookie": "ARRAffinity=3f9d827905dba19edf4c3eb033da1b2cce776a4f8bbe0e42467b9f96a1cde502;Path=/;HttpOnly;Secure;Domain=www.usi.edu\nARRAffinitySameSite=3f9d827905dba19edf4c3eb033da1b2cce776a4f8bbe0e42467b9f96a1cde502;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.usi.edu",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding",
+      "x-powered-by": "ASP.NET"
+    },
+    "scripts": [
+      {
+        "src": "https://www.gstatic.com/wcm/loader.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-55JDK8",
+        "version": null
+      },
+      {
+        "src": "https://mx.technolutions.net/ping?id=6b887275-6ba6-010b-53ad-b95b7f1f70cc&sid=w1fRGzJlLLIIuTmZJRixc05Scyrs2epfo3bzBWTvmdeNHoCbOc48hYzTof7Hml0RXyHtHvWRihgEvim6x2hJNPQO2vBsq5cEHpi28jXhcmc&hid=dcd27af7-c403-59ac-dc99-f7242bbf7efd",
+        "version": null
+      },
+      {
+        "src": "https://www.usi.edu/dist/js/header.VST6ORPl.js",
+        "version": null
+      },
+      {
+        "src": "https://usi.shell.451.io/",
+        "version": null
+      },
+      {
+        "src": "https://connect.usi.edu/ping",
+        "version": null
+      },
+      {
+        "src": "https://www.usi.edu/dist/js/master2025.DjmOCmkZ.js",
+        "version": null
+      },
+      {
+        "src": "https://www.usi.edu/dist/js/contactForm.Dc4sl0T2.js",
+        "version": null
+      },
+      {
+        "src": "https://www.usi.edu/dist/js/email.BUWZEkgH.js",
+        "version": null
+      },
+      {
+        "src": "https://www.usi.edu/dist/js/views2025.BHKalBDb.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1",
+      "last-modified": "2026-03-19T15:03:44Z",
+      "article:modified_time": "2026-03-19T15:03:44Z",
+      "theme-color": "#ffffff"
+    },
+    "cookies": [
+      {
+        "name": "ARRAffinity",
+        "value": "3f9d827905dba19edf4c3eb033da1b2cce776a4f8bbe0e42467b9f96a1cde502",
+        "domain": ".www.usi.edu"
+      },
+      {
+        "name": "ARRAffinitySameSite",
+        "value": "3f9d827905dba19edf4c3eb033da1b2cce776a4f8bbe0e42467b9f96a1cde502",
+        "domain": ".www.usi.edu"
+      }
+    ],
+    "dom": {
+      "title": "AwardSpring Scholarships - University of Southern Indiana",
+      "bodyClasses": "font-p has-breadcrumb-overlay",
+      "bodyId": "",
+      "headContent": "\n    <meta charset=\"utf-8\">\n    <title>AwardSpring Scholarships -  University of Southern Indiana</title>\n    <link rel=\"icon\" href=\"/favicon.png\" sizes=\"32x32\" type=\"image/png\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"last-modified\" content=\"2026-03-19T15:03:44Z\">\n    <meta property=\"article:modified_time\" content=\"2026-03-19T15:03:44Z\">\n\n    <!--<link rel=\"manifest\" href=\"/site.webmanifest\">-->\n    <link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\">\n    \n    <!-- Place favicon.ico in the root directory -->\n    <link rel=\"stylesheet\" href=\"/dist/css/main.RPUEPuGE.css\" media=\"screen\">\n    <link rel=\"stylesheet\" href=\"/dist/css/main-small.Dkkt9bVv.css\" media=\"screen and (min-width:480px)\">\n    <link rel=\"stylesheet\" href=\"/dist/css/main-large.DtKI5mIC.css\" media=\"screen and (min-width:1024px)\">\n    <link rel=\"stylesheet\" href=\"/dist/css/fa.BeT8unak.css\" media=\"screen\">\n    <link rel=\"stylesheet\" href=\"/dist/css/print.DBiZutd4.css\" media=\"print\">\n\n    <link rel=\"canonical\" href=\"https://www.usi.edu/admissions/scholarships/awardspring-scholarships\">\n\n\n    <script async=\"\" src=\"//www.gstatic.com/wcm/loader.js\"></script><script async=\"\" src=\"//www.googletagmanager.com/gtm.js?id=GTM-55JDK8\"></script><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"CollegeOrUniversity\",\"@id\":\"https://www.usi.edu/#organization\",\"name\":\"University of Southern Indiana\",\"url\":\"https://www.usi.edu/\",\"logo\":\"https://www.usi.edu/media/sandxq5r/academic-primary_mark.png\",\"sameAs\":[\"https://www.facebook.com/USIedu\",\"https://www.tiktok.com/@usiedu\",\"https://www.youtube.com/user/uofsouthernindiana\",\"https://www.instagram.com/usiedu/\"],\"telephone\":\"\\u002B1-812-464-8600\"}</script>\n    <script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"@id\":\"https://www.usi.edu/#website\",\"url\":\"https://www.usi.edu/\",\"name\":\"University of Southern Indiana\",\"publisher\":{\"@id\":\"https://www.usi.edu/#organization\"},\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://www.usi.edu/search?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}}</script>\n    <script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.usi.edu/admissions/scholarships/awardspring-scholarships#webpage\",\"url\":\"https://www.usi.edu/admissions/scholarships/awardspring-scholarships\",\"name\":\"AwardSpring Scholarships\",\"description\":\"\",\"inLanguage\":\"en-US\",\"dateModified\":\"2026-03-19T15:03:44Z\",\"isPartOf\":{\"@id\":\"https://www.usi.edu/#website\"},\"about\":{\"@id\":\"https://www.usi.edu/#organization\"}}</script>\n\n    \n    <link rel=\"stylesheet\" href=\"/dist/css/subpages2025.C8D6CCDS.css\" media=\"screen\">\n    <link rel=\"stylesheet\" href=\"/dist/css/breadcrumbs2025.Dr6_nXuD.css\" media=\"screen\">\n\n    <meta name=\"theme-color\" content=\"#ffffff\">\n    <style>\nh3 {\npadding-top:3rem;\n}\n</style>\n\n    <script>\n        /**\n         * Global Cookie Utilities\n         * Defined here to ensure availability to both classic and module scripts\n         */\n        function getCookie(name) {\n            const value = `; ${document.cookie}`;\n            const parts = value.split(`; ${name}=`);\n            if (parts.length === 2) return parts.pop().split(\";\").shift();\n            return null;\n        }\n\n        function setCookie(name, value, days = 365) {\n            const expires = new Date();\n            expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);\n            document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/;SameSite=Lax`;\n        }\n\n        function switchAudience(audienceValue) {\n            setCookie(\"audience\", audienceValue.toString());\n            location.reload();\n        }\n        \n        window.getCookie = getCookie;\n        window.setCookie = setCookie;\n        window.switchAudience = switchAudience;\n    </script>\n<script async=\"\" src=\"https://mx.technolutions.net/ping?id=6b887275-6ba6-010b-53ad-b95b7f1f70cc&amp;sid=w1fRGzJlLLIIuTmZJRixc05Scyrs2epfo3bzBWTvmdeNHoCbOc48hYzTof7Hml0RXyHtHvWRihgEvim6x2hJNPQO2vBsq5cEHpi28jXhcmc&amp;hid=dcd27af7-c403-59ac-dc99-f7242bbf7efd\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://www.usi.edu/wp-login.php",
+      "status": 404
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://www.usi.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "\r\n<!doctype html>\r\n<html lang=\"en-us\">\r\n\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>404 Page -  University of Southern Indiana</title>\r\n    <link rel=\"icon\" href=\"/favicon.png\" sizes=\"32x32\" type=\"image/png\">\r\n    <meta name=\"description\" content=\"\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <meta name=\"last-modified\" content=\"2025-10-24T20:53:42Z\">\r\n    <meta property=\"article:modified_time\" content=\"2025-10-24T20:53:42Z\">\r\n\r\n    <!--<link rel=\"manifest\" href=\"/sit"
+    },
+    "/wp-content/": {
+      "url": "https://www.usi.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "\r\n<!doctype html>\r\n<html lang=\"en-us\">\r\n\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>404 Page -  University of Southern Indiana</title>\r\n    <link rel=\"icon\" href=\"/favicon.png\" sizes=\"32x32\" type=\"image/png\">\r\n    <meta name=\"description\" content=\"\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <meta name=\"last-modified\" content=\"2025-10-24T20:53:42Z\">\r\n    <meta property=\"article:modified_time\" content=\"2025-10-24T20:53:42Z\">\r\n\r\n    <!--<link rel=\"manifest\" href=\"/sit"
+    },
+    "/user/login": {
+      "url": "https://www.usi.edu/user/login",
+      "status": 404,
+      "body_excerpt": "\r\n<!doctype html>\r\n<html lang=\"en-us\">\r\n\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>404 Page -  University of Southern Indiana</title>\r\n    <link rel=\"icon\" href=\"/favicon.png\" sizes=\"32x32\" type=\"image/png\">\r\n    <meta name=\"description\" content=\"\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <meta name=\"last-modified\" content=\"2025-10-24T20:53:42Z\">\r\n    <meta property=\"article:modified_time\" content=\"2025-10-24T20:53:42Z\">\r\n\r\n    <!--<link rel=\"manifest\" href=\"/sit"
+    },
+    "/core/install.php": {
+      "url": "https://www.usi.edu/core/install.php",
+      "status": 404
+    },
+    "/cas/login": {
+      "url": "https://www.usi.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "\r\n<!doctype html>\r\n<html lang=\"en-us\">\r\n\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>404 Page -  University of Southern Indiana</title>\r\n    <link rel=\"icon\" href=\"/favicon.png\" sizes=\"32x32\" type=\"image/png\">\r\n    <meta name=\"description\" content=\"\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <meta name=\"last-modified\" content=\"2025-10-24T20:53:42Z\">\r\n    <meta property=\"article:modified_time\" content=\"2025-10-24T20:53:42Z\">\r\n\r\n    <!--<link rel=\"manifest\" href=\"/sit"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://www.usi.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "\r\n<!doctype html>\r\n<html lang=\"en-us\">\r\n\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>404 Page -  University of Southern Indiana</title>\r\n    <link rel=\"icon\" href=\"/favicon.png\" sizes=\"32x32\" type=\"image/png\">\r\n    <meta name=\"description\" content=\"\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <meta name=\"last-modified\" content=\"2025-10-24T20:53:42Z\">\r\n    <meta property=\"article:modified_time\" content=\"2025-10-24T20:53:42Z\">\r\n\r\n    <!--<link rel=\"manifest\" href=\"/sit"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 80,
+      "evidence": [
+        "HTML: google-analytics\\.com/analytics\\.js",
+        "HTML: ga\\("
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "IIS",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=Microsoft-IIS"
+      ]
+    },
+    {
+      "name": "Microsoft ASP.NET",
+      "confidence": 80,
+      "evidence": [
+        "Header: X-Powered-By=^ASP\\.NET"
+      ]
+    },
+    {
+      "name": "Qualtrics",
+      "confidence": 80,
+      "evidence": [
+        "HTML: qualtrics.com",
+        "HTML: jfe/form/"
+      ]
+    },
+    {
+      "name": "Slate",
+      "confidence": 80,
+      "evidence": [
+        "HTML: technolutions",
+        "HTML: mx.technolutions.net"
+      ]
+    },
+    {
+      "name": "ASP.NET",
+      "confidence": 80,
+      "evidence": [
+        "Header: x-powered-by=ASP.NET"
+      ]
+    },
+    {
+      "name": "Element451",
+      "confidence": 80,
+      "evidence": [
+        "HTML: shell.451.io",
+        "HTML: id=\"shell451\""
+      ]
+    },
+    {
+      "name": "Azure",
+      "confidence": 70,
+      "evidence": [
+        "Cookie: ARRAffinity"
+      ]
+    },
+    {
+      "name": "AwardSpring",
+      "confidence": 70,
+      "evidence": [
+        "HTML: awardspring",
+        "JS: AwardSpring (HTML)"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "Localist",
+      "confidence": 40,
+      "evidence": [
+        "HTML: event.*calendar"
+      ]
+    },
+    {
+      "name": "Qualtrics CoreXM",
+      "confidence": 40,
+      "evidence": [
+        "HTML: qualtrics"
+      ]
+    },
+    {
+      "name": "Focus School Software",
+      "confidence": 40,
+      "evidence": [
+        "HTML: focus.*sis"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "AitThemes",
+      "confidence": 30,
+      "evidence": [
+        "JS: ait (HTML)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "Econda",
+      "confidence": 30,
+      "evidence": [
+        "JS: econda (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Sitecore",
+      "confidence": 30,
+      "evidence": [
+        "JS: _sc (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 30,
+      "evidence": [
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

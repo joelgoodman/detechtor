@@ -1,0 +1,372 @@
+{
+  "technology": "Slate",
+  "url": "https://engage.lmu.edu/apply/",
+  "final_url": "https://engage.lmu.edu/apply/",
+  "captured_at": "2026-04-21T19:35:24.106Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/slate/engage.lmu.edu-apply.html",
+  "evidence": {
+    "headers": {
+      "cache-control": "no-cache, no-store, must-revalidate, max-age=0",
+      "content-encoding": "gzip",
+      "content-length": "6363",
+      "content-security-policy": "frame-ancestors 'self'",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:35:23 GMT",
+      "expires": "-1",
+      "pragma": "no-cache",
+      "referrer-policy": "origin-when-cross-origin",
+      "set-cookie": "_node=79e8292408f61f87b01c2918105ca2c70ae2dd1bf9acb5e69f7af28265befa30; Path=/; Secure; SameSite=None\n_hash=cc20262d-073f-49f7-bd77-f712a02d2e67; path=/; secure; HttpOnly; SameSite=None\n_hash=cc20262d-073f-49f7-bd77-f712a02d2e67; expires=Mon, 21-Apr-2031 04:00:00 GMT; path=/; secure; HttpOnly; SameSite=None\n_hashV=202604/1; path=/; secure; HttpOnly; SameSite=None\n_hashV=202604/1; expires=Mon, 21-Apr-2031 04:00:00 GMT; path=/; secure; HttpOnly; SameSite=None",
+      "strict-transport-security": "max-age=31536000"
+    },
+    "scripts": [
+      {
+        "src": "https://www.google-analytics.com/analytics.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-MMMR24",
+        "version": null
+      },
+      {
+        "src": "https://fw.cdn.technolutions.net/framework/base.js?v=db28",
+        "version": null
+      },
+      {
+        "src": "https://engage.lmu.edu/shared/build-mobile-global.js",
+        "version": null
+      },
+      {
+        "src": "https://engage.lmu.edu/apply/base.js?v=TS-db28-638802349907547728",
+        "version": null
+      },
+      {
+        "src": "https://engage.lmu.edu/ping",
+        "version": null
+      },
+      {
+        "src": "https://slate-technolutions-net.cdn.technolutions.net/shared/session.js?v=TS-db28-639054849024699881",
+        "version": null
+      },
+      {
+        "src": "https://mx.technolutions.net/ping?id=8570f1f0-1af6-d3d7-0483-13b334730837&sid=1sSpAuorq_r3fX9cF9gLMFj6Ya7r1cgNwfDnJ-3N8i-ChYlNnfxEs6efIo5P2cR4rYQ452Za9mUBPmyy9_y17UH29c7_R0A0e0rMPP5XyCo&hid=4dab7c21-d0c7-62be-10f5-d0b0e000a801",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1, minimum-scale=1"
+    },
+    "cookies": [
+      {
+        "name": "_hash",
+        "value": "cc20262d-073f-49f7-bd77-f712a02d2e67",
+        "domain": "engage.lmu.edu"
+      },
+      {
+        "name": "_node",
+        "value": "79e8292408f61f87b01c2918105ca2c70ae2dd1bf9acb5e69f7af28265befa30",
+        "domain": "engage.lmu.edu"
+      },
+      {
+        "name": "_hashV",
+        "value": "202604/1",
+        "domain": "engage.lmu.edu"
+      }
+    ],
+    "dom": {
+      "title": "Your Online LMU Application",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "<link rel=\"shortcut icon\" href=\"//engage-lmu-edu.cdn.technolutions.net/favicon.ico\"><link href=\"//fw.cdn.technolutions.net/framework/base.css?v=db28\" rel=\"stylesheet\"><link href=\"//slate-technolutions-net.cdn.technolutions.net/shared/base.css?v=TS-db28-638859662864596412\" rel=\"stylesheet\"><link href=\"//engage-lmu-edu.cdn.technolutions.net/shared/build-fonts.css?v=2\" rel=\"stylesheet\"><link href=\"//engage-lmu-edu.cdn.technolutions.net/shared/build-mobile-global.css\" rel=\"stylesheet\"><link href=\"//engage-lmu-edu.cdn.technolutions.net/shared/build.css?v=2\" rel=\"stylesheet\"><link href=\"//engage-lmu-edu.cdn.technolutions.net/shared/hcrc-additions.css\" rel=\"stylesheet\"><script async=\"\" src=\"https://www.google-analytics.com/analytics.js\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-MMMR24\"></script><script src=\"//fw.cdn.technolutions.net/framework/base.js?v=db28\"></script><script>/*<![CDATA[*/FW.Config['Citizenship.Default.Country'] = 'US'; FW.Config['Citizenship.PR'] = 'Permanent Resident'; FW.Config['HTML.ColorPalette'] = 'AB0C2F,0076A5,1080b8,888B8D,C8C9C7,434343,1ABC9C,  2ECC71, 3498DB, 9B59B6, 4E5F70, F1C40F, 16A085,  27AE60, 2980B9, 8E44AD, 2C3E50, F39C12, E67E22,  E74C3C, ECF0F1, 95A5A6, DDDDDD, FFFFFF, D35400, C0392B,  BDC3C7, 7F8C8D, 999999, 000000'; FW.Config['CDN'] = '//slate-technolutions-net.cdn.technolutions.net'; /*]]>*/</script><script src=\"/shared/build-mobile-global.js\"></script><script src=\"/apply/base.js?v=TS-db28-638802349907547728\"></script><script>/*<![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n\t\t\t\t\tnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n\t\t\t\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n\t\t\t\t\t'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n\t\t\t\t\t})(window,document,'script','dataLayer','GTM-MMMR24');/*]]>*/</script><script async=\"async\" src=\"/ping\"></script><script async=\"async\" id=\"session_expires\" src=\"//slate-technolutions-net.cdn.technolutions.net/shared/session.js?v=TS-db28-639054849024699881\" data-now=\"1776800123\" data-realm=\"\" data-service-extend=\"/account/login?cmd=session_extend\" data-service-login=\"/account/login?cmd=session_login\" data-service-check=\"/account/login?cmd=session_check&amp;noauth=1\" data-expires=\"0\"></script><style>/*<![CDATA[*/html > body { line-height: normal; } ul.cr, li.cr { margin: 0; padding: 0; } #content { clear: both; padding: 15px; } #global { float: right; } #global ul, #global li { list-style: none; margin: 0; padding: 0; }/*]]>*/</style><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, minimum-scale=1\" class=\"cr\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><title>Your Online LMU Application</title><script async=\"\" src=\"https://mx.technolutions.net/ping?id=8570f1f0-1af6-d3d7-0483-13b334730837&amp;sid=1sSpAuorq_r3fX9cF9gLMFj6Ya7r1cgNwfDnJ-3N8i-ChYlNnfxEs6efIo5P2cR4rYQ452Za9mUBPmyy9_y17UH29c7_R0A0e0rMPP5XyCo&amp;hid=4dab7c21-d0c7-62be-10f5-d0b0e000a801\"></script>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.7.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://engage.lmu.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html><html xml:lang=\"en\" lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><link rel=\"shortcut icon\" href=\"//engage-lmu-edu.cdn.technolutions.net/favicon.ico\" /><link href=\"//fw.cdn.technolutions.net/framework/base.css?v=db28\" rel=\"stylesheet\" /><link href=\"//slate-technolutions-net.cdn.technolutions.net/shared/base.css?v=TS-db28-638859662864596412\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.cdn.technolutions.net/shared/build-fonts.css?v=2\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.c"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://engage.lmu.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html><html xml:lang=\"en\" lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><link rel=\"shortcut icon\" href=\"//engage-lmu-edu.cdn.technolutions.net/favicon.ico\" /><link href=\"//fw.cdn.technolutions.net/framework/base.css?v=db28\" rel=\"stylesheet\" /><link href=\"//slate-technolutions-net.cdn.technolutions.net/shared/base.css?v=TS-db28-638859662864596412\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.cdn.technolutions.net/shared/build-fonts.css?v=2\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.c"
+    },
+    "/wp-content/": {
+      "url": "https://engage.lmu.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html><html xml:lang=\"en\" lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><link rel=\"shortcut icon\" href=\"//engage-lmu-edu.cdn.technolutions.net/favicon.ico\" /><link href=\"//fw.cdn.technolutions.net/framework/base.css?v=db28\" rel=\"stylesheet\" /><link href=\"//slate-technolutions-net.cdn.technolutions.net/shared/base.css?v=TS-db28-638859662864596412\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.cdn.technolutions.net/shared/build-fonts.css?v=2\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.c"
+    },
+    "/user/login": {
+      "url": "https://engage.lmu.edu/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html><html xml:lang=\"en\" lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><link rel=\"shortcut icon\" href=\"//engage-lmu-edu.cdn.technolutions.net/favicon.ico\" /><link href=\"//fw.cdn.technolutions.net/framework/base.css?v=db28\" rel=\"stylesheet\" /><link href=\"//slate-technolutions-net.cdn.technolutions.net/shared/base.css?v=TS-db28-638859662864596412\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.cdn.technolutions.net/shared/build-fonts.css?v=2\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.c"
+    },
+    "/core/install.php": {
+      "url": "https://engage.lmu.edu/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html><html xml:lang=\"en\" lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><link rel=\"shortcut icon\" href=\"//engage-lmu-edu.cdn.technolutions.net/favicon.ico\" /><link href=\"//fw.cdn.technolutions.net/framework/base.css?v=db28\" rel=\"stylesheet\" /><link href=\"//slate-technolutions-net.cdn.technolutions.net/shared/base.css?v=TS-db28-638859662864596412\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.cdn.technolutions.net/shared/build-fonts.css?v=2\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.c"
+    },
+    "/cas/login": {
+      "url": "https://engage.lmu.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html><html xml:lang=\"en\" lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><link rel=\"shortcut icon\" href=\"//engage-lmu-edu.cdn.technolutions.net/favicon.ico\" /><link href=\"//fw.cdn.technolutions.net/framework/base.css?v=db28\" rel=\"stylesheet\" /><link href=\"//slate-technolutions-net.cdn.technolutions.net/shared/base.css?v=TS-db28-638859662864596412\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.cdn.technolutions.net/shared/build-fonts.css?v=2\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.c"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://engage.lmu.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html><html xml:lang=\"en\" lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><link rel=\"shortcut icon\" href=\"//engage-lmu-edu.cdn.technolutions.net/favicon.ico\" /><link href=\"//fw.cdn.technolutions.net/framework/base.css?v=db28\" rel=\"stylesheet\" /><link href=\"//slate-technolutions-net.cdn.technolutions.net/shared/base.css?v=TS-db28-638859662864596412\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.cdn.technolutions.net/shared/build-fonts.css?v=2\" rel=\"stylesheet\" /><link href=\"//engage-lmu-edu.c"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Slate",
+      "confidence": 100,
+      "evidence": [
+        "HTML: technolutions",
+        "HTML: slate.*technolutions",
+        "HTML: technolutions.*slate",
+        "HTML: mx.technolutions.net"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 80,
+      "evidence": [
+        "HTML: google-analytics\\.com/analytics\\.js",
+        "HTML: ga\\("
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 80,
+      "evidence": [
+        "HTML: googletagmanager\\.com",
+        "HTML: GTM-"
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "FACTS SIS",
+      "confidence": 80,
+      "evidence": [
+        "HTML: facts.*sis",
+        "HTML: facts.*student"
+      ]
+    },
+    {
+      "name": "Coalition Application",
+      "confidence": 70,
+      "evidence": [
+        "HTML: coalition.*application",
+        "JS: Coalition (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 60,
+      "evidence": [
+        "JS: GoogleAnalyticsObject (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Anthology Encompass",
+      "confidence": 40,
+      "evidence": [
+        "HTML: imodules"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 40,
+      "evidence": [
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 40,
+      "evidence": [
+        "HTML: youtube"
+      ]
+    },
+    {
+      "name": "Localist",
+      "confidence": 40,
+      "evidence": [
+        "HTML: event.*calendar"
+      ]
+    },
+    {
+      "name": "Common Application",
+      "confidence": 40,
+      "evidence": [
+        "HTML: common.*application"
+      ]
+    },
+    {
+      "name": "Concept3D",
+      "confidence": 40,
+      "evidence": [
+        "HTML: concept3d"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "SchoolAdmin",
+      "confidence": 40,
+      "evidence": [
+        "HTML: school.*admin"
+      ]
+    },
+    {
+      "name": "Rediker Software",
+      "confidence": 40,
+      "evidence": [
+        "HTML: admin.*plus"
+      ]
+    },
+    {
+      "name": "Top Hat",
+      "confidence": 40,
+      "evidence": [
+        "HTML: top.*hat"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Sitecore",
+      "confidence": 30,
+      "evidence": [
+        "JS: _sc (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

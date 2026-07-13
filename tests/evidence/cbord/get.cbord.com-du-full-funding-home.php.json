@@ -1,0 +1,147 @@
+{
+  "technology": "CBORD",
+  "url": "https://get.cbord.com/du/full/funding_home.php",
+  "final_url": "https://get.cbord.com/du/full/funding_home.php",
+  "captured_at": "2026-04-21T19:26:57.908Z",
+  "response_status": 404,
+  "html_file": "tests/evidence/cbord/get.cbord.com-du-full-funding-home.php.html",
+  "evidence": {
+    "headers": {
+      "content-length": "236",
+      "content-type": "text/html; charset=iso-8859-1",
+      "date": "Tue, 21 Apr 2026 19:26:57 GMT",
+      "server": "nginx"
+    },
+    "scripts": [],
+    "meta": {},
+    "cookies": [
+      {
+        "name": "AWSELB",
+        "value": "95F71BEB1851E28EB0CC1461768351FDE0992944B0690494FDE817311D308307",
+        "domain": "get.cbord.com"
+      },
+      {
+        "name": "AWSELBCORS",
+        "value": "95F71BEB1851E28EB0CC1461768351FDE0992944B0690494FDE817311D308307",
+        "domain": "get.cbord.com"
+      }
+    ],
+    "dom": {
+      "title": "404 Not Found",
+      "bodyClasses": "",
+      "bodyId": "",
+      "headContent": "\n<title>404 Not Found</title>\n",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": false,
+        "jqueryPresent": false,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {}
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://get.cbord.com/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://get.cbord.com/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/wp-content/": {
+      "url": "https://get.cbord.com/wp-content/",
+      "status": 302,
+      "redirect_to": "full/index.php"
+    },
+    "/user/login": {
+      "url": "https://get.cbord.com/user/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/core/install.php": {
+      "url": "https://get.cbord.com/core/install.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/cas/login": {
+      "url": "https://get.cbord.com/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://get.cbord.com/Shibboleth.sso/Metadata",
+      "status": 200,
+      "body_excerpt": "<!--\nThis is example metadata only. Do *NOT* supply it as is without review,\nand do *NOT* provide it in real time to your partners.\n -->\n<md:EntityDescriptor xmlns:md=\"urn:oasis:names:tc:SAML:2.0:metadata\" ID=\"_e66b37f5ac5f7371c720dcaf29821be64a3bc8ed\" entityID=\"https://get.cbord.com/Shibboleth.sso\">\n\n  <md:Extensions xmlns:alg=\"urn:oasis:names:tc:SAML:metadata:algsupport\">\n    <alg:DigestMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#sha512\"/>\n    <alg:DigestMethod Algorithm=\"http://www.w3.org/2001/04/"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Nginx",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=nginx"
+      ]
+    },
+    {
+      "name": "Amazon ELB",
+      "confidence": 70,
+      "evidence": [
+        "Cookie: AWSELB"
+      ]
+    }
+  ],
+  "target_tech_matched": false
+}

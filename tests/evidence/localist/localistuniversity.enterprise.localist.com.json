@@ -1,0 +1,378 @@
+{
+  "technology": "Localist",
+  "url": "https://localistuniversity.enterprise.localist.com/",
+  "final_url": "https://localistuniversity.enterprise.localist.com/",
+  "captured_at": "2026-04-21T19:36:09.935Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/localist/localistuniversity.enterprise.localist.com.html",
+  "evidence": {
+    "headers": {
+      "accept-ranges": "bytes",
+      "age": "0",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "content-encoding": "gzip",
+      "content-length": "9335",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 21 Apr 2026 19:36:04 GMT",
+      "etag": "W/\"9f572f4eb53ade4a1ad47762a608aacc-gzip\"",
+      "feature-policy": "geolocation *; microphone 'none'; camera 'none'",
+      "permissions-policy": "geolocation=(*), microphone=(), camera=()",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-download-options": "noopen",
+      "x-envoy-upstream-service-time": "28",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-ratelimit-limit": "0",
+      "x-ratelimit-remaining": "0",
+      "x-request-id": "80003caf7efb19603658be2b4e3eb55a",
+      "x-runtime": "0.020230",
+      "x-slzr-platform": "LocalistUniversity",
+      "x-varnish": "3079242547",
+      "x-varnish-cache": "MISS",
+      "x-xss-protection": "1; mode=block"
+    },
+    "scripts": [
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-7F0QY2CKEC&cx=c&gtm=4e64h1h1",
+        "version": null
+      },
+      {
+        "src": "https://connect.facebook.net/en_US/all.js?hash=99ad5257dd49e2b929e316c3a5484b9d",
+        "version": null
+      },
+      {
+        "src": "https://localist-images.azureedge.net/packs/js/runtime-b41ed59d80a3b61eac73.js",
+        "version": null
+      },
+      {
+        "src": "https://localist-images.azureedge.net/packs/js/728-13bdbd9fe27546e3921a.js",
+        "version": null
+      },
+      {
+        "src": "https://localist-images.azureedge.net/packs/js/571-9acb239bfc7d01b1fc1e.js",
+        "version": null
+      },
+      {
+        "src": "https://localist-images.azureedge.net/packs/js/818-3393e791e49679e7b942.js",
+        "version": null
+      },
+      {
+        "src": "https://localist-images.azureedge.net/packs/js/754-7daeac3e328fa2d8de56.js",
+        "version": null
+      },
+      {
+        "src": "https://localist-images.azureedge.net/packs/js/application-ec37cc59e310f51198f5.js",
+        "version": null
+      },
+      {
+        "src": "https://localist-images.azureedge.net/packs/js/115-129a45954921700a48c6.js",
+        "version": null
+      },
+      {
+        "src": "https://localist-images.azureedge.net/packs/js/theme-emphasis-dbb3f00161cd706701a3.js",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js",
+        "version": null
+      },
+      {
+        "src": "https://localist-customer.s3.amazonaws.com/exposedMiniCal.js",
+        "version": null
+      },
+      {
+        "src": "https://connect.facebook.net/en_US/all.js",
+        "version": null
+      },
+      {
+        "src": "https://d3e1o4bcbhmj8g.cloudfront.net/eventbus.js",
+        "version": null
+      }
+    ],
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "Localist University events updated every day. Powered by Localist Event Calendar Software",
+      "rating": "General",
+      "og:image": "https://localist-images.azureedge.net/platform/logo/scaled/31512374653223/5ac825d33b810624740b8c14c891a48e0e9bc018.png",
+      "og:site_name": "Localist University",
+      "og:title": "Events Calendar",
+      "og:type": "website",
+      "application-name": "Localist Event Calendar Software",
+      "mobile-web-app-capable": "yes",
+      "csrf-param": "authenticity_token",
+      "csrf-token": "TDKwlCtZK5wnLsVBJs-YZfe94aBa2byvxjJdkILY4egIjfQjNo_xwEYsl1Fl0Zn_7QzZjUuvsumZTss4umdPSw"
+    },
+    "cookies": [],
+    "dom": {
+      "title": "Events Calendar - Localist University",
+      "bodyClasses": "homepage",
+      "bodyId": "",
+      "headContent": "\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n  <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge; chrome=1\"> <!-- Render Chrome if available or using latest version of Internet Explorer (Recommended). -->\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n  <title>Events Calendar - Localist University</title>\n\n  <!-- Base URL to use for all relative URLs contained within the document. Uncomment if necessary\n  <base href=\"https://example.com/\">\n  -->\n\n  \n    <meta name=\"description\" content=\"Localist University events updated every day. Powered by Localist Event Calendar Software\">\n  \n\n  <meta name=\"rating\" content=\"General\">\n\n  <!-- Fallback og tags (used when individual pages don't have them) -->\n  \n    <meta property=\"og:image\" content=\"https://localist-images.azureedge.net/platform/logo/scaled/31512374653223/5ac825d33b810624740b8c14c891a48e0e9bc018.png\">\n  \n  <meta property=\"og:site_name\" content=\"Localist University\">\n  <meta property=\"og:title\" content=\"Events Calendar\">\n  <meta property=\"og:description\" content=\"\">\n  <meta property=\"og:type\" content=\"website\">\n\n  <meta name=\"application-name\" content=\"Localist Event Calendar Software\">\n  <meta name=\"mobile-web-app-capable\" content=\"yes\">\n\n\n  <!-- begin include javascripts -->\n    <script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-7F0QY2CKEC&amp;cx=c&amp;gtm=4e64h1h1\"></script><script src=\"https://connect.facebook.net/en_US/all.js?hash=99ad5257dd49e2b929e316c3a5484b9d\" async=\"\" crossorigin=\"anonymous\"></script><script>\n//<![CDATA[\nvar LOCALIST_SETTINGS = {\"theme_base\":\"emphasis\",\"photo_aspect_ratio\":1.5419354838709678,\"country\":\"US\",\"locale\":\"en-US\",\"user_id\":null,\"platform_id\":31512374653223,\"default_calendar_view\":\"year\",\"show_cookie_consent_prompt\":true,\"date_time_formats\":{\"detailed\":\"%A, %B %-d, %Y%[start| %-I:%M%P]%[end_date| - %A, %B %-d, %Y|%[end| to]]%[end| %-I:%M%P]%[start| %Z]\",\"compact\":\"%a, %b %-d%[not_current_year|, %Y]%[start| %-I%[nonzero_minutes|:%M]%P]%[end_date| - %a, %b %-d%[not_current_year|, %Y]|%[end| to]]%[end| %-I%[nonzero_minutes|:%M]%P]%[start| %Z]\",\"compact_time\":\"%[start|%-I%[nonzero_minutes|:%M]%P %Z]\",\"admin_short_date_time\":\"%-m/%-d/%Y%[start| %-I:%M%P]%[end_date| - %-m/%-d/%Y]%[end| %-I:%M%P]%[start| %Z]\"},\"time_zone\":{\"identifier\":\"America/New_York\"},\"interest_button\":{\"going_aria_label\":\"I'm Interested in %{event_name}\",\"going_label\":\"I'm Interested\",\"going_past_aria_label\":\"I'm Interested in %{event_name}\",\"going_past_label\":\"I'm Interested\",\"going_class\":\"imgoing\",\"going_icon\":\"fa-smile-wink\",\"going_show_icon\":true,\"cancel_plans_label\":\"Not Interested\",\"cancel_plans_aria_label\":\"Not Interested in %{event_name}\",\"cancel_plans_class\":\"cancelplans\",\"cancel_plans_icon\":\"fa-smile-wink\",\"cancel_plans_show_icon\":true,\"change_dates_label\":\"Change Dates\",\"change_dates_aria_label\":\"Change Dates on %{event_name}\",\"change_dates_class\":\"\",\"change_dates_icon\":\"fa-calendar-alt\",\"change_dates_show_icon\":true}};\n//]]>\n</script><script src=\"https://localist-images.azureedge.net/packs/js/runtime-b41ed59d80a3b61eac73.js\"></script>\n<script src=\"https://localist-images.azureedge.net/packs/js/728-13bdbd9fe27546e3921a.js\"></script>\n<script src=\"https://localist-images.azureedge.net/packs/js/571-9acb239bfc7d01b1fc1e.js\"></script>\n<script src=\"https://localist-images.azureedge.net/packs/js/818-3393e791e49679e7b942.js\"></script>\n<script src=\"https://localist-images.azureedge.net/packs/js/754-7daeac3e328fa2d8de56.js\"></script>\n<script src=\"https://localist-images.azureedge.net/packs/js/application-ec37cc59e310f51198f5.js\"></script>\n<script src=\"https://localist-images.azureedge.net/packs/js/115-129a45954921700a48c6.js\"></script>\n<script src=\"https://localist-images.azureedge.net/packs/js/theme-emphasis-dbb3f00161cd706701a3.js\"></script>\n  <!-- end include javascripts -->\n\n  \n    <!-- begin include stylesheets -->\n    <link rel=\"stylesheet\" href=\"https://localistuniversity.enterprise.localist.com/platform/stylesheet/31512374653223/32139399979698/1776717577.css\" media=\"screen\">\n    <!-- end include stylesheets -->\n  \n\n  \n  \n\n  \n    <style type=\"text/css\">\n      body > div.em-header_page.channel-cover-photo {padding: 150px 0; }\n    </style>\n  \n\n  \n\n\n  \n  <meta name=\"csrf-param\" content=\"authenticity_token\">\n<meta name=\"csrf-token\" content=\"TDKwlCtZK5wnLsVBJs-YZfe94aBa2byvxjJdkILY4egIjfQjNo_xwEYsl1Fl0Zn_7QzZjUuvsumZTss4umdPSw\">\n        <script async=\"\" src=\"https://www.googletagmanager.com/gtag/js\"></script>\n      <script>\n        window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        Slzr.ConsentManager.configureGA4(gtag);\n        gtag('js', new Date());\n        gtag('set', 'ads_data_redaction', true);\n        gtag('config','G-7F0QY2CKEC');\n      </script>\n\n\n<script src=\"https://localist-customer.s3.amazonaws.com/exposedMiniCal.js\"></script>\n\n<style type=\"text/css\" data-fbcssmodules=\"css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget\">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}\n\n.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}\n\n.fb_dialog{background:#525252b3;position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:700;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v4/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v4/ya/r/3rhSv5V8j3o.gif) #fff no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:#0006;inset:0;min-height:100%;position:absolute;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba),to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:#fff 0 1px 1px -1px inset;color:#fff;font:700 14px Helvetica,sans-serif;text-overflow:ellipsis;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2),to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:700 12px Helvetica,sans-serif;margin:2px -12px;padding:2px 6px 3px;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:700;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v4/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4A4A4A;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4A4A4A;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v4/y2/r/onuUJj0tCqE.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}\n\n.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}\n</style>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": false,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "3.7.1"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://localistuniversity.enterprise.localist.com/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://localistuniversity.enterprise.localist.com/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<html lang=\"en\" class=\"em-localist-error-page\"><head>\n    <title>404 - Localist Event Calendar Software</title>\n    <link href=\"/errorpage.css\" media=\"screen, projector, projection\" rel=\"stylesheet\" type=\"text/css\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css\" media=\"screen, projector, projection\" rel=\"stylesheet\" type=\"text/css\" />\n  </head>\n  <body>\n    <div class=\"main-container\">\n      <div class=\"content\">\n        <span class=\"errorglyph\">\n          <i c"
+    },
+    "/wp-content/": {
+      "url": "https://localistuniversity.enterprise.localist.com/wp-content/",
+      "status": 404,
+      "body_excerpt": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    "/user/login": {
+      "url": "https://localistuniversity.enterprise.localist.com/user/login",
+      "status": 404,
+      "body_excerpt": "<html lang=\"en\" class=\"em-localist-error-page\"><head>\n    <title>404 - Localist Event Calendar Software</title>\n    <link href=\"/errorpage.css\" media=\"screen, projector, projection\" rel=\"stylesheet\" type=\"text/css\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css\" media=\"screen, projector, projection\" rel=\"stylesheet\" type=\"text/css\" />\n  </head>\n  <body>\n    <div class=\"main-container\">\n      <div class=\"content\">\n        <span class=\"errorglyph\">\n          <i c"
+    },
+    "/core/install.php": {
+      "url": "https://localistuniversity.enterprise.localist.com/core/install.php",
+      "status": 404,
+      "body_excerpt": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    "/cas/login": {
+      "url": "https://localistuniversity.enterprise.localist.com/cas/login",
+      "status": 404,
+      "body_excerpt": "<html lang=\"en\" class=\"em-localist-error-page\"><head>\n    <title>404 - Localist Event Calendar Software</title>\n    <link href=\"/errorpage.css\" media=\"screen, projector, projection\" rel=\"stylesheet\" type=\"text/css\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css\" media=\"screen, projector, projection\" rel=\"stylesheet\" type=\"text/css\" />\n  </head>\n  <body>\n    <div class=\"main-container\">\n      <div class=\"content\">\n        <span class=\"errorglyph\">\n          <i c"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://localistuniversity.enterprise.localist.com/Shibboleth.sso/Metadata",
+      "status": 200,
+      "body_excerpt": "<!--\nThis is example metadata only. Do *NOT* supply it as is without review,\nand do *NOT* provide it in real time to your partners.\n -->\n<md:EntityDescriptor xmlns:md=\"urn:oasis:names:tc:SAML:2.0:metadata\" ID=\"_43b755ad565b70f1e4dd7ad6500e424636047a94\" entityID=\"https://NOT-CONFIGURED-CONTACT-SUPPORT-AT-LOCALIST-DOT-COM-00\">\n\n  <md:Extensions xmlns:alg=\"urn:oasis:names:tc:SAML:metadata:algsupport\">\n    <alg:DigestMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#sha512\"/>\n    <alg:DigestMethod Algorithm=\"h"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Varnish",
+      "confidence": 100,
+      "evidence": [
+        "Header: X-Varnish=",
+        "Header: X-Varnish-Cache="
+      ]
+    },
+    {
+      "name": "Localist",
+      "confidence": 100,
+      "evidence": [
+        "HTML: localist",
+        "HTML: event.*calendar",
+        "HTML: localist\\.com",
+        "JS: Localist (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 100,
+      "evidence": [
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "HTML: gtag\\('js'",
+        "JS: gtag (HTML)",
+        "JS: dataLayer (HTML)"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 80,
+      "evidence": [
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Envoy",
+      "confidence": 80,
+      "evidence": [
+        "Header: x-envoy-upstream-service-time="
+      ]
+    },
+    {
+      "name": "Ghost",
+      "confidence": 70,
+      "evidence": [
+        "HTML: ghost",
+        "JS: ghost (HTML)"
+      ]
+    },
+    {
+      "name": "Concept3D",
+      "confidence": 70,
+      "evidence": [
+        "HTML: concept3d",
+        "JS: Concept3D (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "confidence": 40,
+      "evidence": [
+        "HTML: gtag\\("
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 40,
+      "evidence": [
+        "HTML: googletagmanager\\.com"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: \\$\\("
+      ]
+    },
+    {
+      "name": "PHP",
+      "confidence": 40,
+      "evidence": [
+        "HTML: php"
+      ]
+    },
+    {
+      "name": "Academic Works",
+      "confidence": 40,
+      "evidence": [
+        "HTML: academic.*works"
+      ]
+    },
+    {
+      "name": "Econda",
+      "confidence": 30,
+      "evidence": [
+        "JS: econda (HTML)"
+      ]
+    },
+    {
+      "name": "List.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: List (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "SharpSpring Ads",
+      "confidence": 30,
+      "evidence": [
+        "JS: _pa (HTML)"
+      ]
+    },
+    {
+      "name": "Spin.js",
+      "confidence": 30,
+      "evidence": [
+        "JS: Spinner (HTML)"
+      ]
+    },
+    {
+      "name": "Swiftype",
+      "confidence": 30,
+      "evidence": [
+        "JS: _st (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 30,
+      "evidence": [
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}

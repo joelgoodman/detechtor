@@ -1,0 +1,376 @@
+{
+  "technology": "Populi",
+  "url": "https://cesl.arizona.edu/student-services/populi-login",
+  "final_url": "https://cesl.arizona.edu/student-services/populi-login",
+  "captured_at": "2026-04-21T19:34:22.470Z",
+  "response_status": 200,
+  "html_file": "tests/evidence/populi/cesl.arizona.edu-student-services-populi-login.html",
+  "evidence": {
+    "headers": {
+      "accept-ranges": "bytes",
+      "age": "487",
+      "cache-control": "max-age=21600, public",
+      "content-encoding": "gzip",
+      "content-language": "en",
+      "content-length": "11340",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 21 Apr 2026 19:34:19 GMT",
+      "etag": "W/\"1776799572\"",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Tue, 21 Apr 2026 19:26:12 GMT",
+      "server": "nginx",
+      "strict-transport-security": "max-age=300",
+      "vary": "Accept-Encoding, Cookie, Cookie, Cookie",
+      "via": "1.1 varnish, 1.1 varnish",
+      "x-cache": "MISS, HIT",
+      "x-cache-hits": "0, 0",
+      "x-content-type-options": "nosniff",
+      "x-drupal-cache": "MISS",
+      "x-drupal-dynamic-cache": "MISS",
+      "x-frame-options": "SAMEORIGIN",
+      "x-generator": "Arizona Quickstart (https://quickstart.arizona.edu)",
+      "x-pantheon-styx-hostname": "styx-us-a-585b48f5c5-9bms8",
+      "x-served-by": "cache-chi-klot8100154-CHI, cache-pdk-kfty8610025-PDK",
+      "x-styx-req-id": "f53e436b-3db7-11f1-b236-eaf67af81354",
+      "x-timer": "S1776800060.892750,VS0,VE9"
+    },
+    "scripts": [
+      {
+        "src": "https://cesl.arizona.edu/sites/default/files/js/js_bSdHIvgsopHrXIP6YXcGdKJSrJiu6ON6ALQiq1oybaA.js?scope=header&delta=0&language=en&theme=az_barrio&include=eJxdjIEOgjAMRH-IwieR2xxzUndkFIJ8vYNoIiZN2-u7K_beoZTEDrs4-FGMtaYGV3BswmEQj7xiloz1aqmHKuTONZQf4hYzZskUzzxo8nZAzxKO0JMuaTifOdJmK5i-yah0UJntpSnHJmxW59jdyjJB249sIhk19IbYxdr-dYsHtjfQcldM",
+        "version": null
+      },
+      {
+        "src": "https://cesl.arizona.edu/modules/contrib/google_tag/js/gtag.js?tduwk8",
+        "version": null
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-GWJSVN9JK3",
+        "version": null
+      },
+      {
+        "src": "https://cesl.arizona.edu/core/assets/vendor/jquery/jquery.min.js?v=4.0.0",
+        "version": null
+      },
+      {
+        "src": "https://cesl.arizona.edu/sites/default/files/js/js_DbC_jaf3soU7hkafkMHBz8dAQcKVXCUxiajJ0tzDvCQ.js?scope=footer&delta=1&language=en&theme=az_barrio&include=eJxdjIEOgjAMRH-IwieR2xxzUndkFIJ8vYNoIiZN2-u7K_beoZTEDrs4-FGMtaYGV3BswmEQj7xiloz1aqmHKuTONZQf4hYzZskUzzxo8nZAzxKO0JMuaTifOdJmK5i-yah0UJntpSnHJmxW59jdyjJB249sIhk19IbYxdr-dYsHtjfQcldM",
+        "version": null
+      },
+      {
+        "src": "https://cdn.digital.arizona.edu/lib/arizona-bootstrap/5.1.2/js/arizona-bootstrap.bundle.min.js",
+        "version": null
+      },
+      {
+        "src": "https://cesl.arizona.edu/sites/default/files/js/js_nrPZevxoWgFCfLaqTiOgLCuN5MeI7uYOhvbsinW-0QU.js?scope=footer&delta=3&language=en&theme=az_barrio&include=eJxdjIEOgjAMRH-IwieR2xxzUndkFIJ8vYNoIiZN2-u7K_beoZTEDrs4-FGMtaYGV3BswmEQj7xiloz1aqmHKuTONZQf4hYzZskUzzxo8nZAzxKO0JMuaTifOdJmK5i-yah0UJntpSnHJmxW59jdyjJB249sIhk19IbYxdr-dYsHtjfQcldM",
+        "version": null
+      }
+    ],
+    "meta": {
+      "og:site_name": "CESL | Center for English as a Second Language",
+      "og:url": "https://cesl.arizona.edu/student-services/populi-login",
+      "og:title": "Populi Login",
+      "twitter:card": "summary",
+      "generator": "Arizona Quickstart (https://quickstart.arizona.edu)",
+      "mobileoptimized": "width",
+      "handheldfriendly": "true",
+      "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no"
+    },
+    "cookies": [],
+    "dom": {
+      "title": "Populi Login | CESL | Center for English as a Second Language",
+      "bodyClasses": "layout-one-sidebar layout-sidebar-first page-node-44 path-node node--type-az-flexible-page",
+      "bodyId": "",
+      "headContent": "\n    <meta charset=\"utf-8\">\n<link rel=\"canonical\" href=\"https://cesl.arizona.edu/student-services/populi-login\">\n<link rel=\"shortlink\" href=\"https://cesl.arizona.edu/\">\n<meta property=\"og:site_name\" content=\"CESL | Center for English as a Second Language\">\n<meta property=\"og:url\" content=\"https://cesl.arizona.edu/student-services/populi-login\">\n<meta property=\"og:title\" content=\"Populi Login\">\n<meta name=\"twitter:card\" content=\"summary\">\n<meta name=\"Generator\" content=\"Arizona Quickstart (https://quickstart.arizona.edu)\">\n<meta name=\"MobileOptimized\" content=\"width\">\n<meta name=\"HandheldFriendly\" content=\"true\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n<script type=\"application/ld+json\">{\n    \"@context\": \"https://schema.org\",\n    \"@graph\": [\n        {\n            \"@type\": \"CollegeOrUniversity\",\n            \"url\": \"https://cesl.arizona.edu/\",\n            \"name\": \"University of Arizona CESL | Center for English as a Second Language\",\n            \"parentOrganization\": {\n                \"@type\": \"EducationalOrganization\",\n                \"@id\": \"https://www.arizona.edu/\",\n                \"name\": \"University of Arizona\",\n                \"url\": \"https://www.arizona.edu/\",\n                \"sameAs\": [\n                    \"https://www.facebook.com/uarizona\",\n                    \"https://x.com/uarizona\",\n                    \"https://www.instagram.com/uarizona\",\n                    \"https://linkedin.com/edu/university-of-arizona-17783\",\n                    \"https://www.youtube.com/universityofarizona\",\n                    \"https://en.wikipedia.org/wiki/University_of_Arizona\"\n                ],\n                \"address\": {\n                    \"@type\": \"PostalAddress\",\n                    \"streetAddress\": \"1401 E University Blvd\",\n                    \"addressLocality\": \"Tucson\",\n                    \"addressRegion\": \"AZ\",\n                    \"postalCode\": \"85721\",\n                    \"addressCountry\": \"US\"\n                }\n            }\n        }\n    ]\n}</script>\n<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n<link rel=\"icon\" href=\"/profiles/custom/az_quickstart/themes/custom/az_barrio/favicon.ico\" type=\"image/vnd.microsoft.icon\">\n\n    <title>Populi Login | CESL | Center for English as a Second Language</title>\n    <link rel=\"stylesheet\" media=\"all\" href=\"/sites/default/files/css/css_wl_HKAFHzAXjyvbMMzeH-QIlqxko4ErvEr3obPd2xFg.css?delta=0&amp;language=en&amp;theme=az_barrio&amp;include=eJxdj2GygyAMhC8EciQmYFRqIAyJHevpH7Z1xr5_2c1O8i2IoPpUHhiVm4siQ_UTF_WSDvSBWdTA4QO0ltjBYT-T5WmyEcoTxBZ4npHIDc9A5pAIL3ci3FMg9BXmc_1reF0w45mr0GBuUBdxP2roSnFX01FUtHsXy0wcgKzoi1KZTVxxTL1DLzNi0UAcV3ebzZsvcq5cuifD_4PWZizbJza2rQIN8IDd9Of9wXp5X2luwN_NDXordQuUZMHRyEsUswsg-Ae_5I98\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/sites/default/files/css/css_gy0VQLByGtRZEQU8XEfiv7eS6hKZ1882v_CFceB2hLY.css?delta=1&amp;language=en&amp;theme=az_barrio&amp;include=eJxdj2GygyAMhC8EciQmYFRqIAyJHevpH7Z1xr5_2c1O8i2IoPpUHhiVm4siQ_UTF_WSDvSBWdTA4QO0ltjBYT-T5WmyEcoTxBZ4npHIDc9A5pAIL3ci3FMg9BXmc_1reF0w45mr0GBuUBdxP2roSnFX01FUtHsXy0wcgKzoi1KZTVxxTL1DLzNi0UAcV3ebzZsvcq5cuifD_4PWZizbJza2rQIN8IDd9Of9wXp5X2luwN_NDXordQuUZMHRyEsUswsg-Ae_5I98\">\n<link rel=\"stylesheet\" media=\"all\" href=\"https://use.typekit.net/emv3zbo.css\">\n<link rel=\"stylesheet\" media=\"all\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0#.css\">\n<link rel=\"stylesheet\" media=\"all\" href=\"https://cdn.digital.arizona.edu/lib/az-icons/1.0.4/az-icons-styles.min.css\">\n<link rel=\"stylesheet\" media=\"all\" href=\"https://cdn.digital.arizona.edu/lib/arizona-bootstrap/5.1.2/css/arizona-bootstrap.min.css\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/sites/default/files/css/css_8XTCx047JUnQ0_JYVlmVBoe680oJH2zdgLX9PXG47Nk.css?delta=6&amp;language=en&amp;theme=az_barrio&amp;include=eJxdj2GygyAMhC8EciQmYFRqIAyJHevpH7Z1xr5_2c1O8i2IoPpUHhiVm4siQ_UTF_WSDvSBWdTA4QO0ltjBYT-T5WmyEcoTxBZ4npHIDc9A5pAIL3ci3FMg9BXmc_1reF0w45mr0GBuUBdxP2roSnFX01FUtHsXy0wcgKzoi1KZTVxxTL1DLzNi0UAcV3ebzZsvcq5cuifD_4PWZizbJza2rQIN8IDd9Of9wXp5X2luwN_NDXordQuUZMHRyEsUswsg-Ae_5I98\">\n<link rel=\"stylesheet\" media=\"print\" href=\"/sites/default/files/css/css_HYwFcCOn21bq06Wt21xXgTgGXYEeD2CFwK2iqPSiF3M.css?delta=7&amp;language=en&amp;theme=az_barrio&amp;include=eJxdj2GygyAMhC8EciQmYFRqIAyJHevpH7Z1xr5_2c1O8i2IoPpUHhiVm4siQ_UTF_WSDvSBWdTA4QO0ltjBYT-T5WmyEcoTxBZ4npHIDc9A5pAIL3ci3FMg9BXmc_1reF0w45mr0GBuUBdxP2roSnFX01FUtHsXy0wcgKzoi1KZTVxxTL1DLzNi0UAcV3ebzZsvcq5cuifD_4PWZizbJza2rQIN8IDd9Of9wXp5X2luwN_NDXordQuUZMHRyEsUswsg-Ae_5I98\">\n<link rel=\"stylesheet\" media=\"all\" href=\"/sites/default/files/css/css_3zJjKu162I_oaFMgRt0iEv46smJt7NumsbJG6BHnmro.css?delta=8&amp;language=en&amp;theme=az_barrio&amp;include=eJxdj2GygyAMhC8EciQmYFRqIAyJHevpH7Z1xr5_2c1O8i2IoPpUHhiVm4siQ_UTF_WSDvSBWdTA4QO0ltjBYT-T5WmyEcoTxBZ4npHIDc9A5pAIL3ci3FMg9BXmc_1reF0w45mr0GBuUBdxP2roSnFX01FUtHsXy0wcgKzoi1KZTVxxTL1DLzNi0UAcV3ebzZsvcq5cuifD_4PWZizbJza2rQIN8IDd9Of9wXp5X2luwN_NDXordQuUZMHRyEsUswsg-Ae_5I98\">\n\n    <script type=\"application/json\" data-drupal-selector=\"drupal-settings-json\">{\"path\":{\"baseUrl\":\"\\/\",\"pathPrefix\":\"\",\"currentPath\":\"node\\/44\",\"currentPathIsAdmin\":false,\"isFront\":false,\"currentLanguage\":\"en\"},\"pluralDelimiter\":\"\\u0003\",\"suppressDeprecationErrors\":true,\"gtag\":{\"tagId\":\"G-GWJSVN9JK3\",\"consentMode\":false,\"otherIds\":[],\"events\":[],\"additionalConfigInfo\":[]},\"ajaxPageState\":{\"libraries\":\"eJxlkIGugyAMRX8I5JNIwYpMpITWxfn1r75siW4JIdxzC_QWmFF8rg-MQt1F5qH5iap4zgf6QMRi4PABes_k4LAB4mKFdLVv4zxZmiYboT6BbYXnvUSBCjvTE_vpROp48pVCLvipnwruORT0DdJp34GXGVc86xp0SB3azO6mBlWCuxjtXliUfVpIhQIUy_IquaZfX-nCv7jSiCYuOGadkQ5rxCqhUFzc5Wz-w0RaG1VlPHw_Y-2KdTPa2PmNG_vWoAxvaRJR0oQCySXdvvUAD9jNJfH7-iX1VtsWSuYZR8MvFlxdAMY_Ekq8NQ\",\"theme\":\"az_barrio\",\"theme_token\":null},\"ajaxTrustedUrl\":{\"\\/search\\/node\":true},\"data\":{\"extlink\":{\"extTarget\":true,\"extTargetAppendNewWindowDisplay\":true,\"extTargetAppendNewWindowLabel\":\"(opens in a new window)\",\"extTargetNoOverride\":true,\"extNofollow\":false,\"extTitleNoOverride\":false,\"extNoreferrer\":false,\"extFollowNoOverride\":false,\"extClass\":\"0\",\"extLabel\":\"(link is external)\",\"extImgClass\":false,\"extSubdomains\":false,\"extExclude\":\"^(?!(https?:\\\\\\/\\\\\\/)(arizona.box.com|docs.google.com|dropbox.com|www.dropbox.com|emailarizona-my.sharepoint.com|events.trellis.arizona.edu)).*\",\"extInclude\":\"\\/sites\\/.+\\/files\\/.+\\\\.pdf\",\"extCssExclude\":\"\",\"extCssInclude\":\"\",\"extCssExplicit\":\"\",\"extAlert\":false,\"extAlertText\":\"This link will take you to an external web site. We are not responsible for their content.\",\"extHideIcons\":false,\"mailtoClass\":\"0\",\"telClass\":\"0\",\"mailtoLabel\":\"(link sends email)\",\"telLabel\":\"\",\"extUseFontAwesome\":false,\"extIconPlacement\":\"append\",\"extPreventOrphan\":false,\"extFaLinkClasses\":\"fa fa-external-link\",\"extFaMailtoClasses\":\"fa fa-envelope-o\",\"extAdditionalLinkClasses\":\"\",\"extAdditionalMailtoClasses\":\"\",\"extAdditionalTelClasses\":\"\",\"extFaTelClasses\":\"fa fa-phone\",\"allowedDomains\":[],\"extExcludeNoreferrer\":\"\"}},\"user\":{\"uid\":0,\"permissionsHash\":\"111e9c04eb46e7337804e78c1d329ecd1aaf9f181e6bcafc353eb054b257c015\"}}</script>\n<script src=\"/sites/default/files/js/js_bSdHIvgsopHrXIP6YXcGdKJSrJiu6ON6ALQiq1oybaA.js?scope=header&amp;delta=0&amp;language=en&amp;theme=az_barrio&amp;include=eJxdjIEOgjAMRH-IwieR2xxzUndkFIJ8vYNoIiZN2-u7K_beoZTEDrs4-FGMtaYGV3BswmEQj7xiloz1aqmHKuTONZQf4hYzZskUzzxo8nZAzxKO0JMuaTifOdJmK5i-yah0UJntpSnHJmxW59jdyjJB249sIhk19IbYxdr-dYsHtjfQcldM\"></script>\n<script src=\"/modules/contrib/google_tag/js/gtag.js?tduwk8\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-GWJSVN9JK3\" type=\"text/javascript\"></script>\n\n  <style>\n    .js-az-spinner-position {\n      position: fixed;\n      z-index: 1261;\n      top: 48.5%;\n      left: 49%;\n    }\n  </style>",
+      "hasElements": {
+        "drupalSettings": false,
+        "wpContent": false,
+        "slateContainer": true,
+        "joomlaSystem": false,
+        "bootstrapClasses": true,
+        "jqueryPresent": true,
+        "reactRoot": false,
+        "vueApp": false
+      },
+      "jsObjects": {
+        "Banner": false,
+        "BWCK": false,
+        "Colleague": false,
+        "DatatelUI": false,
+        "PeopleSoft": false,
+        "PS": false,
+        "Jenzabar": false,
+        "JICS": false,
+        "PowerCampus": false,
+        "Blackboard": false,
+        "bbNG": false,
+        "page.bbNG": false,
+        "D2L": false,
+        "d2l": false,
+        "sakai": false,
+        "Sakai": false,
+        "OmniCMS": false,
+        "omni": false,
+        "TerminalFour": false,
+        "T4": false,
+        "ModernCampus": false,
+        "Shibboleth": false,
+        "CAS": false,
+        "Navigate": false,
+        "EAB": false,
+        "Starfish": false,
+        "kaltura": false,
+        "kWidget": false,
+        "Panopto": false,
+        "ExLibris": false,
+        "Alma": false,
+        "Primo": false,
+        "TouchNet": false,
+        "uPay": false,
+        "Transact": false,
+        "BBTransact": false,
+        "CBORD": false,
+        "TwentyFiveLive": false,
+        "EMS": false,
+        "Localist": false,
+        "webpackChunkcanvas_lms": false,
+        "M.core": false,
+        "Y.Moodle": false
+      }
+    },
+    "api_endpoints": [],
+    "version_info": {
+      "jquery": "4.0.0",
+      "bootstrap": "5.1.2"
+    }
+  },
+  "probe_results": {
+    "/wp-login.php": {
+      "url": "https://cesl.arizona.edu/wp-login.php",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html><html><head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL \"https://cesl.arizona.edu/wp-login.php\" was not found on this server.</p></body></html>"
+    },
+    "/wp-json/wp/v2/": {
+      "url": "https://cesl.arizona.edu/wp-json/wp/v2/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\" class=\"sticky-footer\">\n  <head>\n    <meta charset=\"utf-8\" />\n<link rel=\"canonical\" href=\"https://cesl.arizona.edu/\" />\n<link rel=\"shortlink\" href=\"https://cesl.arizona.edu/\" />\n<meta property=\"og:site_name\" content=\"CESL | Center for English as a Second Language\" />\n<meta property=\"og:url\" content=\"https://cesl.arizona.edu/\" />\n<meta name=\"twitter:card\" content=\"summary\" />\n<meta name=\"Generator\" content=\"Arizona Quickstart (https://q"
+    },
+    "/wp-content/": {
+      "url": "https://cesl.arizona.edu/wp-content/",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\" class=\"sticky-footer\">\n  <head>\n    <meta charset=\"utf-8\" />\n<link rel=\"canonical\" href=\"https://cesl.arizona.edu/\" />\n<link rel=\"shortlink\" href=\"https://cesl.arizona.edu/\" />\n<meta property=\"og:site_name\" content=\"CESL | Center for English as a Second Language\" />\n<meta property=\"og:url\" content=\"https://cesl.arizona.edu/\" />\n<meta name=\"twitter:card\" content=\"summary\" />\n<meta name=\"Generator\" content=\"Arizona Quickstart (https://q"
+    },
+    "/user/login": {
+      "url": "https://cesl.arizona.edu/user/login",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\" class=\"sticky-footer\">\n  <head>\n    <meta charset=\"utf-8\" />\n<link rel=\"canonical\" href=\"https://cesl.arizona.edu/\" />\n<link rel=\"shortlink\" href=\"https://cesl.arizona.edu/\" />\n<meta property=\"og:site_name\" content=\"CESL | Center for English as a Second Language\" />\n<meta property=\"og:url\" content=\"https://cesl.arizona.edu/\" />\n<meta name=\"twitter:card\" content=\"summary\" />\n<meta name=\"Generator\" content=\"Arizona Quickstart (https://q"
+    },
+    "/core/install.php": {
+      "url": "https://cesl.arizona.edu/core/install.php",
+      "status": 200,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\">\n  <head>\n    <meta charset=\"utf-8\" />\n<meta name=\"Generator\" content=\"Drupal 11 (https://www.drupal.org)\" />\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<link rel=\"icon\" href=\"/core/misc/favicon.ico\" type=\"image/vnd.microsoft.icon\" />\n\n    <title>| Arizona Quic"
+    },
+    "/cas/login": {
+      "url": "https://cesl.arizona.edu/cas/login",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\" class=\"sticky-footer\">\n  <head>\n    <meta charset=\"utf-8\" />\n<link rel=\"canonical\" href=\"https://cesl.arizona.edu/\" />\n<link rel=\"shortlink\" href=\"https://cesl.arizona.edu/\" />\n<meta property=\"og:site_name\" content=\"CESL | Center for English as a Second Language\" />\n<meta property=\"og:url\" content=\"https://cesl.arizona.edu/\" />\n<meta name=\"twitter:card\" content=\"summary\" />\n<meta name=\"Generator\" content=\"Arizona Quickstart (https://q"
+    },
+    "/Shibboleth.sso/Metadata": {
+      "url": "https://cesl.arizona.edu/Shibboleth.sso/Metadata",
+      "status": 404,
+      "body_excerpt": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\" class=\"sticky-footer\">\n  <head>\n    <meta charset=\"utf-8\" />\n<link rel=\"canonical\" href=\"https://cesl.arizona.edu/\" />\n<link rel=\"shortlink\" href=\"https://cesl.arizona.edu/\" />\n<meta property=\"og:site_name\" content=\"CESL | Center for English as a Second Language\" />\n<meta property=\"og:url\" content=\"https://cesl.arizona.edu/\" />\n<meta name=\"twitter:card\" content=\"summary\" />\n<meta name=\"Generator\" content=\"Arizona Quickstart (https://q"
+    }
+  },
+  "matched_patterns": [
+    {
+      "name": "Bootstrap",
+      "confidence": 100,
+      "evidence": [
+        "HTML: bootstrap",
+        "HTML: class=\".*btn-",
+        "HTML: class=\".*col-",
+        "HTML: class=\".*row"
+      ]
+    },
+    {
+      "name": "Drupal",
+      "confidence": 100,
+      "evidence": [
+        "HTML: drupal",
+        "HTML: sites/default/files",
+        "Header: X-Drupal-Cache=.*"
+      ]
+    },
+    {
+      "name": "Pantheon",
+      "confidence": 100,
+      "evidence": [
+        "Header: x-pantheon-styx-hostname=",
+        "Header: x-styx-req-id="
+      ]
+    },
+    {
+      "name": "HSTS",
+      "confidence": 80,
+      "evidence": [
+        "Header: Strict-Transport-Security="
+      ]
+    },
+    {
+      "name": "Nginx",
+      "confidence": 80,
+      "evidence": [
+        "Header: server=nginx"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "confidence": 70,
+      "evidence": [
+        "HTML: youtube",
+        "JS: YT (HTML)"
+      ]
+    },
+    {
+      "name": "Populi",
+      "confidence": 70,
+      "evidence": [
+        "HTML: populiweb\\.com",
+        "JS: Populi (HTML)"
+      ]
+    },
+    {
+      "name": "Google Analytics 4",
+      "confidence": 70,
+      "evidence": [
+        "HTML: googletagmanager\\.com\\/gtag\\/js",
+        "JS: gtag (HTML)"
+      ]
+    },
+    {
+      "name": "Adobe Fonts",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "Google Tag Manager",
+      "confidence": 40,
+      "evidence": [
+        "HTML: googletagmanager\\.com"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "confidence": 40,
+      "evidence": [
+        "HTML: jquery"
+      ]
+    },
+    {
+      "name": "LearnDash",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ld.*course"
+      ]
+    },
+    {
+      "name": "Typekit",
+      "confidence": 40,
+      "evidence": [
+        "HTML: <link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+      ]
+    },
+    {
+      "name": "Evisions",
+      "confidence": 40,
+      "evidence": [
+        "HTML: evisions"
+      ]
+    },
+    {
+      "name": "RenWeb",
+      "confidence": 40,
+      "evidence": [
+        "HTML: ren.*web"
+      ]
+    },
+    {
+      "name": "StudIS",
+      "confidence": 40,
+      "evidence": [
+        "HTML: stud.*is"
+      ]
+    },
+    {
+      "name": "Adobe Experience Manager",
+      "confidence": 30,
+      "evidence": [
+        "JS: CQ (HTML)"
+      ]
+    },
+    {
+      "name": "core-js",
+      "confidence": 30,
+      "evidence": [
+        "JS: core (HTML)"
+      ]
+    },
+    {
+      "name": "ExtJS",
+      "confidence": 30,
+      "evidence": [
+        "JS: Ext (HTML)"
+      ]
+    },
+    {
+      "name": "Loglib",
+      "confidence": 30,
+      "evidence": [
+        "JS: lli (HTML)"
+      ]
+    },
+    {
+      "name": "Resova",
+      "confidence": 30,
+      "evidence": [
+        "JS: baseUrl (HTML)"
+      ]
+    },
+    {
+      "name": "Vercel Analytics",
+      "confidence": 30,
+      "evidence": [
+        "JS: va (HTML)"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "confidence": 30,
+      "evidence": [
+        "JS: wp (HTML)"
+      ]
+    },
+    {
+      "name": "PeopleSoft Campus Solutions",
+      "confidence": 30,
+      "evidence": [
+        "JS: PS (HTML)"
+      ]
+    },
+    {
+      "name": "Canva for Education",
+      "confidence": 30,
+      "evidence": [
+        "JS: Canva (HTML)"
+      ]
+    },
+    {
+      "name": "Google Custom Search",
+      "confidence": 30,
+      "evidence": [
+        "JS: google (HTML)"
+      ]
+    }
+  ],
+  "target_tech_matched": true
+}
