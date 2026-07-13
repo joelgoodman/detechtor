@@ -102,13 +102,12 @@
     ],
     "description": "Campus Management Suite (Australia/New Zealand)",
     "html": [
-      "campus.*management.*suite",
-      "cms.*australia",
+      "campus[-_ ]?management[-_ ]?suite",
+      "cms[-_ ]?australia",
       "callista.*software"
     ],
     "scripts": [
-      "callista",
-      "cms.*au"
+      "callista"
     ],
     "js": {
       "CallistaCMS": "",
@@ -386,7 +385,7 @@
       "getfast"
     ],
     "scripts": [
-      "fast.*aid"
+      "fast[-_ ]?aid"
     ],
     "js": {
       "FAST": ""
@@ -806,9 +805,7 @@
     ],
     "description": "RenWeb school management system by FACTS",
     "html": [
-      "renweb",
-      "ren.*web",
-      "facts.*renweb"
+      "renweb"
     ],
     "scripts": [
       "renweb",
@@ -959,9 +956,7 @@
     ],
     "description": "StudIS European student information system",
     "html": [
-      "studis",
-      "stud.*is",
-      "european.*sis"
+      "studis"
     ],
     "scripts": [
       "studis"

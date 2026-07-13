@@ -113,3 +113,6 @@ patterns/*.backup
 # package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
+
+# UNI-142 lint backups (git history is the real backup)
+patterns/_archive/*.bak
