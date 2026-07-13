@@ -1931,25 +1931,15 @@
     ],
     "description": "Technolutions Slate admissions CRM platform. Detectable via hosted application portals and via the Slate ping tracking service (mx.technolutions.net) embedded on institutional marketing sites.",
     "html": [
-      "slate\\.technolutions\\.com",
-      "class=\"slate-",
-      "id=\"slate-",
-      "data-slate-",
       "technolutions",
-      "slate.*technolutions",
-      "technolutions.*slate",
-      "window[.ping_",
-      "mx.technolutions.net"
+      "mx\\.technolutions\\.net",
+      "window\\.ping_"
     ],
     "scripts": [
-      "slate\\.js",
       "technolutions",
-      "slate",
-      "mx.technolutions.net",
-      "/ping?id="
+      "mx\\.technolutions\\.net"
     ],
     "js": {
-      "Slate": "",
       "Technolutions": ""
     },
     "meta": {
@@ -1963,7 +1953,8 @@
     "website": "https://technolutions.com/slate",
     "_legacy_names": [
       "Technolutions Slate"
-    ]
+    ],
+    "_validation": "Data-mined vs BuiltWith (UNI-141, 2026-07-13). 'technolutions' (Technolutions = maker of Slate; dedicated brand, ping host mx.technolutions.net) = 71.3% recall; 39/330 apparent 'neg' are BuiltWith misses (Slate far exceeds its 249 BuiltWith labels), NOT FPs. REMOVED broad 'slate' scripts (16.4% FP: collides with Slate.js editor + 'slate' themes), 'slate\\.js' scripts, and 'data-slate-'/'class=\"slate-\"'/'id=\"slate-\"' html + bare 'Slate' js global (all Slate.js editor, not Technolutions Slate). NOTE: cats [52,53]=Chatbot/SIS is mis-categorized; Slate is an admissions CRM (cat 54) — follow-up."
   },
   "Starfish": {
     "cats": [

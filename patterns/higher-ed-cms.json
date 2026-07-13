@@ -92,22 +92,17 @@
       "omni-cms",
       "omnicms",
       "data-omni-",
-      "omnicms\\.omniupdate\\.com",
-      "moderncampus",
-      "omniupdate.*modern",
-      "modern.*campus",
+      "omniupdate",
       "moderncampus\\.com"
     ],
     "scripts": [
       "omnicms",
       "omni\\.js",
       "omniupdate",
-      "moderncampus",
-      "modern.*campus"
+      "moderncampus"
     ],
     "js": {
       "OmniCMS": "",
-      "omni": "",
       "ModernCampus": ""
     },
     "headers": {
@@ -120,7 +115,8 @@
       "OmniCMS",
       "OmniUpdate",
       "OU Campus"
-    ]
+    ],
+    "_validation": "Data-mined vs BuiltWith (UNI-141, 2026-07-13). 'omniupdate' (their own brand asset host a.cms.omniupdate.com DirectEdit link + omniupdate.css + OU XSL namespace) = 86% recall, 0/279 FP. REMOVED 'modern.*campus'/'omniupdate.*modern'/bare 'moderncampus' html + 'modern.*campus' scripts: matched 'modern campuses' PROSE on 32.6% of random non-MC sites (verified in HTML: North East Scotland College 'a number of modern campuses'). Also dropped 'omni' js global (too generic)."
   },
   "SchoolMessenger": {
     "cats": [
