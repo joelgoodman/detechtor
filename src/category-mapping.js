@@ -1,11 +1,21 @@
 // WebAppAnalyzer category ID to name mapping
+//
+// Remap decisions (UNI-156 Phase 1 / Task 1.2) are recorded in docs/category-remap.md — read
+// that file before changing any id below. In short: the un-audited Wappalyzer base dumped a lot
+// of ecommerce/widget/plugin/translation/fundraising tooling into signal-category names (CMS,
+// LMS, CRM, Accessibility); this map corrects those so mapCategory() + isSignalCategory() can be
+// trusted as a gate. Curated-partial-used ids (see docs/category-remap.md's id set) are left
+// untouched in this pass except 111, per the controller's explicit instruction — id 98 in
+// particular is a known remaining false positive, flagged there rather than silently changed.
 const categoryMapping = {
   1: 'CMS',
-  111: 'Accessibility',
+  111: 'Fundraising', // was 'Accessibility' — real content is donor/advancement tooling (ActBlue, DonorPerfect, Classy…); see docs/category-remap.md rule 3
+  305: 'Site Search', // new (UNI-156 rule 4) — registered now, populated by Phase 3
+  306: 'Accessibility', // new dedicated id (UNI-156 rule 3) — replaces 111 for the curated higher-ed-accessibility.json partial
   2: 'Message Boards', // Originally CMS but includes forums and social platforms
   3: 'Message Boards',
   4: 'Wiki',
-  5: 'LMS',
+  5: 'Widget', // was 'LMS' — real content is generic embeddable widgets/services (AddThis, AddToAny, Algolia DocSearch…); see docs/category-remap.md rule 1
   6: 'Web Server', // Apache, Nginx
   7: 'CDN',
   8: 'Programming Language', // PHP, Python, Ruby
@@ -53,11 +63,11 @@ const categoryMapping = {
   51: 'Advertising',
   52: 'Chatbot',
   53: 'SIS', // Student Information Systems
-  54: 'CRM',
-  55: 'CRM',
-  56: 'CRM',
-  57: 'CMS',
-  58: 'CMS',
+  54: 'SEO Tool', // was 'CRM' — real content is SEO tooling (Ahrefs, RankMath SEO, BrightEdge…); see docs/category-remap.md rule 6
+  55: 'Financial Software', // was 'CRM' — real content is accounting/fintech (Carta, Ignition, Taxdome…); see docs/category-remap.md rule 6
+  56: 'Cryptomining', // was 'CRM' — real content is browser cryptojacking scripts (CoinHive, Crypto-Loot…); see docs/category-remap.md rule 6
+  57: 'Static Site Generator', // was 'CMS' — Astro, Hugo, Jekyll, Next.js…
+  58: 'Product Onboarding', // was 'CMS' — Appcues, Pendo, Userflow…
   59: 'JavaScript Framework',
   60: 'JavaScript Framework',
   61: 'JavaScript Framework',
@@ -79,33 +89,33 @@ const categoryMapping = {
   77: 'Advertising',
   78: 'Advertising',
   79: 'Advertising',
-  80: 'CMS',
-  81: 'CMS',
-  82: 'CMS',
-  83: 'CMS',
-  84: 'CMS',
-  85: 'CMS',
-  86: 'CMS',
-  87: 'CMS',
-  88: 'CMS',
-  89: 'CMS',
-  90: 'CMS',
-  91: 'CMS',
-  92: 'CMS',
-  93: 'CMS',
-  94: 'CMS',
-  95: 'CMS',
-  96: 'CMS',
-  97: 'CMS',
-  98: 'CMS',
-  99: 'CMS',
-  100: 'CMS',
-  101: 'CMS',
-  102: 'CMS',
-  103: 'CMS',
-  104: 'CMS',
-  105: 'CMS',
-  106: 'CMS',
+  80: 'WordPress Theme', // was 'CMS' — AndersNoren, Astra, aThemes…
+  81: 'Ecommerce', // was 'CMS' — Shoptimized (Shopify theme)
+  82: 'CMS', // NOT REMAPPED — 0 techs in current merged base, no sample to justify a target; see docs/category-remap.md Concerns
+  83: 'Fraud Detection', // was 'CMS' — ClientJS, FingerprintJS, MaxMind, ThreatMetrix…
+  84: 'Loyalty Program', // was 'CMS' — BON Loyalty, LoyaltyLion, Kangaroo Rewards…
+  85: 'Product Management Tool', // was 'CMS' — LaunchDarkly, Statsig, Usersnap…
+  86: 'Data Management Platform', // was 'CMS' — Adobe Audience Manager, Oracle BlueKai…
+  87: 'WordPress Plugin', // was 'CMS' — AMP for WordPress, Advanced Custom Fields, Akismet…; see docs/category-remap.md rule 1
+  88: 'Hosting Provider', // was 'CMS' — Bluehost, DreamHost, Flywheel…
+  89: 'Localization', // was 'CMS' — GTranslate, Weglot, WPML…; see docs/category-remap.md rule 1
+  90: 'Reviews', // was 'CMS' — Bazaarvoice Reviews, Feefo, Clutch…
+  91: 'Payment Processor', // was 'CMS' — Affirm, Afterpay, Divido (buy-now-pay-later)
+  92: 'Performance Optimization', // was 'CMS' — Autoptimize, Cloudflare Rocket Loader…
+  93: 'Booking System', // was 'CMS' — Bentobox, Bookatable, CoverManager (hospitality)
+  94: 'Referral Marketing', // was 'CMS' — Ambassador, Extole, Friendbuy…
+  95: 'Digital Asset Management', // was 'CMS' — Cloudinary, Frontify, Aprimo…
+  96: 'Widget', // was 'CMS' — Bazaarvoice Curation, Ceros…; see docs/category-remap.md rule 1
+  97: 'Customer Data Platform', // was 'CMS' — Acquia CDP, BlueConic, Exponea…
+  98: 'CMS', // NOT REMAPPED — curated-used by higher-ed-infra.json; real content is cart-abandonment/ecommerce marketing (Aument, CartStack, Justuno…) — flagged, not changed; see docs/category-remap.md Concerns
+  99: 'Shipping & Logistics', // was 'CMS' — Australia Post, Bpost, Chronopost…
+  100: 'Ecommerce', // was 'CMS' — Shopify app grab-bag (AdNabu, Ali Reviews, BON Loyalty…)
+  101: 'HR / Recruiting', // was 'CMS' — BambooHR, Greenhouse, DreamApply…
+  102: 'Ecommerce', // was 'CMS' — returns management (Happy Returns, Loop Returns, Narvar…)
+  103: 'Video Platform', // was 'CMS' — Bambuser, BigMarker, Cloudflare Stream (webinar/live-shopping)
+  104: 'Booking System', // was 'CMS' — Cvent, Etix, Evvnt (event/travel booking)
+  105: '3D/AR Visualization', // was 'CMS' — A-Frame, DeepAR, ModiFace, Plattar…
+  106: 'Ecommerce', // was 'CMS' — cross-border commerce (Global-e, Zonos, ShopBase…)
   107: 'Payment Processor',
   108: 'Payment Processor',
   109: 'Payment Processor',
@@ -122,4 +132,13 @@ function mapCategory(categoryId) {
   return 'Unknown';
 }
 
-module.exports = { mapCategory, categoryMapping };
+// The protected set of category names that downstream signal logic (higher-ed CMS/LMS/SIS/CRM/
+// Chatbot/Site Search/Accessibility detection) is allowed to trust. Nothing else — however
+// confident-looking — should be treated as a signal category. See docs/category-remap.md.
+const SIGNAL_CATEGORIES = new Set(['CMS', 'LMS', 'SIS', 'CRM', 'Chatbot', 'Site Search', 'Accessibility']);
+
+function isSignalCategory(name) {
+  return typeof name === 'string' && [...SIGNAL_CATEGORIES].some((c) => c.toLowerCase() === name.toLowerCase());
+}
+
+module.exports = { mapCategory, categoryMapping, SIGNAL_CATEGORIES, isSignalCategory };

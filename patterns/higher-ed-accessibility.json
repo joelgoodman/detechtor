@@ -7,7 +7,7 @@
     "tech_count": 5
   },
   "AudioEye": {
-    "cats": [111],
+    "cats": [306],
     "description": "AudioEye accessibility overlay/remediation widget, loaded from audioeye.com / cdn.audioeye.com. Overlay-class tool — candidate NEGATIVE signal (UNI-137): automated overlays are frequent ADA-lawsuit targets and do not guarantee real WCAG conformance.",
     "html": ["audioeye\\.com"],
     "scripts": ["audioeye\\.com", "audioeye"],
@@ -18,7 +18,7 @@
     "_validation": "Data-mined vs BuiltWith (UNI-141, 2026-07-13): audioeye.com home/canonical HTML recall 68% (bare 'audioeye' 72%), ~1% neg (dedicated domain; neg hits are BuiltWith misses)."
   },
   "UserWay": {
-    "cats": [111],
+    "cats": [306],
     "description": "UserWay accessibility overlay widget, injected via cdn.userway.org. Accessibility overlays are widely regarded as not delivering real WCAG compliance and are frequent ADA-lawsuit targets — treat presence as a risk signal (UNI-137).",
     "html": ["userway\\.org"],
     "scripts": ["userway\\.org"],
@@ -29,7 +29,7 @@
     "_validation": "BuiltWith-positive home-HTML recall ~62%, FP ~0.3% (dedicated domain)"
   },
   "accessiBe": {
-    "cats": [111],
+    "cats": [306],
     "description": "accessiBe accessibility overlay, loaded from acsbapp.com / accessibe.com. Overlay — candidate negative signal (UNI-137).",
     "html": ["acsbapp\\.com", "accessibe\\.com"],
     "scripts": ["acsbapp\\.com", "accessibe\\.com"],
@@ -40,7 +40,7 @@
     "_validation": "BuiltWith-positive home-HTML recall ~68%, FP ~2% (dedicated domain)"
   },
   "Monsido": {
-    "cats": [111],
+    "cats": [306],
     "description": "Monsido web accessibility + quality-assurance monitoring, loaded from app-script.monsido.com.",
     "html": ["monsido\\.com"],
     "scripts": ["monsido\\.com"],
@@ -49,7 +49,7 @@
     "website": "https://monsido.com"
   },
   "Siteimprove": {
-    "cats": [111],
+    "cats": [306],
     "description": "Siteimprove accessibility / SEO / quality-assurance governance platform; the analytics beacon loads from siteimproveanalytics.com.",
     "html": ["siteimproveanalytics\\.com", "siteimprove\\.com"],
     "scripts": ["siteimproveanalytics\\.com", "siteimprove\\.com"],
