@@ -1,16 +1,15 @@
 // WebAppAnalyzer category ID to name mapping
 //
-// Remap decisions (UNI-156 Phase 1 / Task 1.2) are recorded in docs/category-remap.md — read
-// that file before changing any id below. In short: the un-audited Wappalyzer base dumped a lot
-// of ecommerce/widget/plugin/translation/fundraising tooling into signal-category names (CMS,
-// LMS, CRM, Accessibility); this map corrects those so mapCategory() + isSignalCategory() can be
-// trusted as a gate. Curated-partial-used ids (see docs/category-remap.md's id set) are left
-// untouched in this pass except 111, per the controller's explicit instruction — id 98 in
-// particular is a known remaining false positive, flagged there rather than silently changed.
+// Remap decisions (UNI-156 Phase 1 / Task 1.2, plus the controller-decided Fix pass) are recorded
+// in docs/category-remap.md — read that file before changing any id below. In short: the
+// un-audited Wappalyzer base dumped a lot of ecommerce/widget/plugin/translation/fundraising
+// tooling into signal-category names (CMS, LMS, CRM, Accessibility); this map corrects those so
+// mapCategory() + isSignalCategory() can be trusted as a gate. The four curated-id collisions
+// flagged DONE_WITH_CONCERNS in the first pass (29, 21, 98, 82) were resolved in the Fix pass: see
+// docs/category-remap.md's "Resolved (Fix pass)" section.
 const categoryMapping = {
   1: 'CMS',
   111: 'Fundraising', // was 'Accessibility' — real content is donor/advancement tooling (ActBlue, DonorPerfect, Classy…); see docs/category-remap.md rule 3
-  305: 'Site Search', // new (UNI-156 rule 4) — registered now, populated by Phase 3
   306: 'Accessibility', // new dedicated id (UNI-156 rule 3) — replaces 111 for the curated higher-ed-accessibility.json partial
   2: 'Message Boards', // Originally CMS but includes forums and social platforms
   3: 'Message Boards',
@@ -30,7 +29,7 @@ const categoryMapping = {
   18: 'Web Server', // IIS
   19: 'Operating System',
   20: 'Web Server', // LiteSpeed
-  21: 'Web Server', // Envoy
+  21: 'LMS', // was 'Web Server' (Envoy) — audit sample (Absorb, Chamilo, Dokeos…) is genuine LMS; higher-ed-lms.json already tags Canvas/Blackboard/Brightspace/etc. with [21]; see docs/category-remap.md Fix 2
   22: 'Web Server', // Caddy
   23: 'Web Server', // OpenResty
   24: 'Web Server', // Tengine
@@ -38,7 +37,7 @@ const categoryMapping = {
   26: 'JavaScript Framework',
   27: 'JavaScript Framework',
   28: 'JavaScript Framework',
-  29: 'JavaScript Framework',
+  29: 'Site Search', // was 'JavaScript Framework' — audit sample is all search vendors (Algolia, Coveo, Elasticsearch, Doofinder…); canonical Site Search id, resolves higher-ed-infra.json's 16 curated search vendors; see docs/category-remap.md Fix 1
   30: 'JavaScript Framework',
   31: 'JavaScript Framework',
   32: 'JavaScript Framework',
@@ -91,7 +90,9 @@ const categoryMapping = {
   79: 'Advertising',
   80: 'WordPress Theme', // was 'CMS' — AndersNoren, Astra, aThemes…
   81: 'Ecommerce', // was 'CMS' — Shoptimized (Shopify theme)
-  82: 'CMS', // NOT REMAPPED — 0 techs in current merged base, no sample to justify a target; see docs/category-remap.md Concerns
+  // 82 intentionally dropped (was 'CMS') — 0 techs in the base; mapCategory() returns 'Unknown' for
+  // unmapped ids, which is the desired neutral result and avoids a latent CMS false-positive if the
+  // base ever populates it. See docs/category-remap.md Fix 4.
   83: 'Fraud Detection', // was 'CMS' — ClientJS, FingerprintJS, MaxMind, ThreatMetrix…
   84: 'Loyalty Program', // was 'CMS' — BON Loyalty, LoyaltyLion, Kangaroo Rewards…
   85: 'Product Management Tool', // was 'CMS' — LaunchDarkly, Statsig, Usersnap…
@@ -107,7 +108,7 @@ const categoryMapping = {
   95: 'Digital Asset Management', // was 'CMS' — Cloudinary, Frontify, Aprimo…
   96: 'Widget', // was 'CMS' — Bazaarvoice Curation, Ceros…; see docs/category-remap.md rule 1
   97: 'Customer Data Platform', // was 'CMS' — Acquia CDP, BlueConic, Exponea…
-  98: 'CMS', // NOT REMAPPED — curated-used by higher-ed-infra.json; real content is cart-abandonment/ecommerce marketing (Aument, CartStack, Justuno…) — flagged, not changed; see docs/category-remap.md Concerns
+  98: 'Ecommerce Marketing', // was 'CMS' — cart-abandonment tools (CartStack, Justuno, OptiMonk…), not CMS; curated-used by higher-ed-infra.json (CAS/Shibboleth carry [53,98]) — this intentionally kills their false CMS signal, leaving them resolve to [SIS, Ecommerce Marketing]; see docs/category-remap.md Fix 3
   99: 'Shipping & Logistics', // was 'CMS' — Australia Post, Bpost, Chronopost…
   100: 'Ecommerce', // was 'CMS' — Shopify app grab-bag (AdNabu, Ali Reviews, BON Loyalty…)
   101: 'HR / Recruiting', // was 'CMS' — BambooHR, Greenhouse, DreamApply…

@@ -59,3 +59,38 @@ test('Chatbot id 52 is untouched', () => {
 test('Web Server id 6 is untouched', () => {
   assert.strictEqual(mapCategory(6), 'Web Server');
 });
+
+// --- Fix pass: curated-id collisions resolved (29=Site Search, 21=LMS, 98=Ecommerce Marketing, drop 82) ---
+
+test('id 29 is the canonical Site Search id', () => {
+  assert.strictEqual(mapCategory(29), 'Site Search');
+  assert.ok(isSignalCategory('Site Search'));
+});
+
+test('curated search vendors in higher-ed-infra.json resolve to Site Search via id 29', () => {
+  const infra = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '../patterns/higher-ed-infra.json'), 'utf8')
+  );
+  const searchVendor = infra.SearchStax || infra.Algolia;
+  assert.ok(searchVendor, 'expected SearchStax or Algolia in higher-ed-infra.json');
+  assert.ok(searchVendor.cats.includes(29), 'search vendor must carry cats id 29');
+  assert.ok(
+    searchVendor.cats.map(mapCategory).includes('Site Search'),
+    'search vendor cats must resolve to Site Search'
+  );
+});
+
+test('id 21 is LMS', () => {
+  assert.strictEqual(mapCategory(21), 'LMS');
+});
+
+test('id 98 is Ecommerce Marketing, not a signal category', () => {
+  assert.strictEqual(mapCategory(98), 'Ecommerce Marketing');
+  assert.ok(!isSignalCategory(mapCategory(98)));
+});
+
+test('id 82 is dropped — mapCategory returns Unknown, a non-signal category', () => {
+  assert.strictEqual(mapCategory(82), 'Unknown');
+  assert.ok(!isSignalCategory(mapCategory(82)));
+  assert.ok(!Object.prototype.hasOwnProperty.call(require('../src/category-mapping.js').categoryMapping, 82));
+});

@@ -51,9 +51,12 @@ Resolution:
 - Base `111` renamed **`Fundraising`** (not a signal category) — it now correctly describes the 39
   donor/advancement techs and no longer collides with the curated accessibility id.
 
-## Rule 4 — new Site Search id (registration only, Phase 3 fills it)
+## Rule 4 — new Site Search id (registration only, Phase 3 fills it) — SUPERSEDED
 
-New id **`305` → `Site Search`**. No entries carry it yet; Phase 3's data-mined patterns will.
+~~New id `305` → `Site Search`. No entries carry it yet; Phase 3's data-mined patterns will.~~
+Superseded by the Fix pass (see "Resolved (Fix pass...)" below): base id `29` already carries 16
+curated search-vendor patterns and its audit sample is genuinely Site Search, so `29` was made the
+canonical Site Search id instead and the placeholder `305` was removed. Phase 3 should target `29`.
 
 ## Rule 5 — kept as-is (genuine signal ids, controller pre-approved)
 
@@ -125,28 +128,39 @@ where the sample suggests a better bucket exists (e.g. the huge generic `JavaScr
 77–79). Fixing those is real taxonomy debt but doesn't create signal-category false positives, so
 it's not this task's problem to solve.
 
-## Concerns to flag to the controller (DONE_WITH_CONCERNS)
+## Resolved (Fix pass, controller-decided — supersedes the four DONE_WITH_CONCERNS items below)
 
-1. **id `98`** (cart-abandonment/ecommerce marketing — Aument, BiteSpeed, CartBot, CartStack,
-   Jilt, Justuno, OptiMonk) currently resolves to `CMS`, a protected signal category — this is
-   exactly the false-positive shape Phase 1 targets. It is **not remapped** here because it's
-   curated-used (`higher-ed-infra.json`) and the controller's instruction limits curated-id
-   re-tagging in this pass to `111` only. Needs an explicit go/no-go before Phase 1 can be called
-   fully complete on the `57,58,80–106` block.
-2. **id `21`** (currently `Web Server`) — its audit sample (Absorb, AccessAlly, Accredible,
+The four curated-id collisions the first pass correctly declined to guess at were resolved by the
+controller and applied in a follow-up fix pass:
+
+1. **id `29`: `JavaScript Framework` → `Site Search`.** Its audit sample (Addsearch, Algolia,
+   Apisearch, Athena Search, Attraqt, Awesomplete, Baidu Search Box, Bloomreach Discovery, Boost
+   Commerce, Cludo, Convermax, Coveo, Doofinder, ElasticSuite, Elasticsearch — 57 techs total) is
+   dominated by search vendors with no meaningful fraction of genuine JS frameworks (spot-checked
+   before applying). `higher-ed-infra.json` already tags 16 curated search vendors (SearchStax,
+   AddSearch, Algolia, Azure Cognitive Search, Cludo, Coveo, Elasticsearch, Element451 Search,
+   Funnelback, Google Custom Search, Lucidworks Fusion, Meilisearch, Sajari, SearchBlox, Site
+   Search 360, Swiftype) with `cats: [29]`, so `29` is now the canonical Site Search id and those
+   16 patterns light up correctly. The placeholder `305 → Site Search` registered in the first pass
+   was **removed** — it's redundant now that `29` carries the real meaning. **Consequence for
+   Phase 3:** target id `29` for any new data-mined Site Search patterns, not a new id.
+2. **id `21`: `Web Server` (Envoy) → `LMS`.** Its audit sample (Absorb, AccessAlly, Accredible,
    Aforest LMS, aSc EduPage, Chamilo, Classeh, Coachy, Dokeos, Edmingle, Edwiser Bridge, Eloomi,
-   Elopage, eChalk) is genuinely LMS, and `higher-ed-lms.json` already uses `cats: [21, 53]` as if
-   `21` meant LMS. Base `21` staying `Web Server` doesn't create a signal-category false positive
-   (opposite direction — under-labeling, not pollution), so it's out of this pass's literal scope,
-   but it's a real bug worth a follow-up: the curated LMS partial's intent and the base map
-   disagree on what id `21` means.
-3. **id `29`** (currently `JavaScript Framework`) — its audit sample (Addsearch, Algolia,
-   Apisearch, Athena Search, Bloomreach Discovery, Cludo, Convermax, Coveo, Doofinder,
-   Elasticsearch) is genuinely Site Search, and `higher-ed-infra.json` uses `cats: [..., 29, ...]`.
-   Same shape as #2 — not remapped (curated-used, not currently a signal name), but Phase 3 (which
-   owns populating the new `305` Site Search id) should be aware `29` is where the base's existing
-   site-search techs already live.
-4. **id `82`** — 0 techs in the current merged base; left mapped to `CMS` unchanged because there's
-   no sample to justify a specific target. Effectively dead code today, but worth a note since it's
-   still technically a live signal-category false-positive risk if a future base update populates
-   it.
+   Elopage, eChalk) is genuinely LMS, and `higher-ed-lms.json` already uses `cats: [21, 53]`
+   expecting `21` to mean LMS — base `21` staying `Web Server` was under-labeling, not pollution,
+   but it left the curated LMS partial's intent and the base map disagreeing. Envoy (the actual
+   base `21` tech) has no curated LMS-partial collision risk in the higher-ed corpus.
+3. **id `98`: `CMS` → `Ecommerce Marketing`.** Base 98 (24 techs: Aument, Barilliance, BiteSpeed,
+   CareCart, CartBot, CartRocket, CartStack, Jilt, Justuno, OptiMonk) is cart-abandonment /
+   ecommerce-marketing tooling, not CMS — this was the exact false-positive shape Phase 1 targets.
+   `higher-ed-infra.json`'s CAS/Shibboleth entries carry `cats: [53, 98]`; with this change they
+   now resolve to `[SIS, Ecommerce Marketing]` instead of `[SIS, CMS]`, killing the false CMS
+   signal. This is the intended outcome — their `cats` arrays were left untouched.
+4. **id `82`: removed entirely.** It had 0 techs in the merged base and no sample to justify a
+   target; rather than leave it mapped to `CMS` (a latent false-positive risk if a future base
+   update ever populates it), the entry was dropped from `categoryMapping`. `mapCategory()`
+   already returns `'Unknown'` for unmapped ids, which is the correct neutral result.
+
+Out-of-scope note (unchanged from the first pass): **id `53`** (SIS) still carries the same
+CRM/chat-flavored audit-sample skew noted in Rule 5 — that observation stands as a pre-existing
+condition, not addressed by this fix pass. CAS/Shibboleth's `53` (SIS) tagging is untouched.
