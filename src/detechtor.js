@@ -157,7 +157,72 @@ class DeTECHtor {
       await mainPage.close();
     }
   }
-  
+
+  // UNI-145: detect technologies on a KNOWN set of URLs (the agent's already-resolved
+  // canonical pages) WITHOUT any self-crawl. Scans each provided URL via scanSinglePage
+  // and merges — skips discoverAdditionalPages, the additional-page crawl loop,
+  // scanDerivedProbes, and probePaths (the slow parts). Detecting on 2–3 rendered
+  // canonical pages (home + admissions + program) catches CMS/chatbot/analytics/a11y
+  // (home) + CRM/forms/marketing-automation (lead-capture pages) without guessing pages.
+  async detectTechnologiesOnUrls(urls) {
+    this.startTime = Date.now();
+
+    if (!Array.isArray(urls) || urls.length === 0) {
+      throw new Error('detectTechnologiesOnUrls requires a non-empty array of URLs');
+    }
+
+    if (!this.browser) {
+      await this.initialize();
+    }
+
+    let allDetected = [];
+    const scannedUrls = [];
+    let firstFinalUrl = null;
+    let firstResponseCode = null;
+
+    for (const targetUrl of urls) {
+      const page = await this.browser.newPage();
+      try {
+        const res = await this.scanSinglePage(page, targetUrl);
+        allDetected = [...allDetected, ...res.technologies];
+        scannedUrls.push(res.finalUrl);
+        if (firstFinalUrl === null) {
+          firstFinalUrl = res.finalUrl;
+          firstResponseCode = res.meta ? res.meta.responseCode : null;
+        }
+        if (config.verbose) {
+          console.log(`Scanned (no-crawl) ${targetUrl}: ${res.technologies.length} technologies`);
+        }
+      } catch (error) {
+        if (config.verbose) {
+          console.warn(`Failed to scan ${targetUrl}: ${error.message}`);
+        }
+      } finally {
+        await page.close();
+      }
+    }
+
+    const mergedTechnologies = this.mergeTechnologies(allDetected);
+    const scanDuration = Date.now() - this.startTime;
+
+    return {
+      url: urls[0],
+      finalUrl: firstFinalUrl || urls[0],
+      timestamp: Date.now(),
+      technologies: mergedTechnologies,
+      scannedPages: scannedUrls.length,
+      scannedUrls: scannedUrls,
+      inferredStack: { components: { cms: null, lms: null, sis: null, crm: null, analytics: [], javascript: [], server: [], cdn: [] }, inferences: [] },
+      meta: {
+        responseCode: firstResponseCode,
+        scanDuration: scanDuration,
+        userAgent: config.userAgent,
+        detechtor_version: '2.0.0',
+        mode: 'no-crawl'
+      }
+    };
+  }
+
   shouldExcludePath(path) {
     return config.excludePaths.some(excludePath => 
       path.toLowerCase().includes(excludePath.toLowerCase())
