@@ -71,13 +71,26 @@ test('curated search vendors in higher-ed-infra.json resolve to Site Search via 
   const infra = JSON.parse(
     fs.readFileSync(path.join(__dirname, '../patterns/higher-ed-infra.json'), 'utf8')
   );
-  const searchVendor = infra.SearchStax || infra.Algolia;
-  assert.ok(searchVendor, 'expected SearchStax or Algolia in higher-ed-infra.json');
-  assert.ok(searchVendor.cats.includes(29), 'search vendor must carry cats id 29');
+
+  // Collect all entries with category id 29
+  const searchVendors = Object.entries(infra)
+    .filter(([name, def]) => def.cats && def.cats.includes(29))
+    .map(([name, def]) => ({ name, ...def }));
+
+  // Assert there are at least 16 curated search vendors
   assert.ok(
-    searchVendor.cats.map(mapCategory).includes('Site Search'),
-    'search vendor cats must resolve to Site Search'
+    searchVendors.length >= 16,
+    `expected at least 16 search vendors with id 29, found ${searchVendors.length}`
   );
+
+  // Assert every search vendor resolves to 'Site Search'
+  for (const vendor of searchVendors) {
+    const mappedCategories = vendor.cats.map(mapCategory);
+    assert.ok(
+      mappedCategories.includes('Site Search'),
+      `${vendor.name} cats ${JSON.stringify(vendor.cats)} must resolve to 'Site Search', got ${JSON.stringify(mappedCategories)}`
+    );
+  }
 });
 
 test('id 21 is LMS', () => {
