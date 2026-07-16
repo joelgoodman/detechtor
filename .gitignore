@@ -116,3 +116,4 @@ patterns/*.backup
 
 # UNI-142 lint backups (git history is the real backup)
 patterns/_archive/*.bak
+.superpowers/
