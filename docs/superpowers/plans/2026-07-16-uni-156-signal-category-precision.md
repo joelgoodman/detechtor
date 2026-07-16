@@ -66,6 +66,8 @@ FROM scan_pages;
 
 - [ ] **Step 3: Commit** the recorded numbers into this plan file as a note under Task 0.1 (no code).
 
+> **RESULT (2026-07-16, run via Supabase MCP execute_sql):** `scan_pages_total = 23140`, `inline_html_rows = 0`, `archived_rows = 20877`. Inline HTML is **completely offloaded (0 rows)** → **`INLINE_DEAD = true`**. Phase 2 (Wasabi fetcher) is **REQUIRED**; `mine-signature.js` inline mode is dead and must be replaced by `mine-local.js` against the fetched corpus.
+
 ### Task 0.2: Document the real confidence-floor seam (already located — capture as a test-anchoring note)
 
 **Files:** none (documentation of verified facts).
