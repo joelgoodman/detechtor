@@ -6,6 +6,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const CORPUS_DIR = process.env.CORPUS_DIR || path.resolve(__dirname, '../corpus');
+
 function parseArgs(argv) {
   const a = { signatures: [], field: 'html' };
   for (let i = 2; i < argv.length; i++) {
@@ -27,7 +29,7 @@ function instMatches(htmlPaths, res, field) {
 function main() {
   const a = parseArgs(process.argv);
   const res = a.signatures.map(s => new RegExp(s, 'i'));
-  const index = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../corpus/index.json'), 'utf8'));
+  const index = JSON.parse(fs.readFileSync(path.join(CORPUS_DIR, 'index.json'), 'utf8'));
   const posIds = new Set(JSON.parse(fs.readFileSync(a.posIds, 'utf8')).map(String));
   let posTotal = 0, posHtml = 0, posHit = 0, negHtml = 0, negHit = 0;
   const negHits = [], posMiss = [];
