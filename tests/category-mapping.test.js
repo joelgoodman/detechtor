@@ -107,3 +107,17 @@ test('id 82 is dropped — mapCategory returns Unknown, a non-signal category', 
   assert.ok(!isSignalCategory(mapCategory(82)));
   assert.ok(!Object.prototype.hasOwnProperty.call(require('../src/category-mapping.js').categoryMapping, 82));
 });
+
+// --- UNI-156: Marketing Automation as 8th signal category ---
+
+test('id 307 is Marketing Automation', () => {
+  assert.strictEqual(mapCategory(307), 'Marketing Automation');
+});
+
+test('Marketing Automation is a signal category', () => {
+  assert.ok(isSignalCategory('Marketing Automation'));
+});
+
+test('SIGNAL_CATEGORIES now has 8 members', () => {
+  assert.strictEqual(SIGNAL_CATEGORIES.size, 8);
+});

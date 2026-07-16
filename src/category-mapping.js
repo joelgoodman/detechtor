@@ -120,7 +120,8 @@ const categoryMapping = {
   107: 'Payment Processor',
   108: 'Payment Processor',
   109: 'Payment Processor',
-  110: 'Payment Processor'
+  110: 'Payment Processor',
+  307: 'Marketing Automation' // UNI-156: 8th signal category (Marketing Automation), added 2026-07-16
 };
 
 function mapCategory(categoryId) {
@@ -134,9 +135,9 @@ function mapCategory(categoryId) {
 }
 
 // The protected set of category names that downstream signal logic (higher-ed CMS/LMS/SIS/CRM/
-// Chatbot/Site Search/Accessibility detection) is allowed to trust. Nothing else — however
+// Chatbot/Site Search/Accessibility/Marketing Automation detection) is allowed to trust. Nothing else — however
 // confident-looking — should be treated as a signal category. See docs/category-remap.md.
-const SIGNAL_CATEGORIES = new Set(['CMS', 'LMS', 'SIS', 'CRM', 'Chatbot', 'Site Search', 'Accessibility']);
+const SIGNAL_CATEGORIES = new Set(['CMS', 'LMS', 'SIS', 'CRM', 'Chatbot', 'Site Search', 'Accessibility', 'Marketing Automation']);
 
 function isSignalCategory(name) {
   return typeof name === 'string' && [...SIGNAL_CATEGORIES].some((c) => c.toLowerCase() === name.toLowerCase());
