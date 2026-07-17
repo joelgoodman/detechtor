@@ -1,0 +1,286 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "description": "Chatbot / live-chat vendors for higher education. Signatures data-mined from the rendered HTML of BuiltWith 'Chatbot'-labeled cohort-128 homepages (UNI-156 Phase 3): each scripts/html regex targets the vendor's dedicated widget host or a widget-specific marker, empirically deduced from the vendors' own positive corpus, not hand-guessed. RECALL IS SYSTEMICALLY LOW FOR THIS CATEGORY: this corpus is homepage-only (one captured page per institution, no /library or portal subpages), and the majority of pos-miss institutions load their chat widget through a Google Tag Manager container (2-4 gtm.js containers observed on every sampled miss) or another consent/tag-manager gate, so the vendor's own script never appears in the captured static HTML even though BuiltWith found it live. neg_hit_pct is consistently ~0-0.7% and spot-checks confirm those are BuiltWith's OWN misses (real installs), not false positives from these dedicated-host signatures — so precision is high even where recall is low. Treat low recall_pct here as a corpus-coverage ceiling, not a signature-quality problem.",
+    "generated": "2026-07-16",
+    "source": "data-mined from local corpus/ (Wasabi-fetched cohort-128 rendered HTML) vs institutions.tech_profile BuiltWith Chatbot labels, via scripts/mine-local.js (deduce->validate harness, UNI-156)",
+    "tech_count": 27
+  },
+  "LiveChat": {
+    "cats": [52],
+    "description": "LiveChat (Text s.c.) live-chat widget, loaded from cdn.livechatinc.com (or the newer livechat-static.com CDN).",
+    "html": ["livechatinc\\.com", "livechat-static\\.com"],
+    "scripts": ["livechatinc\\.com", "livechat-static\\.com"],
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.livechat.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'livechatinc.com'/'livechat-static.com' home-page HTML = 16.0% recall over 125 positives-with-HTML (20 hit); 37 neg-hits over 4089 negatives (0.9%), spot-checked as BuiltWith misses (real cdn.livechatinc.com/tracking.js installs). Low recall: most pos-miss institutions load the widget via a GTM container not resolved in the captured static HTML."
+  },
+  "Zendesk": {
+    "cats": [52],
+    "description": "Zendesk Web Widget (chat/messaging), loaded from static.zdassets.com — distinct from a bare *.zendesk.com help-center link.",
+    "html": ["zdassets\\.com"],
+    "scripts": ["zdassets\\.com"],
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.zendesk.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'zdassets.com' home-page HTML = 4.2% recall over 120 positives-with-HTML (5 hit); 14 neg-hits over 4094 negatives (0.3%), spot-checked as BuiltWith misses. Deliberately excludes bare '<inst>.zendesk.com' help-center links (Zendesk Guide), which are common in HE IT-support footers but are a different product from the chat widget and would flood false positives."
+  },
+  "Intercom": {
+    "cats": [52],
+    "description": "Intercom Messenger widget, loaded from widget.intercom.io / js.intercomcdn.com.",
+    "html": ["widget\\.intercom\\.io", "intercomcdn\\.com"],
+    "scripts": ["widget\\.intercom\\.io", "intercomcdn\\.com"],
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.intercom.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'widget.intercom.io'/'intercomcdn.com' home-page HTML = 3.8% recall over 104 positives-with-HTML (4 hit); 2 neg-hits over 4110 negatives (0%), spot-checked as BuiltWith misses. Low recall consistent with GTM-gated loading on the pos-miss set."
+  },
+  "tawk.to": {
+    "cats": [52],
+    "description": "tawk.to free live-chat widget, loaded from embed.tawk.to.",
+    "html": ["tawk\\.to"],
+    "scripts": ["tawk\\.to"],
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://www.tawk.to",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'tawk.to' home-page HTML = 37.6% recall over 117 positives-with-HTML (44 hit) — the best recall of any non-HE-specific vendor; 5 neg-hits over 4097 negatives (0.1%), spot-checked as BuiltWith misses (real embed.tawk.to installs)."
+  },
+  "Zopim": {
+    "cats": [52],
+    "description": "Zopim (Zendesk Chat v2) widget, loaded from v2.zopim.com. Zendesk acquired Zopim; where a site fires this it is running the legacy embed rather than the current Zendesk Web Widget.",
+    "html": ["v2\\.zopim\\.com"],
+    "scripts": ["v2\\.zopim\\.com"],
+    "higher_ed": true,
+    "confidence": 76,
+    "website": "https://www.zendesk.com/chat",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'v2.zopim.com' home-page HTML = 2.8% recall over 109 positives-with-HTML (3 hit); 0 neg-hits over 4105 negatives (0%). Low recall consistent with GTM-gated loading on the pos-miss set; 0% neg-hit confirms the dedicated host is not a prose false-lead."
+  },
+  "LibraryH3lp": {
+    "cats": [52],
+    "description": "LibraryH3lp reference-desk chat widget, loaded from libraryh3lp.com (or a regional subdomain, e.g. ca.libraryh3lp.com). Higher-ed-specific: this is the dominant library-reference chat platform.",
+    "html": ["libraryh3lp\\.com"],
+    "scripts": ["libraryh3lp\\.com"],
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://libraryh3lp.com",
+    "_detection_note": "HE-priority vendor kept despite low recall: LibraryH3lp is deployed almost exclusively on library subdomains/portal pages, not the institution homepage, and this corpus captures one homepage per institution (no /library subpage). Real-world multi-page crawls (deTECHtor's own strategicPaths includes '/library') should recover far more hits than this homepage-only measurement shows.",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'libraryh3lp.com' home-page HTML = 3.3% recall over 123 positives-with-HTML (4 hit); 3 neg-hits over 4091 negatives (0.1%), spot-checked as BuiltWith misses (real libraryh3lp.com/js/libraryh3lp.js installs)."
+  },
+  "Salesforce Live Agent": {
+    "cats": [52],
+    "description": "Salesforce Embedded Service / Live Agent chat widget. Fingerprinted via the salesforceliveagent.com host, the 'embeddedservice' bootstrap token, the esw.min.js loader filename, or the X-Salesforce-CHAT cookie name (surfaced in cookie-consent tables). Deliberately excludes the bare word 'salesforce', which collides with the Font Awesome 'fa-salesforce' brand-icon CSS class present on almost every site using Font Awesome.",
+    "html": ["salesforceliveagent\\.com", "embeddedservice", "esw\\.min\\.js", "X-Salesforce-CHAT"],
+    "scripts": ["salesforceliveagent\\.com", "embeddedservice", "esw\\.min\\.js"],
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.salesforce.com/products/service-cloud/live-agent/",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). Combined signature home-page HTML = 10.5% recall over 105 positives-with-HTML (11 hit); 16 neg-hits over 4109 negatives (0.4%), spot-checked as BuiltWith misses. A naive bare 'salesforce' token was rejected: it hit 33% of positives but was matching the Font Awesome brand icon class 'fa-salesforce' in page CSS, not the chat widget."
+  },
+  "Rocket.Chat": {
+    "cats": [52],
+    "description": "Rocket.Chat self-hosted live-chat widget, identified by its standard livechat loader filename (rocketchat-livechat[.min].js) served from the institution's own Rocket.Chat instance. Excludes the bare word 'rocketchat', which collides with the Font Awesome 'fa-rocketchat' brand-icon CSS class.",
+    "html": ["rocketchat-livechat"],
+    "scripts": ["rocketchat-livechat"],
+    "higher_ed": false,
+    "confidence": 72,
+    "website": "https://www.rocket.chat",
+    "_detection_note": "Very thin positive evidence (1 confirmed hit) — Rocket.Chat is self-hosted with no single dedicated CDN host, so this filename-based signature is the only durable marker found. Kept at reduced confidence rather than deferred because the marker is unambiguous where it fires (0% neg-hit) and a naive bare-word alternative was ruled out as a Font Awesome collision.",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'rocketchat-livechat' home-page HTML = 0.9% recall over 111 positives-with-HTML (1 hit); 0 neg-hits over 4103 negatives (0%)."
+  },
+  "ServiceNow": {
+    "cats": [52],
+    "description": "ServiceNow customer-service/IT portal (service-now.com), commonly the campus IT help-desk/self-service front door; frequently ships a Virtual Agent chat widget within that portal.",
+    "html": ["service-now\\.com"],
+    "scripts": ["service-now\\.com"],
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.servicenow.com",
+    "_detection_note": "Homepage links to the institution's service-now.com portal are a strong proxy for a ServiceNow deployment, but do not on their own confirm the Virtual Agent chat widget specifically vs. the ITSM self-service portal generally.",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'service-now.com' home-page HTML = 15.4% recall over 78 positives-with-HTML (12 hit); 24 neg-hits over 4136 negatives (0.6%), spot-checked as BuiltWith misses (real <inst>.service-now.com portal links)."
+  },
+  "Freshdesk": {
+    "cats": [52],
+    "description": "Freshdesk / Freshworks Widget live-chat, fingerprinted via the freshworks-frame-styles stylesheet id, a *.myfreshworks.com portal host, or the freshdesk.com domain.",
+    "html": ["freshworks-frame-styles", "myfreshworks\\.com", "freshdesk\\.com"],
+    "scripts": ["myfreshworks\\.com", "freshdesk\\.com"],
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.freshworks.com/live-chat-software/",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). Combined signature home-page HTML = 5.0% recall over 80 positives-with-HTML (4 hit); 12 neg-hits over 4134 negatives (0.3%), spot-checked as BuiltWith misses."
+  },
+  "Mainstay": {
+    "cats": [52],
+    "description": "Mainstay (formerly AdmitHub) AI text-messaging/chat assistant for higher-ed enrollment and student success, loaded from chat.mainstay.com / webbot.mainstay.com. Higher-ed-specific: Mainstay is purpose-built for university enrollment/retention chat.",
+    "html": ["mainstay\\.com"],
+    "scripts": ["mainstay\\.com"],
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.mainstay.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'mainstay.com' home-page HTML = 41.3% recall over 75 positives-with-HTML (31 hit); 3 neg-hits over 4139 negatives (0.1%), spot-checked as BuiltWith misses (real chat.mainstay.com/webbot.mainstay.com installs)."
+  },
+  "LivePerson": {
+    "cats": [52],
+    "description": "LivePerson conversational-AI/live-chat platform, loaded from lptag.liveperson.net.",
+    "html": ["liveperson\\.net"],
+    "scripts": ["liveperson\\.net"],
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://www.liveperson.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'liveperson.net' home-page HTML = 21.6% recall over 37 positives-with-HTML (8 hit); 0 neg-hits over 4177 negatives (0%)."
+  },
+  "Olark": {
+    "cats": [52],
+    "description": "Olark live-chat widget, loaded from static.olark.com.",
+    "html": ["static\\.olark\\.com"],
+    "scripts": ["static\\.olark\\.com"],
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.olark.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'static.olark.com' home-page HTML = 28.6% recall over 49 positives-with-HTML (14 hit); 0 neg-hits over 4165 negatives (0%)."
+  },
+  "Pure Chat": {
+    "cats": [52],
+    "description": "Pure Chat live-chat widget, loaded from app.purechat.com (window.purechatApi bootstrap).",
+    "html": ["purechat\\.com"],
+    "scripts": ["purechat\\.com"],
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://www.purechat.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'purechat.com' home-page HTML = 24.4% recall over 41 positives-with-HTML (10 hit); 1 neg-hit over 4173 negatives (0%), spot-checked as a BuiltWith miss."
+  },
+  "Gecko Chat": {
+    "cats": [52],
+    "description": "Gecko (Geckoengage) chat/forms platform for higher-ed enrollment, fingerprinted via app.geckoform.com, the gecko_domain_verification meta tag, or the Geckoengage widget label. Higher-ed-specific: Gecko is purpose-built for university admissions chat/forms.",
+    "html": ["geckoform\\.com", "gecko_domain_verification", "geckoengage"],
+    "scripts": ["geckoform\\.com", "geckoengage"],
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://www.geckoengage.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). Combined signature home-page HTML = 50.0% recall over 38 positives-with-HTML (19 hit) — the best recall of any vendor mined in this batch; 30 neg-hits over 4176 negatives (0.7%), spot-checked (app.geckoform.com postMessage handlers, 'Geckoengage'/'chat-widget.geckoengage.com' labels) as BuiltWith misses, not false positives."
+  },
+  "Tidio": {
+    "cats": [52],
+    "description": "Tidio live-chat/chatbot widget, loaded from code.tidio.co or widget-v4.tidiochat.com.",
+    "html": ["tidio\\.co", "tidiochat\\.com"],
+    "scripts": ["tidio\\.co", "tidiochat\\.com"],
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.tidio.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'tidio.co'/'tidiochat.com' home-page HTML = 52.2% recall over 23 positives-with-HTML (12 hit) — the highest recall of any vendor mined in this batch; 0 neg-hits over 4191 negatives (0%)."
+  },
+  "Freshchat": {
+    "cats": [52],
+    "description": "Freshchat (Freshworks) messaging widget, loaded from wchat.freshchat.com.",
+    "html": ["freshchat\\.com"],
+    "scripts": ["freshchat\\.com"],
+    "higher_ed": false,
+    "confidence": 75,
+    "website": "https://www.freshworks.com/live-chat-software/",
+    "_detection_note": "Thin positive evidence (1 confirmed hit); 0% neg-hit shows the host is tight where it fires, but the recall ceiling is dominated by GTM-gated loading (same pattern as Zendesk/Intercom/Zopim in this corpus).",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'freshchat.com' home-page HTML = 3.1% recall over 32 positives-with-HTML (1 hit); 0 neg-hits over 4182 negatives (0%)."
+  },
+  "ApexChat": {
+    "cats": [52],
+    "description": "ApexChat managed live-chat service, fingerprinted via its dedicated 'apexchat_' CSS id/cookie-name prefix (e.g. apexchat_default, apexchat_tab_invitation, apexchat_popup_message_invitation).",
+    "html": ["apexchat"],
+    "scripts": ["apexchat"],
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://www.apexchat.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'apexchat' home-page HTML = 35.3% recall over 17 positives-with-HTML (6 hit); 5 neg-hits over 4197 negatives (0.1%), spot-checked (apexchat_default CSS ids) as BuiltWith misses."
+  },
+  "Drift": {
+    "cats": [52],
+    "description": "Drift conversational-marketing chat widget, loaded from js.driftt.com.",
+    "html": ["driftt\\.com"],
+    "scripts": ["driftt\\.com"],
+    "higher_ed": false,
+    "confidence": 82,
+    "website": "https://www.drift.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'driftt.com' home-page HTML = 10.5% recall over 19 positives-with-HTML (2 hit); 0 neg-hits over 4195 negatives (0%)."
+  },
+  "Oracle RightNow": {
+    "cats": [52],
+    "description": "Oracle RightNow (Oracle Service Cloud) chat/knowledge widget, served from the shared custhelp.com domain (e.g. <inst>.custhelp.com) or the RightNow.Client.js loader.",
+    "html": ["custhelp\\.com", "RightNow\\.Client\\.js"],
+    "scripts": ["custhelp\\.com", "RightNow\\.Client\\.js"],
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://www.oracle.com/cx/service/",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). Combined signature home-page HTML = 4.8% recall over 21 positives-with-HTML (1 hit); 6 neg-hits over 4193 negatives (0.1%), spot-checked as BuiltWith misses (real <inst>.custhelp.com portal links)."
+  },
+  "Zoho SalesIQ": {
+    "cats": [52],
+    "description": "Zoho SalesIQ live-chat widget, loaded from salesiq.zoho.com or salesiq.zohopublic.com.",
+    "html": ["salesiq\\.zoho"],
+    "scripts": ["salesiq\\.zoho"],
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://www.zoho.com/salesiq/",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'salesiq.zoho' home-page HTML = 36.8% recall over 19 positives-with-HTML (7 hit); 2 neg-hits over 4195 negatives (0%), spot-checked as BuiltWith misses."
+  },
+  "LiveHelpNow": {
+    "cats": [52],
+    "description": "LiveHelpNow live-chat/helpdesk widget, loaded from developer.livehelpnow.net.",
+    "html": ["livehelpnow\\.net"],
+    "scripts": ["livehelpnow\\.net"],
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://www.livehelpnow.net",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'livehelpnow.net' home-page HTML = 40.0% recall over 15 positives-with-HTML (6 hit); 0 neg-hits over 4199 negatives (0%)."
+  },
+  "Crisp": {
+    "cats": [52],
+    "description": "Crisp live-chat widget, loaded from client.crisp.chat.",
+    "html": ["crisp\\.chat"],
+    "scripts": ["crisp\\.chat"],
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://crisp.chat",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'crisp.chat' home-page HTML = 30.8% recall over 13 positives-with-HTML (4 hit); 0 neg-hits over 4201 negatives (0%)."
+  },
+  "Comm100": {
+    "cats": [52],
+    "description": "Comm100 live-chat widget, loaded from vue.comm100.com.",
+    "html": ["comm100\\.com"],
+    "scripts": ["comm100\\.com"],
+    "higher_ed": false,
+    "confidence": 78,
+    "website": "https://www.comm100.com",
+    "_detection_note": "Thin positive evidence (1 confirmed hit); 0% neg-hit shows the host is tight where it fires, recall is corpus-coverage limited.",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'comm100.com' home-page HTML = 7.7% recall over 13 positives-with-HTML (1 hit); 0 neg-hits over 4201 negatives (0%)."
+  },
+  "Bold Chat": {
+    "cats": [52],
+    "description": "BoldChat (LogMeIn) live-chat widget, loaded from vmss.boldchat.com.",
+    "html": ["boldchat\\.com"],
+    "scripts": ["boldchat\\.com"],
+    "higher_ed": false,
+    "confidence": 78,
+    "website": "https://www.boldchat.com",
+    "_detection_note": "Thin positive evidence (1 confirmed hit); 0% neg-hit shows the host is tight where it fires, recall is corpus-coverage limited.",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'boldchat.com' home-page HTML = 7.1% recall over 14 positives-with-HTML (1 hit); 0 neg-hits over 4200 negatives (0%)."
+  },
+  "Dialogflow": {
+    "cats": [52],
+    "description": "Google Dialogflow Messenger web-component chat widget, identified by the df-messenger custom element / its CSS custom properties (--df-messenger-*).",
+    "html": ["df-messenger"],
+    "scripts": ["df-messenger"],
+    "higher_ed": false,
+    "confidence": 80,
+    "website": "https://cloud.google.com/dialogflow",
+    "_detection_note": "Thin positive evidence (1 confirmed hit out of 8 positives-with-HTML); kept at reduced confidence, but the df-messenger custom-element tag is unambiguous and Google-owned, so precision risk is minimal.",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'df-messenger' home-page HTML = 12.5% recall over 8 positives-with-HTML (1 hit); 0 neg-hits over 4206 negatives (0%)."
+  },
+  "Provide Support": {
+    "cats": [52],
+    "description": "Provide Support live-chat widget, loaded from vm.providesupport.com / image.providesupport.com.",
+    "html": ["providesupport\\.com"],
+    "scripts": ["providesupport\\.com"],
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://www.providesupport.com",
+    "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'providesupport.com' home-page HTML = 46.2% recall over 13 positives-with-HTML (6 hit); 5 neg-hits over 4201 negatives (0.1%), spot-checked as BuiltWith misses."
+  }
+}

@@ -63,7 +63,8 @@ module.exports = {
     '../patterns/higher-ed-lms.json',                    // LMSes + assessment tools (Canvas, Blackboard, Turnitin, etc.)
     '../patterns/higher-ed-sis.json',                    // Student info / ERP / financial aid (Banner, Colleague, Workday, etc.)
     '../patterns/higher-ed-infra.json',                  // Auth, library, CRM, events, payments, video, search, safety
-    '../patterns/higher-ed-accessibility.json'           // Accessibility overlays / QA (UserWay, accessiBe, Monsido, Siteimprove) — data-mined (UNI-141)
+    '../patterns/higher-ed-accessibility.json',          // Accessibility overlays / QA (UserWay, accessiBe, Monsido, Siteimprove) — data-mined (UNI-141)
+    '../patterns/higher-ed-chat.json'                    // Chatbot / live-chat vendors (LiveChat, Zendesk, Intercom, tawk.to, Mainstay, Gecko Chat, etc.) — data-mined (UNI-156)
   ],
 
   // Output configuration
