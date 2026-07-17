@@ -65,7 +65,8 @@ module.exports = {
     '../patterns/higher-ed-infra.json',                  // Auth, library, CRM, events, payments, video, search, safety
     '../patterns/higher-ed-accessibility.json',          // Accessibility overlays / QA (UserWay, accessiBe, Monsido, Siteimprove) — data-mined (UNI-141)
     '../patterns/higher-ed-chat.json',                   // Chatbot / live-chat vendors (LiveChat, Zendesk, Intercom, tawk.to, Mainstay, Gecko Chat, etc.) — data-mined (UNI-156)
-    '../patterns/higher-ed-marketing.json'                // Marketing Automation vendors (HubSpot, Pardot, Marketo, Mautic, SharpSpring, Merit Pages, etc.) — data-mined (UNI-156)
+    '../patterns/higher-ed-marketing.json',               // Marketing Automation vendors (HubSpot, Pardot, Marketo, Mautic, SharpSpring, Merit Pages, etc.) — data-mined (UNI-156)
+    '../patterns/higher-ed-crm.json'                      // CRM vendors (Slate/Technolutions, Salesforce, TargetX, Element451) — data-mined (UNI-156)
   ],
 
   // Output configuration

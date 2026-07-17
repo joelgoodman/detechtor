@@ -121,3 +121,13 @@ test('Marketing Automation is a signal category', () => {
 test('SIGNAL_CATEGORIES now has 8 members', () => {
   assert.strictEqual(SIGNAL_CATEGORIES.size, 8);
 });
+
+// --- UNI-156 Phase 3: dedicated CRM id (303), replacing the remapped 54-56 ---
+
+test('id 303 is CRM', () => {
+  assert.strictEqual(mapCategory(303), 'CRM');
+});
+
+test('CRM is a signal category', () => {
+  assert.ok(isSignalCategory('CRM'));
+});

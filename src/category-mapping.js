@@ -121,7 +121,8 @@ const categoryMapping = {
   108: 'Payment Processor',
   109: 'Payment Processor',
   110: 'Payment Processor',
-  307: 'Marketing Automation' // UNI-156: 8th signal category (Marketing Automation), added 2026-07-16
+  307: 'Marketing Automation', // UNI-156: 8th signal category (Marketing Automation), added 2026-07-16
+  303: 'CRM' // UNI-156: dedicated CRM id (curated); old 54-56 were remapped
 };
 
 function mapCategory(categoryId) {
