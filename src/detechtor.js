@@ -23,13 +23,27 @@ class DeTECHtor {
   
   loadPatterns() {
     const patterns = {};
-    
+    // Curated (higher-ed-authored) partials get provenance-stamped so downstream
+    // consumers (residual-audit.js, benchmark-agent's signal gate) can tell a
+    // hand-vetted higher-ed match from a bare WebAppAnalyzer base-pattern match.
+    const CURATED_RE = /(higher-ed-|general-analytics-extensions|fediverse-social)/;
+
     config.patternPaths.forEach(patternPath => {
       const fullPath = path.resolve(__dirname, patternPath);
       if (fs.existsSync(fullPath)) {
         try {
           const data = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
-          Object.assign(patterns, data);
+          const curated = CURATED_RE.test(patternPath);
+          const sourceFile = path.basename(patternPath);
+          for (const [name, def] of Object.entries(data)) {
+            if (name === '_metadata') continue;
+            if (def && typeof def === 'object') {
+              def._curated = curated;
+              def._sourceFile = sourceFile;
+            }
+            // Later (curated) files still override earlier (base) on name collision.
+            patterns[name] = def;
+          }
           if (config.verbose) {
             console.log(`Loaded ${Object.keys(data).length} patterns from ${fullPath}`);
           }
@@ -410,13 +424,20 @@ class DeTECHtor {
         // Merge evidence and update confidence
         merged[key].evidence = [...new Set([...merged[key].evidence, ...tech.evidence])];
         merged[key].confidence = Math.max(merged[key].confidence, tech.confidence);
-        
+
         // Merge categories
         merged[key].categories = [...new Set([...merged[key].categories, ...tech.categories])];
-        
+
         // Use version if available
         if (tech.version && !merged[key].version) {
           merged[key].version = tech.version;
+        }
+
+        // Provenance: curated if ANY contributing detection was curated; keep
+        // the first non-null sourceFile.
+        merged[key].curated = merged[key].curated || tech.curated || false;
+        if (!merged[key].sourceFile && tech.sourceFile) {
+          merged[key].sourceFile = tech.sourceFile;
         }
       } else {
         merged[key] = { ...tech };
@@ -986,7 +1007,9 @@ class DeTECHtor {
       evidence: config.includeEvidence ? matchEvidence : [],
       version: this.extractVersion({name: name}, evidence),
       isHigherEd: pattern.higher_ed || false,
-      description: pattern.description || ''
+      description: pattern.description || '',
+      curated: pattern._curated || false,
+      sourceFile: pattern._sourceFile || null
     };
   }
   
