@@ -400,12 +400,9 @@
     ],
     "description": "Focus School Software student information system",
     "html": [
-      "focus.*school.*software",
-      "focusschoolsoftware",
-      "focus.*sis"
+      "focusschoolsoftware"
     ],
     "scripts": [
-      "focus.*school",
       "focussis"
     ],
     "js": {
@@ -765,8 +762,7 @@
     "description": "Rediker AdminPlus student information system",
     "html": [
       "rediker.*software",
-      "adminplus",
-      "admin.*plus"
+      "adminplus"
     ],
     "scripts": [
       "rediker",
@@ -808,12 +804,10 @@
       "renweb"
     ],
     "scripts": [
-      "renweb",
-      "facts"
+      "renweb"
     ],
     "js": {
-      "RenWeb": "",
-      "FACTS": ""
+      "RenWeb": ""
     },
     "higher_ed": true,
     "confidence": 85,
@@ -849,12 +843,9 @@
     "html": [
       "sits\\.urd",
       "/urd/sits\\.urd/run/",
-      "sits.*student",
-      "sits.*records",
       "tribal.*sits"
     ],
     "scripts": [
-      "sits",
       "tribal.*sits"
     ],
     "js": {
@@ -894,8 +885,7 @@
     ],
     "description": "SchoolAdmin student information system",
     "html": [
-      "schooladmin",
-      "school.*admin"
+      "schooladmin"
     ],
     "scripts": [
       "schooladmin"

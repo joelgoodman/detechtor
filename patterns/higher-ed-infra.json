@@ -995,16 +995,12 @@
       29
     ],
     "description": "Google Custom Search Engine",
-    "html": [
-      "google.*custom.*search",
-      "google.*site.*search"
-    ],
+    "html": [],
     "scripts": [
-      "google.*search",
-      "cse.*google"
+      "cse\\.google\\.com",
+      "/cse\\.js"
     ],
     "js": {
-      "google": "",
       "__gcse": ""
     },
     "higher_ed": true,
@@ -1922,8 +1918,7 @@
     ],
     "description": "Site Search 360 hosted search solution",
     "html": [
-      "sitesearch360",
-      "site.*search.*360"
+      "sitesearch360"
     ],
     "scripts": [
       "sitesearch360"

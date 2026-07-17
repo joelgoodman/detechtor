@@ -172,7 +172,6 @@
       "canvas-lms",
       "instructure\\.com",
       "canvas_course_id",
-      "ENV.*COURSE",
       "webpackChunkcanvas_lms"
     ],
     "scripts": [
@@ -467,8 +466,7 @@
     ],
     "description": "LearnDash WordPress LMS plugin",
     "html": [
-      "learndash",
-      "ld.*course"
+      "learndash"
     ],
     "scripts": [
       "learndash"
@@ -508,17 +506,11 @@
     ],
     "description": "Macmillan Learning Achieve platform",
     "html": [
-      "macmillan.*achieve",
-      "achieve.*macmillan",
       "macmillanlearning"
     ],
-    "scripts": [
-      "achieve",
-      "macmillan"
-    ],
+    "scripts": [],
     "js": {
-      "MacmillanAchieve": "",
-      "Achieve": ""
+      "MacmillanAchieve": ""
     },
     "higher_ed": true,
     "confidence": 85,
