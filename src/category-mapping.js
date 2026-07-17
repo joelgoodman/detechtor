@@ -61,7 +61,7 @@ const categoryMapping = {
   50: 'Advertising',
   51: 'Advertising',
   52: 'Chatbot',
-  53: 'SIS', // Student Information Systems
+  53: 'Business Software', // was 'SIS' — base 53 is actually a CRM/chatbot grab-bag (Agile CRM, amoCRM, Aivo, ArtiBot…); declassified out of signal categories, see docs/category-remap.md
   54: 'SEO Tool', // was 'CRM' — real content is SEO tooling (Ahrefs, RankMath SEO, BrightEdge…); see docs/category-remap.md rule 6
   55: 'Financial Software', // was 'CRM' — real content is accounting/fintech (Carta, Ignition, Taxdome…); see docs/category-remap.md rule 6
   56: 'Cryptomining', // was 'CRM' — real content is browser cryptojacking scripts (CoinHive, Crypto-Loot…); see docs/category-remap.md rule 6
@@ -122,7 +122,9 @@ const categoryMapping = {
   109: 'Payment Processor',
   110: 'Payment Processor',
   307: 'Marketing Automation', // UNI-156: 8th signal category (Marketing Automation), added 2026-07-16
-  303: 'CRM' // UNI-156: dedicated CRM id (curated); old 54-56 were remapped
+  303: 'CRM', // UNI-156: dedicated CRM id (curated); old 54-56 were remapped
+  302: 'SIS', // UNI-156: dedicated SIS id (curated); base 53 was CRM/chatbot-skewed
+  304: 'Proctoring' // UNI-156: proctoring/integrity tools (non-signal)
 };
 
 function mapCategory(categoryId) {

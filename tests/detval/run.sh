@@ -1,7 +1,7 @@
 #!/bin/bash
 # UNI-145 validation: deTECHtor --skip-crawl ON vs OFF on the same institutions.
 DET="$(cd "$(dirname "$0")/../.." && pwd)"
-NODE="/Users/Argyle/.nvm/versions/node/v24.2.0/bin/node"
+NODE="$(command -v node)"
 OUT="$(dirname "$0")"
 mkdir -p "$OUT"
 

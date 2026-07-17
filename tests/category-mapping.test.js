@@ -131,3 +131,31 @@ test('id 303 is CRM', () => {
 test('CRM is a signal category', () => {
   assert.ok(isSignalCategory('CRM'));
 });
+
+// --- UNI-156 review fix: dedicated SIS id (302), base 53 declassified to Business Software, proctoring->304 ---
+
+test('id 302 is the dedicated SIS id', () => {
+  assert.strictEqual(mapCategory(302), 'SIS');
+  assert.ok(isSignalCategory('SIS'));
+});
+
+test('base id 53 is declassified to Business Software, no longer a signal category', () => {
+  assert.strictEqual(mapCategory(53), 'Business Software');
+  assert.ok(!isSignalCategory(mapCategory(53)));
+});
+
+test('id 304 is Proctoring, not a signal category', () => {
+  assert.strictEqual(mapCategory(304), 'Proctoring');
+  assert.ok(!isSignalCategory('Proctoring'));
+});
+
+test('all curated SIS entries in higher-ed-sis.json carry id 302, not 53', () => {
+  const sisPatterns = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '../patterns/higher-ed-sis.json'), 'utf8')
+  );
+  for (const [name, def] of Object.entries(sisPatterns)) {
+    if (name === '_metadata') continue;
+    assert.ok(def.cats.includes(302), `${name} must carry SIS id 302, got ${JSON.stringify(def.cats)}`);
+    assert.ok(!def.cats.includes(53), `${name} must not carry the declassified id 53, got ${JSON.stringify(def.cats)}`);
+  }
+});
