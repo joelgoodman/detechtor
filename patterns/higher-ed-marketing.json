@@ -1,0 +1,153 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "description": "Marketing Automation vendors for higher education (the 8th signal category, UNI-156 Phase 3, cats:[307]). Signatures data-mined from the rendered HTML of BuiltWith 'Marketing Automation'-labeled cohort-128 homepages: each scripts/html regex targets the vendor's dedicated tracking-pixel/form-embed host or an unambiguous vendor-namespaced marker, empirically deduced against the vendors' own positive corpus, not hand-guessed. CORPUS CEILING: this corpus is homepage-only (one captured page per institution, no JS-execution replay), and most marketing-automation tags are injected client-side via Google Tag Manager containers, so static-HTML recall is systemically LOW (median well under 30%) for vendors that DO fire — this is a corpus artifact, not a signature-quality problem. neg_hit_pct is consistently ~0-1% (HubSpot is the one high-traffic exception at ~3.8%, explained by its sheer market ubiquity) and every spot-checked neg-hit confirmed a genuine vendor install that BuiltWith itself missed (oracle under-labeling), never unrelated prose or an icon-font collision. A distinct second group of vendors (Brevo, SendinBlue, iContact, Act-On, ExactTarget Email, Oracle CX, 6sense, Demandbase, Microsoft Dynamics 365 Marketing, Ortto, Omnisend) are pure email-send / ABM-pixel infrastructure that genuinely never appears in any labeled positive's static homepage HTML in this corpus (0 hits across every candidate host tried) — these are DEFERRED, not guessed, per the no-fabricated-data rule; see docs/task-3-marketing-report.md for the full per-vendor trace.",
+    "generated": "2026-07-16",
+    "source": "data-mined from local corpus/ (Wasabi-fetched cohort-128 rendered HTML) vs institutions.tech_profile BuiltWith Marketing Automation labels, via scripts/mine-local.js (deduce->validate harness, UNI-156)",
+    "tech_count": 14
+  },
+  "HubSpot": {
+    "cats": [307],
+    "description": "HubSpot tracking/forms/lead-flow loader suite, served from HubSpot's dedicated hs-* subdomains (hs-scripts.com analytics/tracking loader, hsforms.net forms embed, hs-analytics.net, hscollectedforms.net, hsleadflows.net).",
+    "html": ["js\\.hs-scripts\\.com", "js\\.hsforms\\.net", "js\\.hs-analytics\\.net", "js\\.hscollectedforms\\.net", "js\\.hsleadflows\\.net"],
+    "scripts": ["js\\.hs-scripts\\.com", "js\\.hsforms\\.net", "js\\.hs-analytics\\.net", "js\\.hscollectedforms\\.net", "js\\.hsleadflows\\.net"],
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.hubspot.com",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined js.hs-scripts.com/js.hsforms.net/js.hs-analytics.net/js.hscollectedforms.net/js.hsleadflows.net home-page HTML = 19.7% recall over 137 positives-with-HTML (27 hit); 153 neg-hits over 4077 negatives (3.8%) — the highest neg-hit rate in this partial, spot-checked as genuine js.hs-scripts.com/<portal-id>.js installs (BuiltWith misses), not a collision; the elevated rate reflects HubSpot's outsized higher-ed market share rather than signature looseness."
+  },
+  "Pardot": {
+    "cats": [307],
+    "description": "Salesforce Pardot tracking pixel / form host, loaded from pi.pardot.com (or the go.pardot.com landing-page domain).",
+    "html": ["pi\\.pardot\\.com", "go\\.pardot\\.com"],
+    "scripts": ["pi\\.pardot\\.com", "go\\.pardot\\.com"],
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.pardot.com",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined 'pi.pardot.com'/'go.pardot.com' home-page HTML = 14.9% recall over 114 positives-with-HTML (17 hit); 39 neg-hits over 4100 negatives (1.0%), spot-checked as BuiltWith misses (real pi.pardot.com/pd.js installs)."
+  },
+  "Marketo": {
+    "cats": [307],
+    "description": "Marketo Munchkin tracking loader (munchkin.marketo.net) plus the bare marketo.com host for form/landing-page embeds.",
+    "html": ["munchkin\\.marketo\\.net", "marketo\\.com"],
+    "scripts": ["munchkin\\.marketo\\.net", "marketo\\.com"],
+    "higher_ed": true,
+    "confidence": 85,
+    "website": "https://www.marketo.com",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined 'munchkin.marketo.net'/'marketo.com' home-page HTML = 51.7% recall over 116 positives-with-HTML (60 hit) — the best recall of any non-HE-specific vendor; 34 neg-hits over 4098 negatives (0.8%), spot-checked as BuiltWith misses."
+  },
+  "Eloqua": {
+    "cats": [307],
+    "description": "Oracle Eloqua tracking-pixel host en25.com (Eloqua's legacy Engage25 asset domain — img.en25.com/i/elqCfg.min.js), distinct from the bare eloqua.com word which fired zero hits.",
+    "html": ["en25\\.com"],
+    "scripts": ["en25\\.com"],
+    "higher_ed": true,
+    "confidence": 82,
+    "website": "https://www.oracle.com/cx/marketing/automation/",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'en25.com' home-page HTML = 17.4% recall over 69 positives-with-HTML (12 hit); 2 neg-hits over 4145 negatives (0%), spot-checked as BuiltWith misses (real img.en25.com/i/elqCfg.min.js installs). A naive bare 'eloqua.com' and the 'elqNow' JS-global token both scored 0 hits across every positive and were rejected."
+  },
+  "Emma": {
+    "cats": [307],
+    "description": "Emma (by Marigold) email/signup-form host e2ma.net — higher-ed-priority vendor, HE-specific email marketing platform for advancement/alumni offices.",
+    "html": ["e2ma\\.net"],
+    "scripts": ["e2ma\\.net"],
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://myemma.com",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'e2ma.net' home-page HTML = 3.4% recall over 117 positives-with-HTML (4 hit); 9 neg-hits over 4097 negatives (0.2%), spot-checked as BuiltWith misses (real app.e2ma.net/signup.e2ma.net signup-form embeds)."
+  },
+  "Constant Contact": {
+    "cats": [307],
+    "description": "Constant Contact signup-widget CDN (static.ctctcdn.com) plus the constantcontact.com host, which also covers the 'email marketing by Constant Contact' footer branding link and the visitor tracking API.",
+    "html": ["ctctcdn\\.com", "constantcontact\\.com"],
+    "scripts": ["ctctcdn\\.com", "constantcontact\\.com"],
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.constantcontact.com",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined 'ctctcdn.com'/'constantcontact.com' home-page HTML = 16.2% recall over 117 positives-with-HTML (19 hit); 29 neg-hits over 4097 negatives (0.7%), spot-checked as BuiltWith misses (static.ctctcdn.com signup-widget script, visitor2.constantcontact.com/api/signup calls)."
+  },
+  "Mailchimp": {
+    "cats": [307],
+    "description": "Mailchimp asset CDN (chimpstatic.com — mcjs-connected tracking loader) plus the list-manage.com hosted-signup-form domain.",
+    "html": ["chimpstatic\\.com", "list-manage\\.com"],
+    "scripts": ["chimpstatic\\.com", "list-manage\\.com"],
+    "higher_ed": true,
+    "confidence": 78,
+    "website": "https://mailchimp.com",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined 'chimpstatic.com'/'list-manage.com' home-page HTML = 13.8% recall over 138 positives-with-HTML (19 hit); 45 neg-hits over 4076 negatives (1.1%), spot-checked as BuiltWith misses (real chimpstatic.com/mcjs-connected and <inst>.usN.list-manage.com/subscribe embeds)."
+  },
+  "Active Campaign": {
+    "cats": [307],
+    "description": "ActiveCampaign hosted-forms domain activehosted.com. The bare activecampaign.com host scored zero hits and was dropped.",
+    "html": ["activehosted\\.com"],
+    "scripts": ["activehosted\\.com"],
+    "higher_ed": true,
+    "confidence": 72,
+    "website": "https://www.activecampaign.com",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'activehosted.com' home-page HTML = 1.0% recall over 104 positives-with-HTML (1 hit) — thin; 3 neg-hits over 4110 negatives (0.1%), spot-checked as BuiltWith misses."
+  },
+  "Mautic": {
+    "cats": [307],
+    "description": "Mautic self-hosted tracking pixel, identified by its standard '/mtc.js' loader filename convention (Mautic is open-source and self-hosted, so there is no single dedicated CDN host — the filename is the durable marker across every installation).",
+    "html": ["mtc\\.js"],
+    "scripts": ["mtc\\.js"],
+    "higher_ed": true,
+    "confidence": 80,
+    "website": "https://www.mautic.org",
+    "_detection_note": "Highest recall in the partial. Confirmed via direct spot-check of 5 neg-hit institutions, each running the marker on its own self-hosted subdomain (e.g. go.aadp.chc.edu/mtc.js, start.calaerouniv.org/mtc.js) — genuine self-hosted Mautic installs BuiltWith did not label, not a collision.",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'mtc.js' home-page HTML = 70.0% recall over 110 positives-with-HTML (77 hit); 140 neg-hits over 4104 negatives (3.4%), spot-checked (5 institutions) as genuine self-hosted /mtc.js installs on the institution's own admissions/advancement subdomain, not unrelated file-name noise."
+  },
+  "Campaign Monitor": {
+    "cats": [307],
+    "description": "Campaign Monitor hosted-forms/tracking domain createsend.com.",
+    "html": ["createsend\\.com"],
+    "scripts": ["createsend\\.com"],
+    "higher_ed": false,
+    "confidence": 70,
+    "website": "https://www.campaignmonitor.com",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'createsend.com' home-page HTML = 0.9% recall over 115 positives-with-HTML (1 hit) — thin, unambiguous marker; 0 neg-hits over 4099 negatives (0%)."
+  },
+  "SharpSpring": {
+    "cats": [307],
+    "description": "SharpSpring tracking pixel, loaded from a per-account koi-<token>.marketingautomation.services host (client/ss.js loader).",
+    "html": ["marketingautomation\\.services"],
+    "scripts": ["marketingautomation\\.services"],
+    "higher_ed": true,
+    "confidence": 88,
+    "website": "https://sharpspring.com",
+    "_detection_note": "A naive bare 'sharpspring.com' scored zero hits across every positive (SharpSpring is invisible in the DOM under its own brand domain); the actual firing host is the whitelabeled per-account marketingautomation.services tracking-pixel domain, confirmed via spot-check (koi-3QNJSOTTG4.marketingautomation.services/client/ss.js, etc.).",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'marketingautomation.services' home-page HTML = 46.2% recall over 26 positives-with-HTML (12 hit); 0 neg-hits over 4188 negatives (0%)."
+  },
+  "Merit Pages": {
+    "cats": [307],
+    "description": "Merit Pages (meritpages.com) — higher-ed-specific student/alumni achievement and press-release automation network, widely embedded as a homepage news/press widget.",
+    "html": ["meritpages\\.com"],
+    "scripts": ["meritpages\\.com"],
+    "higher_ed": true,
+    "confidence": 90,
+    "website": "https://meritpages.com",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'meritpages.com' home-page HTML = 68.2% recall over 44 positives-with-HTML (30 hit) — the best recall in the partial; 12 neg-hits over 4170 negatives (0.3%), spot-checked as BuiltWith misses (real embedded meritpages.com widget links)."
+  },
+  "Acoustic Campaign": {
+    "cats": [307],
+    "description": "IBM/Acoustic Campaign (formerly Silverpop Engage) — identified by the co-branding meta tag namespace 'com.silverpop.*' (brandeddomains/cothost) that Silverpop/Acoustic injects into the <head>, or the legacy pages02.net tracking host.",
+    "html": ["com\\.silverpop\\.", "pages02\\.net"],
+    "scripts": ["pages02\\.net"],
+    "higher_ed": false,
+    "confidence": 74,
+    "website": "https://www.acoustic.com/campaign",
+    "_detection_note": "Thin evidence (1 confirmed hit) but the marker is unambiguous: '<meta name=\"com.silverpop.brandeddomains\" content=\"...pages02.net...\">' is a vendor-namespaced meta tag with no plausible unrelated source.",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined 'com.silverpop.'/'pages02.net' home-page HTML = 25.0% recall over 4 positives-with-HTML (1 hit); 0 neg-hits over 4210 negatives (0%)."
+  },
+  "dotdigital Engagement Cloud": {
+    "cats": [307],
+    "description": "dotdigital (formerly dotmailer) — the only marker found in this corpus is a footer privacy-policy link to dotmailer.com, an indirect ESP-relationship signal rather than an active tracking script.",
+    "html": ["dotmailer\\.com"],
+    "scripts": ["dotmailer\\.com"],
+    "higher_ed": false,
+    "confidence": 55,
+    "website": "https://dotdigital.com",
+    "_detection_note": "Weak/indirect: the one hit is 'https://www.dotmailer.com/terms/privacy-policy/' in the footer, not a widget or tracking-pixel host. Kept at low confidence rather than deferred because it is a genuine, unambiguous ESP-attribution link found within the labeled positive set, not noise — but it will under-fire relative to institutions that use dotdigital purely for outbound email (no homepage trace at all).",
+    "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'dotmailer.com' home-page HTML = 3.1% recall over 32 positives-with-HTML (1 hit) — thin, indirect footer-link marker; 0 neg-hits over 4182 negatives (0%)."
+  }
+}

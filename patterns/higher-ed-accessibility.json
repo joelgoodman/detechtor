@@ -1,24 +1,25 @@
 {
   "_metadata": {
-    "version": "1.0.0",
-    "description": "Accessibility overlays and web-governance/QA tools. Signatures data-mined from the HTML of BuiltWith-labeled sites (UNI-141): scripts patterns match the vendor's loader host, deduced empirically (not hand-guessed). Overlays (UserWay/accessiBe) are candidate NEGATIVE signals — presence is a risk flag, not a plus (UNI-137).",
-    "generated": "2026-07-13",
-    "source": "data-mined from Supabase scan_pages.content vs BuiltWith labels (deduce->validate harness)",
-    "tech_count": 5
+    "version": "1.1.0",
+    "description": "Accessibility overlays, assistive-reader widgets, and web-governance/QA tools. Signatures data-mined from local corpus HTML (cohort-128, 4,214 institutions) vs BuiltWith-labeled positives (UNI-141/UNI-156 Phase 3): every pattern matches the vendor's dedicated loader host or plugin path, deduced empirically via scripts/mine-local.js, not hand-guessed. Overlay/widget-class tools (AudioEye, UserWay, accessiBe, EqualWeb, Recite Me, WP Accessibility Helper) are NEGATIVE signals — presence is a risk flag, not a plus (UNI-137); genuine audit/monitoring or assistive-reader tools (Monsido, Siteimprove, ReadSpeaker, Level Access, WP Accessibility) carry no polarity.",
+    "generated": "2026-07-16",
+    "source": "data-mined from local corpus/ (cohort-128 homepage HTML) vs BuiltWith labels via scripts/mine-local.js (UNI-156 Phase 3 Task 3)",
+    "tech_count": 10
   },
   "AudioEye": {
-    "cats": [111],
-    "description": "AudioEye accessibility overlay/remediation widget, loaded from audioeye.com / cdn.audioeye.com. Overlay-class tool — candidate NEGATIVE signal (UNI-137): automated overlays are frequent ADA-lawsuit targets and do not guarantee real WCAG conformance.",
+    "cats": [306],
+    "description": "AudioEye accessibility overlay/remediation widget, loaded from audioeye.com / cdn.audioeye.com. Overlay-class tool — NEGATIVE signal (UNI-137): automated overlays are frequent ADA-lawsuit targets and do not guarantee real WCAG conformance.",
     "html": ["audioeye\\.com"],
-    "scripts": ["audioeye\\.com", "audioeye"],
+    "scripts": ["audioeye\\.com"],
     "higher_ed": false,
     "confidence": 90,
     "website": "https://www.audioeye.com",
     "signal_polarity": "negative",
-    "_validation": "Data-mined vs BuiltWith (UNI-141, 2026-07-13): audioeye.com home/canonical HTML recall 68% (bare 'audioeye' 72%), ~1% neg (dedicated domain; neg hits are BuiltWith misses)."
+    "_detection_note": "Overlay/widget (client-side remediation layer, not an audit tool) — negative polarity confirmed per UNI-137.",
+    "_validation": "Re-validated UNI-156 Phase 3 (2026-07-16) with scripts/mine-local.js against local corpus (4,214 insts) + Accessibility_QA__AudioEye.json positives (71 total): html-field recall 67.3% (33/49 pos-with-HTML), neg-hit 0.1% (3/4,165) — all 3 spot-checked and confirmed genuine AudioEye installs BuiltWith itself missed (oracle under-labeling, not FPs). Signature unchanged (already dedicated-host, tight)."
   },
   "UserWay": {
-    "cats": [111],
+    "cats": [306],
     "description": "UserWay accessibility overlay widget, injected via cdn.userway.org. Accessibility overlays are widely regarded as not delivering real WCAG compliance and are frequent ADA-lawsuit targets — treat presence as a risk signal (UNI-137).",
     "html": ["userway\\.org"],
     "scripts": ["userway\\.org"],
@@ -26,35 +27,99 @@
     "confidence": 90,
     "website": "https://userway.org",
     "signal_polarity": "negative",
-    "_validation": "BuiltWith-positive home-HTML recall ~62%, FP ~0.3% (dedicated domain)"
+    "_detection_note": "Overlay/widget — negative polarity confirmed per UNI-137.",
+    "_validation": "Re-validated UNI-156 Phase 3 (2026-07-16): html-field recall 58.7% (64/109 pos-with-HTML, N_total=150), neg-hit 2.5% (101/4,105) — spot-checked neg-hits (e.g. #2303, #2343) all confirmed genuine cdn.userway.org script/widget installs BuiltWith missed. Signature unchanged (already dedicated-host)."
   },
   "accessiBe": {
-    "cats": [111],
-    "description": "accessiBe accessibility overlay, loaded from acsbapp.com / accessibe.com. Overlay — candidate negative signal (UNI-137).",
+    "cats": [306],
+    "description": "accessiBe accessibility overlay, loaded from acsbapp.com / accessibe.com. Overlay — NEGATIVE signal (UNI-137).",
     "html": ["acsbapp\\.com", "accessibe\\.com"],
     "scripts": ["acsbapp\\.com", "accessibe\\.com"],
     "higher_ed": false,
     "confidence": 90,
     "website": "https://accessibe.com",
     "signal_polarity": "negative",
-    "_validation": "BuiltWith-positive home-HTML recall ~68%, FP ~2% (dedicated domain)"
+    "_detection_note": "Overlay/widget — negative polarity confirmed per UNI-137.",
+    "_validation": "Re-validated UNI-156 Phase 3 (2026-07-16): combined html-field recall 70.6% (89/126 pos-with-HTML, N_total=150; acsbapp.com alone 67.5%, accessibe.com alone 59.5%), neg-hit 1.1% (47/4,088) — spot-checked (e.g. #692, #1995) all confirmed genuine acsbapp.com app.js loader installs BuiltWith missed. Signature unchanged."
   },
   "Monsido": {
-    "cats": [111],
-    "description": "Monsido web accessibility + quality-assurance monitoring, loaded from app-script.monsido.com.",
-    "html": ["monsido\\.com"],
-    "scripts": ["monsido\\.com"],
+    "cats": [306],
+    "description": "Monsido web accessibility + quality-assurance monitoring, loaded from app-script.monsido.com; also self-identifies via a <meta name=\"monsido\"> tag on some installs.",
+    "html": ["monsido\\.com", "monsido"],
+    "scripts": ["monsido\\.com", "monsido"],
     "higher_ed": false,
     "confidence": 90,
-    "website": "https://monsido.com"
+    "website": "https://monsido.com",
+    "_detection_note": "Genuine audit/monitoring platform (not an overlay widget) — no negative polarity per UNI-137.",
+    "_validation": "Re-validated UNI-156 Phase 3 (2026-07-16): bare 'monsido' html-field recall 60.7% (74/122 pos-with-HTML, N_total=150; monsido\\.com alone 59.8%), neg-hit 1.4% (58/4,092) — spot-checked (e.g. #454, #2043, #2107 <meta name=\"monsido\">) all confirmed genuine installs BuiltWith missed. Widened from host-only to host+bare token: bare form also catches the <meta name=\"monsido\"> self-ID marker seen on some installs without losing precision (7-char distinctive token, no generic-word collision observed)."
   },
   "Siteimprove": {
-    "cats": [111],
-    "description": "Siteimprove accessibility / SEO / quality-assurance governance platform; the analytics beacon loads from siteimproveanalytics.com.",
+    "cats": [306],
+    "description": "Siteimprove accessibility / SEO / quality-assurance governance platform; the analytics beacon loads from siteimproveanalytics.com (also seen on regional subdomains of siteimprove.com, e.g. us1.siteimprove.com).",
     "html": ["siteimproveanalytics\\.com", "siteimprove\\.com"],
     "scripts": ["siteimproveanalytics\\.com", "siteimprove\\.com"],
     "higher_ed": false,
     "confidence": 90,
-    "website": "https://siteimprove.com"
+    "website": "https://siteimprove.com",
+    "_detection_note": "Genuine audit/monitoring platform (not an overlay widget) — no negative polarity per UNI-137.",
+    "_validation": "Re-validated UNI-156 Phase 3 (2026-07-16): combined html-field recall 58.0% (76/131 pos-with-HTML, N_total=150; siteimproveanalytics.com alone 57.3%), neg-hit 11.9% (486/4,083) — this is the highest neg-hit% in the file, but spot-checking (10 sample ids incl. #33, #501, #583, #594, #684, #975) found EVERY hit was a genuine siteimproveanalytics.com/us1.siteimprove.com analytics beacon or Cookiebot-listed siteimprove.com third-party entry, i.e. BuiltWith under-labels Siteimprove heavily in this corpus (oracle miss, not a signature FP — per the standing mine-local.js oracle caveat). Kept both hosts: siteimprove.com-only catches installs on regional subdomains (e.g. us1.siteimprove.com) that siteimproveanalytics.com misses, worth +1 pos_hit for the added neg-hit surface, all of which spot-checked genuine."
+  },
+  "Recite Me": {
+    "cats": [306],
+    "description": "Recite Me accessibility/reading overlay toolbar (translate, screen-reader, dyslexia font, etc.), loaded from reciteme.com / api.reciteme.com.",
+    "html": ["reciteme\\.com"],
+    "scripts": ["reciteme\\.com"],
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://reciteme.com",
+    "signal_polarity": "negative",
+    "_detection_note": "Overlay/widget (toolbar-style remediation layer, same class as UserWay/accessiBe) — negative polarity per UNI-137.",
+    "_validation": "New UNI-156 Phase 3 gap vendor (2026-07-16): mined against Accessibility_QA__Recite_Me.json (39 positives). html-field recall 64.7% (22/34 pos-with-HTML), neg-hit 0.0% (1/4,180, spot-checked as a genuine BuiltWith miss). Dedicated host, no collisions found."
+  },
+  "ReadSpeaker": {
+    "cats": [306],
+    "description": "ReadSpeaker text-to-speech / webReader assistive-reading widget, loaded from *.readspeaker.com (cdn1/cdn-na/f1-na subdomains observed).",
+    "html": ["readspeaker\\.com"],
+    "scripts": ["readspeaker\\.com"],
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://www.readspeaker.com",
+    "_detection_note": "Assistive text-to-speech reader, not a WCAG-compliance overlay claim — no negative polarity per UNI-137.",
+    "_validation": "New UNI-156 Phase 3 gap vendor (2026-07-16): mined against Accessibility_QA__ReadSpeaker.json (27 positives). html-field recall 55.6% (10/18 pos-with-HTML), neg-hit 0.0% (0/4,196). Dedicated host, clean."
+  },
+  "EqualWeb": {
+    "cats": [306],
+    "description": "EqualWeb accessibility overlay, loaded from cdn.equalweb.com / access.equalweb.com.",
+    "html": ["equalweb\\.com"],
+    "scripts": ["equalweb\\.com"],
+    "higher_ed": false,
+    "confidence": 85,
+    "website": "https://www.equalweb.com",
+    "signal_polarity": "negative",
+    "_detection_note": "Overlay/widget — negative polarity per UNI-137.",
+    "_validation": "New UNI-156 Phase 3 gap vendor (2026-07-16): mined against Accessibility_QA__EqualWeb.json (17 positives, thin). html-field recall 50.0% (5/10 pos-with-HTML), neg-hit 0.0% (0/4,204). Dedicated host, clean, but small N — confidence set slightly below the higher-N vendors."
+  },
+  "WP Accessibility": {
+    "cats": [306],
+    "description": "WP Accessibility WordPress plugin (skip-links, font-size/contrast toolbar) — self-hosted, detected via its asset path wp-content/plugins/wp-accessibility/.",
+    "html": ["wp-content/plugins/wp-accessibility(?!-helper)"],
+    "scripts": ["wp-content/plugins/wp-accessibility(?!-helper)"],
+    "higher_ed": false,
+    "confidence": 82,
+    "website": "https://wordpress.org/plugins/wp-accessibility/",
+    "_detection_note": "Genuine self-hosted assistive/toolbar plugin (skip-links, contrast, font-size) — no negative polarity per UNI-137, left as-is.",
+    "_validation": "New UNI-156 Phase 3 gap vendor (2026-07-16): mined against Accessibility_QA__WP_Accessibility.json (150 positives) using the disjoint lookahead form. html-field recall 24.8% (30/121 pos-with-HTML), neg-hit 0.3% (14/4,093, spot-checked genuine — BuiltWith misses). Recall ceiling is a corpus-coverage issue (homepage-only capture), not a signature-precision issue. The negative lookahead (?!-helper) is load-bearing, not cosmetic: without it the plain 'wp-content/plugins/wp-accessibility' string also substring-matches every 'wp-content/plugins/wp-accessibility-helper/...' asset path, so 2 of the 32 raw pos-hits (#2930, #3695) turned out on inspection to be sites running ONLY the Helper plugin (the pos-file itself appears to conflate the two similarly-named vendors for those 2 ids) — the lookahead correctly declines to attribute those to plain WP Accessibility. Verified the lookahead does not cost recall against genuine co-installs: #1110 runs both plugins simultaneously and still matches both entries correctly."
+  },
+  "WP Accessibility Helper": {
+    "cats": [306],
+    "description": "WP Accessibility Helper (WAH) WordPress plugin — floating accessibility toolbar (contrast, font-size, skip-links), self-hosted, detected via its asset path wp-content/plugins/wp-accessibility-helper/.",
+    "html": ["wp-accessibility-helper"],
+    "scripts": ["wp-accessibility-helper"],
+    "higher_ed": false,
+    "confidence": 78,
+    "website": "https://wordpress.org/plugins/wp-accessibility-helper/",
+    "signal_polarity": "negative",
+    "_detection_note": "Floating accessibility toolbar overlay (contrast/font-size/skiplinks widget), same functional class as UserWay/accessiBe/EqualWeb rather than a WCAG audit tool — negative polarity per UNI-137.",
+    "_validation": "New UNI-156 Phase 3 gap vendor, corresponds to task's 'Accessibility_Helper' pos-file (2026-07-16): mined against Accessibility_QA__Accessibility_Helper.json (5 positives, thin — every one has corpus HTML). html-field recall 80.0% (4/5), neg-hit 0.0% (0/4,209). Very small N (thin-sample caveat) but unambiguous dedicated plugin-path marker with zero neg-hits."
   }
 }

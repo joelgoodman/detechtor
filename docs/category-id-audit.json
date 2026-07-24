@@ -1,0 +1,2013 @@
+{
+  "1": {
+    "count": 448,
+    "sampleTechs": [
+      "AbhiCMS",
+      "AdminBuy",
+      "Adobe Experience Manager",
+      "Adobe Experience Manager Franklin",
+      "Agility CMS",
+      "Aksara CMS",
+      "Altis",
+      "AlvandCMS",
+      "Ametys",
+      "Amiro.CMS",
+      "Amplience",
+      "Antee IPO",
+      "ApostropheCMS",
+      "AquilaCMS",
+      "Arc XP"
+    ],
+    "currentName": "CMS"
+  },
+  "2": {
+    "count": 46,
+    "sampleTechs": [
+      "Asgaros Forum",
+      "Circle",
+      "CometD",
+      "Community",
+      "Copiny",
+      "Discourse",
+      "Discuz! X",
+      "ElkArte",
+      "FUDforum",
+      "Flarum",
+      "FluxBB",
+      "Higher Logic Vanilla",
+      "IPB",
+      "Invision Power Board",
+      "Linen"
+    ],
+    "currentName": "Message Boards"
+  },
+  "3": {
+    "count": 7,
+    "sampleTechs": [
+      "Adminer",
+      "Knack",
+      "phpMyAdmin",
+      "phpPgAdmin",
+      "SQL Buddy",
+      "Xano",
+      "8base"
+    ],
+    "currentName": "Message Boards"
+  },
+  "4": {
+    "count": 43,
+    "sampleTechs": [
+      "Adobe RoboHelp",
+      "Apigee",
+      "Asciidoctor",
+      "BetterDocs",
+      "BookStack",
+      "Bump",
+      "ClickHelp",
+      "ClickUp",
+      "DocFX",
+      "Docsify",
+      "Docusaurus",
+      "Doxygen",
+      "GetTerms",
+      "GitBook",
+      "Haddock"
+    ],
+    "currentName": "Wiki"
+  },
+  "5": {
+    "count": 198,
+    "sampleTechs": [
+      "AccuWeather",
+      "AddShoppers",
+      "AddThis",
+      "AddToAny",
+      "AirRobe",
+      "Airtable",
+      "Algolia DocSearch",
+      "AnswerDash",
+      "Answerbase",
+      "Arena",
+      "Astra Widgets",
+      "Avada Boost Sales",
+      "Avasize",
+      "BDOW",
+      "Babylist"
+    ],
+    "currentName": "LMS"
+  },
+  "6": {
+    "count": 637,
+    "sampleTechs": [
+      "ABOUT YOU Commerce Suite",
+      "ADAPT",
+      "AIMEOS",
+      "ARI Network Services",
+      "ATSHOP",
+      "Aasaan",
+      "Abicart",
+      "Accesso",
+      "Activ8 Commerce",
+      "Adevole",
+      "Adimo",
+      "Advin",
+      "Aedi",
+      "Aero Commerce",
+      "Afosto"
+    ],
+    "currentName": "Web Server"
+  },
+  "7": {
+    "count": 28,
+    "sampleTechs": [
+      "Alboom Proof",
+      "Blessing Skin",
+      "Bloom Portfolio",
+      "bxSlider",
+      "Canvy",
+      "Chevereto",
+      "Clickbooq",
+      "Coppermine",
+      "FooPlugins FooGallery",
+      "Gallery",
+      "Imagekit",
+      "Imagely NextGEN Gallery",
+      "JAlbum",
+      "Keepeek",
+      "Lightfolio"
+    ],
+    "currentName": "CDN"
+  },
+  "8": {
+    "count": 14,
+    "sampleTechs": [
+      "Apache JSPWiki",
+      "Atlassian Confluence",
+      "DokuWiki",
+      "Foswiki",
+      "ikiwiki",
+      "MediaWiki",
+      "MoinMoin",
+      "PukiWiki",
+      "TWiki",
+      "TiddlyWiki",
+      "Tiki Wiki CMS Groupware",
+      "WikkaWiki",
+      "XWiki",
+      "YesWiki"
+    ],
+    "currentName": "Programming Language"
+  },
+  "9": {
+    "count": 11,
+    "sampleTechs": [
+      "AlternC",
+      "Creoline",
+      "cPanel",
+      "DirectAdmin",
+      "EasyEngine",
+      "i-MSCP",
+      "Plesk",
+      "Pterodactyl Panel",
+      "SlickStack",
+      "TCAdmin",
+      "Tencent Waterproof Wall"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "10": {
+    "count": 365,
+    "sampleTechs": [
+      "AT Internet Analyzer",
+      "AT Internet XiTi",
+      "AWStats",
+      "Abralytics",
+      "Acecounter",
+      "Ackee",
+      "Acoustic Experience Analytics",
+      "Acquia Personalization",
+      "Actirise",
+      "AdCalls",
+      "AddShoppers",
+      "Adjust",
+      "Adline",
+      "Adobe Analytics",
+      "Adtribute"
+    ],
+    "currentName": "Analytics"
+  },
+  "11": {
+    "count": 35,
+    "sampleTechs": [
+      "Aegea",
+      "Beehiiv",
+      "Blogger",
+      "BoldGrid",
+      "ContentBox",
+      "Dotclear",
+      "DropInBlog",
+      "Duopana",
+      "Halo",
+      "Haloscan",
+      "Hashnode",
+      "Hatena Blog",
+      "LiveJournal",
+      "Medium",
+      "Melis Platform"
+    ],
+    "currentName": "Advertising"
+  },
+  "12": {
+    "count": 80,
+    "sampleTechs": [
+      "AMP",
+      "Adobe Client Data Layer",
+      "AlertifyJS",
+      "AlloyUI",
+      "Alpine.js",
+      "AngularJS",
+      "Astro",
+      "Aurelia",
+      "BEM",
+      "Backbone.js",
+      "Bool TypeScript",
+      "Catberry.js",
+      "Chosen",
+      "Coffee Script",
+      "Elm"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "13": {
+    "count": 78,
+    "sampleTechs": [
+      "Asana",
+      "Atatus",
+      "Atlassian Jira",
+      "Atlassian Jira Issue Collector",
+      "Atlassian Statuspage",
+      "Better Stack",
+      "BugHerd",
+      "BugSnag",
+      "Buglog",
+      "Bugzilla",
+      "Cachet",
+      "Canny",
+      "Checkly",
+      "Combodo iTop",
+      "cState"
+    ],
+    "currentName": "Unknown"
+  },
+  "14": {
+    "count": 54,
+    "sampleTechs": [
+      "Aniview Video Ad Player",
+      "Artplayer.js",
+      "Asciinema",
+      "Blinklink",
+      "Brightcove",
+      "Cleeng",
+      "Clipara",
+      "Cloudflare Stream",
+      "Conviva",
+      "DPlayer",
+      "Dailymotion",
+      "Delight XR",
+      "FitVids.JS",
+      "Fleeq",
+      "Flowplayer"
+    ],
+    "currentName": "Video Platform"
+  },
+  "15": {
+    "count": 10,
+    "sampleTechs": [
+      "Commento",
+      "Disqus",
+      "Giscus",
+      "IntenseDebate",
+      "Isso",
+      "Livefyre",
+      "Question2Answer",
+      "Twikoo",
+      "utterances",
+      "Vuukle"
+    ],
+    "currentName": "Image Processing"
+  },
+  "16": {
+    "count": 97,
+    "sampleTechs": [
+      "ARCaptcha",
+      "AWS WAF Captcha",
+      "Accertify",
+      "Akamai Bot Manager",
+      "Akamai Web Application Protector",
+      "Alibaba Cloud Verification Code",
+      "Altcha",
+      "AntiBot.Cloud",
+      "Arkose Labs",
+      "adCAPTCHA",
+      "Basic",
+      "Blue Triangle",
+      "Bugcrowd",
+      "BuySafe",
+      "Captch Me"
+    ],
+    "currentName": "Database"
+  },
+  "17": {
+    "count": 19,
+    "sampleTechs": [
+      "Adobe Fonts",
+      "Bootstrap Icons",
+      "Bunny Fonts",
+      "Cufon",
+      "Custom Fonts",
+      "Font Awesome",
+      "FontServer",
+      "Fork Awesome",
+      "Glyphicons",
+      "Google Font API",
+      "Hoefler&Co",
+      "Ionicons",
+      "i30con",
+      "Lucide",
+      "MyFonts"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "18": {
+    "count": 102,
+    "sampleTechs": [
+      "ABP Framework",
+      "ASP.NET Boilerplate",
+      "Adobe ColdFusion",
+      "AdonisJS",
+      "Akka HTTP",
+      "Amber",
+      "AngularDart",
+      "Apache Wicket",
+      "Arwes",
+      "Aseqbase",
+      "actionhero.js",
+      "Banshee",
+      "Blade",
+      "Blazor",
+      "Blitz.js"
+    ],
+    "currentName": "Web Server"
+  },
+  "19": {
+    "count": 120,
+    "sampleTechs": [
+      "Acquia Content Hub",
+      "Acquire Cobrowse",
+      "Admiral",
+      "Apigee",
+      "Azure Edge Network",
+      "Babel",
+      "Buildertrend",
+      "Buy with Prime",
+      "Chevereto",
+      "CoConstruct",
+      "Cocos2d",
+      "Combodo iTop",
+      "CopyPoison",
+      "CrownPeak",
+      "cgit"
+    ],
+    "currentName": "Operating System"
+  },
+  "20": {
+    "count": 23,
+    "sampleTechs": [
+      "Adobe GoLive",
+      "Amaya",
+      "AsciiDoc",
+      "BannerBoo",
+      "Bluefish",
+      "CodeMirror",
+      "CodeSandbox",
+      "Draft.js",
+      "DreamWeaver",
+      "EditPlus",
+      "FrontPage",
+      "Gutenberg",
+      "iWeb",
+      "Microsoft Excel",
+      "Microsoft PowerPoint"
+    ],
+    "currentName": "Web Server"
+  },
+  "21": {
+    "count": 94,
+    "sampleTechs": [
+      "Absorb",
+      "AccessAlly",
+      "Accredible",
+      "Aforest LMS",
+      "aSc EduPage",
+      "Chamilo",
+      "Classeh",
+      "Clever",
+      "Coachy",
+      "Dokeos",
+      "Edmingle",
+      "Edwiser Bridge",
+      "Eloomi",
+      "Elopage",
+      "eChalk"
+    ],
+    "currentName": "Web Server"
+  },
+  "22": {
+    "count": 90,
+    "sampleTechs": [
+      "AOLserver",
+      "Akka HTTP",
+      "Amazon EC2",
+      "Amber",
+      "Angie",
+      "Apache APISIX",
+      "Apache HTTP Server",
+      "Apache Tomcat",
+      "Apache Traffic Server",
+      "Artifactory Web Server",
+      "actionhero.js",
+      "Blade",
+      "CactiveCloud",
+      "Caddy",
+      "Centminmod"
+    ],
+    "currentName": "Web Server"
+  },
+  "23": {
+    "count": 21,
+    "sampleTechs": [
+      "Azure CDN",
+      "Endurance Page Cache",
+      "FastPixel",
+      "Google PageSpeed",
+      "LiteSpeed Cache",
+      "Litespeed Cache",
+      "NitroPack",
+      "Oracle Web Cache",
+      "QUIC.cloud",
+      "RabbitLoader",
+      "RackCache",
+      "Redis Object Cache",
+      "Replicache",
+      "Sitecore Experience Edge",
+      "SpeedyCache"
+    ],
+    "currentName": "Web Server"
+  },
+  "24": {
+    "count": 13,
+    "sampleTechs": [
+      "Ace",
+      "CKEditor",
+      "Edit-in-Place",
+      "Editor.js",
+      "Etherpad",
+      "FreeTextBox",
+      "Froala Editor",
+      "Monaco Editor",
+      "PSPad",
+      "Quill",
+      "TinyMCE",
+      "Trix",
+      "WysiBB"
+    ],
+    "currentName": "Web Server"
+  },
+  "25": {
+    "count": 63,
+    "sampleTechs": [
+      "A-Frame",
+      "Angular Gridster",
+      "AntV G2",
+      "AntV G6",
+      "ApexCharts.js",
+      "Arbor.js",
+      "amCharts",
+      "anime.js",
+      "Babylon.js",
+      "Backstretch",
+      "Bokeh",
+      "CanvasJS",
+      "Chart.js",
+      "D3",
+      "dc.js"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "26": {
+    "count": 11,
+    "sampleTechs": [
+      "Enyo",
+      "Framework7",
+      "jQTouch",
+      "jQuery Mobile",
+      "jQuery-pjax",
+      "Mobify",
+      "Napps",
+      "Onsen UI",
+      "Sencha Touch",
+      "starti.app",
+      "Wink"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "27": {
+    "count": 28,
+    "sampleTechs": [
+      "Adobe Flash",
+      "AsciiDoc",
+      "C",
+      "CFML",
+      "Dart",
+      "Dragon",
+      "Elixir",
+      "Elm",
+      "Erlang",
+      "GeneXus",
+      "Go",
+      "GraphQL",
+      "Haskell",
+      "Imba",
+      "Java"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "28": {
+    "count": 20,
+    "sampleTechs": [
+      "AlmaLinux",
+      "Alpine Linux",
+      "CentOS",
+      "Darwin",
+      "Debian",
+      "Fedora",
+      "FreeBSD",
+      "Gentoo",
+      "Hirschmann HiOS",
+      "Raspbian",
+      "Red Hat",
+      "SUSE",
+      "Scientific Linux",
+      "SunOS",
+      "UNIX"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "29": {
+    "count": 57,
+    "sampleTechs": [
+      "Addsearch",
+      "Algolia",
+      "Apisearch",
+      "Athena Search",
+      "Attraqt",
+      "Awesomplete",
+      "Baidu Search Box",
+      "Bloomreach Discovery",
+      "Boost Commerce",
+      "Cludo",
+      "Convermax",
+      "Coveo",
+      "Doofinder",
+      "ElasticSuite",
+      "Elasticsearch"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "30": {
+    "count": 12,
+    "sampleTechs": [
+      "Apple iCloud Mail",
+      "CrossBox",
+      "Google Workspace",
+      "Microsoft 365",
+      "Open-Xchange App Suite",
+      "Outlook Web App",
+      "Proton Mail",
+      "RainLoop",
+      "RoundCube",
+      "SquirrelMail",
+      "Sympa",
+      "Zimbra"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "31": {
+    "count": 64,
+    "sampleTechs": [
+      "Acquia Cloud Platform CDN",
+      "Airee",
+      "Akamai",
+      "Alibaba Cloud CDN",
+      "Amazon CloudFront",
+      "Amazon S3",
+      "Arc",
+      "ArvanCloud",
+      "Azion",
+      "Azure CDN",
+      "BootstrapCDN",
+      "Bunny",
+      "CDN77",
+      "CacheFly",
+      "Cloud Guard"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "32": {
+    "count": 392,
+    "sampleTechs": [
+      "AD EBiS",
+      "AI LOG",
+      "Acquia Campaign Factory",
+      "Act-On",
+      "Actito",
+      "ActiveCampaign",
+      "Adabra",
+      "Adtriba",
+      "AgentFire",
+      "AiTrillion",
+      "Aimbase",
+      "Aimerce",
+      "Aimtell",
+      "Airship",
+      "Akero"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "33": {
+    "count": 14,
+    "sampleTechs": [
+      "Engintron",
+      "Google PageSpeed",
+      "mod_auth_pam",
+      "mod_dav",
+      "mod_fastcgi",
+      "mod_jk",
+      "mod_perl",
+      "mod_python",
+      "mod_rack",
+      "mod_rails",
+      "mod_ssl",
+      "mod_wsgi",
+      "OpenSSL",
+      "Shelf"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "34": {
+    "count": 16,
+    "sampleTechs": [
+      "Amazon Aurora",
+      "Claris FileMaker",
+      "Cloudera",
+      "Firebase",
+      "Lucene",
+      "MariaDB",
+      "MongoDB",
+      "MySQL",
+      "Percona",
+      "PostgreSQL",
+      "PouchDB",
+      "Qiyeku",
+      "Redis",
+      "SQLite",
+      "Solr"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "35": {
+    "count": 28,
+    "sampleTechs": [
+      "Apple MapKit JS",
+      "ArcGIS API for JavaScript",
+      "Baidu Maps",
+      "CARTO Analytics",
+      "ClustrMaps Widget",
+      "Develic Omnium Maps",
+      "Geoapify",
+      "Google Maps",
+      "Here",
+      "Leaflet",
+      "MapLibre GL JS",
+      "Mapbox GL JS",
+      "Mapbox.js",
+      "Mapme",
+      "Mapplic"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "36": {
+    "count": 214,
+    "sampleTechs": [
+      "AD EBiS",
+      "ADFOX",
+      "Aarki",
+      "AcuityAds",
+      "Ad Lightning",
+      "AdBridg",
+      "AdGlare",
+      "AdInfinity",
+      "AdOcean",
+      "AdRecover",
+      "AdRiver",
+      "AdRoll",
+      "AdScale",
+      "AdThrive",
+      "Adalyser"
+    ],
+    "currentName": "Advertising"
+  },
+  "37": {
+    "count": 1,
+    "sampleTechs": [
+      "TeamViewer"
+    ],
+    "currentName": "Advertising"
+  },
+  "38": {
+    "count": 6,
+    "sampleTechs": [
+      "Ausha",
+      "AzuraCast",
+      "BigPoint",
+      "Fireside",
+      "Muvi",
+      "Odeum"
+    ],
+    "currentName": "Advertising"
+  },
+  "41": {
+    "count": 154,
+    "sampleTechs": [
+      "Adyen",
+      "Affirm",
+      "Afterpay",
+      "Amazon Pay",
+      "American Express",
+      "Amex Express Checkout",
+      "Aplazame",
+      "Apple Pay",
+      "Apxium",
+      "Auxilia",
+      "authorize.net",
+      "Barion",
+      "Binance Pay",
+      "BitPay",
+      "Bitcoin"
+    ],
+    "currentName": "Advertising"
+  },
+  "42": {
+    "count": 11,
+    "sampleTechs": [
+      "Adobe DTM",
+      "Adobe Experience Platform Launch",
+      "Commanders Act TagCommander",
+      "Ensighten",
+      "Facebook Pixel Advanced Matching",
+      "Matomo Tag Manager",
+      "Signal",
+      "TagPro",
+      "Tealium",
+      "Yahoo! Tag Manager",
+      "Yottaa"
+    ],
+    "currentName": "Advertising"
+  },
+  "44": {
+    "count": 4,
+    "sampleTechs": [
+      "Code Climate",
+      "GitLab CI/CD",
+      "Jenkins",
+      "TeamCity"
+    ],
+    "currentName": "Advertising"
+  },
+  "45": {
+    "count": 1,
+    "sampleTechs": [
+      "TeamViewer"
+    ],
+    "currentName": "Advertising"
+  },
+  "46": {
+    "count": 10,
+    "sampleTechs": [
+      "Atera",
+      "Citrix",
+      "Glance",
+      "HP iLO",
+      "Impero",
+      "Intel Active Management Technology",
+      "Netop",
+      "Pulse Secure",
+      "ShellInABox",
+      "Upscope"
+    ],
+    "currentName": "Advertising"
+  },
+  "47": {
+    "count": 66,
+    "sampleTechs": [
+      "API Spreadsheets",
+      "Acquia Cloud IDE",
+      "Anima",
+      "Appifiny",
+      "Appwrite",
+      "Artifactory",
+      "Atlassian Bitbucket",
+      "Atlassian FishEye",
+      "Atlassian Jira Issue Collector",
+      "Betty Blocks",
+      "Clarifai",
+      "ClickOnce",
+      "Clockwork",
+      "Conduit",
+      "Developing Azerbaijan"
+    ],
+    "currentName": "Advertising"
+  },
+  "48": {
+    "count": 4,
+    "sampleTechs": [
+      "Amazon EFS",
+      "IPFS",
+      "Red Hat Gluster",
+      "Synology DiskStation"
+    ],
+    "currentName": "Advertising"
+  },
+  "49": {
+    "count": 4,
+    "sampleTechs": [
+      "AnnounceKit",
+      "Beehiiv RSS feed",
+      "Blendle",
+      "Planet"
+    ],
+    "currentName": "Advertising"
+  },
+  "50": {
+    "count": 11,
+    "sampleTechs": [
+      "Clicksign",
+      "Clinked",
+      "DSpace",
+      "Evernote",
+      "Invenio",
+      "Koha",
+      "Onehub",
+      "Open Journal Systems",
+      "Paperless Pipeline",
+      "Typeflo",
+      "uKnowva"
+    ],
+    "currentName": "Advertising"
+  },
+  "51": {
+    "count": 190,
+    "sampleTechs": [
+      "Acquia Site Studio",
+      "Adalo",
+      "Adobe Portfolio",
+      "Alboom Prosite",
+      "ApexPages",
+      "Appjustable",
+      "Art Schema",
+      "BaseKit",
+      "Beezer",
+      "Behzi",
+      "BeyondMenu",
+      "Boats Group",
+      "Bold Page Builder",
+      "Breakdance",
+      "Bricks"
+    ],
+    "currentName": "Advertising"
+  },
+  "52": {
+    "count": 295,
+    "sampleTechs": [
+      "AINIRO",
+      "Acquire Live Chat",
+      "Ada",
+      "Aircall",
+      "Aivo",
+      "Alive5",
+      "AnimalChat",
+      "ApexChat",
+      "Apple Business Chat",
+      "Arabot",
+      "ArrowChat",
+      "ArtiBot",
+      "AskSpot",
+      "Atlasmic",
+      "B2Chat"
+    ],
+    "currentName": "Chatbot"
+  },
+  "53": {
+    "count": 335,
+    "sampleTechs": [
+      "Agile CRM",
+      "Aidbase",
+      "Airship CRM",
+      "Aiva",
+      "Aivo",
+      "Alumni Channel",
+      "Anthology Encompass",
+      "Apodle",
+      "AroSoftware",
+      "ArtiBot",
+      "Astute Solutions",
+      "AutoVitals",
+      "Avizi",
+      "amoCRM",
+      "Backbase"
+    ],
+    "currentName": "SIS"
+  },
+  "54": {
+    "count": 27,
+    "sampleTechs": [
+      "Ahrefs",
+      "All in One SEO Pack",
+      "Alli",
+      "Atomseo",
+      "Attracta",
+      "Auto HQ",
+      "Avada SEO",
+      "BrightEdge",
+      "BrightLocal",
+      "ePublishing",
+      "Huckabuy",
+      "Linguana",
+      "Nowfloats",
+      "RankMath SEO",
+      "SEOAnt"
+    ],
+    "currentName": "CRM"
+  },
+  "55": {
+    "count": 7,
+    "sampleTechs": [
+      "Akaunting",
+      "Carta",
+      "Ignition",
+      "Iress",
+      "Jibres",
+      "Taxdome",
+      "Tiller"
+    ],
+    "currentName": "CRM"
+  },
+  "56": {
+    "count": 9,
+    "sampleTechs": [
+      "CoinHive",
+      "CoinHive Captcha",
+      "Coinhave",
+      "Coinimp",
+      "Crypto-Loot",
+      "deepMiner",
+      "JSEcoin",
+      "Minero.cc",
+      "Minerstat"
+    ],
+    "currentName": "CRM"
+  },
+  "57": {
+    "count": 30,
+    "sampleTechs": [
+      "Adobe Muse",
+      "Astro",
+      "Bridgetown",
+      "Cecil",
+      "Docusaurus",
+      "Eleventy",
+      "Gatsby",
+      "Gridsome",
+      "Hexo",
+      "Hugo",
+      "Jekyll",
+      "Lume",
+      "Mintlify",
+      "Next.js",
+      "Nextra"
+    ],
+    "currentName": "CMS"
+  },
+  "58": {
+    "count": 19,
+    "sampleTechs": [
+      "Appcues",
+      "Arengu",
+      "Canopy Connect",
+      "Chameleon",
+      "Elevio",
+      "FintechOS",
+      "Hansel",
+      "Instabot",
+      "LOU",
+      "PeerPal",
+      "Pendo",
+      "Poper",
+      "Stonly",
+      "Toonimo",
+      "Userflow"
+    ],
+    "currentName": "CMS"
+  },
+  "59": {
+    "count": 242,
+    "sampleTechs": [
+      "AOS",
+      "Amaze UI",
+      "Amplify JS",
+      "Angular Gridster",
+      "AnythingSlider",
+      "Apollo",
+      "Axios",
+      "autoComplete.js",
+      "Backstretch",
+      "Barba.js",
+      "Boba.js",
+      "Boomerang",
+      "Bootbox.js",
+      "Bootstrap Table",
+      "Browser-Update.org"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "60": {
+    "count": 4,
+    "sampleTechs": [
+      "Docker",
+      "Harbor",
+      "Proxmox VE",
+      "PubNub"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "62": {
+    "count": 57,
+    "sampleTechs": [
+      "ANS",
+      "Acquia Cloud Platform",
+      "Amazon Web Services",
+      "Appian",
+      "Aruba.it",
+      "Atlassian Statuspage",
+      "Azure",
+      "Bernet Cloud",
+      "Betty Blocks",
+      "Brimble",
+      "Chabokan",
+      "Cloudflare Workers",
+      "Cloudways",
+      "Deno Deploy",
+      "Deta"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "63": {
+    "count": 11,
+    "sampleTechs": [
+      "Alibaba Cloud Object Storage Service",
+      "Amazon ECS",
+      "Clientacquisition",
+      "DigitalOcean Spaces",
+      "Dorsa Cloud",
+      "Dweet",
+      "Google Cloud",
+      "Iluria",
+      "Leaseweb",
+      "Parmin Cloud",
+      "Snowplow Analytics"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "64": {
+    "count": 9,
+    "sampleTechs": [
+      "EZproxy",
+      "Envoy",
+      "F5 BigIP",
+      "Hydra-Shield",
+      "IBM DataPower",
+      "Kong",
+      "MATORI.NET",
+      "Urllo",
+      "V2Board"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "65": {
+    "count": 4,
+    "sampleTechs": [
+      "Amazon ALB",
+      "Amazon ELB",
+      "Application Request Routing",
+      "Azure Front Door"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "66": {
+    "count": 89,
+    "sampleTechs": [
+      "Angular Material",
+      "Animate.css",
+      "Ant Design",
+      "Arco Design Vue",
+      "Aura",
+      "Automatic.css",
+      "augmented-ui",
+      "Basil.css",
+      "Bulma",
+      "Chakra UI",
+      "CivicTheme",
+      "Clarity",
+      "CoreUI",
+      "DevExtreme",
+      "Dorik AI"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "67": {
+    "count": 74,
+    "sampleTechs": [
+      "Acconsento.click",
+      "AdFixus",
+      "AdOpt",
+      "AdRoll CMP System",
+      "Alfright",
+      "Axeptio",
+      "Borlabs Cookie",
+      "Byscuit",
+      "CIVIC",
+      "Clarip",
+      "Clickskeks",
+      "Clym",
+      "Commanders Act TrustCommander",
+      "Complianz",
+      "Consent Manager"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "68": {
+    "count": 33,
+    "sampleTechs": [
+      "AccessiBe",
+      "Accessibility Toolbar Plugin",
+      "Accessible360",
+      "Accessibly",
+      "AdaSiteCompliance",
+      "Adally",
+      "All in One Accessibility",
+      "Allyable",
+      "Allyant",
+      "AudioEye",
+      "Droxit",
+      "Enable",
+      "EqualWeb",
+      "eSSENTIAL Accessibility",
+      "Facil-iti"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "69": {
+    "count": 35,
+    "sampleTechs": [
+      "Alliance Auth",
+      "Amazon Cognito",
+      "Apereo CAS",
+      "Apple Sign-in",
+      "Applied CSR24",
+      "Auth0",
+      "Auth0 Lock",
+      "Authy",
+      "Azure AD B2C",
+      "Clerk",
+      "Facebook Login",
+      "GetSocial",
+      "Google Sign-in",
+      "Growave",
+      "LINE Login"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "70": {
+    "count": 7,
+    "sampleTechs": [
+      "AWS Certificate Manager",
+      "DigiCert",
+      "Entrust",
+      "Identrust",
+      "Let's Encrypt",
+      "Sectigo",
+      "Thawte"
+    ],
+    "currentName": "JavaScript Framework"
+  },
+  "71": {
+    "count": 67,
+    "sampleTechs": [
+      "A8.net",
+      "AWIN",
+      "AccessTrade",
+      "Admitad",
+      "Affilae",
+      "Affiliate B",
+      "Affiliate Future",
+      "Affiliatly",
+      "Affilio",
+      "Affilo",
+      "Amazon Associates",
+      "Backstage",
+      "Booking.com",
+      "CPABuild",
+      "Cellxpert"
+    ],
+    "currentName": "Booking System"
+  },
+  "72": {
+    "count": 109,
+    "sampleTechs": [
+      "A2Z Events",
+      "Accesso",
+      "Acuity Scheduling",
+      "AddEvent",
+      "Allbookable",
+      "Appointedd",
+      "Appointo",
+      "Appointy",
+      "AutoOps",
+      "Bokun",
+      "BookThatApp",
+      "BookVisit",
+      "Bookafy",
+      "Booked",
+      "Bookeo"
+    ],
+    "currentName": "Booking System"
+  },
+  "73": {
+    "count": 36,
+    "sampleTechs": [
+      "Bestie",
+      "Brandquiz",
+      "CustomerSure",
+      "Delighted",
+      "Doorbell",
+      "EasyPolls",
+      "Emojicom",
+      "Enalyzer",
+      "FeedbackAutomatic",
+      "Formidable Form",
+      "Getsitecontrol",
+      "Hotjar Incoming Feedback",
+      "HulkApps Form Builder",
+      "InMoment",
+      "Iterate"
+    ],
+    "currentName": "Booking System"
+  },
+  "74": {
+    "count": 55,
+    "sampleTechs": [
+      "AB Tasty",
+      "ABLyft",
+      "Adobe Target",
+      "Autopilot",
+      "Bloomreach Discovery",
+      "BrightInfo",
+      "Bunting",
+      "Complianz",
+      "Contentsquare",
+      "Convert",
+      "ConvertFlow",
+      "Decibel",
+      "Dynamic Yield",
+      "Estore Compare",
+      "Etracker"
+    ],
+    "currentName": "Booking System"
+  },
+  "75": {
+    "count": 60,
+    "sampleTechs": [
+      "ActiveCampaign",
+      "Amazon SES",
+      "Aument",
+      "Autopilot",
+      "Aweber",
+      "Bento",
+      "Bluecore",
+      "Bronto",
+      "Campaign Monitor",
+      "Carts Guru",
+      "Clearout",
+      "Clearstream",
+      "Constant Contact",
+      "ConvertKit",
+      "Creativ.eMail"
+    ],
+    "currentName": "Booking System"
+  },
+  "76": {
+    "count": 150,
+    "sampleTechs": [
+      "Acquia Personalization",
+      "Actito",
+      "Adobe Target",
+      "Adoric",
+      "Apptus",
+      "Attentive",
+      "Attraqt",
+      "Barilliance",
+      "Beyable",
+      "Blueknow",
+      "Bold Commerce",
+      "Bounce Commerce",
+      "BrainSINS",
+      "Breinify",
+      "BySide"
+    ],
+    "currentName": "Booking System"
+  },
+  "77": {
+    "count": 23,
+    "sampleTechs": [
+      "AdRoll",
+      "Albacross",
+      "Blue",
+      "Captify",
+      "Criteo",
+      "Cross Pixel",
+      "Fixel",
+      "Linx Impulse",
+      "MNTN",
+      "Meazy",
+      "Notix",
+      "OptiMonk",
+      "PebblePost",
+      "Picreel",
+      "RTB House"
+    ],
+    "currentName": "Advertising"
+  },
+  "78": {
+    "count": 27,
+    "sampleTechs": [
+      "Akamai mPulse",
+      "Amazon CloudWatch RUM",
+      "AppDynamics",
+      "Atatus",
+      "Blue Triangle",
+      "Boomerang",
+      "Cloudflare Browser Insights",
+      "Datadog",
+      "Dynatrace RUM",
+      "Eggplant",
+      "Elastic APM",
+      "Instana",
+      "Microsoft Application Insights",
+      "Naver RUA",
+      "New Relic"
+    ],
+    "currentName": "Advertising"
+  },
+  "79": {
+    "count": 21,
+    "sampleTechs": [
+      "BigDataCloud IP Geolocation",
+      "Bullseye",
+      "db-ip",
+      "Geo Targetly",
+      "IP2Location.io",
+      "IPInfoDB",
+      "IPinfo",
+      "ip-api",
+      "ipapi",
+      "ipapi.co",
+      "ipbase",
+      "ipdata",
+      "ipgeolocation",
+      "ipify",
+      "ipstack"
+    ],
+    "currentName": "Advertising"
+  },
+  "80": {
+    "count": 152,
+    "sampleTechs": [
+      "AFThemes CoverNews",
+      "AitThemes",
+      "AndersNoren Baskerville",
+      "AndersNoren Fukasawa",
+      "AndersNoren Hemingway",
+      "AndersNoren Hitchcock",
+      "AndersNoren Lovecraft",
+      "Apollo13Themes Rife",
+      "Astra",
+      "Auberge",
+      "aThemes Airi",
+      "aThemes Astrid",
+      "aThemes Hiero",
+      "aThemes Moesia",
+      "aThemes Sydney"
+    ],
+    "currentName": "CMS"
+  },
+  "81": {
+    "count": 1,
+    "sampleTechs": [
+      "Shoptimized"
+    ],
+    "currentName": "CMS"
+  },
+  "83": {
+    "count": 5,
+    "sampleTechs": [
+      "ClientJS",
+      "FingerprintJS",
+      "MaxMind",
+      "ThreatMetrix",
+      "TruValidate"
+    ],
+    "currentName": "CMS"
+  },
+  "84": {
+    "count": 32,
+    "sampleTechs": [
+      "BON Loyalty",
+      "Beans",
+      "Captain Up",
+      "Eber",
+      "Extole",
+      "Flocktory",
+      "Fondue",
+      "Gameball",
+      "Inveterate",
+      "Kangaroo Rewards",
+      "Lily",
+      "Lootly",
+      "Loyalis",
+      "LoyaltyLion",
+      "Loyoly"
+    ],
+    "currentName": "CMS"
+  },
+  "85": {
+    "count": 12,
+    "sampleTechs": [
+      "Beamer",
+      "Blesta",
+      "Featurebase",
+      "FlagSmith",
+      "LaunchDarkly",
+      "LaunchNotes",
+      "Noticeable",
+      "Olvy",
+      "Split",
+      "Statsig",
+      "Upvoty",
+      "Usersnap"
+    ],
+    "currentName": "CMS"
+  },
+  "86": {
+    "count": 14,
+    "sampleTechs": [
+      "Adobe Audience Manager",
+      "Bloom Labs",
+      "Cxense",
+      "Fixel",
+      "Ifdo",
+      "Omeda",
+      "Oracle BlueKai",
+      "Poltio",
+      "Poster",
+      "Salesforce Audience Studio",
+      "Salesforce Interaction Studio",
+      "Sirdata",
+      "Tealium AudienceStream",
+      "Viafoura"
+    ],
+    "currentName": "CMS"
+  },
+  "87": {
+    "count": 238,
+    "sampleTechs": [
+      "AMP for WordPress",
+      "AddToAny Share Buttons",
+      "Advanced Custom Fields",
+      "Age Gate",
+      "Akismet",
+      "All in One SEO Pack",
+      "Animate It",
+      "Asgaros Forum",
+      "Astra Widgets",
+      "Automatic.css",
+      "Autoptimize",
+      "a3 Lazy Load",
+      "Beaver Builder",
+      "Better Click To Tweet",
+      "Better Search"
+    ],
+    "currentName": "CMS"
+  },
+  "88": {
+    "count": 66,
+    "sampleTechs": [
+      "ALL-INKL",
+      "ANS",
+      "Acquia Cloud Site Factory",
+      "Airee",
+      "Aruba.it",
+      "Bluehost",
+      "Contabo",
+      "DanDomain",
+      "DomainFactory",
+      "Doteasy",
+      "DreamHost",
+      "Drupal Multisite",
+      "Elementor Cloud",
+      "FastComet",
+      "Flywheel"
+    ],
+    "currentName": "CMS"
+  },
+  "89": {
+    "count": 15,
+    "sampleTechs": [
+      "Bablic",
+      "ConveyThis",
+      "GTranslate",
+      "GTranslate app",
+      "LangShop",
+      "Linguise",
+      "langify",
+      "Pluglin",
+      "Polylang",
+      "Smartling",
+      "Transcy",
+      "Translate WordPress",
+      "WPML",
+      "Weglot",
+      "WooCommerce Multilingual"
+    ],
+    "currentName": "CMS"
+  },
+  "90": {
+    "count": 89,
+    "sampleTechs": [
+      "Alchemer Mobile",
+      "Ali Reviews",
+      "Appzi",
+      "AskNicely",
+      "Autoketing Product Reviews",
+      "Avis Verifies",
+      "Bazaarvoice Reviews",
+      "CREMA",
+      "Chatt",
+      "Clutch",
+      "Contlo",
+      "Customer Alliance",
+      "Famewall",
+      "FeatherX",
+      "Feefo"
+    ],
+    "currentName": "CMS"
+  },
+  "91": {
+    "count": 58,
+    "sampleTechs": [
+      "Addi",
+      "Affirm",
+      "Afterpay",
+      "Aplazame",
+      "Atome",
+      "Bread",
+      "ChargeAfter",
+      "cashew",
+      "DivideBuy",
+      "Divido",
+      "etika",
+      "Four",
+      "Fundiin",
+      "Grab Pay Later",
+      "HeyLight"
+    ],
+    "currentName": "CMS"
+  },
+  "92": {
+    "count": 56,
+    "sampleTechs": [
+      "AiSpeed",
+      "Atomseo",
+      "Autoptimize",
+      "Azure Monitor",
+      "a3 Lazy Load",
+      "BerqWP",
+      "Blitz",
+      "Booster Page Speed Optimizer",
+      "Cloudflare Rocket Loader",
+      "Cloudflare Zaraz",
+      "EWWW Image Optimizer",
+      "Fasterize",
+      "Flying Pages",
+      "FlyingPress",
+      "Google Cloud Trace"
+    ],
+    "currentName": "CMS"
+  },
+  "93": {
+    "count": 70,
+    "sampleTechs": [
+      "Bentobox",
+      "BeyondMenu",
+      "Bobonus",
+      "BookDinners",
+      "Bookatable",
+      "Bookteq",
+      "Bottle",
+      "Chinese Menu Online",
+      "Clock PMS",
+      "Clorder",
+      "Cloudify.store",
+      "CoverManager",
+      "Cubilis",
+      "Easy Rez",
+      "Eatself"
+    ],
+    "currentName": "CMS"
+  },
+  "94": {
+    "count": 27,
+    "sampleTechs": [
+      "Aklamio",
+      "Ambassador",
+      "Buyapowa",
+      "CloudSponge",
+      "ContextBar",
+      "Coopt",
+      "EarlyParrot",
+      "Extole",
+      "eBay Partner Network",
+      "Flocktory",
+      "Friendbuy",
+      "Guuru",
+      "Indi",
+      "Lootly",
+      "Mention Me"
+    ],
+    "currentName": "CMS"
+  },
+  "95": {
+    "count": 30,
+    "sampleTechs": [
+      "Adobe Dynamic Media Classic",
+      "Aprimo",
+      "Arc XP",
+      "Bluestone PIM",
+      "Celum",
+      "Censhare",
+      "Cloudimage",
+      "Cloudinary",
+      "CollectiveAccess",
+      "CoreMedia Content Cloud",
+      "Corebook",
+      "Digizuite",
+      "Dropbox",
+      "Frontify",
+      "GraphicsFlow"
+    ],
+    "currentName": "CMS"
+  },
+  "96": {
+    "count": 35,
+    "sampleTechs": [
+      "Bazaarvoice Curation",
+      "CPEx",
+      "Ceros",
+      "Cevoid",
+      "ContentBot",
+      "ContentGems",
+      "ContentStudio",
+      "Contently",
+      "Contents",
+      "Covet.pics",
+      "Emplifi UGC",
+      "ePublishing",
+      "Foleon",
+      "Foursixty",
+      "Frase"
+    ],
+    "currentName": "CMS"
+  },
+  "97": {
+    "count": 57,
+    "sampleTechs": [
+      "Able CDP",
+      "Acquia Customer Data Platform",
+      "Adobe Experience Platform Identity Service",
+      "Antsomi CDP 365",
+      "Asapp",
+      "Bandwango",
+      "BlueConic",
+      "Bread & Butter",
+      "ChurnZero",
+      "Cooladata",
+      "Datatrics",
+      "Emarsys",
+      "Enkod",
+      "Exponea",
+      "eSputnik"
+    ],
+    "currentName": "CMS"
+  },
+  "98": {
+    "count": 24,
+    "sampleTechs": [
+      "Aument",
+      "Barilliance",
+      "BiteSpeed",
+      "CareCart",
+      "CareCart Cartly Abandoned Cart Recovery",
+      "CartBot",
+      "CartRocket",
+      "CartStack",
+      "GetRooster",
+      "Jilt App",
+      "Jilt plugin",
+      "Justuno",
+      "Keptify",
+      "OptiMonk",
+      "PushDaddy Whatsapp Chat"
+    ],
+    "currentName": "CMS"
+  },
+  "99": {
+    "count": 70,
+    "sampleTechs": [
+      "APC",
+      "Asendia",
+      "Australia Post",
+      "B2C Europe",
+      "BRT",
+      "Billbee",
+      "Bleckmann",
+      "Boxtal",
+      "Bpost",
+      "Budbee",
+      "CTT",
+      "Celeritas",
+      "Chronofresh",
+      "Chronopost",
+      "CityMail"
+    ],
+    "currentName": "CMS"
+  },
+  "100": {
+    "count": 175,
+    "sampleTechs": [
+      "Accentuate Custom Fields",
+      "AdNabu",
+      "Affilo",
+      "AiSpeed",
+      "Aimerce",
+      "Ali Reviews",
+      "Autocommerce",
+      "Autoketing Product Reviews",
+      "Avada AVASHIP",
+      "Avada Boost Sales",
+      "Avada SEO",
+      "Avada Size Chart",
+      "BON Loyalty",
+      "Back In Stock",
+      "Beam AfterSell"
+    ],
+    "currentName": "CMS"
+  },
+  "101": {
+    "count": 50,
+    "sampleTechs": [
+      "Appcast",
+      "ApplicantStack",
+      "BambooHR",
+      "Breezy HR",
+      "Comeet",
+      "Converzee",
+      "Dover",
+      "DreamApply",
+      "Ellucian CRM Recruit",
+      "Eploy",
+      "Firefish Software",
+      "Flip",
+      "Freshteam",
+      "Getro",
+      "Greenhouse"
+    ],
+    "currentName": "CMS"
+  },
+  "102": {
+    "count": 13,
+    "sampleTechs": [
+      "AfterShip Returns Center",
+      "Happy Returns",
+      "Loop Returns",
+      "Narvar",
+      "Refundid",
+      "Return Prime",
+      "ReturnGO",
+      "Returnly",
+      "Seel",
+      "Seko OmniReturns",
+      "ShippyPro",
+      "Shoprunner",
+      "Sorted Return"
+    ],
+    "currentName": "CMS"
+  },
+  "103": {
+    "count": 23,
+    "sampleTechs": [
+      "Acquire Cobrowse",
+      "Apizee",
+      "Bambuser",
+      "BigMarker",
+      "Boutiq",
+      "Chord",
+      "Cloudflare Stream",
+      "Confer With",
+      "Conviva",
+      "Dyte",
+      "EasyWebinar",
+      "Firework",
+      "Go Instore",
+      "Hero",
+      "HeySummit"
+    ],
+    "currentName": "CMS"
+  },
+  "104": {
+    "count": 36,
+    "sampleTechs": [
+      "Adalte",
+      "Agoda",
+      "Airdata",
+      "Asksuite",
+      "Beyonk",
+      "Bileto",
+      "Book N Pay",
+      "Busify",
+      "Cvent",
+      "Etix",
+      "Evvnt",
+      "EzTix",
+      "Fatsoma",
+      "Fever",
+      "Guidap"
+    ],
+    "currentName": "CMS"
+  },
+  "105": {
+    "count": 22,
+    "sampleTechs": [
+      "A-Frame",
+      "Auglio",
+      "Cylindo",
+      "DeepAR",
+      "Expivi",
+      "Floori",
+      "Levar",
+      "Luna",
+      "ModiFace",
+      "mirrAR",
+      "Ocuco FitMix",
+      "Plattar",
+      "Prime AI",
+      "SightCall",
+      "Tangiblee"
+    ],
+    "currentName": "CMS"
+  },
+  "106": {
+    "count": 13,
+    "sampleTechs": [
+      "Azoya",
+      "Borderfree",
+      "ESW",
+      "Exemptify",
+      "Flow",
+      "Global-e",
+      "GlobalShopex",
+      "Glopal",
+      "Localised",
+      "ShopBase",
+      "With Reach",
+      "WorldShopping",
+      "Zonos"
+    ],
+    "currentName": "CMS"
+  },
+  "107": {
+    "count": 8,
+    "sampleTechs": [
+      "AfterShip",
+      "Bleckmann",
+      "Deliverr",
+      "Extend",
+      "Malomo",
+      "Planzer",
+      "Route",
+      "Shoprunner"
+    ],
+    "currentName": "Payment Processor"
+  },
+  "108": {
+    "count": 16,
+    "sampleTechs": [
+      "Aiden",
+      "Argento",
+      "Breeze",
+      "Deco.cx",
+      "E-Com Plus",
+      "Front-Commerce",
+      "GoMage",
+      "Hyva Themes",
+      "Kickflip",
+      "Makaira",
+      "PWA Studio",
+      "Platter",
+      "ScandiPWA",
+      "Shogun Frontend",
+      "Vue Storefront"
+    ],
+    "currentName": "Payment Processor"
+  },
+  "109": {
+    "count": 4,
+    "sampleTechs": [
+      "Arsys Domain Parking",
+      "GoDaddy Domain Parking",
+      "JS.org",
+      "Verisign"
+    ],
+    "currentName": "Payment Processor"
+  },
+  "110": {
+    "count": 43,
+    "sampleTechs": [
+      "Airform",
+      "Arengu",
+      "Basin",
+      "Caldera Forms",
+      "Contact Form 7",
+      "Fillout",
+      "Form.taxi",
+      "FormAssembly",
+      "FormBold",
+      "Formaloo",
+      "Formcan",
+      "Formidable Form",
+      "Formless",
+      "Formli",
+      "Formstack"
+    ],
+    "currentName": "Payment Processor"
+  },
+  "111": {
+    "count": 39,
+    "sampleTechs": [
+      "ActBlue",
+      "AlumnIQ",
+      "Arreva",
+      "BRYNK",
+      "BackerKit",
+      "Blackbaud CRM",
+      "Buy me a coffee",
+      "Classy",
+      "Click & Pledge",
+      "Community Funded",
+      "DonorPerfect",
+      "Donorbox",
+      "EveryAction",
+      "FundRazr",
+      "Fundraise Up"
+    ],
+    "currentName": "Accessibility"
+  }
+}

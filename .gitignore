@@ -116,3 +116,7 @@ patterns/*.backup
 
 # UNI-142 lint backups (git history is the real backup)
 patterns/_archive/*.bak
+.superpowers/
+
+# UNI-156 Phase 2: local Wasabi-fetched HTML corpus — never commit fetched content
+corpus/

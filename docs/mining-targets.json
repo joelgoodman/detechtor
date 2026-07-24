@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "ticket": "UNI-156 Phase 3",
+    "generated": "2026-07-16",
+    "source": "institutions.tech_profile (BuiltWith rollup) prevalence, cohort 128, filtered for oracle noise",
+    "scope": "Full exhaustive sweep across 8 signal categories (Marketing Automation added per Joel 2026-07-16). Bounded corpus depth (~150 positives/vendor + shared negative sample).",
+    "oracle_caveat": "BuiltWith = good POSITIVE, bad NEGATIVE oracle. neg_hit% is NOT precision. Several BuiltWith categories are miscategorized (see per-category _filtered notes) — the target lists below are HAND-CURATED to real signal vendors, NOT the raw BuiltWith category membership.",
+    "action_legend": {
+      "validate": "curated pattern already exists (CMS/Site Search/LMS/SIS) — run against corpus, confirm recall, tighten if weak",
+      "build": "no curated pattern yet — data-mine a tight signature from positives",
+      "extend": "category partial exists but this vendor is a gap — add it"
+    }
+  },
+  "CMS": {
+    "partial": "higher-ed-cms.json",
+    "action": "validate",
+    "_note": "Clean BuiltWith category. All high-volume vendors already curated.",
+    "vendors": ["WordPress","Drupal","Modern Campus","Squarespace","Wix","HubSpot CMS","Sitecore","Adobe Experience Manager","Joomla","Sitefinity","Contentful","Finalsite","ExpressionEngine","Kentico","TerminalFour","Plone","Ingeniux"]
+  },
+  "Site Search": {
+    "partial": "higher-ed-infra.json (cats:[29])",
+    "action": "validate",
+    "_note": "16 vendors already curated (id 29). Confirm recall for the high-volume ones.",
+    "vendors": ["Google Custom Search","Algolia","SearchStax","Swiftype","Coveo","Yext","Funnelback","AddSearch","Azure Cognitive Search","Cludo","Elasticsearch","Element451 Search","Lucidworks Fusion","Meilisearch","Sajari","SearchBlox","Site Search 360"]
+  },
+  "LMS": {
+    "partial": "higher-ed-lms.json",
+    "action": "validate",
+    "_note": "55 vendors curated by UNI-138..142. BuiltWith has NO reliable LMS category, so positives oracle is weak here — validate by running existing patterns against the corpus and eyeballing hit-rate on known-LMS institutions, not BuiltWith labels.",
+    "vendors": ["Canvas LMS","D2L Brightspace","Blackboard Learn","Moodle","Instructure","Sakai","Schoology","Google Classroom"]
+  },
+  "SIS": {
+    "partial": "higher-ed-sis.json",
+    "action": "validate",
+    "_note": "50 vendors curated by UNI-138..142. Same weak-oracle caveat as LMS.",
+    "vendors": ["Ellucian Banner","Ellucian Colleague","Workday Student","Oracle PeopleSoft Campus Solutions","Jenzabar","Anthology Student","PowerCampus","Populi"]
+  },
+  "CRM": {
+    "partial": "higher-ed-crm.json (CREATE)",
+    "action": "build",
+    "_note": "Sparse BuiltWith category but Slate is THE HE admissions CRM. Only 3 vendors >=5 insts.",
+    "vendors": ["Slate","Salesforce","Element451"]
+  },
+  "Chatbot": {
+    "partial": "higher-ed-chat.json (CREATE)",
+    "action": "build",
+    "_filtered_out": "BuiltWith 'Chatbot' category is heavily polluted. EXCLUDED: robots.txt AI-bot-disallow directives (GPTBot Disallow 1805, Google Bard Disallow, Anthropic Claude Bot Disallow, Common Crawl, ByteDance, Apple AI, Facebook Bot, etc. — these are robots.txt entries, not chat) and video-conferencing (Zoom 1748, WebEx 764, Agora, 8x8).",
+    "vendors": ["LiveChat","Zendesk","Intercom","tawk.to","Zopim","LibraryH3lp","Salesforce (Live Agent)","Rocket Chat","ServiceNow","Freshdesk","Mainstay","LivePerson","Olark","Pure Chat","SnapEngage","Tidio","Freshchat","ApexChat","Drift","Oracle RightNow","LiveHelpNow","Zoho SalesIQ","Crisp","Comm100","Bold Chat","Dialogflow","Ada Support","Chatra","Chatwoot","Glia","Forethought","Gecko Chat","Provide Support","Click4Assistance"],
+    "_he_specific": ["LibraryH3lp","Mainstay","Gecko Chat","Ada Support"]
+  },
+  "Accessibility": {
+    "partial": "higher-ed-accessibility.json (EXTEND, cats:[306])",
+    "action": "extend",
+    "_filtered_out": "BuiltWith 'Accessibility & QA' is dominated by PERFORMANCE/CACHING plugins, NOT accessibility. EXCLUDED: WP Rocket (610), W3 Total Cache (327), Redis Cache, Autoptimize, Smush/Smush Pro (image opt), LiteSpeed Cache, WP Super Cache, NitroPack, WP-Optimize, SiteGround Optimizer, EWWW Image Optimizer, ShortPixel, FlyingPress, Performance Lab, a3 Lazy Load, TwicPics, plus SEO (SmartCrawl, The SEO Framework) and error-monitoring (Rollbar, LogRocket).",
+    "existing_curated": ["AudioEye","UserWay","accessiBe","Monsido","Siteimprove"],
+    "gaps_to_add": ["Recite Me","ReadSpeaker","EqualWeb","Level Access","WP Accessibility","Accessibility Helper"],
+    "_note": "signal_polarity='negative' applies to overlay widgets (UNI-137) — preserve on the overlays (UserWay/accessiBe/AudioEye/EqualWeb/Accessibility Helper); Siteimprove/Monsido/ReadSpeaker/Level Access are auditing/assistive, not overlays."
+  },
+  "Marketing Automation": {
+    "partial": "higher-ed-marketing.json (CREATE)",
+    "action": "build",
+    "_new_signal_category": "Added as 8th signal category per Joel 2026-07-16. Needs a category-mapping.js id first (Task 3.0).",
+    "_filtered_out": "BuiltWith 'Marketing Automation' conflates real MA platforms with TRANSACTIONAL EMAIL INFRA. EXCLUDED as infra (not a marketing-platform signal): Amazon SES (1386), Mailgun (1012), SendGrid (931), Mandrill (476), SparkPost, Dyn, Elastic Email, Postmark, SMTP2GO, SocketLabs, MailChannels, MessageGears, Zoho ZeptoMail, MailerSend, turboSMTP, AuthSMTP, SMTP.com. Also excluded generic share widgets (AddThis, ShareThis, AddToAny).",
+    "vendors": ["HubSpot","Pardot","Marketo","Eloqua","Emma","Constant Contact","Mailchimp","Active Campaign","Mautic","Campaign Monitor","Brevo","SendinBlue","dotdigital Engagement Cloud","iContact","Act-On","SharpSpring","ExactTarget Email","Oracle CX","6sense","Demandbase","Merit Pages","Marketing Cloud","Microsoft Dynamics 365 Marketing","Acoustic Campaign","Ortto","Omnisend"],
+    "_he_specific": ["Emma","Merit Pages","Slate (cross-listed CRM)"]
+  }
+}

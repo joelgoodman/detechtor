@@ -8,7 +8,7 @@
   },
   "Acalog": {
     "cats": [
-      53
+      302
     ],
     "description": "Acalog academic catalog management system",
     "html": [
@@ -26,7 +26,7 @@
   },
   "Anthology Student": {
     "cats": [
-      53
+      302
     ],
     "description": "Student information system (formerly CampusNexus)",
     "html": [
@@ -62,7 +62,7 @@
   },
   "ApplyTexas": {
     "cats": [
-      53
+      302
     ],
     "description": "ApplyTexas state application system",
     "html": [
@@ -80,7 +80,7 @@
   },
   "AwardSpring": {
     "cats": [
-      53
+      302
     ],
     "description": "AwardSpring scholarship management platform",
     "html": [
@@ -98,7 +98,7 @@
   },
   "Campus Management Suite": {
     "cats": [
-      53
+      302
     ],
     "description": "Campus Management Suite (Australia/New Zealand)",
     "html": [
@@ -119,7 +119,7 @@
   },
   "CampusLogic": {
     "cats": [
-      53
+      302
     ],
     "description": "CampusLogic student financial aid and SIS platform",
     "html": [
@@ -138,7 +138,7 @@
   },
   "CampusVue": {
     "cats": [
-      53
+      302
     ],
     "description": "CampusVue student information system by SCT (now Ellucian)",
     "html": [
@@ -163,7 +163,7 @@
   },
   "Coalition Application": {
     "cats": [
-      53
+      302
     ],
     "description": "Coalition for College application system",
     "html": [
@@ -182,7 +182,7 @@
   },
   "Common Application": {
     "cats": [
-      53
+      302
     ],
     "description": "Common Application admissions platform",
     "html": [
@@ -201,7 +201,7 @@
   },
   "CourseLeaf": {
     "cats": [
-      53
+      302
     ],
     "description": "CourseLeaf curriculum and catalog management",
     "html": [
@@ -219,7 +219,7 @@
   },
   "CurricUNET": {
     "cats": [
-      53
+      302
     ],
     "description": "CurricUNET curriculum management platform",
     "html": [
@@ -237,7 +237,7 @@
   },
   "Curriculog": {
     "cats": [
-      53
+      302
     ],
     "description": "Curriculog curriculum management system",
     "html": [
@@ -255,7 +255,7 @@
   },
   "DegreeWorks": {
     "cats": [
-      53
+      302
     ],
     "description": "DegreeWorks degree audit and planning system",
     "html": [
@@ -274,7 +274,7 @@
   },
   "Ellucian Banner": {
     "cats": [
-      53
+      302
     ],
     "description": "Ellucian Banner is a comprehensive student information system used by higher education institutions.",
     "html": [
@@ -309,7 +309,7 @@
   },
   "Ellucian Colleague": {
     "cats": [
-      53
+      302
     ],
     "description": "Ellucian Colleague student information system, formerly Datatel Colleague.",
     "html": [
@@ -337,7 +337,7 @@
   },
   "Evisions": {
     "cats": [
-      53
+      302
     ],
     "description": "Evisions higher education analytics",
     "html": [
@@ -355,7 +355,7 @@
   },
   "FACTS SIS": {
     "cats": [
-      53
+      302
     ],
     "description": "FACTS Student Information System",
     "html": [
@@ -377,7 +377,7 @@
   },
   "FAST Financial Aid": {
     "cats": [
-      53
+      302
     ],
     "description": "FAST financial aid management system",
     "html": [
@@ -396,16 +396,13 @@
   },
   "Focus School Software": {
     "cats": [
-      53
+      302
     ],
     "description": "Focus School Software student information system",
     "html": [
-      "focus.*school.*software",
-      "focusschoolsoftware",
-      "focus.*sis"
+      "focusschoolsoftware"
     ],
     "scripts": [
-      "focus.*school",
       "focussis"
     ],
     "js": {
@@ -418,7 +415,7 @@
   },
   "Gradelink": {
     "cats": [
-      53
+      302
     ],
     "description": "Gradelink student information system",
     "html": [
@@ -437,7 +434,7 @@
   },
   "Infinite Campus": {
     "cats": [
-      53
+      302
     ],
     "description": "Infinite Campus student information system",
     "html": [
@@ -456,7 +453,7 @@
   },
   "InfoEd": {
     "cats": [
-      53
+      302
     ],
     "description": "InfoEd research administration platform",
     "html": [
@@ -474,7 +471,7 @@
   },
   "Jenzabar": {
     "cats": [
-      53
+      302
     ],
     "description": "Jenzabar student information system and ERP solution for higher education.",
     "html": [
@@ -505,7 +502,7 @@
   },
   "Kuali Coeus": {
     "cats": [
-      53
+      302
     ],
     "description": "Kuali Coeus research administration system",
     "html": [
@@ -524,7 +521,7 @@
   },
   "Kuali Curriculum Management": {
     "cats": [
-      53
+      302
     ],
     "description": "Kuali curriculum and catalog management",
     "html": [
@@ -543,7 +540,7 @@
   },
   "Kuali Financial System": {
     "cats": [
-      53
+      302
     ],
     "description": "Kuali Financial System (KFS)",
     "html": [
@@ -563,7 +560,7 @@
   },
   "Liaison CAS": {
     "cats": [
-      53
+      302
     ],
     "description": "Liaison Centralized Application Service",
     "html": [
@@ -582,7 +579,7 @@
   },
   "National Student Clearinghouse": {
     "cats": [
-      53
+      302
     ],
     "description": "National Student Clearinghouse services",
     "html": [
@@ -601,7 +598,7 @@
   },
   "Oracle PeopleSoft Campus Solutions": {
     "cats": [
-      53
+      302
     ],
     "description": "Oracle PeopleSoft Campus Solutions student information system.",
     "html": [
@@ -636,7 +633,7 @@
   },
   "Parchment": {
     "cats": [
-      53
+      302
     ],
     "description": "Parchment credential management platform",
     "html": [
@@ -654,7 +651,7 @@
   },
   "Populi": {
     "cats": [
-      53
+      302
     ],
     "description": "Populi college management system",
     "html": [
@@ -673,7 +670,7 @@
   },
   "PowerCampus": {
     "cats": [
-      53
+      302
     ],
     "description": "PowerCampus student information system.",
     "html": [
@@ -697,7 +694,7 @@
   },
   "PowerFAIDS": {
     "cats": [
-      53
+      302
     ],
     "description": "PowerFAIDS financial aid management system",
     "html": [
@@ -715,7 +712,7 @@
   },
   "PowerSchool SIS": {
     "cats": [
-      53
+      302
     ],
     "description": "PowerSchool Student Information System",
     "html": [
@@ -741,7 +738,7 @@
   },
   "QuickSchools": {
     "cats": [
-      53
+      302
     ],
     "description": "QuickSchools cloud-based student information system",
     "html": [
@@ -760,13 +757,12 @@
   },
   "Rediker Software": {
     "cats": [
-      53
+      302
     ],
     "description": "Rediker AdminPlus student information system",
     "html": [
       "rediker.*software",
-      "adminplus",
-      "admin.*plus"
+      "adminplus"
     ],
     "scripts": [
       "rediker",
@@ -782,7 +778,7 @@
   },
   "Regent Education": {
     "cats": [
-      53
+      302
     ],
     "description": "Regent Education student information system",
     "html": [
@@ -801,19 +797,17 @@
   },
   "RenWeb": {
     "cats": [
-      53
+      302
     ],
     "description": "RenWeb school management system by FACTS",
     "html": [
       "renweb"
     ],
     "scripts": [
-      "renweb",
-      "facts"
+      "renweb"
     ],
     "js": {
-      "RenWeb": "",
-      "FACTS": ""
+      "RenWeb": ""
     },
     "higher_ed": true,
     "confidence": 85,
@@ -821,7 +815,7 @@
   },
   "SIMS": {
     "cats": [
-      53
+      302
     ],
     "description": "SIMS education management system (UK)",
     "html": [
@@ -843,18 +837,15 @@
   },
   "SITS": {
     "cats": [
-      53
+      302
     ],
     "description": "Tribal SITS:Vision student records system (UK/Ireland). Login pages use /urd/sits.urd/run/ URL structure.",
     "html": [
       "sits\\.urd",
       "/urd/sits\\.urd/run/",
-      "sits.*student",
-      "sits.*records",
       "tribal.*sits"
     ],
     "scripts": [
-      "sits",
       "tribal.*sits"
     ],
     "js": {
@@ -872,7 +863,7 @@
   },
   "ScholarSite": {
     "cats": [
-      53
+      302
     ],
     "description": "ScholarSite academic catalog and curriculum system",
     "html": [
@@ -890,12 +881,11 @@
   },
   "SchoolAdmin": {
     "cats": [
-      53
+      302
     ],
     "description": "SchoolAdmin student information system",
     "html": [
-      "schooladmin",
-      "school.*admin"
+      "schooladmin"
     ],
     "scripts": [
       "schooladmin"
@@ -909,7 +899,7 @@
   },
   "Skyward Student Management": {
     "cats": [
-      53
+      302
     ],
     "description": "Skyward student management system extending to higher education",
     "html": [
@@ -930,7 +920,7 @@
   },
   "Smart Catalog": {
     "cats": [
-      53
+      302
     ],
     "description": "Smart Catalog curriculum and catalog management system",
     "html": [
@@ -952,7 +942,7 @@
   },
   "StudIS": {
     "cats": [
-      53
+      302
     ],
     "description": "StudIS European student information system",
     "html": [
@@ -970,7 +960,7 @@
   },
   "Synergy Student Information System": {
     "cats": [
-      53
+      302
     ],
     "description": "Synergy SIS by EduPoint Educational Systems",
     "html": [
@@ -992,7 +982,7 @@
   },
   "Tribal Student Management": {
     "cats": [
-      53
+      302
     ],
     "description": "Tribal Student Management System (UK Higher Education)",
     "html": [
@@ -1014,7 +1004,7 @@
   },
   "Unit4 Student Management": {
     "cats": [
-      53
+      302
     ],
     "description": "Unit4 student information and finance system",
     "html": [
@@ -1042,7 +1032,7 @@
   },
   "Veracross": {
     "cats": [
-      53
+      302
     ],
     "description": "Veracross independent school management system",
     "html": [
@@ -1061,7 +1051,7 @@
   },
   "Workday Student": {
     "cats": [
-      53
+      302
     ],
     "description": "Workday cloud-based enterprise management suite",
     "html": [

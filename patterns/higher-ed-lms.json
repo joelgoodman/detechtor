@@ -172,7 +172,6 @@
       "canvas-lms",
       "instructure\\.com",
       "canvas_course_id",
-      "ENV.*COURSE",
       "webpackChunkcanvas_lms"
     ],
     "scripts": [
@@ -344,7 +343,7 @@
   },
   "ExamSoft": {
     "cats": [
-      53
+      304
     ],
     "description": "ExamSoft digital assessment platform",
     "html": [
@@ -400,7 +399,7 @@
   },
   "Honorlock": {
     "cats": [
-      53
+      304
     ],
     "description": "Honorlock online proctoring platform",
     "html": [
@@ -467,8 +466,7 @@
     ],
     "description": "LearnDash WordPress LMS plugin",
     "html": [
-      "learndash",
-      "ld.*course"
+      "learndash"
     ],
     "scripts": [
       "learndash"
@@ -508,17 +506,11 @@
     ],
     "description": "Macmillan Learning Achieve platform",
     "html": [
-      "macmillan.*achieve",
-      "achieve.*macmillan",
       "macmillanlearning"
     ],
-    "scripts": [
-      "achieve",
-      "macmillan"
-    ],
+    "scripts": [],
     "js": {
-      "MacmillanAchieve": "",
-      "Achieve": ""
+      "MacmillanAchieve": ""
     },
     "higher_ed": true,
     "confidence": 85,
@@ -820,7 +812,7 @@
   },
   "ProctorU": {
     "cats": [
-      53
+      304
     ],
     "description": "ProctorU online proctoring service",
     "html": [
@@ -838,7 +830,7 @@
   },
   "Proctorio": {
     "cats": [
-      53
+      304
     ],
     "description": "Proctorio automated proctoring solution",
     "html": [
@@ -856,7 +848,7 @@
   },
   "Respondus LockDown Browser": {
     "cats": [
-      53
+      304
     ],
     "description": "Respondus LockDown Browser for secure testing",
     "html": [
@@ -898,7 +890,7 @@
   },
   "SafeAssign": {
     "cats": [
-      53
+      304
     ],
     "description": "Blackboard SafeAssign plagiarism prevention",
     "html": [
@@ -1022,7 +1014,7 @@
   },
   "Turnitin": {
     "cats": [
-      53
+      304
     ],
     "description": "Turnitin plagiarism detection service",
     "html": [
@@ -1040,7 +1032,7 @@
   },
   "Unicheck": {
     "cats": [
-      53
+      304
     ],
     "description": "Unicheck plagiarism checker",
     "html": [
@@ -1058,7 +1050,7 @@
   },
   "VeriCite": {
     "cats": [
-      53
+      304
     ],
     "description": "VeriCite plagiarism detection",
     "html": [

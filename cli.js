@@ -39,6 +39,15 @@ const argv = yargs
     type: 'boolean',
     default: false
   })
+  .option('extra-url', {
+    describe: 'Additional URL(s) to detect on in --no-crawl mode (repeatable). Pass the agent-resolved canonical pages, e.g. admissions + program.',
+    type: 'array'
+  })
+  .option('skip-crawl', {
+    describe: 'Detect ONLY on --url (+ --extra-url); skip page discovery, the multi-page crawl, and admin/API probes. For callers that already have good URLs (UNI-145). (Named skip-crawl, not no-crawl, to avoid yargs boolean-negation.)',
+    type: 'boolean',
+    default: false
+  })
   .help()
   .example('$0 --url https://mit.edu', 'Scan MIT website for technologies')
   .example('$0 --url https://harvard.edu --output results.json --verbose', 'Scan Harvard with verbose output and save to file')
@@ -66,7 +75,15 @@ async function main() {
       console.log(`  User Agent: ${config.userAgent}\n`);
     }
 
-    results = await detector.detectTechnologies(argv.url);
+    if (argv['skip-crawl']) {
+      const urls = [argv.url, ...(argv['extra-url'] || [])];
+      if (argv.verbose) {
+        console.log(`  Mode: no-crawl (${urls.length} URL(s), no discovery/probes)\n`);
+      }
+      results = await detector.detectTechnologiesOnUrls(urls);
+    } else {
+      results = await detector.detectTechnologies(argv.url);
+    }
     success = true;
 
     // Display results

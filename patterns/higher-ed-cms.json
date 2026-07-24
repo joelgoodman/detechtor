@@ -1,10 +1,12 @@
 {
   "_metadata": {
-    "version": "3.0.0",
-    "description": "Consolidated higher-ed patterns: Content management systems (higher-ed specific)",
+    "version": "3.1.0",
+    "description": "Consolidated higher-ed patterns: Content management systems (higher-ed specific + promoted mainstream CMS overrides)",
     "generated": "2026-04-21",
-    "source": "Merged from 9 higher-ed-*.json + enhanced-payment-analytics.json",
-    "tech_count": 7
+    "updated": "2026-07-17",
+    "source": "Merged from 9 higher-ed-*.json + enhanced-payment-analytics.json; UNI-156 Phase 3/3.3 added 13 mainstream CMS curated overrides",
+    "tech_count": 20,
+    "_uni156_mainstream_cms_promotion": "WordPress/Drupal/Squarespace/Wix/HubSpot CMS Hub/Sitecore/Adobe Experience Manager/Joomla/Progress Sitefinity/Contentful/Kentico/Plone/ExpressionEngine entries below are curated overrides for mainstream (non-HE-specific) CMS that previously only lived in the un-audited base webappanalyzer-merged.json. Because this file loads AFTER the base in src/config.js's patternPaths (Object.assign merge), any entry here whose key EXACTLY matches a base tech name replaces it wholesale — names are copied verbatim from webappanalyzer-merged.json for that reason (e.g. 'HubSpot CMS Hub', 'Progress Sitefinity', not 'HubSpot CMS'/'Sitefinity')."
   },
   "Blackboard Web Community Manager": {
     "cats": [
@@ -62,26 +64,27 @@
     },
     "higher_ed": true,
     "confidence": 95,
-    "website": "https://www.finalsite.com"
+    "website": "https://www.finalsite.com",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, corpus 4214 insts, 2026-07-17). Current 'finalsite'/'finalsite\\.com' html = 87.7% recall (50/57 pos-with-HTML), 0.1% neg-hit (6/4157). Spot-checked neg-hits (insts 1876, 3603) carry real finalsite.com asset references — BuiltWith misses, not false positives. Signature already tight; no change made."
   },
   "Ingeniux CMS": {
     "cats": [
       1
     ],
-    "description": "Ingeniux content management system",
+    "description": "Ingeniux content management system for higher education.",
     "html": [
-      "ingeniux",
-      "ingeniux.*cms"
+      "igx-"
     ],
     "scripts": [
-      "ingeniux"
+      "igx-"
     ],
     "js": {
       "Ingeniux": ""
     },
     "higher_ed": true,
-    "confidence": 88,
-    "website": "https://www.ingeniux.com"
+    "confidence": 70,
+    "website": "https://www.ingeniux.com",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). Old signature ('ingeniux' bare + 'ingeniux.*cms') measured 0% recall (0/6 pos-with-HTML) — the literal string 'ingeniux' never appears in rendered HTML; it's a backend/editor brand name, not a front-end asset host. TIGHTENED to 'igx-' (Ingeniux's own template/class-name prefix, e.g. igx-dev, igx-share-button, IGXPresentationColumn_*): 50% recall (3/6 pos-with-HTML), 0.2% neg-hit (8/4208) — spot-checked neg-hits (insts 720, 1079, 3009) show real Ingeniux markers (IGXPresentationColumn_*, igx-css/igx-js) BuiltWith missed, confirming precision. 3 pos-misses (insts 608, 2848, 2923) are now confirmed WordPress (wp-content present) — cohort drift (migrated off Ingeniux), not a signature gap. Confidence lowered 88→70 pending more positives (small sample, N=9)."
   },
   "Modern Campus CMS": {
     "cats": [
@@ -116,7 +119,7 @@
       "OmniUpdate",
       "OU Campus"
     ],
-    "_validation": "Data-mined vs BuiltWith (UNI-141, 2026-07-13). 'omniupdate' (their own brand asset host a.cms.omniupdate.com DirectEdit link + omniupdate.css + OU XSL namespace) = 86% recall, 0/279 FP. REMOVED 'modern.*campus'/'omniupdate.*modern'/bare 'moderncampus' html + 'modern.*campus' scripts: matched 'modern campuses' PROSE on 32.6% of random non-MC sites (verified in HTML: North East Scotland College 'a number of modern campuses'). Also dropped 'omni' js global (too generic)."
+    "_validation": "Data-mined vs BuiltWith (UNI-141, 2026-07-13; REFRESHED UNI-156, corpus grown to 4214 insts, 2026-07-17). 'omniupdate' (their own brand asset host a.cms.omniupdate.com DirectEdit link + omniupdate.css + OU XSL namespace) = 69.9% recall (86/123 pos-with-HTML), 7.3% neg-hit (297/4091) on the larger corpus — spot-checked neg-hits (insts 759, 1419) carry real omniupdate.com XSL-namespace/DirectEdit markers, confirming these are BuiltWith misses (the oracle-caveat pattern), not a precision regression from the original 279-negative sample. 'omni-cms'/'data-omni-'/'moderncampus\\.com' contribute negligible incremental recall (≤2 hits each) — kept for coverage, no cost. REMOVED 'modern.*campus'/'omniupdate.*modern'/bare 'moderncampus' html + 'modern.*campus' scripts: matched 'modern campuses' PROSE on 32.6% of random non-MC sites (verified in HTML: North East Scotland College 'a number of modern campuses'). Also dropped 'omni' js global (too generic)."
   },
   "SchoolMessenger": {
     "cats": [
@@ -144,9 +147,6 @@
     "description": "TerminalFour content management system for higher education.",
     "html": [
       "terminalfour",
-      "/terminalfour/",
-      "t4-content",
-      "t4-tag",
       "data-t4-"
     ],
     "scripts": [
@@ -161,6 +161,274 @@
     },
     "higher_ed": true,
     "confidence": 88,
-    "website": "https://www.terminalfour.com"
+    "website": "https://www.terminalfour.com",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). Full 5-signature set = 72.7% recall (16/22 pos-with-HTML), 1.7% neg-hit (71/4192). Isolated each signature: bare 'terminalfour' alone already accounts for all 16 true-positive hits (72.7% recall) with fewer neg-hits (68); 't4-content' contributed 0 true positives and 0 neg-hits (dead weight); 't4-tag' contributed 0 true positives but +4 neg-hits (pure noise); '/terminalfour/' is a strict substring of 'terminalfour' so it's redundant by construction. REMOVED 't4-content', 't4-tag', '/terminalfour/'; KEPT 'terminalfour' + 'data-t4-' (a distinct DOM-attribute signal, same recall/neg-hit as the full set). 6 pos-misses (insts 555, 557, 583, 1022, 1109, 3457) spot-checked: 1022 and 3457 are now confirmed Drupal 11 (meta generator) — cohort drift, not a signature gap; the remaining 4 show no other CMS markers (genuine recall gap, cause unclear)."
+  },
+
+  "WordPress": {
+    "cats": [
+      1
+    ],
+    "description": "WordPress content management system (open-source). Curated override of the base WebAppAnalyzer entry — replaces its bare 'wordpress' html literal, which matches unrelated prose (\"...running WordPress since 2019\" on non-WP sites). This is the flagship fix for UNI-156 Phase 3.3.",
+    "html": [
+      "wp-content",
+      "wp-includes"
+    ],
+    "scripts": [
+      "wp-content",
+      "wp-includes"
+    ],
+    "meta": {
+      "generator": "WordPress"
+    },
+    "higher_ed": false,
+    "confidence": 92,
+    "website": "https://wordpress.org",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, corpus 4214 insts, 2026-07-17). 'wp-content' + 'wp-includes' + meta generator=WordPress = 65.4% recall (85/130 pos-with-HTML), 38.5% neg-hit (1573/4084) — NOT precision (oracle caveat, see mine-local.js header): WordPress powers a large share of the general web and spot-checked neg-hits (insts 69, 130) are real wp-content/uploads/... asset paths BuiltWith simply never tagged, not prose collisions ('wp-content' cannot appear in ordinary prose). Pos-misses spot-checked (insts 1, 2, 5) show zero WordPress markers of any kind — institutions have migrated to a different CMS since the BuiltWith label was captured (cohort drift), not a signature gap. REMOVED the base's bare 'wordpress' html literal, which does collide with prose — this is the exact bug this override exists to fix."
+  },
+  "Drupal": {
+    "cats": [
+      1
+    ],
+    "description": "Drupal open-source content management system. Curated override of the base WebAppAnalyzer entry — replaces its bare 'drupal' html literal, which matches Font Awesome's bundled '.fa-drupal' icon CSS class shipped on unrelated sites.",
+    "html": [
+      "data-drupal-",
+      "drupal-settings-json",
+      "sites/default/files",
+      "sites/all/",
+      "misc/drupal\\.js"
+    ],
+    "scripts": [
+      "misc/drupal\\.js",
+      "sites/default/files"
+    ],
+    "meta": {
+      "generator": "Drupal"
+    },
+    "headers": {
+      "X-Drupal-Cache": ".*",
+      "X-Generator": "Drupal"
+    },
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.drupal.org",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). 'data-drupal-' (modern Drupal 8+ theming attribute, e.g. data-drupal-selector) + 'drupal-settings-json' + legacy 'sites/default/files'/'misc/drupal\\.js' + meta generator = 54.1% recall (73/135 pos-with-HTML), 15.0% neg-hit (613/4079) — spot-checked (inst 2806: meta generator=\"Drupal 10\" + data-drupal-selector present) confirms real BuiltWith misses, not FPs (same oracle-caveat pattern as WordPress). Bare 'drupal' alone measured higher recall (58.5%) but 20.5% neg-hit — spot-check (inst 619, 33) traced the extra recall to 'data-drupal-*' attributes already captured above, and spot-check (inst 7) found the extra neg-hits are Font Awesome's bundled CSS rule '.fa-joomla{...}.fa-drupal{...}' present regardless of actual site CMS. REMOVED bare 'drupal' per UNI-156 Phase 3.3 bare-word policy (same class of bug as base WordPress)."
+  },
+  "Squarespace": {
+    "cats": [
+      1
+    ],
+    "description": "Squarespace SaaS website builder / hosted CMS.",
+    "html": [
+      "squarespace\\.com",
+      "static1\\.squarespace",
+      "sqs-"
+    ],
+    "meta": {
+      "generator": "Squarespace"
+    },
+    "headers": {
+      "server": "Squarespace"
+    },
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.squarespace.com",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). 'squarespace\\.com' + 'static1\\.squarespace' + 'sqs-' (component class prefix) = 21.0% recall (25/119 pos-with-HTML), 0.7% neg-hit (28/4095) — Squarespace is rare among full institutional .edu sites (mostly departmental/club microsites), so low recall matches expected usage; low neg-hit confirms precision. Pos-misses spot-checked (insts 6, 35) show zero Squarespace markers, and inst 6 is now confirmed WordPress (wp-content present) — cohort drift, not a signature gap."
+  },
+  "Wix": {
+    "cats": [
+      1
+    ],
+    "description": "Wix cloud-based website builder.",
+    "html": [
+      "static\\.wixstatic\\.com",
+      "wix\\.com"
+    ],
+    "scripts": [
+      "static\\.wixstatic\\.com"
+    ],
+    "meta": {
+      "generator": "Wix\\.com Website Builder"
+    },
+    "headers": {
+      "X-Wix-Request-Id": "",
+      "X-Wix-Renderer-Server": "",
+      "X-Wix-Server-Artifact-Id": ""
+    },
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.wix.com",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). 'static\\.wixstatic\\.com' + 'wix\\.com' = 26.8% recall (34/127 pos-with-HTML), 0.5% neg-hit (22/4087) — Wix is uncommon for full institutional .edu sites (mostly departmental microsites/club pages), so low recall matches expected HE usage; low neg-hit confirms precision. 'parastorage\\.com' (Wix's other CDN host) tested and added zero incremental recall — omitted."
+  },
+  "HubSpot CMS Hub": {
+    "cats": [
+      1
+    ],
+    "description": "HubSpot CMS Hub — the content-hosting product, distinct from generic HubSpot marketing/forms/chat embeds (tracked separately as Marketing Automation in higher-ed-marketing.json). Requires a CMS-Hub-specific marker rather than a bare HubSpot script tag, since HubSpot forms/tracking/chat are common on .edu sites that use a completely different CMS for the site itself.",
+    "html": [
+      "hs_cos_wrapper"
+    ],
+    "meta": {
+      "generator": "HubSpot"
+    },
+    "higher_ed": false,
+    "confidence": 92,
+    "website": "https://www.hubspot.com/products/cms",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). 'hs_cos_wrapper' (CMS Hub's page-module wrapper class) + meta generator=HubSpot = 12.6% recall (14/111 pos-with-HTML), ~0% neg-hit (1/4103, spot-checked as a real match). Bare 'hubspot' measured much higher recall (53.2%) but 10.4% neg-hit (426 hits) — spot-checked hits (insts 46, 190) show only hs-messages-widget/hs-banner/hs-analytics chat-widget and cookie-banner classes, i.e. generic HubSpot marketing-tool usage with a different underlying CMS, not CMS Hub hosting. Kept tight per the vendor-specificity goal even though recall is low: low recall here is a real signal (most HubSpot footprint on .edu sites is the marketing tool, not the CMS)."
+  },
+  "Sitecore": {
+    "cats": [
+      1
+    ],
+    "description": "Sitecore digital experience platform / CMS.",
+    "html": [
+      "sitecore"
+    ],
+    "scripts": [
+      "sitecore",
+      "sc_analytics"
+    ],
+    "cookies": {
+      "SC_ANALYTICS_GLOBAL_COOKIE": "",
+      "sc.UserId": ""
+    },
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.sitecore.com",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). Bare 'sitecore' = 36.1% recall (26/72 pos-with-HTML), 0.02% neg-hit (1/4142, spot-checked as a real Sitecore site). 'sitecore' is not an English word and shows no Font Awesome/prose collision (unlike drupal/joomla), so the bare literal is safe. Tighter '/sitecore/' path-scoped variant measured only 18.1% recall for zero precision gain — bare token kept instead."
+  },
+  "Adobe Experience Manager": {
+    "cats": [
+      1
+    ],
+    "description": "Adobe Experience Manager (AEM) content management / digital experience platform.",
+    "html": [
+      "/etc/designs/",
+      "/etc\\.clientlibs/",
+      "/content/dam/"
+    ],
+    "scripts": [
+      "/etc\\.clientlibs/",
+      "/content/dam/"
+    ],
+    "higher_ed": false,
+    "confidence": 93,
+    "website": "https://business.adobe.com/products/experience-manager/",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). '/etc/designs/' + '/etc\\.clientlibs/' + '/content/dam/' (AEM's distinctive clientlibs/DAM path structure) = 74.2% recall (46/62 pos-with-HTML), 0.2% neg-hit (7/4152, spot-checked as real AEM sites BuiltWith missed). Best recall/precision of any promoted mainstream CMS — AEM's path structure is highly static-visible and rarely rebranded."
+  },
+  "Joomla": {
+    "cats": [
+      1
+    ],
+    "description": "Joomla open-source content management system. Curated override of the base WebAppAnalyzer entry — replaces its bare 'joomla' html literal, which matches Font Awesome's bundled '.fa-joomla' icon CSS class shipped on unrelated sites.",
+    "html": [
+      "com_content",
+      "option=com_",
+      "/media/jui/"
+    ],
+    "scripts": [
+      "com_content"
+    ],
+    "meta": {
+      "generator": "Joomla"
+    },
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://www.joomla.org",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). 'com_content' + 'option=com_' + '/media/jui/' (Joomla's UI framework path) = 17.6% recall (9/51 pos-with-HTML), 0.1% neg-hit (5/4163, spot-checked as real Joomla sites BuiltWith missed). Bare 'joomla' alone measured higher recall (27.5%) but 8.6% neg-hit (359 hits) — spot-check (inst 7) traced the collision directly to Font Awesome's bundled CSS rule '.fa-digg,.fa-drupal,.fa-joomla,...' present regardless of actual site CMS. REMOVED bare 'joomla' per UNI-156 Phase 3.3 bare-word policy (same class of bug as base WordPress/Drupal)."
+  },
+  "Progress Sitefinity": {
+    "cats": [
+      1
+    ],
+    "description": "Progress Sitefinity content management system.",
+    "html": [
+      "sitefinity"
+    ],
+    "js": {
+      "sfDataIntell": ""
+    },
+    "meta": {
+      "generator": "^Sitefinity\\s([\\S]{3,9})\\;version:\\1"
+    },
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.sitefinity.com",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). Bare 'sitefinity' = 30.8% recall (16/52 pos-with-HTML), 0.02% neg-hit (1/4162, spot-checked as a real match). Not an English word and shows no Font Awesome/prose collision — safe as a bare token. Tighter generator-meta-only variant measured 23.1% recall for zero precision gain."
+  },
+  "Contentful": {
+    "cats": [
+      1
+    ],
+    "description": "Contentful headless content management system.",
+    "html": [
+      "ctfassets"
+    ],
+    "scripts": [
+      "ctfassets"
+    ],
+    "higher_ed": false,
+    "confidence": 90,
+    "website": "https://www.contentful.com",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). 'ctfassets' (Contentful's dedicated asset CDN host, e.g. images.ctfassets.net) = 17.8% recall (8/45 pos-with-HTML), 0% neg-hit (0/4169). Bare 'contentful' measured worse on BOTH axes (4.4% recall, 2.2% neg-hit/90 hits — collides with generic content-related prose/class names) — REMOVED in favor of the dedicated-host token."
+  },
+  "Kentico": {
+    "cats": [
+      1
+    ],
+    "description": "Kentico digital experience platform / CMS.",
+    "html": [
+      "kentico",
+      "cmspageplaceholder"
+    ],
+    "scripts": [
+      "kentico"
+    ],
+    "meta": {
+      "generator": "Kentico"
+    },
+    "higher_ed": false,
+    "confidence": 88,
+    "website": "https://www.kentico.com",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). 'kentico' + 'cmspageplaceholder' = 40.9% recall (9/22 pos-with-HTML), 0% neg-hit (0/4192). 'kentico' is not an English word and shows no Font Awesome/prose collision — safe as a bare token."
+  },
+  "Plone": {
+    "cats": [
+      1
+    ],
+    "description": "Plone open-source content management system built on Zope. Decoupled/backend-rendered CMS — Plone's own resource-registry fingerprint survives in only a minority of themes, so front-end detection recall is inherently low (same class of limitation as this file's Cascade CMS entry).",
+    "html": [
+      "\\+\\+resource\\+\\+"
+    ],
+    "dom": [
+      "link[href^='/++resource++']"
+    ],
+    "meta": {
+      "generator": "Plone"
+    },
+    "higher_ed": false,
+    "confidence": 55,
+    "website": "https://plone.org/",
+    "_detection_note": "Low-visibility CMS — the '++resource++' resource-registry path fragment survives in only ~8% of confirmed Plone HE sites in this corpus; most themes render without it. Treat a match as high-confidence but a non-match as inconclusive, not negative — mirrors this file's Cascade CMS entry.",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). '++resource++' = 7.7% recall (1/13 pos-with-HTML), 0% neg-hit (0/4201). Small sample (15 total positives) and low recall reflect Plone's decoupled rendering, not a signature defect — confidence set low by design."
+  },
+  "ExpressionEngine": {
+    "cats": [
+      1
+    ],
+    "description": "ExpressionEngine open-source content management system. The upstream WebAppAnalyzer base entry carries no html/scriptSrc fingerprint at all (cookie-only) — static-HTML detection is inherently weak for this CMS.",
+    "cookies": {
+      "exp_csrf_token": "",
+      "exp_last_activity": "",
+      "exp_tracker": ""
+    },
+    "html": [
+      "exp_csrf_token"
+    ],
+    "higher_ed": false,
+    "confidence": 50,
+    "website": "https://expressionengine.com/",
+    "_detection_note": "Low-visibility CMS by design — even the upstream WebAppAnalyzer definition has no html/scriptSrc field, only session cookies. This entry's html field is a best-effort inline echo of the cookie name (only visible if a page inlines Set-Cookie into markup, which is rare) — treat as low-recall by construction, not a bug.",
+    "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). 'exp_csrf_token' as an html substring = 7.7% recall (2/26 pos-with-HTML), 0% neg-hit (0/4188). Bare 'expressionengine' = 0% recall (0/26) — the string does not appear in rendered HTML at all across the sampled positives (spot-checked insts 145, 209 show zero markers of any kind), confirming this CMS is essentially undetectable via static HTML alone, matching the base entry's cookie-only definition."
   }
 }

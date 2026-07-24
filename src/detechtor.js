@@ -23,13 +23,27 @@ class DeTECHtor {
   
   loadPatterns() {
     const patterns = {};
-    
+    // Curated (higher-ed-authored) partials get provenance-stamped so downstream
+    // consumers (residual-audit.js, benchmark-agent's signal gate) can tell a
+    // hand-vetted higher-ed match from a bare WebAppAnalyzer base-pattern match.
+    const CURATED_RE = /(higher-ed-|general-analytics-extensions|fediverse-social)/;
+
     config.patternPaths.forEach(patternPath => {
       const fullPath = path.resolve(__dirname, patternPath);
       if (fs.existsSync(fullPath)) {
         try {
           const data = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
-          Object.assign(patterns, data);
+          const curated = CURATED_RE.test(patternPath);
+          const sourceFile = path.basename(patternPath);
+          for (const [name, def] of Object.entries(data)) {
+            if (name === '_metadata') continue;
+            if (def && typeof def === 'object') {
+              def._curated = curated;
+              def._sourceFile = sourceFile;
+            }
+            // Later (curated) files still override earlier (base) on name collision.
+            patterns[name] = def;
+          }
           if (config.verbose) {
             console.log(`Loaded ${Object.keys(data).length} patterns from ${fullPath}`);
           }
@@ -157,7 +171,72 @@ class DeTECHtor {
       await mainPage.close();
     }
   }
-  
+
+  // UNI-145: detect technologies on a KNOWN set of URLs (the agent's already-resolved
+  // canonical pages) WITHOUT any self-crawl. Scans each provided URL via scanSinglePage
+  // and merges — skips discoverAdditionalPages, the additional-page crawl loop,
+  // scanDerivedProbes, and probePaths (the slow parts). Detecting on 2–3 rendered
+  // canonical pages (home + admissions + program) catches CMS/chatbot/analytics/a11y
+  // (home) + CRM/forms/marketing-automation (lead-capture pages) without guessing pages.
+  async detectTechnologiesOnUrls(urls) {
+    this.startTime = Date.now();
+
+    if (!Array.isArray(urls) || urls.length === 0) {
+      throw new Error('detectTechnologiesOnUrls requires a non-empty array of URLs');
+    }
+
+    if (!this.browser) {
+      await this.initialize();
+    }
+
+    let allDetected = [];
+    const scannedUrls = [];
+    let firstFinalUrl = null;
+    let firstResponseCode = null;
+
+    for (const targetUrl of urls) {
+      const page = await this.browser.newPage();
+      try {
+        const res = await this.scanSinglePage(page, targetUrl);
+        allDetected = [...allDetected, ...res.technologies];
+        scannedUrls.push(res.finalUrl);
+        if (firstFinalUrl === null) {
+          firstFinalUrl = res.finalUrl;
+          firstResponseCode = res.meta ? res.meta.responseCode : null;
+        }
+        if (config.verbose) {
+          console.log(`Scanned (no-crawl) ${targetUrl}: ${res.technologies.length} technologies`);
+        }
+      } catch (error) {
+        if (config.verbose) {
+          console.warn(`Failed to scan ${targetUrl}: ${error.message}`);
+        }
+      } finally {
+        await page.close();
+      }
+    }
+
+    const mergedTechnologies = this.mergeTechnologies(allDetected);
+    const scanDuration = Date.now() - this.startTime;
+
+    return {
+      url: urls[0],
+      finalUrl: firstFinalUrl || urls[0],
+      timestamp: Date.now(),
+      technologies: mergedTechnologies,
+      scannedPages: scannedUrls.length,
+      scannedUrls: scannedUrls,
+      inferredStack: { components: { cms: null, lms: null, sis: null, crm: null, analytics: [], javascript: [], server: [], cdn: [] }, inferences: [] },
+      meta: {
+        responseCode: firstResponseCode,
+        scanDuration: scanDuration,
+        userAgent: config.userAgent,
+        detechtor_version: '2.0.0',
+        mode: 'no-crawl'
+      }
+    };
+  }
+
   shouldExcludePath(path) {
     return config.excludePaths.some(excludePath => 
       path.toLowerCase().includes(excludePath.toLowerCase())
@@ -345,13 +424,20 @@ class DeTECHtor {
         // Merge evidence and update confidence
         merged[key].evidence = [...new Set([...merged[key].evidence, ...tech.evidence])];
         merged[key].confidence = Math.max(merged[key].confidence, tech.confidence);
-        
+
         // Merge categories
         merged[key].categories = [...new Set([...merged[key].categories, ...tech.categories])];
-        
+
         // Use version if available
         if (tech.version && !merged[key].version) {
           merged[key].version = tech.version;
+        }
+
+        // Provenance: curated if ANY contributing detection was curated; keep
+        // the first non-null sourceFile.
+        merged[key].curated = merged[key].curated || tech.curated || false;
+        if (!merged[key].sourceFile && tech.sourceFile) {
+          merged[key].sourceFile = tech.sourceFile;
         }
       } else {
         merged[key] = { ...tech };
@@ -921,7 +1007,9 @@ class DeTECHtor {
       evidence: config.includeEvidence ? matchEvidence : [],
       version: this.extractVersion({name: name}, evidence),
       isHigherEd: pattern.higher_ed || false,
-      description: pattern.description || ''
+      description: pattern.description || '',
+      curated: pattern._curated || false,
+      sourceFile: pattern._sourceFile || null
     };
   }
   
