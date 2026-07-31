@@ -53,7 +53,7 @@
  *                          Default: print SQL to stdout (run it via the Supabase
  *                          MCP / SQL editor — the corpus HTML is toasted and must
  *                          be matched server-side).
- *     --project <ref>      Supabase project ref (doc only; default jlnpqppnyuevdpuvpsiz)
+ *     --project <ref>      Supabase project ref (doc only; default olmsggrzfthlyhjtzvoz)
  *
  * The generator keeps detechtor DB-free: no creds are required to PRINT SQL, and
  * `pg` is an optional peer used only with --run.
@@ -78,7 +78,7 @@ const sampleN    = parseInt(getArg('--sample', '600'), 10);
 const posSampleN = parseInt(getArg('--pos-sample', '250'), 10);
 const spotcheck  = hasFlag('--spotcheck');
 const run        = hasFlag('--run');
-const projectRef = getArg('--project', 'jlnpqppnyuevdpuvpsiz');
+const projectRef = getArg('--project', 'olmsggrzfthlyhjtzvoz');
 
 if (!category || !vendor || !signature) {
   console.error('Missing required args. Example:\n' +
