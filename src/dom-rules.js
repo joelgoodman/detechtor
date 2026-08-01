@@ -85,4 +85,34 @@ function normalizeDomRules(def) {
   return rules;
 }
 
-module.exports = { normalizeDomRules, CONDITION_KEYS };
+// --- admission gate -----------------------------------------------------------------------
+//
+// Phase A (UNI-224) measured every dom rule against 4,214 real institutions. 1,585 rules landed
+// in UNVALIDATED/PLAUSIBLE and auto-admit; 13 needed adjudication and 4 were rejected. A denylist
+// of the failures is smaller and more legible than an allowlist of the survivors.
+//
+// Admission is per-RULE, not per-tech: a tech may have one over-broad selector denied while its
+// other selectors still run.
+
+const DENYLIST = require('../patterns/dom-rule-denylist.json');
+
+const DENIED = new Map(); // tech -> Set<selector>
+for (const entry of DENYLIST.denied || []) {
+  if (!DENIED.has(entry.tech)) DENIED.set(entry.tech, new Set());
+  DENIED.get(entry.tech).add(entry.selector);
+}
+
+/**
+ * Normalize a technology's `dom` field and drop any rule denied by the Phase A evidence gate.
+ * @param {string} tech technology name (denylist is keyed by it)
+ * @param {object} def the technology definition
+ * @returns {Array<{selector:string, kind:string, name?:string, regex?:string}>}
+ */
+function admittedDomRules(tech, def) {
+  const denied = DENIED.get(tech);
+  const rules = normalizeDomRules(def);
+  if (!denied) return rules;
+  return rules.filter((r) => !denied.has(r.selector));
+}
+
+module.exports = { normalizeDomRules, admittedDomRules, CONDITION_KEYS };

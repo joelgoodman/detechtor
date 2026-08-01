@@ -1,0 +1,52 @@
+{
+  "_metadata": {
+    "purpose": "Admission decisions for `dom` rules (UNI-224 Phase A evidence gate). Rules listed here are NOT evaluated by the engine. Everything not listed is admitted.",
+    "why_a_denylist": "Phase A measured 1,600 dom rules against 4,214 real institutions. 1,585 landed in UNVALIDATED/PLAUSIBLE and auto-admit; only 13 needed adjudication. A denylist of the failures is far smaller and more legible than an allowlist of the survivors.",
+    "generated": "2026-08-01",
+    "ledger": "docs/dom-rule-ledger.json",
+    "adjudication_note": "Corroboration against a tech's non-dom evidence is ONE-WAY: high corroboration proves genuine, low corroboration proves nothing (Google Font API corroborates at 2% because `link[href*='fonts.g']` is delivered by <link>, not script — the dom rule is the better detector). Rejections below are therefore based on DIRECT inspection of what the selector actually matched in the corpus, not on low corroboration."
+  },
+  "denied": [
+    {
+      "tech": "Element UI",
+      "selector": "[class*='el-']",
+      "kind": "exists",
+      "measured_fire_rate": 0.103,
+      "reason": "Catastrophically over-broad. Zero of the top matched class tokens are Element UI. Actual matches: mega-nav__level-three-plus-link (551), field--label-hidden (536), ubermenu-item-level-2 (120), level-3, carousel-item — i.e. any class containing the substring 'el-', which 'level-', 'label-', 'carousel-' all do. Element UI is a Vue component library; these are Drupal/WordPress menu classes."
+    },
+    {
+      "tech": "Font Awesome",
+      "selector": "[class*='fa']",
+      "kind": "exists",
+      "measured_fire_rate": 0.483,
+      "reason": "Over-broad: 'default' contains 'fa'. Genuine FA tokens do match (fas, fa-solid, fa-brands, svg-inline--fa), but so do elementor-section-height-default (470), elementor-size-default (424), aem-GridColumn--default--12 (213), ubermenu-item-layout-default (188). Fires on ~48% of institutions. Narrowing to [class*='fa-'] would likely be sound — but that is a pattern edit, not an admission decision, so the rule is denied as written."
+    },
+    {
+      "tech": "RSS",
+      "selector": "link[type*='application']",
+      "kind": "attributes",
+      "name": "type",
+      "measured_fire_rate": 0.282,
+      "reason": "Matches any application/* link type. Of the matched values only application/rss+xml (113) and application/atom+xml (1) are RSS; application/json (68), application/json+oembed (65), application/rsd+xml (58) and application/wlwmanifest+xml are not. Roughly 63% of matches are wrong."
+    },
+    {
+      "tech": "Progress WS_FTP",
+      "selector": "form[name='formLogin'][action='login.aspx' i][id='formLogin']\\;confidence:0",
+      "kind": "exists",
+      "measured_fire_rate": 0,
+      "reason": "Malformed selector — a stray '\\;confidence:0' fragment makes it unparseable by querySelectorAll. Rejected structurally, not on prevalence. This is exactly what the Phase C load-time shape validator will catch automatically."
+    }
+  ],
+  "admitted_after_review": [
+    { "tech": "Open Graph", "fire_rate": 0.661, "why": "meta[property*='og:'] is definitively Open Graph. ~66% of university homepages carrying OG tags is correct, not implausible." },
+    { "tech": "Google Font API", "fire_rate": 0.460, "why": "link[href*='fonts.g'] matches fonts.googleapis.com / fonts.gstatic.com — definitive. Corroborates at only 2% because the tech's other evidence is script-based; the dom rule is the better detector." },
+    { "tech": "Priority Hints", "fire_rate": 0.332, "why": "[fetchpriority] is a real HTML attribute; the detection is accurate even if 'Priority Hints' is a marginal thing to call a technology." },
+    { "tech": "Yoast SEO", "fire_rate": 0.218, "why": "script[class*='yoast-schema-graph'] is a specific, dedicated Yoast marker. 0% corroboration reflects its other patterns not firing, not a false positive." },
+    { "tech": "Adobe Fonts", "fire_rate": 0.168, "why": "use.typekit.net / use.typekit.com — definitive. 100% corroboration." },
+    { "tech": "PWA", "fire_rate": 0.161, "why": "link[rel='manifest'] is definitive for a web app manifest." },
+    { "tech": "theTradeDesk", "fire_rate": 0.138, "why": "iframe[src*='insight.adsrvr.org'] — dedicated vendor host. 100% corroboration." },
+    { "tech": "Swiper", "fire_rate": 0.125, "why": "div.swiper-wrapper is Swiper's own class name." },
+    { "tech": "cdnjs", "fire_rate": 0.119, "why": "cdnjs.cloudflare.com — definitive host. 100% corroboration." },
+    { "tech": "jsDelivr", "fire_rate": 0.115, "why": "cdn.jsdelivr.net — definitive host. 100% corroboration." }
+  ]
+}
