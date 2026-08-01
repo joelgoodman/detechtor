@@ -8,7 +8,7 @@
     "detechtor": "./cli.js"
   },
   "scripts": {
-    "test": "node scripts/lint-patterns.js --fail-curated && node scripts/test-patterns.js",
+    "test": "node scripts/lint-patterns.js --fail-curated && node scripts/lint-dom-rules.js --gate && node --test tests/*.test.js && node scripts/test-patterns.js",
     "lint:patterns": "node scripts/lint-patterns.js",
     "lint:patterns:gate": "node scripts/lint-patterns.js --fail-curated",
     "test:audit": "node scripts/audit-patterns.js",
@@ -21,7 +21,10 @@
     "capture-evidence:dry": "node scripts/capture-evidence.js --dry-run",
     "validate-patterns": "node scripts/validate-patterns.js",
     "validate-patterns:force": "node scripts/validate-patterns.js --force",
-    "validate-patterns:report": "node scripts/validate-patterns.js --report-only"
+    "validate-patterns:report": "node scripts/validate-patterns.js --report-only",
+    "lint:dom": "node scripts/lint-dom-rules.js",
+    "lint:dom:gate": "node scripts/lint-dom-rules.js --gate",
+    "base-rate": "node scripts/base-rate-report.js"
   },
   "keywords": [
     "technology-detection",

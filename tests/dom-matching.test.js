@@ -99,9 +99,12 @@ test('admission is per-rule, not per-tech', () => {
   assert.strictEqual(rules[0].selector, "link[href*='fontawesome']");
 });
 
-test('a malformed selector is not admitted', () => {
+test('a denylisted malformed selector is not admitted', () => {
+  // The trailing \;confidence:40 is unstripped upstream Wappalyzer modifier syntax, which makes
+  // the selector unparseable. Structural rejection is checkDomRules' job (see dom-validation
+  // tests); this asserts the Phase A denylist also quarantines it by name.
   const rules = admittedDomRules('Progress WS_FTP', {
-    dom: ["form[name='formLogin'][action='login.aspx' i][id='formLogin']\\;confidence:0"],
+    dom: ["form[name='formLogin'][action='login.aspx' i][id='formLogin']\\;confidence:40"],
   });
   assert.deepStrictEqual(rules, []);
 });

@@ -31,10 +31,10 @@
     },
     {
       "tech": "Progress WS_FTP",
-      "selector": "form[name='formLogin'][action='login.aspx' i][id='formLogin']\\;confidence:0",
+      "selector": "form[name='formLogin'][action='login.aspx' i][id='formLogin']\\;confidence:40",
       "kind": "exists",
       "measured_fire_rate": 0,
-      "reason": "Malformed selector — a stray '\\;confidence:0' fragment makes it unparseable by querySelectorAll. Rejected structurally, not on prevalence. This is exactly what the Phase C load-time shape validator will catch automatically."
+      "reason": "Unparseable by querySelectorAll because of a trailing '\\;confidence:40'. That suffix is UPSTREAM WAPPALYZER MODIFIER SYNTAX which our importer never stripped — not a one-off typo. The Phase C validator caught this automatically, and doing so exposed the same unparsed-modifier problem across 939 further pattern values in scriptSrc/meta/headers/html/cookies/scripts, which are silently DEAD because the suffix becomes a literal regex requirement. Tracked separately; this entry stays as the dom-specific quarantine until the importer strips modifiers globally."
     }
   ],
   "admitted_after_review": [

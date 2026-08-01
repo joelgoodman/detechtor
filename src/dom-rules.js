@@ -115,4 +115,98 @@ function admittedDomRules(tech, def) {
   return rules.filter((r) => !denied.has(r.selector));
 }
 
-module.exports = { normalizeDomRules, admittedDomRules, CONDITION_KEYS };
+// --- Phase C guardrails -------------------------------------------------------------------
+//
+// Two independent questions, and we historically only ever asked the second:
+//   STRUCTURAL — is this the shape the engine consumes?   (the silent-death class)
+//   SEMANTIC   — is this pattern too broad?               (the false-positive class)
+// One rule can fail either. checkDomRules() answers the first; isOverBroadSelector() the second.
+
+const cheerio = require('cheerio');
+
+/** A selector is only useful if the engine can actually parse it. */
+function selectorParses(selector) {
+  try {
+    cheerio.load('<div></div>')(selector);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Validate a technology's `dom` field. Denied rules are skipped — they are already quarantined
+ * by the Phase A evidence gate and must not be re-reported as defects.
+ *
+ * @returns {{rules: Array, problems: Array<{tech:string, kind:'shape'|'selector', message:string}>}}
+ */
+function checkDomRules(tech, def) {
+  const problems = [];
+  let rules = [];
+  try {
+    rules = admittedDomRules(tech, def);
+  } catch (err) {
+    problems.push({ tech, kind: 'shape', message: err.message });
+    return { rules: [], problems };
+  }
+  for (const r of rules) {
+    if (!selectorParses(r.selector)) {
+      problems.push({ tech, kind: 'selector', message: `unparseable selector: ${r.selector}` });
+    }
+  }
+  return { rules, problems };
+}
+
+// Substring-match selectors keyed on a short token are the `dom` equivalent of the bare-token
+// html/scripts offenders the specificity lint already catches. Measured examples from the Phase A
+// corpus run: [class*='fa'] fires on "de-FA-ult"; [class*='el-'] fires on "lev-EL-", "lab-EL-".
+const SUBSTRING_ATTR = /\[\s*[a-z-]+\s*[*^$~|]?=\s*['"]([^'"]*)['"]/gi;
+const MIN_SUBSTRING_TOKEN = 4;
+
+/**
+ * Heuristic breadth check for a `dom` selector. Deliberately conservative — it reports the
+ * mechanically obvious cases and does not attempt to judge semantics.
+ *
+ * Known limit: it does NOT catch link[type*='application'] (the RSS denial), because
+ * "application" is long enough to look specific while still being a media-type namespace shared
+ * by json, json+oembed and rsd+xml. That class needs the base-rate report, not a lint.
+ */
+function isOverBroadSelector(selector) {
+  const sel = String(selector).trim();
+
+  // A bare element name with no class/id/attribute qualifier matches on nearly every page.
+  if (/^[a-z][a-z0-9]*$/i.test(sel)) return true;
+
+  for (const m of sel.matchAll(SUBSTRING_ATTR)) {
+    const value = m[1];
+    const alnum = value.replace(/[^a-z0-9]/gi, '');
+    if (alnum.length < MIN_SUBSTRING_TOKEN) return true;
+  }
+  return false;
+}
+
+/**
+ * Breadth check for a normalized RULE rather than a bare selector.
+ *
+ * Selector breadth only matters when existence IS the whole rule. Curated Pleroma's `noscript`
+ * selector matches ~78% of university homepages, but the rule pairs it with
+ * `^To use Pleroma, please enable JavaScript\.$` and fires on 0% — the regex is what constrains
+ * it. Judging that selector in isolation would condemn a sound rule, which is the same mistake
+ * as auditing selectors without their regexes.
+ */
+function isOverBroadRule(rule) {
+  const existenceOnly =
+    rule.kind === 'exists' ||
+    ((rule.kind === 'attributes' || rule.kind === 'properties') && !rule.regex);
+  if (!existenceOnly) return false;
+  return isOverBroadSelector(rule.selector);
+}
+
+module.exports = {
+  normalizeDomRules,
+  admittedDomRules,
+  checkDomRules,
+  isOverBroadSelector,
+  isOverBroadRule,
+  CONDITION_KEYS,
+};

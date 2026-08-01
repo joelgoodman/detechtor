@@ -5,7 +5,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const config = require('./config');
 const { mapCategory } = require('./category-mapping');
-const { admittedDomRules } = require('./dom-rules');
+const { admittedDomRules, checkDomRules } = require('./dom-rules');
 
 class DeTECHtor {
   constructor(options = {}) {
@@ -33,17 +33,20 @@ class DeTECHtor {
    * selectors in play, dumping every attribute of every match would balloon the page.evaluate
    * payload for no gain.
    */
-  buildDomPlan() {
+  buildDomPlan(options = {}) {
+    // strict: fail LOUDLY at load on any dom rule the engine cannot evaluate. This is the Phase C
+    // guardrail — the whole defect was that unevaluable rules died silently. Default off so a
+    // single bad pattern cannot abort a production scan; the CI lint is where it must bite.
+    const strict = options.strict === true;
     const plan = new Map();
+    const problems = [];
     for (const [name, def] of Object.entries(this.patterns)) {
       if (name === '_metadata' || !def || typeof def !== 'object' || def.dom === undefined) continue;
-      let rules;
-      try {
-        rules = admittedDomRules(name, def);
-      } catch (shapeError) {
-        // Unrepresentable shape — skip. Phase C promotes this to a hard error at load.
-        if (config.verbose) {
-          console.warn(`Unusable dom shape for ${name}: ${shapeError.message}`);
+      const { rules, problems: found } = checkDomRules(name, def);
+      if (found.length) {
+        problems.push(...found);
+        if (!strict && config.verbose) {
+          for (const p of found) console.warn(`Unusable dom rule for ${p.tech}: ${p.message}`);
         }
         def._domRules = [];
         continue;
@@ -58,6 +61,12 @@ class DeTECHtor {
         else if (r.kind === 'attributes') entry.attrs.add(r.name);
         else if (r.kind === 'properties') entry.props.add(r.name);
       }
+    }
+    if (strict && problems.length) {
+      throw new Error(
+        `${problems.length} dom rule(s) the engine cannot evaluate:\n` +
+          problems.map((p) => `  ${p.tech} [${p.kind}]: ${p.message}`).join('\n'),
+      );
     }
     return [...plan.values()].map((e) => ({
       selector: e.selector,
