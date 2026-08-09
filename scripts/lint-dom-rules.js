@@ -26,6 +26,7 @@
 const fs = require('fs');
 const path = require('path');
 const { checkDomRules, admittedDomRules, isOverBroadRule } = require('../src/dom-rules.js');
+const { normalizeDefinition, hasModifier } = require('../src/pattern-normalize.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const PATTERNS_DIR = path.join(ROOT, 'patterns');
@@ -34,6 +35,7 @@ const GATE = process.argv.includes('--gate');
 
 const structural = [];
 const breadth = [];
+const modifiers = [];   // on-disk values still carrying an upstream modifier (UNI-226)
 
 for (const file of fs.readdirSync(PATTERNS_DIR).filter((f) => f.endsWith('.json'))) {
   if (file === 'dom-rule-denylist.json') continue;
@@ -47,6 +49,13 @@ for (const file of fs.readdirSync(PATTERNS_DIR).filter((f) => f.endsWith('.json'
   }
   for (const [tech, def] of Object.entries(data.technologies || data)) {
     if (tech === '_metadata' || !def || typeof def !== 'object' || def.dom === undefined) continue;
+
+    // UNI-226: lint what the ENGINE will see, not the raw file. The engine strips upstream
+    // `\;confidence:NN` / `\;version:\1` suffixes at load, so linting the raw value would report
+    // selectors as unparseable that are in fact fine — and, worse, would keep passing once the
+    // on-disk files are eventually cleaned. Count the debt separately instead.
+    if (hasModifier(JSON.stringify(def.dom))) modifiers.push({ file, tech });
+    normalizeDefinition(def);
 
     const { problems } = checkDomRules(tech, def);
     for (const p of problems) structural.push({ file, curated, ...p });
@@ -69,7 +78,15 @@ for (const file of fs.readdirSync(PATTERNS_DIR).filter((f) => f.endsWith('.json'
 const curatedBreadth = breadth.filter((b) => b.curated);
 
 console.log(`dom rule lint — ${structural.length} structural, ${breadth.length} breadth ` +
-  `(${curatedBreadth.length} in curated files)`);
+  `(${curatedBreadth.length} in curated files), ${modifiers.length} carrying on-disk modifiers`);
+
+if (modifiers.length) {
+  console.log(`\nMODIFIERS — ${modifiers.length} dom field(s) still carry an upstream ` +
+    `\\;confidence / \\;version suffix on disk.`);
+  console.log('  Harmless at runtime: the engine strips them at load (UNI-226). This is data debt,');
+  console.log('  cleared by re-running `npm run update-patterns`, which now strips at import.');
+  console.log('  NOT gated — a stale on-disk file must not be able to fail a build.');
+}
 
 if (structural.length) {
   console.log('\nSTRUCTURAL — the engine cannot evaluate these (silent death):');

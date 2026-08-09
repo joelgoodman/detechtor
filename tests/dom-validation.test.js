@@ -31,13 +31,20 @@ test('a selector the engine cannot parse is reported', () => {
   assert.strictEqual(problems[0].kind, 'selector');
 });
 
-test('a denied rule produces no problem — it is already quarantined', () => {
-  // Progress WS_FTP's malformed selector is on the Phase A denylist; validation must not
-  // re-report what we have deliberately excluded.
-  const { problems } = checkDomRules('Progress WS_FTP', {
-    dom: ["form[name='formLogin'][action='login.aspx' i][id='formLogin']\\;confidence:40"],
-  });
+test('stripping the upstream modifier makes the WS_FTP selector valid', () => {
+  // CHANGED BY UNI-226. This used to assert the rule was quarantined by the denylist. The only
+  // defect was the trailing \;confidence:40 — upstream Wappalyzer modifier syntax, now stripped at
+  // load — so the selector is genuinely valid and the validator must report no problem for the
+  // right reason (it parses) rather than the old one (it was excluded).
+  const { normalizeDefinition } = require(path.resolve(__dirname, '../src/pattern-normalize.js'));
+  const raw = { dom: ["form[name='formLogin'][action='login.aspx' i][id='formLogin']\\;confidence:40"] };
+
+  // Unstripped, it is genuinely unparseable — that is what made it dead.
+  assert.strictEqual(checkDomRules('Some Other Tech', raw).problems.length, 1);
+
+  const { rules, problems } = checkDomRules('Progress WS_FTP', normalizeDefinition({ ...raw }));
   assert.deepStrictEqual(problems, []);
+  assert.strictEqual(rules.length, 1);
 });
 
 // --- semantic: is it too broad? --------------------------------------------------------

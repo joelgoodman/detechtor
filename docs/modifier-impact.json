@@ -1,0 +1,54 @@
+{
+  "scanned": 8,
+  "skipped": 0,
+  "changed": [
+    {
+      "name": "Magnific Popup",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.25,
+      "signal": null
+    },
+    {
+      "name": "Slick",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.25,
+      "signal": null
+    },
+    {
+      "name": "jQuery Migrate",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.25,
+      "signal": null
+    },
+    {
+      "name": "parallax.js",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.25,
+      "signal": null
+    },
+    {
+      "name": "FitVids.JS",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.125,
+      "signal": null
+    },
+    {
+      "name": "Underscore.js",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.125,
+      "signal": null
+    }
+  ]
+}

@@ -6,6 +6,7 @@ const path = require('path');
 const config = require('./config');
 const { mapCategory } = require('./category-mapping');
 const { admittedDomRules, checkDomRules } = require('./dom-rules');
+const { normalizeDefinition } = require('./pattern-normalize');
 
 class DeTECHtor {
   constructor(options = {}) {
@@ -93,6 +94,11 @@ class DeTECHtor {
           for (const [name, def] of Object.entries(data)) {
             if (name === '_metadata') continue;
             if (def && typeof def === 'object') {
+              // UNI-226: strip upstream `\;confidence:NN` / `\;version:\1` suffixes before the
+              // engine ever sees them. Unstripped, they become literal regex requirements no page
+              // can satisfy — 939 values were silently dead. Stripping at LOAD (not only at
+              // import) covers hand-written pattern files too.
+              normalizeDefinition(def);
               def._curated = curated;
               def._sourceFile = sourceFile;
             }

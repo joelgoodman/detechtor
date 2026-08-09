@@ -8,6 +8,7 @@
 const fs = require('fs-extra');
 const https = require('https');
 const path = require('path');
+const { normalizeDefinition } = require('../src/pattern-normalize.js');
 
 const WEBAPPANALYZER_BASE_URL = 'https://raw.githubusercontent.com/enthec/webappanalyzer/main/src/technologies/';
 
@@ -134,6 +135,18 @@ async function main() {
     // Merge with our existing patterns (our patterns take precedence)
     const mergedPatterns = await mergeWithExistingPatterns(webappPatterns);
     console.log(`Final merged pattern count: ${Object.keys(mergedPatterns).length}`);
+
+    // UNI-226: strip upstream `\;confidence:NN` / `\;version:\1` modifier suffixes. Left in place
+    // they become literal requirements in every regex-tested field, so the pattern can never match
+    // real content — 939 values shipped silently dead because this step did not exist.
+    let stripped = 0;
+    for (const [name, def] of Object.entries(mergedPatterns)) {
+      if (name === '_metadata' || !def || typeof def !== 'object') continue;
+      const raw = JSON.stringify(def);
+      normalizeDefinition(def);
+      if (JSON.stringify(def) !== raw) stripped++;
+    }
+    console.log(`Stripped Wappalyzer modifiers from ${stripped} technologies`);
 
     // Save the merged patterns
     const outputPath = path.join(__dirname, '..', 'patterns', 'webappanalyzer-merged.json');

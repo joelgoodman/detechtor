@@ -99,14 +99,22 @@ test('admission is per-rule, not per-tech', () => {
   assert.strictEqual(rules[0].selector, "link[href*='fontawesome']");
 });
 
-test('a denylisted malformed selector is not admitted', () => {
-  // The trailing \;confidence:40 is unstripped upstream Wappalyzer modifier syntax, which makes
-  // the selector unparseable. Structural rejection is checkDomRules' job (see dom-validation
-  // tests); this asserts the Phase A denylist also quarantines it by name.
-  const rules = admittedDomRules('Progress WS_FTP', {
+test('the WS_FTP selector is admitted once its upstream modifier is stripped', () => {
+  // CHANGED BY UNI-226, deliberately. Phase A denied this rule for ONE reason: the trailing
+  // \;confidence:40 made it unparseable. That suffix is upstream Wappalyzer modifier syntax, now
+  // stripped at load, so the selector parses — and on its merits (three attribute constraints on
+  // one form element) it is specific, and was never denied for breadth. Re-adjudicated to
+  // admitted in patterns/dom-rule-denylist.json.
+  //
+  // ⚠️ The denylist is keyed on the selector STRING, so stripping alone would have silently
+  // un-denied it. This test pins the decision so the transition can't happen by accident.
+  const { normalizeDefinition } = require(path.resolve(__dirname, '../src/pattern-normalize.js'));
+  const def = normalizeDefinition({
     dom: ["form[name='formLogin'][action='login.aspx' i][id='formLogin']\\;confidence:40"],
   });
-  assert.deepStrictEqual(rules, []);
+  assert.deepStrictEqual(admittedDomRules('Progress WS_FTP', def), [
+    { selector: "form[name='formLogin'][action='login.aspx' i][id='formLogin']", kind: 'exists' },
+  ]);
 });
 
 // --- the regression this ticket exists for ---------------------------------------------
