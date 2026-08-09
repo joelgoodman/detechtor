@@ -1,0 +1,1543 @@
+{
+  "scope": "full",
+  "scanned": 3879,
+  "skipped": 335,
+  "changed": [
+    {
+      "name": "jQuery Migrate",
+      "b": 0,
+      "a": 1266,
+      "delta": 1266,
+      "rate": 0.32637277648878577,
+      "signal": null
+    },
+    {
+      "name": "Font Awesome",
+      "b": 620,
+      "a": 1275,
+      "delta": 655,
+      "rate": 0.32869296210363497,
+      "signal": null
+    },
+    {
+      "name": "Modernizr",
+      "b": 0,
+      "a": 377,
+      "delta": 377,
+      "rate": 0.09718999742201598,
+      "signal": null
+    },
+    {
+      "name": "Slick",
+      "b": 180,
+      "a": 541,
+      "delta": 361,
+      "rate": 0.13946893529260118,
+      "signal": null
+    },
+    {
+      "name": "imagesLoaded",
+      "b": 0,
+      "a": 330,
+      "delta": 330,
+      "rate": 0.08507347254447023,
+      "signal": null
+    },
+    {
+      "name": "Underscore.js",
+      "b": 0,
+      "a": 256,
+      "delta": 256,
+      "rate": 0.0659963908223769,
+      "signal": null
+    },
+    {
+      "name": "Yoast SEO Premium",
+      "b": 0,
+      "a": 239,
+      "delta": 239,
+      "rate": 0.06161381799432843,
+      "signal": null
+    },
+    {
+      "name": "FitVids.JS",
+      "b": 0,
+      "a": 219,
+      "delta": 219,
+      "rate": 0.05645784996133024,
+      "signal": null
+    },
+    {
+      "name": "Popper",
+      "b": 0,
+      "a": 204,
+      "delta": 204,
+      "rate": 0.05259087393658159,
+      "signal": null
+    },
+    {
+      "name": "Animate.css",
+      "b": 0,
+      "a": 202,
+      "delta": 202,
+      "rate": 0.05207527713328177,
+      "signal": null
+    },
+    {
+      "name": "Magnific Popup",
+      "b": 0,
+      "a": 189,
+      "delta": 189,
+      "rate": 0.048723897911832945,
+      "signal": null
+    },
+    {
+      "name": "Site Kit",
+      "b": 0,
+      "a": 133,
+      "delta": 133,
+      "rate": 0.034287187419438,
+      "signal": null
+    },
+    {
+      "name": "Hello Elementor",
+      "b": 0,
+      "a": 117,
+      "delta": 117,
+      "rate": 0.030162412993039442,
+      "signal": null
+    },
+    {
+      "name": "parallax.js",
+      "b": 0,
+      "a": 116,
+      "delta": 116,
+      "rate": 0.029904614591389534,
+      "signal": null
+    },
+    {
+      "name": "BootstrapCDN",
+      "b": 0,
+      "a": 91,
+      "delta": 91,
+      "rate": 0.02345965455014179,
+      "signal": null
+    },
+    {
+      "name": "FancyBox",
+      "b": 0,
+      "a": 87,
+      "delta": 87,
+      "rate": 0.02242846094354215,
+      "signal": null
+    },
+    {
+      "name": "jQuery Mobile",
+      "b": 0,
+      "a": 73,
+      "delta": 73,
+      "rate": 0.018819283320443414,
+      "signal": null
+    },
+    {
+      "name": "MonsterInsights",
+      "b": 0,
+      "a": 71,
+      "delta": 71,
+      "rate": 0.018303686517143595,
+      "signal": null
+    },
+    {
+      "name": "Alpine.js",
+      "b": 2,
+      "a": 58,
+      "delta": 56,
+      "rate": 0.014952307295694767,
+      "signal": null
+    },
+    {
+      "name": "Divi",
+      "b": 0,
+      "a": 55,
+      "delta": 55,
+      "rate": 0.014178912090745037,
+      "signal": null
+    },
+    {
+      "name": "WOW",
+      "b": 0,
+      "a": 54,
+      "delta": 54,
+      "rate": 0.013921113689095127,
+      "signal": null
+    },
+    {
+      "name": "bxSlider",
+      "b": 0,
+      "a": 52,
+      "delta": 52,
+      "rate": 0.013405516885795308,
+      "signal": null
+    },
+    {
+      "name": "Bootstrap Icons",
+      "b": 0,
+      "a": 51,
+      "delta": 51,
+      "rate": 0.013147718484145398,
+      "signal": null
+    },
+    {
+      "name": "Chosen",
+      "b": 0,
+      "a": 50,
+      "delta": 50,
+      "rate": 0.012889920082495489,
+      "signal": null
+    },
+    {
+      "name": "Yoast SEO",
+      "b": 918,
+      "a": 966,
+      "delta": 48,
+      "rate": 0.24903325599381285,
+      "signal": null
+    },
+    {
+      "name": "Google Tag Manager for WordPress",
+      "b": 1,
+      "a": 49,
+      "delta": 48,
+      "rate": 0.01263212168084558,
+      "signal": null
+    },
+    {
+      "name": "Infinite Scroll",
+      "b": 0,
+      "a": 41,
+      "delta": 41,
+      "rate": 0.010569734467646301,
+      "signal": null
+    },
+    {
+      "name": "AddToAny Share Buttons",
+      "b": 0,
+      "a": 39,
+      "delta": 39,
+      "rate": 0.010054137664346482,
+      "signal": null
+    },
+    {
+      "name": "Elementor",
+      "b": 298,
+      "a": 336,
+      "delta": 38,
+      "rate": 0.08662026295436968,
+      "signal": null
+    },
+    {
+      "name": "styled-components",
+      "b": 4,
+      "a": 42,
+      "delta": 38,
+      "rate": 0.01082753286929621,
+      "signal": null
+    },
+    {
+      "name": "Matter.js",
+      "b": 0,
+      "a": 38,
+      "delta": 38,
+      "rate": 0.00979633926269657,
+      "signal": null
+    },
+    {
+      "name": "Handlebars",
+      "b": 7,
+      "a": 42,
+      "delta": 35,
+      "rate": 0.01082753286929621,
+      "signal": null
+    },
+    {
+      "name": "WPMU DEV Smush",
+      "b": 0,
+      "a": 34,
+      "delta": 34,
+      "rate": 0.008765145656096932,
+      "signal": null
+    },
+    {
+      "name": "Clipboard.js",
+      "b": 0,
+      "a": 33,
+      "delta": 33,
+      "rate": 0.008507347254447023,
+      "signal": null
+    },
+    {
+      "name": "Max Mega Menu",
+      "b": 321,
+      "a": 351,
+      "delta": 30,
+      "rate": 0.09048723897911833,
+      "signal": null
+    },
+    {
+      "name": "Enquire.js",
+      "b": 0,
+      "a": 30,
+      "delta": 30,
+      "rate": 0.007733952049497293,
+      "signal": null
+    },
+    {
+      "name": "Leaflet",
+      "b": 0,
+      "a": 30,
+      "delta": 30,
+      "rate": 0.007733952049497293,
+      "signal": null
+    },
+    {
+      "name": "Ultimate Addons for Elementor",
+      "b": 0,
+      "a": 28,
+      "delta": 28,
+      "rate": 0.007218355246197474,
+      "signal": null
+    },
+    {
+      "name": "Ivory Search",
+      "b": 0,
+      "a": 28,
+      "delta": 28,
+      "rate": 0.007218355246197474,
+      "signal": null
+    },
+    {
+      "name": "dc.js",
+      "b": 0,
+      "a": 28,
+      "delta": 28,
+      "rate": 0.007218355246197474,
+      "signal": null
+    },
+    {
+      "name": "CookieYes",
+      "b": 147,
+      "a": 173,
+      "delta": 26,
+      "rate": 0.04459912348543439,
+      "signal": null
+    },
+    {
+      "name": "Web Font Loader",
+      "b": 0,
+      "a": 25,
+      "delta": 25,
+      "rate": 0.006444960041247744,
+      "signal": null
+    },
+    {
+      "name": "Akismet",
+      "b": 0,
+      "a": 23,
+      "delta": 23,
+      "rate": 0.005929363237947924,
+      "signal": null
+    },
+    {
+      "name": "EmbedPlus",
+      "b": 0,
+      "a": 22,
+      "delta": 22,
+      "rate": 0.005671564836298015,
+      "signal": null
+    },
+    {
+      "name": "Contact Form 7",
+      "b": 134,
+      "a": 155,
+      "delta": 21,
+      "rate": 0.039958752255736016,
+      "signal": null
+    },
+    {
+      "name": "Packery",
+      "b": 0,
+      "a": 20,
+      "delta": 20,
+      "rate": 0.005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Headroom.js",
+      "b": 0,
+      "a": 19,
+      "delta": 19,
+      "rate": 0.004898169631348285,
+      "signal": null
+    },
+    {
+      "name": "Popup Maker",
+      "b": 0,
+      "a": 19,
+      "delta": 19,
+      "rate": 0.004898169631348285,
+      "signal": null
+    },
+    {
+      "name": "Tiny Slider",
+      "b": 0,
+      "a": 19,
+      "delta": 19,
+      "rate": 0.004898169631348285,
+      "signal": null
+    },
+    {
+      "name": "C3.js",
+      "b": 0,
+      "a": 19,
+      "delta": 19,
+      "rate": 0.004898169631348285,
+      "signal": null
+    },
+    {
+      "name": "spin.js",
+      "b": 0,
+      "a": 19,
+      "delta": 19,
+      "rate": 0.004898169631348285,
+      "signal": null
+    },
+    {
+      "name": "Typed.js",
+      "b": 0,
+      "a": 18,
+      "delta": 18,
+      "rate": 0.004640371229698376,
+      "signal": null
+    },
+    {
+      "name": "Chart.js",
+      "b": 0,
+      "a": 18,
+      "delta": 18,
+      "rate": 0.004640371229698376,
+      "signal": null
+    },
+    {
+      "name": "SkyVerge",
+      "b": 0,
+      "a": 18,
+      "delta": 18,
+      "rate": 0.004640371229698376,
+      "signal": null
+    },
+    {
+      "name": "Tablesorter",
+      "b": 0,
+      "a": 17,
+      "delta": 17,
+      "rate": 0.004382572828048466,
+      "signal": null
+    },
+    {
+      "name": "pdfmake",
+      "b": 0,
+      "a": 16,
+      "delta": 16,
+      "rate": 0.0041247744263985565,
+      "signal": null
+    },
+    {
+      "name": "Morphext",
+      "b": 0,
+      "a": 15,
+      "delta": 15,
+      "rate": 0.0038669760247486465,
+      "signal": null
+    },
+    {
+      "name": "Responsive Lightbox & Gallery",
+      "b": 0,
+      "a": 15,
+      "delta": 15,
+      "rate": 0.0038669760247486465,
+      "signal": null
+    },
+    {
+      "name": "Cookie Notice",
+      "b": 0,
+      "a": 15,
+      "delta": 15,
+      "rate": 0.0038669760247486465,
+      "signal": null
+    },
+    {
+      "name": "Download Monitor",
+      "b": 0,
+      "a": 15,
+      "delta": 15,
+      "rate": 0.0038669760247486465,
+      "signal": null
+    },
+    {
+      "name": "Highlight.js",
+      "b": 0,
+      "a": 14,
+      "delta": 14,
+      "rate": 0.003609177623098737,
+      "signal": null
+    },
+    {
+      "name": "GiveWP",
+      "b": 0,
+      "a": 14,
+      "delta": 14,
+      "rate": 0.003609177623098737,
+      "signal": null
+    },
+    {
+      "name": "Moxie",
+      "b": 0,
+      "a": 14,
+      "delta": 14,
+      "rate": 0.003609177623098737,
+      "signal": null
+    },
+    {
+      "name": "sidr",
+      "b": 0,
+      "a": 14,
+      "delta": 14,
+      "rate": 0.003609177623098737,
+      "signal": null
+    },
+    {
+      "name": "Gravity Forms",
+      "b": 126,
+      "a": 139,
+      "delta": 13,
+      "rate": 0.035833977829337456,
+      "signal": null
+    },
+    {
+      "name": "Plupload",
+      "b": 0,
+      "a": 13,
+      "delta": 13,
+      "rate": 0.003351379221448827,
+      "signal": null
+    },
+    {
+      "name": "Slider Revolution",
+      "b": 168,
+      "a": 179,
+      "delta": 11,
+      "rate": 0.046145913895333845,
+      "signal": null
+    },
+    {
+      "name": "Accessible360",
+      "b": 0,
+      "a": 11,
+      "delta": 11,
+      "rate": 0.0028357824181490074,
+      "signal": null
+    },
+    {
+      "name": "Allyant",
+      "b": 0,
+      "a": 11,
+      "delta": 11,
+      "rate": 0.0028357824181490074,
+      "signal": null
+    },
+    {
+      "name": "Translate WordPress",
+      "b": 0,
+      "a": 11,
+      "delta": 11,
+      "rate": 0.0028357824181490074,
+      "signal": null
+    },
+    {
+      "name": "WPML",
+      "b": 8,
+      "a": 18,
+      "delta": 10,
+      "rate": 0.004640371229698376,
+      "signal": null
+    },
+    {
+      "name": "Sugar",
+      "b": 0,
+      "a": 10,
+      "delta": 10,
+      "rate": 0.002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "SugarJS",
+      "b": 0,
+      "a": 10,
+      "delta": 10,
+      "rate": 0.002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Mailcheck",
+      "b": 0,
+      "a": 10,
+      "delta": 10,
+      "rate": 0.002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "punycode",
+      "b": 0,
+      "a": 10,
+      "delta": 10,
+      "rate": 0.002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "a3 Lazy Load",
+      "b": 0,
+      "a": 10,
+      "delta": 10,
+      "rate": 0.002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "ProgressBar.js",
+      "b": 0,
+      "a": 10,
+      "delta": 10,
+      "rate": 0.002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "p5.js",
+      "b": 0,
+      "a": 10,
+      "delta": 10,
+      "rate": 0.002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Bootbox.js",
+      "b": 0,
+      "a": 10,
+      "delta": 10,
+      "rate": 0.002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "ReCaptcha v2 for Contact Form 7",
+      "b": 0,
+      "a": 10,
+      "delta": 10,
+      "rate": 0.002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "VideoJS",
+      "b": 8,
+      "a": 16,
+      "delta": 8,
+      "rate": 0.0041247744263985565,
+      "signal": null
+    },
+    {
+      "name": "WPForms",
+      "b": 0,
+      "a": 8,
+      "delta": 8,
+      "rate": 0.0020623872131992783,
+      "signal": null
+    },
+    {
+      "name": "ExactMetrics",
+      "b": 0,
+      "a": 8,
+      "delta": 8,
+      "rate": 0.0020623872131992783,
+      "signal": null
+    },
+    {
+      "name": "Prism",
+      "b": 0,
+      "a": 8,
+      "delta": 8,
+      "rate": 0.0020623872131992783,
+      "signal": null
+    },
+    {
+      "name": "GeneratePress",
+      "b": 0,
+      "a": 8,
+      "delta": 8,
+      "rate": 0.0020623872131992783,
+      "signal": null
+    },
+    {
+      "name": "Redux Framework",
+      "b": 0,
+      "a": 8,
+      "delta": 8,
+      "rate": 0.0020623872131992783,
+      "signal": null
+    },
+    {
+      "name": "Dynamic Conditions",
+      "b": 0,
+      "a": 8,
+      "delta": 8,
+      "rate": 0.0020623872131992783,
+      "signal": null
+    },
+    {
+      "name": "Flickity",
+      "b": 90,
+      "a": 97,
+      "delta": 7,
+      "rate": 0.025006444960041247,
+      "signal": null
+    },
+    {
+      "name": "Autoptimize",
+      "b": 26,
+      "a": 33,
+      "delta": 7,
+      "rate": 0.008507347254447023,
+      "signal": null
+    },
+    {
+      "name": "hCaptcha",
+      "b": 2,
+      "a": 9,
+      "delta": 7,
+      "rate": 0.002320185614849188,
+      "signal": null
+    },
+    {
+      "name": "Parsley.js",
+      "b": 0,
+      "a": 7,
+      "delta": 7,
+      "rate": 0.0018045888115493685,
+      "signal": null
+    },
+    {
+      "name": "WordPress Popular Posts",
+      "b": 0,
+      "a": 7,
+      "delta": 7,
+      "rate": 0.0018045888115493685,
+      "signal": null
+    },
+    {
+      "name": "mobile-detect.js",
+      "b": 0,
+      "a": 7,
+      "delta": 7,
+      "rate": 0.0018045888115493685,
+      "signal": null
+    },
+    {
+      "name": "Cornerstone",
+      "b": 0,
+      "a": 7,
+      "delta": 7,
+      "rate": 0.0018045888115493685,
+      "signal": null
+    },
+    {
+      "name": "WP Google Map Plugin",
+      "b": 0,
+      "a": 7,
+      "delta": 7,
+      "rate": 0.0018045888115493685,
+      "signal": null
+    },
+    {
+      "name": "scrollreveal",
+      "b": 15,
+      "a": 21,
+      "delta": 6,
+      "rate": 0.005413766434648105,
+      "signal": null
+    },
+    {
+      "name": "Recent Posts Widget With Thumbnails",
+      "b": 0,
+      "a": 6,
+      "delta": 6,
+      "rate": 0.0015467904098994587,
+      "signal": null
+    },
+    {
+      "name": "Ruby on Rails",
+      "b": 0,
+      "a": 6,
+      "delta": 6,
+      "rate": 0.0015467904098994587,
+      "signal": null
+    },
+    {
+      "name": "metisMenu",
+      "b": 0,
+      "a": 6,
+      "delta": 6,
+      "rate": 0.0015467904098994587,
+      "signal": null
+    },
+    {
+      "name": "pickadate.js",
+      "b": 0,
+      "a": 6,
+      "delta": 6,
+      "rate": 0.0015467904098994587,
+      "signal": null
+    },
+    {
+      "name": "Quicklink",
+      "b": 0,
+      "a": 6,
+      "delta": 6,
+      "rate": 0.0015467904098994587,
+      "signal": null
+    },
+    {
+      "name": "Plyr",
+      "b": 0,
+      "a": 6,
+      "delta": 6,
+      "rate": 0.0015467904098994587,
+      "signal": null
+    },
+    {
+      "name": "waitForImages",
+      "b": 0,
+      "a": 6,
+      "delta": 6,
+      "rate": 0.0015467904098994587,
+      "signal": null
+    },
+    {
+      "name": "Animate It",
+      "b": 2,
+      "a": 7,
+      "delta": 5,
+      "rate": 0.0018045888115493685,
+      "signal": null
+    },
+    {
+      "name": "GeneratePress GP Premium",
+      "b": 0,
+      "a": 5,
+      "delta": 5,
+      "rate": 0.001288992008249549,
+      "signal": null
+    },
+    {
+      "name": "MathJax",
+      "b": 0,
+      "a": 5,
+      "delta": 5,
+      "rate": 0.001288992008249549,
+      "signal": null
+    },
+    {
+      "name": "MailChimp for WooCommerce",
+      "b": 0,
+      "a": 5,
+      "delta": 5,
+      "rate": 0.001288992008249549,
+      "signal": null
+    },
+    {
+      "name": "Advanced Custom Fields",
+      "b": 0,
+      "a": 5,
+      "delta": 5,
+      "rate": 0.001288992008249549,
+      "signal": null
+    },
+    {
+      "name": "BetterDocs plugin",
+      "b": 0,
+      "a": 5,
+      "delta": 5,
+      "rate": 0.001288992008249549,
+      "signal": null
+    },
+    {
+      "name": "Cleave.js",
+      "b": 0,
+      "a": 4,
+      "delta": 4,
+      "rate": 0.0010311936065996391,
+      "signal": null
+    },
+    {
+      "name": "List.js",
+      "b": 0,
+      "a": 4,
+      "delta": 4,
+      "rate": 0.0010311936065996391,
+      "signal": null
+    },
+    {
+      "name": "OptinMonster plugin",
+      "b": 0,
+      "a": 4,
+      "delta": 4,
+      "rate": 0.0010311936065996391,
+      "signal": null
+    },
+    {
+      "name": "Breadcrumb NavXT",
+      "b": 0,
+      "a": 4,
+      "delta": 4,
+      "rate": 0.0010311936065996391,
+      "signal": null
+    },
+    {
+      "name": "Axios",
+      "b": 0,
+      "a": 4,
+      "delta": 4,
+      "rate": 0.0010311936065996391,
+      "signal": null
+    },
+    {
+      "name": "libphonenumber",
+      "b": 0,
+      "a": 4,
+      "delta": 4,
+      "rate": 0.0010311936065996391,
+      "signal": null
+    },
+    {
+      "name": "Contensis",
+      "b": 0,
+      "a": 4,
+      "delta": 4,
+      "rate": 0.0010311936065996391,
+      "signal": null
+    },
+    {
+      "name": "Pannellum",
+      "b": 0,
+      "a": 4,
+      "delta": 4,
+      "rate": 0.0010311936065996391,
+      "signal": null
+    },
+    {
+      "name": "Tippy.js",
+      "b": 61,
+      "a": 64,
+      "delta": 3,
+      "rate": 0.016499097705594226,
+      "signal": null
+    },
+    {
+      "name": "DreamWeaver",
+      "b": 1,
+      "a": 4,
+      "delta": 3,
+      "rate": 0.0010311936065996391,
+      "signal": null
+    },
+    {
+      "name": "Stackable",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "BeTheme",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "Mura CMS",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "slideout",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "html2canvas",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "WookMark",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "Thrive Architect",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "WP Job Openings",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "Stellar.js",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "Prototype",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "Htmx",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "FingerprintJS",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "Backstretch",
+      "b": 0,
+      "a": 3,
+      "delta": 3,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "WP Rocket",
+      "b": 180,
+      "a": 182,
+      "delta": 2,
+      "rate": 0.04691930910028358,
+      "signal": null
+    },
+    {
+      "name": "Instagram Feed for WordPress",
+      "b": 134,
+      "a": 136,
+      "delta": 2,
+      "rate": 0.03506058262438773,
+      "signal": null
+    },
+    {
+      "name": "Concrete CMS",
+      "b": 8,
+      "a": 10,
+      "delta": 2,
+      "rate": 0.002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "HurryTimer",
+      "b": 5,
+      "a": 7,
+      "delta": 2,
+      "rate": 0.0018045888115493685,
+      "signal": null
+    },
+    {
+      "name": "Spectra",
+      "b": 8,
+      "a": 10,
+      "delta": 2,
+      "rate": 0.002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Ant Design",
+      "b": 1,
+      "a": 3,
+      "delta": 2,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "Photo Gallery",
+      "b": 12,
+      "a": 14,
+      "delta": 2,
+      "rate": 0.003609177623098737,
+      "signal": null
+    },
+    {
+      "name": "MailChimp for WordPress",
+      "b": 5,
+      "a": 7,
+      "delta": 2,
+      "rate": 0.0018045888115493685,
+      "signal": null
+    },
+    {
+      "name": "Thrive Quiz Builder",
+      "b": 1,
+      "a": 3,
+      "delta": 2,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "Glider.js",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Screenfull.js",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Pikaday",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Bulma",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Choices",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Snowplow Analytics",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Flying Pages",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "MNTN",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "SteelHouse",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Orbit Slider",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "MDBootstrap",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "PressMaximum Customify",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "WP Portfolio",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Grav",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Hugo",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "MailOptin",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "bowser",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "SignalR",
+      "b": 0,
+      "a": 2,
+      "delta": 2,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Facebook Pixel",
+      "b": 2165,
+      "a": 2166,
+      "delta": 1,
+      "rate": 0.5583913379737045,
+      "signal": null
+    },
+    {
+      "name": "Conditional Fields for Contact Form 7",
+      "b": 10,
+      "a": 11,
+      "delta": 1,
+      "rate": 0.0028357824181490074,
+      "signal": null
+    },
+    {
+      "name": "AOS",
+      "b": 144,
+      "a": 145,
+      "delta": 1,
+      "rate": 0.03738076823923692,
+      "signal": null
+    },
+    {
+      "name": "ContentViews",
+      "b": 18,
+      "a": 19,
+      "delta": 1,
+      "rate": 0.004898169631348285,
+      "signal": null
+    },
+    {
+      "name": "Custom Twitter Feeds",
+      "b": 20,
+      "a": 21,
+      "delta": 1,
+      "rate": 0.005413766434648105,
+      "signal": null
+    },
+    {
+      "name": "ThimPress LearnPress",
+      "b": 3,
+      "a": 4,
+      "delta": 1,
+      "rate": 0.0010311936065996391,
+      "signal": null
+    },
+    {
+      "name": "Material Design Lite",
+      "b": 18,
+      "a": 19,
+      "delta": 1,
+      "rate": 0.004898169631348285,
+      "signal": null
+    },
+    {
+      "name": "Kadence WP Kadence",
+      "b": 8,
+      "a": 9,
+      "delta": 1,
+      "rate": 0.002320185614849188,
+      "signal": null
+    },
+    {
+      "name": "Embed Any Document",
+      "b": 5,
+      "a": 6,
+      "delta": 1,
+      "rate": 0.0015467904098994587,
+      "signal": null
+    },
+    {
+      "name": "Gutenberg",
+      "b": 11,
+      "a": 12,
+      "delta": 1,
+      "rate": 0.0030935808197989174,
+      "signal": null
+    },
+    {
+      "name": "SweetAlert2",
+      "b": 5,
+      "a": 6,
+      "delta": 1,
+      "rate": 0.0015467904098994587,
+      "signal": null
+    },
+    {
+      "name": "Semantic UI",
+      "b": 2,
+      "a": 3,
+      "delta": 1,
+      "rate": 0.0007733952049497294,
+      "signal": null
+    },
+    {
+      "name": "Swup",
+      "b": 1,
+      "a": 2,
+      "delta": 1,
+      "rate": 0.0005155968032998196,
+      "signal": null
+    },
+    {
+      "name": "Dojo",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "timeago",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Shoelace",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Microsoft Clarity",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Master Slider Plugin",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "jQuery DevBridge Autocomplete",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "SimplexNoise.js",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Floating UI",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "FlipClock.js",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "RockRMS",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Dotdigital",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "AnythingSlider",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "crypto-js",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Eleventy",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "WP Grid Builder",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Segment Consent Manager",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "fullPage.js",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Astra Widgets",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Apollo13Themes Rife",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    },
+    {
+      "name": "Tailwind CSS",
+      "b": 0,
+      "a": 1,
+      "delta": 1,
+      "rate": 0.0002577984016499098,
+      "signal": null
+    }
+  ]
+}

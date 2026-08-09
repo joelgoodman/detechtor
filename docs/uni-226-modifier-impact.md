@@ -1,7 +1,11 @@
 # Stripping the Wappalyzer modifiers: measured impact (UNI-226)
 
 **Measured 2026-08-09** over the full Phase A corpus — one archived homepage per institution.
-Reproduce with `node scripts/modifier-impact.js`.
+Reproduce with `node scripts/modifier-impact.js` (~40 min); per-technology results in
+`docs/modifier-impact.full.json`.
+
+The run is deterministic — it was executed twice and reproduced every figure below exactly, which is
+worth knowing before anyone re-measures and wonders whether a difference is real.
 
 Stripping `\;confidence:NN` / `\;version:\1` revives **939 previously-dead pattern values at once**.
 That is a large, sudden behaviour change, and the lesson of UNI-224 is that a revived pattern is
