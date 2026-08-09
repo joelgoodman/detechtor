@@ -5,7 +5,2701 @@
     "SIGNAL_CASE_DROP": [],
     "CATEGORY_CASE": [],
     "DUPLICATE_CATEGORY": [],
-    "UNKNOWN_CATEGORY": []
+    "UNKNOWN_CATEGORY": [],
+    "MISSING_SIGNAL": [
+      {
+        "name": "AI LOG",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Accessibility Toolbar Plugin",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Accessible360",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Accessibly",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Act-On",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Actito",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "AdaSiteCompliance",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Adabra",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Adally",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Adobe RoboHelp",
+        "suggests": "LMS",
+        "categories": [
+          "Wiki"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Agile CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Agile CRM",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "AiTrillion",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Aimbase",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Airship CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "All in One Accessibility",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "AllClients",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Allyable",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Allyant",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Aprimo",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Digital Asset Management"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "AroSoftware",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Arsys Domain Parking",
+        "suggests": "SIS",
+        "categories": [
+          "Payment Processor"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Autoketing",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "AutomaticSales",
+        "suggests": "Chatbot",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Automizely",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Automizely",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Avizi",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "amoCRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Batchbook",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Bigin",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Blackbaud CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Fundraising"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Blitz",
+        "suggests": "CMS",
+        "categories": [
+          "Performance Optimization"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Bothive",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "BowNow",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Brainlead",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Brilliant Web-to-Lead",
+        "suggests": "CRM",
+        "categories": [
+          "WordPress Plugin"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Bronto",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "BySide",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "CDK Global",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "CRM+",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "CartKit",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Carts Guru",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Celum",
+        "suggests": "CMS",
+        "categories": [
+          "Digital Asset Management"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Censhare",
+        "suggests": "CMS",
+        "categories": [
+          "Digital Asset Management"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Circle",
+        "suggests": "Chatbot",
+        "categories": [
+          "Message Boards"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "ClickDimensions",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Closing Boost",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Cluster CIS",
+        "suggests": "CRM",
+        "categories": [
+          "Web Server",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Cnvert",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Connectif",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Booking System",
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Constructor",
+        "suggests": "Site Search",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "ContentViews",
+        "suggests": "CMS",
+        "categories": [
+          "Widget",
+          "WordPress Plugin"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Convead",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Convert and Flow",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Cooladata",
+        "suggests": "LMS",
+        "categories": [
+          "Customer Data Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Cornerstone",
+        "suggests": "CRM",
+        "categories": [
+          "CMS"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Czater",
+        "suggests": "CRM",
+        "categories": [
+          "Chatbot"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "DX1",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "DatHuis",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Datacrush",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Datarize",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "DelightChat",
+        "suggests": "Chatbot",
+        "categories": [
+          "Ecommerce"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "DeskPro",
+        "suggests": "Chatbot",
+        "categories": [
+          "CMS",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Doctor.com",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "DreamHost",
+        "suggests": "SIS",
+        "categories": [
+          "Hosting Provider"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Drip",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Droxit",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Drubbit",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Drupal Commerce",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Edrone",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Edrone",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Ellucian CRM Recruit",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software",
+          "HR / Recruiting"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Elromco",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Enable",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Enkod",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Customer Data Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Entresoft",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "EspoCRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "EveryAction",
+        "suggests": "CRM",
+        "categories": [
+          "Fundraising"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "e-goi",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "eSSENTIAL Accessibility",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "eShopCRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "eSputnik",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Customer Data Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "emBlue",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Facil-iti",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Firefish Software",
+        "suggests": "CRM",
+        "categories": [
+          "HR / Recruiting"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Flip",
+        "suggests": "Chatbot",
+        "categories": [
+          "HR / Recruiting"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Flipping Pro CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Forethought Solve",
+        "suggests": "Chatbot",
+        "categories": [
+          "Widget"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Freshworks CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software",
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Gallabox",
+        "suggests": "Chatbot",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Gamooga",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Geggio",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "GeneratePress",
+        "suggests": "Accessibility",
+        "categories": [
+          "WordPress Theme"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Genoo",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "GetMoreStudents",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Getgabs",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Gist",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Chatbot"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Gleap",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Chatbot"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "GlueUp",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "GoDaddy",
+        "suggests": "SIS",
+        "categories": [
+          "Hosting Provider"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "GoDaddy Domain Parking",
+        "suggests": "SIS",
+        "categories": [
+          "Payment Processor"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Goat Systems",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Goat Systems",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "GreenRope",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Greenhouse",
+        "suggests": "CRM",
+        "categories": [
+          "HR / Recruiting"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "HappyFox Helpdesk",
+        "suggests": "Chatbot",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "HappySync",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Helhost",
+        "suggests": "SIS",
+        "categories": [
+          "Hosting Provider"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Hi Platform",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "HighLevel",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Highcharts",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "HikeOrders",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "HostEurope",
+        "suggests": "SIS",
+        "categories": [
+          "Hosting Provider"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Hosting Ukraine",
+        "suggests": "SIS",
+        "categories": [
+          "Hosting Provider"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Hostinger",
+        "suggests": "SIS",
+        "categories": [
+          "Hosting Provider"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Hostiq",
+        "suggests": "SIS",
+        "categories": [
+          "Hosting Provider"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "HubSpot CMS Hub",
+        "suggests": "Chatbot",
+        "categories": [
+          "CMS"
+        ],
+        "curated": true,
+        "source": "higher-ed-cms.json"
+      },
+      {
+        "name": "HubSpot CMS Hub",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "CMS"
+        ],
+        "curated": true,
+        "source": "higher-ed-cms.json"
+      },
+      {
+        "name": "HubSpot WordPress plugin",
+        "suggests": "CRM",
+        "categories": [
+          "WordPress Plugin"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "HubSpot WordPress plugin",
+        "suggests": "Chatbot",
+        "categories": [
+          "WordPress Plugin"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Hyperlane",
+        "suggests": "CMS",
+        "categories": [
+          "Hosting Provider"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Imber",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Chatbot"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Immerss",
+        "suggests": "Chatbot",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Insightly CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "iHomefinder IDX",
+        "suggests": "CRM",
+        "categories": [
+          "Operating System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "icomm",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "icomm - Notifications Hub",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Jadu",
+        "suggests": "CRM",
+        "categories": [
+          "CMS"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "K2",
+        "suggests": "CMS",
+        "categories": [
+          "Operating System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Kapture CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Chatbot",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Karte",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Kasika",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Keap",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Kintone",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Klarna Virtual Shopping",
+        "suggests": "Chatbot",
+        "categories": [
+          "Video Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "KlickTipp",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Koala",
+        "suggests": "CRM",
+        "categories": [
+          "Analytics",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Koishi.js",
+        "suggests": "Chatbot",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Kustomer",
+        "suggests": "CRM",
+        "categories": [
+          "Chatbot",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "LEADIN",
+        "suggests": "CRM",
+        "categories": [
+          "Analytics"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Lasso CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Laylo",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Lead Generated",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "LeadChat",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "LeadChat",
+        "suggests": "Chatbot",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "LeadScore",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Leadsquared",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Level Access",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Linen",
+        "suggests": "Chatbot",
+        "categories": [
+          "Message Boards"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Listrak",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework",
+          "Customer Data Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Listrak",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Customer Data Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Lootly",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Loyalty Program",
+          "Referral Marketing"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "LoyaltyLoop",
+        "suggests": "CRM",
+        "categories": [
+          "Reviews"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Lucky Orange",
+        "suggests": "Chatbot",
+        "categories": [
+          "Analytics"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Lumise",
+        "suggests": "CMS",
+        "categories": [
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "MDS Brand",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "MDS Brand",
+        "suggests": "Chatbot",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "MRI Box and Dice",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "MTCaptcha",
+        "suggests": "Accessibility",
+        "categories": [
+          "Database"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Magixite",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Markate",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Markate",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Mashore Method",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Merchello",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Mimiran",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Mindbox",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "MissionSuite",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "MissionSuite",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Mokini",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Nagich",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "NagishLi",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "NationBuilder",
+        "suggests": "CRM",
+        "categories": [
+          "CMS",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Neon CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software",
+          "Fundraising"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "NetSuite",
+        "suggests": "CRM",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Netdeal",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Netop",
+        "suggests": "Chatbot",
+        "categories": [
+          "Advertising"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "NextGEN Gallery",
+        "suggests": "CMS",
+        "categories": [
+          "CDN",
+          "WordPress Plugin"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Nicepage",
+        "suggests": "CMS",
+        "categories": [
+          "Advertising"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Nocodelytics",
+        "suggests": "CMS",
+        "categories": [
+          "Analytics"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Notifly",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Odoo",
+        "suggests": "CRM",
+        "categories": [
+          "CMS"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Ometria",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Customer Data Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Omnisend",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Omnisend Email Marketing & SMS",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Ecommerce"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "OneCommerce",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "OperateBeyond",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Opesta",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Optimizely Commerce",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Oracle Web Cache",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Ortto",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Customer Data Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "PCRecruiter",
+        "suggests": "CRM",
+        "categories": [
+          "HR / Recruiting"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Parttrap ONE",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Pepper Cloud",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Perfex CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Piman",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Pipedrive",
+        "suggests": "CRM",
+        "categories": [
+          "Chatbot",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Piperun",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Planio",
+        "suggests": "Chatbot",
+        "categories": [
+          "Issue Tracker"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Platformly",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Plezi",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Pojo.me",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Poltio",
+        "suggests": "CRM",
+        "categories": [
+          "Data Management Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Popmenu",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "CMS",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Power CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "PowerSchool",
+        "suggests": "SIS",
+        "categories": [
+          "LMS"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Prediggo",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Booking System",
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Premio Chaty",
+        "suggests": "Chatbot",
+        "categories": [
+          "WordPress Plugin"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Privy",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Procurios",
+        "suggests": "CRM",
+        "categories": [
+          "CMS"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Profeat",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "PropFlo",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Property Shell",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Prostoy",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Proto AICX",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Proto AICX",
+        "suggests": "Chatbot",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "PushDaddy Whatsapp Chat",
+        "suggests": "Chatbot",
+        "categories": [
+          "Ecommerce",
+          "Ecommerce Marketing"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "REG.RU",
+        "suggests": "SIS",
+        "categories": [
+          "Hosting Provider"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Rapid Active CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Rapid Active CRM",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Richpanel",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Rinsed",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "SALESmanago",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Customer Data Platform",
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "SEO Samba",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "SEOmatic",
+        "suggests": "CMS",
+        "categories": [
+          "SEO Tool"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "SOTA CRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "STUDIO",
+        "suggests": "CMS",
+        "categories": [
+          "Advertising"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Sailthru",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Salesforce Marketing Cloud Account Engagement",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Salesforce Service Cloud",
+        "suggests": "CRM",
+        "categories": [
+          "Chatbot",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Satori",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "SberCRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "SendPulse",
+        "suggests": "Chatbot",
+        "categories": [
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Shanon",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "ShopiMind",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Simbla",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Sitecore Engagement Cloud",
+        "suggests": "CMS",
+        "categories": [
+          "Customer Data Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Sitecore Engagement Cloud",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Customer Data Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Smartstore",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Sonar",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Sotel",
+        "suggests": "LMS",
+        "categories": [
+          "CMS"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Spektrix",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Sprig plugin",
+        "suggests": "CMS",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Squadata",
+        "suggests": "CRM",
+        "categories": [
+          "Advertising"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Squire",
+        "suggests": "CRM",
+        "categories": [
+          "Booking System",
+          "Business Software",
+          "Advertising"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Subbly",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Sugester",
+        "suggests": "CRM",
+        "categories": [
+          "Chatbot",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "SuiteCRM",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Superchat",
+        "suggests": "CRM",
+        "categories": [
+          "Chatbot",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "TN Express Web",
+        "suggests": "CRM",
+        "categories": [
+          "CMS"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Tallentor",
+        "suggests": "Chatbot",
+        "categories": [
+          "Analytics"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Texthelp",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "TinyMCE",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Top Producer",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Topic'it",
+        "suggests": "Accessibility",
+        "categories": [
+          "Widget"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Tradable Bits",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Trumpia",
+        "suggests": "Chatbot",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Upsales",
+        "suggests": "CRM",
+        "categories": [
+          "JavaScript Framework",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Upsales",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "UsableNet",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Uscreen",
+        "suggests": "CMS",
+        "categories": [
+          "Video Platform"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "User Accessibility",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "uRemediate",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "VentraIP",
+        "suggests": "SIS",
+        "categories": [
+          "Hosting Provider"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Vepaar",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "ViArt Shop",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Vimos",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Visible Privacy",
+        "suggests": "CMS",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Visitor Chat",
+        "suggests": "CRM",
+        "categories": [
+          "Chatbot"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Voice Intuitive",
+        "suggests": "Accessibility",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "vinSUITE",
+        "suggests": "CRM",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "WHMCS",
+        "suggests": "SIS",
+        "categories": [
+          "CMS"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "WORKetc",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Weaverse",
+        "suggests": "CMS",
+        "categories": [
+          "Advertising"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "WebEngage",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework",
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Weglot",
+        "suggests": "CMS",
+        "categories": [
+          "Localization"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Wigzo",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Wikinggruppen",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Wisepops",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Widget",
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Wisetracker",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Analytics",
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "WooChat",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "WoowUp",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "WordPress Popular Posts",
+        "suggests": "CMS",
+        "categories": [
+          "WordPress Plugin",
+          "Widget"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "X.ai",
+        "suggests": "Chatbot",
+        "categories": [
+          "Booking System"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Xanario",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Xanario",
+        "suggests": "CRM",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Yoori",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Zenu",
+        "suggests": "CRM",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Zoho Recruit",
+        "suggests": "CRM",
+        "categories": [
+          "HR / Recruiting"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Zope",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Zotabox",
+        "suggests": "Chatbot",
+        "categories": [
+          "JavaScript Framework"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "4Partners CMS",
+        "suggests": "CMS",
+        "categories": [
+          "Web Server"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "PeopleSoft Campus Solutions",
+        "suggests": "SIS",
+        "categories": [
+          "Business Software"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
+        "name": "Element451",
+        "suggests": "Chatbot",
+        "categories": [
+          "CRM"
+        ],
+        "curated": true,
+        "source": "higher-ed-crm.json"
+      }
+    ]
   },
   "prevalence": null
 }

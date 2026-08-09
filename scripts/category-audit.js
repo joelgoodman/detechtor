@@ -112,6 +112,40 @@ for (const [name, def] of techs) {
   }
 }
 
+// --- MISSING_SIGNAL (heuristic, reported only) ----------------------------------------------
+//
+// Every other check looks for problems INSIDE the signal categories. This looks the other way:
+// a technology that SHOULD be signal but is filed elsewhere is a silent false NEGATIVE, and
+// nothing else here would ever surface it.
+//
+// Deliberately a SCREEN, not a verdict. Matching a word in a description is weak evidence — a
+// martech product mentioning "CRM" in prose is not thereby a CRM, and `HubSpot CMS Hub` is
+// correctly a CMS even though its description mentions chat. Never gated; it produces a review
+// queue for a human, which is the only thing that can settle it.
+const SIGNAL_HINTS = {
+  CMS: [/content management/i, /\bcms\b/i],
+  LMS: [/learning management/i, /\blms\b/i, /e-?learning/i, /courseware/i],
+  SIS: [/student information/i, /\bsis\b/i, /student system/i, /registrar/i],
+  CRM: [/customer relationship/i, /\bcrm\b/i],
+  Chatbot: [/chatbot/i, /live chat/i, /\bchat\b/i],
+  'Site Search': [/site search/i, /enterprise search/i],
+  Accessibility: [/accessibility/i, /\ba11y\b/i, /screen reader/i, /WCAG/i],
+  'Marketing Automation': [/marketing automation/i],
+};
+findings.MISSING_SIGNAL = [];
+for (const [name, def] of techs) {
+  const mapped = rawCats(def).map(mapCategory);
+  const haystack = `${name} ${def.description || ''}`;
+  for (const [signal, patterns] of Object.entries(SIGNAL_HINTS)) {
+    if (mapped.includes(signal)) continue;
+    if (!patterns.some((r) => r.test(haystack))) continue;
+    findings.MISSING_SIGNAL.push({
+      name, suggests: signal, categories: mapped,
+      curated: !!def._curated, source: def._sourceFile || null,
+    });
+  }
+}
+
 // --- report ---------------------------------------------------------------------------------
 const collisionsThatMatter = findings.NAME_COLLISION.filter((c) => !c.categoriesAgree);
 const signalCollisions = findings.NAME_COLLISION.filter((c) => c.signalDisagreement);
@@ -122,6 +156,8 @@ console.log(`SIGNAL_CASE_DROP    ${findings.SIGNAL_CASE_DROP.length}`);
 console.log(`CATEGORY_CASE       ${findings.CATEGORY_CASE.length}`);
 console.log(`DUPLICATE_CATEGORY  ${findings.DUPLICATE_CATEGORY.length}`);
 console.log(`UNKNOWN_CATEGORY    ${findings.UNKNOWN_CATEGORY.length}`);
+console.log(`MISSING_SIGNAL      ${findings.MISSING_SIGNAL.length}  (heuristic screen, NOT gated — ` +
+  `${findings.MISSING_SIGNAL.filter((f) => f.curated).length} in curated files)`);
 
 if (signalCollisions.length) {
   console.log(`\nSIGNAL-DIFFERING NAME COLLISIONS — which spelling matched decides whether this`);
