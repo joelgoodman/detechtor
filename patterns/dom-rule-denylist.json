@@ -28,16 +28,10 @@
       "name": "type",
       "measured_fire_rate": 0.282,
       "reason": "Matches any application/* link type. Of the matched values only application/rss+xml (113) and application/atom+xml (1) are RSS; application/json (68), application/json+oembed (65), application/rsd+xml (58) and application/wlwmanifest+xml are not. Roughly 63% of matches are wrong."
-    },
-    {
-      "tech": "Progress WS_FTP",
-      "selector": "form[name='formLogin'][action='login.aspx' i][id='formLogin']\\;confidence:40",
-      "kind": "exists",
-      "measured_fire_rate": 0,
-      "reason": "Unparseable by querySelectorAll because of a trailing '\\;confidence:40'. That suffix is UPSTREAM WAPPALYZER MODIFIER SYNTAX which our importer never stripped — not a one-off typo. The Phase C validator caught this automatically, and doing so exposed the same unparsed-modifier problem across 939 further pattern values in scriptSrc/meta/headers/html/cookies/scripts, which are silently DEAD because the suffix becomes a literal regex requirement. Tracked separately; this entry stays as the dom-specific quarantine until the importer strips modifiers globally."
     }
   ],
   "admitted_after_review": [
+    { "tech": "Progress WS_FTP", "fire_rate": 0.0, "why": "RE-ADJUDICATED 2026-08-09 (UNI-226). Previously DENIED as \"form[name='formLogin'][action='login.aspx' i][id='formLogin']\\;confidence:40\" — but the only defect was the trailing '\\;confidence:40', UPSTREAM WAPPALYZER MODIFIER SYNTAX the importer never stripped, which made querySelectorAll reject the selector. UNI-226 now strips modifiers at load, so the selector reads form[name='formLogin'][action='login.aspx' i][id='formLogin'] and parses. On its merits it is ADMITTED: three attribute constraints on a single form element is about as specific as a dom rule gets, and it was never denied for breadth. ⚠️ Note the denylist is keyed on the selector STRING — once stripping landed, the old entry stopped matching and the rule would have gone live silently. Recording the decision here instead of leaving it to a key mismatch." },
     { "tech": "Open Graph", "fire_rate": 0.661, "why": "meta[property*='og:'] is definitively Open Graph. ~66% of university homepages carrying OG tags is correct, not implausible." },
     { "tech": "Google Font API", "fire_rate": 0.460, "why": "link[href*='fonts.g'] matches fonts.googleapis.com / fonts.gstatic.com — definitive. Corroborates at only 2% because the tech's other evidence is script-based; the dom rule is the better detector." },
     { "tech": "Priority Hints", "fire_rate": 0.332, "why": "[fetchpriority] is a real HTML attribute; the detection is accurate even if 'Priority Hints' is a marginal thing to call a technology." },

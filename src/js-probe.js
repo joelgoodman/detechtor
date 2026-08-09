@@ -60,9 +60,17 @@ function probeGlobals(root, names) {
 }
 
 // Source text of a self-contained browser-side probe, DERIVED from isPresent so the two cannot
-// drift. benchmark-agent injects this into the page it is already loading:
-//   globals = page.evaluate("(#{probe_source}).call(window, #{names.to_json})")
-// `this` is the root, so the function needs no reference to `window` and works under any harness.
+// drift. `this` is the root, so it needs no reference to `window` and works under any harness.
+//
+// ⚠️ USING THIS REQUIRES eval / new Function IN THE PAGE, which a site's Content-Security-Policy
+// can block — and university sites do ship strict CSP. A Puppeteer `page.evaluate(fn, args)`
+// callback is NOT subject to page CSP (CDP serializes the function), but reconstructing a function
+// from this string inside the page IS. So a Puppeteer consumer should inline an equivalent
+// traversal in its evaluate callback rather than eval this; the semantics to match are exactly
+// isPresent's: bracket access per dotted segment, presence tested as `!== undefined`.
+//
+// This export remains useful for consumers that can eval (Node, non-CSP harnesses) and as the
+// executable spec that `probeGlobals` is tested against.
 const PROBE_SOURCE =
   '(function (names) {\n' +
   '  ' + isPresent.toString().split('\n').join('\n  ') + '\n' +
