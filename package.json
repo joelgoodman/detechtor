@@ -8,7 +8,7 @@
     "detechtor": "./cli.js"
   },
   "scripts": {
-    "test": "node scripts/lint-patterns.js --fail-curated && node scripts/lint-dom-rules.js --gate && node --test tests/*.test.js && node scripts/test-patterns.js",
+    "test": "node scripts/lint-patterns.js --fail-curated && node scripts/lint-dom-rules.js --gate && node scripts/category-audit.js --gate && node --test tests/*.test.js && node scripts/test-patterns.js",
     "lint:patterns": "node scripts/lint-patterns.js",
     "lint:patterns:gate": "node scripts/lint-patterns.js --fail-curated",
     "test:audit": "node scripts/audit-patterns.js",
@@ -26,7 +26,8 @@
     "lint:dom:gate": "node scripts/lint-dom-rules.js --gate",
     "base-rate": "node scripts/base-rate-report.js",
     "emit-js-probe": "node scripts/emit-js-probe.js",
-    "test:tiered": "node scripts/tiered-regression.js --assert"
+    "test:tiered": "node scripts/tiered-regression.js --assert",
+    "audit:categories": "node scripts/category-audit.js"
   },
   "keywords": [
     "technology-detection",

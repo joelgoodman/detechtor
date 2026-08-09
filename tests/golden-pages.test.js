@@ -45,9 +45,16 @@ test('the generic page still detects what is genuinely present', () => {
   assert.ok(names.includes('Open Graph'), `Open Graph should be detected — got: ${names.join(', ') || 'none'}`);
 });
 
-test('an Omni CMS footer login link is detected', () => {
-  // Omni CMS (Modern Campus) has NO evidence path other than this dom rule — before UNI-224 it
-  // was 100% undetectable despite ~374 institutions carrying the marker.
+test('a Modern Campus CMS footer login link is detected', () => {
+  // The dom rule `a[href*='a.cms.omniupdate.com/11/']` is this technology's ONLY evidence path —
+  // before UNI-224 it was 100% undetectable despite ~374 institutions carrying the marker.
+  //
+  // Reported as `Modern Campus CMS` since UNI-233: the vendor renamed the product (OU Campus →
+  // OmniUpdate/OmniCMS → Omni CMS → Modern Campus CMS) and all four names were shipping as
+  // separate technologies. The merge carries this dom rule onto the canonical entry, which the
+  // curated `Modern Campus CMS` definition did not have — so this assertion is also the guard
+  // that the rename did not quietly undo UNI-224.
   const names = detect('omni-cms.html');
-  assert.ok(names.includes('Omni CMS'), `Omni CMS should be detected — got: ${names.join(', ') || 'none'}`);
+  assert.ok(names.includes('Modern Campus CMS'),
+    `Modern Campus CMS should be detected — got: ${names.join(', ') || 'none'}`);
 });

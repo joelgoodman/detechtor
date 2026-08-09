@@ -1104,8 +1104,7 @@
   },
   "HubSpot for Education": {
     "cats": [
-      32,
-      52
+      303
     ],
     "description": "HubSpot CRM optimized for education",
     "html": [
@@ -1756,8 +1755,7 @@
   },
   "Salesforce Education Cloud": {
     "cats": [
-      52,
-      53
+      303
     ],
     "description": "Customer relationship management platform",
     "html": [
