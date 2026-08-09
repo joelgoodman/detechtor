@@ -1,0 +1,193 @@
+{
+  "generated": "2026-08-09",
+  "results": [
+    {
+      "model": "mistral-small3.2:24b",
+      "correct": 9,
+      "total": 12,
+      "falseFlags": 3,
+      "missedFlags": 0,
+      "seconds": 24.364,
+      "rows": [
+        {
+          "name": "Slate",
+          "expect": "FLAG",
+          "got": "FLAG",
+          "ok": true,
+          "reason": "Slate is a CRM for higher education admissions/enrollment."
+        },
+        {
+          "name": "Salesforce Education Cloud",
+          "expect": "FLAG",
+          "got": "FLAG",
+          "ok": true,
+          "reason": "CRM is primary function"
+        },
+        {
+          "name": "HubSpot for Education",
+          "expect": "FLAG",
+          "got": "FLAG",
+          "ok": true,
+          "reason": "CRM is primary function"
+        },
+        {
+          "name": "Ellucian CRM Recruit",
+          "expect": "FLAG",
+          "got": "FLAG",
+          "ok": true,
+          "reason": "Student Information System"
+        },
+        {
+          "name": "HubSpot CMS Hub",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "Primary function is CMS"
+        },
+        {
+          "name": "TargetX",
+          "expect": "OK",
+          "got": "FLAG",
+          "ok": false,
+          "reason": "admissions/recruitment focus"
+        },
+        {
+          "name": "accessiBe",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "accessiBe is an accessibility solution"
+        },
+        {
+          "name": "Modern Campus CMS",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "Primary function is CMS"
+        },
+        {
+          "name": "Slate (Technolutions)",
+          "expect": "OK",
+          "got": "FLAG",
+          "ok": false,
+          "reason": "Slate is an SIS"
+        },
+        {
+          "name": "LiveChat",
+          "expect": "OK",
+          "got": "FLAG",
+          "ok": false,
+          "reason": "LiveChat is a customer service platform"
+        },
+        {
+          "name": "Ellucian Banner",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "Primary function matches"
+        },
+        {
+          "name": "Cloudflare",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "Primary function is CDN"
+        }
+      ]
+    },
+    {
+      "model": "nemotron-3-nano:30b",
+      "correct": 11,
+      "total": 12,
+      "falseFlags": 1,
+      "missedFlags": 0,
+      "seconds": 99.087,
+      "rows": [
+        {
+          "name": "Slate",
+          "expect": "FLAG",
+          "got": "FLAG",
+          "ok": true,
+          "reason": "Primary function is admissions/enrollment, not chatbot."
+        },
+        {
+          "name": "Salesforce Education Cloud",
+          "expect": "FLAG",
+          "got": "FLAG",
+          "ok": true,
+          "reason": "Chatbot label incorrectly suggests conversational interface as core function"
+        },
+        {
+          "name": "HubSpot for Education",
+          "expect": "FLAG",
+          "got": "FLAG",
+          "ok": true,
+          "reason": "HubSpot for Education is a CRM, not a JS framework or chatbot."
+        },
+        {
+          "name": "Ellucian CRM Recruit",
+          "expect": "FLAG",
+          "got": "FLAG",
+          "ok": true,
+          "reason": "Misleading to label as HR/Recruiting; fits Student Success better."
+        },
+        {
+          "name": "HubSpot CMS Hub",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "Primary function is content management system."
+        },
+        {
+          "name": "TargetX",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "Specialized admissions/recruitment CRM, fits CRM definition."
+        },
+        {
+          "name": "accessiBe",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "Provides accessibility overlay for websites"
+        },
+        {
+          "name": "Modern Campus CMS",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "It's a content management system for higher education."
+        },
+        {
+          "name": "Slate (Technolutions)",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "Dominant higher-ed admissions CRM, accurately categorized."
+        },
+        {
+          "name": "LiveChat",
+          "expect": "OK",
+          "got": "FLAG",
+          "ok": false,
+          "reason": "LiveChat is a live support widget, not an AI chatbot."
+        },
+        {
+          "name": "Ellucian Banner",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "Student information system for higher education institutions."
+        },
+        {
+          "name": "Cloudflare",
+          "expect": "OK",
+          "got": "OK",
+          "ok": true,
+          "reason": "Primary service is CDN and security; CDN fits best."
+        }
+      ]
+    }
+  ]
+}

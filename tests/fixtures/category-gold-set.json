@@ -1,0 +1,17 @@
+{
+  "_comment": "UNI-235 model calibration. Cases are REAL UNI-233 decisions, not invented ones. expect=FLAG means the listed categories are wrong; expect=OK means they are right. A qualifying model scores >=10/12 with ZERO missed flags — recall matters more than precision here because every flag reaches a human anyway.",
+  "cases": [
+    { "name": "Slate", "cats": ["Chatbot", "Business Software"], "desc": "Technolutions Slate — higher-ed admissions/enrollment platform. Fingerprinted via the technolutions.net host.", "expect": "FLAG", "want": "CRM", "note": "pre-fix state; UNI-233 decided CRM" },
+    { "name": "Salesforce Education Cloud", "cats": ["Chatbot", "Business Software"], "desc": "Customer relationship management platform", "expect": "FLAG", "want": "CRM", "note": "pre-fix state" },
+    { "name": "HubSpot for Education", "cats": ["JavaScript Framework", "Chatbot"], "desc": "HubSpot CRM optimized for education", "expect": "FLAG", "want": "CRM", "note": "pre-fix state" },
+    { "name": "Ellucian CRM Recruit", "cats": ["Business Software", "HR / Recruiting"], "desc": "Ellucian CRM Recruit is a comprehensive solution that supports your entire recruiting and admissions lifecycle.", "expect": "FLAG", "want": "CRM", "note": "LIVE known mismatch, 18 institutions. cogito:70b missed this one — it is the single most important case in the set." },
+    { "name": "HubSpot CMS Hub", "cats": ["CMS"], "desc": "HubSpot CMS Hub — the content-hosting product, distinct from generic HubSpot marketing/forms/chat embeds (tracked separately as Marketing Automation).", "expect": "OK", "want": "CMS", "note": "TRAP: description mentions marketing and chat" },
+    { "name": "TargetX", "cats": ["CRM"], "desc": "TargetX — Salesforce-native admissions/recruitment CRM built for higher education (now part of Liaison International).", "expect": "OK", "want": "CRM", "note": "TRAP: Salesforce-native, may be pulled to Business Software" },
+    { "name": "accessiBe", "cats": ["Accessibility"], "desc": "accessiBe accessibility overlay, loaded from acsbapp.com / accessibe.com.", "expect": "OK", "want": "Accessibility", "note": "TRAP: is a JS widget/overlay" },
+    { "name": "Modern Campus CMS", "cats": ["CMS"], "desc": "Modern Campus CMS (formerly OU Campus / OmniCMS by OmniUpdate) content management system for higher education.", "expect": "OK", "want": "CMS" },
+    { "name": "Slate (Technolutions)", "cats": ["CRM"], "desc": "Technolutions Slate — the dominant higher-ed admissions/enrollment CRM.", "expect": "OK", "want": "CRM" },
+    { "name": "LiveChat", "cats": ["Chatbot"], "desc": "LiveChat (Text s.c.) live-chat widget, loaded from cdn.livechatinc.com.", "expect": "OK", "want": "Chatbot", "note": "Known contested: models object that live chat is not a chatbot. That is a dispute with our category NAME, tracked as a follow-on, not a model failure." },
+    { "name": "Ellucian Banner", "cats": ["SIS"], "desc": "Ellucian Banner is a comprehensive student information system used by higher education institutions.", "expect": "OK", "want": "SIS" },
+    { "name": "Cloudflare", "cats": ["CDN"], "desc": "Cloudflare is a web infrastructure and website security company providing CDN and DDoS mitigation.", "expect": "OK", "want": "CDN" }
+  ]
+}
