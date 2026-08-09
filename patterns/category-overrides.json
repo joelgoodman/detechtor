@@ -1,0 +1,4 @@
+{
+  "_comment": "UNI-235. Human-adjudicated category corrections, applied at load by src/category-overrides.js AFTER identity resolution. Rewrites `categories` ONLY — never evidence fields. Lives here rather than in the pattern files because webappanalyzer-merged.json is regenerated from upstream and would silently revert edits. Validated by `node scripts/category-audit.js --gate`, which runs in `npm test`.",
+  "overrides": {}
+}

@@ -107,3 +107,56 @@ test('validateOverrides rejects an override naming a technology that does not ex
 test('validateOverrides accepts a well-formed override', () => {
   assert.deepStrictEqual(validateOverrides({ Thing: { cats: [53] } }, { Thing: { categories: ['CRM'] } }), []);
 });
+
+test('INTEGRATION: the engine applies the override file at load', () => {
+  const DeTECHtor = require(path.resolve(__dirname, '../src/detechtor.js'));
+  const OVERRIDES = require(path.resolve(__dirname, '../patterns/category-overrides.json'));
+  const engine = new DeTECHtor();
+
+  for (const [name, rule] of Object.entries(OVERRIDES.overrides)) {
+    const def = engine.patterns[name];
+    assert.ok(def, `${name} is overridden but not present after load — stale override`);
+    assert.deepStrictEqual(def.categories, rule.categories,
+      `${name} must carry its overridden categories on the loaded engine`);
+    assert.ok(!('cats' in def), `${name} must not retain a stale numeric cats`);
+  }
+});
+
+test('INTEGRATION: the override file is structurally valid against the real patterns', () => {
+  const DeTECHtor = require(path.resolve(__dirname, '../src/detechtor.js'));
+  const OVERRIDES = require(path.resolve(__dirname, '../patterns/category-overrides.json'));
+  // Validate against a pristine load, since engine.patterns already has overrides applied and a
+  // valid override would therefore read as a no-op.
+  const raw = new DeTECHtor().loadPatterns({ applyOverrides: false });
+  assert.deepStrictEqual(validateOverrides(raw, OVERRIDES.overrides), []);
+});
+
+test('WIRING: loadPatterns() actually applies a live override, not just applyCategoryOverrides() in isolation', () => {
+  // The two INTEGRATION tests above loop over OVERRIDES.overrides, which is `{}` today (Task 4
+  // populates it later) — as written they iterate zero times and prove nothing about the wiring.
+  // This test forces the real file's rules non-empty for one pass through the real
+  // DeTECHtor.loadPatterns() call path, so the wiring is exercised now, not only once entries land.
+  const DeTECHtor = require(path.resolve(__dirname, '../src/detechtor.js'));
+  // Same absolute path as the `require('../patterns/category-overrides.json')` inside
+  // src/detechtor.js — Node's module cache means this IS that module's CATEGORY_OVERRIDES object,
+  // so mutating `.overrides` here is visible to the engine's loadPatterns() on the next call.
+  const OVERRIDES = require(path.resolve(__dirname, '../patterns/category-overrides.json'));
+
+  const engine = new DeTECHtor();
+  const raw = engine.loadPatterns({ applyOverrides: false });
+  const [name] = Object.keys(raw).filter(
+    (n) => n !== '_metadata' && raw[n] && typeof raw[n] === 'object' && (raw[n].categories || raw[n].cats),
+  );
+  assert.ok(name, 'expected at least one real technology with categories in the loaded patterns');
+
+  const saved = OVERRIDES.overrides;
+  OVERRIDES.overrides = { [name]: { categories: ['CRM'] } };
+  try {
+    const applied = engine.loadPatterns();
+    assert.deepStrictEqual(applied[name].categories, ['CRM'],
+      'a live override must flow through loadPatterns() into the resulting pattern map');
+    assert.ok(!('cats' in applied[name]), 'the override must remove the stale numeric cats');
+  } finally {
+    OVERRIDES.overrides = saved;
+  }
+});

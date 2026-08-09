@@ -9,6 +9,8 @@ const { admittedDomRules, checkDomRules } = require('./dom-rules');
 const { normalizeDefinition } = require('./pattern-normalize');
 const { resolveIdentities } = require('./technology-identity');
 const ALIASES = require('../patterns/technology-aliases.json');
+const { applyCategoryOverrides } = require('./category-overrides');
+const CATEGORY_OVERRIDES = require('../patterns/category-overrides.json');
 
 class DeTECHtor {
   constructor(options = {}) {
@@ -79,7 +81,9 @@ class DeTECHtor {
     }));
   }
 
-  loadPatterns() {
+  // options.applyOverrides — set false to obtain the pristine, pre-override map. Only the
+  // override validator wants this; everything else must see corrected categories.
+  loadPatterns(options = {}) {
     const patterns = {};
     // Curated (higher-ed-authored) partials get provenance-stamped so downstream
     // consumers (residual-audit.js, benchmark-agent's signal gate) can tell a
@@ -124,9 +128,21 @@ class DeTECHtor {
     // (Omni CMS / Modern Campus CMS). Evidence is unioned, so the losing entry's patterns — such
     // as the dom rule UNI-224 recovered Omni CMS with — survive the merge.
     const before = Object.keys(patterns).length;
-    const resolved = resolveIdentities(patterns, ALIASES.aliases || {});
+    let resolved = resolveIdentities(patterns, ALIASES.aliases || {});
     if (config.verbose && before !== Object.keys(resolved).length) {
       console.log(`Collapsed ${before - Object.keys(resolved).length} duplicate technology name(s)`);
+    }
+
+    // UNI-235: human-adjudicated category corrections, applied AFTER identity resolution so an
+    // override names the surviving canonical technology rather than a name that just got merged
+    // away. Rewrites `categories` only — see src/category-overrides.js.
+    if (options.applyOverrides !== false) {
+      const rules = CATEGORY_OVERRIDES.overrides || {};
+      resolved = applyCategoryOverrides(resolved, rules);
+      if (config.verbose) {
+        const n = Object.keys(rules).filter((k) => k !== '_comment' && resolved[k]).length;
+        if (n) console.log(`Applied ${n} category override(s)`);
+      }
     }
 
     if (config.verbose) {
