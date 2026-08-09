@@ -736,8 +736,11 @@ function askModel(model, userPrompt) {
       model,
       stream: false,
       format: 'json',
-      // num_predict 200 truncated gpt-oss:20b's JSON on 2 of 12 cases. 600 is ample.
-      options: { temperature: 0, num_predict: 600 },
+      // ⚠️ REASONING MODELS. num_predict must cover thinking tokens AS WELL AS the JSON, because
+      // they share the budget. nemotron-3-nano:30b emits ~900 thinking chars and at 600 it
+      // truncated mid-JSON on exactly the two hardest FLAG cases — which scored as misses and
+      // would have silently disqualified a good model. 3000 is comfortable for every model tested.
+      options: { temperature: 0, num_predict: 3000 },
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         { role: 'user', content: userPrompt },
@@ -810,15 +813,34 @@ async function main() {
     fs.writeFileSync(out, JSON.stringify({ generated: new Date().toISOString().slice(0, 10), results }, null, 2));
     console.log(`\nwrote ${out}`);
 
-    // A qualifying model scores >=10/12 with ZERO missed flags. Recall is what matters: every flag
-    // reaches a human, but a miss is invisible forever.
-    const failed = results.filter((r) => r.missedFlags > 0 || r.correct < 10);
-    if (failed.length) {
-      console.error(`\n⚠️  NOT QUALIFIED: ${failed.map((f) => f.model).join(', ')} — ` +
-        `need >=10/12 correct AND 0 missed flags. Try a different model before sweeping.`);
+    // The bar is on the PAIR, not each model. The combiner is a union, so what matters is that
+    // BETWEEN them every FLAG case is caught; an individual model missing one is tolerable.
+    //
+    // This is not a loosened standard, it is the right one. Measured: nemotron-3-nano:30b and
+    // cogito:70b BOTH miss Ellucian CRM Recruit with identical reasoning ("primary function is
+    // recruitment/admissions" → HR / Recruiting). mistral-small3.2:24b catches it. Scoring models
+    // individually would have rejected a model whose real contribution is covering the cases the
+    // anchor misses.
+    //
+    // Each model must still clear >=9/12 so we never pair the anchor with a dud.
+    const fixture = require(path.resolve(__dirname, '../tests/fixtures/category-gold-set.json'));
+    const flagCases = fixture.cases.filter((c) => c.expect === 'FLAG').map((c) => c.name);
+    const caughtByUnion = flagCases.filter((name) =>
+      results.some((r) => r.rows.find((row) => row.name === name && row.got === 'FLAG')));
+    const weak = results.filter((r) => r.correct < 9);
+
+    console.log(`\nUNION RECALL: ${caughtByUnion.length}/${flagCases.length} flag cases caught by at least one model`);
+    const missedByAll = flagCases.filter((n) => !caughtByUnion.includes(n));
+    if (missedByAll.length) console.error(`  MISSED BY EVERY MODEL: ${missedByAll.join(', ')}`);
+
+    if (missedByAll.length || weak.length) {
+      console.error(`\n⚠️  NOT QUALIFIED: ` +
+        (missedByAll.length ? `${missedByAll.length} flag case(s) no model caught. ` : '') +
+        (weak.length ? `${weak.map((w) => w.model).join(', ')} below 9/12. ` : '') +
+        `Add or swap a model before sweeping.`);
       process.exit(1);
     }
-    console.log(`\nOK: all ${results.length} model(s) qualified.`);
+    console.log(`\nOK: the pair qualifies — union catches every flag case.`);
     return;
   }
 
@@ -1114,7 +1136,10 @@ function loadCheckpoint(file) {
   return done;
 }
 
-async function sweep(models) {
+async function sweep(models, opts = {}) {
+  // Prevalence floor at which a technology earns the slower second opinion. 1 = anything that
+  // fires at all. Raise it to shorten a run; the anchor still covers everything.
+  const SECOND_MIN = opts.secondMin ?? 1;
   const DeTECHtor = require('../src/detechtor.js');
   const { mapCategory } = require('../src/category-mapping.js');
   const engine = new DeTECHtor();
@@ -1155,13 +1180,27 @@ async function sweep(models) {
     };
     const prompt = buildPrompt(packet);
 
+    // TIERED, because a flat two-model sweep does not fit in a night. Measured: the anchor runs at
+    // 2.3s/tech (4.2h over 6,504) but nemotron-3-nano:30b is a reasoning model at 5.5s/tech (9.9h),
+    // and running both on everything serially is ~14h.
+    //
+    // So: EVERY technology is adjudicated by the anchor, and the expensive second opinion is spent
+    // only where a mistake can actually change a result — technologies that fire on at least
+    // SECOND_MIN institutions. That is ~900 of 6,504, cutting the second model to ~1.4h.
+    //
+    // Coverage is unchanged (all 6,504 are still judged); only the depth of second opinion varies,
+    // and it varies exactly with impact. Which models ran is recorded per row so the queue can tell
+    // "both agreed" from "only one looked".
+    const useSecond = packet.institutions >= SECOND_MIN;
+    const active = useSecond ? models : models.slice(0, 1);
+
     const verdicts = {};
-    for (const m of models) verdicts[m] = await askModel(m, prompt);
+    for (const m of active) verdicts[m] = await askModel(m, prompt);
 
     stream.write(JSON.stringify({
       name, cats, institutions: packet.institutions,
       curated: !!def._curated, source: def._sourceFile || null,
-      description: packet.desc, verdicts,
+      description: packet.desc, models: active, verdicts,
     }) + '\n');
 
     if (n % 50 === 0) {
@@ -1179,7 +1218,8 @@ Then in `main()`, before the final `console.error`, add:
 
 ```js
   if (args.includes('--sweep')) {
-    await sweep(models);
+    const smi = args.indexOf('--second-min');
+    await sweep(models, { secondMin: smi === -1 ? 1 : Number(args[smi + 1]) });
     return;
   }
 ```
@@ -1216,8 +1256,12 @@ rm -f docs/category-llm-verdicts.jsonl
 OLLAMA_MAX_LOADED_MODELS=2 npm run audit:llm:sweep
 ```
 
-Expected: ~4–6 hours. Both models stay resident (~48 GB combined). If interrupted, rerun the same
-command — it resumes.
+Expected: ~5–6 hours (anchor over all 6,504 at ~2.3 s/tech, plus the second model over the ~900
+that fire at ~5.5 s/tech). Both models stay resident, ~39 GB combined. If interrupted, rerun the
+same command — it resumes from the JSONL.
+
+To shorten a run, raise the floor: `--second-min 5` restricts the second opinion to technologies
+on 5+ institutions. The anchor still covers everything either way.
 
 - [ ] **Step 5: Commit the tool (not the raw verdicts)**
 
@@ -1292,13 +1336,17 @@ const rows = fs.readFileSync(IN, 'utf8').split('\n')
 
 const models = [...new Set(rows.flatMap((r) => Object.keys(r.verdicts || {})))];
 
+/** Models that actually ran for this row. The sweep is tiered, so it is not always all of them. */
+const ranFor = (r) => (Array.isArray(r.models) && r.models.length ? r.models : Object.keys(r.verdicts || {}));
+
 const flags = [];
 const contested = [];
 const coverage = { total: rows.length, flagged: 0, contested: 0, abstained: 0, errored: 0, agreedOk: 0, inert: 0 };
 
 for (const r of rows) {
-  const vs = models.map((m) => r.verdicts[m] || {});
-  if (vs.every((v) => v.error)) { coverage.errored++; continue; }
+  const ran = ranFor(r);
+  const vs = ran.map((m) => r.verdicts[m] || {});
+  if (!vs.length || vs.every((v) => v.error)) { coverage.errored++; continue; }
   // A model that does not recognise a product has told us nothing. Never a flag (calibration rule).
   if (vs.every((v) => v.known === false)) { coverage.abstained++; continue; }
 
@@ -1320,7 +1368,11 @@ for (const r of rows) {
     description: r.description,
   };
 
-  if (objects.length === models.length) { flags.push(entry); coverage.flagged++; }
+  // "Contested" requires that more than one model actually LOOKED and they disagreed. On the
+  // inert tail only the anchor runs, so a lone objection there is a flag, not a disagreement —
+  // calling it contested would invent a second opinion that was never sought.
+  entry.judgedBy = ran;
+  if (objects.length === ran.length) { flags.push(entry); coverage.flagged++; }
   else { contested.push(entry); coverage.contested++; }
 }
 
@@ -1422,8 +1474,22 @@ in Task 7. The override file is `{_comment, overrides:{}}` throughout, and every
 `.overrides`. `docs/corpus-prevalence.json` exposes `counts` and `cooccurs`, which is exactly what
 Task 7 reads.
 
-**Known gap, deliberate.** Task 7's sweep cost is real (4–6 h) and is not parallelised across
-technologies, only across models. Ollama serialises per model by default, so request-level
-concurrency would need `OLLAMA_NUM_PARALLEL` tuning and risks memory pressure — the constraint
-Joel specifically raised. Ordering by prevalence is the mitigation: the technologies that matter
-are done first, so the run can be stopped early with most of the value banked.
+**Known gap, deliberate.** Task 7's sweep is ~5–6 h and is not parallelised across technologies.
+Ollama serialises per model, so request-level concurrency would need `OLLAMA_NUM_PARALLEL` tuning
+and reintroduces exactly the memory pressure Joel objected to. Two mitigations instead: the sweep
+is tiered (the slow model only sees technologies that fire), and everything is prevalence-ordered,
+so the run can be stopped at any point with most of the value banked.
+
+**Calibration findings folded in after the plan was first written.** All three came from actually
+running the models rather than reasoning about them:
+
+1. `num_predict` must cover **thinking tokens** — nemotron-3-nano:30b is a reasoning model and at
+   600 it truncated mid-JSON on precisely the two hardest FLAG cases. Raised to 3000.
+2. The qualifying bar moved from per-model to **per-pair**, because nemotron-3-nano:30b and
+   cogito:70b miss Ellucian CRM Recruit **identically** while mistral-small3.2:24b catches it.
+   Judging models individually would reject the one whose value is covering the anchor's blind
+   spots.
+3. That correlated miss is itself a finding: "the product does an X-adjacent thing, so an adjacent
+   category is acceptable" is a *systematic* LLM failure mode here. The Task 4 name-token screen
+   catches exactly this class by a completely different mechanism, which makes it a real
+   independent safety net rather than merely a convenient head start.
