@@ -36,6 +36,8 @@ const fs = require('fs');
 const path = require('path');
 const DeTECHtor = require('../src/detechtor.js');
 const { mapCategory, SIGNAL_CATEGORIES, CANONICAL_CATEGORIES } = require('../src/category-mapping.js');
+const { validateOverrides } = require('../src/category-overrides.js');
+const CATEGORY_OVERRIDES = require('../patterns/category-overrides.json');
 
 const args = process.argv.slice(2);
 const GATE = args.includes('--gate');
@@ -146,6 +148,14 @@ for (const [name, def] of techs) {
   }
 }
 
+// --- OVERRIDE_INVALID ------------------------------------------------------------------------
+// A decision recorded in patterns/category-overrides.json must still make sense against the
+// patterns actually on disk. This is what makes the override layer durable: an upstream reimport
+// that renames or drops a technology, or that folds our decision into the base, fails the build
+// here instead of leaving a stale rule nobody notices.
+const pristine = engine.loadPatterns({ applyOverrides: false });
+findings.OVERRIDE_INVALID = validateOverrides(pristine, CATEGORY_OVERRIDES.overrides || {});
+
 // --- report ---------------------------------------------------------------------------------
 const collisionsThatMatter = findings.NAME_COLLISION.filter((c) => !c.categoriesAgree);
 const signalCollisions = findings.NAME_COLLISION.filter((c) => c.signalDisagreement);
@@ -156,6 +166,7 @@ console.log(`SIGNAL_CASE_DROP    ${findings.SIGNAL_CASE_DROP.length}`);
 console.log(`CATEGORY_CASE       ${findings.CATEGORY_CASE.length}`);
 console.log(`DUPLICATE_CATEGORY  ${findings.DUPLICATE_CATEGORY.length}`);
 console.log(`UNKNOWN_CATEGORY    ${findings.UNKNOWN_CATEGORY.length}`);
+console.log(`OVERRIDE_INVALID    ${findings.OVERRIDE_INVALID.length}`);
 console.log(`MISSING_SIGNAL      ${findings.MISSING_SIGNAL.length}  (heuristic screen, NOT gated — ` +
   `${findings.MISSING_SIGNAL.filter((f) => f.curated).length} in curated files)`);
 
@@ -190,6 +201,11 @@ if (findings.UNKNOWN_CATEGORY.length) {
   const byVal = new Map();
   for (const f of findings.UNKNOWN_CATEGORY) byVal.set(f.category, (byVal.get(f.category) || 0) + 1);
   for (const [k, n] of [...byVal].sort((a, b) => b[1] - a[1]).slice(0, 20)) console.log(`   ${String(n).padStart(4)}  ${JSON.stringify(k)}`);
+}
+
+if (findings.OVERRIDE_INVALID.length) {
+  console.log(`\nOVERRIDE_INVALID — patterns/category-overrides.json disagrees with the patterns on disk:`);
+  for (const f of findings.OVERRIDE_INVALID) console.log(`   ${f.name.padEnd(34)} ${f.problem}`);
 }
 
 // --- prevalence-ranked semantic review list --------------------------------------------------
@@ -288,12 +304,14 @@ console.log(`\nwrote ${out}`);
 
 if (GATE) {
   const fail = signalCollisions.length + findings.SIGNAL_CASE_DROP.length +
-    findings.CATEGORY_CASE.length + findings.DUPLICATE_CATEGORY.length;
+    findings.CATEGORY_CASE.length + findings.DUPLICATE_CATEGORY.length +
+    findings.OVERRIDE_INVALID.length;
   if (fail) {
     console.error(`\nFAIL: ${signalCollisions.length} signal-differing collisions, ` +
       `${findings.SIGNAL_CASE_DROP.length} case-dropped signals, ` +
       `${findings.CATEGORY_CASE.length} miscased categories, ` +
-      `${findings.DUPLICATE_CATEGORY.length} duplicate categories`);
+      `${findings.DUPLICATE_CATEGORY.length} duplicate categories, ` +
+      `${findings.OVERRIDE_INVALID.length} invalid overrides`);
     process.exit(1);
   }
   console.log('\nOK: no mechanical category defects.');
