@@ -27,6 +27,8 @@
 const SEPARATOR = '\\;';
 const MODIFIER_SEGMENT = /^(confidence|version):/i;
 
+const { mapCategory } = require('./category-mapping');
+
 /** Does this string carry a modifier we would strip? */
 function hasModifier(value) {
   if (typeof value !== 'string' || !value.includes(SEPARATOR)) return false;
@@ -70,6 +72,22 @@ function normalizeDefinition(def) {
   for (const field of ['html', 'scriptSrc', 'scripts', 'meta', 'headers', 'cookies', 'js',
                        'url', 'text', 'network', 'xhr', 'dns', 'certIssuer', 'robots']) {
     if (def[field] !== undefined) def[field] = walk(def[field]);
+  }
+
+  // UNI-233: 73 technologies list the same category twice (Framework7 carries 'JavaScript
+  // Framework' twice in its own array). Harmless to matching, but it double-counts in any
+  // per-category tally and makes two identical definitions compare unequal. Dedupe by MAPPED
+  // value, since 1 and 'CMS' are the same category expressed two ways — while preserving the
+  // original id form so nothing downstream that reads raw ids breaks.
+  for (const field of ['cats', 'categories']) {
+    if (!Array.isArray(def[field])) continue;
+    const seen = new Set();
+    def[field] = def[field].filter((c) => {
+      const key = mapCategory(c);
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
   }
 
   // `dom` is the one place a KEY needs stripping: array entries and object keys are selectors.

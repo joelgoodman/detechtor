@@ -7,6 +7,8 @@ const config = require('./config');
 const { mapCategory } = require('./category-mapping');
 const { admittedDomRules, checkDomRules } = require('./dom-rules');
 const { normalizeDefinition } = require('./pattern-normalize');
+const { resolveIdentities } = require('./technology-identity');
+const ALIASES = require('../patterns/technology-aliases.json');
 
 class DeTECHtor {
   constructor(options = {}) {
@@ -116,11 +118,22 @@ class DeTECHtor {
       }
     });
     
-    if (config.verbose) {
-      console.log(`Total patterns loaded: ${Object.keys(patterns).length}`);
+    // UNI-233: one technology, one entry. Curated files are meant to OVERRIDE the base, but the
+    // assignment above keys on the exact name — so a casing difference (accessiBe vs AccessiBe)
+    // left both alive, curated correct and base wrong, both firing. Vendor renames did the same
+    // (Omni CMS / Modern Campus CMS). Evidence is unioned, so the losing entry's patterns — such
+    // as the dom rule UNI-224 recovered Omni CMS with — survive the merge.
+    const before = Object.keys(patterns).length;
+    const resolved = resolveIdentities(patterns, ALIASES.aliases || {});
+    if (config.verbose && before !== Object.keys(resolved).length) {
+      console.log(`Collapsed ${before - Object.keys(resolved).length} duplicate technology name(s)`);
     }
-    
-    return patterns;
+
+    if (config.verbose) {
+      console.log(`Total patterns loaded: ${Object.keys(resolved).length}`);
+    }
+
+    return resolved;
   }
   
   async initialize() {

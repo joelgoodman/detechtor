@@ -32,7 +32,7 @@ test('tier 1 stops as soon as a signal-category technology is found', () => {
   assert.strictEqual(r.tier, 1);
   assert.strictEqual(r.status, 'detected');
   assert.deepStrictEqual(r.pagesEvaluated, ['program'], 'must not parse pages it does not need');
-  assert.ok(names(r).includes('Omni CMS'));
+  assert.ok(names(r).includes('Modern Campus CMS'));
 });
 
 test('a clean tier-1 page escalates and the interior page recovers the CMS', () => {
@@ -42,7 +42,7 @@ test('a clean tier-1 page escalates and the interior page recovers the CMS', () 
   assert.strictEqual(r.tier, 2);
   assert.strictEqual(r.status, 'detected');
   assert.deepStrictEqual(r.pagesEvaluated, ['home', 'cost-aid']);
-  assert.ok(names(r).includes('Omni CMS'), `expected Omni CMS, got: ${names(r).join(', ')}`);
+  assert.ok(names(r).includes('Modern Campus CMS'), `expected Modern Campus CMS, got: ${names(r).join(', ')}`);
 });
 
 test('an institution whose every capture is blocked reports unknown, never "none"', () => {
@@ -71,8 +71,8 @@ test('readable pages with genuinely no signal technology report none, not unknow
 test('a merged technology records every page it fired on and keeps the highest confidence', () => {
   const r = detectTiered(engine, [CLEAN_HOME, OMNI_INTERIOR,
     { pageType: 'faq', html: pad(fixture('omni-cms.html')) }]);
-  const omni = r.technologies.find((t) => t.name === 'Omni CMS');
-  assert.ok(omni, 'Omni CMS must survive the merge');
+  const omni = r.technologies.find((t) => t.name === 'Modern Campus CMS');
+  assert.ok(omni, 'Modern Campus CMS must survive the merge');
   assert.deepStrictEqual(omni.pages.sort(), ['cost-aid', 'faq']);
   assert.ok(omni.confidence > 0);
 });

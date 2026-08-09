@@ -35,7 +35,7 @@
 const fs = require('fs');
 const path = require('path');
 const DeTECHtor = require('../src/detechtor.js');
-const { mapCategory, categoryMapping, SIGNAL_CATEGORIES } = require('../src/category-mapping.js');
+const { mapCategory, SIGNAL_CATEGORIES, CANONICAL_CATEGORIES } = require('../src/category-mapping.js');
 
 const args = process.argv.slice(2);
 const GATE = args.includes('--gate');
@@ -47,9 +47,10 @@ const engine = new DeTECHtor();
 const techs = Object.entries(engine.patterns)
   .filter(([n, d]) => n !== '_metadata' && d && typeof d === 'object');
 
-/** The full canonical vocabulary: every value mapCategory can legitimately produce. */
-const CANONICAL = new Set(Object.values(categoryMapping));
-for (const s of SIGNAL_CATEGORIES) CANONICAL.add(s);
+// The vocabulary comes from category-mapping.js, the single source of truth. Rebuilding it here
+// from `Object.values(categoryMapping)` was itself the duplication this ticket is about: it missed
+// the six string-only names and reported 21 permanent false positives.
+const CANONICAL = CANONICAL_CATEGORIES;
 
 const rawCats = (def) => (def.categories || def.cats) || [];
 const normName = (s) => String(s).toLowerCase().replace(/[^a-z0-9]/g, '');

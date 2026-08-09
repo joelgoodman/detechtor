@@ -22,6 +22,12 @@ const categoryMapping = {
   10: 'Analytics',
   11: 'Advertising',
   12: 'JavaScript Framework', // ExtJS
+  // UNI-233: 77 technologies carried id 13 with no entry here, so every one of them resolved to
+  // 'Unknown'. Named from what actually carries it — Asana, Atlassian Jira, Bugzilla, MantisBT,
+  // Flyspray, Statuspage, Cachet, Instatus, BugHerd, Marker, Nolt — issue trackers, status pages
+  // and feedback widgets. Named empirically per the standing rule that these ids are ours to
+  // define, not copied from upstream. Not a signal category.
+  13: 'Issue Tracker',
   14: 'Video Platform',
   15: 'Image Processing',
   16: 'Database',
@@ -127,9 +133,39 @@ const categoryMapping = {
   304: 'Proctoring' // UNI-156: proctoring/integrity tools (non-signal)
 };
 
+// UNI-233. Some categories are only ever written as STRINGS and have no numeric id, so they are
+// absent from the id map above yet are perfectly legitimate. Registering them explicitly is what
+// makes "one shared category set" true rather than aspirational — without it the audit reports
+// them as unknown forever and stops being worth reading.
+const STRING_ONLY_CATEGORIES = [
+  'Fediverse',          // curated fediverse-social-patterns.json (9 techs)
+  'Social Network',     // curated fediverse-social-patterns.json (8 techs)
+  'CSS Framework',      // base, string form
+  'JavaScript Library', // base, string form
+  'Web Framework',      // base, string form
+  'Student Success',    // base, string form
+];
+
+/** The complete vocabulary: every name mapCategory can legitimately produce. */
+const CANONICAL_CATEGORIES = new Set([
+  ...Object.values(categoryMapping),
+  ...STRING_ONLY_CATEGORIES,
+]);
+
+// Indexed case-insensitively, built once at load from the vocabulary so it cannot drift from it.
+const CANONICAL_BY_LOWER = new Map();
+for (const name of CANONICAL_CATEGORIES) CANONICAL_BY_LOWER.set(name.toLowerCase(), name);
+
 function mapCategory(categoryId) {
   if (typeof categoryId === 'string') {
-    return categoryId.toLowerCase();
+    // ⚠️ This used to `return categoryId.toLowerCase()`, while the numeric branch returned Title
+    // Case — and `SIGNAL_CATEGORIES.has()`, the check used across the codebase, is case-sensitive.
+    // So a pattern file writing cats:['CMS'] became 'cms' and silently stopped counting as a
+    // signal category. Two shipped technologies were affected (UNI-233).
+    //
+    // An unrecognised name is returned unchanged rather than normalised: inventing a canonical
+    // form for a category we do not know would hide the fact that we do not know it.
+    return CANONICAL_BY_LOWER.get(categoryId.toLowerCase()) || categoryId;
   }
   if (typeof categoryId === 'number') {
     return categoryMapping[categoryId] || 'Unknown';
@@ -146,4 +182,4 @@ function isSignalCategory(name) {
   return typeof name === 'string' && [...SIGNAL_CATEGORIES].some((c) => c.toLowerCase() === name.toLowerCase());
 }
 
-module.exports = { mapCategory, categoryMapping, SIGNAL_CATEGORIES, isSignalCategory };
+module.exports = { mapCategory, categoryMapping, SIGNAL_CATEGORIES, isSignalCategory, CANONICAL_CATEGORIES, STRING_ONLY_CATEGORIES };

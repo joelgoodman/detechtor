@@ -159,3 +159,87 @@ test('all curated SIS entries in higher-ed-sis.json carry id 302, not 53', () =>
     assert.ok(!def.cats.includes(53), `${name} must not carry the declassified id 53, got ${JSON.stringify(def.cats)}`);
   }
 });
+
+// --- UNI-233: casing and coverage -------------------------------------------------------
+
+test('a STRING category maps to canonical casing, not lowercase', () => {
+  // mapCategory used to lowercase strings while returning Title Case for numeric ids, and
+  // SIGNAL_CATEGORIES.has() is case-sensitive — so a curated file writing cats:['CMS'] silently
+  // stopped being a signal category. Two shipped technologies were affected.
+  assert.strictEqual(mapCategory('CMS'), 'CMS');
+  assert.strictEqual(mapCategory('cms'), 'CMS');
+  assert.strictEqual(mapCategory('SIS'), 'SIS');
+  assert.strictEqual(mapCategory('sis'), 'SIS');
+  assert.strictEqual(mapCategory('Web Server'), 'Web Server');
+  assert.strictEqual(mapCategory('web server'), 'Web Server');
+});
+
+test('a string category survives the case-SENSITIVE signal check', () => {
+  const { SIGNAL_CATEGORIES } = require(path.resolve(__dirname, '../src/category-mapping.js'));
+  // This is the check used across the codebase (tiered-detect, residual-audit, the audits).
+  assert.ok(SIGNAL_CATEGORIES.has(mapCategory('cms')));
+  assert.ok(SIGNAL_CATEGORIES.has(mapCategory('sis')));
+});
+
+test('an unrecognised string category is preserved, not silently mangled', () => {
+  assert.strictEqual(mapCategory('Some New Thing'), 'Some New Thing');
+});
+
+test('category id 13 resolves instead of falling through to Unknown', () => {
+  // 77 technologies carried id 13 with no mapping entry, so they all read as "Unknown".
+  // Named empirically from what actually carries it — Jira, Bugzilla, MantisBT, Statuspage,
+  // BugHerd, Instatus — not copied from upstream.
+  assert.strictEqual(mapCategory(13), 'Issue Tracker');
+  assert.ok(!isSignalCategory('Issue Tracker'));
+});
+
+test('no shipped technology resolves to Unknown', () => {
+  const DeTECHtor = require(path.resolve(__dirname, '../src/detechtor.js'));
+  const engine = new DeTECHtor();
+  const offenders = [];
+  for (const [name, def] of Object.entries(engine.patterns)) {
+    if (name === '_metadata' || !def || typeof def !== 'object') continue;
+    const cats = (def.categories || def.cats) || [];
+    if (cats.map(mapCategory).includes('Unknown')) offenders.push(name);
+  }
+  assert.deepStrictEqual(offenders.slice(0, 10), [],
+    `${offenders.length} technologies resolve to Unknown — an unmapped category id`);
+});
+
+test('no shipped technology lists the same category twice', () => {
+  const DeTECHtor = require(path.resolve(__dirname, '../src/detechtor.js'));
+  const engine = new DeTECHtor();
+  const offenders = [];
+  for (const [name, def] of Object.entries(engine.patterns)) {
+    if (name === '_metadata' || !def || typeof def !== 'object') continue;
+    const cats = ((def.categories || def.cats) || []).map(mapCategory);
+    if (new Set(cats).size !== cats.length) offenders.push(`${name}: ${JSON.stringify(cats)}`);
+  }
+  assert.deepStrictEqual(offenders.slice(0, 10), [], `${offenders.length} technologies with duplicate categories`);
+});
+
+test('string-only category names are part of the canonical vocabulary', () => {
+  // Some categories are only ever written as strings (curated fediverse-social-patterns.json uses
+  // 'Fediverse' and 'Social Network'; the base uses 'CSS Framework', 'Student Success' and two
+  // others). They are legitimate names with no numeric id, so the vocabulary must include them or
+  // the audit reports 21 permanent false positives and stops being trustworthy.
+  const { CANONICAL_CATEGORIES } = require(path.resolve(__dirname, '../src/category-mapping.js'));
+  for (const name of ['Fediverse', 'Social Network', 'CSS Framework', 'JavaScript Library',
+                      'Web Framework', 'Student Success', 'CMS', 'Issue Tracker']) {
+    assert.ok(CANONICAL_CATEGORIES.has(name), `${name} must be in the canonical vocabulary`);
+  }
+});
+
+test('every shipped category resolves to a canonical name', () => {
+  const DeTECHtor = require(path.resolve(__dirname, '../src/detechtor.js'));
+  const { CANONICAL_CATEGORIES } = require(path.resolve(__dirname, '../src/category-mapping.js'));
+  const engine = new DeTECHtor();
+  const offenders = new Set();
+  for (const [name, def] of Object.entries(engine.patterns)) {
+    if (name === '_metadata' || !def || typeof def !== 'object') continue;
+    for (const c of ((def.categories || def.cats) || []).map(mapCategory)) {
+      if (!CANONICAL_CATEGORIES.has(c)) offenders.add(c);
+    }
+  }
+  assert.deepStrictEqual([...offenders], [], 'categories outside the canonical vocabulary');
+});
