@@ -7,6 +7,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### UNI-226 — strip Wappalyzer `\;confidence` / `\;version` modifiers (2026-08-09)
+
+Upstream modifier suffixes were never stripped, so in every regex-tested field the suffix became a
+literal requirement no page can satisfy — `/adocean\.pl\;confidence:80/` cannot match
+`cdn.adocean.pl/lib.js`. **939 values silently dead** across scriptSrc/meta/headers/html/cookies/
+scripts, plus 79 unparseable dom selectors; 1,160 techs affected, 121 signal-category.
+
+Same class as the UNI-224 dom defect — unparsed upstream syntax causing silent death — on a bigger
+surface, and found by the validator UNI-224 Phase C added. `lint-patterns.js` could never have found
+it: it hunts patterns that are too **broad**, and these are pathologically **narrow**.
+
+**Added**
+- `src/pattern-normalize.js` — strips at load; the importer strips at import. Only `confidence` and
+  `version` segments are dropped (measured: the only two that occur); anything else is kept rather
+  than silently truncated.
+- `scripts/modifier-impact.js` — A/B measurement over the real corpus. Full results in
+  `docs/uni-226-modifier-impact.md`: **192 techs changed, 0 lost, 7 signal-category** (all long-tail
+  CMSes, largest +7 institutions, including **Contensis**, a UK HE CMS we were blind to). The only
+  mover above 25 points is jQuery Migrate at 32.6%, which is ordinary.
+
+**Changed**
+- `Progress WS_FTP` re-adjudicated from denied to admitted. It was denied in Phase A *only* because
+  the modifier made it unparseable. ⚠️ The denylist is keyed on the selector string, so stripping
+  alone would have un-denied it silently — the decision is recorded and pinned by a test.
+- `lint-dom-rules.js` lints what the engine sees, and counts on-disk modifier debt separately
+  (not gated: a stale data file must not fail a build).
+
+**Deliberately not done:** honouring the parsed values. Upstream `confidence:NN` would change scoring
+across 1,160 techs and needs its own measurement; `version:\1` is already reimplemented in
+`extractVersionInfo`. The bug was the dead regex.
+
 ### UNI-225 — tiered multi-page detection (2026-08-09)
 
 Detection now evaluates the union of an institution's archived pages instead of one homepage,

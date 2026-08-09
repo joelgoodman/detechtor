@@ -128,15 +128,39 @@ if (!rows.length) {
   }
 }
 
-// Anything newly firing at high prevalence is the false-positive shape to worry about.
-const suspicious = rows.filter((r) => r.delta > 0 && r.rate > 0.25);
+// The false-positive shape to worry about is a LARGE CHANGE, not high prevalence. Filtering on
+// absolute rate flags things like Facebook Pixel — 55.8% prevalent but +1 institution — while
+// saying nothing about whether this change caused it. Judge the delta.
+const suspicious = rows.filter((r) => r.delta / scanned > 0.25);
 if (suspicious.length) {
-  console.log(`\n⚠️ ${suspicious.length} newly-firing technolog(ies) above 25% prevalence — adjudicate before trusting:`);
-  for (const r of suspicious) console.log(`   ${(r.rate * 100).toFixed(1)}%  ${r.name}`);
+  console.log(`\n⚠️ ${suspicious.length} technolog(ies) gained >25% of the corpus — adjudicate before trusting:`);
+  for (const r of suspicious) {
+    console.log(`   +${(r.delta / scanned * 100).toFixed(1)} points → ${(r.rate * 100).toFixed(1)}%  ${r.name}`);
+  }
 } else {
-  console.log('\nNo newly-firing technology exceeds 25% prevalence.');
+  console.log('\nNo technology gained more than 25% of the corpus.');
 }
 
-const outPath = path.resolve(__dirname, '../docs/modifier-impact.json');
-fs.writeFileSync(outPath, JSON.stringify({ scanned, skipped, changed: rows }, null, 2));
+// Signal categories are what the product actually trusts; a change there matters far more than a
+// jQuery plugin appearing, however large.
+const signalRows = rows.filter((r) => {
+  const def = after.patterns[r.name] || before.patterns[r.name];
+  if (!def) return false;
+  return (def.categories || def.cats || []).map(mapCategory).some((c) => SIGNAL_CATEGORIES.has(c));
+});
+console.log(`\nSIGNAL-CATEGORY changes: ${signalRows.length}`);
+for (const r of signalRows) {
+  console.log(`   ${(r.rate * 100).toFixed(1).padStart(5)}%  ${String(r.b).padStart(4)} → ${String(r.a).padStart(4)}  ${r.name}`);
+}
+
+const lost = rows.filter((r) => r.delta < 0);
+console.log(`\ntechnologies that LOST detections: ${lost.length}` +
+  (lost.length ? '' : '  (expected — a broken regex can only start matching, never stop)'));
+
+// Name the artifact after its scope. Writing every run to one path let a 40-page smoke test
+// silently overwrite a full-corpus result — a partial measurement must never be able to
+// impersonate a complete one.
+const scope = LIMIT === Infinity ? 'full' : `limit${LIMIT}`;
+const outPath = path.resolve(__dirname, `../docs/modifier-impact.${scope}.json`);
+fs.writeFileSync(outPath, JSON.stringify({ scope, scanned, skipped, changed: rows }, null, 2));
 console.log(`\nwrote ${outPath}`);
