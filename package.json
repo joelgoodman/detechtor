@@ -25,7 +25,8 @@
     "lint:dom": "node scripts/lint-dom-rules.js",
     "lint:dom:gate": "node scripts/lint-dom-rules.js --gate",
     "base-rate": "node scripts/base-rate-report.js",
-    "emit-js-probe": "node scripts/emit-js-probe.js"
+    "emit-js-probe": "node scripts/emit-js-probe.js",
+    "test:tiered": "node scripts/tiered-regression.js --assert"
   },
   "keywords": [
     "technology-detection",
