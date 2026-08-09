@@ -16,6 +16,18 @@ module.exports = {
     '/workforce', '/catalog', '/ce/', '/extension'
   ],
 
+  // UNI-225: which archived page to evaluate first, highest measured yield first.
+  // Measured over 506 archived pages / 29 institutions (2026-08-01) by asking whether ANY
+  // signal-category technology was found:
+  //   program 93% (n=83) · admissions 88% (n=89) · student-life 88% (n=84)
+  //   home 83% (n=81) · cost-aid 81% (n=81)
+  // `faq` measured 100% but on n=12 and with the LOWEST technology count per page (2.67), which
+  // suggests small simple pages rather than richer evidence — so it is last, not first.
+  // ⚠️ That sample was selected as TerminalFour candidates, so it skews large and UK/US.
+  // Re-measure on a random sample before treating this order as settled. It lives in config
+  // exactly so re-tuning needs no code change.
+  pagePreference: ['program', 'admissions', 'student-life', 'home', 'cost-aid', 'faq'],
+
   // Subdomains and paths derived from the scanned domain and probed with a full
   // Puppeteer pass. Each entry generates two candidates:
   //   subdomain: https://<prefix>.<rootdomain>/

@@ -11,47 +11,17 @@ const { test } = require('node:test');
 const assert = require('node:assert');
 const fs = require('fs');
 const path = require('path');
-const cheerio = require('cheerio');
 const DeTECHtor = require(path.resolve(__dirname, '../src/detechtor.js'));
+const { evidenceFromHtml } = require(path.resolve(__dirname, '../src/evidence-from-html.js'));
 
 const d = new DeTECHtor();
 
-/** Build engine evidence from static HTML, mirroring what the browser path collects. */
+// UNI-225: this used to inline its own cheerio evidence builder — an ad-hoc copy of the browser
+// path that could drift from it silently. It now goes through the same builder the tiered runner
+// uses, so a divergence fails here instead of hiding.
 function evidenceFromFixture(name) {
   const html = fs.readFileSync(path.join(__dirname, 'fixtures/pages', name), 'utf8');
-  const $ = cheerio.load(html);
-  const domNodes = {};
-  for (const spec of d.domPlan) {
-    let els;
-    try {
-      els = $(spec.selector);
-    } catch {
-      continue;
-    }
-    if (!els.length) continue;
-    const nodes = [];
-    els.slice(0, 25).each((_, el) => {
-      const node = {};
-      if (spec.text) node.text = ($(el).text() || '').slice(0, 500);
-      if (spec.attrs.length) {
-        node.attributes = {};
-        for (const a of spec.attrs) {
-          const v = $(el).attr(a);
-          if (v !== undefined) node.attributes[a] = v;
-        }
-      }
-      if (spec.props.length) node.properties = {};
-      nodes.push(node);
-    });
-    domNodes[spec.selector] = nodes;
-  }
-  const scripts = $('script[src]').map((_, s) => ({ src: $(s).attr('src') })).get();
-  const meta = {};
-  $('meta[name]').each((_, m) => { meta[($(m).attr('name') || '').toLowerCase()] = $(m).attr('content') || ''; });
-  return {
-    html, headers: {}, scripts, meta, cookies: [],
-    dom: { jsObjects: {} }, domNodes, apiEndpoints: [], networkHosts: [], versionInfo: {},
-  };
+  return evidenceFromHtml(html, d.domPlan);
 }
 
 const detect = (fixture) => d.matchPatterns(evidenceFromFixture(fixture)).map((h) => h.name);

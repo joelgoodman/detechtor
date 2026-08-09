@@ -80,9 +80,44 @@ San Juan, VCU Med, Gabelli, Olin, Idaho State, CSU Monterey.
 which is measured on one homepage per institution: its `UNVALIDATED` bucket (1,280 never-fire rules)
 is a homepage figure, and interior pages would fire more of them.
 
-The 7 blocked institutions (QUB, Imperial, Durham, UCD, SUNY, South Wales, Wheaton IL) are a separate
+The blocked institutions (QUB, Imperial, Durham, UCD, SUNY, South Wales, Wheaton IL) are a separate
 scan-infrastructure problem — CloudFront/Cloudflare returning `403 Request blocked` for every page,
 median capture size 1 KB. They are "could not look," not "nothing to find."
+
+## ⚠️ Third correction: the table above overstates both figures
+
+Re-measured **2026-08-09** against the same 29 institutions with the shipped `TerminalFour` pattern,
+reproducibly, by `scripts/tiered-regression.js` (UNI-225):
+
+| Outcome | Re-measured | Table above |
+|---|---|---|
+| Detects on the **homepage** already | **12** | (implied 0) |
+| Recovered from an **interior** page | **2** (ids 2153, 478) | 14 |
+| Carries only a *mined* tell (`directEdit`/`site-assets`/`cdn-pxl`) | 1 (id 557) | 1 |
+| No tell on any page | 9 | 7 |
+| Blocked on every page | **5** | 7 |
+| | **= 29** | = 29 |
+
+**Two errors, both in the direction of overstating the finding.**
+
+1. **The 14 is the total detected across all pages (12 + 2), not 14 recovered from interior pages.**
+   Those 12 carry the tell on their homepage — and consistently: every archived `home` capture for
+   each of them matches, so this is not weekly capture flakiness. They were never homepage-clean.
+   **Escalation recovers 2, not 14.**
+2. **5 are blocked, not 7.** Institutions **2099 and 449** are blocked on home/admissions/cost-aid/
+   student-life but have fully readable `program` captures (1.2 MB and 328 KB, real titles and
+   content). Reading more page types moves them from "unknown" to a real evaluation — which is
+   itself a win for tiering, just not the one that was claimed.
+
+**What survives unchanged:** there is no structural ceiling, York does carry `terminalfour` on an
+interior page, and page choice genuinely matters. What does not survive is the magnitude. The one
+remaining institution (557) needs `directEdit`/`site-assets`/`cdn-pxl` added to the pattern — a
+definitions change, deliberately out of scope for UNI-225.
+
+The lesson is the same one this document has now had to record three times: **a number derived from
+a hand-rolled probe over a hand-picked set is not a measurement.** The re-measure runs the real
+engine over the real corpus and prints its own baseline, so the next person does not have to trust
+this paragraph.
 
 ## New tells found by mining known-T4 pages
 
