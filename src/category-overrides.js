@@ -81,7 +81,9 @@ function validateOverrides(patterns, overrides = {}) {
 
     const current = resolvedCategories(def);
     const wanted = rule.categories;
-    if (current.length === wanted.length && current.every((c, i) => c === wanted[i])) {
+    const currentSorted = [...current].sort();
+    const wantedSorted = [...wanted].sort();
+    if (currentSorted.length === wantedSorted.length && currentSorted.every((c, i) => c === wantedSorted[i])) {
       problems.push({ name, problem: 'no-op: the technology already carries exactly these categories' });
     }
   }

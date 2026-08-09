@@ -87,6 +87,17 @@ test('validateOverrides rejects a no-op override', () => {
   assert.match(problems[0].problem, /no-op/);
 });
 
+test('validateOverrides detects a no-op override with reversed order', () => {
+  // Categories are unordered (consumed via .some(), .includes(), Set-union everywhere downstream).
+  // An override that merely reorders existing categories is a no-op and must be reported as such.
+  const problems = validateOverrides(
+    { Thing: { cats: [53, 101] } },
+    { Thing: { categories: ['Business Software', 'HR / Recruiting'] } },
+  );
+  assert.strictEqual(problems.length, 1);
+  assert.match(problems[0].problem, /no-op/);
+});
+
 test('validateOverrides rejects an override naming a technology that does not exist', () => {
   const problems = validateOverrides({ Real: { cats: [1] } }, { Ghost: { categories: ['CRM'] } });
   assert.strictEqual(problems.length, 1);
