@@ -1,0 +1,2478 @@
+{
+  "generated": "2026-08-09",
+  "ticket": "UNI-233",
+  "note": "Heuristic candidates: name/description suggests CRM or Marketing Automation but the technology is not filed there. A SCREEN, not a verdict — adjudicate each. Entries with no evidence fields can never fire and are listed separately as low priority.",
+  "actionable": [
+    {
+      "name": "Ellucian CRM Recruit",
+      "suggests": "CRM",
+      "current": [
+        "Business Software",
+        "HR / Recruiting"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:2 dom",
+      "description": "Ellucian CRM Recruit is a comprehensive solution that supports your entire recruiting and admissions lifecycle.",
+      "institutions": 18
+    },
+    {
+      "name": "Act-On",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Act-On is a cloud-based SaaS product for marketing automation.",
+      "institutions": 1
+    },
+    {
+      "name": "Cornerstone",
+      "suggests": "CRM",
+      "current": [
+        "CMS"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2 dom meta",
+      "description": "Cornerstone is a content management system that includes modules for CRM and membership management.",
+      "institutions": 1
+    },
+    {
+      "name": "HubSpot CMS Hub",
+      "suggests": "Marketing Automation",
+      "current": [
+        "CMS"
+      ],
+      "curated": true,
+      "source": "higher-ed-cms.json",
+      "hasEvidence": true,
+      "evidence": "html:1 meta",
+      "description": "HubSpot CMS Hub — the content-hosting product, distinct from generic HubSpot marketing/forms/chat embeds (tracked separately as Marketing Automation in higher-ed-marketing.json). Requires a CMS-Hub-specific marker rather",
+      "institutions": 1
+    },
+    {
+      "name": "Spektrix",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Spektrix is a cloud-based ticketing, marketing, and fundraising CRM system putting audience insight at your fingertips.",
+      "institutions": 1
+    },
+    {
+      "name": "AI LOG",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "AI LOG is a marketing automation and fraud click prevention tool.",
+      "institutions": 0
+    },
+    {
+      "name": "Actito",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:2 js:2 cookies",
+      "description": "Actito is an agile SaaS marketing automation platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Adabra",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:3",
+      "description": "Adabra is a SaaS omnichannel marketing automation platform to help boost sales. Adabra allows you to manage user segmentation, create workflow and campaigns through email, social, SMS and more.",
+      "institutions": 0
+    },
+    {
+      "name": "Agile CRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:2",
+      "description": "Agile CRM is a software for Customer Relationship Management (CRM) that provides sales and marketing automation features for businesses.",
+      "institutions": 0
+    },
+    {
+      "name": "Agile CRM",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:2",
+      "description": "Agile CRM is a software for Customer Relationship Management (CRM) that provides sales and marketing automation features for businesses.",
+      "institutions": 0
+    },
+    {
+      "name": "AiTrillion",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "AiTrillion is a marketing automation platform for ecommerce, offering tools for email campaigns, customer segmentation, loyalty programs, and product recommendations.",
+      "institutions": 0
+    },
+    {
+      "name": "Aimbase",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Aimbase is a marketing automation platform designed to streamline campaign management, customer engagement, and data-driven decision-making.",
+      "institutions": 0
+    },
+    {
+      "name": "Airship CRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Airship CRM is a hospitality-focused platform that centralizes data, enables tailored email communication, and enhances visit frequency.",
+      "institutions": 0
+    },
+    {
+      "name": "AllClients",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "dom",
+      "description": "AllClients is an all-in-one platform that integrates contact management and marketing automation.",
+      "institutions": 0
+    },
+    {
+      "name": "Aprimo",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Digital Asset Management"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1 dom",
+      "description": "Aprimo is a United States-based company that develops and sells marketing automation software and digital asset management technology.",
+      "institutions": 0
+    },
+    {
+      "name": "AroSoftware",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "meta",
+      "description": "AroSoftware provides real estate CRM and website design solutions.",
+      "institutions": 0
+    },
+    {
+      "name": "Automizely",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:3",
+      "description": "Automizely creates and manages enterprise-level marketing automation systems including contact and CRM mappings, lead funnels, email nurture, lead-generating pages, and blog posts, and website integrations.",
+      "institutions": 0
+    },
+    {
+      "name": "Automizely",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:3",
+      "description": "Automizely creates and manages enterprise-level marketing automation systems including contact and CRM mappings, lead funnels, email nurture, lead-generating pages, and blog posts, and website integrations.",
+      "institutions": 0
+    },
+    {
+      "name": "Avizi",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Avizi is a tourism CRM system from France designed to manage customer relationships, bookings, and marketing for travel businesses.",
+      "institutions": 0
+    },
+    {
+      "name": "amoCRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:4",
+      "description": "amoCRM is a web-based customer relationship management software solution.",
+      "institutions": 0
+    },
+    {
+      "name": "Batchbook",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 dom",
+      "description": "Batchbook is a customer relationship management (CRM) tool designed for small businesses.",
+      "institutions": 0
+    },
+    {
+      "name": "Bigin",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:4",
+      "description": "Bigin is a cloud-based customer relationship management (CRM) software.",
+      "institutions": 0
+    },
+    {
+      "name": "Blackbaud CRM",
+      "suggests": "CRM",
+      "current": [
+        "Fundraising"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "Blackbaud CRM gathers fundraising, online applications, actionable prospect research and analytics, and multichannel direct marketing into one platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Bothive",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1",
+      "description": "Bothive is a platform that automates repetitive tasks, enhances collaboration, reduces email reliance, and improves customer relationships by prioritizing meaningful interactions.",
+      "institutions": 0
+    },
+    {
+      "name": "BowNow",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1 cookies",
+      "description": "BowNow is a marketing automation tool with business card management, sales support, analysis, and email magazine functions.",
+      "institutions": 0
+    },
+    {
+      "name": "Brainlead",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Brainlead is a marketing automation software.",
+      "institutions": 0
+    },
+    {
+      "name": "Brilliant Web-to-Lead",
+      "suggests": "CRM",
+      "current": [
+        "WordPress Plugin"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Brilliant Web-to-Lead plugin facilitates the technical integration between WordPress installations and Salesforce CRM accounts, enabling the exchange and synchronization of data.",
+      "institutions": 0
+    },
+    {
+      "name": "Bronto",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:3",
+      "description": "Bronto is a cloud-based email marketing automation software.",
+      "institutions": 0
+    },
+    {
+      "name": "BySide",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "BySide is a personalisation and marketing automation platform.",
+      "institutions": 0
+    },
+    {
+      "name": "CDK Global",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "CDK Global offered a range of software and digital marketing solutions designed to help automotive businesses manage their operations, improve customer engagement, and enhance their online presence. Their services includ",
+      "institutions": 0
+    },
+    {
+      "name": "CRM+",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "dom",
+      "description": "CRM+ is a German CRM software product building on Vtiger with GDPR-compliant extensions and improvements.",
+      "institutions": 0
+    },
+    {
+      "name": "CartKit",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "CartKit build apps from fuss-free multi-channel marketing automation and campaigns to social proof popups and user session recording.",
+      "institutions": 0
+    },
+    {
+      "name": "Carts Guru",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Carts Guru is the all-in-one marketing automation tool for ecommerce stores.",
+      "institutions": 0
+    },
+    {
+      "name": "ClickDimensions",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "ClickDimensions is a SaaS marketing automation platform built on the Microsoft Windows Azure platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Closing Boost",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Closing Boost is a sales pipeline management and marketing automation platform designed to capture leads and nurture prospects.",
+      "institutions": 0
+    },
+    {
+      "name": "Cluster CIS",
+      "suggests": "CRM",
+      "current": [
+        "Web Server",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "dom",
+      "description": "Cluster CIS is a provider of business automation solutions, including WooCommerce ERP, CRM, WMS, SFA, alongside website development and e-shop construction services.",
+      "institutions": 0
+    },
+    {
+      "name": "Cnvert",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "meta",
+      "description": "Cnvert is a self-hosted lead and marketing automation system, formerly known as Sonician.",
+      "institutions": 0
+    },
+    {
+      "name": "Connectif",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Booking System",
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "Connectif is a marketing automation and personalisation data-first action platform, powered by AI.",
+      "institutions": 0
+    },
+    {
+      "name": "Convead",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:2",
+      "description": "Convead is a CRM marketing platform for ecommerce stores that helps collect data, segment customers, and automate marketing efforts.",
+      "institutions": 0
+    },
+    {
+      "name": "Convert and Flow",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Convert and Flow is a customer relationship management tool designed to manage customer relationships and enhance customer satisfaction.",
+      "institutions": 0
+    },
+    {
+      "name": "Czater",
+      "suggests": "CRM",
+      "current": [
+        "Chatbot"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "Czater is an live chat solution with extended CRM and videochat features.",
+      "institutions": 0
+    },
+    {
+      "name": "DX1",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "DX1 is an entirely cloud-based dealership management system for the motorcycle and powersports industry. Offering DMS, website, CRM and marketing tools.",
+      "institutions": 0
+    },
+    {
+      "name": "DatHuis",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1",
+      "description": "DatHuis is a platform providing marketing automation tools for real estate professionals, designed to enhance visibility and streamline operations.",
+      "institutions": 0
+    },
+    {
+      "name": "Datacrush",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Datacrush is a marketing automation platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Datarize",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Datarize is a CRM marketing solution designed to streamline customer relationship management and enhance targeted marketing efforts.",
+      "institutions": 0
+    },
+    {
+      "name": "Doctor.com",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 dom",
+      "description": "Doctor.com is a marketing automation and reputation management platform for doctors.",
+      "institutions": 0
+    },
+    {
+      "name": "Drip",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Drip is a marketing automation platform built for ecommerce.",
+      "institutions": 0
+    },
+    {
+      "name": "Edrone",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:3",
+      "description": "Edrone is a purpose-built ecommerce CRM that includes marketing automation and voice commerce features.",
+      "institutions": 0
+    },
+    {
+      "name": "Edrone",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:3",
+      "description": "Edrone is a purpose-built ecommerce CRM that includes marketing automation and voice commerce features.",
+      "institutions": 0
+    },
+    {
+      "name": "Elromco",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Elromco is a software platform that provides moving companies with a CRM and management solution.",
+      "institutions": 0
+    },
+    {
+      "name": "Enkod",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Customer Data Platform"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1",
+      "description": "Enkod is a CDP platform designed for marketing automation.",
+      "institutions": 0
+    },
+    {
+      "name": "Entresoft",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Entresoft is a platform that offers CRM and pipeline management tools for business operations.",
+      "institutions": 0
+    },
+    {
+      "name": "EspoCRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1 dom",
+      "description": "EspoCRM is an open-source CRM software solution designed for businesses of all sizes.",
+      "institutions": 0
+    },
+    {
+      "name": "EveryAction",
+      "suggests": "CRM",
+      "current": [
+        "Fundraising"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 dom",
+      "description": "EveryAction provides fundraising software, donor management software, and CRM software to nonprofit organisations.",
+      "institutions": 0
+    },
+    {
+      "name": "e-goi",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "e-goi is a multichannel marketing automation software for ecommerce.",
+      "institutions": 0
+    },
+    {
+      "name": "eShopCRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "eShopCRM is an ecommerce CRM for Shopify.",
+      "institutions": 0
+    },
+    {
+      "name": "eSputnik",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Customer Data Platform"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "eSputnik is a marketing automation service for ecommerce.",
+      "institutions": 0
+    },
+    {
+      "name": "emBlue",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "emBlue is an email and marketing automation platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Firefish Software",
+      "suggests": "CRM",
+      "current": [
+        "HR / Recruiting"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:2",
+      "description": "Firefish Software is a recruitment CRM for professional recruiters and recruitment agencies.",
+      "institutions": 0
+    },
+    {
+      "name": "Flipping Pro CRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Flipping Pro is an all-in-one real estate marketing CRM offering essential tools to help real estate business owners grow their operations.",
+      "institutions": 0
+    },
+    {
+      "name": "Freshworks CRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software",
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:2 js:3 dom",
+      "description": "Freshworks CRM is a cloud-based customer relationship management (CRM) solution. Key features include one-click phone, sales lead tracking, sales management, event tracking and more.",
+      "institutions": 0
+    },
+    {
+      "name": "Gamooga",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:2",
+      "description": "Gamooga is a marketing automation solution which helps businesses deliver personalized actions at their customers through various channels such as email, web, mobile, social and display.",
+      "institutions": 0
+    },
+    {
+      "name": "Geggio",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Geggio is an all-in-one funnel tool for SMEs that integrates landing pages, emails, automations, and CRM.",
+      "institutions": 0
+    },
+    {
+      "name": "GetMoreStudents",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "GetMoreStudents is a platform that supports dance studio owners in increasing class enrollment and boosting profits through marketing automation.",
+      "institutions": 0
+    },
+    {
+      "name": "Getgabs",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Getgabs is a WhatsApp marketing automation platform that enhances sales, marketing, and support through the WhatsApp Business API.",
+      "institutions": 0
+    },
+    {
+      "name": "Gist",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Chatbot"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Gist is email marketing automation, live chat, and helpdesk software.",
+      "institutions": 0
+    },
+    {
+      "name": "Gleap",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Chatbot"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1",
+      "description": "Gleap is an all-in-one customer feedback platform offering features like in-app bug reporting, live chat, AI support bots, product roadmaps, customer surveys, and marketing automation to enhance customer service and prod",
+      "institutions": 0
+    },
+    {
+      "name": "GlueUp",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "GlueUp is an all-in-one CRM platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Goat Systems",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Goat Systems is a provider of marketing automation and CRM software designed to support business growth.",
+      "institutions": 0
+    },
+    {
+      "name": "Goat Systems",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Goat Systems is a provider of marketing automation and CRM software designed to support business growth.",
+      "institutions": 0
+    },
+    {
+      "name": "GreenRope",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "GreenRope is an all-in-one CRM platform that integrates sales, marketing, and operational tools into a single system for business management.",
+      "institutions": 0
+    },
+    {
+      "name": "Greenhouse",
+      "suggests": "CRM",
+      "current": [
+        "HR / Recruiting"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1 dom",
+      "description": "Greenhouse is an applicant tracking and hiring tool. Greenhouse features automated workflow, recruitment analytics, CRM, and onboarding.",
+      "institutions": 0
+    },
+    {
+      "name": "HappySync",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "HappySync is a Korean-developed tool designed for marketing automation and conversion optimization.",
+      "institutions": 0
+    },
+    {
+      "name": "Hi Platform",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 dom",
+      "description": "Hi Platform provider of an online customer relationship platform.",
+      "institutions": 0
+    },
+    {
+      "name": "HighLevel",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "HighLevel is an all-in-one marketing and automation platform designed for marketing agencies and small businesses to manage CRM, marketing campaigns, sales funnels, appointment scheduling, and more.",
+      "institutions": 0
+    },
+    {
+      "name": "HubSpot WordPress plugin",
+      "suggests": "CRM",
+      "current": [
+        "WordPress Plugin"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1",
+      "description": "HubSpot is a platform with all the tools and integrations you need for marketing, sales, and customer service. HubSpot WordPress plugin allows you to manage contacts (CRM), engage visitors with live chat and chatbots, ad",
+      "institutions": 0
+    },
+    {
+      "name": "Imber",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Chatbot"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:3",
+      "description": "Imber is an all-in-one marketing automation platform built for customer support (live chat), sales, and marketing.",
+      "institutions": 0
+    },
+    {
+      "name": "Insightly CRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 dom",
+      "description": "Insightly CRM is a cloud-based customer relationship management software, helps businesses manage leads, contacts, and opportunities, track customer interactions, create custom reports, automate workflows, and integrate ",
+      "institutions": 0
+    },
+    {
+      "name": "iHomefinder IDX",
+      "suggests": "CRM",
+      "current": [
+        "Operating System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "iHomefinder provides IDX property search, built-in CRM, and marketing tools.",
+      "institutions": 0
+    },
+    {
+      "name": "icomm",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "headers",
+      "description": "icomm is a platform that helps companies manage their marketing automation strategy using AI-powered tools.",
+      "institutions": 0
+    },
+    {
+      "name": "icomm - Notifications Hub",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1",
+      "description": "Notifications Hub is an omnichannel marketing automation platform powered by AI.0",
+      "institutions": 0
+    },
+    {
+      "name": "Jadu",
+      "suggests": "CRM",
+      "current": [
+        "CMS"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "dom headers",
+      "description": "The Jadu Digital Platform provides the foundation of accessible, responsive and award-winning Websites, Forms, CRM and Portal solutions.",
+      "institutions": 0
+    },
+    {
+      "name": "Kapture CRM",
+      "suggests": "CRM",
+      "current": [
+        "Chatbot",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "Kapture CRM is an enterprise-grade SaaS-based customer support automation platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Karte",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:4",
+      "description": "Karte is a customer engagement and marketing automation platform that enables businesses to understand their customers, deliver personalised experiences, and optimise marketing strategies.",
+      "institutions": 0
+    },
+    {
+      "name": "Kasika",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Kasika is a Japanese marketing automation tool developed by CocoLive.",
+      "institutions": 0
+    },
+    {
+      "name": "Keap",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 dom",
+      "description": "Keap offers an email marketing and sales platform for small businesses, including products to manage customers, customer relationship management, marketing, and ecommerce.",
+      "institutions": 0
+    },
+    {
+      "name": "Kintone",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1 dom",
+      "description": "Kintone is a versatile cloud-based platform offering business data management, CRM, and custom app development.",
+      "institutions": 0
+    },
+    {
+      "name": "KlickTipp",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 dom",
+      "description": "KlickTipp is an email marketing service offering a range of features for businesses, including newsletter creation, SMS functionality, and marketing automation tools.",
+      "institutions": 0
+    },
+    {
+      "name": "Koala",
+      "suggests": "CRM",
+      "current": [
+        "Analytics",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Koala is an analytical product with CRM features that helps businesses efficiently identify and track prospects, providing valuable insights and streamlining the sales process.",
+      "institutions": 0
+    },
+    {
+      "name": "Kustomer",
+      "suggests": "CRM",
+      "current": [
+        "Chatbot",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Kustomer is a CRM platform.",
+      "institutions": 0
+    },
+    {
+      "name": "LEADIN",
+      "suggests": "CRM",
+      "current": [
+        "Analytics"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "LEADIN is a tool that provides insights into individuals who fill out forms on a site, utilizing Hubspot's market-leading CRM for implementation.",
+      "institutions": 0
+    },
+    {
+      "name": "Lasso CRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Lasso CRM is a new home sales CRM solution for builders, developers, and new homes agencies.",
+      "institutions": 0
+    },
+    {
+      "name": "Laylo",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Laylo is a drop CRM platform that enables artists to notify fans when merchandise, tickets, or content becomes available.",
+      "institutions": 0
+    },
+    {
+      "name": "Lead Generated",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Lead Generated is a marketing CRM tool that centralizes customer data, tracks engagement, and automates marketing campaigns.",
+      "institutions": 0
+    },
+    {
+      "name": "LeadChat",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "LeadChat offers live-operators and CRM solutions that utilise LiveChat chat software to facilitate real-time engagement with website visitors for businesses.",
+      "institutions": 0
+    },
+    {
+      "name": "LeadScore",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1",
+      "description": "LeadScore is an inbound marketing automation system facilitating streamlined digital marketing processes.",
+      "institutions": 0
+    },
+    {
+      "name": "Leadsquared",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1",
+      "description": "Leadsquared is a marketing automation software suite.",
+      "institutions": 0
+    },
+    {
+      "name": "Listrak",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework",
+        "Customer Data Platform"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:2 js:2",
+      "description": "Listrak is a AI-based marketing automation and CRM solutions that unify, interpret and personalise data to engage customer across channels and devices.",
+      "institutions": 0
+    },
+    {
+      "name": "Listrak",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Customer Data Platform"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:2 js:2",
+      "description": "Listrak is a AI-based marketing automation and CRM solutions that unify, interpret and personalise data to engage customer across channels and devices.",
+      "institutions": 0
+    },
+    {
+      "name": "Lootly",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Loyalty Program",
+        "Referral Marketing"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2 dom",
+      "description": "Lootly is a loyalty and referral marketing automation software suite for ecommerce businesses.",
+      "institutions": 0
+    },
+    {
+      "name": "LoyaltyLoop",
+      "suggests": "CRM",
+      "current": [
+        "Reviews"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "LoyaltyLoop is an online review management platform that leverages customer loyalty surveys and Net Promoter Score tracking to enhance business reputation and strengthen customer relationships.",
+      "institutions": 0
+    },
+    {
+      "name": "MDS Brand",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "dom",
+      "description": "MDS Brand is a provider of website, CRM, vrtual BDC, SEO, PPC, and live chat solutions for Marine, RV, Powersports, and automotive industries.",
+      "institutions": 0
+    },
+    {
+      "name": "MRI Box and Dice",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "MRI Box and Dice is a CRM platform designed for real estate agencies, providing tools for managing client relationships, property listings, and transactions.",
+      "institutions": 0
+    },
+    {
+      "name": "Markate",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 meta",
+      "description": "Markate is an all-in-one CRM and sales and marketing automation platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Markate",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 meta",
+      "description": "Markate is an all-in-one CRM and sales and marketing automation platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Mashore Method",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Mashore Method is a CRM software designed for real estate businesses to manage customer relationships in one centralized platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Mimiran",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Mimiran is a CRM system designed for managing customer relationships.",
+      "institutions": 0
+    },
+    {
+      "name": "Mindbox",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:3",
+      "description": "Mindbox is a marketing automation platform.",
+      "institutions": 0
+    },
+    {
+      "name": "MissionSuite",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Mission Suite is an all-in-one marketing software solution which combines CRM, email marketing, marketing automation, and inbound marketing tools.",
+      "institutions": 0
+    },
+    {
+      "name": "MissionSuite",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Mission Suite is an all-in-one marketing software solution which combines CRM, email marketing, marketing automation, and inbound marketing tools.",
+      "institutions": 0
+    },
+    {
+      "name": "Mokini",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1",
+      "description": "Mokini is a marketing automation platform designed for ecommerce businesses with customizable templates, user segmentation, and scheduling.",
+      "institutions": 0
+    },
+    {
+      "name": "NationBuilder",
+      "suggests": "CRM",
+      "current": [
+        "CMS",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:2",
+      "description": "NationBuilder is a Los Angeles based technology start-up that develops content management and customer relationship management (CRM) software.",
+      "institutions": 0
+    },
+    {
+      "name": "Neon CRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software",
+        "Fundraising"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:3 dom",
+      "description": "Neon CRM, a Neon One company, is a cloud-based customer relationship management (CRM) software suite for nonprofits of all sizes. Applications include fundraising management, donor management, membership management, even",
+      "institutions": 0
+    },
+    {
+      "name": "NetSuite",
+      "suggests": "CRM",
+      "current": [
+        "Web Server"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "cookies",
+      "description": "NetSuite is a cloud-based enterprise resource planning (ERP) software suite that provides a comprehensive set of business management applications, including financial management, CRM, ecommerce, and more.",
+      "institutions": 0
+    },
+    {
+      "name": "Netdeal",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:3",
+      "description": "Netdeal is a marketing automation platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Notifly",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:3",
+      "description": "Notifly is a marketing automation tool designed to streamline the process of running multi-channel campaigns.",
+      "institutions": 0
+    },
+    {
+      "name": "Odoo",
+      "suggests": "CRM",
+      "current": [
+        "CMS"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "html:1 scriptSrc:1 js:2 dom meta",
+      "description": "Odoo is business management software which includes CRM, ecommerce, billing, accounting, manufacturing, warehouse, project management, and inventory management.",
+      "institutions": 0
+    },
+    {
+      "name": "Ometria",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Customer Data Platform"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:3 dom cookies",
+      "description": "Ometria is a customer insight and marketing automation platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Omnisend",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1 meta cookies",
+      "description": "Omnisend is an ecommerce marketing automation platform that provides an omnichannel marketing strategy for businesses.",
+      "institutions": 0
+    },
+    {
+      "name": "Omnisend Email Marketing & SMS",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Ecommerce"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Omnisend Email Marketing & SMS is an omnichannel marketing automation channel that allows Shopify store owners to manage their SMS, web push notifications, WhatsApp, Facebook messenger, pop-ups, segmentation, and dynamic",
+      "institutions": 0
+    },
+    {
+      "name": "OneCommerce",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Web Server"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "OneCommerce is an ecommerce solution platform that improves conversion rates, supports marketing automation, and utilizes social proof.",
+      "institutions": 0
+    },
+    {
+      "name": "OperateBeyond",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "OperateBeyond is a software development company that offers website design, automated inventory management, CRM, dealer websites, and DMS.",
+      "institutions": 0
+    },
+    {
+      "name": "Opesta",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Opesta is a marketing automation platform for Facebook Messenger.",
+      "institutions": 0
+    },
+    {
+      "name": "Ortto",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Customer Data Platform"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1",
+      "description": "Ortto is a marketing automation and customer data platform that integrates your data, messaging, and analytics into one unified system.",
+      "institutions": 0
+    },
+    {
+      "name": "PCRecruiter",
+      "suggests": "CRM",
+      "current": [
+        "HR / Recruiting"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:3",
+      "description": "PCRecruiter is an ATS/CRM hybrid SaaS solution for recruiting and sourcing professionals.",
+      "institutions": 0
+    },
+    {
+      "name": "Pepper Cloud",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "dom",
+      "description": "Pepper Cloud is a SaaS provider offering CRM solutions for small and middle scale companies across multiple industries.",
+      "institutions": 0
+    },
+    {
+      "name": "Perfex CRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 dom",
+      "description": "Perfex CRM is self hosted customer relationship management software that is a great fit for almost any company, freelancer or many other uses.",
+      "institutions": 0
+    },
+    {
+      "name": "Pipedrive",
+      "suggests": "CRM",
+      "current": [
+        "Chatbot",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1",
+      "description": "Pipedrive is a cloud-based sales CRM.",
+      "institutions": 0
+    },
+    {
+      "name": "Piperun",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Piperun is a CRM designed to automate and enhance sales performance for companies managing complex sales processes and channel partnerships.",
+      "institutions": 0
+    },
+    {
+      "name": "Platformly",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Platformly is a tool that provides intelligent marketing automation for online businesses.",
+      "institutions": 0
+    },
+    {
+      "name": "Plezi",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Plezi is a marketing automation tool.",
+      "institutions": 0
+    },
+    {
+      "name": "Poltio",
+      "suggests": "CRM",
+      "current": [
+        "Data Management Platform"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Poltio is a platform enabling brands to enhance user segment understanding, driving revenue growth and fostering customer relationships.",
+      "institutions": 0
+    },
+    {
+      "name": "Popmenu",
+      "suggests": "Marketing Automation",
+      "current": [
+        "CMS",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:2 cookies",
+      "description": "Popmenu is a restaurant platform which offers CMS, online menus, ordering and delivery and marketing automation solutions.",
+      "institutions": 0
+    },
+    {
+      "name": "Power CRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Power CRM is a platform tailored for vehicle protection associations, offering support to meet operational needs.",
+      "institutions": 0
+    },
+    {
+      "name": "Prediggo",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Booking System",
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "Prediggo is an ecommerce personalisation and marketing automation software provider.",
+      "institutions": 0
+    },
+    {
+      "name": "Privy",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:3",
+      "description": "Privy is a all-in-one marketing automation platform for ecommerce.",
+      "institutions": 0
+    },
+    {
+      "name": "Procurios",
+      "suggests": "CRM",
+      "current": [
+        "CMS"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "meta",
+      "description": "Procurios is a provider of software solutions tailored to nonprofit and member organizations, offering website management, fundraising, CRM, and event tools.",
+      "institutions": 0
+    },
+    {
+      "name": "Profeat",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Profeat is a CRM software enabling integration of WhatsApp and Instagram.",
+      "institutions": 0
+    },
+    {
+      "name": "PropFlo",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "PropFlo is an AI-powered real estate CRM designed for developers and channel partners to streamline customer relationship management and enhance sales processes.",
+      "institutions": 0
+    },
+    {
+      "name": "Property Shell",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Property Shell is a real estate CRM solution to manage, develop, and drive the selling of residential and commercial property, and more.",
+      "institutions": 0
+    },
+    {
+      "name": "Prostoy",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Prostoy is a business CRM system designed for small and medium businesses to manage customer relationships and streamline operations.",
+      "institutions": 0
+    },
+    {
+      "name": "Proto AICX",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:2",
+      "description": "Proto AICX is a provider of inclusive CX automation and multilingual contact center solutions, enabling deployment of AI chatbots, live chat, ticketing systems, and CRM for businesses and governments.",
+      "institutions": 0
+    },
+    {
+      "name": "Rapid Active CRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Rapid Active CRM is an all-in-one sales and marketing automation platform designed to drive business growth.",
+      "institutions": 0
+    },
+    {
+      "name": "Rapid Active CRM",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Rapid Active CRM is an all-in-one sales and marketing automation platform designed to drive business growth.",
+      "institutions": 0
+    },
+    {
+      "name": "Richpanel",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:3",
+      "description": "Richpanel is a purpose-built CRM and customer support platform for ecommerce and DTC brands.",
+      "institutions": 0
+    },
+    {
+      "name": "Rinsed",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Rinsed is a customer relationship management software tailored for the car wash industry.",
+      "institutions": 0
+    },
+    {
+      "name": "SALESmanago",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Customer Data Platform",
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "SALESmanago is a no-code marketing automation and customer data platform designed for mid-sized buinesses and enterprises.",
+      "institutions": 0
+    },
+    {
+      "name": "SEO Samba",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "SEO Samba is a marketing automation solution designed for franchises and enterprises.",
+      "institutions": 0
+    },
+    {
+      "name": "SOTA CRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "SOTA CRM is a software solution designed to help businesses manage customer relationships and related data.",
+      "institutions": 0
+    },
+    {
+      "name": "Sailthru",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:4 dom meta cookies",
+      "description": "Sailthru is a marketing automation software and multi-channel personalisation tool that serves ecommerce and media brands.",
+      "institutions": 0
+    },
+    {
+      "name": "Salesforce Marketing Cloud Account Engagement",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:5 dom headers",
+      "description": "Salesforce Marketing Cloud Account Engagement (formerly known as Pardot) is an application specifically designed for B2B marketing automation.",
+      "institutions": 0
+    },
+    {
+      "name": "Salesforce Service Cloud",
+      "suggests": "CRM",
+      "current": [
+        "Chatbot",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Salesforce Service Cloud is a customer relationship management (CRM) platform for customer service and support.",
+      "institutions": 0
+    },
+    {
+      "name": "Satori",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1 dom",
+      "description": "Satori provides marketing automation software.",
+      "institutions": 0
+    },
+    {
+      "name": "SberCRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "SberCRM is a customer relationship management system designed to help businesses manage leads, track customer interactions, and convert prospects into sales.",
+      "institutions": 0
+    },
+    {
+      "name": "Shanon",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Shanon provides marketing automation software.",
+      "institutions": 0
+    },
+    {
+      "name": "ShopiMind",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:2",
+      "description": "ShopiMind is a multi-channel marketing automation solution for all ecommerce activities.",
+      "institutions": 0
+    },
+    {
+      "name": "Simbla",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:3",
+      "description": "Simbla is an AI-powered CRM platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Sitecore Engagement Cloud",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Customer Data Platform"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Sitecore Engagement Cloud is a cloud-based customer experience management platform offering content management, personalisation, marketing automation, analytics, and omni-channel delivery for enhancing digital marketing ",
+      "institutions": 0
+    },
+    {
+      "name": "Sonar",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:2",
+      "description": "Sonar is a fully integrated system offering loan origination and point-of-sale solutions, combined with customer relationship management capabilities.",
+      "institutions": 0
+    },
+    {
+      "name": "Squadata",
+      "suggests": "CRM",
+      "current": [
+        "Advertising"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Squadata provides data based marketing and advertising solutions including email retargeting, CRM onboarding, data monetisation, data management platform.",
+      "institutions": 0
+    },
+    {
+      "name": "Squire",
+      "suggests": "CRM",
+      "current": [
+        "Booking System",
+        "Business Software",
+        "Advertising"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:3",
+      "description": "Squire is a business management platform for barbershops, offering appointment scheduling, payment processing, and customer relationship management tools​.",
+      "institutions": 0
+    },
+    {
+      "name": "Subbly",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Web Server"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1 meta",
+      "description": "Subbly is a web-based subscription ecommerce platform designed to help businesses build websites, enhance marketing automation, create coupon and discount codes and manage customers.",
+      "institutions": 0
+    },
+    {
+      "name": "Sugester",
+      "suggests": "CRM",
+      "current": [
+        "Chatbot",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "Sugester is a platform that combines CRM, helpdesk, and project management features, offering an all-in-one solution for small and medium-sized businesses.",
+      "institutions": 0
+    },
+    {
+      "name": "SuiteCRM",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 dom cookies",
+      "description": "SuiteCRM is an open-source alternative to proprietary software such as Salesforce and Dynamics, offering customer relationship management features.",
+      "institutions": 0
+    },
+    {
+      "name": "Superchat",
+      "suggests": "CRM",
+      "current": [
+        "Chatbot",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Superchat is an all-in-one messaging software that helps businesses build loyal customer relationships, send and automate newsletters, sell products, and answer questions.",
+      "institutions": 0
+    },
+    {
+      "name": "TN Express Web",
+      "suggests": "CRM",
+      "current": [
+        "CMS"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "cookies",
+      "description": "Tessitura is an enterprise application to manage activities in ticketing, fundraising, customer relationship management, and marketing.",
+      "institutions": 0
+    },
+    {
+      "name": "Top Producer",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Top Producer is an all-in-one business management platform, tailored for real estate as a CRM solution.",
+      "institutions": 0
+    },
+    {
+      "name": "Tradable Bits",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Tradable Bits is a platform that integrates content marketing, e-commerce, CRM, and targeted communication into a unified system.",
+      "institutions": 0
+    },
+    {
+      "name": "Upsales",
+      "suggests": "CRM",
+      "current": [
+        "JavaScript Framework",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Upsales is an enterprise CRM and marketing automation tool.",
+      "institutions": 0
+    },
+    {
+      "name": "Upsales",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Upsales is an enterprise CRM and marketing automation tool.",
+      "institutions": 0
+    },
+    {
+      "name": "Vepaar",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Vepaar is a software solution designed to help boost online businesses, providing features such as WhatsApp CRM, an online store, and a WhatsApp poll.",
+      "institutions": 0
+    },
+    {
+      "name": "Vimos",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Vimos is a marketing SaaS specializing in marketing automation.",
+      "institutions": 0
+    },
+    {
+      "name": "Visitor Chat",
+      "suggests": "CRM",
+      "current": [
+        "Chatbot"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:4",
+      "description": "Visitor Chat is a service that provides businesses with managed automotive live chat solutions to improve customer relationships.",
+      "institutions": 0
+    },
+    {
+      "name": "vinSUITE",
+      "suggests": "CRM",
+      "current": [
+        "Web Server"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "meta",
+      "description": "vinSUITE is a DTC software platform designed specifically for wineries, enabling streamlined management of customer relationships, inventory, sales, and marketing operations in one centralized system.",
+      "institutions": 0
+    },
+    {
+      "name": "WORKetc",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 dom",
+      "description": "WORKetc is an all-in-one cloud computing platform offering web-based CRM, project management, and collaboration tools.",
+      "institutions": 0
+    },
+    {
+      "name": "WebEngage",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "WebEngage is a customer data platform and marketing automation suite.",
+      "institutions": 0
+    },
+    {
+      "name": "Wigzo",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "Wigzo is e-commerce marketing automation platform that helps businesses of every size dig deeper into data to find opportunities to increase their sales and revenue.",
+      "institutions": 0
+    },
+    {
+      "name": "Wisepops",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Widget",
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "Wisepops is an intelligent popup and marketing automation system that offers marketers a single platform from which to create and manage website popups.",
+      "institutions": 0
+    },
+    {
+      "name": "Wisetracker",
+      "suggests": "Marketing Automation",
+      "current": [
+        "Analytics",
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "Wisetracker is a behavioral analytics and marketing automation tool.",
+      "institutions": 0
+    },
+    {
+      "name": "WooChat",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "js:1 dom",
+      "description": "WooChat is a marketing automation tool that helps store owners to grow their business.",
+      "institutions": 0
+    },
+    {
+      "name": "WoowUp",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:1",
+      "description": "WoowUp is a tool of CRM and predictive marketing.",
+      "institutions": 0
+    },
+    {
+      "name": "Xanario",
+      "suggests": "CRM",
+      "current": [
+        "Web Server"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "meta",
+      "description": "Xanario is an ecommerce platform that offers a comprehensive system for online shop solutions, including CMS, CRM, shop management, blog integration, POS system, and warehouse management.",
+      "institutions": 0
+    },
+    {
+      "name": "Zenu",
+      "suggests": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1 js:2",
+      "description": "Zenu is an all-in-one CRM solution designed to manage real estate operations, including client interactions, property listings, and sales processes.",
+      "institutions": 0
+    },
+    {
+      "name": "Zoho Recruit",
+      "suggests": "CRM",
+      "current": [
+        "HR / Recruiting"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": true,
+      "evidence": "scriptSrc:1",
+      "description": "Zoho Recruit is a recruitment platform that integrates an applicant tracking system (ATS) with customer relationship management (CRM) functionality.",
+      "institutions": 0
+    }
+  ],
+  "no_evidence": [
+    {
+      "name": "Autoketing",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": false,
+      "evidence": "",
+      "description": "Autoketing is a marketing automation platform."
+    },
+    {
+      "name": "Genoo",
+      "suggests": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "hasEvidence": false,
+      "evidence": "",
+      "description": "Genoo is a provider of marketing automation and online marketing tools."
+    }
+  ],
+  "prevalence_basis": {
+    "scanned": 645,
+    "note": "institutions on which the technology currently fires, over the Phase A homepage corpus (unscannable captures excluded per UNI-231)"
+  }
+}
