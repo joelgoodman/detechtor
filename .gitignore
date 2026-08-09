@@ -120,3 +120,5 @@ patterns/_archive/*.bak
 
 # UNI-156 Phase 2: local Wasabi-fetched HTML corpus — never commit fetched content
 corpus/
+corpus-t4-candidates/
+corpus-extra/

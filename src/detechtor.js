@@ -5,10 +5,14 @@ const fs = require('fs-extra');
 const path = require('path');
 const config = require('./config');
 const { mapCategory } = require('./category-mapping');
+const { admittedDomRules, checkDomRules } = require('./dom-rules');
 
 class DeTECHtor {
   constructor(options = {}) {
     this.patterns = this.loadPatterns();
+    // UNI-224: the set of CSS selectors the admitted `dom` rules need, computed once.
+    // Without this the engine has nothing to query and every dom rule is dead.
+    this.domPlan = this.buildDomPlan();
     this.browser = null;
     this.startTime = null;
     // UNI-140: when enabled, observe runtime network requests (page.on('request'))
@@ -21,6 +25,57 @@ class DeTECHtor {
     this.networkSettleMs = options.networkSettleMs || 2000;
   }
   
+  /**
+   * Build the per-selector collection plan for `dom` rules (UNI-224).
+   *
+   * Collects ONLY what the admitted rules actually need per selector — text, specific attribute
+   * names, specific property names — rather than serializing whole elements. With ~1,570 distinct
+   * selectors in play, dumping every attribute of every match would balloon the page.evaluate
+   * payload for no gain.
+   */
+  buildDomPlan(options = {}) {
+    // strict: fail LOUDLY at load on any dom rule the engine cannot evaluate. This is the Phase C
+    // guardrail — the whole defect was that unevaluable rules died silently. Default off so a
+    // single bad pattern cannot abort a production scan; the CI lint is where it must bite.
+    const strict = options.strict === true;
+    const plan = new Map();
+    const problems = [];
+    for (const [name, def] of Object.entries(this.patterns)) {
+      if (name === '_metadata' || !def || typeof def !== 'object' || def.dom === undefined) continue;
+      const { rules, problems: found } = checkDomRules(name, def);
+      if (found.length) {
+        problems.push(...found);
+        if (!strict && config.verbose) {
+          for (const p of found) console.warn(`Unusable dom rule for ${p.tech}: ${p.message}`);
+        }
+        def._domRules = [];
+        continue;
+      }
+      def._domRules = rules; // cached for evaluatePattern
+      for (const r of rules) {
+        if (!plan.has(r.selector)) {
+          plan.set(r.selector, { selector: r.selector, text: false, attrs: new Set(), props: new Set() });
+        }
+        const entry = plan.get(r.selector);
+        if (r.kind === 'text') entry.text = true;
+        else if (r.kind === 'attributes') entry.attrs.add(r.name);
+        else if (r.kind === 'properties') entry.props.add(r.name);
+      }
+    }
+    if (strict && problems.length) {
+      throw new Error(
+        `${problems.length} dom rule(s) the engine cannot evaluate:\n` +
+          problems.map((p) => `  ${p.tech} [${p.kind}]: ${p.message}`).join('\n'),
+      );
+    }
+    return [...plan.values()].map((e) => ({
+      selector: e.selector,
+      text: e.text,
+      attrs: [...e.attrs],
+      props: [...e.props],
+    }));
+  }
+
   loadPatterns() {
     const patterns = {};
     // Curated (higher-ed-authored) partials get provenance-stamped so downstream
@@ -640,6 +695,51 @@ class DeTECHtor {
         };
       });
       
+      // Selector-based DOM evidence (UNI-224). Patterns key `dom` on CSS selectors; this is the
+      // step that was never implemented, which is why all 1,456 dom-carrying techs were dead.
+      // Returns { selector: [ { text, attributes, properties } ] }, collecting only the fields the
+      // admitted rules ask for. An invalid selector is skipped rather than aborting the sweep.
+      evidence.domNodes = await page.evaluate((plan) => {
+        const MAX_NODES = 25;   // enough for "any match"; bounds the payload
+        const MAX_TEXT = 500;   // dom text regexes are anchored/short
+        const out = {};
+        for (const spec of plan) {
+          let els;
+          try {
+            els = document.querySelectorAll(spec.selector);
+          } catch (e) {
+            continue; // malformed selector — Phase C rejects these at load
+          }
+          if (!els.length) continue;
+          const nodes = [];
+          const limit = Math.min(els.length, MAX_NODES);
+          for (let i = 0; i < limit; i++) {
+            const el = els[i];
+            const node = {};
+            if (spec.text) node.text = (el.textContent || '').slice(0, MAX_TEXT);
+            if (spec.attrs.length) {
+              node.attributes = {};
+              for (const a of spec.attrs) {
+                const v = el.getAttribute(a);
+                if (v !== null) node.attributes[a] = v;
+              }
+            }
+            if (spec.props.length) {
+              node.properties = {};
+              for (const p of spec.props) {
+                const v = el[p];
+                if (v !== undefined && v !== null) {
+                  node.properties[p] = typeof v === 'object' ? '[object]' : String(v);
+                }
+              }
+            }
+            nodes.push(node);
+          }
+          out[spec.selector] = nodes;
+        }
+        return out;
+      }, this.domPlan);
+
       // Extract cookies (limited for privacy)
       evidence.cookies = await page.cookies();
       
@@ -934,20 +1034,67 @@ class DeTECHtor {
       }
     }
     
-    // DOM element matching (custom for higher-ed patterns)
-    if (pattern.dom && typeof pattern.dom === 'object') {
-      for (const [domKey, domPattern] of Object.entries(pattern.dom)) {
-        if (evidence.dom[domKey]) {
+    // DOM element matching.
+    //
+    // Patterns key `dom` on a CSS SELECTOR. The old code regex-tested `evidence.dom[domKey]`,
+    // a fixed six-key bag (title/bodyClasses/bodyId/headContent/hasElements/jsObjects), so every
+    // selector-keyed rule was dropped before the regex ran — all 1,456 dom-carrying techs were
+    // dead, and the one rule that could fire did so via new RegExp({text:…}) => /[object Object]/i.
+    // Selectors are now evaluated for real in the page and delivered as `evidence.domNodes`:
+    //   { selector: [ { text, attributes, properties } ] }
+    // Rules are normalized through one shape contract and filtered by the Phase A evidence gate
+    // (UNI-224). See src/dom-rules.js.
+    if (pattern.dom !== undefined && evidence.domNodes) {
+      let domRules = pattern._domRules;
+      if (domRules === undefined) {
+        try {
+          domRules = admittedDomRules(name, pattern);
+        } catch (shapeError) {
+          // Unrepresentable shape. Phase C promotes this to a hard error at load; here we skip
+          // the tech's dom rules rather than abort the whole scan.
+          domRules = [];
+          if (config.verbose) {
+            console.warn(`Unusable dom shape for ${name}: ${shapeError.message}`);
+          }
+        }
+        pattern._domRules = domRules;
+      }
+
+      for (const rule of domRules) {
+        const nodes = evidence.domNodes[rule.selector];
+        if (!nodes || nodes.length === 0) continue;
+
+        if (rule.kind === 'exists') {
+          confidence += 70;
+          matchEvidence.push(`DOM: ${rule.selector}`);
+          continue;
+        }
+
+        let regex = null;
+        if (rule.regex) {
           try {
-            if (new RegExp(domPattern, 'i').test(evidence.dom[domKey])) {
-              confidence += 70;
-              matchEvidence.push(`DOM: ${domKey}=${domPattern}`);
-            }
+            regex = new RegExp(rule.regex, 'i');
           } catch (regexError) {
             if (config.verbose) {
-              console.warn(`Invalid DOM regex for ${name}: ${domPattern}`);
+              console.warn(`Invalid DOM regex for ${name}: ${rule.regex}`);
             }
+            continue;
           }
+        }
+
+        const matched = nodes.some((node) => {
+          if (rule.kind === 'text') {
+            return regex ? regex.test(node.text || '') : Boolean(node.text);
+          }
+          const bag = rule.kind === 'attributes' ? node.attributes : node.properties;
+          const value = bag && bag[rule.name];
+          if (value === undefined || value === null) return false;
+          return regex ? regex.test(String(value)) : true;
+        });
+
+        if (matched) {
+          confidence += 70;
+          matchEvidence.push(`DOM: ${rule.selector}[${rule.kind}${rule.name ? `.${rule.name}` : ''}]`);
         }
       }
     }
