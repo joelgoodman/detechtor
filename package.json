@@ -29,7 +29,8 @@
     "test:tiered": "node scripts/tiered-regression.js --assert",
     "audit:categories": "node scripts/category-audit.js",
     "audit:nametoken": "node scripts/category-nametoken-audit.js",
-    "audit:llm:calibrate": "node scripts/category-llm-audit.js --calibrate --models mistral-small3.2:24b,nemotron-3-nano:30b"
+    "audit:llm:calibrate": "node scripts/category-llm-audit.js --calibrate --models mistral-small3.2:24b,nemotron-3-nano:30b",
+    "prevalence": "node scripts/corpus-prevalence.js"
   },
   "keywords": [
     "technology-detection",
