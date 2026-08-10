@@ -164,7 +164,19 @@ const categoryMapping = {
   // not be buried among script CDNs. Licensed foundries (Adobe, Hoefler, MyFonts) vs free Google
   // Fonts is also a design-maturity signal. Icon fonts live here too — Font Awesome and Bootstrap
   // Icons are fonts, not CSS frameworks.
-  311: 'Web Fonts'
+  311: 'Web Fonts',
+  // UNI-235: an honest home for "we do not know what this is".
+  //
+  // 204 technologies were reviewed and not recognised. Leaving them in JavaScript Framework — the
+  // bucket they happened to be dumped in by an un-audited upstream import — silently converted
+  // "no opinion" into the positive claim "this is a JavaScript framework". That is the same defect
+  // as filing every unknown under Business Software, and it is how JavaScript Framework reached
+  // 1,252 entries of which only ~25 were real frameworks.
+  //
+  // Unclassified asserts nothing. It is not a signal category, nothing downstream acts on it, and
+  // an entry sitting here is a visible invitation to identify it rather than a wrong answer that
+  // reads as settled.
+  312: 'Unclassified'
 };
 
 // UNI-233. Some categories are only ever written as STRINGS and have no numeric id, so they are

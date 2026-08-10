@@ -8,52 +8,6 @@
     "UNKNOWN_CATEGORY": [],
     "MISSING_SIGNAL": [
       {
-        "name": "AI LOG",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Actito",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework",
-          "Booking System"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "AdaSiteCompliance",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Adabra",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Adally",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Adobe RoboHelp",
         "suggests": "LMS",
         "categories": [
@@ -72,37 +26,10 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "AiTrillion",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Aimbase",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "AllClients",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Allyable",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
+          "CRM"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -135,19 +62,10 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Autoketing",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "AutomaticSales",
         "suggests": "Chatbot",
         "categories": [
-          "JavaScript Framework"
+          "Marketing Automation"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -156,16 +74,7 @@
         "name": "Automizely",
         "suggests": "CRM",
         "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Automizely",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
+          "Marketing Automation"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -219,25 +128,7 @@
         "name": "Bothive",
         "suggests": "CRM",
         "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "BowNow",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Brainlead",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
+          "Widget"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -252,49 +143,10 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Bronto",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework",
-          "Booking System"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "BySide",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework",
-          "Booking System"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "CDK Global",
         "suggests": "CRM",
         "categories": [
           "Business Software"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "CartKit",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Carts Guru",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework",
-          "Booking System"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -330,7 +182,7 @@
         "name": "Closing Boost",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -341,25 +193,6 @@
         "categories": [
           "Web Server",
           "Business Software"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Cnvert",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Connectif",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "Booking System",
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -379,16 +212,6 @@
         "categories": [
           "Widget",
           "WordPress Plugin"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Convead",
-        "suggests": "CRM",
-        "categories": [
-          "JavaScript Framework",
-          "Business Software"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -442,7 +265,7 @@
         "name": "DatHuis",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -451,7 +274,7 @@
         "name": "Datacrush",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -460,8 +283,7 @@
         "name": "Datarize",
         "suggests": "CRM",
         "categories": [
-          "JavaScript Framework",
-          "Business Software"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -486,28 +308,10 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Doctor.com",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "DreamHost",
         "suggests": "SIS",
         "categories": [
           "Hosting Provider"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Droxit",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -561,7 +365,7 @@
         "name": "Enable",
         "suggests": "Accessibility",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -570,7 +374,6 @@
         "name": "Enkod",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework",
           "Customer Data Platform"
         ],
         "curated": false,
@@ -604,16 +407,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "e-goi",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework",
-          "Booking System"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "eShopCRM",
         "suggests": "CRM",
         "categories": [
@@ -623,21 +416,10 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "eSputnik",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework",
-          "Customer Data Platform"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "emBlue",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework",
-          "Booking System"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -646,7 +428,7 @@
         "name": "Facil-iti",
         "suggests": "Accessibility",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -700,7 +482,7 @@
         "name": "Geggio",
         "suggests": "CRM",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -718,7 +500,7 @@
         "name": "Genoo",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -727,7 +509,7 @@
         "name": "GetMoreStudents",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -736,7 +518,7 @@
         "name": "Getgabs",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -790,8 +572,7 @@
         "name": "Goat Systems",
         "suggests": "CRM",
         "categories": [
-          "JavaScript Framework",
-          "Business Software"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -800,8 +581,7 @@
         "name": "Goat Systems",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework",
-          "Business Software"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -837,7 +617,7 @@
         "name": "HappySync",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -861,29 +641,10 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "HighLevel",
-        "suggests": "CRM",
-        "categories": [
-          "JavaScript Framework",
-          "Business Software"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Highcharts",
         "suggests": "Accessibility",
         "categories": [
           "JavaScript Library"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "HikeOrders",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -997,24 +758,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "icomm",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "icomm - Notifications Hub",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Jadu",
         "suggests": "CRM",
         "categories": [
@@ -1037,15 +780,6 @@
         "suggests": "Marketing Automation",
         "categories": [
           "Booking System"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Kasika",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -1078,15 +812,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "KlickTipp",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Koala",
         "suggests": "CRM",
         "categories": [
@@ -1100,7 +825,7 @@
         "name": "Koishi.js",
         "suggests": "Chatbot",
         "categories": [
-          "JavaScript Framework"
+          "Business Software"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -1161,24 +886,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "LeadScore",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Leadsquared",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Linen",
         "suggests": "Chatbot",
         "categories": [
@@ -1191,17 +898,7 @@
         "name": "Listrak",
         "suggests": "CRM",
         "categories": [
-          "JavaScript Framework",
-          "Customer Data Platform"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Listrak",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework",
+          "Marketing Automation",
           "Customer Data Platform"
         ],
         "curated": false,
@@ -1281,30 +978,11 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Magixite",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Markate",
-        "suggests": "CRM",
-        "categories": [
-          "JavaScript Framework",
-          "Business Software"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Markate",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework",
-          "Business Software"
+          "Business Software",
+          "CRM"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -1337,19 +1015,9 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Mindbox",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "MissionSuite",
         "suggests": "CRM",
         "categories": [
-          "JavaScript Framework",
           "Business Software"
         ],
         "curated": false,
@@ -1359,35 +1027,7 @@
         "name": "MissionSuite",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework",
           "Business Software"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Mokini",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Nagich",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "NagishLi",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -1407,15 +1047,6 @@
         "suggests": "CRM",
         "categories": [
           "Web Server"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Netdeal",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -1458,39 +1089,10 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Notifly",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Odoo",
         "suggests": "CRM",
         "categories": [
           "CMS"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Ometria",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework",
-          "Customer Data Platform"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Omnisend",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework",
-          "Booking System"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -1509,15 +1111,6 @@
         "suggests": "CRM",
         "categories": [
           "Business Software"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Opesta",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -1544,7 +1137,6 @@
         "name": "Ortto",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework",
           "Customer Data Platform"
         ],
         "curated": false,
@@ -1578,15 +1170,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Piman",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Pipedrive",
         "suggests": "CRM",
         "categories": [
@@ -1615,33 +1198,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Platformly",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Plezi",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Pojo.me",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Poltio",
         "suggests": "CRM",
         "categories": [
@@ -1665,16 +1221,6 @@
         "suggests": "SIS",
         "categories": [
           "LMS"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Prediggo",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "Booking System",
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -1788,25 +1334,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "SALESmanago",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "Customer Data Platform",
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "SEO Samba",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "SEOmatic",
         "suggests": "CMS",
         "categories": [
@@ -1825,30 +1352,11 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Sailthru",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework",
-          "Booking System"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Salesforce Service Cloud",
         "suggests": "CRM",
         "categories": [
           "Chatbot",
           "Business Software"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Satori",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -1866,26 +1374,7 @@
         "name": "SendPulse",
         "suggests": "Chatbot",
         "categories": [
-          "JavaScript Framework",
-          "Booking System"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Shanon",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "ShopiMind",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
+          "Marketing Automation"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -1957,7 +1446,7 @@
         "name": "Sprig plugin",
         "suggests": "CMS",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2069,7 +1558,7 @@
         "name": "Tradable Bits",
         "suggests": "CRM",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2078,7 +1567,7 @@
         "name": "Trumpia",
         "suggests": "Chatbot",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2087,8 +1576,7 @@
         "name": "Upsales",
         "suggests": "CRM",
         "categories": [
-          "JavaScript Framework",
-          "Business Software"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2097,8 +1585,7 @@
         "name": "Upsales",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework",
-          "Business Software"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2108,15 +1595,6 @@
         "suggests": "CMS",
         "categories": [
           "Video Platform"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "uRemediate",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2152,7 +1630,7 @@
         "name": "Vimos",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2161,7 +1639,7 @@
         "name": "Visible Privacy",
         "suggests": "CMS",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2179,7 +1657,7 @@
         "name": "Voice Intuitive",
         "suggests": "Accessibility",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2224,8 +1702,7 @@
         "name": "WebEngage",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework",
-          "Booking System"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2243,7 +1720,7 @@
         "name": "Wigzo",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2270,8 +1747,7 @@
         "name": "Wisetracker",
         "suggests": "Marketing Automation",
         "categories": [
-          "Analytics",
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2280,7 +1756,7 @@
         "name": "WooChat",
         "suggests": "Marketing Automation",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2371,7 +1847,7 @@
         "name": "Zotabox",
         "suggests": "Chatbot",
         "categories": [
-          "JavaScript Framework"
+          "Unclassified"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
