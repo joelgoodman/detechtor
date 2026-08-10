@@ -1,0 +1,344 @@
+{
+  "generated": "2026-08-10",
+  "ticket": "UNI-235",
+  "note": "Findings collected during the UNI-235 category audit that are NOT categorisation problems and are deliberately not fixed here. pattern_suspect belongs to UNI-237 (detection precision); name_overclaims belongs to UNI-238 (vocabulary and naming).",
+  "pattern_suspect": [
+    {
+      "name": "PWA",
+      "institutions": 678,
+      "reason": "Progressive Web App capability, not an OS. Pattern (manifest) fires too broadly (17.5%)."
+    },
+    {
+      "name": "Ghost",
+      "institutions": 613,
+      "reason": "Pattern includes bare `html:['ghost']` which matches ANY CSS class named 'ghost'. 15.8% firing rate on HE suggests overfires. Tighten to require 'powered by Ghost' or script-source marker."
+    },
+    {
+      "name": "ServiceNow",
+      "institutions": 36,
+      "reason": "Detects via bare 'service-now.com' host; catches portal links without confirming Virtual Agent widget presence"
+    },
+    {
+      "name": "Salesforce Live Agent",
+      "institutions": 27,
+      "reason": "'embeddedservice' token is shared across Salesforce products; could over-match other Service Cloud widgets"
+    },
+    {
+      "name": "Ocea",
+      "institutions": 0,
+      "reason": "Obscure, pattern uncertain."
+    },
+    {
+      "name": "Parmin Cloud",
+      "institutions": 0,
+      "reason": "Obscure cloud service."
+    },
+    {
+      "name": "Qiyeku",
+      "institutions": 0,
+      "reason": "Chinese business database; foreign/obscure."
+    },
+    {
+      "name": "RE:Guest",
+      "institutions": 0,
+      "reason": "Hotel digital selling; obscure/purpose unclear."
+    },
+    {
+      "name": "Solr",
+      "institutions": 0,
+      "reason": "Apache search platform; no JavaScript evidence given."
+    },
+    {
+      "name": "StackPath",
+      "institutions": 0,
+      "reason": "Cloud CDN/DNS provider; no JavaScript evidence given."
+    },
+    {
+      "name": "Tencent Cloud",
+      "institutions": 0,
+      "reason": "Cloud provider; no JavaScript evidence given."
+    },
+    {
+      "name": "Thawte",
+      "institutions": 0,
+      "reason": "SSL certificate provider; no JavaScript evidence."
+    },
+    {
+      "name": "TypeScript",
+      "institutions": 0,
+      "reason": "Language built on JavaScript; not a framework. No evidence given."
+    },
+    {
+      "name": "UKFast",
+      "institutions": 0,
+      "reason": "UK hosting company. No JavaScript evidence given."
+    },
+    {
+      "name": "UNIX",
+      "institutions": 0,
+      "reason": "Operating system family, not JavaScript. No evidence."
+    },
+    {
+      "name": "Ubuntu",
+      "institutions": 0,
+      "reason": "Linux operating system, not JavaScript. No evidence."
+    },
+    {
+      "name": "Virtuoso",
+      "institutions": 0,
+      "reason": "OpenLink SPARQL RDF backend; not JS-related."
+    },
+    {
+      "name": "Vultr",
+      "institutions": 0,
+      "reason": "Cloud compute provider. No JavaScript evidence."
+    },
+    {
+      "name": "Windows CE",
+      "institutions": 0,
+      "reason": "Embedded operating system. No JavaScript evidence."
+    },
+    {
+      "name": "Windows Server",
+      "institutions": 0,
+      "reason": "Server operating system. No JavaScript evidence."
+    },
+    {
+      "name": "XSLT",
+      "institutions": 0,
+      "reason": "XML stylesheet language, not JavaScript."
+    },
+    {
+      "name": "Yandex.Cloud",
+      "institutions": 0,
+      "reason": "Cloud compute platform. No JavaScript evidence."
+    },
+    {
+      "name": "YunoHost",
+      "institutions": 0,
+      "reason": "Server OS for self-hosted web apps. No JavaScript."
+    },
+    {
+      "name": "Flywheel",
+      "institutions": 0,
+      "reason": "Hosting provider, not a JavaScript framework at all."
+    }
+  ],
+  "name_overclaims": [
+    {
+      "name": "Google Maps",
+      "institutions": 206,
+      "reason": "Mapping widget/service, not framework"
+    },
+    {
+      "name": "Amazon S3",
+      "institutions": 177,
+      "reason": "Object storage service, not framework"
+    },
+    {
+      "name": "Amazon Web Services",
+      "institutions": 177,
+      "reason": "Cloud infrastructure provider"
+    },
+    {
+      "name": "UIKit",
+      "institutions": 28,
+      "reason": "Front-end framework, not iOS framework"
+    },
+    {
+      "name": "Zendesk",
+      "institutions": 19,
+      "reason": "Category name 'Chatbot' overclaims primary function: Zendesk is a helpdesk/support platform; pattern detects chat widget only"
+    },
+    {
+      "name": "Freshdesk",
+      "institutions": 16,
+      "reason": "Freshdesk is primarily helpdesk/support software, not chatbot; chat widget is one channel of a multi-channel support suite"
+    },
+    {
+      "name": "Instant.Page",
+      "institutions": 12,
+      "reason": "Preloading library, not a framework. No application structure imposed."
+    },
+    {
+      "name": "Lozad.js",
+      "institutions": 9,
+      "reason": "Lazy-loading library. Callable utility, not application structure."
+    },
+    {
+      "name": "Cloudinary",
+      "institutions": 8,
+      "reason": "Image CDN service, not a framework. No structural role."
+    },
+    {
+      "name": "LazySizes unveilhooks plugin",
+      "institutions": 8,
+      "reason": "Lazy-loading plugin. Extends utility library, not a framework."
+    },
+    {
+      "name": "Signal",
+      "institutions": 7,
+      "reason": "BrightTag advertising tracker; Signal name misleading"
+    },
+    {
+      "name": "HighLevel",
+      "institutions": 7,
+      "reason": "Hosted CRM/marketing platform via JS widget snippet."
+    },
+    {
+      "name": "Imgix",
+      "institutions": 7,
+      "reason": "Image CDN/optimization service, not a framework."
+    },
+    {
+      "name": "MailChimp for WordPress",
+      "institutions": 7,
+      "reason": "Email marketing plugin, not a framework for application structure."
+    },
+    {
+      "name": "Oracle RightNow",
+      "institutions": 7,
+      "reason": "Oracle Service Cloud is support/service platform; 'Chatbot' name doesn't reflect primary function of knowledge/service delivery"
+    },
+    {
+      "name": "Intersection Observer",
+      "institutions": 6,
+      "reason": "Browser API for visibility detection, polyfilled as utility."
+    },
+    {
+      "name": "Quicklink",
+      "institutions": 6,
+      "reason": "Prefetch utility library, not a framework for application structure."
+    },
+    {
+      "name": "FingerprintJS",
+      "institutions": 3,
+      "reason": "Browser fingerprinting library, not application framework."
+    },
+    {
+      "name": "Qualified",
+      "institutions": 3,
+      "reason": "Hosted B2B marketing/chatbot service via JS embed."
+    },
+    {
+      "name": "Cloudimage",
+      "institutions": 2,
+      "reason": "Image transformation CDN service, not a framework."
+    },
+    {
+      "name": "Snowplow Analytics",
+      "institutions": 2,
+      "reason": "Behavioral analytics platform, not application framework."
+    },
+    {
+      "name": "Microsoft SharePoint",
+      "institutions": 2,
+      "reason": "Named for product line, but CMS is one use case among many (intranet, team collaboration, document mgmt)."
+    },
+    {
+      "name": "MyFonts",
+      "institutions": 1,
+      "reason": "Font distributor; 'MyFonts' implies service breadth but detects CDN link only."
+    },
+    {
+      "name": "RockRMS",
+      "institutions": 1,
+      "reason": "Church management system application, not a JS framework."
+    },
+    {
+      "name": "Help Scout",
+      "institutions": 1,
+      "reason": "Help Scout is customer service platform (email + KB + chat); multi-channel support, not primarily chatbot"
+    },
+    {
+      "name": "Adobe Flash",
+      "institutions": 0,
+      "reason": "Multimedia platform (defunct); categorization misfits modern stack."
+    },
+    {
+      "name": "Facebook Login",
+      "institutions": 0,
+      "reason": "Auth/login mechanism. Name 'Facebook Login' implies full Facebook platform."
+    },
+    {
+      "name": "Storybook",
+      "institutions": 0,
+      "reason": "Dev tool for UI component workshop; remove Advertising."
+    },
+    {
+      "name": "Repro",
+      "institutions": 0,
+      "reason": "Mobile analytics platform via JS embed, not a framework."
+    },
+    {
+      "name": "Flywheel",
+      "institutions": 0,
+      "reason": "Hosting provider, not a JavaScript framework at all."
+    },
+    {
+      "name": "Google PageSpeed",
+      "institutions": 0,
+      "reason": "Performance tools suite, not an application framework."
+    },
+    {
+      "name": "Gridster",
+      "institutions": 0,
+      "reason": "jQuery plugin for widgets, not application framework."
+    },
+    {
+      "name": "HeadJS",
+      "institutions": 0,
+      "reason": "Script loader/performance utility, not a framework."
+    },
+    {
+      "name": "Ortto",
+      "institutions": 0,
+      "reason": "Marketing CDP platform via JS embed, not a framework."
+    },
+    {
+      "name": "Paper.js",
+      "institutions": 0,
+      "reason": "Vector graphics library, not a framework for applications."
+    },
+    {
+      "name": "EZproxy",
+      "institutions": 0,
+      "reason": "Reverse proxy server, not a JavaScript framework."
+    },
+    {
+      "name": "Emarsys",
+      "institutions": 0,
+      "reason": "B2C marketing platform CDP, not a framework."
+    },
+    {
+      "name": "Enkod",
+      "institutions": 0,
+      "reason": "Marketing CDP platform, not a framework."
+    },
+    {
+      "name": "eSputnik",
+      "institutions": 0,
+      "reason": "Marketing automation service via JS embed."
+    },
+    {
+      "name": "Cookie Assistant",
+      "institutions": 0,
+      "reason": "Cookie consent manager service, not a framework."
+    },
+    {
+      "name": "Cookie Information plugin",
+      "institutions": 0,
+      "reason": "GDPR compliance plugin, not an application framework."
+    },
+    {
+      "name": "Custom Fonts",
+      "institutions": 0,
+      "reason": "Font embedding plugin, not a JavaScript framework."
+    },
+    {
+      "name": "Dealer Spike",
+      "institutions": 0,
+      "reason": "Digital marketing/advertising service, not a framework."
+    }
+  ]
+}
