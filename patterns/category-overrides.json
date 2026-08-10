@@ -13927,6 +13927,1318 @@
       "reason": "Digital marketing/advertising service, not a framework.",
       "institutions": 0,
       "decided": "2026-08-10"
+    },
+    "Stripe": {
+      "categories": [
+        "Payment Processor"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Payment processing gateway, not ad tech",
+      "institutions": 23,
+      "decided": "2026-08-10"
+    },
+    "jQuery Payment": {
+      "categories": [
+        "Payment Processor"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Payment library for credit card forms, not advertising",
+      "institutions": 22,
+      "decided": "2026-08-10"
+    },
+    "SkyVerge": {
+      "categories": [
+        "Payment Processor"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "WooCommerce payment gateway extension, not ad tech",
+      "institutions": 18,
+      "decided": "2026-08-10"
+    },
+    "PayPal": {
+      "categories": [
+        "Payment Processor"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Payment system for money transfers, not advertising",
+      "institutions": 5,
+      "decided": "2026-08-10"
+    },
+    "authorize.net": {
+      "categories": [
+        "Payment Processor"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Payment gateway service, not ad tech",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Google Pay": {
+      "categories": [
+        "Payment Processor"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Digital wallet and payment system, not advertising",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Vanco Payment Solutions": {
+      "categories": [
+        "Fundraising",
+        "Payment Processor"
+      ],
+      "was": [
+        "Fundraising",
+        "Advertising"
+      ],
+      "reason": "Payment processor for nonprofits; keep Fundraising",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Cloudflare Browser Insights": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Analytics",
+        "Advertising"
+      ],
+      "reason": "Website performance measurement tool, not advertising",
+      "institutions": 283,
+      "decided": "2026-08-10"
+    },
+    "Pingdom RUM": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Real user monitoring for performance; category is Analytics",
+      "institutions": 22,
+      "decided": "2026-08-10"
+    },
+    "Datadog": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Advertising",
+        "Analytics"
+      ],
+      "reason": "APM and monitoring platform, already tagged Analytics",
+      "institutions": 16,
+      "decided": "2026-08-10"
+    },
+    "New Relic": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Performance and availability monitoring, not ad tech",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Akamai mPulse": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Real user monitoring solution for performance analysis",
+      "institutions": 7,
+      "decided": "2026-08-10"
+    },
+    "Dynatrace RUM": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Full-stack real user monitoring, not advertising",
+      "institutions": 5,
+      "decided": "2026-08-10"
+    },
+    "Raygun": {
+      "categories": [
+        "Issue Tracker",
+        "Analytics"
+      ],
+      "was": [
+        "Advertising",
+        "Issue Tracker"
+      ],
+      "reason": "Monitoring and bug tracking; Analytics not Advertising",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "Elementor": {
+      "categories": [
+        "WordPress Plugin"
+      ],
+      "was": [
+        "Advertising",
+        "WordPress Plugin"
+      ],
+      "reason": "Website builder platform for page construction",
+      "institutions": 336,
+      "decided": "2026-08-10"
+    },
+    "wpBakery": {
+      "categories": [
+        "WordPress Plugin"
+      ],
+      "was": [
+        "Advertising",
+        "WordPress Plugin"
+      ],
+      "reason": "Visual page builder plugin for WordPress sites",
+      "institutions": 73,
+      "decided": "2026-08-10"
+    },
+    "Divi": {
+      "categories": [
+        "WordPress Theme",
+        "WordPress Plugin"
+      ],
+      "was": [
+        "Advertising",
+        "WordPress Theme",
+        "WordPress Plugin"
+      ],
+      "reason": "Website builder theme; primary function is CMS",
+      "institutions": 55,
+      "decided": "2026-08-10"
+    },
+    "WebsiteBuilder": {
+      "categories": [
+        "CMS"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Page builder for website creation without coding",
+      "institutions": 54,
+      "decided": "2026-08-10"
+    },
+    "Unbounce": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "Web Server",
+        "Advertising"
+      ],
+      "reason": "Landing page builder; categorize as CMS primary function",
+      "institutions": 26,
+      "decided": "2026-08-10"
+    },
+    "Webflow": {
+      "categories": [
+        "CMS"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Website builder SaaS; core function is website building",
+      "institutions": 21,
+      "decided": "2026-08-10"
+    },
+    "GoDaddy CoBlocks": {
+      "categories": [
+        "WordPress Plugin"
+      ],
+      "was": [
+        "WordPress Plugin",
+        "Advertising"
+      ],
+      "reason": "Gutenberg blocks for page building; not ad tech",
+      "institutions": 17,
+      "decided": "2026-08-10"
+    },
+    "SiteOrigin Page Builder": {
+      "categories": [
+        "WordPress Plugin"
+      ],
+      "was": [
+        "WordPress Plugin",
+        "Advertising"
+      ],
+      "reason": "Grid-based page builder plugin for responsive content",
+      "institutions": 13,
+      "decided": "2026-08-10"
+    },
+    "Bricks": {
+      "categories": [
+        "WordPress Theme"
+      ],
+      "was": [
+        "Advertising",
+        "WordPress Theme"
+      ],
+      "reason": "WordPress theme for visual site building",
+      "institutions": 9,
+      "decided": "2026-08-10"
+    },
+    "Oxygen": {
+      "categories": [
+        "WordPress Plugin"
+      ],
+      "was": [
+        "Advertising",
+        "WordPress Plugin"
+      ],
+      "reason": "WordPress page builder plugin, not advertising",
+      "institutions": 7,
+      "decided": "2026-08-10"
+    },
+    "Stackable": {
+      "categories": [
+        "WordPress Plugin"
+      ],
+      "was": [
+        "WordPress Plugin",
+        "Advertising"
+      ],
+      "reason": "Gutenberg block plugin collection, not ad tech",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Thrive Architect": {
+      "categories": [
+        "WordPress Plugin"
+      ],
+      "was": [
+        "WordPress Plugin",
+        "Advertising"
+      ],
+      "reason": "WordPress visual page builder, not advertising platform",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "GenerateBlocks": {
+      "categories": [
+        "WordPress Plugin"
+      ],
+      "was": [
+        "WordPress Plugin",
+        "Advertising"
+      ],
+      "reason": "WordPress page builder blocks, not ad tech",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "BoldGrid": {
+      "categories": [
+        "WordPress Plugin"
+      ],
+      "was": [
+        "CMS",
+        "Advertising",
+        "WordPress Plugin"
+      ],
+      "reason": "WordPress website builder; remove misplaced Advertising",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Framer Sites": {
+      "categories": [
+        "Web Framework"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Design and prototyping tool for building sites",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Atlassian Jira Issue Collector": {
+      "categories": [
+        "Issue Tracker"
+      ],
+      "was": [
+        "Issue Tracker",
+        "Advertising"
+      ],
+      "reason": "Bug tracking tool, not advertising platform",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "OptiMonk": {
+      "categories": [
+        "Ecommerce Marketing"
+      ],
+      "was": [
+        "Ecommerce Marketing",
+        "Advertising"
+      ],
+      "reason": "On-site popup toolkit; Ecommerce Marketing is correct",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "LiveIntent": {
+      "categories": [
+        "Advertising"
+      ],
+      "was": [
+        "Booking System",
+        "Advertising"
+      ],
+      "reason": "Email ad platform (correct); Booking System is wrong",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Koha": {
+      "categories": [
+        "Business Software"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Open-source library management system for institutions",
+      "institutions": 5,
+      "decided": "2026-08-10"
+    },
+    "Mura CMS": {
+      "categories": [
+        "CMS"
+      ],
+      "was": [
+        "CMS",
+        "Advertising"
+      ],
+      "reason": "Content management platform; CMS already correct",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "MemberSpace": {
+      "categories": [
+        "Business Software"
+      ],
+      "was": [
+        "Operating System",
+        "Advertising"
+      ],
+      "reason": "Membership and role-based access solution",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Ensighten": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "Tag manager for tech implementation; not ad serving",
+      "institutions": 30,
+      "decided": "2026-08-10"
+    },
+    "ipify": {
+      "categories": [
+        "Unclassified"
+      ],
+      "was": [
+        "Advertising"
+      ],
+      "reason": "IP geolocation/detection API; infrastructure not ad tech",
+      "institutions": 12,
+      "decided": "2026-08-10"
+    },
+    "Contentsquare": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "UX analytics and optimization platform, not appointment scheduling.",
+      "institutions": 38,
+      "decided": "2026-08-10"
+    },
+    "VWO": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Website testing and conversion optimization platform, not booking/scheduling.",
+      "institutions": 29,
+      "decided": "2026-08-10"
+    },
+    "Optimizely": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Experimentation and A/B testing platform for feature flags and tests.",
+      "institutions": 22,
+      "decided": "2026-08-10"
+    },
+    "Formidable Form": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "WordPress form builder for surveys/quizzes, not a scheduling system.",
+      "institutions": 42,
+      "decided": "2026-08-10"
+    },
+    "Google Optimize": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "A/B testing and multivariate testing tool, not booking software.",
+      "institutions": 16,
+      "decided": "2026-08-10"
+    },
+    "Zoho PageSense": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Conversion optimization and A/B testing platform.",
+      "institutions": 13,
+      "decided": "2026-08-10"
+    },
+    "Wufoo": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Online form builder for contact/payment forms, not appointment scheduling.",
+      "institutions": 11,
+      "decided": "2026-08-10"
+    },
+    "Salesforce Interaction Studio": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Customer data analytics and personalization, not scheduling/booking.",
+      "institutions": 14,
+      "decided": "2026-08-10"
+    },
+    "AB Tasty": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "A/B testing and personalization platform.",
+      "institutions": 5,
+      "decided": "2026-08-10"
+    },
+    "iGoDigital": {
+      "categories": [
+        "Ecommerce"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "E-commerce optimization/personalization, not appointment booking.",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "Getsitecontrol": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Form and popup builder widget, not reservation/scheduling system.",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Intellimize": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "ML-powered website personalization and optimization platform.",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Acquia Personalization": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Customer behavior tracking and personalization engine.",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Varify": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "A/B testing platform for web page optimization.",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Attentive": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "SMS and mobile messaging platform, not booking system.",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Creativ.eMail": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Email editor WordPress plugin for marketing campaigns.",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Demandbase": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "B2B analytics and personalization platform.",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Doorbell": {
+      "categories": [
+        "Unclassified"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Customer feedback collection platform; not a booking system.",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Convert": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "A/B testing and personalization solution.",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "ConvertBox": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Lead generation and conversion messaging tool.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "ConvertFlow": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Conversion marketing and funnel builder platform.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Dynamic Yield": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Conversion optimization and personalization platform.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Omniconvert": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Conversion rate optimization and A/B testing software.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Qualaroo": {
+      "categories": [
+        "Unclassified"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Website feedback/survey tool; not appointment or event booking.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Rakuten": {
+      "categories": [
+        "Ecommerce"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Cashback and affiliate/loyalty rewards platform, not booking.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Split Hero": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "WordPress A/B testing tool for page performance comparison.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Twik": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Business intelligence and personalization engine.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Upfluence": {
+      "categories": [
+        "Ecommerce"
+      ],
+      "was": [
+        "Booking System"
+      ],
+      "reason": "Affiliate and influencer marketing platform.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Microsoft Power BI": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "BI platform is analytics tooling, not generic business software",
+      "institutions": 1152,
+      "decided": "2026-08-10"
+    },
+    "Qualtrics": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Analytics",
+        "Business Software"
+      ],
+      "reason": "Primary category is Analytics; Business Software is extraneous",
+      "institutions": 70,
+      "decided": "2026-08-10"
+    },
+    "Qualtrics CoreXM": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Experience management platform is survey/analytics tooling",
+      "institutions": 73,
+      "decided": "2026-08-10"
+    },
+    "Transact Campus": {
+      "categories": [
+        "Payment Processor"
+      ],
+      "was": [
+        "Web Server",
+        "Business Software"
+      ],
+      "reason": "Card/payment solution for higher ed; Payment Processor is precise",
+      "institutions": 278,
+      "decided": "2026-08-10"
+    },
+    "TouchNet": {
+      "categories": [
+        "Payment Processor"
+      ],
+      "was": [
+        "Web Server",
+        "Business Software"
+      ],
+      "reason": "Payment processing system; Payment Processor is correct category",
+      "institutions": 49,
+      "decided": "2026-08-10"
+    },
+    "Blackbaud": {
+      "categories": [
+        "Fundraising"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Fundraising and advancement platform; Fundraising is the signal category",
+      "institutions": 101,
+      "decided": "2026-08-10"
+    },
+    "Academic Works": {
+      "categories": [
+        "Fundraising"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Scholarship/award management used by development/advancement offices",
+      "institutions": 229,
+      "decided": "2026-08-10"
+    },
+    "Raiser's Edge": {
+      "categories": [
+        "Fundraising"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Donor management system for advancement; Fundraising is the category",
+      "institutions": 5,
+      "decided": "2026-08-10"
+    },
+    "AdvancementForm": {
+      "categories": [
+        "Fundraising"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Online giving platform for advancement offices",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Graduway": {
+      "categories": [
+        "Fundraising"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Alumni networking for advancement/donor cultivation",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Adobe Experience Manager Assets": {
+      "categories": [
+        "Digital Asset Management"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "DAM platform; correct category exists",
+      "institutions": 14,
+      "decided": "2026-08-10"
+    },
+    "Bynder": {
+      "categories": [
+        "Digital Asset Management"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Digital asset management platform; correct category exists",
+      "institutions": 5,
+      "decided": "2026-08-10"
+    },
+    "Widen Collective": {
+      "categories": [
+        "Digital Asset Management"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "DAM platform; correct category exists",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Canto": {
+      "categories": [
+        "Digital Asset Management"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Digital asset management platform; correct category exists",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Brandfolder": {
+      "categories": [
+        "Digital Asset Management"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Digital asset management platform; correct category exists",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "PeopleSoft Campus Solutions": {
+      "categories": [
+        "SIS"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Student information system; SIS is the precise category",
+      "institutions": 96,
+      "decided": "2026-08-10"
+    },
+    "Concept3D": {
+      "categories": [
+        "3D/AR Visualization"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Interactive mapping and virtual tours; 3D/AR is precise",
+      "institutions": 76,
+      "decided": "2026-08-10"
+    },
+    "Keap": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Email marketing and sales automation platform",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Anthology Encompass": {
+      "categories": [
+        "Fundraising"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Alumni engagement and advancement platform for development offices",
+      "institutions": 40,
+      "decided": "2026-08-10"
+    },
+    "HubSpot Chat": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "Chatbot"
+      ],
+      "reason": "HubSpot is a marketing automation/CRM platform; chat is secondary feature",
+      "institutions": 44,
+      "decided": "2026-08-10"
+    },
+    "ServiceNow": {
+      "categories": [
+        "Business Software"
+      ],
+      "was": [
+        "Chatbot"
+      ],
+      "reason": "ServiceNow is ITSM/service mgmt platform; Virtual Agent widget is secondary",
+      "institutions": 36,
+      "decided": "2026-08-10"
+    },
+    "Salesforce Service Cloud": {
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Chatbot",
+        "Business Software"
+      ],
+      "reason": "Salesforce Service Cloud is explicitly described as CRM platform in the corpus",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Talkdesk": {
+      "categories": [
+        "Business Software"
+      ],
+      "was": [
+        "Chatbot",
+        "Business Software"
+      ],
+      "reason": "Talkdesk is customer service platform across multiple channels; remove Chatbot",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "SchoolMessenger": {
+      "categories": [
+        "Business Software"
+      ],
+      "was": [
+        "CMS"
+      ],
+      "reason": "West Unified Communications platform \u2014 communication tool, not content management.",
+      "institutions": 17,
+      "decided": "2026-08-10"
+    },
+    "Microsoft SharePoint": {
+      "categories": [
+        "Business Software"
+      ],
+      "was": [
+        "CMS"
+      ],
+      "reason": "Enterprise collaboration/document platform \u2014 CMS is incidental, not primary function.",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Blackboard Transact": {
+      "categories": [
+        "Payment Processor"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Campus card and payment system, not HTTP server software.",
+      "institutions": 709,
+      "decided": "2026-08-10"
+    },
+    "CBORD": {
+      "categories": [
+        "Payment Processor"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Campus card and dining system; payment processor, not web server.",
+      "institutions": 506,
+      "decided": "2026-08-10"
+    },
+    "Cart Functionality": {
+      "categories": [
+        "Ecommerce"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Detects shopping carts; ecommerce signal, not server software.",
+      "institutions": 215,
+      "decided": "2026-08-10"
+    },
+    "WP Rocket": {
+      "categories": [
+        "Performance Optimization",
+        "WordPress Plugin"
+      ],
+      "was": [
+        "Web Server",
+        "WordPress Plugin"
+      ],
+      "reason": "Caching plugin; performance optimization, not server software.",
+      "institutions": 182,
+      "decided": "2026-08-10"
+    },
+    "WooCommerce": {
+      "categories": [
+        "Ecommerce",
+        "WordPress Plugin"
+      ],
+      "was": [
+        "Web Server",
+        "WordPress Plugin"
+      ],
+      "reason": "Ecommerce platform; primary function is commerce, not serving.",
+      "institutions": 100,
+      "decided": "2026-08-10"
+    },
+    "Redis Object Cache": {
+      "categories": [
+        "Performance Optimization"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Caching service; optimizes performance, not HTTP server.",
+      "institutions": 63,
+      "decided": "2026-08-10"
+    },
+    "W3 Total Cache": {
+      "categories": [
+        "Performance Optimization",
+        "WordPress Plugin"
+      ],
+      "was": [
+        "Web Server",
+        "WordPress Plugin"
+      ],
+      "reason": "Caching plugin; performance optimization, not server software.",
+      "institutions": 62,
+      "decided": "2026-08-10"
+    },
+    "WordPress Super Cache": {
+      "categories": [
+        "Performance Optimization",
+        "WordPress Plugin"
+      ],
+      "was": [
+        "Web Server",
+        "WordPress Plugin"
+      ],
+      "reason": "Caching plugin; performance tool, not server software.",
+      "institutions": 43,
+      "decided": "2026-08-10"
+    },
+    "NitroPack": {
+      "categories": [
+        "Performance Optimization"
+      ],
+      "was": [
+        "Web Server",
+        "Performance Optimization"
+      ],
+      "reason": "HTML cache for performance; remove redundant Web Server.",
+      "institutions": 26,
+      "decided": "2026-08-10"
+    },
+    "Squarespace Commerce": {
+      "categories": [
+        "Ecommerce"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Ecommerce platform; primary function is commerce.",
+      "institutions": 20,
+      "decided": "2026-08-10"
+    },
+    "HCL Commerce": {
+      "categories": [
+        "Ecommerce"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Ecommerce platform; commerce, not HTTP server.",
+      "institutions": 15,
+      "decided": "2026-08-10"
+    },
+    "Gutenberg": {
+      "categories": [
+        "WordPress Plugin"
+      ],
+      "was": [
+        "WordPress Plugin",
+        "Web Server"
+      ],
+      "reason": "WordPress block editor; plugin, not server software.",
+      "institutions": 12,
+      "decided": "2026-08-10"
+    },
+    "TinyMCE": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Rich-text editor widget; not HTTP server software.",
+      "institutions": 8,
+      "decided": "2026-08-10"
+    },
+    "Nuxt.js": {
+      "categories": [
+        "JavaScript Framework",
+        "Static Site Generator"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Web Server",
+        "Static Site Generator"
+      ],
+      "reason": "Framework/SSG; remove Web Server, already categorized correctly.",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "Ruby on Rails": {
+      "categories": [
+        "Web Framework"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Application framework; Web Framework, not HTTP server.",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "DreamWeaver": {
+      "categories": [
+        "Product Management Tool"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Web development/design tool; not server software.",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "Froala Editor": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Rich-text editor component; widget, not server.",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "Microsoft Word": {
+      "categories": [
+        "Unclassified"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Word processor; detected on HTML output, not web server software.",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "LiteSpeed Cache": {
+      "categories": [
+        "Performance Optimization",
+        "WordPress Plugin"
+      ],
+      "was": [
+        "Web Server",
+        "WordPress Plugin"
+      ],
+      "reason": "Caching plugin; performance optimization, not server.",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Sitecore Experience Edge": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Edge computing/caching service; CDN, not origin HTTP server.",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Adobe ColdFusion": {
+      "categories": [
+        "Web Framework"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Application server framework; Web Framework category fits better.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "CKEditor": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Rich-text editor; widget component, not server software.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Livewire": {
+      "categories": [
+        "Web Framework"
+      ],
+      "was": [
+        "Web Server",
+        "Operating System"
+      ],
+      "reason": "Laravel framework; Web Framework fits, Operating System wrong.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Magento": {
+      "categories": [
+        "Ecommerce"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Ecommerce platform; commerce, not HTTP server software.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Snipcart": {
+      "categories": [
+        "Ecommerce"
+      ],
+      "was": [
+        "Web Server"
+      ],
+      "reason": "Shopping cart platform; ecommerce, not server software.",
+      "institutions": 1,
+      "decided": "2026-08-10"
     }
   }
 }
