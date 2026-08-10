@@ -27,7 +27,10 @@ function applyCategoryOverrides(patterns, overrides = {}) {
     // Never invent a technology. An override whose target is gone is reported by
     // validateOverrides and gated in CI; at runtime it is simply inert.
     if (!def || typeof def !== 'object') continue;
-    if (!rule || !Array.isArray(rule.categories)) continue;
+    // M3: `validateOverrides` rejects `categories: []` as malformed (a non-empty array is
+    // required) — apply must agree, or a malformed override that fails validation can still
+    // strip every category at runtime before anyone notices the validator would have caught it.
+    if (!rule || !Array.isArray(rule.categories) || rule.categories.length === 0) continue;
 
     const next = { ...def, categories: [...rule.categories] };
     // Remove the numeric form rather than relying on `categories || cats` precedence at

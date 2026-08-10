@@ -156,6 +156,15 @@ for (const [name, def] of techs) {
 const pristine = engine.loadPatterns({ applyOverrides: false });
 findings.OVERRIDE_INVALID = validateOverrides(pristine, CATEGORY_OVERRIDES.overrides || {});
 
+// --- OVERRIDE_COUNT ---------------------------------------------------------------------------
+// M2: an empty or typo'd `overrides` key (e.g. `overide`, or a JSON structural slip that leaves
+// `CATEGORY_OVERRIDES.overrides` undefined) silently disables every UNI-235/UNI-233 correction —
+// `applyCategoryOverrides` just iterates zero entries and every other check above still passes,
+// because there is nothing left to disagree with the patterns on disk. Only a floor on the count
+// catches "the corrections stopped applying" as distinct from "the corrections are correct."
+const overrideCount = Object.keys(CATEGORY_OVERRIDES.overrides || {}).filter((k) => k !== '_comment').length;
+const OVERRIDE_COUNT_FLOOR = 2000;
+
 // --- report ---------------------------------------------------------------------------------
 const collisionsThatMatter = findings.NAME_COLLISION.filter((c) => !c.categoriesAgree);
 const signalCollisions = findings.NAME_COLLISION.filter((c) => c.signalDisagreement);
@@ -167,6 +176,7 @@ console.log(`CATEGORY_CASE       ${findings.CATEGORY_CASE.length}`);
 console.log(`DUPLICATE_CATEGORY  ${findings.DUPLICATE_CATEGORY.length}`);
 console.log(`UNKNOWN_CATEGORY    ${findings.UNKNOWN_CATEGORY.length}`);
 console.log(`OVERRIDE_INVALID    ${findings.OVERRIDE_INVALID.length}`);
+console.log(`OVERRIDE_COUNT      ${overrideCount}  (floor: ${OVERRIDE_COUNT_FLOOR})`);
 console.log(`MISSING_SIGNAL      ${findings.MISSING_SIGNAL.length}  (heuristic screen, NOT gated — ` +
   `${findings.MISSING_SIGNAL.filter((f) => f.curated).length} in curated files)`);
 
@@ -303,6 +313,14 @@ fs.writeFileSync(out, JSON.stringify({ technologies: techs.length, findings, pre
 console.log(`\nwrote ${out}`);
 
 if (GATE) {
+  if (overrideCount < OVERRIDE_COUNT_FLOOR) {
+    console.error(`\nFAIL: only ${overrideCount} override(s) loaded (floor: ${OVERRIDE_COUNT_FLOOR}) — ` +
+      `patterns/category-overrides.json's \`overrides\` key looks empty or misnamed. Every ` +
+      `human-adjudicated category correction would be silently disabled while the rest of this ` +
+      `gate still passes clean.`);
+    process.exit(1);
+  }
+
   const fail = signalCollisions.length + findings.SIGNAL_CASE_DROP.length +
     findings.CATEGORY_CASE.length + findings.DUPLICATE_CATEGORY.length +
     findings.OVERRIDE_INVALID.length;

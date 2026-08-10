@@ -747,15 +747,6 @@
         "source": "higher-ed-cms.json"
       },
       {
-        "name": "HubSpot Chat",
-        "suggests": "Chatbot",
-        "categories": [
-          "Marketing Automation"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "HubSpot WordPress plugin",
         "suggests": "CRM",
         "categories": [
@@ -1381,15 +1372,6 @@
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "ServiceNow",
-        "suggests": "Chatbot",
-        "categories": [
-          "Business Software"
-        ],
-        "curated": true,
-        "source": "higher-ed-chat.json"
       },
       {
         "name": "Simbla",

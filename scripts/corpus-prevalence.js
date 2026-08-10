@@ -113,6 +113,19 @@ if (process.env.PREVALENCE_SHARD !== undefined) {
   const si = args.indexOf('--shards');
   const SHARDS = si === -1 ? Math.max(1, Math.min(os.cpus().length - 2, 12)) : Number(args[si + 1]);
 
+  // M5: `--shards 0`, `--shards abc`, or a non-numeric `--limit` must not produce a silent,
+  // zero-work exit-0 run. A non-integer/non-positive SHARDS means the fan-out loop below never
+  // runs, no child ever fires `finish()`, and the process exits cleanly having written nothing —
+  // indistinguishable from "nothing to do". Fail loudly instead.
+  if (!Number.isInteger(SHARDS) || SHARDS < 1) {
+    console.error(`FATAL: --shards must be a positive integer, got ${JSON.stringify(args[si + 1])}.`);
+    process.exit(1);
+  }
+  if (li !== -1 && (!Number.isFinite(LIMIT) || LIMIT < 1)) {
+    console.error(`FATAL: --limit must be a positive number, got ${JSON.stringify(args[li + 1])}.`);
+    process.exit(1);
+  }
+
   if (!fs.existsSync(CORPUS)) {
     console.error(`FATAL: no corpus at ${CORPUS}. Set CORPUS_DIR or fetch it with scripts/wasabi-corpus.js.`);
     process.exit(1);
@@ -212,10 +225,14 @@ if (process.env.PREVALENCE_SHARD !== undefined) {
     // downstream reads past the head of it. Tie-break by name ascending so a count tie at the 8th
     // place boundary is broken deterministically, not by shard-arrival order (stable sort would
     // otherwise let arrival order decide which technology makes the cut, not just its position).
+    // M6: the tie-break must be code-unit order, not `localeCompare` (locale-dependent — can
+    // reorder identically on every machine that runs it, or not, depending on ICU/locale data).
+    // `sortedKeys` above already sorts with the plain code-unit `.sort()`; match it here so
+    // determinism holds by construction instead of by coincidence of the default locale.
     const cooccurs = {};
     for (const [k, inner] of Object.entries(merged.cooc)) {
       cooccurs[k] = Object.entries(inner)
-        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+        .sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
         .slice(0, 8)
         .map(([n]) => n);
     }

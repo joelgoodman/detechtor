@@ -14309,7 +14309,7 @@
         "Library Systems"
       ],
       "was": [
-        "Business Software"
+        "Advertising"
       ],
       "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 5,
@@ -14366,6 +14366,7 @@
         "Analytics"
       ],
       "was": [
+        "Analytics",
         "Booking System"
       ],
       "reason": "UX analytics and optimization platform, not appointment scheduling.",
@@ -14377,6 +14378,7 @@
         "Analytics"
       ],
       "was": [
+        "Analytics",
         "Booking System"
       ],
       "reason": "Website testing and conversion optimization platform, not booking/scheduling.",
@@ -14396,10 +14398,14 @@
     },
     "Formidable Form": {
       "categories": [
-        "Widget"
+        "Widget",
+        "WordPress Plugin",
+        "Payment Processor"
       ],
       "was": [
-        "Booking System"
+        "WordPress Plugin",
+        "Booking System",
+        "Payment Processor"
       ],
       "reason": "WordPress form builder for surveys/quizzes, not a scheduling system.",
       "institutions": 42,
@@ -14440,10 +14446,12 @@
     },
     "Salesforce Interaction Studio": {
       "categories": [
-        "Analytics"
+        "Analytics",
+        "Data Management Platform"
       ],
       "was": [
-        "Booking System"
+        "Booking System",
+        "Data Management Platform"
       ],
       "reason": "Customer data analytics and personalization, not scheduling/booking.",
       "institutions": 14,
@@ -14476,6 +14484,7 @@
         "Widget"
       ],
       "was": [
+        "Widget",
         "Booking System"
       ],
       "reason": "Form and popup builder widget, not reservation/scheduling system.",
@@ -14498,6 +14507,7 @@
         "Analytics"
       ],
       "was": [
+        "Analytics",
         "Booking System"
       ],
       "reason": "Customer behavior tracking and personalization engine.",
@@ -14528,9 +14538,11 @@
     },
     "Creativ.eMail": {
       "categories": [
-        "Widget"
+        "Widget",
+        "WordPress Plugin"
       ],
       "was": [
+        "WordPress Plugin",
         "Booking System"
       ],
       "reason": "Email editor WordPress plugin for marketing campaigns.",
@@ -14542,6 +14554,7 @@
         "Analytics"
       ],
       "was": [
+        "Analytics",
         "Booking System"
       ],
       "reason": "B2B analytics and personalization platform.",
@@ -14586,6 +14599,7 @@
         "Analytics"
       ],
       "was": [
+        "Analytics",
         "Booking System"
       ],
       "reason": "Conversion marketing and funnel builder platform.",
@@ -14879,28 +14893,6 @@
       ],
       "reason": "Alumni engagement and advancement platform for development offices",
       "institutions": 40,
-      "decided": "2026-08-10"
-    },
-    "HubSpot Chat": {
-      "categories": [
-        "Marketing Automation"
-      ],
-      "was": [
-        "Chatbot"
-      ],
-      "reason": "HubSpot is a marketing automation/CRM platform; chat is secondary feature",
-      "institutions": 44,
-      "decided": "2026-08-10"
-    },
-    "ServiceNow": {
-      "categories": [
-        "Business Software"
-      ],
-      "was": [
-        "Chatbot"
-      ],
-      "reason": "ServiceNow is ITSM/service mgmt platform; Virtual Agent widget is secondary",
-      "institutions": 36,
       "decided": "2026-08-10"
     },
     "Salesforce Service Cloud": {
@@ -20981,7 +20973,7 @@
         "Library Systems"
       ],
       "was": [
-        "Unclassified"
+        "Business Software"
       ],
       "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 0,
@@ -21047,7 +21039,7 @@
         "Library Systems"
       ],
       "was": [
-        "Unclassified"
+        "Business Software"
       ],
       "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 0,
