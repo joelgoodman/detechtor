@@ -40,11 +40,12 @@
  *       v3 — deleted the "defensible" sentence outright rather than qualifying it, leaving one test
  *         built on MISLEAD, which is what rule 1 (PRIMARY function) already implies. First wording
  *         (v3a) illustrated the mislead test with two concrete examples that turned out to be
- *         near-verbatim paraphrases of real technologies in the corpus (a recruiting-CRM-vs-
- *         HR-recruiting pair, and an ecommerce-search-vs-site-search pair) — one of which is a case
+ *         near-verbatim paraphrases of two real technologies in the corpus — one of which is a case
  *         Task 7's sweep is supposed to judge independently, so v3a pre-answered a sweep case from
- *         inside the calibration prompt: mistral 9/12 (3 false flags: TargetX, Slate (Technolutions),
- *         LiveChat; 0 missed), nemotron 11/12 (1 false flag: LiveChat; 0 missed), union 4/4.
+ *         inside the calibration prompt (the point here is that specific examples leaked, not which
+ *         ones — do not reconstruct them by describing the pairs): mistral 9/12 (3 false flags:
+ *         TargetX, Slate (Technolutions), LiveChat; 0 missed), nemotron 11/12 (1 false flag:
+ *         LiveChat; 0 missed), union 4/4.
  *         Replaced (v3b, shipped) with abstract statements of the error CLASS — "a category naming a
  *         different market that shares vocabulary" and "a category describing packaging/delivery
  *         rather than function" — naming no product, market pair, or vertical traceable to this
