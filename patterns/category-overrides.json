@@ -613,6 +613,2606 @@
       ],
       "reason": "Machine-readable metadata for link previews, not an operating system and not a vendor. Fires on 72% of institutions, so its PRESENCE differentiates nothing \u2014 the 28% ABSENT is the signal, and it belongs to the AI-readiness/GEO line.",
       "decided": "2026-08-10"
+    },
+    "Aimtell": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Push notification platform, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "AnythingSlider": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery plugin, explicitly called a library.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Aweber": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "reason": "Email marketing service, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "amCharts": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Charting library, not framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "BEM": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "CSS naming convention, not a framework product.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Beeketing": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Ecommerce marketing suite, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Bench": {
+      "categories": [
+        "Advertising"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Programmatic media platform, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Chakra UI": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "React component library, built on a framework but not one itself.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Claspo": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Pop-up builder for lead capture, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "crypto-js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Crypto utility library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Dotdigital": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Analytics"
+      ],
+      "reason": "Customer engagement platform, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Dreamdata": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Analytics"
+      ],
+      "reason": "Revenue attribution tool, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Drip": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Email marketing platform, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "FlipClock.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Time/countdown display library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Floating UI": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "UI positioning library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Funding Choices": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "GDPR/consent messaging tool, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "fullPage.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Scrolling plugin, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Higher Logic": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Digital marketing platform, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "ImageEngine": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Performance Optimization"
+      ],
+      "reason": "Image CDN/optimization service, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Inertia.js": {
+      "categories": [
+        "Web Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Server-driven SPA protocol, web framework not JS framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "JSZip": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Zip file utility, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "jQuery DevBridge Autocomplete": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery plugin for autocomplete, library not framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "jsPDF": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "PDF generation library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Kwanzoo": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "GTM automation platform, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Loadable-Components": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "React code-splitting library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Locomotive Scroll": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Scroll animation library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Mantine": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "React component library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Mapplic": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Interactive map plugin, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "MyFonts": {
+      "categories": [
+        "Web Fonts"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Font distributor; 'MyFonts' implies service breadth but detects CDN link only.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "math.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Math utility library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Nudgify": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Social proof widget, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "OneAll": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Social login widget, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "OneSignal": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "reason": "Push notification platform, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "OpenLayers": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Map visualization library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "PIXIjs": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "2D rendering engine/library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "PayPal Marketing Solutions": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "Analytics",
+        "JavaScript Framework"
+      ],
+      "reason": "Merchant insights and rewards, primarily analytics.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Poptin": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Lead capture popup tool, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Prefix-Free": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "CSS prefix utility library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Preline UI": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Tailwind component library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Privado": {
+      "categories": [
+        "Data Management Platform"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Privacy/data mapping platform, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Privy": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "reason": "Ecommerce marketing automation, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "RxJS": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Reactive programming library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Segment Consent Manager": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Consent management tool, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Shoelace": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Web component library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "SimplexNoise.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Noise generation library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Statically": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Static asset CDN, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "SvelteKit": {
+      "categories": [
+        "Web Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Application framework, web framework not JS framework category.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Swiffy Slider": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Carousel/slider library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "sIFR": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Font rendering library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "script.aculo.us": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Prototype.js effects library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Tailwind CSS": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "CSS framework, not JavaScript framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Timeago": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Time display jQuery plugin, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "TrustPulse": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Social proof widget, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "TurfJS": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Geospatial analysis library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "UsableNet": {
+      "categories": [
+        "Accessibility"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Web accessibility platform, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Wisepops": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "Widget",
+        "JavaScript Framework"
+      ],
+      "reason": "Popup and marketing automation widget, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "xCharts": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Charting library, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "ZeeMaps": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Map creation widget/service, not a framework.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Mustache": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Template system library",
+      "institutions": 5,
+      "decided": "2026-08-10"
+    },
+    "Radix UI": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "React component library",
+      "institutions": 5,
+      "decided": "2026-08-10"
+    },
+    "Axios": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "HTTP client library",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "BDOW": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "Widget",
+        "JavaScript Framework"
+      ],
+      "reason": "Marketing automation tools; Widget tag incorrect",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "Cleave.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Input formatting library",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "Headless UI": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Component library for React/Vue",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "Ketch": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Privacy compliance platform",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "List.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "List search/filter library",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "libphonenumber": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Phone number formatting library",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "MailerLite": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "Booking System",
+        "JavaScript Framework"
+      ],
+      "reason": "Email marketing platform; Booking tag incorrect",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "Pannellum": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Panorama viewer library",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "Sendinblue": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "reason": "Email marketing platform; Booking tag incorrect",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "Sumo": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "Widget",
+        "JavaScript Framework"
+      ],
+      "reason": "Marketing automation tools",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "W3.CSS": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "CSS framework",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "Act-On": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Marketing automation platform",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Ant Design": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "React UI component library",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Automatic.css": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "WordPress Plugin"
+      ],
+      "reason": "CSS framework for WordPress",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Backstretch": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Background image plugin",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Birdeye": {
+      "categories": [
+        "Business Software"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Widget"
+      ],
+      "reason": "Customer experience platform",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Byscuit": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie management tool",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "D3": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Data visualization library",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Htmx": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "AJAX/interaction library",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "html2canvas": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Screenshot rendering library",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Keen-Slider": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Touch slider library",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Level Access": {
+      "categories": [
+        "Accessibility"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Accessibility solution",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Mapbox.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Mapping library",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Semantic UI": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "UI framework",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Stellar.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Parallax effect library",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "slideout": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Mobile navigation menu library",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "TwicPics": {
+      "categories": [
+        "Digital Asset Management"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Image processing/delivery platform",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "WookMark": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Column layout library",
+      "institutions": 3,
+      "decided": "2026-08-10"
+    },
+    "Bulma": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "CSS framework",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "bowser": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Browser detection library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Choices": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Select input customization library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "ClickDimensions": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Marketing automation platform",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Clym": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Data privacy tool",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "CreateJS": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "HTML5 interactive content library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Customer.io": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Automated messaging platform",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Delivra": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "reason": "Email marketing platform; Booking tag incorrect",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "DigitalOcean Spaces": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Object storage service",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Feathr": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Event marketing tools",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Glider.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Slider library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Glyphicons": {
+      "categories": [
+        "Web Fonts"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Icon font library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Google Sign-in": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Authentication widget",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Highcharts": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Charting library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "iCheck": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Checkbox/radio customization library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "MDBootstrap": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Material Design Bootstrap framework",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Marked": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Markdown parser library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Orbit Slider": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery slider library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Pikaday": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Date picker library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Pinia": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Vue.js state management library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Screenfull.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Fullscreen API wrapper library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "SignalR": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Realtime communication library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Slimbox 2": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Lightbox library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Snap.svg": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "SVG manipulation library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Socket.io": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "WebSocket communication library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "SweetAlert": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Alert/modal library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Swup": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Page transition library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Three.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "3D graphics library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Zepto": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "DOM manipulation library",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Acquia Campaign Factory": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Mautic-powered marketing system",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "AdOpt": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Consent/privacy tool",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "HubSpot Cookie Policy Banner": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie compliance tool",
+      "institutions": 23,
+      "decided": "2026-08-10"
+    },
+    "Imperva": {
+      "categories": [
+        "Hosting Provider"
+      ],
+      "was": [
+        "Database",
+        "JavaScript Framework"
+      ],
+      "reason": "WAF/security service; Database tag incorrect",
+      "institutions": 22,
+      "decided": "2026-08-10"
+    },
+    "scrollreveal": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Scroll animation library",
+      "institutions": 21,
+      "decided": "2026-08-10"
+    },
+    "Twitter typeahead.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Search/autocomplete library",
+      "institutions": 21,
+      "decided": "2026-08-10"
+    },
+    "Packery": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Layout library",
+      "institutions": 20,
+      "decided": "2026-08-10"
+    },
+    "C3.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "D3-based charting library",
+      "institutions": 19,
+      "decided": "2026-08-10"
+    },
+    "Headroom.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "Widget",
+        "JavaScript Framework"
+      ],
+      "reason": "Header scroll library",
+      "institutions": 19,
+      "decided": "2026-08-10"
+    },
+    "Material Design Lite": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "CSS/HTML UI framework",
+      "institutions": 19,
+      "decided": "2026-08-10"
+    },
+    "Spin.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Loading spinner library",
+      "institutions": 19,
+      "decided": "2026-08-10"
+    },
+    "Tiny Slider": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Carousel/slider library",
+      "institutions": 19,
+      "decided": "2026-08-10"
+    },
+    "Chart.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Charting library",
+      "institutions": 18,
+      "decided": "2026-08-10"
+    },
+    "Ionicons": {
+      "categories": [
+        "Web Fonts"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Icon library",
+      "institutions": 18,
+      "decided": "2026-08-10"
+    },
+    "Typed.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Typewriter animation library",
+      "institutions": 18,
+      "decided": "2026-08-10"
+    },
+    "Tablesorter": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery table sorting plugin",
+      "institutions": 17,
+      "decided": "2026-08-10"
+    },
+    "pdfmake": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "PDF generation library",
+      "institutions": 16,
+      "decided": "2026-08-10"
+    },
+    "Morphext": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Text carousel jQuery plugin",
+      "institutions": 15,
+      "decided": "2026-08-10"
+    },
+    "particles.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Particle animation library",
+      "institutions": 15,
+      "decided": "2026-08-10"
+    },
+    "Bunny Fonts": {
+      "categories": [
+        "Web Fonts"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Font delivery service",
+      "institutions": 14,
+      "decided": "2026-08-10"
+    },
+    "Highlight.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Code syntax highlighting",
+      "institutions": 14,
+      "decided": "2026-08-10"
+    },
+    "iubenda": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Privacy/compliance tool",
+      "institutions": 14,
+      "decided": "2026-08-10"
+    },
+    "lite-youtube-embed": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Lazy-load video embed widget",
+      "institutions": 14,
+      "decided": "2026-08-10"
+    },
+    "Microsoft Ajax Content Delivery Network": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Library CDN service",
+      "institutions": 14,
+      "decided": "2026-08-10"
+    },
+    "Moxie": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "Widget",
+        "JavaScript Framework"
+      ],
+      "reason": "XHR2/File API polyfill",
+      "institutions": 14,
+      "decided": "2026-08-10"
+    },
+    "sidr": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery side menu plugin",
+      "institutions": 14,
+      "decided": "2026-08-10"
+    },
+    "Plupload": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "File upload library",
+      "institutions": 13,
+      "decided": "2026-08-10"
+    },
+    "Moment Timezone": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Timezone library for Moment",
+      "institutions": 12,
+      "decided": "2026-08-10"
+    },
+    "Allyant": {
+      "categories": [
+        "Accessibility"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Accessibility solutions",
+      "institutions": 11,
+      "decided": "2026-08-10"
+    },
+    "Instafeed.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Instagram feed library",
+      "institutions": 11,
+      "decided": "2026-08-10"
+    },
+    "Bootbox.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Bootstrap modal library",
+      "institutions": 10,
+      "decided": "2026-08-10"
+    },
+    "Lucide": {
+      "categories": [
+        "Web Fonts"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Icon library",
+      "institutions": 10,
+      "decided": "2026-08-10"
+    },
+    "Mailcheck": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Email validation library",
+      "institutions": 10,
+      "decided": "2026-08-10"
+    },
+    "ProgressBar.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Progress bar library",
+      "institutions": 10,
+      "decided": "2026-08-10"
+    },
+    "p5.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Creative coding library",
+      "institutions": 10,
+      "decided": "2026-08-10"
+    },
+    "punycode": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Unicode encoding library",
+      "institutions": 10,
+      "decided": "2026-08-10"
+    },
+    "Sugar": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Utility functions library",
+      "institutions": 10,
+      "decided": "2026-08-10"
+    },
+    "SugarJS": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Utility functions library",
+      "institutions": 10,
+      "decided": "2026-08-10"
+    },
+    "Uploadcare": {
+      "categories": [
+        "Digital Asset Management"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "File handling platform",
+      "institutions": 9,
+      "decided": "2026-08-10"
+    },
+    "jQuery Modal": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Modal dialog plugin",
+      "institutions": 8,
+      "decided": "2026-08-10"
+    },
+    "CivicTheme": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Design system framework",
+      "institutions": 7,
+      "decided": "2026-08-10"
+    },
+    "JSS": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Advertising"
+      ],
+      "reason": "CSS-in-JS authoring tool; Advertising incorrect",
+      "institutions": 7,
+      "decided": "2026-08-10"
+    },
+    "mobile-detect.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Device detection library",
+      "institutions": 7,
+      "decided": "2026-08-10"
+    },
+    "Parsley.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Form validation library",
+      "institutions": 7,
+      "decided": "2026-08-10"
+    },
+    "Signal": {
+      "categories": [
+        "Analytics"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Advertising"
+      ],
+      "reason": "BrightTag advertising tracker; Signal name misleading",
+      "institutions": 7,
+      "decided": "2026-08-10"
+    },
+    "Hammer.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Touch gesture library",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "Mapbox GL JS": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Mapping library",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "metisMenu": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery menu plugin",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "Pure CSS": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "CSS module framework",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "pickadate.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Date picker library",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "SweetAlert2": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Alert/modal library",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "Texthelp": {
+      "categories": [
+        "Accessibility"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Accessibility software",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "Twitter Emoji (Twemoji)": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Emoji library",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "waitForImages": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Image preload library",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "Genesys Cloud": {
+      "categories": [
+        "Business Software"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "reason": "Contact center software; Booking tag incorrect",
+      "institutions": 5,
+      "decided": "2026-08-10"
+    },
+    "Klaviyo": {
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Email marketing platform",
+      "institutions": 5,
+      "decided": "2026-08-10"
+    },
+    "MathJax": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Math notation rendering library",
+      "institutions": 5,
+      "decided": "2026-08-10"
+    },
+    "Google Font API": {
+      "categories": [
+        "Web Fonts"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Font delivery service, not a framework",
+      "institutions": 1943,
+      "decided": "2026-08-10"
+    },
+    "Font Awesome": {
+      "categories": [
+        "Web Fonts"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Icon toolkit based on CSS",
+      "institutions": 1275,
+      "decided": "2026-08-10"
+    },
+    "jQuery Migrate": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Compatibility library, not framework",
+      "institutions": 1266,
+      "decided": "2026-08-10"
+    },
+    "cdnjs": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Content delivery network",
+      "institutions": 853,
+      "decided": "2026-08-10"
+    },
+    "jsDelivr": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Open-source CDN service",
+      "institutions": 803,
+      "decided": "2026-08-10"
+    },
+    "Adobe Fonts": {
+      "categories": [
+        "Web Fonts"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Font delivery service via Typekit",
+      "institutions": 710,
+      "decided": "2026-08-10"
+    },
+    "Swiper": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Touch slider library, not framework",
+      "institutions": 614,
+      "decided": "2026-08-10"
+    },
+    "Slick": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery carousel slider plugin",
+      "institutions": 541,
+      "decided": "2026-08-10"
+    },
+    "jQuery CDN": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Content delivery network",
+      "institutions": 398,
+      "decided": "2026-08-10"
+    },
+    "Modernizr": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Feature detection library",
+      "institutions": 377,
+      "decided": "2026-08-10"
+    },
+    "Google Hosted Libraries": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Library CDN service",
+      "institutions": 370,
+      "decided": "2026-08-10"
+    },
+    "Lightbox": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Image overlay library",
+      "institutions": 334,
+      "decided": "2026-08-10"
+    },
+    "imagesLoaded": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery image preload plugin",
+      "institutions": 330,
+      "decided": "2026-08-10"
+    },
+    "Unpkg": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "npm package CDN",
+      "institutions": 297,
+      "decided": "2026-08-10"
+    },
+    "OWL Carousel": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery carousel plugin",
+      "institutions": 280,
+      "decided": "2026-08-10"
+    },
+    "Underscore.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Utility functions library",
+      "institutions": 256,
+      "decided": "2026-08-10"
+    },
+    "Google Maps": {
+      "categories": [
+        "Widget"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Mapping widget/service, not framework",
+      "institutions": 206,
+      "decided": "2026-08-10"
+    },
+    "jQuery UI": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery GUI widgets library",
+      "institutions": 204,
+      "decided": "2026-08-10"
+    },
+    "Animate.css": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "CSS animation library",
+      "institutions": 202,
+      "decided": "2026-08-10"
+    },
+    "Moment.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Date/time utility library",
+      "institutions": 196,
+      "decided": "2026-08-10"
+    },
+    "Magnific Popup": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Lightbox/modal library",
+      "institutions": 189,
+      "decided": "2026-08-10"
+    },
+    "Amazon S3": {
+      "categories": [
+        "Hosting Provider"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Object storage service, not framework",
+      "institutions": 177,
+      "decided": "2026-08-10"
+    },
+    "Amazon Web Services": {
+      "categories": [
+        "Hosting Provider"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cloud infrastructure provider",
+      "institutions": 177,
+      "decided": "2026-08-10"
+    },
+    "ZURB Foundation": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "CSS/HTML framework",
+      "institutions": 176,
+      "decided": "2026-08-10"
+    },
+    "AOS": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Scroll animation library",
+      "institutions": 145,
+      "decided": "2026-08-10"
+    },
+    "DataTables": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery table plugin",
+      "institutions": 121,
+      "decided": "2026-08-10"
+    },
+    "parallax.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Parallax scrolling library",
+      "institutions": 116,
+      "decided": "2026-08-10"
+    },
+    "Emotion": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Advertising"
+      ],
+      "reason": "CSS-in-JS library; Advertising tag incorrect",
+      "institutions": 107,
+      "decided": "2026-08-10"
+    },
+    "Goober": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "CSS-in-JS styling library",
+      "institutions": 107,
+      "decided": "2026-08-10"
+    },
+    "Lodash": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Utility functions library",
+      "institutions": 106,
+      "decided": "2026-08-10"
+    },
+    "Flickity": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Slider library",
+      "institutions": 97,
+      "decided": "2026-08-10"
+    },
+    "MUI": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "React component library, not framework",
+      "institutions": 96,
+      "decided": "2026-08-10"
+    },
+    "BootstrapCDN": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Content delivery network",
+      "institutions": 91,
+      "decided": "2026-08-10"
+    },
+    "FancyBox": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Lightbox/modal library",
+      "institutions": 87,
+      "decided": "2026-08-10"
+    },
+    "Easy Pie Chart": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery pie chart plugin",
+      "institutions": 80,
+      "decided": "2026-08-10"
+    },
+    "Select2": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery select plugin",
+      "institutions": 80,
+      "decided": "2026-08-10"
+    },
+    "Tippy.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Tooltip/popover library",
+      "institutions": 64,
+      "decided": "2026-08-10"
+    },
+    "Bunny": {
+      "categories": [
+        "CDN"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "BunnyCDN content delivery",
+      "institutions": 62,
+      "decided": "2026-08-10"
+    },
+    "WOW": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Web Server"
+      ],
+      "reason": "Scroll animation library; Web Server tag spurious",
+      "institutions": 54,
+      "decided": "2026-08-10"
+    },
+    "bxSlider": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "CDN",
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery slider library",
+      "institutions": 52,
+      "decided": "2026-08-10"
+    },
+    "Bootstrap Icons": {
+      "categories": [
+        "Web Fonts"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Icon library",
+      "institutions": 51,
+      "decided": "2026-08-10"
+    },
+    "Chosen": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Web Server"
+      ],
+      "reason": "jQuery select plugin; Web Server tag spurious",
+      "institutions": 50,
+      "decided": "2026-08-10"
+    },
+    "Cookie Control": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie compliance tool",
+      "institutions": 47,
+      "decided": "2026-08-10"
+    },
+    "prettyPhoto": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery lightbox plugin",
+      "institutions": 47,
+      "decided": "2026-08-10"
+    },
+    "Handlebars": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Template engine library",
+      "institutions": 42,
+      "decided": "2026-08-10"
+    },
+    "Hoefler&Co": {
+      "categories": [
+        "Web Fonts"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Font service delivery",
+      "institutions": 42,
+      "decided": "2026-08-10"
+    },
+    "styled-components": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "Advertising"
+      ],
+      "reason": "CSS-in-JS library; Advertising tag incorrect",
+      "institutions": 42,
+      "decided": "2026-08-10"
+    },
+    "Infinite Scroll": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "jQuery pagination plugin",
+      "institutions": 41,
+      "decided": "2026-08-10"
+    },
+    "Matter.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Physics engine library",
+      "institutions": 38,
+      "decided": "2026-08-10"
+    },
+    "RequireJS": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Module loader library",
+      "institutions": 36,
+      "decided": "2026-08-10"
+    },
+    "Clipboard.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Copy-to-clipboard library",
+      "institutions": 33,
+      "decided": "2026-08-10"
+    },
+    "Enquire.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Media query library",
+      "institutions": 30,
+      "decided": "2026-08-10"
+    },
+    "Leaflet": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Mapping library",
+      "institutions": 30,
+      "decided": "2026-08-10"
+    },
+    "dc.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "D3-based charting library",
+      "institutions": 28,
+      "decided": "2026-08-10"
+    },
+    "UIKit": {
+      "categories": [
+        "CSS Framework"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Front-end framework, not iOS framework",
+      "institutions": 28,
+      "decided": "2026-08-10"
+    },
+    "Mixitup": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Filter/sort jQuery plugin",
+      "institutions": 27,
+      "decided": "2026-08-10"
+    },
+    "Glide.js": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Slider/carousel library",
+      "institutions": 25,
+      "decided": "2026-08-10"
+    },
+    "Web Font Loader": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Font loading library",
+      "institutions": 25,
+      "decided": "2026-08-10"
+    },
+    "GSAP": {
+      "categories": [
+        "JavaScript Library"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Animation library",
+      "institutions": 23,
+      "decided": "2026-08-10"
     }
   }
 }

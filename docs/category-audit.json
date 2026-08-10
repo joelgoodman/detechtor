@@ -1,5 +1,5 @@
 {
-  "technologies": 6504,
+  "technologies": 6501,
   "findings": {
     "NAME_COLLISION": [],
     "SIGNAL_CASE_DROP": [],
@@ -9,15 +9,6 @@
     "MISSING_SIGNAL": [
       {
         "name": "AI LOG",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Act-On",
         "suggests": "Marketing Automation",
         "categories": [
           "JavaScript Framework"
@@ -109,15 +100,6 @@
       },
       {
         "name": "Allyable",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Allyant",
         "suggests": "Accessibility",
         "categories": [
           "JavaScript Framework"
@@ -345,15 +327,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "ClickDimensions",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Closing Boost",
         "suggests": "Marketing Automation",
         "categories": [
@@ -526,15 +499,6 @@
         "suggests": "SIS",
         "categories": [
           "Hosting Provider"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Drip",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -910,7 +874,7 @@
         "name": "Highcharts",
         "suggests": "Accessibility",
         "categories": [
-          "JavaScript Framework"
+          "JavaScript Library"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -1208,15 +1172,6 @@
       {
         "name": "Leadsquared",
         "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Level Access",
-        "suggests": "Accessibility",
         "categories": [
           "JavaScript Framework"
         ],
@@ -1734,16 +1689,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Privy",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "JavaScript Framework",
-          "Booking System"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Procurios",
         "suggests": "CRM",
         "categories": [
@@ -2094,15 +2039,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Texthelp",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "TinyMCE",
         "suggests": "CMS",
         "categories": [
@@ -2163,15 +2099,6 @@
         "categories": [
           "JavaScript Framework",
           "Business Software"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "UsableNet",
-        "suggests": "Accessibility",
-        "categories": [
-          "JavaScript Framework"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -2334,8 +2261,7 @@
         "name": "Wisepops",
         "suggests": "Marketing Automation",
         "categories": [
-          "Widget",
-          "JavaScript Framework"
+          "Widget"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"

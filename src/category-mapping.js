@@ -156,7 +156,15 @@ const categoryMapping = {
   // work). Forward-compatible with schema.org / JSON-LD / Twitter Cards when those are detected.
   // ⚠️ NOT a home for PWA (678 insts, also mis-filed 'Operating System'): PWA is an app capability,
   // not metadata. Left flagged rather than forced somewhere wrong.
-  310: 'Structured Data'
+  310: 'Structured Data',
+  // UNI-235: web-font and icon-font services — ~4,700 detections led by Google Font API (1,943)
+  // and Font Awesome (1,275). Kept out of CDN, which is for generic asset delivery, for a concrete
+  // reason: German courts have ruled that serving Google Fonts from Google's servers violates
+  // GDPR, so a 1,943-institution detection carries a privacy-compliance implication that should
+  // not be buried among script CDNs. Licensed foundries (Adobe, Hoefler, MyFonts) vs free Google
+  // Fonts is also a design-maturity signal. Icon fonts live here too — Font Awesome and Bootstrap
+  // Icons are fonts, not CSS frameworks.
+  311: 'Web Fonts'
 };
 
 // UNI-233. Some categories are only ever written as STRINGS and have no numeric id, so they are
