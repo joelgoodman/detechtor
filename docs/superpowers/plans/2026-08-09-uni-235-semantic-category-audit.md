@@ -1137,9 +1137,10 @@ function loadCheckpoint(file) {
 }
 
 async function sweep(models, opts = {}) {
-  // Prevalence floor at which a technology earns the slower second opinion. 1 = anything that
+  // Prevalence floor at which a technology earns the slower models' opinions. 1 = anything that
   // fires at all. Raise it to shorten a run; the anchor still covers everything.
   const SECOND_MIN = opts.secondMin ?? 1;
+  const PILOT = opts.pilot ?? 0;
   const DeTECHtor = require('../src/detechtor.js');
   const { mapCategory } = require('../src/category-mapping.js');
   const engine = new DeTECHtor();
@@ -1157,15 +1158,18 @@ async function sweep(models, opts = {}) {
     // Highest-impact first, so an interrupted run has still covered what matters.
     .sort((a, b) => (prevalence.counts[b[0]] || 0) - (prevalence.counts[a[0]] || 0));
 
-  const outFile = path.resolve(__dirname, '../docs/category-llm-verdicts.jsonl');
+  const ranked = PILOT ? techs.slice(0, PILOT) : techs;
+  const outFile = path.resolve(__dirname,
+    PILOT ? '../docs/category-llm-verdicts-pilot.jsonl' : '../docs/category-llm-verdicts.jsonl');
   const done = loadCheckpoint(outFile);
-  console.log(`sweep — ${techs.length} technologies, ${done.size} already done, models: ${models.join(', ')}`);
+  console.log(`${PILOT ? `PILOT (top ${PILOT} by prevalence)` : 'sweep'} — ${ranked.length} technologies, ` +
+    `${done.size} already done, models: ${models.join(', ')}`);
 
   const stream = fs.createWriteStream(outFile, { flags: 'a' });
   let n = 0;
   const t0 = Date.now();
 
-  for (const [name, def] of techs) {
+  for (const [name, def] of ranked) {
     n++;
     if (done.has(name)) continue;
 
@@ -1180,17 +1184,24 @@ async function sweep(models, opts = {}) {
     };
     const prompt = buildPrompt(packet);
 
-    // TIERED, because a flat two-model sweep does not fit in a night. Measured: the anchor runs at
-    // 2.3s/tech (4.2h over 6,504) but nemotron-3-nano:30b is a reasoning model at 5.5s/tech (9.9h),
-    // and running both on everything serially is ~14h.
+    // TIERED. EVERY technology is judged by the anchor (models[0]); the slower models are spent
+    // only where a mistake can change a result — technologies firing on >= SECOND_MIN institutions.
     //
-    // So: EVERY technology is adjudicated by the anchor, and the expensive second opinion is spent
-    // only where a mistake can actually change a result — technologies that fire on at least
-    // SECOND_MIN institutions. That is ~900 of 6,504, cutting the second model to ~1.4h.
+    // Measured on the real corpus (not the sample): 1,028 of 6,504 technologies fire at all.
+    //   mistral-small3.2:24b  2.0s x 6,504  = 3.6h   (all)
+    //   nemotron-3-nano:30b   8.3s x 1,028  = 2.4h   (firing only)
+    //   gpt-oss:20b           2.8s x 1,028  = 0.8h   (firing only)
+    //                                        ~6.8h total, ~53 GB resident — one overnight run.
     //
-    // Coverage is unchanged (all 6,504 are still judged); only the depth of second opinion varies,
-    // and it varies exactly with impact. Which models ran is recorded per row so the queue can tell
-    // "both agreed" from "only one looked".
+    // THREE models rather than two, because the calibration exposed a single point of failure:
+    // union recall on Ellucian CRM Recruit rested entirely on the anchor, whose stated reason was
+    // "Product name includes 'CRM'" — possibly substring matching rather than comprehension, and
+    // n=4 FLAG cases cannot tell those apart. A third independent opinion on everything that fires
+    // means no single model's blind spot is load-bearing. The inert tail still gets full
+    // single-model coverage, so nothing goes unjudged.
+    //
+    // Which models ran is recorded per row so the queue can distinguish "all agreed" from
+    // "only one looked".
     const useSecond = packet.institutions >= SECOND_MIN;
     const active = useSecond ? models : models.slice(0, 1);
 
@@ -1205,7 +1216,7 @@ async function sweep(models, opts = {}) {
 
     if (n % 50 === 0) {
       const rate = (Date.now() - t0) / 1000 / n;
-      console.log(`  ${n}/${techs.length}  ~${((techs.length - n) * rate / 60).toFixed(0)} min remaining`);
+      console.log(`  ${n}/${ranked.length}  ~${((ranked.length - n) * rate / 60).toFixed(0)} min remaining`);
     }
   }
 
@@ -1219,18 +1230,51 @@ Then in `main()`, before the final `console.error`, add:
 ```js
   if (args.includes('--sweep')) {
     const smi = args.indexOf('--second-min');
-    await sweep(models, { secondMin: smi === -1 ? 1 : Number(args[smi + 1]) });
+    const pli = args.indexOf('--pilot');
+    await sweep(models, {
+      secondMin: smi === -1 ? 1 : Number(args[smi + 1]),
+      // --pilot N adjudicates only the N highest-prevalence technologies, so the sweep's output
+      // can be judged in ~20 minutes instead of after a full overnight run. Writes to a separate
+      // file so a pilot never pollutes the real sweep's checkpoint.
+      pilot: pli === -1 ? 0 : Number(args[pli + 1]),
+    });
     return;
   }
 ```
 
-- [ ] **Step 2: Add the npm script**
+- [ ] **Step 1b: Two prompt additions, grounded in owner feedback**
 
-In `package.json`, after `"prevalence"`, add (substituting the pair that qualified in Task 5):
+Both come from real corrections and are NOT fixture tuning. Add them to `SYSTEM_PROMPT`, then
+**re-run `--calibrate` and confirm the models still qualify** — changing the prompt invalidates the
+previous calibration, so it must be re-measured before any sweep runs.
+
+1. **State the higher-education context.** Correctness here is context-dependent: Workday is HR and
+   finance software in general but an SIS in higher ed, so a model reasoning from world knowledge
+   will confidently flag `Workday Student → SIS` as wrong when it is right. Without this, the sweep
+   false-flags precisely the HE-specific vendors that matter most. Say the scanner covers
+   higher-education institution websites and that categories should be judged as they apply in
+   that sector.
+
+2. **Add a distinct verdict for a name that over-claims.** `Zendesk` is filed as `Chatbot`; the
+   pattern is precise (it detects the Zendesk *web widget*), but the entry is named plainly
+   `Zendesk`, so the record reads "Zendesk is a chatbot" — false, since Zendesk is helpdesk
+   software. The fix is a rename, not a recategorisation, and nothing in the audit could express
+   that. Extend the JSON contract with `"name_overclaims": true|false` — set when the category fits
+   what the pattern detects but the technology's NAME implies something broader than that. Keep it
+   reported, never gated.
+
+- [ ] **Step 2: Add the npm scripts**
+
+In `package.json`, after `"prevalence"`, add both — the pilot exists so a bad sweep is discovered
+in twenty minutes rather than after an overnight run:
 
 ```json
-    "audit:llm:sweep": "node scripts/category-llm-audit.js --sweep --models mistral-small3.2:24b,nemotron-3-nano:30b",
+    "audit:llm:pilot": "node scripts/category-llm-audit.js --sweep --pilot 200 --models mistral-small3.2:24b,nemotron-3-nano:30b,gpt-oss:20b",
+    "audit:llm:sweep": "caffeinate -i node scripts/category-llm-audit.js --sweep --models mistral-small3.2:24b,nemotron-3-nano:30b,gpt-oss:20b",
 ```
+
+`caffeinate -i` keeps the Mac awake for the duration. The run is resumable, but resuming at 3am
+helps nobody.
 
 - [ ] **Step 3: Verify resume works before spending hours**
 
@@ -1256,12 +1300,26 @@ rm -f docs/category-llm-verdicts.jsonl
 OLLAMA_MAX_LOADED_MODELS=2 npm run audit:llm:sweep
 ```
 
-Expected: ~5–6 hours (anchor over all 6,504 at ~2.3 s/tech, plus the second model over the ~900
-that fire at ~5.5 s/tech). Both models stay resident, ~39 GB combined. If interrupted, rerun the
-same command — it resumes from the JSONL.
+**First, the pilot — do not skip it.** `npm run audit:llm:pilot` adjudicates the top 200 by
+prevalence in ~20 minutes and writes `docs/category-llm-verdicts-pilot.jsonl`. Run Task 8's queue
+builder over it and show the flags to the repo owner **before** starting the overnight run. A sweep
+that produces noise is much cheaper to discover now.
 
-To shorten a run, raise the floor: `--second-min 5` restricts the second opinion to technologies
-on 5+ institutions. The anchor still covers everything either way.
+One thing the pilot specifically tests: `Marketo Forms` is filed `["Widget", "Payment Processor"]`,
+is plainly wrong, and has **no category token in its name** — so it is unreachable by the
+name-token screen. Whether the models catch it is the live test of whether this sweep can find
+token-less misfiles at all, which is the whole reason it exists beyond the cheap screen. Report
+explicitly whether they did.
+
+**Then the full run:** `OLLAMA_MAX_LOADED_MODELS=3 npm run audit:llm:sweep`.
+
+Expected ~6.8 hours against measured rates — anchor 2.0 s over all 6,504 (3.6 h), nemotron 8.3 s
+over the 1,028 that fire (2.4 h), gpt-oss 2.8 s over the same 1,028 (0.8 h). ~53 GB resident. If
+interrupted, rerun the same command — it resumes from the JSONL.
+
+To shorten it, raise the floor: `--second-min 5` cuts the slow models' set from 1,028 to 614,
+saving roughly 2 hours. The anchor still covers all 6,504 either way, so coverage never drops —
+only the depth of second opinion, and only on the least prevalent technologies.
 
 - [ ] **Step 5: Commit the tool (not the raw verdicts)**
 
