@@ -37,17 +37,26 @@
  *         the better label (reasons: "CRM is more accurate" / "Primary function is
  *         recruiting/admissions"). 10/12 each, 1 false flag each (LiveChat), but union recall
  *         dropped to 3/4 — the one case that must never be missed, missed by both models at once.
- *       v3 (shipped) — deleted the "defensible" sentence outright rather than qualifying it, leaving
- *         one test built on MISLEAD, which is what rule 1 (PRIMARY function) already implies: FLAG
- *         when a category would mislead someone about what the product is, including a category
- *         that is word-similar to the product's domain but names a different market (the employee-
- *         recruiting / student-admissions and ecommerce-search / website-search pairs below name the
- *         CLASS of error, not an answer key for this fixture — do not read them as fixture hints).
- *         mistral 9/12 (3 false flags: TargetX, Slate (Technolutions), LiveChat; 0 missed), nemotron
- *         11/12 (1 false flag: LiveChat; 0 missed). Union 4/4. Qualifies.
+ *       v3 — deleted the "defensible" sentence outright rather than qualifying it, leaving one test
+ *         built on MISLEAD, which is what rule 1 (PRIMARY function) already implies. First wording
+ *         (v3a) illustrated the mislead test with two concrete examples that turned out to be
+ *         near-verbatim paraphrases of real technologies in the corpus (a recruiting-CRM-vs-
+ *         HR-recruiting pair, and an ecommerce-search-vs-site-search pair) — one of which is a case
+ *         Task 7's sweep is supposed to judge independently, so v3a pre-answered a sweep case from
+ *         inside the calibration prompt: mistral 9/12 (3 false flags: TargetX, Slate (Technolutions),
+ *         LiveChat; 0 missed), nemotron 11/12 (1 false flag: LiveChat; 0 missed), union 4/4.
+ *         Replaced (v3b, shipped) with abstract statements of the error CLASS — "a category naming a
+ *         different market that shares vocabulary" and "a category describing packaging/delivery
+ *         rather than function" — naming no product, market pair, or vertical traceable to this
+ *         corpus. mistral held at 9/12 (same 3 false flags, 0 missed) but nemotron's OWN recall on
+ *         Ellucian CRM Recruit partly depended on the leaked example: nemotron alone dropped to
+ *         10/12, now missing that case (1 false flag: LiveChat; 1 missed: Ellucian CRM Recruit).
+ *         Union recall still held at 4/4 because mistral independently catches it — the PAIR's
+ *         qualification did not depend on the leak, but be aware nemotron's solo score did.
  *     Do not reintroduce a "defensible" escape hatch — v2 is the reason it is gone. Never shrink the
  *     category list to fix a false-flag rate either — that hides the failure instead of instructing
- *     around it.
+ *     around it. Never illustrate a rule with an example specific enough to double as an answer to a
+ *     real corpus technology — v3a is why.
  *
  * Usage:
  *   node scripts/category-llm-audit.js --calibrate --models mistral-small3.2:24b,nemotron-3-nano:30b
@@ -76,9 +85,10 @@ Rules:
 - FLAG means the current categories are WRONG — not that you personally would have filed the
   product under a different one of the categories listed above. With this many categories on offer
   there is nearly always another plausible label; that alone is not evidence of an error.
-- FLAG when a current category would MISLEAD someone about what this product is — including a
-  category that is superficially word-similar to the product's domain but describes a different
-  market (employee recruiting vs student admissions; ecommerce product search vs website search).
+- FLAG when a current category would MISLEAD someone about what this product is — for example a
+  category that names a different MARKET but happens to share vocabulary with this product's own
+  domain, or a category that describes how the product is PACKAGED OR DELIVERED rather than what it
+  actually does.
 - Otherwise answer OK. A more specific or more fashionable label merely existing is not grounds to
   FLAG.
 - If you do not recognise the product, set "known": false and verdict "OK". Never guess.
@@ -110,6 +120,13 @@ function askModel(model, userPrompt) {
       let s = '';
       res.on('data', (c) => { s += c; });
       res.on('end', () => {
+        // A non-2xx (model not pulled, Ollama not running, etc.) is a distinct failure from a
+        // malformed JSON body — surfacing both as "unparseable response" sends triage chasing a
+        // JSON bug when the real problem is the model name or the server.
+        if (res.statusCode < 200 || res.statusCode >= 300) {
+          resolve({ error: `HTTP ${res.statusCode}: ${s.slice(0, 120)}` });
+          return;
+        }
         try { resolve(JSON.parse(JSON.parse(s).message.content)); }
         catch (err) { resolve({ error: `unparseable response: ${String(err).slice(0, 80)}` }); }
       });
@@ -133,21 +150,32 @@ function buildPrompt(entry) {
 
 async function scoreGoldSet(model) {
   const fixture = require(path.resolve(__dirname, '../tests/fixtures/category-gold-set.json'));
-  let correct = 0, falseFlags = 0, missedFlags = 0;
+  let correct = 0, falseFlags = 0, missedFlags = 0, errors = 0;
   const rows = [];
   const t0 = Date.now();
   for (const c of fixture.cases) {
     const r = await askModel(model, buildPrompt({ name: c.name, cats: c.cats, desc: c.desc }));
     const verdict = (r.verdict || 'ERR').toUpperCase();
-    const ok = verdict === c.expect;
+    const errored = Boolean(r.error) || verdict === 'ERR';
+    const ok = !errored && verdict === c.expect;
+    // A FLAG-expected case that came back OK, or that errored outright, is a genuine miss either
+    // way — the mismatch went unseen. An error on an OK-expected case is different: nothing was
+    // actually missed (there was no flag to miss), so it must NOT inflate missedFlags — it gets its
+    // own tally instead, or it would misreport "how many real mismatches slipped through."
     if (ok) correct++;
-    else if (verdict === 'FLAG') falseFlags++;
-    else missedFlags++;   // 'OK' when FLAG expected, or ERR — both mean a real mismatch went unseen
-    rows.push({ name: c.name, expect: c.expect, got: verdict, ok, reason: r.reason || r.error || '' });
+    else if (c.expect === 'FLAG') missedFlags++;
+    else if (errored) errors++;
+    else falseFlags++;   // verdict === 'FLAG' on an OK-expected case
+    rows.push({
+      name: c.name, expect: c.expect, got: verdict, ok,
+      confidence: typeof r.confidence === 'number' ? r.confidence : null,
+      known: typeof r.known === 'boolean' ? r.known : null,
+      reason: r.reason || r.error || '',
+    });
     console.log(`  ${ok ? '✅' : '❌'} ${c.name.padEnd(28)} want=${c.expect.padEnd(4)} got=${verdict.padEnd(4)} ${(r.reason || r.error || '').slice(0, 50)}`);
   }
   const seconds = (Date.now() - t0) / 1000;
-  return { model, correct, total: fixture.cases.length, falseFlags, missedFlags, seconds, rows };
+  return { model, correct, total: fixture.cases.length, falseFlags, missedFlags, errors, seconds, rows };
 }
 
 async function main() {
@@ -161,12 +189,17 @@ async function main() {
       console.log(`\n${'='.repeat(90)}\nCALIBRATE: ${m}\n${'='.repeat(90)}`);
       const r = await scoreGoldSet(m);
       results.push(r);
-      console.log(`\n  ${r.correct}/${r.total}  falseFlags=${r.falseFlags}  missedFlags=${r.missedFlags}  ` +
+      console.log(`\n  ${r.correct}/${r.total}  falseFlags=${r.falseFlags}  missedFlags=${r.missedFlags}  errors=${r.errors}  ` +
         `${r.seconds.toFixed(0)}s (${(r.seconds / r.total).toFixed(1)}s each)`);
       console.log(`  extrapolated over 6,504 technologies: ${((r.seconds / r.total) * 6504 / 3600).toFixed(1)} h`);
     }
+    // `seconds` is wall-clock and varies run to run even at temperature 0 (model load state, host
+    // load) — it's useful on the console for sizing the Task 7 sweep, but committing it here would
+    // dirty the tree on every rerun with no way to tell "same result" from "something changed." Keep
+    // the committed artifact fully deterministic, the same discipline docs/category-audit.json uses.
+    const resultsForFile = results.map(({ seconds, ...rest }) => rest);
     const out = path.resolve(__dirname, '../docs/category-llm-calibration.json');
-    fs.writeFileSync(out, JSON.stringify({ generated: new Date().toISOString().slice(0, 10), results }, null, 2));
+    fs.writeFileSync(out, JSON.stringify({ generated: new Date().toISOString().slice(0, 10), results: resultsForFile }, null, 2));
     console.log(`\nwrote ${out}`);
 
     // The bar is on the PAIR, not each model. The combiner is a union, so what matters is that

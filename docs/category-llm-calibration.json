@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09",
+  "generated": "2026-08-10",
   "results": [
     {
       "model": "mistral-small3.2:24b",
@@ -7,20 +7,24 @@
       "total": 12,
       "falseFlags": 3,
       "missedFlags": 0,
-      "seconds": 24.364,
+      "errors": 0,
       "rows": [
         {
           "name": "Slate",
           "expect": "FLAG",
           "got": "FLAG",
           "ok": true,
-          "reason": "Slate is a CRM for higher education admissions/enrollment."
+          "confidence": 0.95,
+          "known": true,
+          "reason": "Slate is a CRM for higher-ed admissions/enrollment."
         },
         {
           "name": "Salesforce Education Cloud",
           "expect": "FLAG",
           "got": "FLAG",
           "ok": true,
+          "confidence": 0.95,
+          "known": true,
           "reason": "CRM is primary function"
         },
         {
@@ -28,6 +32,8 @@
           "expect": "FLAG",
           "got": "FLAG",
           "ok": true,
+          "confidence": 0.95,
+          "known": true,
           "reason": "CRM is primary function"
         },
         {
@@ -35,13 +41,17 @@
           "expect": "FLAG",
           "got": "FLAG",
           "ok": true,
-          "reason": "Student Information System"
+          "confidence": 0.95,
+          "known": true,
+          "reason": "Product name includes 'CRM'"
         },
         {
           "name": "HubSpot CMS Hub",
           "expect": "OK",
           "got": "OK",
           "ok": true,
+          "confidence": 1,
+          "known": true,
           "reason": "Primary function is CMS"
         },
         {
@@ -49,13 +59,17 @@
           "expect": "OK",
           "got": "FLAG",
           "ok": false,
-          "reason": "admissions/recruitment focus"
+          "confidence": 0.95,
+          "known": true,
+          "reason": "specialized in admissions/recruitment"
         },
         {
           "name": "accessiBe",
           "expect": "OK",
           "got": "OK",
           "ok": true,
+          "confidence": 0.95,
+          "known": true,
           "reason": "accessiBe is an accessibility solution"
         },
         {
@@ -63,6 +77,8 @@
           "expect": "OK",
           "got": "OK",
           "ok": true,
+          "confidence": 1,
+          "known": true,
           "reason": "Primary function is CMS"
         },
         {
@@ -70,13 +86,17 @@
           "expect": "OK",
           "got": "FLAG",
           "ok": false,
-          "reason": "Slate is an SIS"
+          "confidence": 0.95,
+          "known": true,
+          "reason": "Slate is an enrollment management platform"
         },
         {
           "name": "LiveChat",
           "expect": "OK",
           "got": "FLAG",
           "ok": false,
+          "confidence": 0.9,
+          "known": true,
           "reason": "LiveChat is a customer service platform"
         },
         {
@@ -84,6 +104,8 @@
           "expect": "OK",
           "got": "OK",
           "ok": true,
+          "confidence": 1,
+          "known": true,
           "reason": "Primary function matches"
         },
         {
@@ -91,93 +113,117 @@
           "expect": "OK",
           "got": "OK",
           "ok": true,
+          "confidence": 1,
+          "known": true,
           "reason": "Primary function is CDN"
         }
       ]
     },
     {
       "model": "nemotron-3-nano:30b",
-      "correct": 11,
+      "correct": 10,
       "total": 12,
       "falseFlags": 1,
-      "missedFlags": 0,
-      "seconds": 99.087,
+      "missedFlags": 1,
+      "errors": 0,
       "rows": [
         {
           "name": "Slate",
           "expect": "FLAG",
           "got": "FLAG",
           "ok": true,
-          "reason": "Primary function is admissions/enrollment, not chatbot."
+          "confidence": 0.96,
+          "known": true,
+          "reason": "Misleading; primary role is admissions/enrollment platform, not chatbot."
         },
         {
           "name": "Salesforce Education Cloud",
           "expect": "FLAG",
           "got": "FLAG",
           "ok": true,
-          "reason": "Chatbot label incorrectly suggests conversational interface as core function"
+          "confidence": 0.96,
+          "known": true,
+          "reason": "Primary function is CRM, not chatbot or generic business software."
         },
         {
           "name": "HubSpot for Education",
           "expect": "FLAG",
           "got": "FLAG",
           "ok": true,
-          "reason": "HubSpot for Education is a CRM, not a JS framework or chatbot."
+          "confidence": 0.95,
+          "known": true,
+          "reason": "Categories mislabel as JS framework and chatbot; primary function is marketing automation."
         },
         {
           "name": "Ellucian CRM Recruit",
           "expect": "FLAG",
-          "got": "FLAG",
-          "ok": true,
-          "reason": "Misleading to label as HR/Recruiting; fits Student Success better."
+          "got": "OK",
+          "ok": false,
+          "confidence": 0.96,
+          "known": true,
+          "reason": "Primary function is recruitment CRM for education, fits HR/Recruiting."
         },
         {
           "name": "HubSpot CMS Hub",
           "expect": "OK",
           "got": "OK",
           "ok": true,
-          "reason": "Primary function is content management system."
+          "confidence": 0.96,
+          "known": true,
+          "reason": "Primary content management system, fits category exactly."
         },
         {
           "name": "TargetX",
           "expect": "OK",
           "got": "OK",
           "ok": true,
-          "reason": "Specialized admissions/recruitment CRM, fits CRM definition."
+          "confidence": 0.96,
+          "known": true,
+          "reason": "TargetX is a CRM for higher education admissions/recruitment."
         },
         {
           "name": "accessiBe",
           "expect": "OK",
           "got": "OK",
           "ok": true,
-          "reason": "Provides accessibility overlay for websites"
+          "confidence": 0.96,
+          "known": true,
+          "reason": "Provides web accessibility overlay, fits Accessibility category"
         },
         {
           "name": "Modern Campus CMS",
           "expect": "OK",
           "got": "OK",
           "ok": true,
-          "reason": "It's a content management system for higher education."
+          "confidence": 1,
+          "known": true,
+          "reason": "It is a content management system for higher education."
         },
         {
           "name": "Slate (Technolutions)",
           "expect": "OK",
           "got": "OK",
           "ok": true,
-          "reason": "Dominant higher-ed admissions CRM, accurately categorized."
+          "confidence": 0.96,
+          "known": true,
+          "reason": "Dominant higher‑ed admissions CRM; matches primary function."
         },
         {
           "name": "LiveChat",
           "expect": "OK",
           "got": "FLAG",
           "ok": false,
-          "reason": "LiveChat is a live support widget, not an AI chatbot."
+          "confidence": 0.96,
+          "known": true,
+          "reason": "LiveChat is a chat widget, not an AI chatbot."
         },
         {
           "name": "Ellucian Banner",
           "expect": "OK",
           "got": "OK",
           "ok": true,
+          "confidence": 1,
+          "known": true,
           "reason": "Student information system for higher education institutions."
         },
         {
@@ -185,7 +231,9 @@
           "expect": "OK",
           "got": "OK",
           "ok": true,
-          "reason": "Primary service is CDN and security; CDN fits best."
+          "confidence": 0.95,
+          "known": true,
+          "reason": "Primary service is a content delivery network."
         }
       ]
     }
