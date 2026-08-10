@@ -130,7 +130,19 @@ const categoryMapping = {
   307: 'Marketing Automation', // UNI-156: 8th signal category (Marketing Automation), added 2026-07-16
   303: 'CRM', // UNI-156: dedicated CRM id (curated); old 54-56 were remapped
   302: 'SIS', // UNI-156: dedicated SIS id (curated); base 53 was CRM/chatbot-skewed
-  304: 'Proctoring' // UNI-156: proctoring/integrity tools (non-signal)
+  304: 'Proctoring', // UNI-156: proctoring/integrity tools (non-signal)
+  // UNI-235: course catalog + curriculum management. Eight vendors were filed as SIS (and Canvas
+  // Catalog as LMS), so an institution running Acalog registered as having a Student Information
+  // System — it has a course catalog. That is ~14% of the SIS category counting the wrong market.
+  //
+  // ONE category, not two, because the market is sold that way: CourseLeaf ships CAT and CIM
+  // together, Modern Campus sells Acalog and Curriculog as a pair, and Smart Catalog, Kuali CM and
+  // ScholarSite each describe themselves as doing both. Splitting would file most vendors twice.
+  //
+  // Non-signal deliberately: it does not join SIGNAL_CATEGORIES, so no downstream consumer or
+  // tiered-detection escalation changes behaviour. Promotable later if the competitive intel earns
+  // it — that promotion is a blast-radius decision, not a categorisation one.
+  305: 'Catalog & Curriculum'
 };
 
 // UNI-233. Some categories are only ever written as STRINGS and have no numeric id, so they are

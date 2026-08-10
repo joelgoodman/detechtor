@@ -1,178 +1,374 @@
 {
-  "_comment": "UNI-235. Human-adjudicated category corrections, applied at load by src/category-overrides.js AFTER identity resolution. Rewrites `categories` ONLY — never evidence fields. Lives here rather than in the pattern files because webappanalyzer-merged.json is regenerated from upstream and would silently revert edits. Validated by `node scripts/category-audit.js --gate`, which runs in `npm test`.",
+  "_comment": "UNI-235. Human-adjudicated category corrections, applied at load by src/category-overrides.js AFTER identity resolution. Rewrites `categories` ONLY \u2014 never evidence fields. Lives here rather than in the pattern files because webappanalyzer-merged.json is regenerated from upstream and would silently revert edits. Validated by `node scripts/category-audit.js --gate`, which runs in `npm test`.",
   "overrides": {
     "Accessibility Toolbar Plugin": {
-      "categories": ["Accessibility"],
-      "was": ["JavaScript Framework"],
+      "categories": [
+        "Accessibility"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
       "reason": "Accessibility tooling filed as a JS framework. Accessibility held only 10 technologies, so this pool was a live false negative.",
       "decided": "2026-08-09"
     },
     "Accessible360": {
-      "categories": ["Accessibility"],
-      "was": ["JavaScript Framework"],
+      "categories": [
+        "Accessibility"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
       "reason": "Real higher-ed accessibility vendor, filed as a JS framework.",
       "decided": "2026-08-09"
     },
     "Accessibly": {
-      "categories": ["Accessibility"],
-      "was": ["JavaScript Framework"],
+      "categories": [
+        "Accessibility"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
       "reason": "Accessibility overlay app, filed as a JS framework.",
       "decided": "2026-08-09"
     },
     "All in One Accessibility": {
-      "categories": ["Accessibility"],
-      "was": ["JavaScript Framework"],
+      "categories": [
+        "Accessibility"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
       "reason": "Accessibility overlay, filed as a JS framework.",
       "decided": "2026-08-09"
     },
     "User Accessibility": {
-      "categories": ["Accessibility"],
-      "was": ["JavaScript Framework"],
+      "categories": [
+        "Accessibility"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
       "reason": "Accessibility tooling, filed as a JS framework.",
       "decided": "2026-08-09"
     },
     "eSSENTIAL Accessibility": {
-      "categories": ["Accessibility"],
-      "was": ["JavaScript Framework"],
+      "categories": [
+        "Accessibility"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
       "reason": "Real higher-ed accessibility vendor, filed as a JS framework.",
       "decided": "2026-08-09"
     },
-
     "Agile CRM": {
-      "categories": ["CRM"],
-      "was": ["Business Software"],
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software"
+      ],
       "reason": "A CRM filed in the Business Software grab-bag.",
       "decided": "2026-08-09"
     },
     "Airship CRM": {
-      "categories": ["CRM"],
-      "was": ["Business Software"],
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software"
+      ],
       "reason": "A CRM filed in the Business Software grab-bag.",
       "decided": "2026-08-09"
     },
     "Blackbaud CRM": {
-      "categories": ["CRM", "Fundraising"],
-      "was": ["Fundraising"],
+      "categories": [
+        "CRM",
+        "Fundraising"
+      ],
+      "was": [
+        "Fundraising"
+      ],
       "reason": "Genuinely both: Blackbaud CRM is the advancement/donor CRM used by higher-ed development offices. Fundraising is kept because it is the more distinctive fact about the product.",
       "decided": "2026-08-09"
     },
     "CRM+": {
-      "categories": ["CRM"],
-      "was": ["Business Software"],
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software"
+      ],
       "reason": "A CRM filed in the Business Software grab-bag.",
       "decided": "2026-08-09"
     },
     "Ellucian CRM Recruit": {
-      "categories": ["CRM"],
-      "was": ["Business Software", "HR / Recruiting"],
-      "reason": "Ellucian's admissions CRM. HR/Recruiting is EMPLOYEE recruiting — a different thing. Two independent local models missed this identically, both reasoning 'primary function is recruitment/admissions, so HR/Recruiting is fine'; the name-token screen caught it. 18 institutions.",
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software",
+        "HR / Recruiting"
+      ],
+      "reason": "Ellucian's admissions CRM. HR/Recruiting is EMPLOYEE recruiting \u2014 a different thing. Two independent local models missed this identically, both reasoning 'primary function is recruitment/admissions, so HR/Recruiting is fine'; the name-token screen caught it. 18 institutions.",
       "decided": "2026-08-09"
     },
     "Flipping Pro CRM": {
-      "categories": ["CRM"],
-      "was": ["Business Software"],
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software"
+      ],
       "reason": "A CRM filed in the Business Software grab-bag.",
       "decided": "2026-08-09"
     },
     "Freshworks CRM": {
-      "categories": ["CRM"],
-      "was": ["Business Software", "JavaScript Framework", "Booking System"],
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software",
+        "JavaScript Framework",
+        "Booking System"
+      ],
       "reason": "A CRM carrying three wrong categories, none of them CRM.",
       "decided": "2026-08-09"
     },
     "Insightly CRM": {
-      "categories": ["CRM"],
-      "was": ["Business Software"],
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software"
+      ],
       "reason": "A CRM filed in the Business Software grab-bag.",
       "decided": "2026-08-09"
     },
     "Kapture CRM": {
-      "categories": ["CRM"],
-      "was": ["Chatbot", "Business Software"],
-      "reason": "A CRM filed as Chatbot — the same misfile class UNI-233 found with Slate and Salesforce Education Cloud.",
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Chatbot",
+        "Business Software"
+      ],
+      "reason": "A CRM filed as Chatbot \u2014 the same misfile class UNI-233 found with Slate and Salesforce Education Cloud.",
       "decided": "2026-08-09"
     },
     "Lasso CRM": {
-      "categories": ["CRM"],
-      "was": ["Business Software"],
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software"
+      ],
       "reason": "A CRM filed in the Business Software grab-bag.",
       "decided": "2026-08-09"
     },
     "Neon CRM": {
-      "categories": ["CRM", "Fundraising"],
-      "was": ["Business Software", "Fundraising"],
+      "categories": [
+        "CRM",
+        "Fundraising"
+      ],
+      "was": [
+        "Business Software",
+        "Fundraising"
+      ],
       "reason": "Genuinely both: a nonprofit fundraising CRM. Fundraising kept, Business Software dropped as uninformative.",
       "decided": "2026-08-09"
     },
     "Perfex CRM": {
-      "categories": ["CRM"],
-      "was": ["Business Software"],
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software"
+      ],
       "reason": "A CRM filed in the Business Software grab-bag.",
       "decided": "2026-08-09"
     },
     "Power CRM": {
-      "categories": ["CRM"],
-      "was": ["Business Software"],
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software"
+      ],
       "reason": "A CRM filed in the Business Software grab-bag.",
       "decided": "2026-08-09"
     },
     "Rapid Active CRM": {
-      "categories": ["CRM"],
-      "was": ["Business Software"],
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software"
+      ],
       "reason": "A CRM filed in the Business Software grab-bag.",
       "decided": "2026-08-09"
     },
     "SOTA CRM": {
-      "categories": ["CRM"],
-      "was": ["Business Software"],
+      "categories": [
+        "CRM"
+      ],
+      "was": [
+        "Business Software"
+      ],
       "reason": "A CRM filed in the Business Software grab-bag.",
       "decided": "2026-08-09"
     },
-
     "Salesforce Marketing Cloud Account Engagement": {
-      "categories": ["Marketing Automation"],
-      "was": ["JavaScript Framework"],
-      "reason": "This is Pardot — marketing automation by definition — filed as a JS framework.",
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "This is Pardot \u2014 marketing automation by definition \u2014 filed as a JS framework.",
       "decided": "2026-08-09"
     },
     "Salesforce Marketing Cloud Email Studio": {
-      "categories": ["Marketing Automation"],
-      "was": ["Booking System"],
+      "categories": [
+        "Marketing Automation"
+      ],
+      "was": [
+        "Booking System"
+      ],
       "reason": "Marketing automation filed as a Booking System.",
       "decided": "2026-08-09"
     },
     "Omnisend Email Marketing & SMS": {
-      "categories": ["Marketing Automation", "Ecommerce"],
-      "was": ["Ecommerce"],
-      "reason": "Email/SMS marketing automation with an ecommerce focus — both apply.",
+      "categories": [
+        "Marketing Automation",
+        "Ecommerce"
+      ],
+      "was": [
+        "Ecommerce"
+      ],
+      "reason": "Email/SMS marketing automation with an ecommerce focus \u2014 both apply.",
       "decided": "2026-08-09"
     },
-
     "Better Search": {
-      "categories": ["Site Search"],
-      "was": ["WordPress Plugin"],
+      "categories": [
+        "Site Search"
+      ],
+      "was": [
+        "WordPress Plugin"
+      ],
       "reason": "A site-search plugin. WordPress Plugin describes its packaging, not its function.",
       "decided": "2026-08-09"
     },
     "Ivory Search": {
-      "categories": ["Site Search"],
-      "was": ["WordPress Plugin"],
+      "categories": [
+        "Site Search"
+      ],
+      "was": [
+        "WordPress Plugin"
+      ],
       "reason": "A site-search plugin. WordPress Plugin describes its packaging, not its function.",
       "decided": "2026-08-09"
     },
-
     "PushDaddy Whatsapp Chat": {
-      "categories": ["Chatbot"],
-      "was": ["Ecommerce", "Ecommerce Marketing"],
-      "reason": "A WhatsApp chat widget — conversational interface, not an ecommerce platform.",
+      "categories": [
+        "Chatbot"
+      ],
+      "was": [
+        "Ecommerce",
+        "Ecommerce Marketing"
+      ],
+      "reason": "A WhatsApp chat widget \u2014 conversational interface, not an ecommerce platform.",
       "decided": "2026-08-09"
     },
-
     "4Partners CMS": {
-      "categories": ["CMS"],
-      "was": ["Web Server"],
+      "categories": [
+        "CMS"
+      ],
+      "was": [
+        "Web Server"
+      ],
       "reason": "A CMS filed as a Web Server.",
       "decided": "2026-08-09"
+    },
+    "Acalog": {
+      "categories": [
+        "Catalog & Curriculum"
+      ],
+      "was": [
+        "SIS"
+      ],
+      "reason": "Academic catalog management (Modern Campus, via the DIGARC acquisition). A catalog is not a student information system.",
+      "decided": "2026-08-10"
+    },
+    "Smart Catalog": {
+      "categories": [
+        "Catalog & Curriculum"
+      ],
+      "was": [
+        "SIS"
+      ],
+      "reason": "Curriculum and catalog management. Not student records.",
+      "decided": "2026-08-10"
+    },
+    "CourseLeaf": {
+      "categories": [
+        "Catalog & Curriculum"
+      ],
+      "was": [
+        "SIS"
+      ],
+      "reason": "Curriculum and catalog management (CAT + CIM sold together). Not student records.",
+      "decided": "2026-08-10"
+    },
+    "Curriculog": {
+      "categories": [
+        "Catalog & Curriculum"
+      ],
+      "was": [
+        "SIS"
+      ],
+      "reason": "Curriculum management workflow (Modern Campus). Not student records.",
+      "decided": "2026-08-10"
+    },
+    "Kuali Curriculum Management": {
+      "categories": [
+        "Catalog & Curriculum"
+      ],
+      "was": [
+        "SIS"
+      ],
+      "reason": "Curriculum and catalog management. Not student records.",
+      "decided": "2026-08-10"
+    },
+    "CurricUNET": {
+      "categories": [
+        "Catalog & Curriculum"
+      ],
+      "was": [
+        "SIS"
+      ],
+      "reason": "Curriculum management platform. Not student records.",
+      "decided": "2026-08-10"
+    },
+    "ScholarSite": {
+      "categories": [
+        "Catalog & Curriculum"
+      ],
+      "was": [
+        "SIS"
+      ],
+      "reason": "Academic catalog and curriculum system. Not student records.",
+      "decided": "2026-08-10"
+    },
+    "Instructure Canvas Catalog": {
+      "categories": [
+        "Catalog & Curriculum"
+      ],
+      "was": [
+        "LMS"
+      ],
+      "reason": "Instructure's catalog/enrollment product, distinct from Canvas LMS. Competes with Acalog and the catalog market, not with learning management systems.",
+      "decided": "2026-08-10"
     }
   }
 }
