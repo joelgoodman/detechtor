@@ -142,7 +142,21 @@ const categoryMapping = {
   // Non-signal deliberately: it does not join SIGNAL_CATEGORIES, so no downstream consumer or
   // tiered-detection escalation changes behaviour. Promotable later if the competitive intel earns
   // it — that promotion is a blast-radius decision, not a categorisation one.
-  305: 'Catalog & Curriculum'
+  305: 'Catalog & Curriculum',
+  // UNI-235: six curated digital-signage vendors all sat in Business Software — 635 detections,
+  // led by Rise Vision (390) and Scala (244). Campus signage is a distinct procurement.
+  308: 'Digital Signage',
+  // UNI-235: eighteen consent-management vendors, ALL filed JavaScript Framework — ~440 detections
+  // led by CookieYes (173), OneTrust (100), Cookiebot (78). A consent platform is not a JS
+  // framework, and which one an institution runs is a real privacy-posture signal.
+  309: 'Cookie Consent',
+  // UNI-235: machine-readable metadata, not a vendor. Open Graph was filed 'Operating System'.
+  // Named for what it IS rather than who consumes it ("Social" would be wrong — social platforms
+  // are one consumer; AI answer engines are now another, which is why this matters to the GEO/AEO
+  // work). Forward-compatible with schema.org / JSON-LD / Twitter Cards when those are detected.
+  // ⚠️ NOT a home for PWA (678 insts, also mis-filed 'Operating System'): PWA is an app capability,
+  // not metadata. Left flagged rather than forced somewhere wrong.
+  310: 'Structured Data'
 };
 
 // UNI-233. Some categories are only ever written as STRINGS and have no numeric id, so they are

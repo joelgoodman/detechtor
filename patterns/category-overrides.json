@@ -369,6 +369,250 @@
       ],
       "reason": "Instructure's catalog/enrollment product, distinct from Canvas LMS. Competes with Acalog and the catalog market, not with learning management systems.",
       "decided": "2026-08-10"
+    },
+    "Rise Vision": {
+      "categories": [
+        "Digital Signage"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Campus digital-signage platform. Business Software described nothing about it.",
+      "decided": "2026-08-10"
+    },
+    "Scala Digital Signage": {
+      "categories": [
+        "Digital Signage"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Campus digital-signage platform. Business Software described nothing about it.",
+      "decided": "2026-08-10"
+    },
+    "ScreenCloud": {
+      "categories": [
+        "Digital Signage"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Campus digital-signage platform. Business Software described nothing about it.",
+      "decided": "2026-08-10"
+    },
+    "Four Winds Interactive": {
+      "categories": [
+        "Digital Signage"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Campus digital-signage platform. Business Software described nothing about it.",
+      "decided": "2026-08-10"
+    },
+    "BrightSign": {
+      "categories": [
+        "Digital Signage"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Campus digital-signage platform. Business Software described nothing about it.",
+      "decided": "2026-08-10"
+    },
+    "NoviSign": {
+      "categories": [
+        "Digital Signage"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Campus digital-signage platform. Business Software described nothing about it.",
+      "decided": "2026-08-10"
+    },
+    "CookieYes": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "OneTrust": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "Cookiebot": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "Osano": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "Usercentrics": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "Didomi": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "CookieFirst": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "Cookie Script": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "Termly": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "Axeptio": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "CookieHub": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "TrustArc": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "Quantcast Choice": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "Klaro": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework"
+      ],
+      "reason": "Cookie-consent / consent-management platform. JavaScript Framework describes how it ships, not what it does.",
+      "decided": "2026-08-10"
+    },
+    "Complianz": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "Booking System",
+        "JavaScript Framework",
+        "WordPress Plugin"
+      ],
+      "reason": "Cookie-consent plugin. Booking System was plainly wrong; WordPress Plugin is packaging, not function.",
+      "decided": "2026-08-10"
+    },
+    "Cookie Notice": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "WordPress Plugin"
+      ],
+      "reason": "Cookie-consent plugin. WordPress Plugin is packaging, not function.",
+      "decided": "2026-08-10"
+    },
+    "Borlabs Cookie": {
+      "categories": [
+        "Cookie Consent"
+      ],
+      "was": [
+        "JavaScript Framework",
+        "WordPress Plugin"
+      ],
+      "reason": "Cookie-consent plugin. WordPress Plugin is packaging, not function.",
+      "decided": "2026-08-10"
+    },
+    "Open Graph": {
+      "categories": [
+        "Structured Data"
+      ],
+      "was": [
+        "Operating System"
+      ],
+      "reason": "Machine-readable metadata for link previews, not an operating system and not a vendor. Fires on 72% of institutions, so its PRESENCE differentiates nothing \u2014 the 28% ABSENT is the signal, and it belongs to the AI-readiness/GEO line.",
+      "decided": "2026-08-10"
     }
   }
 }
