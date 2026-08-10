@@ -14306,12 +14306,12 @@
     },
     "Koha": {
       "categories": [
-        "Business Software"
+        "Library Systems"
       ],
       "was": [
-        "Advertising"
+        "Business Software"
       ],
-      "reason": "Open-source library management system for institutions",
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 5,
       "decided": "2026-08-10"
     },
@@ -20978,12 +20978,12 @@
     },
     "Ex Libris Voyager": {
       "categories": [
-        "Unclassified"
+        "Library Systems"
       ],
       "was": [
-        "Business Software"
+        "Unclassified"
       ],
-      "reason": "Library system; no library category exists",
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -21031,17 +21031,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Koha ILS": {
-      "categories": [
-        "Unclassified"
-      ],
-      "was": [
-        "Business Software"
-      ],
-      "reason": "Open-source library system; no library category",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Mindmax": {
       "categories": [
         "Student Success"
@@ -21055,12 +21044,12 @@
     },
     "Summon": {
       "categories": [
-        "Unclassified"
+        "Library Systems"
       ],
       "was": [
-        "Business Software"
+        "Unclassified"
       ],
-      "reason": "Library discovery service; no library category",
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -32443,6 +32432,237 @@
       ],
       "reason": "Website builder for designers, not advertising",
       "institutions": 0,
+      "decided": "2026-08-10"
+    },
+    "LibGuides": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 224,
+      "decided": "2026-08-10"
+    },
+    "FOLIO LSP": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 57,
+      "decided": "2026-08-10"
+    },
+    "Ex Libris Primo": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 30,
+      "decided": "2026-08-10"
+    },
+    "LibAnswers": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 20,
+      "decided": "2026-08-10"
+    },
+    "LibCal": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 18,
+      "decided": "2026-08-10"
+    },
+    "Ex Libris Alma": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 17,
+      "decided": "2026-08-10"
+    },
+    "Innovative Interfaces Sierra": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 12,
+      "decided": "2026-08-10"
+    },
+    "WorldCat Discovery": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 7,
+      "decided": "2026-08-10"
+    },
+    "SirsiDynix Symphony": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 6,
+      "decided": "2026-08-10"
+    },
+    "EBSCO Discovery Service": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "OCLC WorldShare": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 2,
+      "decided": "2026-08-10"
+    },
+    "Polaris ILS": {
+      "categories": [
+        "Library Systems"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "institutions": 1,
+      "decided": "2026-08-10"
+    },
+    "Ready Education": {
+      "categories": [
+        "Student Success"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Higher-ed student success / retention / advising platform. Student Success already existed in the vocabulary and had zero members.",
+      "institutions": 352,
+      "decided": "2026-08-10"
+    },
+    "Campus Labs": {
+      "categories": [
+        "Student Success"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Higher-ed student success / retention / advising platform. Student Success already existed in the vocabulary and had zero members.",
+      "institutions": 174,
+      "decided": "2026-08-10"
+    },
+    "Anthology Engage": {
+      "categories": [
+        "Student Success"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Higher-ed student success / retention / advising platform. Student Success already existed in the vocabulary and had zero members.",
+      "institutions": 174,
+      "decided": "2026-08-10"
+    },
+    "EAB Navigate": {
+      "categories": [
+        "Student Success"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Higher-ed student success / retention / advising platform. Student Success already existed in the vocabulary and had zero members.",
+      "institutions": 170,
+      "decided": "2026-08-10"
+    },
+    "AdvisorTrac": {
+      "categories": [
+        "Student Success"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Higher-ed student success / retention / advising platform. Student Success already existed in the vocabulary and had zero members.",
+      "institutions": 82,
+      "decided": "2026-08-10"
+    },
+    "GradesFirst": {
+      "categories": [
+        "Student Success"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Higher-ed student success / retention / advising platform. Student Success already existed in the vocabulary and had zero members.",
+      "institutions": 33,
+      "decided": "2026-08-10"
+    },
+    "Starfish": {
+      "categories": [
+        "Student Success"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Higher-ed student success / retention / advising platform. Student Success already existed in the vocabulary and had zero members.",
+      "institutions": 25,
+      "decided": "2026-08-10"
+    },
+    "Civitas Learning": {
+      "categories": [
+        "Student Success"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Higher-ed student success / retention / advising platform. Student Success already existed in the vocabulary and had zero members.",
+      "institutions": 4,
+      "decided": "2026-08-10"
+    },
+    "AdAstra": {
+      "categories": [
+        "Booking System"
+      ],
+      "was": [
+        "Business Software"
+      ],
+      "reason": "Ad Astra is course and space scheduling \u2014 genuinely a booking system, not a student-success platform.",
+      "institutions": 76,
       "decided": "2026-08-10"
     }
   }

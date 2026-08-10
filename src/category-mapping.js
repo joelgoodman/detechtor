@@ -176,8 +176,17 @@ const categoryMapping = {
   // Unclassified asserts nothing. It is not a signal category, nothing downstream acts on it, and
   // an entry sitting here is a visible invitation to identify it rather than a wrong answer that
   // reads as settled.
-  312: 'Unclassified'
+  312: 'Unclassified',
+  // UNI-235: library services platforms — ILS, discovery layers and research guides. ~400
+  // detections led by LibGuides (224) and FOLIO (57), every one of them previously filed
+  // 'Business Software'. Every university runs one, and which one is real competitive intel, but
+  // the market was invisible to any sector-specific query while sitting in the grab-bag.
+  313: 'Library Systems'
 };
+
+// `Student Success` already existed in STRING_ONLY_CATEGORIES below and had never been used —
+// a defined category with zero members while EAB Navigate, Ready Education, Campus Labs and
+// Anthology Engage sat in 'Business Software'. UNI-235 populates it.
 
 // UNI-233. Some categories are only ever written as STRINGS and have no numeric id, so they are
 // absent from the id map above yet are perfectly legitimate. Registering them explicitly is what

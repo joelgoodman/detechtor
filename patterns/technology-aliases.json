@@ -13,7 +13,10 @@
     "Slate": "Slate (Technolutions)",
     "Typekit": "Adobe Fonts",
     "CIVIC": "Cookie Control",
-    "Cybot": "Cookiebot"
+    "Cybot": "Cookiebot",
+    "Koha ILS": "Koha",
+    "Navigate": "EAB Navigate",
+    "Starfish Retention Solutions": "Starfish"
   },
   "reasons": {
     "Omni CMS": "Modern Campus renamed the product: OU Campus \u2192 OmniUpdate/OmniCMS \u2192 Omni CMS \u2192 Modern Campus CMS. Confirmed by detection-set overlap J=0.957 over 67/70 institutions. \u26a0\ufe0f The base `Omni CMS` entry holds the dom rule a[href*='a.cms.omniupdate.com/11/'] \u2014 the ONLY evidence path that made Omni CMS detectable at all before UNI-224, where it was verified 29/29. The merge unions evidence precisely so that rule survives the rename.",
