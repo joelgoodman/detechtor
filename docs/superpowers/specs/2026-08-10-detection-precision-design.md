@@ -269,6 +269,43 @@ This is a vocabulary and consumer problem, not a detection one: the patterns fir
 to **UNI-238** with the other vocabulary gaps rather than being fixed here, but it must not be lost —
 `UserWay` alone fires on 4.3% of institutions.
 
+**Decision: polarity does not belong at the detection level, and the field is not implemented.**
+Detection records what is present. Whether a thing is good is a consumer judgement that changes with
+the consumer — an accessibility overlay is a negative for accessibility maturity and a *positive*
+buying signal for sales. Implementing `signal_polarity` in the engine would hard-code one reading of
+that into the layer every consumer shares.
+
+So: leave the six-vendor list in place as curated data (it is real knowledge — someone identified
+those six as overlays), document the field as unread in the table above, and let UNI-238 re-encode it
+**factually** rather than evaluatively — an `Accessibility Overlay` distinction states what the
+product *is*; `"negative"` states what someone thinks of it. The scorecard then applies polarity from
+its own configuration. Nothing is deleted and nothing is silently believed.
+
+### 4b. The regenerated file must stop being mistakable for an editable one
+
+`patterns/webappanalyzer-merged.json` is a **build artifact that looks exactly like a source file** —
+tracked, hand-readable, sitting beside eleven files that *are* hand-edited. This has now caused the
+same wasted work more than once, and a comment at the top of `category-overrides.js` has not
+prevented it. Documentation is the wrong instrument; the confusion has to be made structurally
+impossible.
+
+Three changes, because they fail differently:
+
+1. **Move it to `patterns/generated/webappanalyzer-merged.json`.** The path itself then says "build
+   artifact" in every file tree, every `grep -rn` result and every diff header. Update the path in
+   `src/config.js`'s pattern list and in `scripts/import-webappanalyzer.js`.
+2. **Stamp `_generated: true`** on every definition loaded from a `patterns/generated/` path,
+   alongside the existing `_curated` and `_sourceFile` marks. Anything inspecting a technology —
+   a script, a test, an agent answering "where does this pattern live?" — sees it without knowing
+   the convention.
+3. **Gate it.** `scripts/import-webappanalyzer.js` records the artifact's SHA-256 in
+   `patterns/import-report.json` at import time; a check in `npm test` recomputes it and **fails on
+   any mismatch**, with an error that names `patterns/pattern-overrides.json` as the correct place
+   to make the change.
+
+Only the third actually stops the mistake — the first two stop the confusion that leads to it. A
+reader who ignores the directory name and the `_generated` flag still cannot land the edit.
+
 ### 5. `minConfidence` neutralised
 
 `src/config.js:87` sets `minConfidence: 30`. The weakest possible single match is an `html` substring
@@ -289,11 +326,34 @@ legitimate ones (`Yoast SEO Premium`, `Redis Object Cache`, `Vue.js`, `React`).
 belongs to UNI-141 (`pattern mining + validation harness from BuiltWith+HTML`). It must be handed
 over **split by cause**, or UNI-141 will mine patterns that already exist:
 
-- *Genuine pattern gaps* — no deTECHtor pattern at all: `HubSpot CMS` (2.5% of institutions),
-  `Sitefinity` (1.1%), `Sakai` (0.2%), `Ingeniux` (0.1%), `TrustArc` (0.4%).
-- *Genuine recall weakness* — pattern exists, under-fires: `WordPress` (61.8% → 42.5%), `Drupal`
-  (23.8% → 17.7%), `Google Custom Search` (14.6% → 8.2%), `UserWay` (8.1% → 4.3%), `OneTrust`
-  (5.7% → 2.6%), `Squarespace`, `Wix`, `Sitecore`, `Joomla`, `Contentful`, `ExpressionEngine`.
+- *Genuine pattern gaps* — no deTECHtor pattern at all, and **confirmed by a second source**:
+  `Sitefinity` (BuiltWith 1.1%; WhatCMS 21 institutions) and `HubSpot CMS` (BuiltWith 2.5%; WhatCMS
+  19). Also `Sakai` (0.2%), `Ingeniux` (0.1%), `TrustArc` (0.4%), single-sourced to BuiltWith.
+- *Genuine recall weakness* — pattern exists, under-fires: `Google Custom Search` (14.6% → 8.2%),
+  `UserWay` (8.1% → 4.3%), `OneTrust` (5.7% → 2.6%), `Squarespace`, `Wix`, `Sitecore`, `Joomla`,
+  `Contentful`, `ExpressionEngine`.
+
+  **`WordPress` and `Drupal` are NOT on this list, on the evidence of a third source.**
+  `scans.whatcms_cms` is populated for 3,131 of the 4,459 institutions in cohort 107 — a one-off
+  WhatCMS run, 70% coverage, and the only independent CMS oracle besides BuiltWith:
+
+  | | deTECHtor | WhatCMS (of 3,131 identified) | WhatCMS (of all 4,459) | BuiltWith |
+  | --- | ---: | ---: | ---: | ---: |
+  | WordPress | 42.5% | **44.1%** | 31.0% | 61.8% |
+  | Drupal | 17.7% | **20.0%** | 14.1% | 23.8% |
+  | Modern Campus / Omni CMS | 10.0% | **12.2%** | 8.6% | 9.8% |
+  | TerminalFour | 2.2% | **2.6%** | 1.8% | 0.4% |
+
+  deTECHtor sits between WhatCMS's two denominators on every row and almost exactly on its upper
+  bound. **BuiltWith is the outlier, not us** — it counts subdomains, historical traces and
+  department blogs running WordPress beneath a site whose actual CMS is Omni CMS or Drupal. The
+  "~1,900 missing WordPress installs" was largely an artefact of trusting a single oracle.
+
+  This also settles `TerminalFour`, whose 5× BuiltWith ratio looked like an over-fire: WhatCMS says
+  2.6% against our 2.2%. We were right and BuiltWith was thin.
+
+  Caveats: cohort 107 predates 130/131, so the comparison is time-shifted; WhatCMS returns a single
+  primary CMS per site and cannot see a second; 30% of the cohort got no answer at all.
 - *Not a pattern problem — scope* — pattern is sound, the technology is not on the homepage or not in
   static HTML: `Moodle` (8.8% → 0.2%, lives at `moodle.<institution>.edu`), `Osano` (6.7% → 0.4%,
   async-injected), `Blackboard (Anthology)` (10.3% → 2.6%). These are UNI-225 (tiered/multi-page
@@ -364,3 +424,5 @@ UNI-222's purge; this work strengthens the case for it but does not perform it.
 5. `corpus-prevalence.json` and `category-coverage.md` regenerated, with the before/after delta for
    every affected technology recorded in the PR.
 6. UNI-141 and UNI-225 carry the recall findings, split by cause; UNI-238 carries `signal_polarity`.
+7. A hand-edit to the generated pattern file fails `npm test` with an error naming the override
+   layer — the regeneration trap can no longer cost anyone a second afternoon.
