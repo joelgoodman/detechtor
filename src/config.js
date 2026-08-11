@@ -84,7 +84,12 @@ module.exports = {
   // Output configuration
   verbose: false,
   includeEvidence: true,
-  minConfidence: 30,
+  // UNI-237: there is deliberately NO confidence floor. minConfidence was 30 while the weakest
+  // single match — an html substring, detechtor.js:977 — scores 40, so it rejected nothing and had
+  // never rejected anything since UNI-138 introduced it. Precision is enforced at authoring time by
+  // scripts/lint-pattern-breadth.js, which fails the build on a pattern whose measured match rate
+  // exceeds what its technology's real signal supports. `confidence` remains on each match as a
+  // reported signal-strength value; it is not a filter.
 
   // Browser configuration
   browserOptions: {

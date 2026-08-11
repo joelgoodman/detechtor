@@ -182,3 +182,25 @@ test('no pattern file declares `text` any more', () => {
     .map(([n]) => n);
   assert.deepStrictEqual(withText, [], `still declaring text: ${withText.slice(0, 5).join(', ')}`);
 });
+
+test('config declares no confidence floor', () => {
+  // minConfidence was 30 while the weakest single match scores 40, so it rejected nothing. Keeping
+  // an inert knob is worse than having none: it reads as a precision control that is not one.
+  const config = require(path.resolve(__dirname, '../src/config.js'));
+  assert.strictEqual('minConfidence' in config, false,
+    'minConfidence is inert — filtering happens at authoring time via the breadth gate');
+});
+
+test('nothing in src/ or scripts/ still READS config.minConfidence', () => {
+  // Match the read form `config.minConfidence`, not the bare token — the explanatory comment left
+  // in config.js names the setting on purpose, and a bare-token search would fail on that comment.
+  const fs = require('fs');
+  const dirs = ['../src', '../scripts'].map((d) => path.resolve(__dirname, d));
+  const offenders = [];
+  for (const dir of dirs) {
+    for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.js'))) {
+      if (/config\.minConfidence/.test(fs.readFileSync(path.join(dir, f), 'utf8'))) offenders.push(f);
+    }
+  }
+  assert.deepStrictEqual(offenders, [], `still read config.minConfidence: ${offenders.join(', ')}`);
+});
