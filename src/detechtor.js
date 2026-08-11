@@ -1006,10 +1006,13 @@ class DeTECHtor {
     // Script source matching (support both formats)
     // UNI-237: `||` discarded scriptSrc entirely whenever scripts was also present — 85 patterns
     // declare both and 54 of those with DIFFERENT content, so half their evidence never ran.
-    const scriptPatterns = [
+    // Deduplicated because the other 31 declare IDENTICAL content in both fields: concatenating
+    // blind would score one real script tag twice and push the same evidence string twice, which
+    // Task 3's excludes tie-break resolves on.
+    const scriptPatterns = [...new Set([
       ...(Array.isArray(pattern.scripts) ? pattern.scripts : []),
       ...(Array.isArray(pattern.scriptSrc) ? pattern.scriptSrc : []),
-    ];
+    ])];
     if (Array.isArray(scriptPatterns)) {
       for (const scriptPattern of scriptPatterns) {
         try {

@@ -33,6 +33,18 @@ test('a pattern declaring BOTH scripts and scriptSrc matches on either', () => {
   assert.deepStrictEqual(viaScriptSrc.map((m) => m.name), ['Widget'], 'scriptSrc half was discarded');
 });
 
+test('a pattern declaring the SAME regex in scripts and scriptSrc counts it once', () => {
+  // 31 of the 85 both-populated patterns declare identical content in each field. Task 3's
+  // excludes tie-break resolves on confidence, so a doubled score can decide which of two
+  // competing technologies survives.
+  const e = engineWith({
+    Adevole: { scripts: ['adevole'], scriptSrc: ['adevole'], categories: ['Analytics'] },
+  });
+  const [m] = e.matchPatterns(EVIDENCE({ scripts: [{ src: 'https://cdn.test/adevole.js' }] }));
+  assert.strictEqual(m.confidence, 60, 'one script match must score once, not twice');
+  assert.deepStrictEqual(m.evidence, ['Script: adevole']);
+});
+
 test('a url pattern fires against the final page URL', () => {
   const e = engineWith({ Coldfusion: { url: ['\\.cfm(?:$|\\?)'], categories: ['Unclassified'] } });
   const hit = e.matchPatterns(EVIDENCE({ finalUrl: 'https://example.edu/apply/index.cfm' }));
