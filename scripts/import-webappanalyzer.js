@@ -144,6 +144,9 @@ async function main() {
       if (name === '_metadata' || !def || typeof def !== 'object') continue;
       const raw = JSON.stringify(def);
       normalizeDefinition(def);
+      // UNI-237: `text` is read by nothing in src/ and duplicates `html`. Strip at import so a
+      // re-import does not resurrect 60 dead declarations.
+      if (def && typeof def === 'object' && def.text !== undefined) delete def.text;
       if (JSON.stringify(def) !== raw) stripped++;
     }
     console.log(`Stripped Wappalyzer modifiers from ${stripped} technologies`);

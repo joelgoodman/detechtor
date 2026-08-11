@@ -1004,7 +1004,12 @@ class DeTECHtor {
     }
     
     // Script source matching (support both formats)
-    const scriptPatterns = pattern.scripts || pattern.scriptSrc || [];
+    // UNI-237: `||` discarded scriptSrc entirely whenever scripts was also present — 85 patterns
+    // declare both and 54 of those with DIFFERENT content, so half their evidence never ran.
+    const scriptPatterns = [
+      ...(Array.isArray(pattern.scripts) ? pattern.scripts : []),
+      ...(Array.isArray(pattern.scriptSrc) ? pattern.scriptSrc : []),
+    ];
     if (Array.isArray(scriptPatterns)) {
       for (const scriptPattern of scriptPatterns) {
         try {
@@ -1189,7 +1194,33 @@ class DeTECHtor {
         }
       }
     }
-    
+
+    // UNI-237: `url` (76 patterns) and `xhr` (100) were declared and read by nothing. Both are
+    // live-path only — evidenceFromHtml supplies neither finalUrl nor networkHosts, so these never
+    // fire during a corpus pass. That is expected, not a bug.
+    if (Array.isArray(pattern.url) && typeof evidence.finalUrl === 'string') {
+      for (const urlPattern of pattern.url) {
+        try {
+          if (new RegExp(urlPattern, 'i').test(evidence.finalUrl)) {
+            confidence += 70;
+            matchEvidence.push(`URL: ${urlPattern}`);
+          }
+        } catch { /* invalid regex; lint-patterns gates these */ }
+      }
+    }
+
+    if (Array.isArray(pattern.xhr) && Array.isArray(evidence.networkHosts)) {
+      for (const xhrPattern of pattern.xhr) {
+        try {
+          const re = new RegExp(xhrPattern, 'i');
+          if (evidence.networkHosts.some((h) => re.test(String(h)))) {
+            confidence += 70;
+            matchEvidence.push(`XHR: ${xhrPattern}`);
+          }
+        } catch { /* invalid regex; lint-patterns gates these */ }
+      }
+    }
+
     // Normalize categories to always be strings
     let categories = pattern.categories || pattern.cats || ['Unknown'];
     if (Array.isArray(categories)) {

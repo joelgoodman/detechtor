@@ -382,9 +382,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\APC\\b"
-    ],
     "website": "https://www.apc-pli.com"
   },
   "API Spreadsheets": {
@@ -6829,9 +6826,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\Asendia\\b"
-    ],
     "website": "https://www.asendia.com"
   },
   "Aseqbase": {
@@ -7560,10 +7554,6 @@
     "icon": "AusPost.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bAusPost\\b",
-      "\\bAustralia Post\\b"
     ],
     "website": "https://auspost.com.au"
   },
@@ -8670,9 +8660,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bB2C Europe\\b"
-    ],
     "website": "https://www.b2ceurope.eu/"
   },
   "B2Chat": {
@@ -8790,9 +8777,6 @@
     "icon": "BRT.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bBRT\\b"
     ],
     "website": "https://www.brt.it"
   },
@@ -10402,9 +10386,6 @@
       6
     ],
     "saas": true,
-    "text": [
-      "\\bBillbee\\b"
-    ],
     "website": "https://www.billbee.io"
   },
   "Billgang": {
@@ -12629,9 +12610,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bBoxtal\\b"
-    ],
     "website": "https://www.boxtal.com"
   },
   "Bpost": {
@@ -12642,9 +12620,6 @@
     "icon": "Bpost.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bBpost\\b"
     ],
     "website": "https://www.bpost.be"
   },
@@ -13334,9 +13309,6 @@
     "icon": "Budbee.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bBudbee\\b"
     ],
     "website": "https://app.budbee.com/"
   },
@@ -14407,10 +14379,6 @@
     "icon": "CTT.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bTourline Express\\b",
-      "\\bCTT\\b"
     ],
     "website": "https://www.ctt.pt"
   },
@@ -15837,9 +15805,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bCeleritas\\b"
-    ],
     "website": "https://celeritastransporte.com"
   },
   "Cellxpert": {
@@ -17146,9 +17111,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bChronofresh\\b"
-    ],
     "website": "https://www.chronofresh.fr"
   },
   "Chronopost": {
@@ -17159,9 +17121,6 @@
     "icon": "Chronopost.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bChronopost\\b"
     ],
     "website": "https://www.chronopost.fr"
   },
@@ -17299,9 +17258,6 @@
     "icon": "CityMail.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bCitymail\\b"
     ],
     "website": "https://www.citymail.se"
   },
@@ -19404,9 +19360,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bColis Priv[eé]\\b"
-    ],
     "website": "https://www.colisprive.fr"
   },
   "Colissimo": {
@@ -19417,9 +19370,6 @@
     "icon": "DPD.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bColissimo\\b"
     ],
     "website": "https://www.colissimo.entreprise.laposte.fr"
   },
@@ -21555,9 +21505,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bCorreos\\b"
-    ],
     "website": "https://www.correos.es"
   },
   "Correos Ecommerce": {
@@ -21704,9 +21651,6 @@
     "icon": "Coureon.png",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bCoureon\\b"
     ],
     "website": "https://www.coureon.com"
   },
@@ -22431,9 +22375,6 @@
     "scripts": [
       "\\.cubyn\\.com"
     ],
-    "text": [
-      "\\bCubyn\\b"
-    ],
     "website": "https://www.cubyn.com"
   },
   "Cufon": {
@@ -23045,10 +22986,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bUK Mail\\b",
-      "\\bDHL\\b"
-    ],
     "website": "https://www.dhl.com"
   },
   "DHTMLX": {
@@ -23129,9 +23066,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bDPD\\b"
-    ],
     "website": "https://www.dpd.com"
   },
   "DPlayer": {
@@ -23190,9 +23124,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bDX\\b"
-    ],
     "website": "https://www.dxdelivery.com"
   },
   "DX1": {
@@ -23240,9 +23171,6 @@
     "icon": "Dachser.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bDachser\\b"
     ],
     "website": "https://www.dachser.com"
   },
@@ -24007,9 +23935,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bDelivengo\\b"
-    ],
     "website": "https://mydelivengo.laposte.fr/"
   },
   "Deliverr": {
@@ -24386,9 +24311,6 @@
     "icon": "Deutsche Post.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bDeutsche Post\\b"
     ],
     "website": "https://www.deutschepost.de"
   },
@@ -27276,9 +27198,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bEasylog\\b"
-    ],
     "website": "https://www.easylog.com.br"
   },
   "Easysize": {
@@ -27532,10 +27451,6 @@
     "icon": "Ecovium.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bMHP\\b",
-      "\\bEcovium\\b"
     ],
     "website": "https://ecovium.com"
   },
@@ -27927,9 +27842,6 @@
       "poa"
     ],
     "saas": true,
-    "text": [
-      "Web CMS by Elcom"
-    ],
     "website": "https://www.elcom.com.au/"
   },
   "Eleanor CMS": {
@@ -29100,9 +29012,6 @@
     "icon": "Envialia.png",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bEnvialia\\b"
     ],
     "website": "https://www.envialia.com"
   },
@@ -31745,9 +31654,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bFedEx\\b"
-    ],
     "website": "https://www.fedex.com"
   },
   "Fedora": {
@@ -34328,9 +34234,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bFrance Express\\b"
-    ],
     "website": "https://www.france-express.com"
   },
   "Frappe": {
@@ -34543,9 +34446,6 @@
     "icon": "La Poste.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bFrequenceo\\b"
     ],
     "website": "https://www.laposte.fr/entreprise/produit-entreprise/frequenceo"
   },
@@ -35494,9 +35394,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bGeodis\\b"
-    ],
     "website": "https://geodis.com"
   },
   "GEOvendas": {
@@ -35558,9 +35455,6 @@
     "icon": "GLS.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bGLS\\b"
     ],
     "website": "https://gls-group.eu"
   },
@@ -40882,9 +40776,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bHermes\\b"
-    ],
     "website": "https://www.hermesworld.com"
   },
   "Hero": {
@@ -41688,9 +41579,6 @@
     "icon": "Homerr.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bHomerr\\b"
     ],
     "website": "https://www.homerr.com"
   },
@@ -48046,9 +47934,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bKeen Delivery\\b"
-    ],
     "website": "https://www.keendelivery.com"
   },
   "Keen-Slider": {
@@ -52848,9 +52733,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bLogoiX\\b"
-    ],
     "website": "https://www.logoix.com"
   },
   "Loja Integrada": {
@@ -53967,9 +53849,6 @@
     "icon": "MRW.png",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bMRW\\b"
     ],
     "website": "https://www.mrw.es"
   },
@@ -58590,9 +58469,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bMondial Relay\\b"
-    ],
     "website": "https://www.mondialrelay.com"
   },
   "Mondo Media": {
@@ -59498,9 +59374,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bMy Flying Box\\b"
-    ],
     "website": "https://www.myflyingbox.com/"
   },
   "My Food Link": {
@@ -60198,9 +60071,6 @@
     "icon": "NACEX.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bNACEX\\b"
     ],
     "website": "https://www.nacex.es"
   },
@@ -61213,9 +61083,6 @@
     "icon": "Nexive.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bNexive\\b"
     ],
     "website": "https://www.nexive.it"
   },
@@ -65138,11 +65005,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bpost\\.at\\b",
-      "\\bPost AG\\b",
-      "\\b[ÖO]sterreichische Post\\b"
-    ],
     "website": "https://www.post.at"
   },
   "OtterText": {
@@ -66438,9 +66300,6 @@
     "icon": "Parcelforce.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bParcelforce\\b"
     ],
     "website": "https://www.parcelforce.com"
   },
@@ -70123,9 +69982,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bPostNL\\b"
-    ],
     "website": "https://postnl.post"
   },
   "Postach": {
@@ -70148,9 +70004,6 @@
     "icon": "Poste Italiane.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bPoste Italiane\\b"
     ],
     "website": "https://www.poste.it"
   },
@@ -75975,9 +75828,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bRed je Pakketje\\b"
-    ],
     "website": "https://redjepakketje.nl"
   },
   "RedCart": {
@@ -76532,9 +76382,6 @@
     "icon": "Relais Colis.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bRelais Colis\\b"
     ],
     "website": "https://www.relaiscolis.com"
   },
@@ -78670,9 +78517,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bRoyal Mail\\b"
-    ],
     "website": "https://www.royalmail.com"
   },
   "Rspack": {
@@ -79263,9 +79107,6 @@
     "icon": "DPD.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bSEUR\\b"
     ],
     "website": "https://www.seur.com"
   },
@@ -95921,9 +95762,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bTipsa\\b"
-    ],
     "website": "https://www.tip-sa.com"
   },
   "Tiptap": {
@@ -96802,9 +96640,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bTransmart\\b"
-    ],
     "website": "https://transmartshipping.com"
   },
   "TravelJoy": {
@@ -97264,9 +97099,6 @@
     "icon": "Trunkrs.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bTrunkrs\\b"
     ],
     "website": "https://trunkrs.nl"
   },
@@ -98527,9 +98359,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bUK Mail\\b"
-    ],
     "website": "https://www.ukmail.com"
   },
   "UKFast": {
@@ -98624,9 +98453,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\b(?<!-)UPS\\b"
-    ],
     "website": "https://www.ups.com"
   },
   "USPS": {
@@ -98637,10 +98463,6 @@
     "icon": "USPS.svg",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bUSPS\\b",
-      "\\bUnited States Postal Service\\b"
     ],
     "website": "https://www.usps.com"
   },
@@ -105699,9 +105521,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bWhistl\\b"
-    ],
     "website": "https://www.whistl.co.uk"
   },
   "Whitelabel MD": {
@@ -108765,9 +108584,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bYodel\\b"
-    ],
     "website": "https://www.yodel.co.uk/"
   },
   "Yola": {
@@ -109493,9 +109309,6 @@
     "description": "Zeleris provides door to door shipment delivery to Ireland, UK and the EU.",
     "requiresCategory": [
       6
-    ],
-    "text": [
-      "\\bZeleris\\b"
     ],
     "website": "https://www.zeleris.com"
   },

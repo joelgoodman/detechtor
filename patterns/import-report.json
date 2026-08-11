@@ -7363,6 +7363,6 @@
     "TYPO3",
     "Kentico"
   ],
-  "artifactSha256": "d467fba709063113146226162b0696100509726e8cc0b303a18cadb259cd3fc7",
-  "artifactShaRecordedBy": "UNI-237 seed (not a re-import)"
+  "artifactSha256": "e99a38c15fa63bcfdaaf2ba9de50e24ade81cc7ca1b9effe9d0599828fd90387",
+  "artifactShaRecordedBy": "UNI-237 Task 2: stripped unread `text` field"
 }
