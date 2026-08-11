@@ -30,7 +30,6 @@
     "html": [
       "25live",
       "collegenet.*25live",
-      "event.*management",
       "twentyfivelive",
       "25live\\.collegenet\\.com",
       "class=\"25live"
@@ -57,7 +56,6 @@
     ],
     "description": "Academic Works scholarship management platform (acquired by Blackbaud, now marketed as Blackbaud Award Management). Deployed instances still use academicworks.com subdomains.",
     "html": [
-      "academic.*works",
       "academicworks",
       "academicworks.com"
     ],
@@ -177,8 +175,7 @@
     ],
     "description": "AdvisorTrac academic advising and student tracking",
     "html": [
-      "advisortrac",
-      "advisor.*trac"
+      "advisortrac"
     ],
     "scripts": [
       "advisortrac"
@@ -294,10 +291,7 @@
       29
     ],
     "description": "Microsoft Azure Cognitive Search",
-    "html": [
-      "azure.*search",
-      "cognitive.*search"
-    ],
+    "html": [],
     "scripts": [
       "azure.*search"
     ],
@@ -433,7 +427,6 @@
     "html": [
       "get\\.cbord\\.com",
       "cbord",
-      "campus.*dining",
       "getcbord",
       "cs\\.cbord\\.com",
       "mycard\\.cbord\\.com",
@@ -478,7 +471,6 @@
     ],
     "description": "Canva design platform for education",
     "html": [
-      "canva.*education",
       "canva.*for.*schools"
     ],
     "scripts": [
@@ -589,7 +581,6 @@
     ],
     "description": "Duo Security multi-factor authentication",
     "html": [
-      "duo.*security",
       "duosecurity",
       "duo\\.com"
     ],
@@ -740,8 +731,7 @@
     ],
     "description": "Element451 Bolt AI search product. Detected via Shell451.BoltDiscovery JS object.",
     "html": [
-      "BoltDiscovery",
-      "bolt.*discovery"
+      "BoltDiscovery"
     ],
     "scripts": [],
     "js": {
@@ -898,9 +888,7 @@
       14
     ],
     "description": "Figma design platform for education",
-    "html": [
-      "figma.*education"
-    ],
+    "html": [],
     "scripts": [
       "figma"
     ],
@@ -977,7 +965,6 @@
     ],
     "description": "GIS Cloud mapping platform",
     "html": [
-      "gis.*cloud",
       "giscloud"
     ],
     "scripts": [
@@ -1014,8 +1001,7 @@
     "description": "Google Workspace (formerly G Suite) collaboration platform",
     "html": [
       "workspace.*google",
-      "gsuite",
-      "g.*suite"
+      "gsuite"
     ],
     "scripts": [
       "workspace",
@@ -1035,8 +1021,7 @@
     ],
     "description": "GradesFirst student success and tutoring management",
     "html": [
-      "gradesfirst",
-      "grades.*first"
+      "gradesfirst"
     ],
     "scripts": [
       "gradesfirst"
@@ -1211,8 +1196,7 @@
     ],
     "description": "JW Player video hosting platform",
     "html": [
-      "jwplayer",
-      "jw.*player"
+      "jwplayer"
     ],
     "scripts": [
       "jwplayer"
@@ -1391,7 +1375,6 @@
     "description": "Localist event calendar platform for higher education.",
     "html": [
       "localist",
-      "event.*calendar",
       "localist\\.com",
       "events\\.localist\\.com",
       "class=\"localist"
@@ -1514,8 +1497,7 @@
     ],
     "description": "Microsoft Power BI business intelligence platform",
     "html": [
-      "powerbi",
-      "power.*bi"
+      "powerbi"
     ],
     "scripts": [
       "powerbi"
@@ -1669,7 +1651,6 @@
     ],
     "description": "Rave emergency communication platform",
     "html": [
-      "rave.*mobile.*safety",
       "getrave"
     ],
     "scripts": [
@@ -1690,12 +1671,9 @@
     ],
     "description": "Ready Education mobile campus platform",
     "html": [
-      "ready.*education",
       "readyeducation"
     ],
-    "scripts": [
-      "ready.*education"
-    ],
+    "scripts": [],
     "js": {
       "ReadyEducation": ""
     },
@@ -1709,7 +1687,6 @@
     ],
     "description": "Rise Vision digital signage platform",
     "html": [
-      "rise.*vision",
       "risevision"
     ],
     "scripts": [
@@ -1763,7 +1740,6 @@
       "force\\.com",
       "lightning-",
       "salesforce.*education",
-      "education.*cloud",
       "salesforce",
       "educationcloud\\.salesforce\\.com",
       "class=\"salesforce"
@@ -1793,7 +1769,6 @@
     ],
     "description": "Scala digital signage platform",
     "html": [
-      "scala.*digital",
       "scala.*signage"
     ],
     "scripts": [
@@ -2070,18 +2045,15 @@
     "html": [
       "transactcampus\\.com",
       "blackboard.*transact",
-      "bb.*transact",
       "transactcampus",
       "transact-campus",
       "transact\\.com",
       "campus\\.transact\\.com",
-      "class=\"transact",
-      "data-transact"
+      "class=\"transact"
     ],
     "scripts": [
       "transactcampus\\.com",
       "transact",
-      "bb.*transact",
       "transact-campus"
     ],
     "js": {
@@ -2266,7 +2238,6 @@
     "description": "Anthology Engage student engagement and co-curricular management platform (formerly Campus Labs Engage).",
     "html": [
       "campuslabs\\.com/engage",
-      "campus.*labs",
       "campuslabs",
       "anthology.*engage",
       "engage.anthology"

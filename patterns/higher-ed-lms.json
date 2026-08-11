@@ -32,12 +32,12 @@
     "description": "Blackboard Collaborate virtual classroom platform",
     "html": [
       "blackboard.*collaborate",
-      "bb.*collaborate",
+      "bb-collaborate",
       "collaborate.*ultra"
     ],
     "scripts": [
       "collaborate",
-      "bb.*collaborate"
+      "bb-collaborate"
     ],
     "js": {
       "Collaborate": "",
@@ -86,13 +86,12 @@
     ],
     "description": "Blackboard Learn Ultra modern interface",
     "html": [
-      "blackboard.*ultra",
-      "ultra.*experience",
-      "bb.*ultra"
+      "blackboard.{0,60}ultra",
+      "bb.{0,30}ultra"
     ],
     "scripts": [
-      "blackboard.*ultra",
-      "bb.*ultra"
+      "blackboard.{0,60}ultra",
+      "bb.{0,30}ultra"
     ],
     "js": {
       "BlackboardUltra": "",
@@ -216,13 +215,11 @@
     ],
     "description": "Cengage WebAssign online homework platform",
     "html": [
-      "webassign",
-      "cengage.*webassign",
-      "web.*assign"
+      "webassign"
     ],
     "scripts": [
       "webassign",
-      "cengage"
+      "cengage\\.com"
     ],
     "js": {
       "WebAssign": "",
@@ -383,12 +380,10 @@
     ],
     "description": "Google Classroom learning management system",
     "html": [
-      "classroom\\.google\\.com",
-      "google.*classroom"
+      "classroom\\.google\\.com"
     ],
     "scripts": [
-      "classroom.*google",
-      "google.*classroom"
+      "classroom.*google"
     ],
     "js": {
       "GoogleClassroom": ""
@@ -423,7 +418,6 @@
     "html": [
       "\\.catalog\\.canvaslms\\.com",
       "catalog\\.canvaslms\\.com",
-      "canvas.*catalog",
       "catalog\\.instructure",
       "/canvas-catalog/",
       "catalog\\.instructure\\.com"
@@ -523,8 +517,7 @@
     "description": "ALEKS adaptive learning platform by McGraw-Hill",
     "html": [
       "aleks",
-      "mcgraw.*aleks",
-      "adaptive.*learning"
+      "mcgraw.*aleks"
     ],
     "scripts": [
       "aleks"
@@ -584,12 +577,9 @@
     ],
     "description": "Microsoft Teams Education platform",
     "html": [
-      "teams.*education",
-      "office365.*education",
-      "microsoft.*education"
+      "office365.*education"
     ],
     "scripts": [
-      "teams.*education",
       "office365.*edu"
     ],
     "js": {

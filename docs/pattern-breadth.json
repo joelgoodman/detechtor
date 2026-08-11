@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-11T16:58:12.874Z",
+  "generated": "2026-08-11T19:44:04.968Z",
   "ticket": "UNI-237",
   "scanned": 3879,
   "unscannable": 335,
@@ -15,13 +15,12 @@
   ],
   "patterns": {
     "25Live": {
-      "fires": 419,
+      "fires": 57,
       "strongest": 27,
       "html": {
         "25live": 57,
         "25live\\.collegenet\\.com": 18,
-        "collegenet.*25live": 10,
-        "event.*management": 366
+        "collegenet.*25live": 10
       }
     },
     "33Across": {
@@ -55,10 +54,9 @@
       }
     },
     "Academic Works": {
-      "fires": 229,
+      "fires": 11,
       "strongest": 0,
       "html": {
-        "academic.*works": 229,
         "academicworks": 11,
         "academicworks.com": 10
       }
@@ -225,13 +223,6 @@
         "advancementform": 1
       }
     },
-    "AdvisorTrac": {
-      "fires": 82,
-      "strongest": 0,
-      "html": {
-        "advisor.*trac": 82
-      }
-    },
     "Agility CMS": {
       "fires": 2,
       "strongest": 2,
@@ -329,10 +320,9 @@
       "html": {}
     },
     "Angular": {
-      "fires": 422,
+      "fires": 131,
       "strongest": 0,
       "html": {
-        "angular": 301,
         "data-ng-": 10,
         "ng-app": 122
       }
@@ -369,22 +359,20 @@
       }
     },
     "Anthology Engage": {
-      "fires": 174,
+      "fires": 49,
       "strongest": 0,
       "html": {
-        "campus.*labs": 174,
         "campuslabs": 49,
         "campuslabs\\.com/engage": 42
       }
     },
     "Anthology Student": {
-      "fires": 66,
+      "fires": 60,
       "strongest": 0,
       "html": {
         "anthology": 8,
         "anthology.*student": 3,
         "campus-management": 1,
-        "campus.*nexus": 55,
         "campusmgmt": 3,
         "campusnexus": 49,
         "cmnet": 1
@@ -523,12 +511,9 @@
       "html": {}
     },
     "Azure Cognitive Search": {
-      "fires": 43,
+      "fires": 1,
       "strongest": 1,
-      "html": {
-        "azure.*search": 17,
-        "cognitive.*search": 27
-      }
+      "html": {}
     },
     "Azure Edge Network": {
       "fires": 14,
@@ -625,10 +610,10 @@
       }
     },
     "Blackboard Collaborate": {
-      "fires": 30,
+      "fires": 5,
       "strongest": 0,
       "html": {
-        "bb.*collaborate": 29,
+        "bb-collaborate": 1,
         "blackboard.*collaborate": 3,
         "collaborate.*ultra": 2
       }
@@ -644,21 +629,18 @@
       }
     },
     "Blackboard Transact": {
-      "fires": 709,
+      "fires": 3,
       "strongest": 1,
       "html": {
-        "bb.*transact": 259,
-        "blackboard.*transact": 2,
-        "campus.*card": 506
+        "blackboard.*transact": 2
       }
     },
     "Blackboard Ultra": {
-      "fires": 76,
+      "fires": 22,
       "strongest": 0,
       "html": {
-        "bb.*ultra": 55,
-        "blackboard.*ultra": 46,
-        "ultra.*experience": 13
+        "bb.{0,30}ultra": 5,
+        "blackboard.{0,60}ultra": 19
       }
     },
     "Blackboard Web Community Manager": {
@@ -697,13 +679,10 @@
       "html": {}
     },
     "Bootstrap": {
-      "fires": 3803,
+      "fires": 1595,
       "strongest": 1065,
       "html": {
-        "bootstrap": 1595,
-        "class=\".*btn-": 2116,
-        "class=\".*col-": 2342,
-        "class=\".*row": 3754
+        "bootstrap": 1595
       }
     },
     "Bootstrap Icons": {
@@ -819,10 +798,9 @@
       }
     },
     "CBORD": {
-      "fires": 506,
+      "fires": 10,
       "strongest": 0,
       "html": {
-        "campus.*dining": 498,
         "cbord": 10,
         "get\\.cbord\\.com": 3
       }
@@ -859,10 +837,9 @@
       }
     },
     "Campus Labs": {
-      "fires": 174,
+      "fires": 49,
       "strongest": 0,
       "html": {
-        "campus.*labs": 174,
         "campuslabs": 49
       }
     },
@@ -876,10 +853,9 @@
       }
     },
     "CampusLogic": {
-      "fires": 181,
+      "fires": 2,
       "strongest": 0,
       "html": {
-        "campus.*logic": 181,
         "campuslogic": 2
       }
     },
@@ -897,10 +873,9 @@
       "html": {}
     },
     "Canva for Education": {
-      "fires": 157,
+      "fires": 75,
       "strongest": 39,
       "html": {
-        "canva.*education": 115,
         "canva.*for.*schools": 37
       }
     },
@@ -928,13 +903,6 @@
       "html": {
         "data-cascade-": 1,
         "hannonhill.com": 1
-      }
-    },
-    "Cengage WebAssign": {
-      "fires": 214,
-      "strongest": 0,
-      "html": {
-        "web.*assign": 214
       }
     },
     "Ceros": {
@@ -1091,10 +1059,9 @@
       }
     },
     "Common Application": {
-      "fires": 194,
+      "fires": 23,
       "strongest": 0,
       "html": {
-        "common.*application": 177,
         "commonapp": 23
       }
     },
@@ -1361,10 +1328,9 @@
       "html": {}
     },
     "DegreeWorks": {
-      "fires": 236,
+      "fires": 31,
       "strongest": 0,
       "html": {
-        "degree.*works": 236,
         "degreeworks": 31
       }
     },
@@ -1390,13 +1356,6 @@
       "strongest": 1,
       "html": {
         "df-messenger": 1
-      }
-    },
-    "Diaspora": {
-      "fires": 300,
-      "strongest": 0,
-      "html": {
-        "diaspora": 300
       }
     },
     "Didomi": {
@@ -1498,10 +1457,9 @@
       "html": {}
     },
     "Duo Security": {
-      "fires": 244,
+      "fires": 1,
       "strongest": 0,
       "html": {
-        "duo.*security": 244,
         "duosecurity": 1
       }
     },
@@ -1591,11 +1549,10 @@
       }
     },
     "Element451 Search": {
-      "fires": 132,
+      "fires": 7,
       "strongest": 0,
       "html": {
-        "BoltDiscovery": 7,
-        "bolt.*discovery": 132
+        "BoltDiscovery": 7
       }
     },
     "Elementor": {
@@ -1822,21 +1779,6 @@
       "strongest": 2,
       "html": {}
     },
-    "FACTS SIS": {
-      "fires": 164,
-      "strongest": 0,
-      "html": {
-        "facts.*sis": 49,
-        "facts.*student": 160
-      }
-    },
-    "FAST Financial Aid": {
-      "fires": 123,
-      "strongest": 0,
-      "html": {
-        "fast.*financial.*aid": 123
-      }
-    },
     "FOLIO LSP": {
       "fires": 57,
       "strongest": 32,
@@ -1869,13 +1811,6 @@
       "fires": 2,
       "strongest": 2,
       "html": {}
-    },
-    "Figma for Education": {
-      "fires": 32,
-      "strongest": 0,
-      "html": {
-        "figma.*education": 32
-      }
     },
     "Finalsite": {
       "fires": 56,
@@ -2038,13 +1973,6 @@
         "futurelearn": 1
       }
     },
-    "GIS Cloud": {
-      "fires": 592,
-      "strongest": 0,
-      "html": {
-        "gis.*cloud": 592
-      }
-    },
     "GSAP": {
       "fires": 23,
       "strongest": 23,
@@ -2105,11 +2033,9 @@
       "html": {}
     },
     "Ghost": {
-      "fires": 613,
+      "fires": 14,
       "strongest": 6,
       "html": {
-        "ghost": 613,
-        "ghost.*version": 63,
         "powered.*by.*ghost": 8
       }
     },
@@ -2203,11 +2129,10 @@
       "html": {}
     },
     "Google Classroom": {
-      "fires": 66,
+      "fires": 6,
       "strongest": 2,
       "html": {
-        "classroom\\.google\\.com": 4,
-        "google.*classroom": 66
+        "classroom\\.google\\.com": 4
       }
     },
     "Google Custom Search": {
@@ -2264,26 +2189,17 @@
       "html": {}
     },
     "Google Workspace": {
-      "fires": 407,
+      "fires": 12,
       "strongest": 2,
       "html": {
-        "g.*suite": 400,
         "gsuite": 2,
         "workspace.*google": 10
       }
     },
-    "Gradelink": {
-      "fires": 180,
-      "strongest": 0,
-      "html": {
-        "grade.*link": 180
-      }
-    },
     "GradesFirst": {
-      "fires": 33,
+      "fires": 1,
       "strongest": 0,
       "html": {
-        "grades.*first": 33,
         "gradesfirst": 1
       }
     },
@@ -2527,13 +2443,6 @@
       "strongest": 1,
       "html": {}
     },
-    "Infinite Campus": {
-      "fires": 68,
-      "strongest": 0,
-      "html": {
-        "infinite.*campus": 68
-      }
-    },
     "Infinite Scroll": {
       "fires": 41,
       "strongest": 41,
@@ -2581,10 +2490,9 @@
       "html": {}
     },
     "Instructure Canvas Catalog": {
-      "fires": 81,
+      "fires": 4,
       "strongest": 0,
       "html": {
-        "canvas.*catalog": 77,
         "catalog\\.instructure": 4,
         "catalog\\.instructure\\.com": 4
       }
@@ -2632,10 +2540,9 @@
       "html": {}
     },
     "JW Player": {
-      "fires": 139,
+      "fires": 13,
       "strongest": 6,
       "html": {
-        "jw.*player": 139,
         "jwplayer": 13
       }
     },
@@ -2946,11 +2853,10 @@
       "html": {}
     },
     "Localist": {
-      "fires": 1992,
+      "fires": 78,
       "strongest": 44,
       "html": {
         "class=\"localist": 46,
-        "event.*calendar": 1970,
         "localist": 78,
         "localist\\.com": 23
       }
@@ -3179,10 +3085,9 @@
       "html": {}
     },
     "McGraw-Hill ALEKS": {
-      "fires": 20,
+      "fires": 9,
       "strongest": 0,
       "html": {
-        "adaptive.*learning": 11,
         "aleks": 9
       }
     },
@@ -3257,10 +3162,9 @@
       "html": {}
     },
     "Microsoft Power BI": {
-      "fires": 1152,
+      "fires": 11,
       "strongest": 0,
       "html": {
-        "power.*bi": 1152,
         "powerbi": 11
       }
     },
@@ -3270,12 +3174,10 @@
       "html": {}
     },
     "Microsoft Teams for Education": {
-      "fires": 145,
+      "fires": 5,
       "strongest": 0,
       "html": {
-        "microsoft.*education": 49,
-        "office365.*education": 5,
-        "teams.*education": 107
+        "office365.*education": 5
       }
     },
     "Microsoft Word": {
@@ -3561,14 +3463,13 @@
       "html": {}
     },
     "Oracle PeopleSoft Campus Solutions": {
-      "fires": 201,
+      "fires": 124,
       "strongest": 0,
       "html": {
         "/psc/": 53,
         "/psp/": 67,
         "PS_TOKEN": 2,
         "\\?cmd=login": 31,
-        "campus.*solutions": 79,
         "oracle.*peoplesoft": 1,
         "peoplesoft": 16
       }
@@ -3720,11 +3621,10 @@
       "html": {}
     },
     "PeopleSoft Campus Solutions": {
-      "fires": 96,
+      "fires": 17,
       "strongest": 0,
       "html": {
         "PS_TOKEN": 2,
-        "campus.*solutions": 79,
         "peoplesoft": 16
       }
     },
@@ -3865,11 +3765,10 @@
       "html": {}
     },
     "PowerCampus": {
-      "fires": 460,
+      "fires": 240,
       "strongest": 0,
       "html": {
         "eCollege": 238,
-        "power.*campus": 247,
         "powercampus": 2
       }
     },
@@ -4034,13 +3933,6 @@
       "strongest": 31,
       "html": {}
     },
-    "QuickSchools": {
-      "fires": 73,
-      "strongest": 0,
-      "html": {
-        "quick.*schools": 73
-      }
-    },
     "Quicklink": {
       "fires": 6,
       "strongest": 6,
@@ -4080,11 +3972,10 @@
       "html": {}
     },
     "Rave Mobile Safety": {
-      "fires": 186,
+      "fires": 92,
       "strongest": 48,
       "html": {
-        "getrave": 46,
-        "rave.*mobile.*safety": 96
+        "getrave": 46
       }
     },
     "Raygun": {
@@ -4112,10 +4003,9 @@
       }
     },
     "Ready Education": {
-      "fires": 352,
+      "fires": 1,
       "strongest": 0,
       "html": {
-        "ready.*education": 352,
         "readyeducation": 1
       }
     },
@@ -4149,10 +4039,9 @@
       "html": {}
     },
     "Regent Education": {
-      "fires": 41,
+      "fires": 1,
       "strongest": 0,
       "html": {
-        "regent.*education": 41,
         "regenteducation": 1
       }
     },
@@ -4183,13 +4072,6 @@
       "fires": 3,
       "strongest": 3,
       "html": {}
-    },
-    "Rise Vision": {
-      "fires": 390,
-      "strongest": 0,
-      "html": {
-        "rise.*vision": 390
-      }
     },
     "RockRMS": {
       "fires": 1,
@@ -4274,10 +4156,9 @@
       "html": {}
     },
     "Salesforce Education Cloud": {
-      "fires": 646,
+      "fires": 509,
       "strongest": 28,
       "html": {
-        "education.*cloud": 158,
         "force\\.com": 54,
         "lightning-": 11,
         "salesforce": 465,
@@ -4319,13 +4200,6 @@
       "fires": 2,
       "strongest": 2,
       "html": {}
-    },
-    "Scala Digital Signage": {
-      "fires": 244,
-      "strongest": 0,
-      "html": {
-        "scala.*digital": 244
-      }
     },
     "Schema App": {
       "fires": 19,
@@ -4595,10 +4469,9 @@
       "html": {}
     },
     "Smart Catalog": {
-      "fires": 155,
+      "fires": 92,
       "strongest": 0,
       "html": {
-        "smart.*catalog": 155,
         "smartcatalog": 92
       }
     },
@@ -4733,7 +4606,6 @@
       "fires": 25,
       "strongest": 0,
       "html": {
-        "starfish.*solutions": 25,
         "starfishsolutions": 25
       }
     },
@@ -4861,11 +4733,10 @@
       "html": {}
     },
     "TYPO3": {
-      "fires": 291,
+      "fires": 15,
       "strongest": 8,
       "html": {
         "TYPO3.*CMS": 15,
-        "typo3": 291,
         "typo3temp": 7
       }
     },
@@ -4922,10 +4793,10 @@
       "html": {}
     },
     "TargetX": {
-      "fires": 122,
+      "fires": 86,
       "strongest": 0,
       "html": {
-        "targetx": 122
+        "targetx_[a-z]+__": 86
       }
     },
     "Teads": {
@@ -5051,12 +4922,10 @@
       }
     },
     "Transact Campus": {
-      "fires": 278,
+      "fires": 12,
       "strongest": 1,
       "html": {
-        "bb.*transact": 259,
         "blackboard.*transact": 2,
-        "data-transact": 11,
         "transactcampus": 9,
         "transactcampus\\.com": 9
       }
@@ -5072,11 +4941,10 @@
       "html": {}
     },
     "Tribal Student Management": {
-      "fires": 22,
+      "fires": 11,
       "strongest": 0,
       "html": {
         "ebs.*tribal": 10,
-        "tribal.*education": 19,
         "tribal.*student.*management": 4
       }
     },
@@ -5219,11 +5087,10 @@
       "html": {}
     },
     "Unit4 Student Management": {
-      "fires": 31,
+      "fires": 13,
       "strongest": 9,
       "html": {
-        "coda.*student": 4,
-        "tribal.*student": 18
+        "coda.*student": 4
       }
     },
     "Unpkg": {
@@ -5292,13 +5159,6 @@
       "fires": 3,
       "strongest": 3,
       "html": {}
-    },
-    "Veracross": {
-      "fires": 382,
-      "strongest": 0,
-      "html": {
-        "vera.*cross": 382
-      }
     },
     "Vercel Analytics": {
       "fires": 2,

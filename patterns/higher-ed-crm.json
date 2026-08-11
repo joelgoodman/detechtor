@@ -7,20 +7,34 @@
     "tech_count": 4
   },
   "Slate (Technolutions)": {
-    "cats": [303],
+    "cats": [
+      303
+    ],
     "description": "Technolutions Slate — the dominant higher-ed admissions/enrollment CRM. Fingerprinted via the technolutions.net host: the mx.technolutions.net tracking-pixel/ping loader present on nearly every Slate-driven admissions funnel, plus the framework/embed asset hosts (technolutions.net/framework/base.js, *.cdn.technolutions.net). Deliberately excludes the bare word 'slate', which is on the pattern-lint STOPWORDS list — it collides with the CSS 'transform: translate(...)' property present on almost every modern site.",
-    "html": ["technolutions\\.net"],
-    "scripts": ["technolutions\\.net"],
+    "html": [
+      "technolutions\\.net"
+    ],
+    "scripts": [
+      "technolutions\\.net"
+    ],
     "higher_ed": true,
     "confidence": 88,
     "website": "https://technolutions.com",
     "_validation": "Data-mined vs BuiltWith CRM (UNI-156, 2026-07-16). 'technolutions.net' home-page HTML = 66.7% recall over 102 positives-with-HTML (68 hit) — the best recall of any vendor mined in this partial, driven by the mx.technolutions.net tracking pixel firing site-wide, not just on the admissions portal; 498 neg-hits over 4112 negatives (12.1%), spot-checked (5 institutions) as genuine mx.technolutions.net?id=...&sid=... tracking-pixel installs BuiltWith missed, not a collision — Slate's outsized HE market share explains the elevated neg-hit rate (comparable to HubSpot's 3.8% in the Marketing Automation partial). A bare 'slate' probe was rejected: 0/3 sampled hits on non-Slate institutions were real (all were CSS 'translate(...)' matches)."
   },
   "Salesforce": {
-    "cats": [303],
+    "cats": [
+      303
+    ],
     "description": "Salesforce Sales/Service Cloud as backend CRM, surfaced on the homepage only indirectly — a web-to-lead form action or admissions-portal link pointing at a *.force.com / *.salesforce-sites.com Salesforce-hosted domain (e.g. secure.force.com, my.salesforce-sites.com). Deliberately excludes the bare word 'salesforce', which collides with the Font Awesome 'fa-salesforce' brand-icon CSS class present on almost every site using Font Awesome's brand icon set. Also excludes bare 'force.com' matches inside unrelated '*workforce.com' program-name links via a negative lookbehind.",
-    "html": ["(?<!work)force\\.com", "salesforce-sites\\.com"],
-    "scripts": ["(?<!work)force\\.com", "salesforce-sites\\.com"],
+    "html": [
+      "(?<!work)force\\.com",
+      "salesforce-sites\\.com"
+    ],
+    "scripts": [
+      "(?<!work)force\\.com",
+      "salesforce-sites\\.com"
+    ],
     "higher_ed": false,
     "confidence": 72,
     "website": "https://www.salesforce.com",
@@ -28,10 +42,16 @@
     "_validation": "Data-mined vs BuiltWith CRM (UNI-156, 2026-07-16). Combined '(?<!work)force\\.com'/'salesforce-sites\\.com' home-page HTML = 10.9% recall over 119 positives-with-HTML (13 hit); 146 neg-hits over 4095 negatives (3.6%), spot-checked (12+ institutions across the neg-hit range) as genuine *.force.com/*.salesforce-sites.com admissions-portal or faculty-login links BuiltWith missed. A naive bare 'force\\.com' probe (no lookbehind) matched 2 unrelated 'workforce.com' program-name links (e.g. 'lfccworkforce.com|_self' in a program dropdown) before the negative lookbehind was added to exclude them; a naive bare 'salesforce' token was rejected outright (6/12 sampled hits were the Font Awesome 'fa-salesforce{--fa:...}' CSS rule, not a real install)."
   },
   "TargetX": {
-    "cats": [303],
+    "cats": [
+      303
+    ],
     "description": "TargetX — the leading Salesforce-native admissions/recruitment CRM built specifically for higher education (now part of Liaison International). Fingerprinted via its Salesforce object-namespace prefix in portal/inquiry-form URLs (TargetX_Base__InquiryForm, TargetX_Portal__PB), typically hosted on an institution's *.my.salesforce-sites.com or *.secure.force.com domain. Higher-ed-specific: TargetX has no non-HE customer base.",
-    "html": ["targetx"],
-    "scripts": ["targetx"],
+    "html": [
+      "targetx_[a-z]+__"
+    ],
+    "scripts": [
+      "targetx_[a-z]+__"
+    ],
     "higher_ed": true,
     "confidence": 85,
     "website": "https://targetx.com",
@@ -39,10 +59,16 @@
     "_validation": "Data-mined vs BuiltWith CRM (UNI-156, 2026-07-16, mined against the same CRM__Salesforce.json positive set since TargetX is a Salesforce-CRM implementation, not a separately labeled BuiltWith technology). 'targetx' home-page HTML = 7.6% recall over 119 positives-with-HTML (9 hit); 113 neg-hits over 4095 negatives (2.8%), spot-checked (6 institutions) as genuine TargetX_Base__InquiryForm / TargetX_Portal__PB admissions-portal links BuiltWith missed, not a collision — TargetX's dominant share of the Salesforce-in-HE market explains the elevated neg-hit rate."
   },
   "Element451": {
-    "cats": [303],
+    "cats": [
+      303
+    ],
     "description": "Element451 — a higher-ed admissions CRM/marketing platform, fingerprinted via its brand token appearing in dedicated markers: the wp-element451-events WordPress plugin path, the element451-styles-css / element451_style-css stylesheet id, the element451GoogleMapsInit callback, the element451-images.s3.amazonaws.com asset bucket, or an 'Element451 Chatbot/Chatbox/Messenger/Pixel Tag/BoltAI Agents' script comment.",
-    "html": ["element451"],
-    "scripts": ["element451"],
+    "html": [
+      "element451"
+    ],
+    "scripts": [
+      "element451"
+    ],
     "higher_ed": true,
     "confidence": 78,
     "website": "https://element451.com",

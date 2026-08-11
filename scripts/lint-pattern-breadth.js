@@ -177,22 +177,35 @@ violations.sort((a, b) => b.excess - a.excess);
 // Known blind spots -- printed on EVERY run, gate or report, so a future change that quietly fixes
 // (or, worse, papers over) one of these does not slip past unnoticed. Per the no-silent-caps rule:
 // a limitation we know about and choose not to fix here must still be visible on every run.
-const KNOWN_BLIND_SPOTS = [
-  {
-    tech: 'TargetX', pattern: 'targetx',
-    note: '35 of 122 detections are `targetXP` in a minified analytics bundle (29% of its own ' +
-      'fires) -- but the token "targetx" is not a dictionary word, so stage 1 does not flag it, ' +
-      'and its excess (0.9% of homepages) is under the absolute threshold. Neither stage catches ' +
-      'it. Task 7 fixes it by hand.',
-  },
-];
+// Patterns this gate provably CANNOT catch, declared so the coverage hole is visible on every run
+// rather than being discovered later as a surprise (the no-silent-caps rule).
+//
+// ⚠️ Validated like the allowlist: an entry naming a pattern the technology no longer declares is
+// STALE and fails the build. Without that check this list rots into a set of warnings about
+// problems that were fixed years ago, which is worse than no list -- a reader cannot tell the live
+// holes from the historical ones. TargetX was the founding entry; it was fixed in UNI-237 by
+// tightening `targetx` to the Salesforce package namespace `targetx_[a-z]+__`, and its entry was
+// removed by this very check. The blind-spot CLASS it illustrates is documented in the header.
+const KNOWN_BLIND_SPOTS = [];
 
 console.log(`breadth gate -- ${breadth.scanned} homepages -- absolute >${absLimit.toFixed(0)} -- relative >${REL_PCT * 100}% (min ${MIN_FIRES} fires) -- dictionary ${WORDS.size} words\n`);
 console.log(`spared by screen (excessive but not suspect): ${sparedByScreen}`);
 console.log(`spared by measurement (suspect but not excessive): ${sparedByMeasurement}\n`);
+const blindSpotProblems = [];
 for (const b of KNOWN_BLIND_SPOTS) {
-  console.log(`BLIND SPOT  ${b.tech} :: ${JSON.stringify(b.pattern)} -- ${b.note}`);
+  const p = breadth.patterns[b.tech];
+  if (!p) {
+    blindSpotProblems.push(`${b.tech}: no such technology in the breadth artifact -- stale`);
+  } else if (!(b.pattern in (p.html || {}))) {
+    blindSpotProblems.push(
+      `${b.tech}: pattern ${JSON.stringify(b.pattern)} is no longer declared -- stale, ` +
+      'the blind spot was fixed and the entry must be removed'
+    );
+  } else {
+    console.log(`BLIND SPOT  ${b.tech} :: ${JSON.stringify(b.pattern)} -- ${b.note}`);
+  }
 }
+if (KNOWN_BLIND_SPOTS.length === 0) console.log('no declared blind spots');
 console.log('');
 if (violations.length) {
   console.log('VIOLATIONS');
@@ -204,10 +217,11 @@ if (violations.length) {
   }
   console.log('');
 }
+for (const p of blindSpotProblems) console.log(`BLIND SPOT ${p}`);
 for (const p of allowProblems) console.log(`ALLOWLIST  ${p}`);
 for (const p of overrideProblems) console.log(`OVERRIDE   ${p.name}: ${p.problem}`);
 
-const failures = violations.length + allowProblems.length + overrideProblems.length;
-console.log(`\n${violations.length} violation(s) (${new Set(violations.map((v) => v.tech)).size} technologies) -- ${allowProblems.length} allowlist problem(s) -- ${overrideProblems.length} override problem(s)`);
+const failures = violations.length + allowProblems.length + overrideProblems.length + blindSpotProblems.length;
+console.log(`\n${violations.length} violation(s) (${new Set(violations.map((v) => v.tech)).size} technologies) -- ${allowProblems.length} allowlist problem(s) -- ${overrideProblems.length} override problem(s) -- ${blindSpotProblems.length} blind-spot problem(s)`);
 
 if (GATE && failures > 0) process.exit(1);
