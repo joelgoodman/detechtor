@@ -73,6 +73,66 @@ test('a missing finalUrl or networkHosts never throws', () => {
   assert.deepStrictEqual(e.matchPatterns(ev).map((m) => m.name), []);
 });
 
+test('excludes suppresses the excluded technology', () => {
+  const e = engineWith({
+    'Piwik PRO Core': { scripts: ['piwik\\.pro'], excludes: ['Matomo Analytics'], categories: ['Analytics'] },
+    'Matomo Analytics': { html: ['matomo'], categories: ['Analytics'] },
+  });
+  const names = e.matchPatterns(EVIDENCE({
+    scripts: [{ src: 'https://cdn.test/piwik.pro.js' }],
+    html: '<div>matomo</div>',
+  })).map((m) => m.name);
+  assert.deepStrictEqual(names, ['Piwik PRO Core']);
+});
+
+test('mutual excludes resolve to the higher-confidence match, not to neither', () => {
+  // Underscore.js excludes Lodash AND Lodash excludes Underscore.js. Suppressing both loses a real
+  // detection; picking by file order makes the answer depend on load sequence.
+  const e = engineWith({
+    'Underscore.js': { scripts: ['underscore'], excludes: ['Lodash'], categories: ['JavaScript Library'] },
+    Lodash: { html: ['lodash'], excludes: ['Underscore.js'], categories: ['JavaScript Library'] },
+  });
+  const names = e.matchPatterns(EVIDENCE({
+    scripts: [{ src: 'https://cdn.test/underscore.js' }],   // script = 60
+    html: '<div>lodash</div>',                              // html   = 40
+  })).map((m) => m.name);
+  assert.deepStrictEqual(names, ['Underscore.js'], 'higher-confidence match must survive');
+});
+
+test('mutual excludes at an exact tie keep both', () => {
+  const e = engineWith({
+    A: { html: ['aaa'], excludes: ['B'], categories: ['Unclassified'] },
+    B: { html: ['bbb'], excludes: ['A'], categories: ['Unclassified'] },
+  });
+  const names = e.matchPatterns(EVIDENCE({ html: '<div>aaa bbb</div>' })).map((m) => m.name).sort();
+  assert.deepStrictEqual(names, ['A', 'B'], 'an exact tie must keep both rather than pick arbitrarily');
+});
+
+test('excludes naming an absent technology is inert', () => {
+  const e = engineWith({ Solo: { html: ['solo'], excludes: ['Nonexistent'], categories: ['Unclassified'] } });
+  assert.deepStrictEqual(e.matchPatterns(EVIDENCE({ html: 'solo' })).map((m) => m.name), ['Solo']);
+});
+
+test('a three-way exclusion chain suppresses transitively without letting a suppressed tech suppress others', () => {
+  // A excludes B, B excludes C. A (script=60) beats B (html=40) beats C (url=50... wait, ordered by
+  // confidence descending regardless of declaration order). Concretely: A=60 excludes B=50, and
+  // B=50 excludes C=40. A survives and suppresses B. B is suppressed, so it must NOT get to also
+  // suppress C — C only loses if something that survives excludes it. Nothing does, so C survives
+  // alongside A. This pins applyExcludes' `if (suppressed.has(match.name)) continue` guard: a
+  // suppressed match's own exclude rules never run.
+  const e = engineWith({
+    A: { scripts: ['aaa'], excludes: ['B'], categories: ['Unclassified'] },       // script = 60
+    B: { url: ['bbb'], excludes: ['C'], categories: ['Unclassified'] },           // url = 50
+    C: { html: ['ccc'], categories: ['Unclassified'] },                          // html = 40
+  });
+  const names = e.matchPatterns(EVIDENCE({
+    scripts: [{ src: 'https://cdn.test/aaa.js' }],
+    finalUrl: 'https://example.edu/bbb',
+    html: '<div>ccc</div>',
+  })).map((m) => m.name).sort();
+  assert.deepStrictEqual(names, ['A', 'C'], 'B is suppressed by A; a suppressed B must not also suppress C');
+});
+
 test('no pattern file declares `text` any more', () => {
   // `text` was declared on 60 patterns and read by nothing — an unread field, not a weak one.
   const e = new DeTECHtor();

@@ -962,12 +962,11 @@ class DeTECHtor {
   
   matchPatterns(evidence) {
     const detected = [];
-    
+
     for (const [techName, pattern] of Object.entries(this.patterns)) {
       try {
         const match = this.evaluatePattern(techName, pattern, evidence);
-        
-        if (match.confidence >= config.minConfidence) {
+        if (match.confidence > 0) {
           detected.push(match);
         }
       } catch (error) {
@@ -976,10 +975,43 @@ class DeTECHtor {
         }
       }
     }
-    
-    return detected.sort((a, b) => b.confidence - a.confidence);
+
+    detected.sort((a, b) => b.confidence - a.confidence);
+    return this.applyExcludes(detected);
   }
-  
+
+  /**
+   * UNI-237: `excludes` was declared on 45 patterns and read by nothing.
+   *
+   * The declared pairs are MUTUAL — Underscore.js excludes Lodash and Lodash excludes
+   * Underscore.js, likewise AngularJS/Angular and Piwik PRO Core/Matomo Analytics. A naive pass
+   * suppresses both, or picks whichever the loop happened to reach first, making the result depend
+   * on pattern-file load order. So: the higher-confidence match wins and suppresses the other; an
+   * exact tie keeps both, because there is no principled way to choose and dropping a real
+   * detection is worse than reporting two.
+   *
+   * @param {Array<{name: string, confidence: number}>} sorted confidence-descending matches
+   */
+  applyExcludes(sorted) {
+    const byName = new Map(sorted.map((m) => [m.name, m]));
+    const suppressed = new Set();
+
+    for (const match of sorted) {
+      if (suppressed.has(match.name)) continue;
+      const rules = this.patterns[match.name] && this.patterns[match.name].excludes;
+      if (!Array.isArray(rules)) continue;
+
+      for (const victimName of rules) {
+        const victim = byName.get(victimName);
+        if (!victim || victim.name === match.name) continue;
+        if (victim.confidence === match.confidence) continue; // exact tie: keep both
+        if (victim.confidence < match.confidence) suppressed.add(victimName);
+      }
+    }
+
+    return sorted.filter((m) => !suppressed.has(m.name));
+  }
+
   evaluatePattern(name, pattern, evidence) {
     let confidence = 0;
     const matchEvidence = [];
