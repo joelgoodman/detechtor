@@ -17,6 +17,8 @@
 - **Never fabricate a measurement.** If a number is not produced by a script in this plan, do not write it into a doc, a commit message, or a PR body. Missing means unavailable.
 - **Fail loud, never partial.** Any script writing an artifact must refuse to write it if any shard failed or if input accounting does not reconcile. Follow the invariants already in `scripts/corpus-prevalence.js`.
 - **`node --test tests/*.test.js` must stay green**, currently 136 tests.
+- **One deliberate exception to green:** Task 6 wires the breadth gate into `npm test` while the ~52 violations it detects are still present, so `npm test` FAILS at the end of Task 6 and is repaired by Task 7. This is the intended sequence — the gate has to exist before the worklist it produces can be cleared. **Task 6's reviewer must not treat that red build as a defect, and must not accept allowlisting the violations to force it green.** Every other task ends green.
+- **Scripted, reviewed changes to the generated artifact are allowed; hand-edits are not.** Tasks 2 and 8 modify `patterns/generated/webappanalyzer-merged.json` through a script and then re-record its hash in the same commit. That is the guard working as designed. What the guard exists to stop is an edit made directly in an editor and never reconciled — which the next import silently reverts.
 - **Tracked generated files must be committed in the same commit as the script that changes them**, or `npm test` dirties a clean checkout.
 - Commit messages end with: `Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>`
 - Branch: `joelgoodman/uni-237-detection-precision`. Do not merge or rebase onto `main`; it is stacked on `joelgoodman/uni-235-semantic-category-audit`.
@@ -1752,7 +1754,7 @@ In `package.json`, add `lint:breadth` and insert the gate into `test` **after** 
 - [ ] **Step 6: Confirm the gate currently FAILS**
 
 Run: `npm test`
-Expected: **FAIL**, listing the ~52 violations. This is correct and expected — Task 7 fixes them. Do not allowlist them to make the build green.
+Expected: **FAIL**, listing the ~52 violations. This is correct and expected — Task 7 fixes them. Do not allowlist them to make the build green, and do not defer wiring the gate until after Task 7: a gate that has never been seen to fail has not been shown to work. Task 6 is the one task in this plan that ends with a red build, and its Global Constraints entry says so.
 
 - [ ] **Step 7: Commit**
 
