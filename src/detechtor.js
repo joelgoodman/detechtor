@@ -11,6 +11,8 @@ const { resolveIdentities } = require('./technology-identity');
 const ALIASES = require('../patterns/technology-aliases.json');
 const { applyCategoryOverrides } = require('./category-overrides');
 const CATEGORY_OVERRIDES = require('../patterns/category-overrides.json');
+const PATTERN_OVERRIDES = require('../patterns/pattern-overrides.json');
+const { applyPatternOverrides } = require('./pattern-overrides');
 
 class DeTECHtor {
   constructor(options = {}) {
@@ -146,6 +148,16 @@ class DeTECHtor {
       if (config.verbose) {
         const n = Object.keys(rules).filter((k) => k !== '_comment' && resolved[k]).length;
         if (n) console.log(`Applied ${n} category override(s)`);
+      }
+
+      // UNI-237: evidence-pattern removals, applied after the category layer. Order does not matter
+      // — the two layers touch disjoint fields — but keeping them adjacent keeps the "what does a
+      // pristine load mean" answer in one place.
+      const patternRules = PATTERN_OVERRIDES.overrides || {};
+      resolved = applyPatternOverrides(resolved, patternRules);
+      if (config.verbose) {
+        const n2 = Object.keys(patternRules).filter((k) => k !== '_comment' && resolved[k]).length;
+        if (n2) console.log(`Applied ${n2} pattern override(s)`);
       }
     }
 

@@ -1,0 +1,4 @@
+{
+  "_comment": "UNI-237. Evidence-pattern removals for technologies in the upstream-regenerated webappanalyzer-merged.json. See src/pattern-overrides.js. Each rule: {remove: {field: [pattern, ...]}, reason, decided}.",
+  "overrides": {}
+}
