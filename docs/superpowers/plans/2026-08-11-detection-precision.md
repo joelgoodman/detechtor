@@ -1473,6 +1473,53 @@ Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>"
 
 ### Task 6: The breadth gate, calibrated
 
+> **⚠️ REVISED 2026-08-11 — read before implementing. The steps below describe a measured-excess-only
+> gate. That was calibrated against the full corpus and FAILED: it flags `Yoast SEO Premium`,
+> `Canvas LMS` (`instructure\.com`) and `Algolia` as violations. Root cause: `strongest` counts only
+> non-html channels and the corpus cannot evaluate `js`/`cookies`/`headers`, so any technology whose
+> real marker arrives in markup has `strongest ≈ 0` and reads as pure collision mass.**
+>
+> **The gate must require BOTH stages to agree:**
+>
+> **Stage 1 — specificity screen.** Vendor a word list into the repo as `patterns/dictionary.txt`
+> (copy `/usr/share/dict/words`, ~234k entries, and commit it — the gate must not depend on a system
+> file that is absent on most Linux CI images). A pattern is *suspect* when:
+>
+> ```js
+> function isSuspect(regex, WORDS) {
+>   const tokens = String(regex).toLowerCase().match(/[a-z]{3,}/g) || [];
+>   const dictTokens = tokens.filter((t) => WORDS.has(t));
+>   // A wildcard between dictionary words matches ordinary prose: `event.*calendar`, `power.*bi`.
+>   // A bare token that is entirely dictionary words collides with English: `ghost`, `diaspora`.
+>   // Vendor strings (`instructure\.com`, `algolia`, `omniupdate`) and anchored literals (Yoast's
+>   // HTML comment) contain non-dictionary tokens and are correctly spared.
+>   return /\.\*|\.\+/.test(regex) ? dictTokens.length > 0
+>                                    : (tokens.length > 0 && dictTokens.length === tokens.length);
+> }
+> ```
+>
+> **Stage 2 — measured excess**, exactly as the steps below describe (absolute >2% of scanned,
+> relative >25% of the technology's own fires with a 20-fire floor).
+>
+> A pattern fails ONLY if `isSuspect(...) && (failsAbsolute || failsRelative)`.
+>
+> **Expected result on the current artifact: 82 patterns across 70 technologies, 39 in signal
+> categories, 17 of them in the regenerated file.** If you get a materially different number, stop
+> and report it before proceeding — the calibration in Step 4 depends on this.
+>
+> **The gate must also report, at every run, how many patterns each stage spared** — currently 112
+> shaped-but-harmless and 80 high-excess-but-specific. Both stages are load-bearing and a future
+> change that quietly neuters one must be visible.
+>
+> **Two known gaps to log, not fix:** `bootstrap` is itself a dictionary word so Bootstrap's own
+> legitimate pattern is flagged and needs one allowlist entry with a reason. `targetx` is caught by
+> neither stage despite 35 of its 122 detections being false positives; Task 7 fixes it by hand and
+> the gate must print a line saying it is a known blind spot, per the no-silent-caps rule.
+>
+> Step 4's labelled set stands, with `Canvas LMS` `instructure\.com`, `Algolia` `algolia` and
+> `Yoast SEO Premium` added to the known-GOOD side — those three are exactly what the screen exists
+> to spare, so they are the regression test for stage 1.
+
 **Files:**
 - Create: `scripts/lint-pattern-breadth.js`
 - Create: `patterns/breadth-allowlist.json`

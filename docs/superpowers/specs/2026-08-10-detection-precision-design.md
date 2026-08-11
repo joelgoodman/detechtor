@@ -138,6 +138,49 @@ collision mass: homepages where this html pattern claimed the technology and not
 
 ### 2. `scripts/lint-pattern-breadth.js` — the gate
 
+> **⚠️ REVISED 2026-08-11 after calibration against the full corpus. The design below this callout
+> — measured excess alone — was tried and FAILED. Read this first.**
+>
+> On the full 3,879-institution artifact, excess-alone flagged three known-good patterns:
+> `Yoast SEO Premium`'s anchored comment (excess 239 of 239 fires), `Canvas LMS`'s
+> `instructure\.com` (435 of 440), and `Algolia`'s `algolia` (299 of 321).
+>
+> **Why:** `strongest` counts only non-html channels, and the corpus cannot evaluate `js`,
+> `cookies` or `headers`. A technology whose real marker is an html-delivered vendor domain
+> therefore has `strongest ≈ 0`, and every pattern it owns reads as pure collision mass. This is
+> the same conflation of "delivered via html" with "unsupported" that this document criticises
+> three sections above, reintroduced in the metric.
+>
+> **And no threshold fixes it.** Comparing each html pattern to the technology's *other* html
+> patterns ranks the two decisive cases backwards: `Bootstrap`'s bad `class=".*row"` is 2.4× its
+> good `bootstrap` (3,754 vs 1,595), while `Canvas LMS`'s *good* `instructure\.com` is 87× its
+> `canvas-lms` (435 vs 5). The counts are the same shape; the difference is whether the pattern
+> text is a vendor string or a prose wildcard.
+>
+> **Revised rule — shape proposes, measurement disposes.** A pattern fails only when BOTH stages
+> agree:
+>
+> 1. **Specificity screen.** Using a vendored copy of `/usr/share/dict/words` (~234k entries — a
+>    real dictionary, NOT a hand-maintained stoplist), a pattern is *suspect* if it wildcards
+>    (`.*`/`.+`) between dictionary words, or is a bare token whose every alphabetic run is a
+>    dictionary word. `event.*calendar` and `ghost` are suspect; `instructure\.com`, `algolia`,
+>    `omniupdate` and the Yoast comment are not.
+> 2. **Measured excess**, exactly as described below, decides whether a suspect is doing damage.
+>
+> Measured on the full corpus: **82 patterns across 70 technologies, 39 in signal categories.**
+> Both stages are load-bearing — 112 shaped-but-harmless patterns are spared by the measurement,
+> and 80 high-excess-but-specific ones are spared by the screen.
+>
+> **The word list must be vendored into the repo, not read from `/usr/share/dict/words`.** A gate
+> whose verdict depends on which machine runs it is not a gate; `/usr/share/dict/words` is absent
+> on most Linux CI images and is a symlink to `web2` on macOS.
+>
+> **Two known imperfections, recorded rather than hidden.** `bootstrap` is itself a dictionary
+> word, so Bootstrap's own legitimate pattern is flagged and needs one allowlist entry. `targetx`
+> is caught by neither stage despite 35 of its 122 detections being false positives
+> (`targetUrl:d,targetXP:l` in a minified bundle); it must be fixed by hand in Task 7 and the gap
+> logged, per the no-silent-caps rule.
+
 Fails `npm test` when an html pattern's `excess` exceeds **either** threshold, unless the pattern is
 listed in `patterns/breadth-allowlist.json`:
 
