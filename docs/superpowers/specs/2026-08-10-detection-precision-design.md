@@ -96,7 +96,7 @@ impossible to reintroduce a prose-collision pattern without the build failing.
 
 ## Architecture
 
-Five components. Each is independently testable and lands on its own.
+Five components plus one hand-off. Each is independently testable and lands on its own.
 
 ### 1. `scripts/pattern-breadth.js` — the instrument
 
@@ -181,6 +181,31 @@ measurement that enforces them afterwards.
 Each technology keeps its independent signal, so this is a precision fix with no intended recall cost
 — verified by re-measuring prevalence per technology before and after and recording both.
 
+**12 of the 52 cannot simply be deleted in place.** They live in `patterns/webappanalyzer-merged.json`,
+which `scripts/import-webappanalyzer.js:152` **overwrites wholesale** on every import
+(`{ ...webappPatterns }`, with the curated higher-ed files overlaid afterwards at whole-technology
+granularity). An in-place edit there is silently reverted the next time anyone re-imports — the exact
+failure that forced `patterns/category-overrides.json` to exist in UNI-235. The affected patterns are
+the worst offenders in the set:
+
+> `Bootstrap` (`class=".*row"`, `class=".*col-"`, `class=".*btn-"`), `Ghost` (`ghost`), `jQuery`
+> (`jquery`), `TYPO3` (`typo3`), `Angular` (`ng-app`), `Google Tag Manager` (`GTM-`),
+> `Blackboard Transact` (`campus.*card`, `bb.*transact`), `Campus Labs` (`campus.*labs`),
+> `PeopleSoft Campus Solutions` (`campus.*solutions`)
+
+So component 3 needs a load-time layer, not an edit:
+
+**`patterns/pattern-overrides.json` + `src/pattern-overrides.js`** — deliberately the same shape,
+placement and rigour as the category-override layer it sits beside. Applied in `loadPatterns()` after
+`resolveIdentities()`; removes named evidence patterns from a technology's `html`/`scripts`/
+`scriptSrc` arrays; records `was` and `reason` per entry; `loadPatterns({applyOverrides:false})`
+still yields the pristine map so the audit scripts can diff against it. Validation rejects a rule
+naming a technology that no longer exists, a pattern string no longer present (the override is
+stale), and a no-op — identical to the category layer, for the identical reason.
+
+The 40 patterns in `higher-ed-{infra,sis,lms,cms}.json` are ours and are edited directly. Using the
+override layer for those too would be indirection with no benefit: nothing regenerates them.
+
 Two patterns need judgement rather than deletion and are called out so no implementer guesses:
 
 - `Jenzabar` `/ICS` and `/ICS/` — a real Jenzabar path fragment, but `/ICS` unanchored also matches
@@ -199,17 +224,50 @@ Two patterns need judgement rather than deletion and are called out so no implem
 
 ### 4. Engine repairs
 
-| Defect | Location | Fix |
-| --- | --- | --- |
-| `pattern.scripts \|\| pattern.scriptSrc` — 85 patterns declare both, **54 with different content**, and the `scriptSrc` half is silently discarded | `detechtor.js:991` | Union the two lists |
-| `excludes` declared on 45 patterns and **never read** | — | Honour it: a matching `excludes` entry suppresses the detection |
-| `url` (76 patterns) and `xhr` (100) declared and never read | — | Read them. Both are already available on the evidence object |
-| `text` (60 patterns) declared and never read | — | Delete the field from the pattern files; it duplicates `html` |
-| `dns` (75), `certIssuer` (6), `probe` (2), `network` (2), `robots` (1) | — | **Out of scope** — they need DNS and certificate machinery in the scan path for parcel carriers and mail providers no university runs. Leave declared, document as unread |
+The engine consumes seven pattern fields — `html`, `scripts`/`scriptSrc`, `headers`, `meta`, `dom`,
+`js`, `cookies`. **Fifteen more are declared across the pattern set and read by nothing.** Not
+"weakly supported" — absent from `src/` entirely.
+
+| Defect | Fix |
+| --- | --- |
+| `pattern.scripts \|\| pattern.scriptSrc` (`detechtor.js:991`) — 85 patterns declare both, **54 with different content**, and the `scriptSrc` half is silently discarded | Union the two lists |
+| `excludes` (45 patterns, 5 currently firing) never read | Honour it — see the tie-break rule below |
+| `url` (76) and `xhr` (100) never read | Read them; both are already on the evidence object |
+| `text` (60) never read | Delete the field; it duplicates `html` |
+
+**`excludes` needs a tie-break rule, because the declared pairs are mutual.** `Underscore.js`
+(256 fires) excludes `Lodash`, and `Lodash` (106) excludes `Underscore.js`; likewise `AngularJS`
+(16) ↔ `Angular`, and `Piwik PRO Core` (29) ↔ `Matomo Analytics`. Naive application either
+suppresses both or is order-dependent. Rule: **when two technologies exclude each other and both
+match, the higher-confidence match survives and the lower is suppressed; on an exact tie both are
+kept and the collision is logged.** Suppressing both loses a real detection; picking by file order
+makes the result depend on load sequence.
+
+Deliberately **not** enabled, each for a stated reason:
+
+| Field | Patterns | Why not |
+| --- | ---: | --- |
+| `requires` | 610 (170 firing) | **Blocked on UNI-141, and actively harmful before it.** Almost all are WordPress plugins declaring `requires:["WordPress"]`. We detect WordPress on 42.5% of institutions against BuiltWith's 61.8% — so enabling `requires` today would suppress ~170 plugin technologies on the ~1,900 sites that genuinely run WordPress and that we simply fail to detect. It converts one recall bug into a cascade of them. Enable only after WordPress recall is fixed |
+| `requiresCategory` | 89 | Same class as `requires`, same dependency |
+| `implies` | 970 | *Adds* inferred detections rather than removing false ones — recall/inference, not precision. UNI-237 already notes the side effect: `Amazon Web Services` would surface via `implies` from `Amazon S3`, making one detection read as two |
+| `confidence` | 296 | A per-pattern score override, moot once the floor is removed in component 5. Document as unread |
+| `dns` (75), `certIssuer` (6), `probe` (2), `network` (2), `robots` (1) | 86 | Need DNS and certificate machinery in the scan path, for parcel carriers and mail providers no university runs |
 
 After `url`/`xhr` land, recount the 183 never-fireable patterns and delete whatever remains dead.
 144 of the 183 are dead *only* because the engine ignores a field they declare, including
 signal-category `Miso`, `Newt`, `Kiliba` and `Business Website Builder`.
+
+### 4a. One product-facing finding, recorded and handed on
+
+`signal_polarity: "negative"` is set on six technologies in `higher-ed-accessibility.json` —
+`accessiBe`, `AudioEye`, `UserWay`, `EqualWeb`, `Recite Me`, `WP Accessibility Helper` — and **is
+read by nothing.** These are accessibility *overlay* vendors, and the field exists because their
+presence is a red flag rather than a credential. Unread, any consumer counting Accessibility
+detections scores an overlay as an accessibility positive, which inverts the intended meaning.
+
+This is a vocabulary and consumer problem, not a detection one: the patterns fire correctly. It goes
+to **UNI-238** with the other vocabulary gaps rather than being fixed here, but it must not be lost —
+`UserWay` alone fires on 4.3% of institutions.
 
 ### 5. `minConfidence` neutralised
 
@@ -276,20 +334,33 @@ UNI-222's purge; this work strengthens the case for it but does not perform it.
 ## Testing
 
 - **Unit** — engine repairs each get a test: a pattern with differing `scripts` and `scriptSrc` must
-  match on either; an `excludes` hit must suppress; a `url`/`xhr` pattern must fire.
-- **Gate** — `lint-pattern-breadth.js` must fail on a fixture pattern with excess above threshold and
-  pass once allowlisted; a stale allowlist entry and a no-op allowlist entry must each fail.
+  match on either; a `url`/`xhr` pattern must fire; an `excludes` hit must suppress; **two
+  mutually-excluding technologies must resolve to the higher-confidence one, and to both on an exact
+  tie.**
+- **Pattern-override layer** — an override removes only the named pattern and leaves the
+  technology's other evidence intact; `loadPatterns({applyOverrides:false})` still returns the
+  pristine map; a rule naming a missing technology, a pattern string no longer present, or a no-op
+  each fails validation. **A regeneration test is mandatory**: re-running the importer over
+  `webappanalyzer-merged.json` must not resurrect an overridden pattern — that is the entire reason
+  the layer exists, and it is the one property a unit test on the override function alone would not
+  catch.
+- **Gate** — `lint-pattern-breadth.js` must fail on a fixture pattern exceeding the absolute
+  threshold, and separately on one exceeding only the relative threshold (the `TargetX` shape); both
+  must pass once allowlisted; a stale allowlist entry and a no-op allowlist entry must each fail.
 - **Regression** — the UNI-224 shape-contract guard and the existing 136 tests must stay green.
-- **Empirical** — per-technology prevalence before and after the deletions, recorded in the PR. Any
-  technology losing more than a token number of detections is a deletion that went too far and is
-  reverted.
+- **Empirical** — per-technology prevalence before and after, recorded in the PR. Any technology
+  losing more than a token number of detections is a deletion that went too far and is reverted.
+  `Bootstrap`, `Localist`, `Ghost`, `TargetX` and `Microsoft Power BI` are expected to fall
+  substantially; anything else moving is a finding, not a result.
 
 ## Success criteria
 
 1. `minConfidence` no longer pretends to filter.
-2. The 52 prose-collision patterns are gone and cannot come back without failing `npm test`.
-3. `scripts`/`scriptSrc`, `excludes`, `url` and `xhr` are honoured; `text` is deleted.
+2. The 52 prose-collision patterns are gone and cannot come back without failing `npm test` —
+   including the 12 in the regenerated upstream file, proven by re-running the importer.
+3. `scripts`/`scriptSrc`, `excludes`, `url` and `xhr` are honoured; `text` is deleted; every field
+   left unread is documented as such with its reason, so the next reader does not rediscover it.
 4. Never-fireable patterns are recounted after the repairs, and the residue deleted.
 5. `corpus-prevalence.json` and `category-coverage.md` regenerated, with the before/after delta for
    every affected technology recorded in the PR.
-6. UNI-141 and UNI-225 carry the recall findings, split by cause.
+6. UNI-141 and UNI-225 carry the recall findings, split by cause; UNI-238 carries `signal_polarity`.
