@@ -51,6 +51,7 @@ test('a url pattern fires against the final page URL', () => {
   const miss = e.matchPatterns(EVIDENCE({ finalUrl: 'https://example.edu/apply/' }));
   assert.deepStrictEqual(hit.map((m) => m.name), ['Coldfusion']);
   assert.deepStrictEqual(miss.map((m) => m.name), []);
+  assert.strictEqual(hit[0].confidence, 50, 'a url substring is weaker than a script src (60)');
 });
 
 test('an xhr pattern fires against network hosts', () => {

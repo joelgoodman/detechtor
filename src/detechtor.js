@@ -1201,11 +1201,18 @@ class DeTECHtor {
     // UNI-237: `url` (76 patterns) and `xhr` (100) were declared and read by nothing. Both are
     // live-path only — evidenceFromHtml supplies neither finalUrl nor networkHosts, so these never
     // fire during a corpus pass. That is expected, not a bug.
+    //
+    // They are weighted differently on purpose. `xhr` matches a host the page actually contacted
+    // (cdn.ampproject.org) — strong, on a par with dom/meta at 70. `url` is a substring test against
+    // a single page URL (`\.cfm(?:$|\?)`) — weaker than a script src at 60, stronger than a bare
+    // html substring at 40. The scale these sit on: html 40, url 50, script 60, dom/meta/cookies/xhr
+    // 70, js 80. It is load-bearing: applyExcludes (Task 3) resolves mutually-excluding technologies
+    // by highest confidence, so these numbers decide which detection survives.
     if (Array.isArray(pattern.url) && typeof evidence.finalUrl === 'string') {
       for (const urlPattern of pattern.url) {
         try {
           if (new RegExp(urlPattern, 'i').test(evidence.finalUrl)) {
-            confidence += 70;
+            confidence += 50;
             matchEvidence.push(`URL: ${urlPattern}`);
           }
         } catch { /* invalid regex; lint-patterns gates these */ }
