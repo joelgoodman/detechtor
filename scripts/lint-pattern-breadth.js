@@ -1,0 +1,213 @@
+#!/usr/bin/env node
+/**
+ * Measured breadth gate (UNI-237)
+ * ===============================
+ * Replaces the hand-maintained STOPWORDS list in scripts/lint-patterns.js, which cannot tell
+ * `ghost` (5 chars, matches btn-ghost on 16% of homepages) from `algolia` (7 chars, a distinctive
+ * vendor string). Breadth is empirical, not lexical -- BUT empirical alone is not enough either.
+ *
+ * REVISION (2026-08-11): a measured-excess-only gate was built and calibrated against the full
+ * corpus, and it FAILED -- it flagged `Yoast SEO Premium`, `Canvas LMS` (`instructure\.com`) and
+ * `Algolia` (`algolia`) as violations. Root cause: `strongest` (docs/pattern-breadth.json) only
+ * counts a technology's non-html channels (Script/DOM/Meta), and the corpus -- bare rendered HTML
+ * -- structurally cannot evaluate `js`/`cookies`/`headers`. So any technology whose REAL marker
+ * arrives as an html-embedded vendor string (a domain, a plugin-signature comment) has
+ * `strongest ~= 0` and its entire match count reads as "excess", indistinguishable from an
+ * over-broad prose regex like `class=".*row"`.
+ *
+ * The fix pairs measurement with a specificity SCREEN. A pattern fails only when BOTH stages
+ * agree:
+ *
+ *   Stage 1 (isSuspect) -- does the pattern's regex LOOK like it could collide with ordinary
+ *   English? A wildcard between/around dictionary words (`event.*calendar`, `power.*bi`) or a
+ *   bare token that is entirely dictionary words (`ghost`, `diaspora`) is suspect. A vendor
+ *   string (`instructure\.com`, `algolia`, `omniupdate`) or an anchored literal (Yoast's HTML
+ *   comment) contains non-dictionary tokens and is correctly spared.
+ *
+ *   Stage 2 (measured excess) -- exactly the original design. An html pattern's EXCESS over the
+ *   technology's strongest independent signal is either more than ABS_PCT of scanned homepages,
+ *   or more than REL_PCT of the technology's own detections (with a MIN_FIRES floor).
+ *
+ * Bootstrap's `class=".*row"` fails both: "class" and "row" are dictionary words (suspect), and
+ * the excess is thousands of homepages over the absolute limit. TargetX's `targetx` -- matching
+ * `targetUrl:d,targetXP:l` in a minified bundle on 35 of its 122 detections -- fails stage 2
+ * (relative) but NOT stage 1 ("targetx" is not a dictionary word), so it is a known blind spot the
+ * gate cannot catch; see the BLIND SPOT line below.
+ *
+ * The dictionary is vendored to patterns/dictionary.txt (a copy of macOS's /usr/share/dict/words,
+ * ~234k entries) rather than read from /usr/share/dict/words directly, because that path does not
+ * exist on most Linux CI images -- a gate whose verdict depends on the machine it runs on is not a
+ * gate.
+ *
+ * Exemptions live in patterns/breadth-allowlist.json, one reason each, and are themselves
+ * validated: a stale or no-op entry fails the build, so the allowlist cannot silently accumulate
+ * dead weight.
+ *
+ * Usage:
+ *   node scripts/lint-pattern-breadth.js           # report
+ *   node scripts/lint-pattern-breadth.js --gate    # exit 1 on any violation
+ */
+'use strict';
+const fs = require('fs');
+const path = require('path');
+
+const ROOT = path.resolve(__dirname, '..');
+const ABS_PCT = 0.02;   // of scanned homepages
+const REL_PCT = 0.25;   // of the technology's own detections
+const MIN_FIRES = 20;   // below this, the relative test is noise
+
+const GATE = process.argv.includes('--gate');
+
+// --breadth / --allowlist let tests point the gate at fixtures without copying the whole repo into
+// a temp dir. src/detechtor.js requires ~12 pattern files by relative path, so a symlinked copy in
+// a scratch directory cannot load -- the gate must run in place.
+function argPath(flag, fallback) {
+  const i = process.argv.indexOf(flag);
+  return i === -1 ? path.join(ROOT, fallback) : path.resolve(process.argv[i + 1]);
+}
+
+const breadthPath = argPath('--breadth', 'docs/pattern-breadth.json');
+if (!fs.existsSync(breadthPath)) {
+  console.error(`FATAL: ${breadthPath} missing. Run \`npm run breadth\` first.`);
+  process.exit(1);
+}
+const breadth = JSON.parse(fs.readFileSync(breadthPath, 'utf8'));
+const allowlist = JSON.parse(fs.readFileSync(argPath('--allowlist', 'patterns/breadth-allowlist.json'), 'utf8'));
+const allowed = allowlist.allow || {};
+
+// A gate whose input is empty passes trivially. That is indistinguishable from "nothing is wrong",
+// so refuse it: an artifact with no scanned pages or no patterns is a broken measurement.
+if (!breadth.scanned || !breadth.patterns || Object.keys(breadth.patterns).length === 0) {
+  console.error('FATAL: pattern-breadth.json reports no scanned pages or no patterns -- the measurement is broken.');
+  process.exit(1);
+}
+
+// ---------------------------------------------------------------------------------------------
+// Stage 1: specificity screen
+// ---------------------------------------------------------------------------------------------
+// Dictionary is always read from the vendored copy, never /usr/share/dict/words -- see file header.
+const dictPath = argPath('--dictionary', 'patterns/dictionary.txt');
+if (!fs.existsSync(dictPath)) {
+  console.error(`FATAL: ${dictPath} missing. Run \`cp -L /usr/share/dict/words patterns/dictionary.txt\` (macOS) and commit it.`);
+  process.exit(1);
+}
+const WORDS = new Set(
+  fs.readFileSync(dictPath, 'utf8').split('\n').map((w) => w.trim().toLowerCase()).filter(Boolean)
+);
+if (WORDS.size < 1000) {
+  console.error(`FATAL: ${dictPath} has only ${WORDS.size} entries -- looks truncated, refusing to screen against it.`);
+  process.exit(1);
+}
+
+function isSuspect(regex, WORDS) {
+  const tokens = String(regex).toLowerCase().match(/[a-z]{3,}/g) || [];
+  const dictTokens = tokens.filter((t) => WORDS.has(t));
+  // A wildcard between dictionary words matches ordinary prose: `event.*calendar`, `power.*bi`.
+  // A bare token that is entirely dictionary words collides with English: `ghost`, `diaspora`.
+  // Vendor strings (`instructure\.com`, `algolia`, `omniupdate`) and anchored literals (Yoast's
+  // HTML comment) contain non-dictionary tokens and are correctly spared.
+  return /\.\*|\.\+/.test(regex) ? dictTokens.length > 0
+                                   : (tokens.length > 0 && dictTokens.length === tokens.length);
+}
+
+// ---------------------------------------------------------------------------------------------
+// Stage 2: measured excess, plus stage-1 gating
+// ---------------------------------------------------------------------------------------------
+const absLimit = breadth.scanned * ABS_PCT;
+const violations = [];
+const allowHits = new Set();
+let sparedByScreen = 0;      // high excess, but stage 1 does not think it looks suspect
+let sparedByMeasurement = 0; // looks suspect, but excess does not clear either threshold
+
+for (const [tech, p] of Object.entries(breadth.patterns)) {
+  for (const [regex, matched] of Object.entries(p.html || {})) {
+    const excess = Math.max(0, matched - (p.strongest || 0));
+    const failsAbs = excess > absLimit;
+    const failsRel = p.fires >= MIN_FIRES && excess / p.fires > REL_PCT;
+    const excessive = failsAbs || failsRel;
+    const suspect = isSuspect(regex, WORDS);
+
+    if (excessive && !suspect) { sparedByScreen++; continue; }
+    if (suspect && !excessive) { sparedByMeasurement++; continue; }
+    if (!excessive) continue; // neither stage has anything against this pattern
+
+    const key = JSON.stringify([tech, regex]);
+    if (Array.isArray(allowed[tech]) && allowed[tech].some((e) => e.pattern === regex)) {
+      allowHits.add(key);
+      continue;
+    }
+    violations.push({
+      tech, regex, matched, strongest: p.strongest || 0, fires: p.fires, excess,
+      why: [failsAbs && 'absolute', failsRel && 'relative'].filter(Boolean).join('+'),
+    });
+  }
+}
+
+// Allowlist hygiene: an entry that no longer names a real technology, or that no longer exempts
+// anything, is dead weight that reads as a considered decision.
+const allowProblems = [];
+for (const [tech, entries] of Object.entries(allowed)) {
+  if (tech === '_comment') continue;
+  const p = breadth.patterns[tech];
+  if (!p) { allowProblems.push(`${tech}: no such technology in the breadth artifact -- stale`); continue; }
+  for (const e of entries) {
+    if (!e || typeof e.pattern !== 'string' || typeof e.reason !== 'string' || !e.reason.trim()) {
+      allowProblems.push(`${tech}: every entry needs {pattern, reason}`);
+      continue;
+    }
+    if (!(e.pattern in (p.html || {}))) {
+      allowProblems.push(`${tech}: pattern ${JSON.stringify(e.pattern)} is no longer declared -- stale`);
+      continue;
+    }
+    if (!allowHits.has(JSON.stringify([tech, e.pattern]))) {
+      allowProblems.push(`${tech}: pattern ${JSON.stringify(e.pattern)} no longer exceeds both stages -- no-op`);
+    }
+  }
+}
+
+// The override layer is validated here too, so a reimport that reverts a decision fails the build.
+const DeTECHtor = require('../src/detechtor.js');
+const { validatePatternOverrides } = require('../src/pattern-overrides.js');
+const PATTERN_OVERRIDES = require('../patterns/pattern-overrides.json');
+const pristine = new DeTECHtor().loadPatterns({ applyOverrides: false });
+const overrideProblems = validatePatternOverrides(pristine, PATTERN_OVERRIDES.overrides || {});
+
+violations.sort((a, b) => b.excess - a.excess);
+
+// Known blind spots -- printed on EVERY run, gate or report, so a future change that quietly fixes
+// (or, worse, papers over) one of these does not slip past unnoticed. Per the no-silent-caps rule:
+// a limitation we know about and choose not to fix here must still be visible on every run.
+const KNOWN_BLIND_SPOTS = [
+  {
+    tech: 'TargetX', pattern: 'targetx',
+    note: '35 of 122 detections are `targetXP` in a minified analytics bundle (29% of its own ' +
+      'fires) -- but the token "targetx" is not a dictionary word, so stage 1 does not flag it, ' +
+      'and its excess (0.9% of homepages) is under the absolute threshold. Neither stage catches ' +
+      'it. Task 7 fixes it by hand.',
+  },
+];
+
+console.log(`breadth gate -- ${breadth.scanned} homepages -- absolute >${absLimit.toFixed(0)} -- relative >${REL_PCT * 100}% (min ${MIN_FIRES} fires) -- dictionary ${WORDS.size} words\n`);
+console.log(`spared by screen (excessive but not suspect): ${sparedByScreen}`);
+console.log(`spared by measurement (suspect but not excessive): ${sparedByMeasurement}\n`);
+for (const b of KNOWN_BLIND_SPOTS) {
+  console.log(`BLIND SPOT  ${b.tech} :: ${JSON.stringify(b.pattern)} -- ${b.note}`);
+}
+console.log('');
+if (violations.length) {
+  console.log('VIOLATIONS');
+  for (const v of violations) {
+    console.log(
+      `  ${String(v.excess).padStart(5)} excess  ${(v.excess / v.fires * 100).toFixed(0).padStart(3)}%  ` +
+      `[${v.why}]  ${v.tech} :: ${JSON.stringify(v.regex)}  (matched ${v.matched}, strongest ${v.strongest}, fires ${v.fires})`
+    );
+  }
+  console.log('');
+}
+for (const p of allowProblems) console.log(`ALLOWLIST  ${p}`);
+for (const p of overrideProblems) console.log(`OVERRIDE   ${p.name}: ${p.problem}`);
+
+const failures = violations.length + allowProblems.length + overrideProblems.length;
+console.log(`\n${violations.length} violation(s) (${new Set(violations.map((v) => v.tech)).size} technologies) -- ${allowProblems.length} allowlist problem(s) -- ${overrideProblems.length} override problem(s)`);
+
+if (GATE && failures > 0) process.exit(1);

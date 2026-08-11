@@ -1,0 +1,11 @@
+{
+  "_comment": "UNI-237. Reviewed exemptions from scripts/lint-pattern-breadth.js. Each entry needs a pattern and a reason. A stale entry (technology or pattern gone) and a no-op entry (no longer over threshold) both FAIL the build -- this list may not accumulate dead weight.",
+  "allow": {
+    "Bootstrap": [
+      {
+        "pattern": "bootstrap",
+        "reason": "UNI-237 known gap: \"bootstrap\" is itself an entry in patterns/dictionary.txt (a real English word for a boot-pulling loop), so the specificity screen cannot distinguish it from ordinary prose. But Bootstrap-the-framework is literally named after that word, so its `bootstrap` pattern is a legitimate, low-noise signal (excess is only 14% of the technology's own fires, well under the 25% relative line -- it fails on the absolute test alone, at 3803 total fires across the corpus). Reviewed and kept; Bootstrap's genuinely over-broad patterns (class=\".*row\", class=\".*col-\", class=\".*btn-\") are NOT exempted and remain violations."
+      }
+    ]
+  }
+}
