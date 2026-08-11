@@ -58,7 +58,7 @@ detechtor --url "https://example.edu" --verbose --confidence 30
 - Always call `shutdown()` after scanning to close browser
 
 **Pattern System** (`patterns/`)
-- `webappanalyzer-merged.json`: Comprehensive patterns (2700+ technologies)
+- `generated/webappanalyzer-merged.json`: Comprehensive patterns (2700+ technologies). Build artifact — never hand-edit (UNI-237); `npm test` gates on `scripts/lint-generated.js`.
 - `enhanced-payment-analytics.json`: Payment, analytics, video platforms
 - `fediverse-social-patterns.json`: Corrected categorizations for Fediverse/ActivityPub platforms
 - Custom higher-ed patterns override upstream WebAppAnalyzer patterns

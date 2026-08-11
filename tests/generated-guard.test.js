@@ -8,11 +8,14 @@ const { test } = require('node:test');
 const assert = require('node:assert');
 const path = require('path');
 const fs = require('fs');
+const os = require('os');
 const { execFileSync } = require('child_process');
 const DeTECHtor = require(path.resolve(__dirname, '../src/detechtor.js'));
 
 const ROOT = path.resolve(__dirname, '..');
 const GENERATED = path.join(ROOT, 'patterns/generated/webappanalyzer-merged.json');
+const REPORT = path.join(ROOT, 'patterns/import-report.json');
+const LINT = path.join(ROOT, 'scripts/lint-generated.js');
 
 test('definitions from patterns/generated are stamped _generated', () => {
   const patterns = new DeTECHtor().patterns;
@@ -32,22 +35,57 @@ test('hand-written pattern files are NOT stamped _generated', () => {
 });
 
 test('the guard passes on the committed artifact', () => {
-  execFileSync('node', [path.join(ROOT, 'scripts/lint-generated.js'), '--gate'], { cwd: ROOT, stdio: 'pipe' });
+  // Read-only, real paths, no --artifact/--report override: this is what proves the tracked
+  // artifact and its recorded hash are actually clean, not just that the guard logic works.
+  execFileSync('node', [LINT, '--gate'], { cwd: ROOT, stdio: 'pipe' });
 });
 
 test('the guard FAILS on a hand-edit, and names the override layer', () => {
-  const original = fs.readFileSync(GENERATED, 'utf8');
-  const tampered = JSON.parse(original);
-  tampered.__tamper_probe__ = { html: ['x'], cats: [1] };
-  fs.writeFileSync(GENERATED, JSON.stringify(tampered, null, 2) + '\n');
+  // UNI-237 review fix: the original version of this test tampered with the real tracked artifact
+  // in place. That's a live race against every other test file constructing `new DeTECHtor()` (they
+  // re-read every pattern file from disk, and `node --test tests/*.test.js` runs files in
+  // parallel), and if the process were killed mid-window the `finally` restore would never run,
+  // leaving the real artifact in the exact "unreconciled hand-edit" state the guard exists to
+  // prevent. Instead: copy the artifact and report to a temp dir, tamper with the copy only, and
+  // point the guard at both via --artifact/--report. The real file is never touched.
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'detechtor-lint-generated-'));
+  const tmpArtifact = path.join(tmpDir, 'webappanalyzer-merged.json');
+  const tmpReport = path.join(tmpDir, 'import-report.json');
   try {
-    execFileSync('node', [path.join(ROOT, 'scripts/lint-generated.js'), '--gate'], { cwd: ROOT, stdio: 'pipe' });
-    assert.fail('guard passed on a tampered artifact');
-  } catch (e) {
-    assert.strictEqual(e.status, 1);
-    assert.match(String(e.stdout || ''), /pattern-overrides\.json/,
-      'the failure must tell the reader where the edit belongs, not just that it is wrong');
+    const tampered = JSON.parse(fs.readFileSync(GENERATED, 'utf8'));
+    tampered.__tamper_probe__ = { html: ['x'], cats: [1] };
+    fs.writeFileSync(tmpArtifact, JSON.stringify(tampered, null, 2) + '\n');
+    fs.copyFileSync(REPORT, tmpReport);
+    try {
+      execFileSync('node', [LINT, '--gate', '--artifact', tmpArtifact, '--report', tmpReport],
+        { cwd: ROOT, stdio: 'pipe' });
+      assert.fail('guard passed on a tampered artifact');
+    } catch (e) {
+      assert.strictEqual(e.status, 1);
+      assert.match(String(e.stderr || ''), /pattern-overrides\.json/,
+        'the failure must tell the reader where the edit belongs, not just that it is wrong');
+    }
   } finally {
-    fs.writeFileSync(GENERATED, original);   // always restore, even if an assertion threw
+    fs.rmSync(tmpDir, { recursive: true, force: true });
+  }
+});
+
+test('the guard FAILS when --report names a file with no artifactSha256', () => {
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'detechtor-lint-generated-'));
+  const tmpReport = path.join(tmpDir, 'import-report-no-hash.json');
+  try {
+    fs.writeFileSync(tmpReport, JSON.stringify({ totalPatterns: 1 }, null, 2) + '\n');
+    try {
+      // No --artifact override: the real committed artifact exists, so this exercises the "report
+      // has no recorded hash" path specifically, not the "artifact missing" path.
+      execFileSync('node', [LINT, '--gate', '--report', tmpReport], { cwd: ROOT, stdio: 'pipe' });
+      assert.fail('guard passed with a report that records no artifactSha256');
+    } catch (e) {
+      assert.strictEqual(e.status, 1);
+      assert.match(String(e.stderr || ''), /npm run update-patterns/,
+        'the failure must tell the reader how to seed the hash');
+    }
+  } finally {
+    fs.rmSync(tmpDir, { recursive: true, force: true });
   }
 });

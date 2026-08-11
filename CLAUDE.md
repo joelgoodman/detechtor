@@ -57,7 +57,7 @@ npm run patterns-report
 
 Loaded in order by `src/config.js` — later files override earlier ones on name collisions, so higher-ed files take precedence over the WebAppAnalyzer base.
 
-- `webappanalyzer-merged.json` - Base: ~6,400 patterns imported from WebAppAnalyzer
+- `generated/webappanalyzer-merged.json` - Base: ~6,400 patterns imported from WebAppAnalyzer. Build artifact — never hand-edit (UNI-237); `npm test` gates on `scripts/lint-generated.js`.
 - `general-analytics-extensions.json` - GA4, Adobe Analytics, and other general patterns not in the base
 - `fediverse-social-patterns.json` - Fediverse / social networking overrides
 - `higher-ed-cms.json` - Higher-ed CMSes (TerminalFour, Cascade, Modern Campus CMS, Ingeniux, Finalsite, etc.)

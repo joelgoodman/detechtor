@@ -10,8 +10,11 @@
  * The import records the artifact's SHA-256 in patterns/import-report.json. This recomputes it.
  *
  * Usage:
- *   node scripts/lint-generated.js           # report
- *   node scripts/lint-generated.js --gate    # exit 1 on mismatch
+ *   node scripts/lint-generated.js                    # report, real paths
+ *   node scripts/lint-generated.js --gate              # exit 1 on mismatch
+ *   node scripts/lint-generated.js --gate \
+ *     --artifact <path> --report <path>                # check different files (tests use this
+ *                                                        # so they never touch the tracked artifact)
  */
 'use strict';
 const fs = require('fs');
@@ -20,8 +23,14 @@ const crypto = require('crypto');
 
 const ROOT = path.resolve(__dirname, '..');
 const GATE = process.argv.includes('--gate');
-const ARTIFACT = path.join(ROOT, 'patterns/generated/webappanalyzer-merged.json');
-const REPORT = path.join(ROOT, 'patterns/import-report.json');
+
+function argPath(flag, fallback) {
+  const i = process.argv.indexOf(flag);
+  return i === -1 ? path.join(ROOT, fallback) : path.resolve(process.argv[i + 1]);
+}
+
+const ARTIFACT = argPath('--artifact', 'patterns/generated/webappanalyzer-merged.json');
+const REPORT = argPath('--report', 'patterns/import-report.json');
 
 function sha256(p) {
   return crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
@@ -49,10 +58,7 @@ if (actual === recorded) {
   process.exit(0);
 }
 
-// UNI-237: printed via console.log (stdout), not console.error — the message names the override
-// layer the reader needs (pattern-overrides.json), and callers piping/capturing this guard's output
-// (including the tamper test) must be able to see it without also capturing stderr.
-console.log(
+console.error(
   '\nFATAL: patterns/generated/webappanalyzer-merged.json has been modified since it was imported.\n' +
   `  recorded ${recorded}\n  actual   ${actual}\n\n` +
   'This file is a BUILD ARTIFACT. scripts/import-webappanalyzer.js rewrites it wholesale, so an\n' +
