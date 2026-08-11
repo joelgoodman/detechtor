@@ -107,6 +107,10 @@ class DeTECHtor {
               normalizeDefinition(def);
               def._curated = curated;
               def._sourceFile = sourceFile;
+              // UNI-237: anything under patterns/generated/ is a build artifact —
+              // scripts/import-webappanalyzer.js rewrites it wholesale. Stamped so any script,
+              // test or reader inspecting a definition knows an in-place edit will be reverted.
+              def._generated = /(^|[\\/])generated[\\/]/.test(patternPath);
             }
             // Later (curated) files still override earlier (base) on name collision.
             patterns[name] = def;

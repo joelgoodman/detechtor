@@ -8,7 +8,8 @@
     "detechtor": "./cli.js"
   },
   "scripts": {
-    "test": "node scripts/lint-patterns.js --fail-curated && node scripts/lint-dom-rules.js --gate && node scripts/category-audit.js --gate && node --test tests/*.test.js && node scripts/test-patterns.js",
+    "test": "node scripts/lint-generated.js --gate && node scripts/lint-patterns.js --fail-curated && node scripts/lint-dom-rules.js --gate && node scripts/category-audit.js --gate && node --test tests/*.test.js && node scripts/test-patterns.js",
+    "lint:generated": "node scripts/lint-generated.js",
     "lint:patterns": "node scripts/lint-patterns.js",
     "lint:patterns:gate": "node scripts/lint-patterns.js --fail-curated",
     "test:audit": "node scripts/audit-patterns.js",

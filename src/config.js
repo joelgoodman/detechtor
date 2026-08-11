@@ -68,7 +68,7 @@ module.exports = {
   // Higher-ed files load LAST so our curated higher-ed definitions win over
   // anything inherited from the WebAppAnalyzer base.
   patternPaths: [
-    '../patterns/webappanalyzer-merged.json',            // Base: ~6,400 patterns from WebAppAnalyzer
+    '../patterns/generated/webappanalyzer-merged.json',   // Base: ~6,400 patterns from WebAppAnalyzer (UNI-237: build artifact, moved under patterns/generated/)
     '../patterns/general-analytics-extensions.json',     // GA4 and other general patterns not in base
     '../patterns/fediverse-social-patterns.json',        // Fediverse/social networking overrides
     '../patterns/higher-ed-cms.json',                    // Higher-ed CMSes (TerminalFour, Cascade, Modern Campus, etc.)

@@ -7362,5 +7362,7 @@
     "WordPress",
     "TYPO3",
     "Kentico"
-  ]
+  ],
+  "artifactSha256": "d467fba709063113146226162b0696100509726e8cc0b303a18cadb259cd3fc7",
+  "artifactShaRecordedBy": "UNI-237 seed (not a re-import)"
 }

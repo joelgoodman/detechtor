@@ -149,10 +149,19 @@ async function main() {
     console.log(`Stripped Wappalyzer modifiers from ${stripped} technologies`);
 
     // Save the merged patterns
-    const outputPath = path.join(__dirname, '..', 'patterns', 'webappanalyzer-merged.json');
+    // UNI-237: lives under patterns/generated/ — a build artifact, moved so the path itself says so.
+    const outputPath = path.join(__dirname, '..', 'patterns', 'generated', 'webappanalyzer-merged.json');
     await fs.ensureDir(path.dirname(outputPath));
     await fs.writeJson(outputPath, mergedPatterns, { spaces: 2 });
     console.log(`Saved merged patterns to ${outputPath}`);
+
+    // UNI-237: record the artifact's hash so scripts/lint-generated.js can detect a hand-edit.
+    // Must be computed AFTER the file is written, from the file itself — hashing the in-memory
+    // object would not catch an edit made to the file on disk, which is the whole point.
+    const crypto = require('crypto');
+    const artifactSha256 = crypto.createHash('sha256')
+      .update(require('fs').readFileSync(outputPath))
+      .digest('hex');
 
     // Generate a report
     const categories = categorizePatterns(mergedPatterns);
@@ -180,7 +189,8 @@ async function main() {
       totalPatterns: Object.keys(mergedPatterns).length,
       webappPatternsImported: Object.keys(webappPatterns).length,
       categories,
-      popularCMS
+      popularCMS,
+      artifactSha256
     }, { spaces: 2 });
 
     console.log(`\\nImport complete! Report saved to ${reportPath}`);
