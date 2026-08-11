@@ -60,6 +60,19 @@ The four clean categories are exactly the four pattern files UNI-156 fixed. The 
 `higher-ed-lms.json` (155) — **files we hand-wrote** — plus 15 upstream technologies. This is not an
 upstream-import problem.
 
+Prose collision is the largest class but not the only one. Two others were found by inspecting the
+corpus directly, and neither is visible to any structural heuristic:
+
+- **Minified-identifier collision.** `TargetX`'s `html:["targetx"]` matches `targetUrl:d,targetXP:l`
+  in a minified analytics bundle, `const targetX=digitPos*…` in canvas code, and an SVG attribute
+  list containing `"targetx","targety"` — 35 of its 122 detections. A seven-character distinctive
+  vendor string, so it passes every length and stopword test.
+- **Editorial mention.** `Element451` fires on an institution whose homepage carries the headline
+  "…Receives Element451 2026 Leadership of the Year Award". The vendor is named, not installed.
+
+Both are caught by the excess metric in component 1 and by nothing else, which is why the gate is
+built on measured excess rather than on pattern shape.
+
 **Every one of the 47 technologies already carries a good signal beside the bad pattern.** `Localist`
 has `localist\.com`, `scripts:localist` and `js:{Localist}` as well as `event.*calendar`. `Ghost` has
 `meta:{generator:"Ghost"}`. Zero require pattern mining; the fix is deletion.
@@ -125,8 +138,25 @@ collision mass: homepages where this html pattern claimed the technology and not
 
 ### 2. `scripts/lint-pattern-breadth.js` — the gate
 
-Fails `npm test` when an html pattern has `excess` above **2% of scanned homepages** (≈78
-institutions), unless the pattern is listed in `patterns/breadth-allowlist.json`.
+Fails `npm test` when an html pattern's `excess` exceeds **either** threshold, unless the pattern is
+listed in `patterns/breadth-allowlist.json`:
+
+- **absolute** — `excess` above 2% of scanned homepages (≈78 institutions), which catches the
+  high-volume prose collisions; and
+- **relative** — `excess / fires` above 25%, with `fires >= 20` to suppress small-sample noise.
+
+Both are needed, and `TargetX` is why. 35 of its 122 detections are false positives — `targetXP`, a
+minified analytics variable (`targetUrl:d,targetXP:l`), plus `const targetX=digitPos*…` canvas code
+and an SVG attribute list containing `"targetx","targety"`. Its excess is 0.9% of homepages, well
+under the absolute floor, but **29% of its own detections**. The trigger is neither prose nor short:
+`targetx` is a seven-character distinctive vendor string that passes every structural heuristic. Only
+the excess comparison sees it.
+
+**Both thresholds are provisional and must be calibrated during implementation** against a labelled
+set — the 52 measured prose patterns plus `TargetX` as known-bad, and the anchored-comment and
+vendor-domain patterns (`Yoast SEO Premium`, `Modern Campus CMS`, `Slate`, `Algolia`) as known-good.
+The calibration, including any threshold that had to move and why, is recorded in the PR. Numbers
+that cannot yet be validated must not be treated as settled.
 
 The allowlist mirrors `patterns/category-overrides.json` in shape and rigour: one entry per
 `technology → pattern`, each carrying `reason` and `decided`, and validated for staleness — an entry
@@ -156,7 +186,16 @@ Two patterns need judgement rather than deletion and are called out so no implem
 - `Jenzabar` `/ICS` and `/ICS/` — a real Jenzabar path fragment, but `/ICS` unanchored also matches
   ordinary URLs. Tighten to `/ICS/` with a following path segment rather than deleting.
 - `Funnelback` `squiz.*search` — below the 2% measurement threshold but structurally identical to
-  the others. Delete; `funnelback` and `js:{Funnelback}` remain.
+  the others. Delete it, keep `funnelback` and `js:{Funnelback}`, and **add
+  `funnelback\.squiz\.cloud`**, which is the marker that actually identifies the product: the
+  typical integration is a plain search input whose typeahead calls
+  `<institution>-search.funnelback.squiz.cloud/s/suggest.json`, with the query itself handed to a
+  separate Funnelback search page. Corpus evidence: 47 institutions carry a Funnelback marker
+  (autocomplete host, or Drupal integration classes `funnelback-block-search-form` /
+  `funnelbackIdentifier`), but exactly **one** exposes a `<form action>` pointing at Funnelback.
+  Institutions that proxy search through their own domain are therefore undetectable from the
+  homepage — a UNI-225 recall limit, not a pattern defect. BuiltWith sees 6; our 47 is the better
+  number.
 
 ### 4. Engine repairs
 
@@ -202,10 +241,21 @@ over **split by cause**, or UNI-141 will mine patterns that already exist:
   async-injected), `Blackboard (Anthology)` (10.3% → 2.6%). These are UNI-225 (tiered/multi-page
   detection), not UNI-141.
 
-Also record what BuiltWith gets *wrong*, so its authority is not overstated: its CRM rollup tracks
-four vendors total, which is why `TargetX`, `Element451` and `Slate` appear to over-fire by 4–90×.
+Also record what BuiltWith gets *wrong*, so its authority is not overstated. Its CRM rollup tracks
+four vendors total, and its Site Search rollup seven, which is why `TargetX`, `Element451`, `Slate`
+and `Funnelback` appear to over-fire by 4–90×. Checked individually against the corpus:
+
+- `Slate` — **genuine**. 566 homepages contain the literal `technolutions`, 549 contain
+  `mx.technolutions.net`. BuiltWith's 205 is short, not us long.
+- `Funnelback` — **genuine**, 47 institutions with a real marker against BuiltWith's 6.
+- `Element451` — **genuine bar one**: a news headline, "…Receives Element451 2026 Leadership of the
+  Year Award". An editorial mention, not an installation.
+- `TargetX` — **29% false positive**, per the `targetXP` collision above. The only real over-fire of
+  the four, and it is caught by the relative threshold rather than by BuiltWith.
+
 Where both sources are sound they agree closely — `Modern Campus` 1.02, `Siteimprove` 0.96, `Canvas`
-0.92, `Monsido` 0.90, `Algolia` 0.83.
+0.92, `Monsido` 0.90, `Algolia` 0.83. **A BuiltWith ratio is a prompt to go and look at the corpus,
+never a verdict on its own.**
 
 **The per-category human pass** over each signal category's firing members, which UNI-237's "done
 when" also asks for, becomes its own ticket and runs after this one — reviewing detections through a
