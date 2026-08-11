@@ -31,7 +31,8 @@
     "audit:categories": "node scripts/category-audit.js",
     "audit:nametoken": "node scripts/category-nametoken-audit.js",
     "prevalence": "node scripts/corpus-prevalence.js",
-    "audit:coverage": "node scripts/category-coverage.js"
+    "audit:coverage": "node scripts/category-coverage.js",
+    "breadth": "node scripts/pattern-breadth.js"
   },
   "keywords": [
     "technology-detection",

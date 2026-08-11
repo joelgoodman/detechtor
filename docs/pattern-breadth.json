@@ -1,0 +1,6008 @@
+{
+  "generated": "2026-08-11T16:58:12.874Z",
+  "ticket": "UNI-237",
+  "scanned": 3879,
+  "unscannable": 335,
+  "readFailures": 0,
+  "classifyFailures": 0,
+  "matchFailures": 0,
+  "channelsNotProbed": [
+    "js",
+    "cookies",
+    "headers",
+    "url",
+    "xhr"
+  ],
+  "patterns": {
+    "25Live": {
+      "fires": 419,
+      "strongest": 27,
+      "html": {
+        "25live": 57,
+        "25live\\.collegenet\\.com": 18,
+        "collegenet.*25live": 10,
+        "event.*management": 366
+      }
+    },
+    "33Across": {
+      "fires": 113,
+      "strongest": 112,
+      "html": {}
+    },
+    "AB Tasty": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "AMP": {
+      "fires": 5,
+      "strongest": 0,
+      "html": {
+        "<link rel=\"amphtml\"": 5
+      }
+    },
+    "AOS": {
+      "fires": 145,
+      "strongest": 144,
+      "html": {}
+    },
+    "ASP.NET": {
+      "fires": 61,
+      "strongest": 0,
+      "html": {
+        "__doPostBack": 60,
+        "aspnet_client": 1
+      }
+    },
+    "Academic Works": {
+      "fires": 229,
+      "strongest": 0,
+      "html": {
+        "academic.*works": 229,
+        "academicworks": 11,
+        "academicworks.com": 10
+      }
+    },
+    "Acalog": {
+      "fires": 84,
+      "strongest": 10,
+      "html": {
+        "acalog": 84
+      }
+    },
+    "Accessible360": {
+      "fires": 11,
+      "strongest": 11,
+      "html": {}
+    },
+    "Acoustic Campaign": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {
+        "com\\.silverpop\\.": 1,
+        "pages02\\.net": 1
+      }
+    },
+    "Acquia Campaign Factory": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Acquia Cloud Site Factory": {
+      "fires": 12,
+      "strongest": 12,
+      "html": {}
+    },
+    "Acquia Content Hub": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Acquia Personalization": {
+      "fires": 3,
+      "strongest": 2,
+      "html": {}
+    },
+    "Act-On": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Active Campaign": {
+      "fires": 28,
+      "strongest": 27,
+      "html": {
+        "activehosted\\.com": 4
+      }
+    },
+    "Acuity Scheduling": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "AdAstra": {
+      "fires": 76,
+      "strongest": 0,
+      "html": {
+        "ad.*astra": 76,
+        "adastra": 5
+      }
+    },
+    "AdOpt": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "AdRoll": {
+      "fires": 125,
+      "strongest": 125,
+      "html": {}
+    },
+    "AddEvent": {
+      "fires": 12,
+      "strongest": 12,
+      "html": {}
+    },
+    "AddSearch": {
+      "fires": 32,
+      "strongest": 7,
+      "html": {
+        "addsearch": 32
+      }
+    },
+    "AddThis": {
+      "fires": 20,
+      "strongest": 20,
+      "html": {}
+    },
+    "AddToAny": {
+      "fires": 131,
+      "strongest": 131,
+      "html": {}
+    },
+    "AddToAny Share Buttons": {
+      "fires": 39,
+      "strongest": 39,
+      "html": {}
+    },
+    "Adform": {
+      "fires": 20,
+      "strongest": 20,
+      "html": {}
+    },
+    "Adobe Analytics": {
+      "fires": 54,
+      "strongest": 54,
+      "html": {}
+    },
+    "Adobe ColdFusion": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "<!-- START headerTags\\.cfm": 1
+      }
+    },
+    "Adobe Creative Cloud": {
+      "fires": 15,
+      "strongest": 0,
+      "html": {
+        "adobe.*creative.*cloud": 9,
+        "creative.*adobe": 10
+      }
+    },
+    "Adobe Experience Manager": {
+      "fires": 53,
+      "strongest": 44,
+      "html": {
+        "/content/dam/": 48,
+        "/etc/designs/": 12,
+        "/etc\\.clientlibs/": 44
+      }
+    },
+    "Adobe Experience Manager Assets": {
+      "fires": 14,
+      "strongest": 9,
+      "html": {
+        "adobe.*experience.*manager.*assets": 5
+      }
+    },
+    "Adobe Fonts": {
+      "fires": 710,
+      "strongest": 706,
+      "html": {
+        "<link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)": 710
+      }
+    },
+    "Advanced Custom Fields": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "AdvancementForm": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "advancementform": 1
+      }
+    },
+    "AdvisorTrac": {
+      "fires": 82,
+      "strongest": 0,
+      "html": {
+        "advisor.*trac": 82
+      }
+    },
+    "Agility CMS": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Ahrefs": {
+      "fires": 31,
+      "strongest": 31,
+      "html": {}
+    },
+    "Aimtell": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Airtable": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Akamai mPulse": {
+      "fires": 7,
+      "strongest": 4,
+      "html": {
+        "<script>[\\s\\S]*?go-mpulse\\.net\\/boomerang[\\s\\S]*?</script>": 7
+      }
+    },
+    "Akismet": {
+      "fires": 23,
+      "strongest": 23,
+      "html": {}
+    },
+    "Algolia": {
+      "fires": 321,
+      "strongest": 22,
+      "html": {
+        "algolia": 321
+      }
+    },
+    "Alive5": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "All in One Accessibility": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "All in One SEO Pack": {
+      "fires": 75,
+      "strongest": 75,
+      "html": {}
+    },
+    "Allyant": {
+      "fires": 11,
+      "strongest": 11,
+      "html": {}
+    },
+    "Alpine.js": {
+      "fires": 58,
+      "strongest": 2,
+      "html": {
+        "<[^>]+[^\\w-]x-data[^\\w-][^<]+": 58
+      }
+    },
+    "Amazon Advertising": {
+      "fires": 14,
+      "strongest": 12,
+      "html": {}
+    },
+    "Amazon S3": {
+      "fires": 177,
+      "strongest": 177,
+      "html": {}
+    },
+    "Amazon Web Services": {
+      "fires": 177,
+      "strongest": 177,
+      "html": {}
+    },
+    "Amobee": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Amplitude": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "AndersNoren Baskerville": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Angular": {
+      "fires": 422,
+      "strongest": 0,
+      "html": {
+        "angular": 301,
+        "data-ng-": 10,
+        "ng-app": 122
+      }
+    },
+    "AngularJS": {
+      "fires": 16,
+      "strongest": 13,
+      "html": {
+        "<(?:div|html)[^>]+ng-app=": 5
+      }
+    },
+    "Animate It": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Animate.css": {
+      "fires": 202,
+      "strongest": 186,
+      "html": {}
+    },
+    "Ant Design": {
+      "fires": 3,
+      "strongest": 2,
+      "html": {
+        "<[^>]*class=\"ant-(?:btn|col|row|layout|breadcrumb|menu|pagination|steps|select|cascader|checkbox|calendar|form|input-number|input|mention|rate|radio|slider|switch|tree-select|time-picker|transfer|upload|avatar|badge|card|carousel|collapse|list|popover|tooltip|table|tabs|tag|timeline|tree|alert|modal|message|notification|progress|popconfirm|spin|anchor|back-top|divider|drawer)": 1
+      }
+    },
+    "Anthology Encompass": {
+      "fires": 40,
+      "strongest": 0,
+      "html": {
+        "imodules": 40
+      }
+    },
+    "Anthology Engage": {
+      "fires": 174,
+      "strongest": 0,
+      "html": {
+        "campus.*labs": 174,
+        "campuslabs": 49,
+        "campuslabs\\.com/engage": 42
+      }
+    },
+    "Anthology Student": {
+      "fires": 66,
+      "strongest": 0,
+      "html": {
+        "anthology": 8,
+        "anthology.*student": 3,
+        "campus-management": 1,
+        "campus.*nexus": 55,
+        "campusmgmt": 3,
+        "campusnexus": 49,
+        "cmnet": 1
+      }
+    },
+    "AnythingSlider": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "ApexChat": {
+      "fires": 11,
+      "strongest": 5,
+      "html": {
+        "apexchat": 11
+      }
+    },
+    "Apollo13Themes Rife": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "AppArmor": {
+      "fires": 13,
+      "strongest": 8,
+      "html": {
+        "apparmor": 13
+      }
+    },
+    "AppNexus": {
+      "fires": 146,
+      "strongest": 104,
+      "html": {}
+    },
+    "ApplicantStack": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "ApplyTexas": {
+      "fires": 9,
+      "strongest": 0,
+      "html": {
+        "applytexas": 9
+      }
+    },
+    "Asana": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Astra": {
+      "fires": 56,
+      "strongest": 56,
+      "html": {}
+    },
+    "Astra Widgets": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Astro": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "Astute Solutions": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Atlassian Jira Issue Collector": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Attentive": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Attribution": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "AudioEye": {
+      "fires": 36,
+      "strongest": 36,
+      "html": {
+        "audioeye\\.com": 36
+      }
+    },
+    "Audiohook": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Automatic.css": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Autoptimize": {
+      "fires": 33,
+      "strongest": 26,
+      "html": {}
+    },
+    "AwardSpring": {
+      "fires": 14,
+      "strongest": 0,
+      "html": {
+        "awardspring": 14
+      }
+    },
+    "Aweber": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Awesomplete": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "<link[^>]+href=\"[^>]*awesomplete(?:\\.min)?\\.css": 1
+      }
+    },
+    "Axeptio": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Axios": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Azure Cognitive Search": {
+      "fires": 43,
+      "strongest": 1,
+      "html": {
+        "azure.*search": 17,
+        "cognitive.*search": 27
+      }
+    },
+    "Azure Edge Network": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "Azure Monitor": {
+      "fires": 26,
+      "strongest": 26,
+      "html": {}
+    },
+    "BDOW": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "BEM": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "<[^>]+data-bem": 1
+      }
+    },
+    "Backbone.js": {
+      "fires": 53,
+      "strongest": 53,
+      "html": {}
+    },
+    "Backstretch": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Baidu Analytics (百度统计)": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "BambooHR": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Basis Technologies": {
+      "fires": 73,
+      "strongest": 73,
+      "html": {}
+    },
+    "BeTheme": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Beaver Builder": {
+      "fires": 45,
+      "strongest": 45,
+      "html": {}
+    },
+    "Beeketing": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Bench": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Better Click To Tweet": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Better Search": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "BetterDocs plugin": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Birdeye": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Blackbaud": {
+      "fires": 101,
+      "strongest": 39,
+      "html": {
+        "blackbaud": 101
+      }
+    },
+    "Blackboard Collaborate": {
+      "fires": 30,
+      "strongest": 0,
+      "html": {
+        "bb.*collaborate": 29,
+        "blackboard.*collaborate": 3,
+        "collaborate.*ultra": 2
+      }
+    },
+    "Blackboard Learn": {
+      "fires": 99,
+      "strongest": 1,
+      "html": {
+        "/ultra/": 5,
+        "bblearn": 1,
+        "blackboard.*learn": 31,
+        "blackboard\\.com": 71
+      }
+    },
+    "Blackboard Transact": {
+      "fires": 709,
+      "strongest": 1,
+      "html": {
+        "bb.*transact": 259,
+        "blackboard.*transact": 2,
+        "campus.*card": 506
+      }
+    },
+    "Blackboard Ultra": {
+      "fires": 76,
+      "strongest": 0,
+      "html": {
+        "bb.*ultra": 55,
+        "blackboard.*ultra": 46,
+        "ultra.*experience": 13
+      }
+    },
+    "Blackboard Web Community Manager": {
+      "fires": 7,
+      "strongest": 0,
+      "html": {
+        "bb[-_/]?wcm": 2,
+        "blackboard.*web.*community": 5
+      }
+    },
+    "Blitz": {
+      "fires": 7,
+      "strongest": 0,
+      "html": {
+        "<!-- Cached by Blitz on": 7
+      }
+    },
+    "Bold Chat": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {
+        "boldchat\\.com": 1
+      }
+    },
+    "BoldGrid": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {
+        "<link rel=[\"']stylesheet[\"'] [^>]+boldgrid": 1,
+        "<link rel=[\"']stylesheet[\"'] [^>]+post-and-page-builder": 1
+      }
+    },
+    "Bootbox.js": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Bootstrap": {
+      "fires": 3803,
+      "strongest": 1065,
+      "html": {
+        "bootstrap": 1595,
+        "class=\".*btn-": 2116,
+        "class=\".*col-": 2342,
+        "class=\".*row": 3754
+      }
+    },
+    "Bootstrap Icons": {
+      "fires": 51,
+      "strongest": 51,
+      "html": {}
+    },
+    "BootstrapCDN": {
+      "fires": 91,
+      "strongest": 91,
+      "html": {}
+    },
+    "BotPenguin": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Brandfolder": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {
+        "brandfolder": 1
+      }
+    },
+    "Breadcrumb NavXT": {
+      "fires": 4,
+      "strongest": 0,
+      "html": {
+        "<!-- Breadcrumb NavXT ([\\d\\.]+)": 4
+      }
+    },
+    "Bricks": {
+      "fires": 9,
+      "strongest": 9,
+      "html": {}
+    },
+    "Brightcove": {
+      "fires": 8,
+      "strongest": 4,
+      "html": {
+        "brightcove": 8
+      }
+    },
+    "Brightspace Core": {
+      "fires": 4,
+      "strongest": 0,
+      "html": {
+        "brightspace.*core": 3,
+        "valence.*api": 1
+      }
+    },
+    "Brightspace Portfolio": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "d2l.*portfolio": 1
+      }
+    },
+    "BugHerd": {
+      "fires": 25,
+      "strongest": 25,
+      "html": {}
+    },
+    "BugSnag": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Bulma": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Bunny": {
+      "fires": 62,
+      "strongest": 62,
+      "html": {}
+    },
+    "Bunny Fonts": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "Buttonizer": {
+      "fires": 2,
+      "strongest": 1,
+      "html": {}
+    },
+    "Bynder": {
+      "fires": 5,
+      "strongest": 0,
+      "html": {
+        "bynder": 5
+      }
+    },
+    "Byscuit": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "C3.js": {
+      "fires": 19,
+      "strongest": 19,
+      "html": {}
+    },
+    "CAS": {
+      "fires": 19,
+      "strongest": 0,
+      "html": {
+        "/cas/login": 17,
+        "central.*authentication": 3,
+        "central.*authentication.*service": 3
+      }
+    },
+    "CBORD": {
+      "fires": 506,
+      "strongest": 0,
+      "html": {
+        "campus.*dining": 498,
+        "cbord": 10,
+        "get\\.cbord\\.com": 3
+      }
+    },
+    "CKEditor": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "CalendarWiz": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Calendly": {
+      "fires": 20,
+      "strongest": 14,
+      "html": {}
+    },
+    "Cambridge Core": {
+      "fires": 7,
+      "strongest": 0,
+      "html": {
+        "cambridge.*core": 5,
+        "cambridge\\.org": 1,
+        "cup.*cambridge": 4
+      }
+    },
+    "Campaign Monitor": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "createsend\\.com": 1
+      }
+    },
+    "Campus Labs": {
+      "fires": 174,
+      "strongest": 0,
+      "html": {
+        "campus.*labs": 174,
+        "campuslabs": 49
+      }
+    },
+    "Campus Management": {
+      "fires": 5,
+      "strongest": 0,
+      "html": {
+        "campus-management": 1,
+        "campusmgmt": 3,
+        "cmnet": 1
+      }
+    },
+    "CampusLogic": {
+      "fires": 181,
+      "strongest": 0,
+      "html": {
+        "campus.*logic": 181,
+        "campuslogic": 2
+      }
+    },
+    "CampusVue": {
+      "fires": 19,
+      "strongest": 0,
+      "html": {
+        "campus.*vue": 19,
+        "campusvue": 1
+      }
+    },
+    "Canto": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Canva for Education": {
+      "fires": 157,
+      "strongest": 39,
+      "html": {
+        "canva.*education": 115,
+        "canva.*for.*schools": 37
+      }
+    },
+    "Canvas LMS": {
+      "fires": 440,
+      "strongest": 0,
+      "html": {
+        "canvas-lms": 5,
+        "instructure\\.com": 435
+      }
+    },
+    "Capturly": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Cart Functionality": {
+      "fires": 215,
+      "strongest": 83,
+      "html": {}
+    },
+    "Cascade CMS": {
+      "fires": 2,
+      "strongest": 0,
+      "html": {
+        "data-cascade-": 1,
+        "hannonhill.com": 1
+      }
+    },
+    "Cengage WebAssign": {
+      "fires": 214,
+      "strongest": 0,
+      "html": {
+        "web.*assign": 214
+      }
+    },
+    "Ceros": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Chakra UI": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Chaport": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Chart.js": {
+      "fires": 18,
+      "strongest": 18,
+      "html": {}
+    },
+    "Chartbeat": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Chatbase": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Chatify": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Choices": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Chosen": {
+      "fires": 50,
+      "strongest": 50,
+      "html": {}
+    },
+    "CivicTheme": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Civitas Learning": {
+      "fires": 4,
+      "strongest": 0,
+      "html": {
+        "civitas.*learning": 4,
+        "civitaslearning": 4
+      }
+    },
+    "Claspo": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Classy": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Cleave.js": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Click & Pledge": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "ClickCease": {
+      "fires": 45,
+      "strongest": 45,
+      "html": {}
+    },
+    "ClickDimensions": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Clicky": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Clipboard.js": {
+      "fires": 33,
+      "strongest": 33,
+      "html": {}
+    },
+    "Cloudflare Browser Insights": {
+      "fires": 283,
+      "strongest": 283,
+      "html": {}
+    },
+    "Cloudflare Stream": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Cloudimage": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Cloudinary": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "Cludo": {
+      "fires": 50,
+      "strongest": 38,
+      "html": {
+        "cludo": 50
+      }
+    },
+    "Clym": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Coalition Application": {
+      "fires": 4,
+      "strongest": 0,
+      "html": {
+        "coalition.*application": 3,
+        "coalitionforcollegeaccess": 1
+      }
+    },
+    "CollegeNET 25Live": {
+      "fires": 57,
+      "strongest": 27,
+      "html": {
+        "25live": 57,
+        "collegenet.*25live": 10
+      }
+    },
+    "Comm100": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {
+        "comm100\\.com": 1
+      }
+    },
+    "Common Application": {
+      "fires": 194,
+      "strongest": 0,
+      "html": {
+        "common.*application": 177,
+        "commonapp": 23
+      }
+    },
+    "Complianz": {
+      "fires": 16,
+      "strongest": 16,
+      "html": {}
+    },
+    "Concept3D": {
+      "fires": 76,
+      "strongest": 0,
+      "html": {
+        "concept3d": 76
+      }
+    },
+    "Concrete CMS": {
+      "fires": 10,
+      "strongest": 8,
+      "html": {}
+    },
+    "Conditional Fields for Contact Form 7": {
+      "fires": 11,
+      "strongest": 10,
+      "html": {}
+    },
+    "Constant Contact": {
+      "fires": 48,
+      "strongest": 27,
+      "html": {
+        "constantcontact\\.com": 27,
+        "ctctcdn\\.com": 34
+      }
+    },
+    "Contact Form 7": {
+      "fires": 155,
+      "strongest": 154,
+      "html": {}
+    },
+    "Contao": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Contensis": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "ContentViews": {
+      "fires": 19,
+      "strongest": 19,
+      "html": {}
+    },
+    "Contentful": {
+      "fires": 8,
+      "strongest": 0,
+      "html": {
+        "ctfassets": 8
+      }
+    },
+    "Contentsquare": {
+      "fires": 38,
+      "strongest": 38,
+      "html": {}
+    },
+    "Contentstack": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Contextual Related Posts": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Convert": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "ConvertBox": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "ConvertFlow": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "ConveyThis": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Cookie Control": {
+      "fires": 47,
+      "strongest": 47,
+      "html": {}
+    },
+    "Cookie Notice": {
+      "fires": 15,
+      "strongest": 15,
+      "html": {}
+    },
+    "Cookie Script": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "CookieFirst": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "CookieHub": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "CookieYes": {
+      "fires": 173,
+      "strongest": 126,
+      "html": {}
+    },
+    "Cookiebot": {
+      "fires": 80,
+      "strongest": 78,
+      "html": {}
+    },
+    "Cool Timeline": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Cornerstone": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Cornerstone OnDemand": {
+      "fires": 42,
+      "strongest": 17,
+      "html": {
+        "csod\\.com": 14
+      }
+    },
+    "Countdown Timer Ultimate": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "CourseLeaf": {
+      "fires": 9,
+      "strongest": 0,
+      "html": {
+        "courseleaf": 9
+      }
+    },
+    "Coursera for Campus": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "coursera.*campus": 1
+      }
+    },
+    "Coveo": {
+      "fires": 26,
+      "strongest": 17,
+      "html": {
+        "coveo": 26
+      }
+    },
+    "Crazy Egg": {
+      "fires": 225,
+      "strongest": 225,
+      "html": {}
+    },
+    "CreateJS": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Creativ.eMail": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Crisp": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {
+        "crisp\\.chat": 4
+      }
+    },
+    "Crisp Live Chat": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Criteo": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "CurricUNET": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "curricunet": 1
+      }
+    },
+    "Curriculog": {
+      "fires": 2,
+      "strongest": 0,
+      "html": {
+        "curriculog": 2
+      }
+    },
+    "Custom Twitter Feeds": {
+      "fires": 21,
+      "strongest": 20,
+      "html": {}
+    },
+    "Customer.io": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "D2L Brightspace": {
+      "fires": 165,
+      "strongest": 0,
+      "html": {
+        "brightspace": 151,
+        "d2l.*brightspace": 54,
+        "desire2learn": 16
+      }
+    },
+    "D3": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "DNN": {
+      "fires": 13,
+      "strongest": 11,
+      "html": {
+        "<!-- DNN Platform": 3
+      }
+    },
+    "DataTables": {
+      "fires": 121,
+      "strongest": 121,
+      "html": {}
+    },
+    "Datadog": {
+      "fires": 16,
+      "strongest": 16,
+      "html": {}
+    },
+    "DatoCMS": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "DegreeWorks": {
+      "fires": 236,
+      "strongest": 0,
+      "html": {
+        "degree.*works": 236,
+        "degreeworks": 31
+      }
+    },
+    "Delivra": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Demandbase": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Destiny One": {
+      "fires": 3,
+      "strongest": 0,
+      "html": {
+        "destiny.*one": 3
+      }
+    },
+    "Dialogflow": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {
+        "df-messenger": 1
+      }
+    },
+    "Diaspora": {
+      "fires": 300,
+      "strongest": 0,
+      "html": {
+        "diaspora": 300
+      }
+    },
+    "Didomi": {
+      "fires": 9,
+      "strongest": 9,
+      "html": {}
+    },
+    "DigitalOcean Spaces": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Divi": {
+      "fires": 55,
+      "strongest": 42,
+      "html": {}
+    },
+    "Dojo": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "DonorPerfect": {
+      "fires": 19,
+      "strongest": 19,
+      "html": {}
+    },
+    "Donorbox": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Doorbell": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Dotdigital": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Download Monitor": {
+      "fires": 15,
+      "strongest": 15,
+      "html": {}
+    },
+    "Draftpress HFCM": {
+      "fires": 45,
+      "strongest": 0,
+      "html": {
+        "<!--[^>]*HFCM\\sby\\s99\\sRobots": 45
+      }
+    },
+    "DreamWeaver": {
+      "fires": 4,
+      "strongest": 0,
+      "html": {
+        "<!-- #BeginTemplate\\s\"[\\d_\\w/]+\\.dwt": 1,
+        "<!--[^>]*(?:InstanceBeginEditable|Dreamweaver([^>]+)target|DWLayoutDefaultTable)": 3
+      }
+    },
+    "Dreamdata": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Drift": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {
+        "driftt\\.com": 2
+      }
+    },
+    "Drip": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "DropInBlog": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Drupal": {
+      "fires": 686,
+      "strongest": 547,
+      "html": {
+        "data-drupal-": 548,
+        "drupal-settings-json": 524,
+        "misc/drupal\\.js": 134,
+        "sites/all/": 32,
+        "sites/default/files": 609
+      }
+    },
+    "Drupal Multisite": {
+      "fires": 70,
+      "strongest": 69,
+      "html": {}
+    },
+    "Duo Security": {
+      "fires": 244,
+      "strongest": 0,
+      "html": {
+        "duo.*security": 244,
+        "duosecurity": 1
+      }
+    },
+    "Dynamic Conditions": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "Dynamic Yield": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Dynatrace RUM": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "EAB Navigate": {
+      "fires": 208,
+      "strongest": 3,
+      "html": {
+        "campus.eab.com": 42,
+        "eab.*navigate": 130,
+        "navigate.*eab": 119,
+        "student.*success.*collaborative": 42
+      }
+    },
+    "EBSCO Discovery Service": {
+      "fires": 4,
+      "strongest": 2,
+      "html": {
+        "eds.*ebsco": 2
+      }
+    },
+    "EMS": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "ems[-_ ]?software": 1
+      }
+    },
+    "EWWW Image Optimizer": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "Easy Accordion": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Easy Pie Chart": {
+      "fires": 80,
+      "strongest": 80,
+      "html": {}
+    },
+    "Echo360": {
+      "fires": 9,
+      "strongest": 0,
+      "html": {
+        "echo.*classroom": 9
+      }
+    },
+    "Edwiser Bridge": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Ektron CMS": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Elasticsearch": {
+      "fires": 21,
+      "strongest": 16,
+      "html": {
+        "elasticsearch": 5
+      }
+    },
+    "Element451": {
+      "fires": 46,
+      "strongest": 14,
+      "html": {
+        "element451": 46
+      }
+    },
+    "Element451 Search": {
+      "fires": 132,
+      "strongest": 0,
+      "html": {
+        "BoltDiscovery": 7,
+        "bolt.*discovery": 132
+      }
+    },
+    "Elementor": {
+      "fires": 336,
+      "strongest": 298,
+      "html": {}
+    },
+    "Elementor Addon Elements": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Elementor Header & Footer Builder": {
+      "fires": 29,
+      "strongest": 29,
+      "html": {}
+    },
+    "Eleventy": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Elfsight": {
+      "fires": 32,
+      "strongest": 32,
+      "html": {}
+    },
+    "Ellucian Banner": {
+      "fires": 19,
+      "strongest": 0,
+      "html": {
+        "banner.*ellucian": 14,
+        "ellucian.*banner": 14
+      }
+    },
+    "Ellucian CRM Recruit": {
+      "fires": 88,
+      "strongest": 88,
+      "html": {}
+    },
+    "Ellucian Colleague": {
+      "fires": 33,
+      "strongest": 0,
+      "html": {
+        "colleague.*ellucian": 31,
+        "ellucian.*colleague": 12,
+        "ellucian[^>]*colleague": 4
+      }
+    },
+    "Eloqua": {
+      "fires": 14,
+      "strongest": 11,
+      "html": {
+        "en25\\.com": 14
+      }
+    },
+    "Email Encoder for Wordpress": {
+      "fires": 9,
+      "strongest": 9,
+      "html": {}
+    },
+    "Embed Any Document": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Embed PDF Viewer": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "EmbedPlus": {
+      "fires": 22,
+      "strongest": 22,
+      "html": {}
+    },
+    "EmbedPress": {
+      "fires": 19,
+      "strongest": 19,
+      "html": {}
+    },
+    "EmbedSocial": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Embedly": {
+      "fires": 2,
+      "strongest": 1,
+      "html": {}
+    },
+    "Emma": {
+      "fires": 13,
+      "strongest": 1,
+      "html": {
+        "e2ma\\.net": 13
+      }
+    },
+    "Emotion": {
+      "fires": 107,
+      "strongest": 107,
+      "html": {}
+    },
+    "Emplifi UGC": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Encoura": {
+      "fires": 514,
+      "strongest": 0,
+      "html": {
+        "encoura": 513,
+        "noel.*levitz": 1
+      }
+    },
+    "Enquire.js": {
+      "fires": 30,
+      "strongest": 30,
+      "html": {}
+    },
+    "Ensemble Video": {
+      "fires": 9,
+      "strongest": 0,
+      "html": {
+        "ensemble.*video": 9
+      }
+    },
+    "Ensighten": {
+      "fires": 30,
+      "strongest": 30,
+      "html": {}
+    },
+    "EqualWeb": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {
+        "equalweb\\.com": 5
+      }
+    },
+    "Essential Addons for Elementor": {
+      "fires": 46,
+      "strongest": 45,
+      "html": {}
+    },
+    "Etix": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "EventOn": {
+      "fires": 20,
+      "strongest": 20,
+      "html": {}
+    },
+    "Everbridge": {
+      "fires": 8,
+      "strongest": 1,
+      "html": {
+        "everbridge": 8
+      }
+    },
+    "Everflow": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "EveryAction": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Evisions": {
+      "fires": 209,
+      "strongest": 0,
+      "html": {
+        "evisions": 209
+      }
+    },
+    "Ex Libris Alma": {
+      "fires": 17,
+      "strongest": 0,
+      "html": {
+        "exlibrisgroup": 17
+      }
+    },
+    "Ex Libris Primo": {
+      "fires": 30,
+      "strongest": 0,
+      "html": {
+        "/primo-explore/": 1,
+        "exlibris.*primo": 3,
+        "primo.*exlibris": 16,
+        "primo.*ve": 29,
+        "primo.exlibrisgroup.com": 15
+      }
+    },
+    "ExactMetrics": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "ExamSoft": {
+      "fires": 7,
+      "strongest": 0,
+      "html": {
+        "examsoft": 7
+      }
+    },
+    "Exhibit": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "ExpressionEngine": {
+      "fires": 2,
+      "strongest": 0,
+      "html": {
+        "exp_csrf_token": 2
+      }
+    },
+    "ExtendThemes Mesmerize": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "FACTS SIS": {
+      "fires": 164,
+      "strongest": 0,
+      "html": {
+        "facts.*sis": 49,
+        "facts.*student": 160
+      }
+    },
+    "FAST Financial Aid": {
+      "fires": 123,
+      "strongest": 0,
+      "html": {
+        "fast.*financial.*aid": 123
+      }
+    },
+    "FOLIO LSP": {
+      "fires": 57,
+      "strongest": 32,
+      "html": {
+        "folio.*library": 25,
+        "folio.*lsp": 5
+      }
+    },
+    "Facebook Chat Plugin": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "Facebook Pixel": {
+      "fires": 2166,
+      "strongest": 2164,
+      "html": {}
+    },
+    "FancyBox": {
+      "fires": 87,
+      "strongest": 87,
+      "html": {}
+    },
+    "Fathom": {
+      "fires": 12,
+      "strongest": 12,
+      "html": {}
+    },
+    "Feathr": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Figma for Education": {
+      "fires": 32,
+      "strongest": 0,
+      "html": {
+        "figma.*education": 32
+      }
+    },
+    "Finalsite": {
+      "fires": 56,
+      "strongest": 13,
+      "html": {
+        "finalsite": 56,
+        "finalsite\\.com": 55
+      }
+    },
+    "FingerprintJS": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "FitVids.JS": {
+      "fires": 219,
+      "strongest": 219,
+      "html": {}
+    },
+    "FlexSlider": {
+      "fires": 13,
+      "strongest": 13,
+      "html": {}
+    },
+    "Flickity": {
+      "fires": 97,
+      "strongest": 90,
+      "html": {}
+    },
+    "FlipClock.js": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "FlippingBook": {
+      "fires": 6,
+      "strongest": 5,
+      "html": {}
+    },
+    "Floating UI": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Flying Analytics": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Flying Pages": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Focus School Software": {
+      "fires": 16,
+      "strongest": 0,
+      "html": {
+        "focusschoolsoftware": 16
+      }
+    },
+    "Font Awesome": {
+      "fires": 1275,
+      "strongest": 620,
+      "html": {}
+    },
+    "FoodBooking": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "FormAssembly": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Formidable Form": {
+      "fires": 42,
+      "strongest": 42,
+      "html": {}
+    },
+    "Formstack": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Framer Sites": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Fraud Blocker": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Freshchat": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {
+        "freshchat\\.com": 1
+      }
+    },
+    "Freshdesk": {
+      "fires": 16,
+      "strongest": 0,
+      "html": {
+        "freshdesk\\.com": 12,
+        "freshworks-frame-styles": 3,
+        "myfreshworks\\.com": 2
+      }
+    },
+    "Froala Editor": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Front Chat": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Frontify": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "FullCalendar": {
+      "fires": 13,
+      "strongest": 13,
+      "html": {}
+    },
+    "FullStory": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Funding Choices": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Fundraise Up": {
+      "fires": 9,
+      "strongest": 9,
+      "html": {}
+    },
+    "Funnelback": {
+      "fires": 47,
+      "strongest": 17,
+      "html": {
+        "funnelback": 47,
+        "squiz.*search": 5
+      }
+    },
+    "FutureLearn": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "futurelearn": 1
+      }
+    },
+    "GIS Cloud": {
+      "fires": 592,
+      "strongest": 0,
+      "html": {
+        "gis.*cloud": 592
+      }
+    },
+    "GSAP": {
+      "fires": 23,
+      "strongest": 23,
+      "html": {}
+    },
+    "GTranslate": {
+      "fires": 44,
+      "strongest": 44,
+      "html": {}
+    },
+    "Gatsby": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Gecko Chat": {
+      "fires": 49,
+      "strongest": 25,
+      "html": {
+        "gecko_domain_verification": 15,
+        "geckoengage": 32,
+        "geckoform\\.com": 36
+      }
+    },
+    "GenerateBlocks": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "GeneratePress": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "GeneratePress GP Premium": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Genesis theme": {
+      "fires": 22,
+      "strongest": 22,
+      "html": {}
+    },
+    "Genesys Chat": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Genesys Cloud": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Getsitecontrol": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Ghost": {
+      "fires": 613,
+      "strongest": 6,
+      "html": {
+        "ghost": 613,
+        "ghost.*version": 63,
+        "powered.*by.*ghost": 8
+      }
+    },
+    "GiveCampus": {
+      "fires": 91,
+      "strongest": 91,
+      "html": {}
+    },
+    "GiveSmart": {
+      "fires": 17,
+      "strongest": 17,
+      "html": {}
+    },
+    "GiveWP": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "GivingFuel": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Glide.js": {
+      "fires": 25,
+      "strongest": 25,
+      "html": {}
+    },
+    "Glider.js": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Glyphicons": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {
+        "(?:<link[^>]* href=[^>]+glyphicons(?:\\.min)?\\.css|<img[^>]* src=[^>]+glyphicons)": 2
+      }
+    },
+    "GoDaddy CoBlocks": {
+      "fires": 17,
+      "strongest": 17,
+      "html": {}
+    },
+    "GoSquared": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Goober": {
+      "fires": 107,
+      "strongest": 107,
+      "html": {}
+    },
+    "Google AdSense": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Google Ads Conversion Tracking": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Google Analytics": {
+      "fires": 3394,
+      "strongest": 3307,
+      "html": {
+        "google-analytics\\.com/analytics\\.js": 1210,
+        "gtag\\(": 1801
+      }
+    },
+    "Google Analytics 4": {
+      "fires": 3341,
+      "strongest": 3296,
+      "html": {
+        "googletagmanager\\.com\\/gtag\\/js": 3327,
+        "gtag\\('config', 'G-[A-Z0-9]+": 893,
+        "gtag\\('js'": 1286
+      }
+    },
+    "Google Analytics Enhanced eCommerce": {
+      "fires": 11,
+      "strongest": 11,
+      "html": {}
+    },
+    "Google Call Conversion Tracking": {
+      "fires": 77,
+      "strongest": 77,
+      "html": {}
+    },
+    "Google Classroom": {
+      "fires": 66,
+      "strongest": 2,
+      "html": {
+        "classroom\\.google\\.com": 4,
+        "google.*classroom": 66
+      }
+    },
+    "Google Custom Search": {
+      "fires": 318,
+      "strongest": 317,
+      "html": {}
+    },
+    "Google Customer Reviews": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Google Font API": {
+      "fires": 1943,
+      "strongest": 1937,
+      "html": {}
+    },
+    "Google Hosted Libraries": {
+      "fires": 370,
+      "strongest": 360,
+      "html": {}
+    },
+    "Google Maps": {
+      "fires": 206,
+      "strongest": 126,
+      "html": {}
+    },
+    "Google Optimize": {
+      "fires": 16,
+      "strongest": 16,
+      "html": {}
+    },
+    "Google Pay": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Google Sign-in": {
+      "fires": 2,
+      "strongest": 1,
+      "html": {}
+    },
+    "Google Tag Manager": {
+      "fires": 3528,
+      "strongest": 3432,
+      "html": {
+        "GTM-": 2916,
+        "googletagmanager\\.com": 3516
+      }
+    },
+    "Google Tag Manager for WordPress": {
+      "fires": 49,
+      "strongest": 48,
+      "html": {}
+    },
+    "Google Workspace": {
+      "fires": 407,
+      "strongest": 2,
+      "html": {
+        "g.*suite": 400,
+        "gsuite": 2,
+        "workspace.*google": 10
+      }
+    },
+    "Gradelink": {
+      "fires": 180,
+      "strongest": 0,
+      "html": {
+        "grade.*link": 180
+      }
+    },
+    "GradesFirst": {
+      "fires": 33,
+      "strongest": 0,
+      "html": {
+        "grades.*first": 33,
+        "gradesfirst": 1
+      }
+    },
+    "Graduway": {
+      "fires": 2,
+      "strongest": 0,
+      "html": {
+        "graduway": 2
+      }
+    },
+    "Grav": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Gravatar": {
+      "fires": 5,
+      "strongest": 0,
+      "html": {
+        "<[^>]+gravatar\\.com/avatar/": 5
+      }
+    },
+    "Gravity Forms": {
+      "fires": 139,
+      "strongest": 120,
+      "html": {
+        "<div class=(?:\"|')[^>]*gform_body": 125,
+        "<div class=(?:\"|')[^>]*gform_wrapper": 125,
+        "<link [^>]*href=(?:\"|')[^>]*wp-content/plugins/gravityforms/css/": 5,
+        "<ul [^>]*class=(?:\"|')[^>]*gform_fields": 38
+      }
+    },
+    "GumGum": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Gutenberg": {
+      "fires": 12,
+      "strongest": 11,
+      "html": {}
+    },
+    "HCL Commerce": {
+      "fires": 15,
+      "strongest": 15,
+      "html": {}
+    },
+    "HT Mega": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Hammer.js": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Handlebars": {
+      "fires": 42,
+      "strongest": 37,
+      "html": {}
+    },
+    "HappyFox Live Chat": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "HashThemes Total": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Headless UI": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Headroom.js": {
+      "fires": 19,
+      "strongest": 19,
+      "html": {}
+    },
+    "Heap": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Helix Ultimate": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Hello Bar": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Hello Elementor": {
+      "fires": 117,
+      "strongest": 116,
+      "html": {}
+    },
+    "Help Scout": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "HighLevel": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Highcharts": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Higher Logic": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Highlight.js": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "Hoefler&Co": {
+      "fires": 42,
+      "strongest": 42,
+      "html": {}
+    },
+    "Honorlock": {
+      "fires": 2,
+      "strongest": 0,
+      "html": {
+        "honorlock": 2
+      }
+    },
+    "Hotjar": {
+      "fires": 341,
+      "strongest": 341,
+      "html": {}
+    },
+    "Htmx": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "HubSpot": {
+      "fires": 180,
+      "strongest": 146,
+      "html": {
+        "js\\.hs-analytics\\.net": 149,
+        "js\\.hs-scripts\\.com": 149,
+        "js\\.hscollectedforms\\.net": 64,
+        "js\\.hsforms\\.net": 25
+      }
+    },
+    "HubSpot Analytics": {
+      "fires": 146,
+      "strongest": 146,
+      "html": {}
+    },
+    "HubSpot CMS Hub": {
+      "fires": 15,
+      "strongest": 14,
+      "html": {
+        "hs_cos_wrapper": 15
+      }
+    },
+    "HubSpot Chat": {
+      "fires": 44,
+      "strongest": 44,
+      "html": {}
+    },
+    "HubSpot Cookie Policy Banner": {
+      "fires": 23,
+      "strongest": 23,
+      "html": {}
+    },
+    "HubSpot for Education": {
+      "fires": 514,
+      "strongest": 164,
+      "html": {
+        "_hsq": 49,
+        "class=\"hs-": 49,
+        "hs-analytics": 170,
+        "hs-script": 185,
+        "hubspot": 484,
+        "hubspot\\.com": 104
+      }
+    },
+    "Hugo": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "HurryTimer": {
+      "fires": 7,
+      "strongest": 6,
+      "html": {}
+    },
+    "Hyros": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "ID5": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "ImageEngine": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Imagekit": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Imagely NextGEN Gallery": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Imgix": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Imperva": {
+      "fires": 22,
+      "strongest": 22,
+      "html": {}
+    },
+    "Inertia.js": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Infinite Campus": {
+      "fires": 68,
+      "strongest": 0,
+      "html": {
+        "infinite.*campus": 68
+      }
+    },
+    "Infinite Scroll": {
+      "fires": 41,
+      "strongest": 41,
+      "html": {}
+    },
+    "Ingeniux CMS": {
+      "fires": 11,
+      "strongest": 9,
+      "html": {
+        "igx-": 11
+      }
+    },
+    "Innovative Interfaces Sierra": {
+      "fires": 12,
+      "strongest": 0,
+      "html": {
+        "sierra.*ils": 12
+      }
+    },
+    "Innovid Advertising Measurement": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Inspectlet": {
+      "fires": 7,
+      "strongest": 6,
+      "html": {
+        "<!-- (?:Begin|End) Inspectlet Embed Code -->": 1
+      }
+    },
+    "Instafeed.js": {
+      "fires": 11,
+      "strongest": 11,
+      "html": {}
+    },
+    "Instagram Feed for WordPress": {
+      "fires": 136,
+      "strongest": 134,
+      "html": {}
+    },
+    "Instant.Page": {
+      "fires": 12,
+      "strongest": 12,
+      "html": {}
+    },
+    "Instructure Canvas Catalog": {
+      "fires": 81,
+      "strongest": 0,
+      "html": {
+        "canvas.*catalog": 77,
+        "catalog\\.instructure": 4,
+        "catalog\\.instructure\\.com": 4
+      }
+    },
+    "Intellimize": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Intercom": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {
+        "widget\\.intercom\\.io": 6
+      }
+    },
+    "Intersection Observer": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Ionicons": {
+      "fires": 18,
+      "strongest": 18,
+      "html": {}
+    },
+    "Issuu": {
+      "fires": 30,
+      "strongest": 30,
+      "html": {}
+    },
+    "Ivory Search": {
+      "fires": 28,
+      "strongest": 28,
+      "html": {}
+    },
+    "JSS": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "JSZip": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "JW Player": {
+      "fires": 139,
+      "strongest": 6,
+      "html": {
+        "jw.*player": 139,
+        "jwplayer": 13
+      }
+    },
+    "Jenzabar": {
+      "fires": 268,
+      "strongest": 9,
+      "html": {
+        "/ICS": 224,
+        "/ICS/": 141,
+        "CampusWeb": 8,
+        "\\.edu/ICS": 190,
+        "jenzabar": 55,
+        "jenzabar.*ex": 23,
+        "jenzabar.*ics": 26,
+        "jics": 19
+      }
+    },
+    "JetEngine": {
+      "fires": 11,
+      "strongest": 11,
+      "html": {}
+    },
+    "Jetpack": {
+      "fires": 27,
+      "strongest": 25,
+      "html": {}
+    },
+    "Jetpack Boost": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "JivoChat": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Jobvite": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Joinchat": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Joomla": {
+      "fires": 15,
+      "strongest": 5,
+      "html": {
+        "/media/jui/": 3,
+        "com_content": 12,
+        "option=com_": 5
+      }
+    },
+    "Jotform": {
+      "fires": 12,
+      "strongest": 12,
+      "html": {}
+    },
+    "Juicer": {
+      "fires": 74,
+      "strongest": 74,
+      "html": {}
+    },
+    "Kadence WP Blocks": {
+      "fires": 26,
+      "strongest": 26,
+      "html": {}
+    },
+    "Kadence WP Kadence": {
+      "fires": 9,
+      "strongest": 9,
+      "html": {}
+    },
+    "Kaira Vogue": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Kakao": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Kaltura": {
+      "fires": 28,
+      "strongest": 6,
+      "html": {
+        "cdnapi\\.kaltura\\.com": 1,
+        "cdnapisec.kaltura.com": 8,
+        "kaltura": 23,
+        "kaltura.*player": 14,
+        "kwidget": 7
+      }
+    },
+    "Keap": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Keen-Slider": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Kentico": {
+      "fires": 9,
+      "strongest": 7,
+      "html": {
+        "cmspageplaceholder": 1,
+        "kentico": 8
+      }
+    },
+    "Kentico CMS": {
+      "fires": 6,
+      "strongest": 5,
+      "html": {}
+    },
+    "Ketch": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Kindful": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Klaviyo": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Koha": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Kuali Curriculum Management": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "kuali.*cm": 1
+      }
+    },
+    "Kuali Financial System": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "kuali.*kfs": 1
+      }
+    },
+    "Kwanzoo": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Landbot": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "LazySizes unveilhooks plugin": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "Leaflet": {
+      "fires": 30,
+      "strongest": 30,
+      "html": {}
+    },
+    "LearnDash": {
+      "fires": 15,
+      "strongest": 2,
+      "html": {
+        "learndash": 15
+      }
+    },
+    "Level Access": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Lever": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Liaison CAS": {
+      "fires": 14,
+      "strongest": 0,
+      "html": {
+        "liaison.*cas": 14,
+        "liaisoncas": 5
+      }
+    },
+    "LibAnswers": {
+      "fires": 20,
+      "strongest": 4,
+      "html": {
+        "libanswers": 20
+      }
+    },
+    "LibCal": {
+      "fires": 18,
+      "strongest": 4,
+      "html": {
+        "libcal": 18
+      }
+    },
+    "LibGuides": {
+      "fires": 224,
+      "strongest": 0,
+      "html": {
+        "libguides": 224
+      }
+    },
+    "LibraryH3lp": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {
+        "libraryh3lp\\.com": 7
+      }
+    },
+    "Lightbox": {
+      "fires": 334,
+      "strongest": 310,
+      "html": {}
+    },
+    "Lightning": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Linkedin Ads": {
+      "fires": 177,
+      "strongest": 4,
+      "html": {
+        "<img [^>]*src=\"[^/]*//[^/]*px\\.ads\\.linkedin\\.com": 173
+      }
+    },
+    "Linkedin Insight Tag": {
+      "fires": 907,
+      "strongest": 904,
+      "html": {}
+    },
+    "List.js": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "LiteSpeed Cache": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "LiveChat": {
+      "fires": 57,
+      "strongest": 52,
+      "html": {
+        "livechatinc\\.com": 57
+      }
+    },
+    "LiveHelpNow": {
+      "fires": 6,
+      "strongest": 3,
+      "html": {
+        "livehelpnow\\.net": 6
+      }
+    },
+    "LiveIntent": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "LivePerson": {
+      "fires": 8,
+      "strongest": 7,
+      "html": {
+        "liveperson\\.net": 8
+      }
+    },
+    "LiveSafe": {
+      "fires": 5,
+      "strongest": 0,
+      "html": {
+        "livesafe": 5
+      }
+    },
+    "LiveSession": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Livewire": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {
+        "<[^>]{1,512}\\bwire:": 1
+      }
+    },
+    "Loadable-Components": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Localist": {
+      "fires": 1992,
+      "strongest": 44,
+      "html": {
+        "class=\"localist": 46,
+        "event.*calendar": 1970,
+        "localist": 78,
+        "localist\\.com": 23
+      }
+    },
+    "Locomotive Scroll": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Lodash": {
+      "fires": 106,
+      "strongest": 106,
+      "html": {}
+    },
+    "LogRocket": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "LottieFiles": {
+      "fires": 8,
+      "strongest": 7,
+      "html": {}
+    },
+    "Lozad.js": {
+      "fires": 9,
+      "strongest": 9,
+      "html": {}
+    },
+    "Lucide": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Lucidworks Fusion": {
+      "fires": 71,
+      "strongest": 59,
+      "html": {
+        "fusion.*search": 61
+      }
+    },
+    "Lucky Orange": {
+      "fires": 12,
+      "strongest": 12,
+      "html": {}
+    },
+    "LyraThemes Kale": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Lytics": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "MDBootstrap": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "MNTN": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "MUI": {
+      "fires": 96,
+      "strongest": 96,
+      "html": {}
+    },
+    "Magento": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Magnific Popup": {
+      "fires": 189,
+      "strongest": 189,
+      "html": {}
+    },
+    "MailChimp for WooCommerce": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "MailChimp for WordPress": {
+      "fires": 7,
+      "strongest": 5,
+      "html": {}
+    },
+    "MailOptin": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Mailcheck": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Mailchimp": {
+      "fires": 65,
+      "strongest": 23,
+      "html": {
+        "<!-- Begin MailChimp Signup Form -->": 11,
+        "chimpstatic\\.com": 22,
+        "list-manage\\.com": 45
+      }
+    },
+    "MailerLite": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Mainstay": {
+      "fires": 34,
+      "strongest": 32,
+      "html": {
+        "mainstay\\.com": 34
+      }
+    },
+    "Mantine": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "MapPress": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Mapbox GL JS": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Mapbox.js": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Mappedin": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "mappedin": 1
+      }
+    },
+    "Mapplic": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Marchex": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "Marked": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Marker": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Marketo": {
+      "fires": 94,
+      "strongest": 89,
+      "html": {
+        "marketo\\.com": 5,
+        "munchkin\\.marketo\\.net": 92
+      }
+    },
+    "Master Slider Plugin": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Material Design Lite": {
+      "fires": 19,
+      "strongest": 1,
+      "html": {
+        "<link[^>]* href=\"[^\"]*material(?:\\.[\\w]+-[\\w]+)?(?:\\.min)?\\.css": 18
+      }
+    },
+    "MathJax": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Matomo": {
+      "fires": 110,
+      "strongest": 96,
+      "html": {
+        "/matomo/": 4,
+        "/piwik/": 2,
+        "_paq.push": 53,
+        "matomo.js": 99,
+        "piwik.js": 3
+      }
+    },
+    "Matomo Analytics": {
+      "fires": 94,
+      "strongest": 94,
+      "html": {}
+    },
+    "Matter.js": {
+      "fires": 38,
+      "strongest": 38,
+      "html": {}
+    },
+    "Mautic": {
+      "fires": 217,
+      "strongest": 216,
+      "html": {
+        "mtc\\.js": 217
+      }
+    },
+    "Max Mega Menu": {
+      "fires": 351,
+      "strongest": 321,
+      "html": {}
+    },
+    "McGraw-Hill ALEKS": {
+      "fires": 20,
+      "strongest": 0,
+      "html": {
+        "adaptive.*learning": 11,
+        "aleks": 9
+      }
+    },
+    "Mediasite": {
+      "fires": 7,
+      "strongest": 0,
+      "html": {
+        "mediasite": 7,
+        "mediasite\\.com": 1
+      }
+    },
+    "Meilisearch": {
+      "fires": 4,
+      "strongest": 0,
+      "html": {
+        "meili": 4,
+        "meilisearch": 1
+      }
+    },
+    "MemberSpace": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Merit": {
+      "fires": 30,
+      "strongest": 30,
+      "html": {}
+    },
+    "Merit Pages": {
+      "fires": 42,
+      "strongest": 30,
+      "html": {
+        "meritpages\\.com": 42
+      }
+    },
+    "Mesmerize Companion": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "MetaSlider": {
+      "fires": 35,
+      "strongest": 33,
+      "html": {}
+    },
+    "Metronet Profile Picture": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Microsoft ASP.NET": {
+      "fires": 79,
+      "strongest": 79,
+      "html": {
+        "<input[^>]+name=\"__VIEWSTATE": 79
+      }
+    },
+    "Microsoft Advertising": {
+      "fires": 414,
+      "strongest": 412,
+      "html": {}
+    },
+    "Microsoft Ajax Content Delivery Network": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "Microsoft Clarity": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Microsoft Power BI": {
+      "fires": 1152,
+      "strongest": 0,
+      "html": {
+        "power.*bi": 1152,
+        "powerbi": 11
+      }
+    },
+    "Microsoft SharePoint": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Microsoft Teams for Education": {
+      "fires": 145,
+      "strongest": 0,
+      "html": {
+        "microsoft.*education": 49,
+        "office365.*education": 5,
+        "teams.*education": 107
+      }
+    },
+    "Microsoft Word": {
+      "fires": 3,
+      "strongest": 2,
+      "html": {
+        "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:word\"|<w:WordDocument>|<div [^>]*class=\"?WordSection1[\" >]|<style[^>]*>[^>]*@page WordSection1)": 3
+      }
+    },
+    "Mixitup": {
+      "fires": 27,
+      "strongest": 27,
+      "html": {}
+    },
+    "Modern Campus CMS": {
+      "fires": 387,
+      "strongest": 373,
+      "html": {
+        "data-omni-": 1,
+        "moderncampus\\.com": 2,
+        "omni-cms": 2,
+        "omnicms": 9,
+        "omniupdate": 382
+      }
+    },
+    "Modernizr": {
+      "fires": 377,
+      "strongest": 377,
+      "html": {}
+    },
+    "Moment Timezone": {
+      "fires": 12,
+      "strongest": 12,
+      "html": {}
+    },
+    "Moment.js": {
+      "fires": 196,
+      "strongest": 196,
+      "html": {}
+    },
+    "Moneris Payment Gateway": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Monsido": {
+      "fires": 132,
+      "strongest": 126,
+      "html": {
+        "monsido": 132,
+        "monsido\\.com": 127
+      }
+    },
+    "MonsterInsights": {
+      "fires": 71,
+      "strongest": 71,
+      "html": {}
+    },
+    "MooTools": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Moodle": {
+      "fires": 6,
+      "strongest": 0,
+      "html": {
+        "/course/view\\.php": 4,
+        "class=\"moodle-": 1,
+        "moodle\\.org": 1
+      }
+    },
+    "Morphext": {
+      "fires": 15,
+      "strongest": 15,
+      "html": {}
+    },
+    "Mountain": {
+      "fires": 99,
+      "strongest": 99,
+      "html": {}
+    },
+    "Mouse Flow": {
+      "fires": 40,
+      "strongest": 40,
+      "html": {}
+    },
+    "Moxie": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "Mura CMS": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Mustache": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "MyFonts": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "MyLiveChat": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "National Student Clearinghouse": {
+      "fires": 67,
+      "strongest": 0,
+      "html": {
+        "studentclearinghouse": 67
+      }
+    },
+    "Nativo": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Neon CRM": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Network for Good": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "New Relic": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Nextdoor Ads": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Ninja Forms": {
+      "fires": 13,
+      "strongest": 13,
+      "html": {}
+    },
+    "NitroPack": {
+      "fires": 26,
+      "strongest": 26,
+      "html": {}
+    },
+    "Nosto Visual UGC": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Nudgify": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Nuxt.js": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {
+        "<div [^>]*id=\"__nuxt\"": 6
+      }
+    },
+    "OCLC WorldShare": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "OWL Carousel": {
+      "fires": 280,
+      "strongest": 266,
+      "html": {
+        "<link [^>]*href=\"[^\"]+owl\\.carousel(?:\\.min)?\\.css": 187
+      }
+    },
+    "OceanWP": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Okta": {
+      "fires": 53,
+      "strongest": 0,
+      "html": {
+        "okta": 53
+      }
+    },
+    "Olark": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {
+        "static\\.olark\\.com": 14
+      }
+    },
+    "Omniconvert": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Omny Studio": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "OneAll": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "OneCause": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "OneSignal": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "OneTrust": {
+      "fires": 100,
+      "strongest": 99,
+      "html": {}
+    },
+    "Onsen UI": {
+      "fires": 75,
+      "strongest": 75,
+      "html": {}
+    },
+    "Open Graph": {
+      "fires": 2786,
+      "strongest": 2786,
+      "html": {}
+    },
+    "Open edX": {
+      "fires": 10,
+      "strongest": 0,
+      "html": {
+        "edx.*platform": 10
+      }
+    },
+    "OpenLayers": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "OpenX": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "OptiMonk": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Optimizely": {
+      "fires": 22,
+      "strongest": 22,
+      "html": {}
+    },
+    "Optimizely Content Management": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "OptinMonster plugin": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Oracle Infinity": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Oracle PeopleSoft Campus Solutions": {
+      "fires": 201,
+      "strongest": 0,
+      "html": {
+        "/psc/": 53,
+        "/psp/": 67,
+        "PS_TOKEN": 2,
+        "\\?cmd=login": 31,
+        "campus.*solutions": 79,
+        "oracle.*peoplesoft": 1,
+        "peoplesoft": 16
+      }
+    },
+    "Oracle RightNow": {
+      "fires": 7,
+      "strongest": 2,
+      "html": {
+        "RightNow\\.Client\\.js": 2,
+        "custhelp\\.com": 7
+      }
+    },
+    "Orbit Slider": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Orchard Core": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Osano": {
+      "fires": 17,
+      "strongest": 17,
+      "html": {}
+    },
+    "Outbrain": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Oxford Learning Link": {
+      "fires": 57,
+      "strongest": 2,
+      "html": {
+        "oup\\.com": 51,
+        "oxford.*learning.*link": 6
+      }
+    },
+    "Oxygen": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {
+        "<body class=(?:\"|')[^\"']*oxygen-body": 6,
+        "<link [^>]*href=(?:\"|')[^>]*wp-content/plugins/oxygen/": 4
+      }
+    },
+    "PIXIjs": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "POWR": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "PWA": {
+      "fires": 678,
+      "strongest": 678,
+      "html": {}
+    },
+    "Packery": {
+      "fires": 20,
+      "strongest": 20,
+      "html": {}
+    },
+    "Padlet": {
+      "fires": 239,
+      "strongest": 0,
+      "html": {
+        "padlet": 239
+      }
+    },
+    "PageLayer": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Pagekit": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Pannellum": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Panopto": {
+      "fires": 16,
+      "strongest": 0,
+      "html": {
+        "hosted\\.panopto\\.com": 3,
+        "panopto": 16,
+        "panopto.*viewer": 2,
+        "panopto\\.com": 5
+      }
+    },
+    "Parchment": {
+      "fires": 123,
+      "strongest": 0,
+      "html": {
+        "parchment": 123
+      }
+    },
+    "Pardot": {
+      "fires": 56,
+      "strongest": 52,
+      "html": {
+        "go\\.pardot\\.com": 3,
+        "pi\\.pardot\\.com": 54
+      }
+    },
+    "Parsley.js": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Partytown": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Paths.js": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "PayPal": {
+      "fires": 5,
+      "strongest": 4,
+      "html": {}
+    },
+    "PayPal Marketing Solutions": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Paylocity": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "PebblePost": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "PeopleSoft Campus Solutions": {
+      "fires": 96,
+      "strongest": 0,
+      "html": {
+        "PS_TOKEN": 2,
+        "campus.*solutions": 79,
+        "peoplesoft": 16
+      }
+    },
+    "Perfmatters": {
+      "fires": 12,
+      "strongest": 12,
+      "html": {}
+    },
+    "Personio": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Phlox": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Photo Gallery": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "PhotoShelter for Brands": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Pikaday": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Pingdom RUM": {
+      "fires": 22,
+      "strongest": 22,
+      "html": {}
+    },
+    "Pinia": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Pinterest": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Piwik PRO Core": {
+      "fires": 29,
+      "strongest": 29,
+      "html": {}
+    },
+    "PixelYourSite": {
+      "fires": 33,
+      "strongest": 33,
+      "html": {}
+    },
+    "Pixelfed": {
+      "fires": 34,
+      "strongest": 0,
+      "html": {
+        "pixelfed": 34
+      }
+    },
+    "Pixlee TurnTo": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Plausible": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Plerdy": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Plone": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {
+        "\\+\\+resource\\+\\+": 1
+      }
+    },
+    "Plupload": {
+      "fires": 13,
+      "strongest": 13,
+      "html": {}
+    },
+    "Plyr": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Podsights": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "Polaris ILS": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "polaris.*library": 1
+      }
+    },
+    "Poll Everywhere": {
+      "fires": 3,
+      "strongest": 0,
+      "html": {
+        "poll.*everywhere": 3
+      }
+    },
+    "Popper": {
+      "fires": 204,
+      "strongest": 197,
+      "html": {}
+    },
+    "Poptin": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Populi": {
+      "fires": 131,
+      "strongest": 0,
+      "html": {
+        "populi.*college": 15,
+        "populiweb\\.com": 131
+      }
+    },
+    "Popup Maker": {
+      "fires": 19,
+      "strongest": 19,
+      "html": {}
+    },
+    "PowerCampus": {
+      "fires": 460,
+      "strongest": 0,
+      "html": {
+        "eCollege": 238,
+        "power.*campus": 247,
+        "powercampus": 2
+      }
+    },
+    "PowerFAIDS": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "powerfaids": 1
+      }
+    },
+    "PowerSchool SIS": {
+      "fires": 12,
+      "strongest": 0,
+      "html": {
+        "powerschool.*sis": 1,
+        "powerschool.*student": 7,
+        "ps.*powerschool": 12
+      }
+    },
+    "Powerfolio": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Prefix-Free": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Preline UI": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Premio Chaty": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "PressMaximum Customify": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Priority Hints": {
+      "fires": 1401,
+      "strongest": 1401,
+      "html": {}
+    },
+    "Prism": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "Privado": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Privy": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "ProctorU": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "proctoru": 1
+      }
+    },
+    "Proctorio": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "proctorio": 1
+      }
+    },
+    "ProfilePress": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Progress Sitefinity": {
+      "fires": 17,
+      "strongest": 12,
+      "html": {
+        "sitefinity": 17
+      }
+    },
+    "ProgressBar.js": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Prototype": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Provide Support": {
+      "fires": 11,
+      "strongest": 5,
+      "html": {
+        "providesupport\\.com": 11
+      }
+    },
+    "Pubble": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Pure CSS": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {
+        "<div[^>]+class=\"[^\"]*pure-u-(?:sm-|md-|lg-|xl-)?\\d-\\d": 4,
+        "<link[^>]+(?:([\\d.])+/)?pure(?:-min)?\\.css": 2
+      }
+    },
+    "Pure Chat": {
+      "fires": 11,
+      "strongest": 6,
+      "html": {
+        "purechat\\.com": 11
+      }
+    },
+    "Qgiv": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Qualaroo": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Qualified": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Qualtrics": {
+      "fires": 70,
+      "strongest": 11,
+      "html": {
+        "QSI.API": 1,
+        "jfe/form/": 52,
+        "qualtrics.*survey": 10,
+        "qualtrics.com": 67
+      }
+    },
+    "Qualtrics CoreXM": {
+      "fires": 73,
+      "strongest": 11,
+      "html": {
+        "qualtrics": 73
+      }
+    },
+    "Quantcast Measure": {
+      "fires": 32,
+      "strongest": 31,
+      "html": {}
+    },
+    "QuickSchools": {
+      "fires": 73,
+      "strongest": 0,
+      "html": {
+        "quick.*schools": 73
+      }
+    },
+    "Quicklink": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Quora Pixel": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "Radix UI": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Raiser's Edge": {
+      "fires": 5,
+      "strongest": 0,
+      "html": {
+        "raiser.*edge": 5,
+        "raisers.*edge": 2
+      }
+    },
+    "Rakuten": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Rakuten Advertising": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "RankMath SEO": {
+      "fires": 105,
+      "strongest": 105,
+      "html": {}
+    },
+    "Rave Mobile Safety": {
+      "fires": 186,
+      "strongest": 48,
+      "html": {
+        "getrave": 46,
+        "rave.*mobile.*safety": 96
+      }
+    },
+    "Raygun": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "ReCaptcha v2 for Contact Form 7": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "React": {
+      "fires": 16,
+      "strongest": 0,
+      "html": {
+        "data-reactroot": 16
+      }
+    },
+    "ReadSpeaker": {
+      "fires": 10,
+      "strongest": 8,
+      "html": {
+        "readspeaker\\.com": 10
+      }
+    },
+    "Ready Education": {
+      "fires": 352,
+      "strongest": 0,
+      "html": {
+        "ready.*education": 352,
+        "readyeducation": 1
+      }
+    },
+    "Recent Posts Widget With Thumbnails": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Recite Me": {
+      "fires": 23,
+      "strongest": 4,
+      "html": {
+        "reciteme\\.com": 23
+      }
+    },
+    "Reddit Ads": {
+      "fires": 254,
+      "strongest": 254,
+      "html": {}
+    },
+    "Redis Object Cache": {
+      "fires": 63,
+      "strongest": 0,
+      "html": {
+        "<!--\\s+Performance optimized by Redis Object Cache": 63
+      }
+    },
+    "Redux Framework": {
+      "fires": 8,
+      "strongest": 4,
+      "html": {}
+    },
+    "Regent Education": {
+      "fires": 41,
+      "strongest": 0,
+      "html": {
+        "regent.*education": 41,
+        "regenteducation": 1
+      }
+    },
+    "RequireJS": {
+      "fires": 36,
+      "strongest": 36,
+      "html": {}
+    },
+    "Respondus LockDown Browser": {
+      "fires": 5,
+      "strongest": 0,
+      "html": {
+        "lockdown.*browser": 3,
+        "respondus.*lockdown": 4
+      }
+    },
+    "Responsive Lightbox & Gallery": {
+      "fires": 15,
+      "strongest": 15,
+      "html": {}
+    },
+    "Reveal.js": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Rich Plugins Reviews": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Rise Vision": {
+      "fires": 390,
+      "strongest": 0,
+      "html": {
+        "rise.*vision": 390
+      }
+    },
+    "RockRMS": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Rocket.Chat": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {
+        "rocketchat-livechat": 1
+      }
+    },
+    "Ruby on Rails": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Rudderstack": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "RxJS": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "SAML": {
+      "fires": 160,
+      "strongest": 0,
+      "html": {
+        "SAMLRequest": 11,
+        "SAMLResponse": 1,
+        "saml": 160,
+        "saml2": 20
+      }
+    },
+    "SEOmatic": {
+      "fires": 15,
+      "strongest": 15,
+      "html": {}
+    },
+    "SIMS": {
+      "fires": 7,
+      "strongest": 0,
+      "html": {
+        "sims.*education": 5,
+        "sims.*student": 4
+      }
+    },
+    "SITS": {
+      "fires": 15,
+      "strongest": 0,
+      "html": {
+        "/urd/sits\\.urd/run/": 9,
+        "sits\\.urd": 12,
+        "tribal.*sits": 4
+      }
+    },
+    "SVG Support": {
+      "fires": 17,
+      "strongest": 11,
+      "html": {}
+    },
+    "SWFObject": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Salesforce": {
+      "fires": 159,
+      "strongest": 6,
+      "html": {
+        "(?<!work)force\\.com": 52,
+        "salesforce-sites\\.com": 112
+      }
+    },
+    "Salesforce Audience Studio": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Salesforce Education Cloud": {
+      "fires": 646,
+      "strongest": 28,
+      "html": {
+        "education.*cloud": 158,
+        "force\\.com": 54,
+        "lightning-": 11,
+        "salesforce": 465,
+        "salesforce.*education": 23,
+        "salesforce\\.com": 25
+      }
+    },
+    "Salesforce Interaction Studio": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "Salesforce Live Agent": {
+      "fires": 27,
+      "strongest": 3,
+      "html": {
+        "X-Salesforce-CHAT": 2,
+        "embeddedservice": 24,
+        "esw\\.min\\.js": 2,
+        "salesforceliveagent\\.com": 4
+      }
+    },
+    "Salesforce Service Cloud": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Sanity": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Sassy Social Share": {
+      "fires": 9,
+      "strongest": 9,
+      "html": {}
+    },
+    "Satori Studio Bento": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Scala Digital Signage": {
+      "fires": 244,
+      "strongest": 0,
+      "html": {
+        "scala.*digital": 244
+      }
+    },
+    "Schema App": {
+      "fires": 19,
+      "strongest": 19,
+      "html": {}
+    },
+    "SchoolMessenger": {
+      "fires": 17,
+      "strongest": 0,
+      "html": {
+        "schoolmessenger": 2,
+        "west.*unified": 15
+      }
+    },
+    "Schoology": {
+      "fires": 5,
+      "strongest": 0,
+      "html": {
+        "schoology": 5
+      }
+    },
+    "ScreenCloud": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "screencloud": 1
+      }
+    },
+    "Screenfull.js": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "SearchBlox": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "searchblox": 1
+      }
+    },
+    "SearchStax": {
+      "fires": 21,
+      "strongest": 9,
+      "html": {
+        "searchstax\\.com": 21
+      }
+    },
+    "Securiti": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Segment": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Segment Consent Manager": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Select2": {
+      "fires": 80,
+      "strongest": 80,
+      "html": {}
+    },
+    "Semantic UI": {
+      "fires": 3,
+      "strongest": 2,
+      "html": {
+        "<link[^>]+semantic(?:\\.min)\\.css\"": 2
+      }
+    },
+    "Sendinblue": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Sentry": {
+      "fires": 69,
+      "strongest": 69,
+      "html": {
+        "<script[^>]*src=\"[^\"]*browser\\.sentry\\-cdn\\.com/([0-9.]+)/bundle(?:\\.tracing)?(?:\\.min)?\\.js": 10
+      }
+    },
+    "ServiceNow": {
+      "fires": 36,
+      "strongest": 0,
+      "html": {
+        "service-now\\.com": 36
+      }
+    },
+    "ShareThis": {
+      "fires": 81,
+      "strongest": 81,
+      "html": {}
+    },
+    "SharpSpring": {
+      "fires": 12,
+      "strongest": 11,
+      "html": {
+        "marketingautomation\\.services": 12
+      }
+    },
+    "Shibboleth": {
+      "fires": 23,
+      "strongest": 0,
+      "html": {
+        "Shibboleth\\.sso": 3,
+        "shib.*session": 10,
+        "shibboleth": 13,
+        "shibd": 1
+      }
+    },
+    "Shoelace": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Shortcodes Ultimate": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Signal": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "SignalR": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Silverstripe": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "Simple Analytics": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "SimplexNoise.js": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Simpli.fi": {
+      "fires": 428,
+      "strongest": 428,
+      "html": {}
+    },
+    "SimplyBook.me": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "SirsiDynix Symphony": {
+      "fires": 6,
+      "strongest": 0,
+      "html": {
+        "sirsidynix": 2,
+        "symphony.*ils": 4
+      }
+    },
+    "Site Kit": {
+      "fires": 133,
+      "strongest": 133,
+      "html": {}
+    },
+    "Site Search 360": {
+      "fires": 23,
+      "strongest": 21,
+      "html": {
+        "sitesearch360": 23
+      }
+    },
+    "SiteOrigin Page Builder": {
+      "fires": 13,
+      "strongest": 13,
+      "html": {}
+    },
+    "SiteOrigin Widgets Bundle": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Sitecore": {
+      "fires": 27,
+      "strongest": 14,
+      "html": {
+        "sitecore": 27
+      }
+    },
+    "Sitecore Experience Edge": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Siteimprove": {
+      "fires": 562,
+      "strongest": 543,
+      "html": {
+        "siteimprove\\.com": 18,
+        "siteimproveanalytics\\.com": 552
+      }
+    },
+    "Sizmek": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Skai": {
+      "fires": 15,
+      "strongest": 15,
+      "html": {}
+    },
+    "SkyGlue": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "SkyVerge": {
+      "fires": 18,
+      "strongest": 18,
+      "html": {}
+    },
+    "Skyward Student Management": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "skyward.*student": 1
+      }
+    },
+    "Slate (Technolutions)": {
+      "fires": 566,
+      "strongest": 556,
+      "html": {
+        "mx\\.technolutions\\.net": 549,
+        "technolutions": 566,
+        "technolutions\\.net": 566
+      }
+    },
+    "Slick": {
+      "fires": 541,
+      "strongest": 528,
+      "html": {
+        "<link [^>]+(?:/([\\d.]+)/)?slick-theme\\.css": 183
+      }
+    },
+    "Slider Revolution": {
+      "fires": 179,
+      "strongest": 147,
+      "html": {}
+    },
+    "Slimbox 2": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Smart Ad Server": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Smart Catalog": {
+      "fires": 155,
+      "strongest": 0,
+      "html": {
+        "smart.*catalog": 155,
+        "smartcatalog": 92
+      }
+    },
+    "Smart Slider 3": {
+      "fires": 28,
+      "strongest": 28,
+      "html": {}
+    },
+    "SmartRecruiters": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Smartlook": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Smash Balloon Instagram Feed": {
+      "fires": 90,
+      "strongest": 88,
+      "html": {}
+    },
+    "Snap.svg": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "SnapWidget": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Snipcart": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Snowplow Analytics": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Socket.io": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "SoundCloud": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Spectra": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Spektrix": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Spin.js": {
+      "fires": 19,
+      "strongest": 19,
+      "html": {}
+    },
+    "Split Hero": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Spotify Web API": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Spotify Widgets": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Sprig plugin": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Squarespace": {
+      "fires": 53,
+      "strongest": 0,
+      "html": {
+        "sqs-": 51,
+        "squarespace\\.com": 42,
+        "static1\\.squarespace": 42
+      }
+    },
+    "Squarespace Commerce": {
+      "fires": 20,
+      "strongest": 20,
+      "html": {}
+    },
+    "Squiz DXP": {
+      "fires": 62,
+      "strongest": 26,
+      "html": {
+        "matrix.*asset": 28,
+        "mysource.*matrix": 3,
+        "squiz.*cms": 1,
+        "squiz.*dxp": 1,
+        "squiz.*matrix": 3
+      }
+    },
+    "Squiz Matrix": {
+      "fires": 5,
+      "strongest": 4,
+      "html": {
+        "<!--\\s+Running (?:MySource|Squiz) Matrix": 3
+      }
+    },
+    "StackAdapt": {
+      "fires": 375,
+      "strongest": 375,
+      "html": {}
+    },
+    "Stackable": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Starfish": {
+      "fires": 25,
+      "strongest": 0,
+      "html": {
+        "starfish.*solutions": 25,
+        "starfishsolutions": 25
+      }
+    },
+    "Statcounter": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Statically": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "SteelHouse": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Stellar.js": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Stimulus": {
+      "fires": 91,
+      "strongest": 0,
+      "html": {
+        "<[^>]+data-controller": 91
+      }
+    },
+    "Storyblok": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Strapi": {
+      "fires": 2,
+      "strongest": 0,
+      "html": {
+        "strapi": 2
+      }
+    },
+    "Stripe": {
+      "fires": 23,
+      "strongest": 23,
+      "html": {}
+    },
+    "StudIS": {
+      "fires": 2,
+      "strongest": 0,
+      "html": {
+        "studis": 2
+      }
+    },
+    "Sugar": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "SugarJS": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "Sumo": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "SvelteKit": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "SweetAlert": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "SweetAlert2": {
+      "fires": 6,
+      "strongest": 4,
+      "html": {}
+    },
+    "Swiffy Slider": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Swiftype": {
+      "fires": 29,
+      "strongest": 13,
+      "html": {
+        "swiftype": 29
+      }
+    },
+    "Swiper": {
+      "fires": 614,
+      "strongest": 525,
+      "html": {}
+    },
+    "Swup": {
+      "fires": 2,
+      "strongest": 1,
+      "html": {}
+    },
+    "Synergy Student Information System": {
+      "fires": 8,
+      "strongest": 0,
+      "html": {
+        "synergy.*sis": 4,
+        "synergy.*student": 7
+      }
+    },
+    "SyntaxHighlighter": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {
+        "<(?:script|link)[^>]*sh(?:Core|Brush|ThemeDefault)": 2
+      }
+    },
+    "TVSquared": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "TYPO3": {
+      "fires": 291,
+      "strongest": 8,
+      "html": {
+        "TYPO3.*CMS": 15,
+        "typo3": 291,
+        "typo3temp": 7
+      }
+    },
+    "TYPO3 CMS": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "TablePress": {
+      "fires": 124,
+      "strongest": 124,
+      "html": {}
+    },
+    "Tablesorter": {
+      "fires": 17,
+      "strongest": 17,
+      "html": {}
+    },
+    "Taboola": {
+      "fires": 18,
+      "strongest": 18,
+      "html": {}
+    },
+    "Tagboard": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Tagembed": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "Taggbox": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "Tailwind CSS": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "TalentLMS": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {
+        "talentlms": 1
+      }
+    },
+    "Talkdesk": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "TargetX": {
+      "fires": 122,
+      "strongest": 0,
+      "html": {
+        "targetx": 122
+      }
+    },
+    "Teads": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "Tealium": {
+      "fires": 55,
+      "strongest": 55,
+      "html": {}
+    },
+    "Tealium AudienceStream": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "TerminalFour": {
+      "fires": 87,
+      "strongest": 45,
+      "html": {
+        "data-t4-": 40,
+        "terminalfour": 84
+      }
+    },
+    "Termly": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Texthelp": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "The Events Calendar": {
+      "fires": 376,
+      "strongest": 359,
+      "html": {}
+    },
+    "The SEO Framework": {
+      "fires": 32,
+      "strongest": 0,
+      "html": {
+        "<!--[^>]+The SEO Framework by Sybre Waaijer": 32
+      }
+    },
+    "Theme Horse NewsCard": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "ThemeIsle Menu Icons": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "ThimPress LearnPress": {
+      "fires": 4,
+      "strongest": 3,
+      "html": {}
+    },
+    "Three.js": {
+      "fires": 2,
+      "strongest": 1,
+      "html": {}
+    },
+    "Thrive Architect": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Thrive Quiz Builder": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Tidio": {
+      "fires": 12,
+      "strongest": 11,
+      "html": {
+        "tidio\\.co": 11,
+        "tidiochat\\.com": 1
+      }
+    },
+    "Timeago": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Tiny Slider": {
+      "fires": 19,
+      "strongest": 19,
+      "html": {}
+    },
+    "TinyMCE": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "Tippy.js": {
+      "fires": 64,
+      "strongest": 61,
+      "html": {}
+    },
+    "Top Hat": {
+      "fires": 6,
+      "strongest": 0,
+      "html": {
+        "tophat": 6
+      }
+    },
+    "TouchNet": {
+      "fires": 49,
+      "strongest": 0,
+      "html": {
+        "/C\\d+_tsa/": 14,
+        "secure\\.touchnet\\.com": 11,
+        "secure\\.touchnet\\.net": 17,
+        "tnet-": 1,
+        "touchnet": 34,
+        "upay": 10
+      }
+    },
+    "Transact Campus": {
+      "fires": 278,
+      "strongest": 1,
+      "html": {
+        "bb.*transact": 259,
+        "blackboard.*transact": 2,
+        "data-transact": 11,
+        "transactcampus": 9,
+        "transactcampus\\.com": 9
+      }
+    },
+    "Transistor.fm": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Translate WordPress": {
+      "fires": 11,
+      "strongest": 11,
+      "html": {}
+    },
+    "Tribal Student Management": {
+      "fires": 22,
+      "strongest": 0,
+      "html": {
+        "ebs.*tribal": 10,
+        "tribal.*education": 19,
+        "tribal.*student.*management": 4
+      }
+    },
+    "Trumba": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "TrustPulse": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Trustpilot": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "TurfJS": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Turnitin": {
+      "fires": 5,
+      "strongest": 0,
+      "html": {
+        "turnitin": 5
+      }
+    },
+    "Twenty Fifteen": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Twenty Nineteen": {
+      "fires": 5,
+      "strongest": 4,
+      "html": {}
+    },
+    "Twenty Seventeen": {
+      "fires": 5,
+      "strongest": 4,
+      "html": {}
+    },
+    "Twenty Sixteen": {
+      "fires": 4,
+      "strongest": 3,
+      "html": {}
+    },
+    "Twenty Thirteen": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Twenty Twenty": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Twenty Twenty-One": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "TwicPics": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Twik": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Twitter": {
+      "fires": 42,
+      "strongest": 42,
+      "html": {}
+    },
+    "Twitter Ads": {
+      "fires": 134,
+      "strongest": 134,
+      "html": {}
+    },
+    "Twitter Emoji (Twemoji)": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Twitter typeahead.js": {
+      "fires": 21,
+      "strongest": 21,
+      "html": {}
+    },
+    "Typed.js": {
+      "fires": 18,
+      "strongest": 18,
+      "html": {}
+    },
+    "UIKit": {
+      "fires": 28,
+      "strongest": 26,
+      "html": {
+        "<[^>]+class=\"[^\"]*(?:uk-container|uk-section)": 12
+      }
+    },
+    "Ultimate Addons for Elementor": {
+      "fires": 28,
+      "strongest": 28,
+      "html": {}
+    },
+    "UltimatelySocial": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "Umbraco": {
+      "fires": 299,
+      "strongest": 9,
+      "html": {
+        "/umbraco/": 8,
+        "umbraco": 299,
+        "umbraco.*cms": 6
+      }
+    },
+    "Unbounce": {
+      "fires": 26,
+      "strongest": 26,
+      "html": {}
+    },
+    "Underscore.js": {
+      "fires": 256,
+      "strongest": 256,
+      "html": {}
+    },
+    "Understrap": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Unit4 Student Management": {
+      "fires": 31,
+      "strongest": 9,
+      "html": {
+        "coda.*student": 4,
+        "tribal.*student": 18
+      }
+    },
+    "Unpkg": {
+      "fires": 297,
+      "strongest": 277,
+      "html": {}
+    },
+    "Upfluence": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Uploadcare": {
+      "fires": 9,
+      "strongest": 9,
+      "html": {}
+    },
+    "UptimeRobot": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "UsableNet": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "UserWay": {
+      "fires": 165,
+      "strongest": 156,
+      "html": {
+        "userway\\.org": 165
+      }
+    },
+    "Usercentrics": {
+      "fires": 17,
+      "strongest": 16,
+      "html": {}
+    },
+    "Usersnap": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "VDX.tv": {
+      "fires": 9,
+      "strongest": 9,
+      "html": {}
+    },
+    "VWO": {
+      "fires": 29,
+      "strongest": 29,
+      "html": {}
+    },
+    "Vanco Payment Solutions": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Varbase": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Varify": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Veracross": {
+      "fires": 382,
+      "strongest": 0,
+      "html": {
+        "vera.*cross": 382
+      }
+    },
+    "Vercel Analytics": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "VideoJS": {
+      "fires": 16,
+      "strongest": 8,
+      "html": {}
+    },
+    "Vimeo": {
+      "fires": 1120,
+      "strongest": 186,
+      "html": {
+        "vimeo": 1120,
+        "vimeo-player": 35
+      }
+    },
+    "Virtuous": {
+      "fires": 5,
+      "strongest": 5,
+      "html": {}
+    },
+    "VitalSource Bookshelf": {
+      "fires": 18,
+      "strongest": 0,
+      "html": {
+        "digital.*textbook": 13,
+        "vitalsource": 5
+      }
+    },
+    "Vue.js": {
+      "fires": 154,
+      "strongest": 0,
+      "html": {
+        "data-v-": 136,
+        "v-cloak": 12,
+        "vue\\.js": 7
+      }
+    },
+    "W3 Total Cache": {
+      "fires": 62,
+      "strongest": 0,
+      "html": {
+        "<!--[^>]+W3 Total Cache": 62
+      }
+    },
+    "W3.CSS": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "WEN Themes Education Hub": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "WOW": {
+      "fires": 54,
+      "strongest": 54,
+      "html": {}
+    },
+    "WP Accessibility": {
+      "fires": 44,
+      "strongest": 43,
+      "html": {
+        "wp-content/plugins/wp-accessibility(?!-helper)": 44
+      }
+    },
+    "WP Accessibility Helper": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {
+        "wp-accessibility-helper": 4
+      }
+    },
+    "WP Fastest Cache": {
+      "fires": 16,
+      "strongest": 15,
+      "html": {}
+    },
+    "WP Featherlight": {
+      "fires": 9,
+      "strongest": 9,
+      "html": {}
+    },
+    "WP Google Map Plugin": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "WP Grid Builder": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "WP Job Openings": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "WP Portfolio": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "WP Rocket": {
+      "fires": 182,
+      "strongest": 167,
+      "html": {
+        "<!--[^>]+WP Rocket": 177
+      }
+    },
+    "WP-Optimize": {
+      "fires": 25,
+      "strongest": 0,
+      "html": {
+        "<!--[^>]+Cached by WP-Optimize": 25
+      }
+    },
+    "WP-PageNavi": {
+      "fires": 35,
+      "strongest": 35,
+      "html": {}
+    },
+    "WP-Royal Ashe": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "WPForms": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "WPML": {
+      "fires": 18,
+      "strongest": 15,
+      "html": {}
+    },
+    "WPMU DEV Smush": {
+      "fires": 34,
+      "strongest": 34,
+      "html": {}
+    },
+    "Wagtail": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Web Font Loader": {
+      "fires": 25,
+      "strongest": 25,
+      "html": {}
+    },
+    "Web3Forms": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Webflow": {
+      "fires": 21,
+      "strongest": 21,
+      "html": {}
+    },
+    "WebsiteBuilder": {
+      "fires": 54,
+      "strongest": 54,
+      "html": {}
+    },
+    "Weebly": {
+      "fires": 12,
+      "strongest": 12,
+      "html": {}
+    },
+    "Weglot": {
+      "fires": 34,
+      "strongest": 29,
+      "html": {}
+    },
+    "WhatsApp Business Chat": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Widen Collective": {
+      "fires": 3,
+      "strongest": 2,
+      "html": {
+        "widen.*collective": 1
+      }
+    },
+    "Wisepops": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Wistia": {
+      "fires": 31,
+      "strongest": 10,
+      "html": {
+        "wistia": 31
+      }
+    },
+    "Wix": {
+      "fires": 56,
+      "strongest": 54,
+      "html": {
+        "static\\.wixstatic\\.com": 56,
+        "wix\\.com": 54
+      }
+    },
+    "WooCommerce": {
+      "fires": 100,
+      "strongest": 93,
+      "html": {}
+    },
+    "WooCommerce PayPal Checkout Payment Gateway": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "WooCommerce Stripe Payment Gateway": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "WooCommerce Subscriptions": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "WookMark": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Woopra": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "WordPress": {
+      "fires": 1650,
+      "strongest": 1485,
+      "html": {
+        "wp-content": 1617,
+        "wp-includes": 1525
+      }
+    },
+    "WordPress Multisite": {
+      "fires": 86,
+      "strongest": 84,
+      "html": {}
+    },
+    "WordPress Popular Posts": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "WordPress Super Cache": {
+      "fires": 43,
+      "strongest": 0,
+      "html": {
+        "<!--[^>]+WP-Super-Cache": 43
+      }
+    },
+    "Workable": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Workday Student": {
+      "fires": 135,
+      "strongest": 0,
+      "html": {
+        "wd-.*student": 9,
+        "wd5\\.myworkday\\.com": 6,
+        "workday": 126,
+        "workday.*student": 26,
+        "workday\\.com": 40,
+        "workdayhcm": 1
+      }
+    },
+    "WorldCat Discovery": {
+      "fires": 7,
+      "strongest": 0,
+      "html": {
+        "worldcat.*discovery": 7
+      }
+    },
+    "Wufoo": {
+      "fires": 11,
+      "strongest": 11,
+      "html": {}
+    },
+    "XYZScripts": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "YUI Doc": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Yandex.Metrika": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Yext": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "Yoast SEO": {
+      "fires": 966,
+      "strongest": 918,
+      "html": {
+        "<!-- This site is optimized with the Yoast (?:WordPress )?SEO plugin v([^\\s]+) -": 667,
+        "<!-- This site is optimized with the Yoast SEO Premium plugin v(?:[^\\s]+) \\(Yoast SEO v([^\\s]+)\\) -": 228
+      }
+    },
+    "Yoast SEO Premium": {
+      "fires": 239,
+      "strongest": 0,
+      "html": {
+        "<!-- This site is optimized with the Yoast SEO Premium plugin v([^\\s]+) ": 239
+      }
+    },
+    "YouTube": {
+      "fires": 3369,
+      "strongest": 548,
+      "html": {
+        "youtube": 3366,
+        "youtube-player": 145,
+        "yt-player": 15
+      }
+    },
+    "YuJa": {
+      "fires": 37,
+      "strongest": 15,
+      "html": {
+        "yuja": 37,
+        "yuja.*enterprise": 1
+      }
+    },
+    "ZURB Foundation": {
+      "fires": 176,
+      "strongest": 116,
+      "html": {
+        "<div [^>]*class=\"[^\"]*(?:small|medium|large)-\\d{1,2} columns": 85,
+        "<link[^>]+foundation[^>\"]+css": 120
+      }
+    },
+    "ZeeMaps": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "Zendesk": {
+      "fires": 19,
+      "strongest": 18,
+      "html": {
+        "zdassets\\.com": 19
+      }
+    },
+    "Zendesk Chat": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Zepto": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "Zoho PageSense": {
+      "fires": 13,
+      "strongest": 13,
+      "html": {}
+    },
+    "Zoho SalesIQ": {
+      "fires": 9,
+      "strongest": 9,
+      "html": {
+        "salesiq\\.zoho": 9
+      }
+    },
+    "Zoominfo": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "Zopim": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {
+        "v2\\.zopim\\.com": 3
+      }
+    },
+    "a3 Lazy Load": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "aThemes Sydney": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "accessiBe": {
+      "fires": 136,
+      "strongest": 130,
+      "html": {
+        "accessibe\\.com": 115,
+        "acsbapp\\.com": 134
+      }
+    },
+    "amCharts": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "authorize.net": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "bowser": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "bxSlider": {
+      "fires": 52,
+      "strongest": 52,
+      "html": {}
+    },
+    "cdnjs": {
+      "fires": 853,
+      "strongest": 615,
+      "html": {}
+    },
+    "crypto-js": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "dc.js": {
+      "fires": 28,
+      "strongest": 28,
+      "html": {}
+    },
+    "dotdigital Engagement Cloud": {
+      "fires": 1,
+      "strongest": 0,
+      "html": {
+        "dotmailer\\.com": 1
+      }
+    },
+    "eSSENTIAL Accessibility": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "fullPage.js": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "hCaptcha": {
+      "fires": 9,
+      "strongest": 7,
+      "html": {}
+    },
+    "html2canvas": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "iCheck": {
+      "fires": 2,
+      "strongest": 2,
+      "html": {}
+    },
+    "iClicker": {
+      "fires": 4,
+      "strongest": 3,
+      "html": {
+        "i.*clicker": 1
+      }
+    },
+    "iGoDigital": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "imagesLoaded": {
+      "fires": 330,
+      "strongest": 330,
+      "html": {}
+    },
+    "ipify": {
+      "fires": 12,
+      "strongest": 12,
+      "html": {}
+    },
+    "iubenda": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "jQuery": {
+      "fires": 3056,
+      "strongest": 2871,
+      "html": {
+        "jquery": 3056
+      }
+    },
+    "jQuery CDN": {
+      "fires": 398,
+      "strongest": 398,
+      "html": {}
+    },
+    "jQuery DevBridge Autocomplete": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "jQuery Migrate": {
+      "fires": 1266,
+      "strongest": 1266,
+      "html": {}
+    },
+    "jQuery Mobile": {
+      "fires": 73,
+      "strongest": 73,
+      "html": {}
+    },
+    "jQuery Modal": {
+      "fires": 8,
+      "strongest": 8,
+      "html": {}
+    },
+    "jQuery Payment": {
+      "fires": 22,
+      "strongest": 22,
+      "html": {}
+    },
+    "jQuery UI": {
+      "fires": 204,
+      "strongest": 204,
+      "html": {}
+    },
+    "jsDelivr": {
+      "fires": 803,
+      "strongest": 726,
+      "html": {}
+    },
+    "jsPDF": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "libphonenumber": {
+      "fires": 4,
+      "strongest": 4,
+      "html": {}
+    },
+    "lite-youtube-embed": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "math.js": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "metisMenu": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "mobile-detect.js": {
+      "fires": 7,
+      "strongest": 7,
+      "html": {}
+    },
+    "p5.js": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "parallax.js": {
+      "fires": 116,
+      "strongest": 116,
+      "html": {}
+    },
+    "particles.js": {
+      "fires": 15,
+      "strongest": 14,
+      "html": {}
+    },
+    "pdfmake": {
+      "fires": 16,
+      "strongest": 16,
+      "html": {}
+    },
+    "pickadate.js": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "prettyPhoto": {
+      "fires": 47,
+      "strongest": 39,
+      "html": {
+        "(?:<link [^>]*href=\"[^\"]*prettyPhoto(?:\\.min)?\\.css|<a [^>]*rel=\"prettyPhoto)": 43
+      }
+    },
+    "punycode": {
+      "fires": 10,
+      "strongest": 10,
+      "html": {}
+    },
+    "reCAPTCHA": {
+      "fires": 395,
+      "strongest": 374,
+      "html": {}
+    },
+    "sIFR": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "script.aculo.us": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "scrollreveal": {
+      "fires": 21,
+      "strongest": 14,
+      "html": {
+        "<[^>]+data-sr(?:-id)": 15
+      }
+    },
+    "sidr": {
+      "fires": 14,
+      "strongest": 14,
+      "html": {}
+    },
+    "slideout": {
+      "fires": 3,
+      "strongest": 3,
+      "html": {}
+    },
+    "styled-components": {
+      "fires": 42,
+      "strongest": 42,
+      "html": {}
+    },
+    "tawk.to": {
+      "fires": 49,
+      "strongest": 41,
+      "html": {
+        "tawk\\.to": 49
+      }
+    },
+    "theTradeDesk": {
+      "fires": 562,
+      "strongest": 550,
+      "html": {}
+    },
+    "vcita": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {}
+    },
+    "waitForImages": {
+      "fires": 6,
+      "strongest": 6,
+      "html": {}
+    },
+    "web-vitals": {
+      "fires": 41,
+      "strongest": 41,
+      "html": {}
+    },
+    "wpBakery": {
+      "fires": 73,
+      "strongest": 73,
+      "html": {}
+    },
+    "xCharts": {
+      "fires": 1,
+      "strongest": 1,
+      "html": {
+        "<link[^>]* href=\"[^\"]*xcharts(?:\\.min)?\\.css": 1
+      }
+    }
+  }
+}
