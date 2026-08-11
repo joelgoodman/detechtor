@@ -983,18 +983,41 @@ class DeTECHtor {
   /**
    * UNI-237: `excludes` was declared on 45 patterns and read by nothing.
    *
-   * The declared pairs are MUTUAL — Underscore.js excludes Lodash and Lodash excludes
-   * Underscore.js, likewise AngularJS/Angular and Piwik PRO Core/Matomo Analytics. A naive pass
-   * suppresses both, or picks whichever the loop happened to reach first, making the result depend
-   * on pattern-file load order. So: the higher-confidence match wins and suppresses the other; an
-   * exact tie keeps both, because there is no principled way to choose and dropping a real
-   * detection is worse than reporting two.
+   * The real shape of the 45, measured against the loaded pattern set: only 3 pairs are MUTUAL —
+   * both sides declare `excludes` back at each other (Lodash <-> Underscore.js, AngularDart <->
+   * AngularJS, HTTP/2 <-> SPDY). The other 44 rules are ONE-DIRECTIONAL: only the declaring pattern
+   * names the other (AngularJS -> Angular, Piwik PRO Core -> Matomo Analytics, Backdrop -> Drupal,
+   * and so on) — the named side declares no `excludes` of its own.
+   *
+   * The two shapes mean different things and must resolve differently:
+   *
+   * - MUTUAL: neither side claims authority over the other, so there is nothing to defer to except
+   *   the evidence itself. Higher confidence wins; an exact tie keeps both, because dropping a real
+   *   detection is worse than reporting two when there is no principled way to choose.
+   * - ONE-DIRECTIONAL: the declaring pattern IS asserting authority — "when I am present, the named
+   *   technology is a guaranteed false positive on this evidence." AngularJS 1.x scripts contain
+   *   the literal string "angular", which unavoidably also matches Angular's pattern; Piwik PRO is
+   *   a Matomo fork, so a Piwik PRO page necessarily also matches Matomo's fingerprint. That is not
+   *   a competing detection to be weighed by confidence — an earlier version of this function used
+   *   the confidence tie-break for these too, and because both real declarers (AngularJS at 16,
+   *   Piwik PRO Core at 29) fire at LOWER confidence than the technology they name (Angular at 438,
+   *   Matomo Analytics at 95), the tie-break silently never suppressed either — the feature shipped
+   *   inert for exactly the two cases it exists to fix. So: suppress the named technology
+   *   unconditionally whenever the declarer also fires, regardless of either side's confidence.
+   *
+   * A suppressed match never gets to apply its own `excludes` rules (`suppressed.has` guard below)
+   * — suppression does not chain transitively through something that itself lost the argument.
    *
    * @param {Array<{name: string, confidence: number}>} sorted confidence-descending matches
    */
   applyExcludes(sorted) {
     const byName = new Map(sorted.map((m) => [m.name, m]));
     const suppressed = new Set();
+
+    const declaresBack = (declarerName, targetName) => {
+      const targetRules = this.patterns[targetName] && this.patterns[targetName].excludes;
+      return Array.isArray(targetRules) && targetRules.includes(declarerName);
+    };
 
     for (const match of sorted) {
       if (suppressed.has(match.name)) continue;
@@ -1004,8 +1027,15 @@ class DeTECHtor {
       for (const victimName of rules) {
         const victim = byName.get(victimName);
         if (!victim || victim.name === match.name) continue;
-        if (victim.confidence === match.confidence) continue; // exact tie: keep both
-        if (victim.confidence < match.confidence) suppressed.add(victimName);
+
+        if (declaresBack(match.name, victimName)) {
+          // Mutual: confidence tie-break. Higher wins; an exact tie keeps both.
+          if (victim.confidence === match.confidence) continue;
+          if (victim.confidence < match.confidence) suppressed.add(victimName);
+        } else {
+          // One-directional: the declarer is overriding, not competing. Suppress unconditionally.
+          suppressed.add(victimName);
+        }
       }
     }
 

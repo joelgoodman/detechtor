@@ -74,6 +74,10 @@ test('a missing finalUrl or networkHosts never throws', () => {
 });
 
 test('excludes suppresses the excluded technology', () => {
+  // Piwik PRO Core -> Matomo Analytics is one-directional in the real pattern set (Matomo Analytics
+  // declares no excludes back). The declarer here happens to score higher (script=60 > html=40),
+  // so this alone would pass under either a confidence tie-break or unconditional suppression — see
+  // the dedicated lower-confidence test below for the case that actually distinguishes the two.
   const e = engineWith({
     'Piwik PRO Core': { scripts: ['piwik\\.pro'], excludes: ['Matomo Analytics'], categories: ['Analytics'] },
     'Matomo Analytics': { html: ['matomo'], categories: ['Analytics'] },
@@ -83,6 +87,43 @@ test('excludes suppresses the excluded technology', () => {
     html: '<div>matomo</div>',
   })).map((m) => m.name);
   assert.deepStrictEqual(names, ['Piwik PRO Core']);
+});
+
+test('a one-directional exclude suppresses even when the declarer scores LOWER than its target', () => {
+  // This is the real-world case applyExcludes originally got wrong: AngularJS -> Angular is
+  // one-directional (Angular declares no excludes back), and in the actual corpus AngularJS fires
+  // at confidence 16-ish-prevalence while Angular fires far more broadly. AngularJS is asserting
+  // domain knowledge — its 1.x scripts contain the literal string "angular", which unavoidably also
+  // matches Angular's pattern — not competing with Angular on confidence. A confidence tie-break
+  // would leave the declarer's own lower score losing every time, shipping the feature inert for
+  // exactly this case. It must suppress unconditionally whenever the declarer also fires.
+  const e = engineWith({
+    Weak: { html: ['weak'], excludes: ['Strong'], categories: ['Unclassified'] },      // html = 40
+    Strong: { scripts: ['strong'], categories: ['Unclassified'] },                     // script = 60, no excludes back: one-directional
+  });
+  const names = e.matchPatterns(EVIDENCE({
+    html: '<div>weak</div>',
+    scripts: [{ src: 'https://cdn.test/strong.js' }],
+  })).map((m) => m.name);
+  assert.deepStrictEqual(names, ['Weak'],
+    'one-directional exclude must suppress the target even though the declarer scored lower');
+});
+
+test('a mutual pair does NOT get the one-directional unconditional treatment', () => {
+  // Identical confidence shape to the test above (declarer scores lower than its named target), but
+  // here BOTH sides declare excludes on each other, making the pair mutual. Mutual must fall back to
+  // the confidence tie-break — the higher-confidence match survives — proving the two code paths
+  // really are distinct and not just one rule with the other silently subsumed.
+  const e = engineWith({
+    Weak: { html: ['weak'], excludes: ['Strong'], categories: ['Unclassified'] },      // html = 40
+    Strong: { scripts: ['strong'], excludes: ['Weak'], categories: ['Unclassified'] }, // script = 60, excludes back: MUTUAL
+  });
+  const names = e.matchPatterns(EVIDENCE({
+    html: '<div>weak</div>',
+    scripts: [{ src: 'https://cdn.test/strong.js' }],
+  })).map((m) => m.name);
+  assert.deepStrictEqual(names, ['Strong'],
+    'mutual pair resolves on confidence — the higher-confidence match survives, unlike the one-directional case');
 });
 
 test('mutual excludes resolve to the higher-confidence match, not to neither', () => {
@@ -114,12 +155,12 @@ test('excludes naming an absent technology is inert', () => {
 });
 
 test('a three-way exclusion chain suppresses transitively without letting a suppressed tech suppress others', () => {
-  // A excludes B, B excludes C. A (script=60) beats B (html=40) beats C (url=50... wait, ordered by
-  // confidence descending regardless of declaration order). Concretely: A=60 excludes B=50, and
-  // B=50 excludes C=40. A survives and suppresses B. B is suppressed, so it must NOT get to also
-  // suppress C — C only loses if something that survives excludes it. Nothing does, so C survives
-  // alongside A. This pins applyExcludes' `if (suppressed.has(match.name)) continue` guard: a
-  // suppressed match's own exclude rules never run.
+  // A excludes B, B excludes C — all three one-directional (none declares excludes back), so each
+  // suppression is unconditional once its declarer fires; confidence only decides sort order here,
+  // not who wins. A fires and suppresses B unconditionally. B is now suppressed, so it must NOT get
+  // to also apply its own rule against C — C only loses if something that itself survived excludes
+  // it, and nothing does. This pins applyExcludes' `if (suppressed.has(match.name)) continue`
+  // guard: a suppressed match's own exclude rules never run.
   const e = engineWith({
     A: { scripts: ['aaa'], excludes: ['B'], categories: ['Unclassified'] },       // script = 60
     B: { url: ['bbb'], excludes: ['C'], categories: ['Unclassified'] },           // url = 50
