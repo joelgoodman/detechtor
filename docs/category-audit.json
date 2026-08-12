@@ -1,5 +1,5 @@
 {
-  "technologies": 6498,
+  "technologies": 6347,
   "findings": {
     "NAME_COLLISION": [],
     "SIGNAL_CASE_DROP": [],
@@ -324,15 +324,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "DreamHost",
-        "suggests": "SIS",
-        "categories": [
-          "Hosting Provider"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Drubbit",
         "suggests": "CMS",
         "categories": [
@@ -513,15 +504,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "Genoo",
-        "suggests": "Marketing Automation",
-        "categories": [
-          "Unclassified"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "GetMoreStudents",
         "suggests": "Marketing Automation",
         "categories": [
@@ -571,15 +553,6 @@
         "suggests": "CRM",
         "categories": [
           "Business Software"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "GoDaddy",
-        "suggests": "SIS",
-        "categories": [
-          "Hosting Provider"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"
@@ -693,34 +666,7 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "HostEurope",
-        "suggests": "SIS",
-        "categories": [
-          "Hosting Provider"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Hosting Ukraine",
-        "suggests": "SIS",
-        "categories": [
-          "Hosting Provider"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Hostinger",
-        "suggests": "SIS",
-        "categories": [
-          "Hosting Provider"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "Hostiq",
         "suggests": "SIS",
         "categories": [
           "Hosting Provider"
@@ -1302,15 +1248,6 @@
         "source": "webappanalyzer-merged.json"
       },
       {
-        "name": "REG.RU",
-        "suggests": "SIS",
-        "categories": [
-          "Hosting Provider"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
         "name": "Rapid Active CRM",
         "suggests": "Marketing Automation",
         "categories": [
@@ -1570,15 +1507,6 @@
         "suggests": "CMS",
         "categories": [
           "Video Platform"
-        ],
-        "curated": false,
-        "source": "webappanalyzer-merged.json"
-      },
-      {
-        "name": "VentraIP",
-        "suggests": "SIS",
-        "categories": [
-          "Hosting Provider"
         ],
         "curated": false,
         "source": "webappanalyzer-merged.json"

@@ -1,5 +1,5 @@
 {
-  "_comment": "UNI-235. Human-adjudicated category corrections, applied at load by src/category-overrides.js AFTER identity resolution. Rewrites `categories` ONLY \u2014 never evidence fields. Lives here rather than in the pattern files because webappanalyzer-merged.json is regenerated from upstream and would silently revert edits. Validated by `node scripts/category-audit.js --gate`, which runs in `npm test`.",
+  "_comment": "UNI-235. Human-adjudicated category corrections, applied at load by src/category-overrides.js AFTER identity resolution. Rewrites `categories` ONLY — never evidence fields. Lives here rather than in the pattern files because webappanalyzer-merged.json is regenerated from upstream and would silently revert edits. Validated by `node scripts/category-audit.js --gate`, which runs in `npm test`.",
   "overrides": {
     "Accessibility Toolbar Plugin": {
       "categories": [
@@ -110,7 +110,7 @@
         "Business Software",
         "HR / Recruiting"
       ],
-      "reason": "Ellucian's admissions CRM. HR/Recruiting is EMPLOYEE recruiting \u2014 a different thing. Two independent local models missed this identically, both reasoning 'primary function is recruitment/admissions, so HR/Recruiting is fine'; the name-token screen caught it. 18 institutions.",
+      "reason": "Ellucian's admissions CRM. HR/Recruiting is EMPLOYEE recruiting — a different thing. Two independent local models missed this identically, both reasoning 'primary function is recruitment/admissions, so HR/Recruiting is fine'; the name-token screen caught it. 18 institutions.",
       "decided": "2026-08-09"
     },
     "Flipping Pro CRM": {
@@ -153,7 +153,7 @@
         "Chatbot",
         "Business Software"
       ],
-      "reason": "A CRM filed as Chatbot \u2014 the same misfile class UNI-233 found with Slate and Salesforce Education Cloud.",
+      "reason": "A CRM filed as Chatbot — the same misfile class UNI-233 found with Slate and Salesforce Education Cloud.",
       "decided": "2026-08-09"
     },
     "Lasso CRM": {
@@ -225,7 +225,7 @@
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "This is Pardot \u2014 marketing automation by definition \u2014 filed as a JS framework.",
+      "reason": "This is Pardot — marketing automation by definition — filed as a JS framework.",
       "decided": "2026-08-09"
     },
     "Salesforce Marketing Cloud Email Studio": {
@@ -246,7 +246,7 @@
       "was": [
         "Ecommerce"
       ],
-      "reason": "Email/SMS marketing automation with an ecommerce focus \u2014 both apply.",
+      "reason": "Email/SMS marketing automation with an ecommerce focus — both apply.",
       "decided": "2026-08-09"
     },
     "Better Search": {
@@ -277,7 +277,7 @@
         "Ecommerce",
         "Ecommerce Marketing"
       ],
-      "reason": "A WhatsApp chat widget \u2014 conversational interface, not an ecommerce platform.",
+      "reason": "A WhatsApp chat widget — conversational interface, not an ecommerce platform.",
       "decided": "2026-08-09"
     },
     "4Partners CMS": {
@@ -611,7 +611,7 @@
       "was": [
         "Operating System"
       ],
-      "reason": "Machine-readable metadata for link previews, not an operating system and not a vendor. Fires on 72% of institutions, so its PRESENCE differentiates nothing \u2014 the 28% ABSENT is the signal, and it belongs to the AI-readiness/GEO line.",
+      "reason": "Machine-readable metadata for link previews, not an operating system and not a vendor. Fires on 72% of institutions, so its PRESENCE differentiates nothing — the 28% ABSENT is the signal, and it belongs to the AI-readiness/GEO line.",
       "decided": "2026-08-10"
     },
     "Aimtell": {
@@ -3430,17 +3430,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Identrust": {
-      "categories": [
-        "Business Software"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Identity authentication service, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Ifdo": {
       "categories": [
         "Data Management Platform"
@@ -3719,17 +3708,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "JsObservable": {
-      "categories": [
-        "JavaScript Library"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Observable data manipulation library.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "JsRender": {
       "categories": [
         "JavaScript Library"
@@ -4000,17 +3978,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "PostgreSQL": {
-      "categories": [
-        "Database"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Database system; not a JavaScript framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Postie": {
       "categories": [
         "Marketing Automation"
@@ -4079,28 +4046,6 @@
         "JavaScript Framework"
       ],
       "reason": "WordPress managed hosting, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "PrimeNG": {
-      "categories": [
-        "JavaScript Library"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Angular UI component library, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "PrimeReact": {
-      "categories": [
-        "JavaScript Library"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "React UI component library, not a framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -4181,17 +4126,6 @@
         "JavaScript Framework"
       ],
       "reason": "Social proof popup widget, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Proton Mail": {
-      "categories": [
-        "Business Software"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Secure email service, not a framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -4417,20 +4351,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "QUIC.cloud": {
-      "categories": [
-        "CDN",
-        "Performance Optimization"
-      ],
-      "was": [
-        "Performance Optimization",
-        "Web Server",
-        "JavaScript Framework"
-      ],
-      "reason": "CDN and optimization service; JavaScript Framework is incorrect.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Qiyeku": {
       "categories": [
         "Unclassified"
@@ -4626,17 +4546,6 @@
         "JavaScript Framework"
       ],
       "reason": "Linux operating system; not a JavaScript framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Redis": {
-      "categories": [
-        "Database"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Key-value database; not a JavaScript framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -5863,17 +5772,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Amazon Aurora": {
-      "categories": [
-        "Database"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Relational database service, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Amazon CloudFront": {
       "categories": [
         "CDN"
@@ -6050,17 +5948,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Apple iCloud Mail": {
-      "categories": [
-        "Business Software"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Webmail service, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Application Request Routing": {
       "categories": [
         "Hosting Provider"
@@ -6226,17 +6113,6 @@
         "JavaScript Framework"
       ],
       "reason": "2FA authentication widget, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Autoketing": {
-      "categories": [
-        "Marketing Automation"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Marketing automation platform, not a framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -6662,17 +6538,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Panda CSS": {
-      "categories": [
-        "CSS Framework"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "CSS styling engine, not a JavaScript framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Pandectes": {
       "categories": [
         "Cookie Consent",
@@ -6804,17 +6669,6 @@
         "JavaScript Framework"
       ],
       "reason": "jQuery charting plugin library, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Percona": {
-      "categories": [
-        "Database"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "MySQL database server; not a JavaScript framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -7294,16 +7148,6 @@
       "reason": "Reviewed and not recognised. Leaving it in JavaScript Framework would assert it IS a framework; Unclassified asserts nothing.",
       "decided": "2026-08-10"
     },
-    "Genoo": {
-      "categories": [
-        "Unclassified"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Reviewed and not recognised. Leaving it in JavaScript Framework would assert it IS a framework; Unclassified asserts nothing.",
-      "decided": "2026-08-10"
-    },
     "Gentoo": {
       "categories": [
         "Operating System"
@@ -7422,17 +7266,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Go": {
-      "categories": [
-        "Programming Language"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Programming language by Google; Programming Language, not framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "GoCache": {
       "categories": [
         "Unclassified"
@@ -7483,17 +7316,6 @@
         "JavaScript Framework"
       ],
       "reason": "Charting web service; JavaScript Library.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Google Cloud": {
-      "categories": [
-        "Hosting Provider"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Cloud services suite; Hosting Provider or Business Software.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -7668,17 +7490,6 @@
       "reason": "Reviewed and not recognised. Leaving it in JavaScript Framework would assert it IS a framework; Unclassified asserts nothing.",
       "decided": "2026-08-10"
     },
-    "Haskell": {
-      "categories": [
-        "Programming Language"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Functional programming language; Programming Language, not framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Heeet": {
       "categories": [
         "Unclassified"
@@ -7754,17 +7565,6 @@
         "JavaScript Framework"
       ],
       "reason": "Reviewed and not recognised. Leaving it in JavaScript Framework would assert it IS a framework; Unclassified asserts nothing.",
-      "decided": "2026-08-10"
-    },
-    "Solr": {
-      "categories": [
-        "Site Search"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Apache search platform; no JavaScript evidence given.",
-      "institutions": 0,
       "decided": "2026-08-10"
     },
     "Sophi": {
@@ -8004,17 +7804,6 @@
       "reason": "Reviewed and not recognised. Leaving it in JavaScript Framework would assert it IS a framework; Unclassified asserts nothing.",
       "decided": "2026-08-10"
     },
-    "Strato": {
-      "categories": [
-        "Unclassified"
-      ],
-      "was": [
-        "Hosting Provider",
-        "JavaScript Framework"
-      ],
-      "reason": "Reviewed and not recognised. Leaving it in JavaScript Framework would assert it IS a framework; Unclassified asserts nothing.",
-      "decided": "2026-08-10"
-    },
     "Stylitics": {
       "categories": [
         "Unclassified"
@@ -8154,17 +7943,6 @@
         "JavaScript Framework"
       ],
       "reason": "Component library, not framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "shadcn/ui": {
-      "categories": [
-        "JavaScript Library"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Radix/Tailwind component library.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -8370,17 +8148,6 @@
       "reason": "Reviewed and not recognised. Leaving it in JavaScript Framework would assert it IS a framework; Unclassified asserts nothing.",
       "decided": "2026-08-10"
     },
-    "Thawte": {
-      "categories": [
-        "Business Software"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "SSL certificate provider; no JavaScript evidence.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "The AdsLab": {
       "categories": [
         "Unclassified"
@@ -8444,29 +8211,6 @@
         "JavaScript Framework"
       ],
       "reason": "Marketing automation and fraud tool, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "ANS": {
-      "categories": [
-        "Hosting Provider"
-      ],
-      "was": [
-        "Hosting Provider",
-        "JavaScript Framework"
-      ],
-      "reason": "Cloud hosting company, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "AWS Certificate Manager": {
-      "categories": [
-        "Hosting Provider"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "SSL certificate management service, not a framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -8682,17 +8426,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Rust": {
-      "categories": [
-        "Programming Language"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Programming language; not a JavaScript framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "SALESmanago": {
       "categories": [
         "Marketing Automation",
@@ -8761,17 +8494,6 @@
         "JavaScript Framework"
       ],
       "reason": "Ecommerce marketing platform; not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "SQLite": {
-      "categories": [
-        "Database"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Database system; not a JavaScript framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -8844,17 +8566,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Scala": {
-      "categories": [
-        "Programming Language"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Programming language; not a JavaScript framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Scientific Linux": {
       "categories": [
         "Operating System"
@@ -8896,17 +8607,6 @@
         "JavaScript Framework"
       ],
       "reason": "Interactive seating maps widget; not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Sectigo": {
-      "categories": [
-        "Business Software"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "SSL/security provider; not a JavaScript framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -9286,17 +8986,6 @@
         "JavaScript Framework"
       ],
       "reason": "Vue state management library, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Vultr": {
-      "categories": [
-        "Hosting Provider"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Cloud compute provider. No JavaScript evidence.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -9688,16 +9377,6 @@
       "decided": "2026-08-10"
     },
     "Yamada UI": {
-      "categories": [
-        "Unclassified"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Reviewed and not recognised. Leaving it in JavaScript Framework would assert it IS a framework; Unclassified asserts nothing.",
-      "decided": "2026-08-10"
-    },
-    "Yandex.Cloud": {
       "categories": [
         "Unclassified"
       ],
@@ -10170,17 +9849,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "TypeScript": {
-      "categories": [
-        "Programming Language"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Language built on JavaScript; not a framework. No evidence given.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Typer.js": {
       "categories": [
         "JavaScript Library"
@@ -10212,17 +9880,6 @@
       ],
       "reason": "Toast notifications JS library.",
       "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "UKFast": {
-      "categories": [
-        "Unclassified"
-      ],
-      "was": [
-        "Hosting Provider",
-        "JavaScript Framework"
-      ],
-      "reason": "Reviewed and not recognised. Leaving it in JavaScript Framework would assert it IS a framework; Unclassified asserts nothing.",
       "decided": "2026-08-10"
     },
     "UNIX": {
@@ -10795,17 +10452,6 @@
         "JavaScript Framework"
       ],
       "reason": "Vue.js component library; JavaScript Library, not framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Elixir": {
-      "categories": [
-        "Programming Language"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Functional programming language; Programming Language, not framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -11517,18 +11163,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Microsoft 365": {
-      "categories": [
-        "Business Software"
-      ],
-      "was": [
-        "JavaScript Framework",
-        "Booking System"
-      ],
-      "reason": "Office subscription service, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Microsoft Authentication": {
       "categories": [
         "JavaScript Library"
@@ -11677,17 +11311,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "MongoDB": {
-      "categories": [
-        "Database"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "NoSQL database, not a framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Monocle": {
       "categories": [
         "Business Software"
@@ -11774,17 +11397,6 @@
         "JavaScript Framework"
       ],
       "reason": "Beauty salon marketing platform.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "MySQL": {
-      "categories": [
-        "Database"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "SQL database, not a framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -12203,17 +11815,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Kotlin": {
-      "categories": [
-        "Programming Language"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "JVM language, not a JavaScript Framework.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "KuronekoServer CDN": {
       "categories": [
         "CDN"
@@ -12371,18 +11972,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Leaseweb": {
-      "categories": [
-        "Hosting Provider"
-      ],
-      "was": [
-        "JavaScript Framework",
-        "Hosting Provider"
-      ],
-      "reason": "IaaS and CDN hosting provider.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Legal Monster": {
       "categories": [
         "Cookie Consent"
@@ -12402,17 +11991,6 @@
         "JavaScript Framework"
       ],
       "reason": "Smooth scroll behavior library.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Let's Encrypt": {
-      "categories": [
-        "Web Server"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Certificate authority infrastructure.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -12559,18 +12137,6 @@
         "JavaScript Framework"
       ],
       "reason": "Embedded scripting language, not JavaScript.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Lucene": {
-      "categories": [
-        "Database",
-        "Site Search"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Search engine library, not a framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -12831,17 +12397,6 @@
         "JavaScript Framework"
       ],
       "reason": "2D/3D maps JavaScript library.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "MariaDB": {
-      "categories": [
-        "Database"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "MySQL-compatible database, not a framework.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -13436,16 +12991,6 @@
       "decided": "2026-08-10"
     },
     "DigiCDN": {
-      "categories": [
-        "Unclassified"
-      ],
-      "was": [
-        "JavaScript Framework"
-      ],
-      "reason": "Reviewed and not recognised. Leaving it in JavaScript Framework would assert it IS a framework; Unclassified asserts nothing.",
-      "decided": "2026-08-10"
-    },
-    "DigiCert": {
       "categories": [
         "Unclassified"
       ],
@@ -14311,7 +13856,7 @@
       "was": [
         "Advertising"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 5,
       "decided": "2026-08-10"
     },
@@ -14926,7 +14471,7 @@
       "was": [
         "CMS"
       ],
-      "reason": "West Unified Communications platform \u2014 communication tool, not content management.",
+      "reason": "West Unified Communications platform — communication tool, not content management.",
       "institutions": 17,
       "decided": "2026-08-10"
     },
@@ -14937,7 +14482,7 @@
       "was": [
         "CMS"
       ],
-      "reason": "Enterprise collaboration/document platform \u2014 CMS is incidental, not primary function.",
+      "reason": "Enterprise collaboration/document platform — CMS is incidental, not primary function.",
       "institutions": 2,
       "decided": "2026-08-10"
     },
@@ -15363,17 +14908,6 @@
         "Advertising"
       ],
       "reason": "Real-user monitoring for performance analysis",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Amazon EFS": {
-      "categories": [
-        "Hosting Provider"
-      ],
-      "was": [
-        "Advertising"
-      ],
-      "reason": "Cloud file storage service",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -18539,17 +18073,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Red Hat Gluster": {
-      "categories": [
-        "Hosting Provider"
-      ],
-      "was": [
-        "Advertising"
-      ],
-      "reason": "Network filesystem",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Replit": {
       "categories": [
         "Web Framework"
@@ -20339,28 +19862,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Mailgun": {
-      "categories": [
-        "Hosting Provider"
-      ],
-      "was": [
-        "Booking System"
-      ],
-      "reason": "Email infrastructure provider.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Mailjet": {
-      "categories": [
-        "Marketing Automation"
-      ],
-      "was": [
-        "Booking System"
-      ],
-      "reason": "Email delivery service.",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Mailman": {
       "categories": [
         "Marketing Automation"
@@ -20975,7 +20476,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -21041,7 +20542,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -21734,17 +21235,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Bugcrowd": {
-      "categories": [
-        "Business Software"
-      ],
-      "was": [
-        "Database"
-      ],
-      "reason": "Cybersecurity crowdsourcing, not database",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "BuySafe": {
       "categories": [
         "Fraud Detection"
@@ -21902,17 +21392,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Detectify": {
-      "categories": [
-        "Business Software"
-      ],
-      "was": [
-        "Database"
-      ],
-      "reason": "Web app vulnerability scanner, not database",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Digest": {
       "categories": [
         "Programming Language"
@@ -21932,17 +21411,6 @@
         "Database"
       ],
       "reason": "Compliance automation platform, not database",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "DutchIS": {
-      "categories": [
-        "Fraud Detection"
-      ],
-      "was": [
-        "Database"
-      ],
-      "reason": "Web security monitoring, not database",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -22086,17 +21554,6 @@
         "Database"
       ],
       "reason": "Authentication protocol, not database",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Keybase": {
-      "categories": [
-        "Business Software"
-      ],
-      "was": [
-        "Database"
-      ],
-      "reason": "Secure messaging platform, not database",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -23382,17 +22839,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Rspack": {
-      "categories": [
-        "JavaScript Library"
-      ],
-      "was": [
-        "Operating System"
-      ],
-      "reason": "JavaScript bundler, not OS",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "RSS": {
       "categories": [
         "Widget"
@@ -23489,17 +22935,6 @@
         "Operating System"
       ],
       "reason": "Monitoring/indexing service, not OS",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "SWC": {
-      "categories": [
-        "JavaScript Library"
-      ],
-      "was": [
-        "Operating System"
-      ],
-      "reason": "Developer tool platform, not OS",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -23624,17 +23059,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Webmin": {
-      "categories": [
-        "Web Server"
-      ],
-      "was": [
-        "Operating System"
-      ],
-      "reason": "Linux admin tool, not OS",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Webpack": {
       "categories": [
         "JavaScript Library"
@@ -23643,17 +23067,6 @@
         "Operating System"
       ],
       "reason": "Module bundler, not OS",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "WebRTC": {
-      "categories": [
-        "JavaScript Framework"
-      ],
-      "was": [
-        "Operating System"
-      ],
-      "reason": "Real-time communication, not OS",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -25749,17 +25162,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Deno": {
-      "categories": [
-        "Unclassified"
-      ],
-      "was": [
-        "Web Server"
-      ],
-      "reason": "unclassified",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Destini": {
       "categories": [
         "Unclassified"
@@ -26735,17 +26137,6 @@
       "institutions": 0,
       "decided": "2026-08-10"
     },
-    "Google App Engine": {
-      "categories": [
-        "Unclassified"
-      ],
-      "was": [
-        "Web Server"
-      ],
-      "reason": "unclassified",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
     "Google Web Toolkit": {
       "categories": [
         "Programming Language"
@@ -27715,17 +27106,6 @@
         "Web Server"
       ],
       "reason": "ecommerce",
-      "institutions": 0,
-      "decided": "2026-08-10"
-    },
-    "Macaron": {
-      "categories": [
-        "Web Framework"
-      ],
-      "was": [
-        "Web Server"
-      ],
-      "reason": "web framework",
       "institutions": 0,
       "decided": "2026-08-10"
     },
@@ -32433,7 +31813,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 224,
       "decided": "2026-08-10"
     },
@@ -32444,7 +31824,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 57,
       "decided": "2026-08-10"
     },
@@ -32455,7 +31835,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 30,
       "decided": "2026-08-10"
     },
@@ -32466,7 +31846,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 20,
       "decided": "2026-08-10"
     },
@@ -32477,7 +31857,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 18,
       "decided": "2026-08-10"
     },
@@ -32488,7 +31868,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 17,
       "decided": "2026-08-10"
     },
@@ -32499,7 +31879,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 12,
       "decided": "2026-08-10"
     },
@@ -32510,7 +31890,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 7,
       "decided": "2026-08-10"
     },
@@ -32521,7 +31901,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 6,
       "decided": "2026-08-10"
     },
@@ -32532,7 +31912,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 4,
       "decided": "2026-08-10"
     },
@@ -32543,7 +31923,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 2,
       "decided": "2026-08-10"
     },
@@ -32554,7 +31934,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Library services platform \u2014 ILS, discovery layer or research guides. Business Software described nothing about it.",
+      "reason": "Library services platform — ILS, discovery layer or research guides. Business Software described nothing about it.",
       "institutions": 1,
       "decided": "2026-08-10"
     },
@@ -32653,7 +32033,7 @@
       "was": [
         "Business Software"
       ],
-      "reason": "Ad Astra is course and space scheduling \u2014 genuinely a booking system, not a student-success platform.",
+      "reason": "Ad Astra is course and space scheduling — genuinely a booking system, not a student-success platform.",
       "institutions": 76,
       "decided": "2026-08-10"
     }
