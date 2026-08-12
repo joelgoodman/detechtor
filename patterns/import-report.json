@@ -7363,6 +7363,6 @@
     "TYPO3",
     "Kentico"
   ],
-  "artifactSha256": "e99a38c15fa63bcfdaaf2ba9de50e24ade81cc7ca1b9effe9d0599828fd90387",
-  "artifactShaRecordedBy": "UNI-237 Task 2: stripped unread `text` field"
+  "artifactSha256": "ce515bf159239caad6de8744a49f623b54527d347aa1858b8867e7743e9dba80",
+  "artifactShaRecordedBy": "UNI-237 Task 8: deleted never-fireable technologies"
 }
