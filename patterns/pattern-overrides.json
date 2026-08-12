@@ -2,43 +2,83 @@
   "_comment": "UNI-237. Evidence-pattern removals for technologies in the upstream-regenerated webappanalyzer-merged.json. See src/pattern-overrides.js. Each rule: {remove: {field: [pattern, ...]}, reason, decided}. The two mechanisms are mutually exclusive per technology: a curated (higher-ed-*.json etc.) technology is edited directly and gets NO rule here; only a technology whose winning (post-merge) definition is stamped _generated:true belongs here -- check with `node -e \"const d=new (require('./src/detechtor.js'))().patterns['NAME']; console.log(d._generated)\"`. The one exception is Starfish: 'starfish.*solutions' is not generated-stamped (the curated entry wins as canonical) but is not present in the curated file either -- it arrives solely via the 'Starfish Retention Solutions' alias in technology-aliases.json, which src/technology-identity.js unions in explicitly (a real merge, unlike same-name entries which the initial flat load simply overwrites rather than unions). scripts/lint-pattern-breadth.js's own stale-rule check is the authority for whether a rule here is still doing anything; do not add a rule based on _sourceFile/_generated inspection alone without confirming it isn't reported stale.",
   "overrides": {
     "Bootstrap": {
-      "remove": { "html": ["class=\".*row", "class=\".*col-", "class=\".*btn-"] },
+      "remove": {
+        "html": [
+          "class=\".*row",
+          "class=\".*col-",
+          "class=\".*btn-"
+        ]
+      },
       "reason": "matches any class attribute followed anywhere by row/col-/btn- across the whole document, not Bootstrap's own markup; corpus samples matched unrelated component class names (block-eyebrow-menu ... row, wysiwyg-wrapper ... btn-white). Bootstrap's bare 'bootstrap' token (already allowlisted separately) remains.",
       "decided": "2026-08-11"
     },
     "Ghost": {
-      "remove": { "html": ["ghost", "ghost.*version"] },
+      "remove": {
+        "html": [
+          "ghost",
+          "ghost.*version"
+        ]
+      },
       "reason": "bare 'ghost' collides with Font Awesome's fa-snapchat-ghost icon class and unrelated 'ghost.png' asset filenames, not the Ghost CMS. 'ghost.*version' is a second-round finding (2026-08-11 gate re-run): 10/10 sampled hits were Wix's own internal 'GhostComp'/'RemoteRefDeadComp' JSON keys and the unrelated GhostKit WordPress page-builder plugin's ghostkitVariables.version -- zero genuine Ghost CMS hits. meta.generator=Ghost, scriptSrc 'ghost', and js.ghost remain as evidence.",
       "decided": "2026-08-11"
     },
     "Blackboard Transact": {
-      "remove": { "html": ["campus.*card", "bb.*transact"] },
+      "remove": {
+        "html": [
+          "campus.*card",
+          "bb.*transact"
+        ]
+      },
       "reason": "campus.*card is ordinary campus-life prose (\"diverse campus\", nav 'Campus Life' far from any 'card'); bb.*transact matches New Relic Browser Agent minified module code (\"BB\",0,18e5,...) with zero genuine hits in a 12-sample check. This legacy webappanalyzer duplicate keeps 'blackboard.*transact'; the curated 'Transact Campus' entry is the maintained detector for this vendor.",
       "decided": "2026-08-11"
     },
-    "Angular": {
-      "remove": { "html": ["angular"] },
-      "reason": "bare dictionary word; every sampled hit was Font Awesome's fa-angular brand-icon CSS class, not the framework. 'ng-app' and 'data-ng-' (real AngularJS directives) remain.",
-      "decided": "2026-08-11"
-    },
     "TYPO3": {
-      "remove": { "html": ["typo3"] },
+      "remove": {
+        "html": [
+          "typo3"
+        ]
+      },
       "reason": "bare token collides with Font Awesome's fa-typo3 brand-icon CSS class, which dominates the corpus matches (~19/20 sampled); genuine 'powered by TYPO3' attribution comments are rare by comparison. 'typo3temp' (scriptSrc), 'TYPO3.*CMS', meta.generator=TYPO3, and js.TYPO3 remain as the real detection paths.",
       "decided": "2026-08-11"
     },
     "Campus Labs": {
-      "remove": { "html": ["campus.*labs"] },
+      "remove": {
+        "html": [
+          "campus.*labs"
+        ]
+      },
       "reason": "redundant with the bare 'campuslabs' token already in this same entry's html array -- since '.*' matches zero-width, every genuine (zero-gap) match the wildcard catches is already caught by the literal token; removing it drops only the far-apart prose collisions, with no loss of recall.",
       "decided": "2026-08-11"
     },
     "PeopleSoft Campus Solutions": {
-      "remove": { "html": ["campus.*solutions"] },
+      "remove": {
+        "html": [
+          "campus.*solutions"
+        ]
+      },
       "reason": "generic campus prose (\"Campus Safety\", \"City Campus\", \"Campus Housing\") with 'solutions' appearing elsewhere on the page; zero genuine PeopleSoft Campus Solutions hits in a 5-sample check. PS_TOKEN cookie, 'peoplesoft' bare token, and PSPRODNAME.*Campus remain.",
       "decided": "2026-08-11"
     },
     "Starfish": {
-      "remove": { "html": ["starfish.*solutions"] },
+      "remove": {
+        "html": [
+          "starfish.*solutions"
+        ]
+      },
       "reason": "this pattern is not present in the curated higher-ed-infra.json entry at all -- it arrives solely via the 'Starfish Retention Solutions' alias (technology-aliases.json) merging in webappanalyzer-merged.json's evidence, a genuine union (unlike same-name duplicates, which the flat load overwrites rather than merges). Fully redundant with the curated entry's own bare 'starfishsolutions' token (100% of sampled matches were the literal starfishsolutions.com domain, zero-gap), so removal costs no recall.",
+      "decided": "2026-08-11"
+    },
+    "EAB Navigate": {
+      "remove": {
+        "html": [
+          "navigate.*eab",
+          "student.*success.*collaborative"
+        ],
+        "scripts": [
+          "navigate"
+        ]
+      },
+      "reason": "Unbounded wildcard evaluated against minified single-line HTML: `navigate.*eab` matched 119 corpus files but only 44 contain eab.com, one match spanning 233,893 characters of Wix config (NavigateToEcomCheckout ... EnableAbout). It reaches the merged technology via the `Navigate` alias in the regenerated artifact, so it cannot be deleted from higher-ed-infra.json. The bounded eab.{0,60}navigate and navigate.{0,60}eab there replace it -- the same fix this branch applied to blackboard.{0,60}ultra. Also removes `student.*success.*collaborative`: 42 corpus matches, only 9 of which carry any real EAB marker -- 'student success' and 'collaborative' are ordinary higher-ed prose. Those 9 are already caught by campus.eab.com / bouncer.eab.com, so removal costs no detections. And removes the bare `navigate` SCRIPT token: it matches 3 script srcs corpus-wide, all false -- a WordPress theme asset (navigate-select.js), a Google Ads URL carrying 'Navigate Forward' in a title parameter, and a Liferay bundle (util/navigate.es.js). Zero genuine EAB. Caught by hand, not by the gate, which screens the html channel only.",
       "decided": "2026-08-11"
     }
   }

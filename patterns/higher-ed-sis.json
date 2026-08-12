@@ -337,7 +337,7 @@
     ],
     "description": "Evisions higher education analytics",
     "html": [
-      "evisions"
+      "evisions\\.com"
     ],
     "scripts": [
       "evisions"
@@ -664,7 +664,7 @@
     "description": "PowerCampus student information system.",
     "html": [
       "powercampus",
-      "eCollege"
+      "[^a-z0-9]ecollege"
     ],
     "scripts": [
       "powercampus"

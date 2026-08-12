@@ -78,8 +78,7 @@
     ],
     "description": "Ad Astra course scheduling and optimization",
     "html": [
-      "adastra",
-      "ad.*astra"
+      "ad[ .-]?astra"
     ],
     "scripts": [
       "adastra"
@@ -603,8 +602,8 @@
     "html": [
       "campus.eab.com",
       "bouncer.eab.com",
-      "eab.*navigate",
-      "navigate.*eab"
+      "eab.{0,60}navigate",
+      "navigate.{0,60}eab"
     ],
     "scripts": [
       "campus.eab.com",
@@ -747,7 +746,7 @@
     ],
     "description": "Encoura (formerly Noel-Levitz) enrollment management platform",
     "html": [
-      "encoura",
+      "encoura(?!g)",
       "noel.*levitz"
     ],
     "scripts": [
@@ -1845,7 +1844,7 @@
     "html": [
       "shibboleth",
       "shibd",
-      "shib.*session",
+      "shib.{0,60}session",
       "idp\\.shibboleth\\.org",
       "Shibboleth\\.sso",
       "class=\"shibboleth"

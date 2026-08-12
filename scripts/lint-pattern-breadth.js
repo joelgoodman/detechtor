@@ -43,6 +43,19 @@
  * validated: a stale or no-op entry fails the build, so the allowlist cannot silently accumulate
  * dead weight.
  *
+ * ⚠️⚠️ KNOWN BASELINE INVERSION (documented, not fixed — UNI-237 code-review follow-up; see
+ * scripts/pattern-breadth.js for the full writeup of `strongest`). `strongest` -- what an html
+ * pattern's excess is measured AGAINST -- comes from the non-html channels (scripts/scriptSrc, dom,
+ * meta, js, cookies), which this gate never screens for precision. `excess = matched - strongest`,
+ * so the NOISIER a technology's script pattern is, the more html breadth this gate permits it --
+ * backwards from what a precision gate should do. Confirmed on five shipped technologies, e.g.
+ * `Rave Mobile Safety`: html `getrave` (precise, 46 matches) is judged against script `rave` (48
+ * matches, collides with `brave-popup-builder`) and reads excess 0. The unscreened script channel
+ * outnumbers html patterns ~4 to 1 (4,229 vs 1,052 at current counts). Printed on every run
+ * (BASELINE_INVERSION_NOTICE below) per the no-silent-caps rule -- a known limitation must stay
+ * visible, not just live in a comment nobody reads. Be blunt: this gate raised the floor on
+ * dictionary-word html patterns, and nothing else.
+ *
  * Usage:
  *   node scripts/lint-pattern-breadth.js           # report
  *   node scripts/lint-pattern-breadth.js --gate    # exit 1 on any violation
@@ -145,16 +158,46 @@ for (const [tech, p] of Object.entries(breadth.patterns)) {
 
 // Allowlist hygiene: an entry that no longer names a real technology, or that no longer exempts
 // anything, is dead weight that reads as a considered decision.
+//
+// UNI-237 code review hardening: three integrity holes let dead weight in silently --
+//   - a one-character `reason` ("r") passed the old `!e.reason.trim()` check, which only rejects
+//     empty/whitespace strings, not non-justifications. MIN_REASON_LEN enforces an actual
+//     explanation, not a placeholder.
+//   - a duplicate {tech, pattern} entry passed silently -- exactly the dead weight this hygiene
+//     check exists to prevent.
+//   - `allow[tech]` given as an object instead of an array reached `for (const e of entries)` below
+//     and threw an unhandled TypeError instead of a diagnostic.
+const MIN_REASON_LEN = 20; // below this a "reason" is a placeholder, not a justification
 const allowProblems = [];
 for (const [tech, entries] of Object.entries(allowed)) {
   if (tech === '_comment') continue;
   const p = breadth.patterns[tech];
   if (!p) { allowProblems.push(`${tech}: no such technology in the breadth artifact -- stale`); continue; }
+  if (!Array.isArray(entries)) {
+    allowProblems.push(`${tech}: allow["${tech}"] must be an array of {pattern, reason} entries, got ${typeof entries}`);
+    continue;
+  }
+  const seenPatterns = new Set();
   for (const e of entries) {
     if (!e || typeof e.pattern !== 'string' || typeof e.reason !== 'string' || !e.reason.trim()) {
       allowProblems.push(`${tech}: every entry needs {pattern, reason}`);
       continue;
     }
+    if (e.reason.trim().length < MIN_REASON_LEN) {
+      allowProblems.push(
+        `${tech}: reason for ${JSON.stringify(e.pattern)} is ${e.reason.trim().length} chars, below the ` +
+        `${MIN_REASON_LEN}-char minimum -- a placeholder is not a justification, explain what was checked`
+      );
+      continue;
+    }
+    if (seenPatterns.has(e.pattern)) {
+      allowProblems.push(
+        `${tech}: duplicate allowlist entry for pattern ${JSON.stringify(e.pattern)} -- ` +
+        'exactly the dead weight this hygiene check exists to prevent'
+      );
+      continue;
+    }
+    seenPatterns.add(e.pattern);
     if (!(e.pattern in (p.html || {}))) {
       allowProblems.push(`${tech}: pattern ${JSON.stringify(e.pattern)} is no longer declared -- stale`);
       continue;
@@ -188,7 +231,24 @@ violations.sort((a, b) => b.excess - a.excess);
 // removed by this very check. The blind-spot CLASS it illustrates is documented in the header.
 const KNOWN_BLIND_SPOTS = [];
 
+// Permanent, unconditional notice -- NOT gated on GATE, NOT tied to a single pattern's presence,
+// and not part of the pass/fail count. This is a structural property of the measurement itself
+// (see the header comment above and in scripts/pattern-breadth.js), not a per-technology finding
+// that could go stale the way KNOWN_BLIND_SPOTS entries can. It stays visible on every run --
+// report or gate -- so nobody mistakes a clean gate run for "the html patterns are precise";
+// it means "the html patterns are precise relative to an unscreened non-html baseline."
+const BASELINE_INVERSION_NOTICE =
+  'KNOWN BASELINE INVERSION (documented, not fixed -- UNI-237 follow-up): `strongest` comes from ' +
+  'the non-html channels (scripts/scriptSrc, dom, meta, js, cookies), which this gate does not ' +
+  'screen. excess = matched - strongest, so a NOISIER script pattern makes a technology\'s html ' +
+  'breadth look MORE justified, not less -- backwards. e.g. Rave Mobile Safety: html `getrave` ' +
+  '(precise, 46 matches) is judged against script `rave` (48 matches, collides with ' +
+  '`brave-popup-builder`) and reads excess 0. Unscreened script channel ~4x the html volume ' +
+  '(4,229 vs 1,052 regexes at current counts). This gate raised the floor on dictionary-word html ' +
+  'patterns, and nothing else.';
+
 console.log(`breadth gate -- ${breadth.scanned} homepages -- absolute >${absLimit.toFixed(0)} -- relative >${REL_PCT * 100}% (min ${MIN_FIRES} fires) -- dictionary ${WORDS.size} words\n`);
+console.log(`⚠️  ${BASELINE_INVERSION_NOTICE}\n`);
 console.log(`spared by screen (excessive but not suspect): ${sparedByScreen}`);
 console.log(`spared by measurement (suspect but not excessive): ${sparedByMeasurement}\n`);
 const blindSpotProblems = [];

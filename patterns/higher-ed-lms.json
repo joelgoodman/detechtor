@@ -56,7 +56,7 @@
       "blackboard\\.com",
       "bblearn",
       "bb-base-",
-      "blackboard.*learn",
+      "blackboard.{0,60}learn",
       "/ultra/",
       "/webapps/blackboard/",
       "/bbcswebdav/",

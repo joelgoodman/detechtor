@@ -399,8 +399,6 @@ declare module '@speedyu/detechtor' {
     verbose: boolean;
     /** Include evidence in results */
     includeEvidence: boolean;
-    /** Minimum confidence threshold (0-100) */
-    minConfidence: number;
     /** Browser options */
     browserOptions: {
       headless: boolean;

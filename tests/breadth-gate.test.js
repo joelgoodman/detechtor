@@ -81,7 +81,7 @@ test('a non-dictionary vendor string is spared even when its measured excess is 
 });
 
 test('an allowlisted pattern passes', () => {
-  const r = runGate(ABS_CASE, { Bootstrap: [{ pattern: 'class=".*row', reason: 'reviewed' }] });
+  const r = runGate(ABS_CASE, { Bootstrap: [{ pattern: 'class=".*row', reason: 'reviewed and confirmed as intentional' }] });
   assert.strictEqual(r.code, 0, r.out);
 });
 
@@ -107,4 +107,30 @@ test('a no-op allowlist entry fails', () => {
 test('an empty breadth artifact fails rather than passing trivially', () => {
   const r = runGate({ scanned: 0, patterns: {} }, {});
   assert.strictEqual(r.code, 1);
+});
+
+test('a one-character reason fails -- it is a placeholder, not a justification', () => {
+  const r = runGate(ABS_CASE, { Bootstrap: [{ pattern: 'class=".*row', reason: 'r' }] });
+  assert.strictEqual(r.code, 1);
+  assert.match(r.out, /below the 20-char minimum/);
+});
+
+test('a duplicate entry for the same {tech, pattern} is rejected, not silently allowed', () => {
+  const reason = 'reviewed and confirmed as intentional';
+  const r = runGate(ABS_CASE, {
+    Bootstrap: [
+      { pattern: 'class=".*row', reason },
+      { pattern: 'class=".*row', reason },
+    ],
+  });
+  assert.strictEqual(r.code, 1);
+  assert.match(r.out, /duplicate allowlist entry/);
+});
+
+test('allow[tech] given as an object instead of an array fails with a diagnostic, not a TypeError', () => {
+  const r = runGate(ABS_CASE, {
+    Bootstrap: { pattern: 'class=".*row', reason: 'reviewed and confirmed as intentional' },
+  });
+  assert.strictEqual(r.code, 1);
+  assert.match(r.out, /must be an array of \{pattern, reason\} entries/);
 });

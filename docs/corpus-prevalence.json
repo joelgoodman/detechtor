@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-11",
+  "generated": "2026-08-12",
   "ticket": "UNI-235",
   "scanned": 3879,
   "unscannable": 335,
@@ -25,7 +25,7 @@
     "Act-On": 3,
     "Active Campaign": 28,
     "Acuity Scheduling": 14,
-    "AdAstra": 76,
+    "AdAstra": 7,
     "AdOpt": 1,
     "AdRoll": 125,
     "AddEvent": 12,
@@ -60,7 +60,7 @@
     "Amobee": 10,
     "Amplitude": 2,
     "AndersNoren Baskerville": 1,
-    "Angular": 131,
+    "Angular": 15,
     "AngularJS": 16,
     "Animate It": 7,
     "Animate.css": 202,
@@ -112,7 +112,7 @@
     "Birdeye": 3,
     "Blackbaud": 101,
     "Blackboard Collaborate": 5,
-    "Blackboard Learn": 99,
+    "Blackboard Learn": 88,
     "Blackboard Transact": 3,
     "Blackboard Ultra": 22,
     "Blackboard Web Community Manager": 7,
@@ -258,7 +258,7 @@
     "Dynamic Conditions": 8,
     "Dynamic Yield": 1,
     "Dynatrace RUM": 5,
-    "EAB Navigate": 208,
+    "EAB Navigate": 76,
     "EBSCO Discovery Service": 4,
     "EMS": 1,
     "EWWW Image Optimizer": 14,
@@ -289,7 +289,7 @@
     "Emma": 13,
     "Emotion": 107,
     "Emplifi UGC": 1,
-    "Encoura": 514,
+    "Encoura": 4,
     "Enquire.js": 30,
     "Ensemble Video": 9,
     "Ensighten": 30,
@@ -300,7 +300,6 @@
     "Everbridge": 8,
     "Everflow": 1,
     "EveryAction": 2,
-    "Evisions": 209,
     "Ex Libris Alma": 17,
     "Ex Libris Primo": 30,
     "ExactMetrics": 8,
@@ -657,7 +656,7 @@
     "Poptin": 1,
     "Populi": 131,
     "Popup Maker": 19,
-    "PowerCampus": 240,
+    "PowerCampus": 3,
     "PowerFAIDS": 1,
     "PowerSchool SIS": 12,
     "Powerfolio": 1,
@@ -746,7 +745,7 @@
     "ServiceNow": 36,
     "ShareThis": 81,
     "SharpSpring": 12,
-    "Shibboleth": 23,
+    "Shibboleth": 17,
     "Shoelace": 1,
     "Shortcodes Ultimate": 6,
     "Signal": 7,
@@ -1053,7 +1052,7 @@
       "Open Graph",
       "Priority Hints",
       "YouTube",
-      "Encoura"
+      "Linkedin Insight Tag"
     ],
     "AMP": [
       "Open Graph",
@@ -1160,10 +1159,10 @@
       "Google Tag Manager",
       "YouTube",
       "Bootstrap",
-      "Evisions",
       "Workday Student",
       "Yext",
-      "Acquia Campaign Factory"
+      "Acquia Campaign Factory",
+      "Acquia Cloud Site Factory"
     ],
     "Act-On": [
       "Facebook Pixel",
@@ -1196,24 +1195,24 @@
       "The Events Calendar"
     ],
     "AdAstra": [
-      "jQuery",
       "Google Tag Manager",
+      "YouTube",
       "Google Analytics",
       "Google Analytics 4",
-      "WordPress",
-      "YouTube",
+      "jQuery",
+      "Font Awesome",
       "Open Graph",
-      "Astra"
+      "Bootstrap"
     ],
     "AdOpt": [
       "Bootstrap",
       "Coalition Application",
       "DataTables",
       "Drupal",
-      "EAB Navigate",
-      "Evisions",
       "Facebook Pixel",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4",
+      "Google Custom Search"
     ],
     "AdRoll": [
       "Google Analytics",
@@ -1546,13 +1545,13 @@
       "jQuery Migrate"
     ],
     "Angular": [
-      "Google Tag Manager",
       "Google Analytics",
       "Google Analytics 4",
+      "Google Tag Manager",
       "YouTube",
-      "Open Graph",
-      "jQuery",
       "Facebook Pixel",
+      "Open Graph",
+      "Font Awesome",
       "Google Font API"
     ],
     "AngularJS": [
@@ -1626,14 +1625,14 @@
       "Google Font API"
     ],
     "AnythingSlider": [
-      "Encoura",
       "Font Awesome",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
       "Oracle PeopleSoft Campus Solutions",
       "ServiceNow",
-      "Siteimprove"
+      "Siteimprove",
+      "WordPress"
     ],
     "ApexChat": [
       "Google Tag Manager",
@@ -1649,11 +1648,11 @@
       "Animate.css",
       "Backbone.js",
       "Elementor",
-      "Encoura",
       "Facebook Pixel",
       "FitVids.JS",
       "Font Awesome",
-      "GiveWP"
+      "GiveWP",
+      "Google Analytics"
     ],
     "AppArmor": [
       "Google Analytics",
@@ -1706,24 +1705,24 @@
       "cdnjs"
     ],
     "Astra": [
-      "AdAstra",
       "WordPress",
       "jQuery",
       "Google Analytics",
       "Google Tag Manager",
       "jQuery Migrate",
       "Google Analytics 4",
-      "Open Graph"
+      "Open Graph",
+      "YouTube"
     ],
     "Astra Widgets": [
-      "AdAstra",
       "Animate.css",
       "Astra",
       "Beaver Builder",
       "Blackbaud",
       "Contact Form 7",
       "Facebook Pixel",
-      "FitVids.JS"
+      "FitVids.JS",
+      "Google Analytics"
     ],
     "Astro": [
       "Google Analytics",
@@ -1747,13 +1746,13 @@
     ],
     "Atlassian Jira Issue Collector": [
       "Contact Form 7",
-      "Encoura",
       "Facebook Pixel",
       "Google Analytics",
       "Google Analytics 4",
       "Google Font API",
       "Google Tag Manager",
-      "Jenzabar"
+      "Jenzabar",
+      "Moment.js"
     ],
     "Attentive": [
       "Google Analytics",
@@ -1838,12 +1837,12 @@
     "Awesomplete": [
       "Adobe Fonts",
       "Algolia",
-      "Angular",
       "Anthology Encompass",
       "Bootstrap",
       "Font Awesome",
       "Google Custom Search",
-      "Google Tag Manager"
+      "Google Tag Manager",
+      "HubSpot for Education"
     ],
     "Axeptio": [
       "Google Font API",
@@ -1986,14 +1985,14 @@
       "Google Analytics"
     ],
     "Beeketing": [
-      "Angular",
       "Bootstrap",
       "Google Analytics",
       "Google Font API",
       "Open Graph",
       "POWR",
       "Vue.js",
-      "Weebly"
+      "Weebly",
+      "jQuery"
     ],
     "Bench": [
       "AddEvent",
@@ -2043,7 +2042,7 @@
       "Priority Hints",
       "theTradeDesk",
       "Cart Functionality",
-      "Encoura"
+      "cdnjs"
     ],
     "Blackbaud": [
       "Google Tag Manager",
@@ -2061,9 +2060,9 @@
       "Google Analytics",
       "Google Analytics 4",
       "Open Graph",
-      "Blackboard Learn",
       "Bootstrap",
-      "EAB Navigate"
+      "Priority Hints",
+      "jQuery"
     ],
     "Blackboard Learn": [
       "YouTube",
@@ -2101,9 +2100,9 @@
       "YouTube",
       "Google Analytics",
       "Open Graph",
-      "Blackboard Learn",
       "Linkedin Insight Tag",
-      "Facebook Pixel"
+      "Facebook Pixel",
+      "Vimeo"
     ],
     "Blitz": [
       "Google Tag Manager",
@@ -2116,14 +2115,14 @@
       "Linkedin Insight Tag"
     ],
     "Bold Chat": [
-      "Encoura",
       "Facebook Pixel",
       "Genesys Chat",
       "Google Analytics",
       "Google Analytics 4",
       "Google Call Conversion Tracking",
       "Google Tag Manager",
-      "Linkedin Insight Tag"
+      "Linkedin Insight Tag",
+      "Magnific Popup"
     ],
     "BoldGrid": [
       "Animate.css",
@@ -2353,7 +2352,7 @@
       "YouTube",
       "Bootstrap",
       "Priority Hints",
-      "EAB Navigate"
+      "Lodash"
     ],
     "CKEditor": [
       "Didomi",
@@ -2518,12 +2517,12 @@
     "Chakra UI": [
       "Coveo",
       "DataTables",
-      "Encoura",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
       "Modernizr",
-      "Open Graph"
+      "Open Graph",
+      "PWA"
     ],
     "Chaport": [
       "Active Campaign",
@@ -2572,8 +2571,8 @@
       "Cludo",
       "Cookiebot",
       "Crazy Egg",
-      "Encoura",
-      "Facebook Pixel"
+      "Facebook Pixel",
+      "Google Analytics"
     ],
     "Choices": [
       "Bunny",
@@ -2763,7 +2762,7 @@
       "Google Analytics 4",
       "Open Graph",
       "jQuery",
-      "Evisions"
+      "Facebook Pixel"
     ],
     "CollegeNET 25Live": [
       "25Live",
@@ -2857,13 +2856,13 @@
     ],
     "Contao": [
       "Algolia",
-      "Angular",
       "Bootstrap",
-      "Encoura",
       "Facebook Pixel",
       "Font Awesome",
       "Google Analytics",
-      "Google Analytics 4"
+      "Google Analytics 4",
+      "Google Font API",
+      "Google Tag Manager"
     ],
     "Contensis": [
       "Google Tag Manager",
@@ -3039,11 +3038,11 @@
       "Animate.css",
       "Bootstrap",
       "Cloudflare Browser Insights",
-      "Encoura",
       "EventOn",
       "Facebook Pixel",
       "Font Awesome",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4"
     ],
     "Cornerstone": [
       "Cornerstone OnDemand",
@@ -3093,7 +3092,7 @@
       "Brightspace Core",
       "Canva for Education",
       "Cookie Control",
-      "EAB Navigate"
+      "Echo360"
     ],
     "Coveo": [
       "YouTube",
@@ -3332,8 +3331,8 @@
       "jQuery",
       "Amazon S3",
       "Amazon Web Services",
-      "Blackboard Learn",
-      "Blackboard Ultra"
+      "Blackboard Ultra",
+      "Bunny Fonts"
     ],
     "Divi": [
       "WordPress",
@@ -3449,11 +3448,11 @@
       "Act-On",
       "D2L Brightspace",
       "Drupal",
-      "Encoura",
-      "Evisions",
       "Facebook Pixel",
       "Font Awesome",
-      "GiveCampus"
+      "GiveCampus",
+      "Google Analytics",
+      "Google Analytics 4"
     ],
     "DropInBlog": [
       "Google Analytics",
@@ -3488,12 +3487,12 @@
     "Duo Security": [
       "AOS",
       "Algolia",
-      "Angular",
       "Bootstrap",
       "Canvas LMS",
       "Clipboard.js",
       "DataTables",
-      "FlexSlider"
+      "FlexSlider",
+      "Font Awesome"
     ],
     "Dynamic Conditions": [
       "Elementor",
@@ -3508,12 +3507,12 @@
     "Dynamic Yield": [
       "Contentsquare",
       "Drupal",
-      "Encoura",
       "Glide.js",
       "Google Tag Manager",
       "Modernizr",
       "YouTube",
-      "jQuery"
+      "jQuery",
+      "jsDelivr"
     ],
     "Dynatrace RUM": [
       "Adobe Analytics",
@@ -3528,12 +3527,12 @@
     "EAB Navigate": [
       "Google Tag Manager",
       "YouTube",
-      "Open Graph",
       "Google Analytics",
       "Google Analytics 4",
       "jQuery",
-      "Bootstrap",
-      "Priority Hints"
+      "Open Graph",
+      "Facebook Pixel",
+      "Google Font API"
     ],
     "EBSCO Discovery Service": [
       "Google Analytics",
@@ -3547,13 +3546,13 @@
     ],
     "EMS": [
       "Adobe Creative Cloud",
-      "Angular",
       "Bootstrap",
       "CBORD",
       "Cambridge Core",
-      "EAB Navigate",
-      "Encoura",
-      "FOLIO LSP"
+      "FOLIO LSP",
+      "Lodash",
+      "Onsen UI",
+      "Open Graph"
     ],
     "EWWW Image Optimizer": [
       "WordPress",
@@ -3836,14 +3835,14 @@
       "YouTube"
     ],
     "Encoura": [
-      "Google Tag Manager",
       "Google Analytics",
       "Google Analytics 4",
+      "Google Tag Manager",
       "YouTube",
-      "jQuery",
-      "Open Graph",
       "Facebook Pixel",
-      "Google Font API"
+      "Drupal",
+      "Google Font API",
+      "Open Graph"
     ],
     "Enquire.js": [
       "jQuery",
@@ -3903,7 +3902,7 @@
       "Animate.css",
       "AudioEye",
       "Cloudflare Browser Insights",
-      "Encoura"
+      "EventOn"
     ],
     "EventOn": [
       "WordPress",
@@ -3944,16 +3943,6 @@
       "Google Tag Manager",
       "Slick",
       "YouTube"
-    ],
-    "Evisions": [
-      "Google Tag Manager",
-      "Drupal",
-      "Google Analytics",
-      "Google Analytics 4",
-      "YouTube",
-      "Facebook Pixel",
-      "jQuery",
-      "Open Graph"
     ],
     "Ex Libris Alma": [
       "Oxford Learning Link",
@@ -3998,12 +3987,12 @@
     "Exhibit": [
       "Cart Functionality",
       "Crazy Egg",
-      "EAB Navigate",
       "FOLIO LSP",
       "Facebook Pixel",
       "Google Analytics",
       "Google Analytics 4",
-      "Google Tag Manager"
+      "Google Tag Manager",
+      "Liaison CAS"
     ],
     "ExpressionEngine": [
       "Google Tag Manager",
@@ -4153,7 +4142,7 @@
       "Open Graph",
       "jQuery",
       "WordPress",
-      "Encoura"
+      "Facebook Pixel"
     ],
     "Floating UI": [
       "Anthology Encompass",
@@ -4166,14 +4155,14 @@
       "Google Analytics"
     ],
     "Flying Analytics": [
-      "AdAstra",
       "Algolia",
       "Astra",
       "Blackbaud",
       "Bootstrap",
       "Canvas LMS",
       "CookieYes",
-      "Drupal"
+      "Drupal",
+      "Elementor"
     ],
     "Flying Pages": [
       "Bootstrap",
@@ -4209,11 +4198,11 @@
       "Bootstrap",
       "Cart Functionality",
       "D2L Brightspace",
-      "EAB Navigate",
       "Jenzabar",
       "Lodash",
       "Open Graph",
-      "Priority Hints"
+      "Priority Hints",
+      "RequireJS"
     ],
     "FormAssembly": [
       "Google Analytics",
@@ -4299,8 +4288,8 @@
       "Open Graph",
       "YouTube",
       "Adobe Fonts",
-      "Angular",
-      "Cart Functionality"
+      "Cart Functionality",
+      "Cookiebot"
     ],
     "Frontify": [
       "AOS",
@@ -4368,9 +4357,9 @@
       "CampusVue",
       "Canva for Education",
       "Cookiebot",
-      "Encoura",
       "Google Font API",
-      "Google Tag Manager"
+      "Google Tag Manager",
+      "Issuu"
     ],
     "GSAP": [
       "YouTube",
@@ -4454,13 +4443,13 @@
     ],
     "Genesys Chat": [
       "Bold Chat",
-      "Encoura",
       "Facebook Pixel",
       "Google Analytics",
       "Google Analytics 4",
       "Google Call Conversion Tracking",
       "Google Tag Manager",
-      "Linkedin Insight Tag"
+      "Linkedin Insight Tag",
+      "Magnific Popup"
     ],
     "Genesys Cloud": [
       "Bootstrap",
@@ -4637,10 +4626,10 @@
       "Google Analytics 4",
       "Google Tag Manager",
       "Bootstrap",
-      "EAB Navigate",
       "Lodash",
       "Open Graph",
-      "Priority Hints"
+      "Priority Hints",
+      "Sentry"
     ],
     "Google Call Conversion Tracking": [
       "Google Tag Manager",
@@ -4773,14 +4762,14 @@
       "Facebook Pixel"
     ],
     "GradesFirst": [
-      "AdAstra",
       "Adobe Fonts",
       "Astra",
       "Canvas LMS",
       "CookieYes",
       "Custom Twitter Feeds",
       "Elementor",
-      "EmbedPress"
+      "EmbedPress",
+      "Font Awesome"
     ],
     "Graduway": [
       "Facebook Pixel",
@@ -4796,11 +4785,11 @@
       "Bootstrap",
       "Google Tag Manager",
       "YouTube",
-      "Encoura",
       "Font Awesome",
       "Google Analytics",
       "Google Analytics 4",
-      "Jenzabar"
+      "Jenzabar",
+      "Tiny Slider"
     ],
     "Gravatar": [
       "Priority Hints",
@@ -4857,10 +4846,10 @@
       "Bunny Fonts",
       "Elementor",
       "Elementor Header & Footer Builder",
-      "Encoura",
       "Facebook Pixel",
       "Font Awesome",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4"
     ],
     "Hammer.js": [
       "Google Analytics",
@@ -4924,13 +4913,13 @@
     ],
     "Heap": [
       "Drupal",
-      "Evisions",
       "Google Tag Manager",
       "Lightbox",
       "Moment.js",
       "OneTrust",
       "Open Graph",
-      "PWA"
+      "PWA",
+      "Popper"
     ],
     "Helix Ultimate": [
       "Google Analytics",
@@ -4947,10 +4936,10 @@
       "Animate.css",
       "ClickCease",
       "Divi",
-      "EAB Navigate",
       "Easy Pie Chart",
       "Facebook Pixel",
-      "FitVids.JS"
+      "FitVids.JS",
+      "Google Analytics"
     ],
     "Hello Elementor": [
       "Elementor",
@@ -4984,13 +4973,13 @@
     ],
     "Highcharts": [
       "Bootstrap",
-      "Encoura",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
       "Open Graph",
       "Vimeo",
-      "WordPress"
+      "WordPress",
+      "YouTube"
     ],
     "Higher Logic": [
       "AdRoll",
@@ -5023,14 +5012,14 @@
       "Slate (Technolutions)"
     ],
     "Honorlock": [
-      "Angular",
       "Facebook Pixel",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
       "Open Graph",
       "Simpli.fi",
-      "YouTube"
+      "YouTube",
+      "Amazon S3"
     ],
     "Hotjar": [
       "Google Tag Manager",
@@ -5139,8 +5128,8 @@
       "Chatbase",
       "CookieYes",
       "Elementor",
-      "Encoura",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4"
     ],
     "ID5": [
       "AOS",
@@ -5154,23 +5143,23 @@
     ],
     "ImageEngine": [
       "AppNexus",
-      "Encoura",
       "Facebook Pixel",
       "Google Analytics",
       "Google Analytics 4",
       "Google Font API",
       "Google Tag Manager",
-      "Linkedin Ads"
+      "Linkedin Ads",
+      "Linkedin Insight Tag"
     ],
     "Imagekit": [
-      "Angular",
       "Blackbaud",
       "Bootstrap",
       "Cookiebot",
       "Facebook Pixel",
       "Font Awesome",
       "Funnelback",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4"
     ],
     "Imagely NextGEN Gallery": [
       "Google Analytics",
@@ -5467,10 +5456,10 @@
       "Google Font API",
       "Material Design Lite",
       "Open Graph",
-      "PowerCampus",
       "Slider Revolution",
       "Vimeo",
-      "W3 Total Cache"
+      "W3 Total Cache",
+      "WhatsApp Business Chat"
     ],
     "Joomla": [
       "YouTube",
@@ -5568,9 +5557,9 @@
       "Google Tag Manager",
       "Open Graph",
       "YouTube",
-      "EAB Navigate",
       "Facebook Pixel",
-      "Google Analytics 4"
+      "Google Analytics 4",
+      "Linkedin Insight Tag"
     ],
     "Kentico": [
       "Google Tag Manager",
@@ -5719,8 +5708,8 @@
       "AddToAny Share Buttons",
       "Draftpress HFCM",
       "Elementor",
-      "Encoura",
-      "Facebook Pixel"
+      "Facebook Pixel",
+      "Font Awesome"
     ],
     "Liaison CAS": [
       "Google Tag Manager",
@@ -5896,21 +5885,21 @@
       "Adobe Fonts",
       "Alpine.js",
       "Bootstrap",
-      "Encoura",
       "Facebook Pixel",
       "Google Analytics",
       "Google Analytics 4",
-      "Google Call Conversion Tracking"
+      "Google Call Conversion Tracking",
+      "Google Tag Manager"
     ],
     "Loadable-Components": [
-      "Angular",
       "Blackboard Collaborate",
       "Blackboard Learn",
       "Blackboard Transact",
       "Blackboard Web Community Manager",
       "Brightspace Core",
       "Constant Contact",
-      "D2L Brightspace"
+      "D2L Brightspace",
+      "Google Analytics"
     ],
     "Localist": [
       "Google Tag Manager",
@@ -5940,17 +5929,17 @@
       "Google Analytics 4",
       "YouTube",
       "Priority Hints",
-      "EAB Navigate"
+      "Sentry"
     ],
     "LogRocket": [
       "Elfsight",
-      "Encoura",
       "Gatsby",
       "Google Analytics",
       "Google Analytics 4",
       "Google Font API",
       "Google Tag Manager",
-      "PWA"
+      "PWA",
+      "UserWay"
     ],
     "LottieFiles": [
       "Google Analytics",
@@ -6145,12 +6134,12 @@
     "Mantine": [
       "Coveo",
       "Didomi",
-      "Encoura",
       "Facebook Pixel",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
-      "Kaltura"
+      "Kaltura",
+      "Linkedin Insight Tag"
     ],
     "MapPress": [
       "Bootstrap",
@@ -6190,7 +6179,7 @@
       "Ellucian Banner",
       "Emma",
       "Emotion",
-      "Evisions"
+      "Facebook Pixel"
     ],
     "Mapplic": [
       "Acuity Scheduling",
@@ -6198,9 +6187,9 @@
       "Bootstrap",
       "BootstrapCDN",
       "Elementor",
-      "Encoura",
       "Font Awesome",
-      "Google Font API"
+      "Google Font API",
+      "Hello Elementor"
     ],
     "Marchex": [
       "Google Tag Manager",
@@ -6757,20 +6746,20 @@
       "Bootstrap",
       "Coveo",
       "Drupal",
-      "Evisions",
       "Facebook Pixel",
       "FancyBox",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4"
     ],
     "Nudgify": [
       "33Across",
-      "AdAstra",
       "AdRoll",
       "Bootstrap",
       "Facebook Pixel",
       "Font Awesome",
       "Glide.js",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4"
     ],
     "Nuxt.js": [
       "Google Analytics",
@@ -6920,7 +6909,7 @@
       "Google Analytics 4",
       "Vimeo",
       "jQuery",
-      "EAB Navigate"
+      "Open Graph"
     ],
     "OpenLayers": [
       "33Across",
@@ -6984,13 +6973,13 @@
     ],
     "Oracle Infinity": [
       "Adobe Fonts",
-      "Angular",
       "CAS",
       "Drupal",
-      "EAB Navigate",
       "Eloqua",
       "Facebook Pixel",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4",
+      "Google Tag Manager"
     ],
     "Oracle PeopleSoft Campus Solutions": [
       "Google Tag Manager",
@@ -7123,14 +7112,14 @@
       "Salesforce Education Cloud"
     ],
     "PageLayer": [
-      "Encoura",
       "Google Font API",
       "Lightbox",
       "OWL Carousel",
       "Twenty Twenty-One",
       "W3 Total Cache",
       "WOW",
-      "WordPress"
+      "WordPress",
+      "jQuery"
     ],
     "Pagekit": [
       "Google Analytics",
@@ -7274,13 +7263,13 @@
     ],
     "Personio": [
       "Adform",
-      "Angular",
       "Azure Monitor",
       "Cloudflare Browser Insights",
       "Facebook Pixel",
       "Google Analytics",
       "Google Analytics 4",
-      "Google Tag Manager"
+      "Google Tag Manager",
+      "HubSpot for Education"
     ],
     "Phlox": [
       "Animate.css",
@@ -7314,13 +7303,13 @@
     ],
     "Pikaday": [
       "25Live",
-      "Angular",
       "Bootstrap",
       "C3.js",
       "Cart Functionality",
       "CollegeNET 25Live",
       "Constant Contact",
-      "Contact Form 7"
+      "Contact Form 7",
+      "Facebook Pixel"
     ],
     "Pingdom RUM": [
       "Google Tag Manager",
@@ -7338,9 +7327,9 @@
       "Nuxt.js",
       "Vue.js",
       "YouTube",
-      "Angular",
       "Bootstrap",
-      "Cloudflare Browser Insights"
+      "Cloudflare Browser Insights",
+      "Common Application"
     ],
     "Pinterest": [
       "Elementor",
@@ -7513,14 +7502,14 @@
       "Yoast SEO"
     ],
     "PowerCampus": [
-      "Google Tag Manager",
-      "YouTube",
-      "Google Analytics",
-      "Google Analytics 4",
       "jQuery",
-      "Open Graph",
-      "Facebook Pixel",
-      "Google Font API"
+      "WordPress",
+      "YouTube",
+      "Adobe Fonts",
+      "Cart Functionality",
+      "D2L Brightspace",
+      "DonorPerfect",
+      "Element451"
     ],
     "PowerFAIDS": [
       "Adobe Fonts",
@@ -7543,14 +7532,14 @@
       "Open Graph"
     ],
     "Powerfolio": [
-      "AdAstra",
       "Adobe Creative Cloud",
       "Astra",
       "Bootstrap",
       "C3.js",
       "Cloudflare Browser Insights",
       "Elementor",
-      "Elementor Header & Footer Builder"
+      "Elementor Header & Footer Builder",
+      "Ensighten"
     ],
     "Prefix-Free": [
       "Axeptio",
@@ -7563,24 +7552,24 @@
       "Open Graph"
     ],
     "Preline UI": [
-      "Angular",
       "ApplicantStack",
       "Bootstrap",
       "Ellucian CRM Recruit",
       "Facebook Pixel",
       "Google Analytics",
       "Google Analytics 4",
-      "Google Custom Search"
+      "Google Custom Search",
+      "Google Tag Manager"
     ],
     "Premio Chaty": [
-      "AdAstra",
       "Adobe Fonts",
       "All in One SEO Pack",
       "Astra",
       "Cart Functionality",
       "Elementor",
       "Essential Addons for Elementor",
-      "Facebook Pixel"
+      "Facebook Pixel",
+      "Google Analytics"
     ],
     "PressMaximum Customify": [
       "Elementor",
@@ -7615,12 +7604,12 @@
     "Privado": [
       "ClickCease",
       "Crazy Egg",
-      "Encoura",
       "Facebook Pixel",
       "Fundraise Up",
       "Google Analytics",
       "Google Analytics 4",
-      "Google Font API"
+      "Google Font API",
+      "Google Hosted Libraries"
     ],
     "Privy": [
       "Adobe Fonts",
@@ -7748,9 +7737,9 @@
       "Blackboard Learn",
       "Bootstrap",
       "Clicky",
-      "Encoura",
       "Facebook Pixel",
-      "Font Awesome"
+      "Font Awesome",
+      "GiveCampus"
     ],
     "Qualified": [
       "Animate.css",
@@ -7796,11 +7785,11 @@
       "Drupal",
       "Open Graph",
       "Unpkg",
-      "Evisions",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
-      "YouTube"
+      "YouTube",
+      "jQuery"
     ],
     "Quora Pixel": [
       "Google Analytics",
@@ -7829,8 +7818,8 @@
       "Google Tag Manager",
       "Open Graph",
       "YouTube",
-      "EAB Navigate",
-      "Linkedin Insight Tag"
+      "Linkedin Insight Tag",
+      "Blackbaud"
     ],
     "Rakuten": [
       "Adobe Analytics",
@@ -7917,10 +7906,10 @@
       "Drupal",
       "Drupal Multisite",
       "EAB Navigate",
-      "Encoura",
       "Google Analytics",
       "Google Analytics 4",
-      "Google Tag Manager"
+      "Google Tag Manager",
+      "McGraw-Hill ALEKS"
     ],
     "Recent Posts Widget With Thumbnails": [
       "Open Graph",
@@ -7986,11 +7975,11 @@
       "Open Graph",
       "Bootstrap",
       "Google Tag Manager",
-      "EAB Navigate",
       "Google Analytics",
       "Google Analytics 4",
       "Lodash",
-      "Sentry"
+      "Sentry",
+      "WebsiteBuilder"
     ],
     "Respondus LockDown Browser": [
       "Google Font API",
@@ -8048,7 +8037,6 @@
       "Google Analytics 4",
       "Google Tag Manager",
       "JW Player",
-      "PowerCampus",
       "jQuery"
     ],
     "Ruby on Rails": [
@@ -8249,7 +8237,7 @@
       "Open Graph",
       "Bootstrap",
       "Priority Hints",
-      "EAB Navigate"
+      "Facebook Pixel"
     ],
     "Schoology": [
       "jQuery",
@@ -8262,14 +8250,14 @@
       "Vimeo"
     ],
     "ScreenCloud": [
-      "AdAstra",
       "Cambridge Core",
       "Google Analytics",
       "Google Analytics 4",
       "Google Font API",
       "Google Tag Manager",
       "Lucidworks Fusion",
-      "Open Graph"
+      "Open Graph",
+      "Priority Hints"
     ],
     "Screenfull.js": [
       "Google Analytics",
@@ -8368,8 +8356,8 @@
       "Lodash",
       "WebsiteBuilder",
       "Wix",
-      "EAB Navigate",
-      "Google Analytics"
+      "Google Analytics",
+      "YouTube"
     ],
     "ServiceNow": [
       "Google Analytics",
@@ -8408,8 +8396,8 @@
       "Google Analytics 4",
       "Open Graph",
       "jQuery",
-      "Facebook Pixel",
-      "SAML"
+      "SAML",
+      "Facebook Pixel"
     ],
     "Shoelace": [
       "Adobe Fonts",
@@ -8463,23 +8451,23 @@
     ],
     "Simple Analytics": [
       "ASP.NET",
-      "Angular",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
       "Microsoft ASP.NET",
       "Open Graph",
-      "Slick"
+      "Slick",
+      "YouTube"
     ],
     "SimplexNoise.js": [
       "Drupal",
-      "Encoura",
       "Facebook Pixel",
       "Font Awesome",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
-      "Open Graph"
+      "Open Graph",
+      "PWA"
     ],
     "Simpli.fi": [
       "Google Tag Manager",
@@ -8508,8 +8496,8 @@
       "Google Analytics 4",
       "YouTube",
       "Bootstrap",
-      "Encoura",
-      "Facebook Pixel"
+      "Facebook Pixel",
+      "Mautic"
     ],
     "Site Kit": [
       "Google Tag Manager",
@@ -8667,9 +8655,9 @@
       "jQuery",
       "AddToAny",
       "Adobe Fonts",
-      "Angular",
       "Animate.css",
-      "AppNexus"
+      "AppNexus",
+      "Bootstrap"
     ],
     "Smart Ad Server": [
       "Facebook Pixel",
@@ -8754,12 +8742,12 @@
     "Snipcart": [
       "Cookie Notice",
       "Crazy Egg",
-      "Encoura",
       "Facebook Pixel",
       "Formidable Form",
       "Google Analytics",
       "Google Analytics 4",
-      "Google Tag Manager"
+      "Google Tag Manager",
+      "Linkedin Insight Tag"
     ],
     "Snowplow Analytics": [
       "Facebook Pixel",
@@ -8822,24 +8810,24 @@
       "WOW"
     ],
     "Split Hero": [
-      "Angular",
       "Contentsquare",
       "CookieYes",
       "Elementor",
       "Facebook Pixel",
       "Font Awesome",
       "GSAP",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4"
     ],
     "Spotify Web API": [
       "AddToAny",
       "Bootstrap",
       "Coveo",
       "Drupal",
-      "Evisions",
       "Facebook Pixel",
       "FancyBox",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4"
     ],
     "Spotify Widgets": [
       "Google Analytics",
@@ -9082,13 +9070,13 @@
     ],
     "Swiffy Slider": [
       "Bootstrap",
-      "EAB Navigate",
-      "Encoura",
       "Facebook Pixel",
       "Font Awesome",
       "GiveCampus",
       "Google Analytics",
-      "Google Analytics 4"
+      "Google Analytics 4",
+      "Google Font API",
+      "Google Hosted Libraries"
     ],
     "Swiftype": [
       "Google Tag Manager",
@@ -9111,14 +9099,14 @@
       "Priority Hints"
     ],
     "Swup": [
-      "Encoura",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
       "Open Graph",
       "YouTube",
       "jQuery",
-      "Adobe Experience Manager"
+      "Adobe Experience Manager",
+      "Bunny"
     ],
     "Synergy Student Information System": [
       "Google Tag Manager",
@@ -9251,14 +9239,14 @@
       "Google Analytics 4"
     ],
     "Talkdesk": [
-      "Encoura",
       "Facebook Pixel",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
       "Linkedin Insight Tag",
       "Matomo",
-      "Matomo Analytics"
+      "Matomo Analytics",
+      "Microsoft Advertising"
     ],
     "TargetX": [
       "YouTube",
@@ -9532,13 +9520,13 @@
     ],
     "TrustPulse": [
       "Bold Chat",
-      "Encoura",
       "Facebook Pixel",
       "Genesys Chat",
       "Google Analytics",
       "Google Analytics 4",
       "Google Call Conversion Tracking",
-      "Google Tag Manager"
+      "Google Tag Manager",
+      "Linkedin Insight Tag"
     ],
     "Trustpilot": [
       "Bootstrap",
@@ -9567,8 +9555,8 @@
       "Open Graph",
       "Priority Hints",
       "jQuery",
-      "Angular",
-      "Encoura"
+      "Facebook Pixel",
+      "YouTube"
     ],
     "Twenty Fifteen": [
       "Bootstrap",
@@ -9606,9 +9594,9 @@
       "jQuery",
       "jQuery Migrate",
       "Bootstrap",
-      "Encoura",
       "Facebook Pixel",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4"
     ],
     "Twenty Thirteen": [
       "Cloudflare Browser Insights",
@@ -9652,13 +9640,13 @@
     ],
     "Twik": [
       "Bootstrap",
-      "EAB Navigate",
-      "Encoura",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
       "Lodash",
-      "Onsen UI"
+      "Onsen UI",
+      "Open Graph",
+      "Priority Hints"
     ],
     "Twitter": [
       "jQuery",
@@ -9804,11 +9792,11 @@
       "AddSearch",
       "Adobe Fonts",
       "Bootstrap",
-      "Encoura",
       "FOLIO LSP",
       "Facebook Pixel",
       "Google Analytics",
-      "Google Analytics 4"
+      "Google Analytics 4",
+      "Google Font API"
     ],
     "Uploadcare": [
       "Fundraise Up",
@@ -9928,7 +9916,7 @@
       "Campus Management",
       "Coveo",
       "Didomi",
-      "Encoura"
+      "Facebook Pixel"
     ],
     "VideoJS": [
       "jQuery",
@@ -10091,14 +10079,14 @@
       "Yoast SEO"
     ],
     "WP Portfolio": [
-      "AdAstra",
       "Astra",
       "FOLIO LSP",
       "Google Analytics",
       "Google Analytics 4",
       "Google Tag Manager",
       "Magnific Popup",
-      "Priority Hints"
+      "Priority Hints",
+      "WordPress"
     ],
     "WP Rocket": [
       "WordPress",
@@ -10215,9 +10203,9 @@
       "Open Graph",
       "Sentry",
       "Wix",
-      "EAB Navigate",
       "Priority Hints",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Tag Manager"
     ],
     "Weebly": [
       "Bootstrap",
@@ -10262,12 +10250,12 @@
     "Wisepops": [
       "Adobe Analytics",
       "Drupal",
-      "Evisions",
       "Localist",
       "Open Graph",
       "Priority Hints",
       "Salesforce Education Cloud",
-      "Siteimprove"
+      "Siteimprove",
+      "Vimeo"
     ],
     "Wistia": [
       "YouTube",
@@ -10285,9 +10273,9 @@
       "Lodash",
       "Sentry",
       "WebsiteBuilder",
-      "EAB Navigate",
       "Priority Hints",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Tag Manager"
     ],
     "WooCommerce": [
       "jQuery",
@@ -10390,14 +10378,14 @@
       "jQuery Migrate"
     ],
     "Workable": [
-      "Encoura",
       "Google Tag Manager",
       "Open Graph",
       "Swiper",
       "Vimeo",
       "YouTube",
       "jQuery",
-      "Algolia"
+      "Algolia",
+      "Bootstrap"
     ],
     "Workday Student": [
       "Google Tag Manager",
@@ -10466,8 +10454,8 @@
       "Google Analytics",
       "Open Graph",
       "Bootstrap",
-      "Evisions",
-      "Google Analytics 4"
+      "Google Analytics 4",
+      "Slate (Technolutions)"
     ],
     "Yoast SEO": [
       "Open Graph",
@@ -10585,9 +10573,9 @@
       "Google Tag Manager",
       "Open Graph",
       "Bootstrap",
-      "Encoura",
       "Font Awesome",
-      "Google Font API"
+      "Google Font API",
+      "Microsoft Advertising"
     ],
     "Zopim": [
       "Facebook Pixel",
@@ -10700,14 +10688,14 @@
       "Vimeo"
     ],
     "dotdigital Engagement Cloud": [
-      "Angular",
       "Blackbaud",
       "Bootstrap",
       "Cookiebot",
       "Facebook Pixel",
       "Font Awesome",
       "Funnelback",
-      "Google Analytics"
+      "Google Analytics",
+      "Google Analytics 4"
     ],
     "eSSENTIAL Accessibility": [
       "AOS",
@@ -11042,12 +11030,12 @@
     "sIFR": [
       "Curriculog",
       "EAB Navigate",
-      "Encoura",
       "Google Analytics",
       "Google Analytics 4",
       "Google Custom Search",
       "Google Font API",
-      "Google Tag Manager"
+      "Google Tag Manager",
+      "Modern Campus CMS"
     ],
     "script.aculo.us": [
       "Bootstrap",
@@ -11121,13 +11109,13 @@
     ],
     "vcita": [
       "Cloudflare Browser Insights",
-      "Encoura",
       "Google Analytics",
       "Google Analytics 4",
       "Google Font API",
       "Google Tag Manager",
       "Open Graph",
-      "Priority Hints"
+      "Priority Hints",
+      "Tealium"
     ],
     "waitForImages": [
       "Google Font API",
@@ -11160,14 +11148,14 @@
       "Google Font API"
     ],
     "xCharts": [
-      "AdAstra",
       "Blackboard Learn",
       "Bootstrap",
       "Cambridge Core",
       "Contact Form 7",
       "DataTables",
       "Elementor",
-      "Font Awesome"
+      "Font Awesome",
+      "Google Font API"
     ]
   }
 }

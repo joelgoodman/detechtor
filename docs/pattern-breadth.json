@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-11T19:44:04.968Z",
+  "generated": "2026-08-12T03:18:44.656Z",
   "ticket": "UNI-237",
   "scanned": 3879,
   "unscannable": 335,
@@ -119,11 +119,10 @@
       "html": {}
     },
     "AdAstra": {
-      "fires": 76,
+      "fires": 7,
       "strongest": 0,
       "html": {
-        "ad.*astra": 76,
-        "adastra": 5
+        "ad[ .-]?astra": 7
       }
     },
     "AdOpt": {
@@ -320,11 +319,11 @@
       "html": {}
     },
     "Angular": {
-      "fires": 131,
+      "fires": 15,
       "strongest": 0,
       "html": {
-        "data-ng-": 10,
-        "ng-app": 122
+        "(data-)?ng-app[=\"' >]": 6,
+        "data-ng-": 10
       }
     },
     "AngularJS": {
@@ -619,12 +618,12 @@
       }
     },
     "Blackboard Learn": {
-      "fires": 99,
+      "fires": 88,
       "strongest": 1,
       "html": {
         "/ultra/": 5,
         "bblearn": 1,
-        "blackboard.*learn": 31,
+        "blackboard.{0,60}learn": 15,
         "blackboard\\.com": 71
       }
     },
@@ -1479,13 +1478,12 @@
       "html": {}
     },
     "EAB Navigate": {
-      "fires": 208,
-      "strongest": 3,
+      "fires": 76,
+      "strongest": 0,
       "html": {
         "campus.eab.com": 42,
-        "eab.*navigate": 130,
-        "navigate.*eab": 119,
-        "student.*success.*collaborative": 42
+        "eab.{0,60}navigate": 54,
+        "navigate.{0,60}eab": 48
       }
     },
     "EBSCO Discovery Service": {
@@ -1662,10 +1660,10 @@
       "html": {}
     },
     "Encoura": {
-      "fires": 514,
+      "fires": 4,
       "strongest": 0,
       "html": {
-        "encoura": 513,
+        "encoura(?!g)": 3,
         "noel.*levitz": 1
       }
     },
@@ -1724,13 +1722,6 @@
       "fires": 2,
       "strongest": 2,
       "html": {}
-    },
-    "Evisions": {
-      "fires": 209,
-      "strongest": 0,
-      "html": {
-        "evisions": 209
-      }
     },
     "Ex Libris Alma": {
       "fires": 17,
@@ -2442,6 +2433,13 @@
       "fires": 1,
       "strongest": 1,
       "html": {}
+    },
+    "Infinite Campus": {
+      "fires": 5,
+      "strongest": 0,
+      "html": {
+        "infinitecampus\\.": 5
+      }
     },
     "Infinite Scroll": {
       "fires": 41,
@@ -3765,10 +3763,10 @@
       "html": {}
     },
     "PowerCampus": {
-      "fires": 240,
+      "fires": 3,
       "strongest": 0,
       "html": {
-        "eCollege": 238,
+        "[^a-z0-9]ecollege": 1,
         "powercampus": 2
       }
     },
@@ -4306,11 +4304,11 @@
       }
     },
     "Shibboleth": {
-      "fires": 23,
+      "fires": 17,
       "strongest": 0,
       "html": {
         "Shibboleth\\.sso": 3,
-        "shib.*session": 10,
+        "shib.{0,60}session": 3,
         "shibboleth": 13,
         "shibd": 1
       }

@@ -22,6 +22,21 @@
  * ⚠️ A crashed or killed shard must never look like a valid, merely-smaller result — every shard's
  * exit is checked and the totals reconciled, exactly as in corpus-prevalence.js.
  *
+ * ⚠️⚠️ KNOWN BASELINE INVERSION (documented, not fixed — UNI-237 code-review follow-up). `strongest`
+ * is the best match count among the technology's NON-html channels — scripts/scriptSrc, dom, meta,
+ * js, cookies. That is exactly the surface this instrument (and the gate built on it,
+ * lint-pattern-breadth.js) does NOT screen for false positives; only `html` patterns are measured
+ * for excess. Since `excess = matched - strongest`, a NOISIER script/scriptSrc pattern makes a
+ * technology's html breadth look MORE justified, not less — the baseline the html pattern is judged
+ * against is itself unvetted and can be arbitrarily bad. Confirmed on five shipped technologies,
+ * e.g. `Rave Mobile Safety`: its genuinely precise html marker `getrave` (46 matches) is measured
+ * against its own script marker `rave` (48 matches, collides with the unrelated
+ * `brave-popup-builder` plugin) as `strongest`, so excess reads 0 and the html pattern is judged
+ * clean by a dirty yardstick. At current pattern-file counts the script channel (scripts+scriptSrc)
+ * carries 4,229 regexes against html's 1,052 — nearly 4x the volume, entirely unmeasured for
+ * precision. Be blunt about what this gate actually does: it raised the floor on dictionary-word
+ * HTML patterns, and nothing else.
+ *
  * Usage:
  *   node scripts/pattern-breadth.js [--limit N] [--shards N]
  */

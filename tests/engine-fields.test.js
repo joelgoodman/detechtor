@@ -149,6 +149,29 @@ test('mutual excludes at an exact tie keep both', () => {
   assert.deepStrictEqual(names, ['A', 'B'], 'an exact tie must keep both rather than pick arbitrarily');
 });
 
+test('mutual excludes tie-break uses the UNCAPPED raw score, not the display-capped confidence', () => {
+  // UNI-237 bug: confidence is Math.min(raw, 100), and 63.2% of technologies (4,012/6,347) can
+  // reach that cap — so two mutually-excluding technologies that both cap out read as an "exact
+  // tie" under the reported value even when their real signal strength differs, and the "exact tie
+  // keeps both" rule silently no-ops the exclusion. A's raw total is exactly 100 (html 40 + script
+  // 60); B's is 150 (html 40 + script 60 + url 50) — both display-cap to confidence 100, but B's
+  // raw is higher and must be the sole survivor.
+  const e = engineWith({
+    A: { html: ['aaa'], scripts: ['sss'], excludes: ['B'], categories: ['Unclassified'] },
+    B: { html: ['bbb'], scripts: ['ttt'], url: ['/ttt-page'], excludes: ['A'], categories: ['Unclassified'] },
+  });
+  const matches = e.matchPatterns(EVIDENCE({
+    html: '<div>aaa bbb</div>',
+    scripts: [{ src: 'https://cdn.test/sss.js' }, { src: 'https://cdn.test/ttt.js' }],
+    finalUrl: 'https://example.edu/ttt-page',
+  }));
+  assert.deepStrictEqual(matches.map((m) => m.name), ['B'],
+    'both cap at confidence 100, but B has the higher raw total (150 vs 100) and must be the survivor');
+  assert.strictEqual(matches[0].confidence, 100);
+  assert.strictEqual(matches[0]._rawConfidence, undefined,
+    '_rawConfidence is an internal resolution aid and must not leak into the public match shape');
+});
+
 test('excludes naming an absent technology is inert', () => {
   const e = engineWith({ Solo: { html: ['solo'], excludes: ['Nonexistent'], categories: ['Unclassified'] } });
   assert.deepStrictEqual(e.matchPatterns(EVIDENCE({ html: 'solo' })).map((m) => m.name), ['Solo']);
@@ -191,16 +214,25 @@ test('config declares no confidence floor', () => {
     'minConfidence is inert — filtering happens at authoring time via the breadth gate');
 });
 
-test('nothing in src/ or scripts/ still READS config.minConfidence', () => {
-  // Match the read form `config.minConfidence`, not the bare token — the explanatory comment left
-  // in config.js names the setting on purpose, and a bare-token search would fail on that comment.
+test('nothing in the repo root, src/, or scripts/ still references minConfidence (read or write)', () => {
+  // Covers both directions: a READ (`config.minConfidence`) and a WRITE (`config.minConfidence =
+  // argv.confidence`, the cli.js:62 form that made --confidence a live no-op). Comments are
+  // stripped first — the explanatory prose left in config.js names the setting on purpose, and a
+  // bare-token search would otherwise fail on that comment — so what remains is a bare
+  // `minConfidence` token in actual code, which must not exist anywhere.
   const fs = require('fs');
-  const dirs = ['../src', '../scripts'].map((d) => path.resolve(__dirname, d));
+  const dirs = ['..', '../src', '../scripts'].map((d) => path.resolve(__dirname, d));
+  const stripComments = (src) => src
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/\/\/.*$/gm, '');
   const offenders = [];
   for (const dir of dirs) {
     for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.js'))) {
-      if (/config\.minConfidence/.test(fs.readFileSync(path.join(dir, f), 'utf8'))) offenders.push(f);
+      const full = path.join(dir, f);
+      if (!fs.statSync(full).isFile()) continue;
+      const code = stripComments(fs.readFileSync(full, 'utf8'));
+      if (/\bminConfidence\b/.test(code)) offenders.push(path.relative(path.resolve(__dirname, '..'), full));
     }
   }
-  assert.deepStrictEqual(offenders, [], `still read config.minConfidence: ${offenders.join(', ')}`);
+  assert.deepStrictEqual(offenders, [], `still references minConfidence outside a comment: ${offenders.join(', ')}`);
 });

@@ -976,8 +976,16 @@ class DeTECHtor {
       }
     }
 
+    // Sort/tie-break on the reported (capped) confidence for ordering, but applyExcludes resolves
+    // mutual ties on the UNCAPPED `_rawConfidence` (see evaluatePattern) — see the comment on
+    // applyExcludes for why the capped value alone silently defeats the tie-break.
     detected.sort((a, b) => b.confidence - a.confidence);
-    return this.applyExcludes(detected);
+    const resolved = this.applyExcludes(detected);
+    // `_rawConfidence` is an internal resolution aid, not part of the public match shape — strip it
+    // before these matches reach matchPatterns' callers (single-page results, multi-page merge,
+    // probe passes all funnel through here).
+    for (const m of resolved) delete m._rawConfidence;
+    return resolved;
   }
 
   /**
@@ -1008,7 +1016,15 @@ class DeTECHtor {
    * A suppressed match never gets to apply its own `excludes` rules (`suppressed.has` guard below)
    * — suppression does not chain transitively through something that itself lost the argument.
    *
-   * @param {Array<{name: string, confidence: number}>} sorted confidence-descending matches
+   * UNI-237 fix: the mutual tie-break MUST compare the uncapped `_rawConfidence`, not the reported
+   * `confidence`. `confidence` is `Math.min(rawTotal, 100)` (evaluatePattern) and 4,012 of 6,347
+   * technologies (63.2%) can reach that cap — so two mutually-excluding technologies that both
+   * cap out at 100 read as an "exact tie" under the reported value even when their underlying
+   * signal strength (raw total) differs, and the tie-break's "keep both" rule silently no-ops the
+   * exclusion. Comparing `_rawConfidence` resolves the tie for real; the reported `confidence`
+   * stays capped for display.
+   *
+   * @param {Array<{name: string, confidence: number, _rawConfidence: number}>} sorted confidence-descending matches
    */
   applyExcludes(sorted) {
     const byName = new Map(sorted.map((m) => [m.name, m]));
@@ -1029,9 +1045,10 @@ class DeTECHtor {
         if (!victim || victim.name === match.name) continue;
 
         if (declaresBack(match.name, victimName)) {
-          // Mutual: confidence tie-break. Higher wins; an exact tie keeps both.
-          if (victim.confidence === match.confidence) continue;
-          if (victim.confidence < match.confidence) suppressed.add(victimName);
+          // Mutual: tie-break on the UNCAPPED raw total, not the display-capped `confidence` (see
+          // class comment above). Higher raw score wins; an exact raw tie keeps both.
+          if (victim._rawConfidence === match._rawConfidence) continue;
+          if (victim._rawConfidence < match._rawConfidence) suppressed.add(victimName);
         } else {
           // One-directional: the declarer is overriding, not competing. Suppress unconditionally.
           suppressed.add(victimName);
@@ -1304,6 +1321,10 @@ class DeTECHtor {
     return {
       name,
       confidence: Math.min(confidence, 100),
+      // Internal-only: the uncapped total, kept so applyExcludes can resolve mutual-exclude ties
+      // that the display cap would otherwise flatten (UNI-237). Stripped before matchPatterns
+      // returns — never part of the public match shape.
+      _rawConfidence: confidence,
       categories: categories,
       evidence: config.includeEvidence ? matchEvidence : [],
       version: this.extractVersion({name: name}, evidence),

@@ -32,8 +32,8 @@ npm install
 # Scan a URL
 node cli.js --url "https://mit.edu" --verbose
 
-# Scan with custom confidence threshold
-node cli.js --url "https://harvard.edu" --confidence 50 --output results.json
+# Scan and save output to a file
+node cli.js --url "https://harvard.edu" --output results.json
 
 # Run pattern tests
 npm test
@@ -110,7 +110,6 @@ The scanner collects:
 Key settings in `src/config.js`:
 - `timeout` - Page load timeout (default: 30000ms)
 - `maxPagesToScan` - Pages to crawl per site (default: 5)
-- `minConfidence` - Minimum confidence to report (default: 30)
 - `strategicPaths` - Priority paths to discover (/login, /portal, /student, /canvas, etc.)
 - `browserOptions` - Puppeteer launch options including Chrome path
 
