@@ -28,3 +28,16 @@ test('overrides, higher_ed and aliases are reflected', () => {
   assert.ok(!byName['Omni CMS'], 'alias names are not technologies');
   assert.equal(d.categories.length, CANONICAL_CATEGORIES.size);
 });
+
+// UNI-223 R30/R31. SharePoint hosts real public university sites, so it must reach the store as a
+// CMS candidate — but it is also a genuine intranet/document platform, hence BOTH categories. The
+// "only when it is alone" half of the rule is the store's (technologies.last_resort); deTECHtor's
+// job is only to stop dropping the CMS category on the floor.
+test('Microsoft SharePoint files under both Business Software and CMS', () => {
+  const d = buildDictionary({ version: 'test' });
+  const sp = d.technologies.find((t) => t.name === 'Microsoft SharePoint');
+  assert.ok(sp, 'Microsoft SharePoint is in the dictionary');
+  assert.ok(sp.categories.includes('CMS'), `expected CMS in ${JSON.stringify(sp.categories)}`);
+  assert.ok(sp.categories.includes('Business Software'), `expected Business Software in ${JSON.stringify(sp.categories)}`);
+  assert.equal(sp.is_signal, true);
+});
