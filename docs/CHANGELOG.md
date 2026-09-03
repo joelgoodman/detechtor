@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### UNI-223 — dictionary export + eight absorbed categories (2026-09-02)
+
+**Added**
+- `scripts/emit-dictionary.js` — the category + technology dictionary as JSON. The shared DB's
+  `categories`/`technologies`/`technology_aliases` are regenerated from it on every re-pin, so the
+  vocabulary cannot drift from the engine. Categories are canonical, overrides applied.
+- Eight categories absorbed from the BuiltWith-curated taxonomy (`Authentication`, `Forms`,
+  `Event Management`, `Tag Management`, `Feedback & UX`, `Maps & Virtual Tours`,
+  `Personalization & CRO`, `AI Tools`), non-signal. deTECHtor owns the vocabulary; BuiltWith and
+  WhatCMS data is mapped into it.
+
 ### UNI-226 — strip Wappalyzer `\;confidence` / `\;version` modifiers (2026-08-09)
 
 Upstream modifier suffixes were never stripped, so in every regex-tested field the suffix became a
