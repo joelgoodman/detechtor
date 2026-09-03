@@ -243,3 +243,14 @@ test('every shipped category resolves to a canonical name', () => {
   }
   assert.deepStrictEqual([...offenders], [], 'categories outside the canonical vocabulary');
 });
+
+test('UNI-223: the eight BuiltWith-curated categories absorbed into the vocabulary', () => {
+  const { CANONICAL_CATEGORIES, mapCategory } = require(path.resolve(__dirname, '../src/category-mapping.js'));
+  const absorbed = ['Authentication', 'Forms', 'Event Management', 'Tag Management',
+    'Feedback & UX', 'Maps & Virtual Tours', 'Personalization & CRO', 'AI Tools'];
+  for (const name of absorbed) {
+    assert.ok(CANONICAL_CATEGORIES.has(name), `${name} must be canonical`);
+    assert.equal(mapCategory(name.toLowerCase()), name, `${name} must resolve case-insensitively`);
+  }
+  assert.equal(CANONICAL_CATEGORIES.size, 71, 'vocabulary is 63 + 8 absorbed');
+});

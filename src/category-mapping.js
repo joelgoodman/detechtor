@@ -199,6 +199,16 @@ const STRING_ONLY_CATEGORIES = [
   'JavaScript Library', // base, string form
   'Web Framework',      // base, string form
   'Student Success',    // base, string form
+  // UNI-223 (2026-09-02): absorbed from the BuiltWith-curated taxonomy so the seed loaders have a
+  // home for those vendors. deTECHtor owns the vocabulary; these are non-signal. Joel's call.
+  'Authentication',
+  'Forms',
+  'Event Management',
+  'Tag Management',
+  'Feedback & UX',
+  'Maps & Virtual Tours',
+  'Personalization & CRO',
+  'AI Tools',
 ];
 
 /** The complete vocabulary: every name mapCategory can legitimately produce. */
