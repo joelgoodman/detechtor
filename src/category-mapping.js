@@ -130,8 +130,63 @@ const categoryMapping = {
   307: 'Marketing Automation', // UNI-156: 8th signal category (Marketing Automation), added 2026-07-16
   303: 'CRM', // UNI-156: dedicated CRM id (curated); old 54-56 were remapped
   302: 'SIS', // UNI-156: dedicated SIS id (curated); base 53 was CRM/chatbot-skewed
-  304: 'Proctoring' // UNI-156: proctoring/integrity tools (non-signal)
+  304: 'Proctoring', // UNI-156: proctoring/integrity tools (non-signal)
+  // UNI-235: course catalog + curriculum management. Eight vendors were filed as SIS (and Canvas
+  // Catalog as LMS), so an institution running Acalog registered as having a Student Information
+  // System — it has a course catalog. That is ~14% of the SIS category counting the wrong market.
+  //
+  // ONE category, not two, because the market is sold that way: CourseLeaf ships CAT and CIM
+  // together, Modern Campus sells Acalog and Curriculog as a pair, and Smart Catalog, Kuali CM and
+  // ScholarSite each describe themselves as doing both. Splitting would file most vendors twice.
+  //
+  // Non-signal deliberately: it does not join SIGNAL_CATEGORIES, so no downstream consumer or
+  // tiered-detection escalation changes behaviour. Promotable later if the competitive intel earns
+  // it — that promotion is a blast-radius decision, not a categorisation one.
+  305: 'Catalog & Curriculum',
+  // UNI-235: six curated digital-signage vendors all sat in Business Software — 635 detections,
+  // led by Rise Vision (390) and Scala (244). Campus signage is a distinct procurement.
+  308: 'Digital Signage',
+  // UNI-235: eighteen consent-management vendors, ALL filed JavaScript Framework — ~440 detections
+  // led by CookieYes (173), OneTrust (100), Cookiebot (78). A consent platform is not a JS
+  // framework, and which one an institution runs is a real privacy-posture signal.
+  309: 'Cookie Consent',
+  // UNI-235: machine-readable metadata, not a vendor. Open Graph was filed 'Operating System'.
+  // Named for what it IS rather than who consumes it ("Social" would be wrong — social platforms
+  // are one consumer; AI answer engines are now another, which is why this matters to the GEO/AEO
+  // work). Forward-compatible with schema.org / JSON-LD / Twitter Cards when those are detected.
+  // ⚠️ NOT a home for PWA (678 insts, also mis-filed 'Operating System'): PWA is an app capability,
+  // not metadata. Left flagged rather than forced somewhere wrong.
+  310: 'Structured Data',
+  // UNI-235: web-font and icon-font services — ~4,700 detections led by Google Font API (1,943)
+  // and Font Awesome (1,275). Kept out of CDN, which is for generic asset delivery, for a concrete
+  // reason: German courts have ruled that serving Google Fonts from Google's servers violates
+  // GDPR, so a 1,943-institution detection carries a privacy-compliance implication that should
+  // not be buried among script CDNs. Licensed foundries (Adobe, Hoefler, MyFonts) vs free Google
+  // Fonts is also a design-maturity signal. Icon fonts live here too — Font Awesome and Bootstrap
+  // Icons are fonts, not CSS frameworks.
+  311: 'Web Fonts',
+  // UNI-235: an honest home for "we do not know what this is".
+  //
+  // 204 technologies were reviewed and not recognised. Leaving them in JavaScript Framework — the
+  // bucket they happened to be dumped in by an un-audited upstream import — silently converted
+  // "no opinion" into the positive claim "this is a JavaScript framework". That is the same defect
+  // as filing every unknown under Business Software, and it is how JavaScript Framework reached
+  // 1,252 entries of which only ~25 were real frameworks.
+  //
+  // Unclassified asserts nothing. It is not a signal category, nothing downstream acts on it, and
+  // an entry sitting here is a visible invitation to identify it rather than a wrong answer that
+  // reads as settled.
+  312: 'Unclassified',
+  // UNI-235: library services platforms — ILS, discovery layers and research guides. ~400
+  // detections led by LibGuides (224) and FOLIO (57), every one of them previously filed
+  // 'Business Software'. Every university runs one, and which one is real competitive intel, but
+  // the market was invisible to any sector-specific query while sitting in the grab-bag.
+  313: 'Library Systems'
 };
+
+// `Student Success` already existed in STRING_ONLY_CATEGORIES below and had never been used —
+// a defined category with zero members while EAB Navigate, Ready Education, Campus Labs and
+// Anthology Engage sat in 'Business Software'. UNI-235 populates it.
 
 // UNI-233. Some categories are only ever written as STRINGS and have no numeric id, so they are
 // absent from the id map above yet are perfectly legitimate. Registering them explicitly is what

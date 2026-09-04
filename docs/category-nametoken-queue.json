@@ -1,0 +1,324 @@
+{
+  "generated": "2026-08-09",
+  "ticket": "UNI-235",
+  "note": "Technologies whose NAME contains a category token but which are not filed there. A SCREEN, not a verdict — adjudicate each. Confirmed decisions go to patterns/category-overrides.json.",
+  "candidates": [
+    {
+      "name": "Accessibility Toolbar Plugin",
+      "token": "Accessibility",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Accessibility Toolbar Plugin is an accessibility component without dependencies (clean javascript), including a variety of tools."
+    },
+    {
+      "name": "Accessible360",
+      "token": "Accessibility",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Accessible360 is a web accessibility company based in Edina, Minnesota."
+    },
+    {
+      "name": "Accessibly",
+      "token": "Accessibility",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Accessibly is an app which is designed to assist with meeting certain requirements of WCAG 2.1 using an overlay solution."
+    },
+    {
+      "name": "Agile CRM",
+      "token": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Agile CRM is a software for Customer Relationship Management (CRM) that provides sales and marketing automation features for businesses."
+    },
+    {
+      "name": "Airship CRM",
+      "token": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Airship CRM is a hospitality-focused platform that centralizes data, enables tailored email communication, and enhances visit frequency."
+    },
+    {
+      "name": "All in One Accessibility",
+      "token": "Accessibility",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "All in One Accessibility is a website accessibility widget developed by Skynet Technologies to enhance compliance with WCAG 2.0, 2.1, 2.2, and ADA accessibility standards."
+    },
+    {
+      "name": "Better Search",
+      "token": "Site Search",
+      "current": [
+        "WordPress Plugin"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Better Search is a WordPress plugin designed to enhance your search experience."
+    },
+    {
+      "name": "Blackbaud CRM",
+      "token": "CRM",
+      "current": [
+        "Fundraising"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Blackbaud CRM gathers fundraising, online applications, actionable prospect research and analytics, and multichannel direct marketing into one platform."
+    },
+    {
+      "name": "CRM+",
+      "token": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "CRM+ is a German CRM software product building on Vtiger with GDPR-compliant extensions and improvements."
+    },
+    {
+      "name": "Ellucian CRM Recruit",
+      "token": "CRM",
+      "current": [
+        "Business Software",
+        "HR / Recruiting"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Ellucian CRM Recruit is a comprehensive solution that supports your entire recruiting and admissions lifecycle."
+    },
+    {
+      "name": "eSSENTIAL Accessibility",
+      "token": "Accessibility",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "eSSENTIAL Accessibility is a digital accessibility-as-a-service platform."
+    },
+    {
+      "name": "Flipping Pro CRM",
+      "token": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Flipping Pro is an all-in-one real estate marketing CRM offering essential tools to help real estate business owners grow their operations."
+    },
+    {
+      "name": "Freshworks CRM",
+      "token": "CRM",
+      "current": [
+        "Business Software",
+        "JavaScript Framework",
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Freshworks CRM is a cloud-based customer relationship management (CRM) solution. Key features include one-click phone, sales lead tracking, sales management, event tracking and more."
+    },
+    {
+      "name": "Insightly CRM",
+      "token": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Insightly CRM is a cloud-based customer relationship management software, helps businesses manage leads, contacts, and opportunities, track customer interactions, create custom reports, automate workf"
+    },
+    {
+      "name": "Ivory Search",
+      "token": "Site Search",
+      "current": [
+        "WordPress Plugin"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Ivory Search is a WordPress search plugin that improves WordPress search by providing advanced options to extend search or exclude specific content from search."
+    },
+    {
+      "name": "Kapture CRM",
+      "token": "CRM",
+      "current": [
+        "Chatbot",
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Kapture CRM is an enterprise-grade SaaS-based customer support automation platform."
+    },
+    {
+      "name": "Lasso CRM",
+      "token": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Lasso CRM is a new home sales CRM solution for builders, developers, and new homes agencies."
+    },
+    {
+      "name": "Neon CRM",
+      "token": "CRM",
+      "current": [
+        "Business Software",
+        "Fundraising"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Neon CRM, a Neon One company, is a cloud-based customer relationship management (CRM) software suite for nonprofits of all sizes. Applications include fundraising management, donor management, members"
+    },
+    {
+      "name": "Omnisend Email Marketing & SMS",
+      "token": "Marketing Automation",
+      "current": [
+        "Ecommerce"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Omnisend Email Marketing & SMS is an omnichannel marketing automation channel that allows Shopify store owners to manage their SMS, web push notifications, WhatsApp, Facebook messenger, pop-ups, segme"
+    },
+    {
+      "name": "PayPal Marketing Solutions",
+      "token": "Marketing Automation",
+      "current": [
+        "Analytics",
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "PayPal Marketing Solutions enables merchants to see shopper insights and provide custom rewards for buyers with PayPal accounts."
+    },
+    {
+      "name": "Perfex CRM",
+      "token": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Perfex CRM is self hosted customer relationship management software that is a great fit for almost any company, freelancer or many other uses."
+    },
+    {
+      "name": "Power CRM",
+      "token": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Power CRM is a platform tailored for vehicle protection associations, offering support to meet operational needs."
+    },
+    {
+      "name": "PushDaddy Whatsapp Chat",
+      "token": "Chatbot",
+      "current": [
+        "Ecommerce",
+        "Ecommerce Marketing"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Whatsapp Chat is an live chat and abondoned cart solution built by PushDaddy."
+    },
+    {
+      "name": "Rapid Active CRM",
+      "token": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Rapid Active CRM is an all-in-one sales and marketing automation platform designed to drive business growth."
+    },
+    {
+      "name": "Rapid Search",
+      "token": "Site Search",
+      "current": [
+        "Ecommerce"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Rapid Search is an AI-powered Shopify search tool that enhances store conversions through an advanced search bar, product filters, and instant search functionality."
+    },
+    {
+      "name": "Reunion Marketing",
+      "token": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Reunion Marketing is a digital marketing platform for automotive dealerships."
+    },
+    {
+      "name": "SOTA CRM",
+      "token": "CRM",
+      "current": [
+        "Business Software"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "SOTA CRM is a software solution designed to help businesses manage customer relationships and related data."
+    },
+    {
+      "name": "Salesforce Marketing Cloud Account Engagement",
+      "token": "Marketing Automation",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Salesforce Marketing Cloud Account Engagement (formerly known as Pardot) is an application specifically designed for B2B marketing automation."
+    },
+    {
+      "name": "Salesforce Marketing Cloud Email Studio",
+      "token": "Marketing Automation",
+      "current": [
+        "Booking System"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "Salesforce Marketing Cloud Email Studio is a powerful tool that allows you to build and send personalised emails."
+    },
+    {
+      "name": "User Accessibility",
+      "token": "Accessibility",
+      "current": [
+        "JavaScript Framework"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "User Accessibility is a solution incorporating automated site scanning and machine learning for future updates, while utilising JS to conform to WECAG standards for improved website and application ac"
+    },
+    {
+      "name": "4Partners CMS",
+      "token": "CMS",
+      "current": [
+        "Web Server"
+      ],
+      "curated": false,
+      "source": "webappanalyzer-merged.json",
+      "description": "4Partners CMS is a cloud-based solution designed for ecommerce shops."
+    }
+  ]
+}

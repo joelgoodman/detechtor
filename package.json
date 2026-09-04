@@ -27,7 +27,10 @@
     "base-rate": "node scripts/base-rate-report.js",
     "emit-js-probe": "node scripts/emit-js-probe.js",
     "test:tiered": "node scripts/tiered-regression.js --assert",
-    "audit:categories": "node scripts/category-audit.js"
+    "audit:categories": "node scripts/category-audit.js",
+    "audit:nametoken": "node scripts/category-nametoken-audit.js",
+    "prevalence": "node scripts/corpus-prevalence.js",
+    "audit:coverage": "node scripts/category-coverage.js"
   },
   "keywords": [
     "technology-detection",

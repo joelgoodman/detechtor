@@ -3,18 +3,24 @@
     "purpose": "Names that refer to the SAME PRODUCT but do not collide by spelling. Resolved at load by src/technology-identity.js: the alias's evidence is merged into the canonical entry and the alias name disappears.",
     "why_explicit": "Case/spacing/punctuation variants (AccessiBe vs accessiBe) are a spelling accident and are collapsed automatically. Vendor renames and product-name changes are NOT derivable from the strings and need human knowledge, so they are recorded here where they can be reviewed rather than guessed.",
     "evidence": "Each entry below was confirmed by DETECTION-SET overlap over 645 scannable institutions, not by name similarity. See scripts/category-audit.js (CO_OCCURRENCE_DUPLICATE) and docs/category-audit.json.",
-    "caution": "Merging unions the evidence and keeps the canonical's categories. Do NOT add an entry unless the two names are genuinely the same product — high co-occurrence alone is not enough. `Salesforce` and `TargetX` overlap at Jaccard 0.57 because TargetX is BUILT ON Salesforce; they are different products and must stay separate.",
+    "caution": "Merging unions the evidence and keeps the canonical's categories. Do NOT add an entry unless the two names are genuinely the same product \u2014 high co-occurrence alone is not enough. `Salesforce` and `TargetX` overlap at Jaccard 0.57 because TargetX is BUILT ON Salesforce; they are different products and must stay separate.",
     "generated": "2026-08-09",
     "ticket": "UNI-233"
   },
   "aliases": {
     "Omni CMS": "Modern Campus CMS",
     "OmniCMS": "Modern Campus CMS",
-    "Slate": "Slate (Technolutions)"
+    "Slate": "Slate (Technolutions)",
+    "Typekit": "Adobe Fonts",
+    "CIVIC": "Cookie Control",
+    "Cybot": "Cookiebot",
+    "Koha ILS": "Koha",
+    "Navigate": "EAB Navigate",
+    "Starfish Retention Solutions": "Starfish"
   },
   "reasons": {
-    "Omni CMS": "Modern Campus renamed the product: OU Campus → OmniUpdate/OmniCMS → Omni CMS → Modern Campus CMS. Confirmed by detection-set overlap J=0.957 over 67/70 institutions. ⚠️ The base `Omni CMS` entry holds the dom rule a[href*='a.cms.omniupdate.com/11/'] — the ONLY evidence path that made Omni CMS detectable at all before UNI-224, where it was verified 29/29. The merge unions evidence precisely so that rule survives the rename.",
-    "OmniCMS": "Same product, older vendor spelling. Also carried its category as the STRING \"CMS\", which mapCategory lowercased to \"cms\" and the case-sensitive signal check then dropped — so this entry was silently not counted as a CMS at all.",
-    "Slate": "Technolutions Slate, the higher-ed admissions CRM. Detection sets are IDENTICAL (Jaccard 1.00, 111/111 institutions) with `Slate (Technolutions)`. The higher-ed-infra.json entry was tagged cats [52,53] = Chatbot + SIS; its own _validation note already said 'cats [52,53]=Chatbot/SIS is mis-categorized; Slate is an admissions CRM — follow-up'. This is that follow-up. Canonical is the higher-ed-crm.json entry (CRM, id 303); the infra entry's richer evidence (mx.technolutions.net, window.ping_, the Technolutions js global, meta application-name, the x-slate-instance header) is merged in rather than lost."
+    "Omni CMS": "Modern Campus renamed the product: OU Campus \u2192 OmniUpdate/OmniCMS \u2192 Omni CMS \u2192 Modern Campus CMS. Confirmed by detection-set overlap J=0.957 over 67/70 institutions. \u26a0\ufe0f The base `Omni CMS` entry holds the dom rule a[href*='a.cms.omniupdate.com/11/'] \u2014 the ONLY evidence path that made Omni CMS detectable at all before UNI-224, where it was verified 29/29. The merge unions evidence precisely so that rule survives the rename.",
+    "OmniCMS": "Same product, older vendor spelling. Also carried its category as the STRING \"CMS\", which mapCategory lowercased to \"cms\" and the case-sensitive signal check then dropped \u2014 so this entry was silently not counted as a CMS at all.",
+    "Slate": "Technolutions Slate, the higher-ed admissions CRM. Detection sets are IDENTICAL (Jaccard 1.00, 111/111 institutions) with `Slate (Technolutions)`. The higher-ed-infra.json entry was tagged cats [52,53] = Chatbot + SIS; its own _validation note already said 'cats [52,53]=Chatbot/SIS is mis-categorized; Slate is an admissions CRM \u2014 follow-up'. This is that follow-up. Canonical is the higher-ed-crm.json entry (CRM, id 303); the infra entry's richer evidence (mx.technolutions.net, window.ping_, the Technolutions js global, meta application-name, the x-slate-instance header) is merged in rather than lost."
   }
 }
