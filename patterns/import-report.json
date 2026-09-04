@@ -7362,5 +7362,7 @@
     "WordPress",
     "TYPO3",
     "Kentico"
-  ]
+  ],
+  "artifactSha256": "ce515bf159239caad6de8744a49f623b54527d347aa1858b8867e7743e9dba80",
+  "artifactShaRecordedBy": "UNI-237 Task 8: deleted never-fireable technologies"
 }

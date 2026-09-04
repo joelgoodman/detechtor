@@ -12,6 +12,166 @@ const { normalizeDefinition } = require('../src/pattern-normalize.js');
 
 const WEBAPPANALYZER_BASE_URL = 'https://raw.githubusercontent.com/enthec/webappanalyzer/main/src/technologies/';
 
+// UNI-237 Task 8: technologies with no evidence field the engine reads (see
+// F = ["html","scripts","scriptSrc","headers","meta","dom","js","cookies","url","xhr"]
+// in the recount script). They can never fire — mostly `dns`/`cpe`/`implies`/`cats`-only
+// upstream stubs (carriers, mail/DNS/hosting providers, languages, databases) — and a
+// re-import would otherwise bring them back. The list is generated, not hand-curated;
+// see Task 8 of docs/superpowers/plans/2026-08-11-detection-precision.md.
+const NEVER_FIREABLE = new Set([
+  "34SP.com",
+  "4Partners",
+  "ALL-INKL",
+  "ANS",
+  "APC",
+  "AWS Certificate Manager",
+  "Amazon Aurora",
+  "Amazon EFS",
+  "Amazon SES",
+  "Apple iCloud Mail",
+  "Asendia",
+  "Australia Post",
+  "Autoketing",
+  "B2C Europe",
+  "BRT",
+  "Billbee",
+  "Boxtal",
+  "Bpost",
+  "Budbee",
+  "Bugcrowd",
+  "CTT",
+  "Celeritas",
+  "Chronofresh",
+  "Chronopost",
+  "CityMail",
+  "Colis Privé",
+  "Colissimo",
+  "Contabo",
+  "Correos",
+  "Coureon",
+  "DPD",
+  "DX",
+  "Dachser",
+  "Delivengo",
+  "Deno",
+  "Detectify",
+  "Deutsche Post",
+  "DigiCert",
+  "DomainFactory",
+  "Doteasy",
+  "DreamHost",
+  "Dropbox",
+  "DutchIS",
+  "Easylog",
+  "Ecovium",
+  "Elixir",
+  "Envialia",
+  "Facebook Ads",
+  "FastComet",
+  "FedEx",
+  "France Express",
+  "Frequenceo",
+  "GEODIS",
+  "GLS",
+  "Genoo",
+  "Go",
+  "GoDaddy",
+  "Google Ads",
+  "Google App Engine",
+  "Google Cloud",
+  "Haskell",
+  "Hermes",
+  "Homerr",
+  "HostEurope",
+  "Hostens",
+  "Hostgator",
+  "Hosting Ukraine",
+  "Hostiq",
+  "Hostpoint",
+  "IONOS",
+  "Identrust",
+  "Infomaniak",
+  "JsObservable",
+  "Keen Delivery",
+  "Keybase",
+  "Kotlin",
+  "Leaseweb",
+  "Let's Encrypt",
+  "LogoiX",
+  "Lucene",
+  "MRW",
+  "Macaron",
+  "Mailgun",
+  "Mailjet",
+  "MariaDB",
+  "Microsoft 365",
+  "Mittwald",
+  "Mondial Relay",
+  "MongoDB",
+  "My Flying Box",
+  "MySQL",
+  "NACEX",
+  "Nexive",
+  "One.com",
+  "Oracle WebLogic Server",
+  "Osterreichische Post",
+  "Panda CSS",
+  "Parcelforce",
+  "Percona",
+  "Poste Italiane",
+  "PostgreSQL",
+  "PrimeNG",
+  "PrimeReact",
+  "Proton Mail",
+  "QUIC.cloud",
+  "REG.RU",
+  "Red Hat Gluster",
+  "Red je Pakketje",
+  "Redis",
+  "Relais Colis",
+  "Royal Mail",
+  "Rspack",
+  "Rust",
+  "SEUR",
+  "SQLite",
+  "SWC",
+  "Saba.Host",
+  "Sakura Internet",
+  "Scala",
+  "Sectigo",
+  "Sendgrid",
+  "Sitecore Experience Platform",
+  "Solr",
+  "SparkPost",
+  "Strato",
+  "Thawte",
+  "Tipsa",
+  "Transmart",
+  "Trunkrs",
+  "TypeDoc",
+  "TypeScript",
+  "UK Mail",
+  "UKFast",
+  "UPS",
+  "USPS",
+  "VentraIP",
+  "Vultr",
+  "WebHostUK",
+  "WebRTC",
+  "Webmin",
+  "Whistl",
+  "World4You",
+  "Xserver",
+  "YalinHost",
+  "Yandex.Cloud",
+  "Yodel",
+  "Zeleris",
+  "Zoho",
+  "Zoho Mail",
+  "idCloudHost",
+  "shadcn/ui",
+]);
+
 // Letters that contain major CMSes and technologies we care about
 const IMPORTANT_LETTERS = [
   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
@@ -142,17 +302,32 @@ async function main() {
     let stripped = 0;
     for (const [name, def] of Object.entries(mergedPatterns)) {
       if (name === '_metadata' || !def || typeof def !== 'object') continue;
+      // UNI-237 Task 8: technologies with no evidence field the engine reads. See NEVER_FIREABLE
+      // above — the override layer can't help here since it removes patterns, not technologies.
+      if (NEVER_FIREABLE.has(name)) { delete mergedPatterns[name]; continue; }
       const raw = JSON.stringify(def);
       normalizeDefinition(def);
+      // UNI-237: `text` is read by nothing in src/ and duplicates `html`. Strip at import so a
+      // re-import does not resurrect 60 dead declarations.
+      if (def && typeof def === 'object' && def.text !== undefined) delete def.text;
       if (JSON.stringify(def) !== raw) stripped++;
     }
     console.log(`Stripped Wappalyzer modifiers from ${stripped} technologies`);
 
     // Save the merged patterns
-    const outputPath = path.join(__dirname, '..', 'patterns', 'webappanalyzer-merged.json');
+    // UNI-237: lives under patterns/generated/ — a build artifact, moved so the path itself says so.
+    const outputPath = path.join(__dirname, '..', 'patterns', 'generated', 'webappanalyzer-merged.json');
     await fs.ensureDir(path.dirname(outputPath));
     await fs.writeJson(outputPath, mergedPatterns, { spaces: 2 });
     console.log(`Saved merged patterns to ${outputPath}`);
+
+    // UNI-237: record the artifact's hash so scripts/lint-generated.js can detect a hand-edit.
+    // Must be computed AFTER the file is written, from the file itself — hashing the in-memory
+    // object would not catch an edit made to the file on disk, which is the whole point.
+    const crypto = require('crypto');
+    const artifactSha256 = crypto.createHash('sha256')
+      .update(require('fs').readFileSync(outputPath))
+      .digest('hex');
 
     // Generate a report
     const categories = categorizePatterns(mergedPatterns);
@@ -180,7 +355,8 @@ async function main() {
       totalPatterns: Object.keys(mergedPatterns).length,
       webappPatternsImported: Object.keys(webappPatterns).length,
       categories,
-      popularCMS
+      popularCMS,
+      artifactSha256
     }, { spaces: 2 });
 
     console.log(`\\nImport complete! Report saved to ${reportPath}`);

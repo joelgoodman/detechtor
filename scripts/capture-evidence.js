@@ -243,7 +243,7 @@ async function captureUrl(detector, browser, tech, url, outDir) {
     })),
     // Quick check: did the target tech itself fire?
     target_tech_matched: matched.some(
-      m => m.name.toLowerCase() === tech.toLowerCase() && m.confidence >= config.minConfidence
+      m => m.name.toLowerCase() === tech.toLowerCase()
     ),
   };
 

@@ -5,7 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const { categoryMapping } = require('../src/category-mapping.js');
-const base = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../patterns/webappanalyzer-merged.json'), 'utf8'));
+const base = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../patterns/generated/webappanalyzer-merged.json'), 'utf8'));
 const byId = {};
 for (const [name, def] of Object.entries(base)) {
   if (name === '_metadata' || !def || !Array.isArray(def.cats)) continue;

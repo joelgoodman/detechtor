@@ -46,7 +46,7 @@
     "version": "2.0.0",
     "description": "General analytics/marketing patterns not covered by WebAppAnalyzer base",
     "generated": "2026-04-21",
-    "notes": "Higher-ed specific patterns moved to higher-ed-*.json files"
+    "notes": "Higher-ed specific patterns moved to higher-ed-*.json files. UNI-237 code-review fix also parked 'Angular' here even though it is not analytics/marketing: its base definition lives in the generated (build-artifact) file, which scripts/lint-generated.js hard-blocks hand-editing; the pattern-overrides.json layer can only REMOVE evidence, not rewrite a regex. 'ng-app' needed a rewrite (bare 'ng-app' was 87% false positive, colliding with prose like 'engineeri[ng-app]lied'), not a removal -- removal alone would have cost 5 real detections (measured against the corpus) that a tightened regex does not. lint-generated.js's own guidance for a change that is neither a removal nor a category fix is 'move the technology into a curated patterns/higher-ed-*.json' -- this is the closest existing non-higher-ed curated file. There is no dedicated general-frameworks file; creating one was judged out of scope for this fix."
   },
   "Matomo": {
     "cats": [
@@ -72,5 +72,19 @@
     },
     "confidence": 90,
     "website": "https://matomo.org"
+  },
+  "Angular": {
+    "categories": [
+      "JavaScript Framework"
+    ],
+    "html": [
+      "data-ng-",
+      "(data-)?ng-app[=\"' >]"
+    ],
+    "scripts": [
+      "angular"
+    ],
+    "higher_ed": false,
+    "description": "TypeScript-based web application framework"
   }
 }

@@ -26,8 +26,8 @@ npm install
 # Basic scan
 node cli.js --url "https://mit.edu"
 
-# Verbose output with custom confidence threshold
-node cli.js --url "https://harvard.edu" --verbose --confidence 50
+# Verbose output
+node cli.js --url "https://harvard.edu" --verbose
 
 # Save results to file
 node cli.js --url "https://stanford.edu" --output results.json
@@ -56,7 +56,6 @@ scan();
 Edit `config.js` to customize:
 
 - `timeout`: Scan timeout in milliseconds (default: 30000)
-- `minConfidence`: Minimum confidence threshold 0-100 (default: 30)
 - `maxPagesToScan`: Maximum number of pages to scan (default: 5)
 - `userAgent`: Browser user agent string
 - `verbose`: Enable verbose logging

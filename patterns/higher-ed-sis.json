@@ -36,7 +36,6 @@
       "campusmgmt",
       "anthology.*student",
       "campusnexus",
-      "campus.*nexus",
       "anthology",
       "anthology\\.com",
       "campus\\.anthology\\.com",
@@ -123,8 +122,7 @@
     ],
     "description": "CampusLogic student financial aid and SIS platform",
     "html": [
-      "campuslogic",
-      "campus.*logic"
+      "campuslogic"
     ],
     "scripts": [
       "campuslogic"
@@ -186,8 +184,7 @@
     ],
     "description": "Common Application admissions platform",
     "html": [
-      "commonapp",
-      "common.*application"
+      "commonapp"
     ],
     "scripts": [
       "commonapp"
@@ -259,8 +256,7 @@
     ],
     "description": "DegreeWorks degree audit and planning system",
     "html": [
-      "degreeworks",
-      "degree.*works"
+      "degreeworks"
     ],
     "scripts": [
       "degreeworks"
@@ -341,7 +337,7 @@
     ],
     "description": "Evisions higher education analytics",
     "html": [
-      "evisions"
+      "evisions\\.com"
     ],
     "scripts": [
       "evisions"
@@ -359,12 +355,9 @@
     ],
     "description": "FACTS Student Information System",
     "html": [
-      "facts.*sis",
-      "factsmgt",
-      "facts.*student"
+      "factsmgt"
     ],
     "scripts": [
-      "facts.*sis",
       "factsmgt"
     ],
     "js": {
@@ -381,7 +374,6 @@
     ],
     "description": "FAST financial aid management system",
     "html": [
-      "fast.*financial.*aid",
       "getfast"
     ],
     "scripts": [
@@ -419,8 +411,7 @@
     ],
     "description": "Gradelink student information system",
     "html": [
-      "gradelink",
-      "grade.*link"
+      "gradelink"
     ],
     "scripts": [
       "gradelink"
@@ -438,8 +429,7 @@
     ],
     "description": "Infinite Campus student information system",
     "html": [
-      "infinite.*campus",
-      "infinitecampus\\.com"
+      "infinitecampus\\."
     ],
     "scripts": [
       "infinitecampus"
@@ -603,7 +593,6 @@
     "description": "Oracle PeopleSoft Campus Solutions student information system.",
     "html": [
       "peoplesoft",
-      "campus.*solutions",
       "PS_TOKEN",
       "PSPRODNAME.*Campus",
       "oracle.*peoplesoft",
@@ -675,8 +664,7 @@
     "description": "PowerCampus student information system.",
     "html": [
       "powercampus",
-      "eCollege",
-      "power.*campus"
+      "[^a-z0-9]ecollege"
     ],
     "scripts": [
       "powercampus"
@@ -742,8 +730,7 @@
     ],
     "description": "QuickSchools cloud-based student information system",
     "html": [
-      "quickschools",
-      "quick.*schools"
+      "quickschools"
     ],
     "scripts": [
       "quickschools"
@@ -782,12 +769,9 @@
     ],
     "description": "Regent Education student information system",
     "html": [
-      "regent.*education",
       "regenteducation"
     ],
-    "scripts": [
-      "regent.*education"
-    ],
+    "scripts": [],
     "js": {
       "RegentEducation": ""
     },
@@ -924,13 +908,11 @@
     ],
     "description": "Smart Catalog curriculum and catalog management system",
     "html": [
-      "smart.*catalog",
       "smartcatalog",
       "myedu.*catalog"
     ],
     "scripts": [
-      "smartcatalog",
-      "smart.*catalog"
+      "smartcatalog"
     ],
     "js": {
       "SmartCatalog": "",
@@ -987,7 +969,6 @@
     "description": "Tribal Student Management System (UK Higher Education)",
     "html": [
       "tribal.*student.*management",
-      "tribal.*education",
       "ebs.*tribal"
     ],
     "scripts": [
@@ -1010,7 +991,6 @@
     "html": [
       "unit4.*student",
       "coda.*student",
-      "tribal.*student",
       "unit4.*finance",
       "unit4",
       "unit4\\.com",
@@ -1036,8 +1016,7 @@
     ],
     "description": "Veracross independent school management system",
     "html": [
-      "veracross",
-      "vera.*cross"
+      "veracross"
     ],
     "scripts": [
       "veracross"

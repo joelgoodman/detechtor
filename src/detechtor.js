@@ -11,6 +11,8 @@ const { resolveIdentities } = require('./technology-identity');
 const ALIASES = require('../patterns/technology-aliases.json');
 const { applyCategoryOverrides } = require('./category-overrides');
 const CATEGORY_OVERRIDES = require('../patterns/category-overrides.json');
+const PATTERN_OVERRIDES = require('../patterns/pattern-overrides.json');
+const { applyPatternOverrides } = require('./pattern-overrides');
 
 class DeTECHtor {
   constructor(options = {}) {
@@ -107,6 +109,10 @@ class DeTECHtor {
               normalizeDefinition(def);
               def._curated = curated;
               def._sourceFile = sourceFile;
+              // UNI-237: anything under patterns/generated/ is a build artifact —
+              // scripts/import-webappanalyzer.js rewrites it wholesale. Stamped so any script,
+              // test or reader inspecting a definition knows an in-place edit will be reverted.
+              def._generated = /(^|[\\/])generated[\\/]/.test(patternPath);
             }
             // Later (curated) files still override earlier (base) on name collision.
             patterns[name] = def;
@@ -142,6 +148,16 @@ class DeTECHtor {
       if (config.verbose) {
         const n = Object.keys(rules).filter((k) => k !== '_comment' && resolved[k]).length;
         if (n) console.log(`Applied ${n} category override(s)`);
+      }
+
+      // UNI-237: evidence-pattern removals, applied after the category layer. Order does not matter
+      // — the two layers touch disjoint fields — but keeping them adjacent keeps the "what does a
+      // pristine load mean" answer in one place.
+      const patternRules = PATTERN_OVERRIDES.overrides || {};
+      resolved = applyPatternOverrides(resolved, patternRules);
+      if (config.verbose) {
+        const n2 = Object.keys(patternRules).filter((k) => k !== '_comment' && resolved[k]).length;
+        if (n2) console.log(`Applied ${n2} pattern override(s)`);
       }
     }
 
@@ -946,12 +962,11 @@ class DeTECHtor {
   
   matchPatterns(evidence) {
     const detected = [];
-    
+
     for (const [techName, pattern] of Object.entries(this.patterns)) {
       try {
         const match = this.evaluatePattern(techName, pattern, evidence);
-        
-        if (match.confidence >= config.minConfidence) {
+        if (match.confidence > 0) {
           detected.push(match);
         }
       } catch (error) {
@@ -960,10 +975,90 @@ class DeTECHtor {
         }
       }
     }
-    
-    return detected.sort((a, b) => b.confidence - a.confidence);
+
+    // Sort/tie-break on the reported (capped) confidence for ordering, but applyExcludes resolves
+    // mutual ties on the UNCAPPED `_rawConfidence` (see evaluatePattern) — see the comment on
+    // applyExcludes for why the capped value alone silently defeats the tie-break.
+    detected.sort((a, b) => b.confidence - a.confidence);
+    const resolved = this.applyExcludes(detected);
+    // `_rawConfidence` is an internal resolution aid, not part of the public match shape — strip it
+    // before these matches reach matchPatterns' callers (single-page results, multi-page merge,
+    // probe passes all funnel through here).
+    for (const m of resolved) delete m._rawConfidence;
+    return resolved;
   }
-  
+
+  /**
+   * UNI-237: `excludes` was declared on 45 patterns and read by nothing.
+   *
+   * The real shape of the 45, measured against the loaded pattern set: only 3 pairs are MUTUAL —
+   * both sides declare `excludes` back at each other (Lodash <-> Underscore.js, AngularDart <->
+   * AngularJS, HTTP/2 <-> SPDY). The other 44 rules are ONE-DIRECTIONAL: only the declaring pattern
+   * names the other (AngularJS -> Angular, Piwik PRO Core -> Matomo Analytics, Backdrop -> Drupal,
+   * and so on) — the named side declares no `excludes` of its own.
+   *
+   * The two shapes mean different things and must resolve differently:
+   *
+   * - MUTUAL: neither side claims authority over the other, so there is nothing to defer to except
+   *   the evidence itself. Higher confidence wins; an exact tie keeps both, because dropping a real
+   *   detection is worse than reporting two when there is no principled way to choose.
+   * - ONE-DIRECTIONAL: the declaring pattern IS asserting authority — "when I am present, the named
+   *   technology is a guaranteed false positive on this evidence." AngularJS 1.x scripts contain
+   *   the literal string "angular", which unavoidably also matches Angular's pattern; Piwik PRO is
+   *   a Matomo fork, so a Piwik PRO page necessarily also matches Matomo's fingerprint. That is not
+   *   a competing detection to be weighed by confidence — an earlier version of this function used
+   *   the confidence tie-break for these too, and because both real declarers (AngularJS at 16,
+   *   Piwik PRO Core at 29) fire at LOWER confidence than the technology they name (Angular at 438,
+   *   Matomo Analytics at 95), the tie-break silently never suppressed either — the feature shipped
+   *   inert for exactly the two cases it exists to fix. So: suppress the named technology
+   *   unconditionally whenever the declarer also fires, regardless of either side's confidence.
+   *
+   * A suppressed match never gets to apply its own `excludes` rules (`suppressed.has` guard below)
+   * — suppression does not chain transitively through something that itself lost the argument.
+   *
+   * UNI-237 fix: the mutual tie-break MUST compare the uncapped `_rawConfidence`, not the reported
+   * `confidence`. `confidence` is `Math.min(rawTotal, 100)` (evaluatePattern) and 4,012 of 6,347
+   * technologies (63.2%) can reach that cap — so two mutually-excluding technologies that both
+   * cap out at 100 read as an "exact tie" under the reported value even when their underlying
+   * signal strength (raw total) differs, and the tie-break's "keep both" rule silently no-ops the
+   * exclusion. Comparing `_rawConfidence` resolves the tie for real; the reported `confidence`
+   * stays capped for display.
+   *
+   * @param {Array<{name: string, confidence: number, _rawConfidence: number}>} sorted confidence-descending matches
+   */
+  applyExcludes(sorted) {
+    const byName = new Map(sorted.map((m) => [m.name, m]));
+    const suppressed = new Set();
+
+    const declaresBack = (declarerName, targetName) => {
+      const targetRules = this.patterns[targetName] && this.patterns[targetName].excludes;
+      return Array.isArray(targetRules) && targetRules.includes(declarerName);
+    };
+
+    for (const match of sorted) {
+      if (suppressed.has(match.name)) continue;
+      const rules = this.patterns[match.name] && this.patterns[match.name].excludes;
+      if (!Array.isArray(rules)) continue;
+
+      for (const victimName of rules) {
+        const victim = byName.get(victimName);
+        if (!victim || victim.name === match.name) continue;
+
+        if (declaresBack(match.name, victimName)) {
+          // Mutual: tie-break on the UNCAPPED raw total, not the display-capped `confidence` (see
+          // class comment above). Higher raw score wins; an exact raw tie keeps both.
+          if (victim._rawConfidence === match._rawConfidence) continue;
+          if (victim._rawConfidence < match._rawConfidence) suppressed.add(victimName);
+        } else {
+          // One-directional: the declarer is overriding, not competing. Suppress unconditionally.
+          suppressed.add(victimName);
+        }
+      }
+    }
+
+    return sorted.filter((m) => !suppressed.has(m.name));
+  }
+
   evaluatePattern(name, pattern, evidence) {
     let confidence = 0;
     const matchEvidence = [];
@@ -988,7 +1083,15 @@ class DeTECHtor {
     }
     
     // Script source matching (support both formats)
-    const scriptPatterns = pattern.scripts || pattern.scriptSrc || [];
+    // UNI-237: `||` discarded scriptSrc entirely whenever scripts was also present — 85 patterns
+    // declare both and 54 of those with DIFFERENT content, so half their evidence never ran.
+    // Deduplicated because the other 31 declare IDENTICAL content in both fields: concatenating
+    // blind would score one real script tag twice and push the same evidence string twice, which
+    // Task 3's excludes tie-break resolves on.
+    const scriptPatterns = [...new Set([
+      ...(Array.isArray(pattern.scripts) ? pattern.scripts : []),
+      ...(Array.isArray(pattern.scriptSrc) ? pattern.scriptSrc : []),
+    ])];
     if (Array.isArray(scriptPatterns)) {
       for (const scriptPattern of scriptPatterns) {
         try {
@@ -1173,7 +1276,40 @@ class DeTECHtor {
         }
       }
     }
-    
+
+    // UNI-237: `url` (76 patterns) and `xhr` (100) were declared and read by nothing. Both are
+    // live-path only — evidenceFromHtml supplies neither finalUrl nor networkHosts, so these never
+    // fire during a corpus pass. That is expected, not a bug.
+    //
+    // They are weighted differently on purpose. `xhr` matches a host the page actually contacted
+    // (cdn.ampproject.org) — strong, on a par with dom/meta at 70. `url` is a substring test against
+    // a single page URL (`\.cfm(?:$|\?)`) — weaker than a script src at 60, stronger than a bare
+    // html substring at 40. The scale these sit on: html 40, url 50, script 60, dom/meta/cookies/xhr
+    // 70, js 80. It is load-bearing: applyExcludes (Task 3) resolves mutually-excluding technologies
+    // by highest confidence, so these numbers decide which detection survives.
+    if (Array.isArray(pattern.url) && typeof evidence.finalUrl === 'string') {
+      for (const urlPattern of pattern.url) {
+        try {
+          if (new RegExp(urlPattern, 'i').test(evidence.finalUrl)) {
+            confidence += 50;
+            matchEvidence.push(`URL: ${urlPattern}`);
+          }
+        } catch { /* invalid regex; lint-patterns gates these */ }
+      }
+    }
+
+    if (Array.isArray(pattern.xhr) && Array.isArray(evidence.networkHosts)) {
+      for (const xhrPattern of pattern.xhr) {
+        try {
+          const re = new RegExp(xhrPattern, 'i');
+          if (evidence.networkHosts.some((h) => re.test(String(h)))) {
+            confidence += 70;
+            matchEvidence.push(`XHR: ${xhrPattern}`);
+          }
+        } catch { /* invalid regex; lint-patterns gates these */ }
+      }
+    }
+
     // Normalize categories to always be strings
     let categories = pattern.categories || pattern.cats || ['Unknown'];
     if (Array.isArray(categories)) {
@@ -1185,6 +1321,10 @@ class DeTECHtor {
     return {
       name,
       confidence: Math.min(confidence, 100),
+      // Internal-only: the uncapped total, kept so applyExcludes can resolve mutual-exclude ties
+      // that the display cap would otherwise flatten (UNI-237). Stripped before matchPatterns
+      // returns — never part of the public match shape.
+      _rawConfidence: confidence,
       categories: categories,
       evidence: config.includeEvidence ? matchEvidence : [],
       version: this.extractVersion({name: name}, evidence),

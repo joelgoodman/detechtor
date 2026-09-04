@@ -19,8 +19,8 @@ npm test
 # Test a single URL scan
 node cli.js --url "https://example.edu" --verbose
 
-# Scan with custom confidence threshold
-node cli.js --url "https://example.edu" --confidence 50 --output results.json
+# Scan and save output to a file
+node cli.js --url "https://example.edu" --output results.json
 ```
 
 ### Pattern Management
@@ -44,7 +44,7 @@ node scripts/list-sis-systems.js
 npm run scan -- --url "https://example.edu"
 
 # Direct CLI invocation (after npm install -g)
-detechtor --url "https://example.edu" --verbose --confidence 30
+detechtor --url "https://example.edu" --verbose
 ```
 
 ## Architecture
@@ -58,7 +58,7 @@ detechtor --url "https://example.edu" --verbose --confidence 30
 - Always call `shutdown()` after scanning to close browser
 
 **Pattern System** (`patterns/`)
-- `webappanalyzer-merged.json`: Comprehensive patterns (2700+ technologies)
+- `generated/webappanalyzer-merged.json`: Comprehensive patterns (2700+ technologies). Build artifact — never hand-edit (UNI-237); `npm test` gates on `scripts/lint-generated.js`.
 - `enhanced-payment-analytics.json`: Payment, analytics, video platforms
 - `fediverse-social-patterns.json`: Corrected categorizations for Fediverse/ActivityPub platforms
 - Custom higher-ed patterns override upstream WebAppAnalyzer patterns
@@ -238,7 +238,7 @@ const category2 = mapCategory("Web Server"); // Returns "web server" (lowercased
 - **Browser Path**: Set `CHROME_EXECUTABLE_PATH` env var if Chrome/Chromium not at default path
 - **Node Version**: Requires Node.js >= 18.0.0
 - **Pattern Updates**: Run `npm run update-patterns` to sync from WebAppAnalyzer upstream
-- **Confidence Threshold**: Default is 30%, adjust with `--confidence` flag or config
+- **Confidence**: `confidence` is a reported signal-strength value on each match, not a filter — there is no minimum threshold (UNI-237)
 - **Security**: Scanner automatically skips admin/login paths defined in `excludePaths`
 - **Rate Limiting**: Built-in delays between requests (`minDelayBetweenRequests: 1000ms`)
 - **Timeout Handling**: Main page has 30s timeout, additional pages have 15s timeout

@@ -32,8 +32,8 @@ npm install
 # Scan a URL
 node cli.js --url "https://mit.edu" --verbose
 
-# Scan with custom confidence threshold
-node cli.js --url "https://harvard.edu" --confidence 50 --output results.json
+# Scan and save output to a file
+node cli.js --url "https://harvard.edu" --output results.json
 
 # Run pattern tests
 npm test
@@ -57,7 +57,7 @@ npm run patterns-report
 
 Loaded in order by `src/config.js` — later files override earlier ones on name collisions, so higher-ed files take precedence over the WebAppAnalyzer base.
 
-- `webappanalyzer-merged.json` - Base: ~6,400 patterns imported from WebAppAnalyzer
+- `generated/webappanalyzer-merged.json` - Base: ~6,400 patterns imported from WebAppAnalyzer. Build artifact — never hand-edit (UNI-237); `npm test` gates on `scripts/lint-generated.js`.
 - `general-analytics-extensions.json` - GA4, Adobe Analytics, and other general patterns not in the base
 - `fediverse-social-patterns.json` - Fediverse / social networking overrides
 - `higher-ed-cms.json` - Higher-ed CMSes (TerminalFour, Cascade, Modern Campus CMS, Ingeniux, Finalsite, etc.)
@@ -110,7 +110,6 @@ The scanner collects:
 Key settings in `src/config.js`:
 - `timeout` - Page load timeout (default: 30000ms)
 - `maxPagesToScan` - Pages to crawl per site (default: 5)
-- `minConfidence` - Minimum confidence to report (default: 30)
 - `strategicPaths` - Priority paths to discover (/login, /portal, /student, /canvas, etc.)
 - `browserOptions` - Puppeteer launch options including Chrome path
 

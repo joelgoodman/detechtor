@@ -22,12 +22,6 @@ const argv = yargs
     type: 'boolean',
     default: false
   })
-  .option('confidence', {
-    alias: 'c',
-    describe: 'Minimum confidence threshold (0-100)',
-    type: 'number',
-    default: 30
-  })
   .option('timeout', {
     alias: 't',
     describe: 'Scan timeout in seconds',
@@ -59,7 +53,6 @@ async function main() {
   // Override config with CLI options
   const config = require('./src/config');
   config.verbose = argv.verbose;
-  config.minConfidence = argv.confidence;
   config.timeout = argv.timeout * 1000; // Convert to milliseconds
 
   let results;
@@ -71,7 +64,6 @@ async function main() {
     if (argv.verbose) {
       console.log('Configuration:');
       console.log(`  Timeout: ${config.timeout}ms`);
-      console.log(`  Min Confidence: ${config.minConfidence}%`);
       console.log(`  User Agent: ${config.userAgent}\n`);
     }
 
@@ -198,7 +190,7 @@ async function main() {
       }
 
     } else {
-      console.log('⚠️  No technologies detected above confidence threshold');
+      console.log('⚠️  No technologies detected');
     }
 
     if (argv.verbose) {

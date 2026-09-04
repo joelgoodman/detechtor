@@ -260,23 +260,6 @@
     ],
     "website": "https://ainiro.io"
   },
-  "ALL-INKL": {
-    "cats": [
-      88
-    ],
-    "description": "ALL-INKL is a German-based web hosting provider that promises to offer high-performance services for fair prices.",
-    "dns": {
-      "SOA": [
-        "\\.kasserver\\.com"
-      ]
-    },
-    "icon": "ALL-INKL.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://all-inkl.com"
-  },
   "AMP": {
     "cats": [
       12
@@ -323,24 +306,6 @@
     ],
     "website": "https://amp-wp.org"
   },
-  "ANS": {
-    "cats": [
-      88,
-      62
-    ],
-    "description": "ANS is a UK-based IT services company specializing in cloud computing, managed services, and digital transformation solutions.",
-    "dns": {
-      "SOA": [
-        "\\.ukfast\\.net"
-      ]
-    },
-    "icon": "ANS.svg",
-    "pricing": [
-      "recurring",
-      "payg"
-    ],
-    "website": "https://www.ans.co.uk"
-  },
   "AOLserver": {
     "cats": [
       22
@@ -372,20 +337,6 @@
       "/typo3conf/ext/udem_vendor/Resources/Public/aos-([\\d\\.]+)\\;version:\\1"
     ],
     "website": "https://michalsnik.github.io/aos/"
-  },
-  "APC": {
-    "cats": [
-      99
-    ],
-    "description": "APC offers door-to-door parcel and mail delivery.",
-    "icon": "APC.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\APC\\b"
-    ],
-    "website": "https://www.apc-pli.com"
   },
   "API Spreadsheets": {
     "cats": [
@@ -520,20 +471,6 @@
       "zanox\\.com/scripts/zanox\\.js$"
     ],
     "website": "https://www.awin.com"
-  },
-  "AWS Certificate Manager": {
-    "cats": [
-      70
-    ],
-    "certIssuer": "Amazon",
-    "cpe": "cpe:2.3:a:awstats:awstats:*:*:*:*:*:*:*:*",
-    "description": "AWS Certificate Manager is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources.",
-    "icon": "AWS Certificate Manager.svg",
-    "implies": [
-      "Amazon Web Services"
-    ],
-    "saas": true,
-    "website": "https://aws.amazon.com/certificate-manager/"
   },
   "AWS WAF Captcha": {
     "cats": [
@@ -4428,17 +4365,6 @@
     ],
     "website": "https://affiliate-program.amazon.com"
   },
-  "Amazon Aurora": {
-    "cats": [
-      34
-    ],
-    "description": "Amazon Aurora is a relational database service developed and offered by Amazon Web Services.",
-    "icon": "Amazon Aurora.svg",
-    "implies": [
-      "Amazon Web Services"
-    ],
-    "website": "https://aws.amazon.com/rds/aurora"
-  },
   "Amazon CloudFront": {
     "cats": [
       31
@@ -4525,18 +4451,6 @@
     "saas": true,
     "website": "https://aws.amazon.com/ecs/"
   },
-  "Amazon EFS": {
-    "cats": [
-      48
-    ],
-    "description": "Amazon Elastic File System is a cloud storage service provided by Amazon Web Services.",
-    "icon": "Amazon EFS.svg",
-    "implies": [
-      "Amazon Web Services"
-    ],
-    "saas": true,
-    "website": "https://aws.amazon.com/efs/"
-  },
   "Amazon ELB": {
     "cats": [
       65
@@ -4605,23 +4519,6 @@
       "s3[^ ]*\\.amazonaws\\.com/"
     ],
     "website": "https://aws.amazon.com/s3/"
-  },
-  "Amazon SES": {
-    "cats": [
-      75
-    ],
-    "description": "Amazon Simple Email Service (SES) is an email service that enables developers to send mail from within any application.",
-    "dns": {
-      "TXT": [
-        "amazonses\\.com"
-      ]
-    },
-    "icon": "Amazon SES.svg",
-    "implies": [
-      "Amazon Web Services"
-    ],
-    "saas": true,
-    "website": "https://aws.amazon.com/ses/"
   },
   "Amazon Web Services": {
     "cats": [
@@ -6041,23 +5938,6 @@
     ],
     "website": "https://developer.apple.com/sign-in-with-apple/"
   },
-  "Apple iCloud Mail": {
-    "cats": [
-      30
-    ],
-    "description": "Apple iCloud Mail is a webmail service provided by Apple, Inc.",
-    "dns": {
-      "MX": [
-        "mail\\.icloud\\.com"
-      ],
-      "TXT": [
-        "apple-domain",
-        "redirect=icloud\\.com"
-      ]
-    },
-    "icon": "Apple.svg",
-    "website": "https://www.apple.com/icloud/"
-  },
   "ApplicantStack": {
     "cats": [
       101
@@ -6820,20 +6700,6 @@
     ],
     "website": "https://asciinema.org/"
   },
-  "Asendia": {
-    "cats": [
-      99
-    ],
-    "description": "Asendia is an international mail joint venture of French La Poste and Swiss Post.",
-    "icon": "Asendia.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\Asendia\\b"
-    ],
-    "website": "https://www.asendia.com"
-  },
   "Aseqbase": {
     "cats": [
       18
@@ -7552,21 +7418,6 @@
     ],
     "website": "https://www.ausha.co"
   },
-  "Australia Post": {
-    "cats": [
-      99
-    ],
-    "description": "Australia Post is the government business enterprise that provides postal services in Australia.",
-    "icon": "AusPost.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bAusPost\\b",
-      "\\bAustralia Post\\b"
-    ],
-    "website": "https://auspost.com.au"
-  },
   "Auth0": {
     "cats": [
       69
@@ -7708,20 +7559,6 @@
       "static\\.autoconf\\.com"
     ],
     "website": "https://autoconf.com.br"
-  },
-  "Autoketing": {
-    "cats": [
-      32
-    ],
-    "description": "Autoketing is a marketing automation platform.",
-    "icon": "Autoketing.svg",
-    "pricing": [
-      "freemium",
-      "low",
-      "recurring"
-    ],
-    "saas": true,
-    "website": "https://autoketing.com"
   },
   "Autoketing Product Reviews": {
     "cats": [
@@ -8661,20 +8498,6 @@
     ],
     "website": "https://tarekraafat.github.io/autoComplete.js"
   },
-  "B2C Europe": {
-    "cats": [
-      99
-    ],
-    "description": "B2C Europe offers logistic solutions for your ecommerce businesses.",
-    "icon": "B2C Europe.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bB2C Europe\\b"
-    ],
-    "website": "https://www.b2ceurope.eu/"
-  },
   "B2Chat": {
     "cats": [
       52
@@ -8781,20 +8604,6 @@
       "generator": "^boom site builder$"
     },
     "website": "https://manaandisheh.com"
-  },
-  "BRT": {
-    "cats": [
-      99
-    ],
-    "description": "BRT, also known as Bartolini, is an Italian-based logistics service provider.",
-    "icon": "BRT.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bBRT\\b"
-    ],
-    "website": "https://www.brt.it"
   },
   "BRYNK": {
     "cats": [
@@ -10388,24 +10197,6 @@
       "\\.bileto\\.com/"
     ],
     "website": "https://www.bileto.com"
-  },
-  "Billbee": {
-    "cats": [
-      99
-    ],
-    "description": "Billbee is an order processing and inventory management solution.",
-    "icon": "Billbee.svg",
-    "pricing": [
-      "poa"
-    ],
-    "requiresCategory": [
-      6
-    ],
-    "saas": true,
-    "text": [
-      "\\bBillbee\\b"
-    ],
-    "website": "https://www.billbee.io"
   },
   "Billgang": {
     "cats": [
@@ -12620,34 +12411,6 @@
     "saas": true,
     "website": "https://www.bowtie.ai"
   },
-  "Boxtal": {
-    "cats": [
-      99
-    ],
-    "description": "Boxtal is a cloud-based multi-carrier shipping solution.",
-    "icon": "Boxtal.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bBoxtal\\b"
-    ],
-    "website": "https://www.boxtal.com"
-  },
-  "Bpost": {
-    "cats": [
-      99
-    ],
-    "description": "Bpost, also known as the Belgian Post Group, is the Belgian company responsible for the delivery of national and international mail.",
-    "icon": "Bpost.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bBpost\\b"
-    ],
-    "website": "https://www.bpost.be"
-  },
   "BrainSINS": {
     "cats": [
       76
@@ -13326,20 +13089,6 @@
     "saas": true,
     "website": "https://bubble.io"
   },
-  "Budbee": {
-    "cats": [
-      99
-    ],
-    "description": "Budbee is a tech company that operates a logistics service for ecommerce.",
-    "icon": "Budbee.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bBudbee\\b"
-    ],
-    "website": "https://app.budbee.com/"
-  },
   "BuddyPress": {
     "cats": [
       87
@@ -13396,19 +13145,6 @@
       "/bugsnag.*\\.js"
     ],
     "website": "https://bugsnag.com"
-  },
-  "Bugcrowd": {
-    "cats": [
-      16
-    ],
-    "description": "Bugcrowd is a crowdsourced cybersecurity platform.",
-    "dns": {
-      "TXT": [
-        "bugcrowd-verification"
-      ]
-    },
-    "icon": "Bugcrowd.svg",
-    "website": "https://www.bugcrowd.com"
   },
   "Buglog": {
     "cats": [
@@ -14398,21 +14134,6 @@
     ],
     "saas": true,
     "website": "https://www.wowsuite.ai/ctrwow.html"
-  },
-  "CTT": {
-    "cats": [
-      99
-    ],
-    "description": "CTT operates as the national postal service of Portugal.",
-    "icon": "CTT.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bTourline Express\\b",
-      "\\bCTT\\b"
-    ],
-    "website": "https://www.ctt.pt"
   },
   "CU Chat": {
     "cats": [
@@ -15828,20 +15549,6 @@
     },
     "website": "https://cecil.app"
   },
-  "Celeritas": {
-    "cats": [
-      99
-    ],
-    "description": "Celeritas offers transportation logistics services for package deliveries.",
-    "icon": "Celeritas.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bCeleritas\\b"
-    ],
-    "website": "https://celeritastransporte.com"
-  },
   "Cellxpert": {
     "cats": [
       71
@@ -17137,34 +16844,6 @@
     ],
     "website": "https://harvesthq.github.io/chosen/"
   },
-  "Chronofresh": {
-    "cats": [
-      99
-    ],
-    "description": "Chronofresh is an express transport service for food products.",
-    "icon": "Chronopost.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bChronofresh\\b"
-    ],
-    "website": "https://www.chronofresh.fr"
-  },
-  "Chronopost": {
-    "cats": [
-      99
-    ],
-    "description": "Chronopost provides a domestic and international express shipping and delivery service.",
-    "icon": "Chronopost.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bChronopost\\b"
-    ],
-    "website": "https://www.chronopost.fr"
-  },
   "ChurnZero": {
     "cats": [
       97
@@ -17290,20 +16969,6 @@
     ],
     "saas": true,
     "website": "https://www.cityhive.net"
-  },
-  "CityMail": {
-    "cats": [
-      99
-    ],
-    "description": "CityMail is a private postal organisation operating in Sweden.",
-    "icon": "CityMail.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bCitymail\\b"
-    ],
-    "website": "https://www.citymail.se"
   },
   "CiviCRM": {
     "cats": [
@@ -19395,34 +19060,6 @@
     ],
     "website": "https://colibriwp.com"
   },
-  "Colis Privé": {
-    "cats": [
-      99
-    ],
-    "description": "Colis Privé is a private parcel delivery service provider specialised in last-mile delivery.",
-    "icon": "Colis Prive.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bColis Priv[eé]\\b"
-    ],
-    "website": "https://www.colisprive.fr"
-  },
-  "Colissimo": {
-    "cats": [
-      99
-    ],
-    "description": "Colissimo is a 'drop off' parcel delivery service.",
-    "icon": "DPD.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bColissimo\\b"
-    ],
-    "website": "https://www.colissimo.entreprise.laposte.fr"
-  },
   "Collect.chat": {
     "cats": [
       52
@@ -20309,23 +19946,6 @@
     ],
     "saas": true,
     "website": "https://constructor.io"
-  },
-  "Contabo": {
-    "cats": [
-      88
-    ],
-    "description": "Contabo is a German hosting provider, previously known by the name Giga-International.",
-    "dns": {
-      "SOA": [
-        "\\.contabo\\.net"
-      ]
-    },
-    "icon": "Contabo.svg",
-    "pricing": [
-      "recurring",
-      "low"
-    ],
-    "website": "https://contabo.com"
   },
   "Contact Form 7": {
     "cats": [
@@ -21546,20 +21166,6 @@
     ],
     "website": "https://cornerstoneplatform.com"
   },
-  "Correos": {
-    "cats": [
-      99
-    ],
-    "description": "Correos is a state-owned company responsible for providing postal service in Spain.",
-    "icon": "Correos.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bCorreos\\b"
-    ],
-    "website": "https://www.correos.es"
-  },
   "Correos Ecommerce": {
     "cats": [
       6
@@ -21695,20 +21301,6 @@
     ],
     "saas": true,
     "website": "https://count.ly"
-  },
-  "Coureon": {
-    "cats": [
-      99
-    ],
-    "description": "Coureon is a digital logistics carrier for international shipping.",
-    "icon": "Coureon.png",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bCoureon\\b"
-    ],
-    "website": "https://www.coureon.com"
   },
   "Coveo": {
     "cats": [
@@ -22431,9 +22023,6 @@
     "scripts": [
       "\\.cubyn\\.com"
     ],
-    "text": [
-      "\\bCubyn\\b"
-    ],
     "website": "https://www.cubyn.com"
   },
   "Cufon": {
@@ -23045,10 +22634,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bUK Mail\\b",
-      "\\bDHL\\b"
-    ],
     "website": "https://www.dhl.com"
   },
   "DHTMLX": {
@@ -23120,20 +22705,6 @@
     ],
     "website": "https://www.dnnsoftware.com/"
   },
-  "DPD": {
-    "cats": [
-      99
-    ],
-    "description": "DPD is an international parcel delivery service for sorter compatible parcels.",
-    "icon": "DPD.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bDPD\\b"
-    ],
-    "website": "https://www.dpd.com"
-  },
   "DPlayer": {
     "cats": [
       14
@@ -23181,20 +22752,6 @@
     ],
     "website": "https://www.dtscout.com"
   },
-  "DX": {
-    "cats": [
-      99
-    ],
-    "description": "DX (also known as DX Freight) is a British mail, courier and logistics company.",
-    "icon": "DX.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bDX\\b"
-    ],
-    "website": "https://www.dxdelivery.com"
-  },
   "DX1": {
     "cats": [
       53
@@ -23231,20 +22788,6 @@
       "static\\.dable\\.io"
     ],
     "website": "https://dable.io"
-  },
-  "Dachser": {
-    "cats": [
-      99
-    ],
-    "description": "Dachser is a German freight company.",
-    "icon": "Dachser.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bDachser\\b"
-    ],
-    "website": "https://www.dachser.com"
   },
   "Daily Deals": {
     "cats": [
@@ -23998,20 +23541,6 @@
     "saas": true,
     "website": "https://delighted.com"
   },
-  "Delivengo": {
-    "cats": [
-      99
-    ],
-    "description": "Delivengo is an international shipping service powered by La Poste.",
-    "icon": "La Poste.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bDelivengo\\b"
-    ],
-    "website": "https://mydelivengo.laposte.fr/"
-  },
   "Deliverr": {
     "cats": [
       107
@@ -24156,16 +23685,6 @@
     ],
     "saas": true,
     "website": "https://dengro.com"
-  },
-  "Deno": {
-    "cats": [
-      22
-    ],
-    "cpe": "cpe:2.3:a:deno:deno:*:*:*:*:*:*:*:*",
-    "description": "A modern runtime for JavaScript and TypeScript.",
-    "icon": "deno.svg",
-    "oss": true,
-    "website": "https://deno.land"
   },
   "Deno Deploy": {
     "cats": [
@@ -24351,19 +23870,6 @@
     ],
     "website": "https://deta.sh"
   },
-  "Detectify": {
-    "cats": [
-      16
-    ],
-    "description": "Detectify is an automated scanner that checks your web application for vulnerabilities.",
-    "dns": {
-      "TXT": [
-        "detectify-verification"
-      ]
-    },
-    "icon": "Detectify.svg",
-    "website": "https://detectify.com/"
-  },
   "Detectizr": {
     "cats": [
       10
@@ -24377,20 +23883,6 @@
       "Modernizr"
     ],
     "website": "https://baris.aydinoglu.net/Detectizr"
-  },
-  "Deutsche Post": {
-    "cats": [
-      99
-    ],
-    "description": "Deutsche Post is a German multinational package delivery and supply chain management company in Germany.",
-    "icon": "Deutsche Post.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bDeutsche Post\\b"
-    ],
-    "website": "https://www.deutschepost.de"
   },
   "DevExtreme": {
     "cats": [
@@ -24610,14 +24102,6 @@
     "xhr": [
       "digicloud"
     ]
-  },
-  "DigiCert": {
-    "cats": [
-      70
-    ],
-    "certIssuer": "DigiCert",
-    "icon": "DigiCert.svg",
-    "website": "https://www.digicert.com/"
   },
   "DigiFi": {
     "cats": [
@@ -25278,23 +24762,6 @@
     ],
     "website": "https://www.dolead.com"
   },
-  "DomainFactory": {
-    "cats": [
-      88
-    ],
-    "description": "DomainFactory has been operating as a web hosting company. It is owned by GoDaddy and targets businesses in Austria and Germany.",
-    "dns": {
-      "SOA": [
-        "ns(?:\\d+)?\\.namespace4you\\.de"
-      ]
-    },
-    "icon": "DomainFactory.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.df.eu"
-  },
   "Dominate WooCommerce": {
     "cats": [
       87
@@ -25600,18 +25067,6 @@
     ],
     "saas": true,
     "website": "https://dotdigital.com"
-  },
-  "Doteasy": {
-    "cats": [
-      88
-    ],
-    "description": "Doteasy is a web hosting company that provides web hosting services, domain registration, and other related services for businesses and individuals. The company was founded in 2000 and is based in Vancouver, Canada.",
-    "icon": "Doteasy.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.doteasy.com"
   },
   "Doteasy Website Builder": {
     "cats": [
@@ -25952,26 +25407,6 @@
     ],
     "website": "https://dreamapply.com"
   },
-  "DreamHost": {
-    "cats": [
-      88
-    ],
-    "description": "DreamHost is a Los Angeles-based web hosting provider and domain name registrar.",
-    "dns": {
-      "NS": [
-        "ns\\d+\\.dreamhost\\.com"
-      ],
-      "SOA": [
-        "ns\\d+\\.dreamhost\\.com"
-      ]
-    },
-    "icon": "DreamHost.svg",
-    "pricing": [
-      "recurring",
-      "low"
-    ],
-    "website": "https://www.dreamhost.com"
-  },
   "DreamWeaver": {
     "cats": [
       20
@@ -26134,19 +25569,6 @@
       "\\.dropinblog\\.com/"
     ],
     "website": "https://dropinblog.com"
-  },
-  "Dropbox": {
-    "cats": [
-      95
-    ],
-    "cpe": "cpe:2.3:a:dropbox:dropbox:*:*:*:*:*:*:*:*",
-    "dns": {
-      "TXT": [
-        "dropbox-domain-verification"
-      ]
-    },
-    "icon": "Dropbox.svg",
-    "website": "https://www.dropbox.com"
   },
   "Dropzone": {
     "cats": [
@@ -26419,15 +25841,6 @@
       "\\.beracode\\.com/"
     ],
     "website": "https://duopana.com"
-  },
-  "DutchIS": {
-    "cats": [
-      16
-    ],
-    "description": "DutchIS is a web application front service that monitors, protects, cleans, and secures web traffic for websites.",
-    "icon": "DutchIS.svg",
-    "saas": true,
-    "website": "https://dutchis.net"
   },
   "Dweet": {
     "cats": [
@@ -27268,19 +26681,6 @@
     ],
     "website": "https://easyweek.io"
   },
-  "Easylog": {
-    "cats": [
-      99
-    ],
-    "description": "EasyLog is a logistics company based in Brazil.",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bEasylog\\b"
-    ],
-    "website": "https://www.easylog.com.br"
-  },
   "Easysize": {
     "cats": [
       6
@@ -27523,21 +26923,6 @@
     },
     "saas": true,
     "website": "https://www.econda.de"
-  },
-  "Ecovium": {
-    "cats": [
-      99
-    ],
-    "description": "Ecovium is an end-to-end logistics company in Germany.",
-    "icon": "Ecovium.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bMHP\\b",
-      "\\bEcovium\\b"
-    ],
-    "website": "https://ecovium.com"
   },
   "Ecwid": {
     "cats": [
@@ -27927,9 +27312,6 @@
       "poa"
     ],
     "saas": true,
-    "text": [
-      "Web CMS by Elcom"
-    ],
     "website": "https://www.elcom.com.au/"
   },
   "Eleanor CMS": {
@@ -28222,18 +27604,6 @@
     ],
     "saas": true,
     "website": "https://www.eliseai.com"
-  },
-  "Elixir": {
-    "cats": [
-      27
-    ],
-    "description": "Elixir is a dynamic, functional language designed for building scalable and maintainable applications.",
-    "icon": "Elixir.svg",
-    "implies": [
-      "Erlang"
-    ],
-    "oss": true,
-    "website": "https://elixir-lang.org"
   },
   "ElkArte": {
     "cats": [
@@ -29091,20 +28461,6 @@
       "seal\\.entrust\\.net/"
     ],
     "website": "https://www.entrust.com/products/digital-certificates"
-  },
-  "Envialia": {
-    "cats": [
-      99
-    ],
-    "description": "",
-    "icon": "Envialia.png",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bEnvialia\\b"
-    ],
-    "website": "https://www.envialia.com"
   },
   "Envo Shop": {
     "cats": [
@@ -31009,18 +30365,6 @@
     "saas": true,
     "website": "https://fabric.inc"
   },
-  "Facebook Ads": {
-    "cats": [
-      36
-    ],
-    "description": "Facebook Ads is an online advertising platform developed by Facebook.",
-    "icon": "Facebook.svg",
-    "pricing": [
-      "payg"
-    ],
-    "saas": true,
-    "website": "https://www.facebook.com/business/ads"
-  },
   "Facebook Chat Plugin": {
     "cats": [
       52
@@ -31387,23 +30731,6 @@
     ],
     "website": "https://fastapi.tiangolo.com"
   },
-  "FastComet": {
-    "cats": [
-      88
-    ],
-    "description": "FastComet is a hosting service company from San Francisco, California.",
-    "dns": {
-      "SOA": [
-        "\\.fcomet\\.com"
-      ]
-    },
-    "icon": "FastComet.svg",
-    "pricing": [
-      "recurring",
-      "payg"
-    ],
-    "website": "https://www.fastcomet.com"
-  },
   "FastPixel": {
     "cats": [
       23
@@ -31735,20 +31062,6 @@
     ],
     "saas": true,
     "website": "https://www.featurebase.app"
-  },
-  "FedEx": {
-    "cats": [
-      99
-    ],
-    "description": "FedEx is an American multinational company which focuses on transportation, ecommerce and business services.",
-    "icon": "FedEx.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bFedEx\\b"
-    ],
-    "website": "https://www.fedex.com"
   },
   "Fedora": {
     "cats": [
@@ -34319,20 +33632,6 @@
     ],
     "website": "https://framework7.io"
   },
-  "France Express": {
-    "cats": [
-      99
-    ],
-    "description": "France Express is a delivery service based in France.",
-    "icon": "France Express.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bFrance Express\\b"
-    ],
-    "website": "https://www.france-express.com"
-  },
   "Frappe": {
     "cats": [
       18
@@ -34534,20 +33833,6 @@
       "analytics\\.freespee\\.com/js/external/fs\\.(?:min\\.)?js"
     ],
     "website": "https://www.freespee.com"
-  },
-  "Frequenceo": {
-    "cats": [
-      99
-    ],
-    "description": "Frequenceo is a fixed-rate postage service in France.",
-    "icon": "La Poste.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bFrequenceo\\b"
-    ],
-    "website": "https://www.laposte.fr/entreprise/produit-entreprise/frequenceo"
   },
   "Frequently Bought Together": {
     "cats": [
@@ -35485,20 +34770,6 @@
     ],
     "website": "https://github.com/alvarotrigo/fullpage.js"
   },
-  "GEODIS": {
-    "cats": [
-      99
-    ],
-    "description": "GEODIS is a global transport and logistics company.",
-    "icon": "GEODIS.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bGeodis\\b"
-    ],
-    "website": "https://geodis.com"
-  },
   "GEOvendas": {
     "cats": [
       6
@@ -35549,20 +34820,6 @@
       "//.*glpi.+common\\.min\\.js\\?v=(\\d+\\.\\d+\\.\\d+)\\;version:\\1"
     ],
     "website": "https://glpi-project.org"
-  },
-  "GLS": {
-    "cats": [
-      99
-    ],
-    "description": "GLS offers parcel, logistics and express services, throughout Europe as well as in the US and in Canada.",
-    "icon": "GLS.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bGLS\\b"
-    ],
-    "website": "https://gls-group.eu"
   },
   "GOV.UK Elements": {
     "cats": [
@@ -36280,19 +35537,6 @@
       "\\.chamo-chat\\.com/"
     ],
     "website": "https://chamo-chat.com"
-  },
-  "Genoo": {
-    "cats": [
-      32
-    ],
-    "description": "Genoo is a provider of marketing automation and online marketing tools.",
-    "icon": "Genoo.svg",
-    "pricing": [
-      "mid",
-      "recurring"
-    ],
-    "saas": true,
-    "website": "https://genoo.com"
   },
   "Gentoo": {
     "cats": [
@@ -37542,16 +36786,6 @@
     "oss": true,
     "website": "https://github.com/gnuboard"
   },
-  "Go": {
-    "cats": [
-      27
-    ],
-    "cpe": "cpe:2.3:a:golang:go:*:*:*:*:*:*:*:*",
-    "description": "Go is an open source high-level programming language.",
-    "icon": "Go.svg",
-    "oss": true,
-    "website": "https://go.dev"
-  },
   "Go Instore": {
     "cats": [
       103
@@ -37651,26 +36885,6 @@
       "assets\\.gocertify\\.me/"
     ],
     "website": "https://www.gocertify.me"
-  },
-  "GoDaddy": {
-    "cats": [
-      88
-    ],
-    "description": "GoDaddy is used as a web host and domain registrar.",
-    "dns": {
-      "NS": [
-        "\\.domaincontrol\\.com"
-      ],
-      "SOA": [
-        "\\.domaincontrol\\.com"
-      ]
-    },
-    "icon": "GoDaddy.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.godaddy.com"
   },
   "GoDaddy CoBlocks": {
     "cats": [
@@ -38200,18 +37414,6 @@
     ],
     "website": "https://www.google.com/adsense/start/"
   },
-  "Google Ads": {
-    "cats": [
-      36
-    ],
-    "description": "Google Ads is an online advertising platform developed by Google.",
-    "icon": "Google Ads.svg",
-    "pricing": [
-      "payg"
-    ],
-    "saas": true,
-    "website": "https://ads.google.com"
-  },
   "Google Ads Conversion Tracking": {
     "cats": [
       10
@@ -38270,13 +37472,6 @@
     ],
     "website": "https://developers.google.com/analytics/devguides/collection/analyticsjs/enhanced-ecommerce"
   },
-  "Google App Engine": {
-    "cats": [
-      22
-    ],
-    "icon": "Google App Engine.svg",
-    "website": "https://cloud.google.com/appengine"
-  },
   "Google Call Conversion Tracking": {
     "cats": [
       10
@@ -38307,15 +37502,6 @@
       "__gvizguard__": ""
     },
     "website": "https://developers.google.com/chart/"
-  },
-  "Google Cloud": {
-    "cats": [
-      63
-    ],
-    "cpe": "cpe:2.3:a:google:cloud_platform:*:*:*:*:*:*:*:*",
-    "description": "Google Cloud is a suite of cloud computing services.",
-    "icon": "Google Cloud.svg",
-    "website": "https://cloud.google.com"
   },
   "Google Cloud CDN": {
     "cats": [
@@ -40425,13 +39611,6 @@
     ],
     "website": "https://hashtag-labs.com"
   },
-  "Haskell": {
-    "cats": [
-      27
-    ],
-    "icon": "Haskell.png",
-    "website": "https://wiki.haskell.org/Haskell"
-  },
   "Hasura": {
     "cats": [
       19
@@ -40872,20 +40051,6 @@
       "recurring"
     ],
     "website": "https://www.here.com"
-  },
-  "Hermes": {
-    "cats": [
-      99
-    ],
-    "description": "Hermes offers integrated solutions along the supply chain and partners with national and international trading companies.",
-    "icon": "Hermes.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bHermes\\b"
-    ],
-    "website": "https://www.hermesworld.com"
   },
   "Hero": {
     "cats": [
@@ -41680,20 +40845,6 @@
     "saas": true,
     "website": "https://oneilinteractive.com/solutions/homefiniti/"
   },
-  "Homerr": {
-    "cats": [
-      99
-    ],
-    "description": "Homerr is a logistics company operating in the Netherlands and Belgium.",
-    "icon": "Homerr.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bHomerr\\b"
-    ],
-    "website": "https://www.homerr.com"
-  },
   "Homestead": {
     "cats": [
       51
@@ -41774,74 +40925,6 @@
     "saas": true,
     "website": "https://horoshop.ua"
   },
-  "HostEurope": {
-    "cats": [
-      88
-    ],
-    "description": "HostEurope is a European website hosting, email and domain name registrar company headquartered Hayes, West London.",
-    "dns": {
-      "SOA": [
-        "\\.hosteurope\\.com"
-      ]
-    },
-    "icon": "HostEurope.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.hosteurope.de"
-  },
-  "Hostens": {
-    "cats": [
-      88
-    ],
-    "description": "Hostens is a web hosting company specialising in hosting services, virtual private server hosting, and the domain name or transition.",
-    "dns": {
-      "SOA": [
-        "\\.hostens\\.com"
-      ]
-    },
-    "icon": "Hostens.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.hostens.com"
-  },
-  "Hostgator": {
-    "cats": [
-      88
-    ],
-    "description": "HostGator is a Houston-based provider of shared, reseller, virtual private server, and dedicated web hosting with an additional presence in Austin, Texas.",
-    "dns": {
-      "SOA": [
-        "\\.hostgator\\.com"
-      ]
-    },
-    "icon": "Hostgator.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.hostgator.com"
-  },
-  "Hosting Ukraine": {
-    "cats": [
-      88
-    ],
-    "description": "Hosting Ukraine is a web hosting provider and internet domain registrar.",
-    "dns": {
-      "SOA": [
-        "ns\\d+\\.ukraine\\.com\\.ua"
-      ]
-    },
-    "icon": "Hosting Ukraine.png",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.ukraine.com.ua"
-  },
   "Hostinger": {
     "cats": [
       88
@@ -41919,23 +41002,6 @@
     ],
     "website": "https://www.hostinger.com"
   },
-  "Hostiq": {
-    "cats": [
-      88
-    ],
-    "description": "Hostiq is a web hosting provider and internet domain registrar.",
-    "dns": {
-      "SOA": [
-        "\\.hostiq\\.ua"
-      ]
-    },
-    "icon": "Hostiq.png",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://hostiq.ua"
-  },
   "Hostmeapp": {
     "cats": [
       93,
@@ -41952,23 +41018,6 @@
       "tables\\.hostmeapp\\.com"
     ],
     "website": "https://www.hostmeapp.com"
-  },
-  "Hostpoint": {
-    "cats": [
-      88
-    ],
-    "description": "Hostpoint is a Switzerland-based web hosting company.",
-    "dns": {
-      "SOA": [
-        "\\.hostpoint\\.ch"
-      ]
-    },
-    "icon": "Hostpoint.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.hostpoint.ch"
   },
   "Hosttech Website Creator": {
     "cats": [
@@ -43076,23 +42125,6 @@
     ],
     "website": "https://www.infonline.de"
   },
-  "IONOS": {
-    "cats": [
-      88
-    ],
-    "description": "IONOS is the web hosting and cloud partner for small and medium-sized businesses.",
-    "dns": {
-      "SOA": [
-        "ns1\\d+\\.ui-dns\\.(?:de|org|biz|com)"
-      ]
-    },
-    "icon": "IONOS.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.ionos.com"
-  },
   "IP2Location.io": {
     "cats": [
       79
@@ -43305,15 +42337,6 @@
       "\\.ideasoft\\.dev/"
     ],
     "website": "https://www.ideasoft.com.tr"
-  },
-  "Identrust": {
-    "cats": [
-      70
-    ],
-    "certIssuer": "TrustID",
-    "description": "denTrust is a digital identity authentication solution.",
-    "icon": "Identrust.svg",
-    "website": "https://www.identrust.com/"
   },
   "IdoSell Shop": {
     "cats": [
@@ -44083,23 +43106,6 @@
     ],
     "saas": true,
     "website": "https://www.infolinks.com"
-  },
-  "Infomaniak": {
-    "cats": [
-      88
-    ],
-    "description": "Infomaniak is a hosting company based in Geneva, Switzerland.",
-    "dns": {
-      "SOA": [
-        "\\.infomaniak\\.ch"
-      ]
-    },
-    "icon": "Infomaniak.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.infomaniak.com"
   },
   "Infor": {
     "cats": [
@@ -45503,22 +44509,6 @@
     "saas": true,
     "website": "https://icommkt.com"
   },
-  "idCloudHost": {
-    "cats": [
-      88
-    ],
-    "description": "idCloudHost is a local web service provider based in Indonesia that offer a wide range of services including domain name registration and cloud hosting.",
-    "dns": {
-      "NS": [
-        "ns\\d+\\.cloudhost\\.id"
-      ],
-      "SOA": [
-        "ns\\d+\\.cloudhost\\.id"
-      ]
-    },
-    "icon": "idCloudHost.svg",
-    "website": "https://idcloudhost.com"
-  },
   "iiQ Check": {
     "cats": [
       90
@@ -46762,15 +45752,6 @@
       "(?:cdn)?\\.(?:jwwb|jouwweb)\\.nl/"
     ],
     "website": "https://www.jouwweb.nl"
-  },
-  "JsObservable": {
-    "cats": [
-      59
-    ],
-    "description": "JsObservable is integrated with JsViews and facilitates observable data manipulations that are immediately reflected in the data-bound templates. The library is developed and maintained by Microsoft employee Boris Moore and is used in projects such as Outlook.com and Windows Azure.",
-    "icon": "JsObservable.svg",
-    "oss": true,
-    "website": "https://www.jsviews.com/#jsobservable"
   },
   "JsRender": {
     "cats": [
@@ -48037,20 +47018,6 @@
       "property\\.infusionsoft\\.com"
     ]
   },
-  "Keen Delivery": {
-    "cats": [
-      99
-    ],
-    "description": "Keen Delivery is a Dutch shipping platform ",
-    "icon": "Keen Delivery.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bKeen Delivery\\b"
-    ],
-    "website": "https://www.keendelivery.com"
-  },
   "Keen-Slider": {
     "cats": [
       59
@@ -48271,25 +47238,6 @@
     },
     "icon": "KeyCDN.svg",
     "website": "https://www.keycdn.com"
-  },
-  "Keybase": {
-    "cats": [
-      16
-    ],
-    "cpe": "cpe:2.3:a:keybase:keybase:*:*:*:*:*:*:*:*",
-    "description": "Keybase is for keeping everyone's chats and files safe, from families to communities to companies. MacOS, Windows, Linux, iPhone, and Android.",
-    "dns": {
-      "TXT": [
-        "keybase-site-verification"
-      ]
-    },
-    "icon": "Keybase.svg",
-    "oss": true,
-    "pricing": [
-      "freemium"
-    ],
-    "saas": true,
-    "website": "https://keybase.io/"
   },
   "Keymailer": {
     "cats": [
@@ -49527,16 +48475,6 @@
       "kotisivukone(?:\\.min)?\\.js"
     ],
     "website": "https://www.kotisivukone.fi"
-  },
-  "Kotlin": {
-    "cats": [
-      27
-    ],
-    "cpe": "cpe:2.3:a:jetbrains:kotlin:*:*:*:*:*:*:*:*",
-    "description": "Kotlin is a general purpose, free, open-source, statically typed “pragmatic” programming language initially designed for the JVM (Java Virtual Machine) and Android that combines object-oriented and functional programming features.",
-    "icon": "Kotlin.svg",
-    "oss": true,
-    "website": "https://kotlinlang.org"
   },
   "Kount": {
     "cats": [
@@ -50967,24 +49905,6 @@
     ],
     "website": "https://www.leasehawk.com"
   },
-  "Leaseweb": {
-    "cats": [
-      63,
-      88
-    ],
-    "description": "Leaseweb is an Infrastructure-as-a-Service (IaaS) provider offering dedicated servers, CDN, cloud hosting and hybrid cloud on a global network.",
-    "dns": {
-      "SOA": [
-        "\\.leaseweb\\.nl"
-      ]
-    },
-    "icon": "Leaseweb.svg",
-    "pricing": [
-      "payg",
-      "recurring"
-    ],
-    "website": "https://www.leaseweb.com"
-  },
   "Lede": {
     "cats": [
       1
@@ -51146,15 +50066,6 @@
       "app\\.letsconnect\\.at/"
     ],
     "website": "https://www.letsconnect.at"
-  },
-  "Let's Encrypt": {
-    "cats": [
-      70
-    ],
-    "certIssuer": "Let's Encrypt",
-    "description": "Let's Encrypt is a free, automated, and open certificate authority.",
-    "icon": "Lets Encrypt.svg",
-    "website": "https://letsencrypt.org/"
   },
   "Letro": {
     "cats": [
@@ -52839,20 +51750,6 @@
     "saas": true,
     "website": "https://www.loglib.io"
   },
-  "LogoiX": {
-    "cats": [
-      99
-    ],
-    "description": "LogoiX is a German shipping company.",
-    "icon": "LogoiX.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bLogoiX\\b"
-    ],
-    "website": "https://www.logoix.com"
-  },
   "Loja Integrada": {
     "cats": [
       6
@@ -53292,19 +52189,6 @@
     },
     "oss": true,
     "website": "https://luanaframework.github.io"
-  },
-  "Lucene": {
-    "cats": [
-      34
-    ],
-    "cpe": "cpe:2.3:a:apache:lucene:*:*:*:*:*:*:*:*",
-    "description": "Lucene is a free and open-source search engine software library.",
-    "icon": "Lucene.svg",
-    "implies": [
-      "Java"
-    ],
-    "oss": true,
-    "website": "https://lucene.apache.org/core/"
   },
   "Lucide": {
     "cats": [
@@ -53959,20 +52843,6 @@
     ],
     "website": "https://www.mrisoftware.com/au/products/eagle"
   },
-  "MRW": {
-    "cats": [
-      99
-    ],
-    "description": "MRW is a Spanish courier company specialised in express national and international shipping services.",
-    "icon": "MRW.png",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bMRW\\b"
-    ],
-    "website": "https://www.mrw.es"
-  },
   "MSAAQ": {
     "cats": [
       6
@@ -54065,18 +52935,6 @@
     ],
     "saas": true,
     "website": "https://www.mabisy.com"
-  },
-  "Macaron": {
-    "cats": [
-      18
-    ],
-    "cpe": "cpe:2.3:a:go-macaron:macaron:*:*:*:*:*:*:*:*",
-    "description": "Macaron is a high productive and modular web framework in Go.",
-    "icon": "Macaron.svg",
-    "implies": [
-      "Go"
-    ],
-    "website": "https://go-macaron.com"
   },
   "MachoThemes NewsMag": {
     "cats": [
@@ -54669,32 +53527,6 @@
       "\\.mailercloud\\.com/"
     ],
     "website": "https://www.mailercloud.com/"
-  },
-  "Mailgun": {
-    "cats": [
-      75
-    ],
-    "description": "Mailgun is a transactional email API service for developers.",
-    "dns": {
-      "TXT": [
-        "mailgun\\.org"
-      ]
-    },
-    "icon": "Mailgun.svg",
-    "website": "https://www.mailgun.com/"
-  },
-  "Mailjet": {
-    "cats": [
-      75
-    ],
-    "description": "Mailjet is an email delivery service for marketing and developer teams.",
-    "dns": {
-      "TXT": [
-        "mailjet\\.com"
-      ]
-    },
-    "icon": "Mailjet.svg",
-    "website": "https://www.mailjet.com/"
   },
   "Mailman": {
     "cats": [
@@ -55310,15 +54142,6 @@
       "\\.mrf\\.io/"
     ],
     "website": "https://www.marfeel.com"
-  },
-  "MariaDB": {
-    "cats": [
-      34
-    ],
-    "cpe": "cpe:2.3:a:mariadb_project:mariadb:*:*:*:*:*:*:*:*",
-    "description": "MariaDB is an open-source relational database management system compatible with MySQL.",
-    "icon": "mariadb.svg",
-    "website": "https://mariadb.org"
   },
   "Marionette.js": {
     "cats": [
@@ -57072,20 +55895,6 @@
       "\\.michijs\\.com"
     ]
   },
-  "Microsoft 365": {
-    "cats": [
-      30,
-      75
-    ],
-    "description": "Microsoft 365 is a line of subscription services offered by Microsoft as part of the Microsoft Office product line.",
-    "dns": {
-      "MX": [
-        "outlook\\.com"
-      ]
-    },
-    "icon": "Microsoft 365.svg",
-    "website": "https://www.microsoft.com/microsoft-365"
-  },
   "Microsoft ASP.NET": {
     "cats": [
       18
@@ -57931,23 +56740,6 @@
     ],
     "website": "https://mithril.js.org"
   },
-  "Mittwald": {
-    "cats": [
-      88
-    ],
-    "description": "Mittwald is a web hosting agency, established in 2003 in Espelkamp, Germany",
-    "dns": {
-      "SOA": [
-        "ns\\d+\\.agenturserver\\.(?:de|co|it)"
-      ]
-    },
-    "icon": "Mittwald.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.mittwald.de"
-  },
   "Miva": {
     "cats": [
       6
@@ -58581,20 +57373,6 @@
     "oss": true,
     "website": "https://microsoft.github.io/monaco-editor/"
   },
-  "Mondial Relay": {
-    "cats": [
-      99
-    ],
-    "description": "Mondial Relay is a parcel shipping and delivery service in Europe.",
-    "icon": "Mondial Relay.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bMondial Relay\\b"
-    ],
-    "website": "https://www.mondialrelay.com"
-  },
   "Mondo Media": {
     "cats": [
       6
@@ -58665,15 +57443,6 @@
       "\\.monetate\\.net"
     ],
     "website": "https://monetate.com"
-  },
-  "MongoDB": {
-    "cats": [
-      34
-    ],
-    "cpe": "cpe:2.3:a:mongodb:mongodb:*:*:*:*:*:*:*:*",
-    "description": "MongoDB is a document-oriented NoSQL database used for high volume data storage.",
-    "icon": "MongoDB.svg",
-    "website": "https://www.mongodb.org"
   },
   "Mongrel": {
     "cats": [
@@ -59489,20 +58258,6 @@
     ],
     "website": "https://www.myagileprivacy.com/en/"
   },
-  "My Flying Box": {
-    "cats": [
-      99
-    ],
-    "description": "My Flying Box is an international parcel shipping company.",
-    "icon": "My Flying Box.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bMy Flying Box\\b"
-    ],
-    "website": "https://www.myflyingbox.com/"
-  },
   "My Food Link": {
     "cats": [
       6
@@ -59628,15 +58383,6 @@
       "generator": "Mijnwebwinkel"
     },
     "website": "https://www.myonlinestore.com/ "
-  },
-  "MySQL": {
-    "cats": [
-      34
-    ],
-    "cpe": "cpe:2.3:a:mysql:mysql:*:*:*:*:*:*:*:*",
-    "description": "MySQL is an open-source relational database management system.",
-    "icon": "MySQL.svg",
-    "website": "https://mysql.com"
   },
   "MySiteNow": {
     "cats": [
@@ -60189,20 +58935,6 @@
       "Apache HTTP Server"
     ],
     "website": "https://code.google.com/p/modwsgi"
-  },
-  "NACEX": {
-    "cats": [
-      99
-    ],
-    "description": "NACEX is an express courier company in Spain, Andorra and Portugal.",
-    "icon": "NACEX.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bNACEX\\b"
-    ],
-    "website": "https://www.nacex.es"
   },
   "NEO - Omnichannel Commerce Platform": {
     "cats": [
@@ -61204,20 +59936,6 @@
     },
     "icon": "nexcess.png",
     "website": "https://www.nexcess.net"
-  },
-  "Nexive": {
-    "cats": [
-      99
-    ],
-    "description": "Nexive is a postal operator in Italy.",
-    "icon": "Nexive.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bNexive\\b"
-    ],
-    "website": "https://www.nexive.it"
   },
   "Next Basket": {
     "cats": [
@@ -63358,23 +62076,6 @@
     "saas": true,
     "website": "https://onuniverse.com"
   },
-  "One.com": {
-    "cats": [
-      88
-    ],
-    "description": "One.com is a Denmark-based company offering bargain-priced WordPress and shared web hosting plans.",
-    "dns": {
-      "SOA": [
-        "ns\\d+\\.one\\.com"
-      ]
-    },
-    "icon": "One.com.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.one.com"
-  },
   "OneAPM": {
     "cats": [
       92
@@ -64782,21 +63483,6 @@
     "icon": "Oracle.svg",
     "website": "https://oracle.com"
   },
-  "Oracle WebLogic Server": {
-    "cats": [
-      22
-    ],
-    "cpe": "cpe:2.3:a:bea:weblogic_server:*:*:*:*:*:*:*:*",
-    "description": "Oracle WebLogic Server is a Java-based application server that provides a platform for developing, deploying, and running enterprise-level Java applications.",
-    "icon": "Oracle.svg",
-    "implies": [
-      "Java"
-    ],
-    "pricing": [
-      "poa"
-    ],
-    "website": "https://www.oracle.com/java/weblogic/"
-  },
   "Orama": {
     "cats": [
       29
@@ -65128,22 +63814,6 @@
       "cmp\\.osano\\.com/"
     ],
     "website": "https://www.osano.com"
-  },
-  "Osterreichische Post": {
-    "cats": [
-      99
-    ],
-    "description": "Österreichische Post is an Austrian logistics and postal services provider.",
-    "icon": "Post AG.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bpost\\.at\\b",
-      "\\bPost AG\\b",
-      "\\b[ÖO]sterreichische Post\\b"
-    ],
-    "website": "https://www.post.at"
   },
   "OtterText": {
     "cats": [
@@ -66222,18 +64892,6 @@
     ],
     "website": "https://www.getpaloma.com"
   },
-  "Panda CSS": {
-    "cats": [
-      66
-    ],
-    "css": [
-      "--made-with-panda"
-    ],
-    "description": "Panda is a styling engine that generates styling primitives to author atomic CSS and recipes in a type-safe and readable manner.",
-    "icon": "PandaCSS.svg",
-    "oss": true,
-    "website": "https://panda-css.com/"
-  },
   "Pandectes": {
     "cats": [
       67,
@@ -66429,20 +65087,6 @@
     },
     "oss": true,
     "website": "https://inlang.com/m/gerre34r/library-inlang-paraglideJs"
-  },
-  "Parcelforce": {
-    "cats": [
-      99
-    ],
-    "description": "Parcelforce is a courier and logistics service in the United Kingdom.",
-    "icon": "Parcelforce.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bParcelforce\\b"
-    ],
-    "website": "https://www.parcelforce.com"
   },
   "ParkingCrew": {
     "cats": [
@@ -67496,14 +66140,6 @@
     ],
     "saas": true,
     "website": "https://peraichi.com"
-  },
-  "Percona": {
-    "cats": [
-      34
-    ],
-    "description": "Percona server is an opensource, fully compatible, enhanced drop-in replacement for MySQL, providing superior performance, scalability, and instrumentation.",
-    "icon": "percona.svg",
-    "website": "https://www.percona.com"
   },
   "Percussion": {
     "cats": [
@@ -70123,9 +68759,6 @@
     "requiresCategory": [
       6
     ],
-    "text": [
-      "\\bPostNL\\b"
-    ],
     "website": "https://postnl.post"
   },
   "Postach": {
@@ -70139,20 +68772,6 @@
       "\\.postach\\.io/"
     ],
     "website": "https://postach.io"
-  },
-  "Poste Italiane": {
-    "cats": [
-      99
-    ],
-    "description": "Poste Italiane is the Italian postal service provider.",
-    "icon": "Poste Italiane.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bPoste Italiane\\b"
-    ],
-    "website": "https://www.poste.it"
   },
   "Poster": {
     "cats": [
@@ -70187,16 +68806,6 @@
       "Posterous": ""
     },
     "website": "https://posterous.com"
-  },
-  "PostgreSQL": {
-    "cats": [
-      34
-    ],
-    "cpe": "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*",
-    "description": "PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.",
-    "icon": "PostgreSQL.svg",
-    "oss": true,
-    "website": "https://www.postgresql.org/"
   },
   "Postie": {
     "cats": [
@@ -71004,42 +69613,6 @@
       "js\\.primegate\\.io/"
     ],
     "website": "https://www.primegate.io"
-  },
-  "PrimeNG": {
-    "cats": [
-      66
-    ],
-    "css": [
-      "\\.p-(?:toast|calendar|dialog-mask|menuitem-text|sidebar)(?:-content)?\\{"
-    ],
-    "description": "PrimeNG is a rich set of open-source UI Components for Angular.",
-    "icon": "PrimeNG.svg",
-    "oss": true,
-    "pricing": [
-      "onetime"
-    ],
-    "requires": [
-      "Angular"
-    ],
-    "website": "https://primeng.org"
-  },
-  "PrimeReact": {
-    "cats": [
-      66
-    ],
-    "css": [
-      "\\.p-(?:toast|calendar|dialog-mask|menuitem-text|sidebar)(?:-content)?\\{"
-    ],
-    "description": "PrimeReact is a rich set of open-source UI Components for React.",
-    "icon": "PrimeReact.svg",
-    "oss": true,
-    "pricing": [
-      "onetime"
-    ],
-    "requires": [
-      "React"
-    ],
-    "website": "https://primereact.org"
   },
   "PrimeVue": {
     "cats": [
@@ -71875,23 +70448,6 @@
     ],
     "saas": true,
     "website": "https://www.proto.cx"
-  },
-  "Proton Mail": {
-    "cats": [
-      30
-    ],
-    "description": "Proton Mail is the world’s largest secure email service with over 70 million users. Available on Web, iOS, Android, and desktop. Protected by Swiss privacy law.",
-    "dns": {
-      "MX": [
-        "\\.protonmail\\.ch"
-      ],
-      "TXT": [
-        "protonmail-verification="
-      ]
-    },
-    "icon": "Proton Mail.svg",
-    "saas": true,
-    "website": "https://proton.me/mail"
   },
   "Prototype": {
     "cats": [
@@ -73354,25 +71910,6 @@
     ],
     "website": "https://qform.io"
   },
-  "QUIC.cloud": {
-    "cats": [
-      92,
-      23,
-      31
-    ],
-    "description": "QUIC.cloud is a content delivery network (CDN) and optimisation service that uses the QUIC protocol, a next-generation internet transport protocol developed by Google, to deliver content faster and more securely over the internet.",
-    "dns": {
-      "SOA": [
-        "\\.quicns\\.(?:net|com)"
-      ]
-    },
-    "icon": "QUIC.cloud.svg",
-    "pricing": [
-      "freemium",
-      "payg"
-    ],
-    "website": "https://www.quic.cloud"
-  },
   "QUV": {
     "cats": [
       51
@@ -74404,23 +72941,6 @@
       "^https?://(?:www\\.)?[\\d\\w\\-]+\\.[\\w]+/redaxo/\\;confidence:50"
     ],
     "website": "https://redaxo.org"
-  },
-  "REG.RU": {
-    "cats": [
-      88
-    ],
-    "description": "REG.RU is a web hosting provider and internet domain registrar.",
-    "dns": {
-      "SOA": [
-        "(?:\\.hosting)?\\.reg\\.ru"
-      ]
-    },
-    "icon": "REG.RU.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.reg.ru"
   },
   "RELOOP": {
     "cats": [
@@ -75957,29 +74477,6 @@
     "icon": "Red Hat.svg",
     "website": "https://www.redhat.com"
   },
-  "Red Hat Gluster": {
-    "cats": [
-      48
-    ],
-    "description": "Gluster is a free and open source scalable network filesystem.",
-    "icon": "gluster.png",
-    "saas": true,
-    "website": "https://www.gluster.org"
-  },
-  "Red je Pakketje": {
-    "cats": [
-      99
-    ],
-    "description": "Red je Pakketje is a Dutch company specialised in same-day-delivery.",
-    "icon": "Red je Pakketje.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bRed je Pakketje\\b"
-    ],
-    "website": "https://redjepakketje.nl"
-  },
   "RedCart": {
     "cats": [
       6
@@ -76063,15 +74560,6 @@
     },
     "saas": true,
     "website": "https://www.redicom.pt"
-  },
-  "Redis": {
-    "cats": [
-      34
-    ],
-    "cpe": "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
-    "description": "Redis is an in-memory data structure project implementing a distributed, in-memory key–value database with optional durability. Redis supports different kinds of abstract data structures, such as strings, lists, maps, sets, sorted sets, HyperLogLogs, bitmaps, streams, and spatial indexes.",
-    "icon": "Redis.svg",
-    "website": "https://redis.io"
   },
   "Redis Object Cache": {
     "cats": [
@@ -76523,20 +75011,6 @@
     ],
     "saas": true,
     "website": "https://www.relahq.com"
-  },
-  "Relais Colis": {
-    "cats": [
-      99
-    ],
-    "description": "Relais Colis is a French parcel delivery network.",
-    "icon": "Relais Colis.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bRelais Colis\\b"
-    ],
-    "website": "https://www.relaiscolis.com"
   },
   "Relap": {
     "cats": [
@@ -78661,32 +77135,6 @@
     ],
     "website": "https://route.com"
   },
-  "Royal Mail": {
-    "cats": [
-      99
-    ],
-    "description": "Royal Mail is a British multinational postal service and courier company.",
-    "icon": "Royal Mail.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bRoyal Mail\\b"
-    ],
-    "website": "https://www.royalmail.com"
-  },
-  "Rspack": {
-    "cats": [
-      19
-    ],
-    "description": "Rspack is a JavaScript bundler written in Rust, offering faster build times and compatibility with the Webpack ecosystem​.",
-    "icon": "Rspack.svg",
-    "implies": [
-      "Rust"
-    ],
-    "oss": true,
-    "website": "https://www.rspack.dev"
-  },
   "Rspress": {
     "cats": [
       57
@@ -78886,16 +77334,6 @@
       "\\.runkit\\.com"
     ],
     "website": "https://runkit.com"
-  },
-  "Rust": {
-    "cats": [
-      27
-    ],
-    "cpe": "cpe:2.3:a:rust-lang:rust:*:*:*:*:*:*:*:*",
-    "description": "Rust is a multi-paradigm, general-purpose programming language designed for performance and safety, especially safe concurrency.",
-    "icon": "Rust.svg",
-    "oss": true,
-    "website": "https://www.rust-lang.org"
   },
   "RxJS": {
     "cats": [
@@ -79255,20 +77693,6 @@
     ],
     "website": "https://seomator.com"
   },
-  "SEUR": {
-    "cats": [
-      99
-    ],
-    "description": "SEUR is a Spanish shipments and express transport company.",
-    "icon": "DPD.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bSEUR\\b"
-    ],
-    "website": "https://www.seur.com"
-  },
   "SHE Media": {
     "cats": [
       36
@@ -79480,14 +77904,6 @@
     ],
     "website": "https://www.sqlbuddy.com"
   },
-  "SQLite": {
-    "cats": [
-      34
-    ],
-    "cpe": "cpe:2.3:a:sqlite:sqlite:*:*:*:*:*:*:*:*",
-    "icon": "SQLite.png",
-    "website": "https://www.sqlite.org"
-  },
   "STN Video": {
     "cats": [
       36,
@@ -79565,15 +77981,6 @@
     ],
     "website": "https://github.com/wp-plugins/svg-support"
   },
-  "SWC": {
-    "cats": [
-      19
-    ],
-    "description": "SWC is an extensible Rust-based platform for the next generation of fast developer tools.",
-    "icon": "swc.svg",
-    "oss": true,
-    "website": "https://swc.rs"
-  },
   "SWFObject": {
     "cats": [
       19
@@ -79610,22 +78017,6 @@
       "(?:\\.cloudfront\\.net/assets/javascripts/(?:v2/)?|/sas)squatch\\.min\\.js"
     ],
     "website": "https://www.saasquatch.com"
-  },
-  "Saba.Host": {
-    "cats": [
-      88
-    ],
-    "description": "Saba.Host is a total web-hosting solutions. It provides shared hosting, WordPress hosting, dedicated server, virtual private server (VPS), SSL and more.",
-    "dns": {
-      "SOA": [
-        "\\.saba\\.host"
-      ]
-    },
-    "icon": "Saba.Host.svg",
-    "pricing": [
-      "recurring"
-    ],
-    "website": "https://saba.host"
   },
   "SabaVision": {
     "cats": [
@@ -79801,25 +78192,6 @@
     "higher_ed": true,
     "confidence": 85,
     "website": "https://www.sakaiproject.org"
-  },
-  "Sakura Internet": {
-    "cats": [
-      88
-    ],
-    "description": "Sakura Internet is a web hosting provider that has been operating for almost 30 years.",
-    "dns": {
-      "NS": [
-        "\\.gslbN\\.sakura\\.ne\\.jp"
-      ],
-      "SOA": [
-        "tech\\.sakura\\.ad\\.jp"
-      ]
-    },
-    "icon": "Sakura Internet.svg",
-    "pricing": [
-      "payg"
-    ],
-    "website": "https://www.sakura.ad.jp"
   },
   "SaleCycle": {
     "cats": [
@@ -80526,14 +78898,6 @@
     ],
     "website": "https://sbercrm.com"
   },
-  "Scala": {
-    "cats": [
-      27
-    ],
-    "description": "Scala is a general-purpose programming language providing support for both object-oriented programming and functional programming.",
-    "icon": "Scala.png",
-    "website": "https://www.scala-lang.org"
-  },
   "Scalapay": {
     "cats": [
       41,
@@ -81108,15 +79472,6 @@
       "cdn\\.secomapp\\.com/"
     ],
     "website": "https://www.secomapp.com"
-  },
-  "Sectigo": {
-    "cats": [
-      70
-    ],
-    "certIssuer": "Sectigo",
-    "description": "Sectigo provides SSL certificate and computer security products.",
-    "icon": "Sectigo.svg",
-    "website": "https://sectigo.com/"
   },
   "Section.io": {
     "cats": [
@@ -81840,19 +80195,6 @@
       "\\.sendx\\.io/"
     ],
     "website": "https://www.sendx.io"
-  },
-  "Sendgrid": {
-    "cats": [
-      75
-    ],
-    "description": "SendGrid is a cloud-based email delivery platform for transactional and marketing emails.",
-    "dns": {
-      "TXT": [
-        "sendgrid\\.net"
-      ]
-    },
-    "icon": "SendGrid.svg",
-    "website": "https://sendgrid.com/"
   },
   "Sendinblue": {
     "cats": [
@@ -85360,20 +83702,6 @@
     "saas": false,
     "website": "https://doc.sitecore.com/xp/en/developers/101/developer-tools/experience-edge-for-xm-apis.html"
   },
-  "Sitecore Experience Platform": {
-    "cats": [
-      1
-    ],
-    "description": "Sitecore Experience Platform is a digital platform used by businesses to create, manage, and deliver personalised content and experiences to users across different channels.",
-    "icon": "Sitecore.svg",
-    "pricing": [
-      "poa",
-      "recurring",
-      "high"
-    ],
-    "saas": true,
-    "website": "https://www.sitecore.com/products/sitecore-experience-platform"
-  },
   "Siteglide": {
     "cats": [
       1,
@@ -87284,19 +85612,6 @@
     ],
     "website": "https://www.solodev.com"
   },
-  "Solr": {
-    "cats": [
-      34
-    ],
-    "cpe": "cpe:2.3:a:apache:solr:*:*:*:*:*:*:*:*",
-    "description": "Solr is an open-source search platform built on Apache Lucene, used for indexing and searching large-scale datasets.",
-    "icon": "Solr.svg",
-    "implies": [
-      "Lucene"
-    ],
-    "oss": true,
-    "website": "https://lucene.apache.org/solr/"
-  },
   "Solusquare OmniCommerce Cloud": {
     "cats": [
       6
@@ -87714,19 +86029,6 @@
       "js\\.sparkloop\\.app/"
     ],
     "website": "https://sparkloop.app"
-  },
-  "SparkPost": {
-    "cats": [
-      75
-    ],
-    "description": "SparkPost is an email infrastructure provider.",
-    "dns": {
-      "TXT": [
-        "sparkpostmail\\.com"
-      ]
-    },
-    "icon": "SparkPost.svg",
-    "website": "https://www.sparkpost.com/"
   },
   "Spatie Laravel Cookie Consent": {
     "cats": [
@@ -90213,24 +88515,6 @@
     "confidence": 88,
     "website": "https://strapi.io"
   },
-  "Strato": {
-    "cats": [
-      88,
-      62
-    ],
-    "description": "Strato is an internet hosting service provider headquartered in Berlin, Germany which provide dedicated server hosting, a website builder and a cloud storage services.",
-    "dns": {
-      "SOA": [
-        "\\.strato-rz\\.de"
-      ]
-    },
-    "icon": "Strato.svg",
-    "pricing": [
-      "recurring",
-      "payg"
-    ],
-    "website": "https://www.strato.com"
-  },
   "Strato Website": {
     "cats": [
       1
@@ -91955,22 +90239,6 @@
       "Svelte"
     ],
     "website": "https://www.shadcn-svelte.com"
-  },
-  "shadcn/ui": {
-    "cats": [
-      66
-    ],
-    "css": [
-      "--destructive-foreground"
-    ],
-    "description": "shadcn/ui is a component system built with Radix UI and Tailwind CSS.",
-    "icon": "shadcn-ui.svg",
-    "implies": [
-      "Radix UI",
-      "Tailwind CSS"
-    ],
-    "oss": true,
-    "website": "https://ui.shadcn.com"
   },
   "shine.js": {
     "cats": [
@@ -94129,20 +92397,6 @@
     ],
     "website": "https://www.thanx.com"
   },
-  "Thawte": {
-    "cats": [
-      70
-    ],
-    "certIssuer": "Thawte",
-    "description": "Thawte is a provider of SSL certificates, offering a site seal as a visual indicator of website security.",
-    "icon": "Thawte.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "saas": true,
-    "website": "https://www.thawte.com"
-  },
   "The AdsLab": {
     "cats": [
       32,
@@ -95912,20 +94166,6 @@
     ],
     "website": "https://atomiks.github.io/tippyjs"
   },
-  "Tipsa": {
-    "cats": [
-      99
-    ],
-    "description": "TIPSA is a parcel delivery company in Spain, Portugal and Andorra.",
-    "icon": "Tipsa.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bTipsa\\b"
-    ],
-    "website": "https://www.tip-sa.com"
-  },
   "Tiptap": {
     "cats": [
       20
@@ -96794,19 +95034,6 @@
     "saas": true,
     "website": "https://translatepress.com"
   },
-  "Transmart": {
-    "cats": [
-      99
-    ],
-    "description": "Transmart is a shipping company in Turkey.",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bTransmart\\b"
-    ],
-    "website": "https://transmartshipping.com"
-  },
   "TravelJoy": {
     "cats": [
       72
@@ -97255,20 +95482,6 @@
       "\\.trumpia\\.com/"
     ],
     "website": "https://www.trumpia.com"
-  },
-  "Trunkrs": {
-    "cats": [
-      99
-    ],
-    "description": "Trunkrs is a Dutch parcel delivery service.",
-    "icon": "Trunkrs.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bTrunkrs\\b"
-    ],
-    "website": "https://trunkrs.nl"
   },
   "TrustArc": {
     "cats": [
@@ -98134,18 +96347,6 @@
     ],
     "website": "https://twyne.io"
   },
-  "TypeDoc": {
-    "cats": [
-      4
-    ],
-    "description": "TypeDoc is an API documentation generator for TypeScript projects.",
-    "icon": "TypeDoc.svg",
-    "implies": [
-      "TypeScript"
-    ],
-    "oss": true,
-    "website": "https://typedoc.org"
-  },
   "TypePad": {
     "cats": [
       11
@@ -98159,15 +96360,6 @@
       "typepad\\.com"
     ],
     "website": "https://www.typepad.com"
-  },
-  "TypeScript": {
-    "cats": [
-      27
-    ],
-    "description": "TypeScript is an open-source language which builds on JavaScript  by adding static type definitions.",
-    "icon": "TypeScript.svg",
-    "oss": true,
-    "website": "https://www.typescriptlang.org"
   },
   "Typecho": {
     "cats": [
@@ -98518,38 +96710,6 @@
     ],
     "website": "https://getuikit.com"
   },
-  "UK Mail": {
-    "cats": [
-      99
-    ],
-    "description": "UK Mail is a postal service company operating in the United Kingdom.",
-    "icon": "UK Mail.png",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bUK Mail\\b"
-    ],
-    "website": "https://www.ukmail.com"
-  },
-  "UKFast": {
-    "cats": [
-      88,
-      62
-    ],
-    "description": "UKFast is a business-to-business internet hosting company based in Manchester, UK.",
-    "dns": {
-      "SOA": [
-        "\\.ukfast\\.net"
-      ]
-    },
-    "icon": "UKFast.png",
-    "pricing": [
-      "recurring",
-      "payg"
-    ],
-    "website": "https://www.ukfast.co.uk"
-  },
   "UMAI": {
     "cats": [
       10
@@ -98614,35 +96774,6 @@
     },
     "icon": "UNIX.png",
     "website": "https://unix.org"
-  },
-  "UPS": {
-    "cats": [
-      99
-    ],
-    "description": "UPS is an American multinational shipping & receiving and supply chain management company.",
-    "icon": "UPS.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\b(?<!-)UPS\\b"
-    ],
-    "website": "https://www.ups.com"
-  },
-  "USPS": {
-    "cats": [
-      99
-    ],
-    "description": "The United States Postal Service (USPS) is an independent agency of the executive branch of the United States federal government responsible for providing postal service in the United States.",
-    "icon": "USPS.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bUSPS\\b",
-      "\\bUnited States Postal Service\\b"
-    ],
-    "website": "https://www.usps.com"
   },
   "USWDS": {
     "cats": [
@@ -100957,26 +99088,6 @@
     ],
     "website": "https://ventasxmayor.com"
   },
-  "VentraIP": {
-    "cats": [
-      88
-    ],
-    "description": "VentraIP is the largest privately owned web host and domain name registrar in Australia.",
-    "dns": {
-      "NS": [
-        "\\.(?:nameserver|hostingplatform)\\.net\\.au"
-      ],
-      "SOA": [
-        "\\.(?:nameserver|hostingplatform)\\.net\\.au"
-      ]
-    },
-    "icon": "VentraIP.svg",
-    "pricing": [
-      "recurring",
-      "payg"
-    ],
-    "website": "https://ventraip.com.au"
-  },
   "Ventrata": {
     "cats": [
       104
@@ -102877,19 +100988,6 @@
     "oss": true,
     "website": "https://vuex.vuejs.org/"
   },
-  "Vultr": {
-    "cats": [
-      62
-    ],
-    "description": "Vultr is a cloud computing service provider.",
-    "dns": {
-      "NS": [
-        "\\.vultr\\.com"
-      ]
-    },
-    "icon": "Vultr.svg",
-    "website": "https://www.vultr.com"
-  },
   "Vuture": {
     "cats": [
       32
@@ -104615,26 +102713,6 @@
     },
     "website": "https://www.webgui.org"
   },
-  "WebHostUK": {
-    "cats": [
-      88
-    ],
-    "description": "WebHostUK is a UK based web hosting company offering cheap yet reliable and secure web hosting solutions on both Linux and Windows servers.",
-    "dns": {
-      "NS": [
-        "ns2\\d\\.dnshostcentral\\.com"
-      ],
-      "SOA": [
-        "ns2\\d\\.dnshostcentral\\.com"
-      ]
-    },
-    "icon": "WebHostUK.svg",
-    "pricing": [
-      "recurring",
-      "low"
-    ],
-    "website": "https://www.webhostuk.co.uk"
-  },
   "WebMetric": {
     "cats": [
       10
@@ -104690,15 +102768,6 @@
     ],
     "saas": true,
     "website": "https://webqna.ai"
-  },
-  "WebRTC": {
-    "cats": [
-      19
-    ],
-    "description": "WebRTC is an open-source project that enables real-time voice, text and video communications capabilities between web browsers and devices.",
-    "icon": "WebRTC.svg",
-    "oss": true,
-    "website": "https://webrtc.org"
   },
   "WebSite X5": {
     "cats": [
@@ -105120,19 +103189,6 @@
       "JavaServer Pages"
     ],
     "website": "https://www.oracle.com/java/weblogic"
-  },
-  "Webmin": {
-    "cats": [
-      19
-    ],
-    "cpe": "cpe:2.3:a:webmin:webmin:*:*:*:*:*:*:*:*",
-    "description": "Webmin is a free, open-source application for Linux server administration.",
-    "icon": "Webmin.svg",
-    "implies": [
-      "Perl"
-    ],
-    "oss": true,
-    "website": "https://www.webmin.com"
   },
   "WeboLead": {
     "cats": [
@@ -105689,20 +103745,6 @@
       "cdn\\.wheelysales\\.com/"
     ],
     "website": "https://wheelysales.com"
-  },
-  "Whistl": {
-    "cats": [
-      99
-    ],
-    "description": "Whistl is a postal delivery company operating in the United Kingdom.",
-    "icon": "Whistl.svg",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bWhistl\\b"
-    ],
-    "website": "https://www.whistl.co.uk"
   },
   "Whitelabel MD": {
     "cats": [
@@ -107116,23 +105158,6 @@
     ],
     "website": "https://workstand.com"
   },
-  "World4You": {
-    "cats": [
-      88
-    ],
-    "description": "World4You operates homepage and domain solutions. World4Youu operates data centers in Austria and provides data protection.",
-    "dns": {
-      "SOA": [
-        "ns\\d+\\.world4you\\.at"
-      ]
-    },
-    "icon": "World4You.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.world4you.com"
-  },
   "WorldPay": {
     "cats": [
       41
@@ -107847,23 +105872,6 @@
     "saas": true,
     "website": "https://xretail.com"
   },
-  "Xserver": {
-    "cats": [
-      88
-    ],
-    "description": "Xserver engages in web hosting, web application and internet-related services.",
-    "dns": {
-      "SOA": [
-        "\\.xserver\\.jp"
-      ]
-    },
-    "icon": "Xserver.svg",
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "website": "https://www.xserver.ne.jp"
-  },
   "Xsolla": {
     "cats": [
       41
@@ -108201,22 +106209,6 @@
     ],
     "website": "https://web.analytics.yahoo.com"
   },
-  "YalinHost": {
-    "cats": [
-      88
-    ],
-    "description": "YalinHost is a web hosting service provider.",
-    "dns": {
-      "NS": [
-        "\\.yalinhost\\.com"
-      ],
-      "SOA": [
-        "\\.yalinhost\\.com"
-      ]
-    },
-    "icon": "YalinHost.svg",
-    "website": "https://yalinhost.com"
-  },
   "Yamada UI": {
     "cats": [
       66
@@ -108284,18 +106276,6 @@
     ],
     "saas": true,
     "website": "https://cloud.yandex.com/en/services/smartcaptcha"
-  },
-  "Yandex.Cloud": {
-    "cats": [
-      62
-    ],
-    "description": "Yandex.Cloud is a public cloud platform where companies can create and develop projects using Yandex's scalable computing power, advanced technologies, and infrastructure.",
-    "icon": "Yandex.Cloud.svg",
-    "pricing": [
-      "payg"
-    ],
-    "saas": false,
-    "website": "https://cloud.yandex.com/en/"
   },
   "Yandex.Cloud CDN": {
     "cats": [
@@ -108756,19 +106736,6 @@
     ],
     "saas": true,
     "website": "https://yoast.com/shopify/apps/yoast-seo/"
-  },
-  "Yodel": {
-    "cats": [
-      99
-    ],
-    "description": "Yodel is a delivery company for B2B and B2C orders in the United Kingdom.",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bYodel\\b"
-    ],
-    "website": "https://www.yodel.co.uk/"
   },
   "Yola": {
     "cats": [
@@ -109486,19 +107453,6 @@
     "saas": true,
     "website": "https://www.zeemaps.com"
   },
-  "Zeleris": {
-    "cats": [
-      99
-    ],
-    "description": "Zeleris provides door to door shipment delivery to Ireland, UK and the EU.",
-    "requiresCategory": [
-      6
-    ],
-    "text": [
-      "\\bZeleris\\b"
-    ],
-    "website": "https://www.zeleris.com"
-  },
   "Zen Cart": {
     "cats": [
       6
@@ -110180,24 +108134,6 @@
     ],
     "website": "https://www.zoey.com/"
   },
-  "Zoho": {
-    "cats": [
-      53
-    ],
-    "description": "Zoho is a web-based online office suite.",
-    "dns": {
-      "TXT": [
-        "\\.zoho\\.com"
-      ]
-    },
-    "icon": "Zoho.svg",
-    "pricing": [
-      "low",
-      "freemium"
-    ],
-    "saas": true,
-    "website": "https://www.zoho.com/"
-  },
   "Zoho Commerce": {
     "cats": [
       6
@@ -110213,22 +108149,6 @@
     ],
     "saas": true,
     "website": "https://www.zoho.com/commerce/"
-  },
-  "Zoho Mail": {
-    "cats": [
-      75
-    ],
-    "description": "Zoho Mail is an email hosting service for businesses.",
-    "dns": {
-      "TXT": [
-        "transmail\\.net"
-      ]
-    },
-    "icon": "Zoho.svg",
-    "implies": [
-      "Zoho"
-    ],
-    "website": "https://www.zoho.com/mail/"
   },
   "Zoho PageSense": {
     "cats": [
@@ -110747,23 +108667,6 @@
       "\\.33across\\.com"
     ]
   },
-  "34SP.com": {
-    "cats": [
-      88
-    ],
-    "description": "34SP.com specialises in website hosting, discount domain names, low cost VPS servers and dedicated servers.",
-    "dns": {
-      "SOA": [
-        "ns(?:\\d+)?\\.34sp\\.com"
-      ]
-    },
-    "icon": "34SP.com.svg",
-    "pricing": [
-      "recurring",
-      "low"
-    ],
-    "website": "https://www.34sp.com"
-  },
   "4-Tell": {
     "cats": [
       76
@@ -110814,17 +108717,6 @@
     ],
     "saas": true,
     "website": "https://www.42stores.com"
-  },
-  "4Partners": {
-    "cats": [
-      99
-    ],
-    "description": "4Partners is an international dropshipping service that allows you to launch a ready-made online store.",
-    "icon": "4Partners.svg",
-    "pricing": [
-      "poa"
-    ],
-    "website": "https://4partners.io/en/"
   },
   "4Partners CMS": {
     "cats": [
