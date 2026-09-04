@@ -14477,14 +14477,15 @@
     },
     "Microsoft SharePoint": {
       "categories": [
-        "Business Software"
+        "Business Software",
+        "CMS"
       ],
       "was": [
         "CMS"
       ],
-      "reason": "Enterprise collaboration/document platform — CMS is incidental, not primary function.",
+      "reason": "SharePoint hosts public university sites; alone it IS the CMS (UNI-223 R30/R31, Joel 2026-09-03), beside another CMS it is a portal/intranet — the store ranks it last-resort.",
       "institutions": 2,
-      "decided": "2026-08-10"
+      "decided": "2026-09-03"
     },
     "Blackboard Transact": {
       "categories": [

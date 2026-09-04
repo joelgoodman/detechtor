@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### UNI-223 — dictionary export + eight absorbed categories (2026-09-02)
+
+**Added**
+- `scripts/emit-dictionary.js` — the category + technology dictionary as JSON. The shared DB's
+  `categories`/`technologies`/`technology_aliases` are regenerated from it on every re-pin, so the
+  vocabulary cannot drift from the engine. Categories are canonical, overrides applied.
+- Eight categories absorbed from the BuiltWith-curated taxonomy (`Authentication`, `Forms`,
+  `Event Management`, `Tag Management`, `Feedback & UX`, `Maps & Virtual Tours`,
+  `Personalization & CRO`, `AI Tools`), non-signal. deTECHtor owns the vocabulary; BuiltWith and
+  WhatCMS data is mapped into it.
+
+**Changed**
+- `Microsoft SharePoint` now files under **both** `Business Software` and `CMS` (was
+  `Business Software` alone since 2026-08-10). SharePoint hosts public university sites; alone it
+  IS the CMS (R30/R31, Joel 2026-09-03), beside another CMS it is a portal/intranet. Dropping the
+  CMS category made the first case undetectable, which is the worse error — the "only when alone"
+  half of the rule belongs to the store, which ranks it last-resort
+  (`technologies.last_resort`, UNI-223 R30). Category override, not a pattern edit.
+
 ### UNI-226 — strip Wappalyzer `\;confidence` / `\;version` modifiers (2026-08-09)
 
 Upstream modifier suffixes were never stripped, so in every regex-tested field the suffix became a
