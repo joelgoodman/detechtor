@@ -1804,7 +1804,7 @@
     ],
     "description": "Screencast-O-Matic screen recording platform",
     "html": [
-      "screencast.*o.*matic",
+      "screencast[\\s_-]?o[\\s_-]?matic",
       "screencastomatic"
     ],
     "scripts": [

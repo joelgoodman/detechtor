@@ -1107,12 +1107,12 @@
     "description": "iClicker student response system",
     "html": [
       "iclicker",
-      "i.*clicker",
-      "reef.*iclicker"
+      "\\bi(?:&gt;|[\\s_>-])?clicker",
+      "reef[^<>\\n]{0,80}iclicker"
     ],
     "scripts": [
       "iclicker",
-      "reef"
+      "reef-education\\.com"
     ],
     "js": {
       "iClicker": "",

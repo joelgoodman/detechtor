@@ -7,6 +7,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Linear-time vendor patterns + underscore page types (2026-10-08)
+
+An offline run over 300 archived cohort-140 institutions found two defects.
+
+**Fixed — match cost.** Four `html` rules carried an unanchored `.*` that rescans to the end of the
+line from every start letter. Archived pages are minified onto one line, so the cost was quadratic in
+page size: `iClicker` alone was 67% of all match CPU and `Screencast-O-Matic` 8%; one 3.35 MB page took
+206 s. Every wildcard in these technologies' `html`/`scripts` rules is now bounded or a literal form:
+- `iClicker`: `i.*clicker` -> `\bi(?:&gt;|[\s_>-])?clicker` (the "i>clicker" branding is `i&gt;clicker`
+  in rendered HTML); `reef.*iclicker` -> `reef[^<>\n]{0,80}iclicker`; script `reef` ->
+  `reef-education\.com` (the bare substring fired on every Craft Freeform `freeform.js`).
+- `Screencast-O-Matic`: `screencast.*o.*matic` -> `screencast[\s_-]?o[\s_-]?matic`.
+- `PowerSchool SIS`: `powerschool.*sis`, `powerschool.*student`, `ps.*powerschool` (html and scripts)
+  -> `[^<>\n]{0,80}` between the literals.
+- `Unit4 Student Management`: the bare `coda` script substring is dropped (it fired inside a Slate
+  beacon URL's random id; `unit4` already covers the vendor's script hosts).
+
+The generated artifact `patterns/generated/webappanalyzer-merged.json` still carries the old text of
+these entries. It is not regenerated here: a re-import downloads current upstream WebAppAnalyzer
+data, which is unrelated churn, and the curated entries replace same-named generated ones whole at
+load (pinned by `tests/pattern-cost.test.js`, which checks the LOADED definitions).
+
+**Fixed — page types.** The page archive names its types with underscores (`cost_aid`,
+`student_life`); `config.pagePreference` uses hyphens, so those two preferences never matched.
+`orderPages` now compares `_` and `-` as the same character (`src/page-selection.js`). The caller's
+own `pageType` spelling is returned unchanged.
+
+**Added**
+- `tests/pattern-cost.test.js` (+ `tests/helpers/pattern-cost-child.js`): no unbounded quantifier in
+  these technologies' loaded rules, and each evaluates five 1 MB single-line adversarial pages in a
+  child process with a hard timeout.
+- `tests/vendor-patterns.test.js`: positive and negative fixtures per vendor, the negatives being the
+  real false positives from the run.
+- `_` vs `-` cases in `tests/page-selection.test.js` and `tests/tiered-detect.test.js`.
+
 ### UNI-223 — dictionary export + eight absorbed categories (2026-09-02)
 
 **Added**
