@@ -45,6 +45,18 @@ test('a clean tier-1 page escalates and the interior page recovers the CMS', () 
   assert.ok(names(r).includes('Modern Campus CMS'), `expected Modern Campus CMS, got: ${names(r).join(', ')}`);
 });
 
+test('archive page types (cost_aid, student_life) steer tier 1 the same as the hyphenated names', () => {
+  // The archive spells these with underscores; config.pagePreference with hyphens. Before they were
+  // normalised, `student_life` was an unknown type, sorted last, and this institution escalated.
+  const STUDENT_LIFE = { pageType: 'student_life', html: pad(fixture('omni-cms.html')) };
+  const r = detectTiered(engine, [CLEAN_HOME, STUDENT_LIFE]);
+  assert.deepStrictEqual(r.pagesEvaluated, ['student_life'], 'student_life outranks home and is read first');
+  assert.strictEqual(r.tier, 1);
+  assert.ok(names(r).includes('Modern Campus CMS'));
+  assert.deepStrictEqual(r.technologies.find((t) => t.name === 'Modern Campus CMS').pages, ['student_life'],
+    'the archive\'s own page_type spelling is reported back unchanged');
+});
+
 test('an institution whose every capture is blocked reports unknown, never "none"', () => {
   const r = detectTiered(engine, [BLOCKED_HOME, BLOCKED_PROGRAM]);
   assert.strictEqual(r.status, 'unknown');
