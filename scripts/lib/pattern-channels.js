@@ -36,7 +36,11 @@ const CHANNELS = [
   { channel: 'version', field: 'version', shape: 'string', input: 'page html', site: 'pattern.version' },
 ];
 
-/** Definition fields that are known NOT to be compiled as regexes. Anything else fails the gate. */
+/**
+ * Definition fields that are known NOT to be compiled as regexes. Anything else fails the gate.
+ * `js` is here on purpose: the engine reads only its KEYS (a global's name is looked up in the probe
+ * result, never matched), so its values -- often regex-looking upstream -- cost nothing.
+ */
 const NON_REGEX_FIELDS = new Set([
   'description', 'icon', 'website', 'implies', 'requires', 'requiresCategory', 'excludes', 'categories', 'cats',
   'oss', 'saas', 'pricing', 'cpe', 'higher_ed', 'confidence', 'signal_polarity', 'js', 'dom',
