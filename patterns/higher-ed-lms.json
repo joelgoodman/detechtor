@@ -148,12 +148,10 @@
     ],
     "description": "Cambridge University Press digital platform",
     "html": [
-      "cambridge.{0,250}core",
-      "cambridge\\.org",
-      "cup.{0,250}cambridge"
+      "cambridge\\.org/core"
     ],
     "scripts": [
-      "cambridge.{0,250}core"
+      "cambridge\\.org/core"
     ],
     "js": {
       "CambridgeCore": ""
@@ -235,15 +233,12 @@
     ],
     "description": "Cornerstone OnDemand learning platform",
     "html": [
-      "cornerstone[^<>\\n]{0,250}ondemand",
-      "csod\\.com"
+      "\\.csod\\.com"
     ],
     "scripts": [
-      "cornerstone",
-      "csod"
+      "\\.csod\\.com/"
     ],
     "js": {
-      "Cornerstone": "",
       "CSOD": ""
     },
     "higher_ed": true,
@@ -726,10 +721,10 @@
     ],
     "description": "Padlet collaborative digital canvas platform",
     "html": [
-      "padlet"
+      "padlet\\.com"
     ],
     "scripts": [
-      "padlet"
+      "padlet\\.com"
     ],
     "js": {
       "Padlet": ""
@@ -967,13 +962,10 @@
     ],
     "description": "Top Hat interactive learning platform",
     "html": [
-      "tophat",
-      "tophat",
-      "tophatlecture"
+      "tophat\\.com"
     ],
     "scripts": [
-      "tophat",
-      "tophat"
+      "tophat\\.com"
     ],
     "js": {
       "TopHat": "",

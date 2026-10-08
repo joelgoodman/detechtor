@@ -112,8 +112,17 @@ test('INTEGRATION: the engine applies the override file at load', () => {
   const DeTECHtor = require(path.resolve(__dirname, '../src/detechtor.js'));
   const OVERRIDES = require(path.resolve(__dirname, '../patterns/category-overrides.json'));
   const engine = new DeTECHtor();
+  // A technology RETIRED by the pattern-override layer (src/pattern-overrides.js) is absent after
+  // load on purpose; its category decision is kept for the day it is un-retired and is still
+  // validated against the pristine load below.
+  const PATTERN_RULES = require(path.resolve(__dirname, '../patterns/pattern-overrides.json')).overrides || {};
+  const retired = new Set(Object.keys(PATTERN_RULES).filter((k) => PATTERN_RULES[k] && PATTERN_RULES[k].retire === true));
 
   for (const [name, rule] of Object.entries(OVERRIDES.overrides)) {
+    if (retired.has(name)) {
+      assert.strictEqual(engine.patterns[name], undefined, `${name} is retired but still loads`);
+      continue;
+    }
     const def = engine.patterns[name];
     assert.ok(def, `${name} is overridden but not present after load — stale override`);
     assert.deepStrictEqual(def.categories, rule.categories,

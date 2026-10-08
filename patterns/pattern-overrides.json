@@ -80,6 +80,66 @@
       },
       "reason": "Unbounded wildcard evaluated against minified single-line HTML: `navigate.*eab` matched 119 corpus files but only 44 contain eab.com, one match spanning 233,893 characters of Wix config (NavigateToEcomCheckout ... EnableAbout). It reaches the merged technology via the `Navigate` alias in the regenerated artifact, so it cannot be deleted from higher-ed-infra.json. The bounded eab.{0,60}navigate and navigate.{0,60}eab there replace it -- the same fix this branch applied to blackboard.{0,60}ultra. Also removes `student.*success.*collaborative`: 42 corpus matches, only 9 of which carry any real EAB marker -- 'student success' and 'collaborative' are ordinary higher-ed prose. Those 9 are already caught by campus.eab.com / bouncer.eab.com, so removal costs no detections. And removes the bare `navigate` SCRIPT token: it matches 3 script srcs corpus-wide, all false -- a WordPress theme asset (navigate-select.js), a Google Ads URL carrying 'Navigate Forward' in a title parameter, and a Liferay bundle (util/navigate.es.js). Zero genuine EAB. Caught by hand, not by the gate, which screens the html channel only.",
       "decided": "2026-08-11"
+    },
+    "Allyant": {
+      "remove": {
+        "scriptSrc": [
+          "/npm/@accessible360/accessible-slick@([\\d\\.]+)/",
+          "/accessible360/accessible-slick/slick/slick\\.min\\.js\\?v=([\\d\\.]+)"
+        ]
+      },
+      "reason": "Both script rules match accessible-slick, the open-source carousel package Accessible360 (now Allyant) publishes on npm, loaded from jsdelivr or self-hosted (/libraries/accessible360--accessible-slick/). A site that ships a carousel is not an Allyant customer: all 12 floor-50 detections in the 2026-10-08 census were the slider (audited wrong at 2448). The accessible360.com badge-link dom rule stays. The one genuine Allyant marker in the cohort-140 corpus (Furman, 2741: an img alt 'Reviewed by Allyant for accessibility' linking to the site's own statement) is not covered by any rule; adding one is new-pattern work.",
+      "decided": "2026-10-08"
+    },
+    "Accessible360": {
+      "remove": {
+        "scriptSrc": [
+          "/npm/@accessible360/accessible-slick@([\\d\\.]+)/",
+          "/accessible360/accessible-slick/slick/slick\\.min\\.js\\?v=([\\d\\.]+)"
+        ]
+      },
+      "reason": "Same two script rules as Allyant (Accessible360 is Allyant's former name, the two upstream entries are identical): they match the accessible-slick carousel package, not the vendor's service. 12 floor-50 detections in the 2026-10-08 census, all the slider. The accessible360.com badge-link dom rule stays.",
+      "decided": "2026-10-08"
+    },
+    "Varbase": {
+      "remove": {
+        "js": [
+          "drupalSettings.ajaxPageState.libraries"
+        ]
+      },
+      "reason": "drupalSettings.ajaxPageState.libraries exists on every Drupal 8+ page. Upstream pairs it with the value regex .+varbase_.+, but the engine tests JS globals for presence only, so the rule fired on 360 Drupal institutions in the 2026-10-08 census (358 on this rule alone; 5 audited as unsupported extra claims). The Varbase dom rule (generator meta, varbase_ block classes) stays.",
+      "decided": "2026-10-08"
+    },
+    "Ova": {
+      "retire": true,
+      "reason": "Both evidence rules are JS globals of the Custom Facebook Feed WordPress plugin (cffOptions.placeholder, cffOptions.resized_url). Upstream constrains placeholder to an .ova.net.au URL, but the engine tests JS globals for presence only, so every CFF site was reported as the Ova website builder: 13 floor-50 CMS claims in the 2026-10-08 census, all CFF. With both rules gone nothing is left, so the technology is retired.",
+      "decided": "2026-10-08"
+    },
+    "core-js": {
+      "remove": {
+        "js": [
+          "__core-js_shared__",
+          "__core-js_shared__.versions.0.version"
+        ]
+      },
+      "reason": "__core-js_shared__ is set by a bundle a third-party script ships (present on 74% of pages carrying a Google tag script vs 15% without; only 36% of the 14,711 pages that carry it mention core-js anywhere in the HTML): 3,089 floor-50 institutions in the 2026-10-08 census, every one js-only. The site does not ship core-js, a vendor's script does. The core / _babelPolyfill globals stay and are not validated.",
+      "decided": "2026-10-08"
+    },
+    "Squiz DXP": {
+      "remove": {
+        "html": [
+          "squiz.*dxp",
+          "matrix.*asset"
+        ],
+        "scriptSrc": [
+          "dxp"
+        ],
+        "js": [
+          "Matrix"
+        ]
+      },
+      "reason": "Bare substrings that are not Squiz: script 'dxp' matched @viewdo/dxp-nent, GTM container ids and Funnelback search hosts (dxp-us-stage-search.funnelback.squiz.cloud); html squiz.*dxp matched Funnelback search config (ttuhscSquiz ... dxp02-us-search.funnelback.squiz.cloud); matrix.*asset joined an SVG feColorMatrix to a later 'asset' (audited wrong at 6651); JS global 'Matrix' is a WordPress site's own object (816). The 2026-10-08 census audit found Squiz DXP wrong on every contested row (Marjon, Wilson, campus.edu, John Carroll, Derby, Naval War College). Funnelback is Squiz's SEARCH product and is detected as Funnelback, not as a CMS. The bare 'squiz' and 'matrix' script rules are rewritten to real Squiz hosts/paths in pattern-rewrites.json.",
+      "decided": "2026-10-08"
     }
   }
 }

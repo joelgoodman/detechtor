@@ -147,8 +147,8 @@
       "html": [
         {
           "from": "<script>[\\s\\S]*?go-mpulse\\.net\\/boomerang[\\s\\S]*?</script>",
-          "to": "<script>[\\s\\S]{0,250}?go-mpulse\\.net\\/boomerang[\\s\\S]{0,250}?</script>",
-          "basis": "decision:bounded to 250/250 (largest the cost target allows): 54 of 54 inputs change verdict; keeps 0 of 164 match starts; the evidence asked for up to 295279"
+          "to": "go-mpulse\\.net/boomerang",
+          "basis": "precision:2026-10-08 census re-run. The <script>...</script> frame added nothing (the technology is detected by its dom and JS rules), and bounding it at 250 kept 0 of 164 match starts. Replaced with the linear literal, which matches the loader URL wherever it appears (inline loader, preload link, script src)."
         }
       ]
     },
@@ -4161,8 +4161,8 @@
       "scriptSrc": [
         {
           "from": "rx(?:\\.\\w+)?(?:\\.compat|\\.global)?(?:\\.min)?\\.js",
-          "to": "rx(?:\\.\\w{1,250})?(?:\\.compat|\\.global)?(?:\\.min)?\\.js",
-          "basis": "corpus:IDENTICAL(unobserved-default-bound)"
+          "to": "/rx(?:\\.\\w{1,80})?(?:\\.compat|\\.global)?(?:\\.min)?\\.js",
+          "basis": "precision:2026-10-08 census. Unanchored, rx...js matched the tail of a random widget id (app.heyhalda.com/widgets/smart-forms/cl29imffs08zs080eakthrvrx.js, institution 3543, floor 50). RxJS ships as rx.js / rx.all.js / rx.lite.min.js / rx.compat.js: the file name starts after a slash."
         }
       ]
     },
@@ -4688,11 +4688,6 @@
     "Squiz DXP": {
       "html": [
         {
-          "from": "matrix.*asset",
-          "to": "matrix.{0,250}asset",
-          "basis": "decision:bounded to 250 (largest the cost target allows): 161 of 228 inputs change verdict; keeps 71 of 1833 match starts; the evidence asked for up to 196625"
-        },
-        {
           "from": "mysource.*matrix",
           "to": "mysource[^<>\\n]{0,80}matrix",
           "basis": "corpus:IDENTICAL"
@@ -4703,14 +4698,21 @@
           "basis": "decision:bounded to 250 (largest the cost target allows): 1 of 1 inputs change verdict; keeps 0 of 1 match starts; the evidence asked for up to 4258"
         },
         {
-          "from": "squiz.*dxp",
-          "to": "squiz.{0,250}dxp",
-          "basis": "decision:bounded to 250 (largest the cost target allows): 1 of 13 inputs change verdict; keeps 12 of 13 match starts; the evidence asked for up to 16457"
-        },
-        {
           "from": "squiz.*matrix",
           "to": "squiz[^<>\\n]{0,80}matrix",
           "basis": "corpus:IDENTICAL"
+        }
+      ],
+      "scriptSrc": [
+        {
+          "from": "matrix",
+          "to": "/__data/assets/(?:js_file_folder|git_bridge|js_file)/",
+          "basis": "precision:2026-10-08 census. The bare token matched program-matrix.js (Naval War College) and other non-Squiz scripts. Replaced with the Squiz Matrix asset path for scripts (the Squiz Matrix technology carries the same rule), seen on Greenwich 230, Bradford 355, Wellington 411 and 3897."
+        },
+        {
+          "from": "squiz",
+          "to": "\\.(?:dx|matrix)\\.squiz\\.cloud/",
+          "basis": "precision:2026-10-08 census. The bare token matched Funnelback search hosts (*.funnelback.squiz.cloud: Squiz SEARCH, detected as Funnelback) on 6 institutions. Kept only the Squiz DXP hosts seen in the cohort-140 corpus, both at Bradford (355): the DXP component service (a script from components-cdn.stg.dx.squiz.cloud) and Squiz Matrix hosting (uobr-web.matrix.squiz.cloud, seen there as an asset host)."
         }
       ]
     },
