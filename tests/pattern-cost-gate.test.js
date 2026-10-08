@@ -44,10 +44,19 @@ test('the construct is banned in EVERY channel the engine compiles', () => {
 
 test('every channel the gate knows is one the engine actually compiles', () => {
   // The contract with src/detechtor.js: each `new RegExp(` call site has a channel here.
-  const engine = fs.readFileSync(path.join(ROOT, 'src/detechtor.js'), 'utf8');
-  const sites = [...engine.matchAll(/new RegExp\(([^,)]+),\s*'i'\)/g)].map((m) => m[1].trim());
+  const engine = fs.readFileSync(path.join(ROOT, 'src/detechtor.js'), 'utf8').replace(/\/\/.*$/gm, '');
+  const calls = [...engine.matchAll(/new RegExp\(([^()]*(?:\([^()]*\)[^()]*)*)\)/g)].map((m) => m[1]);
+  assert.ok(calls.length >= 10, `expected the engine's ~10 pattern-driven compile sites, found ${calls.length}`);
   const known = new Set(CHANNELS.map((c) => c.site));
-  for (const s of sites) assert.ok(known.has(s), `src/detechtor.js compiles a regex from \`${s}\` that no gate channel covers: add it to CHANNELS in scripts/lib/pattern-channels.js`);
+  for (const call of calls) {
+    const cut = call.lastIndexOf(',');
+    const site = (cut === -1 ? call : call.slice(0, cut)).trim();
+    const flags = cut === -1 ? '' : call.slice(cut + 1).trim();
+    assert.ok(known.has(site), `src/detechtor.js compiles a regex from \`${site}\` that no gate channel covers: add it to CHANNELS in scripts/lib/pattern-channels.js`);
+    // The static rules read a ^-anchored branch as ONE start position and \`.\` as "not a newline". That is
+    // only true without the m and s flags, so any other flag is a change the gate has not been taught.
+    assert.strictEqual(flags, "'i'", `src/detechtor.js compiles \`${site}\` with flags ${flags || '(none)'}: the gate assumes exactly 'i' (no m, s, g, y)`);
+  }
   // And every other file in src/ must stay free of pattern-driven regex compilation. The rewrite
   // layer compiles a replacement only to VALIDATE it (never to match with it).
   const VALIDATION_ONLY = new Set(['pattern-rewrites.js']);
