@@ -1394,12 +1394,10 @@
     ],
     "description": "Lucidworks Fusion search platform",
     "html": [
-      "lucidworks",
-      "fusion.{0,250}search"
+      "lucidworks"
     ],
     "scripts": [
-      "lucidworks",
-      "fusion"
+      "lucidworks"
     ],
     "js": {
       "Lucidworks": ""
@@ -2185,9 +2183,7 @@
       "googlevideo"
     ],
     "js": {
-      "YT": "",
-      "ytplayer": "",
-      "onYouTubeIframeAPIReady": ""
+      "ytplayer": ""
     },
     "higher_ed": false,
     "confidence": 95,
