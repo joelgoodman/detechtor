@@ -1031,26 +1031,12 @@
     "cats": [
       302
     ],
-    "description": "Workday cloud-based enterprise management suite",
+    "description": "Workday Student, the student information system module of the Workday suite",
+    "_detection_note": "Only evidence that names the Student module counts. A Workday tenant (myworkday.com, myworkdayjobs.com), the bare word \"workday\" and the Workday JS global / x-workday-client header do not say which module a site runs (2026-10-08 census audit: 1 of 6 such floor-50 detections was Workday Student; the rest were prose, Workday Recruiting job boards and tenant logins). The product name is carried by TWO rules on purpose: one html rule scores 40, under the ledger floor of 50, and the phrase was genuine on all 15 institutions that carry it in the cohort-140 corpus. The second rule also accepts URL-slug spellings (workday-student, workday_student). Replace the pair with one rule if the engine ever weights a rule by its own strength.",
     "html": [
-      "workday.{0,250}student",
-      "workdayhcm",
-      "wd-.{0,250}student",
-      "workday",
-      "workday\\.com",
-      "wd5\\.myworkday\\.com",
-      "class=\"wd-"
+      "workday\\s{1,3}student",
+      "workday[\\s_/-]{1,2}student"
     ],
-    "scripts": [
-      "workday",
-      "wd-app"
-    ],
-    "js": {
-      "Workday": ""
-    },
-    "headers": {
-      "x-workday-client": ".*"
-    },
     "higher_ed": true,
     "confidence": 95,
     "website": "https://www.workday.com/en-us/products/student/overview.html",
