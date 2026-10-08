@@ -1,0 +1,4 @@
+{
+  "_comment": "Bounded replacements for unbounded-wildcard evidence patterns. WRITTEN BY scripts/rewrite-unbounded-wildcards.js -- do not hand-edit. Each entry names the exact ORIGINAL text, so a re-import that brings it back is fixed again at load and one that changes it fails scripts/lint-pattern-cost.js as stale. Only technologies whose winning definition comes from patterns/generated/ (or an alias union) are here; a curated higher-ed-*.json technology is edited in place. See src/pattern-rewrites.js and docs/PATTERN_GUIDELINES.md.",
+  "rewrites": {}
+}

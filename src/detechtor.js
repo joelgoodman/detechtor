@@ -13,6 +13,8 @@ const { applyCategoryOverrides } = require('./category-overrides');
 const CATEGORY_OVERRIDES = require('../patterns/category-overrides.json');
 const PATTERN_OVERRIDES = require('../patterns/pattern-overrides.json');
 const { applyPatternOverrides } = require('./pattern-overrides');
+const PATTERN_REWRITES = require('../patterns/pattern-rewrites.json');
+const { applyPatternRewrites } = require('./pattern-rewrites');
 
 class DeTECHtor {
   constructor(options = {}) {
@@ -85,6 +87,9 @@ class DeTECHtor {
 
   // options.applyOverrides — set false to obtain the pristine, pre-override map. Only the
   // override validator wants this; everything else must see corrected categories.
+  // options.patternPaths — load from these files instead of config.patternPaths (same order rule:
+  // later wins). Used by the wildcard gate to evaluate a CANDIDATE generated artifact through this
+  // exact loader before an import writes it; production callers never pass it.
   loadPatterns(options = {}) {
     const patterns = {};
     // Curated (higher-ed-authored) partials get provenance-stamped so downstream
@@ -92,7 +97,7 @@ class DeTECHtor {
     // hand-vetted higher-ed match from a bare WebAppAnalyzer base-pattern match.
     const CURATED_RE = /(higher-ed-|general-analytics-extensions|fediverse-social)/;
 
-    config.patternPaths.forEach(patternPath => {
+    (options.patternPaths || config.patternPaths).forEach(patternPath => {
       const fullPath = path.resolve(__dirname, patternPath);
       if (fs.existsSync(fullPath)) {
         try {
@@ -158,6 +163,15 @@ class DeTECHtor {
       if (config.verbose) {
         const n2 = Object.keys(patternRules).filter((k) => k !== '_comment' && resolved[k]).length;
         if (n2) console.log(`Applied ${n2} pattern override(s)`);
+      }
+
+      // Wildcard rewrites run AFTER removals: a pattern a removal rule already dropped needs no
+      // rewrite, and the rewriter works from the effective set, so the two never name the same text.
+      const rewriteRules = PATTERN_REWRITES.rewrites || {};
+      resolved = applyPatternRewrites(resolved, rewriteRules);
+      if (config.verbose) {
+        const n3 = Object.keys(rewriteRules).filter((k) => k !== '_comment' && resolved[k]).length;
+        if (n3) console.log(`Applied ${n3} pattern rewrite(s)`);
       }
     }
 
