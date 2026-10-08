@@ -119,3 +119,26 @@ test('editJsonText handles escapes in the pattern text', () => {
   const next = editJsonText(text, [{ tech: 'T', field: 'html', from, to: 'a\\.\\*b.{0,80}"c' }]);
   assert.strictEqual(JSON.parse(next).T.html[0], 'a\\.\\*b.{0,80}"c');
 });
+
+// ---- the shipped files ---------------------------------------------------------------------------
+
+test('the shipped rewrite layer has no stale, no-op or uncompilable rule against the current patterns', () => {
+  const DeTECHtor = require('../src/detechtor.js');
+  const { applyPatternOverrides } = require('../src/pattern-overrides.js');
+  const pristine = new DeTECHtor().loadPatterns({ applyOverrides: false });
+  const afterRemovals = applyPatternOverrides(pristine, require('../patterns/pattern-overrides.json').overrides || {});
+  const problems = validatePatternRewrites(afterRemovals, require('../patterns/pattern-rewrites.json').rewrites || {});
+  assert.deepStrictEqual(problems, []);
+});
+
+test('every reviewed wildcard decision says what it decided and why', () => {
+  const file = require('../patterns/wildcard-decisions.json');
+  assert.ok(file._comment && typeof file._comment === 'string');
+  for (const [id, d] of Object.entries(file.decisions || {})) {
+    assert.ok(/^(page|src|dom:[^:]*|meta:[^:]*|none:[a-z]+)::/.test(id), `bad decision id ${id}`);
+    assert.ok(typeof d.to === 'string' || Array.isArray(d.bounds), `${id}: a decision needs \`to\` or \`bounds\``);
+    assert.ok(typeof d.reason === 'string' && d.reason.length >= 30, `${id}: a decision needs a real reason`);
+    assert.ok(Number.isFinite(d.acceptPagesLost) && d.acceptPagesLost >= 0, `${id}: acceptPagesLost is the number of page verdicts the reviewer accepted losing`);
+    assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(d.decided), `${id}: decided date`);
+  }
+});
