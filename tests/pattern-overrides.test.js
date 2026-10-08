@@ -58,6 +58,33 @@ test('never empties a technology of all evidence', () => {
   assert.ok(problems.some((p) => /no evidence/.test(p.problem)), JSON.stringify(problems));
 });
 
+test('a definition left with dom rules only still has evidence (Varbase, Allyant)', () => {
+  // Varbase's js rule is a generic Drupal global; removing it must leave its dom rule standing,
+  // not be refused as "no evidence at all".
+  const base = { Varbase: { dom: ["div[class*='varbase-']"], js: { 'drupalSettings.ajaxPageState.libraries': '' } } };
+  assert.deepStrictEqual(validatePatternOverrides(base, {
+    Varbase: { remove: { js: ['drupalSettings.ajaxPageState.libraries'] }, reason: 'r', decided: '2026-10-08' },
+  }), []);
+});
+
+test('retire drops the whole technology at load, and only that one', () => {
+  const out = applyPatternOverrides(BASE(), {
+    Ghost: { retire: true, reason: 'every evidence pattern is another product', decided: '2026-10-08' },
+  });
+  assert.strictEqual(out.Ghost, undefined);
+  assert.deepStrictEqual(out.Bootstrap, BASE().Bootstrap);
+});
+
+test('retire is validated: a reason, a date, an existing technology, and no `remove` alongside it', () => {
+  const v = (rules) => validatePatternOverrides(BASE(), rules).map((p) => p.problem).join(' | ');
+  assert.strictEqual(v({ Ghost: { retire: true, reason: 'every evidence pattern is another product', decided: '2026-10-08' } }), '');
+  assert.match(v({ Ghost: { retire: true, decided: '2026-10-08' } }), /real `reason`/);
+  assert.match(v({ Ghost: { retire: true, reason: 'every evidence pattern is another product' } }), /decided/);
+  assert.match(v({ Nope: { retire: true, reason: 'every evidence pattern is another product', decided: '2026-10-08' } }), /no such technology/);
+  assert.match(v({ Ghost: { retire: true, remove: { html: ['ghost'] }, reason: 'every evidence pattern is another product', decided: '2026-10-08' } }), /takes no `remove`/);
+  assert.match(v({ Ghost: { retire: 'yes', reason: 'every evidence pattern is another product', decided: '2026-10-08' } }), /either true or absent/);
+});
+
 test('rejects a stale rule naming a missing technology', () => {
   const problems = validatePatternOverrides(BASE(), { Nonexistent: { remove: { html: ['x'] } } });
   assert.ok(problems.some((p) => p.name === 'Nonexistent' && /no such technology/.test(p.problem)));
@@ -105,6 +132,10 @@ test('an override survives regeneration of the upstream pattern file', () => {
     const raw = upstream[name];
     if (!raw) continue; // rule targets a curated-only technology; not this test's concern
     const after = applyPatternOverrides({ [name]: raw }, { [name]: rules[name] })[name];
+    if (rules[name].retire === true) {
+      assert.strictEqual(after, undefined, `${name} is retired but still loads`);
+      continue;
+    }
     for (const [field, values] of Object.entries(rules[name].remove)) {
       for (const v of values) {
         const still = Array.isArray(after[field])

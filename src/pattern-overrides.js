@@ -9,7 +9,16 @@
 // reorders evidence, and it never touches `categories`/`cats` — that is category-overrides.js.
 // Keeping the two disjoint is what makes the UNI-224 dom-clobbering hazard structurally impossible
 // rather than merely tested against.
+//
+// RETIRE. One more removal, of the whole technology: `{ retire: true, reason, decided }` drops a
+// technology from the loaded map. It exists for a generated technology whose every evidence pattern
+// is wrong: emptying it is refused below (a technology with no evidence looks alive and never
+// fires), and deleting it in place is reverted by the next import. Ova (2026-10-08) is the case: its
+// only evidence is two JS globals of the Custom Facebook Feed WordPress plugin. Still a removal: it
+// never adds or rewrites anything.
 'use strict';
+
+const { admittedDomRules } = require('./dom-rules');
 
 // Only these may be targeted. `dom` is deliberately absent: its rules are pre-compiled into
 // `_domRules` at load, so removing a raw `dom` entry would leave the compiled rule live and the two
@@ -20,19 +29,30 @@ const OBJECT_FIELDS = ['meta', 'headers', 'cookies', 'js'];
 function isArrayField(f) { return EVIDENCE_FIELDS.includes(f); }
 function isObjectField(f) { return OBJECT_FIELDS.includes(f); }
 
-/** Every evidence entry a definition currently carries, counted across both shapes. */
-function evidenceCount(def) {
+/**
+ * Every evidence entry a definition currently carries, counted across both shapes, plus its dom
+ * rules. A dom rule cannot be removed here (see above) but it fires, so a definition left with dom
+ * rules only is still detectable. Only rules the Phase A gate admits count: a denied one never fires.
+ *
+ * @param {object} def
+ * @param {string} [name] the technology name, which the dom denylist is keyed by
+ */
+function evidenceCount(def, name = '') {
   let n = 0;
   for (const f of EVIDENCE_FIELDS) if (Array.isArray(def[f])) n += def[f].length;
   for (const f of OBJECT_FIELDS) if (def[f] && typeof def[f] === 'object') n += Object.keys(def[f]).length;
+  try { n += admittedDomRules(name, def).length; } catch { /* unusable dom shape: lint-dom-rules gates it */ }
   return n;
 }
+
+const isDate = (v) => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v);
 
 /**
  * Apply evidence-pattern removals.
  *
  * @param {object} patterns name -> definition
  * @param {object} [overrides] name -> {remove: {field: string[]}, reason?, decided?}
+ *                              | {retire: true, reason, decided}
  * @returns {object} a new pattern map; the input and its definitions are not mutated.
  */
 function applyPatternOverrides(patterns, overrides = {}) {
@@ -44,6 +64,7 @@ function applyPatternOverrides(patterns, overrides = {}) {
     // Never invent a technology. A stale rule is reported by validatePatternOverrides and gated in
     // CI; at runtime it is simply inert.
     if (!def || typeof def !== 'object') continue;
+    if (rule && rule.retire === true && !rule.remove) { delete out[name]; continue; }
     if (!rule || !rule.remove || typeof rule.remove !== 'object') continue;
 
     const next = { ...def };
@@ -92,6 +113,16 @@ function validatePatternOverrides(patterns, overrides = {}) {
   for (const [name, rule] of Object.entries(overrides)) {
     if (name === '_comment') continue;
 
+    if (rule && rule.retire !== undefined) {
+      if (rule.retire !== true) { problems.push({ name, problem: 'malformed: `retire` is either true or absent' }); continue; }
+      if (rule.remove !== undefined) { problems.push({ name, problem: 'malformed: a retire rule removes the whole technology; it takes no `remove`' }); continue; }
+      if (typeof rule.reason !== 'string' || rule.reason.length < 30) problems.push({ name, problem: 'a retire rule needs a real `reason` (what the evidence actually is)' });
+      if (!isDate(rule.decided)) problems.push({ name, problem: 'a retire rule needs a `decided` date (YYYY-MM-DD)' });
+      const def = patterns[name];
+      if (!def || typeof def !== 'object') problems.push({ name, problem: 'no such technology — the override is stale' });
+      continue;
+    }
+
     if (!rule || !rule.remove || typeof rule.remove !== 'object' || Array.isArray(rule.remove)) {
       problems.push({ name, problem: 'malformed: `remove` must be an object of field -> string[]' });
       continue;
@@ -133,8 +164,8 @@ function validatePatternOverrides(patterns, overrides = {}) {
     // Removing a technology's last evidence makes it permanently undetectable. If that is genuinely
     // wanted, delete the technology; do not hollow it out and leave a corpse that looks alive.
     const after = applyPatternOverrides({ [name]: def }, { [name]: rule })[name];
-    if (evidenceCount(after) === 0) {
-      problems.push({ name, problem: 'would leave no evidence at all — delete the technology instead' });
+    if (evidenceCount(after, name) === 0) {
+      problems.push({ name, problem: 'would leave no evidence at all — retire the technology instead (`retire: true`)' });
     }
   }
 
