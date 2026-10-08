@@ -8,7 +8,7 @@
     "detechtor": "./cli.js"
   },
   "scripts": {
-    "test": "node scripts/lint-generated.js --gate && node scripts/lint-patterns.js --fail-curated && node scripts/lint-dom-rules.js --gate && node scripts/category-audit.js --gate && node scripts/lint-pattern-breadth.js --gate && node --test tests/*.test.js && node scripts/test-patterns.js",
+    "test": "node scripts/lint-generated.js --gate && node scripts/lint-patterns.js --fail-curated && node scripts/lint-dom-rules.js --gate && node scripts/category-audit.js --gate && node scripts/lint-pattern-breadth.js --gate && node scripts/lint-pattern-cost.js --gate && node --test tests/*.test.js && node scripts/test-patterns.js",
     "lint:generated": "node scripts/lint-generated.js",
     "lint:patterns": "node scripts/lint-patterns.js",
     "lint:patterns:gate": "node scripts/lint-patterns.js --fail-curated",
@@ -34,7 +34,12 @@
     "prevalence": "node scripts/corpus-prevalence.js",
     "audit:coverage": "node scripts/category-coverage.js",
     "breadth": "node scripts/pattern-breadth.js",
-    "lint:breadth": "node scripts/lint-pattern-breadth.js"
+    "lint:breadth": "node scripts/lint-pattern-breadth.js",
+    "lint:cost": "node scripts/lint-pattern-cost.js",
+    "lint:cost:gate": "node scripts/lint-pattern-cost.js --gate",
+    "lint:cost:exhaustive": "node scripts/lint-pattern-cost.js --gate --exhaustive",
+    "rewrite:wildcards": "node scripts/rewrite-unbounded-wildcards.js",
+    "measure:match-cpu": "node scripts/measure-match-cpu.js"
   },
   "keywords": [
     "technology-detection",

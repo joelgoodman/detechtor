@@ -7,6 +7,51 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Unbounded wildcards: a gate, a corpus-verified rewriter, and the rewrite (2026-10-08)
+
+An unbounded `.*` / `.+` / `[^x]*` / `\s*` / `\w+` in a detection regex is a runtime-cost bug (V8 retries it
+from every start position, so it is quadratic on a minified one-line page). It had been "fixed" at least four
+times by judging the pattern's text; nothing measured runtime cost and nothing banned the construct, so it kept
+coming back (`i.*clicker` passed every lint with a seven-letter literal). 906 regexes in the effective pattern
+set still carried it after the last fix.
+
+**Added — the gate** (`scripts/lint-pattern-cost.js`, in `npm test`; `docs/WILDCARD_GATE.md`).
+- Loads what the engine actually loads (generated artifact + curated files + identity merge + override and
+  rewrite layers) and checks every regex in every channel the engine compiles.
+- Static rules from a real regex parser (`scripts/lib/regex-shape.js`): unbounded `*` `+` `{n,}` over `.`, a
+  negated class, `\s \S \w \W \D`, `[\s\S]`, a class as wide as `\w` or a repeated group of single-character
+  alternatives, except terminal or in a `^`-anchored branch; more than one per match path; ambiguous nested
+  repeats (judged by whether the inner repeat can absorb what comes next, so version idioms like
+  `(?:\d+\.)+` pass); ambiguous alternation; a leading unbounded run; a bound over 1000; an unbounded
+  repeat of a group that contains a span-eater.
+- Measured: every distinct regex against two 1 MB single-line adversarial inputs in a child process under a
+  250 ms budget, with a vm timeout inside and a SIGKILL watchdog outside (a catastrophic regex fails the
+  build instead of hanging it). 6,342 regexes in ~13 s. `--exhaustive` adds unbroken-run inputs.
+- Hygiene: `patterns/wildcard-allowlist.json` with a ratchet (reason, measured span and cost; stale, no-op
+  and duplicate entries fail; its length is capped in a test; it is empty); stale rewrite rules fail; an
+  unclassified definition field fails, and a test fails if `src/detechtor.js` gains a `new RegExp(` site
+  with no channel.
+- The importer evaluates the effective set WITH the candidate artifact before writing anything and refuses,
+  listing the offenders, if it would carry the construct (`--keep-candidate FILE` saves it for the rewriter).
+
+**Added — the rewriter** (`scripts/rewrite-unbounded-wildcards.js`). Measures the shortest gap each wildcard
+needs on 22,297 archived pages, sets `bound = max(80, 2 x observed max)` (250 when never seen, 80 with several
+wildcards on a path), drops a wildcard that is the first or last thing in a branch (redundant for `test()`),
+and writes a rewrite only when old and new are identical over the whole corpus on page verdicts and match
+starts. Anything else needs a decision (`patterns/wildcard-decisions.json`), which applies only if no page
+gains a match and no more than the reviewed number lose one. `patterns/wildcard-review.tsv` lists what still
+wants a human eye.
+
+**Changed — the patterns.** 902 distinct wildcard patterns rewritten: 750 identical over the corpus, 27 in
+channels the corpus cannot observe (url, xhr, headers), 118 where the bound the cost target allows is smaller
+than the evidence asked for (the pattern only matched by spanning far-apart words; 99 of these change some
+page verdicts and are listed with their numbers), 7 reviewed replacements. Curated technologies are edited in
+place; generated ones through `patterns/pattern-rewrites.json`, a new load-time layer (`src/pattern-rewrites.js`)
+that names the exact original text, so a re-import that brings it back is fixed again at load.
+
+Note for consumers: a detection's `evidence` strings carry the pattern text, which changes for every
+rewritten pattern.
+
 ### Linear-time vendor patterns + underscore page types (2026-10-08)
 
 An offline run over 300 archived cohort-140 institutions found two defects.

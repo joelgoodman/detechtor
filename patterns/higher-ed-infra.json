@@ -29,7 +29,7 @@
     "description": "25Live event and space management system for higher education.",
     "html": [
       "25live",
-      "collegenet.*25live",
+      "collegenet.{0,250}25live",
       "twentyfivelive",
       "25live\\.collegenet\\.com",
       "class=\"25live"
@@ -114,12 +114,12 @@
     ],
     "description": "Adobe Creative Cloud for education",
     "html": [
-      "adobe.*creative.*cloud",
-      "creative.*adobe"
+      "adobe.{0,100}creative.{0,100}cloud",
+      "creative.{0,250}adobe"
     ],
     "scripts": [
-      "adobe.*creative",
-      "creative.*cloud"
+      "adobe.{0,250}creative",
+      "creative.{0,250}cloud"
     ],
     "js": {
       "AdobeCC": "",
@@ -136,11 +136,11 @@
     "description": "Adobe Experience Manager digital asset management",
     "html": [
       "aem-assets",
-      "adobe.*experience.*manager.*assets"
+      "adobe.{0,60}experience.{0,60}manager.{0,60}assets"
     ],
     "scripts": [
       "aem-core",
-      "experience.*manager"
+      "experience.{0,250}manager"
     ],
     "js": {
       "AEM": "",
@@ -272,8 +272,8 @@
     ],
     "description": "Argos higher education reporting platform",
     "html": [
-      "argos.*reporting",
-      "evisions.*argos"
+      "argos[^<>\\n]{0,250}reporting",
+      "evisions[^<>\\n]{0,250}argos"
     ],
     "scripts": [
       "argos"
@@ -292,7 +292,7 @@
     "description": "Microsoft Azure Cognitive Search",
     "html": [],
     "scripts": [
-      "azure.*search"
+      "azure.{0,100}search"
     ],
     "js": {
       "AzureSearch": ""
@@ -400,13 +400,13 @@
     "description": "Central Authentication Service (CAS) single sign-on protocol.",
     "html": [
       "/cas/login",
-      "central.*authentication.*service",
-      "apereo.*cas",
-      "central.*authentication",
+      "central.{0,160}authentication.{0,160}service",
+      "apereo[^<>\\n]{0,250}cas",
+      "central.{0,250}authentication",
       "central authentication service"
     ],
     "scripts": [
-      "apereo.*cas"
+      "apereo.{0,250}cas"
     ],
     "js": {
       "CAS": ""
@@ -451,7 +451,7 @@
     ],
     "description": "Canto digital asset management platform",
     "html": [
-      "canto.*dam",
+      "canto.{0,250}dam",
       "cantotechture"
     ],
     "scripts": [
@@ -470,7 +470,7 @@
     ],
     "description": "Canva design platform for education",
     "html": [
-      "canva.*for.*schools"
+      "canva.{0,60}for.{0,60}schools"
     ],
     "scripts": [
       "canva"
@@ -488,7 +488,7 @@
     ],
     "description": "Civitas Learning student success analytics platform",
     "html": [
-      "civitas.*learning",
+      "civitas.{0,250}learning",
       "civitaslearning"
     ],
     "scripts": [
@@ -561,11 +561,11 @@
     ],
     "description": "Destiny One student recruitment platform",
     "html": [
-      "destiny.*one",
+      "destiny.{0,250}one",
       "destinyone"
     ],
     "scripts": [
-      "destiny.*one"
+      "destiny.{0,250}one"
     ],
     "js": {
       "DestinyOne": ""
@@ -629,12 +629,12 @@
     ],
     "description": "EBSCO Discovery Service (EDS)",
     "html": [
-      "ebsco.*discovery",
-      "eds.*ebsco"
+      "ebsco.{0,250}discovery",
+      "eds.{0,250}ebsco"
     ],
     "scripts": [
-      "ebsco.*eds",
-      "discovery.*ebsco"
+      "ebsco.{0,80}eds",
+      "discovery.{0,250}ebsco"
     ],
     "js": {
       "EBSCODiscovery": "",
@@ -670,7 +670,7 @@
     "description": "Echo360 lecture capture and video platform",
     "html": [
       "echo360",
-      "echo.*classroom"
+      "echo.{0,250}classroom"
     ],
     "scripts": [
       "echo360"
@@ -747,7 +747,7 @@
     "description": "Encoura (formerly Noel-Levitz) enrollment management platform",
     "html": [
       "encoura(?!g)",
-      "noel.*levitz"
+      "noel[^<>\\n]{0,80}levitz"
     ],
     "scripts": [
       "encoura"
@@ -765,7 +765,7 @@
     ],
     "description": "Ensemble Video streaming platform",
     "html": [
-      "ensemble.*video",
+      "ensemble.{0,250}video",
       "ensemblevideo"
     ],
     "scripts": [
@@ -803,12 +803,12 @@
     "description": "Ex Libris Alma library management system.",
     "html": [
       "exlibrisgroup",
-      "alma.*exlibris",
-      "exlibris.*alma"
+      "alma.{0,250}exlibris",
+      "exlibris.{0,250}alma"
     ],
     "scripts": [
       "exlibrisgroup",
-      "exlibris.*alma"
+      "exlibris.{0,250}alma"
     ],
     "js": {
       "ExLibris": "",
@@ -824,14 +824,14 @@
     ],
     "description": "Ex Libris Primo library discovery service. Primo VE uses /primo-explore/ URL paths; Classic Primo uses /primo/ paths.",
     "html": [
-      "primo.*exlibris",
-      "exlibris.*primo",
-      "primo.*ve",
+      "primo[^<>\\n]{0,80}exlibris",
+      "exlibris.{0,250}primo",
+      "primo.{0,250}ve",
       "/primo-explore/",
       "primo.exlibrisgroup.com"
     ],
     "scripts": [
-      "exlibris.*primo",
+      "exlibris.{0,250}primo",
       "primo\\.exlibris",
       "primo.exlibrisgroup.com"
     ],
@@ -849,8 +849,8 @@
     ],
     "description": "Ex Libris Voyager integrated library system (legacy)",
     "html": [
-      "voyager.*exlibris",
-      "exlibris.*voyager"
+      "voyager[^<>\\n]{0,250}exlibris",
+      "exlibris[^<>\\n]{0,250}voyager"
     ],
     "scripts": [
       "voyager",
@@ -869,8 +869,8 @@
     ],
     "description": "FOLIO open source library services platform",
     "html": [
-      "folio.*library",
-      "folio.*lsp"
+      "folio.{0,250}library",
+      "folio.{0,250}lsp"
     ],
     "scripts": [
       "folio"
@@ -923,7 +923,7 @@
     ],
     "description": "Four Winds Interactive digital signage",
     "html": [
-      "fourwinds.*interactive",
+      "fourwinds[^<>\\n]{0,250}interactive",
       "fourwindsinteractive"
     ],
     "scripts": [
@@ -945,11 +945,11 @@
     "description": "Funnelback enterprise search platform (Squiz Search)",
     "html": [
       "funnelback",
-      "squiz.*search"
+      "squiz.{0,400}search"
     ],
     "scripts": [
       "funnelback",
-      "squiz.*search"
+      "squiz.{0,80}search"
     ],
     "js": {
       "Funnelback": ""
@@ -999,7 +999,7 @@
     ],
     "description": "Google Workspace (formerly G Suite) collaboration platform",
     "html": [
-      "workspace.*google",
+      "workspace.{0,250}google",
       "gsuite"
     ],
     "scripts": [
@@ -1074,10 +1074,10 @@
     ],
     "description": "Hobsons Connect student success platform",
     "html": [
-      "hobsons.*connect"
+      "hobsons.{0,250}connect"
     ],
     "scripts": [
-      "hobsons.*connect"
+      "hobsons.{0,250}connect"
     ],
     "js": {
       "HobsonsConnect": ""
@@ -1136,7 +1136,7 @@
     ],
     "description": "Entrinsik Informer reporting and analytics platform",
     "html": [
-      "informer.*entrinsik",
+      "informer[^<>\\n]{0,250}entrinsik",
       "entrinsik"
     ],
     "scripts": [
@@ -1174,8 +1174,8 @@
     ],
     "description": "Innovative Interfaces Sierra ILS",
     "html": [
-      "sierra.*ils",
-      "iii\\.com.*sierra"
+      "sierra.{0,250}ils",
+      "iii\\.com[^<>\\n]{0,250}sierra"
     ],
     "scripts": [
       "sierra-ils",
@@ -1234,7 +1234,7 @@
     "html": [
       "kaltura",
       "kwidget",
-      "kaltura.*player",
+      "kaltura.{0,250}player",
       "cdnapi\\.kaltura\\.com",
       "html5player\\.kaltura\\.com",
       "cdnapisec.kaltura.com"
@@ -1297,7 +1297,7 @@
     "description": "Springshare LibAnswers reference platform",
     "html": [
       "libanswers",
-      "springshare.*libanswers"
+      "springshare[^<>\\n]{0,250}libanswers"
     ],
     "scripts": [
       "libanswers"
@@ -1316,7 +1316,7 @@
     "description": "Springshare LibCal calendar and booking system",
     "html": [
       "libcal",
-      "springshare.*libcal"
+      "springshare[^<>\\n]{0,250}libcal"
     ],
     "scripts": [
       "libcal"
@@ -1335,7 +1335,7 @@
     "description": "Springshare LibGuides research guide platform",
     "html": [
       "libguides",
-      "springshare.*libguides"
+      "springshare[^<>\\n]{0,250}libguides"
     ],
     "scripts": [
       "libguides",
@@ -1395,7 +1395,7 @@
     "description": "Lucidworks Fusion search platform",
     "html": [
       "lucidworks",
-      "fusion.*search"
+      "fusion.{0,250}search"
     ],
     "scripts": [
       "lucidworks",
@@ -1451,7 +1451,7 @@
     "description": "Enterprise video platform and lecture capture",
     "html": [
       "mediasite",
-      "sonicfoundry.*mediasite",
+      "sonicfoundry[^<>\\n]{0,250}mediasite",
       "mediasite\\.com",
       "mediasite\\.cloud",
       "class=\"mediasite"
@@ -1551,7 +1551,7 @@
     "description": "OCLC WorldShare library management platform",
     "html": [
       "worldshare",
-      "oclc.*worldshare"
+      "oclc[^<>\\n]{0,250}worldshare"
     ],
     "scripts": [
       "worldshare",
@@ -1590,7 +1590,7 @@
     "description": "Panopto video platform for higher education lecture capture.",
     "html": [
       "panopto",
-      "panopto.*viewer",
+      "panopto.{0,250}viewer",
       "panopto\\.com",
       "hosted\\.panopto\\.com",
       "class=\"panopto"
@@ -1612,8 +1612,8 @@
     ],
     "description": "Innovative Polaris integrated library system",
     "html": [
-      "polaris.*ils",
-      "polaris.*library"
+      "polaris.{0,250}ils",
+      "polaris.{0,80}library"
     ],
     "scripts": [
       "polaris"
@@ -1631,11 +1631,11 @@
     ],
     "description": "Raiser's Edge donor management system",
     "html": [
-      "raiser.*edge",
-      "raisers.*edge"
+      "raiser.{0,250}edge",
+      "raisers.{0,250}edge"
     ],
     "scripts": [
-      "raisers.*edge"
+      "raisers.{0,250}edge"
     ],
     "js": {
       "RaisersEdge": ""
@@ -1738,7 +1738,7 @@
       "salesforce\\.com",
       "force\\.com",
       "lightning-",
-      "salesforce.*education",
+      "salesforce.{0,250}education",
       "salesforce",
       "educationcloud\\.salesforce\\.com",
       "class=\"salesforce"
@@ -1747,7 +1747,7 @@
       "salesforce",
       "force\\.com",
       "lightning",
-      "salesforce.*education",
+      "salesforce.{0,250}education",
       "force"
     ],
     "js": {
@@ -1768,7 +1768,7 @@
     ],
     "description": "Scala digital signage platform",
     "html": [
-      "scala.*signage"
+      "scala[^<>\\n]{0,250}signage"
     ],
     "scripts": [
       "scala"
@@ -1870,7 +1870,7 @@
     "description": "SirsiDynix Symphony integrated library system",
     "html": [
       "sirsidynix",
-      "symphony.*ils"
+      "symphony.{0,250}ils"
     ],
     "scripts": [
       "sirsidynix",
@@ -1941,10 +1941,10 @@
     "description": "EAB Starfish student success and retention platform (formerly Hobsons Starfish)",
     "html": [
       "starfishsolutions",
-      "hobsons.*starfish",
+      "hobsons[^<>\\n]{0,250}starfish",
       "starfish\\.hobsons",
       "starfish\\.starfishsolutions\\.com",
-      "starfish.*retention"
+      "starfish[^<>\\n]{0,250}retention"
     ],
     "scripts": [
       "starfishsolutions"
@@ -1965,8 +1965,8 @@
     ],
     "description": "ProQuest Summon discovery service",
     "html": [
-      "summon.*discovery",
-      "proquest.*summon"
+      "summon.{0,250}discovery",
+      "proquest[^<>\\n]{0,250}summon"
     ],
     "scripts": [
       "summon"
@@ -2043,7 +2043,7 @@
     "description": "Transact Campus card, mobile ordering, and payment solutions (now part of Illumia; formerly Blackboard Transact).",
     "html": [
       "transactcampus\\.com",
-      "blackboard.*transact",
+      "blackboard.{0,250}transact",
       "transactcampus",
       "transact-campus",
       "transact\\.com",
@@ -2116,7 +2116,7 @@
     ],
     "description": "Widen Collective digital asset management",
     "html": [
-      "widen.*collective",
+      "widen.{0,250}collective",
       "widencollective"
     ],
     "scripts": [
@@ -2155,12 +2155,12 @@
     ],
     "description": "OCLC WorldCat Discovery service",
     "html": [
-      "worldcat.*discovery",
-      "oclc.*discovery"
+      "worldcat[^<>\\n]{0,80}discovery",
+      "oclc[^<>\\n]{0,250}discovery"
     ],
     "scripts": [
       "worldcat",
-      "discovery.*oclc"
+      "discovery.{0,250}oclc"
     ],
     "js": {
       "WorldCatDiscovery": ""
@@ -2200,7 +2200,7 @@
     "description": "YuJa video platform for education",
     "html": [
       "yuja",
-      "yuja.*enterprise"
+      "yuja.{0,250}enterprise"
     ],
     "scripts": [
       "yuja"
@@ -2238,13 +2238,13 @@
     "html": [
       "campuslabs\\.com/engage",
       "campuslabs",
-      "anthology.*engage",
+      "anthology.{0,250}engage",
       "engage.anthology"
     ],
     "scripts": [
       "campuslabs\\.com/engage",
       "campuslabs",
-      "anthology.*engage"
+      "anthology.{0,250}engage"
     ],
     "js": {
       "CampusLabs": "",
@@ -2269,12 +2269,12 @@
     "description": "Anthology Encompass alumni engagement and advancement platform (formerly iModules).",
     "html": [
       "imodules",
-      "anthology.*encompass",
+      "anthology[^<>\\n]{0,250}encompass",
       "encompass.anthology"
     ],
     "scripts": [
       "imodules",
-      "anthology.*encompass"
+      "anthology.{0,250}encompass"
     ],
     "js": {
       "iModules": "",
@@ -2298,8 +2298,8 @@
       "qualtrics.com",
       "jfe/form/",
       "QSI.API",
-      "qualtrics.*survey",
-      "zn[a-z0-9]+.siteintercept.qualtrics.com"
+      "qualtrics.{0,250}survey",
+      "zn[a-z0-9]{1,250}.siteintercept.qualtrics.com"
     ],
     "scripts": [
       "qualtrics.com",

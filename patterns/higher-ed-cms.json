@@ -14,7 +14,7 @@
     ],
     "description": "Blackboard Web Community Manager CMS",
     "html": [
-      "blackboard.*web.*community",
+      "blackboard.{0,100}web.{0,100}community",
       "bb[-_/]?wcm"
     ],
     "scripts": [
@@ -128,7 +128,7 @@
     "description": "SchoolMessenger (West Unified Communications)",
     "html": [
       "schoolmessenger",
-      "west.*unified"
+      "west.{0,250}unified"
     ],
     "scripts": [
       "schoolmessenger"

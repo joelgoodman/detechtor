@@ -1,0 +1,1010 @@
+{
+  "_comment": "Reviewed decisions for wildcard patterns the mechanical pass could not rewrite identically (scripts/rewrite-unbounded-wildcards.js). Keyed by the evidence kind and the ORIGINAL pattern text, so a re-import that brings the original back is decided the same way. { bounds | to, acceptPagesLost, reason, decided }. A decision applies only if no page GAINS a match and no more than acceptPagesLost pages change verdict on the corpus; start positions beyond the decided bound drop, and the reason says how many.",
+  "decisions": {
+    "dom:link[href*='aniview.com']|attributes|href::^(?!.*player).*aniview\\.com/": {
+      "to": "^(?!.{0,250}player).{0,250}aniview\\.com/",
+      "acceptPagesLost": 0,
+      "reason": "a negative look-around cannot be bounded mechanically (bounding it can add matches); the input is the href of a <link>, a URL far shorter than 250 chars, so (?!.{0,250}player) and .{0,250}aniview\\.com/ select the same URLs as the unbounded form",
+      "decided": "2026-10-08"
+    },
+    "none:headers::[\\d.-]+ vegur$": {
+      "to": "[\\d.-] vegur$",
+      "acceptPagesLost": 0,
+      "reason": "a leading X+ is redundant for RegExp#test: [\\d.-]+ vegur$ matches exactly the Via values [\\d.-] vegur$ matches (the extra repeats can be absorbed by starting the match earlier)",
+      "decided": "2026-10-08"
+    },
+    "page::(?:<a[^>]+>Powered by Flyspray|<map id=\"projectsearchform)": {
+      "bounds": [
+        200
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 200 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:word\"|<w:WordDocument>|<div [^>]*class=\"?WordSection1[\" >]|<style[^>]*>[^>]*@page WordSection1)": {
+      "bounds": [
+        80,
+        80,
+        80,
+        250
+      ],
+      "acceptPagesLost": 6,
+      "reason": "bounded to 80/80/80/250 (largest the cost target allows): 6 of 19 inputs change verdict; keeps 15 of 64 match starts; the evidence asked for up to 1332",
+      "decided": "2026-10-08"
+    },
+    "page::<[^>]{1,512}\\bwire:": {
+      "to": "<[^>]{1,120}\\bwire:",
+      "acceptPagesLost": 0,
+      "reason": "already bounded, but {1,512} over the one-character prefix \"<\" costs 428 ms on a 1 MB near-miss input (over the cost gate); 120 is the largest rung within the cost target (101 ms) and must change no page verdict on the corpus",
+      "decided": "2026-10-08"
+    },
+    "page::<[^>]*beacon\\.riskified\\.com": {
+      "bounds": [
+        120
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 120 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<[^>]*c\\.riskified\\.com": {
+      "bounds": [
+        120
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 120 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<[^>]*data-headjs-load": {
+      "bounds": [
+        120
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 120 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<[^>]+[^\\w-]x-data[^\\w-][^<]+": {
+      "bounds": [
+        120
+      ],
+      "acceptPagesLost": 6,
+      "reason": "bounded to 120 (largest the cost target allows): 6 of 354 inputs change verdict; the evidence asked for up to 1826",
+      "decided": "2026-10-08"
+    },
+    "page::<[^>]+/binaries/(?:[^/]+/)*content/gallery/": {
+      "to": "<[^>]{1,250}/binaries/(?:[^/]{1,40}/){0,6}content/gallery/",
+      "acceptPagesLost": 0,
+      "reason": "the repeat count of (?:[^/]+/)* is unbounded, so no bound on the segment length fixes the cost (every one times out on a 1 MB near-miss); a Bloomreach asset path has a handful of segments, each well under 40 chars: {0,6} of {1,40}, measured at 87 ms",
+      "decided": "2026-10-08"
+    },
+    "page::<[^>]+data-bem": {
+      "bounds": [
+        120
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 120 (largest the cost target allows): 0 of 5 inputs change verdict; keeps 105 of 105 match starts; the evidence asked for up to 79",
+      "decided": "2026-10-08"
+    },
+    "page::<[^>]+data-controller": {
+      "bounds": [
+        120
+      ],
+      "acceptPagesLost": 25,
+      "reason": "bounded to 120 (largest the cost target allows): 25 of 332 inputs change verdict; keeps 1703 of 2821 match starts; the evidence asked for up to 81020",
+      "decided": "2026-10-08"
+    },
+    "page::<[^>]+data-sr(?:-id)": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 49 inputs change verdict; keeps 696 of 742 match starts; the evidence asked for up to 438",
+      "decided": "2026-10-08"
+    },
+    "page::<[^>]+id=\"HSScorpion": {
+      "bounds": [
+        120
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 120 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<[^>]+Powered by PHP-Nuke": {
+      "bounds": [
+        120
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 120 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<a[^>]*href=\"https://www\\.irroba\\.com\\.br": {
+      "bounds": [
+        200
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 200 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<a[^>]+/Special:WhatLinksHere/": {
+      "bounds": [
+        200
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 200 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<a[^>]+>DirectAdmin</a> Web Control Panel": {
+      "bounds": [
+        200
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 200 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<a[^>]+>Powered by MODX</a>": {
+      "bounds": [
+        200
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 200 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<a[^>]+>Powered by uKnowva</a>": {
+      "bounds": [
+        200
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 200 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<a[^>]+>Powered By VP-ASP Shopping Cart</a>": {
+      "bounds": [
+        200
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 200 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<a[^>]+govuk-link": {
+      "bounds": [
+        200
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 200 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<a[^>]+title=\"POWERGAP": {
+      "bounds": [
+        200
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 200 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<link[^>]* href=[^>]*?govuk-frontend(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.css": {
+      "bounds": [
+        60,
+        60,
+        60,
+        60
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 60/60/60/60 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "page::<link[^>]+foundation[^>\"]+css": {
+      "bounds": [
+        120,
+        120
+      ],
+      "acceptPagesLost": 19,
+      "reason": "bounded to 120/120 (largest the cost target allows): 19 of 608 inputs change verdict; keeps 785 of 808 match starts; the evidence asked for up to 184",
+      "decided": "2026-10-08"
+    },
+    "page::<script>[\\s\\S]*?go-mpulse\\.net\\/boomerang[\\s\\S]*?</script>": {
+      "bounds": [
+        250,
+        250
+      ],
+      "acceptPagesLost": 54,
+      "reason": "bounded to 250/250 (largest the cost target allows): 54 of 54 inputs change verdict; keeps 0 of 164 match starts; the evidence asked for up to 295279",
+      "decided": "2026-10-08"
+    },
+    "page::absorb.*lms": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 2,
+      "reason": "bounded to 250 (largest the cost target allows): 2 of 2 inputs change verdict; keeps 0 of 43 match starts; the evidence asked for up to 2320661",
+      "decided": "2026-10-08"
+    },
+    "page::adobe.*creative.*cloud": {
+      "bounds": [
+        100,
+        100
+      ],
+      "acceptPagesLost": 22,
+      "reason": "bounded to 100/100 (largest the cost target allows): 22 of 47 inputs change verdict; keeps 59 of 220 match starts; the evidence asked for up to 596686",
+      "decided": "2026-10-08"
+    },
+    "page::adobe.*experience.*manager.*assets": {
+      "bounds": [
+        60,
+        60,
+        60
+      ],
+      "acceptPagesLost": 33,
+      "reason": "bounded to 60/60/60 (largest the cost target allows): 33 of 33 inputs change verdict; keeps 0 of 87 match starts; the evidence asked for up to 1683578",
+      "decided": "2026-10-08"
+    },
+    "page::alma.*exlibris": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 5,
+      "reason": "bounded to 250 (largest the cost target allows): 5 of 5 inputs change verdict; keeps 0 of 5 match starts; the evidence asked for up to 22611",
+      "decided": "2026-10-08"
+    },
+    "page::anthology.*engage": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 9,
+      "reason": "bounded to 250 (largest the cost target allows): 9 of 9 inputs change verdict; keeps 0 of 17 match starts; the evidence asked for up to 33155",
+      "decided": "2026-10-08"
+    },
+    "page::anthology.*student": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 9,
+      "reason": "bounded to 250 (largest the cost target allows): 9 of 14 inputs change verdict; keeps 5 of 23 match starts; the evidence asked for up to 10420",
+      "decided": "2026-10-08"
+    },
+    "page::banner.*ellucian": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 36,
+      "reason": "bounded to 250 (largest the cost target allows): 36 of 59 inputs change verdict; keeps 54 of 386 match starts; the evidence asked for up to 169475",
+      "decided": "2026-10-08"
+    },
+    "page::blackboard.*collaborate": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 7,
+      "reason": "bounded to 250 (largest the cost target allows): 7 of 8 inputs change verdict; keeps 6 of 52 match starts; the evidence asked for up to 201008",
+      "decided": "2026-10-08"
+    },
+    "page::blackboard.*transact": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 4,
+      "reason": "bounded to 250 (largest the cost target allows): 4 of 4 inputs change verdict; keeps 0 of 40 match starts; the evidence asked for up to 50075",
+      "decided": "2026-10-08"
+    },
+    "page::blackboard.*web.*community": {
+      "bounds": [
+        100,
+        100
+      ],
+      "acceptPagesLost": 39,
+      "reason": "bounded to 100/100 (largest the cost target allows): 39 of 39 inputs change verdict; keeps 0 of 139 match starts; the evidence asked for up to 248543",
+      "decided": "2026-10-08"
+    },
+    "page::brightspace.*core": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 19,
+      "reason": "bounded to 250 (largest the cost target allows): 19 of 26 inputs change verdict; keeps 9 of 162 match starts; the evidence asked for up to 496763",
+      "decided": "2026-10-08"
+    },
+    "page::brightspace.*portfolio": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 2,
+      "reason": "bounded to 250 (largest the cost target allows): 2 of 3 inputs change verdict; keeps 1 of 20 match starts; the evidence asked for up to 87970",
+      "decided": "2026-10-08"
+    },
+    "page::cambridge.*core": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 37,
+      "reason": "bounded to 250 (largest the cost target allows): 37 of 56 inputs change verdict; keeps 25 of 233 match starts; the evidence asked for up to 272513",
+      "decided": "2026-10-08"
+    },
+    "page::campus.*vue": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 159,
+      "reason": "bounded to 250 (largest the cost target allows): 159 of 180 inputs change verdict; keeps 62 of 4256 match starts; the evidence asked for up to 701243",
+      "decided": "2026-10-08"
+    },
+    "page::canto.*dam": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 24,
+      "reason": "bounded to 250 (largest the cost target allows): 24 of 27 inputs change verdict; keeps 8 of 538 match starts; the evidence asked for up to 527825",
+      "decided": "2026-10-08"
+    },
+    "page::canva.*for.*schools": {
+      "bounds": [
+        60,
+        60
+      ],
+      "acceptPagesLost": 265,
+      "reason": "bounded to 60/60 (largest the cost target allows): 265 of 265 inputs change verdict; keeps 0 of 3794 match starts; the evidence asked for up to 612549",
+      "decided": "2026-10-08"
+    },
+    "page::central.*authentication": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 24,
+      "reason": "bounded to 250 (largest the cost target allows): 24 of 25 inputs change verdict; keeps 1 of 85 match starts; the evidence asked for up to 3099645",
+      "decided": "2026-10-08"
+    },
+    "page::central.*authentication.*service": {
+      "bounds": [
+        160,
+        160
+      ],
+      "acceptPagesLost": 24,
+      "reason": "bounded to 160/160 (largest the cost target allows): 24 of 24 inputs change verdict; keeps 0 of 47 match starts; the evidence asked for up to 3099645",
+      "decided": "2026-10-08"
+    },
+    "page::civitas.*learning": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 26 inputs change verdict; keeps 46 of 47 match starts; the evidence asked for up to 3715",
+      "decided": "2026-10-08"
+    },
+    "page::coalition.*application": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 3,
+      "reason": "bounded to 250 (largest the cost target allows): 3 of 37 inputs change verdict; keeps 64 of 69 match starts; the evidence asked for up to 6163",
+      "decided": "2026-10-08"
+    },
+    "page::coda.*student": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 28,
+      "reason": "bounded to 250 (largest the cost target allows): 28 of 36 inputs change verdict; keeps 19 of 110 match starts; the evidence asked for up to 339197",
+      "decided": "2026-10-08"
+    },
+    "page::collaborate.*ultra": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 7,
+      "reason": "bounded to 250 (largest the cost target allows): 7 of 13 inputs change verdict; keeps 6 of 63 match starts; the evidence asked for up to 549035",
+      "decided": "2026-10-08"
+    },
+    "page::colleague.*ellucian": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 7,
+      "reason": "bounded to 250 (largest the cost target allows): 7 of 192 inputs change verdict; keeps 456 of 486 match starts; the evidence asked for up to 46892",
+      "decided": "2026-10-08"
+    },
+    "page::collegenet.*25live": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 2,
+      "reason": "bounded to 250 (largest the cost target allows): 2 of 42 inputs change verdict; keeps 50 of 58 match starts; the evidence asked for up to 2660",
+      "decided": "2026-10-08"
+    },
+    "page::competency.*brightspace": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 1 inputs change verdict; keeps 0 of 1 match starts; the evidence asked for up to 11082",
+      "decided": "2026-10-08"
+    },
+    "page::coursera.*campus": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 2 inputs change verdict; keeps 2 of 16 match starts; the evidence asked for up to 4801",
+      "decided": "2026-10-08"
+    },
+    "page::creative.*adobe": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 20,
+      "reason": "bounded to 250 (largest the cost target allows): 20 of 62 inputs change verdict; keeps 76 of 395 match starts; the evidence asked for up to 414449",
+      "decided": "2026-10-08"
+    },
+    "page::cup.*cambridge": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 15,
+      "reason": "bounded to 250 (largest the cost target allows): 15 of 15 inputs change verdict; keeps 0 of 95 match starts; the evidence asked for up to 454282",
+      "decided": "2026-10-08"
+    },
+    "page::d2l.*brightspace": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 350 inputs change verdict; keeps 800 of 816 match starts; the evidence asked for up to 20915",
+      "decided": "2026-10-08"
+    },
+    "page::d2l.*portfolio": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 9,
+      "reason": "bounded to 250 (largest the cost target allows): 9 of 9 inputs change verdict; keeps 0 of 64 match starts; the evidence asked for up to 3204535",
+      "decided": "2026-10-08"
+    },
+    "page::destiny.*one": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 15,
+      "reason": "bounded to 250 (largest the cost target allows): 15 of 19 inputs change verdict; keeps 10 of 44 match starts; the evidence asked for up to 53942",
+      "decided": "2026-10-08"
+    },
+    "page::digital.*textbook": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 63,
+      "reason": "bounded to 250 (largest the cost target allows): 63 of 121 inputs change verdict; keeps 100 of 674 match starts; the evidence asked for up to 1625055",
+      "decided": "2026-10-08"
+    },
+    "page::ebs.*tribal": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 31,
+      "reason": "bounded to 250 (largest the cost target allows): 31 of 59 inputs change verdict; keeps 75 of 2415 match starts; the evidence asked for up to 5319704",
+      "decided": "2026-10-08"
+    },
+    "page::ebsco.*discovery": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 250 (largest the cost target allows): 0 of 2 inputs change verdict; keeps 6 of 7 match starts; the evidence asked for up to 269",
+      "decided": "2026-10-08"
+    },
+    "page::echo.*classroom": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 32,
+      "reason": "bounded to 250 (largest the cost target allows): 32 of 36 inputs change verdict; keeps 13 of 204 match starts; the evidence asked for up to 536214",
+      "decided": "2026-10-08"
+    },
+    "page::eds.*ebsco": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 7,
+      "reason": "bounded to 250 (largest the cost target allows): 7 of 17 inputs change verdict; keeps 24 of 31 match starts; the evidence asked for up to 363464",
+      "decided": "2026-10-08"
+    },
+    "page::edx.*platform": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 147,
+      "reason": "bounded to 250 (largest the cost target allows): 147 of 150 inputs change verdict; keeps 3 of 524 match starts; the evidence asked for up to 649266",
+      "decided": "2026-10-08"
+    },
+    "page::ellucian.*banner": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 46,
+      "reason": "bounded to 250 (largest the cost target allows): 46 of 75 inputs change verdict; keeps 109 of 242 match starts; the evidence asked for up to 306023",
+      "decided": "2026-10-08"
+    },
+    "page::ellucian.*colleague": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 28,
+      "reason": "bounded to 250 (largest the cost target allows): 28 of 61 inputs change verdict; keeps 71 of 162 match starts; the evidence asked for up to 186350",
+      "decided": "2026-10-08"
+    },
+    "page::ensemble.*video": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 40,
+      "reason": "bounded to 250 (largest the cost target allows): 40 of 46 inputs change verdict; keeps 11 of 171 match starts; the evidence asked for up to 108396",
+      "decided": "2026-10-08"
+    },
+    "page::exlibris.*alma": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 5,
+      "reason": "bounded to 250 (largest the cost target allows): 5 of 5 inputs change verdict; keeps 0 of 5 match starts; the evidence asked for up to 16884",
+      "decided": "2026-10-08"
+    },
+    "page::exlibris.*primo": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 10,
+      "reason": "bounded to 250 (largest the cost target allows): 10 of 23 inputs change verdict; keeps 30 of 40 match starts; the evidence asked for up to 39493",
+      "decided": "2026-10-08"
+    },
+    "page::folio.*library": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 153,
+      "reason": "bounded to 250 (largest the cost target allows): 153 of 161 inputs change verdict; keeps 30 of 1074 match starts; the evidence asked for up to 502186",
+      "decided": "2026-10-08"
+    },
+    "page::folio.*lsp": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 47,
+      "reason": "bounded to 250 (largest the cost target allows): 47 of 48 inputs change verdict; keeps 1 of 455 match starts; the evidence asked for up to 1134221",
+      "decided": "2026-10-08"
+    },
+    "page::fusion.*search": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 106,
+      "reason": "bounded to 250 (largest the cost target allows): 106 of 361 inputs change verdict; keeps 42282 of 402298 match starts; the evidence asked for up to 674894",
+      "decided": "2026-10-08"
+    },
+    "page::hobsons.*connect": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 6,
+      "reason": "bounded to 250 (largest the cost target allows): 6 of 6 inputs change verdict; keeps 0 of 18 match starts; the evidence asked for up to 28385",
+      "decided": "2026-10-08"
+    },
+    "page::jenzabar.*ex": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 58,
+      "reason": "bounded to 250 (largest the cost target allows): 58 of 114 inputs change verdict; keeps 209 of 397 match starts; the evidence asked for up to 11703",
+      "decided": "2026-10-08"
+    },
+    "page::jenzabar.*ics": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 56,
+      "reason": "bounded to 250 (largest the cost target allows): 56 of 119 inputs change verdict; keeps 212 of 338 match starts; the evidence asked for up to 41494",
+      "decided": "2026-10-08"
+    },
+    "page::kaltura.*player": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 7,
+      "reason": "bounded to 250 (largest the cost target allows): 7 of 55 inputs change verdict; keeps 190 of 229 match starts; the evidence asked for up to 49944",
+      "decided": "2026-10-08"
+    },
+    "page::kuali.*cm": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 1 inputs change verdict; keeps 0 of 1 match starts; the evidence asked for up to 1537",
+      "decided": "2026-10-08"
+    },
+    "page::kuali.*curriculum": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 250 (largest the cost target allows): 0 of 2 inputs change verdict; keeps 7 of 10 match starts; the evidence asked for up to 283",
+      "decided": "2026-10-08"
+    },
+    "page::kuali.*financial": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 4 inputs change verdict; keeps 7 of 10 match starts; the evidence asked for up to 477",
+      "decided": "2026-10-08"
+    },
+    "page::kuali.*kfs": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 3 inputs change verdict; keeps 6 of 7 match starts; the evidence asked for up to 5326",
+      "decided": "2026-10-08"
+    },
+    "page::liaison.*cas": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 47,
+      "reason": "bounded to 250 (largest the cost target allows): 47 of 133 inputs change verdict; keeps 279 of 432 match starts; the evidence asked for up to 177422",
+      "decided": "2026-10-08"
+    },
+    "page::lockdown.*browser": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 23 inputs change verdict; keeps 60 of 62 match starts; the evidence asked for up to 503384",
+      "decided": "2026-10-08"
+    },
+    "page::matrix.*asset": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 161,
+      "reason": "bounded to 250 (largest the cost target allows): 161 of 228 inputs change verdict; keeps 71 of 1833 match starts; the evidence asked for up to 196625",
+      "decided": "2026-10-08"
+    },
+    "page::mhhe.*connect": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 1 inputs change verdict; keeps 0 of 1 match starts; the evidence asked for up to 25881",
+      "decided": "2026-10-08"
+    },
+    "page::office365.*education": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 39,
+      "reason": "bounded to 250 (largest the cost target allows): 39 of 45 inputs change verdict; keeps 8 of 96 match starts; the evidence asked for up to 100611",
+      "decided": "2026-10-08"
+    },
+    "page::oxford.*learning.*link": {
+      "bounds": [
+        120,
+        120
+      ],
+      "acceptPagesLost": 27,
+      "reason": "bounded to 120/120 (largest the cost target allows): 27 of 27 inputs change verdict; keeps 0 of 91 match starts; the evidence asked for up to 2038078",
+      "decided": "2026-10-08"
+    },
+    "page::panopto.*viewer": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 9,
+      "reason": "bounded to 250 (largest the cost target allows): 9 of 27 inputs change verdict; keeps 108 of 143 match starts; the evidence asked for up to 61648",
+      "decided": "2026-10-08"
+    },
+    "page::polaris.*ils": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 1 inputs change verdict; keeps 0 of 2 match starts; the evidence asked for up to 43711",
+      "decided": "2026-10-08"
+    },
+    "page::poll.*everywhere": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 7,
+      "reason": "bounded to 250 (largest the cost target allows): 7 of 7 inputs change verdict; keeps 0 of 23 match starts; the evidence asked for up to 652635",
+      "decided": "2026-10-08"
+    },
+    "page::populi.*college": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 91,
+      "reason": "bounded to 250 (largest the cost target allows): 91 of 118 inputs change verdict; keeps 63 of 436 match starts; the evidence asked for up to 141532",
+      "decided": "2026-10-08"
+    },
+    "page::powered.*by.*ghost": {
+      "bounds": [
+        80,
+        80
+      ],
+      "acceptPagesLost": 33,
+      "reason": "bounded to 80/80 (largest the cost target allows): 33 of 33 inputs change verdict; keeps 0 of 169 match starts; the evidence asked for up to 159190",
+      "decided": "2026-10-08"
+    },
+    "page::powerschool.*learning": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 7,
+      "reason": "bounded to 250 (largest the cost target allows): 7 of 7 inputs change verdict; keeps 0 of 71 match starts; the evidence asked for up to 198358",
+      "decided": "2026-10-08"
+    },
+    "page::primo.*ve": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 43,
+      "reason": "bounded to 250 (largest the cost target allows): 43 of 161 inputs change verdict; keeps 220 of 429 match starts; the evidence asked for up to 1210",
+      "decided": "2026-10-08"
+    },
+    "page::qualtrics.*survey": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 2,
+      "reason": "bounded to 250 (largest the cost target allows): 2 of 43 inputs change verdict; keeps 70 of 79 match starts; the evidence asked for up to 206558",
+      "decided": "2026-10-08"
+    },
+    "page::raiser.*edge": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 17,
+      "reason": "bounded to 250 (largest the cost target allows): 17 of 24 inputs change verdict; keeps 7 of 37 match starts; the evidence asked for up to 1192121",
+      "decided": "2026-10-08"
+    },
+    "page::raisers.*edge": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 3,
+      "reason": "bounded to 250 (largest the cost target allows): 3 of 5 inputs change verdict; keeps 2 of 9 match starts; the evidence asked for up to 11304",
+      "decided": "2026-10-08"
+    },
+    "page::salesforce.*education": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 105,
+      "reason": "bounded to 250 (largest the cost target allows): 105 of 117 inputs change verdict; keeps 35 of 461 match starts; the evidence asked for up to 343577",
+      "decided": "2026-10-08"
+    },
+    "page::sierra.*ils": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 59,
+      "reason": "bounded to 250 (largest the cost target allows): 59 of 64 inputs change verdict; keeps 10 of 248 match starts; the evidence asked for up to 461113",
+      "decided": "2026-10-08"
+    },
+    "page::sims.*education": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 8,
+      "reason": "bounded to 250 (largest the cost target allows): 8 of 15 inputs change verdict; keeps 12 of 24 match starts; the evidence asked for up to 13561",
+      "decided": "2026-10-08"
+    },
+    "page::sims.*student": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 5,
+      "reason": "bounded to 250 (largest the cost target allows): 5 of 6 inputs change verdict; keeps 2 of 15 match starts; the evidence asked for up to 88491",
+      "decided": "2026-10-08"
+    },
+    "page::skyward.*student": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 1 inputs change verdict; keeps 0 of 4 match starts; the evidence asked for up to 1308",
+      "decided": "2026-10-08"
+    },
+    "page::squiz.*cms": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 1 inputs change verdict; keeps 0 of 1 match starts; the evidence asked for up to 4258",
+      "decided": "2026-10-08"
+    },
+    "page::squiz.*dxp": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 13 inputs change verdict; keeps 12 of 13 match starts; the evidence asked for up to 16457",
+      "decided": "2026-10-08"
+    },
+    "page::summon.*discovery": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 1 inputs change verdict; keeps 0 of 1 match starts; the evidence asked for up to 43924",
+      "decided": "2026-10-08"
+    },
+    "page::symphony.*ils": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 20,
+      "reason": "bounded to 250 (largest the cost target allows): 20 of 29 inputs change verdict; keeps 17 of 63 match starts; the evidence asked for up to 77592",
+      "decided": "2026-10-08"
+    },
+    "page::synergy.*sis": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 7,
+      "reason": "bounded to 250 (largest the cost target allows): 7 of 7 inputs change verdict; keeps 0 of 17 match starts; the evidence asked for up to 297420",
+      "decided": "2026-10-08"
+    },
+    "page::synergy.*student": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 6,
+      "reason": "bounded to 250 (largest the cost target allows): 6 of 16 inputs change verdict; keeps 22 of 103 match starts; the evidence asked for up to 170006",
+      "decided": "2026-10-08"
+    },
+    "page::tribal.*sits": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 7,
+      "reason": "bounded to 250 (largest the cost target allows): 7 of 13 inputs change verdict; keeps 34 of 111 match starts; the evidence asked for up to 176561",
+      "decided": "2026-10-08"
+    },
+    "page::tribal.*student.*management": {
+      "bounds": [
+        100,
+        100
+      ],
+      "acceptPagesLost": 39,
+      "reason": "bounded to 100/100 (largest the cost target allows): 39 of 39 inputs change verdict; keeps 0 of 185 match starts; the evidence asked for up to 87782",
+      "decided": "2026-10-08"
+    },
+    "page::TYPO3.*CMS": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 38,
+      "reason": "bounded to 250 (largest the cost target allows): 38 of 81 inputs change verdict; keeps 68 of 121 match starts; the evidence asked for up to 683258",
+      "decided": "2026-10-08"
+    },
+    "page::umbraco.*cms": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 39,
+      "reason": "bounded to 250 (largest the cost target allows): 39 of 44 inputs change verdict; keeps 5 of 44 match starts; the evidence asked for up to 683124",
+      "decided": "2026-10-08"
+    },
+    "page::unit4.*student": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 5,
+      "reason": "bounded to 250 (largest the cost target allows): 5 of 5 inputs change verdict; keeps 0 of 10 match starts; the evidence asked for up to 5144",
+      "decided": "2026-10-08"
+    },
+    "page::valence.*api": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 6,
+      "reason": "bounded to 250 (largest the cost target allows): 6 of 6 inputs change verdict; keeps 0 of 11 match starts; the evidence asked for up to 247530",
+      "decided": "2026-10-08"
+    },
+    "page::wd-.*student": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 19,
+      "reason": "bounded to 250 (largest the cost target allows): 19 of 43 inputs change verdict; keeps 57 of 144 match starts; the evidence asked for up to 68280",
+      "decided": "2026-10-08"
+    },
+    "page::west.*unified": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 206,
+      "reason": "bounded to 250 (largest the cost target allows): 206 of 228 inputs change verdict; keeps 87 of 452 match starts; the evidence asked for up to 166827",
+      "decided": "2026-10-08"
+    },
+    "page::widen.*collective": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 4,
+      "reason": "bounded to 250 (largest the cost target allows): 4 of 4 inputs change verdict; keeps 0 of 55 match starts; the evidence asked for up to 3452731",
+      "decided": "2026-10-08"
+    },
+    "page::wiley.*plus": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 3 inputs change verdict; keeps 6 of 11 match starts; the evidence asked for up to 35800",
+      "decided": "2026-10-08"
+    },
+    "page::workday.*student": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 53,
+      "reason": "bounded to 250 (largest the cost target allows): 53 of 145 inputs change verdict; keeps 293 of 448 match starts; the evidence asked for up to 105483",
+      "decided": "2026-10-08"
+    },
+    "page::workspace.*google": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 33,
+      "reason": "bounded to 250 (largest the cost target allows): 33 of 40 inputs change verdict; keeps 10 of 127 match starts; the evidence asked for up to 290167",
+      "decided": "2026-10-08"
+    },
+    "page::yuja.*enterprise": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 1,
+      "reason": "bounded to 250 (largest the cost target allows): 1 of 1 inputs change verdict; keeps 0 of 2 match starts; the evidence asked for up to 4391",
+      "decided": "2026-10-08"
+    },
+    "src::(?:(?:dist\\/)?)?leaflet[\\w\\-\\.]{0,32}\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?(?!.+shopify)": {
+      "to": "(?:(?:dist\\/)?)?leaflet[\\w\\-\\.]{0,32}\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?(?!.{1,250}shopify)",
+      "acceptPagesLost": 0,
+      "reason": "the negative look-around asks whether \"shopify\" follows in the same script URL; a URL is far shorter than 250 chars after the file name",
+      "decided": "2026-10-08"
+    },
+    "src::(?:((?:\\d+\\.)+\\d+)\\/(?:dist\\/)?)?leaflet[\\w\\-\\.]{0,32}\\.js(?!.+shopify)": {
+      "to": "(?:((?:\\d+\\.)+\\d+)\\/(?:dist\\/)?)?leaflet[\\w\\-\\.]{0,32}\\.js(?!.{1,250}shopify)",
+      "acceptPagesLost": 0,
+      "reason": "the negative look-around asks whether \"shopify\" follows in the same script URL; a script URL is far shorter than 250 chars after the file name, so (?!.{1,250}shopify) selects the same URLs as (?!.+shopify)",
+      "decided": "2026-10-08"
+    },
+    "src::(/.*onsen.*min\\.js|.*angular-onsenui\\.min\\.js)": {
+      "bounds": [
+        20,
+        20,
+        20
+      ],
+      "acceptPagesLost": 126,
+      "reason": "bounded to 20/20/20 (largest the cost target allows): 126 of 15692 inputs change verdict; keeps 777 of 2528 match starts; the evidence asked for up to 117",
+      "decided": "2026-10-08"
+    },
+    "src::^(?!.*player).*aniview\\.com/": {
+      "to": "^(?!.{0,250}player).{0,250}aniview\\.com/",
+      "acceptPagesLost": 0,
+      "reason": "a negative look-around cannot be bounded mechanically (bounding it can add matches); a script URL is far shorter than 250 chars, so (?!.{0,250}player) and .{0,250}aniview\\.com/ select the same URLs",
+      "decided": "2026-10-08"
+    },
+    "src::bb.*transact": {
+      "bounds": [
+        200
+      ],
+      "acceptPagesLost": 0,
+      "reason": "bounded to 200 (largest the cost target allows): 0 of 0 inputs change verdict; keeps 0 of 0 match starts; the evidence asked for up to 0",
+      "decided": "2026-10-08"
+    },
+    "src::experience.*manager": {
+      "bounds": [
+        250
+      ],
+      "acceptPagesLost": 21,
+      "reason": "bounded to 250 (largest the cost target allows): 21 of 173 inputs change verdict; keeps 116 of 165 match starts; the evidence asked for up to 1689",
+      "decided": "2026-10-08"
+    }
+  }
+}

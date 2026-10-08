@@ -131,6 +131,22 @@ Key settings in `src/config.js`:
 
 **See full guidelines at:** `docs/PATTERN_GUIDELINES.md`
 
+### Unbounded wildcards are banned outright (`npm test` enforces it)
+
+An unbounded `.*` / `.+` / `[^x]*` / `\s*` / `\w+` / `{n,}` in a detection regex is a runtime-cost bug, not
+a style problem: V8 retries it from every start position, so on a minified one-line page it is
+quadratic (`i.*clicker` was 67% of all match CPU; one 3.35 MB page took 124 s). It has been "fixed"
+several times by judging pattern text; `scripts/lint-pattern-cost.js` now bans the *construct* on what the
+engine actually loads, and measures every regex on 1 MB adversarial inputs.
+
+- Write `[^<>\n]{0,80}` (tag-local) or `.{0,80}`, never `.*`. A wildcard that is the first or last thing in
+  a branch is redundant for `RegExp#test`: drop it. A single wildcard inside a `^`-anchored branch is fine.
+- `scripts/rewrite-unbounded-wildcards.js` does it with corpus evidence; the importer refuses to write an
+  artifact that brings the construct back. Details, the rules and what the gate cannot catch:
+  `docs/WILDCARD_GATE.md`.
+- Generated technologies are fixed through `patterns/pattern-rewrites.json` (a load-time layer naming the
+  exact original text), curated ones in place. Never hand-edit `patterns/generated/`.
+
 ### Quick Reference - Patterns to AVOID
 
 | Anti-Pattern | Example | Why Bad |
@@ -139,7 +155,7 @@ Key settings in `src/config.js`:
 | Short strings (<4 chars) | `"t4"`, `"PS"`, `"bb"` | Matches hashes, IDs |
 | Generic CSS classes | `class=".*btn-"` | Matches Bootstrap everywhere |
 | Single-letter JS objects | `"s"`, `"ga"` | Too common in minified code |
-| Broad wildcards | `".*canvas.*"` | Matches unrelated content |
+| Broad wildcards | `".*canvas.*"` | Matches unrelated content, and an unbounded `.*` is quadratic (banned by the cost gate) |
 
 ### Pattern Quality Tiers
 

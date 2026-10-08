@@ -9,6 +9,7 @@ const fs = require('fs-extra');
 const https = require('https');
 const path = require('path');
 const { normalizeDefinition } = require('../src/pattern-normalize.js');
+const { guardImport, ImportGuardError } = require('./lib/import-guard.js');
 
 const WEBAPPANALYZER_BASE_URL = 'https://raw.githubusercontent.com/enthec/webappanalyzer/main/src/technologies/';
 
@@ -284,12 +285,14 @@ function categorizePatterns(patterns) {
   return categories;
 }
 
-async function main() {
+// opts (all optional; the CLI passes none but --keep-candidate): { download, outputPath, reportPath,
+// keepCandidate, rethrow } -- injectable so tests can run the whole import offline against a fixture.
+async function main(opts = {}) {
   try {
     console.log('Starting WebAppAnalyzer pattern import...');
 
     // Download all WebAppAnalyzer patterns
-    const webappPatterns = await downloadPatterns();
+    const webappPatterns = await (opts.download || downloadPatterns)();
     console.log(`Downloaded ${Object.keys(webappPatterns).length} total patterns from WebAppAnalyzer`);
 
     // Merge with our existing patterns (our patterns take precedence)
@@ -314,9 +317,24 @@ async function main() {
     }
     console.log(`Stripped Wappalyzer modifiers from ${stripped} technologies`);
 
+    // THE COST GATE (scripts/lib/import-guard.js). Upstream is full of unbounded wildcards and this
+    // file is rewritten wholesale, so every import can bring the construct back. Evaluate the effective
+    // pattern set WITH this candidate in place and refuse to write if it would carry any: nothing on
+    // disk changes until the offenders are bounded (scripts/rewrite-unbounded-wildcards.js) or covered
+    // by a reviewed allowlist entry.
+    const guard = guardImport(mergedPatterns);
+    if (guard.violations.length) {
+      if (opts.keepCandidate) {
+        require('fs').writeFileSync(opts.keepCandidate, JSON.stringify(mergedPatterns, null, 2));
+        console.log(`candidate artifact saved to ${opts.keepCandidate}`);
+      }
+      throw new ImportGuardError(guard);
+    }
+    console.log(`Cost gate: ${guard.total} regexes in the effective set, 0 unbounded-wildcard violations`);
+
     // Save the merged patterns
     // UNI-237: lives under patterns/generated/ — a build artifact, moved so the path itself says so.
-    const outputPath = path.join(__dirname, '..', 'patterns', 'generated', 'webappanalyzer-merged.json');
+    const outputPath = opts.outputPath || path.join(__dirname, '..', 'patterns', 'generated', 'webappanalyzer-merged.json');
     await fs.ensureDir(path.dirname(outputPath));
     await fs.writeJson(outputPath, mergedPatterns, { spaces: 2 });
     console.log(`Saved merged patterns to ${outputPath}`);
@@ -349,7 +367,7 @@ async function main() {
     console.log(popularCMS.join(', '));
 
     // Save a summary report
-    const reportPath = path.join(__dirname, '..', 'patterns', 'import-report.json');
+    const reportPath = opts.reportPath || path.join(__dirname, '..', 'patterns', 'import-report.json');
     await fs.writeJson(reportPath, {
       importDate: new Date().toISOString(),
       totalPatterns: Object.keys(mergedPatterns).length,
@@ -362,13 +380,15 @@ async function main() {
     console.log(`\\nImport complete! Report saved to ${reportPath}`);
 
   } catch (error) {
-    console.error('Import failed:', error.message);
+    if (opts.rethrow) throw error;
+    console.error(error instanceof ImportGuardError ? error.message : `Import failed: ${error.message}`);
     process.exit(1);
   }
 }
 
 if (require.main === module) {
-  main();
+  const keep = process.argv.indexOf('--keep-candidate');
+  main({ keepCandidate: keep === -1 ? null : process.argv[keep + 1] });
 }
 
-module.exports = { downloadPatterns, mergeWithExistingPatterns };
+module.exports = { downloadPatterns, mergeWithExistingPatterns, main };

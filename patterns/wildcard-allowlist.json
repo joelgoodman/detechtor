@@ -1,0 +1,4 @@
+{
+  "_comment": "Reviewed exceptions to the unbounded-wildcard rules in scripts/lib/regex-shape.js, enforced by scripts/lint-pattern-cost.js. One entry per (technology, channel, exact pattern): { technology, channel, pattern, reason, maxSpan, worstCaseMs, decided }. maxSpan is the largest wildcard span a real page showed (null with maxSpanNote when no corpus evidence exists); worstCaseMs is the measured cost on the 1 MB adversarial inputs. An entry exempts the pattern from the STATIC rules only -- it must still pass the measured time budget. A stale entry (pattern gone) or a no-op one (pattern no longer offends) fails the build, and tests/pattern-cost-gate.test.js caps the file's length, so this list cannot grow without a visible change to that test.",
+  "entries": []
+}
