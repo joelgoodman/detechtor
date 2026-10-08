@@ -1739,7 +1739,8 @@
       "salesforce.{0,250}education",
       "salesforce",
       "educationcloud\\.salesforce\\.com",
-      "class=\"salesforce"
+      "class=\"salesforce",
+      "\\/\\/(?!spanside\\.|uniquest)[a-z0-9-]{1,63}\\.my\\.salesforce-sites\\.com"
     ],
     "scripts": [
       "salesforce",
@@ -1748,6 +1749,24 @@
       "salesforce.{0,250}education",
       "force"
     ],
+    "dom": {
+      "a[href*='.my.salesforce-sites.com']": {
+        "attributes": {
+          "href": "^https?:\\/\\/(?!spanside\\.|uniquest)[a-z0-9-]{1,63}\\.my\\.salesforce-sites\\.com"
+        }
+      },
+      "form[action*='.my.salesforce-sites.com']": {
+        "attributes": {
+          "action": "^https?:\\/\\/(?!spanside\\.|uniquest)[a-z0-9-]{1,63}\\.my\\.salesforce-sites\\.com"
+        }
+      },
+      "iframe[src*='.my.salesforce-sites.com']": {
+        "attributes": {
+          "src": "^https?:\\/\\/(?!spanside\\.|uniquest)[a-z0-9-]{1,63}\\.my\\.salesforce-sites\\.com"
+        }
+      }
+    },
+    "_detection_note": "Tenant-host rules (the html //<org>.my.salesforce-sites.com rule and the three dom rules): an institution's own Salesforce Sites org, the evidence the 2026-10-08 census audit found right on every sampled row (forms, RFI endpoints, event pages). They exclude two third-party orgs that the cohort-140 corpus links from many institutions' pages: spanside (SpanTran credential evaluation, 10 institutions) and uniquest* (UniQuest international recruitment, 3). A Salesforce Sites org shows the institution runs Salesforce; it does not show the Education Cloud edition.",
     "js": {
       "sforce": "",
       "Salesforce": "",

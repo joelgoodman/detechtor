@@ -650,6 +650,10 @@
     "scripts": [
       "populi"
     ],
+    "dom": [
+      "a[href*='.populiweb.com']",
+      "iframe[src*='.populiweb.com']"
+    ],
     "js": {
       "Populi": ""
     },
@@ -893,6 +897,9 @@
     ],
     "scripts": [
       "skyward"
+    ],
+    "dom": [
+      "a[href*='skyward.iscorp.com/']"
     ],
     "js": {
       "Skyward": "",
