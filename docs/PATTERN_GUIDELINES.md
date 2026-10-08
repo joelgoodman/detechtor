@@ -80,7 +80,27 @@ These pattern types cause false positives and should be avoided or removed:
 | `class=".*row"` | Common layout class | Remove entirely |
 | `class=".*moodle"` | Overly broad regex | `"class=\"moodle-"`, `"id=\"moodle-"` |
 
-### 5. Overly Broad Wildcards
+### 5. Unbounded Wildcards (a cost bug, enforced by `npm test`)
+
+`.*`, `.+`, `[^"]*`, `\s*`, `\w+` and `{n,}` with no upper bound are **banned** in every detection regex, in
+every field the engine compiles. V8 retries a regex from every start position, so on a page minified onto
+one line an unbounded wildcard is quadratic in page size: `i.*clicker` was 67% of all match CPU over a
+300-institution sample, and one 3.35 MB page took 124 s on `canva.*for.*schools`. Do not judge it by the
+literals around it. `scripts/lint-pattern-cost.js` parses the regex and measures it on 1 MB adversarial
+input; see [WILDCARD_GATE.md](WILDCARD_GATE.md).
+
+| Bad | Write instead |
+|-----|---------------|
+| `canva.*for.*schools` | `canva[^<>\n]{0,80}for[^<>\n]{0,80}schools` (inside a tag), `.{0,80}` elsewhere |
+| `.*altcha\.js` | `altcha\.js` (a leading or trailing wildcard is redundant for `test()`) |
+| `<a-scene[^<>]*>` | `<a-scene[^<>]{0,300}>` |
+| `/plugins/x/.+\.js` | `/plugins/x/.{1,120}\.js` |
+
+A single wildcard inside a `^`-anchored pattern (`^Name (.*)$`) is fine: one start position. Pick the
+bound from evidence, not by eye: `node scripts/rewrite-unbounded-wildcards.js --corpus <dir>` measures
+the real span on archived pages and writes only rewrites that are identical over the whole corpus.
+
+### 6. Overly Broad Wildcards
 
 | Bad Pattern | Why Bad | Better Alternative |
 |-------------|---------|-------------------|
@@ -173,7 +193,7 @@ Before submitting new patterns, verify:
 - [ ] **No single common English words** as standalone patterns
 - [ ] **No strings shorter than 4 characters** (unless highly specific like `"GTM-"`)
 - [ ] **No single-letter JS object names**
-- [ ] **No overly broad regex** (`.*word.*` without anchors)
+- [ ] **No overly broad regex** (`.*word.*` without anchors) and **no unbounded `*`/`+`/`{n,}` over `.`, a negated class, `\s` or `\w`** (`npm run lint:cost`)
 - [ ] **At least one Tier A or Tier B pattern** for reliable detection
 - [ ] **Tested against false positive sites** (sites that don't use the technology)
 - [ ] **Tested against true positive sites** (sites that do use the technology)
