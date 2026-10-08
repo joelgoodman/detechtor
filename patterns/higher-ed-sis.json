@@ -704,13 +704,13 @@
     ],
     "description": "PowerSchool Student Information System",
     "html": [
-      "powerschool.*sis",
-      "powerschool.*student",
-      "ps.*powerschool"
+      "powerschool[^<>\\n]{0,80}sis",
+      "powerschool[^<>\\n]{0,80}student",
+      "ps[^<>\\n]{0,80}powerschool"
     ],
     "scripts": [
-      "powerschool.*sis",
-      "ps.*powerschool"
+      "powerschool[^<>\\n]{0,80}sis",
+      "ps[^<>\\n]{0,80}powerschool"
     ],
     "js": {
       "PowerSchoolSIS": "",
@@ -999,7 +999,6 @@
     ],
     "scripts": [
       "unit4",
-      "coda",
       "tribal"
     ],
     "js": {
