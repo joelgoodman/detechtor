@@ -1,0 +1,148 @@
+{
+  "_comment": "Settled verdicts for rows of patterns/wildcard-review.tsv. A SIDECAR, not edits to the TSV: scripts/rewrite-unbounded-wildcards.js (writeReviewTsv) rewrites the whole TSV from its own run on every --write, so a verdict typed into it would be lost. Keyed by the TSV's own columns (channel, technology as in the `technologies` column, the ORIGINAL pattern in `pattern`). tests/review-settlements.test.js requires every row the TSV tags `possible-genuine-loss` to have an entry here and every entry to name a row still in the TSV, so a regenerated TSV with new or vanished rows fails the build until they are settled here. Verdicts: correct-loss (every lost match was a false positive), no-loss (the technology is still detected by other rules), genuine-loss (a real detection was lost), signal-kept-below-floor (the lost rule only double-counted a real marker that another rule still matches, at a confidence under the ledger floor). Evidence: the 2026-10-08 census re-run, ~/LLM/speedyu-data/detechtor-census-2026-10-08/rerun-2944458/RERUN.md section 2 (lost_jobs.json: the 173 lost pairs, read one by one).",
+  "settled": "2026-10-08",
+  "settlements": [
+    {
+      "channel": "html",
+      "technology": "Akamai mPulse",
+      "pattern": "<script>[\\s\\S]*?go-mpulse\\.net\\/boomerang[\\s\\S]*?</script>",
+      "verdict": "no-loss",
+      "census_pairs_lost": 0,
+      "what": "0 detections removed, 4 went 100 -> 80; the technology stays detected by its dom rule (script#boomr-scr-as, the preload link) and JS global BOOMR_API_key. The <script>...</script> frame added nothing.",
+      "action": "done: the layer now rewrites it to the linear literal go-mpulse\\.net/boomerang (pattern-rewrites.json)."
+    },
+    {
+      "channel": "html",
+      "technology": "Ghost",
+      "pattern": "powered.*by.*ghost",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 8,
+      "what": "8 at floor 40: CSS (.purechat-poweredby-link ... .btn-ghost), 'powered by Esploro', GoDaddy fill=\"ghost\"."
+    },
+    {
+      "channel": "scriptSrc",
+      "technology": "Onsen UI",
+      "pattern": "(/.*onsen.*min\\.js|.*angular-onsenui\\.min\\.js)",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 22,
+      "what": "22 at floor 50: the 'onsen' in 'c-onsen-t' of cookie-consent bundles (Cookiebot widgetIcon.min.js, consentmanager cmp_final.min.js, a Wix cookie-consent-banner app.bundle.min.js)."
+    },
+    {
+      "channel": "html",
+      "technology": "Stimulus",
+      "pattern": "<[^>]+data-controller",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 6,
+      "what": "6 at floor 40: data-controller=\"Header\" 130+ characters into a page-builder <header data-section-theme ...> tag, not Hotwire.",
+      "action": "open: \\sdata-controller= is the linear form with the same meaning and no bound to tune."
+    },
+    {
+      "channel": "html",
+      "technology": "Ex Libris Primo",
+      "pattern": "primo.*ve",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 9,
+      "what": "9 at floor 40: 'primorje-gorski kotar', a primo.design privacy-policy URL, 'Primo 75' in a device list.",
+      "action": "done: the bounded primo.{0,250}ve still matched 'primordial ... ve' (284, 340, 2507, 2547); it is now the product name primo[\\s_-]?ve\\b (higher-ed-infra.json)."
+    },
+    {
+      "channel": "html",
+      "technology": "Populi",
+      "pattern": "populi.*college",
+      "verdict": "signal-kept-below-floor",
+      "census_pairs_lost": 20,
+      "what": "19 at floor 50 went 80 -> 40, 1 at floor 40: every lost match was a genuine *.populiweb.com tenant link the rule only double-counted; populiweb\\.com still matched, at 40.",
+      "action": "done: the tenant host is a dom rule now (a[href*='.populiweb.com'], iframe[src*='.populiweb.com'], +70), so a tenant link clears the floor on its own (higher-ed-sis.json)."
+    },
+    {
+      "channel": "html",
+      "technology": "Coursera for Campus",
+      "pattern": "coursera.*campus",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 1,
+      "what": "1 at floor 40: 'Enroll in Coursera today' slider text ... 'risk manager on campus'."
+    },
+    {
+      "channel": "html",
+      "technology": "Blackboard Web Community Manager",
+      "pattern": "blackboard.*web.*community",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 12,
+      "what": "12 at floor 40: the word 'blackboard' in navigation or prose, 'community' thousands of characters later."
+    },
+    {
+      "channel": "html",
+      "technology": "Canva for Education",
+      "pattern": "canva.*for.*schools",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 63,
+      "what": "63 at floor 40: 'canvas' (the LMS, dialog-off-canvas, canvas.hw.ac.uk) ... 'schools'."
+    },
+    {
+      "channel": "html",
+      "technology": "Adobe Experience Manager Assets",
+      "pattern": "adobe.*experience.*manager.*assets",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 10,
+      "what": "10 at floor 40: cookie-banner vendor lists (Adobe Advertising Cloud ... 'assets/') spanning 22 KB to 1.7 MB."
+    },
+    {
+      "channel": "scripts",
+      "technology": "Adobe Experience Manager Assets",
+      "pattern": "experience.*manager",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 2,
+      "what": "2 at floor 50: a tracking-pixel URL (px.mountain.com/st?...shpt=...Bachelor%20of%20Science...)."
+    },
+    {
+      "channel": "html",
+      "technology": "Skyward Student Management",
+      "pattern": "skyward.*student",
+      "verdict": "genuine-loss",
+      "census_pairs_lost": 0,
+      "what": "Not on a census tier-1 page. Institution 7088 (Wilton Simpson Technical College, Hernando County Schools) links Skyward Family Access at skyward.iscorp.com/scripts/wsisa.dll/... on its faq page; after the rewrite no Skyward rule matched any of its six pages.",
+      "action": "done: dom rule a[href*='skyward.iscorp.com/'] (+70): 7088 is detected at 70 again on a run over all its pages (higher-ed-sis.json)."
+    },
+    {
+      "channel": "html",
+      "technology": "SIMS",
+      "pattern": "sims.*student",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 1,
+      "what": "1 at floor 40: 'Peter Sims Public Education Award'."
+    },
+    {
+      "channel": "html",
+      "technology": "Synergy Student Information System",
+      "pattern": "synergy.*student",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 5,
+      "what": "5 at floor 50: 'the synergy between', 'Synergy magazine', 'achieving synergy'."
+    },
+    {
+      "channel": "html",
+      "technology": "WileyPLUS",
+      "pattern": "wiley.*plus",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 0,
+      "what": "Settled from the corpus-wide sample: 'Wiley University' (the college), not the publisher."
+    },
+    {
+      "channel": "html",
+      "technology": "Cambridge Core",
+      "pattern": "cambridge.*core",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 10,
+      "what": "10 at floor 40: 'Cambridge qualifications', \"King's College London core privacy notice\"; the rule is audited wrong.",
+      "action": "done: Cambridge Core now needs a cambridge.org/core link (higher-ed-lms.json)."
+    },
+    {
+      "channel": "html",
+      "technology": "Kuali Financial System",
+      "pattern": "kuali.*financial",
+      "verdict": "correct-loss",
+      "census_pairs_lost": 0,
+      "what": "Settled from the corpus-wide sample: hawaii.kualibuild.com is Kuali Build, with 'financial aid' later on the page."
+    }
+  ]
+}
