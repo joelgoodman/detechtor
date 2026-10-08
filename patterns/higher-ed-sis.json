@@ -142,7 +142,7 @@
     "html": [
       "campusvue",
       "sct[^<>\\n]{0,250}campusvue",
-      "campus.{0,250}vue"
+      "campus[\\s-]vue"
     ],
     "scripts": [
       "campusvue",
@@ -976,11 +976,11 @@
     "description": "Tribal Student Management System (UK Higher Education)",
     "html": [
       "tribal.{0,100}student.{0,100}management",
-      "ebs.{0,250}tribal"
+      "tribal-ebs\\.com"
     ],
     "scripts": [
       "tribal.{0,250}student",
-      "ebs.{0,250}tribal"
+      "tribal-ebs\\.com"
     ],
     "js": {
       "TribalSM": "",

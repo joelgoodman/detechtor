@@ -826,7 +826,7 @@
     "html": [
       "primo[^<>\\n]{0,80}exlibris",
       "exlibris.{0,250}primo",
-      "primo.{0,250}ve",
+      "primo[\\s_-]?ve\\b",
       "/primo-explore/",
       "primo.exlibrisgroup.com"
     ],
@@ -869,11 +869,11 @@
     ],
     "description": "FOLIO open source library services platform",
     "html": [
-      "folio.{0,250}library",
-      "folio.{0,250}lsp"
+      "\\bfolio\\b.{0,250}library",
+      "\\bfolio\\b.{0,250}lsp"
     ],
     "scripts": [
-      "folio"
+      "\\bfolio\\b"
     ],
     "js": {
       "FOLIO": ""
@@ -1174,7 +1174,7 @@
     ],
     "description": "Innovative Interfaces Sierra ILS",
     "html": [
-      "sierra.{0,250}ils",
+      "sierra[\\s-]ils",
       "iii\\.com[^<>\\n]{0,250}sierra"
     ],
     "scripts": [
@@ -1887,7 +1887,7 @@
     "description": "SirsiDynix Symphony integrated library system",
     "html": [
       "sirsidynix",
-      "symphony.{0,250}ils"
+      "symphony[\\s-]ils"
     ],
     "scripts": [
       "sirsidynix",
