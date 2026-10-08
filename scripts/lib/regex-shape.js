@@ -370,6 +370,18 @@ function lastInfo(n) {
   }
 }
 
+/** Does this subtree contain a span-eating atom, however it is bounded? */
+function containsSpanEater(n) {
+  switch (n.type) {
+    case 'char': return isSpanEater(n);
+    case 'quant': return containsSpanEater(n.atom);
+    case 'group': return containsSpanEater(n.body);
+    case 'alt': return n.branches.some(containsSpanEater);
+    case 'seq': return n.items.some(containsSpanEater);
+    default: return false;
+  }
+}
+
 /** The largest number of span-eating unbounded quantifiers any single match path can pass through. */
 function wildcardPathCount(n) {
   switch (n.type) {
@@ -525,6 +537,10 @@ function analyze(source) {
     } else if (atom.type === 'group' && q.max === Infinity) {
       if (isSpanEaterAtom(atom)) {
         if (!cannotRescan) add('unbounded-span', q, `unbounded repeat of \`${src.slice(atom.start, atom.end)}\` is a wildcard in disguise; bound it`);
+      } else if (containsSpanEater(atom.body)) {
+        // `(?:[^/]{1,80}/)*`: each iteration is bounded, but the number of iterations is not, so the
+        // group as a whole spans arbitrarily far. A bounded atom inside does not make it a bounded span.
+        if (!cannotRescan) add('unbounded-span', q, `unbounded repeat of \`${src.slice(atom.start, atom.end)}\` spans arbitrarily far even though each iteration is bounded; bound the repeat count`);
       } else if (atom.body.branches.length > 1 || firstInfo(atom.body).nullable) {
         const branches = atom.body.branches;
         let ambiguous = branches.some((b) => firstInfo(b).nullable);

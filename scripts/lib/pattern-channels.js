@@ -44,7 +44,7 @@ const NON_REGEX_FIELDS = new Set([
   'dns', 'css', 'robots', 'probe', 'certIssuer', 'text',
   // engine/loader provenance and annotations:
   '_curated', '_sourceFile', '_generated', '_categoryOverride', '_validation', '_legacy_names',
-  '_detection_note', '_patternOverride', '_domRules',
+  '_detection_note', '_patternOverride', '_patternRewrite', '_domRules',
 ]);
 
 /** Load the effective pattern set through the engine's own loader. */

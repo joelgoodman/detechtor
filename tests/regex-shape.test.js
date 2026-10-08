@@ -162,3 +162,14 @@ test('requiredLiterals gives a per-branch literal any match must contain (used t
   assert.strictEqual(requiredLiterals('.*'), null);
   assert.strictEqual(requiredLiterals('\\d+'), null);
 });
+
+test('a group repeated without a bound is a wildcard even when each iteration is bounded', () => {
+  // Bloomreach: `(?:[^/]+/)*` bounded inside is still an unbounded number of segments. Measured: every
+  // bound of the inner class times out on a 1 MB near-miss until the REPEAT is bounded too.
+  assert.ok(rules('<[^>]{1,250}/binaries/(?:[^/]{1,40}/)*content/gallery/').includes('unbounded-span'));
+  assert.deepStrictEqual(rules('<[^>]{1,250}/binaries/(?:[^/]{1,40}/){0,6}content/gallery/'), []);
+  // The tempered dot, anchored, is linear and stays allowed (one start position).
+  assert.deepStrictEqual(rules('^(?:(?!psecn).)*$'), []);
+  // A repeated group with no span-eater inside is untouched.
+  assert.deepStrictEqual(rules('foo(?:\\d+\\.){1,4}bar(?:ab)*c'), []);
+});

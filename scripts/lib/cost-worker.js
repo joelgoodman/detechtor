@@ -54,12 +54,26 @@ function nearMissInput(source) {
   return unit.repeat(Math.ceil(INPUT_BYTES / unit.length)).slice(0, INPUT_BYTES);
 }
 
-// "Pump" (exhaustive only): one unbroken run of a character the pattern's repeated atoms accept --
-// the shape that makes `\d+x` quadratic.
+// "Pump" (exhaustive only): one unbroken run of a character the pattern's repeated atoms accept -- the
+// shape that makes `\d+x` quadratic -- and the same run interleaved with the pattern's first literal
+// (`xaxaxa...` for `x[a-z]+y`), which makes a NON-leading run quadratic too: every `x` is a start that
+// scans the rest of the run. Up to three shapes per distinct repeated character.
 function pumpInputs(source) {
   let chars;
-  try { chars = pumpChars(source); } catch { chars = []; }
-  return chars.slice(0, 3).map((c) => ({ shape: `pump(${JSON.stringify(c)})`, text: c.repeat(INPUT_BYTES) }));
+  let frags;
+  try { chars = pumpChars(source); frags = literalFragments(source).filter(Boolean); } catch { chars = []; frags = []; }
+  const out = [];
+  for (const c of chars.slice(0, 3)) {
+    out.push({ shape: `pump(${JSON.stringify(c)})`, text: c.repeat(INPUT_BYTES) });
+    if (frags.length && frags[0].length <= 8) {
+      const unit = frags[0] + c;
+      out.push({ shape: `pump-prefix(${JSON.stringify(unit)})`, text: unit.repeat(Math.ceil(INPUT_BYTES / unit.length)).slice(0, INPUT_BYTES) });
+      // The literal ONCE, then the run: one start, but a run of overlapping atoms (`a\d+\d+x`) splits it
+      // in quadratically many ways.
+      out.push({ shape: `pump-once(${JSON.stringify(frags[0])})`, text: frags[0] + c.repeat(INPUT_BYTES - frags[0].length) });
+    }
+  }
+  return out;
 }
 
 let dense = null;
