@@ -34,7 +34,7 @@
       "campus-management",
       "cmnet",
       "campusmgmt",
-      "anthology.*student",
+      "anthology.{0,250}student",
       "campusnexus",
       "anthology",
       "anthology\\.com",
@@ -103,7 +103,7 @@
     "html": [
       "campus[-_ ]?management[-_ ]?suite",
       "cms[-_ ]?australia",
-      "callista.*software"
+      "callista[^<>\\n]{0,250}software"
     ],
     "scripts": [
       "callista"
@@ -141,12 +141,12 @@
     "description": "CampusVue student information system by SCT (now Ellucian)",
     "html": [
       "campusvue",
-      "sct.*campusvue",
-      "campus.*vue"
+      "sct[^<>\\n]{0,250}campusvue",
+      "campus.{0,250}vue"
     ],
     "scripts": [
       "campusvue",
-      "sct.*campus"
+      "sct.{0,80}campus"
     ],
     "js": {
       "CampusVue": "",
@@ -165,7 +165,7 @@
     ],
     "description": "Coalition for College application system",
     "html": [
-      "coalition.*application",
+      "coalition.{0,250}application",
       "coalitionforcollegeaccess"
     ],
     "scripts": [
@@ -274,18 +274,18 @@
     ],
     "description": "Ellucian Banner is a comprehensive student information system used by higher education institutions.",
     "html": [
-      "ellucian.*banner",
+      "ellucian.{0,250}banner",
       "bwckgens\\.p_proc_term_date",
       "bwskfreg\\.P_AltPin",
       "bwckschd\\.p_disp_dyn_ctlg",
       "bwckctlg\\.p_disp_course_detail",
-      "banner.*ellucian"
+      "banner.{0,250}ellucian"
     ],
     "scripts": [
-      "ellucian.*banner",
+      "ellucian.{0,250}banner",
       "bwck",
-      "sct.*banner",
-      "sungard.*banner"
+      "sct.{0,250}banner",
+      "sungard.{0,250}banner"
     ],
     "js": {
       "Banner": "",
@@ -309,15 +309,15 @@
     ],
     "description": "Ellucian Colleague student information system, formerly Datatel Colleague.",
     "html": [
-      "ellucian[^>]*colleague",
-      "datatel[^>]*colleague",
+      "ellucian[^>]{0,550}colleague",
+      "datatel[^>]{0,250}colleague",
       "/colleague/",
       "class=\"colleague-",
-      "colleague.*ellucian",
-      "ellucian.*colleague"
+      "colleague.{0,250}ellucian",
+      "ellucian.{0,250}colleague"
     ],
     "scripts": [
-      "ellucian.*colleague",
+      "ellucian.{0,250}colleague",
       "datatel"
     ],
     "js": {
@@ -468,8 +468,8 @@
       "jenzabar",
       "jics",
       "CampusWeb",
-      "jenzabar.*ics",
-      "jenzabar.*ex",
+      "jenzabar.{0,250}ics",
+      "jenzabar.{0,250}ex",
       "/ICS",
       "/ICS/",
       "\\.edu/ICS"
@@ -496,11 +496,11 @@
     ],
     "description": "Kuali Coeus research administration system",
     "html": [
-      "kuali.*coeus",
-      "kuali.*research"
+      "kuali[^<>\\n]{0,250}coeus",
+      "kuali[^<>\\n]{0,250}research"
     ],
     "scripts": [
-      "kuali.*coeus"
+      "kuali.{0,250}coeus"
     ],
     "js": {
       "KualiCoeus": ""
@@ -515,11 +515,11 @@
     ],
     "description": "Kuali curriculum and catalog management",
     "html": [
-      "kuali.*curriculum",
-      "kuali.*cm"
+      "kuali.{0,250}curriculum",
+      "kuali.{0,250}cm"
     ],
     "scripts": [
-      "kuali.*curriculum"
+      "kuali.{0,250}curriculum"
     ],
     "js": {
       "KualiCM": ""
@@ -534,11 +534,11 @@
     ],
     "description": "Kuali Financial System (KFS)",
     "html": [
-      "kuali.*financial",
-      "kuali.*kfs"
+      "kuali.{0,250}financial",
+      "kuali.{0,250}kfs"
     ],
     "scripts": [
-      "kuali.*kfs"
+      "kuali.{0,250}kfs"
     ],
     "js": {
       "KualiFS": "",
@@ -554,7 +554,7 @@
     ],
     "description": "Liaison Centralized Application Service",
     "html": [
-      "liaison.*cas",
+      "liaison.{0,250}cas",
       "liaisoncas"
     ],
     "scripts": [
@@ -594,8 +594,8 @@
     "html": [
       "peoplesoft",
       "PS_TOKEN",
-      "PSPRODNAME.*Campus",
-      "oracle.*peoplesoft",
+      "PSPRODNAME[^<>\\n]{0,250}Campus",
+      "oracle[^<>\\n]{0,80}peoplesoft",
       "/psc/",
       "/psp/",
       "\\?cmd=login"
@@ -603,7 +603,7 @@
     "scripts": [
       "peoplesoft",
       "pscs",
-      "oracle.*ps"
+      "oracle.{0,250}ps"
     ],
     "js": {
       "PeopleSoft": "",
@@ -644,7 +644,7 @@
     ],
     "description": "Populi college management system",
     "html": [
-      "populi.*college",
+      "populi.{0,250}college",
       "populiweb\\.com"
     ],
     "scripts": [
@@ -748,7 +748,7 @@
     ],
     "description": "Rediker AdminPlus student information system",
     "html": [
-      "rediker.*software",
+      "rediker[^<>\\n]{0,250}software",
       "adminplus"
     ],
     "scripts": [
@@ -803,13 +803,13 @@
     ],
     "description": "SIMS education management system (UK)",
     "html": [
-      "sims.*education",
-      "capita.*sims",
-      "sims.*student"
+      "sims.{0,250}education",
+      "capita[^<>\\n]{0,250}sims",
+      "sims.{0,250}student"
     ],
     "scripts": [
       "sims",
-      "capita.*sims"
+      "capita.{0,250}sims"
     ],
     "js": {
       "SIMS": "",
@@ -827,10 +827,10 @@
     "html": [
       "sits\\.urd",
       "/urd/sits\\.urd/run/",
-      "tribal.*sits"
+      "tribal.{0,250}sits"
     ],
     "scripts": [
-      "tribal.*sits"
+      "tribal.{0,250}sits"
     ],
     "js": {
       "SITS": "",
@@ -887,8 +887,8 @@
     ],
     "description": "Skyward student management system extending to higher education",
     "html": [
-      "skyward.*student",
-      "skyward.*sms",
+      "skyward.{0,250}student",
+      "skyward[^<>\\n]{0,250}sms",
       "skyward\\.com"
     ],
     "scripts": [
@@ -909,7 +909,7 @@
     "description": "Smart Catalog curriculum and catalog management system",
     "html": [
       "smartcatalog",
-      "myedu.*catalog"
+      "myedu[^<>\\n]{0,250}catalog"
     ],
     "scripts": [
       "smartcatalog"
@@ -946,12 +946,12 @@
     ],
     "description": "Synergy SIS by EduPoint Educational Systems",
     "html": [
-      "synergy.*sis",
-      "edupoint.*synergy",
-      "synergy.*student"
+      "synergy.{0,250}sis",
+      "edupoint[^<>\\n]{0,250}synergy",
+      "synergy.{0,250}student"
     ],
     "scripts": [
-      "synergy.*sis",
+      "synergy.{0,250}sis",
       "edupoint"
     ],
     "js": {
@@ -968,12 +968,12 @@
     ],
     "description": "Tribal Student Management System (UK Higher Education)",
     "html": [
-      "tribal.*student.*management",
-      "ebs.*tribal"
+      "tribal.{0,100}student.{0,100}management",
+      "ebs.{0,250}tribal"
     ],
     "scripts": [
-      "tribal.*student",
-      "ebs.*tribal"
+      "tribal.{0,250}student",
+      "ebs.{0,250}tribal"
     ],
     "js": {
       "TribalSM": "",
@@ -989,9 +989,9 @@
     ],
     "description": "Unit4 student information and finance system",
     "html": [
-      "unit4.*student",
-      "coda.*student",
-      "unit4.*finance",
+      "unit4.{0,250}student",
+      "coda.{0,250}student",
+      "unit4.{0,160}finance",
       "unit4",
       "unit4\\.com",
       "studentmanagement\\.unit4\\.com",
@@ -1033,9 +1033,9 @@
     ],
     "description": "Workday cloud-based enterprise management suite",
     "html": [
-      "workday.*student",
+      "workday.{0,250}student",
       "workdayhcm",
-      "wd-.*student",
+      "wd-.{0,250}student",
       "workday",
       "workday\\.com",
       "wd5\\.myworkday\\.com",

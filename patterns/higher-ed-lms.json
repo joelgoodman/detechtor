@@ -13,7 +13,7 @@
     "description": "Absorb learning management system",
     "html": [
       "absorblms",
-      "absorb.*lms"
+      "absorb.{0,250}lms"
     ],
     "scripts": [
       "absorb"
@@ -31,9 +31,9 @@
     ],
     "description": "Blackboard Collaborate virtual classroom platform",
     "html": [
-      "blackboard.*collaborate",
+      "blackboard.{0,250}collaborate",
       "bb-collaborate",
-      "collaborate.*ultra"
+      "collaborate.{0,250}ultra"
     ],
     "scripts": [
       "collaborate",
@@ -107,11 +107,11 @@
     ],
     "description": "D2L Brightspace Core platform",
     "html": [
-      "brightspace.*core",
-      "valence.*api"
+      "brightspace.{0,250}core",
+      "valence.{0,250}api"
     ],
     "scripts": [
-      "brightspace.*core"
+      "brightspace.{0,250}core"
     ],
     "js": {
       "BrightspaceCore": ""
@@ -126,13 +126,13 @@
     ],
     "description": "D2L Brightspace Portfolio for competency-based education",
     "html": [
-      "brightspace.*portfolio",
-      "d2l.*portfolio",
-      "competency.*brightspace"
+      "brightspace.{0,250}portfolio",
+      "d2l.{0,250}portfolio",
+      "competency.{0,250}brightspace"
     ],
     "scripts": [
-      "brightspace.*portfolio",
-      "d2l.*portfolio"
+      "brightspace.{0,250}portfolio",
+      "d2l.{0,250}portfolio"
     ],
     "js": {
       "BrightspacePortfolio": "",
@@ -148,12 +148,12 @@
     ],
     "description": "Cambridge University Press digital platform",
     "html": [
-      "cambridge.*core",
+      "cambridge.{0,250}core",
       "cambridge\\.org",
-      "cup.*cambridge"
+      "cup.{0,250}cambridge"
     ],
     "scripts": [
-      "cambridge.*core"
+      "cambridge.{0,250}core"
     ],
     "js": {
       "CambridgeCore": ""
@@ -194,12 +194,12 @@
     "description": "Cengage MindTap digital learning platform",
     "html": [
       "mindtap",
-      "cengage.*mindtap",
+      "cengage.{0,550}mindtap",
       "mindtap"
     ],
     "scripts": [
       "mindtap",
-      "cengage.*mindtap"
+      "cengage.{0,250}mindtap"
     ],
     "js": {
       "MindTap": "",
@@ -235,7 +235,7 @@
     ],
     "description": "Cornerstone OnDemand learning platform",
     "html": [
-      "cornerstone.*ondemand",
+      "cornerstone[^<>\\n]{0,250}ondemand",
       "csod\\.com"
     ],
     "scripts": [
@@ -256,11 +256,11 @@
     ],
     "description": "Coursera institutional platform",
     "html": [
-      "coursera.*campus",
-      "coursera.*institutional"
+      "coursera.{0,250}campus",
+      "coursera[^<>\\n]{0,250}institutional"
     ],
     "scripts": [
-      "coursera.*campus"
+      "coursera.{0,250}campus"
     ],
     "js": {
       "CourseraCampus": ""
@@ -279,7 +279,7 @@
       "brightspace",
       "desire2learn",
       "d2lbook",
-      "d2l.*brightspace"
+      "d2l.{0,250}brightspace"
     ],
     "scripts": [
       "d2l\\.com",
@@ -383,7 +383,7 @@
       "classroom\\.google\\.com"
     ],
     "scripts": [
-      "classroom.*google"
+      "classroom.{0,500}google"
     ],
     "js": {
       "GoogleClassroom": ""
@@ -425,7 +425,7 @@
     "scripts": [
       "\\.catalog\\.canvaslms\\.com",
       "catalog\\.canvaslms\\.com",
-      "canvas.*catalog",
+      "canvas.{0,250}catalog",
       "/canvas-catalog/",
       "catalog\\.instructure\\.com"
     ],
@@ -478,12 +478,12 @@
     ],
     "description": "MATLAB Grader for online coding assignments",
     "html": [
-      "matlab.*grader",
-      "mathworks.*grader",
-      "grader.*matlab"
+      "matlab[^<>\\n]{0,250}grader",
+      "mathworks[^<>\\n]{0,250}grader",
+      "grader[^<>\\n]{0,250}matlab"
     ],
     "scripts": [
-      "matlab.*grader",
+      "matlab.{0,250}grader",
       "mathworks"
     ],
     "js": {
@@ -517,7 +517,7 @@
     "description": "ALEKS adaptive learning platform by McGraw-Hill",
     "html": [
       "aleks",
-      "mcgraw.*aleks"
+      "mcgraw[^<>\\n]{0,250}aleks"
     ],
     "scripts": [
       "aleks"
@@ -535,14 +535,14 @@
     ],
     "description": "McGraw-Hill Connect learning platform",
     "html": [
-      "mcgraw.*hill.*connect",
-      "mhhe.*connect",
-      "connect.*mheducation"
+      "mcgraw[^<>\\n]{0,80}hill[^<>\\n]{0,80}connect",
+      "mhhe.{0,250}connect",
+      "connect[^<>\\n]{0,80}mheducation"
     ],
     "scripts": [
-      "connect.*mhhe",
+      "connect.{0,250}mhhe",
       "mheducation",
-      "mcgraw.*connect"
+      "mcgraw.{0,250}connect"
     ],
     "js": {
       "MHConnect": "",
@@ -577,10 +577,10 @@
     ],
     "description": "Microsoft Teams Education platform",
     "html": [
-      "office365.*education"
+      "office365.{0,250}education"
     ],
     "scripts": [
-      "office365.*edu"
+      "office365.{0,250}edu"
     ],
     "js": {
       "TeamsEducation": "",
@@ -622,7 +622,7 @@
     "html": [
       "mymathlab",
       "mymathlab",
-      "pearson.*mathlab"
+      "pearson[^<>\\n]{0,250}mathlab"
     ],
     "scripts": [
       "mymathlab",
@@ -660,8 +660,8 @@
     ],
     "description": "W. W. Norton Illumine ebook platform",
     "html": [
-      "norton.*illumine",
-      "illumine.*norton",
+      "norton[^<>\\n]{0,250}illumine",
+      "illumine[^<>\\n]{0,250}norton",
       "wwnorton"
     ],
     "scripts": [
@@ -683,7 +683,7 @@
     "description": "Open edX learning management system",
     "html": [
       "openedx",
-      "edx.*platform",
+      "edx.{0,250}platform",
       "lms\\.edx"
     ],
     "scripts": [
@@ -704,9 +704,9 @@
     ],
     "description": "Oxford University Press Learning Link platform",
     "html": [
-      "oxford.*learning.*link",
+      "oxford.{0,120}learning.{0,120}link",
       "oup\\.com",
-      "learninglink.*oup"
+      "learninglink[^<>\\n]{0,250}oup"
     ],
     "scripts": [
       "learninglink\\.oup",
@@ -744,13 +744,13 @@
     ],
     "description": "Pearson MyLab learning platform",
     "html": [
-      "pearson.*mylab",
-      "mylab.*pearson",
-      "mastering.*pearson"
+      "pearson.{0,100}mylab",
+      "mylab.{0,170}pearson",
+      "mastering.{0,150}pearson"
     ],
     "scripts": [
       "mylab",
-      "pearson.*mylab",
+      "pearson.{0,250}mylab",
       "mastering"
     ],
     "js": {
@@ -786,12 +786,12 @@
     ],
     "description": "Poll Everywhere audience response system",
     "html": [
-      "poll.*everywhere",
+      "poll.{0,250}everywhere",
       "polleverywhere"
     ],
     "scripts": [
       "polleverywhere",
-      "poll.*everywhere"
+      "poll.{0,250}everywhere"
     ],
     "js": {
       "PollEverywhere": ""
@@ -842,8 +842,8 @@
     ],
     "description": "Respondus LockDown Browser for secure testing",
     "html": [
-      "respondus.*lockdown",
-      "lockdown.*browser"
+      "respondus[^<>\\n]{0,80}lockdown",
+      "lockdown.{0,250}browser"
     ],
     "scripts": [
       "respondus",
@@ -863,8 +863,8 @@
     ],
     "description": "Pearson Revel digital learning platform",
     "html": [
-      "revel.*pearson",
-      "pearson.*revel",
+      "revel.{0,140}pearson",
+      "pearson.{0,80}revel",
       "revel\\.pearson"
     ],
     "scripts": [
@@ -885,7 +885,7 @@
     "description": "Blackboard SafeAssign plagiarism prevention",
     "html": [
       "safeassign",
-      "blackboard.*safeassign"
+      "blackboard[^<>\\n]{0,250}safeassign"
     ],
     "scripts": [
       "safeassign"
@@ -907,7 +907,7 @@
       "sakaiproject",
       "/portal/site/",
       "\\/portal\\/site\\/",
-      "sakai.*collaboration"
+      "sakai[^<>\\n]{0,250}collaboration"
     ],
     "scripts": [
       "sakaiproject",
@@ -928,7 +928,7 @@
     "description": "Schoology LMS (acquired by PowerSchool in 2019, maintains Schoology branding).",
     "html": [
       "schoology",
-      "powerschool.*learning"
+      "powerschool.{0,250}learning"
     ],
     "scripts": [
       "schoology"
@@ -1063,8 +1063,8 @@
     "description": "VitalSource digital textbook platform",
     "html": [
       "vitalsource",
-      "bookshelf.*vitalsource",
-      "digital.*textbook"
+      "bookshelf[^<>\\n]{0,300}vitalsource",
+      "digital.{0,250}textbook"
     ],
     "scripts": [
       "vitalsource",
@@ -1085,12 +1085,12 @@
     "description": "Wiley WileyPLUS learning platform",
     "html": [
       "wileyplus",
-      "wiley.*plus",
+      "wiley.{0,250}plus",
       "plus\\.wiley"
     ],
     "scripts": [
       "wileyplus",
-      "wiley.*plus"
+      "wiley.{0,250}plus"
     ],
     "js": {
       "WileyPLUS": "",
