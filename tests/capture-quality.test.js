@@ -51,3 +51,58 @@ test('block wording in a real page body does not condemn the page', () => {
     `<body>If you see "403 ERROR" or "Request blocked", contact the help desk.${'x'.repeat(30000)}</body></html>`;
   assert.strictEqual(classifyCapture(helpDesk).scannable, true, 'body wording must not block a real page');
 });
+
+// Census re-check, 2026-10-26 (cohort 140, 2,367 archived pages): the title list missed Radware's
+// captcha page, and the census's own body test (any Cloudflare / Turnstile / hCaptcha marker under
+// 120 KB) flagged real pages. Real pages carry those markers; only challenge-only markers count.
+const FILLER = 'Riverside offers more than eighty undergraduate programmes. '.repeat(120); // ~7 KB of text
+
+// Institution 3856's capture, trimmed to its identifying parts (18.8 KB, ~730 visible characters).
+const RADWARE_CAPTCHA = `<html><head><title>Radware Captcha Page</title>
+<link rel="stylesheet" href="https://captcha.perfdrive.com/captcha-public/css/shieldsquare_styles.min.css">
+<script src="https://cdn.perfdrive.com/aperture/aperture.js"></script></head>
+<body><h1>We apologize for the inconvenience...</h1>
+<img src="https://captcha.perfdrive.com/captcha-public/images/ss_captcha.png">${'<span></span>'.repeat(1500)}</body></html>`;
+
+const CLOUDFLARE_MANAGED_CHALLENGE = `<html><head><title>riverside.edu</title></head><body>
+<div id="challenge-body-text">Verify you are human by completing the action below.</div>
+<script>(function(){window._cf_chl_opt={cvId:'3',cZone:'riverside.edu',cType:'managed'};})();</script>
+${'<div></div>'.repeat(1000)}</body></html>`;
+
+test('Radware Bot Manager captcha page is a challenge, not an evaluable page', () => {
+  assert.deepStrictEqual(classifyCapture(RADWARE_CAPTCHA), { scannable: false, reason: 'blocked' });
+  // Without the title, the captcha-public marker still catches it.
+  const untitled = RADWARE_CAPTCHA.replace('Radware Captcha Page', 'riverside.edu');
+  assert.deepStrictEqual(classifyCapture(untitled), { scannable: false, reason: 'challenge' });
+});
+
+test('a Cloudflare managed challenge with a neutral title is a challenge', () => {
+  assert.deepStrictEqual(classifyCapture(CLOUDFLARE_MANAGED_CHALLENGE), { scannable: false, reason: 'challenge' });
+});
+
+test('other bot-wall titles are blocked', () => {
+  for (const t of ['Pardon Our Interruption', 'Checking your browser before accessing', 'Verifying you are human',
+    'Robot or human?', 'Are you a robot?']) {
+    const html = `<html><head><title>${t}</title></head><body>${'x'.repeat(20000)}</body></html>`;
+    assert.strictEqual(classifyCapture(html).reason, 'blocked', t);
+  }
+});
+
+test('real pages carrying bot-management or captcha widgets stay scannable', () => {
+  const pages = {
+    cloudflareBeacon: `<script src="/cdn-cgi/challenge-platform/scripts/jsd/main.js"></script>`,
+    turnstileForm: `<form><div class="cf-turnstile"></div></form><script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>`,
+    hcaptchaForm: `<form><div class="h-captcha"></div></form><script src="https://hcaptcha.com/1/api.js"></script>`,
+    radwareAgent: `<script src="https://cdn.perfdrive.com/aperture/aperture.js"></script>`,
+  };
+  for (const [name, marker] of Object.entries(pages)) {
+    const html = `<html><head><title>Apply | Riverside State University</title>${marker}</head><body><p>${FILLER}</p></body></html>`;
+    assert.deepStrictEqual(classifyCapture(html), { scannable: true, reason: null }, name);
+  }
+});
+
+test('a long real page that quotes a challenge marker is not a challenge', () => {
+  const html = `<html><head><title>Riverside IT: bot protection</title></head><body><p>${FILLER}</p>` +
+    `<pre>window._cf_chl_opt and captcha.perfdrive.com/captcha-public/ appear on challenge pages.</pre></body></html>`;
+  assert.strictEqual(classifyCapture(html).scannable, true);
+});
