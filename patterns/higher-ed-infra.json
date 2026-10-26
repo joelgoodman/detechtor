@@ -1743,11 +1743,9 @@
       "\\/\\/(?!spanside\\.|uniquest)[a-z0-9-]{1,63}\\.my\\.salesforce-sites\\.com"
     ],
     "scripts": [
-      "salesforce",
-      "force\\.com",
-      "lightning",
-      "salesforce.{0,250}education",
-      "force"
+      "^(?:https?:)?\\/\\/(?!spanside\\.|uniquest)[a-z0-9-]{1,63}(?:--[a-z0-9-]{1,40}){0,2}(?:\\.sandbox)?\\.my\\.(?:salesforce|site|salesforce-sites)\\.com\\/",
+      "^(?:https?:)?\\/\\/(?:[a-z0-9-]{1,63}\\.){1,4}force\\.com\\/",
+      "^(?:https?:)?\\/\\/(?!spanside|uniquest)(?:[a-z0-9-]{1,63}\\.){0,4}[a-z0-9-]{0,40}salesforce[a-z0-9-]{0,40}\\.(?:com|net)\\/"
     ],
     "dom": {
       "a[href*='.my.salesforce-sites.com']": {
@@ -1766,7 +1764,7 @@
         }
       }
     },
-    "_detection_note": "Tenant-host rules (the html //<org>.my.salesforce-sites.com rule and the three dom rules): an institution's own Salesforce Sites org, the evidence the 2026-10-08 census audit found right on every sampled row (forms, RFI endpoints, event pages). They exclude two third-party orgs that the cohort-140 corpus links from many institutions' pages: spanside (SpanTran credential evaluation, 10 institutions) and uniquest* (UniQuest international recruitment, 3). A Salesforce Sites org shows the institution runs Salesforce; it does not show the Education Cloud edition.",
+    "_detection_note": "Tenant-host rules (the html //<org>.my.salesforce-sites.com rule and the three dom rules): an institution's own Salesforce Sites org, the evidence the 2026-10-08 census audit found right on every sampled row (forms, RFI endpoints, event pages). They exclude two third-party orgs that the cohort-140 corpus links from many institutions' pages: spanside (SpanTran credential evaluation, 10 institutions) and uniquest* (UniQuest international recruitment, 3). A Salesforce Sites org shows the institution runs Salesforce; it does not show the Education Cloud edition. Script rules (2026-10-26 blind audit): the bare `force`, `force\\.com` and `lightning` substrings matched any script URL containing the word (a 'workforce' Google Ads URL, wilberforce.edu, an ad library's LightningBolt.js, a WordPress theme named lightning); they and the bare `salesforce` / `salesforce.{0,250}education` script substrings (which fired on a third-party recruiter's embed and on local plugin paths) are replaced by host-anchored rules: the institution's own org on *.my.salesforce.com / *.my.site.com / *.my.salesforce-sites.com (sandbox and -- names allowed, the spanside / uniquest third-party orgs excluded) and any *.force.com host (service.force.com, *.lightning.force.com, static.lightning.force.com) and any Salesforce-owned host (cdn.c360a.salesforce.com, *.salesforceliveagent.com, *.my.salesforce-scrt.com), third-party orgs excluded.",
     "js": {
       "sforce": "",
       "Salesforce": "",
