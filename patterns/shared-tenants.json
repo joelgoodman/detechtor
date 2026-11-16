@@ -1,0 +1,324 @@
+{
+  "_metadata": {
+    "purpose": "Tenants on a shared platform host (a Salesforce org, a campaign host) that a vendor operates for many unrelated institutions. A detection whose every host-anchored match (Script, or DOM with a host) is on a host listed here is the vendor's, not the institution's.",
+    "ruling": "Joel 2026-11-16 (detection review, ruling 1): vendor-operated tenants are RECORDED but never user-facing. The engine detects them like any other tenant; the producer marks the detection `operatedBy`; the loader keeps the row in institution_technologies with evidence.operated_by and institution_tech_ranked / LedgerProfileService exclude it. Never deleted as noise, and never excluded inside a pattern regex (this file replaces the hard-coded `(?!spanside\\.|uniquest)` lookahead in the Salesforce rules).",
+    "entry": "{host, match: exact|suffix, operator, technologies: [names] | \"*\", ruling: \"vendor_operated\", reason, decided: YYYY-MM-DD, decider, seen?: {cohort, institutions}}. `suffix` matches the host itself and any subdomain of it. `seen` is the evidence the entry was decided on.",
+    "reader": "src/shared-tenants.js (operatorForHosts, validateRegistry); tests/shared-tenants.test.js validates this file.",
+    "evidence": "~/LLM/speedyu-data/detechtor-review-2026-11/ (FINDINGS.md findings 4-5; host -> institution lists from the cohort-143 corpus)."
+  },
+  "tenants": [
+    {
+      "host": "uniquest.my.salesforce.com",
+      "match": "exact",
+      "operator": "UniQuest",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "UniQuest's own Salesforce org, which runs international-recruitment chat (Embedded Service channel menu) and enquiry pages on behalf of the universities that contract it; one org (org_id 00Db0000000a4PK) serves many unrelated institutions. Not the institution's CRM or chatbot.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          80,
+          346,
+          457,
+          494,
+          550,
+          594,
+          1551,
+          3298
+        ]
+      }
+    },
+    {
+      "host": "uniquest.my.salesforce-scrt.com",
+      "match": "exact",
+      "operator": "UniQuest",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "UniQuest's own Salesforce org, which runs international-recruitment chat (Embedded Service channel menu) and enquiry pages on behalf of the universities that contract it; one org (org_id 00Db0000000a4PK) serves many unrelated institutions. Not the institution's CRM or chatbot.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          346,
+          457,
+          494,
+          550,
+          594,
+          1551,
+          3298
+        ]
+      }
+    },
+    {
+      "host": "uniquest.my.site.com",
+      "match": "exact",
+      "operator": "UniQuest",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "UniQuest's own Salesforce org, which runs international-recruitment chat (Embedded Service channel menu) and enquiry pages on behalf of the universities that contract it; one org (org_id 00Db0000000a4PK) serves many unrelated institutions. Not the institution's CRM or chatbot.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          80,
+          346,
+          457,
+          494,
+          550,
+          594,
+          1551,
+          3298
+        ]
+      }
+    },
+    {
+      "host": "uniquest.my.salesforce-sites.com",
+      "match": "exact",
+      "operator": "UniQuest",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "UniQuest's own Salesforce org, which runs international-recruitment chat (Embedded Service channel menu) and enquiry pages on behalf of the universities that contract it; one org (org_id 00Db0000000a4PK) serves many unrelated institutions. Not the institution's CRM or chatbot.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          80,
+          494
+        ]
+      }
+    },
+    {
+      "host": "uniquest-global.my.salesforce.com",
+      "match": "exact",
+      "operator": "UniQuest",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "UniQuest's global Salesforce org (same operator as uniquest.my.salesforce.com): recruitment chat and pages run for client universities.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          1380
+        ]
+      }
+    },
+    {
+      "host": "uniquest-global.my.salesforce-scrt.com",
+      "match": "exact",
+      "operator": "UniQuest",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "UniQuest's global Salesforce org (same operator as uniquest.my.salesforce.com): recruitment chat and pages run for client universities.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          1380
+        ]
+      }
+    },
+    {
+      "host": "uniquest-global.my.site.com",
+      "match": "exact",
+      "operator": "UniQuest",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "UniQuest's global Salesforce org (same operator as uniquest.my.salesforce.com): recruitment chat and pages run for client universities.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          1380
+        ]
+      }
+    },
+    {
+      "host": "uniquest-global.my.salesforce-sites.com",
+      "match": "exact",
+      "operator": "UniQuest",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "UniQuest's global Salesforce org (same operator as uniquest.my.salesforce.com): recruitment chat and pages run for client universities.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          1380
+        ]
+      }
+    },
+    {
+      "host": "uniquest-londonmet.my.salesforce-sites.com",
+      "match": "exact",
+      "operator": "UniQuest",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "UniQuest's London Met client site on UniQuest's Salesforce Sites (a /livechat page): operated by UniQuest, not the institution.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          557
+        ]
+      }
+    },
+    {
+      "host": "athena-gbr.my.salesforce.com",
+      "match": "exact",
+      "operator": "Athena (operator not named in the archive)",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "Region-suffixed Salesforce org serving per-university chat channel menus (UWE_Channel_Menu on athena-gbr, org 00DKB000000HsLr; Waikato_Channel_Menu on athena-aus, org 00DQE00000C9AcL): the UniQuest shape, an operator's org shared by unrelated universities. Operator not identified by name from the archive (no network check); ruled vendor-operated 2026-11-16.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          593
+        ]
+      }
+    },
+    {
+      "host": "athena-gbr.my.salesforce-scrt.com",
+      "match": "exact",
+      "operator": "Athena (operator not named in the archive)",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "Region-suffixed Salesforce org serving per-university chat channel menus (UWE_Channel_Menu on athena-gbr, org 00DKB000000HsLr; Waikato_Channel_Menu on athena-aus, org 00DQE00000C9AcL): the UniQuest shape, an operator's org shared by unrelated universities. Operator not identified by name from the archive (no network check); ruled vendor-operated 2026-11-16.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          593
+        ]
+      }
+    },
+    {
+      "host": "athena-gbr.my.salesforce-sites.com",
+      "match": "exact",
+      "operator": "Athena (operator not named in the archive)",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "Region-suffixed Salesforce org serving per-university chat channel menus (UWE_Channel_Menu on athena-gbr, org 00DKB000000HsLr; Waikato_Channel_Menu on athena-aus, org 00DQE00000C9AcL): the UniQuest shape, an operator's org shared by unrelated universities. Operator not identified by name from the archive (no network check); ruled vendor-operated 2026-11-16.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          593
+        ]
+      }
+    },
+    {
+      "host": "athena-aus.my.salesforce.com",
+      "match": "exact",
+      "operator": "Athena (operator not named in the archive)",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "Region-suffixed Salesforce org serving per-university chat channel menus (UWE_Channel_Menu on athena-gbr, org 00DKB000000HsLr; Waikato_Channel_Menu on athena-aus, org 00DQE00000C9AcL): the UniQuest shape, an operator's org shared by unrelated universities. Operator not identified by name from the archive (no network check); ruled vendor-operated 2026-11-16.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          3387,
+          3479
+        ]
+      }
+    },
+    {
+      "host": "athena-aus.my.salesforce-scrt.com",
+      "match": "exact",
+      "operator": "Athena (operator not named in the archive)",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "Region-suffixed Salesforce org serving per-university chat channel menus (UWE_Channel_Menu on athena-gbr, org 00DKB000000HsLr; Waikato_Channel_Menu on athena-aus, org 00DQE00000C9AcL): the UniQuest shape, an operator's org shared by unrelated universities. Operator not identified by name from the archive (no network check); ruled vendor-operated 2026-11-16.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          3387,
+          3479
+        ]
+      }
+    },
+    {
+      "host": "athena-aus.my.site.com",
+      "match": "exact",
+      "operator": "Athena (operator not named in the archive)",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "Region-suffixed Salesforce org serving per-university chat channel menus (UWE_Channel_Menu on athena-gbr, org 00DKB000000HsLr; Waikato_Channel_Menu on athena-aus, org 00DQE00000C9AcL): the UniQuest shape, an operator's org shared by unrelated universities. Operator not identified by name from the archive (no network check); ruled vendor-operated 2026-11-16.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          3387,
+          3479
+        ]
+      }
+    },
+    {
+      "host": "spanside.my.salesforce-sites.com",
+      "match": "exact",
+      "operator": "SpanTran",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "SpanTran (The Evaluation Company) credential-evaluation application (/SpantranApplication?Id=...), linked from institutions' admissions pages for international applicants: SpanTran's own Salesforce org, not the institution's. Previously excluded by the hard-coded (?!spanside\\.|uniquest) lookahead.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          128,
+          1536,
+          1727,
+          2767,
+          2822,
+          2977,
+          4133,
+          4834,
+          5947,
+          8254
+        ]
+      }
+    },
+    {
+      "host": "spanside.secure.force.com",
+      "match": "exact",
+      "operator": "SpanTran",
+      "technologies": "*",
+      "ruling": "vendor_operated",
+      "reason": "SpanTran (The Evaluation Company) credential-evaluation application (/SpantranApplication?Id=...), linked from institutions' admissions pages for international applicants: SpanTran's own Salesforce org, not the institution's. Previously excluded by the hard-coded (?!spanside\\.|uniquest) lookahead.",
+      "decided": "2026-11-16",
+      "decider": "Joel",
+      "seen": {
+        "cohort": 143,
+        "institutions": [
+          234,
+          610,
+          1444,
+          1782,
+          1797,
+          2490,
+          2736,
+          4816,
+          5560
+        ]
+      }
+    }
+  ]
+}

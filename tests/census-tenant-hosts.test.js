@@ -7,26 +7,27 @@ const { test } = require('node:test');
 const assert = require('node:assert');
 const { score, FLOOR } = require('./helpers/census-page.js');
 
-// ----------------------------------------------------------------------- Salesforce Education Cloud
+// --------------------------------------------- Salesforce (formerly "Salesforce Education Cloud")
 test('Salesforce Sites: an institution\'s own org link clears the floor (North American University, 4471, audited right)', () => {
   const html = '<a target="_blank" rel="noopener noreferrer" href="https://nau.my.salesforce-sites.com/form?formid=217727" class="fusion-bar-highlight"><span>Request Info</span></a>';
-  assert.ok(score('Salesforce Education Cloud', html) >= FLOOR);
+  assert.ok(score('Salesforce', html) >= FLOOR);
 });
 
 test('Salesforce Sites: an RFI endpoint in inline JS clears the floor (Oregon State, 263, audited right)', () => {
   const html = '<script>if($("#comments").val().length==0){var value=formatResponses();xhttp.open("POST","https://oregonstate.my.salesforce-sites.com/forms/services/apexrest/ugradrfi/"+service+":noemail"+bistatus,true);}</script>';
-  assert.ok(score('Salesforce Education Cloud', html) >= FLOOR);
+  assert.ok(score('Salesforce', html) >= FLOOR);
 });
 
 test('Salesforce Sites: forms and iframes on an org host count like links', () => {
-  assert.ok(score('Salesforce Education Cloud', '<a href="https://bellevuecollege.my.salesforce-sites.com/events#/list?type=Campus%20Tour">Tour</a>') >= FLOOR); // 680
-  assert.ok(score('Salesforce Education Cloud', '<iframe src="https://bushnelluniversity.my.salesforce-sites.com/inquiry/TargetX_Base__InquiryForm"></iframe>') >= FLOOR); // 1004 host
+  assert.ok(score('Salesforce', '<a href="https://bellevuecollege.my.salesforce-sites.com/events#/list?type=Campus%20Tour">Tour</a>') >= FLOOR); // 680
+  assert.ok(score('Salesforce', '<iframe src="https://bushnelluniversity.my.salesforce-sites.com/inquiry/TargetX_Base__InquiryForm"></iframe>') >= FLOOR); // 1004 host
 });
 
-test('Salesforce Sites: a third-party vendor\'s org is not the institution\'s Salesforce', () => {
+test('Salesforce Sites: a third-party vendor\'s org is detected; the shared-tenants registry, not the regex, says it is the vendor\'s', () => {
   // SpanTran's credential-evaluation application, linked from 10 institutions' admissions pages (128 here).
   const spantran = '<p><a class="ctaLink" href="https://spanside.my.salesforce-sites.com/SpantranApplication?Id=3a82283d-e4bd-4ded-a666-3811a31bdea5"><span>Access the TEC Application - UDC</span></a></p>';
-  assert.ok(score('Salesforce Education Cloud', spantran) < FLOOR);
+  assert.ok(score('Salesforce', spantran) >= FLOOR);
+  assert.strictEqual(require('../src/shared-tenants.js').operatorForHosts('Salesforce', ['spanside.my.salesforce-sites.com']).operator, 'SpanTran');
 });
 
 // ------------------------------------------------------------------------------------------- Populi

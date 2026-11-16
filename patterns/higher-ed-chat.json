@@ -69,12 +69,14 @@
   },
   "Salesforce Live Agent": {
     "cats": [52],
-    "description": "Salesforce Embedded Service / Live Agent chat widget. Fingerprinted via the salesforceliveagent.com host, the 'embeddedservice' bootstrap token, the esw.min.js loader filename, or the X-Salesforce-CHAT cookie name (surfaced in cookie-consent tables). Deliberately excludes the bare word 'salesforce', which collides with the Font Awesome 'fa-salesforce' brand-icon CSS class present on almost every site using Font Awesome.",
-    "html": ["salesforceliveagent\\.com", "embeddedservice", "esw\\.min\\.js", "X-Salesforce-CHAT"],
-    "scripts": ["salesforceliveagent\\.com", "embeddedservice", "esw\\.min\\.js"],
+    "description": "Salesforce Embedded Service / Live Agent chat widget. Fingerprinted via the salesforceliveagent.com host, the Embedded Service path on a Salesforce org host, the versioned esw.min.js loader path, the Embedded Messaging (ESW) bootstrap on an org's site host, the salesforce-scrt chat host, or the X-Salesforce-CHAT cookie name (surfaced in cookie-consent tables). Deliberately excludes the bare word 'salesforce', which collides with the Font Awesome 'fa-salesforce' brand-icon CSS class present on almost every site using Font Awesome.",
+    "html": ["salesforceliveagent\\.com", "\\.(?:my\\.salesforce(?:-scrt)?\\.com|force\\.com|my\\.site\\.com)\\/embeddedservice\\/", "\\/embeddedservice\\/[\\d.]{1,8}\\/esw\\.min\\.js", "\\.my\\.(?:site|salesforce-sites)\\.com\\/[\\w-]{1,80}\\/assets\\/(?:js\\/bootstrap\\.min\\.js|htdocs\\/sitecontext)", "X-Salesforce-CHAT"],
+    "scripts": ["salesforceliveagent\\.com", "\\.(?:my\\.salesforce(?:-scrt)?\\.com|force\\.com|my\\.site\\.com)\\/embeddedservice\\/", "\\/embeddedservice\\/[\\d.]{1,8}\\/esw\\.min\\.js", "\\.my\\.(?:site|salesforce-sites)\\.com\\/[\\w-]{1,80}\\/assets\\/(?:js\\/bootstrap\\.min\\.js|htdocs\\/sitecontext)", "\\.my\\.salesforce-scrt\\.com\\/"],
     "higher_ed": true,
     "confidence": 82,
     "website": "https://www.salesforce.com/products/service-cloud/live-agent/",
+    "_hosts": ["salesforce.com", "force.com", "my.site.com", "salesforce-sites.com", "salesforce-scrt.com", "salesforceliveagent.com"],
+    "_detection_note": "2026-11-16 review (findings 4-5, T8): the bare `embeddedservice` / `esw\\.min\\.js` rules are replaced by host-anchored ones: the Embedded Service path on a Salesforce org or force.com host, the versioned esw.min.js loader path, the Embedded Messaging bootstrap (`/<deployment>/assets/js/bootstrap.min.js`, `/ESW…/assets/`) on a *.my.site.com / *.my.salesforce-sites.com org, and the *.my.salesforce-scrt.com chat host. These assets are Chatbot evidence only: the CRM entry `Salesforce` excludes every one of them. Vendor-operated orgs (UniQuest, Athena) are detected and flagged by patterns/shared-tenants.json.",
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). Combined signature home-page HTML = 10.5% recall over 105 positives-with-HTML (11 hit); 16 neg-hits over 4109 negatives (0.4%), spot-checked as BuiltWith misses. A naive bare 'salesforce' token was rejected: it hit 33% of positives but was matching the Font Awesome brand icon class 'fa-salesforce' in page CSS, not the chat widget."
   },
   "Rocket.Chat": {
