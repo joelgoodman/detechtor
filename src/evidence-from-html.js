@@ -9,6 +9,7 @@
 // it says so rather than guessing.
 'use strict';
 const cheerio = require('cheerio');
+const { pageHostOf } = require('./rule-matches');
 
 const MAX_NODES = 25;   // same bound as the browser path: enough for "any match"
 const MAX_TEXT = 500;   // dom text regexes are anchored and short
@@ -16,7 +17,9 @@ const MAX_TEXT = 500;   // dom text regexes are anchored and short
 /**
  * @param {string} html archived rendered HTML
  * @param {Array<{selector:string,text:boolean,attrs:string[],props:string[]}>} domPlan from buildDomPlan()
- * @param {{headers?: object, jsGlobals?: string[]|null}} [options]
+ * @param {{headers?: object, jsGlobals?: string[]|null, pageUrl?: string}} [options]
+ *        pageUrl: the URL the capture is of. Rule matches (artifact schema 2) resolve relative srcs and
+ *        decide `firstParty` against its host; without it those fields are null.
  * @returns {object} evidence, as consumed by DeTECHtor#matchPatterns
  */
 function evidenceFromHtml(html, domPlan, options = {}) {
@@ -84,6 +87,8 @@ function evidenceFromHtml(html, domPlan, options = {}) {
     networkHosts: [],
     versionInfo: {},
     jsProbed: probed,
+    pageUrl: typeof options.pageUrl === 'string' && options.pageUrl ? options.pageUrl : null,
+    pageHost: pageHostOf(options.pageUrl),
   };
 }
 

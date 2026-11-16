@@ -151,6 +151,40 @@ the real span on archived pages and writes only rewrites that are identical over
 ]
 ```
 
+### Vendor hosts (`_hosts`)
+
+Every fired rule now reports what it matched (`matches[]`, artifact schema 2, `src/rule-matches.js`), and
+each match on a URL says whether that URL is on the **vendor's** own domain (`vendorHost`). The ledger
+loader grades a Script or non-link DOM match as anchored only when `vendorHost` is true (or the match is
+first-party for a self-hosted product), so a rule that matches `elastic` inside a slider plugin, or
+`force` inside "workforce", no longer anchors a row.
+
+A technology's vendor domains are:
+
+1. the registrable domain of its `website` (`https://www.hubspot.com` -> `hubspot.com`), plus
+2. every entry of an optional `_hosts` array: registrable domains or longer host suffixes the vendor
+   serves its product from.
+
+```json
+"HubSpot": {
+  "website": "https://www.hubspot.com",
+  "_hosts": ["hs-scripts.com", "hs-analytics.net", "hsforms.net"],
+  "scripts": ["js\\.hs-scripts\\.com"]
+}
+```
+
+A host matches an entry when it equals it or is a subdomain of it (`js.hs-scripts.com` is on
+`hs-scripts.com`). Registrable domains use `src/registrable-domain.js`: the last two labels, or three
+under a known public second level (`ac.uk`, `com.au`, `ac.nz`, ...; the list is in that file).
+
+Add a host to `_hosts` only when it is **the vendor's own** (its product CDN, its tracking or form host,
+its tenant domain such as `my.salesforce-sites.com`). Never a customer's host, an agency's, a plugin
+marketplace's, a school's own CDN (that is first-party, not vendor) or a domain that merely contains the
+vendor's name (`ghostplugins.dev` is not Ghost). When unsure, leave it out: a missing host makes a row
+ungraded, a wrong one makes a wrong row anchored. `_hosts` is not a regex and is never matched against
+page content; `scripts/corpus-rule-matches.js` lists the non-vendor hosts a technology's rules matched on
+a corpus, which is how the current entries were chosen.
+
 ### JavaScript Object Patterns
 
 ```json

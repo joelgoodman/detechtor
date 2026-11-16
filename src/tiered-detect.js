@@ -12,6 +12,7 @@ const { classifyCapture } = require('./capture-quality');
 const { evidenceFromHtml } = require('./evidence-from-html');
 const { orderPages } = require('./page-selection');
 const { SIGNAL_CATEGORIES } = require('./category-mapping');
+const { mergeMatches } = require('./rule-matches');
 
 const isSignal = (tech) => (tech.categories || []).some((c) => SIGNAL_CATEGORIES.has(c));
 
@@ -20,7 +21,8 @@ function merge(into, techs, pageType) {
   for (const tech of techs) {
     const prev = into.get(tech.name);
     if (!prev) {
-      into.set(tech.name, { ...tech, evidence: [...(tech.evidence || [])], pages: [pageType] });
+      into.set(tech.name, { ...tech, evidence: [...(tech.evidence || [])], matches: mergeMatches(tech.matches, []),
+        pages: [pageType] });
       continue;
     }
     if (!prev.pages.includes(pageType)) prev.pages.push(pageType);
@@ -29,12 +31,14 @@ function merge(into, techs, pageType) {
       prev.version = tech.version || prev.version;
     }
     for (const e of tech.evidence || []) if (!prev.evidence.includes(e)) prev.evidence.push(e);
+    prev.matches = mergeMatches(prev.matches, tech.matches);
   }
 }
 
 /**
  * @param {object} engine a DeTECHtor instance (needs .domPlan and .matchPatterns)
- * @param {Array<{pageType:string, html:string, jsGlobals?:string[], headers?:object}>} pages
+ * @param {Array<{pageType:string, html:string, url?:string, jsGlobals?:string[], headers?:object}>} pages
+ *        `url` is the page URL the capture is of; rule matches place first-party hosts against it
  * @param {{pagePreference?: string[]}} [options]
  * @returns {{status:'detected'|'none'|'unknown', technologies:Array, pagesEvaluated:string[],
  *            unscannable:Array<{pageType:string,reason:string}>, tier:0|1|2}}
@@ -64,6 +68,7 @@ function detectTiered(engine, pages, options = {}) {
     const evidence = evidenceFromHtml(page.html, engine.domPlan, {
       jsGlobals: page.jsGlobals,
       headers: page.headers,
+      pageUrl: page.url || page.pageUrl,
     });
     merge(merged, engine.matchPatterns(evidence), page.pageType);
     pagesEvaluated.push(page.pageType);
