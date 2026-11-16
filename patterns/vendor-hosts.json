@@ -1,0 +1,103 @@
+{
+  "_comment": "Vendor domains (_hosts) for technologies defined only in patterns/generated/, which is rebuilt by the importer. Applied at load by src/vendor-hosts.js (union with any _hosts already present). Each entry is a host the vendor itself serves the product from, chosen from the non-vendor hosts the technology's rules matched on the cohort-143 corpus (scripts/corpus-rule-matches.js). Never a customer, agency, plugin-marketplace or shared public CDN host. Curated technologies carry _hosts in their own pattern file. See docs/PATTERN_GUIDELINES.md, \"Vendor hosts\".",
+  "hosts": {
+    "Act-On": [
+      "actonservice.com"
+    ],
+    "Ada": [
+      "ada.support"
+    ],
+    "Alive5": [
+      "websitealive.com"
+    ],
+    "Attentive": [
+      "attn.tv"
+    ],
+    "BDOW": [
+      "sumo.com"
+    ],
+    "Chatra": [
+      "chatra.io"
+    ],
+    "Contentstack": [
+      "contentstack.io"
+    ],
+    "DatoCMS": [
+      "datocms-assets.com"
+    ],
+    "Dotdigital": [
+      "trackedweb.net"
+    ],
+    "Drip": [
+      "getdrip.com"
+    ],
+    "Ellucian CRM Recruit": [
+      "elluciancrmrecruit.com"
+    ],
+    "Facebook Chat Plugin": [
+      "facebook.net"
+    ],
+    "Front Chat": [
+      "frontapp.com"
+    ],
+    "HappyFox Live Chat": [
+      "happyfoxchat.com"
+    ],
+    "Help Scout": [
+      "helpscout.net"
+    ],
+    "Higher Logic": [
+      "informz.net"
+    ],
+    "HighLevel": [
+      "leadconnectorhq.com"
+    ],
+    "HubSpot Chat": [
+      "usemessages.com"
+    ],
+    "Keap": [
+      "infusionsoft.com"
+    ],
+    "Kontent.ai": [
+      "kc-usercontent.com"
+    ],
+    "Nagich": [
+      "nagich.com"
+    ],
+    "Neon CRM": [
+      "neoncrm.com"
+    ],
+    "Omnisend": [
+      "omnisrc.com"
+    ],
+    "Optimizely Content Management": [
+      "dl.episerver.net"
+    ],
+    "Salesforce Service Cloud": [
+      "force.com"
+    ],
+    "Sendinblue": [
+      "sibautomation.com",
+      "sibforms.com"
+    ],
+    "Siteglide": [
+      "us-siteglide.com"
+    ],
+    "Squiz DXP": [
+      "dx.squiz.cloud",
+      "matrix.squiz.cloud"
+    ],
+    "Texthelp": [
+      "browsealoud.com"
+    ],
+    "Unbounce": [
+      "ubembed.com"
+    ],
+    "Weebly": [
+      "editmysite.com"
+    ],
+    "Zendesk Chat": [
+      "zopim.com"
+    ]
+  }
+}

@@ -14,6 +14,7 @@
     "higher_ed": true,
     "confidence": 85,
     "website": "https://www.hubspot.com",
+    "_hosts": ["hs-scripts.com", "hs-analytics.net", "hscollectedforms.net", "hsforms.net", "hsleadflows.net"],
     "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined js.hs-scripts.com/js.hsforms.net/js.hs-analytics.net/js.hscollectedforms.net/js.hsleadflows.net home-page HTML = 19.7% recall over 137 positives-with-HTML (27 hit); 153 neg-hits over 4077 negatives (3.8%) — the highest neg-hit rate in this partial, spot-checked as genuine js.hs-scripts.com/<portal-id>.js installs (BuiltWith misses), not a collision; the elevated rate reflects HubSpot's outsized higher-ed market share rather than signature looseness."
   },
   "Pardot": {
@@ -34,6 +35,7 @@
     "higher_ed": true,
     "confidence": 85,
     "website": "https://www.marketo.com",
+    "_hosts": ["marketo.net"],
     "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined 'munchkin.marketo.net'/'marketo.com' home-page HTML = 51.7% recall over 116 positives-with-HTML (60 hit) — the best recall of any non-HE-specific vendor; 34 neg-hits over 4098 negatives (0.8%), spot-checked as BuiltWith misses."
   },
   "Eloqua": {
@@ -44,6 +46,7 @@
     "higher_ed": true,
     "confidence": 82,
     "website": "https://www.oracle.com/cx/marketing/automation/",
+    "_hosts": ["en25.com"],
     "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'en25.com' home-page HTML = 17.4% recall over 69 positives-with-HTML (12 hit); 2 neg-hits over 4145 negatives (0%), spot-checked as BuiltWith misses (real img.en25.com/i/elqCfg.min.js installs). A naive bare 'eloqua.com' and the 'elqNow' JS-global token both scored 0 hits across every positive and were rejected."
   },
   "Emma": {
@@ -54,6 +57,7 @@
     "higher_ed": true,
     "confidence": 78,
     "website": "https://myemma.com",
+    "_hosts": ["e2ma.net"],
     "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'e2ma.net' home-page HTML = 3.4% recall over 117 positives-with-HTML (4 hit); 9 neg-hits over 4097 negatives (0.2%), spot-checked as BuiltWith misses (real app.e2ma.net/signup.e2ma.net signup-form embeds)."
   },
   "Constant Contact": {
@@ -64,6 +68,7 @@
     "higher_ed": true,
     "confidence": 80,
     "website": "https://www.constantcontact.com",
+    "_hosts": ["ctctcdn.com"],
     "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined 'ctctcdn.com'/'constantcontact.com' home-page HTML = 16.2% recall over 117 positives-with-HTML (19 hit); 29 neg-hits over 4097 negatives (0.7%), spot-checked as BuiltWith misses (static.ctctcdn.com signup-widget script, visitor2.constantcontact.com/api/signup calls)."
   },
   "Mailchimp": {
@@ -74,6 +79,7 @@
     "higher_ed": true,
     "confidence": 78,
     "website": "https://mailchimp.com",
+    "_hosts": ["chimpstatic.com", "list-manage.com"],
     "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined 'chimpstatic.com'/'list-manage.com' home-page HTML = 13.8% recall over 138 positives-with-HTML (19 hit); 45 neg-hits over 4076 negatives (1.1%), spot-checked as BuiltWith misses (real chimpstatic.com/mcjs-connected and <inst>.usN.list-manage.com/subscribe embeds)."
   },
   "Active Campaign": {
@@ -84,6 +90,7 @@
     "higher_ed": true,
     "confidence": 72,
     "website": "https://www.activecampaign.com",
+    "_hosts": ["app-us1.com", "activehosted.com"],
     "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'activehosted.com' home-page HTML = 1.0% recall over 104 positives-with-HTML (1 hit) — thin; 3 neg-hits over 4110 negatives (0.1%), spot-checked as BuiltWith misses."
   },
   "Mautic": {
@@ -115,6 +122,7 @@
     "higher_ed": true,
     "confidence": 88,
     "website": "https://sharpspring.com",
+    "_hosts": ["marketingautomation.services"],
     "_detection_note": "A naive bare 'sharpspring.com' scored zero hits across every positive (SharpSpring is invisible in the DOM under its own brand domain); the actual firing host is the whitelabeled per-account marketingautomation.services tracking-pixel domain, confirmed via spot-check (koi-3QNJSOTTG4.marketingautomation.services/client/ss.js, etc.).",
     "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'marketingautomation.services' home-page HTML = 46.2% recall over 26 positives-with-HTML (12 hit); 0 neg-hits over 4188 negatives (0%)."
   },
@@ -136,6 +144,7 @@
     "higher_ed": false,
     "confidence": 74,
     "website": "https://www.acoustic.com/campaign",
+    "_hosts": ["pages02.net"],
     "_detection_note": "Thin evidence (1 confirmed hit) but the marker is unambiguous: '<meta name=\"com.silverpop.brandeddomains\" content=\"...pages02.net...\">' is a vendor-namespaced meta tag with no plausible unrelated source.",
     "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined 'com.silverpop.'/'pages02.net' home-page HTML = 25.0% recall over 4 positives-with-HTML (1 hit); 0 neg-hits over 4210 negatives (0%)."
   },

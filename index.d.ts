@@ -177,14 +177,41 @@ declare module '@speedyu/detechtor' {
     confidence: number;
     /** Technology categories */
     categories: string[];
-    /** Evidence for detection */
+    /** Evidence for detection: the fired rules (pattern text) */
     evidence: string[];
+    /** What each fired rule matched (artifact schema 2); same rule strings as `evidence` */
+    matches?: RuleMatch[];
+    /** Set when every Script/DOM match host is a vendor-operated tenant in patterns/shared-tenants.json */
+    operatedBy?: { operator: string; hosts: string[]; registry: 'shared-tenants' };
     /** Detected version (if available) */
     version?: string;
     /** Is this a higher education technology */
     isHigherEd: boolean;
     /** Technology description */
     description: string;
+  }
+
+  /**
+   * One fired rule occurrence (artifact schema 2). At most 3 per rule and 20 per detection, in rule order.
+   */
+  export interface RuleMatch {
+    /** Identical to the string in `evidence` */
+    rule: string;
+    channel: 'Script' | 'DOM' | 'Meta' | 'HTML' | 'JS';
+    /** The matched substring (<= 200 chars) */
+    matched: string | null;
+    /** What the rule ran against: script src, DOM attribute value, meta content; null for HTML/JS */
+    src: string | null;
+    /** Lower-cased host of src (relative src resolved against the page URL), else null */
+    host: string | null;
+    /** Where inside src the match starts */
+    part: 'host' | 'path' | 'query' | 'fragment' | null;
+    /** Same registrable domain as the page host; null when either is unknown */
+    firstParty: boolean | null;
+    /** host is on one of the technology's vendor domains (website + _hosts); null without a host */
+    vendorHost: boolean | null;
+    /** A DOM rule whose selector targets a[href], area[href] or form[action] */
+    link: boolean;
   }
 
   /**
@@ -232,6 +259,8 @@ declare module '@speedyu/detechtor' {
    * Evidence collected from a page scan
    */
   export interface Evidence {
+    /** The page URL the evidence is of (rule matches resolve relative srcs and firstParty against it) */
+    pageUrl?: string | null;
     /** Full HTML content */
     html: string;
     /** HTTP headers */
@@ -335,6 +364,10 @@ declare module '@speedyu/detechtor' {
     dom?: Record<string, string>;
     /** Is higher education technology */
     higher_ed?: boolean;
+    /** Vendor homepage; its registrable domain is a vendor domain for rule-match grading */
+    website?: string;
+    /** Further vendor domains or host suffixes (docs/PATTERN_GUIDELINES.md, "Vendor hosts") */
+    _hosts?: string[];
     /** Base confidence score */
     confidence?: number;
     /** Version extraction regex */

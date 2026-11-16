@@ -15,6 +15,9 @@ const PATTERN_OVERRIDES = require('../patterns/pattern-overrides.json');
 const { applyPatternOverrides } = require('./pattern-overrides');
 const PATTERN_REWRITES = require('../patterns/pattern-rewrites.json');
 const { applyPatternRewrites } = require('./pattern-rewrites');
+const VENDOR_HOSTS = require('../patterns/vendor-hosts.json');
+const { applyVendorHosts } = require('./vendor-hosts');
+const { MatchCollector, mergeMatches, operatedByFor, vendorDomains, pageHostOf, existsRuleAttrs, existsSource, isLinkRule, URL_ATTRS } = require('./rule-matches');
 
 class DeTECHtor {
   constructor(options = {}) {
@@ -68,6 +71,9 @@ class DeTECHtor {
         const entry = plan.get(r.selector);
         if (r.kind === 'text') entry.text = true;
         else if (r.kind === 'attributes') entry.attrs.add(r.name);
+        // Artifact schema 2: an `exists` rule's match is placed by the attribute its selector
+        // constrains (a[href*='x'] -> href). Collect it; matching itself never reads it.
+        else if (r.kind === 'exists') for (const a of existsRuleAttrs(r.selector)) entry.attrs.add(a);
         else if (r.kind === 'properties') entry.props.add(r.name);
       }
     }
@@ -174,6 +180,10 @@ class DeTECHtor {
         if (n3) console.log(`Applied ${n3} pattern rewrite(s)`);
       }
     }
+
+    // Vendor domains for generated-only technologies (src/vendor-hosts.js). Not an override: it adds
+    // `_hosts`, which only grades rule matches (src/rule-matches.js) and never decides a detection.
+    resolved = applyVendorHosts(resolved, VENDOR_HOSTS.hosts || {});
 
     if (config.verbose) {
       console.log(`Total patterns loaded: ${Object.keys(resolved).length}`);
@@ -444,6 +454,7 @@ class DeTECHtor {
     // Collect evidence from page
     const evidence = await this.collectEvidence(page, response);
     evidence.networkHosts = this.captureNetwork ? [...networkHosts] : [];
+    if (!evidence.pageUrl) evidence.pageUrl = response.url();
 
     // Match against patterns
     const detected = this.matchPatterns(evidence);
@@ -543,6 +554,9 @@ class DeTECHtor {
       if (merged[key]) {
         // Merge evidence and update confidence
         merged[key].evidence = [...new Set([...merged[key].evidence, ...tech.evidence])];
+        merged[key].matches = mergeMatches(merged[key].matches, tech.matches);
+        const op = operatedByFor(merged[key].name, merged[key].matches);
+        if (op) merged[key].operatedBy = op; else delete merged[key].operatedBy;
         merged[key].confidence = Math.max(merged[key].confidence, tech.confidence);
 
         // Merge categories
@@ -976,10 +990,12 @@ class DeTECHtor {
   
   matchPatterns(evidence) {
     const detected = [];
+    // The page host, once per page: rule matches place every URL relative to it (schema 2).
+    const ctx = { pageHost: pageHostOf(evidence.pageUrl) };
 
     for (const [techName, pattern] of Object.entries(this.patterns)) {
       try {
-        const match = this.evaluatePattern(techName, pattern, evidence);
+        const match = this.evaluatePattern(techName, pattern, evidence, ctx);
         if (match.confidence > 0) {
           detected.push(match);
         }
@@ -1073,18 +1089,35 @@ class DeTECHtor {
     return sorted.filter((m) => !suppressed.has(m.name));
   }
 
-  evaluatePattern(name, pattern, evidence) {
+  /** Vendor domains of a technology (website + `_hosts`), cached per engine. */
+  vendorDomainsFor(name, pattern) {
+    if (!this._vendorDomainCache) this._vendorDomainCache = new Map();
+    let v = this._vendorDomainCache.get(name);
+    if (!v) {
+      v = vendorDomains(pattern);
+      this._vendorDomainCache.set(name, v);
+    }
+    return v;
+  }
+
+  evaluatePattern(name, pattern, evidence, ctx = {}) {
     let confidence = 0;
     const matchEvidence = [];
+    // Artifact schema 2: what each fired rule matched (src/rule-matches.js). Built alongside
+    // `matchEvidence`, never instead of it: `evidence`/`rules` stay byte-identical.
+    const pageHost = ctx.pageHost !== undefined ? ctx.pageHost : pageHostOf(evidence.pageUrl);
+    const matches = new MatchCollector({ pageHost, vendor: this.vendorDomainsFor(name, pattern) });
     
     // HTML pattern matching
     if (pattern.html && Array.isArray(pattern.html)) {
       for (const htmlPattern of pattern.html) {
         try {
           const regex = new RegExp(htmlPattern, 'i');
-          if (regex.test(evidence.html)) {
+          const hit = regex.exec(evidence.html);
+          if (hit) {
             confidence += 40;
             matchEvidence.push(`HTML: ${htmlPattern}`);
+            matches.add({ rule: `HTML: ${htmlPattern}`, channel: 'HTML', matched: hit[0] });
             if (matchEvidence.length > 10) break; // Limit evidence collection
           }
         } catch (regexError) {
@@ -1113,10 +1146,19 @@ class DeTECHtor {
           // evidence.scripts is an array of { src, version } objects (see collectEvidence);
           // test the regex against the src STRING, not the object (which stringifies to
           // "[object Object]" and never matches). Tolerate a plain-string element too. UNI-139.
-          const match = evidence.scripts.some(s => regex.test(typeof s === 'string' ? s : (s && s.src) || ''));
+          const rule = `Script: ${scriptPattern}`;
+          let match = false;
+          for (const s of evidence.scripts) {
+            const src = typeof s === 'string' ? s : (s && s.src) || '';
+            const hit = regex.exec(src);
+            if (!hit) continue;
+            match = true;
+            // Keep scanning only while this rule can still record a match; the score is unchanged.
+            if (!matches.add({ rule, channel: 'Script', matched: hit[0], src, index: hit.index, urlValued: true })) break;
+          }
           if (match) {
             confidence += 60;
-            matchEvidence.push(`Script: ${scriptPattern}`);
+            matchEvidence.push(rule);
           }
         } catch (regexError) {
           if (config.verbose) {
@@ -1173,9 +1215,12 @@ class DeTECHtor {
         const metaValue = evidence.meta[metaName.toLowerCase()];
         if (metaValue) {
           try {
-            if (new RegExp(metaPattern, 'i').test(metaValue)) {
+            const hit = new RegExp(metaPattern, 'i').exec(metaValue);
+            if (hit) {
               confidence += 100;
               matchEvidence.push(`Meta: ${metaName}=${metaPattern}`);
+              matches.add({ rule: `Meta: ${metaName}=${metaPattern}`, channel: 'Meta', matched: hit[0],
+                src: String(metaValue), index: hit.index });
             }
           } catch (regexError) {
             if (config.verbose) {
@@ -1216,9 +1261,19 @@ class DeTECHtor {
         const nodes = evidence.domNodes[rule.selector];
         if (!nodes || nodes.length === 0) continue;
 
+        const link = isLinkRule(rule);
         if (rule.kind === 'exists') {
           confidence += 70;
           matchEvidence.push(`DOM: ${rule.selector}`);
+          const ruleText = `DOM: ${rule.selector}`;
+          for (const node of nodes) {
+            const at = existsSource(rule, node);
+            const added = at
+              ? matches.add({ rule: ruleText, channel: 'DOM', matched: at.matched, src: at.src, index: at.index,
+                urlValued: URL_ATTRS.has(at.attr), link: link || Boolean(at.link) })
+              : matches.add({ rule: ruleText, channel: 'DOM', matched: rule.selector, link });
+            if (!added) break;
+          }
           continue;
         }
 
@@ -1234,19 +1289,36 @@ class DeTECHtor {
           }
         }
 
-        const matched = nodes.some((node) => {
+        const ruleText = `DOM: ${rule.selector}[${rule.kind}${rule.name ? `.${rule.name}` : ''}]`;
+        const hits = [];
+        for (const node of nodes) {
+          let value;
           if (rule.kind === 'text') {
-            return regex ? regex.test(node.text || '') : Boolean(node.text);
+            value = node.text || '';
+            if (!regex && !value) continue;
+          } else {
+            const bag = rule.kind === 'attributes' ? node.attributes : node.properties;
+            value = bag && bag[rule.name];
+            if (value === undefined || value === null) continue;
+            value = String(value);
           }
-          const bag = rule.kind === 'attributes' ? node.attributes : node.properties;
-          const value = bag && bag[rule.name];
-          if (value === undefined || value === null) return false;
-          return regex ? regex.test(String(value)) : true;
-        });
+          const hit = regex ? regex.exec(value) : { 0: value, index: 0 };
+          if (!hit) continue;
+          hits.push({ value, hit });
+          if (hits.length >= 3) break; // enough to record; one is enough to score
+        }
 
-        if (matched) {
+        if (hits.length) {
           confidence += 70;
-          matchEvidence.push(`DOM: ${rule.selector}[${rule.kind}${rule.name ? `.${rule.name}` : ''}]`);
+          matchEvidence.push(ruleText);
+          for (const { value, hit } of hits) {
+            if (rule.kind === 'text') {
+              matches.add({ rule: ruleText, channel: 'DOM', matched: hit[0], src: null, link });
+            } else {
+              matches.add({ rule: ruleText, channel: 'DOM', matched: hit[0], src: value, index: hit.index,
+                urlValued: rule.kind === 'attributes' && URL_ATTRS.has(String(rule.name).toLowerCase()), link });
+            }
+          }
         }
       }
     }
@@ -1263,6 +1335,7 @@ class DeTECHtor {
           if (evidence.dom.jsObjects && evidence.dom.jsObjects[jsObject]) {
             confidence += 80;
             matchEvidence.push(`JS: ${jsObject}`);
+            matches.add({ rule: `JS: ${jsObject}`, channel: 'JS', matched: jsObject });
           }
         } catch (error) {
           if (config.verbose) {
@@ -1332,8 +1405,12 @@ class DeTECHtor {
       categories = ['Unknown'];
     }
     
+    // Vendor-operated tenant (src/shared-tenants.js): recorded, flagged, never user-facing downstream.
+    const operatedBy = config.includeEvidence ? operatedByFor(name, matches.out) : null;
+
     return {
       name,
+      ...(operatedBy ? { operatedBy } : {}),
       confidence: Math.min(confidence, 100),
       // Internal-only: the uncapped total, kept so applyExcludes can resolve mutual-exclude ties
       // that the display cap would otherwise flatten (UNI-237). Stripped before matchPatterns
@@ -1341,6 +1418,7 @@ class DeTECHtor {
       _rawConfidence: confidence,
       categories: categories,
       evidence: config.includeEvidence ? matchEvidence : [],
+      matches: config.includeEvidence ? matches.out : [],
       version: this.extractVersion({name: name}, evidence),
       isHigherEd: pattern.higher_ed || false,
       description: pattern.description || '',

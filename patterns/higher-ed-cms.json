@@ -114,6 +114,7 @@
     "higher_ed": true,
     "confidence": 95,
     "website": "https://moderncampus.com/solutions/cms/",
+    "_hosts": ["omniupdate.com"],
     "_legacy_names": [
       "OmniCMS",
       "OmniUpdate",
@@ -162,6 +163,7 @@
     "higher_ed": true,
     "confidence": 88,
     "website": "https://www.terminalfour.com",
+    "_hosts": ["terminalfour.net"],
     "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). Full 5-signature set = 72.7% recall (16/22 pos-with-HTML), 1.7% neg-hit (71/4192). Isolated each signature: bare 'terminalfour' alone already accounts for all 16 true-positive hits (72.7% recall) with fewer neg-hits (68); 't4-content' contributed 0 true positives and 0 neg-hits (dead weight); 't4-tag' contributed 0 true positives but +4 neg-hits (pure noise); '/terminalfour/' is a strict substring of 'terminalfour' so it's redundant by construction. REMOVED 't4-content', 't4-tag', '/terminalfour/'; KEPT 'terminalfour' + 'data-t4-' (a distinct DOM-attribute signal, same recall/neg-hit as the full set). 6 pos-misses (insts 555, 557, 583, 1022, 1109, 3457) spot-checked: 1022 and 3457 are now confirmed Drupal 11 (meta generator) — cohort drift, not a signature gap; the remaining 4 show no other CMS markers (genuine recall gap, cause unclear)."
   },
 

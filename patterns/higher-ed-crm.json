@@ -20,6 +20,7 @@
     "higher_ed": true,
     "confidence": 88,
     "website": "https://technolutions.com",
+    "_hosts": ["technolutions.net"],
     "_validation": "Data-mined vs BuiltWith CRM (UNI-156, 2026-07-16). 'technolutions.net' home-page HTML = 66.7% recall over 102 positives-with-HTML (68 hit) — the best recall of any vendor mined in this partial, driven by the mx.technolutions.net tracking pixel firing site-wide, not just on the admissions portal; 498 neg-hits over 4112 negatives (12.1%), spot-checked (5 institutions) as genuine mx.technolutions.net?id=...&sid=... tracking-pixel installs BuiltWith missed, not a collision — Slate's outsized HE market share explains the elevated neg-hit rate (comparable to HubSpot's 3.8% in the Marketing Automation partial). A bare 'slate' probe was rejected: 0/3 sampled hits on non-Slate institutions were real (all were CSS 'translate(...)' matches)."
   },
   "Salesforce": {
