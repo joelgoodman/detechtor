@@ -16,9 +16,11 @@
     "Cybot": "Cookiebot",
     "Koha ILS": "Koha",
     "Navigate": "EAB Navigate",
-    "Starfish Retention Solutions": "Starfish"
+    "Starfish Retention Solutions": "Starfish",
+    "Salesforce Education Cloud": "Salesforce"
   },
   "reasons": {
+    "Salesforce Education Cloud": "One product, one name (2026-11-16 detection review, finding 4). Nothing on a Salesforce org host distinguishes Education Cloud from Sales Cloud, EDA, TargetX or EnrollmentRx, so the curated entry that carried this name was the generic Salesforce-org signal under an edition name it could not support; it was renamed to `Salesforce` (higher-ed-crm.json), and the second `Salesforce` entry, which fired on the same orgs through an unbounded `(?<!work)force\\.com` and duplicated every one of its 16 live rows, was folded into it. This alias keeps any definition still carrying the old name (a restored file, an older artifact being replayed) from coming back as a separate technology.",
     "Omni CMS": "Modern Campus renamed the product: OU Campus \u2192 OmniUpdate/OmniCMS \u2192 Omni CMS \u2192 Modern Campus CMS. Confirmed by detection-set overlap J=0.957 over 67/70 institutions. \u26a0\ufe0f The base `Omni CMS` entry holds the dom rule a[href*='a.cms.omniupdate.com/11/'] \u2014 the ONLY evidence path that made Omni CMS detectable at all before UNI-224, where it was verified 29/29. The merge unions evidence precisely so that rule survives the rename.",
     "OmniCMS": "Same product, older vendor spelling. Also carried its category as the STRING \"CMS\", which mapCategory lowercased to \"cms\" and the case-sensitive signal check then dropped \u2014 so this entry was silently not counted as a CMS at all.",
     "Slate": "Technolutions Slate, the higher-ed admissions CRM. Detection sets are IDENTICAL (Jaccard 1.00, 111/111 institutions) with `Slate (Technolutions)`. The higher-ed-infra.json entry was tagged cats [52,53] = Chatbot + SIS; its own _validation note already said 'cats [52,53]=Chatbot/SIS is mis-categorized; Slate is an admissions CRM \u2014 follow-up'. This is that follow-up. Canonical is the higher-ed-crm.json entry (CRM, id 303); the infra entry's richer evidence (mx.technolutions.net, window.ping_, the Technolutions js global, meta application-name, the x-slate-instance header) is merged in rather than lost."
