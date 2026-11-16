@@ -12,7 +12,7 @@ const { classifyCapture } = require('./capture-quality');
 const { evidenceFromHtml } = require('./evidence-from-html');
 const { orderPages } = require('./page-selection');
 const { SIGNAL_CATEGORIES } = require('./category-mapping');
-const { mergeMatches } = require('./rule-matches');
+const { mergeMatches, operatedByFor } = require('./rule-matches');
 
 const isSignal = (tech) => (tech.categories || []).some((c) => SIGNAL_CATEGORIES.has(c));
 
@@ -32,6 +32,8 @@ function merge(into, techs, pageType) {
     }
     for (const e of tech.evidence || []) if (!prev.evidence.includes(e)) prev.evidence.push(e);
     prev.matches = mergeMatches(prev.matches, tech.matches);
+    const op = operatedByFor(prev.name, prev.matches);
+    if (op) prev.operatedBy = op; else delete prev.operatedBy;
   }
 }
 

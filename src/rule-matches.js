@@ -26,6 +26,7 @@
 'use strict';
 
 const { registrableDomain, hostOf, hostOnDomain, normalizeHost } = require('./registrable-domain');
+const { operatorForHosts } = require('./shared-tenants');
 
 const MAX_MATCHED = 200;
 const MAX_SRC = 500;
@@ -322,8 +323,24 @@ function mergeMatches(a, b) {
   return out;
 }
 
+/**
+ * `operatedBy` for a detection (CONTRACT "Artifact schema 2"): set when EVERY host of its Script and DOM
+ * matches (link or not) is on a vendor-operated tenant registered in patterns/shared-tenants.json for
+ * this technology. HTML, Meta and JS matches carry no host and do not count.
+ * @returns {{operator:string, hosts:string[], registry:'shared-tenants'}|null}
+ */
+function operatedByFor(name, matches) {
+  const hosts = [];
+  for (const m of matches || []) {
+    if ((m.channel === 'Script' || m.channel === 'DOM') && m.host) hosts.push(m.host);
+  }
+  const hit = operatorForHosts(name, hosts);
+  return hit ? { operator: hit.operator, hosts: hit.hosts, registry: 'shared-tenants' } : null;
+}
+
 module.exports = {
   MatchCollector,
+  operatedByFor,
   mergeMatches,
   vendorDomains,
   pageHostOf,

@@ -181,6 +181,8 @@ declare module '@speedyu/detechtor' {
     evidence: string[];
     /** What each fired rule matched (artifact schema 2); same rule strings as `evidence` */
     matches?: RuleMatch[];
+    /** Set when every Script/DOM match host is a vendor-operated tenant in patterns/shared-tenants.json */
+    operatedBy?: { operator: string; hosts: string[]; registry: 'shared-tenants' };
     /** Detected version (if available) */
     version?: string;
     /** Is this a higher education technology */

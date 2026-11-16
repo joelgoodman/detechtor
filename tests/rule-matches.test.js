@@ -75,7 +75,7 @@ test('an a[href*=\'.my.salesforce-sites.com\'] DOM match is a link on the vendor
 
   // The shipped definition declares the same vendor host.
   const real = find(detect(REAL, '<a href="https://uncp.my.salesforce-sites.com/apply">Apply</a>', 'https://www.example.edu/'),
-    'Salesforce Education Cloud');
+    'Salesforce');
   assert.ok(real, 'Salesforce Education Cloud fires on the tenant link');
   const link = real.matches.find((x) => x.channel === 'DOM');
   assert.strictEqual(link.link, true);
@@ -176,4 +176,27 @@ test('a form or link subject with no attribute selector reports its action/href 
   assert.strictEqual(t.matches[0].link, true);
   assert.strictEqual(t.matches[0].host, 'x.elluciancrmrecruit.com');
   assert.strictEqual(t.matches[0].vendorHost, false, 'a Mailchimp form id posting to another vendor is not Mailchimp');
+});
+
+test('operatedBy: the UniQuest org on 494 (Ulster) is vendor-operated; a school\'s own my.site.com org is not', () => {
+  // URLs as they appear on institution 494's cohort-143 home page.
+  const uq = '<a href="https://uniquest.my.salesforce-sites.com/Ulster">Enquire</a>'
+    + '<script src="https://uniquest.my.salesforce.com/embeddedservice/5.0/utils/common.min.js"></script>';
+  const uqHits = detect(REAL, uq, 'https://www.ulster.ac.uk');
+  const sf = find(uqHits, 'Salesforce');
+  assert.ok(sf, 'Salesforce fires on the UniQuest tenant link');
+  assert.deepStrictEqual(sf.operatedBy,
+    { operator: 'UniQuest', hosts: ['uniquest.my.salesforce-sites.com'], registry: 'shared-tenants' });
+  const chat = find(uqHits, 'Salesforce Live Agent');
+  assert.ok(chat && chat.operatedBy && chat.operatedBy.operator === 'UniQuest');
+
+  const own = '<script src="https://humber.my.site.com/s/sfsites/auraFW/javascript/app.js"></script>'
+    + '<a href="https://humber.my.salesforce-sites.com/apply">Apply</a>';
+  const mine = find(detect(REAL, own, 'https://www.humber.ca/'), 'Salesforce');
+  assert.ok(mine, 'Salesforce fires on the school\'s own org');
+  assert.strictEqual(mine.operatedBy, undefined);
+
+  // One unregistered host among registered ones means the school may run it itself: no operatedBy.
+  const mixed = find(detect(REAL, uq + '<a href="https://humber.my.salesforce-sites.com/apply">x</a>', 'https://www.ulster.ac.uk'), 'Salesforce');
+  assert.strictEqual(mixed.operatedBy, undefined);
 });

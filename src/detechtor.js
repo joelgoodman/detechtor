@@ -17,7 +17,7 @@ const PATTERN_REWRITES = require('../patterns/pattern-rewrites.json');
 const { applyPatternRewrites } = require('./pattern-rewrites');
 const VENDOR_HOSTS = require('../patterns/vendor-hosts.json');
 const { applyVendorHosts } = require('./vendor-hosts');
-const { MatchCollector, mergeMatches, vendorDomains, pageHostOf, existsRuleAttrs, existsSource, isLinkRule, URL_ATTRS } = require('./rule-matches');
+const { MatchCollector, mergeMatches, operatedByFor, vendorDomains, pageHostOf, existsRuleAttrs, existsSource, isLinkRule, URL_ATTRS } = require('./rule-matches');
 
 class DeTECHtor {
   constructor(options = {}) {
@@ -555,6 +555,8 @@ class DeTECHtor {
         // Merge evidence and update confidence
         merged[key].evidence = [...new Set([...merged[key].evidence, ...tech.evidence])];
         merged[key].matches = mergeMatches(merged[key].matches, tech.matches);
+        const op = operatedByFor(merged[key].name, merged[key].matches);
+        if (op) merged[key].operatedBy = op; else delete merged[key].operatedBy;
         merged[key].confidence = Math.max(merged[key].confidence, tech.confidence);
 
         // Merge categories
@@ -1403,8 +1405,12 @@ class DeTECHtor {
       categories = ['Unknown'];
     }
     
+    // Vendor-operated tenant (src/shared-tenants.js): recorded, flagged, never user-facing downstream.
+    const operatedBy = config.includeEvidence ? operatedByFor(name, matches.out) : null;
+
     return {
       name,
+      ...(operatedBy ? { operatedBy } : {}),
       confidence: Math.min(confidence, 100),
       // Internal-only: the uncapped total, kept so applyExcludes can resolve mutual-exclude ties
       // that the display cap would otherwise flatten (UNI-237). Stripped before matchPatterns

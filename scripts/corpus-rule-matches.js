@@ -6,7 +6,7 @@
 // with THIS checkout's engine (page URL included, so `matches[].firstParty` is filled), and writes one JSON
 // line per detection in the chosen categories:
 //
-//   {institution_id, scan_page_id, page_type, url, name, categories, rules, matches}
+//   {institution_id, scan_page_id, page_type, url, name, categories, rules, matches, operatedBy?}
 //
 // Read-only on the corpus and the artifact; writes only --out. No network.
 //
@@ -38,7 +38,8 @@ if (!isMainThread) {
       const evidence = evidenceFromHtml(html, engine.domPlan, { jsGlobals, pageUrl: url });
       out = engine.matchPatterns(evidence)
         .filter((t) => (t.categories || []).some((c) => cats.has(c)))
-        .map((t) => ({ ...meta, url, name: t.name, categories: t.categories, rules: t.evidence, matches: t.matches }));
+        .map((t) => ({ ...meta, url, name: t.name, categories: t.categories, rules: t.evidence, matches: t.matches,
+          ...(t.operatedBy ? { operatedBy: t.operatedBy } : {}) }));
       parentPort.postMessage({ id, out });
     } catch (e) {
       parentPort.postMessage({ id, error: String(e && e.message || e).slice(0, 300) });

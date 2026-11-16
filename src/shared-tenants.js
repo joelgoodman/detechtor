@@ -7,8 +7,8 @@
 // answer for the same host. Ruling (Joel 2026-11-16): such a detection is recorded, flagged with its
 // operator, and never shown to users; it is never discarded.
 //
-// Pure functions only. Not yet called by src/detechtor.js: the engine wiring (set `operatedBy` on a
-// detection from its match hosts) lands with the per-match evidence that supplies those hosts.
+// Pure functions only. Called by src/rule-matches.js operatedByFor(), which src/detechtor.js uses to set
+// `operatedBy` on a detection from the hosts of its Script and DOM matches.
 'use strict';
 
 const REGISTRY = require('../patterns/shared-tenants.json');
