@@ -56,10 +56,14 @@ function registrableDomain(host) {
   return lastTwo;
 }
 
-/** The host of a URL-ish string (absolute or protocol-relative), or null. */
+/**
+ * The host of a URL-ish string (absolute or protocol-relative), or null. Like a browser resolving a
+ * special-scheme URL, a run of more than two slashes is one separator: `////siteimproveanalytics.com/x`
+ * (seen on real pages) loads from siteimproveanalytics.com.
+ */
 function hostOf(url) {
   if (typeof url !== 'string') return null;
-  const m = url.trim().match(/^(?:[a-z][a-z0-9+.-]*:)?\/\/([^/?#\s]+)/i);
+  const m = url.trim().match(/^(?:[a-z][a-z0-9+.-]*:)?\/{2,}([^/?#\s]+)/i);
   if (!m) return null;
   const authority = m[1].replace(/^[^@]*@/, '');
   return normalizeHost(authority);

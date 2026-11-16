@@ -956,7 +956,8 @@
     },
     "higher_ed": true,
     "confidence": 92,
-    "website": "https://www.funnelback.com"
+    "website": "https://www.funnelback.com",
+    "_hosts": ["funnelback.squiz.cloud"]
   },
   "GIS Cloud": {
     "cats": [
@@ -1087,6 +1088,7 @@
     "website": "https://www.hobsons.com"
   },
   "HubSpot for Education": {
+    "_hosts": ["hubspot.com", "hubspot.net", "hs-analytics.net", "hubspotusercontent-na1.net", "hubspotusercontent-na2.net", "hubspotusercontent30.net", "hubspotfeedback.com"],
     "cats": [
       303
     ],
@@ -1965,6 +1967,7 @@
     "higher_ed": true,
     "confidence": 90,
     "website": "https://www.elastic.co/enterprise-search/",
+    "_hosts": ["swiftypecdn.com"],
     "_validation": "UNI-140: runtime hosts api.swiftype.com / s.swiftypecdn.com are XHR/CDN calls; require --capture-network for reliable detection."
   },
   "TouchNet": {

@@ -14,6 +14,7 @@
     "higher_ed": true,
     "confidence": 85,
     "website": "https://www.livechat.com",
+    "_hosts": ["livechatinc.com"],
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'livechatinc.com'/'livechat-static.com' home-page HTML = 16.0% recall over 125 positives-with-HTML (20 hit); 37 neg-hits over 4089 negatives (0.9%), spot-checked as BuiltWith misses (real cdn.livechatinc.com/tracking.js installs). Low recall: most pos-miss institutions load the widget via a GTM container not resolved in the captured static HTML."
   },
   "Zendesk": {
@@ -24,6 +25,7 @@
     "higher_ed": true,
     "confidence": 78,
     "website": "https://www.zendesk.com",
+    "_hosts": ["zdassets.com"],
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'zdassets.com' home-page HTML = 4.2% recall over 120 positives-with-HTML (5 hit); 14 neg-hits over 4094 negatives (0.3%), spot-checked as BuiltWith misses. Deliberately excludes bare '<inst>.zendesk.com' help-center links (Zendesk Guide), which are common in HE IT-support footers but are a different product from the chat widget and would flood false positives."
   },
   "Intercom": {
@@ -34,6 +36,7 @@
     "higher_ed": true,
     "confidence": 78,
     "website": "https://www.intercom.com",
+    "_hosts": ["intercom.io"],
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'widget.intercom.io'/'intercomcdn.com' home-page HTML = 3.8% recall over 104 positives-with-HTML (4 hit); 2 neg-hits over 4110 negatives (0%), spot-checked as BuiltWith misses. Low recall consistent with GTM-gated loading on the pos-miss set."
   },
   "tawk.to": {
@@ -54,6 +57,7 @@
     "higher_ed": true,
     "confidence": 76,
     "website": "https://www.zendesk.com/chat",
+    "_hosts": ["zopim.com"],
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'v2.zopim.com' home-page HTML = 2.8% recall over 109 positives-with-HTML (3 hit); 0 neg-hits over 4105 negatives (0%). Low recall consistent with GTM-gated loading on the pos-miss set; 0% neg-hit confirms the dedicated host is not a prose false-lead."
   },
   "LibraryH3lp": {
@@ -129,6 +133,7 @@
     "higher_ed": false,
     "confidence": 88,
     "website": "https://www.liveperson.com",
+    "_hosts": ["liveperson.net"],
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'liveperson.net' home-page HTML = 21.6% recall over 37 positives-with-HTML (8 hit); 0 neg-hits over 4177 negatives (0%)."
   },
   "Olark": {
@@ -159,6 +164,7 @@
     "higher_ed": true,
     "confidence": 90,
     "website": "https://www.geckoengage.com",
+    "_hosts": ["geckoform.com"],
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). Combined signature home-page HTML = 50.0% recall over 38 positives-with-HTML (19 hit) — the best recall of any vendor mined in this batch; 30 neg-hits over 4176 negatives (0.7%), spot-checked (app.geckoform.com postMessage handlers, 'Geckoengage'/'chat-widget.geckoengage.com' labels) as BuiltWith misses, not false positives."
   },
   "Tidio": {
@@ -169,6 +175,7 @@
     "higher_ed": false,
     "confidence": 90,
     "website": "https://www.tidio.com",
+    "_hosts": ["tidio.co"],
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'tidio.co'/'tidiochat.com' home-page HTML = 52.2% recall over 23 positives-with-HTML (12 hit) — the highest recall of any vendor mined in this batch; 0 neg-hits over 4191 negatives (0%)."
   },
   "Freshchat": {
@@ -179,6 +186,7 @@
     "higher_ed": false,
     "confidence": 75,
     "website": "https://www.freshworks.com/live-chat-software/",
+    "_hosts": ["freshchat.com"],
     "_detection_note": "Thin positive evidence (1 confirmed hit); 0% neg-hit shows the host is tight where it fires, but the recall ceiling is dominated by GTM-gated loading (same pattern as Zendesk/Intercom/Zopim in this corpus).",
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'freshchat.com' home-page HTML = 3.1% recall over 32 positives-with-HTML (1 hit); 0 neg-hits over 4182 negatives (0%)."
   },
@@ -200,6 +208,7 @@
     "higher_ed": false,
     "confidence": 82,
     "website": "https://www.drift.com",
+    "_hosts": ["driftt.com"],
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'driftt.com' home-page HTML = 10.5% recall over 19 positives-with-HTML (2 hit); 0 neg-hits over 4195 negatives (0%)."
   },
   "Oracle RightNow": {
@@ -210,6 +219,7 @@
     "higher_ed": true,
     "confidence": 78,
     "website": "https://www.oracle.com/cx/service/",
+    "_hosts": ["custhelp.com"],
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). Combined signature home-page HTML = 4.8% recall over 21 positives-with-HTML (1 hit); 6 neg-hits over 4193 negatives (0.1%), spot-checked as BuiltWith misses (real <inst>.custhelp.com portal links)."
   },
   "Zoho SalesIQ": {
@@ -220,6 +230,7 @@
     "higher_ed": false,
     "confidence": 88,
     "website": "https://www.zoho.com/salesiq/",
+    "_hosts": ["zohopublic.com", "zohopublic.ca", "zoho.eu"],
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'salesiq.zoho' home-page HTML = 36.8% recall over 19 positives-with-HTML (7 hit); 2 neg-hits over 4195 negatives (0%), spot-checked as BuiltWith misses."
   },
   "LiveHelpNow": {
@@ -272,6 +283,7 @@
     "higher_ed": false,
     "confidence": 80,
     "website": "https://cloud.google.com/dialogflow",
+    "_hosts": ["gstatic.com"],
     "_detection_note": "Thin positive evidence (1 confirmed hit out of 8 positives-with-HTML); kept at reduced confidence, but the df-messenger custom-element tag is unambiguous and Google-owned, so precision risk is minimal.",
     "_validation": "Data-mined vs BuiltWith Chatbot (UNI-156, 2026-07-16). 'df-messenger' home-page HTML = 12.5% recall over 8 positives-with-HTML (1 hit); 0 neg-hits over 4206 negatives (0%)."
   },

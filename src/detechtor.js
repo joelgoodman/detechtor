@@ -15,6 +15,8 @@ const PATTERN_OVERRIDES = require('../patterns/pattern-overrides.json');
 const { applyPatternOverrides } = require('./pattern-overrides');
 const PATTERN_REWRITES = require('../patterns/pattern-rewrites.json');
 const { applyPatternRewrites } = require('./pattern-rewrites');
+const VENDOR_HOSTS = require('../patterns/vendor-hosts.json');
+const { applyVendorHosts } = require('./vendor-hosts');
 const { MatchCollector, mergeMatches, vendorDomains, pageHostOf, existsRuleAttrs, existsSource, isLinkRule, URL_ATTRS } = require('./rule-matches');
 
 class DeTECHtor {
@@ -178,6 +180,10 @@ class DeTECHtor {
         if (n3) console.log(`Applied ${n3} pattern rewrite(s)`);
       }
     }
+
+    // Vendor domains for generated-only technologies (src/vendor-hosts.js). Not an override: it adds
+    // `_hosts`, which only grades rule matches (src/rule-matches.js) and never decides a detection.
+    resolved = applyVendorHosts(resolved, VENDOR_HOSTS.hosts || {});
 
     if (config.verbose) {
       console.log(`Total patterns loaded: ${Object.keys(resolved).length}`);
@@ -1262,7 +1268,7 @@ class DeTECHtor {
             const at = existsSource(rule, node);
             const added = at
               ? matches.add({ rule: ruleText, channel: 'DOM', matched: at.matched, src: at.src, index: at.index,
-                urlValued: URL_ATTRS.has(at.attr), link })
+                urlValued: URL_ATTRS.has(at.attr), link: link || Boolean(at.link) })
               : matches.add({ rule: ruleText, channel: 'DOM', matched: rule.selector, link });
             if (!added) break;
           }

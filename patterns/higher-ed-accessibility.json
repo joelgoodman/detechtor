@@ -38,6 +38,7 @@
     "higher_ed": false,
     "confidence": 90,
     "website": "https://accessibe.com",
+    "_hosts": ["acsbapp.com", "acsbap.com"],
     "signal_polarity": "negative",
     "_detection_note": "Overlay/widget — negative polarity confirmed per UNI-137.",
     "_validation": "Re-validated UNI-156 Phase 3 (2026-07-16): combined html-field recall 70.6% (89/126 pos-with-HTML, N_total=150; acsbapp.com alone 67.5%, accessibe.com alone 59.5%), neg-hit 1.1% (47/4,088) — spot-checked (e.g. #692, #1995) all confirmed genuine acsbapp.com app.js loader installs BuiltWith missed. Signature unchanged."
@@ -50,6 +51,7 @@
     "higher_ed": false,
     "confidence": 90,
     "website": "https://monsido.com",
+    "_hosts": ["monsido-consent.com"],
     "_detection_note": "Genuine audit/monitoring platform (not an overlay widget) — no negative polarity per UNI-137.",
     "_validation": "Re-validated UNI-156 Phase 3 (2026-07-16): bare 'monsido' html-field recall 60.7% (74/122 pos-with-HTML, N_total=150; monsido\\.com alone 59.8%), neg-hit 1.4% (58/4,092) — spot-checked (e.g. #454, #2043, #2107 <meta name=\"monsido\">) all confirmed genuine installs BuiltWith missed. Widened from host-only to host+bare token: bare form also catches the <meta name=\"monsido\"> self-ID marker seen on some installs without losing precision (7-char distinctive token, no generic-word collision observed)."
   },
@@ -61,6 +63,7 @@
     "higher_ed": false,
     "confidence": 90,
     "website": "https://siteimprove.com",
+    "_hosts": ["siteimproveanalytics.com"],
     "_detection_note": "Genuine audit/monitoring platform (not an overlay widget) — no negative polarity per UNI-137.",
     "_validation": "Re-validated UNI-156 Phase 3 (2026-07-16): combined html-field recall 58.0% (76/131 pos-with-HTML, N_total=150; siteimproveanalytics.com alone 57.3%), neg-hit 11.9% (486/4,083) — this is the highest neg-hit% in the file, but spot-checking (10 sample ids incl. #33, #501, #583, #594, #684, #975) found EVERY hit was a genuine siteimproveanalytics.com/us1.siteimprove.com analytics beacon or Cookiebot-listed siteimprove.com third-party entry, i.e. BuiltWith under-labels Siteimprove heavily in this corpus (oracle miss, not a signature FP — per the standing mine-local.js oracle caveat). Kept both hosts: siteimprove.com-only catches installs on regional subdomains (e.g. us1.siteimprove.com) that siteimproveanalytics.com misses, worth +1 pos_hit for the added neg-hit surface, all of which spot-checked genuine."
   },

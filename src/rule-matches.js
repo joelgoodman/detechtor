@@ -48,9 +48,10 @@ function urlSpans(src) {
   let hostEnd = 0;
   let absolute = false;
   const scheme = src.match(/^([a-z][a-z0-9+.-]*):/i);
-  if (/^(?:[a-z][a-z0-9+.-]*:)?\/\//i.test(src)) {
+  const lead = src.match(/^(?:[a-z][a-z0-9+.-]*:)?\/{2,}/i);
+  if (lead) {
     absolute = true;
-    hostStart = src.indexOf('//') + 2;
+    hostStart = lead[0].length;
     const rest = src.slice(hostStart).search(/[/?#]/);
     hostEnd = rest === -1 ? src.length : hostStart + rest;
   } else if (scheme) {
@@ -72,6 +73,18 @@ function partAt(spans, index) {
   if (index < spans.pathEnd) return 'path';
   if (index < spans.queryEnd) return 'query';
   return 'fragment';
+}
+
+/** The absolute or protocol-relative URL token of `value` that contains `index`, or null. */
+function urlTokenAt(value, index) {
+  const stop = /[\s,'"()]/;
+  let a = index;
+  while (a > 0 && !stop.test(value[a - 1])) a--;
+  let b = index;
+  while (b < value.length && !stop.test(value[b])) b++;
+  const text = value.slice(a, b);
+  if (!/^(?:[a-z][a-z0-9+.-]*:)?\/{2,}[^/?#]/i.test(text)) return null;
+  return { text, start: a };
 }
 
 /** Page host from a page URL (string), or null. */
@@ -204,10 +217,13 @@ function existsSource(rule, node) {
     if (index === -1) continue; // this alternative did not select the node
     return { attr: a.name, src: v, matched: v.substr(index, a.value.length), index };
   }
-  // A link subject with no attribute selector still has the href the plan collected.
+  // A link subject with no attribute selector (form#mc-embedded-subscribe-form) still has the href or
+  // action the plan collected: that URL is where the node points, so the match is a link.
   for (const s of selectorSubjects(rule.selector)) {
     const want = s.tag === 'a' || s.tag === 'area' ? 'href' : s.tag === 'form' ? 'action' : null;
-    if (want && attrsOf[want] !== undefined) return { attr: want, src: String(attrsOf[want]), matched: null, index: -1 };
+    if (want && attrsOf[want] !== undefined) {
+      return { attr: want, src: String(attrsOf[want]), matched: null, index: -1, link: true };
+    }
   }
   return null;
 }
@@ -257,6 +273,14 @@ class MatchCollector {
       if (spans && (spans.absolute || urlValued)) {
         host = spans.absolute ? hostOf(src) : this.pageHost;
         part = partAt(spans, index);
+      } else if (!spans && index >= 0) {
+        // A value holding several URLs or a URL inside other text (srcset, style="background:url(...)"):
+        // place the match inside the absolute URL token that contains it.
+        const tok = urlTokenAt(src, index);
+        if (tok) {
+          host = hostOf(tok.text);
+          part = partAt(urlSpans(tok.text), index - tok.start);
+        }
       }
     }
     const reg = registrableDomain(host);

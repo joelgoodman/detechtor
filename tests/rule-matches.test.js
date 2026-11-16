@@ -159,3 +159,21 @@ test('the browser path merges matches across pages without exceeding the caps', 
   const [merged] = e.mergeTechnologies([...p1, ...p2]);
   assert.strictEqual(merged.matches.length, 2, 'duplicates dropped, new match kept');
 });
+
+test('srcset and style values place the match in the URL token that holds it', () => {
+  const e = engineWith({ S: { website: 'https://www.storyblok.com', categories: ['CMS'], dom: ["img[srcset*='a.storyblok.com']"] } });
+  const [t] = detect(e, '<img srcset="https://a.storyblok.com/f/1/x.jpg 1x, https://a.storyblok.com/f/1/y.jpg 2x">', 'https://www.example.edu/');
+  assert.strictEqual(t.matches[0].host, 'a.storyblok.com');
+  assert.strictEqual(t.matches[0].part, 'host');
+  assert.strictEqual(t.matches[0].vendorHost, true);
+});
+
+test('a form or link subject with no attribute selector reports its action/href as a link', () => {
+  const e = engineWith({ M: { website: 'https://mailchimp.com', _hosts: ['list-manage.com'], categories: ['Marketing Automation'],
+    dom: ['form#mc-embedded-subscribe-form'] } });
+  const html = '<form id="mc-embedded-subscribe-form" action="https://x.elluciancrmrecruit.com/Apply"></form>';
+  const [t] = detect(e, html, 'https://www.example.edu/');
+  assert.strictEqual(t.matches[0].link, true);
+  assert.strictEqual(t.matches[0].host, 'x.elluciancrmrecruit.com');
+  assert.strictEqual(t.matches[0].vendorHost, false, 'a Mailchimp form id posting to another vendor is not Mailchimp');
+});

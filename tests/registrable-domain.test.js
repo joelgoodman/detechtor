@@ -37,3 +37,8 @@ test('hostOnDomain is equality or a label-boundary suffix, never a substring', (
   assert.ok(!hostOnDomain('evilhs-scripts.com', 'hs-scripts.com'));
   assert.ok(!hostOnDomain('www.ghostplugins.dev', 'ghost.org'));
 });
+
+test('a run of slashes after the scheme is one separator, as browsers resolve it', () => {
+  assert.strictEqual(hostOf('////siteimproveanalytics.com/js/siteanalyze_1.js'), 'siteimproveanalytics.com');
+  assert.strictEqual(hostOf('https:///cdn.example.com/a.js'), 'cdn.example.com');
+});
