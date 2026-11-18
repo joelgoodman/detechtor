@@ -1185,6 +1185,15 @@
         "source": "webappanalyzer-merged.json"
       },
       {
+        "name": "Privy",
+        "suggests": "Marketing Automation",
+        "categories": [
+          "Personalization & CRO"
+        ],
+        "curated": false,
+        "source": "webappanalyzer-merged.json"
+      },
+      {
         "name": "Procurios",
         "suggests": "CRM",
         "categories": [

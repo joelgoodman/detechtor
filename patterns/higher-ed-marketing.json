@@ -127,7 +127,8 @@
     "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). 'marketingautomation.services' home-page HTML = 46.2% recall over 26 positives-with-HTML (12 hit); 0 neg-hits over 4188 negatives (0%)."
   },
   "Merit Pages": {
-    "cats": [307],
+    "cats": [312],
+    "_category_note": "Not Marketing Automation (Joel, 2026-10-26; Alembic 135): a student-achievement publicity service. Moved from Marketing Automation (307) to Unclassified (312) on 2026-11-18.",
     "description": "Merit Pages (meritpages.com) — higher-ed-specific student/alumni achievement and press-release automation network, widely embedded as a homepage news/press widget.",
     "html": ["meritpages\\.com"],
     "scripts": ["meritpages\\.com"],

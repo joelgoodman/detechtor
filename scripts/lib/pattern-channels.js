@@ -48,7 +48,7 @@ const NON_REGEX_FIELDS = new Set([
   'dns', 'css', 'robots', 'probe', 'certIssuer', 'text',
   // engine/loader provenance and annotations:
   '_curated', '_sourceFile', '_generated', '_categoryOverride', '_validation', '_legacy_names',
-  '_detection_note', '_patternOverride', '_patternRewrite', '_domRules',
+  '_detection_note', '_category_note', '_patternOverride', '_patternRewrite', '_domRules',
   // vendor domains (registrable domains or host suffixes) beyond `website`, for match evidence's vendorHost:
   '_hosts',
 ]);
