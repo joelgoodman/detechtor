@@ -616,14 +616,14 @@
     },
     "Aimtell": {
       "categories": [
-        "Marketing Automation"
+        "Widget"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "Push notification platform, not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): push notification or social sharing widget. Previously: Push notification platform, not a framework.",
       "institutions": 1,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "AnythingSlider": {
       "categories": [
@@ -672,14 +672,14 @@
     },
     "Beeketing": {
       "categories": [
-        "Marketing Automation"
+        "Ecommerce Marketing"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "Ecommerce marketing suite, not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): ecommerce plugin or store marketing. Previously: Ecommerce marketing suite, not a framework.",
       "institutions": 1,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Bench": {
       "categories": [
@@ -873,14 +873,14 @@
     },
     "Kwanzoo": {
       "categories": [
-        "Marketing Automation"
+        "Advertising"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "GTM automation platform, not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): advertising or ad-buying technology. Previously: GTM automation platform, not a framework.",
       "institutions": 1,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Loadable-Components": {
       "categories": [
@@ -972,15 +972,15 @@
     },
     "OneSignal": {
       "categories": [
-        "Marketing Automation"
+        "Widget"
       ],
       "was": [
         "JavaScript Framework",
         "Booking System"
       ],
-      "reason": "Push notification platform, not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): push notification or social sharing widget. Previously: Push notification platform, not a framework.",
       "institutions": 1,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "OpenLayers": {
       "categories": [
@@ -1062,15 +1062,15 @@
     },
     "Privy": {
       "categories": [
-        "Marketing Automation"
+        "Personalization & CRO"
       ],
       "was": [
         "JavaScript Framework",
         "Booking System"
       ],
-      "reason": "Ecommerce marketing automation, not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): pop-up, landing page or lead-capture tool. Previously: Ecommerce marketing automation, not a framework.",
       "institutions": 1,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "RxJS": {
       "categories": [
@@ -1295,15 +1295,15 @@
     },
     "BDOW": {
       "categories": [
-        "Marketing Automation"
+        "Personalization & CRO"
       ],
       "was": [
         "Widget",
         "JavaScript Framework"
       ],
-      "reason": "Marketing automation tools; Widget tag incorrect",
+      "reason": "Not Marketing Automation (2026-11-18 review): pop-up, landing page or lead-capture tool. Previously: Marketing automation tools; Widget tag incorrect.",
       "institutions": 4,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Cleave.js": {
       "categories": [
@@ -1397,15 +1397,15 @@
     },
     "Sumo": {
       "categories": [
-        "Marketing Automation"
+        "Personalization & CRO"
       ],
       "was": [
         "Widget",
         "JavaScript Framework"
       ],
-      "reason": "Marketing automation tools",
+      "reason": "Not Marketing Automation (2026-11-18 review): pop-up, landing page or lead-capture tool. Previously: Marketing automation tools.",
       "institutions": 4,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "W3.CSS": {
       "categories": [
@@ -1709,14 +1709,14 @@
     },
     "Feathr": {
       "categories": [
-        "Marketing Automation"
+        "Advertising"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "Event marketing tools",
+      "reason": "Not Marketing Automation (2026-11-18 review): advertising or ad-buying technology. Previously: Event marketing tools.",
       "institutions": 2,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Glider.js": {
       "categories": [
@@ -3980,15 +3980,15 @@
     },
     "Postie": {
       "categories": [
-        "Marketing Automation"
+        "WordPress Plugin"
       ],
       "was": [
         "JavaScript Framework",
         "Booking System"
       ],
-      "reason": "Audience building/A-B testing tool; Booking System is incorrect.",
+      "reason": "Not Marketing Automation (2026-11-18 review): post-by-email WordPress plugin. Previously: Audience building/A-B testing tool; Booking System is incorrect.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Postscript": {
       "categories": [
@@ -4189,15 +4189,14 @@
     },
     "PushAlert": {
       "categories": [
-        "Widget",
-        "Marketing Automation"
+        "Widget"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "Push notification/onsite messaging widget, not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): push notification or social sharing widget. Previously: Push notification/onsite messaging widget, not a framework.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "PushBots": {
       "categories": [
@@ -4213,15 +4212,14 @@
     },
     "PushEngage": {
       "categories": [
-        "Widget",
-        "Marketing Automation"
+        "Widget"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "Browser push notification platform; not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): push notification or social sharing widget. Previously: Browser push notification platform; not a framework.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "PushOwl": {
       "categories": [
@@ -4273,14 +4271,14 @@
     },
     "Pushnami": {
       "categories": [
-        "Marketing Automation"
+        "Widget"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "AI messaging platform, not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): push notification or social sharing widget. Previously: AI messaging platform, not a framework.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Pushouse": {
       "categories": [
@@ -4977,15 +4975,15 @@
     },
     "BrightInfo": {
       "categories": [
-        "Marketing Automation"
+        "Personalization & CRO"
       ],
       "was": [
         "JavaScript Framework",
         "Booking System"
       ],
-      "reason": "Content personalization platform, not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): pop-up, landing page or lead-capture tool. Previously: Content personalization platform, not a framework.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Brimble": {
       "categories": [
@@ -5383,15 +5381,15 @@
     },
     "ClickFunnels": {
       "categories": [
-        "Marketing Automation"
+        "Personalization & CRO"
       ],
       "was": [
         "JavaScript Framework",
         "Advertising"
       ],
-      "reason": "Sales funnel builder, not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): pop-up, landing page or lead-capture tool. Previously: Sales funnel builder, not a framework.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Clickskeks": {
       "categories": [
@@ -6461,14 +6459,14 @@
     },
     "OptinMonster": {
       "categories": [
-        "Marketing Automation"
+        "Personalization & CRO"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "Conversion optimization/email list tool, not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): pop-up, landing page or lead-capture tool. Previously: Conversion optimization/email list tool, not a framework.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "OtterText": {
       "categories": [
@@ -8371,15 +8369,14 @@
     },
     "Rockerbox": {
       "categories": [
-        "Marketing Automation",
         "Analytics"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "Multi-touch attribution tool; not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): tracking, attribution or visitor identification. Previously: Multi-touch attribution tool; not a framework.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Roojoom": {
       "categories": [
@@ -8534,15 +8531,14 @@
     },
     "Salesloft": {
       "categories": [
-        "CRM",
-        "Marketing Automation"
+        "CRM"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "Sales engagement platform; not a framework.",
+      "reason": "Not Marketing Automation (2026-11-18 review): sales engagement. Previously: Sales engagement platform; not a framework.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Sass": {
       "categories": [
@@ -11098,14 +11094,14 @@
     },
     "Mentad": {
       "categories": [
-        "Marketing Automation"
+        "Advertising"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "Predictive marketing platform.",
+      "reason": "Not Marketing Automation (2026-11-18 review): advertising or ad-buying technology. Previously: Predictive marketing platform.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Mermaid": {
       "categories": [
@@ -12300,15 +12296,15 @@
     },
     "Mailmunch": {
       "categories": [
-        "Marketing Automation"
+        "Personalization & CRO"
       ],
       "was": [
         "Booking System",
         "JavaScript Framework"
       ],
-      "reason": "Lead generation and email marketing.",
+      "reason": "Not Marketing Automation (2026-11-18 review): pop-up, landing page or lead-capture tool. Previously: Lead generation and email marketing.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Mailocator": {
       "categories": [
@@ -12831,15 +12827,14 @@
     },
     "Dashly": {
       "categories": [
-        "Marketing Automation",
         "Chatbot"
       ],
       "was": [
         "JavaScript Framework"
       ],
-      "reason": "Conversational marketing platform; Marketing Automation or Chatbot.",
+      "reason": "Not Marketing Automation (2026-11-18 review): chat widget. Previously: Conversational marketing platform; Marketing Automation or Chatbot.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "DatHuis": {
       "categories": [
@@ -13684,15 +13679,15 @@
     },
     "Unbounce": {
       "categories": [
-        "Marketing Automation"
+        "Personalization & CRO"
       ],
       "was": [
         "Web Server",
         "Advertising"
       ],
-      "reason": "Landing page builder; categorize as CMS primary function",
+      "reason": "Not Marketing Automation (2026-11-18 review): pop-up, landing page or lead-capture tool. Previously: Landing page builder; categorize as CMS primary function.",
       "institutions": 26,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Webflow": {
       "categories": [
@@ -19865,14 +19860,14 @@
     },
     "Mailman": {
       "categories": [
-        "Marketing Automation"
+        "Unclassified"
       ],
       "was": [
         "Booking System"
       ],
-      "reason": "Email discussion list software.",
+      "reason": "Not Marketing Automation (2026-11-18 review): transactional email or mail infrastructure, not marketing. Previously: Email discussion list software.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Marquiz": {
       "categories": [
@@ -19910,14 +19905,14 @@
     },
     "Mosio": {
       "categories": [
-        "Marketing Automation"
+        "Widget"
       ],
       "was": [
         "Booking System"
       ],
-      "reason": "Research messaging platform.",
+      "reason": "Not Marketing Automation (2026-11-18 review): text-message reference and chat service. Previously: Research messaging platform.",
       "institutions": 0,
-      "decided": "2026-08-10"
+      "decided": "2026-11-18"
     },
     "Movable Ink": {
       "categories": [
