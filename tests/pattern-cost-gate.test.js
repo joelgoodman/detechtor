@@ -34,7 +34,6 @@ test('the construct is banned in EVERY channel the engine compiles', () => {
     cookies: { cookies: { sid: bad } },
     dom: { dom: { 'div.x': bad } },
     domAttr: { dom: { 'a[href]': { attributes: { href: bad } } } },
-    version: { version: bad },
   };
   for (const [name, def] of Object.entries(cases)) {
     const got = codes(T(def));
@@ -46,7 +45,7 @@ test('every channel the gate knows is one the engine actually compiles', () => {
   // The contract with src/detechtor.js: each `new RegExp(` call site has a channel here.
   const engine = fs.readFileSync(path.join(ROOT, 'src/detechtor.js'), 'utf8').replace(/\/\/.*$/gm, '');
   const calls = [...engine.matchAll(/new RegExp\(([^()]*(?:\([^()]*\)[^()]*)*)\)/g)].map((m) => m[1]);
-  assert.ok(calls.length >= 10, `expected the engine's ~10 pattern-driven compile sites, found ${calls.length}`);
+  assert.ok(calls.length >= 9, `expected the engine's ~9 pattern-driven compile sites, found ${calls.length}`);
   const known = new Set(CHANNELS.map((c) => c.site));
   for (const call of calls) {
     const cut = call.lastIndexOf(',');

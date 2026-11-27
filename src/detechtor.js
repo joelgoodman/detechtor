@@ -6,7 +6,7 @@ const path = require('path');
 const config = require('./config');
 const { mapCategory } = require('./category-mapping');
 const { admittedDomRules, checkDomRules } = require('./dom-rules');
-const { normalizeDefinition } = require('./pattern-normalize');
+const { normalizeDefinition, resolveVersion } = require('./pattern-normalize');
 const { resolveIdentities } = require('./technology-identity');
 const ALIASES = require('../patterns/technology-aliases.json');
 const { applyCategoryOverrides } = require('./category-overrides');
@@ -699,9 +699,6 @@ class DeTECHtor {
         return meta;
       });
       
-      // Enhanced version extraction
-      evidence.versionInfo = await this.extractVersionInfo(page, evidence.html);
-      
       // API endpoint discovery
       evidence.apiEndpoints = await this.discoverApiEndpoints(page, evidence.html, evidence.scripts);
       
@@ -831,89 +828,7 @@ class DeTECHtor {
     return evidence;
   }
   
-  async extractVersionInfo(page, html) {
-    const versionInfo = {};
-    
-    try {
-      // Extract version information from various sources
-      const versions = await page.evaluate(() => {
-        const versions = {};
-        
-        // WordPress version detection
-        const wpGenerator = document.querySelector('meta[name="generator"][content*="WordPress"]');
-        if (wpGenerator) {
-          const wpVersion = wpGenerator.content.match(/WordPress (\d+\.\d+(?:\.\d+)?)/);
-          if (wpVersion) versions.wordpress = wpVersion[1];
-        }
-        
-        // Drupal version detection
-        if (window.Drupal?.settings) {
-          // Try to extract from Drupal settings or JS files
-          const drupalJs = Array.from(document.querySelectorAll('script[src*="drupal.js"]'));
-          if (drupalJs.length > 0) {
-            const src = drupalJs[0].src;
-            const version = src.match(/(\d+\.\d+)/);
-            if (version) versions.drupal = version[1];
-          }
-        }
-        
-        // Joomla version detection
-        const joomlaGenerator = document.querySelector('meta[name="generator"][content*="Joomla"]');
-        if (joomlaGenerator) {
-          const joomlaVersion = joomlaGenerator.content.match(/Joomla! (\d+\.\d+(?:\.\d+)?)/);
-          if (joomlaVersion) versions.joomla = joomlaVersion[1];
-        }
-        
-        // Canvas LMS version
-        if (window.webpackChunkcanvas_lms) {
-          // Try to extract from Canvas environment
-          const canvasEnv = document.querySelector('meta[name="canvas-environment"]');
-          if (canvasEnv) {
-            versions.canvas = canvasEnv.content;
-          }
-        }
-        
-        // jQuery version
-        if (window.jQuery && window.jQuery.fn) {
-          versions.jquery = window.jQuery.fn.jquery;
-        }
-        
-        // Bootstrap version
-        const bootstrapJs = Array.from(document.querySelectorAll('script[src*="bootstrap"]'));
-        if (bootstrapJs.length > 0) {
-          const src = bootstrapJs[0].src;
-          const bsVersion = src.match(/bootstrap[\/](\d+\.\d+(?:\.\d+)?)/i);
-          if (bsVersion) versions.bootstrap = bsVersion[1];
-        }
-        
-        return versions;
-      });
-      
-      Object.assign(versionInfo, versions);
-      
-      // Additional version extraction from HTML content
-      const htmlVersionPatterns = [
-        { name: 'wordpress', pattern: /wp-includes\/js\/wp-embed\.min\.js\?ver=(\d+\.\d+(?:\.\d+)?)/i },
-        { name: 'drupal', pattern: /drupal\.js\?(\d+\.\d+)/i },
-        { name: 'joomla', pattern: /joomla\.js\?(\d+\.\d+)/i },
-        { name: 'moodle', pattern: /moodle\/lib\/javascript\.js\?(\d+\.\d+)/i }
-      ];
-      
-      for (const { name, pattern } of htmlVersionPatterns) {
-        if (!versionInfo[name]) {
-          const match = html.match(pattern);
-          if (match) versionInfo[name] = match[1];
-        }
-      }
-      
-    } catch (error) {
-      if (config.verbose) {
-        console.warn(`Error extracting version info: ${error.message}`);
-      }
-    }
-    
-    return versionInfo;
-  }
+
   
   async discoverApiEndpoints(page, html, scripts) {
     const endpoints = [];
@@ -1107,6 +1022,15 @@ class DeTECHtor {
     // `matchEvidence`, never instead of it: `evidence`/`rules` stay byte-identical.
     const pageHost = ctx.pageHost !== undefined ? ctx.pageHost : pageHostOf(evidence.pageUrl);
     const matches = new MatchCollector({ pageHost, vendor: this.vendorDomainsFor(name, pattern) });
+    // A version comes only from the `\;version:` template of a rule that fired for THIS technology
+    // (src/pattern-normalize.js keeps them in `_versions`). Never from the page at large: the old
+    // fallback gave every technology the page's first versioned script (2026-11-16 review, finding 3).
+    let version = null;
+    const noteVersion = (regexText, hit) => {
+      if (version !== null || !pattern._versions) return;
+      const template = pattern._versions[regexText];
+      if (template !== undefined) version = resolveVersion(template, hit);
+    };
     
     // HTML pattern matching
     if (pattern.html && Array.isArray(pattern.html)) {
@@ -1118,6 +1042,7 @@ class DeTECHtor {
             confidence += 40;
             matchEvidence.push(`HTML: ${htmlPattern}`);
             matches.add({ rule: `HTML: ${htmlPattern}`, channel: 'HTML', matched: hit[0] });
+            noteVersion(htmlPattern, hit);
             if (matchEvidence.length > 10) break; // Limit evidence collection
           }
         } catch (regexError) {
@@ -1153,6 +1078,7 @@ class DeTECHtor {
             const hit = regex.exec(src);
             if (!hit) continue;
             match = true;
+            noteVersion(scriptPattern, hit);
             // Keep scanning only while this rule can still record a match; the score is unchanged.
             if (!matches.add({ rule, channel: 'Script', matched: hit[0], src, index: hit.index, urlValued: true })) break;
           }
@@ -1196,7 +1122,9 @@ class DeTECHtor {
         const headerValue = evidence.headers[headerName.toLowerCase()];
         if (headerValue) {
           try {
-            if (new RegExp(headerPattern, 'i').test(headerValue)) {
+            const hit = new RegExp(headerPattern, 'i').exec(headerValue);
+            if (hit) {
+              noteVersion(headerPattern, hit);
               confidence += 80;
               matchEvidence.push(`Header: ${headerName}=${headerPattern}`);
             }
@@ -1217,6 +1145,7 @@ class DeTECHtor {
           try {
             const hit = new RegExp(metaPattern, 'i').exec(metaValue);
             if (hit) {
+              noteVersion(metaPattern, hit);
               confidence += 100;
               matchEvidence.push(`Meta: ${metaName}=${metaPattern}`);
               matches.add({ rule: `Meta: ${metaName}=${metaPattern}`, channel: 'Meta', matched: hit[0],
@@ -1419,53 +1348,12 @@ class DeTECHtor {
       categories: categories,
       evidence: config.includeEvidence ? matchEvidence : [],
       matches: config.includeEvidence ? matches.out : [],
-      version: this.extractVersion({name: name}, evidence),
+      version,
       isHigherEd: pattern.higher_ed || false,
       description: pattern.description || '',
       curated: pattern._curated || false,
       sourceFile: pattern._sourceFile || null
     };
-  }
-  
-  extractVersion(pattern, evidence) {
-    // Enhanced version extraction using multiple sources
-    let version = null;
-    
-    // First check if we have version info from our enhanced detection
-    if (evidence.versionInfo) {
-      const techNameLower = pattern.name?.toLowerCase() || '';
-      for (const [tech, versionValue] of Object.entries(evidence.versionInfo)) {
-        if (techNameLower.includes(tech) || tech.includes(techNameLower)) {
-          version = versionValue;
-          break;
-        }
-      }
-    }
-    
-    // Fall back to pattern-based extraction
-    if (!version && pattern.version && typeof pattern.version === 'string') {
-      try {
-        const regex = new RegExp(pattern.version, 'i');
-        const match = evidence.html.match(regex);
-        if (match && match[1]) {
-          version = match[1];
-        }
-      } catch (error) {
-        // Skip invalid version regex
-      }
-    }
-    
-    // Try to extract from script versions
-    if (!version && evidence.scripts) {
-      for (const script of evidence.scripts) {
-        if (script.version) {
-          version = script.version;
-          break;
-        }
-      }
-    }
-    
-    return version;
   }
   
   // For each derived probe prefix, construct a subdomain URL and a path URL,

@@ -29,7 +29,7 @@
 // `_hosts` (vendor domains, src/rule-matches.js) is unioned too: a host either entry vouches for is the
 // vendor's whichever name survives.
 const ARRAY_FIELDS = ['html', 'scripts', 'scriptSrc', 'url', 'text', 'network', 'implies', 'requires', '_hosts'];
-const OBJECT_FIELDS = ['js', 'meta', 'headers', 'cookies'];
+const OBJECT_FIELDS = ['js', 'meta', 'headers', 'cookies', '_versions'];
 // `dom` is neither: it ships as an array of selectors OR an object keyed by selector (see
 // src/dom-rules.js for the three on-disk shapes). Treating it as a plain array wrapped an
 // object-form dom inside an array and produced a shape normalizeDomRules rejects outright —

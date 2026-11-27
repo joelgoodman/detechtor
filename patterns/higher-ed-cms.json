@@ -181,7 +181,7 @@
       "wp-includes"
     ],
     "meta": {
-      "generator": "WordPress"
+      "generator": "WordPress ?([\\d.]+)?\\;version:\\1"
     },
     "higher_ed": false,
     "confidence": 92,

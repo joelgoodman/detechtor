@@ -31,9 +31,8 @@ const CHANNELS = [
   { channel: 'cookies', field: 'cookies', shape: 'object', input: 'cookie value', site: 'cookiePattern' },
   // `dom` regexes are compiled by the engine from the pre-normalised `_domRules` (src/dom-rules.js).
   { channel: 'dom', field: '_domRules', shape: 'dom', input: 'element text / attribute', site: 'rule.regex' },
-  // `pattern.version` is passed through `extractVersion({name}, ...)`, so it is dead today. Scanned
-  // anyway: costing nothing now, it would become live the day someone passes the real definition.
-  { channel: 'version', field: 'version', shape: 'string', input: 'page html', site: 'pattern.version' },
+  // There is no `version` channel: a version comes only from the `\;version:` template of a rule
+  // that fired (src/pattern-normalize.js `_versions`), never from a page-wide `pattern.version` regex.
 ];
 
 /**
@@ -51,6 +50,9 @@ const NON_REGEX_FIELDS = new Set([
   '_detection_note', '_category_note', '_patternOverride', '_patternRewrite', '_domRules',
   // vendor domains (registrable domains or host suffixes) beyond `website`, for match evidence's vendorHost:
   '_hosts',
+  // version templates kept from upstream `\;version:` suffixes, keyed by the stripped regex
+  // (src/pattern-normalize.js); the keys are regexes already gated in their own field:
+  '_versions',
 ]);
 
 /** Load the effective pattern set through the engine's own loader. */

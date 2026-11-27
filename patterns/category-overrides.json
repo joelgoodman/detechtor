@@ -1293,18 +1293,6 @@
       "institutions": 4,
       "decided": "2026-08-10"
     },
-    "BDOW": {
-      "categories": [
-        "Personalization & CRO"
-      ],
-      "was": [
-        "Widget",
-        "JavaScript Framework"
-      ],
-      "reason": "Not Marketing Automation (2026-11-18 review): pop-up, landing page or lead-capture tool. Previously: Marketing automation tools; Widget tag incorrect.",
-      "institutions": 4,
-      "decided": "2026-11-18"
-    },
     "Cleave.js": {
       "categories": [
         "JavaScript Library"

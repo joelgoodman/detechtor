@@ -15,9 +15,10 @@
 // death -- on a much larger surface. lint-patterns.js could never have found it: it hunts patterns
 // that are too BROAD, and these are pathologically NARROW.
 //
-// ⚠️ We strip and DISCARD. Honouring upstream's `confidence:NN` would change scoring across 1,160
-// techs and needs its own measurement; `version:\1` capture extraction is already reimplemented in
-// extractVersionInfo. Both are deliberate non-goals here -- the bug is the dead regex.
+// ⚠️ `confidence:NN` is stripped and DISCARDED: honouring it would change scoring across 1,160
+// techs and needs its own measurement. `version:` templates are stripped from the regex but KEPT in
+// `def._versions` (keyed by the stripped regex), so the engine takes a version from the capture
+// groups of a rule that fired for that technology and from nothing else.
 'use strict';
 
 // Upstream separates fields with a literal backslash-semicolon. Measured across the whole shipped
@@ -47,6 +48,38 @@ function stripModifiers(value) {
   return kept.length ? [head, ...kept].join(SEPARATOR) : head;
 }
 
+// Fields whose regex hits the engine keeps (src/detechtor.js evaluatePattern), so a version template
+// on them can be resolved against the rule that fired.
+const VERSIONED_FIELDS = ['html', 'scripts', 'scriptSrc', 'meta', 'headers'];
+
+/**
+ * The `\;version:` template of a pattern value, or null when it has none.
+ * @param {string} value
+ * @returns {string|null}
+ */
+function versionTemplate(value) {
+  if (typeof value !== 'string' || !value.includes(SEPARATOR)) return null;
+  const segment = value.split(SEPARATOR).slice(1).find((s) => /^version:/i.test(s));
+  return segment === undefined ? null : segment.slice('version:'.length);
+}
+
+/**
+ * Resolve an upstream version template against a regex hit: `\1` is group 1, and `\1?a:b` is `a`
+ * when group 1 matched and `b` when it did not. Empty or whitespace-only output is no version.
+ * @param {string} template
+ * @param {Array<string|undefined>} hit  a RegExp exec result
+ * @returns {string|null}
+ */
+function resolveVersion(template, hit) {
+  if (typeof template !== 'string' || !hit) return null;
+  let out = template;
+  const ternary = /^\\(\d)\?([^:]*):(.*)$/.exec(out);
+  if (ternary) out = hit[Number(ternary[1])] ? ternary[2] : ternary[3];
+  out = out.replace(/\\(\d)/g, (_, n) => hit[Number(n)] || '');
+  out = out.trim();
+  return out ? out : null;
+}
+
 /**
  * Deep-strip a technology definition, in place.
  *
@@ -57,6 +90,20 @@ function stripModifiers(value) {
  */
 function normalizeDefinition(def) {
   if (!def || typeof def !== 'object') return def;
+
+  // A rule's `\;version:` template is kept, keyed by the stripped regex it belongs to, so the engine
+  // can take a version from the capture groups of a rule that fired (2026-11-16 review, finding 3).
+  // Only regex-tested fields that record a hit carry one: html, scripts/scriptSrc, meta, headers.
+  const versions = def._versions && typeof def._versions === 'object' ? { ...def._versions } : {};
+  const collect = (value) => {
+    if (typeof value === 'string') {
+      const template = versionTemplate(value);
+      if (template !== null) versions[stripModifiers(value)] = template;
+    } else if (Array.isArray(value)) value.forEach(collect);
+    else if (value && typeof value === 'object') Object.values(value).forEach(collect);
+  };
+  for (const field of VERSIONED_FIELDS) if (def[field] !== undefined) collect(def[field]);
+  if (Object.keys(versions).length) def._versions = versions;
 
   const walk = (value) => {
     if (typeof value === 'string') return stripModifiers(value);
@@ -106,4 +153,4 @@ function normalizeDefinition(def) {
   return def;
 }
 
-module.exports = { stripModifiers, normalizeDefinition, hasModifier, SEPARATOR };
+module.exports = { stripModifiers, normalizeDefinition, hasModifier, versionTemplate, resolveVersion, SEPARATOR };
