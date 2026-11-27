@@ -1093,26 +1093,8 @@
       303
     ],
     "description": "HubSpot CRM optimized for education",
-    "html": [
-      "hubspot",
-      "hs-analytics",
-      "_hsq",
-      "hubspot\\.com",
-      "hs-script",
-      "class=\"hs-"
-    ],
-    "scripts": [
-      "hubspot",
-      "hs-analytics"
-    ],
-    "js": {
-      "hbspt": "",
-      "_hsq": ""
-    },
     "higher_ed": true,
-    "_legacy_names": [
-      "HubSpot"
-    ]
+    "_detection_note": "No detection rules (2026-11-16 ruling): every rule this entry carried was HubSpot's tracking or forms tag (hs-analytics, hs-scripts, _hsq, hbspt, class=\"hs-\", hubspot.com links) or a bare `hubspot` token that matched first-party files such as hubspot-form-custom-logic.js. One tag is one Marketing Automation row, `HubSpot` in higher-ed-marketing.json; 187 institutions held both rows from the same js.hs-analytics.net tag. A CRM row needs CRM-specific evidence, and no client-side signal of the HubSpot CRM itself is known; the entry stays so the name and category remain in the vocabulary."
   },
   "InCommon Federation": {
     "cats": [

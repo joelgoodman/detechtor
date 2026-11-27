@@ -13,9 +13,6 @@
     "Attentive": [
       "attn.tv"
     ],
-    "BDOW": [
-      "sumo.com"
-    ],
     "Chatra": [
       "chatra.io"
     ],
@@ -87,6 +84,9 @@
       "dx.squiz.cloud",
       "matrix.squiz.cloud"
     ],
+    "Sumo": [
+      "sumo.com"
+    ],
     "Texthelp": [
       "browsealoud.com"
     ],
@@ -95,9 +95,6 @@
     ],
     "Weebly": [
       "editmysite.com"
-    ],
-    "Zendesk Chat": [
-      "zopim.com"
     ]
   }
 }

@@ -9,12 +9,13 @@
   "HubSpot": {
     "cats": [307],
     "description": "HubSpot tracking/forms/lead-flow loader suite, served from HubSpot's dedicated hs-* subdomains (hs-scripts.com analytics/tracking loader, hsforms.net forms embed, hs-analytics.net, hscollectedforms.net, hsleadflows.net).",
-    "html": ["js\\.hs-scripts\\.com", "js\\.hsforms\\.net", "js\\.hs-analytics\\.net", "js\\.hscollectedforms\\.net", "js\\.hsleadflows\\.net"],
-    "scripts": ["js\\.hs-scripts\\.com", "js\\.hsforms\\.net", "js\\.hs-analytics\\.net", "js\\.hscollectedforms\\.net", "js\\.hsleadflows\\.net"],
+    "html": ["//js(?:-[a-z0-9]{2,6})?\\.(?:hs-scripts\\.com|hs-analytics\\.net|hsforms\\.net|hscollectedforms\\.net|hsleadflows\\.net)/"],
+    "scripts": ["^(?:https?:)?//js(?:-[a-z0-9]{2,6})?\\.(?:hs-scripts\\.com|hs-analytics\\.net|hsforms\\.net|hscollectedforms\\.net|hsleadflows\\.net)/"],
     "higher_ed": true,
     "confidence": 85,
     "website": "https://www.hubspot.com",
     "_hosts": ["hs-scripts.com", "hs-analytics.net", "hscollectedforms.net", "hsforms.net", "hsleadflows.net"],
+    "_detection_note": "One HubSpot tag is ONE row, in Marketing Automation (ruling 2026-11-16); `HubSpot for Education` (CRM) no longer fires on it. The host label accepts HubSpot's regional hublets (js-na1, js-na2, js-eu1, ...): the old rules pinned `js.` and missed 40 institutions in cohort 143 (2026-11-16 detection review, finding 7). The host must start the URL (scripts) or follow `//` (html), so a first-party file named after a HubSpot host does not fire.",
     "_validation": "Data-mined vs BuiltWith Marketing Automation (UNI-156, 2026-07-16). Combined js.hs-scripts.com/js.hsforms.net/js.hs-analytics.net/js.hscollectedforms.net/js.hsleadflows.net home-page HTML = 19.7% recall over 137 positives-with-HTML (27 hit); 153 neg-hits over 4077 negatives (3.8%) — the highest neg-hit rate in this partial, spot-checked as genuine js.hs-scripts.com/<portal-id>.js installs (BuiltWith misses), not a collision; the elevated rate reflects HubSpot's outsized higher-ed market share rather than signature looseness."
   },
   "Pardot": {

@@ -4867,16 +4867,6 @@
         }
       ]
     },
-    "TYPO3 CMS": {
-      "meta": [
-        {
-          "key": "generator",
-          "from": "TYPO3\\s+(?:CMS\\s+)?(?:[\\d.]+)?(?:\\s+CMS)?",
-          "to": "TYPO3\\s{1,80}(?:CMS\\s{1,80})?(?:[\\d.]+)?(?:\\s{1,80}CMS)?",
-          "basis": "corpus:IDENTICAL(unobserved-default-bound)"
-        }
-      ]
-    },
     "TableBooker": {
       "scriptSrc": [
         {
