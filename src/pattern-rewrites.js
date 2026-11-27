@@ -79,6 +79,16 @@ function applyPatternRewrites(patterns, rewrites = {}) {
     }
 
     if (applied.length === 0) continue;
+    // A version template (src/pattern-normalize.js `_versions`) is keyed by the regex text, so it
+    // follows its rule to the rewritten text. A rewrite only bounds wildcards; capture groups keep
+    // their numbers.
+    if (def._versions && typeof def._versions === 'object') {
+      const versions = { ...def._versions };
+      for (const a of applied) {
+        if (a.field !== 'dom' && versions[a.from] !== undefined && versions[a.to] === undefined) versions[a.to] = versions[a.from];
+      }
+      next._versions = versions;
+    }
     next._patternRewrite = applied;
     out[name] = next;
   }

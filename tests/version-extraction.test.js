@@ -98,3 +98,23 @@ test('the shipped patterns hold no page-wide fallback: no two technologies share
     assert.notStrictEqual(m.version, '3.7.1', `${m.name} must not carry jQuery's version`);
   }
 });
+
+test('a rule rewritten by pattern-rewrites.json keeps its version template (shipped Autoptimize)', () => {
+  const d = new DeTECHtor();
+  const html = '<html><head>'
+    + '<script src="https://example.edu/wp-content/plugins/autoptimize/classes/js/x.js?ao_version=3.1.12"></script>'
+    + '</head><body></body></html>';
+  const m = byName(d.matchPatterns(evidenceFromHtml(html, d.domPlan, { pageUrl: 'https://example.edu/' })));
+  assert.ok(m.Autoptimize, 'Autoptimize detected');
+  assert.strictEqual(m.Autoptimize.version, '3.1.12');
+});
+
+test('applyPatternRewrites moves a version template to the rewritten text', () => {
+  const { applyPatternRewrites } = require(path.resolve(__dirname, '../src/pattern-rewrites.js'));
+  const out = applyPatternRewrites(
+    { T: { scripts: ['a.+b(\\d)'], meta: { generator: 'G.+(\\d)' }, _versions: { 'a.+b(\\d)': '\\1', 'G.+(\\d)': '\\1' } } },
+    { T: { scripts: [{ from: 'a.+b(\\d)', to: 'a.{1,9}b(\\d)' }], meta: [{ key: 'generator', from: 'G.+(\\d)', to: 'G.{1,9}(\\d)' }] } },
+  );
+  assert.strictEqual(out.T._versions['a.{1,9}b(\\d)'], '\\1');
+  assert.strictEqual(out.T._versions['G.{1,9}(\\d)'], '\\1');
+});
