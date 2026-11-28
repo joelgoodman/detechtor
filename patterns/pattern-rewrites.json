@@ -1824,6 +1824,14 @@
           "to": "powered.{0,80}by.{0,80}ghost",
           "basis": "decision:bounded to 80/80 (largest the cost target allows): 33 of 33 inputs change verdict; keeps 0 of 169 match starts; the evidence asked for up to 159190"
         }
+      ],
+      "meta": [
+        {
+          "key": "generator",
+          "from": "Ghost",
+          "to": "^Ghost \\d",
+          "basis": "precision:2026-11-15 review (finding 1). Ghost writes its generator meta as 'Ghost <version>'; an unanchored 'Ghost' matches any generator that merely contains the word."
+        }
       ]
     },
     "GitLab": {
@@ -6198,6 +6206,15 @@
           "from": "<div class=\"copyright\">[^<]+<a[^>]+>xt:Commerce",
           "to": "<div class=\"copyright\">[^<]{1,80}<a[^>]{1,80}>xt:Commerce",
           "basis": "corpus:IDENTICAL(unobserved-default-bound)"
+        }
+      ]
+    },
+    "Optimizely Content Management": {
+      "scriptSrc": [
+        {
+          "from": "\\.episerver.net/",
+          "to": "//dl\\.episerver\\.net/",
+          "basis": "precision:2026-11-15 review (finding 1). Any *.episerver.net host matched, including Optimizely Content Recommendations (s.<region>.idio.episerver.net/ia.js), a separate product: 594 rested on it alone. dl.episerver.net is the CMS's own asset host (epi-util/find.js on 776, 2450, 2766, 4489)."
         }
       ]
     }

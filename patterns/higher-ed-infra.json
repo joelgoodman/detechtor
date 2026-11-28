@@ -292,14 +292,17 @@
     "description": "Microsoft Azure Cognitive Search",
     "html": [],
     "scripts": [
-      "azure.{0,100}search"
+      "\\.search\\.windows\\.net",
+      "@azure/search-documents"
     ],
     "js": {
       "AzureSearch": ""
     },
     "higher_ed": true,
     "confidence": 82,
-    "website": "https://azure.microsoft.com/en-us/products/search/"
+    "website": "https://azure.microsoft.com/en-us/products/search/",
+    "_hosts": ["search.windows.net"],
+    "_detection_note": "2026-11-15 review (finding 1, bare-token script rules): 'azure.{0,100}search' matched Sitecore Search served from an Azure CDN (mc-...-cdn.azureedge.net/.../iu.feature.sitecoresearch.min.js, institution 498). Script evidence is now the service's own host (*.search.windows.net) or its JavaScript SDK (@azure/search-documents)."
   },
   "Blackbaud": {
     "cats": [
@@ -692,15 +695,16 @@
     ],
     "scripts": [
       "elasticsearch",
-      "elastic"
+      "/plugins/elasticpress/",
+      "@elastic/(?:search-ui|react-search-ui|app-search-javascript)"
     ],
     "js": {
-      "elasticsearch": "",
-      "elastic": ""
+      "elasticsearch": ""
     },
     "higher_ed": true,
     "confidence": 90,
-    "website": "https://www.elastic.co/elasticsearch/"
+    "website": "https://www.elastic.co/elasticsearch/",
+    "_detection_note": "2026-11-15 review (finding 1, bare-token script rules): the script and JS token 'elastic' matched the Avada theme's jquery.elasticslider.js (8 institutions) and the Elastic APM RUM agent (2), neither of them search. Removed. Script evidence is now 'elasticsearch', the ElasticPress WordPress plugin, or Elastic's search UI packages."
   },
   "Element451": {
     "cats": [

@@ -107,19 +107,27 @@
     },
     {
       "technology": "Drupal",
-      "pattern": "misc/drupal\\.js",
+      "pattern": "(?:^|/)sites/[\\w.-]{1,80}/files[\\w-]{0,20}/(?:[\\w.-]{1,60}/){0,3}(?:js|advagg_js)/(?:optimized/)?js_[\\w-]{20}",
       "class": "self-hosted software path",
-      "maxOffDomains": 18,
+      "maxOffDomains": 2,
       "decided": "2026-11-27",
-      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: case.edu (first-party); uwindsor.ca (first-party); osu.edu (first-party)."
+      "reason": "2026-11-27, bare-token script rules batch (detection review finding 1): replaces a bare token with the product's own path or file shape. Served first-party from the institution's host, so it cannot name a vendor host. Off-vendor domains on the committed fixture: Drupal's JS aggregate sites/<site>/files/.../js/js_<hash>.js; ohio.edu, rossu.edu (first-party). Replaces 'sites/default/files', which matched any file under that path (an Omni CMS page on 2538)."
     },
     {
       "technology": "Drupal",
-      "pattern": "sites/default/files",
+      "pattern": "/misc/drupal(?:SettingsLoader)?\\.(?:min\\.)?js",
       "class": "self-hosted software path",
-      "maxOffDomains": 95,
+      "maxOffDomains": 19,
       "decided": "2026-11-27",
-      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: umassglobal.edu (first-party); uog.edu (first-party); ucalgary.ca (first-party)."
+      "reason": "2026-11-27, bare-token script rules batch (detection review finding 1): replaces a bare token with the product's own path or file shape. Served first-party from the institution's host, so it cannot name a vendor host. Off-vendor domains on the committed fixture: Drupal core's misc/drupal.js or drupalSettingsLoader.js; case.edu, osu.edu, uwindsor.ca (all first-party). Replaces 'misc/drupal\\.js'."
+    },
+    {
+      "technology": "Elasticsearch",
+      "pattern": "/plugins/elasticpress/",
+      "class": "self-hosted software path",
+      "maxOffDomains": 3,
+      "decided": "2026-11-27",
+      "reason": "2026-11-27, bare-token script rules batch (detection review finding 1): replaces a bare token with the product's own path or file shape. Served first-party from the institution's host, so it cannot name a vendor host. Off-vendor domains on the committed fixture: the ElasticPress WordPress plugin; mvnu.edu, northlandcollege.edu, umich.edu (first-party). Replaces 'elastic', which matched a slider plugin and the APM agent."
     },
     {
       "technology": "ElasticSuite",
@@ -128,14 +136,6 @@
       "maxOffDomains": 1,
       "decided": "2026-11-27",
       "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: sunderland.ac.uk (first-party)."
-    },
-    {
-      "technology": "Elasticsearch",
-      "pattern": "elastic",
-      "class": "known defect, fix pending",
-      "maxOffDomains": 12,
-      "decided": "2026-11-27",
-      "reason": "KNOWN DEFECT, allowlisted only until the bare-token script rules batch replaces this rule (2026-11-27). The bare token fires on URLs that do not name the vendor, e.g. missouriwestern.edu (first-party); liberty.edu (first-party); acom.edu (first-party). Remove this entry when the replacement lands; the gate then reports it as a no-op."
     },
     {
       "technology": "Element451",
@@ -154,14 +154,6 @@
       "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: lsbu.ac.uk (first-party); canterbury.ac.nz (first-party); leeds.ac.uk (first-party)."
     },
     {
-      "technology": "Ghost",
-      "pattern": "ghost",
-      "class": "known defect, fix pending",
-      "maxOffDomains": 2,
-      "decided": "2026-11-27",
-      "reason": "KNOWN DEFECT, allowlisted only until the bare-token script rules batch replaces this rule (2026-11-27). The bare token fires on URLs that do not name the vendor, e.g. ghostplugins.dev (third-party); indianatech.edu (first-party). Remove this entry when the replacement lands; the gate then reports it as a no-op."
-    },
-    {
       "technology": "Google Custom Search",
       "pattern": "/cse\\.js",
       "class": "vendor client bundled first-party",
@@ -171,11 +163,11 @@
     },
     {
       "technology": "Ingeniux CMS",
-      "pattern": "igx-",
-      "class": "known defect, fix pending",
+      "pattern": "(?:^|/)(?:jquery-)?igx-[\\w.-]{1,40}\\.js(?:\\?|$)",
+      "class": "self-hosted software path",
       "maxOffDomains": 8,
       "decided": "2026-11-27",
-      "reason": "KNOWN DEFECT, allowlisted only until the bare-token script rules batch replaces this rule (2026-11-27). The bare token fires on URLs that do not name the vendor, e.g. the-bac.edu (first-party); curry.edu (first-party); lasell.edu (first-party). Remove this entry when the replacement lands; the gate then reports it as a no-op."
+      "reason": "2026-11-27, bare-token script rules batch (detection review finding 1): replaces a bare token with the product's own path or file shape. Served first-party from the institution's host, so it cannot name a vendor host. Off-vendor domains on the committed fixture: an igx-*.js file name (igx-dev.js, igx-js.js, jquery-igx-dev.js); the-bac.edu, curry.edu, lasell.edu (first-party). Replaces 'igx-', which matched inside a Drupal aggregate hash (356)."
     },
     {
       "technology": "Ivory Search",
@@ -243,19 +235,11 @@
     },
     {
       "technology": "Modern Campus CMS",
-      "pattern": "moderncampus",
-      "class": "known defect, fix pending",
-      "maxOffDomains": 3,
+      "pattern": "(?:^|/)_resources/[\\w/.-]{0,80}omnicms[\\w.-]{0,40}\\.js",
+      "class": "self-hosted software path",
+      "maxOffDomains": 2,
       "decided": "2026-11-27",
-      "reason": "KNOWN DEFECT, allowlisted only until the bare-token script rules batch replaces this rule (2026-11-27). The bare token fires on URLs that do not name the vendor, e.g. loras.edu (first-party); omniweb.cloud (third-party); uco.edu (first-party). Remove this entry when the replacement lands; the gate then reports it as a no-op."
-    },
-    {
-      "technology": "Modern Campus CMS",
-      "pattern": "omni\\.js",
-      "class": "vendor-second-domain (declare _hosts)",
-      "maxOffDomains": 1,
-      "decided": "2026-11-27",
-      "reason": "2026-11 detection review triage (vendor-second-domain (declare _hosts)): the vendor serves this file from a second domain of its own; declare it in _hosts (or patterns/vendor-hosts.json) and this entry becomes a no-op. Top off-vendor domains on the committed fixture: kccd.edu (third-party)."
+      "reason": "2026-11-27, bare-token script rules batch (detection review finding 1): replaces a bare token with the product's own path or file shape. Served first-party from the institution's host, so it cannot name a vendor host. Off-vendor domains on the committed fixture: the CMS's _resources/.../omnicms*.js; concordia.edu, hancockcollege.edu (first-party)."
     },
     {
       "technology": "Modern Campus CMS",
@@ -291,11 +275,27 @@
     },
     {
       "technology": "Sitecore",
-      "pattern": "sitecore",
+      "pattern": "(?:^|/)[\\w.-]{0,40}sitecore[\\w.-]{0,40}\\.js(?:\\?|$)",
       "class": "self-hosted software path",
-      "maxOffDomains": 12,
+      "maxOffDomains": 8,
       "decided": "2026-11-27",
-      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: acu.edu.au (first-party); coveo.com (third-party); upmc.com (first-party)."
+      "reason": "2026-11-27, bare-token script rules batch (detection review finding 1): replaces a bare token with the product's own path or file shape. Served first-party from the institution's host, so it cannot name a vendor host. Off-vendor domains on the committed fixture: a *sitecore*.js file name (sitecore.min.js, sitecoreForms.min.js, CoveoForSitecore*.js); coveo.com is Coveo's Sitecore connector CDN, upmc.com and sanfordhealth.org first-party. Replaces bare 'sitecore', which matched a query string (1665)."
+    },
+    {
+      "technology": "Sitecore",
+      "pattern": "/sitecore(?:%20|\\s)modules/",
+      "class": "self-hosted software path",
+      "maxOffDomains": 3,
+      "decided": "2026-11-27",
+      "reason": "2026-11-27, bare-token script rules batch (detection review finding 1): replaces a bare token with the product's own path or file shape. Served first-party from the institution's host, so it cannot name a vendor host. Off-vendor domains on the committed fixture: the /sitecore modules/ path of Sitecore Experience Forms; acu.edu.au, sheridancollege.ca, rcsi.com (first-party)."
+    },
+    {
+      "technology": "Sitecore",
+      "pattern": "coveoforsitecore",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 4,
+      "decided": "2026-11-27",
+      "reason": "2026-11-27, bare-token script rules batch (detection review finding 1): replaces a bare token with the product's own path or file shape. Served first-party from the institution's host, so it cannot name a vendor host. Off-vendor domains on the committed fixture: Coveo for Sitecore, a connector only a Sitecore site runs, served from static.cloud.coveo.com or bundled first-party (upmc.com, sanfordhealth.org)."
     },
     {
       "technology": "Squiz DXP",
@@ -322,6 +322,14 @@
       "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: niagaracollege.ca (first-party); campbell.edu (first-party); flemingcollege.ca (first-party)."
     },
     {
+      "technology": "TerminalFour",
+      "pattern": "terminalfour",
+      "class": "self-hosted software path",
+      "maxOffDomains": 2,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: lmudigital.io (third-party); cumbria.ac.uk (first-party)."
+    },
+    {
       "technology": "TYPO3",
       "pattern": "^/?typo3(?:conf|temp)/",
       "class": "self-hosted software path",
@@ -346,36 +354,12 @@
       "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: usherbrooke.ca (first-party); umontreal.ca (first-party); lasierra.edu (first-party)."
     },
     {
-      "technology": "TerminalFour",
-      "pattern": "terminalfour",
-      "class": "self-hosted software path",
-      "maxOffDomains": 2,
-      "decided": "2026-11-27",
-      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: lmudigital.io (third-party); cumbria.ac.uk (first-party)."
-    },
-    {
       "technology": "Umbraco",
       "pattern": "umbraco",
       "class": "self-hosted software path",
       "maxOffDomains": 9,
       "decided": "2026-11-27",
       "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: lcsc.edu (first-party); ayrshire.ac.uk (first-party); usf.edu (first-party)."
-    },
-    {
-      "technology": "WP Accessibility",
-      "pattern": "wp-content/plugins/wp-accessibility/(?:toolbar/|js/(?:render-blocking-[0-9a-f]{32}\\.)?wpa-toolbar)",
-      "class": "self-hosted software path",
-      "maxOffDomains": 5,
-      "decided": "2026-11-27",
-      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: amridgeuniversity.edu (first-party); assumption.edu (first-party); conception.edu (first-party)."
-    },
-    {
-      "technology": "WP Accessibility Helper",
-      "pattern": "wp-accessibility-helper",
-      "class": "vendor client bundled first-party",
-      "maxOffDomains": 4,
-      "decided": "2026-11-27",
-      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: amridgeuniversity.edu (first-party); carlowcollege.ie (first-party); cvtech.edu (first-party)."
     },
     {
       "technology": "WhatsApp Business Chat",
@@ -400,6 +384,22 @@
       "maxOffDomains": 344,
       "decided": "2026-11-27",
       "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: stolaf.edu (first-party); b-cdn.net (third-party); wp.com (third-party)."
+    },
+    {
+      "technology": "WP Accessibility",
+      "pattern": "wp-content/plugins/wp-accessibility/(?:toolbar/|js/(?:render-blocking-[0-9a-f]{32}\\.)?wpa-toolbar)",
+      "class": "self-hosted software path",
+      "maxOffDomains": 5,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: amridgeuniversity.edu (first-party); assumption.edu (first-party); conception.edu (first-party)."
+    },
+    {
+      "technology": "WP Accessibility Helper",
+      "pattern": "wp-accessibility-helper",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 4,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: amridgeuniversity.edu (first-party); carlowcollege.ie (first-party); cvtech.edu (first-party)."
     }
   ]
 }
