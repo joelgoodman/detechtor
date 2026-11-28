@@ -100,7 +100,10 @@ for (const id of ids) {
   recoveredIds.push(id);
   // Two distinct wins, worth separating: a better FIRST page (ordering) versus reading more
   // pages (escalation). The spec predicted ordering to be the smaller of the two effects.
-  if (r.tier === 1) viaOrdering++; else viaEscalation++;
+  // Tier no longer says which: escalation now continues past a first page that found the target
+  // while another ledger category is still pending. Ask where the target was found instead.
+  const target = r.technologies.find((t) => t.name === TARGET);
+  if (target.pages.includes(r.pagesEvaluated[0])) viaOrdering++; else viaEscalation++;
 }
 
 const recovered = viaOrdering + viaEscalation;
