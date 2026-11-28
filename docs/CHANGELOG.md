@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Tiered detection escalates per ledger category, on loadable evidence (2026-11-27)
+
+**Changed** — `src/tiered-detect.js`. Escalation stopped for all six ledger categories on the first
+signal-category hit on tier 1, at any confidence: a Canvas LMS link, one 40-point html rule, Font
+Awesome's `.fa-salesforce` (2026-11 review, finding 9: reading the 12,173 pages that stop left out
+added 355 loadable non-CMS rows on 298 institutions in cohort 143). Pages are now read until every
+category in `options.categories` (default `LEDGER_CATEGORIES`: CMS, CRM, Marketing Automation,
+Chatbot, Accessibility, Site Search) has a detection with loadable evidence, or the pages run out.
+Loadable = a match the ledger loader grades `anchored` or `link` with no policy list: Meta, or a
+Script / DOM match on the technology's vendor host (`isLoadableMatch`). The result gains
+`pendingCategories`; `tier` 2 now means tier 1 left a category pending. Exported for the producer:
+`LEDGER_CATEGORIES`, `isLoadableMatch`, `loadableCategories`, `pendingCategories`.
+
 ### Unbounded wildcards: a gate, a corpus-verified rewriter, and the rewrite (2026-10-08)
 
 An unbounded `.*` / `.+` / `[^x]*` / `\s*` / `\w+` in a detection regex is a runtime-cost bug (V8 retries it
