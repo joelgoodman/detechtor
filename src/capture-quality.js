@@ -10,47 +10,102 @@
 // percentile of real pages was 27,658. 5,000 sits in the empty band between the two populations.
 const MIN_PLAUSIBLE_BYTES = 5000;
 
-// Matched against the <title> ONLY. Matching the whole document would condemn any university page
-// that happens to discuss HTTP errors in help content -- a real risk on .edu IT support pages.
+// Matched against the <title> ONLY, and against the WHOLE title: a signature must be all of it,
+// give or take punctuation and a vendor suffix. Matching the whole document would condemn any
+// university page that discusses HTTP errors in help content; matching anywhere in the title blocked
+// a real page titled "Access Denied? Reset your password" (2026-11-16 review, finding 13).
+const VENDOR_SUFFIX = String.raw`(?:\s*[|\-–—:]\s*(?:cloudflare|imperva|incapsula|sucuri|akamai|wordfence))?`;
+const wholeTitle = (phrase) => new RegExp(String.raw`^\s*(?:${phrase})[\s.!?…]*${VENDOR_SUFFIX}[\s.!?…]*$`, 'i');
+
 const BLOCK_TITLE_SIGNATURES = [
-  /the request could not be satisfied/i,  // CloudFront
-  /403 error/i,
-  /request blocked/i,
-  /access denied/i,
-  /just a moment/i,                       // Cloudflare challenge
-  /attention required/i,                  // Cloudflare block
-  /radware captcha page/i,                // Radware Bot Manager (census 2026-10: institution 3856)
-  /pardon our interruption/i,             // Imperva / Distil
-  /checking your browser/i,
-  /verifying you are human/i,
-  /robot or human\?/i,
-  /are you a robot\?/i,
-];
+  String.raw`(?:error:?\s*)?the request could not be satisfied`,  // CloudFront
+  String.raw`(?:http\s*)?(?:error\s*)?403(?:\s*[-:]?\s*(?:error|forbidden|access denied))?`,
+  'request blocked',
+  'access denied',
+  String.raw`just a moment`,                                    // Cloudflare challenge
+  'attention required',                                         // Cloudflare block
+  'radware captcha page',                                       // Radware Bot Manager (census 2026-10: institution 3856)
+  'pardon our interruption',                                    // Imperva / Distil
+  String.raw`checking your browser(?: before accessing[^<]{0,120})?`,
+  'verifying you are human',
+  String.raw`robot or human\?`,
+  String.raw`are you a robot\?`,
+  'your access to this site has been limited',                  // Wordfence (cohort 143: institution 12)
+  'you have been blocked',
+  String.raw`sucuri website firewall\s*[-–—]\s*access denied`,
+].map(wholeTitle);
+
+// A server or gateway error page, or a maintenance page, in place of the site. Never content.
+const ERROR_TITLE_SIGNATURES = [
+  String.raw`(?:http\s*)?(?:error\s*)?50[0234](?:\s*[-:]?\s*(?:internal server error|bad gateway|service (?:temporarily )?unavailable|gateway time-?out))?`,
+  String.raw`internal server error|bad gateway|service (?:temporarily )?unavailable|gateway time-?out`,
+].map(wholeTitle);
+const MAINTENANCE_TITLE_SIGNATURES = [
+  String.raw`(?:(?:web)?site )?(?:is )?(?:down for|under) (?:scheduled )?maintenance|maintenance mode|site maintenance`,
+].map(wholeTitle);
+
+// Web-server default pages and placeholder stubs (cohort 143: "Welcome Page" at 4368). Only on a page
+// with almost no text: a real home page may be titled "Welcome" too.
+const STUB_TITLE_SIGNATURES = [
+  String.raw`welcome page|welcome to nginx!?|iis windows server|internet information services|it works!?`,
+  String.raw`apache2? (?:ubuntu |debian |http server )?(?:default|test) page(?::\s*it works)?|test page for (?:the )?(?:apache|nginx)[^<]{0,60}`,
+  String.raw`default (?:web )?(?:site )?page|index of /[^<]{0,120}|untitled(?: document| page)?|coming soon|under construction`,
+].map(wholeTitle);
+const STUB_MAX_VISIBLE_CHARS = 600;
 
 // Bot-wall challenge pages, matched in the document. Only markers that exist on the challenge page
 // itself qualify. Deliberately NOT here, because real university pages carry them (cohort-140 census
 // re-check, 2026-10-26: 2,367 archived pages): Cloudflare's bot-management beacon
 // `/cdn-cgi/challenge-platform/scripts/jsd/`, a Turnstile or hCaptcha form widget, Incapsula's
-// resource script and Radware's `cdn.perfdrive.com` agent. The census had counted those as challenge
-// pages; all 38 such institutions it listed were real, readable sites.
+// resource script (`_Incapsula_Resource?SWJIYLWA=`), Radware's `cdn.perfdrive.com` agent, DataDome's
+// `js.datadome.co/tags.js` tag and the AWS WAF integration SDK (`*.edge.sdk.awswaf.com/…/jsapi.js`).
+// The census had counted those as challenge pages; all 38 such institutions it listed were real sites.
 const CHALLENGE_BODY_SIGNATURES = [
-  /window\._cf_chl_opt\b/,                  // Cloudflare managed / JS challenge
-  /captcha\.perfdrive\.com\/captcha-public\//i, // Radware Bot Manager captcha
+  /window\._cf_chl_opt\b/,                                 // Cloudflare managed / JS challenge
+  /captcha\.perfdrive\.com\/captcha-public\//i,             // Radware Bot Manager captcha
+  /window\.gokuProps\s*=/,                                  // AWS WAF challenge / captcha interstitial
+  /\.awswaf\.com\/[^"'\s<>]{1,120}\/(?:captcha|challenge)\.js/i,
+  /(?:geo|ct)\.captcha-delivery\.com\b/i,                   // DataDome captcha / interstitial
 ];
-// A challenge page is short; a page that quotes a marker in thousands of words of content is not one.
+// Block pages served by a firewall in place of the site, matched in the document.
+const BLOCK_BODY_SIGNATURES = [
+  /Incapsula incident ID|_Incapsula_Resource\?CWUDNSAI=/i,  // Imperva block page (untitled)
+  /Generated by Wordfence\b|Your access to this site has been limited by the site owner/i,
+  /cloudproxy@sucuri\.net|Sucuri WebSite Firewall - Access Denied/i,
+];
+// A parked or for-sale domain.
+const PARKED_BODY_SIGNATURES = [
+  /\b(?:sedoparking\.com|parkingcrew\.net|bodis\.com|parklogic\.com|above\.com\/marketplace)\b/i,
+  /this domain (?:name )?(?:may be|is) for sale|buy this domain|domain (?:is )?parked|\/\/(?:www\.)?hugedomains\.com\/|afternic\.com\/forsale|dan\.com\/buy-domain/i,
+];
+// A maintenance or outage notice with no title to say so (cohort 143: 347).
+const MAINTENANCE_BODY_SIGNATURES = [
+  /\b50[234]\b[^<]{0,20}(?:service (?:temporarily )?unavailable|bad gateway|gateway time-?out)/i,
+  /\b(?:website|site|service) (?:is )?(?:currently |temporarily )+(?:unavailable|down|offline)\b/i,
+  /\bdown for (?:scheduled )?maintenance\b|\b(?:is|are) (?:currently )?(?:undergoing|under) (?:scheduled )?maintenance\b/i,
+];
+// A challenge or block page is short; a page that quotes a marker in thousands of words of content is not one.
 const CHALLENGE_MAX_VISIBLE_CHARS = 2000;
+const MAINTENANCE_MAX_VISIBLE_CHARS = 1000;
+// A page with no title and next to no text is an empty shell (cohort 143: 1555, 44 visible characters).
+const CONTENTLESS_MAX_VISIBLE_CHARS = 200;
 
 function visibleTextLength(html) {
   return html
     .replace(/<(script|style|noscript|template)\b[\s\S]*?<\/\1\s*>/gi, ' ')
     .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/gi, ' ')
     .replace(/\s+/g, ' ')
     .trim().length;
 }
 
+const decodeTitle = (t) => t.replace(/&amp;/gi, '&').replace(/&#0?39;|&apos;/gi, "'").replace(/&quot;/gi, '"')
+  .replace(/&nbsp;/gi, ' ').replace(/\s+/g, ' ').trim();
+
 /**
  * @param {string} html a captured page
- * @returns {{scannable: boolean, reason: string|null}} reason: empty | undersized | blocked | challenge
+ * @returns {{scannable: boolean, reason: string|null}}
+ *   reason: empty | undersized | blocked | challenge | error | maintenance | parked | stub | contentless
  */
 function classifyCapture(html) {
   if (typeof html !== 'string' || html.length === 0) {
@@ -61,19 +116,42 @@ function classifyCapture(html) {
     return { scannable: false, reason: 'undersized' };
   }
 
-  const title = (html.match(/<title[^>]*>([\s\S]{0,300}?)<\/title>/i) || [, ''])[1];
-  for (const sig of BLOCK_TITLE_SIGNATURES) {
-    if (sig.test(title)) return { scannable: false, reason: 'blocked' };
+  const titleMatch = html.match(/<title[^>]*>([\s\S]{0,300}?)<\/title>/i);
+  const title = decodeTitle(titleMatch ? titleMatch[1] : '');
+  const no = (reason) => ({ scannable: false, reason });
+  if (title) {
+    if (BLOCK_TITLE_SIGNATURES.some((sig) => sig.test(title))) return no('blocked');
+    if (ERROR_TITLE_SIGNATURES.some((sig) => sig.test(title))) return no('error');
+    if (MAINTENANCE_TITLE_SIGNATURES.some((sig) => sig.test(title))) return no('maintenance');
   }
 
-  if (CHALLENGE_BODY_SIGNATURES.some((sig) => sig.test(html)) &&
-      visibleTextLength(html) < CHALLENGE_MAX_VISIBLE_CHARS) {
-    return { scannable: false, reason: 'challenge' };
+  let vis = null;
+  const visible = () => (vis === null ? (vis = visibleTextLength(html)) : vis);
+
+  if (title && STUB_TITLE_SIGNATURES.some((sig) => sig.test(title)) && visible() < STUB_MAX_VISIBLE_CHARS) {
+    return no('stub');
+  }
+  if (CHALLENGE_BODY_SIGNATURES.some((sig) => sig.test(html)) && visible() < CHALLENGE_MAX_VISIBLE_CHARS) {
+    return no('challenge');
+  }
+  if (BLOCK_BODY_SIGNATURES.some((sig) => sig.test(html)) && visible() < CHALLENGE_MAX_VISIBLE_CHARS) {
+    return no('blocked');
+  }
+  if (PARKED_BODY_SIGNATURES.some((sig) => sig.test(html)) && visible() < CHALLENGE_MAX_VISIBLE_CHARS) {
+    return no('parked');
+  }
+  if (MAINTENANCE_BODY_SIGNATURES.some((sig) => sig.test(html)) && visible() < MAINTENANCE_MAX_VISIBLE_CHARS) {
+    return no('maintenance');
+  }
+  if (!title && visible() < CONTENTLESS_MAX_VISIBLE_CHARS) {
+    return no('contentless');
   }
 
   return { scannable: true, reason: null };
 }
 
 module.exports = {
-  classifyCapture, MIN_PLAUSIBLE_BYTES, BLOCK_TITLE_SIGNATURES, CHALLENGE_BODY_SIGNATURES, CHALLENGE_MAX_VISIBLE_CHARS,
+  classifyCapture, MIN_PLAUSIBLE_BYTES, BLOCK_TITLE_SIGNATURES, ERROR_TITLE_SIGNATURES, MAINTENANCE_TITLE_SIGNATURES,
+  STUB_TITLE_SIGNATURES, CHALLENGE_BODY_SIGNATURES, BLOCK_BODY_SIGNATURES, PARKED_BODY_SIGNATURES,
+  MAINTENANCE_BODY_SIGNATURES, CHALLENGE_MAX_VISIBLE_CHARS, MAINTENANCE_MAX_VISIBLE_CHARS, CONTENTLESS_MAX_VISIBLE_CHARS,
 };

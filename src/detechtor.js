@@ -17,7 +17,30 @@ const PATTERN_REWRITES = require('../patterns/pattern-rewrites.json');
 const { applyPatternRewrites } = require('./pattern-rewrites');
 const VENDOR_HOSTS = require('../patterns/vendor-hosts.json');
 const { applyVendorHosts } = require('./vendor-hosts');
+const { htmlForMatching, ruleSeesRawHtml } = require('./html-for-matching');
 const { MatchCollector, mergeMatches, operatedByFor, vendorDomains, pageHostOf, existsRuleAttrs, existsSource, isLinkRule, URL_ATTRS } = require('./rule-matches');
+
+// The html rules' view of a page (src/html-for-matching.js), computed once per evidence object and
+// per html string: matchPatterns evaluates thousands of technologies against the same page.
+const matchHtmlCache = new WeakMap();
+function matchHtmlOf(evidence) {
+  const html = typeof evidence.html === 'string' ? evidence.html : '';
+  const hit = matchHtmlCache.get(evidence);
+  if (hit && hit.html === html) return hit.stripped;
+  const stripped = htmlForMatching(html);
+  matchHtmlCache.set(evidence, { html, stripped });
+  return stripped;
+}
+
+// Every value of one meta name. `metaValues` (both evidence builders) holds them all; evidence built
+// elsewhere (path probes, saved fixtures) carries only `meta`, one string per name.
+function metaValuesOf(evidence, metaName) {
+  const key = metaName.toLowerCase();
+  const all = evidence.metaValues && evidence.metaValues[key];
+  if (Array.isArray(all)) return all.filter((v) => typeof v === 'string' && v);
+  const one = evidence.meta && evidence.meta[key];
+  return typeof one === 'string' && one ? [one] : [];
+}
 
 class DeTECHtor {
   constructor(options = {}) {
@@ -687,17 +710,24 @@ class DeTECHtor {
       });
       
       // Extract meta tags with enhanced version detection
-      evidence.meta = await page.evaluate(() => {
+      // `meta` keeps one string per name (the last, as before); `metaValues` keeps every value in
+      // page order, which is what meta rules match against. Mirrored in src/evidence-from-html.js.
+      const metaTags = await page.evaluate(() => {
         const meta = {};
+        const metaValues = {};
         document.querySelectorAll('meta').forEach(tag => {
           const name = tag.getAttribute('name') || tag.getAttribute('property');
           const content = tag.getAttribute('content');
           if (name && content) {
-            meta[name.toLowerCase()] = content;
+            const key = name.toLowerCase();
+            meta[key] = content;
+            (metaValues[key] = metaValues[key] || []).push(content);
           }
         });
-        return meta;
+        return { meta, metaValues };
       });
+      evidence.meta = metaTags.meta;
+      evidence.metaValues = metaTags.metaValues;
       
       // API endpoint discovery
       evidence.apiEndpoints = await this.discoverApiEndpoints(page, evidence.html, evidence.scripts);
@@ -906,7 +936,7 @@ class DeTECHtor {
   matchPatterns(evidence) {
     const detected = [];
     // The page host, once per page: rule matches place every URL relative to it (schema 2).
-    const ctx = { pageHost: pageHostOf(evidence.pageUrl) };
+    const ctx = { pageHost: pageHostOf(evidence.pageUrl), matchHtml: matchHtmlOf(evidence) };
 
     for (const [techName, pattern] of Object.entries(this.patterns)) {
       try {
@@ -1032,12 +1062,15 @@ class DeTECHtor {
       if (template !== undefined) version = resolveVersion(template, hit);
     };
     
-    // HTML pattern matching
+    // HTML pattern matching. Rules run over the page without its <style> blocks and comments
+    // (src/html-for-matching.js: Font Awesome's `.fa-umbraco` is not Umbraco); a rule that names a
+    // comment or a style block itself still sees the raw page.
     if (pattern.html && Array.isArray(pattern.html)) {
+      const strippedHtml = ctx.matchHtml !== undefined ? ctx.matchHtml : matchHtmlOf(evidence);
       for (const htmlPattern of pattern.html) {
         try {
           const regex = new RegExp(htmlPattern, 'i');
-          const hit = regex.exec(evidence.html);
+          const hit = regex.exec(ruleSeesRawHtml(htmlPattern) ? evidence.html : strippedHtml);
           if (hit) {
             confidence += 40;
             matchEvidence.push(`HTML: ${htmlPattern}`);
@@ -1140,16 +1173,24 @@ class DeTECHtor {
     // Meta tag matching
     if (pattern.meta && typeof pattern.meta === 'object') {
       for (const [metaName, metaPattern] of Object.entries(pattern.meta)) {
-        const metaValue = evidence.meta[metaName.toLowerCase()];
-        if (metaValue) {
+        // Every value of the name, in page order: a page may print several `generator` tags
+        // (WordPress, then Site Kit, then Elementor) and each names a product (review finding 12).
+        const metaValue = metaValuesOf(evidence, metaName);
+        if (metaValue.length) {
           try {
-            const hit = new RegExp(metaPattern, 'i').exec(metaValue);
+            const regex = new RegExp(metaPattern, 'i');
+            let hit = null;
+            let matchedValue = null;
+            for (const v of metaValue) {
+              hit = regex.exec(v);
+              if (hit) { matchedValue = v; break; }
+            }
             if (hit) {
               noteVersion(metaPattern, hit);
               confidence += 100;
               matchEvidence.push(`Meta: ${metaName}=${metaPattern}`);
               matches.add({ rule: `Meta: ${metaName}=${metaPattern}`, channel: 'Meta', matched: hit[0],
-                src: String(metaValue), index: hit.index });
+                src: matchedValue, index: hit.index });
             }
           } catch (regexError) {
             if (config.verbose) {

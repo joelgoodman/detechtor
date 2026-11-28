@@ -33,11 +33,19 @@ function evidenceFromHtml(html, domPlan, options = {}) {
     .get()
     .filter((s) => s.src);
 
+  // `meta`: one string per name (the last), the shape existing consumers read. `metaValues`: every
+  // value in page order, which meta rules match against -- 1,408 cohort-143 pages print two or more
+  // `generator` tags, and keeping only the last lost the WordPress one on 653 (review finding 12).
   const meta = {};
+  const metaValues = {};
   $('meta').each((_, m) => {
     const name = $(m).attr('name') || $(m).attr('property');
     const content = $(m).attr('content');
-    if (name && content) meta[name.toLowerCase()] = content;
+    if (name && content) {
+      const key = name.toLowerCase();
+      meta[key] = content;
+      (metaValues[key] = metaValues[key] || []).push(content);
+    }
   });
 
   const domNodes = {};
@@ -80,6 +88,7 @@ function evidenceFromHtml(html, domPlan, options = {}) {
     headers: options.headers || {},
     scripts,
     meta,
+    metaValues,
     cookies: [],
     dom: { jsObjects },
     domNodes,
