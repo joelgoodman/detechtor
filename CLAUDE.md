@@ -124,8 +124,16 @@ Key settings in `src/config.js`:
 3. Set `higher_ed: true` for university-specific systems
 4. For rebranded products, use the canonical (current) name as the key and list prior names in `_legacy_names: ["Old Name"]`; keep detection patterns for both old and new identifiers
 5. Include multiple detection methods (html, scripts, headers, js) for reliability
-6. Run `npm test` to validate patterns
-7. Run `npm run test:audit` to check for pattern quality issues
+6. Run `npm test` to validate patterns (CI runs it on every pull request). For a technology in a ledger
+   category (CMS, CRM, Marketing Automation, Chatbot, Accessibility, Site Search) that means two more gates:
+   - `scripts/lint-ledger-categories.js`: the technology needs an entry in `patterns/ledger-category-review.json`
+     whose `ledger_categories` agree with the engine. A new technology in the six, or a changed category, fails
+     until someone reviews it.
+   - `scripts/lint-script-negcorpus.js`: every `scripts`/`scriptSrc` rule runs against real `<script src>` values
+     (`tests/fixtures/negcorpus/script-urls.tsv.gz`). A rule whose matches land on domains that are not the vendor's
+     and do not name the vendor host fails (`Script: force` matched `workforce`). Fix the rule, declare the vendor's
+     other domains in `_hosts` (or `patterns/vendor-hosts.json` for a generated technology), or, for self-hosted
+     software paths, add an entry with a reason to `patterns/script-negcorpus-allowlist.json`.
 
 ## Pattern Quality Rules
 
@@ -168,8 +176,8 @@ engine actually loads, and measures every regex on 1 MB adversarial inputs.
 ### Testing Commands
 
 ```bash
-# Check patterns for quality issues
-npm run test:audit
+# All pattern gates (the same chain CI runs)
+npm test
 
 # Run regression tests against known sites
 npm run test:regression

@@ -211,6 +211,16 @@ if (process.env.BREADTH_SHARD !== undefined) {
       process.exit(1);
     }
 
+    // Record a 0 for every html regex the engine loads and nothing matched, so the artifact tells
+    // "measured, matched no homepage" apart from "never measured" (lint-pattern-breadth.js fails the
+    // second kind).
+    const { loadEffective, enumerateRegexes } = require('./lib/pattern-channels.js');
+    for (const r of enumerateRegexes(loadEffective())) {
+      if (r.channel !== 'html') continue;
+      const t = merged.acc[r.tech] || (merged.acc[r.tech] = { fires: 0, html: Object.create(null), other: Object.create(null) });
+      if (!(r.pattern in t.html)) t.html[r.pattern] = 0;
+    }
+
     const patterns = Object.create(null);
     for (const tech of Object.keys(merged.acc).sort()) {
       const a = merged.acc[tech];
@@ -235,7 +245,7 @@ if (process.env.BREADTH_SHARD !== undefined) {
     const dest = path.join(ROOT, 'docs/pattern-breadth.json');
     fs.writeFileSync(dest, JSON.stringify(out, null, 2) + '\n');
     console.log(`\nwrote ${dest}`);
-    console.log(`${merged.scanned} scanned · ${Object.keys(patterns).length} technologies with at least one match`);
+    console.log(`${merged.scanned} scanned · ${Object.values(patterns).filter((p) => p.fires > 0).length} technologies with at least one match · ${Object.keys(patterns).length} recorded`);
     if (merged.matchFailures) console.log(`⚠️  ${merged.matchFailures} match failures — counts are a floor`);
   }
 }

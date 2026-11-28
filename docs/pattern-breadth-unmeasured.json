@@ -1,0 +1,2837 @@
+{
+ "_comment": "Backlog of loaded html regexes with no measurement in docs/pattern-breadth.json (artifact generated 2026-08-12T03:18:44.656Z). scripts/lint-pattern-breadth.js fails any OTHER unmeasured regex, and fails an entry here once it is measured or no longer loaded, so this list only shrinks. Most entries are regexes rewritten or added since that run, or regexes that matched no homepage (older artifacts recorded only matches; scripts/pattern-breadth.js now records zeros). Clear it by running `npm run breadth` against the corpus and fixing what the gate then reports.",
+ "entries": [
+  {
+   "technology": "25Live",
+   "pattern": "class=\"25live"
+  },
+  {
+   "technology": "25Live",
+   "pattern": "collegenet.{0,250}25live"
+  },
+  {
+   "technology": "25Live",
+   "pattern": "twentyfivelive"
+  },
+  {
+   "technology": "A-Frame",
+   "pattern": "<a-scene[^<>]{0,80}>"
+  },
+  {
+   "technology": "AMP",
+   "pattern": "<html[^>]{0,250} (?:amp|⚡)[^-]"
+  },
+  {
+   "technology": "Absorb LMS",
+   "pattern": "absorb.{0,250}lms"
+  },
+  {
+   "technology": "Absorb LMS",
+   "pattern": "absorblms"
+  },
+  {
+   "technology": "Adminer",
+   "pattern": "Adminer</a> <span class=\"version\">([\\d.]+)</span>"
+  },
+  {
+   "technology": "Adminer",
+   "pattern": "onclick=\"bodyClick\\(event\\);\" onload=\"verifyVersion\\('([\\d.]+)'\\);\">"
+  },
+  {
+   "technology": "Adobe Analytics",
+   "pattern": "appmeasurement\\.js"
+  },
+  {
+   "technology": "Adobe Analytics",
+   "pattern": "omniture"
+  },
+  {
+   "technology": "Adobe Analytics",
+   "pattern": "s_code\\.js"
+  },
+  {
+   "technology": "Adobe Analytics",
+   "pattern": "visitor\\.api\\.js"
+  },
+  {
+   "technology": "Adobe Creative Cloud",
+   "pattern": "adobe.{0,100}creative.{0,100}cloud"
+  },
+  {
+   "technology": "Adobe Creative Cloud",
+   "pattern": "creative.{0,250}adobe"
+  },
+  {
+   "technology": "Adobe Experience Manager Assets",
+   "pattern": "adobe.{0,60}experience.{0,60}manager.{0,60}assets"
+  },
+  {
+   "technology": "Adobe Experience Manager Assets",
+   "pattern": "aem-assets"
+  },
+  {
+   "technology": "Adobe Fonts",
+   "pattern": "<link [^>]{0,350}href=\"[^\"]{1,250}use\\.typekit\\.(?:net|com)"
+  },
+  {
+   "technology": "AdvisorTrac",
+   "pattern": "advisortrac"
+  },
+  {
+   "technology": "Akamai mPulse",
+   "pattern": "go-mpulse\\.net/boomerang"
+  },
+  {
+   "technology": "Akaunting",
+   "pattern": "<link[^>]{1,250}akaunting-green\\.css"
+  },
+  {
+   "technology": "Akaunting",
+   "pattern": "Powered By Akaunting: <a [^>]{0,80}href=\"https?://(?:www\\.)?akaunting\\.com[^>]{1,80}>"
+  },
+  {
+   "technology": "AlertMedia",
+   "pattern": "alertmedia"
+  },
+  {
+   "technology": "All in One SEO Pack",
+   "pattern": "<!-- All in One SEO Pack ([\\d.]+) "
+  },
+  {
+   "technology": "Almabase",
+   "pattern": "almabase"
+  },
+  {
+   "technology": "Alpine.js",
+   "pattern": "<[^>]{1,120}[^\\w-]x-data[^\\w-][^<]"
+  },
+  {
+   "technology": "AngularJS",
+   "pattern": "<(?:div|html)[^>]{1,1000}ng-app="
+  },
+  {
+   "technology": "AngularJS",
+   "pattern": "<ng-app"
+  },
+  {
+   "technology": "Ant Design",
+   "pattern": "<[^>]{0,80}class=\"ant-(?:btn|col|row|layout|breadcrumb|menu|pagination|steps|select|cascader|checkbox|calendar|form|input-number|input|mention|rate|radio|slider|switch|tree-select|time-picker|transfer|upload|avatar|badge|card|carousel|collapse|list|popover|tooltip|table|tabs|tag|timeline|tree|alert|modal|message|notification|progress|popconfirm|spin|anchor|back-top|divider|drawer)"
+  },
+  {
+   "technology": "Ant Design",
+   "pattern": "<i class=\"anticon anticon-"
+  },
+  {
+   "technology": "Anthology Encompass",
+   "pattern": "anthology[^<>\\n]{0,250}encompass"
+  },
+  {
+   "technology": "Anthology Encompass",
+   "pattern": "encompass.anthology"
+  },
+  {
+   "technology": "Anthology Engage",
+   "pattern": "anthology.{0,250}engage"
+  },
+  {
+   "technology": "Anthology Engage",
+   "pattern": "engage.anthology"
+  },
+  {
+   "technology": "Anthology Student",
+   "pattern": "anthology.{0,250}student"
+  },
+  {
+   "technology": "Anthology Student",
+   "pattern": "anthology\\.com"
+  },
+  {
+   "technology": "Anthology Student",
+   "pattern": "campus\\.anthology\\.com"
+  },
+  {
+   "technology": "Anthology Student",
+   "pattern": "campusm\\.com"
+  },
+  {
+   "technology": "Anthology Student",
+   "pattern": "class=\"anthology"
+  },
+  {
+   "technology": "Apache JSPWiki",
+   "pattern": "<html[^>]{0,250} xmlns:jspwiki="
+  },
+  {
+   "technology": "Argos",
+   "pattern": "argos[^<>\\n]{0,250}reporting"
+  },
+  {
+   "technology": "Argos",
+   "pattern": "evisions[^<>\\n]{0,250}argos"
+  },
+  {
+   "technology": "Artifactory",
+   "pattern": "<span class=\"version\">Artifactory(?: Pro)?(?: Power Pack)?(?: ([\\d.]+))?"
+  },
+  {
+   "technology": "Asciinema",
+   "pattern": "<asciinema-player"
+  },
+  {
+   "technology": "Atlassian Bitbucket",
+   "pattern": "<li>Atlassian Bitbucket <span title=\"[a-z0-9]{1,80}\" id=\"product-version\" data-commitid=\"[a-z0-9]{1,80}\" data-system-build-number=\"[a-z0-9]{1,80}\"> v([\\d.]+)<"
+  },
+  {
+   "technology": "Atlassian FishEye",
+   "pattern": "<title>(?:Log in to )?FishEye (?:and Crucible )?([\\d.]+)?</title>"
+  },
+  {
+   "technology": "Atlassian Statuspage",
+   "pattern": "<a[^>]{0,80}href=\"https?://(?:www\\.)?statuspage\\.io/powered-by[^>]{1,80}>"
+  },
+  {
+   "technology": "Awesomplete",
+   "pattern": "<link[^>]{1,80}href=\"[^>]{0,120}awesomplete(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "BEM",
+   "pattern": "<[^>]{1,120}data-bem"
+  },
+  {
+   "technology": "Bigware",
+   "pattern": "(?:Diese <a href=[^>]{1,80}bigware\\.de|<a href=[^>]{1,80}/main_bigware_\\d+\\.php)"
+  },
+  {
+   "technology": "Blackboard Collaborate",
+   "pattern": "blackboard.{0,250}collaborate"
+  },
+  {
+   "technology": "Blackboard Collaborate",
+   "pattern": "collaborate.{0,250}ultra"
+  },
+  {
+   "technology": "Blackboard Learn",
+   "pattern": "/bbcswebdav/"
+  },
+  {
+   "technology": "Blackboard Learn",
+   "pattern": "/webapps/blackboard/"
+  },
+  {
+   "technology": "Blackboard Learn",
+   "pattern": "bb-base-"
+  },
+  {
+   "technology": "Blackboard Learn",
+   "pattern": "bbcswebdav"
+  },
+  {
+   "technology": "Blackboard Transact",
+   "pattern": "blackboard.{0,250}transact"
+  },
+  {
+   "technology": "Blackboard Web Community Manager",
+   "pattern": "blackboard.{0,100}web.{0,100}community"
+  },
+  {
+   "technology": "Bloomreach",
+   "pattern": "<[^>]{1,250}/binaries/(?:[^/]{1,40}/){0,6}content/gallery/"
+  },
+  {
+   "technology": "BoldGrid",
+   "pattern": "<link rel=[\"']stylesheet[\"'] [^>]{1,150}post-and-page-builder"
+  },
+  {
+   "technology": "BoldGrid",
+   "pattern": "<link rel=[\"']stylesheet[\"'] [^>]{1,80}boldgrid"
+  },
+  {
+   "technology": "BoldGrid",
+   "pattern": "<link[^>]{1,250}s\\d+\\.boldgrid\\.com"
+  },
+  {
+   "technology": "Bonfire",
+   "pattern": "Powered by <a[^>]{1,80}href=\"https?://(?:www\\.)?cibonfire\\.com[^>]{0,80}>Bonfire v([^<]{1,80})"
+  },
+  {
+   "technology": "Bootstrap Table",
+   "pattern": "<link[^>]{1,80}href=\"[^>]{0,80}bootstrap-table(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "BrightSign",
+   "pattern": "brightsign"
+  },
+  {
+   "technology": "Brightspace Core",
+   "pattern": "brightspace.{0,250}core"
+  },
+  {
+   "technology": "Brightspace Core",
+   "pattern": "valence.{0,250}api"
+  },
+  {
+   "technology": "Brightspace Portfolio",
+   "pattern": "brightspace.{0,250}portfolio"
+  },
+  {
+   "technology": "Brightspace Portfolio",
+   "pattern": "competency.{0,250}brightspace"
+  },
+  {
+   "technology": "Brightspace Portfolio",
+   "pattern": "d2l.{0,250}portfolio"
+  },
+  {
+   "technology": "Bugzilla",
+   "pattern": "<a href=\"https?://www\\.bugzilla\\.org/docs/([0-9.]+)/[^>]{1,250}>Help<"
+  },
+  {
+   "technology": "Bugzilla",
+   "pattern": "<main id=\"bugzilla-body\""
+  },
+  {
+   "technology": "Bugzilla",
+   "pattern": "<span id=\"information\" class=\"header_addl_info\">version ([\\d.]+)<"
+  },
+  {
+   "technology": "Bugzilla",
+   "pattern": "href=\"enter_bug\\.cgi\">"
+  },
+  {
+   "technology": "Business Catalyst",
+   "pattern": "<!-- BC_OBNW -->"
+  },
+  {
+   "technology": "CAS",
+   "pattern": "apereo[^<>\\n]{0,250}cas"
+  },
+  {
+   "technology": "CAS",
+   "pattern": "central authentication service"
+  },
+  {
+   "technology": "CAS",
+   "pattern": "central.{0,160}authentication.{0,160}service"
+  },
+  {
+   "technology": "CAS",
+   "pattern": "central.{0,250}authentication"
+  },
+  {
+   "technology": "CBORD",
+   "pattern": "class=\"cbord"
+  },
+  {
+   "technology": "CBORD",
+   "pattern": "cs\\.cbord\\.com"
+  },
+  {
+   "technology": "CBORD",
+   "pattern": "getcbord"
+  },
+  {
+   "technology": "CBORD",
+   "pattern": "mycard\\.cbord\\.com"
+  },
+  {
+   "technology": "Cambridge Core",
+   "pattern": "cambridge\\.org/core"
+  },
+  {
+   "technology": "Campus Management",
+   "pattern": "campusm\\.com"
+  },
+  {
+   "technology": "Campus Management Suite",
+   "pattern": "callista[^<>\\n]{0,250}software"
+  },
+  {
+   "technology": "Campus Management Suite",
+   "pattern": "campus[-_ ]?management[-_ ]?suite"
+  },
+  {
+   "technology": "Campus Management Suite",
+   "pattern": "cms[-_ ]?australia"
+  },
+  {
+   "technology": "CampusVue",
+   "pattern": "campus[\\s-]vue"
+  },
+  {
+   "technology": "CampusVue",
+   "pattern": "sct[^<>\\n]{0,250}campusvue"
+  },
+  {
+   "technology": "Canto",
+   "pattern": "canto.{0,250}dam"
+  },
+  {
+   "technology": "Canto",
+   "pattern": "cantotechture"
+  },
+  {
+   "technology": "Canva for Education",
+   "pattern": "canva.{0,60}for.{0,60}schools"
+  },
+  {
+   "technology": "Canvas LMS",
+   "pattern": "canvas_course_id"
+  },
+  {
+   "technology": "Canvas LMS",
+   "pattern": "webpackChunkcanvas_lms"
+  },
+  {
+   "technology": "Cengage MindTap",
+   "pattern": "cengage.{0,550}mindtap"
+  },
+  {
+   "technology": "Cengage MindTap",
+   "pattern": "mindtap"
+  },
+  {
+   "technology": "Cengage WebAssign",
+   "pattern": "webassign"
+  },
+  {
+   "technology": "Civitas Learning",
+   "pattern": "civitas.{0,250}learning"
+  },
+  {
+   "technology": "Coalition Application",
+   "pattern": "coalition.{0,250}application"
+  },
+  {
+   "technology": "CodeIgniter",
+   "pattern": "<input[^>]{1,250}name=\"ci_csrf_token\""
+  },
+  {
+   "technology": "CollegeNET 25Live",
+   "pattern": "collegenet.{0,250}25live"
+  },
+  {
+   "technology": "Coppermine",
+   "pattern": "<!--Coppermine Photo Gallery ([\\d.]+)"
+  },
+  {
+   "technology": "Cornerstone OnDemand",
+   "pattern": "\\.csod\\.com"
+  },
+  {
+   "technology": "Coursera for Campus",
+   "pattern": "coursera.{0,250}campus"
+  },
+  {
+   "technology": "Coursera for Campus",
+   "pattern": "coursera[^<>\\n]{0,250}institutional"
+  },
+  {
+   "technology": "D2L Brightspace",
+   "pattern": "d2l.{0,250}brightspace"
+  },
+  {
+   "technology": "D2L Brightspace",
+   "pattern": "d2l\\.com"
+  },
+  {
+   "technology": "D2L Brightspace",
+   "pattern": "d2lbook"
+  },
+  {
+   "technology": "DNN",
+   "pattern": "<!-- by DotNetNuke Corporation"
+  },
+  {
+   "technology": "Destiny One",
+   "pattern": "destiny.{0,250}one"
+  },
+  {
+   "technology": "Destiny One",
+   "pattern": "destinyone"
+  },
+  {
+   "technology": "DirectAdmin",
+   "pattern": "<a[^>]{1,200}>DirectAdmin</a> Web Control Panel"
+  },
+  {
+   "technology": "Django",
+   "pattern": "(?:powered by <a[^>]{1,80}>Django ?([\\d.]+)?<\\/a>|<input[^>]{0,80}name=[\"']csrfmiddlewaretoken[\"'][^>]{0,80}>)"
+  },
+  {
+   "technology": "Docebo",
+   "pattern": "docebo"
+  },
+  {
+   "technology": "Docker",
+   "pattern": "<!-- This comment is expected by the docker HEALTHCHECK  -->"
+  },
+  {
+   "technology": "Dokeos",
+   "pattern": "(?:Portal <a[^>]{1,80}>Dokeos|@import \"[^\"]{1,80}dokeos_blue)"
+  },
+  {
+   "technology": "Doxygen",
+   "pattern": "(?:<!-- Generated by Doxygen ([\\d.]+)|<link[^>]{1,250}doxygen\\.css)"
+  },
+  {
+   "technology": "Draftpress HFCM",
+   "pattern": "<!--[^>]{0,80}HFCM\\sby\\s99\\sRobots"
+  },
+  {
+   "technology": "DreamWeaver",
+   "pattern": "<!-- #BeginTemplate\\s\"[\\d_\\w/]{1,80}\\.dwt"
+  },
+  {
+   "technology": "DreamWeaver",
+   "pattern": "<!--[^>]{0,80}(?:InstanceBeginEditable|Dreamweaver([^>]{1,80})target|DWLayoutDefaultTable)"
+  },
+  {
+   "technology": "Drupal Commerce",
+   "pattern": "<[^>]{1,250}(?:id=\"block[_-]commerce[_-]cart[_-]cart|class=\"commerce[_-]product[_-]field)"
+  },
+  {
+   "technology": "Duo Security",
+   "pattern": "duo\\.com"
+  },
+  {
+   "technology": "EAB Navigate",
+   "pattern": "bouncer.eab.com"
+  },
+  {
+   "technology": "EBSCO Discovery Service",
+   "pattern": "ebsco.{0,250}discovery"
+  },
+  {
+   "technology": "EBSCO Discovery Service",
+   "pattern": "eds.{0,250}ebsco"
+  },
+  {
+   "technology": "ELOG",
+   "pattern": "<title>ELOG Logbook Selection</title>"
+  },
+  {
+   "technology": "EMS",
+   "pattern": "emssoftware"
+  },
+  {
+   "technology": "Echo360",
+   "pattern": "echo.{0,250}classroom"
+  },
+  {
+   "technology": "Echo360",
+   "pattern": "echo360"
+  },
+  {
+   "technology": "Edmodo",
+   "pattern": "edmodo"
+  },
+  {
+   "technology": "Ellucian Banner",
+   "pattern": "banner.{0,250}ellucian"
+  },
+  {
+   "technology": "Ellucian Banner",
+   "pattern": "bwckctlg\\.p_disp_course_detail"
+  },
+  {
+   "technology": "Ellucian Banner",
+   "pattern": "bwckgens\\.p_proc_term_date"
+  },
+  {
+   "technology": "Ellucian Banner",
+   "pattern": "bwckschd\\.p_disp_dyn_ctlg"
+  },
+  {
+   "technology": "Ellucian Banner",
+   "pattern": "bwskfreg\\.P_AltPin"
+  },
+  {
+   "technology": "Ellucian Banner",
+   "pattern": "ellucian.{0,250}banner"
+  },
+  {
+   "technology": "Ellucian Colleague",
+   "pattern": "/colleague/"
+  },
+  {
+   "technology": "Ellucian Colleague",
+   "pattern": "class=\"colleague-"
+  },
+  {
+   "technology": "Ellucian Colleague",
+   "pattern": "colleague.{0,250}ellucian"
+  },
+  {
+   "technology": "Ellucian Colleague",
+   "pattern": "datatel[^>]{0,250}colleague"
+  },
+  {
+   "technology": "Ellucian Colleague",
+   "pattern": "ellucian.{0,250}colleague"
+  },
+  {
+   "technology": "Ellucian Colleague",
+   "pattern": "ellucian[^>]{0,550}colleague"
+  },
+  {
+   "technology": "Elm-ui",
+   "pattern": "<style>[\\s\\S]{0,80}\\.explain > \\.s[\\s\\S]{0,80}\\.explain > \\.ctr > \\.s"
+  },
+  {
+   "technology": "Encoura",
+   "pattern": "noel[^<>\\n]{0,80}levitz"
+  },
+  {
+   "technology": "EnrollmentRx",
+   "pattern": "erx_forms__[a-z]"
+  },
+  {
+   "technology": "Ensemble Video",
+   "pattern": "ensemble.{0,250}video"
+  },
+  {
+   "technology": "Ensemble Video",
+   "pattern": "ensemblevideo"
+  },
+  {
+   "technology": "Epoch",
+   "pattern": "<link[^>]{1,80}?href=\"[^\"]{1,80}epoch(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "Essential JS 2",
+   "pattern": "<[^>]{1,80} class ?= ?\"(?:e-control|[^\"]{1,80} e-control)(?: )[^\"]{0,80} e-lib\\b"
+  },
+  {
+   "technology": "Eveve",
+   "pattern": "<iframe[^>]{0,80}[\\w]{1,80}\\.eveve\\.com"
+  },
+  {
+   "technology": "Evisions",
+   "pattern": "evisions\\.com"
+  },
+  {
+   "technology": "Ex Libris Alma",
+   "pattern": "alma.{0,250}exlibris"
+  },
+  {
+   "technology": "Ex Libris Alma",
+   "pattern": "exlibris.{0,250}alma"
+  },
+  {
+   "technology": "Ex Libris Primo",
+   "pattern": "exlibris.{0,250}primo"
+  },
+  {
+   "technology": "Ex Libris Primo",
+   "pattern": "primo[\\s_-]?ve\\b"
+  },
+  {
+   "technology": "Ex Libris Primo",
+   "pattern": "primo[^<>\\n]{0,80}exlibris"
+  },
+  {
+   "technology": "Ex Libris Voyager",
+   "pattern": "exlibris[^<>\\n]{0,250}voyager"
+  },
+  {
+   "technology": "Ex Libris Voyager",
+   "pattern": "voyager[^<>\\n]{0,250}exlibris"
+  },
+  {
+   "technology": "FACTS SIS",
+   "pattern": "factsmgt"
+  },
+  {
+   "technology": "FAST ESP",
+   "pattern": "<form[^>]{1,250}id=\"fastsearch\""
+  },
+  {
+   "technology": "FAST Financial Aid",
+   "pattern": "getfast"
+  },
+  {
+   "technology": "FAST Search for SharePoint",
+   "pattern": "<input[^>]{1,250} name=\"ParametricSearch"
+  },
+  {
+   "technology": "FOLIO LSP",
+   "pattern": "\\bfolio\\b.{0,250}library"
+  },
+  {
+   "technology": "FOLIO LSP",
+   "pattern": "\\bfolio\\b.{0,250}lsp"
+  },
+  {
+   "technology": "Fact Finder",
+   "pattern": "<!-- Factfinder"
+  },
+  {
+   "technology": "FaraPy",
+   "pattern": "<!-- Powered by FaraPy."
+  },
+  {
+   "technology": "FareHarbor",
+   "pattern": "<iframe[^>]{1,250}fareharbor"
+  },
+  {
+   "technology": "FastSpring",
+   "pattern": "<a [^>]{0,250}href=\"https?://sites\\.fastspring\\.com"
+  },
+  {
+   "technology": "FastSpring",
+   "pattern": "<form [^>]{0,250}action=\"https?://sites\\.fastspring\\.com"
+  },
+  {
+   "technology": "Fat Zebra",
+   "pattern": "<(?:iframe)[^>]{1,250}FatZebraFrame"
+  },
+  {
+   "technology": "Fat Zebra",
+   "pattern": "<(?:iframe|img|form)[^>]{1,250}paynow\\.pmnts\\.io"
+  },
+  {
+   "technology": "Flarum",
+   "pattern": "<div id=\"flarum-loading\""
+  },
+  {
+   "technology": "Flat UI",
+   "pattern": "<link[^>]{0,80} href=[^>]{1,80}flat-ui(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "FlexCMP",
+   "pattern": "<!--[^>]{1,80}FlexCMP[^>v]{1,80}v\\. ([\\d.]+)"
+  },
+  {
+   "technology": "Flipgrid",
+   "pattern": "flipgrid"
+  },
+  {
+   "technology": "FluxBB",
+   "pattern": "<p id=\"poweredby\">[^<]{1,250}<a href=\"https?://fluxbb\\.org/\">"
+  },
+  {
+   "technology": "Flyspray",
+   "pattern": "(?:<a[^>]{1,200}>Powered by Flyspray|<map id=\"projectsearchform)"
+  },
+  {
+   "technology": "Fortune3",
+   "pattern": "(?:<link [^>]{0,80}href=\"[^\\/]{0,80}\\/\\/www\\.fortune3\\.com\\/[^\"]{0,80}siterate\\/rate\\.css|Powered by <a [^>]{0,80}href=\"[^\"]{1,80}fortune3\\.com)"
+  },
+  {
+   "technology": "Foswiki",
+   "pattern": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
+  },
+  {
+   "technology": "Four Winds Interactive",
+   "pattern": "fourwinds[^<>\\n]{0,250}interactive"
+  },
+  {
+   "technology": "Four Winds Interactive",
+   "pattern": "fourwindsinteractive"
+  },
+  {
+   "technology": "FreeTextBox",
+   "pattern": "<!-- \\* FreeTextBox v\\d \\((\\d+\\.\\d+\\.\\d+)"
+  },
+  {
+   "technology": "Friendica",
+   "pattern": "friendica"
+  },
+  {
+   "technology": "Funnelback",
+   "pattern": "squiz.{0,400}search"
+  },
+  {
+   "technology": "GIS Cloud",
+   "pattern": "giscloud"
+  },
+  {
+   "technology": "GNU Social",
+   "pattern": "gnu-social"
+  },
+  {
+   "technology": "GNU Social",
+   "pattern": "gnusocial"
+  },
+  {
+   "technology": "GOV.UK Elements",
+   "pattern": "<div[^>]{1,250}govuk-box-highlight"
+  },
+  {
+   "technology": "GOV.UK Elements",
+   "pattern": "<div[^>]{1,250}phase-banner-alpha"
+  },
+  {
+   "technology": "GOV.UK Elements",
+   "pattern": "<div[^>]{1,250}phase-banner-beta"
+  },
+  {
+   "technology": "GOV.UK Elements",
+   "pattern": "<link[^>]{1,80}elements-page[^>\"]{1,80}css"
+  },
+  {
+   "technology": "GOV.UK Frontend",
+   "pattern": "<a[^>]{1,200}govuk-link"
+  },
+  {
+   "technology": "GOV.UK Frontend",
+   "pattern": "<body[^>]{1,250}govuk-template__body"
+  },
+  {
+   "technology": "GOV.UK Frontend",
+   "pattern": "<link[^>]{0,60} href=[^>]{0,60}?govuk-frontend(?:[^>]{0,60}?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]{0,60}?(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "GOV.UK Template",
+   "pattern": "<link[^>]{1,80}govuk-template-ie6[^>\"]{1,80}css"
+  },
+  {
+   "technology": "GOV.UK Template",
+   "pattern": "<link[^>]{1,80}govuk-template-ie7[^>\"]{1,80}css"
+  },
+  {
+   "technology": "GOV.UK Template",
+   "pattern": "<link[^>]{1,80}govuk-template-ie8[^>\"]{1,80}css"
+  },
+  {
+   "technology": "GOV.UK Template",
+   "pattern": "<link[^>]{1,80}govuk-template-print[^>\"]{1,80}css"
+  },
+  {
+   "technology": "GOV.UK Template",
+   "pattern": "<link[^>]{1,80}govuk-template[^>\"]{1,80}css"
+  },
+  {
+   "technology": "GX WebManager",
+   "pattern": "<!--\\s{1,250}Powered by GX"
+  },
+  {
+   "technology": "Gallery",
+   "pattern": "<a href=\"http://gallery\\.sourceforge\\.net\"><img[^>]{1,80}Powered by Gallery\\s{0,80}(?:(?:v|Version)\\s{0,80}([0-9.]+))?"
+  },
+  {
+   "technology": "Gallery",
+   "pattern": "<div id=\"gsNavBar\" class=\"gcBorder1\">"
+  },
+  {
+   "technology": "Gambio",
+   "pattern": "(?:<link[^>]{0,80} href=\"templates/gambio/|<a[^>]content\\.php\\?coID=\\d|<!-- gambio eof -->|<!--[\\s=]{1,80}Shopsoftware by Gambio GmbH \\(c\\))"
+  },
+  {
+   "technology": "Gemius",
+   "pattern": "<a [^>]{0,250}onclick=\"gemius_hit"
+  },
+  {
+   "technology": "GeneXus",
+   "pattern": "<link[^>]{1,250}?id=\"gxtheme_css_reference\""
+  },
+  {
+   "technology": "Gerrit",
+   "pattern": "<(?:div|style) id=\"gerrit_"
+  },
+  {
+   "technology": "Gerrit",
+   "pattern": ">Gerrit Code Review</a>\\s{0,80}\"\\s{0,80}\\(([0-9.]+)\\)"
+  },
+  {
+   "technology": "Ghost",
+   "pattern": "powered.{0,80}by.{0,80}ghost"
+  },
+  {
+   "technology": "GitLab",
+   "pattern": "<header class=\"navbar navbar-fixed-top navbar-gitlab with-horizontal-nav\">"
+  },
+  {
+   "technology": "GitLab",
+   "pattern": "<meta content=\"https?://[^/]{1,250}/assets/gitlab_logo-"
+  },
+  {
+   "technology": "Gitea",
+   "pattern": "<div class=\"ui left\">\\n\\s{1,250}© Gitea Version: ([\\d.]+)"
+  },
+  {
+   "technology": "Gitiles",
+   "pattern": "Powered by <a href=\"https://gerrit\\.googlesource\\.com/gitiles/\">Gitiles<"
+  },
+  {
+   "technology": "Glyphicons",
+   "pattern": "(?:<link[^>]{0,90} href=[^>]{1,250}glyphicons(?:\\.min)?\\.css|<img[^>]{0,80} src=[^>]{1,80}glyphicons)"
+  },
+  {
+   "technology": "Gogs",
+   "pattern": "<button class=\"ui basic clone button\" id=\"repo-clone-ssh\" data-link=\"gogs@"
+  },
+  {
+   "technology": "Gogs",
+   "pattern": "<div class=\"ui left\">\\n\\s{1,250}© \\d{4} Gogs Version: ([\\d.]+) Page:"
+  },
+  {
+   "technology": "Google Workspace",
+   "pattern": "workspace.{0,250}google"
+  },
+  {
+   "technology": "Gradelink",
+   "pattern": "gradelink"
+  },
+  {
+   "technology": "GrandNode",
+   "pattern": "(?:<!--GrandNode |<a[^>]{1,80}grandnode - Powered by |Powered by: <a[^>]{1,80}nopcommerce)"
+  },
+  {
+   "technology": "Gravatar",
+   "pattern": "<[^>]{1,100}gravatar\\.com/avatar/"
+  },
+  {
+   "technology": "Gravity Forms",
+   "pattern": "<div class=(?:\"|')[^>]{0,80}gform_body"
+  },
+  {
+   "technology": "Gravity Forms",
+   "pattern": "<div class=(?:\"|')[^>]{0,80}gform_wrapper"
+  },
+  {
+   "technology": "Gravity Forms",
+   "pattern": "<link [^>]{0,100}href=(?:\"|')[^>]{0,80}wp-content/plugins/gravityforms/css/"
+  },
+  {
+   "technology": "Gravity Forms",
+   "pattern": "<ul [^>]{0,90}class=(?:\"|')[^>]{0,80}gform_fields"
+  },
+  {
+   "technology": "Green Valley CMS",
+   "pattern": "<img[^>]{1,250}/dsresource\\?objectid="
+  },
+  {
+   "technology": "Haddock",
+   "pattern": "<p>Produced by <a href=\"http://www\\.haskell\\.org/haddock/\">Haddock</a> version ([0-9.]+)</p>"
+  },
+  {
+   "technology": "HeadJS",
+   "pattern": "<[^>]{0,120}data-headjs-load"
+  },
+  {
+   "technology": "HelioCampus",
+   "pattern": "heliocampus"
+  },
+  {
+   "technology": "Hexo",
+   "pattern": "Powered by <a href=\"https?://hexo\\.io/?\"[^>]{0,250}>Hexo</"
+  },
+  {
+   "technology": "Highcharts",
+   "pattern": "<svg[^>]{0,250}><desc>Created with Highcharts ([\\d.]*)"
+  },
+  {
+   "technology": "Highstock",
+   "pattern": "<svg[^>]{0,250}><desc>Created with Highstock ([\\d.]*)"
+  },
+  {
+   "technology": "Hobsons Connect",
+   "pattern": "hobsons.{0,250}connect"
+  },
+  {
+   "technology": "HubSpot",
+   "pattern": "//js(?:-[a-z0-9]{2,6})?\\.(?:hs-scripts\\.com|hs-analytics\\.net|hsforms\\.net|hscollectedforms\\.net|hsleadflows\\.net)/"
+  },
+  {
+   "technology": "IPB",
+   "pattern": "<link[^>]{1,80}ipb_[^>]{1,80}\\.css"
+  },
+  {
+   "technology": "InCommon Federation",
+   "pattern": "incommon"
+  },
+  {
+   "technology": "Indexhibit",
+   "pattern": "<(?:link|a href) [^>]{1,250}ndxz-studio"
+  },
+  {
+   "technology": "Indico",
+   "pattern": "Powered by\\s{1,250}(?:CERN )?<a href=\"http://(?:cdsware\\.cern\\.ch/indico/|indico-software\\.org|cern\\.ch/indico)\">(?:CDS )?Indico( [\\d\\.]+)?"
+  },
+  {
+   "technology": "InfoEd",
+   "pattern": "infoed"
+  },
+  {
+   "technology": "Informer",
+   "pattern": "entrinsik"
+  },
+  {
+   "technology": "Informer",
+   "pattern": "informer[^<>\\n]{0,250}entrinsik"
+  },
+  {
+   "technology": "Infosilem",
+   "pattern": "infosilem"
+  },
+  {
+   "technology": "Innovative Interfaces Sierra",
+   "pattern": "iii\\.com[^<>\\n]{0,250}sierra"
+  },
+  {
+   "technology": "Innovative Interfaces Sierra",
+   "pattern": "sierra[\\s-]ils"
+  },
+  {
+   "technology": "Instructure Canvas Catalog",
+   "pattern": "/canvas-catalog/"
+  },
+  {
+   "technology": "Instructure Canvas Catalog",
+   "pattern": "\\.catalog\\.canvaslms\\.com"
+  },
+  {
+   "technology": "Instructure Canvas Catalog",
+   "pattern": "catalog\\.canvaslms\\.com"
+  },
+  {
+   "technology": "Intercom",
+   "pattern": "intercomcdn\\.com"
+  },
+  {
+   "technology": "Intercom Articles",
+   "pattern": "<a href=\"https://www.intercom.com/intercom-link[^\"]{1,80}solution=customer-support[^>]{1,80}>We run on Intercom"
+  },
+  {
+   "technology": "Intershop",
+   "pattern": "<ish-root"
+  },
+  {
+   "technology": "Invenio",
+   "pattern": "(?:Powered by|System)\\s{1,80}(?:CERN )?<a (?:class=\"footer\" )?href=\"http://(?:cdsware\\.cern\\.ch(?:/invenio)?|invenio-software\\.org|cern\\.ch/invenio)(?:/)?\">(?:CDS )?Invenio</a>\\s{0,80}v?([\\d\\.]+)?"
+  },
+  {
+   "technology": "Invision Power Board",
+   "pattern": "<link[^>]{1,80}ipb_[^>]{1,80}\\.css"
+  },
+  {
+   "technology": "Irroba",
+   "pattern": "<a[^>]{0,200}href=\"https://www\\.irroba\\.com\\.br"
+  },
+  {
+   "technology": "JTL Shop",
+   "pattern": "(?:<input[^>]{1,250}name=\"JTLSHOP|<a href=\"jtl\\.php)"
+  },
+  {
+   "technology": "Jahia DX",
+   "pattern": "<script id=\"staticAssetAggregatedJavascrip"
+  },
+  {
+   "technology": "Javadoc",
+   "pattern": "<!-- Generated by javadoc -->"
+  },
+  {
+   "technology": "Jekyll",
+   "pattern": "<!-- Begin Jekyll SEO tag"
+  },
+  {
+   "technology": "Jekyll",
+   "pattern": "<!-- Created with Jekyll Now -"
+  },
+  {
+   "technology": "Jekyll",
+   "pattern": "Powered by <a href=\"https?://jekyllrb\\.com\"[^>]{0,250}>Jekyll</"
+  },
+  {
+   "technology": "Jenkins",
+   "pattern": "<span class=\"jenkins_ver\"><a href=\"https://jenkins\\.io/\">Jenkins ver\\. ([\\d.]+)"
+  },
+  {
+   "technology": "Jenzabar",
+   "pattern": "jenzabar.{0,250}ex"
+  },
+  {
+   "technology": "Jenzabar",
+   "pattern": "jenzabar.{0,250}ics"
+  },
+  {
+   "technology": "Jetshop",
+   "pattern": "<(?:div|aside) id=\"jetshop-branding\">"
+  },
+  {
+   "technology": "Jibestream",
+   "pattern": "jibestream"
+  },
+  {
+   "technology": "K2",
+   "pattern": "<!--(?: JoomlaWorks \"K2\"| Start K2)"
+  },
+  {
+   "technology": "Kahoot!",
+   "pattern": "kahoot"
+  },
+  {
+   "technology": "Kaltura",
+   "pattern": "html5player\\.kaltura\\.com"
+  },
+  {
+   "technology": "Kaltura",
+   "pattern": "kaltura.{0,250}player"
+  },
+  {
+   "technology": "Kendo UI",
+   "pattern": "<link[^>]{0,80}\\s{1,80}href=[^>]{0,80}styles/kendo\\.common(?:\\.min)?\\.css[^>]{0,80}/>"
+  },
+  {
+   "technology": "Kibana",
+   "pattern": "<title>Kibana</title>"
+  },
+  {
+   "technology": "Koala Framework",
+   "pattern": "<!--[^>]{1,250}This website is powered by Koala Web Framework CMS"
+  },
+  {
+   "technology": "Kognito",
+   "pattern": "kognito"
+  },
+  {
+   "technology": "Koha",
+   "pattern": "<a href=\"/cgi-bin/koha/"
+  },
+  {
+   "technology": "Koha",
+   "pattern": "<input name=\"koha_login_context\" value=\"intranet\" type=\"hidden\">"
+  },
+  {
+   "technology": "Koha",
+   "pattern": "koha[-_ ]?ils"
+  },
+  {
+   "technology": "Koha",
+   "pattern": "koha[-_ ]?opac"
+  },
+  {
+   "technology": "Koken",
+   "pattern": "<!--\\s{1,250}KOKEN DEBUGGING"
+  },
+  {
+   "technology": "Koobi",
+   "pattern": "<!--[^K>-]{1,80}Koobi ([a-z\\d.]{1,80})"
+  },
+  {
+   "technology": "Kuali Coeus",
+   "pattern": "kuali[^<>\\n]{0,250}coeus"
+  },
+  {
+   "technology": "Kuali Coeus",
+   "pattern": "kuali[^<>\\n]{0,250}research"
+  },
+  {
+   "technology": "Kuali Curriculum Management",
+   "pattern": "kuali.{0,250}cm"
+  },
+  {
+   "technology": "Kuali Curriculum Management",
+   "pattern": "kuali.{0,250}curriculum"
+  },
+  {
+   "technology": "Kuali Financial System",
+   "pattern": "kuali.{0,250}financial"
+  },
+  {
+   "technology": "Kuali Financial System",
+   "pattern": "kuali.{0,250}kfs"
+  },
+  {
+   "technology": "Lede",
+   "pattern": "<a [^>]{0,80}href=\"[^\"]{1,80}joinlede.com"
+  },
+  {
+   "technology": "Lemmy",
+   "pattern": "lemmy"
+  },
+  {
+   "technology": "Leptos",
+   "pattern": "<!--hk=_.*"
+  },
+  {
+   "technology": "Less",
+   "pattern": "<link[^>]{1,250} rel=\"stylesheet/less\""
+  },
+  {
+   "technology": "Liaison CAS",
+   "pattern": "liaison.{0,250}cas"
+  },
+  {
+   "technology": "LibAnswers",
+   "pattern": "springshare[^<>\\n]{0,250}libanswers"
+  },
+  {
+   "technology": "LibCal",
+   "pattern": "springshare[^<>\\n]{0,250}libcal"
+  },
+  {
+   "technology": "LibGuides",
+   "pattern": "springshare[^<>\\n]{0,250}libguides"
+  },
+  {
+   "technology": "LightMon Engine",
+   "pattern": "<!-- Lightmon Engine Copyright Lightmon"
+  },
+  {
+   "technology": "Lightspeed eCom",
+   "pattern": "<!-- \\[START\\] 'blocks/head\\.rain' -->"
+  },
+  {
+   "technology": "Linkedin Ads",
+   "pattern": "<img [^>]{0,180}src=\"[^/]{0,80}//[^/]{0,80}px\\.ads\\.linkedin\\.com"
+  },
+  {
+   "technology": "Lithium",
+   "pattern": " <a [^>]{1,250}Powered by Lithium"
+  },
+  {
+   "technology": "LiveChat",
+   "pattern": "livechat-static\\.com"
+  },
+  {
+   "technology": "Livefyre",
+   "pattern": "<[^>]{1,250}(?:id|class)=\"livefyre"
+  },
+  {
+   "technology": "Liveinternet",
+   "pattern": "<!--/LiveInternet-->"
+  },
+  {
+   "technology": "Liveinternet",
+   "pattern": "<!--LiveInternet counter-->"
+  },
+  {
+   "technology": "Liveinternet",
+   "pattern": "<a href=\"http://www\\.liveinternet\\.ru/click\""
+  },
+  {
+   "technology": "Liveinternet",
+   "pattern": "<script [^>]{0,80}>[\\s\\S]{0,80}//counter\\.yadro\\.ru/hit"
+  },
+  {
+   "technology": "Livewire",
+   "pattern": "<[^>]{1,120}\\bwire:"
+  },
+  {
+   "technology": "LocalFocus",
+   "pattern": "<iframe[^>]{1,250}\\blocalfocus\\b"
+  },
+  {
+   "technology": "Localist",
+   "pattern": "events\\.localist\\.com"
+  },
+  {
+   "technology": "LocomotiveCMS",
+   "pattern": "<link[^>]{0,250}/sites/[a-z\\d]{24}/theme/stylesheets"
+  },
+  {
+   "technology": "Lucidworks Fusion",
+   "pattern": "lucidworks"
+  },
+  {
+   "technology": "MATLAB Grader",
+   "pattern": "grader[^<>\\n]{0,250}matlab"
+  },
+  {
+   "technology": "MATLAB Grader",
+   "pattern": "mathworks[^<>\\n]{0,250}grader"
+  },
+  {
+   "technology": "MATLAB Grader",
+   "pattern": "matlab[^<>\\n]{0,250}grader"
+  },
+  {
+   "technology": "MODX",
+   "pattern": "<!-- Modx process time debug info -->"
+  },
+  {
+   "technology": "MODX",
+   "pattern": "<(?:link|script)[^>]{1,250}assets/snippets/"
+  },
+  {
+   "technology": "MODX",
+   "pattern": "<a[^>]{1,200}>Powered by MODX</a>"
+  },
+  {
+   "technology": "MODX",
+   "pattern": "<form[^>]{1,250}id=\"ajaxSearch_form"
+  },
+  {
+   "technology": "MODX",
+   "pattern": "<input[^>]{1,250}id=\"ajaxSearch_input"
+  },
+  {
+   "technology": "Macmillan Achieve",
+   "pattern": "macmillanlearning"
+  },
+  {
+   "technology": "Mailchimp",
+   "pattern": "<input [^>]{0,250}id=\"mc-email\""
+  },
+  {
+   "technology": "MapYourTag",
+   "pattern": "mapyourtag"
+  },
+  {
+   "technology": "Material Design Lite",
+   "pattern": "<link[^>]{0,350} href=\"[^\"]{0,300}material(?:\\.[\\w]{1,80}-[\\w]{1,80})?(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "Mattermost",
+   "pattern": "<noscript> To use Mattermost, please enable JavaScript\\. </noscript>"
+  },
+  {
+   "technology": "McGraw-Hill ALEKS",
+   "pattern": "mcgraw[^<>\\n]{0,250}aleks"
+  },
+  {
+   "technology": "McGraw-Hill Connect",
+   "pattern": "connect[^<>\\n]{0,80}mheducation"
+  },
+  {
+   "technology": "McGraw-Hill Connect",
+   "pattern": "mcgraw[^<>\\n]{0,80}hill[^<>\\n]{0,80}connect"
+  },
+  {
+   "technology": "McGraw-Hill Connect",
+   "pattern": "mhhe.{0,250}connect"
+  },
+  {
+   "technology": "MediaWiki",
+   "pattern": "<(?:a|img)[^>]{1,250}>Powered by MediaWiki</a>"
+  },
+  {
+   "technology": "MediaWiki",
+   "pattern": "<a[^>]{1,200}/Special:WhatLinksHere/"
+  },
+  {
+   "technology": "MediaWiki",
+   "pattern": "<body[^>]{1,250}class=\"mediawiki\""
+  },
+  {
+   "technology": "Mediasite",
+   "pattern": "class=\"mediasite"
+  },
+  {
+   "technology": "Mediasite",
+   "pattern": "mediasite\\.cloud"
+  },
+  {
+   "technology": "Mediasite",
+   "pattern": "sonicfoundry[^<>\\n]{0,250}mediasite"
+  },
+  {
+   "technology": "Meebo",
+   "pattern": "(?:<iframe id=\"meebo-iframe\"|Meebo\\('domReady'\\))"
+  },
+  {
+   "technology": "Melis Platform",
+   "pattern": "<!-- Rendered with Melis CMS V2"
+  },
+  {
+   "technology": "Melis Platform",
+   "pattern": "<!-- Rendered with Melis Platform"
+  },
+  {
+   "technology": "Mentimeter",
+   "pattern": "menti\\.com"
+  },
+  {
+   "technology": "Mentimeter",
+   "pattern": "mentimeter"
+  },
+  {
+   "technology": "Mermaid",
+   "pattern": "<div [^>]{0,250}class=[\"']mermaid[\"']>"
+  },
+  {
+   "technology": "Meteor",
+   "pattern": "<link[^>]{1,250}__meteor-css__"
+  },
+  {
+   "technology": "Methode",
+   "pattern": "<!-- Methode uuid: \"[a-f\\d]+\" ?-->"
+  },
+  {
+   "technology": "Microsoft ASP.NET",
+   "pattern": "<input[^>]{1,80}name=\"__VIEWSTATE"
+  },
+  {
+   "technology": "Microsoft Excel",
+   "pattern": "(?:<html [^>]{0,80}xmlns:w=\"urn:schemas-microsoft-com:office:excel\"|<!--\\s{0,80}(?:START|END) OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD\\s{0,80}-->|<div [^>]{0,80}x:publishsource=\"?Excel\"?)"
+  },
+  {
+   "technology": "Microsoft PowerPoint",
+   "pattern": "(?:<html [^>]{0,80}xmlns:w=\"urn:schemas-microsoft-com:office:powerpoint\"|<link rel=\"?Presentation-XML\"? href=\"?[^\"]{1,80}\\.xml\"?>|<o:PresentationFormat>[^<]{1,80}</o:PresentationFormat>[^!]{1,80}<o:Slides>\\d+</o:Slides>(?:[^!]{1,80}<o:Version>([\\d.]+)</o:Version>)?)"
+  },
+  {
+   "technology": "Microsoft Publisher",
+   "pattern": "(?:<html [^>]{0,250}xmlns:w=\"urn:schemas-microsoft-com:office:publisher\"|<!--[if pub]><xml>)"
+  },
+  {
+   "technology": "Microsoft Teams for Education",
+   "pattern": "office365.{0,250}education"
+  },
+  {
+   "technology": "Microsoft Word",
+   "pattern": "(?:<html [^>]{0,80}xmlns:w=\"urn:schemas-microsoft-com:office:word\"|<w:WordDocument>|<div [^>]{0,80}class=\"?WordSection1[\" >]|<style[^>]{0,80}>[^>]{0,250}@page WordSection1)"
+  },
+  {
+   "technology": "Milligram",
+   "pattern": "<link[^>]{1,80}?href=\"[^\"]{1,80}milligram(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "Mindmax",
+   "pattern": "mindmax"
+  },
+  {
+   "technology": "Misskey",
+   "pattern": "misskey"
+  },
+  {
+   "technology": "Misskey",
+   "pattern": "mk-app"
+  },
+  {
+   "technology": "Mobirise",
+   "pattern": "<!-- Site made with Mobirise Website Builder v([\\d.]+)"
+  },
+  {
+   "technology": "Modern Campus CMS",
+   "pattern": "omnicms\\.omniupdate\\.com"
+  },
+  {
+   "technology": "Moguta.CMS",
+   "pattern": "<link[^>]{1,80}href=[\"'][^\"]{1,80}mg-(?:core|plugins|templates)/"
+  },
+  {
+   "technology": "Mollom",
+   "pattern": "<img[^>]{1,250}\\.mollom\\.com"
+  },
+  {
+   "technology": "Moodle",
+   "pattern": "/mod/assign/"
+  },
+  {
+   "technology": "Moodle",
+   "pattern": "id=\"moodle-"
+  },
+  {
+   "technology": "MotoCMS",
+   "pattern": "<link [^>]{0,80}href=\"[^>]{0,80}\\/mt-content\\/[^>]{0,80}\\.css"
+  },
+  {
+   "technology": "MyMathLab",
+   "pattern": "mymathlab"
+  },
+  {
+   "technology": "MyMathLab",
+   "pattern": "pearson[^<>\\n]{0,250}mathlab"
+  },
+  {
+   "technology": "NVD3",
+   "pattern": "<link[^>]{0,80} href=[^>]{1,80}nv\\.d3(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "National Student Clearinghouse",
+   "pattern": "nsc\\.org"
+  },
+  {
+   "technology": "Nearpod",
+   "pattern": "nearpod"
+  },
+  {
+   "technology": "Nette Framework",
+   "pattern": "<div[^>]{1,80}id=\"snippet-"
+  },
+  {
+   "technology": "Nette Framework",
+   "pattern": "<input[^>]{1,120}id=\"frm-"
+  },
+  {
+   "technology": "Nette Framework",
+   "pattern": "<input[^>]{1,250}data-nette-rules"
+  },
+  {
+   "technology": "NextGEN Gallery",
+   "pattern": "<!-- <meta name=\"NextGEN\" version=\"([\\d.]+)\" /> -->"
+  },
+  {
+   "technology": "Norce",
+   "pattern": "<(?:div|aside) id=\"jetshop-branding\">"
+  },
+  {
+   "technology": "Norton Illumine",
+   "pattern": "illumine[^<>\\n]{0,250}norton"
+  },
+  {
+   "technology": "Norton Illumine",
+   "pattern": "norton[^<>\\n]{0,250}illumine"
+  },
+  {
+   "technology": "Norton Illumine",
+   "pattern": "wwnorton"
+  },
+  {
+   "technology": "NoviSign",
+   "pattern": "novisign"
+  },
+  {
+   "technology": "Nuxt.js",
+   "pattern": "<div [^>]{0,80}id=\"__nuxt\""
+  },
+  {
+   "technology": "Nuxt.js",
+   "pattern": "<script [^>]{0,250}>window\\.__NUXT__"
+  },
+  {
+   "technology": "OCLC WorldShare",
+   "pattern": "oclc[^<>\\n]{0,250}worldshare"
+  },
+  {
+   "technology": "OCLC WorldShare",
+   "pattern": "worldshare"
+  },
+  {
+   "technology": "OWL Carousel",
+   "pattern": "<link [^>]{0,140}href=\"[^\"]{1,450}owl\\.carousel(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "OXID eShop Community Edition",
+   "pattern": "<!--[^-]{0,250}OXID eShop Community Edition, Version (\\d+)"
+  },
+  {
+   "technology": "OXID eShop Enterprise Edition",
+   "pattern": "<!--[^-]{0,250}OXID eShop Enterprise Edition, Version (\\d+)"
+  },
+  {
+   "technology": "OXID eShop Professional Edition",
+   "pattern": "<!--[^-]{0,250}OXID eShop Professional Edition, Version (\\d+)"
+  },
+  {
+   "technology": "Octopress",
+   "pattern": "Powered by <a href=\"http://octopress\\.org\">"
+  },
+  {
+   "technology": "Odoo",
+   "pattern": "<link[^>]{0,80} href=[^>]{1,80}/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)"
+  },
+  {
+   "technology": "Open Web Analytics",
+   "pattern": "<!-- (?:Start|End) Open Web Analytics Tracker -->"
+  },
+  {
+   "technology": "Open edX",
+   "pattern": "edx.{0,250}platform"
+  },
+  {
+   "technology": "Open edX",
+   "pattern": "lms\\.edx"
+  },
+  {
+   "technology": "Open edX",
+   "pattern": "openedx"
+  },
+  {
+   "technology": "OpenCms",
+   "pattern": "<link href=\"/opencms/"
+  },
+  {
+   "technology": "OpenText Web",
+   "pattern": "<!--[^>]{1,250}published by Open Text Web Solutions"
+  },
+  {
+   "technology": "OpenText Web Solutions",
+   "pattern": "<!--[^>]{1,250}published by Open Text Web Solutions"
+  },
+  {
+   "technology": "Oracle PeopleSoft Campus Solutions",
+   "pattern": "PSPRODNAME[^<>\\n]{0,250}Campus"
+  },
+  {
+   "technology": "Oracle PeopleSoft Campus Solutions",
+   "pattern": "oracle[^<>\\n]{0,80}peoplesoft"
+  },
+  {
+   "technology": "OroCommerce",
+   "pattern": "<script [^>]{1,250}data-requiremodule=\"oro/"
+  },
+  {
+   "technology": "OroCommerce",
+   "pattern": "<script [^>]{1,250}data-requiremodule=\"oroui/"
+  },
+  {
+   "technology": "Outlook Web App",
+   "pattern": "<link[^>]{1,250}/owa/auth/([\\d\\.]+)/themes/resources"
+  },
+  {
+   "technology": "Oxford Learning Link",
+   "pattern": "learninglink[^<>\\n]{0,250}oup"
+  },
+  {
+   "technology": "Oxford Learning Link",
+   "pattern": "oxford.{0,120}learning.{0,120}link"
+  },
+  {
+   "technology": "Oxygen",
+   "pattern": "<body class=(?:\"|')[^\"']{0,450}oxygen-body"
+  },
+  {
+   "technology": "Oxygen",
+   "pattern": "<link [^>]{0,110}href=(?:\"|')[^>]{0,100}wp-content/plugins/oxygen/"
+  },
+  {
+   "technology": "PDF.js",
+   "pattern": "<\\/div>\\s{0,80}<!-- outerContainer -->\\s{0,80}<div\\s{0,80}id=\"printContainer\"><\\/div>"
+  },
+  {
+   "technology": "PHP-Nuke",
+   "pattern": "<[^>]{1,120}Powered by PHP-Nuke"
+  },
+  {
+   "technology": "PHPFusion",
+   "pattern": "Powered by <a href=\"[^>]{1,250}php-fusion"
+  },
+  {
+   "technology": "PHPFusion",
+   "pattern": "Powered by <a href=\"[^>]{1,250}phpfusion"
+  },
+  {
+   "technology": "Padlet",
+   "pattern": "padlet\\.com"
+  },
+  {
+   "technology": "Panopto",
+   "pattern": "class=\"panopto"
+  },
+  {
+   "technology": "Panopto",
+   "pattern": "panopto.{0,250}viewer"
+  },
+  {
+   "technology": "Pearson MyLab",
+   "pattern": "mastering.{0,150}pearson"
+  },
+  {
+   "technology": "Pearson MyLab",
+   "pattern": "mylab.{0,170}pearson"
+  },
+  {
+   "technology": "Pearson MyLab",
+   "pattern": "pearson.{0,100}mylab"
+  },
+  {
+   "technology": "Pelican",
+   "pattern": "(?:powered|built|generated)\\s(?:by|with)[^<>\\n]{0,80}?<a\\s{1,80}href(?:\\s)?=(?:\\s)?\"[^\"]{0,80}(?:getpelican\\.com|pelican-bootstrap3|pelican-pure|notmyidea\\.org)[^\"]{0,80}\"[^<>\\n]{0,80}?>"
+  },
+  {
+   "technology": "PeopleSoft Campus Solutions",
+   "pattern": "PSPRODNAME[^<>\\n]{0,250}Campus"
+  },
+  {
+   "technology": "Percussion",
+   "pattern": "<[^>]{1,80}class=\"perc-region\""
+  },
+  {
+   "technology": "Perusall",
+   "pattern": "perusall"
+  },
+  {
+   "technology": "Phabricator",
+   "pattern": "<[^>]{1,250}(?:class|id)=\"phabricator-"
+  },
+  {
+   "technology": "Phenomic",
+   "pattern": "<[^>]{1,250}id=\"phenomic(?:root)?\""
+  },
+  {
+   "technology": "Pligg",
+   "pattern": "<span[^>]{1,250}id=\"xvotes-0"
+  },
+  {
+   "technology": "Polaris ILS",
+   "pattern": "polaris.{0,250}ils"
+  },
+  {
+   "technology": "Polaris ILS",
+   "pattern": "polaris.{0,80}library"
+  },
+  {
+   "technology": "Poll Everywhere",
+   "pattern": "poll.{0,250}everywhere"
+  },
+  {
+   "technology": "Poll Everywhere",
+   "pattern": "polleverywhere"
+  },
+  {
+   "technology": "Polymer",
+   "pattern": "(?:<polymer-[^>]{1,80}|<link[^>]{1,80}rel=\"import\"[^>]{1,80}/polymer\\.html\")"
+  },
+  {
+   "technology": "Populi",
+   "pattern": "populi.{0,250}college"
+  },
+  {
+   "technology": "Posterous",
+   "pattern": "<div class=\"posterous"
+  },
+  {
+   "technology": "PowerSchool SIS",
+   "pattern": "powerschool[^<>\\n]{0,80}sis"
+  },
+  {
+   "technology": "PowerSchool SIS",
+   "pattern": "powerschool[^<>\\n]{0,80}student"
+  },
+  {
+   "technology": "PowerSchool SIS",
+   "pattern": "ps[^<>\\n]{0,80}powerschool"
+  },
+  {
+   "technology": "Powergap",
+   "pattern": "<a[^>]{1,200}title=\"POWERGAP"
+  },
+  {
+   "technology": "Powergap",
+   "pattern": "<input type=\"hidden\" name=\"shopid\""
+  },
+  {
+   "technology": "PrestaShop",
+   "pattern": "<!-- /Block [a-z ]+ module (?:HEADER|TOP)?\\s?-->"
+  },
+  {
+   "technology": "PrestaShop",
+   "pattern": "<!-- /Module Block [a-z ]+ -->"
+  },
+  {
+   "technology": "PrestaShop",
+   "pattern": "Powered by <a\\s{1,80}[^>]{1,80}>PrestaShop"
+  },
+  {
+   "technology": "Project Wonderful",
+   "pattern": "<div[^>]{1,250}id=\"pw_adbox_"
+  },
+  {
+   "technology": "PromoBuilding",
+   "pattern": "<!-- made with https://promobuilding\\.ru"
+  },
+  {
+   "technology": "Proximis Unified Commerce",
+   "pattern": "<html[^>]{1,250}data-ng-app=\"RbsChangeApp\""
+  },
+  {
+   "technology": "Pure CSS",
+   "pattern": "<div[^>]{1,80}class=\"[^\"]{0,80}pure-u-(?:sm-|md-|lg-|xl-)?\\d-\\d"
+  },
+  {
+   "technology": "Pure CSS",
+   "pattern": "<link[^>]{1,100}(?:([\\d.])+/)?pure(?:-min)?\\.css"
+  },
+  {
+   "technology": "Pygments",
+   "pattern": "<link[^>]{1,250}pygments\\.css[\"']"
+  },
+  {
+   "technology": "Qualtrics",
+   "pattern": "qualtrics.{0,250}survey"
+  },
+  {
+   "technology": "Qualtrics",
+   "pattern": "zn[a-z0-9]{1,250}.siteintercept.qualtrics.com"
+  },
+  {
+   "technology": "Question2Answer",
+   "pattern": "<!-- Powered by Question2Answer"
+  },
+  {
+   "technology": "Quick.CMS",
+   "pattern": "<a href=\"[^>]{1,250}opensolution\\.org/\">CMS by"
+  },
+  {
+   "technology": "Quick.Cart",
+   "pattern": "<a href=\"[^>]{1,250}opensolution\\.org/\">(?:Shopping cart by|Sklep internetowy)"
+  },
+  {
+   "technology": "QuickSchools",
+   "pattern": "quickschools"
+  },
+  {
+   "technology": "RBS Change",
+   "pattern": "<html[^>]{1,250}xmlns:change="
+  },
+  {
+   "technology": "RDoc",
+   "pattern": "<link[^>]{1,80}href=\"[^\"]{0,80}rdoc-style\\.css"
+  },
+  {
+   "technology": "RDoc",
+   "pattern": "Generated by <a href=\"https:\\/\\/ruby\\.github\\.io\\/rdoc\\/\">RDoc<\\/a> ([\\d.]*\\d)"
+  },
+  {
+   "technology": "RDoc",
+   "pattern": "Generated by <a[^>]{1,80}href=\"https?://rdoc\\.rubyforge\\.org[^>]{1,80}>RDoc</a> ([\\d.]*\\d)"
+  },
+  {
+   "technology": "RainLoop",
+   "pattern": "<link[^>]href=\"rainloop/v/([0-9.]+)/static/apple-touch-icon\\.png/>"
+  },
+  {
+   "technology": "Raiser's Edge",
+   "pattern": "raiser.{0,250}edge"
+  },
+  {
+   "technology": "Raiser's Edge",
+   "pattern": "raisers.{0,250}edge"
+  },
+  {
+   "technology": "ReDoc",
+   "pattern": "<redoc "
+  },
+  {
+   "technology": "React",
+   "pattern": "data-react-class"
+  },
+  {
+   "technology": "RebelMouse",
+   "pattern": "<!-- Powered by RebelMouse\\."
+  },
+  {
+   "technology": "Recurly",
+   "pattern": "<input[^>]{1,250}data-recurly"
+  },
+  {
+   "technology": "Reddit",
+   "pattern": "(?:<a[^>]{1,80}Powered by Reddit|powered by <a[^>]{1,80}>reddit<)"
+  },
+  {
+   "technology": "Rediker Software",
+   "pattern": "adminplus"
+  },
+  {
+   "technology": "Rediker Software",
+   "pattern": "rediker[^<>\\n]{0,250}software"
+  },
+  {
+   "technology": "Redis Object Cache",
+   "pattern": "<!--\\s{1,80}Performance optimized by Redis Object Cache"
+  },
+  {
+   "technology": "Redmine",
+   "pattern": "Powered by <a href=\"[^>]{1,250}Redmine"
+  },
+  {
+   "technology": "RenWeb",
+   "pattern": "renweb"
+  },
+  {
+   "technology": "Respondus LockDown Browser",
+   "pattern": "lockdown.{0,250}browser"
+  },
+  {
+   "technology": "Respondus LockDown Browser",
+   "pattern": "respondus[^<>\\n]{0,80}lockdown"
+  },
+  {
+   "technology": "Revel",
+   "pattern": "pearson.{0,80}revel"
+  },
+  {
+   "technology": "Revel",
+   "pattern": "revel.{0,140}pearson"
+  },
+  {
+   "technology": "Revel",
+   "pattern": "revel\\.pearson"
+  },
+  {
+   "technology": "Rise Vision",
+   "pattern": "risevision"
+  },
+  {
+   "technology": "Riskified",
+   "pattern": "<[^>]{0,120}beacon\\.riskified\\.com"
+  },
+  {
+   "technology": "Riskified",
+   "pattern": "<[^>]{0,120}c\\.riskified\\.com"
+  },
+  {
+   "technology": "RoundCube",
+   "pattern": "<title>RoundCube"
+  },
+  {
+   "technology": "SAP Commerce Cloud",
+   "pattern": "<[^>]{1,80}/(?:sys_master|hybr|_ui/(?:[^<>\\n]{0,80}responsive/)?(?:desktop|common(?:/images|/img|/css|ico)?))/"
+  },
+  {
+   "technology": "SAP Commerce Cloud",
+   "pattern": "<script[^>][^<>\\n]{0,80}hybris[^<>\\n]{0,80}.js"
+  },
+  {
+   "technology": "SDL Tridion",
+   "pattern": "<img[^>]{1,400}_tcm\\d{2,3}-\\d{6}\\."
+  },
+  {
+   "technology": "SIMS",
+   "pattern": "capita[^<>\\n]{0,250}sims"
+  },
+  {
+   "technology": "SIMS",
+   "pattern": "sims.{0,250}education"
+  },
+  {
+   "technology": "SIMS",
+   "pattern": "sims.{0,250}student"
+  },
+  {
+   "technology": "SITS",
+   "pattern": "tribal.{0,250}sits"
+  },
+  {
+   "technology": "SOBI 2",
+   "pattern": "(?:<!-- start of Sigsiu Online Business Index|<div[^>]{0,250} class=\"sobi2)"
+  },
+  {
+   "technology": "SQL Buddy",
+   "pattern": "(?:<title>SQL Buddy</title>|<[^>]{1,250}onclick=\"sideMainClick\\(\"home\\.php)"
+  },
+  {
+   "technology": "Saber",
+   "pattern": "<div [^>]{0,250}id=\"_saber\""
+  },
+  {
+   "technology": "SafeAssign",
+   "pattern": "blackboard[^<>\\n]{0,250}safeassign"
+  },
+  {
+   "technology": "SafeAssign",
+   "pattern": "safeassign"
+  },
+  {
+   "technology": "Sajari",
+   "pattern": "sajari"
+  },
+  {
+   "technology": "Sakai",
+   "pattern": "/portal/site/"
+  },
+  {
+   "technology": "Sakai",
+   "pattern": "\\/portal\\/site\\/"
+  },
+  {
+   "technology": "Sakai",
+   "pattern": "sakai-project"
+  },
+  {
+   "technology": "Sakai",
+   "pattern": "sakai[^<>\\n]{0,250}collaboration"
+  },
+  {
+   "technology": "Sakai",
+   "pattern": "sakaiproject"
+  },
+  {
+   "technology": "Salesforce",
+   "pattern": "\\/\\/[a-z0-9-]{1,63}\\.my\\.salesforce-sites\\.com"
+  },
+  {
+   "technology": "Salesforce",
+   "pattern": "class=\"salesforce"
+  },
+  {
+   "technology": "Salesforce",
+   "pattern": "educationcloud\\.salesforce\\.com"
+  },
+  {
+   "technology": "Salesforce",
+   "pattern": "force\\.com"
+  },
+  {
+   "technology": "Salesforce",
+   "pattern": "lightning-"
+  },
+  {
+   "technology": "Salesforce",
+   "pattern": "salesforce"
+  },
+  {
+   "technology": "Salesforce",
+   "pattern": "salesforce.{0,250}education"
+  },
+  {
+   "technology": "Salesforce",
+   "pattern": "salesforce\\.com"
+  },
+  {
+   "technology": "Salesforce Live Agent",
+   "pattern": "\\.(?:my\\.salesforce(?:-scrt)?\\.com|force\\.com|my\\.site\\.com)\\/embeddedservice\\/"
+  },
+  {
+   "technology": "Salesforce Live Agent",
+   "pattern": "\\.my\\.(?:site|salesforce-sites)\\.com\\/[\\w-]{1,80}\\/assets\\/(?:js\\/bootstrap\\.min\\.js|htdocs\\/sitecontext)"
+  },
+  {
+   "technology": "Salesforce Live Agent",
+   "pattern": "\\/embeddedservice\\/[\\d.]{1,8}\\/esw\\.min\\.js"
+  },
+  {
+   "technology": "Sapper",
+   "pattern": "<script[^>]{0,250}>__SAPPER__"
+  },
+  {
+   "technology": "Scala Digital Signage",
+   "pattern": "scala[^<>\\n]{0,250}signage"
+  },
+  {
+   "technology": "ScholarSite",
+   "pattern": "scholarsite"
+  },
+  {
+   "technology": "SchoolAdmin",
+   "pattern": "schooladmin"
+  },
+  {
+   "technology": "SchoolMessenger",
+   "pattern": "west.{0,250}unified"
+  },
+  {
+   "technology": "Schoology",
+   "pattern": "powerschool.{0,250}learning"
+  },
+  {
+   "technology": "Scorpion",
+   "pattern": "<[^>]{1,120}id=\"HSScorpion"
+  },
+  {
+   "technology": "Screencast-O-Matic",
+   "pattern": "screencast[\\s_-]?o[\\s_-]?matic"
+  },
+  {
+   "technology": "Screencast-O-Matic",
+   "pattern": "screencastomatic"
+  },
+  {
+   "technology": "Semantic UI",
+   "pattern": "<link[^>]{1,170}semantic(?:\\.min)\\.css\""
+  },
+  {
+   "technology": "Sentry",
+   "pattern": "<script[^>]{0,80}>\\s{0,80}Raven\\.config\\('[^']{0,80}', \\{\\s{1,80}release: '([0-9\\.]+)'"
+  },
+  {
+   "technology": "Sentry",
+   "pattern": "<script[^>]{0,80}src=\"[^\"]{0,80}browser\\.sentry\\-cdn\\.com/([0-9.]+)/bundle(?:\\.tracing)?(?:\\.min)?\\.js"
+  },
+  {
+   "technology": "Shapecss",
+   "pattern": "<link[^>]{0,80} href=\"[^\"]{0,80}shapecss(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "ShellInABox",
+   "pattern": "<title>Shell In A Box</title>"
+  },
+  {
+   "technology": "ShellInABox",
+   "pattern": "must be enabled for ShellInABox</noscript>"
+  },
+  {
+   "technology": "Shibboleth",
+   "pattern": "class=\"shibboleth"
+  },
+  {
+   "technology": "Shibboleth",
+   "pattern": "idp\\.shibboleth\\.org"
+  },
+  {
+   "technology": "ShinyStat",
+   "pattern": "<img[^>]{0,80}\\s{1,80}src=['\"]?https?://www\\.shinystat\\.com/cgi-bin/shinystat\\.cgi\\?[^'\"\\s>]{0,80}['\"\\s/>]"
+  },
+  {
+   "technology": "Shopatron",
+   "pattern": "<body class=\"shopatron"
+  },
+  {
+   "technology": "Shopatron",
+   "pattern": "<img[^>]{1,250}mediacdn\\.shopatron\\.com"
+  },
+  {
+   "technology": "Shoptet",
+   "pattern": "<link [^>]{0,250}href=\"https?://cdn\\.myshoptet\\.com/"
+  },
+  {
+   "technology": "Shopware",
+   "pattern": "<title>Shopware ([\\d\\.]+) [^<]+"
+  },
+  {
+   "technology": "Silverstripe",
+   "pattern": "Powered by <a href=\"[^>]{1,250}Silverstripe"
+  },
+  {
+   "technology": "SirsiDynix Symphony",
+   "pattern": "symphony[\\s-]ils"
+  },
+  {
+   "technology": "Sizmek",
+   "pattern": "(?:<a [^>]{0,80}href=\"[^/]{0,80}//[^/]{0,80}serving-sys\\.com/|<img [^>]{0,80}src=\"[^/]{0,80}//[^/]{0,80}serving-sys\\.com/)"
+  },
+  {
+   "technology": "Skyward Student Management",
+   "pattern": "skyward.{0,250}student"
+  },
+  {
+   "technology": "Skyward Student Management",
+   "pattern": "skyward[^<>\\n]{0,250}sms"
+  },
+  {
+   "technology": "Skyward Student Management",
+   "pattern": "skyward\\.com"
+  },
+  {
+   "technology": "Slate (Technolutions)",
+   "pattern": "window\\.ping_"
+  },
+  {
+   "technology": "Slick",
+   "pattern": "<link [^>]{1,400}(?:/([\\d.]+)/)?slick-theme\\.css"
+  },
+  {
+   "technology": "Slimbox",
+   "pattern": "<link [^>]{0,80}href=\"[^/]{0,80}slimbox(?:-rtl)?\\.css"
+  },
+  {
+   "technology": "Slimbox 2",
+   "pattern": "<link [^>]{0,80}href=\"[^/]{0,80}slimbox2(?:-rtl)?\\.css"
+  },
+  {
+   "technology": "Smart Catalog",
+   "pattern": "myedu[^<>\\n]{0,250}catalog"
+  },
+  {
+   "technology": "SmartSite",
+   "pattern": "<[^>]{1,250}/smartsite\\.(?:dws|shtml)\\?id="
+  },
+  {
+   "technology": "Smartstore",
+   "pattern": "<!--Powered by Smart[sS]tore"
+  },
+  {
+   "technology": "Smartstore",
+   "pattern": "<meta property=\"sm:pagedata\""
+  },
+  {
+   "technology": "Smartstore Page Builder",
+   "pattern": "<section[^>]{1,250}class=\"g-stage"
+  },
+  {
+   "technology": "SnapEngage",
+   "pattern": "<!-- begin SnapEngage"
+  },
+  {
+   "technology": "Solodev",
+   "pattern": "<div class=[\"']dynamicDiv[\"'] id=[\"']dd\\.\\d\\.\\d(?:\\.\\d)?[\"']>"
+  },
+  {
+   "technology": "SonarQube",
+   "pattern": "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)"
+  },
+  {
+   "technology": "SonarQube",
+   "pattern": "<title>SonarQube</title>"
+  },
+  {
+   "technology": "Sphinx",
+   "pattern": "Created using <a href=\"https?://(?:www\\.)?sphinx-doc\\.org/\">Sphinx</a> ([0-9.]+)\\."
+  },
+  {
+   "technology": "Spree",
+   "pattern": "(?:<link[^>]{0,80}/assets/store/all-[a-z\\d]{32}\\.css[^>]{1,80}>|<script>\\s{0,80}Spree\\.(?:routes|translations|api_key))"
+  },
+  {
+   "technology": "SquirrelMail",
+   "pattern": "<small>SquirrelMail version ([.\\d]+)[^<]{0,250}<br "
+  },
+  {
+   "technology": "Squiz DXP",
+   "pattern": "__data_asset_path"
+  },
+  {
+   "technology": "Squiz DXP",
+   "pattern": "mysource[^<>\\n]{0,80}matrix"
+  },
+  {
+   "technology": "Squiz DXP",
+   "pattern": "squiz.{0,250}cms"
+  },
+  {
+   "technology": "Squiz DXP",
+   "pattern": "squiz[^<>\\n]{0,80}matrix"
+  },
+  {
+   "technology": "Squiz Matrix",
+   "pattern": "<!--\\s{1,80}Running (?:MySource|Squiz) Matrix"
+  },
+  {
+   "technology": "Starfish",
+   "pattern": "hobsons[^<>\\n]{0,250}starfish"
+  },
+  {
+   "technology": "Starfish",
+   "pattern": "starfish[^<>\\n]{0,250}retention"
+  },
+  {
+   "technology": "Starfish",
+   "pattern": "starfish\\.hobsons"
+  },
+  {
+   "technology": "Starfish",
+   "pattern": "starfish\\.starfishsolutions\\.com"
+  },
+  {
+   "technology": "Stimulus",
+   "pattern": "<[^>]{1,120}data-controller"
+  },
+  {
+   "technology": "Strikingly",
+   "pattern": "<!-- Powered by Strikingly\\.com"
+  },
+  {
+   "technology": "Stripe",
+   "pattern": "<input[^>]{1,250}data-stripe"
+  },
+  {
+   "technology": "Summon",
+   "pattern": "proquest[^<>\\n]{0,250}summon"
+  },
+  {
+   "technology": "Summon",
+   "pattern": "summon.{0,250}discovery"
+  },
+  {
+   "technology": "Sympa",
+   "pattern": "<a href=\"https?://www\\.sympa\\.org\">\\s{0,80}Powered by Sympa\\s{0,80}</a>"
+  },
+  {
+   "technology": "Synergy Student Information System",
+   "pattern": "edupoint[^<>\\n]{0,250}synergy"
+  },
+  {
+   "technology": "Synergy Student Information System",
+   "pattern": "synergy.{0,250}sis"
+  },
+  {
+   "technology": "Synergy Student Information System",
+   "pattern": "synergy.{0,250}student"
+  },
+  {
+   "technology": "Synology DiskStation",
+   "pattern": "<noscript><div class='syno-no-script'"
+  },
+  {
+   "technology": "SyntaxHighlighter",
+   "pattern": "<(?:script|link)[^>]{0,100}sh(?:Core|Brush|ThemeDefault)"
+  },
+  {
+   "technology": "T-Soft",
+   "pattern": "<a href=\"http://www\\.tsoft\\.com\\.tr\" target=\"_blank\" title=\"T-Soft E-ticaret Sistemleri\">"
+  },
+  {
+   "technology": "TWiki",
+   "pattern": "<img [^>]{0,250}(?:title|alt)=\"This site is powered by the TWiki collaboration platform"
+  },
+  {
+   "technology": "TYPO3",
+   "pattern": "TYPO3.{0,250}CMS"
+  },
+  {
+   "technology": "Tamago",
+   "pattern": "<link [^>]{0,250}href=\"http://tamago\\.temonalab\\.com"
+  },
+  {
+   "technology": "TargetX",
+   "pattern": "targetx_[a-z]{2,20}__[a-z]"
+  },
+  {
+   "technology": "TeamCity",
+   "pattern": "<span class=\"versionTag\"><span class=\"vWord\">Version</span> ([\\d\\.]+)"
+  },
+  {
+   "technology": "Tessitura",
+   "pattern": "<!--[^>]{1,250}Tessitura Version: (\\d*\\.\\d*\\.\\d*)?"
+  },
+  {
+   "technology": "The SEO Framework",
+   "pattern": "<!--[^>]{1,80}The SEO Framework by Sybre Waaijer"
+  },
+  {
+   "technology": "Thelia",
+   "pattern": "<(?:link|style|script)[^>]{1,250}/assets/frontOffice/"
+  },
+  {
+   "technology": "Tictail",
+   "pattern": "<link[^>]{0,250}tictail\\.com"
+  },
+  {
+   "technology": "TiddlyWiki",
+   "pattern": "<[^>]{0,250}type=[^>]text\\/vnd\\.tiddlywiki"
+  },
+  {
+   "technology": "Tilda",
+   "pattern": "<link[^>]{0,80} href=[^>]{1,80}tilda(?:cdn|\\.ws|-blocks)"
+  },
+  {
+   "technology": "Top Hat",
+   "pattern": "tophat\\.com"
+  },
+  {
+   "technology": "Totara Learn",
+   "pattern": "totara"
+  },
+  {
+   "technology": "Totara Learn",
+   "pattern": "totaralms"
+  },
+  {
+   "technology": "TouchNet",
+   "pattern": "class=\"tnet"
+  },
+  {
+   "technology": "TouchNet",
+   "pattern": "id=\"tnet"
+  },
+  {
+   "technology": "TouchNet",
+   "pattern": "marketplace\\.touchnet\\.com"
+  },
+  {
+   "technology": "TouchNet",
+   "pattern": "ucommerce"
+  },
+  {
+   "technology": "Trac",
+   "pattern": "<a id=\"tracpowered"
+  },
+  {
+   "technology": "Trac",
+   "pattern": "Powered by <a href=\"[^\"]{0,250}\"><strong>Trac(?:[ /]([\\d.]+))?"
+  },
+  {
+   "technology": "Transact Campus",
+   "pattern": "blackboard.{0,250}transact"
+  },
+  {
+   "technology": "Transact Campus",
+   "pattern": "campus\\.transact\\.com"
+  },
+  {
+   "technology": "Transact Campus",
+   "pattern": "class=\"transact"
+  },
+  {
+   "technology": "Transact Campus",
+   "pattern": "transact-campus"
+  },
+  {
+   "technology": "Transact Campus",
+   "pattern": "transact\\.com"
+  },
+  {
+   "technology": "Tribal Student Management",
+   "pattern": "tribal-ebs\\.com"
+  },
+  {
+   "technology": "Tribal Student Management",
+   "pattern": "tribal.{0,100}student.{0,100}management"
+  },
+  {
+   "technology": "Tumblr",
+   "pattern": "<iframe src=\"[^>]{1,250}tumblr\\.com"
+  },
+  {
+   "technology": "UIKit",
+   "pattern": "<[^>]{1,170}class=\"[^\"]{0,250}(?:uk-container|uk-section)"
+  },
+  {
+   "technology": "UltraCart",
+   "pattern": "<form [^>]{0,80}action=\"[^\"]{0,80}\\/cgi-bin\\/UCEditor\\?(?:[^\"]{0,80}&)?merchantId=[^\"]"
+  },
+  {
+   "technology": "Umbraco",
+   "pattern": "umbraco.{0,250}cms"
+  },
+  {
+   "technology": "Unicheck",
+   "pattern": "unicheck"
+  },
+  {
+   "technology": "Unit4 Student Management",
+   "pattern": "class=\"unit4"
+  },
+  {
+   "technology": "Unit4 Student Management",
+   "pattern": "coda.{0,250}student"
+  },
+  {
+   "technology": "Unit4 Student Management",
+   "pattern": "studentmanagement\\.unit4\\.com"
+  },
+  {
+   "technology": "Unit4 Student Management",
+   "pattern": "unit4"
+  },
+  {
+   "technology": "Unit4 Student Management",
+   "pattern": "unit4.{0,160}finance"
+  },
+  {
+   "technology": "Unit4 Student Management",
+   "pattern": "unit4.{0,250}student"
+  },
+  {
+   "technology": "Unit4 Student Management",
+   "pattern": "unit4\\.com"
+  },
+  {
+   "technology": "VP-ASP",
+   "pattern": "<a[^>]{1,200}>Powered By VP-ASP Shopping Cart</a>"
+  },
+  {
+   "technology": "Vanilla",
+   "pattern": "<body id=\"(?:DiscussionsPage|vanilla)"
+  },
+  {
+   "technology": "Veoxa",
+   "pattern": "<img [^>]{0,80}src=\"[^\"]{1,80}tracking\\.veoxa\\.com"
+  },
+  {
+   "technology": "Veracross",
+   "pattern": "veracross"
+  },
+  {
+   "technology": "VeriCite",
+   "pattern": "vericite"
+  },
+  {
+   "technology": "VidGrid",
+   "pattern": "vidgrid"
+  },
+  {
+   "technology": "Vigbo",
+   "pattern": "<link[^>]{0,80} href=[^>]{1,80}(?:\\.vigbo\\.com|\\.gophotoweb\\.com)"
+  },
+  {
+   "technology": "Vignette",
+   "pattern": "<[^>]{1,250}=\"vgn-?ext"
+  },
+  {
+   "technology": "VirtueMart",
+   "pattern": "<div id=\"vmMainPage"
+  },
+  {
+   "technology": "VitalSource Bookshelf",
+   "pattern": "bookshelf[^<>\\n]{0,300}vitalsource"
+  },
+  {
+   "technology": "VitalSource Bookshelf",
+   "pattern": "digital.{0,250}textbook"
+  },
+  {
+   "technology": "Volusion",
+   "pattern": "<body [^>]{0,250}data-vn-page-name"
+  },
+  {
+   "technology": "Volusion",
+   "pattern": "<link [^>]{0,80}href=\"[^\"]{0,80}/vspfiles/"
+  },
+  {
+   "technology": "Voog.com Website Builder",
+   "pattern": "<script [^>]{0,80}src=\"[^\"]{0,80}voog\\.com/tracker\\.js"
+  },
+  {
+   "technology": "W3 Total Cache",
+   "pattern": "<!--[^>]{1,80}W3 Total Cache"
+  },
+  {
+   "technology": "WEBDEV",
+   "pattern": "<!-- [a-zA-Z0-9_]{1,250} [\\d/]+ [\\d:]+ WebDev \\d\\d ([\\d.]+) -->"
+  },
+  {
+   "technology": "WP Accessibility",
+   "pattern": "wp-content/plugins/wp-accessibility/(?:toolbar/|js/(?:render-blocking-[0-9a-f]{32}\\.)?wpa-toolbar)"
+  },
+  {
+   "technology": "WP Rocket",
+   "pattern": "<!--[^>]{1,140}WP Rocket"
+  },
+  {
+   "technology": "WP-Optimize",
+   "pattern": "<!--[^>]{1,80}Cached by WP-Optimize"
+  },
+  {
+   "technology": "WP-Statistics",
+   "pattern": "<!-- Analytics by WP-Statistics v([\\d\\.]+)"
+  },
+  {
+   "technology": "WebSocket",
+   "pattern": "<(?:link|a)[^>]{1,250}href=[\"']wss?://"
+  },
+  {
+   "technology": "WebSocket",
+   "pattern": "<link[^>]{1,250}rel=[\"']web-socket[\"']"
+  },
+  {
+   "technology": "Webtrends",
+   "pattern": "<img[^>]{1,80}id=\"DCSIMG\"[^>]{1,80}webtrends"
+  },
+  {
+   "technology": "Welcart",
+   "pattern": "<!-- Welcart version : v([\\d.]+)"
+  },
+  {
+   "technology": "Welcart",
+   "pattern": "<link[^>]{1,80}?href=\"[^\"]{1,80}usces_default(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "Whooshkaa",
+   "pattern": "<iframe src=\"[^>]{1,250}whooshkaa\\.com"
+  },
+  {
+   "technology": "Widen Collective",
+   "pattern": "widen.{0,250}collective"
+  },
+  {
+   "technology": "Widen Collective",
+   "pattern": "widencollective"
+  },
+  {
+   "technology": "Wikinggruppen",
+   "pattern": "<!-- WIKINGGRUPPEN\\s([\\d\\.]+)"
+  },
+  {
+   "technology": "WikkaWiki",
+   "pattern": "Powered by <a href=\"[^>]{1,250}WikkaWiki"
+  },
+  {
+   "technology": "WileyPLUS",
+   "pattern": "plus\\.wiley"
+  },
+  {
+   "technology": "WileyPLUS",
+   "pattern": "wiley.{0,250}plus"
+  },
+  {
+   "technology": "WileyPLUS",
+   "pattern": "wileyplus"
+  },
+  {
+   "technology": "Wolf CMS",
+   "pattern": "(?:<a href=\"[^>]{1,80}wolfcms\\.org[^>]{1,80}>Wolf CMS(?:</a>)? inside|Thank you for using <a[^>]{1,80}>Wolf CMS)"
+  },
+  {
+   "technology": "WordPress Super Cache",
+   "pattern": "<!--[^>]{1,80}WP-Super-Cache"
+  },
+  {
+   "technology": "Workday Student",
+   "pattern": "workday[\\s_/-]{1,2}student"
+  },
+  {
+   "technology": "Workday Student",
+   "pattern": "workday\\s{1,3}student"
+  },
+  {
+   "technology": "WorldCat Discovery",
+   "pattern": "oclc[^<>\\n]{0,250}discovery"
+  },
+  {
+   "technology": "WorldCat Discovery",
+   "pattern": "worldcat[^<>\\n]{0,80}discovery"
+  },
+  {
+   "technology": "XAMPP",
+   "pattern": "<title>XAMPP(?: Version ([\\d\\.]+))?</title>"
+  },
+  {
+   "technology": "XMB",
+   "pattern": "<!-- Powered by XMB"
+  },
+  {
+   "technology": "XSLT",
+   "pattern": "<xsl[^>]{0,80} version=\"([^<>\\n]{1,80})\""
+  },
+  {
+   "technology": "XWiki",
+   "pattern": "<html[^>]data-xwiki-[^>]>"
+  },
+  {
+   "technology": "XenForo",
+   "pattern": "(?:jQuery\\.extend\\(true, XenForo|<a[^>]{1,80}>Forum software by XenForo™|<!--XF:branding|<html[^>]{1,80}id=\"XenForo\")"
+  },
+  {
+   "technology": "XenForo",
+   "pattern": "<html id=\"XF\" "
+  },
+  {
+   "technology": "Xeora",
+   "pattern": "<input type=\"hidden\" name=\"_sys_bind_\\d+\" id=\"_sys_bind_\\d+\" />"
+  },
+  {
+   "technology": "Xonic",
+   "pattern": "Powered by <a href=\"http://www\\.xonic-solutions\\.de/index\\.php\" target=\"_blank\">xonic-solutions Shopsoftware</a>"
+  },
+  {
+   "technology": "YUI Doc",
+   "pattern": "(?:<html[^>]{0,80} yuilibrary\\.com/rdf/[\\d.]+/yui\\.rdf|<body[^>]{1,80}class=\"yui3-skin-sam)"
+  },
+  {
+   "technology": "YaBB",
+   "pattern": "Powered by <a href=\"[^>]{1,250}yabbforum"
+  },
+  {
+   "technology": "Yahoo! Ecommerce",
+   "pattern": "<link[^>]{1,250}store\\.yahoo\\.net"
+  },
+  {
+   "technology": "Yahoo! Tag Manager",
+   "pattern": "<!-- (?:End )?Yahoo! Tag Manager -->"
+  },
+  {
+   "technology": "Yandex.Direct",
+   "pattern": "<yatag class=\"ya-partner__ads\">"
+  },
+  {
+   "technology": "Yii",
+   "pattern": "<!\\[CDATA\\[YII-BLOCK-(?:HEAD|BODY-BEGIN|BODY-END)\\]"
+  },
+  {
+   "technology": "Yii",
+   "pattern": "<input type=\"hidden\" value=\"[a-zA-Z0-9]{40}\" name=\"YII_CSRF_TOKEN\" \\/>"
+  },
+  {
+   "technology": "Yii",
+   "pattern": "Powered by <a href=\"http://www\\.yiiframework\\.com/\" rel=\"external\">Yii Framework</a>"
+  },
+  {
+   "technology": "Yoast SEO",
+   "pattern": "<!-- This site is optimized with the Yoast (?:WordPress )?SEO plugin v([^\\s]{1,80}) -"
+  },
+  {
+   "technology": "Yoast SEO",
+   "pattern": "<!-- This site is optimized with the Yoast SEO Premium plugin v(?:[^\\s]{1,80}) \\(Yoast SEO v([^\\s]{1,80})\\) -"
+  },
+  {
+   "technology": "Yoast SEO Premium",
+   "pattern": "<!-- This site is optimized with the Yoast SEO Premium plugin v([^\\s]{1,80}) "
+  },
+  {
+   "technology": "Yoast SEO for Shopify",
+   "pattern": "<!-- This site is optimized with Yoast SEO for Shopify -->"
+  },
+  {
+   "technology": "Yotpo Subscriptions",
+   "pattern": "<!-- BEGIN app block: shopify://apps/yotpo-subscriptions/blocks/app-embed-block"
+  },
+  {
+   "technology": "YouTrack",
+   "pattern": "data-reactid=\"[^\"]{1,250}\">youTrack ([0-9.]+)<"
+  },
+  {
+   "technology": "YouTrack",
+   "pattern": "no-title=\"YouTrack\">"
+  },
+  {
+   "technology": "YouTrack",
+   "pattern": "type=\"application/opensearchdescription\\+xml\" title=\"YouTrack\"/>"
+  },
+  {
+   "technology": "YuJa",
+   "pattern": "yuja.{0,250}enterprise"
+  },
+  {
+   "technology": "ZK",
+   "pattern": "<!-- ZK [.\\d\\s]{1,250}-->"
+  },
+  {
+   "technology": "ZURB Foundation",
+   "pattern": "<div [^>]{0,600}class=\"[^\"]{0,250}(?:small|medium|large)-\\d{1,2} columns"
+  },
+  {
+   "technology": "ZURB Foundation",
+   "pattern": "<link[^>]{1,120}foundation[^>\"]{1,120}css"
+  },
+  {
+   "technology": "Zabbix",
+   "pattern": "<body[^>]{1,250}zbxCallPostScripts"
+  },
+  {
+   "technology": "Zanox",
+   "pattern": "<img [^>]{0,80}src=\"[^\"]{1,80}ad\\.zanox\\.com"
+  },
+  {
+   "technology": "Zimbra",
+   "pattern": "zimbra"
+  },
+  {
+   "technology": "amCharts",
+   "pattern": "<svg[^>]{0,200}><desc>JavaScript chart by amCharts ([\\d.]*)"
+  },
+  {
+   "technology": "cPanel",
+   "pattern": "<!-- cPanel"
+  },
+  {
+   "technology": "eWAY Payments",
+   "pattern": "<img [^>]{0,80}src=\"[^/]{0,80}//[^/]{0,80}eway\\.com"
+  },
+  {
+   "technology": "gitlist",
+   "pattern": "<p>Powered by <a[^>]{1,250}>GitList ([\\d.]+)"
+  },
+  {
+   "technology": "gitweb",
+   "pattern": "<!-- git web interface version ([\\d.]+)?"
+  },
+  {
+   "technology": "iClicker",
+   "pattern": "\\bi(?:&gt;|[\\s_>-])?clicker"
+  },
+  {
+   "technology": "iClicker",
+   "pattern": "iclicker"
+  },
+  {
+   "technology": "iClicker",
+   "pattern": "reef[^<>\\n]{0,80}iclicker"
+  },
+  {
+   "technology": "ikiwiki",
+   "pattern": "<a href=\"/(?:cgi-bin/)?ikiwiki\\.cgi\\?do="
+  },
+  {
+   "technology": "ikiwiki",
+   "pattern": "<link rel=\"alternate\" type=\"application/x-wiki\" title=\"Edit this page\" href=\"[^\"]{0,250}/ikiwiki\\.cgi"
+  },
+  {
+   "technology": "jQuery-pjax",
+   "pattern": "<div[^>]{1,250}data-pjax-container"
+  },
+  {
+   "technology": "nopCommerce",
+   "pattern": "(?:<!--Powered by nopCommerce|Powered by: <a[^>]{1,250}nopcommerce)"
+  },
+  {
+   "technology": "ocStore",
+   "pattern": "<!--[^>]{1,80}ocStore(?:\\s([\\d\\.a-z]{1,80}))?"
+  },
+  {
+   "technology": "osCommerce",
+   "pattern": "<(?:input|a)[^>]{1,250}name=\"osCsid\""
+  },
+  {
+   "technology": "osCommerce",
+   "pattern": "<(?:tr|td|table)class=\"[^\"]{0,250}infoBoxHeading"
+  },
+  {
+   "technology": "osCommerce",
+   "pattern": "<br />Powered by <a href=\"https?://www\\.oscommerce\\.com"
+  },
+  {
+   "technology": "otrs",
+   "pattern": "<!--\\s{1,250}OTRS: Copyright"
+  },
+  {
+   "technology": "ownCloud",
+   "pattern": "<a href=\"https://owncloud\\.com\" target=\"_blank\">ownCloud Inc\\.</a><br/>Your Cloud, Your Data, Your Way!"
+  },
+  {
+   "technology": "papaya CMS",
+   "pattern": "<link[^>]{0,250}/papaya-themes/"
+  },
+  {
+   "technology": "phpAlbum",
+   "pattern": "<!--phpalbum ([.\\d\\s]{1,250})-->"
+  },
+  {
+   "technology": "phpBB",
+   "pattern": "<[^>]{1,250}styles/(?:sub|pro)silver/theme"
+  },
+  {
+   "technology": "phpBB",
+   "pattern": "<div class=phpbb_copyright>"
+  },
+  {
+   "technology": "phpBB",
+   "pattern": "<img[^>]{1,250}i_icon_mini"
+  },
+  {
+   "technology": "phpBB",
+   "pattern": "<table class=\"[^\"]{0,250}forumline"
+  },
+  {
+   "technology": "phpBB",
+   "pattern": "Powered by <a[^>]{1,250}phpBB"
+  },
+  {
+   "technology": "phpDocumentor",
+   "pattern": "<!-- Generated by phpDocumentor"
+  },
+  {
+   "technology": "phpMyAdmin",
+   "pattern": "!\\[CDATA\\[[^<]{0,250}PMA_VERSION:\\\"([\\d.]+)"
+  },
+  {
+   "technology": "phpMyAdmin",
+   "pattern": "(?: \\| phpMyAdmin ([\\d.]+)<\\/title>|PMA_sendHeaderLocation\\(|<link [^>]{0,80}href=\"[^\"]{0,80}phpmyadmin\\.css\\.php)"
+  },
+  {
+   "technology": "phpPgAdmin",
+   "pattern": "(?:<title>phpPgAdmin</title>|<span class=\"appname\">phpPgAdmin)"
+  },
+  {
+   "technology": "phpwind",
+   "pattern": "(?:Powered|Code) by <a href=\"[^\"]{1,250}phpwind\\.net"
+  },
+  {
+   "technology": "pirobase CMS",
+   "pattern": "<(?:script|link)[^>]/site/[a-z0-9/._-]{1,250}/resourceCached/[a-z0-9/._-]"
+  },
+  {
+   "technology": "pirobase CMS",
+   "pattern": "<input[^>]{1,250}cbi:///cms/"
+  },
+  {
+   "technology": "prettyPhoto",
+   "pattern": "(?:<link [^>]{0,120}href=\"[^\"]{0,250}prettyPhoto(?:\\.min)?\\.css|<a [^>]{0,350}rel=\"prettyPhoto)"
+  },
+  {
+   "technology": "punBB",
+   "pattern": "Powered by <a href=\"[^>]{1,250}punbb"
+  },
+  {
+   "technology": "scrollreveal",
+   "pattern": "<[^>]{1,250}data-sr(?:-id)"
+  },
+  {
+   "technology": "uKnowva",
+   "pattern": "<a[^>]{1,200}>Powered by uKnowva</a>"
+  },
+  {
+   "technology": "user.com",
+   "pattern": "<div[^>]{1,250}/id=\"ue_widget\""
+  },
+  {
+   "technology": "vBulletin",
+   "pattern": "<div id=\"copyright\">Powered by vBulletin"
+  },
+  {
+   "technology": "wpCache",
+   "pattern": "<!--[^>]{1,110}wpCache"
+  },
+  {
+   "technology": "xCharts",
+   "pattern": "<link[^>]{0,80} href=\"[^\"]{0,140}xcharts(?:\\.min)?\\.css"
+  },
+  {
+   "technology": "xtCommerce",
+   "pattern": "<div class=\"copyright\">[^<]{1,80}<a[^>]{1,80}>xt:Commerce"
+  }
+ ]
+}

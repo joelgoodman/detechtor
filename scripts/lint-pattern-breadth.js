@@ -281,7 +281,45 @@ for (const p of blindSpotProblems) console.log(`BLIND SPOT ${p}`);
 for (const p of allowProblems) console.log(`ALLOWLIST  ${p}`);
 for (const p of overrideProblems) console.log(`OVERRIDE   ${p.name}: ${p.problem}`);
 
-const failures = violations.length + allowProblems.length + overrideProblems.length + blindSpotProblems.length;
-console.log(`\n${violations.length} violation(s) (${new Set(violations.map((v) => v.tech)).size} technologies) -- ${allowProblems.length} allowlist problem(s) -- ${overrideProblems.length} override problem(s) -- ${blindSpotProblems.length} blind-spot problem(s)`);
+// ---------------------------------------------------------------------------------------------
+// Coverage: every html regex the engine LOADS must have a measurement
+// ---------------------------------------------------------------------------------------------
+// The checks above iterate the artifact, so a regex added or rewritten after the last `npm run
+// breadth` was never judged and passed by default. An unmeasured regex now fails, unless it is in
+// docs/pattern-breadth-unmeasured.json -- the backlog of regexes that were unmeasured when this
+// check arrived (a ratchet: an entry that is measured or no longer loaded is stale and fails, so
+// the list only shrinks). The cure for a failure is `npm run breadth` (needs the corpus), then
+// fixing whatever it finds; adding to the backlog is visible in review and should be rare.
+// On by default for the real artifact; fixture runs (--breadth) test thresholds and opt in with
+// --coverage.
+const COVERAGE = !process.argv.includes('--breadth') || process.argv.includes('--coverage');
+const coverageProblems = [];
+let unmeasuredBacklog = 0;
+if (COVERAGE) {
+  const backlogPath = argPath('--unmeasured', 'docs/pattern-breadth-unmeasured.json');
+  const backlog = fs.existsSync(backlogPath) ? JSON.parse(fs.readFileSync(backlogPath, 'utf8')).entries || [] : [];
+  const { loadEffective, enumerateRegexes } = require('./lib/pattern-channels.js');
+  const loaded = new Set();
+  for (const r of enumerateRegexes(loadEffective())) if (r.channel === 'html') loaded.add(JSON.stringify([r.tech, r.pattern]));
+  const measured = (key) => { const [t, re] = JSON.parse(key); return !!(breadth.patterns[t] && breadth.patterns[t].html && re in breadth.patterns[t].html); };
+  const inBacklog = new Set(backlog.map((e) => JSON.stringify([e.technology, e.pattern])));
+  for (const key of [...loaded].sort()) {
+    if (measured(key)) continue;
+    if (inBacklog.has(key)) { unmeasuredBacklog++; continue; }
+    const [t, re] = JSON.parse(key);
+    coverageProblems.push(`${t} :: ${JSON.stringify(re)} has no measurement in ${path.relative(ROOT, breadthPath)} -- run \`npm run breadth\``);
+  }
+  for (const key of inBacklog) {
+    const [t, re] = JSON.parse(key);
+    if (!loaded.has(key)) coverageProblems.push(`backlog entry ${t} :: ${JSON.stringify(re)} is no longer loaded -- stale, remove it`);
+    else if (measured(key)) coverageProblems.push(`backlog entry ${t} :: ${JSON.stringify(re)} is measured now -- stale, remove it`);
+  }
+  console.log(`coverage: ${loaded.size} loaded html regexes, ${loaded.size - unmeasuredBacklog - coverageProblems.filter((p) => !p.startsWith('backlog')).length} measured, ` +
+    `${unmeasuredBacklog} unmeasured in the backlog (${path.relative(ROOT, backlogPath)}), artifact generated ${breadth.generated || '?'}`);
+  for (const p of coverageProblems) console.log(`COVERAGE   ${p}`);
+}
+
+const failures = violations.length + allowProblems.length + overrideProblems.length + blindSpotProblems.length + coverageProblems.length;
+console.log(`\n${violations.length} violation(s) (${new Set(violations.map((v) => v.tech)).size} technologies) -- ${allowProblems.length} allowlist problem(s) -- ${overrideProblems.length} override problem(s) -- ${blindSpotProblems.length} blind-spot problem(s) -- ${coverageProblems.length} coverage problem(s)`);
 
 if (GATE && failures > 0) process.exit(1);

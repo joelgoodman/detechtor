@@ -8,11 +8,10 @@
     "detechtor": "./cli.js"
   },
   "scripts": {
-    "test": "node scripts/lint-generated.js --gate && node scripts/lint-patterns.js --fail-curated && node scripts/lint-dom-rules.js --gate && node scripts/category-audit.js --gate && node scripts/lint-pattern-breadth.js --gate && node scripts/lint-pattern-cost.js --gate && node --test tests/*.test.js && node scripts/test-patterns.js",
+    "test": "node scripts/lint-generated.js --gate && node scripts/lint-patterns.js --fail-curated && node scripts/lint-dom-rules.js --gate && node scripts/category-audit.js --gate && node scripts/lint-ledger-categories.js --gate && node scripts/lint-script-negcorpus.js --gate && node scripts/lint-pattern-breadth.js --gate && node scripts/lint-pattern-cost.js --gate && node --test tests/*.test.js && node scripts/test-patterns.js",
     "lint:generated": "node scripts/lint-generated.js",
     "lint:patterns": "node scripts/lint-patterns.js",
     "lint:patterns:gate": "node scripts/lint-patterns.js --fail-curated",
-    "test:audit": "node scripts/audit-patterns.js",
     "test:regression": "node scripts/regression-test.js",
     "test:regression:dry": "node scripts/regression-test.js --dry-run",
     "scan": "node cli.js",
@@ -30,6 +29,8 @@
     "emit-dictionary": "node scripts/emit-dictionary.js",
     "test:tiered": "node scripts/tiered-regression.js --assert",
     "audit:categories": "node scripts/category-audit.js",
+    "lint:ledger-categories": "node scripts/lint-ledger-categories.js",
+    "lint:negcorpus": "node scripts/lint-script-negcorpus.js",
     "audit:nametoken": "node scripts/category-nametoken-audit.js",
     "prevalence": "node scripts/corpus-prevalence.js",
     "audit:coverage": "node scripts/category-coverage.js",

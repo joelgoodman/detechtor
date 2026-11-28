@@ -28,27 +28,34 @@ const path = require('path');
 const { checkDomRules, admittedDomRules, isOverBroadRule } = require('../src/dom-rules.js');
 const { normalizeDefinition, hasModifier } = require('../src/pattern-normalize.js');
 
+const config = require('../src/config.js');
+
 const ROOT = path.resolve(__dirname, '..');
-const PATTERNS_DIR = path.join(ROOT, 'patterns');
 const CURATED_RE = /(higher-ed-|general-analytics-extensions|fediverse-social)/;
 const GATE = process.argv.includes('--gate');
+// The files the engine loads (src/config.js patternPaths), the generated base included. This lint
+// used to read the top level of patterns/ and so lost the base when it moved to patterns/generated/
+// (it saw 5 technologies with dom rules; the base has ~1,450).
+const FILES = config.patternPaths.map((p) => path.resolve(ROOT, 'src', p));
 
 const structural = [];
 const breadth = [];
 const modifiers = [];   // on-disk values still carrying an upstream modifier (UNI-226)
 
-for (const file of fs.readdirSync(PATTERNS_DIR).filter((f) => f.endsWith('.json'))) {
-  if (file === 'dom-rule-denylist.json') continue;
+let domTechs = 0;
+for (const abs of FILES) {
+  const file = path.relative(path.join(ROOT, 'patterns'), abs);
   const curated = CURATED_RE.test(file);
   let data;
   try {
-    data = JSON.parse(fs.readFileSync(path.join(PATTERNS_DIR, file), 'utf8'));
+    data = JSON.parse(fs.readFileSync(abs, 'utf8'));
   } catch (e) {
     structural.push({ file, tech: '(file)', kind: 'json', message: e.message });
     continue;
   }
   for (const [tech, def] of Object.entries(data.technologies || data)) {
     if (tech === '_metadata' || !def || typeof def !== 'object' || def.dom === undefined) continue;
+    domTechs++;
 
     // UNI-226: lint what the ENGINE will see, not the raw file. The engine strips upstream
     // `\;confidence:NN` / `\;version:\1` suffixes at load, so linting the raw value would report
@@ -77,7 +84,11 @@ for (const file of fs.readdirSync(PATTERNS_DIR).filter((f) => f.endsWith('.json'
 
 const curatedBreadth = breadth.filter((b) => b.curated);
 
-console.log(`dom rule lint — ${structural.length} structural, ${breadth.length} breadth ` +
+if (domTechs < 100) {
+  console.error(`FATAL: only ${domTechs} technologies with dom rules in ${FILES.length} files -- the generated base is not being read`);
+  process.exit(2);
+}
+console.log(`dom rule lint — ${FILES.length} files, ${domTechs} technologies with dom rules — ${structural.length} structural, ${breadth.length} breadth ` +
   `(${curatedBreadth.length} in curated files), ${modifiers.length} carrying on-disk modifiers`);
 
 if (modifiers.length) {
