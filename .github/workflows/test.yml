@@ -22,4 +22,9 @@ jobs:
       - run: npm ci
         env:
           PUPPETEER_SKIP_DOWNLOAD: 'true'
+      # lint-pattern-cost measures wall-clock time per regex on 1 MB inputs; its 250 ms budget was set on
+      # a machine two to three times faster than a hosted runner (scripts/lib/cost-gate.js). The static
+      # wildcard ban is unaffected, and a quadratic pattern takes seconds, far over this.
       - run: npm test
+        env:
+          PATTERN_COST_BUDGET_MS: '1000'
