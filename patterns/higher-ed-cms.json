@@ -127,7 +127,7 @@
     "higher_ed": true,
     "confidence": 95,
     "website": "https://moderncampus.com/solutions/cms/",
-    "_hosts": ["omniupdate.com"],
+    "_hosts": ["omniupdate.com", "moderncampus.net"],
     "_legacy_names": [
       "OmniCMS",
       "OmniUpdate",
