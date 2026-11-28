@@ -125,3 +125,12 @@ test('a comment or style opener inside an inline script is not stripped', () => 
   const html = '<script>document.write("<!--"); var umbraco = "<style>";</script><p>after</p><!-- <p>gone</p> -->';
   assert.strictEqual(htmlForMatching(html), '<script>document.write("<!--"); var umbraco = "<style>";</script><p>after</p> ');
 });
+
+test('a style block keeps the URLs it loads: WordPress block CSS is WordPress', () => {
+  const css = '<style id="wp-block-paragraph-inline-css">.is-small-text{font-size:.875em}\n' +
+    '/*# sourceURL=https://www.riverside.edu/wp/wp-includes/blocks/paragraph/style.min.css */\n</style>';
+  assert.ok(find(page(css), 'WordPress'), 'sourceURL under /wp-includes/');
+  const font = '<style>@font-face{font-family:x;src:url("/wp-content/themes/riverside/fonts/x.woff2") format("woff2")}</style>';
+  assert.ok(find(page(font), 'WordPress'), 'a font under /wp-content/');
+  assert.strictEqual(htmlForMatching('<style>.fa-umbraco{x:url(data:font/woff2;base64,AAAA)}</style>').trim(), '');
+});

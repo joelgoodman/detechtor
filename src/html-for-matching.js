@@ -24,7 +24,8 @@ const SCRIPT_CLOSE = /<\/script\s*>/gi;
 const COMMENTED_MARKUP = /<[a-zA-Z\/!]/;
 
 /**
- * Remove every `<style>…</style>` block and every `<!-- … -->` comment that holds markup. Inline `<script>` text is
+ * Replace every `<style>…</style>` block with the URLs it loads, and remove every `<!-- … -->`
+ * comment that holds markup. Inline `<script>` text is
  * skipped over untouched: it is evidence, and a `<!--` or `<style>` inside a script string is not a
  * comment or a style block. Linear: each character is visited a bounded number of times. An
  * unterminated block or comment is left in place (the rest of the document is kept rather than
@@ -64,12 +65,31 @@ function htmlForMatching(html) {
       const close = STYLE_CLOSE.exec(html);
       if (!close) break;
       end = close.index + close[0].length;
+      out += html.slice(from, start) + ' ' + stylesheetUrls(html.slice(start, end)) + ' ';
+      from = end;
+      OPEN.lastIndex = end;
+      continue;
     }
     out += html.slice(from, start) + ' ';
     from = end;
     OPEN.lastIndex = end;
   }
   return from === 0 ? html : out + html.slice(from);
+}
+
+// What a stylesheet loads is the page's own: a font under /wp-content/, WordPress's inlined block CSS
+// with its `sourceURL=/wp-includes/…` (cohort 143: 3750, 672, 3975 are WordPress sites whose only
+// html trace is there). Selectors are not (`.fa-umbraco`, `.sqs-block-button-element`).
+const CSS_URL = /url\(\s*['"]?([^'")\s]{1,500})|@import\s+['"]([^'"]{1,500})|sourceURL=([^\s*]{1,500})/gi;
+function stylesheetUrls(block) {
+  const urls = [];
+  CSS_URL.lastIndex = 0;
+  let u;
+  while ((u = CSS_URL.exec(block)) !== null) {
+    const v = u[1] || u[2] || u[3];
+    if (v && !/^data:/i.test(v)) urls.push(v);
+  }
+  return urls.join(' ');
 }
 
 /** True when an html rule names a comment or a style block itself, so it must see the raw page. */
