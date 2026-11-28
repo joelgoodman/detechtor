@@ -37,8 +37,11 @@ test('a `force` rule on https://x.edu/js/workforce.js matches in the path, off t
 
 test('Ghost on www.ghostplugins.dev is not Ghost\'s host', () => {
   const html = '<script src="https://www.ghostplugins.dev/static/ghost-embed.js"></script>';
-  const t = find(detect(REAL, html, 'https://www.example.edu/'), 'Ghost');
-  assert.ok(t, 'the Ghost script rule still fires (rules are unchanged)');
+  // The real Ghost script rule `ghost` was removed for exactly this match (2026-11-15 review, finding 1); the
+  // old rule is kept here on a synthetic engine to pin how an off-vendor match is reported.
+  const e = engineWith({ Ghost: { website: 'https://ghost.org', scriptSrc: ['ghost'], categories: ['CMS'] } });
+  const t = find(detect(e, html, 'https://www.example.edu/'), 'Ghost');
+  assert.ok(t, 'the synthetic Ghost script rule fires');
   const m = t.matches.find((x) => x.channel === 'Script');
   assert.strictEqual(m.host, 'www.ghostplugins.dev');
   assert.strictEqual(m.vendorHost, false);
