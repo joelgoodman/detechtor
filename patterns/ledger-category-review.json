@@ -1,0 +1,5964 @@
+{
+ "_comment": "Reviewed ledger categories, read by scripts/lint-ledger-categories.js (see its header). One entry per technology the engine files under CMS, CRM, Marketing Automation, Chatbot, Accessibility or Site Search with a script, meta or dom rule, plus entries that record a reviewed \"no\". ledger_categories is what the review says. status: reviewed (a person decided), agent-reviewed (an agent review named in reviewer; a person has not confirmed it), unreviewed. A new technology in the six, a changed category, or an unreviewed technology that produced ledger rows fails npm test. Built 2026-11-27 from the engine at main and the 2026-11 detection review (speedyu-data/detechtor-review-2026-11/evidence).",
+ "technologies": {
+  "11Sight": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "1C-Bitrix": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "42Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "4Partners CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "6Valley eCommerce CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "a-blog cms": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "AbhiCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "accessiBe": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "accessiBe accessibility overlay, loaded from acsbapp.com / accessibe.com. Overlay — NEGATIVE signal (UNI-137).",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Accessible360": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "Accessibly": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "Acoustic Campaign": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. IBM/Acoustic Campaign (formerly Silverpop Engage) — identified by the co-branding meta tag namespace 'com.silverpop.*' (brandeddomains/cothost) that Silverpop/A",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Acquia Campaign Factory": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Acquia Site Studio": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Acquire Live Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Act-On": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Act-On is a cloud-based SaaS product for marketing automation.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Actito": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Active Campaign": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. ActiveCampaign hosted-forms domain activehosted.com. The bare activecampaign.com host scored zero hits and was dropped.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Ada": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Ada is an automated customer experience company that provides chat bots used in customer support.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Adabra": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Adally": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "AddSearch": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "AddSearch hosted site search service",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "AdminBuy": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Adobe Experience Manager": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Adobe Experience Manager (AEM) content management / digital experience platform.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Adobe Experience Manager Franklin": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Agility CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Agility CMS is an enterprise-level content management system provider offering scalable solutions for managing digital content across multiple platforms.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "AI LOG": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Aimbase": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Aimerce": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Aimtell": {
+   "ledger_categories": [],
+   "status": "agent-reviewed",
+   "what_it_is": "not MA: web/mobile push-notification tool. Aimtell is a cloud-hosted marketing platform that allows digital marketers and businesses to deliver web-based push notifications.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "AINIRO": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Airship": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Airship CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "AiTrillion": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Akero": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Aksara CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Alboom Prosite": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Algolia": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Algolia hosted search API",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Alive5": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Alive5 is a unified inbox for teams, handling SMS, web chat, and social conversations. It was formerly known as Website Alive.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "All in One Accessibility": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "All in One Accessibility is a website accessibility widget developed by Skynet Technologies to enhance compliance with WCAG 2.0, 2.1, 2.2, and ADA accessibility",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "AllClients": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Allyable": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "Allyant": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "Alohome": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Altis": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "AlvandCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Ametys": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Amiro.CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Amplience": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "AnimalChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Antee IPO": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ApexChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "ApexChat managed live-chat service, fingerprinted via its dedicated 'apexchat_' CSS id/cookie-name prefix (e.g. apexchat_default, apexchat_tab_invitation, apexc",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Apisearch": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Appjustable": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Apple Business Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "AquilaCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Arc XP": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ArrowChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Art Schema": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "AskSpot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Athena Search": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Atlasmic": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Attentive": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "borderline MA: SMS marketing. Attentive is a personalised mobile messaging platform that helps retail & ecommerce brands acquire, retain, and interact with mobile shoppers.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Attraqt": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "AudioEye": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "AudioEye accessibility overlay/remediation widget, loaded from audioeye.com / cdn.audioeye.com. Overlay-class tool — NEGATIVE signal (UNI-137): automated overla",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Automatic Members": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "AutomaticSales": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Automizely": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Auxilia": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Aweber": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. AWeber is an email marketing service.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Awesomplete": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Azko CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Azure Cognitive Search": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Microsoft Azure Cognitive Search",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Azuriom": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "B2Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Backdrop": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Baidu Search Box": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Banshee": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "BaseKit": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Batflat": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Beacons": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Beehiiv": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Beehiiv RSS feed": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Bento": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Bentobox": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Better Search": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Better Search is a WordPress plugin designed to enhance your search experience.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "BetterBot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "BIGACE": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "BirdSeed": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Blackbaud CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Blackboard Web Community Manager": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Blinger": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Blip": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Bloomreach Discovery": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Bludit": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Bluecore": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "BoatChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Bold Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "BoldChat (LogMeIn) live-chat widget, loaded from vmss.boldchat.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Bolt CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "BOOM": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Boost.ai": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Botmind": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "BotPenguin": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Brainlead": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "BrandBuilderAI": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Braze": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Bricksite": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Bronto": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Brownie": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "BrowserCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Brushd": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Builder.io": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Business Catalyst": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ButterCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "BuzzBuilder": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "BySide": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Caisy": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Callbell": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Campaign Monitor": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Cantrip": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Capacity": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Caramella": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Carbonmade": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Cargo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Carrd": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "CartKit": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Carts Guru": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "CasaSoft": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Cascade CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Catylist": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "CEMax": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Cendyn": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Centribal": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chameleon system": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Chaport": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Chaport is a multi-channel live chat and chatbot software for business.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Chatbaby": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chatbase": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Chatbase is an AI chatbot builder, it trains ChatGPT on your data and lets you add a chat widget to your website.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "ChatBot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "ChatBot is a framework for AI chatbots, enabling users to create chatbots for various web services.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "ChatBotBuilder": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "ChatGen": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chatgo": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chatify": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chative": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "ChatLab": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chatlio": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chatlyn": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "ChatNode": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chatra": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Chatra is a cloud-based live chat platform aimed at small businesses and ecommerce retailers.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Chatroll": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chatsimple": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chatway": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "ChatWith.io": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chaty": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Chayns": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Chord": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Citizen Space": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Ckan": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Clarivoy": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Clearstream": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "ClickChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "ClickDimensions": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. ClickDimensions is a SaaS marketing automation platform built on the Microsoft Windows Azure platform.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Cliengo": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Client Chat Live": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Clientacquisition": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Clientify": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Clinic Sites": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Clonando": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "CloudCannon": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Cloudrexx": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Cludo": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Cludo intelligent site search",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "CMS Caddy": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "CMS Made Simple": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "CMSimple": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Cnvert": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Coaster CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "COCON": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Collect.chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "CometChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Comm100": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Comm100 live-chat widget, loaded from vue.comm100.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Concrete CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). ",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Conferbot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Congressus": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Connectif": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Constant Contact": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Constant Contact signup-widget CDN (static.ctctcdn.com) plus the constantcontact.com host, which also covers the 'email marketing by Constant Contact' footer br",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Contao": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Contao is an open source CMS that allows you to create websites and scalable web applications.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Contenido": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Contensis": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). ",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "ContentBox": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Contentful": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Contento": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Contentstack": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "headless CMS detected only through an asset/API host. Contentstack is a headless CMS software designed to help businesses deliver personalised content experiences to audiences via multiple channels.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Control": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ConvertKit": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "ConvertoBot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Convincely": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Convrrt": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Copilot.Live": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Cordial": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Corebine": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "CoreMedia Content Cloud": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Cornerstone": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "CoRover": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Cosmic": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Cotonti": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Coveo": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Coveo enterprise search platform",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "CPG Dragonfly": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Craftum": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Creatium": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Crisp": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Crisp live-chat widget, loaded from client.crisp.chat.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "CRM+": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "CrownPeak": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "CUE": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Customer.io": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Customer.io is an automated messaging platform for marketers.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Czater": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Danneo CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Dashly": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "DataLife Engine": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Datascape": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "DatoCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "headless CMS detected only through an asset/API host. DatoCMS is a cloud-based headless Content as a service (CaaS) platform created to work with static websites, mobile apps and server-side applications of any kin",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "DedeCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Delivra": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Delivra is a premium email marketing tracking software.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Delta Media": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Desku": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Developing Azerbaijan": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "DevRev": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Dialogflow": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Google Dialogflow Messenger web-component chat widget, identified by the df-messenger custom element / its CSS custom properties (--df-messenger-*).",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "DialogShift": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Dina Kunder": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Divhunt": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Django CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "DM Polopoly": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "DNN": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). ",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Doctor.com": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Doofinder": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Doppler": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Dorik AI": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Dotdigital": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "same product, second name: rebrand/alias firing as a separate technology. Dotdigital is an all-in-one cloud-based customer engagement multichannel marketing platform.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "dotdigital Engagement Cloud": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "DotGo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Dr. Leonardo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Drift": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Drift conversational-marketing chat widget, loaded from js.driftt.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Drip": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Drip is a marketing automation platform built for ecommerce.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Droxit": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "Droxy": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Droz Bot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Drupal": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Drupal open-source content management system. Curated override of the base WebAppAnalyzer entry — replaces its bare 'drupal' html literal, which matches Font Aw",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Duda": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Duopana": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Dynamicweb": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "e-goi": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "E-monsite": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "e107": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "EasyLiao": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Ebasnet": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "eGain Conversation": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Ektron CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Elasticsearch": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Elasticsearch distributed search and analytics engine",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "ElasticSuite": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Elcom": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Eleanor CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Element": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Element451": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Element451 — a higher-ed admissions CRM/marketing platform, fingerprinted via its brand token appearing in dedicated markers: the wp-element451-events WordPress",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Elexio": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Elgg": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "EliseAI": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Ellucian CRM Recruit": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Ellucian CRM Recruit is a comprehensive solution that supports your entire recruiting and admissions lifecycle.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Eloqua": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Oracle Eloqua tracking-pixel host en25.com (Eloqua's legacy Engage25 asset domain — img.en25.com/i/elqCfg.min.js), distinct from the bare eloqua.com word which ",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Emaileri": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Emarsys": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Emma": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Emma (by Marigold) email/signup-form host e2ma.net — higher-ed-priority vendor, HE-specific email marketing platform for advancement/alumni offices.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Engaga": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "EngagementHQ": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Engati": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Enjin CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Enonic": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "EnrollmentRx": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Enterprise Bot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Envoke": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Envoke is a CASL-compliant email marketing software designed for communications professionals in business, education, and the public sector, with a focus on sec",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Envybox": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "EqualWeb": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "EqualWeb accessibility overlay, loaded from cdn.equalweb.com / access.equalweb.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "eSputnik": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Essent SiteBuilder Pro": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "eSSENTIAL Accessibility": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "eSyndiCat": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Excel Impact": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "experiencedCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ExpertRec": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "eZ Publish": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Facebook Chat Plugin": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Fact Finder": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "FAST ESP": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "FAST Search for SharePoint": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Fastmind": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Feathr": {
+   "ledger_categories": [],
+   "status": "agent-reviewed",
+   "what_it_is": "not MA: ad-tech / lead-gen / attribution / call tracking / feed management. Feathr is a suite of digital marketing tools designed specifically for event organizers, facilitating targeted outreach and audience engagement.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Finalsite": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Finalsite school website platform",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Findberry": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Findify": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Firepush": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Flashchat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Flazio": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "FlexCMP": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Flexmls": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "FlipBuilder": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Flipping Pro CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Flipsite": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Floatbot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Fomo": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Forethought AI": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Fork CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Format": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Freshchat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Freshchat (Freshworks) messaging widget, loaded from wchat.freshchat.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Freshdesk": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Freshworks CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Froged": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Front AI": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Front Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Front Chat is the live website chat solution that you can manage straight from your inbox.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Funnelback": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Funnelback enterprise search platform (Squiz Search)",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Gannett CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Gecko Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Geniee Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Get Siimple": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "GetButton": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "GetChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "GetResponse": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "GetSimple CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Ghost": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Ghost publishing platform",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Gladly": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Gleen": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Glia": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Gnuboard": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Gobot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "GoDaddy Website Builder": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). ",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Goftino": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Goodsearch": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Google Custom Search": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Google Custom Search Engine",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Google Sites": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Goope": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "govCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Graffiti CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "GraphCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Grav": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Grav is a modern, open-source flat-file CMS designed for speed and flexibility, enabling easy website creation and management without needing a database.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Gravity": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "GreatPages": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Green Valley CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Griddo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Griddo is an Martech Experience Platform for creating custom digital experiences.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "GroovePages": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "GroupBy": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "GrowSurf": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "GX WebManager": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Halo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "HappyFox Live Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "HappyFox is a help desk ticketing system that is hosted on cloud, supporting multiple customer support channels like email, voice and live chat.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Haptik": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Hatena Blog": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Help Scout": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Help Scout is a customer service platform including email, a knowledge base tool and live chat.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Heroic": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Higher Logic": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Higher Logic is a digital marketing solution provider, formerly known as Informz.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "HighLevel": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "borderline CRM: agency marketing platform, detected via chat widget. HighLevel is an all-in-one marketing and automation platform designed for marketing agencies and small businesses to manage CRM, marketing campaigns, sales funn",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "HikeOrders": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "Hinza Advanced CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Hocalwire": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Holduix CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Homestead": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Hostinger Horizons": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Hostinger Website Builder": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Hosttech Website Creator": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Hotaru CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Hubb": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "HubSpot": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. HubSpot tracking/forms/lead-flow loader suite, served from HubSpot's dedicated hs-* subdomains (hs-scripts.com analytics/tracking loader, hsforms.net forms embe",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "HubSpot Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "HubSpot Chat is a tool where you can view, manage, and reply to incoming messages from multiple channels.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "HubSpot CMS Hub": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). HubSpot CMS Hub — the content-hosting product, distinct from generic HubSpot marketing/forms/chat embeds (tracked separately as Marketing Automation in higher-e",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "HubSpot for Education": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "duplicate / not a product: \"same tracking signal as HubSpot (MA); \"\"HubSpot for Education\"\" is not a HubSpot product name\". HubSpot CRM optimized for education",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Huggy": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Hushly": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "i-motor": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "iAdvize": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Ibexa DXP": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "iEXExchanger": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "iHomefinder IDX": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "imperia CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ImpressCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ImpressPages": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Inblog": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Indexhibit": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Influx CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "InforUMobile": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Infront": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Ingeniux CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Ingeniux content management system for higher education.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Insightly CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Insightly CRM is a cloud-based customer relationship management software, helps businesses manage leads, contacts, and opportunities, track customer interaction",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Instabot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "InstantCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Instapage": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "InSyncai": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "InSyncai offers a conversational platform for enterprises to design and build chatbots having applications in customer support and services.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Interakt": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Intercom": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Intercom Messenger widget, loaded from widget.intercom.io / js.intercomcdn.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Invision Community": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ISAY": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "iScripts": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "iSina Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "It'seeze": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Iterable": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Ivory Search": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Ivory Search is a WordPress search plugin that improves WordPress search by providing advanced options to extend search or exclude specific content from search.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "iWiki": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Jacklist": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Jadu": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). The Jadu Digital Platform provides the foundation of accessible, responsive and award-winning Websites, Forms, CRM and Portal solutions.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Jahia DX": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Jalios": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Jeeng": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Jenny": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Jitsi": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "JivoChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "JivoChat is a live chat solution for websites offering customizable web and mobile chat widgets.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Joinchat": {
+   "ledger_categories": [],
+   "status": "agent-reviewed",
+   "what_it_is": "Joinchat is a tool that enables businesses to convert customer conversations into sales or leads through integrated communication features.",
+   "reviewer": "2026-11 detection review findings (agent)",
+   "date": "2026-11-15",
+   "known_mismatch": "a WhatsApp click-to-chat button, not a chat or chatbot product (2026-11 detection review findings); the category correction is in the proposed engine category-corrections batch, not made yet (2026-11-27)"
+  },
+  "Joomla": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Joomla open-source content management system. Curated override of the base WebAppAnalyzer entry — replaces its bare 'joomla' html literal, which matches Font Aw",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "JouwWeb": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Juvo Leads": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "K-Sup": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Kapture CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Kartra": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Kasika": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Keap": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Keap offers an email marketing and sales platform for small businesses, including products to manage customers, customer relationship management, marketing, and",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Kentico": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Kentico digital experience platform / CMS.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Klara": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Klaviyo": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "borderline MA: e-commerce marketing (store, not institution marketing). Klaviyo is an email marketing platform for online businesses.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Kleer": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Klevu": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "KlickTipp": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Knock Knock App": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Koala": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Koala Framework": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Koken": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Kommand": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Komodo CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Kontent.ai": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Koobi": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Kooboo CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Kotisivukone": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Kreatio": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Krible": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Kustomer": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Kwanzoo": {
+   "ledger_categories": [],
+   "status": "agent-reviewed",
+   "what_it_is": "not MA: ad-tech / lead-gen / attribution / call tracking / feed management. Kwanzoo is an AI-powered GTM automation platform that enables adaptive account-based marketing.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Labrador CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Ladipage": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Landbot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Landbot is a no code conversational chatbots, conversational landing pages and website, interactive survey and lead generation bot.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Landingi": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Lasso CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Launchrock": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Lead-Finity Webchat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "LeadPages": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Leadtex": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Leanplum": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Lede": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Lengow": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "LEPTON": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Let's Connect": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Level Access": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Level Access, formerly eSSENTIAL Accessibility, is a leading digital accessibility solutions provider offering tools and services to ensure compliance with stan",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "LGC": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Liana": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "LibraryH3lp": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "LibraryH3lp reference-desk chat widget, loaded from libraryh3lp.com (or a regional subdomain, e.g. ca.libraryh3lp.com). Higher-ed-specific: this is the dominant",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "LightMon Engine": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Lime Talk": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "LimeChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Listagram": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Listrak": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "LiveChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "LiveChat (Text s.c.) live-chat widget, loaded from cdn.livechatinc.com (or the newer livechat-static.com CDN).",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "LiveEdit": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "LiveHelpNow": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "LiveHelpNow live-chat/helpdesk widget, loaded from developer.livehelpnow.net.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "LivePerson": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "LivePerson conversational-AI/live-chat platform, loaded from lptag.liveperson.net.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "LiveZilla": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "LocomotiveCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Lodel": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Loops": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Lucidworks Fusion": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Lunr.js": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "MAAK": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Maestra": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "MageWorx Search Autocomplete": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Magixite": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "Maglr": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Magnews": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Mailchimp": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Mailchimp asset CDN (chimpstatic.com — mcjs-connected tracking loader) plus the list-manage.com hosted-signup-form domain.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "MailChimp for WordPress": {
+   "ledger_categories": [],
+   "status": "agent-reviewed",
+   "what_it_is": "duplicate / connector: WordPress connector plugin for Mailchimp, not a product the institution licenses. MailChimp for WordPress is an email marketing plugin that enables you to build subscriber lists.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15",
+   "known_mismatch": "the WordPress connector plugin for Mailchimp, not a product an institution licenses (2026-11 detection review, CRM and MA reviewer); the category correction is in the proposed engine category-corrections batch, not made yet (2026-11-27)"
+  },
+  "Mailercloud": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "MailerLite": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. MailerLite is an email marketing tool and website builder for businesses of all shapes and sizes.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "MailerLite Website Builder": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Mainstay": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Mainstay (formerly AdmitHub) AI text-messaging/chat assistant for higher-ed enrollment and student success, loaded from chat.mainstay.com / webbot.mainstay.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Maisey": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Mambo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ManyChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Markate": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Marketo": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Marketo Munchkin tracking loader (munchkin.marketo.net) plus the bare marketo.com host for form/landing-page embeds.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Mars Flag": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Mautic": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "wrong product: tracker is operated by EAB on EAB campaign hosts (248/249). Mautic self-hosted tracking pixel, identified by its standard '/mtc.js' loader filename convention (Mautic is open-source and self-hosted, so there is no single",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "MaxenceDEVCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "MaxiCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "MaxSite CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Medchat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Meilisearch": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Melibo": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Melis Platform": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "MemberStack": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Merit Pages": {
+   "ledger_categories": [],
+   "status": "agent-reviewed",
+   "what_it_is": "not MA: PR / student-achievement publishing (policy v6 deny-lists it; category unchanged in engine). Merit Pages (meritpages.com) — higher-ed-specific student/alumni achievement and press-release automation network, widely embedded as a homepage news/press widg",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Merlin": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Methode": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "MGPanel": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "microCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Microsoft SharePoint": {
+   "ledger_categories": [],
+   "status": "agent-reviewed",
+   "what_it_is": "portal / intranet / collaboration. SharePoint is a cloud-based collaborative platform to manage and share content.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15",
+   "known_mismatch": "the 2026-11 CMS reviewer grouped SharePoint as a portal / intranet / collaboration product, not a web CMS; no decision recorded yet (2026-11-27), needs Joel"
+  },
+  "Microweber": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Milestone CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Miniflat": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Mioot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Mobirise": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Modern Campus CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Modern Campus CMS (formerly OU Campus / OmniCMS by OmniUpdate) content management system for higher education.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Modulify": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "MODX": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Moguta.CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "MoinAI": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Mono.net": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Monsido": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "reviewed",
+   "what_it_is": "Monsido web accessibility + quality-assurance monitoring, loaded from app-script.monsido.com; also self-identifies via a <meta name=\"monsido\"> tag on some insta",
+   "reviewer": "Joel Goodman (ruling: Siteimprove and Monsido count as accessibility software)",
+   "date": "2026-10-26"
+  },
+  "Motive": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "MotoCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Mottle": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Movable Type": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Mozard Suite": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Muchat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Mura CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Mura CMS is the cloud-based, API driven, content management platform.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "MyLiveChat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "MyLiveChat is a live chat developed by CuteSoft.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Myma": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Mynetcap": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "MySiteNow": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "MyWebsite": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "MyWebsite Creator": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "MyWebsite Now": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Nagich": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Nagich is a website accessibility overlay provider from Israel.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "NamelessMC": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Naviga": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Neon CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Neon CRM, a Neon One company, is a cloud-based customer relationship management (CRM) software suite for nonprofits of all sizes. Applications include fundraisi",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Neos CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Ngage Live Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Nicepage": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Noddus": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Norby": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Nrdevo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Nucleus CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Nukeviet CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Nuqlium": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Nurture Boss": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Oct8ne": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Octane AI": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "October CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Odoo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Ohava": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Olark": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Olark live-chat widget, loaded from static.olark.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Omeka": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Ometria": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Omnisend": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "borderline MA: e-commerce marketing (store, not institution marketing). Omnisend is an ecommerce marketing automation platform that provides an omnichannel marketing strategy for businesses.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Omnisend Email Marketing & SMS": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Omurga Sistemi": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Onepage": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "OneSignal": {
+   "ledger_categories": [],
+   "status": "agent-reviewed",
+   "what_it_is": "not MA: web/mobile push-notification tool. OneSignal is a customer engagement messaging solution.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Onlim": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "onpublix": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Onsite Support": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "OnUniverse": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "OpenCities": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "OpenCms": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "OpenElement": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "OpenNemas": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Opesta": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Ops Calendar": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Optimizely Content Management": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Optimizely Content Management (formerly EPiServer) is digital content, ecommerce, and marketing management solution designed for editors and marketers.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Optimx Sports": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Oracle Content Management": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Oracle RightNow": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Oracle RightNow (Oracle Service Cloud) chat/knowledge widget, served from the shared custhelp.com domain (e.g. <inst>.custhelp.com) or the RightNow.Client.js lo",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Orama": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Orchard Core": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Orchard Core is an open-source modular and multi-tenant application framework built with ASP.NET Core, and a content management system (CMS).",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "OtterText": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Overloop": {
+   "ledger_categories": [
+    "CRM",
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "P3chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Pagecloud": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Pagekit": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). ",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Pagetiger": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "papaya CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Pardot": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Salesforce Pardot tracking pixel / form host, loaded from pi.pardot.com (or the go.pardot.com landing-page domain).",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Pars Elecom Portal": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "PARSICO": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "PathFactory": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "PatientSites": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Payload CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Pegboard7": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Percussion": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Perfex CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Phonexa": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Phonon": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "PhotoShelter": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "PHP-Nuke": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "PHPBoost": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "phpRS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "phpSQLiteCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "phpwind": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "PiAds": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Piman": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "Pimcore": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Ping Parrot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Pingoteam": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "pirobase CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Pixel Motion": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Pixieset Website": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "PizzaNetz": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Plate": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Platforma LP": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Platformly": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Plezi": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Pligg": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Plone": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Plone open-source content management system built on Zope. Decoupled/backend-rendered CMS — Plone's own resource-registry fingerprint survives in only a minorit",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Pobo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Podium": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Podium is a customer communication platform for businesses who interact with customers on a local level.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Popify": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Portal": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Poster": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Posterous": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Postscript": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Power CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Prater Raines": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Prediggo": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Prepr": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Prismic": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Privia Health": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Privy": {
+   "ledger_categories": [],
+   "status": "agent-reviewed",
+   "what_it_is": "not MA: popup / list-building / social-proof widget. Privy is a all-in-one marketing automation platform for ecommerce.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Procurios": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Profit Lifter": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "ProfitFlo": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Progress Sitefinity": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Progress Sitefinity content management system.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Promio": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "ProSites": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Provide Support": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Provide Support live-chat widget, loaded from vm.providesupport.com / image.providesupport.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Proximis Unified Commerce": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Pubble": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Pubble is a messaging platform that simplifies how teams interact with their customers.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Publishrr": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "PubLive": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Pulse CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Pure Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Pure Chat live-chat widget, loaded from app.purechat.com (window.purechatApi bootstrap).",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "PushBots": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "PushDaddy Whatsapp Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Pushe": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Pushify": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Pushouse": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "PushOwl": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "PushPushGo": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Qiscus": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Qualified": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Qualified is a B2B marketer that allows buyers and sales reps to connect through real-time website conversations.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Quant": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Querlo": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Queryly": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Quick.CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Quickblog": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "QuickCEP": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Quickchat AI": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Quicktext": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Quiq Messaging": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Quixchat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "QUV": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Rake": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Rally": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Rapid Active CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Rawabit": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Raychat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Rayo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "RBS Change": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "RCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "RD Station": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Re:plain": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "React Bricks": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Reactive": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ReadMe": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ReadSpeaker": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "ReadSpeaker text-to-speech / webReader assistive-reading widget, loaded from *.readspeaker.com (cdn1/cdn-na/f1-na subdomains observed).",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Readymag": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ReadyPlanet": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "REC": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Recite Me": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Recite Me accessibility/reading overlay toolbar (translate, screen-reader, dyslexia font, etc.), loaded from reciteme.com / api.reciteme.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Redrive": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Respond.io": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Responsa": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Retain": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Retrina Builder": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Reuzenpanda": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Ringostat": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "RiteCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "RiteKit": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Roadiz CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Roas Funnels": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Robly": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Robofy": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Rocket.Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Rocket.Chat self-hosted live-chat widget, identified by its standard livechat loader filename (rocketchat-livechat[.min].js) served from the institution's own R",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "RockRMS": {
+   "ledger_categories": [],
+   "status": "agent-reviewed",
+   "what_it_is": "not a web CMS (other product class). Rock RMS is a free, open-source Relationship Management System (RMS) built for churches and businesses.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15",
+   "known_mismatch": "a church relationship-management system, not a web CMS (2026-11 detection review, CMS reviewer); the category correction is in the proposed engine category-corrections batch, not made yet (2026-11-27)"
+  },
+  "Roojoom": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "rSchoolToday": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Ruby Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Sailthru": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Sajari": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "SalesFire": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Salesforce": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "duplicate: same signal as Salesforce Education Cloud (16/16 live rows duplicated). Salesforce as an institution's CRM: the generic Salesforce-org signal. An institution's own org on *.my.salesforce.com / *.my.site.com / *.my.salesforce-sites.c",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Salesforce Live Agent": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Salesforce Embedded Service / Live Agent chat widget. Fingerprinted via the salesforceliveagent.com host, the Embedded Service path on a Salesforce org host, th",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Salesforce Marketing Cloud Account Engagement": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Salesforce Marketing Cloud Email Studio": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Salesforce Service Cloud": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "duplicate: same signal as Salesforce Education Cloud (16/16 live rows duplicated). Salesforce Service Cloud is a customer relationship management (CRM) platform for customer service and support.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "SALESmanago": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Sanity": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "headless CMS detected only through an asset/API host. Sanity is a platform for structured content. It comes with an open-source, headless CMS that can be customized with Javascript, a real-time hosted data store an",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Sapren": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Sarka-SPIP": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Satori": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Schedule Engine": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "ScoreApp": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Scrivito": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "SeamlessCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Search Magic": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Searchanise": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "SearchBlox": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Searchine": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Searchspring": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "SearchStax": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "SearchStax managed site search (hosted Solr/OpenSearch), loaded from static.searchstax.com. Signature data-mined from BuiltWith-labeled sites (UNI-141).",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "SegMate": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "SEMrush": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "SendHeap": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Sendinblue": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Sendinblue is an email marketing solution for small and medium-sized businesses that want to send and automate email marketing campaigns.",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "SendPulse": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "SendX": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "SEO Samba": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Serendipity": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ServiceNow": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Setrics": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Setrow": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Shanon": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Sharing": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "SharpSpring": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. SharpSpring tracking pixel, loaded from a per-account koi-<token>.marketingautomation.services host (client/ss.js loader).",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Shift4Shop": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Shopify Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Shopistry": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "ShoutCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Shuttle": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Silex": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Silverstripe": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Silverstripe CMS is a free and open source Content Management System and Framework for creating and maintaining websites and web applications.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Simla": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Simple.ink": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Simplero": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "simploCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "SimplyCast": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "SIMsite": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Site Search 360": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Site Search 360 hosted search solution",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Sitecore": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Sitecore digital experience platform / CMS.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "SiteEdit": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Siteglide": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). SiteGlide is a Digital Experience Platform (DEP) for ecommerce stores, membership sites and customer portals.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Siteimprove": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "reviewed",
+   "what_it_is": "Siteimprove accessibility / SEO / quality-assurance governance platform; the analytics beacon loads from siteimproveanalytics.com (also seen on regional subdoma",
+   "reviewer": "Joel Goodman (ruling: Siteimprove and Monsido count as accessibility software)",
+   "date": "2026-10-26"
+  },
+  "Siteklik": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "SiteManager": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Sitepark InfoSite": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Sitevision CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "SiteW": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "SiteWright": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Sivuviidakko": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "SixCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Skool": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Slaask": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Slate (Technolutions)": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "fits. Technolutions Slate — the dominant higher-ed admissions/enrollment CRM. Fingerprinted via the technolutions.net host: the mx.technolutions.net tracking-pixel/pi",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "SlickText": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Smaily": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "SMART L-Gov": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "SmartSite": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Smartstore Page Builder": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Smartsupp": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "sNews": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "SniperFast": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Sobot Live Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "SOCi": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Social Pinpoint": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "SolidPixels": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Solo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Solodev": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Solvemate": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Solvvy": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "SOTA CRM": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Spark CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Spatie Support Bubble": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Spicy Rocket": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Spikmi": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "SPIP": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "SpiralCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Springnest": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Squarespace": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Squiz DXP": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Squiz Matrix": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). A flexible, low-code enterprise content management system designed to manage multiple sites with many editors.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Sqwiz": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Statamic": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Storyblok": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "headless CMS detected only through an asset/API host. Storyblok is a headless CMS with a visual editor for developers, marketers and content editors. Storyblok helps your team to manage content and digital experien",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Strapi": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Strato Website": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Streamwood": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Strikingly": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "STUDIO": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Subiz": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Subrion": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Sugester": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Suiteshare": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Sumo": {
+   "ledger_categories": [],
+   "status": "agent-reviewed",
+   "what_it_is": "not MA: popup / list-building / social-proof widget. Sumo is a plugin offering set of marketing tools to automate a website's growth. These tools help drive extra traffic, engage visitors, increase email subscribe",
+   "reviewer": "2026-11 detection review, CRM and MA reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Suncel": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Super Builder": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Superblog": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Superchat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Swell CX": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Swiftype": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Swiftype site search (now Elastic Site Search)",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Swipe Pages": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Systeme.io": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Syte": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "TargetX": {
+   "ledger_categories": [
+    "CRM"
+   ],
+   "status": "unreviewed"
+  },
+  "Tars": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "tawk.to": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "tawk.to free live-chat widget, loaded from embed.tawk.to.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Tencent QQ": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Tendenci": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "TerminalFour": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). TerminalFour content management system for higher education.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Text In Church": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Texthelp": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "TextHelp is a literacy, accessibility and dyslexia software developer for people with reading and writing difficulties.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Textpattern CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "The Church Co": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "TheBotForge": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Thelia": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Thinking Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "TiddlyWiki": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Tidio": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Tidio live-chat/chatbot widget, loaded from code.tidio.co or widget-v4.tidiochat.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Tiki Wiki CMS Groupware": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Tilda": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Tooltip": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Tooning": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Trengo": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Tunosite": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Typeflo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "TYPO3": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). TYPO3 enterprise content management system",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Umbraco": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Umbraco open-source .NET CMS",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Umso": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Unbxd": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Unstack": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "uRemediate": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "UsableNet": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "UsableNet is a technology for web accessibility and digital transformation, providing end-to-end services.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "User Accessibility": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "unreviewed"
+  },
+  "UserLike": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "UserWay": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "UserWay accessibility overlay widget, injected via cdn.userway.org. Accessibility overlays are widely regarded as not delivering real WCAG compliance and are fr",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Ushahidi": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Varbase": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Velaro": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Venyoo": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Vergic": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "VerseOne": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Vev": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Vigbo": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Vintcer": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Virtual Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Visual Composer": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Vitrin.me": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Voog": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Voog.com Website Builder": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Vox Media": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "VuFind": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Vvveb CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Wagtail": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Wagtail is a Django content management system (CMS) focused on flexibility and user experience.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "Warm Welcome": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Webbotify": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "webEdition": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Webflow": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Webflow is Software-as-a-Service (SaaS) for website building and hosting.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "WebGUI": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Webim": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Weblication": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Weblium": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "WebNode": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Website Creator": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "WebSite X5": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "WebsiteBaker": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "WebsiteBuilder": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "WebsPlanet": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Webware": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "WebZi": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Webzie": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Weebly": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Weebly is a website and ecommerce service.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "WeltPixel Pearl Theme": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Weply": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "WhatsApp Business Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "WidgetWhats": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Wikit Live Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Winter CMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "wisyCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Wix": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). Wix cloud-based website builder.",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "WizSoft": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "Wolters Kluwer": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Woltlab Community Framework": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "WordPress": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "web CMS / site builder (category plausible). WordPress content management system (open-source). Curated override of the base WebAppAnalyzer entry — replaces its bare 'wordpress' html literal, which matches",
+   "reviewer": "2026-11 detection review, CMS reviewer (agent)",
+   "date": "2026-11-15"
+  },
+  "WordPress.com": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "WotNot": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "WP Accessibility": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "WP Accessibility WordPress plugin, detected only when its font-size/contrast TOOLBAR loads (js/wpa-toolbar*.js or the toolbar/ stylesheets). The plugin's skip-l",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "WP Accessibility Helper": {
+   "ledger_categories": [
+    "Accessibility"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "WP Accessibility Helper (WAH) WordPress plugin — floating accessibility toolbar (contrast, font-size, skip-links), self-hosted, detected via its asset path wp-c",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Wuilt": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Wunderkind": {
+   "ledger_categories": [
+    "Marketing Automation"
+   ],
+   "status": "unreviewed"
+  },
+  "Xiuno BBS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "XOOPS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "XpressEngine": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Yandex.Messenger": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "yellow.ai": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Yext": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Yext is a technology company that provides a cloud-based platform for managing digital knowledge and online reputation.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Yola": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Yonder": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "youCMS": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Zarla": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Zendesk": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Zendesk Web Widget (chat/messaging), loaded from static.zdassets.com — distinct from a bare *.zendesk.com help-center link.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Zendesk Sunshine Conversations": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Zenvia": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Zeta Producer": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Zevi": {
+   "ledger_categories": [
+    "Site Search"
+   ],
+   "status": "unreviewed"
+  },
+  "ZipWP": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Zoho SalesIQ": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Zoho SalesIQ live-chat widget, loaded from salesiq.zoho.com or salesiq.zohopublic.com.",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Zoho Sites": {
+   "ledger_categories": [
+    "CMS"
+   ],
+   "status": "unreviewed"
+  },
+  "Zoko": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Zoominfo Chat": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  },
+  "Zopim": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "agent-reviewed",
+   "what_it_is": "Zopim (Zendesk Chat v2) widget, loaded from v2.zopim.com. Zendesk acquired Zopim; where a site fires this it is running the legacy embed rather than the current",
+   "reviewer": "Claude (agent), from the product name, description and rules; not yet confirmed by a person",
+   "date": "2026-11-27"
+  },
+  "Zowie": {
+   "ledger_categories": [
+    "Chatbot"
+   ],
+   "status": "unreviewed"
+  }
+ }
+}

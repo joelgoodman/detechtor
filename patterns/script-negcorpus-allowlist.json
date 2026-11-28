@@ -1,0 +1,405 @@
+{
+  "_comment": "Reviewed exemptions from scripts/lint-script-negcorpus.js. A script rule of a ledger-category technology whose matches land on registrable domains that are not its vendor's, and do not name the host, fails the gate. An entry exempts one rule up to maxOffDomains (the count when it was reviewed): a rule that gets broader fails again. Classes: self-hosted software path (served first-party, names the software), vendor client bundled first-party, vendor-second-domain (declare _hosts instead), known defect, fix pending (temporary). A stale or no-op entry fails the build.",
+  "entries": [
+    {
+      "technology": "Act-On",
+      "pattern": "/cdnr/\\d+/acton/bn/tracker/\\d+",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 2,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: jtsa.edu (first-party); nyu.edu (first-party)."
+    },
+    {
+      "technology": "Active Campaign",
+      "pattern": "plugins/activecampaign-subscription-forms/site_tracking\\.js",
+      "class": "self-hosted software path",
+      "maxOffDomains": 5,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: acaom.edu (first-party); coloradomtn.edu (first-party); gardner-webb.edu (first-party)."
+    },
+    {
+      "technology": "AddSearch",
+      "pattern": "addsearch",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 3,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: jsdelivr.net (third-party); rgu.ac.uk (first-party); lonestar.edu (first-party)."
+    },
+    {
+      "technology": "Adobe Experience Manager",
+      "pattern": "/content/dam/",
+      "class": "self-hosted software path",
+      "maxOffDomains": 5,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: bgsu.edu (first-party); sfu.ca (first-party); nottingham.ac.uk (first-party)."
+    },
+    {
+      "technology": "Adobe Experience Manager",
+      "pattern": "/etc\\.clientlibs/",
+      "class": "self-hosted software path",
+      "maxOffDomains": 37,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: canterbury.ac.nz (first-party); bgsu.edu (first-party); uc.edu (first-party)."
+    },
+    {
+      "technology": "Algolia",
+      "pattern": "algolia",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 22,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: jsdelivr.net (third-party); umpi.edu (first-party); bridgewater.edu (first-party)."
+    },
+    {
+      "technology": "Algolia",
+      "pattern": "algoliasearch",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 13,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: jsdelivr.net (third-party); umpi.edu (first-party); bridgewater.edu (first-party)."
+    },
+    {
+      "technology": "Cludo",
+      "pattern": "cludo",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 10,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: boisestate.edu (first-party); tamu.edu (third-party); washu.edu (third-party)."
+    },
+    {
+      "technology": "Concrete CMS",
+      "pattern": "/concrete/js/",
+      "class": "self-hosted software path",
+      "maxOffDomains": 8,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: dakotacollege.edu (first-party); coe.edu (first-party); jerseycollege.edu (first-party)."
+    },
+    {
+      "technology": "Cornerstone",
+      "pattern": "cornerstone(?:\\/assets)?(?:\\/js)?(?:\\/site)?(?:\\/cs-classic)?\\.?((?:\\d+\\.)+\\d+)?\\.js",
+      "class": "self-hosted software path",
+      "maxOffDomains": 10,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: yccd.edu (first-party); abmcollege.com (first-party); aru.ac.uk (third-party)."
+    },
+    {
+      "technology": "Coveo",
+      "pattern": "coveo",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 9,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: upmc.com (first-party); sanfordhealth.org (first-party); ualberta.ca (first-party)."
+    },
+    {
+      "technology": "DNN",
+      "pattern": "/js/dnn\\.js",
+      "class": "self-hosted software path",
+      "maxOffDomains": 4,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: af.edu (first-party); af.mil (first-party); army.edu (first-party)."
+    },
+    {
+      "technology": "DNN",
+      "pattern": "/js/dnncore\\.js",
+      "class": "self-hosted software path",
+      "maxOffDomains": 4,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: army.edu (first-party); af.edu (first-party); af.mil (first-party)."
+    },
+    {
+      "technology": "Drupal",
+      "pattern": "misc/drupal\\.js",
+      "class": "self-hosted software path",
+      "maxOffDomains": 18,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: case.edu (first-party); uwindsor.ca (first-party); osu.edu (first-party)."
+    },
+    {
+      "technology": "Drupal",
+      "pattern": "sites/default/files",
+      "class": "self-hosted software path",
+      "maxOffDomains": 95,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: umassglobal.edu (first-party); uog.edu (first-party); ucalgary.ca (first-party)."
+    },
+    {
+      "technology": "ElasticSuite",
+      "pattern": "/Smile_ElasticsuiteTracker/",
+      "class": "self-hosted software path",
+      "maxOffDomains": 1,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: sunderland.ac.uk (first-party)."
+    },
+    {
+      "technology": "Elasticsearch",
+      "pattern": "elastic",
+      "class": "known defect, fix pending",
+      "maxOffDomains": 12,
+      "decided": "2026-11-27",
+      "reason": "KNOWN DEFECT, allowlisted only until the bare-token script rules batch replaces this rule (2026-11-27). The bare token fires on URLs that do not name the vendor, e.g. missouriwestern.edu (first-party); liberty.edu (first-party); acom.edu (first-party). Remove this entry when the replacement lands; the gate then reports it as a no-op."
+    },
+    {
+      "technology": "Element451",
+      "pattern": "element451",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 3,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: sparksites.io (third-party); cpcc.edu (first-party); gbc.edu (first-party)."
+    },
+    {
+      "technology": "Funnelback",
+      "pattern": "funnelback",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 17,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: lsbu.ac.uk (first-party); canterbury.ac.nz (first-party); leeds.ac.uk (first-party)."
+    },
+    {
+      "technology": "Ghost",
+      "pattern": "ghost",
+      "class": "known defect, fix pending",
+      "maxOffDomains": 2,
+      "decided": "2026-11-27",
+      "reason": "KNOWN DEFECT, allowlisted only until the bare-token script rules batch replaces this rule (2026-11-27). The bare token fires on URLs that do not name the vendor, e.g. ghostplugins.dev (third-party); indianatech.edu (first-party). Remove this entry when the replacement lands; the gate then reports it as a no-op."
+    },
+    {
+      "technology": "Google Custom Search",
+      "pattern": "/cse\\.js",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 1,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: hccc.edu (first-party)."
+    },
+    {
+      "technology": "Ingeniux CMS",
+      "pattern": "igx-",
+      "class": "known defect, fix pending",
+      "maxOffDomains": 8,
+      "decided": "2026-11-27",
+      "reason": "KNOWN DEFECT, allowlisted only until the bare-token script rules batch replaces this rule (2026-11-27). The bare token fires on URLs that do not name the vendor, e.g. the-bac.edu (first-party); curry.edu (first-party); lasell.edu (first-party). Remove this entry when the replacement lands; the gate then reports it as a no-op."
+    },
+    {
+      "technology": "Ivory Search",
+      "pattern": "/wp-content/plugins/add-search-to-menu/.{1,80}\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?",
+      "class": "self-hosted software path",
+      "maxOffDomains": 8,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: upr.edu (first-party); luthercollege.edu (first-party); acsenda.com (first-party)."
+    },
+    {
+      "technology": "Joinchat",
+      "pattern": "/js/joinchat\\.min\\.js",
+      "class": "self-hosted software path",
+      "maxOffDomains": 2,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: agora.edu (first-party); riogrande.edu (first-party)."
+    },
+    {
+      "technology": "Joomla",
+      "pattern": "com_content",
+      "class": "self-hosted software path",
+      "maxOffDomains": 1,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: usainteanne.ca (first-party)."
+    },
+    {
+      "technology": "Kentico",
+      "pattern": "/CMSPages/GetResource\\.ashx",
+      "class": "self-hosted software path",
+      "maxOffDomains": 3,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: spokane.edu (first-party); colostate.edu (first-party); nait.ca (first-party)."
+    },
+    {
+      "technology": "Kentico",
+      "pattern": "/kentico\\.resource",
+      "class": "self-hosted software path",
+      "maxOffDomains": 1,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: uwgb.edu (first-party)."
+    },
+    {
+      "technology": "Kentico",
+      "pattern": "kentico",
+      "class": "self-hosted software path",
+      "maxOffDomains": 5,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: brookes.ac.uk (first-party); norquest.ca (first-party); uwgb.edu (first-party)."
+    },
+    {
+      "technology": "MailChimp for WordPress",
+      "pattern": "/wp-content/plugins/mailchimp-for-wp/.{1,80}\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?",
+      "class": "self-hosted software path",
+      "maxOffDomains": 4,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: cegepvalleyfield.ca (first-party); langston.edu (first-party); pfi.edu (first-party)."
+    },
+    {
+      "technology": "Mautic",
+      "pattern": "mtc\\.js",
+      "class": "self-hosted software path",
+      "maxOffDomains": 211,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: belmont-info.org (third-party); contact-server.com (third-party); bu.edu (first-party)."
+    },
+    {
+      "technology": "Modern Campus CMS",
+      "pattern": "moderncampus",
+      "class": "known defect, fix pending",
+      "maxOffDomains": 3,
+      "decided": "2026-11-27",
+      "reason": "KNOWN DEFECT, allowlisted only until the bare-token script rules batch replaces this rule (2026-11-27). The bare token fires on URLs that do not name the vendor, e.g. loras.edu (first-party); omniweb.cloud (third-party); uco.edu (first-party). Remove this entry when the replacement lands; the gate then reports it as a no-op."
+    },
+    {
+      "technology": "Modern Campus CMS",
+      "pattern": "omni\\.js",
+      "class": "vendor-second-domain (declare _hosts)",
+      "maxOffDomains": 1,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor-second-domain (declare _hosts)): the vendor serves this file from a second domain of its own; declare it in _hosts (or patterns/vendor-hosts.json) and this entry becomes a no-op. Top off-vendor domains on the committed fixture: kccd.edu (third-party)."
+    },
+    {
+      "technology": "Modern Campus CMS",
+      "pattern": "omnicms",
+      "class": "self-hosted software path",
+      "maxOffDomains": 2,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: concordia.edu (first-party); hancockcollege.edu (first-party)."
+    },
+    {
+      "technology": "Monsido",
+      "pattern": "monsido",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 5,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: brandonu.ca (first-party); otech.edu (first-party); starkstate.edu (first-party)."
+    },
+    {
+      "technology": "Rocket.Chat",
+      "pattern": "rocketchat-livechat",
+      "class": "self-hosted software path",
+      "maxOffDomains": 1,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: nbc.edu (first-party)."
+    },
+    {
+      "technology": "Site Search 360",
+      "pattern": "sitesearch360",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 2,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: coloradomesa.edu (first-party); doane.edu (first-party)."
+    },
+    {
+      "technology": "Sitecore",
+      "pattern": "sitecore",
+      "class": "self-hosted software path",
+      "maxOffDomains": 12,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: acu.edu.au (first-party); coveo.com (third-party); upmc.com (first-party)."
+    },
+    {
+      "technology": "Squiz DXP",
+      "pattern": "/__data/assets/(?:js_file_folder|git_bridge|js_file)/",
+      "class": "self-hosted software path",
+      "maxOffDomains": 30,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: csu.edu.au (first-party); ulster.ac.uk (first-party); otago.ac.nz (first-party)."
+    },
+    {
+      "technology": "Squiz Matrix",
+      "pattern": "/__data/assets/(js_file_folder|git_bridge|js_file)/",
+      "class": "self-hosted software path",
+      "maxOffDomains": 30,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: csu.edu.au (first-party); ulster.ac.uk (first-party); otago.ac.nz (first-party)."
+    },
+    {
+      "technology": "Swiftype",
+      "pattern": "swiftype",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 8,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: niagaracollege.ca (first-party); campbell.edu (first-party); flemingcollege.ca (first-party)."
+    },
+    {
+      "technology": "TYPO3",
+      "pattern": "^/?typo3(?:conf|temp)/",
+      "class": "self-hosted software path",
+      "maxOffDomains": 4,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: umontreal.ca (first-party); csfoy.ca (first-party); lasierra.edu (first-party)."
+    },
+    {
+      "technology": "TYPO3",
+      "pattern": "typo3",
+      "class": "self-hosted software path",
+      "maxOffDomains": 5,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: umontreal.ca (first-party); csfoy.ca (first-party); usherbrooke.ca (first-party)."
+    },
+    {
+      "technology": "TYPO3",
+      "pattern": "typo3temp",
+      "class": "self-hosted software path",
+      "maxOffDomains": 4,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: usherbrooke.ca (first-party); umontreal.ca (first-party); lasierra.edu (first-party)."
+    },
+    {
+      "technology": "TerminalFour",
+      "pattern": "terminalfour",
+      "class": "self-hosted software path",
+      "maxOffDomains": 2,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: lmudigital.io (third-party); cumbria.ac.uk (first-party)."
+    },
+    {
+      "technology": "Umbraco",
+      "pattern": "umbraco",
+      "class": "self-hosted software path",
+      "maxOffDomains": 9,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: lcsc.edu (first-party); ayrshire.ac.uk (first-party); usf.edu (first-party)."
+    },
+    {
+      "technology": "WP Accessibility",
+      "pattern": "wp-content/plugins/wp-accessibility/(?:toolbar/|js/(?:render-blocking-[0-9a-f]{32}\\.)?wpa-toolbar)",
+      "class": "self-hosted software path",
+      "maxOffDomains": 5,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: amridgeuniversity.edu (first-party); assumption.edu (first-party); conception.edu (first-party)."
+    },
+    {
+      "technology": "WP Accessibility Helper",
+      "pattern": "wp-accessibility-helper",
+      "class": "vendor client bundled first-party",
+      "maxOffDomains": 4,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (vendor client bundled first-party): the vendor's client library is copied into the institution's own bundle or plugin directory, so the match is on a first-party path that names the product, not on a vendor host. Top off-vendor domains on the committed fixture: amridgeuniversity.edu (first-party); carlowcollege.ie (first-party); cvtech.edu (first-party)."
+    },
+    {
+      "technology": "WhatsApp Business Chat",
+      "pattern": "/plugins/creame-whatsapp-me.{0,80}joinchat\\.min\\.js",
+      "class": "self-hosted software path",
+      "maxOffDomains": 2,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: agora.edu (first-party); riogrande.edu (first-party)."
+    },
+    {
+      "technology": "WordPress",
+      "pattern": "wp-content",
+      "class": "self-hosted software path",
+      "maxOffDomains": 1527,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: pcdn.co (third-party); qc.ca (first-party); nitrocdn.com (third-party)."
+    },
+    {
+      "technology": "WordPress",
+      "pattern": "wp-includes",
+      "class": "self-hosted software path",
+      "maxOffDomains": 344,
+      "decided": "2026-11-27",
+      "reason": "2026-11 detection review triage (self-hosted software path): the product is installed on the institution's own server, so its assets are served first-party from the institution's host and can never name a vendor host; the path names the software. Top off-vendor domains on the committed fixture: stolaf.edu (first-party); b-cdn.net (third-party); wp.com (third-party)."
+    }
+  ]
+}

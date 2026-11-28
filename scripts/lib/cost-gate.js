@@ -17,7 +17,12 @@ const { analyze } = require('./regex-shape.js');
  * margin over the former and sits orders of magnitude under the latter, so a loaded CI machine does not
  * flake the build and a quadratic pattern cannot slip under it.
  */
-const MEASURE_DEFAULT_BUDGET_MS = 250;
+//
+// The budget is wall-clock on THIS machine. A GitHub-hosted runner is two to three times slower than the
+// machine it was calibrated on (the shipped set's slowest bounded regexes measure 250-380 ms there), so
+// CI sets PATTERN_COST_BUDGET_MS (.github/workflows/test.yml). The static ban does not depend on it, and
+// a quadratic pattern still takes seconds, far over any value set there.
+const MEASURE_DEFAULT_BUDGET_MS = Number(process.env.PATTERN_COST_BUDGET_MS) > 0 ? Number(process.env.PATTERN_COST_BUDGET_MS) : 250;
 
 const ALLOWLIST_PATH = path.resolve(__dirname, '../../patterns/wildcard-allowlist.json');
 const CHANNEL_NAMES = new Set(CHANNELS.map((c) => c.channel));

@@ -42,7 +42,7 @@ node test-patterns.js
      }
    }
    ```
-3. Run quality checks: `npm run test:audit`
+3. Run quality checks: `npm test` (CI runs the same chain on every pull request)
 4. Test your pattern: `node cli.js --url "https://example.com" --verbose`
 5. Submit a pull request
 
@@ -57,7 +57,7 @@ Before submitting patterns, verify:
 - [ ] **At least one Tier A or Tier B pattern** for reliable detection
 - [ ] **Tested against false positive sites** (sites that don't use the technology)
 - [ ] **Tested against true positive sites** (sites that do use the technology)
-- [ ] **Pattern audit passes:** `npm run test:audit`
+- [ ] **`npm test` passes** (includes the ledger category review and the script negative-corpus gate)
 
 ### Code Style
 

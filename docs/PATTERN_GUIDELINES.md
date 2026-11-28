@@ -236,18 +236,22 @@ Before submitting new patterns, verify:
 
 ## Testing Patterns
 
-### Run Pattern Audit
+### Run the pattern gates
 
 ```bash
-npm run test:audit
+npm test
 ```
 
-This checks all patterns for:
-- Patterns < 4 characters
-- Common English words
-- Single-letter JS objects
-- Overly broad regex
-- Duplicates across files
+The old `npm run test:audit` (`scripts/audit-patterns.js`) was removed: it exited 1 on the main branch, skipped
+the CRM, marketing, chat and accessibility files, and its checks (short strings, common words, broad regex) are
+covered by `lint-patterns.js`, `lint-pattern-breadth.js` and `lint-pattern-cost.js`. `npm test` also runs:
+
+- `lint-ledger-categories.js`: a technology in a ledger category needs a reviewed entry in
+  `patterns/ledger-category-review.json` that agrees with the engine.
+- `lint-script-negcorpus.js`: every `scripts`/`scriptSrc` rule of a ledger-category technology runs against real
+  script URLs (`tests/fixtures/negcorpus/script-urls.tsv.gz`); a rule whose matches neither come from the vendor's
+  domains nor name the vendor host fails, unless `patterns/script-negcorpus-allowlist.json` exempts it with a reason
+  and a ceiling.
 
 ### Test False Positives
 
