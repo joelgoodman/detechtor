@@ -267,8 +267,10 @@ declare module '@speedyu/detechtor' {
     headers: Record<string, string>;
     /** Script sources */
     scripts: ScriptInfo[];
-    /** Meta tags */
+    /** Meta tags: one value per lowercased name (the last one on the page) */
     meta: Record<string, string>;
+    /** Meta tags: every value per lowercased name, in page order. Meta rules match against these. */
+    metaValues?: Record<string, string[]>;
     /** Cookies */
     cookies: Cookie[];
     /** DOM information */

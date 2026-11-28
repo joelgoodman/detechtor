@@ -180,7 +180,10 @@ function inputsFor(p, html, evidence) {
     case 'page': return [html];
     case 'src': return evidence ? evidence.scripts.map((s) => s.src) : [];
     case 'meta': {
-      const v = evidence && evidence.meta[String(p.metaName).toLowerCase()];
+      const key = String(p.metaName).toLowerCase();
+      const all = evidence && evidence.metaValues && evidence.metaValues[key];
+      if (Array.isArray(all)) return all;
+      const v = evidence && evidence.meta[key];
       return typeof v === 'string' ? [v] : [];
     }
     case 'dom': {
