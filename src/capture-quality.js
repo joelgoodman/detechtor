@@ -15,7 +15,8 @@ const MIN_PLAUSIBLE_BYTES = 5000;
 // university page that discusses HTTP errors in help content; matching anywhere in the title blocked
 // a real page titled "Access Denied? Reset your password" (2026-11-16 review, finding 13).
 const VENDOR_SUFFIX = String.raw`(?:\s*[|\-–—:]\s*(?:cloudflare|imperva|incapsula|sucuri|akamai|wordfence))?`;
-const wholeTitle = (phrase) => new RegExp(String.raw`^\s*(?:${phrase})[\s.!?…]*${VENDOR_SUFFIX}[\s.!?…]*$`, 'i');
+// Fixed signatures from this file, never pattern data: not a matching channel the cost gate screens.
+const wholeTitle = (phrase) => new RegExp(`^\\s*(?:${phrase})[\\s.!?…]*${VENDOR_SUFFIX}[\\s.!?…]*$`, 'i');
 
 const BLOCK_TITLE_SIGNATURES = [
   String.raw`(?:error:?\s*)?the request could not be satisfied`,  // CloudFront

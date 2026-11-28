@@ -7,6 +7,12 @@
 // brand; it is not that brand's software. None of those detections could load, but each set the
 // institution's status to `detected` and stopped tier escalation.
 //
+// Comments: only a comment that holds markup is dropped (`<!-- <script src="…userway…"> -->`,
+// `<!--[if lte IE 8]><script …><![endif]-->`): commented-out code that never loads. Measured on
+// cohort 143, every sampled comment-only loss was of that kind (a disabled SiteImprove tag, a
+// commented-out UserWay or HubSpot loader). A comment of prose is the site's own annotation and is
+// often the only fingerprint a CMS leaves (Squiz Matrix's "Running Squiz Matrix" banner), so it stays.
+//
 // A rule whose own text names a comment or a style block (Yoast's `<!-- This site is optimized with
 // the Yoast SEO plugin`, Mobirise's `<!-- Site made with Mobirise`) is looking for exactly that, so
 // it still runs against the raw HTML (ruleSeesRawHtml).
@@ -15,9 +21,10 @@
 const OPEN = /<!--|<style\b|<script\b/gi;
 const STYLE_CLOSE = /<\/style\s*>/gi;
 const SCRIPT_CLOSE = /<\/script\s*>/gi;
+const COMMENTED_MARKUP = /<[a-zA-Z\/!]/;
 
 /**
- * Remove every `<style>…</style>` block and every `<!-- … -->` comment. Inline `<script>` text is
+ * Remove every `<style>…</style>` block and every `<!-- … -->` comment that holds markup. Inline `<script>` text is
  * skipped over untouched: it is evidence, and a `<!--` or `<style>` inside a script string is not a
  * comment or a style block. Linear: each character is visited a bounded number of times. An
  * unterminated block or comment is left in place (the rest of the document is kept rather than
@@ -45,6 +52,13 @@ function htmlForMatching(html) {
       const close = html.indexOf('-->', start + 4);
       if (close === -1) break;
       end = close + 3;
+      // A comment of prose is the site's own annotation ("Running Squiz Matrix", "Primo VE Script
+      // that converts the query string", a TerminalFour SiteManager URL) and stays. A comment that
+      // holds markup is commented-out code or an IE conditional block: the browser loads none of it.
+      if (!COMMENTED_MARKUP.test(html.slice(start + 4, close))) {
+        OPEN.lastIndex = end;
+        continue;
+      }
     } else {
       STYLE_CLOSE.lastIndex = start + m[0].length;
       const close = STYLE_CLOSE.exec(html);

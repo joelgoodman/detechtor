@@ -69,10 +69,16 @@ test('an inline SVG <style> block is not evidence either', () => {
   assert.strictEqual(find(html, 'Umbraco'), undefined);
 });
 
-test('a product named only in an HTML comment is not detected', () => {
-  const html = page('', '<!-- old umbraco template, retired 2019 --><!-- algolia search removed -->');
+test('commented-out markup is not evidence', () => {
+  const html = page('', '<!-- <img src="/umbraco/media/1/old.jpg"> --><!-- <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4"></script> -->' +
+    '<!--[if lte IE 8]><script src="//js.hsforms.net/forms/v2-legacy.js"></script><![endif]-->');
   assert.strictEqual(find(html, 'Umbraco'), undefined);
   assert.strictEqual(find(html, 'Algolia'), undefined);
+});
+
+test('a prose comment, the site\'s own annotation, is still evidence', () => {
+  const html = page('', '<!--\n  Running Squiz Matrix\n  Developed by Squiz - http://www.squiz.net\n-->');
+  assert.ok(find(html, 'Squiz DXP'));
 });
 
 test('the same product in the page markup is still detected', () => {
@@ -88,7 +94,7 @@ test('a rule that names a comment still sees comments', () => {
 });
 
 test('htmlForMatching drops style blocks and comments and keeps everything else', () => {
-  const html = '<head><style type="text/css">.a{b:c}</style><STYLE>x</STYLE></head><!-- c --><p>keep</p>' +
+  const html = '<head><style type="text/css">.a{b:c}</style><STYLE>x</STYLE></head><!-- <b>c</b> --><p>keep</p>' +
     '<script>var umbraco = 1;</script><div style="color:red">inline style attribute kept</div>';
   const out = htmlForMatching(html);
   assert.ok(!/\.a\{b:c\}|<style|<!--/i.test(out), out);
@@ -96,7 +102,8 @@ test('htmlForMatching drops style blocks and comments and keeps everything else'
 });
 
 test('htmlForMatching leaves an unterminated comment or style block in place', () => {
-  assert.strictEqual(htmlForMatching('<p>a</p><!-- never closed umbraco'), '<p>a</p><!-- never closed umbraco');
+  assert.strictEqual(htmlForMatching('<p>a</p><!-- <b>never closed umbraco'), '<p>a</p><!-- <b>never closed umbraco');
+  assert.strictEqual(htmlForMatching('<p>a</p><!-- a note --><p>b</p>'), '<p>a</p><!-- a note --><p>b</p>');
   assert.strictEqual(htmlForMatching('<p>a</p><style>.x{}'), '<p>a</p><style>.x{}');
 });
 
@@ -115,6 +122,6 @@ test('ruleSeesRawHtml is true only for rules that name a comment or a style bloc
 });
 
 test('a comment or style opener inside an inline script is not stripped', () => {
-  const html = '<script>document.write("<!--"); var umbraco = "<style>";</script><p>after</p><!-- gone -->';
+  const html = '<script>document.write("<!--"); var umbraco = "<style>";</script><p>after</p><!-- <p>gone</p> -->';
   assert.strictEqual(htmlForMatching(html), '<script>document.write("<!--"); var umbraco = "<style>";</script><p>after</p> ');
 });
