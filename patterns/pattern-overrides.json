@@ -17,10 +17,16 @@
         "html": [
           "ghost",
           "ghost.*version"
+        ],
+        "scriptSrc": [
+          "ghost"
+        ],
+        "js": [
+          "ghost"
         ]
       },
-      "reason": "bare 'ghost' collides with Font Awesome's fa-snapchat-ghost icon class and unrelated 'ghost.png' asset filenames, not the Ghost CMS. 'ghost.*version' is a second-round finding (2026-08-11 gate re-run): 10/10 sampled hits were Wix's own internal 'GhostComp'/'RemoteRefDeadComp' JSON keys and the unrelated GhostKit WordPress page-builder plugin's ghostkitVariables.version -- zero genuine Ghost CMS hits. meta.generator=Ghost, scriptSrc 'ghost', and js.ghost remain as evidence.",
-      "decided": "2026-08-11"
+      "reason": "bare 'ghost' collides with Font Awesome's fa-snapchat-ghost icon class and unrelated 'ghost.png' asset filenames, not the Ghost CMS. 'ghost.*version' is a second-round finding (2026-08-11 gate re-run): 10/10 sampled hits were Wix's own internal 'GhostComp'/'RemoteRefDeadComp' JSON keys and the unrelated GhostKit WordPress page-builder plugin's ghostkitVariables.version -- zero genuine Ghost CMS hits. Third round (2026-11-15 review, finding 1): the scriptSrc token 'ghost' matched www.ghostplugins.dev, a Squarespace plugin vendor (institutions 102 and 980, both Squarespace), and a WordPress theme's ghosts.js (985, which lost its WordPress row to the one-CMS rule); the js global 'ghost' is just as generic. Both removed. The generator meta (anchored to '^Ghost \\d' in pattern-rewrites.json) and the 'powered by ghost' html remain as evidence.",
+      "decided": "2026-11-27"
     },
     "Blackboard Transact": {
       "remove": {
@@ -140,6 +146,15 @@
       },
       "reason": "Bare substrings that are not Squiz: script 'dxp' matched @viewdo/dxp-nent, GTM container ids and Funnelback search hosts (dxp-us-stage-search.funnelback.squiz.cloud); html squiz.*dxp matched Funnelback search config (ttuhscSquiz ... dxp02-us-search.funnelback.squiz.cloud); matrix.*asset joined an SVG feColorMatrix to a later 'asset' (audited wrong at 6651); JS global 'Matrix' is a WordPress site's own object (816). The 2026-10-08 census audit found Squiz DXP wrong on every contested row (Marjon, Wilson, campus.edu, John Carroll, Derby, Naval War College). Funnelback is Squiz's SEARCH product and is detected as Funnelback, not as a CMS. The bare 'squiz' and 'matrix' script rules are rewritten to real Squiz hosts/paths in pattern-rewrites.json.",
       "decided": "2026-10-08"
+    },
+    "Modern Campus CMS": {
+      "remove": {
+        "scripts": [
+          "omni\\.js"
+        ]
+      },
+      "reason": "2026-11-15 review (finding 1): 'omni\\.js' matched a first-party table-omni.js (prodtemplates.kccd.edu/_resources/js/interface/table-omni.js on 760, 1169, 2717), not the CMS. Removed from the curated entry in place; this rule removes the copy that arrives only through the 'OmniCMS' alias (technology-aliases.json) unioning the generated OmniCMS entry's scripts, the Starfish case.",
+      "decided": "2026-11-27"
     }
   }
 }

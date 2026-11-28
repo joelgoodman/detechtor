@@ -57,7 +57,13 @@
       "finalsite\\.com"
     ],
     "scripts": [
-      "finalsite"
+      "//[\\w-]{1,63}\\.finalsite\\.com/theme-assets/",
+      "//resources\\.finalsite\\.net/"
+    ],
+    "dom": [
+      "body.fsLiveMode",
+      "link[href*='//resources.finalsite.net/']",
+      "img[src*='//resources.finalsite.net/']"
     ],
     "js": {
       "Finalsite": ""
@@ -65,6 +71,8 @@
     "higher_ed": true,
     "confidence": 95,
     "website": "https://www.finalsite.com",
+    "_hosts": ["finalsite.com", "finalsite.net"],
+    "_detection_note": "2026-11-15 review (finding 1, bare-token script rules): the bare script token 'finalsite' matched Finalsite's AI chatbot (ask.ai.finalsite.com/chatbot/static/widget.js) on sites that run another CMS (1876 is WordPress), and under the loader's one-CMS rule that cancelled the true CMS. Script evidence is now the site's own theme assets on <client>.finalsite.com/theme-assets/ or Finalsite's resources.finalsite.net CDN; the live-site body class fsLiveMode and a stylesheet or image on resources.finalsite.net are DOM evidence (the image rule keeps 2653, 5873 and 6230, whose only Finalsite script is the chatbot).",
     "_validation": "Data-mined vs BuiltWith (UNI-156, corpus 4214 insts, 2026-07-17). Current 'finalsite'/'finalsite\\.com' html = 87.7% recall (50/57 pos-with-HTML), 0.1% neg-hit (6/4157). Spot-checked neg-hits (insts 1876, 3603) carry real finalsite.com asset references — BuiltWith misses, not false positives. Signature already tight; no change made."
   },
   "Ingeniux CMS": {
@@ -76,8 +84,9 @@
       "igx-"
     ],
     "scripts": [
-      "igx-"
+      "(?:^|/)(?:jquery-)?igx-[\\w.-]{1,40}\\.js(?:\\?|$)"
     ],
+    "_detection_note": "2026-11-15 review (finding 1, bare-token script rules): the script token 'igx-' matched inside a Drupal aggregate's hash (/sites/default/files/js/js_6AKaYJL7fdYXwl_GTqQ6ffGHeWCgIgX-OBiX....js, institution 356), which cancelled 356's Drupal row. Script evidence is now an igx-*.js file name (igx-dev.js, igx-main.js, igx-js.js, jquery-igx-dev.js), the shape every real Ingeniux site in cohort 143 serves.",
     "js": {
       "Ingeniux": ""
     },
@@ -100,9 +109,13 @@
     ],
     "scripts": [
       "omnicms",
-      "omni\\.js",
       "omniupdate",
-      "moderncampus"
+      "//cdn\\.omniupdate\\.com/",
+      "//matomo\\.personalization\\.moderncampus\\.net/",
+      "(?:^|/)_resources/[\\w/.-]{0,80}omnicms[\\w.-]{0,40}\\.js"
+    ],
+    "dom": [
+      "a[href*='//a.cms.omniupdate.com/']"
     ],
     "js": {
       "OmniCMS": "",
@@ -120,6 +133,7 @@
       "OmniUpdate",
       "OU Campus"
     ],
+    "_detection_note": "2026-11-15 review (finding 1, bare-token script rules): the bare script token 'moderncampus' matched Modern Campus's other products (Calendar widget.calendar.moderncampus.net, Pathways, Forms, a support-site test script) on sites with another CMS, and 'omni\\.js' matched a first-party table-omni.js (kccd.edu). Removed both. Added the CMS's own asset CDN (cdn.omniupdate.com), the Personalization tracker that only the CMS injects (matomo.personalization.moderncampus.net), the CMS's _resources/.../omnicms*.js path, and the DirectEdit link to a.cms.omniupdate.com on any path.",
     "_validation": "Data-mined vs BuiltWith (UNI-141, 2026-07-13; REFRESHED UNI-156, corpus grown to 4214 insts, 2026-07-17). 'omniupdate' (their own brand asset host a.cms.omniupdate.com DirectEdit link + omniupdate.css + OU XSL namespace) = 69.9% recall (86/123 pos-with-HTML), 7.3% neg-hit (297/4091) on the larger corpus — spot-checked neg-hits (insts 759, 1419) carry real omniupdate.com XSL-namespace/DirectEdit markers, confirming these are BuiltWith misses (the oracle-caveat pattern), not a precision regression from the original 279-negative sample. 'omni-cms'/'data-omni-'/'moderncampus\\.com' contribute negligible incremental recall (≤2 hits each) — kept for coverage, no cost. REMOVED 'modern.*campus'/'omniupdate.*modern'/bare 'moderncampus' html + 'modern.*campus' scripts: matched 'modern campuses' PROSE on 32.6% of random non-MC sites (verified in HTML: North East Scotland College 'a number of modern campuses'). Also dropped 'omni' js global (too generic)."
   },
   "SchoolMessenger": {
@@ -153,6 +167,11 @@
     "scripts": [
       "terminalfour"
     ],
+    "dom": [
+      "link[href*='.terminalfour.net/']",
+      "img[src*='.terminalfour.net/']"
+    ],
+    "_detection_note": "2026-11-15 review (finding 14, recall): 14 cohort-143 home pages carried TerminalFour only as a stylesheet or image served from the CMS's own *.terminalfour.net host, which no script, meta or DOM rule saw. Added both as DOM rules.",
     "js": {
       "TerminalFour": ""
     },
@@ -201,9 +220,10 @@
       "misc/drupal\\.js"
     ],
     "scripts": [
-      "misc/drupal\\.js",
-      "sites/default/files"
+      "/misc/drupal(?:SettingsLoader)?\\.(?:min\\.)?js",
+      "(?:^|/)sites/[\\w.-]{1,80}/files[\\w-]{0,20}/(?:[\\w.-]{1,60}/){0,3}(?:js|advagg_js)/(?:optimized/)?js_[\\w-]{20}"
     ],
+    "_detection_note": "2026-11-15 review (finding 1, bare-token script rules): the script token 'sites/default/files' matched any file under that path, including another CMS's (an Omni CMS page on institution 2538), which cancelled 2538's Modern Campus row. Script evidence is now Drupal's own JS aggregate (sites/<site>/files/.../js/js_<hash>.js, advagg_js, optimized) and core's misc/drupal.js or drupalSettingsLoader.js.",
     "meta": {
       "generator": "Drupal"
     },
@@ -226,6 +246,9 @@
       "static1\\.squarespace",
       "sqs-"
     ],
+    "scripts": [
+      "//(?:assets|static1)\\.squarespace\\.com/"
+    ],
     "meta": {
       "generator": "Squarespace"
     },
@@ -235,6 +258,8 @@
     "higher_ed": false,
     "confidence": 90,
     "website": "https://www.squarespace.com",
+    "_hosts": ["squarespace.com"],
+    "_detection_note": "2026-11-15 review (finding 14, recall): Squarespace had html, meta and header rules only, so 52 cohort-143 home pages were detected html-only and none could reach the ledger. Added a script rule for Squarespace's own asset hosts (assets.squarespace.com, static1.squarespace.com).",
     "_validation": "Data-mined vs BuiltWith (UNI-156, 2026-07-17). 'squarespace\\.com' + 'static1\\.squarespace' + 'sqs-' (component class prefix) = 21.0% recall (25/119 pos-with-HTML), 0.7% neg-hit (28/4095) — Squarespace is rare among full institutional .edu sites (mostly departmental/club microsites), so low recall matches expected usage; low neg-hit confirms precision. Pos-misses spot-checked (insts 6, 35) show zero Squarespace markers, and inst 6 is now confirmed WordPress (wp-content present) — cohort drift, not a signature gap."
   },
   "Wix": {
@@ -287,9 +312,12 @@
       "sitecore"
     ],
     "scripts": [
-      "sitecore",
-      "sc_analytics"
+      "/sitecore(?:%20|\\s)modules/",
+      "coveoforsitecore",
+      "\\.sitecorecloud\\.io/",
+      "(?:^|/)[\\w.-]{0,40}sitecore[\\w.-]{0,40}\\.js(?:\\?|$)"
     ],
+    "_detection_note": "2026-11-15 review (finding 1, bare-token script rules): the bare script token 'sitecore' matched anywhere in a URL (a query string on events.uta.edu, institution 1665) and 'sc_analytics' matched nothing in cohort 143. Script evidence is now the /sitecore modules/ path, Coveo for Sitecore, the Sitecore cloud host, or a *sitecore*.js file name.",
     "cookies": {
       "SC_ANALYTICS_GLOBAL_COOKIE": "",
       "sc.UserId": ""
