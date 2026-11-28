@@ -203,3 +203,14 @@ test('operatedBy: the UniQuest org on 494 (Ulster) is vendor-operated; a school\
   const mixed = find(detect(REAL, uq + '<a href="https://humber.my.salesforce-sites.com/apply">x</a>', 'https://www.ulster.ac.uk'), 'Salesforce');
   assert.strictEqual(mixed.operatedBy, undefined);
 });
+
+test('Modern Campus CMS: its Personalization tracker on moderncampus.net is on the vendor host', () => {
+  // The tracker only the CMS injects (2026-11 review, finding 1); without moderncampus.net in _hosts a row resting
+  // on it graded as an unanchored third-party script and could not load.
+  const mc = find(detect(REAL, '<script src="https://matomo.personalization.moderncampus.net/matomo.js"></script>',
+    'https://www.example.edu/'), 'Modern Campus CMS');
+  const m = mc.matches.find((x) => x.channel === 'Script');
+  assert.strictEqual(m.host, 'matomo.personalization.moderncampus.net');
+  assert.strictEqual(m.vendorHost, true);
+  assert.strictEqual(m.firstParty, false);
+});
